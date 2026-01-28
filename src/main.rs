@@ -85,7 +85,7 @@ impl<B: Backend> Model<B> {
 
         let output_flat = output
             .clone()
-            .reshape([batch_size * seq_length, vocab_size]);
+            .reshape([batch_size * seq_length, VOCAB_SIZE]);
         let target_flat = target.reshape([batch_size * seq_length]);
 
         let loss = loss_fn.forward(output_flat.clone(), target_flat.clone());

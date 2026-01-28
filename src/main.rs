@@ -4,7 +4,8 @@ mod dataset;
 mod tokenizer;
 
 use crate::batcher::BatchItem;
-use burn::backend::{Autodiff, NdArray};
+use burn::backend::Autodiff;
+use burn::train::metric::CudaMetric;
 use burn::train::{InferenceStep, Learner};
 use burn::{
     backend::Wgpu,
@@ -85,7 +86,7 @@ impl<B: Backend> Model<B> {
 
         let output_flat = output
             .clone()
-            .reshape([batch_size * seq_length, VOCAB_SIZE]);
+            .reshape([batch_size * seq_length, embedding_dims]);
         let target_flat = target.reshape([batch_size * seq_length]);
 
         let loss = loss_fn.forward(output_flat.clone(), target_flat.clone());
@@ -150,7 +151,7 @@ fn main() {
     type TargetBackend = Autodiff<Wgpu<f32, i32>>;
 
     let device = Default::default();
-    let model = ModelConfig::new(12, 512, 8, 2048)
+    let model = ModelConfig::new(6, 256, 8, 1024)
         .with_dropout(0.1)
         .init::<TargetBackend>(&device);
 
@@ -180,6 +181,8 @@ fn main() {
         .unwrap();
 
     let training = SupervisedTraining::new("./checkpoints", dataloader_train, dataloader_test)
+        .metric_train(CudaMetric::new())
+        .metric_valid(CudaMetric::new())
         .metric_train_numeric(AccuracyMetric::new().with_pad_token(0))
         .metric_valid_numeric(AccuracyMetric::new().with_pad_token(0))
         .metric_train_numeric(PerplexityMetric::new().with_pad_token(0))

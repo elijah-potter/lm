@@ -46,7 +46,7 @@ pub fn train<B: Backend>(
 
     let accum = 6;
 
-    let lr_scheduler = NoamLrSchedulerConfig::new(0.04 / accum as f64)
+    let lr_scheduler = NoamLrSchedulerConfig::new(0.1 / accum as f64)
         .with_warmup_steps(6000)
         .with_model_size(m.embed_dims)
         .init()

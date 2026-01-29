@@ -38,7 +38,7 @@ pub fn train<B: Backend>(
     let dataloader_test = DataLoaderBuilder::new(GenBatcher)
         .batch_size(32)
         .num_workers(4)
-        .build(SamplerDataset::new(dataset_test, 1000));
+        .build(SamplerDataset::new(dataset_test, 10000));
 
     let optim = AdamConfig::new()
         .with_weight_decay(Some(WeightDecayConfig::new(1.0e-6)))

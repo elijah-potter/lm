@@ -22,6 +22,7 @@ pub fn train<B: Backend>(
     m: ModelConfig,
     train_folder: impl AsRef<Path>,
     test_folder: impl AsRef<Path>,
+    epochs: usize,
 ) -> Model<B> {
     let device = Default::default();
     let model = m.init::<Autodiff<B>>(&device);
@@ -63,7 +64,7 @@ pub fn train<B: Backend>(
         .metric_train_numeric(LearningRateMetric::new())
         .with_file_checkpointer(CompactRecorder::new())
         .grads_accumulation(accum)
-        .num_epochs(128)
+        .num_epochs(epochs)
         .summary();
 
     info!("Selected device: {:?}", device);

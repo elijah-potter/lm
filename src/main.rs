@@ -40,6 +40,7 @@ enum Command {
         attn_heads: usize,
         /// The size of the perceptrons between the attention blocks.
         percept_size: usize,
+        epochs: usize,
         save_to: PathBuf,
     },
 }
@@ -58,6 +59,7 @@ fn main() {
             embed_dims,
             attn_heads,
             percept_size,
+            epochs,
             save_to,
         } => {
             let model = training::train::<TargetBackend>(
@@ -65,6 +67,7 @@ fn main() {
                     .with_dropout(dropout),
                 train_data,
                 test_data,
+                epochs,
             );
 
             let recorder = CompactRecorder::new();

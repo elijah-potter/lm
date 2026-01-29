@@ -1,10 +1,11 @@
 use crate::batcher::BatchItem;
 use crate::tokenizer::MAX_SEQ_LEN;
 use crate::tokenizer::VOCAB_SIZE;
+use burn::nn::LinearConfig;
 use burn::train::InferenceStep;
 use burn::{
     nn::{
-        Dropout, DropoutConfig, Embedding, EmbeddingConfig, Relu,
+        Dropout, DropoutConfig, Embedding, EmbeddingConfig, Linear, Relu,
         loss::CrossEntropyLossConfig,
         transformer::{TransformerEncoder, TransformerEncoderConfig, TransformerEncoderInput},
     },
@@ -20,6 +21,7 @@ pub struct Model<B: Backend> {
     char_embedding: Embedding<B>,
     pos_embedding: Embedding<B>,
     transformer: TransformerEncoder<B>,
+    resizer: Linear<B>,
 }
 
 impl<B: Backend> Model<B> {
@@ -57,19 +59,22 @@ impl<B: Backend> Model<B> {
     ) -> ClassificationOutput<B> {
         let embedding = self.dropout.forward(self.embed(input));
 
-        let [batch_size, seq_length, embedding_dims] = embedding.dims();
+        let [batch_size, seq_length, _embedding_dims] = embedding.dims();
         assert_eq!(seq_length, MAX_SEQ_LEN);
 
-        let output = self
+        let trans_out = self
             .transformer
             .forward(TransformerEncoderInput::new(embedding));
+        let trans_out = self.dropout.forward(trans_out);
+
+        let output = self.resizer.forward(trans_out);
         let output = self.dropout.forward(output);
 
         let loss_fn = CrossEntropyLossConfig::new().init(&self.device());
 
         let output_flat = output
             .clone()
-            .reshape([batch_size * seq_length, embedding_dims]);
+            .reshape([batch_size * seq_length, VOCAB_SIZE]);
         let target_flat = target.reshape([batch_size * seq_length]);
 
         let loss = loss_fn.forward(output_flat.clone(), target_flat.clone());
@@ -87,15 +92,16 @@ impl<B: Backend> Model<B> {
         let [batch_size, seq_length, embedding_dims] = embedding.dims();
         assert_eq!(seq_length, MAX_SEQ_LEN);
 
-        let output = self
+        let trans_out = self
             .transformer
             .forward(TransformerEncoderInput::new(embedding));
+        let output = self.resizer.forward(trans_out);
 
         let loss_fn = CrossEntropyLossConfig::new().init(&self.device());
 
         let output_flat = output
             .clone()
-            .reshape([batch_size * seq_length, embedding_dims]);
+            .reshape([batch_size * seq_length, VOCAB_SIZE]);
         let target_flat = target.reshape([batch_size * seq_length]);
 
         let loss = loss_fn.forward(output_flat.clone(), target_flat.clone());
@@ -157,6 +163,7 @@ impl ModelConfig {
                 self.transformer_blocks,
             )
             .init(device),
+            resizer: LinearConfig::new(self.embed_dims, VOCAB_SIZE).init(device),
         }
     }
 }

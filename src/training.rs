@@ -33,10 +33,10 @@ pub fn train<B: Backend>(
     let dataloader_train = DataLoaderBuilder::new(GenBatcher)
         .batch_size(128)
         .num_workers(4)
-        .build(SamplerDataset::new(dataset_train, 10_000));
+        .build(SamplerDataset::new(dataset_train, 100_000));
 
     let dataloader_test = DataLoaderBuilder::new(GenBatcher)
-        .batch_size(128)
+        .batch_size(32)
         .num_workers(4)
         .build(SamplerDataset::new(dataset_test, 1000));
 

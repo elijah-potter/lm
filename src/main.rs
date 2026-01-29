@@ -45,7 +45,7 @@ enum Command {
     },
 }
 
-type TargetBackend = Wgpu<f32, i32>;
+type TargetBackend = Wgpu<f32>;
 
 fn main() {
     let command = Command::parse();

@@ -2,8 +2,8 @@ use burn::Tensor;
 use burn::prelude::Backend;
 use burn::tensor::{Int, Shape, TensorData};
 
-const VOCAB_SIZE: usize = 64;
-const MAX_SEQ_LEN: usize = 64;
+pub const VOCAB_SIZE: usize = 64;
+pub const MAX_SEQ_LEN: usize = 64;
 
 pub fn text_to_indices<B: Backend>(text: &[char], device: &B::Device) -> Tensor<B, 2, Int> {
     let mut idxs: Vec<_> = text

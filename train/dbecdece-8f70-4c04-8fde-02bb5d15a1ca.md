@@ -1,0 +1,7 @@
+## TIL the "Mona Lisa" Wasn't Initially Intended for Public Display
+
+Today I learned that Leonardo da Vinci likely never intended the *Mona Lisa* to be a public work of art. For centuries, it was privately owned and circulated within the French royal family, largely unseen by the general populace.
+
+The painting was commissioned around 1503 by Francesco del Giocondo, a wealthy Florentine silk merchant, presumably as a portrait of his wife, Lisa Gherardini. However, Leonardo never delivered the finished piece to the Giocondo family. Instead, he retained possession of it, continuing to work on it intermittently for years. Upon his death in 1519, the painting entered the collection of King Francis I of France. 
+
+It remained within the French royal collections, occasionally displayed but never exhibited in a public museum. It wasn't until the Louvre Museum opened in 1793, during the French Revolution, that the *Mona Lisa* was finally made accessible to a wider audience. This explains why its fame didn't truly explode until the 20th century, when its accessibility and subsequent theft in 1911 propelled it to global icon status. The painting’s journey from private commission to worldwide phenomenon is a fascinating testament to the unpredictable nature of artistic renown.

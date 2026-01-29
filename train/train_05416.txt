@@ -1,0 +1,5 @@
+Adrian has the choice between two boxes of contacts.  One has 50 contacts for $25, and the other has 99 contacts for $33. He chooses the box that costs less per individual contact.  How many contacts will it take to equal $1 worth in whatever box he decides to buy?
+First, we need to determine the price per contact in each of the two choices. We begin by performing 50/25= <<50/25=2>>2 contacts per every dollar spent on choice A.
+Next, we determine the price per contact of the alternate choice. We do this by performing 99/33= <<99/33=3>>3 contacts for every dollar spent on choice B.
+Since 3>2, Adrian purchases choice B.
+The answer is therefore 3.

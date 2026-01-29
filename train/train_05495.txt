@@ -1,0 +1,4 @@
+A movie ticket for an adult costs $8, and a child's ticket costs $3. One adult is taking a group of children to the movies. She has $35. How many children can she take with her to the movies?
+Let X be the number of children the adult can take with her. She has $35, so she could buy one ticket for her and the rest for the children.
+So she has $35 - $8 = $<<35-8=27>>27 left for children.
+She could take $27 / $3/child = <<27/3=9>>9 children with her.

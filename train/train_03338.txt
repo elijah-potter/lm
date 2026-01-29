@@ -1,0 +1,6 @@
+Bill and Ted went into the forest to gather some wild mushrooms. Bill gathered 12 red mushrooms and 6 brown mushrooms.  Ted gathered 14 green mushrooms and 6 blue mushrooms.  If half of the blue mushrooms, two-thirds of the red mushrooms, and all of the brown mushrooms have white spots, how many white-spotted mushrooms did they gather?
+Of the 12 red mushrooms, 2/3 had spots, for a total of (2/3)*12=<<2/3*12=8>>8 white-spotted mushrooms.
+Of the 6 brown mushrooms, 100% had spots, for a total of (100/100)*6=<<6*100/100=6>>6 white-spotted mushrooms.
+Of the 14 green mushrooms, 0% had white spots, for a total of 14*0=<<14*0=0>>0 white-spotted mushrooms.
+And of the 6 blue mushrooms, half had spots, for a total of (1/2)*6=<<6*1/2=3>>3 white-spotted mushrooms.
+In total, they gathered 8+6+0+3=<<8+6+0+3=17>>17 white-spotted mushrooms.

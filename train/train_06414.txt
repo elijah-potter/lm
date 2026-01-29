@@ -1,0 +1,4 @@
+If there were 200 students who passed an English course three years ago, and each subsequent year until the current one that number increased by 50% of the previous year's number, how many students will pass the course this year?
+We begin 3 years ago with 200 students, and moving forward to two years ago we find there were 200*1.5= <<200*1.5=300>>300 students who passed.
+At the end of the subsequent year 50% more students pass than last year's 300, so that means 300*1.5=<<300*1.5=450>>450 students pass.
+At the end of the current year there's another 50% increase over the previous year, meaning we have 450*1.5= <<450*1.5=675>>675 students pass.

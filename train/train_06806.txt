@@ -1,0 +1,8 @@
+Dexter went to the mall and saw that Apple products are on sale. He wants to buy an iPhone 12 with a 15% discount and an iWatch with a 10% discount. The price tag shows that an iPhone 12 costs $800 while an iWatch costs $300. Upon check out, he will receive a further 2% cashback discount. How much would the items cost in total after the discount and cashback?
+The discount for an iPhone 12 is $800 x 15/100 = $<<800*15/100=120>>120.
+So, the iPhone will now cost $800 - $120 = $<<800-120=680>>680.
+The discount for an iWatch is $300 x 10/100 = $<<300*10/100=30>>30.
+So, the iWatch will now cost $300 - $30 = $<<300-30=270>>270.
+The total cost of the iPhone and iWatch is $680 + $270 = $<<680+270=950>>950.
+The cashback will be $950 x 2/100 = $<<950*2/100=19>>19.
+Thus, Dexter will only pay $950 - $19 = $<<950-19=931>>931.

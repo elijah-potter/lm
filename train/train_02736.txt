@@ -1,0 +1,8 @@
+Bob gets paid $5 an hour for the regular hours he works and $6 an hour for any overtime hours he works. All hours over 40 in a week are considered overtime. If Bob works 44  hours in the first week and 48 hours in the second week, how much did he make?
+Bob has worked 40 hours/week x 2 weeks = <<40*2=80>>80 regular hours
+Bob got paid 80 hours x $5/hour = $<<80*5=400>>400 for his regular hours
+Bob worked 44 hours - 40 hours = <<44-40=4>>4 hours of overtime in the first week
+Bob worked 48 hours - 40 hours = <<48-40=8>>8 hours of overtime in the second week
+In total Bob worker 8 hours + 4 hours =<<8+4=12>>12 hours of overtime.
+Bob got paid $6/hour x 12 hours = $<<6*12=72>>72 for overtime
+In 2 weeks Bob earned $400 + $72 = $<<400+72=472>>472

@@ -1,0 +1,8 @@
+A case of water contains 24 bottles. A children's camp comprising of 4 groups purchased 13 cases for a 3-day camp. The first group has 14 children, the second group has 16 children, the third group has 12 children, and the fourth group has half of the number of the first three groups combined. If each child consumes 3 bottles a day, how many more bottles of water does the camp organizer still need to buy?
+The first three groups have a total of 14 + 16 + 12 = <<14+16+12=42>>42 children.
+The fourth group has 42/2 = <<42/2=21>>21 children
+All together, the camp has 42 + 21 = <<42+21=63>>63 children.
+In one day, the children consume 3 x 63 = <<3*63=189>>189 bottles of water.
+In 3 days, the children will need 189 x 3 = <<189*3=567>>567 bottles of water.
+The camp organizer has already purchased 13 x 24 = <<13*24=312>>312 bottles of water.
+The camp organizer must buy another 567 - 312 = <<567-312=255>>255 bottles of water.

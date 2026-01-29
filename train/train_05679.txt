@@ -1,0 +1,7 @@
+A particular train has some passenger cars and a number of cargo cars equal to half the number of passenger cars plus three. If the total number of cars is 71, counting the engine and caboose, how many passenger cars are in the train?
+First find the number of cars not counting the engine and caboose: 71 cars - 2 cars = <<71-2=69>>69 cars
+Let p be the number of passenger cars and c be the number of cargo cars. We know that p + c = 69 and c = p/2 + 3
+Substituting the second equation into the first, we get p + p/2 + 3 = 69
+Combining like terms, we get 1.5p + 3 = 69
+Subtracting 3 from both sides, we get 1.5p = 66
+Dividing both sides by 1.5, we get p = 44

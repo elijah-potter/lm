@@ -1,0 +1,4 @@
+Joan is preparing sandwiches for a family potluck. She decides to make ham sandwiches and grilled cheese sandwiches. One ham sandwich requires 2 slices of cheese, and one grilled cheese sandwich requires 3 slices of cheese. She uses a total of 50 slices of cheese to make the sandwiches. If she makes 10 ham sandwiches, how many grilled cheese sandwiches does she make?
+The number of cheese slices used to make the ham sandwiches is 10 * 2 = <<10*2=20>>20 cheese slices.
+The number of cheese slices used to make the grilled cheese sandwiches is 50 - 20 = <<50-20=30>>30 cheese slices.
+The number of grilled cheese sandwiches she makes is 30 / 3 = <<30/3=10>>10 grilled cheese sandwiches.

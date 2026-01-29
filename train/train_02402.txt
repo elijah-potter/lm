@@ -1,0 +1,8 @@
+A wild tiger escapes the zoo.  He escapes at 1 AM and zookeepers do not notice he is missing until 4 AM.  He runs at a speed of 25 mph.  It takes 2 more hours to find him but after 4 hours of running, the tiger slows his speed to 10 mph.  He then gets chased for half an hour going 50 mph.  How far away from the zoo was he caught?
+He was running for 4-1=<<4-1=3>>3 hours
+So in that time he runs 3*25=<<3*25=75>>75 miles
+Since he slowed down after 4 hours, the time he spent running at 25mph was an additional 4-3=<<4-3=1>>1 hours
+So in the first hour they were finding him, he ran 1*25=<<1*25=25>>25 miles
+In the second hour they were finding him, he ran 1*10=<<1*10=10>>10 miles
+Finally, during the chase, he ran 50*.5=<<50*.5=25>>25 miles
+So he is 75+25+10+25=<<75+25+10+25=135>>135 miles away

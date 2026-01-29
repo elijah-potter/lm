@@ -1,0 +1,4 @@
+Megan is delivering meals on wheels. Out of her 30 clients, 7 need vegan meals, 8 need kosher meals, and three people need meals that are both vegan and kosher. How many meals does Megan deliver that are neither kosher nor vegan?
+First, add the number of kosher meals to the number of vegan meals: 7 meals + 8 meals = <<7+8=15>>15 meals
+Then subtract the three meals that are both kosher and vegan since they got counted twice: 15 meals - 3 meals = <<15-3=12>>12 meals
+Finally, subtract that number from the total number of meals to find the number of meals that are neither kosher nor vegan: 30 meals - 12 meals = <<30-12=18>>18 meals

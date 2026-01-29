@@ -1,0 +1,5 @@
+Kevin has been for a run and wants to calculate how far he traveled. He ran at 10 miles per hour for half an hour, 20 miles per hour for half an hour, then ran at 8 miles per hour for 15 minutes. How many miles has Kevin run?
+At his first speed, Kevin ran 10 miles per hour * 0.5 hours = <<10*0.5=5>>5 miles.
+At his second speed, he ran 20 miles per hour * 0.5 hours = <<20*0.5=10>>10 miles.
+15 minutes is a quarter of an hour so at his third speed, he ran 8 miles per hour * 0.25 hours = <<8*0.25=2>>2 miles.
+Therefore, Kevin ran a total of 5 miles + 10 miles + 2 miles = <<5+10+2=17>>17 miles.

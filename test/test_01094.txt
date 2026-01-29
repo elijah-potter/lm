@@ -1,0 +1,8 @@
+Tony is painting a room with four walls. The north and south walls are 10 x 8 feet. The east and west walls are 5 x 8 feet. A gallon of paint can cover 20 square feet and cost $12. How much will it cost to paint the room?
+The north and south walls are 80 square feet each because 10 x 8 = <<10*8=80>>80
+The east and west walls are 40 square feet because 5 x 8 = <<5*8=40>>40
+The south and north walls total 160 square feet because 80 x 2 = <<80*2=160>>160
+The East and west walls total 80 square feet because 40 x 2 = <<40*2=80>>80
+All the walls total 240 square feet because 160 + 80 = <<160+80=240>>240
+He will need 12 gallons of paint because 240 / 20 = <<240/20=12>>12
+It will cost $144 because 12 x 12 = <<12*12=144>>144

@@ -1,0 +1,4 @@
+The bakery made 95 muffins. They will be packed in boxes with 5 muffins in each box. If there are only 10 available boxes, how many boxes do they still need to pack all the muffins?
+A total of 10 x 5 = <<10*5=50>>50 muffins will be packed in 10 boxes.
+So 95 - 50 = <<95-50=45>>45 muffins still need to be packed in the boxes.
+Thus, 45/5 = <<45/5=9>>9 boxes are still needed to pack all those 45 muffins.

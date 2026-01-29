@@ -1,0 +1,8 @@
+Joel collected a bin of old toys to donate. By asking his friends, he was able to collect 18 stuffed animals, 42 action figures, 2 board games, and 13 puzzles. His sister gave him some of her old toys from her closet, and then Joel added twice as many toys from his own closet as his sister did from hers. In all, Joel was able to donate 108 toys. How many of the donated toys were Joel’s?
+Let T be the number of toys Joel’s sister donated.
+Joel donated twice as many toys, so he donated 2T toys.
+Joel’s friends donated 18 + 42 + 2 + 13 = <<18+42+2+13=75>>75 toys.
+In all, Joel collected T + 2T + 75 = 3T + 75 = 108 toys.
+Joel and his sister donated 3T = 108 - 75 = 33 toys together.
+Therefore, T = 33 / 3 = <<33/3=11>>11 toys were his sister’s.
+Thus, 2T = 2 * 11 = <<2*11=22>>22 toys were Joel’s.

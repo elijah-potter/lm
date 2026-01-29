@@ -1,0 +1,5 @@
+Peggy buys 3 folders, one each in the colors red, green, and blue.  She puts ten sheets of paper in each folder, and then, she puts star-shaped stickers on each sheet of paper.  In the red folder, each sheet of paper gets 3 stickers.  In the green folder, each sheet of paper gets 2 stickers, and in the blue folder, each sheet gets 1 sticker.  What is the total number of stickers Peggy uses?
+For the red folder, 10 sheets of paper get 3 stickers each, for a total of 10*3=<<10*3=30>>30 stickers.
+For the green folder, 10 sheets of paper get 2 stickers each, for a total of 10*2=<<10*2=20>>20 stickers.
+For the blue folder, 10 sheets of paper get 1 sticker each, for a total of 10*1=<<10*1=10>>10 stickers.
+In total, she uses 30+20+10=<<30+20+10=60>>60 stickers.

@@ -1,0 +1,7 @@
+Noah’s bedroom light uses 6 watts per hour. His office light is much brighter so he can see to work and uses three times as much energy. The living room light has a much larger space to cover and has to be more powerful, so it uses four times as much energy as his bedroom light. If Noah leaves all those lights on for two hours, how many watts has he used?
+Noah’s bedroom light uses 6 watts per hour, so it would use 2 * 6 = <<6*2=12>>12 watts in two hours.
+His office light uses 3 times as many watts as his bedroom light, so it uses 3 * 6 = <<3*6=18>>18 watts per hour.
+In two hours, the office light would use 18 * 2 = <<18*2=36>>36 watts.
+The living room light uses 4 times as many watts as his bedroom light, so it uses 4 * 6 = <<4*6=24>>24 watts per hour.
+In two hours, the living room light would use 24 * 2 = <<24*2=48>>48 watts.
+Thus, if Noah leaves all those lights on for two hours, he has used 12 + 36 + 48 = <<12+36+48=96>>96 watts.

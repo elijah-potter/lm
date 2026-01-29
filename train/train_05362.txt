@@ -1,0 +1,5 @@
+A restaurant buffet has 36 different dishes available to try. The restaurant features mango salsa on three of its dishes, fresh mangoes in a sixth of its dishes, and mango jelly in one dish. Oliver despises mangoes and won't eat them, but can pick them out of two of the dishes with fresh mango that he would be willing to try. How many dishes are left for Oliver on the buffet?
+There are fresh mangos in 36 / 6 = <<36/6=6>>6 dishes.
+Thus, there are 3 + 6 + 1 = <<3+6+1=10>>10 dishes with mango on the buffet.
+Oliver can pick the mango out of 2 of the dishes, so there are 10 - 2 = <<10-2=8>>8 dishes he won't eat.
+Thus, there are 36 - 8 = <<36-8=28>>28 dishes left for Oliver on the buffet.

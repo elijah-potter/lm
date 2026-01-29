@@ -1,0 +1,6 @@
+There's a Bobbit worm hiding in the bottom of James' aquarium. Every day it eats 2 fish. After two weeks, James adds 8 more fish to the aquarium. A week later, he discovers the Bobbit worm. If the aquarium had 60 fish to start with, how many does it have when James discovers the Bobbit worm?
+First find the total number of weeks the Bobbit worm preys on the fish: 2 weeks + 1 week = <<2+1=3>>3 weeks
+Then multiply that number by the number of days per week: 3 weeks * 7 days/week = 21 days
+Then multiply that number by the number of fish the worm eats per day to find how many fish it eats total: 21 days * 2 fish/day = <<21*2=42>>42 fish
+Then add the number of fish James adds to the starting number of fish to find the ending number of fish: 60 fish + 8 fish = <<60+8=68>>68 fish
+Then subtract the number of eaten fish to find the number of surviving fish: 68 fish - 42 fish = <<68-42=26>>26 fish

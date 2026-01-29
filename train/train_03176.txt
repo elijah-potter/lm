@@ -1,0 +1,6 @@
+Bill is laying power cable for a new neighborhood. There are going to be 18 east-west streets that are 2 miles long and 10 north-south streets that are four miles long. It takes 5 miles of cable to electrify 1 mile of street. If cable costs $2000/mile, what is the total cost of cable for the neighborhood?
+First find the total distance of the east-west streets: 18 streets * 2 miles/street = <<18*2=36>>36 miles
+Then find the total distance of the north-south streets: 10 streets * 4 miles/street = <<10*4=40>>40 miles
+Then add the number of miles from each type of street to find the total distance: 36 miles + 40 miles = <<36+40=76>>76 miles
+Then multiply that number by 5 to find the number of miles of cable needed: 76 miles street * 5 miles cable/mile street = <<76*5=380>>380 miles of cable
+Then multiply that number by the cost of one mile of cable to find the total cost: 380 miles * $2000/mile = $<<380*2000=760000>>760,000

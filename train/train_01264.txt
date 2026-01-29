@@ -1,0 +1,7 @@
+Phil has a coin collection he likes to add to.  He started with 50 state quarters his parents gave him.  Over the next year he doubled this.  The following year he collected 3 each month.  The year after that he collected 1 every third month.  The year after that he lost a quarter of them when he misplaced his collection.  How many did he have left after losing some?
+Phil started with 50, and doubled this amount the next year for 50*2=<<50*2=100>>100 coins
+Phil then collected 3 per month the following year, and since there are 12 months in a year that was 3*12=<<3*12=36>>36 coins added
+Phil then collected 1 every third month, and since there are 12 months that means he collected one every 12/3=4 months, for 4 coins added
+Before he lost a quarter of his coins, Phil had 100+36+4 coins, or <<100+36+4=140>>140 coins in total.
+Losing a quarter of 140 coins means Phill lost 140/4=<<140/4=35>>35 coins
+That means Phil had 140-35= <<140-35=105>>105 coins remaining

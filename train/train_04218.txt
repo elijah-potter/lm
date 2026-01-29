@@ -1,0 +1,5 @@
+A group of 30 tourists sets out on a walking tour of the rainforest. Two tourists are eaten by anacondas, then half the remaining tourists try to pet poisonous dart frogs and get poisoned. If only 1/7 of the poisoned tourists recovered, how many tourists are left at the end of the tour?
+First, subtract the two tourists the anacondas got from the initial 30 tourists: 30 - 2 = <<30-2=28>>28
+Next, divide 28 by two to find out how many tourists got poisoned: 28 / 2 = <<28/2=14>>14.
+Now figure out how many of the 14 poisoned tourists recovered: 14 / 7 = <<14/7=2>>2.
+The total number of surviving tourists is 14 + 2 = <<14+2=16>>16.

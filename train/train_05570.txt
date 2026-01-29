@@ -1,0 +1,7 @@
+Some friends wanted to make a road trip from New York to Los Angeles. They drove at a constant speed of 62 miles/hour, taking breaks of 30 minutes every 5 hours. Once in the city, they looked for the hotel for 30 minutes. If the trip took around 2,790 miles, how many hours will they have to spend to complete the trip to the hotel?
+At a constant speed of 62 miles/hour, they will drive 2,790 miles / 62 miles/hour = <<2790/62=45>>45 hours in total.
+Every 5 hours they take a break, they will take 45 hours / 5 hours/break = <<45/5=9>>9 breaks.
+Those breaks will be 9 breaks x 30 minutes/break = <<9*30=270>>270 minutes in total.
+In hours, the breaks will be in total 270 minutes ÷ 60 minutes/hour = <<270/60=4.5>>4.5 hours
+To find the hotel it took them 30 minutes ÷ 60 minutes/hour = <<30/60=0.5>>0.5 hours
+In total, it will take 45 hours + 4.5 hours + 0.5 hours = <<45+4.5+0.5=50>>50 hours to complete the trip.

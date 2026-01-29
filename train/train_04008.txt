@@ -1,0 +1,7 @@
+Liz's basketball team is down by 20 points in the final quarter of their game.  Liz goes on a shooting spree, sinking 5 free throw shots, 3 three-pointers, and 4 other jump shots.  The other team only scores 10 points that quarter, and none of Liz's teammates manage to score any points.  How much does Liz's team lose by at the end of the game?
+Each free throw counts as 1 point, so 5 successful free throws means she scores 5*1= <<5*1=5>>5 points
+Each 3 pointer counts as 3 points, so this means Liz scores 3*3= <<3*3=9>>9 points from 3 pointers
+Each jump shot counts as 2 points, meaning Liz scores 4*2=<<4*2=8>>8 points of jump shots.
+Liz's opponents score 10 points during the quarter, meaning their lead is 30 points in total before accounting for Liz's scoring.
+Liz scores a total of 5+9+8=<<5+9+8=22>>22 points in the quarter.
+This amount is subtracted from the lead of Liz's opponents, meaning they win by 30-22= <<30-22=8>>8 points.

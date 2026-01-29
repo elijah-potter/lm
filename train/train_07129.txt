@@ -1,0 +1,6 @@
+Blake needs to prime and paint 5 rooms in his house.  Each room will require a gallon of primer and a gallon of paint.  Currently the primer is $30.00 a gallon and they are offering 20% off.  The paint costs $25.00 a gallon and is not on sale.  How much will he spend on paint and primer?
+The primer is $30.00 with 20% off so that's 30*.20 = $<<30*.20=6.00>>6.00 off
+The primer is $30.00 and the discount is for $6.00 off so the sale price is 30-6 = $<<30-6=24.00>>24.00 per gallon
+Blake needs 5 gallons of primer that is $24.00 a gallon so that's 5*24 = $<<5*24=120.00>>120.00
+He needs 5 gallons of paint that cost $25.00 a gallon so that's 5*25 = $<<5*25=125.00>>125.00
+The primer is $120.00 and the paint is $125.00 so all total, he will spend 120+125 = $<<120+125=245.00>>245.00 on paint and primer

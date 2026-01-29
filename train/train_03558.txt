@@ -1,0 +1,5 @@
+Jim is a maintenance worker at a pool. Every time someone jumps in the pool, they cause 400 ml of water to splash out and evaporate. Jim has to get everyone out of the pool, clean, and refill it when it gets below 80% full. If the pool holds 2000 L of water, how many times can people jump in the pool before Jim has to clean it?
+First figure out how many liters of water are left in the pool when it's 80% full: 2000L * .8 = <<2000*.8=1600>>1600 L
+Now subtract that amount from the pool's total capacity to find how much water can splash out before Jim has to refill it: 2000 L - 1600 L = <<2000-1600=400>>400 L
+Now multiply that amount by 1000 to convert it to milliliters: 400 L * 1000 ml/L = <<400*1000=400000>>400,000 ml
+Finally, divide that amount by the amount that splashes out with each jump to find the number of jumps before pool cleaning: 400,000 ml / 400 ml/jump = <<400000/400=1000>>1000 jumps

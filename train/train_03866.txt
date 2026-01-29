@@ -1,0 +1,7 @@
+Faye had $20. Today, her mother gave her twice as much as her money. If she bought ten cupcakes at $1.50 each and five boxes of cookies at $3 per box, how much money did she have left?
+Faye's mother gave her 2 x $20 = $<<2*20=40>>40.
+So, Faye had a total of $20 + $40 = $<<20+40=60>>60.
+Ten cupcakes cost 10 x $1.50 = $<<10*1.5=15>>15.
+Five boxes of cookies cost 5 x $3 = $<<5*3=15>>15.
+Thus, Faye spent $15 + $15 = $<<15+15=30>>30.
+Therefore, Faye has $60 - $30 = $<<60-30=30>>30 left.

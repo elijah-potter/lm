@@ -1,0 +1,5 @@
+Three adults whose average weight is 140 pounds went first in the elevator. Two children whose average weight is 64 pounds also went inside. If an elevator sign reads “Maximum weight 600 pounds.", what is the maximum weight of the next person to get in the elevator so that it will not be overloaded?
+The sum of the weights of the three adults is 140 x 3 = <<140*3=420>>420 pounds.
+The sum of the weight of the two children is 64 x 2 = <<64*2=128>>128 pounds.
+So the total weight of the 5 people who are in the elevator is 420 + 128 = <<420+128=548>>548 pounds.
+This would mean that the next person's weight must not exceed 600 - 548 = <<600-548=52>>52 pounds.

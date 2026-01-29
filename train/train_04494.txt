@@ -1,0 +1,4 @@
+Janet is getting paid to moderate social media posts. She gets paid 25 cents per post she checks. If it takes her 10 seconds to check a post, how much does she earn per hour?
+First find the number of seconds in an hour: 1 hour * 60 minutes/hour * 60 seconds/minute = <<1*60*60=3600>>3600 seconds/hour.
+Then divide the total number of seconds per hour by the number of seconds it takes Janet to read one post: 3600 seconds/hour / 10 seconds/post = <<3600/10=360>>360 posts/hour.
+Then multiply the number of posts she checks per hour by her pay per post to find her hourly pay: $0.25/post * 360 posts/hour = $<<0.25*360=90>>90/hour.

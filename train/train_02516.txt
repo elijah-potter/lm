@@ -1,0 +1,5 @@
+Mrs. Carlton gives out penalty points whenever her students misbehave. They get 5 points for interrupting, 10 points for insulting their classmates, and 25 points for throwing things. If they get 100 points, they have to go to the office. Jerry already interrupted twice and insulted his classmates 4 times. How many times can he throw things before he gets sent to the office?
+For interrupting, Jerry got 5 points per interruption * 2 interruptions = <<5*2=10>>10 points
+For insulting, he got 10 points per insult * 4 insults = <<10*4=40>>40 points
+To get to the 100 limit points, Jerry has 100 points - 10 points - 40 points = <<100-10-40=50>>50 points left
+He still has 50 points / 25 points per throw = <<50/25=2>>2 throws

@@ -1,0 +1,7 @@
+A fruit basket consists of 4 bananas, 3 apples, 24 strawberries, 2 avocados, and a bunch of grapes. One banana costs $1. An apple costs $2. 12 strawberries cost $4. An avocado costs $3, and half a bunch of grapes costs $2. What is the total cost of the fruit basket?
+The bananas cost 4 x $1 = $<<4*1=4>>4
+The apples cost 3 x $2 = $<<3*2=6>>6
+The strawberries cost (24/12) x $4 = $<<(24/12)*4=8>>8
+The avocados cost 2 x $3 = $<<2*3=6>>6
+The grapes cost 2 x $2 = $<<2*2=4>>4
+The total cost of the fruit basket is $4 + $6 + $8 + $6 + $4 = $<<4+6+8+6+4=28>>28

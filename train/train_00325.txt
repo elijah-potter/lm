@@ -1,0 +1,4 @@
+A building has four floors with ten rooms each. Legacy has to clean each room, and it takes her 6 hours to clean one room. If she earns $15 per hour of work, calculate the total amount of money she makes from cleaning all the floors in the building.
+Since the building has four floors with ten rooms each, the total number of rooms in the building is 4*10 = <<4*10=40>>40.
+If it takes Legacy 6 hours to clean each room, she will take 40*6 = <<40*6=240>>240 hours to clean all the rooms in the building.
+Since she is making $15 per hour of work, she will earn $15*240 = $<<15*240=3600>>3600 after cleaning all the rooms.

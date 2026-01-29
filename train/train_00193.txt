@@ -1,0 +1,7 @@
+Apple sold 100 iPhones at their New York store today for an average cost of $1000. They also sold 20 iPads for an average cost of $900 and 80 Apple TVs for an average cost of $200. What was the average cost across all products sold today?
+The sales for iPhones were 100 iPhones * $1000 per iPhone on average = $<<100*1000=100000>>100,000
+The sales for iPads today were 20 iPads * $900 per iPad = $<<20*900=18000>>18,000
+The sales for Apple TV’s today were 80 * $200 = $<<80*200=16000>>16,000
+The total sales for Apple at their New York store today was $100,000 + $18,000 + $16,000 = $<<100000+18000+16000=134000>>134,000
+The total number of products sold was 100 + 20 + 80 = <<100+20+80=200>>200
+The average cost per product sold was $134,000 total sales / 200 total products = $<<134000/200=670>>670

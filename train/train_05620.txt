@@ -1,0 +1,3 @@
+Jack is counting out his register at the end of his shift in the shop. His till has 2 $100 bills, 1 $50 bill, 5 $20 bills, 3 $10 bills, 7 $5 bills, 27 $1 bills, and a certain amount of change in coins. If he is supposed to leave $300 in notes as well as all the coins in the till and turn the rest in to the main office, how much money will he be handing in?
+Jack's till has 2 * $100 + 1 * $50 + 5 * $20 + 3 * $10 + 7 * $5 + 27 * $1 bills, or $200 + $50 + $100 + $30 + $35 + $27 = $<<2*100+1*50+5*20+3*10+7*5+27*1=442>>442.
+He's going to leave $300 in the till and turn the rest in to the office, so he'll be turning in $442 - $300 = $142.

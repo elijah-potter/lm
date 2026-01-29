@@ -1,0 +1,5 @@
+Donny can only drink water if it's at least 40 degrees. He has two mugs of water. One mug is 33 degrees. The other is an unknown temperature. If he pours 4 ounces of water from the 33-degree mug into his water bottle and one ounce from the other bottle, he is now able to drink the water.  At least how many degrees is the second bottle?
+There are 5 total ounces of water because 4 + 1 = <<4+1=5>>5
+The total temperatures is >=200 because 200 / 5 =<<200/5=40>>40
+The 33 degree water contributes 132 points towards this because 4 x 33 = <<4*33=132>>132
+The unknown temperature is at least 68 because 200 - 132 = <<200-132=68>>68

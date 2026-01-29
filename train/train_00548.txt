@@ -1,0 +1,7 @@
+Tom decides to renovate a house.  There are 3 bedrooms and each bedroom takes 4 hours to renovate.  The kitchen takes 50% longer than each bedroom.  The living room took twice as much time as everything else combined.  How long did everything take?
+The kitchen took 4 * .5 = <<4*.5=2>>2 hours longer than the bedrooms
+So the kitchen took 4 + 2 = <<4+2=6>>6 hours
+The bedrooms took 3 * 4 = <<3*4=12>>12 hours
+So the kitchen and bedrooms combined took 12 + 6 = <<12+6=18>>18 hours
+The living room took 18 * 2 = <<18*2=36>>36 hours
+So everything took a total of 18 + 36 = <<18+36=54>>54 hours

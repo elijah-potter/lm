@@ -1,0 +1,5 @@
+The tank of John's car is full: it contains 47 liters of gasoline. After a journey of 275 km, there are 14 liters left. What is the fuel consumption of this car per 100 km?
+The car consumed 47 liters - 14 liters = <<47-14=33>>33 liters of gasoline for 275 km.
+Let x be the fuel consumption per 100 km. We can write the proportion: 33/275 = x/100
+The cross product gives: 275 x = 33 * 100
+So the car consumes x = 3300/275 = <<3300/275=12>>12 liters per 100 km.

@@ -1,0 +1,7 @@
+Janet is collecting the results of Herbert Hoover Elementary School's annual standardized test. 340 out of 500 third-graders passed, along with 40 out of 100 fourth graders. The 400 fifth graders had a pass rate that was twice the fourth grades' pass rate. What is the school's overall pass rate?
+First find the pass rate for the fourth graders: 40 students / 100 students = <<40/100=.4>>.4
+Then double that to find the pass rate for the fifth graders: .4 * 2 = <<.4*2=.8>>.8
+Then multiply the fifth graders' pass rate by the number of fifth graders to find the total number of fifth graders who passed: .8 * 400 fifth graders = <<.8*400=320>>320 fifth graders
+Now add up the number of passing students from each grade to find to find the total number of passing students: 320 students + 40 students + 340 students = <<320+40+340=700>>700 students
+Add up the total number of students in each grade to find the total number of students: 400 students + 100 students + 500 students = <<400+100+500=1000>>1000 students
+Finally, divide the number of passing students by the total number of students and multiply by 100% to find the total number who passed: 700 students / 1000 students * 100% = 70%

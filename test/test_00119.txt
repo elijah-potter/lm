@@ -1,0 +1,4 @@
+A customs officer at the main port of SeaSide clearances counted 2 containers of imported vehicles, each having 5 vehicles inside. The next day, more containers were brought in, and the total number of vehicles at the port became 30. Calculate the number of containers that were imported on the second day, assuming all the containers contain 5 vehicles.
+On the first day, 2*5 = <<2*5=10>>10 vehicles were Imported,
+On the next day, the number of vehicles imported through the port is 30-10 = <<30-10=20>>20 vehicles
+If each container has 5 vehicles, the number is 20/5 = <<20/5=4>>4 containers.

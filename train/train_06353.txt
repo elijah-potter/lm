@@ -1,0 +1,6 @@
+Mary is chopping up some old furniture to make firewood. Chairs make 6 sticks of wood, tables make 9 sticks of wood, and stools make 2 sticks of wood. Mary needs to burn 5 sticks of wood per hour to stay warm. If Mary chops up 18 chairs, 6 tables and 4 stools, how many hours can she keep warm?
+First find the total sticks from the chairs: 6 sticks/chair * 18 chairs = <<6*18=108>>108 sticks
+Then find the total sticks from the tables: 9 sticks/table * 6 tables = <<9*6=54>>54 sticks
+Then find the total sticks from the stools: 2 sticks/table * 4 stools = <<2*4=8>>8 sticks
+Then add up the total number of sticks she gets: 108 sticks + 54 sticks + 8 sticks = <<108+54+8=170>>170 sticks
+Then divide the total number of sticks by the number of sticks she burns per hour to find the total number of hours she can keep warm: 170 sticks / 5 sticks/hour = <<170/5=34>>34 hours

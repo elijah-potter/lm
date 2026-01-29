@@ -1,0 +1,4 @@
+The post office receives 60 letters and 20 packages per day. How many pieces of mail does it handle in six months if all the months have 30 days?
+First find the total number of pieces of mail the post office receives per day: 60 letters + 20 packages = <<60+20=80>>80 pieces of mail
+Then multiply the daily amount of mail by the number of days per month: 80 pieces/day * 30 days/month = <<80*30=2400>>2400 pieces/month
+Then multiply that number by 6 to find the total number of pieces of mail handled: 2400 pieces/month * 6 months = <<2400*6=14400>>14400 pieces

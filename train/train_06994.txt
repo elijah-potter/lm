@@ -1,0 +1,6 @@
+Tom paints a room that has 5 walls.  Each wall is 2 meters by 3 meters.  John can paint 1 square meter every 10 minutes.  He has 10 hours to paint everything.  How many hours does he have to spare?
+Each wall is 2*3=<<2*3=6>>6 square meters
+So each wall takes 6*10=<<6*10=60>>60 minutes to paint
+So it takes 60/60=<<60/60=1>>1 hour to paint each wall
+That means in total it takes 5*1=<<5*1=5>>5 hours to paint
+So he has 10-5=<<10-5=5>>5 hour left after finishing painting

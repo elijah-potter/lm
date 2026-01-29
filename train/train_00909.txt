@@ -1,0 +1,6 @@
+John runs a telethon to raise money.  For the first 12 hours, he generates $5000 per hour.  The remaining 14 hours, he generates 20% more per hour.  How much total money does he make?
+He gets 12*5000=$<<12*5000=60000>>60000 for the first 12 hours
+For the next 14 hours, he gets 5000*.2=$<<5000*.2=1000>>1000 more per hour
+So he gets 5000+1000=$<<5000+1000=6000>>6000 per hour
+So he gets 6000*14=$<<6000*14=84000>>84000
+So in total, he makes 84000+60000=$<<84000+60000=144000>>144,000

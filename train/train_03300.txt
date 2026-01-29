@@ -1,0 +1,6 @@
+Karen is planning writing assignments for her fifth grade class. She knows each short-answer question takes 3 minutes to answer, each paragraph takes 15 minutes to write, and each essay takes an hour to write. If Karen assigns 2 essays and 5 paragraphs, how many short-answer questions should she assign if she wants to assign 4 hours of homework total?
+First figure out how many minutes 4 hours is: 4 hours * 60 minutes/hour = <<4*60=240>>240 minutes
+Then figure out how long the two essays will take by multiplying the time per essay by the number of essays: 2 essays * 1 hour/essay * 60 minutes/hour = <<2*1*60=120>>120 minutes
+Use the same method to find the total time spent writing paragraphs: 15 minutes/paragraph * 5 paragraphs = <<15*5=75>>75 minutes
+Now subtract the time spent on essays and paragraphs from the total time to find the time spent on all the short answer questions: 240 minutes - 120 minutes - 75 minutes = <<240-120-75=45>>45 minutes
+Finally, divide the total time spent on short-answer questions by the time per question to find the number of questions: 45 minutes / 3 minutes/question = <<45/3=15>>15 questions

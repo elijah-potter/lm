@@ -1,0 +1,4 @@
+A patient is receiving treatment through a saline drip which makes 20 drops per minute. If the treatment lasts 2 hours, and every 100 drops equal 5 ml of liquid, how many milliliters of treatment will the patient receive after the 2 hours have passed?
+The total of minutes the treatment will take is 2 hours x 60 minutes/hour = <<2*60=120>>120 minutes
+After 120 minutes has passed the total amount of drops that the patient will receive is 20 drops/minute x 120 minutes = <<20*120=2400>>2400 drops
+Knowing the number of drops, we know that the patient has taken 2400 drops x 5 ml/100 drops = 120 ml

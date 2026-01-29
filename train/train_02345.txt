@@ -1,0 +1,4 @@
+Olivia's insurance premium starts out at $50/month. It goes up 10% for every accident and $5/month for every ticket. If she gets in one accident and gets 3 tickets, what's her new insurance premium?
+First find the increase due to the accident: $50 * 10% = $<<50*10*.01=5>>5
+Then find the total increase due to the tickets: $5/ticket * 3 tickets = $<<5*3=15>>15
+Then add both increases to the base price to find the new price: $50 + $5 + $15 = $<<50+5+15=70>>70

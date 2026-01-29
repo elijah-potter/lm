@@ -1,0 +1,7 @@
+Jean is wanted on 3 counts of arson, 2 burglary charges, and six times as many petty larceny as burglary charges. If each arson count has a 36-month sentence, each burglary charge is 18 months and each petty larceny charge is 1/3rd as long as a burglary charge, how many months in jail is Jean facing?
+First find the total time for the burglary charges: 18 months/charge * 2 charges = 36 months
+Then find the total time for the arson charges: 3 counts * 36 months/count = <<3*36=108>>108 months
+Then find the time per larceny charge: 18 months / 3 = <<18/3=6>>6 months
+Then find the total number of larceny charges: 2 charges * 6 = <<2*6=12>>12 charges
+Then find the total time for the larceny charges: 6 months/charge * 12 charges = 72 months
+Then add up the time for all the charges to find the total jail time: 36 months + 72 months + 108 months = <<36+72+108=216>>216 months

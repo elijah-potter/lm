@@ -1,0 +1,7 @@
+Jason is planning a parking garage that will have 12 floors. Every 3rd floor has a gate where drivers have to show ID, which takes two minutes. To get from one floor to the next, drivers have to drive 800 feet at 10 feet/second. How long, in seconds, does it take to get to the bottom of the garage from the top?
+First find the total number of gates someone has to pass through: 12 floors / 3 floors/gate = <<12/3=4>>4 gates
+Then find the total time someone spends waiting at the gates: 4 gates * 2 minutes/gate = <<4*2=8>>8 minutes
+Then convert that time to seconds: 8 minutes * 60 seconds/minute = <<8*60=480>>480 seconds
+Then find the time to drive through one floor in seconds: 800 feet / 10 feet/second = <<800/10=80>>80 seconds
+Then multiply the time per floor by the number of floors to find the total driving time: 80 seconds/floor * 12 floors = 960 seconds
+Then add the total driving time to the total time waiting at the gates to find the total time to get to the bottom: 960 seconds + 480 seconds = <<960+480=1440>>1440 seconds

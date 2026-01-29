@@ -1,0 +1,9 @@
+Blake and Kelly are having a contest to see who can run the most in 15 minutes. They decide to do it on a football field that is 100 yards long. Blake runs back and forth 15 times. Kelly runs back and forth once, and then decides that she doesn't want to run next to Blake, so she starts to run to the 40-yard line and back. She does this 34 times. How much farther does the winner run than the loser?
+Blake runs 200 yards for each back and forth because 100 x 2 = 200
+He runs 3000 yards in total because 200 x 15 = <<200*15=3000>>3000
+Kelly runs 200 yards at first because 100 x 2 = <<100*2=200>>200
+She runs 80 yards each time she does a back and forth to the 40-yard line because 40 x 2 = <<40*2=80>>80
+She runs 2720 from these back and forth because 34 x 80 = <<34*80=2720>>2720
+She runs 2920 in total because 2720 + 200 = <<2720+200=2920>>2920
+Blake won because 3000 > 2920
+The winner ran 80 yards more than the loser because 3000 - 2920 = <<3000-2920=80>>80

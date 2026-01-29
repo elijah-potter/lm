@@ -1,0 +1,5 @@
+Chad has 100 apples and each apple has different sizes and different price ranges. Each small apple cost $1.5, medium apple cost $2, and big apples cost $3. If Donny bought 6 small and medium apples and also 8 big apples, how much will Donny have to pay for all of it?
+Donny was charged $1.5 x 6 = $<<1.5*6=9>>9 for the small apples.
+He was charged $2 x 6 = $<<2*6=12>>12 for the medium apples.
+And he was also charged $8 x 3 = $<<8*3=24>>24 for the big apples.
+Therefore, Donny has to pay $9 + $12 + $24 = $<<9+12+24=45>>45 for all the apples.

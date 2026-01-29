@@ -1,0 +1,6 @@
+Darryl sells melons on the side of the road. He sells cantaloupes for $2 each and honeydews for $3. He started the day with 30 cantaloupes and 27 honeydews. He accidentally dropped a couple of cantaloupes and three of the honeydews turned out to be rotten. At the end of the day he had 8 cantaloupes and 9 honeydews left. How much money did he make?
+He dropped two cantaloupes and had 8 left over at the end of the day, so he sold 30 - 2 - 8 = <<30-2-8=20>>20 cantaloupes.
+Three honeydews were rotten, and he had 9 left at the end of the day, so he sold 27 - 3 - 9 = <<27-3-9=15>>15 honeydews.
+He sold 20 cantaloupes * $2/cantaloupe = $<<20*2=40>>40 in cantaloupes
+He also sold 15 honeydews * $3/honeydew = $<<15*3=45>>45 in honeydews.
+Altogether he made $40 + $45 = $<<40+45=85>>85

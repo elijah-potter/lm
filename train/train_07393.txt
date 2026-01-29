@@ -1,0 +1,7 @@
+Gina chooses what she and her sister will watch on Netflix three times as often as her sister does. If her sister watches a total of 24 shows on Netflix per week, and each show is 50 minutes long, how many minutes of Netflix does Gina get to choose?
+Let g be the number of shows Gina chooses and s be the number her sister chooses. We know that g = 3s and g + s = 24
+Substituting the first equation into the second equation, we get 3s + s = 24
+Combining like terms, we get 4s = 24
+Dividing both sides by 4, we get s = 6
+Substituting this value back into g = 3s, we get g = 3 * 6 = <<3*6=18>>18
+Then multiply the number of shows by the length of each show in minutes to find the total number of minutes Gina chooses: 18 shows * 50 minutes/show = <<18*50=900>>900 minutes

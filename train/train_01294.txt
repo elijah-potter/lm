@@ -1,0 +1,6 @@
+Jimmy and Irene go shopping for clothes on a Tuesday, where senior citizens get a 10% discount on their purchases.  Jimmy picks out 3 shorts from the $15 rack.  Irene grabs 5 shirts from the $17 rack.  How much money do they give to the cashier?
+Jimmy’s shorts cost 3 x $15 = $<<3*15=45>>45.
+Irene’s shirts cost 5 x $17 = $<<5*17=85>>85.
+Total cost for the clothes is $45 + $85 = $<<45+85=130>>130.
+10% discount on the clothes is $130 x 10% = $<<130*10*.01=13>>13.
+They give the cashier $130 - $13 = $<<130-13=117>>117.

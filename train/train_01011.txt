@@ -1,0 +1,4 @@
+Erin works in the school cafeteria serving soup. Each bowl of soup has 10 ounces, and Erin can serve 5 bowls per minute. If the pot of soup has 6 gallons of soup, how long will it take Erin to serve all the soup, rounded to the nearest minute? (There are 128 ounces to a gallon.)
+First find the number of ounces Erin serves per minute: 10 ounces/bowl * 5 bowls/minute = <<10*5=50>>50 ounces/minute
+Then find the number of ounces in the pot: 6 gallons * 128 ounces/gallon = <<6*128=768>>768 ounces
+Then divide the total amount of soup by the amount of soup Erin serves per minute: 768 minutes / 50 ounces/minute = <<768/50=15.36>>15.36 minutes, which rounds down to 15 minutes

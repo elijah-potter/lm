@@ -1,0 +1,4 @@
+There are 4 trains waiting at a train station and each train has 4 carriages. Each carriage has 3 rows of wheels and the rows of wheels have 5 wheels each. How many wheels are at the train station?
+Each carriage has 3 rows of wheels * 5 wheels per row = <<3*5=15>>15 wheels.
+So each train has 4 carriages * 15 wheels per carriage = <<4*15=60>>60 wheels.
+There is therefore a total of 4 trains * 60 wheels per train = <<4*60=240>>240 wheels at the train station.

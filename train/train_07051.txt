@@ -1,0 +1,5 @@
+On a construction site, a mason has to build 6 courses of a wall, each having 10 bricks per course. He has to build 4 such walls and realized he won't be able to finish two courses of the last wall because there were not enough bricks. What's the total number of bricks that he has used?
+If he has to build 4 walls, each having 6 courses, the total number of courses to be built is 4 * 6 = <<4*6=24>>24 courses.
+If each course has 10 bricks, then the total of bricks for the courses is 24 * 10 = <<24*10=240>>240 bricks.
+The total number of bricks missing to finish the last wall is 2 * 10 = <<2*10=20>>20 bricks.
+The total number of used bricks is 240 - 20 = <<240-20=220>>220 bricks.

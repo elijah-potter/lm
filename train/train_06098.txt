@@ -1,0 +1,6 @@
+John has 25 horses.  He feeds each horse twice a day and feeds them 20 pounds of food at each feeding.  He buys half ton bags of food.  How many of those will he have to buy in 60 days?
+He feeds each horse 2*20=<<2*20=40>>40 pounds of food a day
+So he uses 40*25=<<40*25=1000>>1000 pounds of food a day
+That means in 60 days he uses 60*1000=<<60*1000=60000>>60000 pounds of food
+Each bag of food is 2000*.5=<<2000*.5=1000>>1000 pounds
+So he needs to buy 60000/1000=<<60000/1000=60>>60 bags of food

@@ -1,0 +1,5 @@
+Jack and Jill went up the hill to fetch water to fill a 600 gallon tank. Each bucket is five gallons. Jack is stronger, and is able to carry two buckets of water at a time, but Jill can only manage one. Also, Jack can complete three trips to the well and back in the time it takes Jill to make two trips. How many trips will Jill make before the tank is filled?
+Jack is able to carry two 5-gallon buckets of water per trip, or 2 * 5 = 10 gallons of water. Jill can only carry one bucket per trip, or 5 gallons.
+Jack completes 3 trips to the well and back for every 2 trips Jill completes, so in that time they have both together carried 3 Jack trips * 2 buckets per Jack trip * 5 gallons per bucket + 2 Jill trips * 1 bucket per Jill trip * 5 gallons per bucket = 30 gallons + 10 gallons = <<3*2*5+2*1*5=40>>40 gallons of water.
+If you consider these as a single "group" of trips, it will take 600 gallons / 40 gallons per "group" of trips = <<600/40=15>>15 groups of trips.
+As each of these "groups" of trips consists of two Jill trips, Jill will make 15 * 2 = <<15*2=30>>30 trips to the well and back before the tank is filled.

@@ -1,0 +1,5 @@
+James is counting his Pokemon cards. He has 30 fire type, 20 grass type, and 40 water type. If he loses 8 of the water type and buys 14 grass type, what's the percentage chance (rounded to the nearest integer) that a randomly picked card will be a water type?
+First find the final number of grass type Pokemon: 20 grass type + 14 grass type = <<20+14=34>>34 grass type
+Then find the final number of water type Pokemon: 40 water type - 8 water type = <<40-8=32>>32 water type
+Then add the number of each type of Pokemon to find the total number: 34 Pokemon + 32 Pokemon + 30 Pokemon = <<34+32+30=96>>96 Pokemon
+Then divide the number of water type Pokemon by the total number of Pokemon and multiply by 100% to express the answer as a percentage: 32 water type / 96 Pokemon * 100% = 33.333...%, which rounds down to 33%

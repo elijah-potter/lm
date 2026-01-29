@@ -1,0 +1,5 @@
+Andy is checking to see if all the cars in the parking lot paid for their parking. 75% of the cars have valid tickets, and 1/5th that number have permanent parking passes. If there are 300 cars in the parking lot, how many people tried to park in the lot without paying?
+First find how many cars have valid tickets: 75% * 300 cars = <<75*.01*300=225>>225 cars
+Then find the percentage of cars with parking passes: 75% / 5 = 15%
+Then multiply that number by the total number of cars to find the number with parking passes: 15% * 300 cars = <<15*.01*300=45>>45 cars
+Then subtract all the cars with valid forms of parking to find the number parked illegally: 300 cars - 225 cars - 45 cars = <<300-225-45=30>>30 cars

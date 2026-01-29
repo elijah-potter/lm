@@ -1,0 +1,6 @@
+A family of 6 (2 adults and 4 kids) are to divide a watermelon such that each adult gets a slice that is twice as big as that of each kid. What percentage of the watermelon does each adult get?
+Let x be the percentage of watermelon that each adult gets.
+Since each kid gets half of what each adult gets, each kid gets x/2 percent of the watermelon
+So the watermelon gets split into 2*x and 4*(x/2) parts by percentage
+The percentages have to sum up to 100 so 2x+2x = 100 (after simplification)
+x = 100/4 = <<100/4=25>>25, which means each adult gets 25% of the watermelon.

@@ -1,0 +1,5 @@
+Amiyah is cutting some trees to build a cow shade. For every tree she cuts, she plants 5 new trees. If there were 400 trees on her farm and she cut 20% of them, calculate the total number of trees on the farm.
+The number of trees that Amiyah cut is 20/100*400 = <<20/100*400=80>>80
+The number of trees remaining on the farm after she cut 80 trees is 400-80 = <<400-80=320>>320
+For every tree that Amiyah cut, she plants 5 new trees, and since she cut 80 trees, she planted 80*5 = <<80*5=400>>400 new trees.
+The total number of trees on the farm is now 320+400 = <<320+400=720>>720 trees.

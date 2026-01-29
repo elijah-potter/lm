@@ -1,0 +1,8 @@
+Ben starts each day with $50, spends $15 every day and saves the rest. After a few days, his mom doubled his total savings and his dad gave him an additional $10. If he now has $500, How many days have elapsed?
+Let the number of days be x
+He saves $50-$15=$<<50-15=35>>35 each day
+After x days he had saved $35*x=$35x
+His mom doubled his savings to give $35x*2=$70x
+His dad added $10 to give $70x+$10=$500
+Subtracting 10 from both sides of the equation formed gives $70x=490
+Dividing both sides by $70 give x=7 days

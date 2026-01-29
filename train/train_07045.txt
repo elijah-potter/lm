@@ -1,0 +1,4 @@
+Otto’s local kitchen supply store charges $5.00 for the first knife that you need sharpened.  They charge $4.00 for the next 3 knives and $3.00 for any knife after that.  If Otto has 9 knives that need to be sharpened, how much will it cost to sharpen his knives?
+Knives 2, 3 & 4 will cost $4.00 each to sharpen so that’s 3*4 = $12.00
+Knives 5-9 will cost $3.00 each to sharpen so that’s 5*3 = $<<5*3=15.00>>15.00
+The first knife will cost $5.00, the next 3 cost $12.00 and the rest cost $15.00 for a total of 5+12+15 = $<<5+12+15=32.00>>32.00

@@ -1,0 +1,5 @@
+In a certain forest, there are 4 species of trees: oak, pine, spruce, and birch. There is a total of 4000 trees in the forest. Spruces make up 10% of all the trees, and pines 13%. There are as many oaks as spruces and pines put together. How many birches are there in the forest?
+There are 10/100 * 4000 = <<10/100*4000=400>>400 spruces in the forest
+There are 13/100 * 4000 = <<13/100*4000=520>>520 pines in the forest.
+There are as many oaks as pines and spruces together, so there are 400 + 520 = <<400+520=920>>920 oaks.
+Therefore there are 4000 - 920 - 520 - 400 = <<4000-920-520-400=2160>>2160 birches.

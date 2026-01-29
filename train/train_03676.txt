@@ -1,0 +1,5 @@
+George wants to borrow $100 from a loan shark. The finance fee starts at 5% and doubles every week. If George plans to borrow for 2 weeks, how much in fees will he have to pay?
+After the first week, the fee will be $100 * 5% = $<<100*5*.01=5>>5.
+For the second week, the finance percentage will be 5% * 2 = 10%.
+George will have to pay a fee of $100 * 10% = $<<100*10*.01=10>>10 for the second week.
+In total, George will be charged $5 + $10 = $<<5+10=15>>15 in fees.

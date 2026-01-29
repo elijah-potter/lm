@@ -1,0 +1,5 @@
+A park warden has issued 24 citations over the past three hours. He issued the same number for littering as he did for off-leash dogs, and he issued double the number of other citations for parking fines. How many littering citations did the warden issue?
+Let L be the number of littering citations the warden issued.
+He issued 2L citations for littering and off-leash dogs, and 2 * 2L = <<2*2=4>>4L citations for parking fines.
+In all, he issued 2L + 4L = 6L = 24 citations.
+Thus, he issued L = 24 / 6 = <<24/6=4>>4 citations for littering.

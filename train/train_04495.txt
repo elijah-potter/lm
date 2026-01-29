@@ -1,0 +1,9 @@
+Thomas started saving for a car almost 2 years ago. For the first year, his weekly allowance was $50. In the second year, he got a job that pays $9 an hour at a coffee shop and worked 30 hours a week, so his parents discontinued his allowance. If the car he wants to buy is $15,000 and he spends $35 a week on himself, how much more money does Thomas need to buy the car by the end of the 2 years?
+There are 52 weeks in a year.
+For the first year, Thomas received 52 x 50 = $<<52*50=2600>>2600
+In the second year, Thomas earned 9 x 30 = $<<9*30=270>>270 a week
+In a year, Thomas earned 52 x 270 = $<<52*270=14040>>14,040
+The total for the two years is 14040+2600 = <<14040+2600=16640>>16640
+In 2 years, Thomas' weekly expenses amounted to $35 x (52 x 2) = $35 x 104 = $<<35*52*2=3640>>3640
+By the end of 2 years, Thomas would have saved $16640 - $3640= <<16640-3640=13000>>13000
+Thomas still needs $15,000 - 13000 = $<<15000-13000=2000>>2000

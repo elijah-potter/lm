@@ -1,0 +1,8 @@
+June has $500 for buying school supplies for the new school year. She buys four maths books at $20 each, six more science books than maths books at $10 each, and twice as many art books as maths books at $20 each. If she also bought music books, how much money did she spend on music books?
+The total cost of maths books is 4*20 = $<<4*20=80>>80$.
+She bought six more science books than maths books which totals 6+4 = <<6+4=10>>10 books.
+If each science book cost her $10 she spent 10*10 = $<<10*10=100>>100 on science books.
+There were twice as many art books as maths books which total 2*4 = <<2*4=8>>8
+The total cost for art books is 8*20 = $<<8*20=160>>160
+The total amount that she used for maths, science, and art books is 160+100+80 = $<<160+100+80=340>>340
+The amount she spent on music books is 500 - 340 = $<<500-340=160>>160

@@ -1,0 +1,5 @@
+Fran's school just instituted a school uniform policy. Each student needs to buy five complete uniforms, each consisting of pants, shirt, tie and socks. The pants cost $20, the shirt costs twice as much as the pants, the tie costs 1/5 as much as the shirt and the socks cost $3/pair. How many dollars will each student need to spend?
+First find the total cost of the shirt: $20 * 2 = $<<20*2=40>>40
+Then find the total cost of the tie: $40 / 5 = $<<40/5=8>>8
+Then find the cost of one uniform set: $20 + $40 + $8 + $3 = $<<20+40+8+3=71>>71
+Then multiply the cost of each set by the number of sets each student has to buy to find the total cost: $71/set * 5 sets = $<<71*5=355>>355

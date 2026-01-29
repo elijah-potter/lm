@@ -1,0 +1,6 @@
+An employee makes 30 dollars an hour for the first 40 hours in the workweek and an additional 50% for every hour above 40 in the week.  If he works 6 hours for the first 3 days in the workweek and twice as many hours per day for the remaining 2 days, how much money did he make?
+His overtime pay per hour is 30*1.5=$<<30*1.5=45>>45 per hour
+He works 6*2=<<6*2=12>>12 hours per day for the last two days.
+He works 6+6+6+12+12=<<6+6+6+12+12=42>>42 hours
+He gets 42-40=<<42-40=2>>2 hours of overtime.
+He makes 40*30+2*45=$<<40*30+2*45=1290>>1290 for the week

@@ -1,0 +1,4 @@
+Denmark wants to order pizza.  For toppings, he has 3 cheese, 4 meat and 5 vegetable options, one of which is peppers. He can have only one selection from each topping category (one cheese, one meat and one vegetable). However, if he chooses to have pepperoni, he cannot have peppers. How many topping combinations does he have total?
+Permutate the ingredients. 3 cheeses * 4 meats * 5 vegetables = <<3*4*5=60>>60 choice
+However, we must take out the combinations that could have pepperoni and peppers, 1 cheese +1 meat *+1 vegetable = <<1+1+1=3>>3 bad choices
+60 - 3 = <<60-3=57>>57 choices

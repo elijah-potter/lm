@@ -1,0 +1,5 @@
+Kimiko watches four YouTube videos. The first video is 2 minutes long, the second video is 4 minutes and 30 seconds, and the last two videos are equal in length. If she spends a total of 510 seconds watching YouTube, how many seconds long was each of the last two videos?
+First convert the length of the first video to seconds: 2 minutes * 60 seconds/minute = <<2*60=120>>120 seconds
+Then convert the length of the second video to seconds: 4 minutes * 60 seconds/minute + 30 seconds = 240 seconds + 30 seconds = <<4*60+30=270>>270 seconds
+Now subtract the length of the first two videos from the total time Kimiko spent watching to find the combined length of the last two videos: 510 seconds - 120 seconds - 270 seconds = <<510-120-270=120>>120 seconds
+Now divide the combined length by the number of videos to find each video's length: 120 seconds / 2 = <<120/2=60>>60 seconds

@@ -1,0 +1,4 @@
+Hayden has a tank with a small hole in the bottom. The tank starts with 40 gallons of water. It loses 2 gallons of water per hour. Hayden does not add any water for the first two hours. He adds 1 gallon of water to the tank in hour three. He adds three gallons of water to the tank in the fourth hour. How much water is left in the tank at the end of the fourth hour?
+Over the four hours, the tank loses 2 * 4 = <<2*4=8>>8 gallons of water.
+Hayden adds a total of 1 + 3 = <<1+3=4>>4 gallons of water.
+At the end of the four hours, there is 40 - 8 + 4 = <<40-8+4=36>>36 gallons of water left in the tank.

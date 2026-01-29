@@ -1,0 +1,8 @@
+Marcus ordered 5 croissants at $3.00 apiece, 4 cinnamon rolls at $2.50 each, 3 mini quiches for $4.00 apiece and 13 blueberry muffins that were $1.00 apiece.  At check out, Marcus shows his loyalty card that gives him 10% off of his purchase.  What is Marcus' total bill?
+5 croissants cost $3.00 each so they cost 5*3 = $<<5*3=15.00>>15.00
+4 cinnamon rolls cost $2.50 each so they cost 4*2.5 =$<<4*2.5=10.00>>10.00
+3 mini quiches cost $4.00 each so they cost 3*4 = $<<3*4=12.00>>12.00
+13 blueberry muffins cost $1.00 each so the cost 13*1 = $<<13*1=13.00>>13.00
+All total, his pastries costs 15+10+12+13 = $<<15+10+12+13=50.00>>50.00
+His has a 10% coupon for his $50.00 purchase so that saves him .10*50 = $<<10*.01*50=5.00>>5.00
+His total bill is $50 minus his discount of $5.00 so 50-5 = $<<50-5=45.00>>45.00

@@ -1,0 +1,5 @@
+A restaurant is counting their sales for the day. They sold 10 meals at $8 each, 5 meals at $10 each, and 20 meals at $4 each. In dollars, how much money did the restaurant make throughout the day?
+From the first set of meals, the restaurant earned 10 meals * $8 = $<<10*8=80>>80.
+From the second set of meals, the restaurant earned 5 meals * $10 = $<<5*10=50>>50.
+From the third set of meals, the restaurant earned 20 meals * $4 = $<<20*4=80>>80.
+In total, the restaurant earned $80 + $50 + $80 = $<<80+50+80=210>>210.

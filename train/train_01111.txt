@@ -1,0 +1,3 @@
+A doctor needs to give medicine to a child, and he knows that he cannot give the same amount of medicine that he would give to an adult. The instructions say that for every kilogram of weight the child must be given 5 ml of medicine. The doctor knows that the child weighs 30 kilograms and that also the full dose has to be given in 3 equal parts. How many milligrams will each part of the dose be?
+The total number of ml needed is 30 kg x 5 ml/kg = <<30*5=150>>150 ml
+Each dose has to be 150 ml / 3 doses = <<150/3=50>>50 ml/dose

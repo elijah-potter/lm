@@ -1,0 +1,5 @@
+Jake is walking through the Museum of Entomology. He sees 80 spiders with 8 legs each, 90 insects with 6 legs each, and 3 rare mutant invertebrates with 10 legs each. How many legs does Jake see total?
+First find the total number of spider legs: 80 spiders * 8 legs/spider = <<80*8=640>>640 legs
+Then find the total number of insect legs: 90 spiders * 6 legs/spider = <<90*6=540>>540 legs
+Then find the total number of mutant invertebrate legs: 3 mutants * 10 legs/mutant = <<3*10=30>>30 legs
+Then add the number of each kind of leg to find the total he saw: 640 legs + 540 legs + 30 legs = <<640+540+30=1210>>1210 legs

@@ -1,0 +1,6 @@
+It costs Molly $5 per package to send Christmas gifts to her relatives by mail.  She has two parents and three brothers, and each of her brothers is married with 2 children each.  If she sends one package to each relative by mail, how much does it cost her to send all of the gifts by mail to her relatives, in dollars?
+Molly has two parents and three brothers, which totals 2+3=<<2+3=5>>5 parents and siblings.
+Since each brother is married with 2 children, then each brother has a family containing 1+2=<<1+2=3>>3 people.
+Thus, the families of the three brothers contain an additional 3*3=<<3*3=9>>9 relatives.
+In total, Molly has 5+9=<<5+9=14>>14 relatives.
+At $5 per package, Molly will spend 14*$5=$<<14*5=70>>70 to mail the packages.

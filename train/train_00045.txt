@@ -1,0 +1,5 @@
+James is a first-year student at a University in Chicago. He has a budget of $1000 per semester. He spends 30% of his money on food, 15% on accommodation, 25% on entertainment, and the rest on coursework materials. How much money does he spend on coursework materials?
+Accommodation is 15% * $1000=$<<15*.01*1000=150>>150
+Food is          30% * $1000=$<<30*.01*1000=300>>300
+Entertainment is   25% * $1000=$<<25*.01*1000=250>>250
+Coursework materials are thus $1000-($150+$300+$250) = $300

@@ -1,0 +1,3 @@
+Nick has 60 cans. Each can takes up 30 square inches of space before being compacted and 20% of that amount after being compacted. How much space do all the cans take up after being compacted?
+First find the total amount of space the cans take up before being compacted: 60 cans * 30 sq in / can = <<60*30=1800>>1800 sq in
+Then multiply that amount by the percentage of space they take up after being compacted: 1800 sq in * 20% = <<1800*20*.01=360>>360 sq in

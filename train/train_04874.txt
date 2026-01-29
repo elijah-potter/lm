@@ -1,0 +1,6 @@
+Erik's dog can run 24 miles per hour. It is chasing a rabbit that can run 15 miles per hour. The rabbit has a head start of .6 miles. How many minutes does it take for the dog to catch up to the rabbit?
+The dog runs .4 miles per minute because 24 / 60 = <<24/60=.4>>.4
+The rabbit runs .25 miles per minute because 15 / 60 = <<15/60=.25>>.25
+We know that .4(Number of Minutes) = .25(Number of Minutes) + .6
+Therefore .15(Number of Minutes) = .6
+Therefore (Number of Minutes) = 4

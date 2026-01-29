@@ -1,0 +1,5 @@
+Jason has to drive home which is 120 miles away. If he drives at 60 miles per hour for 30 minutes, what speed does he have to average for the remainder of the drive to get there in exactly 1 hour 30 minutes?
+Jason drives 60 miles per hour * 0.5 hours = <<60*0.5=30>>30 miles initially
+He needs to drive an additional 120 miles total - 30 miles driven = <<120-30=90>>90 more miles
+He has 1.5 hours - 0.5 hours = <<1.5-0.5=1>>1 hour to drive the remaining distance
+He must average 90 miles per hour to drive the remaining 90 miles in 1 hour

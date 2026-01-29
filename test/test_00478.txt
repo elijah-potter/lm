@@ -1,0 +1,3 @@
+Nine of the kids in Gina's class are allergic to dairy, 6 are allergic to peanuts and 3 are allergic to both. If there are 32 kids in her class, how many aren't allergic to anything?
+First subtract the number of kids who are allergic to each item from the total number of kids: 32 kids - 6 kids - 9 kids = <<32-6-9=17>>17 kids
+Then add the number of kids who were double-counted because they're allergic to both things: 17 kids + 3 kids = <<17+3=20>>20 kids

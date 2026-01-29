@@ -1,0 +1,5 @@
+Jane is sewing sequins onto her trapeze artist costume. She sews 6 rows of 8 blue sequins each, 5 rows of 12 purple sequins each, and 9 rows of 6 green sequins each. How many sequins does she add total?
+First find the total number of blue sequins: 6 rows * 8 sequins/row = <<6*8=48>>48 sequins
+Then find the total number of purple sequins: 5 rows * 12 sequins/row = <<5*12=60>>60 sequins
+Then find the total number of green sequins: 9 rows * 6 sequins/row = <<9*6=54>>54 sequins
+Then add the number of each color of sequin to find the total number of sequins: 48 sequins + 60 sequins + 54 sequins = <<48+60+54=162>>162 sequins

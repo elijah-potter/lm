@@ -1,0 +1,4 @@
+A machine at the soda factory can usually fill a barrel of soda in 3 minutes. However this morning a leak went unnoticed and it took 5 minutes to fill one barrel. If the leak remains undetected, how much longer will it take to fill 12 barrels of soda than on a normal day when the machine works fine?
+On a regular day it would take 3*12=<<3*12=36>>36 minutes
+With the leak it will take 5*12=<<5*12=60>>60 minutes
+It will take 60-36=<<60-36=24>>24 more minutes if the leak goes undetected

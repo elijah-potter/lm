@@ -1,0 +1,7 @@
+Mary is making ice cubes with fruit frozen in them for a cocktail party. She makes some strawberry cubes, and a number of blueberry cubes equal to 5 times the number of strawberry cubes minus 4. If she makes 116 ice cubes total, how many blueberry cubes does she make?
+Let s be the number of strawberry cubes and b be the number of blueberry cubes. We know that b = 5s - 4 and s + b = 116.
+Substituting the first equation into the second, we get s + 5s - 4 = 116.
+Combining like terms, we get 6s - 4 = 116
+Adding 4 to both sides, we get 6s = 120
+Dividing both sides by 6, we get s = 20
+Substituting this value back into the equation b = 5s - 4, we get b = 96

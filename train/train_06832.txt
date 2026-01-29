@@ -1,0 +1,6 @@
+The class has to guess how many jellybeans are in a jar the teacher brought in. He lets 4 students make their guesses. The first thinks it contains 100 jellybeans. The second says there are 8 times as many. The third guesses 200 less than the third. The fourth takes the average of the first three guesses, and then adds 25 to it. How many jellybeans did the fourth student guess?
+The second student guessed 800 because 8 x 100 = <<800=800>>800
+The third guessed 600 because 800 - 200 = <<800-200=600>>600
+The total guesses of the first three is 1500 because 100 + 800 + 600 = <<100+800+600=1500>>1500
+The average of the first three guesses is 500 because 1500 / 3 = <<1500/3=500>>500
+The fourth student guessed 525 because 500 + 25 = <<500+25=525>>525

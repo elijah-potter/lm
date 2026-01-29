@@ -1,0 +1,4 @@
+Jill is the hairdresser for the school's dance team and has to braid 8 dancers' hair. If each dancer has five braids and each braid takes 30 seconds, how many minutes will it take to braid all the dancers' hair?
+First find the total number of braids among all the dancers: 8 dancers * 5 braids/dancer = <<8*5=40>>40 braids
+Then multiply by that the time in seconds per braid to find the total time in seconds: 40 braids * 30 seconds/braid = <<40*30=1200>>1200 seconds
+Then divide the time in seconds by the number of seconds per minute to find the time in minutes: 1200 seconds / 60 seconds/minute = <<1200/60=20>>20 minutes

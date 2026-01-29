@@ -1,0 +1,3 @@
+Ron is fed up with the pothole in front of his house. If it doesn't get fixed, it's going to do $450 worth of damage to his car. Unfortunately, the city council refuses to fix it, and will fine Ron $120 for unauthorized road maintenance if he fixes it himself. Ron will also have to buy 3 buckets of asphalt that each cost $25. How much money does Ron save by fixing the pothole?
+First find the total cost of the asphalt by multiplying the number of buckets by the cost per bucket: 3 buckets * $25/bucket = $<<3*25=75>>75
+Now subtract the cost of the asphalt and the fine from the cost of the damage Ron avoids: $450 - $75 - $120 = $<<450-75-120=255>>255

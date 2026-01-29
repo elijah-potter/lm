@@ -1,0 +1,9 @@
+Owen bought 12 boxes of face masks that cost $9 per box. Each box has 50 pieces of masks. He repacked 6 of these boxes and sold them for $5 per 25 pieces. He sold the remaining 300 face masks in baggies at the rate of 10 pieces of mask for $3. How much profit did he make?
+Owen bought 12 boxes for a total of $9/box x 12 boxes = $<<9*12=108>>108.
+Six boxes contains 6 boxes x 50 masks/box = <<6*50=300>>300 face masks.
+Owen made 300 masks / 25 masks/repack = <<300/25=12>>12 repacks.
+So, his revenue for selling those repacked face masks is $5 x 12 repacks = $<<5*12=60>>60.
+There are 300 masks / 10 masks/baggy = <<300/10=30>>30 baggies face masks.
+So, his revenue for that is $3/baggy x 30 baggies = $<<3*30=90>>90.
+Hence, his total revenue for all the face masks is $60 + $90 = $<<60+90=150>>150.
+This gives him a profit of $150 - $108 = $<<150-108=42>>42.

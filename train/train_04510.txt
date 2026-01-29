@@ -1,0 +1,6 @@
+An apartment complex has 4 identical buildings.  Each building has 10 studio apartments, 20 2 person apartments, and 5 4 person apartments.  How many people live in the apartment complex if it has 75% of its maximum occupancy?
+First, we find out how many people live in each building. In addition to 10 1 person apartments, as a studio apartment is for a single person, there are 20 2 person apartments meaning there are 20*2=<<20*2=40>>40 people capable of living there.
+We then find out how many people can live in the 4 person apartments by multiplying the number of available 4 person apartments by 4, performing 5*4=20 people capable of living there.
+So, in 1 building there is room for 10+40+20=<<10+40+20=70>>70 people.
+We multiply this by the 4 buildings in total, finding a maximum occupancy of 4*70=<<4*70=280>>280 people
+We then multiply this by .75 to find out how many people would live there at 75% of maximum occupancy, performing 280*.75= <<210=210>>210 people.

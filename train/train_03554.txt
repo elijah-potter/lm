@@ -1,0 +1,6 @@
+A swimming pool is being emptied through a drain at the bottom of the pool and filled by a hose at the top. The drain can empty the pool in 4 hours and the hose can fill the pool in 6 hours. The pool holds 120 liters of water. If the pool starts filled with water, how much water will be left after 3 hours?
+It takes the drain 4 hours to empty the pool, so it drains at a rate of 120 liters / 4 hours = <<120/4=30>>30 liters/hour.
+After 3 hours, the drain will have removed 3 * 30 = <<3*30=90>>90 liters of water from the pool.
+It takes the hose 6 hours to fill the pool, so it fills at a rate of 120 liters / 6 hours = <<120/6=20>>20 liters/hour.
+After 3 hours, the hose will have added 3 * 20 = <<3*20=60>>60 liters of water to the pool.
+After 3 hours, there will be 120 liters + 60 liters – 90 liters = <<120+60-90=90>>90 liters of water left in the pool.

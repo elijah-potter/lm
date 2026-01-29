@@ -1,0 +1,5 @@
+Marcus scored 5 3-point goals and 10 2-point goals. If his team scored 70 points overall, what percentage of the team's total points did Marcus score?
+First find the total number of points Marcus scored through 3-point goals: 5 goals * 3 points/goal = <<5*3=15>>15 points
+Then find the total number of points he scored through 2-point goals: 10 goals * 2 points/goal = <<10*2=20>>20 points
+Then add those amounts to find the total number of points Marcus scored: 15 points + 20 points = <<15+20=35>>35 points
+Finally, divide that number by the team's total number of points and multiply by 100% to find the percentage of points Marcus scored: 35 points / 70 points * 100% = 50%

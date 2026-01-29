@@ -1,0 +1,6 @@
+Rick likes to separate his collection of books into various groups by genre.  He has 400 books in total and proceeds to divide them into two separate equally-sized categories repeatedly until he has each book in a category with 24 other books.  How many times must he break these groups into smaller groups to accomplish this?
+Rick starts with 400 books and divides them into two categories of equal size, meaning there are two categories of 400/2= <<400/2=200>>200 books.
+Rick repeats this process again, dividing the 200 book categories into equal halves, leaving him with 200/2=<<200/2=100>>100 books in each.
+Rick repeats this process again, dividing the 100 book categories into equal halves, leaving him with 100/2=<<100/2=50>>50 books in each.
+Rick repeats this process again, dividing the 50 book categories into equal halves, leaving him with 50/2=<<50/2=25>>25 books in each.
+Since Rick is looking for categories with 25 books in each, he accomplishes this by the 4th step.

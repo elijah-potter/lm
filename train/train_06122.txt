@@ -1,0 +1,6 @@
+Carrie wants to take a trip to New York. She can get a 20% discount on an $850 flight with Delta Airlines. She can also save 30% off an $1100 flight with United Airlines. How much money would she save by choosing the cheapest flight?
+The discount for the Delta flight would come to $850 * 0.20 = $<<850*0.20=170>>170.
+The final price of the Delta flight would come to $850 - $170 = $<<850-170=680>>680.
+The discount of the United flight would come to $1100 * 0.30 = $<<1100*0.30=330>>330.
+The final price of the United flight would come to $1100 - $330 = $<<1100-330=770>>770.
+The Delta flight would be cheaper than the United flight by $770 - $680 = $<<770-680=90>>90.

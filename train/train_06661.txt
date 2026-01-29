@@ -1,0 +1,8 @@
+James started a food fight in his school's cafeteria, and the school administration is making him work off the cost of all the food he wasted at minimum wage ($8). James has to pay for 20 wasted pounds of meat at $5/pound, 15 wasted pounds of fruits and vegetables at $4/pound, 60 wasted pounds of bread products at $1.50/pound, and 10 hours of time-and-a-half pay for the janitorial staff, who normally make $10/hour. How many hours will James have to work to pay for everything?
+First find the total cost of the wasted meat: $5/pound * 20 pounds = $<<5*20=100>>100
+Then find the total cost of the wasted vegetables: $4/pound * 15 pounds = $<<4*15=60>>60
+Then find the total cost of the wasted bread products: $1.50/pound * 60 pounds = $<<1.5*60=90>>90
+Then find the time-and-a-half rate for the janitors: $10/hour * 1.5 = $<<10*1.5=15>>15/hour
+Then multiply that by the number of hours to find the total janitorial cost: $15/hour * 10 hours = $<<15*10=150>>150
+Then add up all the costs to find the total cost of everything: $100 + $60 + $90 + $150 = $<<100+60+90+150=400>>400
+Then divide the total James owes by his hourly wage to find how many hours he needs to work: $400 / $8/hour = <<400/8=50>>50 hours

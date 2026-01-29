@@ -1,0 +1,4 @@
+Under standard growth conditions, the bacterial strain, E.coli, has a doubling time of 20 minutes.   If 1 single bacterial cell is used to start a culture grown under standard growth conditions, how many bacterial cells will there be after the culture is grown for 4 hours?
+4 hours is 4*60=<<4*60=240>>240 minutes.
+If the doubling time is 20 minutes, then after 240 minutes, the number of bacteria would have doubled 240/20=<<240/20=12>>12 times.
+Thus, starting with only 1 bacterial cell, after 4 hours, there will be 1*2*2*2*2*2*2*2*2*2*2*2*2= 4,096 bacterial cells

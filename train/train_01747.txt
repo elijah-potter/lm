@@ -1,0 +1,6 @@
+A company has 500 employees, each paid $12 per hour, working 10 hours a day, five days a week, 4 weeks a month. In August, the amount of work increased, and the company hired 200 more people. How much money does the company pay in total per month after the new hires?
+The total pay per employee in a day is 12*10 = $<<12*10=120>>120
+An employee works for 5*4 = <<5*4=20>>20 days in a month.
+The total amount of money paid to each employee monthly is 20*120 = $<<20*120=2400>>2400
+When the number of employees increased to 500+200 = <<500+200=700>>700 after the new hires in August.
+The company pays a total of 700*2400 = $<<700*2400=1680000>>1680000 per month to its employees

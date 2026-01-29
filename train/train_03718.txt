@@ -1,0 +1,5 @@
+Mark plants some strawberries in his backyard. Every month, the number of strawberry plants doubles. After 3 months, Mark digs up 4 strawberry plants and gives them to his friend.  If he still has 20 strawberry plants, how many did he initially plant?
+First, add the 4 plants Mark gave away to the 20 he has left: 4 + 20 = <<4+20=24>>24
+Then divide this number by 2 to find how many plants Mark had after two months: 24 / 2 = <<24/2=12>>12
+Then divide that number by 2 to find how many plants Mark had after one month: 12 / 2 = <<6=6>>6
+Finally, divide that number by 2 to find out how many plants Mark initially planted: 6 / 2 = <<6/2=3>>3

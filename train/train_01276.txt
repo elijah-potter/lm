@@ -1,0 +1,4 @@
+Ginger is weaving mats out of colored straw. Each mat takes 20 red straws, 30 orange straws, and half as many green straws as orange straws. How many straws does she need to make 10 mats?
+First find the number of green straws each mat needs: 30 orange straws / 2 orange straws/green straw = 15 green straws
+Then find the total number of straws in each mat: 15 straws + 20 straws + 30 straws = <<15+20+30=65>>65 straws
+Then multiply that number by the number of mats to find the total number of straws Ginger needs: 65 straws/mat * 10 mats = <<65*10=650>>650 straws

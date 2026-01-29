@@ -1,0 +1,7 @@
+Michael is replacing the carpet in his bedroom.  The new carpet he's chosen costs $12 per square foot, plus $2 per square foot for padding underneath.  His contractor charges $4 per square foot to remove the old carpet, and $34 per square foot to install the new carpet.  His bedroom measures 18 feet by 12 feet.  How much will it cost Michael to replace the carpet?
+The room measures 18 * 12 = <<18*12=216>>216 square feet.
+The new carpet costs $12 * 216 = $<<12*216=2592>>2,592.
+The new carpet padding costs $2 * 216 = $<<2*216=432>>432.
+To remove the old carpet, the contractor will charge $4 * 216 = $<<4*216=864>>864.
+To install the new carpet, the contractor will charge $34 * 216 = $<<34*216=7344>>7,344.
+The total cost will be $864 + $2,592 + $432 + $7,344 = $11,232.

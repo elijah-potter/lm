@@ -1,0 +1,7 @@
+Sam and Jeff had a skipping competition at recess. The competition was split into four rounds. Sam completed 1 more skip than Jeff in the first round. Jeff skipped 3 fewer times than Sam in the second round. Jeff skipped 4 more times than Sam in the third round. Jeff got tired and only completed half the number of skips as Sam in the last round. If Sam skipped 16 times in each round, what is the average number of skips per round completed by Jeff?
+In round one, Jeff completed 16 - 1 = <<16-1=15>>15.
+In round two, Jeff completed 16 - 3 = <<16-3=13>>13.
+In round three, Jeff completed 16 + 4 = <<16+4=20>>20.
+In round four, Jeff completed 16 / 2 = <<16/2=8>>8.
+Jeff completed 15 + 13 + 20 + 8 = <<15+13+20+8=56>>56 skips in total.
+Jeff skipped an average of 56 / 4 = <<56/4=14>>14 skips per round.

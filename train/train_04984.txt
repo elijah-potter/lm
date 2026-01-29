@@ -1,0 +1,4 @@
+Violet is planning a hike through the desert with her dog. Violet needs 800 ml of water per hour hiked and her dog needs 400 ml of water per hour. If Violet can carry 4.8 L of water, how many hours can she and her dog spend hiking?
+First find the total amount of water Violet and her dog consume per hour: 800 ml + 400 ml = <<800+400=1200>>1200 ml
+Then divide that amount by 1000 ml/L to convert it to liters: 1200 ml / 1000 ml/L = <<1200/1000=1.2>>1.2 L
+Then divide Violet's carrying capacity by the amount of water they drink per hour to find how many hours she can hike: 4.8 L / 1.2 L/hour = 4 hours

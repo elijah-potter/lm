@@ -1,0 +1,4 @@
+4 students participated in a 200m race. If the average completion time of the last three students was 35 seconds, and the average completion time of all four runners was 30 seconds, how long (in seconds) did it take the student who came first to finish the race?
+The last 3 students had an average completion time of 35 seconds so the sum of their completion times was 3*35 = <<3*35=105>>105 seconds
+All 4 students (now including the student who came first) had an average completion time of 30 seconds, meaning the sum of their completion times is 4*30 = <<4*30=120>>120 seconds
+The student who came first spent 120-105 = <<120-105=15>>15 seconds in the race

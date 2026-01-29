@@ -1,0 +1,5 @@
+There's a sale at your favorite "Any item $10" retailer. If you buy 1 shirt you pay $10. If you buy 2, you get the second one at a 50% discount. If you buy 3, you get the third one at a 60% discount. How much money did you save if you bought 3 shirts?
+The first shirt has no (0%) discount off the regular price ($10), therefore your discount is = 0% * $10 = $<<0*.01*10=0>>0
+The second shirt has a 50% discount off the regular price ($10), therefore your discount is = 50% * $10 = $<<50*.01*10=5>>5
+The third shirt has a 60% discount of the regular price ($10), therefore your discount is = 60% * $10 = $<<60*.01*10=6>>6
+Therefore in total, you save $0 on the first shirt, $5 on the second one and $6 on the third one = 0+5+6 = $<<0+5+6=11>>11

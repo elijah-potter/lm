@@ -1,0 +1,5 @@
+Two teams are playing in a stadium with a capacity of 2000 people. The total number of people in the stadium is 3/4 of the total capacity and each person paid $20 in entry fees. What is the difference between the total amount of fees collected when the stadium was 3/4 full and if the stadium would have been full?
+When the stadium is full, the total fees charged is 2000*$20 = $<<2000*20=40000>>40000.
+When the stadium is 3/4 full, the total number of people in is 3/4*2000 = <<3/4*2000=1500>>1500 people.
+The total entry fees collected when the stadium is 3/4 full is 1500*$20 = $<<1500*20=30000>>30000.
+The difference in the total entry fees when the stadium is full and when it's 3/4 full is $40000-$30000 = $<<40000-30000=10000>>10000.

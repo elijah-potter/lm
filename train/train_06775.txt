@@ -1,0 +1,5 @@
+At a certain car dealership, 15% of the cars cost less than $15000 and 40% of the cars cost more than $20000. If there are 3000 cars at the dealership, how many of them cost between $15000 and $20000?
+15% of 3000 cars is (15/100)*3000 = <<(15/100)*3000=450>>450 cars
+40% of 3000 cars is (40/100)*3000 = <<(40/100)*3000=1200>>1200 cars
+450+1200 = <<450+1200=1650>>1650 cars which cost either less than $15000 or more than $20000
+Out of 3000 cars, there will then be 3000-1650 = <<3000-1650=1350>>1350 cars left which cost between $15000 and $20000

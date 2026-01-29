@@ -1,0 +1,6 @@
+The cost of purchasing two commodities is $827. If the purchase price of the first one exceeds the other by $127, what is the purchase price of the first commodity?
+Let X be the price of the first commodity, so the price of the second commodity is X - $127.
+The cost of purchasing two of them is X + (X - $127) = $827.
+Combining like terms, we get X*2 - $127 = $827.
+Subtracting $137 from both sides, we get X*2 = $954.
+Dividing both sides by 2, we get X = $477.

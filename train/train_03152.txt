@@ -1,0 +1,8 @@
+Jason spent 1/4 of his money and an additional $10 on some books. He then spent 2/5 of the remaining money and an additional $8 on some DVDs. If he was left with $130, how much money did he have at first?
+Let X be the money Jason had at first.
+Jason spent 1/4*X + 10 on books.
+Jason spent 2/5*[X - (1/4*X + 10)] + 8 on some DVDs.
+Jason has X - (1/4*X + 10) - {2/5*[X - (1/4*X + 10)] + 8} = $130 left.
+X - 1/4*X - 10 - 2/5*X + 1/10*X + 4 - 8 = $130.
+9/20*X - 14 = $130.
+X = $<<320=320>>320.

@@ -1,0 +1,6 @@
+Lola and Tara decide to race to the top of a 20 story building. Tara takes the elevator and Lola runs up the stairs. Lola can run up 1 story in 10 seconds. The elevator goes up a story in 8 seconds but stops for 3 seconds on every single floor. How long would it take for the slower one of Lola and Tara to reach the top floor?
+Lola climbs 20 stories in 20 stories x 10 seconds/story = <<20*10=200>>200 seconds
+Tara can go up the elevator in 8 seconds/story x 20 stories = <<8*20=160>>160 seconds without the stops at each floor.
+The elevator stops for 3 seconds on each floor for a total of 20 stories x 3 seconds/story = <<20*3=60>>60 seconds.
+In total it takes Tara 160 seconds + 60 seconds = <<160+60=220>>220 seconds to reach the top floor.
+Because 200 < 220 Lola wins.

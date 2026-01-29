@@ -1,0 +1,4 @@
+Kohen has a business selling apples. Once a week, he orders 10 boxes of apples to add to his stock. If each box has 300 apples and he sells 3/4 of his stock in a certain week, what total number of apples is not sold?
+In a week, he orders 10 * 300 = <<10*300=3000>>3000 apples.
+When 3/4 of the stock is sold, the total amount of apples sold becomes 3/4 * 3000 = <<3/4*3000=2250>>2250 apples.
+The amount of apples remaining is 3000 - 2250 = <<3000-2250=750>>750 apples.

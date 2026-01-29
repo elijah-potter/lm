@@ -1,0 +1,7 @@
+A truck can carry a maximum of 13,500 kgs of supplies. Yesterday, the truck was loaded with 100 boxes that weigh 100 kgs each. Then, it was loaded with 10 crates which weigh 60 kgs each. Today, it was loaded again with 50 sacks which weigh 50 kilograms each. How many bags weighing 40 kilograms each can we still load in the truck?
+The total weight of the boxes is 100 boxes x 100 kg/box = 10 000 kg.
+The total weight of the crates is 10 crates x 60 kg/crate = <<10*60=600>>600 kg.
+The total weight of the sacks is 50 sacks x 50 kg/sack = 2 500 kg.
+So, the total weight of the supplies that were already loaded is 10,000 kg+ 600 kg + 2500 kg = <<10000+600+2500=13100>>13,100 kg.
+Hence, the most weight that can still be loaded in the truck is 13,500 kg - 13,100 kg = <<13500-13100=400>>400 kg.
+This means 400 kg / 40 kg/bag = <<400/40=10>>10 bags can still be loaded in the truck.

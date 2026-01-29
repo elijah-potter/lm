@@ -1,0 +1,6 @@
+A parking garage near Nora's house is 4 stories tall. There are 100 spots per level. There are 58 open parking spots on the first level. There are 2 more open parking spots on the second level than on the first level, and there are 5 more open parking spots on the third level than on the second level. There are 31 open parking spots on the fourth level. How many full parking spots are there in all?
+There are 4 levels * 100 spots = <<4*100=400>>400 possible parking spots.
+The second level has 58 open spots + 2 = <<58+2=60>>60 open spots.
+The third level has 60 open spots + 5 = <<60+5=65>>65 open spots.
+Total open spots are 58 + 60 + 65 + 31 = <<58+60+65+31=214>>214 open spots.
+If there are 400 possible spots – 214 open spots = <<400-214=186>>186 full spots.

@@ -1,0 +1,7 @@
+Mark goes into the store to buy some groceries.  He buys 6 2$ cans of soup, 2 $5 loaves of bread, 2 3$ boxes of cereal, and 2 $4 gallons of milk.  When he gets to the register, he opens his wallet to pay and realizes he only has $10 bills in there.  How many $10 bills does he need to use to pay?
+Mark buys 6 $2 cans of soup, meaning he spends 6*2= <<6*2=12>>12 dollars on soup.
+Mark buys 2 $5 loaves of bread, meaning he spends 2*5= <<2*5=10>>10 dollars on bread.
+Mark buys 2 $3 boxes of cereal, meaning he spends 2*3= <<2*3=6>>6 dollars on cereal.
+Mark buys 2 $4 gallons of milk, meaning he spends 2*4= <<2*4=8>>8 dollars on milk.
+All added together, this means Mark spends 12+10+6+8= <<12+10+6+8=36>>36 dollars
+Since Mark only has $10 bills, he spends 36/10= <<36/10=3.6>>3.6 tens on it, which rounds up to 4 as you cannot spend .6 of an undividable item.

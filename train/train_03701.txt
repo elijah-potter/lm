@@ -1,0 +1,7 @@
+There are three machines in a factory. Machine A can put caps on 12 bottles in 1 minute. Machine B can put caps to 2 fewer bottles than Machine A. Machine C can put caps to 5 more bottles than Machine B. How many bottles can those three machines put caps on in 10 minutes?
+Machine A can put caps on 12 x 10 = <<12*10=120>>120 bottles in 10 minutes.
+Machine B can put caps on 12 - 2 = <<12-2=10>>10 bottles in 1 minute.
+So in 10 minutes, machine B can put caps on 10 x 10 = <<10*10=100>>100 bottles.
+Machine c can put caps on 10 + 5 = <<10+5=15>>15 bottles in 1 minute.
+So in 10 minutes, machine C can put caps on 15 x 10 = <<15*10=150>>150 bottles.
+Therefore, the three machines can put caps on 120 + 100 + 150 = <<120+100+150=370>>370 bottles in 10 minutes.

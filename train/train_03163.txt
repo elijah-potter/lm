@@ -1,0 +1,9 @@
+If I give my brother 2 marbles I will have double his number of marbles, but my friend will have triple the number I do. The total number of marbles we have together is 63. How many marbles do I have?
+Let X be the number of marbles I have.
+If I give my brother 2 marbles, I'll have X-2 marbles left.
+And my brother will have (X-2)/2 marbles.
+And my friend will have (X-2)*3 left.
+So the total number of marbles is X-2 + (X-2)/2 + (X-2)*3 = 63.
+(X-2)*9/2 = 63.
+X-2 = 14.
+X = <<16=16>>16 marbles.

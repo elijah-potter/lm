@@ -1,0 +1,9 @@
+Farmer Brown has 20 animals on his farm, all either chickens or cows. They have a total of 70 legs, all together. How many of the animals are chickens?
+Let C be the number of chickens.
+There are 20-C cows.
+The cows have 4*(20-C) legs.
+The cows have 2C legs.
+The total number of legs is 2C+4(20-C)=70.
+2C+80-4C=70
+2C=10
+C=<<5=5>>5

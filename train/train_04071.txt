@@ -1,0 +1,7 @@
+Lucius owns a small business and spends $10 every day on ingredients. He then makes a portion of French Fries and a portion of Poutine and sells them to the market, paying ten percent of his weekly income as tax. If the price of French fries is $12 and the price of Poutine is $8, how much does he earn every week after paying the taxes, selling all his products, and buying all the ingredients?
+He earns $12 + $8 = $<<12+8=20>>20 after selling the French fries and Poutine every day.
+So, he earns $20 x 7 = $<<20*7=140>>140 every week.
+And the total amount he pays for the taxes is $140 x 0.10= $<<140*0.10=14>>14.
+So, his income after paying the weekly taxes is $140 - $14 = $<<140-14=126>>126.
+Lucius spends $10 x 7 = $<<10*7=70>>70 for the ingredients every week.
+Therefore, his total income every week after buying all the ingredients and paying the taxes is $126 - $70 = $<<126-70=56>>56.

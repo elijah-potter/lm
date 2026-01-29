@@ -1,0 +1,5 @@
+Joe had 200 data points on his dataset. He then added 20% more data points to the dataset. If he reduced the data points by 1/4 of the total data points, calculate the total number of data points the dataset contains.
+When Joe added 20% more data points to the dataset, the data points in the dataset increased by 20/100*200 = <<20/100*200=40>>40 data points.
+The total number of data points increased to 200+40 = <<200+40=240>>240
+If he reduced the data points by 1/4 of the total data points, the data points reduced by 1/4*240 =60
+The total number of data points left in the dataset after Joe reduced the data points by 1/4 of the total data points is 240-60= <<240-60=180>>180

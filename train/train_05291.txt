@@ -1,0 +1,5 @@
+Out of the 400 emails that Antonia received in her mail, 1/4 were spam emails, while 2/5 of the remaining emails were promotional messages. If the rest of the emails were important emails, calculate the total number of important emails in her inbox.
+Out of the 400 emails, 1/4*400 = <<400*1/4=100>>100 emails were spam emails.
+The number of emails that were not spam emails is 400-100 = <<400-100=300>>300
+2/5 of the emails which were not spam were promotional emails, a total of 2/5*300=<<2/5*300=120>>120 emails.
+If the rest of the emails were important emails, there were 300-120 = <<300-120=180>>180 important emails.

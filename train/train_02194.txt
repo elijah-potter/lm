@@ -1,0 +1,5 @@
+Niles is collecting his book club's annual fees. Each of the six members pays $150/year towards snacks, plus $30 each for six hardcover books and $12 each for six paperback books. How much money does Niles collect in total?
+First find the cost per member of the hardcover books: $30/book * 6 books = $<<30*6=180>>180.
+Then find the cost per member of the paperback books: $12/book * 6 books = $<<12*6=72>>72.
+Then find the total cost per member: $180 + $72 + $150 = $<<180+72+150=402>>402/member.
+Now find the total amount of money by multiplying the cost per member by the number of members: $402/member * 6 members = $<<402*6=2412>>2412.

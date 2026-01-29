@@ -1,0 +1,6 @@
+James and Ali together own $250. If you know that James owns $40 more than Ali, then calculate the amount owned by James.
+Let X be the amount owned by James. The amount owned by Ali is X - $40.
+The total amount owned by both of them X + (X - $40) = $250.
+Combining like terms, we get X*2 - $40 = $250.
+Adding $40 to both sides, we get X*2 = $290.
+Dividing both sides by 2, we get X = $145.

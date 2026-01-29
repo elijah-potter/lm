@@ -1,0 +1,5 @@
+The temperature was 2 degrees Celsius. It dropped 8 degrees Celsius overnight and then increased 3 degrees Celsius in the morning. What was the temperature, in degrees Celsius, in the morning?
+Start = +<<2=2>>2 degrees
+Drop 8 degrees = 2 - 8 = -6 degrees
+Increase 3 degrees = -6 + 3 = -3 degrees
+It was -3 degrees Celsius in the morning.

@@ -1,0 +1,6 @@
+Ahmed and Emily are having a contest to see who can get the best grade in the class. There have been 9 assignments and Ahmed has a 91 in the class. Emily has a 92. The final assignment is worth the same amount as all the other assignments. Emily got a 90 on the final assignment. What is the minimum grade Ahmed needs to get to beat Emily if all grades are whole numbers?
+Ahmed has scored 819 total points in the class thus far because 9 x 91 = <<9*91=819>>819
+Emily had scored 828 total points before the final assignments because 9 x 92 = <<9*92=828>>828
+She scored 918 total points after the final assignment because 828 + 90 = <<828+90=918>>918
+Ahmed needs to score a 99 to tie Emily for the semester because 918 - 819 = <<918-819=99>>99
+Ahmed needs to score a 100 to beat Emily for the semester because 99 + 1 = <<99+1=100>>100

@@ -1,0 +1,5 @@
+A group of researchers are studying a colony of penguins. Their results show that the size doubled in the first year they watched the colony, then tripled in the next year. This year, however, harsh conditions meant the colony only gained 129 penguins. The colony has 1077 penguins in it now. Each penguin eats one and a half fish every day. How many fish did the whole colony catch per day to eat at the beginning of the first year?
+The colony had 1077 - 129 = <<1077-129=948>>948 penguins in it at the beginning of this year.
+At the beginning of the second year, the colony had 948 / 3 = <<948/3=316>>316 penguins in it.
+At the beginning of the first year, it had 316 / 2 = <<316/2=158>>158 penguins in it.
+Thus, at the beginning of the first year, the penguin colony was catching 158 * 1 1/2 = 237 fish per day.

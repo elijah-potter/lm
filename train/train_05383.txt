@@ -1,0 +1,7 @@
+Emily is on a flight from New York to Hawaii that is 10 hours long. To kill time, she watches 3 TV episodes that are each 25 minutes long. Then she sleeps for 4 and a half hours. Then she watches 2 movies that are each an hour and 45 minutes long. After doing all these things, assuming there is no break time between activities, how many more minutes are left in the flight before Emily reaches Hawaii.
+Emily spends 3 episodes * 25 minutes = <<3*25=75>>75 minutes watching TV.
+Emily spends 4.5 hours * 60 minutes = <<4.5*60=270>>270 minutes sleeping.
+Emily spends 2 movies * 1.75 hours * 60 minutes = <<2*1.75*60=210>>210 minutes watching movies.
+The total time spent doing activities is 75 + 270 + 210 = <<75+270+210=555>>555 minutes
+The total length of the flight is 10 hours * 60 minutes = <<10*60=600>>600 minutes
+The number of minutes remaining in the flight is 600 - 555 = <<600-555=45>>45 minutes

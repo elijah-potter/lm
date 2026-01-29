@@ -1,0 +1,4 @@
+The leak in Jerry's roof drips 3 drops a minute into the pot he put under it. Each drop is 20 ml, and the pot holds 3 liters. How long will it take the pot to be full?
+First find the pot's volume in ml: 3 liters * 1000 ml/liter = <<3*1000=3000>>3000 ml
+Then find the number of ml that enter the pot per minute: 3 drops/minute * 20 ml/drop = <<3*20=60>>60 ml/minute
+Then divide the volume of the pot by the volume that enters it every minute: 3000 ml / 60 ml/minute = <<3000/60=50>>50 minutes

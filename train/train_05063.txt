@@ -1,0 +1,5 @@
+Every room in a building has at least two windows and a maximum of 4 windows. There are 122 windows total. If 5 rooms have 4 windows and 8 rooms have 3 windows, how many rooms in the building have 2 windows?
+Since 5 rooms have 4 windows, this accounts for 20 windows because 4*5=<<4*5=20>>20 windows.
+Since 8 rooms have 3 windows, this accounts for 24 windows because 8*3=<<8*3=24>>24 windows.
+There are 78 windows left over because 122-20-24 = <<122-20-24=78>>78.
+Therefore, there are 39 rooms with 2 windows because 78/2 = <<78/2=39>>39.

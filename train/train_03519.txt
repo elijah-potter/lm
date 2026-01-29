@@ -1,0 +1,8 @@
+Martha needs to paint all four walls in her 12 foot by 16 foot kitchen, which has 10 foot high ceilings. Each wall needs one coat of primer and two coats of paint. If Martha can paint 40 square feet per hour, how many hours will it take her to paint the kitchen?
+There are two walls that are 12' X 10' and two walls that are 16' by 10'. First find the size in square feet of one 12' x 10' wall by multiplying the height and length: 12 ft * 10 ft = <<12*10=120>>120 sq ft
+Multiply that quantity by 2 since there are two 12' x 10' walls: 120 sq ft * 2 = <<120*2=240>>240 sq ft
+Then find the size in square feet of one 16' x 10' wall by multiplying the height and length: 16 ft * 10 ft = <<16*10=160>>160 sq ft
+Multiply that quantity by 2 since there are two 16' x 10' walls: 160 sq ft * 2 = <<160*2=320>>320 sq ft
+Now add the square footage of both sets of walls to find the total square footage Martha needs to paint: 240 sq ft+ 320 sq ft = <<240+320=560>>560 sq ft
+Now multiply that amount by 3 because Martha needs to add 3 coats: 560 sq ft/coat * 3 coats = <<560*3=1680>>1680 sq ft
+Finally, divide the total square footage by Martha's painting rate to find how many hours she needs to finish: 1680 sq ft / 40 sq ft/hour = <<1680/40=42>>42 hours

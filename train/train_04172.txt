@@ -1,0 +1,5 @@
+William washes cars as a side job. He typically spends 4 minutes washing a car’s windows, 7 minutes washing the car body, 4 minutes cleaning the tires, and 9 minutes waxing the car. This morning he washed 2 normal cars and one big SUV, which took twice as long as a normal car. How many minutes did William spend washing all the vehicles?
+William spends 4 + 7 + 4 + 9 = <<4+7+4+9=24>>24 minutes washing a normal car.
+He washed 2 normal cars, so he spent 24 * 2 = <<24*2=48>>48 minutes on the normal cars.
+He took twice as long as one car for the SUV, so he took 24 * 2 = <<24*2=48>>48 minutes on the SUV.
+Thus, William spent 48 + 48 = <<48+48=96>>96 minutes washing all the vehicles.

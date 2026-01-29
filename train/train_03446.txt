@@ -1,0 +1,8 @@
+At the burger hut, you can buy a burger for $5, french fries for $3, and a soft drink for $3.  If you order a special burger meal, you get all 3 of these food items for $9.50. A kid’s burger is $3, a kid’s french fries are $2, and a kid's juice box is $2.  They also have a kids meal of all 3 kids' food items for $5. Mr. Parker buys 2 burger meals for his wife and himself.  He also buys 2 burger meals and 2 kid's meals for his 4 children.  How much money does Mr. Parker save by buying the 6 meals versus buying the individual food items?
+To buy regular food items individually, they cost $5 + $3 + $3 = $<<5+3+3=11>>11.
+To buy kids food items individually, they cost $3 + $2 + $2 = $<<3+2+2=7>>7.
+If you buy the special burger meal, you save $11 - $9.50 = $<<11-9.5=1.50>>1.50.
+If you buy the kid's meal, you save $7 - $5 = $<<7-5=2>>2.
+Mr. Parker buys 4 special burger meals, bringing his discount to 4 x $1.50 = $<<4*1.50=6>>6.
+He buys 2 kid's meals, bringing his discount to 2 x $2 = $<<2*2=4>>4.
+The total savings for Mr. Parker is $6 + $4 = $<<6+4=10>>10.

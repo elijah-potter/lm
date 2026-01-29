@@ -1,0 +1,6 @@
+Mary is trying to get Zoom set up for the first time. She spent 10 minutes downloading the Mac version, only to realize she needed the Windows version, which took three times as long to download. During her first call, the audio glitched twice for 4 minutes each time and the video glitched once for 6 minutes. She spent twice as long talking without glitches as with glitches. How much time did Mary spend downloading Zoom and talking total?
+First find the time Mary spent downloading the Windows version: 10 minutes * 3 = <<10*3=30>>30 minutes
+Then find the total time the audio glitches took: 4 minutes/glitch * 2 glitches = <<4*2=8>>8 minutes
+Then add the video glitch time to find the total glitch time: 8 minutes + 6 minutes = <<8+6=14>>14 minutes
+Then double that time to find the total glitch-free time: 14 minutes * 2 = <<14*2=28>>28 minutes
+Then add the talking time to the download time to find the total time: 30 minutes + 10 minutes + 14 minutes + 28 minutes = <<30+10+14+28=82>>82 minutes

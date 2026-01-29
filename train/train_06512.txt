@@ -1,0 +1,6 @@
+On the planet Popton, there are two races of beings: the Hoopits and Neglarts.  Each Hoopit has 3 toes on each of their 4 hands, while each Neglart only has 2 toes on each of their 5 hands. If a Popton automated driverless school bus always carries 7 Hoopit students and 8 Neglart students, how many toes are on the Popton school bus?
+Each Hoopit has 4 hands, each with 3 toes, for a total of 4*3=<<4*3=12>>12 toes.
+Each Neglart has 5 hands, each with 2 toes, for a total of 5*2=<<5*2=10>>10 toes.
+Each school bus has 7 Hoopit students, for a total of 7*12=<<7*12=84>>84 Hoopit toes.
+Each school bus also carries 8 Neglart students, for a total of 8*10=<<8*10=80>>80 Neglart toes.
+Thus, the total number of toes on a bus carrying 7 Hoopit students and 8 Neglart students would be 84+80=<<84+80=164>>164 toes.

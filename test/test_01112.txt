@@ -1,0 +1,5 @@
+There are currently 3 red balls, 11 blue balls, and 25 green balls in the store. Red balls cost $9, Blue balls cost $5 and green balls cost $3. How much will the store have received after all the balls are sold?
+For the red balls, 3 balls * $9/ball = $<<3*9=27>>27.
+For the blue balls, 11 balls * $5/ball = $<<11*5=55>>55.
+For the green balls, 25 balls * $3/ball = $<<25*3=75>>75.
+For all balls, $27 + $55 + $75 = $<<27+55+75=157>>157.

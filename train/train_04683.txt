@@ -1,0 +1,7 @@
+The Indigo Restaurant receives 18 online customer reviews. They receive six 5-star reviews, seven 4-star reviews, four 3-star reviews, and one 2-star review. What is the average star rating for Indigo Restaurant based on these reviews?
+Total stars for the 5-star rating is 6 x 5 = <<6*5=30>>30 stars.
+Total stars for the 4-star rating is 7 x 4 = <<7*4=28>>28 stars.
+Total stars for the 3-star rating is 4 x 3 = <<4*3=12>>12 stars.
+Total stars for the 2-star rating is 1 x 2 = <<1*2=2>>2 stars.
+Total stars received is 30 + 28 + 12 + 2 = <<30+28+12+2=72>>72.
+Average rating is 72 / 18 = <<72/18=4>>4 stars.

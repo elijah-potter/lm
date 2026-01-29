@@ -1,0 +1,4 @@
+Gwendolyn can read 200 sentences of a book in 1 hour. She just brought a book from the library, having 20 paragraphs per page. What's the total time Gwendolyn will take to read the book if each paragraph has 10 sentences and the book has 50 pages?
+Gwendolyn just brought a book from the library, having 20 paragraphs per page, and since the book has 50 pages, the number of paragraphs in the book is 50*20=<<50*20=1000>>1000 paragraphs.
+If each paragraph has 10 sentences, the book's number of sentences is 1000*10=<<1000*10=10000>>10000 sentences.
+Since Gwendolyn can read 200 sentences of a book in 1 hour, she will read 10000 sentences in 10000/200=<<10000/200=50>>50 hours.

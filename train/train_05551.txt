@@ -1,0 +1,3 @@
+While driving up a road, Philip passed through 5 intersections. 4 crosswalks marked each intersection with a total of 20 lines per crosswalk. Calculate the total number of lines of the crosswalks in the five intersections.
+If one intersection has 4 crosswalks, with 20 lines per crosswalk, there are 20*4 = <<20*4=80>>80 lines in all the crosswalks per intersection.
+If there are 5 intersections, the total number of lines in all the intersections is 80*5 = <<80*5=400>>400 lines

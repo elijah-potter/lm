@@ -1,0 +1,7 @@
+A pink frog weighs the same as a blue beetle, the same as a green toad, 10 pounds less than a yellow snake, but 20 pounds more than a red bird. If the pink frog weighs 50 pounds, calculate the total weight of a container carrying one of each animal if the container also weighs 20 pounds.
+Since the pink frog weighs the same as a blue beetle and a green toad, if the weight of the pick frog is 50 pounds, the three animals weigh 3*50 = 150 pounds together.
+The pink frog also weighs 10 pounds less than a yellow snake, meaning the weight of the yellow snake is 50+10 = <<50+10=60>>60 pounds.
+If you add the weight of the frog, the blue beetle, the green toad, and the yellow snake together, all the animals minus the red bird will have a total weight of 60+150 = <<60+150=210>>210 pounds.
+The pink frog's weight is also 20 pounds more than a red bird, meaning the red bird weighs 50-20 = <<50-20=30>>30 pounds.
+All the animals weigh a total of 30+210 = <<30+210=240>>240 pounds
+If the animals are in a container weighing 20 pounds, the total weight of the full container is 240+20 = 260 pounds

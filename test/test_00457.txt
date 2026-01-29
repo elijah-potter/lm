@@ -1,0 +1,5 @@
+In a set of magicians cards, there are 15 red cards, and 60% more green cards. Yellow cards are as many, as the sum of red and green cards. How many cards of all mentioned colors are there?
+There are 60/100 * 15 = <<60/100*15=9>>9 more green cards than red cards.
+Which means there are 15 + 9 = <<15+9=24>>24 green cards.
+Yellow cards make up to 15 + 24 = <<15+24=39>>39 cards.
+So in total, there are 39 + 39 = <<39+39=78>>78 cards of different colors.

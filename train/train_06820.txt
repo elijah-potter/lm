@@ -1,0 +1,4 @@
+Vicky has an excellent internet connection. She can download up to 50 MB/second. She has to download a new program to finish a college assignment. The program’s size is 360GB. If the internet connection is at maximum speed, how many hours does she have to wait until the program is fully downloaded? (There are 1000 MB per GB.)
+We have to know how many MB are 360GB, 360GB x 1,000MB/1GB = <<360000=360000>>360,000 MB
+The total seconds downloading will be 360,000MB ÷ 50MB/second = <<360000/50=7200>>7,200 seconds
+So she has to wait 7,200 seconds ÷ 3,600 seconds/1 hour = <<7200/3600=2>>2 hours

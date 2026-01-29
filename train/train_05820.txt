@@ -1,0 +1,7 @@
+Casey is pumping water out of her well. She can pump 3 gallons a minute. She has 4 rows of 15 corn plants each, and each plant needs half a gallon of water. She also has 10 pigs, which each need 4 gallons of water, and 20 ducks that each need a quarter of a gallon of water. How many minutes does Casey need to spend pumping water?
+First find how many corn plants there are: 15 plants/row * 4 rows = <<15*4=60>>60 plants
+Then find how many gallons of water of the corn needs: 60 plants * 1/2 gallon/plant = <<60*1/2=30>>30 gallons
+Then find how many gallons of water the pigs need: 10 pigs * 4 gallons/pig = <<10*4=40>>40 gallons
+Then find how many gallons of water the ducks need: 20 ducks * 1/4 gallon/duck = <<20*1/4=5>>5 gallons
+Now add up all three quantities of water to find the total water needed: 5 gallons + 40 gallons + 30 gallons = <<5+40+30=75>>75 gallons
+Now divide the total water needed by Casey's pumping rate to find how long she spends pumping: 75 gallons / 3 gallons/minute = <<75/3=25>>25 minutes

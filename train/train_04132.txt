@@ -1,0 +1,6 @@
+Bill's take-home salary is $40,000. He pays $2,000 in property taxes, $3,000 in sales taxes, and 10% of his gross salary in income taxes. What is Bill's gross salary?
+First, figure out how much Bill has before he pays property taxes: $40,000 + $2,000 = $<<40000+2000=42000>>42,000
+Then, figure out how much Bill has before he pays sales taxes: $42,000 + $3,000 = $<<42000+3000=45000>>45,000
+Next, figure out what percent of his salary Bill keeps after income tax: 100% - 10% = 90%
+Now we know that .9g = $45,000, where g is Bill's gross salary
+Now we can divide both sides of the equation by .9 to find that g = $50,000

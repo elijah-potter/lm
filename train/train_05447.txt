@@ -1,0 +1,5 @@
+A building has 10 floors. It takes 15 seconds to go up the stairs to the even-numbered floors and 9 seconds to go up to the odd-numbered floors.  This includes getting to the first floor. How many minutes does it take to get to the 10th floor?
+So for all even-numbered floors (2, 4, 6, 8, 10), it takes 5*15= <<5*15=75>>75 seconds
+And for all odd-numbered floors (1, 3, 5, 7, 9) it takes 5*9= <<5*9=45>>45 seconds
+To climb all the floors, it takes 75+45= <<75+45=120>>120 seconds
+So it takes 120/60=<<120/60=2>>2 minutes to get to the 10th floor

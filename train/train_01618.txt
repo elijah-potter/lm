@@ -1,0 +1,3 @@
+Joe sells ham and cheese sandwiches for $1.50. If a slice of bread costs $0.15, a slice of ham costs $0.25 and a slice of cheese costs $0.35, how many cents does a sandwich with one slice of each protein cost Joe to make?
+First find the cost of two slices of bread: $0.15/slice * 2 slices = $<<0.15*2=0.30>>0.30
+Then add the cost of one slice each of ham and cheese: $0.30 + $0.25 + $0.35 = $<<0.30+0.25+0.35=0.90>>0.90

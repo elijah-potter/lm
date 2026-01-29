@@ -1,0 +1,6 @@
+Jerry charges $20 to pierce someone's nose and 50% more to pierce their ears. If he pierces 6 noses and 9 ears, how much money does he make?
+First find how much more Jerry charges to pierce one person's ears than their nose: $20 * 50% = $<<20*50*.01=10>>10
+Then add that amount to the cost of nose piercing to find the total cost: $10 + $20 = $<<10+20=30>>30
+Then multiply that price by the number of ears he pierces to find his total earnings from ear-piercing: $30/ear * 9 ears = $<<30*9=270>>270
+Then multiply the price of nose-piercing by the number of noses pierced: $20/nose * 6 noses = $<<20*6=120>>120
+Then add the money from nose-piercing to the money from ear-piercing to find Jerry's total income: $120 + $270 = $<<120+270=390>>390

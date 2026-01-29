@@ -1,0 +1,6 @@
+Logan's father receives 50 cartons delivery for his milk business, each carton having 20 jars of milk. On a particular week, he received 20 cartons less when the delivery was done, and during offloading, he realized 3 jars in 5 cartons each was damaged, and one carton was totally damaged. How many jars of milk were good for sale that week?
+When 20 cartons failed to be delivered, the number of cartons reduced to 50-20 = <<50-20=30>>30 cartons.
+The total number of jars in all the cartons is 30*20 = <<30*20=600>>600
+The total number of jars destroyed in the 5 cartons is 3*5 = <<3*5=15>>15 jars.
+If one carton was also destroyed, the total number of destroyed jars is 20+15 = <<20+15=35>>35 jars.
+The number of jars good for sale is 600-35 = <<600-35=565>>565 jars.

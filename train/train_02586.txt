@@ -1,0 +1,5 @@
+Rookie police officers have to buy duty shoes at the full price of $85, but officers who have served at least a year get a 20% discount. Officers who have served at least three years get an additional 25% off the discounted price. How much does an officer who has served at least three years have to pay for shoes?
+Cops that served a year pay $85 * 0.2 = $<<85*0.2=17>>17 less.
+Cops that served a year pay $85 - $17 = $<<85-17=68>>68.
+Cops that served at least 3 years get a $68 * 0.25 = $<<68*0.25=17>>17 discount.
+Cops that served at least 3 years pay $68 - $17 = $<<68-17=51>>51 for shoes.

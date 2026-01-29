@@ -1,0 +1,5 @@
+Julie had $500. She spent 20% of it on clothes and then 25% of the remaining money on CDs. How much money did Julie have left?
+Julie spend $500 * 0.2 = $<<500*0.2=100>>100 for clothes.
+Julie then had $500 - $100 = $<<500-100=400>>400 left.
+She spend $400 * 0.25 = $<<400*0.25=100>>100 on CDs.
+Julie had $400 - $100 = $<<400-100=300>>300 left.

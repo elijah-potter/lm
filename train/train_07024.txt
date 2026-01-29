@@ -1,0 +1,4 @@
+Iggy is training for a marathon. On Monday, he runs 3 miles. On Tuesday, he runs 4 miles. On Wednesday, he runs 6 miles. On Thursday, he runs 8 miles. On Friday, he runs 3 miles. Iggy runs at a pace of 1 mile in 10 minutes. What is the total number of hours that Iggy spends running from Monday to Friday?
+From Monday to Friday, Iggy runs a total of 3 + 4 + 6 + 8 + 3 = <<3+4+6+8+3=24>>24 miles
+Iggy runs for a total of 24 * 10 = <<24*10=240>>240 minutes
+Since there are 60 minutes in an hour, Iggy runs for a total of 240 / 60 = <<240/60=4>>4 hours

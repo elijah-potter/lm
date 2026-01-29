@@ -1,0 +1,6 @@
+Janet uses her horses' manure as fertilizer. One horse produces 5 gallons of fertilizer per day. Once Janet has collected enough fertilizer, she'll spread it over 20 acres of farmland. Each acre needs 400 gallons of fertilizer and Janet can spread fertilizer over 4 acres per day. If Janet has 80 horses, how long will it take until all her fields are fertilized?
+First find the total amount of fertilizer the horses produce per day: 5 gallons/horse * 80 horses = <<5*80=400>>400 gallons
+Then multiply the number of acres of farmland by the number of gallons per acre to find the total amount of fertilizer needed: 400 gallons/acre * 20 acres = <<400*20=8000>>8000 gallons
+Then divide the total amount of fertilizer needed by the amount of fertilizer produced per day to find the number of days needed to collect fertilizer: 8000 gallons / 400 gallons/day = <<8000/400=20>>20 days
+Then divide the total number of acres Janet needs to cover by the number of acres she can cover per day to find how many days it takes her to cover them all: 20 acres / 4 acres/day = <<20/4=5>>5 days
+Then add the time to collect the fertilizer to the time to spread it to find the total time: 5 days + 20 days = <<5+20=25>>25 days

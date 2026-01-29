@@ -1,0 +1,6 @@
+One logger can cut down 6 trees per day. The forest is a rectangle measuring 4 miles by 6 miles, and each square mile has 600 trees. If there are 30 days in each month, how many months will it take 8 loggers to cut down all the trees?
+First find the total area of the forest: 4 miles * 6 miles = <<4*6=24>>24 square miles
+Then find the total number of trees in that area: 600 trees/square mile * 24 square miles = <<600*24=14400>>14400 trees
+Then find the number of trees all the loggers can cut down in one day: 8 loggers * 6 trees/logger = <<8*6=48>>48 trees
+Then divide the total number of trees by the number cut down per day to find the number of days it takes to clear the forest: 14400 trees / 48 trees/day = <<14400/48=300>>300 days
+Then divide the time in days by the number of days per month to find the time in months: 300 days / 30 days/month = <<300/30=10>>10 months

@@ -1,0 +1,5 @@
+There are 6 people going on an airplane trip.  They each have 5 bags of luggage.  Each of their bags weighs the maximum weight allowed, 50 pounds.  The airplane can hold a total luggage weight of 6000 pounds.  How many more bags at maximum weight can the plane hold?
+Each person brought 5 bags * 50 pounds per bag = <<5*50=250>>250 pounds per person.
+There are 6 people * 250 pounds per person = <<6*250=1500>>1500 pounds of luggage on the plane.
+The plan can hold 6000 pounds - 1500 pounds = <<6000-1500=4500>>4500 pounds of luggage space left.
+The plane can hold an additional 4500 pounds / 50 pounds per bag = <<4500/50=90>>90 pieces of luggage.

@@ -1,0 +1,7 @@
+Brian is taping up some boxes. Each box needs three pieces of tape, one as long as the long side and two as long as the short side. If Brian tapes up 5 boxes that measure 15 inches by 30 inches and 2 boxes that measure 40 inches square, how much tape does he need?
+First find the amount of tape each 15 in x 30 in box needs on the short sides: 2 sides * 15 inches/side = <<2*15=30>>30 inches
+Then add that to the amount of tape each 15 in x 30 in box needs on the long side to find the total amount needed per box: 30 inches + 30 inches = <<30+30=60>>60 inches
+Then multiply that amount by 5 boxes to find the total amount needed: 60 inches/box * 5 boxes = 300 inches
+Then find the amount of tape each 40 in x 40 in box needs for its three equal length sides: 3 sides * 40 inches/side = <<3*40=120>>120 inches
+Then multiply that amount by 2 boxes to find the total amount needed: 120 inches/box * 2 boxes = 240 inches
+Then add the total amount needed for each box size to find the grand total: 240 inches + 300 inches = <<240+300=540>>540 inches

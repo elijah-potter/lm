@@ -1,0 +1,6 @@
+Marcus is making calzones. It takes him 20 minutes to saute the onions and a quarter of that time to saute the garlic and peppers. It takes him 30 minutes to knead the dough, twice as long to let it rest, and 1/10th the combined kneading and resting time to assemble the calzones. How many minutes does Marcus spend on the calzones total?
+First find the amount of time it takes Marcus to saute the garlic and peppers: 20 minutes / 4 = <<20/4=5>>5 minutes
+Then find the dough's resting time: 30 minutes * 2 = <<30*2=60>>60 minutes
+Then add the kneading and resting time to find the total dough time: 60 minutes + 30 minutes = <<60+30=90>>90 minutes
+Then multiply that amount by 1/10th to find the assembly time: 90 minutes / 10 = <<90/10=9>>9 minutes
+Then add the saute time, knead time, rest time and assembly time to find the total time Marcus spends on the calzones: 9 minutes + 20 minutes + 5 minutes + 60 minutes + 30 minutes = <<9+20+5+60+30=124>>124 minutes

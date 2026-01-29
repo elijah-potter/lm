@@ -1,0 +1,8 @@
+Robby, Jaylen and Miranda are employed at a Cheesecake factory, earning $10 per hour. They work 10 hours a day, five days a week. Robby saves 2/5 of his salary, Jaylene saves 3/5 of his salary, while Miranda saves half of her salary. What are the combined savings of the three employees after four weeks?
+In a day, each of them earns $10/hour * 10 hours/day = $<<10*10=100>>100/day
+The total number of days each of them work in a month is five days per week * 4 weeks = <<5*4=20>>20 days
+If each of them earns $100 per day, in 20 days, they'll earn 20 days/month * $100/day = $<<20*100=2000>>2000/month
+Robby saves 2/5 * $2000 = $<<2/5*2000=800>>800 from his salary
+Jaylene's savings is 3/5 * $2000 = $<<3/5*2000=1200>>1200 of her salary
+Miranda saves 1/2 * $2000 = $<<2000*0.5=1000>>1000 from her salary.
+The total saving for the three employees is $1000 + $1200 + $800 = $<<1000+1200+800=3000>>3000

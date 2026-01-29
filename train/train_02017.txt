@@ -1,0 +1,7 @@
+Vikki worked 42 hours in one week. Her hourly pay rate is $10. From her weekly earnings, 20% is deducted as tax, 5% is deducted as insurance cover, and $5 is deducted for union dues. How much money, in dollars, does Vikki take home after deductions?
+Vikki earnt 10 × $42 = $<<10*42=420>>420 in one week.
+She then gets taxed $420 × 0.2 = $<<420*0.2=84>>84.
+She also loses $420 × 0.05 = $<<420*0.05=21>>21 due to insurance.
+Vikki also pays $5 in union dues.
+In total Vikki loses $84 + $21 + $5 = $<<84+21+5=110>>110 because of deductions.
+Her final total pay after deductions is $420 - $110 = $<<420-110=310>>310

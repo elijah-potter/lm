@@ -1,0 +1,5 @@
+Antoine owns a strawberry farm that supplies strawberries to his local bakeries. The first bakery needs 2 sacks, the second bakery needs 4 sacks, and the third bakery needs 12 sacks of strawberries per week. How many sacks of strawberries does he need to supply all the bakeries in 4 weeks?
+The first bakery needs 2 x 4 = <<2*4=8>>8 sacks of strawberries per month.
+The second bakery needs 4 x 4 = <<4*4=16>>16 sacks of strawberries per month.
+The third bakery needs 12 x 4 = <<12*4=48>>48 sacks of strawberries per month.
+Therefore, Antoine needs 48 + 16 + 8 = <<48+16+8=72>>72 sacks of strawberries to supply all the bakeries for a month.

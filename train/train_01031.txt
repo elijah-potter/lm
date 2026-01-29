@@ -1,0 +1,5 @@
+While preparing for a meeting, Bill fills Dixie cups with water from out of a water cooler. The water cooler initially contains 3 gallons of water, and each Dixie cup holds 6 ounces of water.  If Bill fills one cup of water per each meeting chair, and there are 5 rows of meeting chairs with 10 chairs in each row, then how many ounces of water will be left in the cooler after all cups have been are filled? (There are 128 ounces in a gallon.)
+First find the total number of ounces in the water cooler: 3 gallons * 128 ounces/gallon = <<3*128=384>>384 ounces
+Then find the total number of dixie cups Bill pours: 5 rows * 10 chairs/row = <<5*10=50>>50 chairs
+Then find the total number ounces Bill pours: 50 attendees * 6 ounces/attendee = <<50*6=300>>300 ounces
+Then subtract the amount of water Bill pours from the cooler from the initial amount to find the final amount: 384 ounces - 300 ounces = <<384-300=84>>84 ounces

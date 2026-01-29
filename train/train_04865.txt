@@ -1,0 +1,5 @@
+Martha is knitting winter clothes for her 3 grandchildren, who are all the same size (identical triplets.) Each set of clothes consists of a woolen hat, a scarf, a sweater, a pair of mittens, and a pair of wooly socks. She can knit a hat in 2 hours. A scarf takes her 3 hours. Each mitten takes her about an hour to knit. A sock takes an hour and a half. Each sweater takes her 6 hours. How long will it take her to knit all the outfits?
+A pair of mittens takes 1 hour per mitten * 2 mittens = <<1*2=2>>2 hours.
+A pair of socks takes 1.5 hours per sock * 2 socks = <<1.5*2=3>>3 hours.
+So a complete outfit for each child takes 2 hours per hat + 3 hours per scarf + 2 hours per pair of mittens + 3 hours per pair of socks + 6 hours per sweater = <<2+3+2+3+6=16>>16 hours per outfit.
+So to knit winter outfits for all three of her grandchildren, Martha will take 3 outfits * 16 hours per outfit = <<3*16=48>>48 hours.

@@ -1,0 +1,7 @@
+A zoo is arranging the layout of its animal enclosures. There are 4 tiger enclosures in a row and behind each of these are 2 zebra enclosures. There are three times as many giraffe enclosures as zebra enclosures scattered around the zoo. The tiger enclosures hold 4 tigers, the zebra enclosures hold 10 zebras and the giraffe enclosures hold 2 giraffes. If these are the only animals in the zoo, how many animals are in the zoo?
+There are twice as many zebra enclosures, so there must be 4 tiger enclosures * 2 = <<4*2=8>>8 zebra enclosures.
+This means there are 8 zebra enclosures * 3 = <<8*3=24>>24 giraffe enclosures.
+In the tiger enclosures, there are 4 tiger enclosures * 4 = <<4*4=16>>16 tigers.
+In the zebra enclosures, there are 8 zebra enclosures * 10 zebras = <<8*10=80>>80 zebras.
+In the giraffe enclosures, there are 24 giraffe enclosures * 2 giraffes = <<24*2=48>>48 giraffes.
+So in total, there are 16 tigers + 80 zebras + 48 giraffes = <<16+80+48=144>>144 animals in the zoo.

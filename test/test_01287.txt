@@ -1,0 +1,4 @@
+James likes to check the coin return of the vending machine for change. One day he finds a quarter, two nickels, and 7 dimes. How much money in cents does James have?
+First figure out how much the nickels are worth: 2 * 5 cents = <<2*5=10>>10 cents
+Then figure out how much the dimes are worth: 7 * 10 cents = <<7*10=70>>70 cents
+Finally, add the value of the nickels, dimes and quarter: 25 cents + 10 cents + 70 cents = <<25+10+70=105>>105 cents

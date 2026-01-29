@@ -1,0 +1,9 @@
+Rory is retrieving tennis balls from the court after a tennis match. In the first of three sets, he had to retrieve four more balls than in the second set. In the third set, he retrieved half as many balls as in the second. He retrieved 19 tennis balls in all. How many tennis balls did he retrieve in the first set of the match?
+Let B be the number of tennis balls Rory retrieved in the third set.
+In the second set, he retrieved 2B balls.
+In the first set, he retrieved 2B + 4 balls.
+In total, he retrieved B + 2B + 2B + 4 = 5B + 4 = 19 balls.
+Thus, 5B = 19 - 4 = 15 balls.
+Therefore, in the third set, Rory retrieved B = 15 / 5 = <<15/5=3>>3 balls.
+Hence, in the second set, he retrieved 2B = 3 * 2 = 6 balls.
+In the first set he retrieved 2(3) + 4 balls = 10

@@ -1,0 +1,8 @@
+A salesman bought a case of 48 backpacks for $576. He sold 17 of them for $18 at the swap meet, 10 were sold to a department store for $25 each. If the remainder were sold for $22 each. How much was the salesman's profit?
+The salesman sold 17 bags for 17 bags x $18/bag = $<<17*18=306>>306
+He sold 10 more for 10 bags x $25/bag = $<<10*25=250>>250
+Thus far he has sold 17 bags + 10 bags = <<17+10=27>>27 bags
+Therefore he sold 48 bags - 27 bags = <<48-27=21>>21 bags for $22 each
+21 bags were sold for 21 bags x $22/bag = $<<21*22=462>>462
+In total the salesman made $306 + $250 + $462 = $<<306+250+462=1018>>1018
+The salesman made $1018 - $576 = $<<1018-576=442>>442 in profit.

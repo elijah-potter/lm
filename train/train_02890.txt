@@ -1,0 +1,5 @@
+Sean and Sierra invited 200 guests to their wedding.  If 83% of the guests RSVP with a Yes response and 9% of the guests RSVP with a No response, how many guests did not respond at all?
+Yes RSVP responses are 200 x 83% = <<200*83*.01=166>>166 guests.
+No RSVP responses are 200 x 9% = <<200*9*.01=18>>18 guests.
+Guests who responded are 166 + 18 = <<166+18=184>>184.
+Guests who did not respond at all are 200 - 184 = <<200-184=16>>16.

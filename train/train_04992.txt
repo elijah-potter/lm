@@ -1,0 +1,9 @@
+June is running for class president.  She needs just over 50% of the vote to win.  There are 200 students in the school.  60% of students are boys and the rest are girls.  If she receives 67.5% of male vote, what is the smallest percentage of the female she must receive to win the election?
+50% of the vote is 100 votes because 200 x .5 = <<200*.5=100>>100
+Just over 50% is 101 votes because 100 + 1 = 101
+120 students are boys because 200 x .6 = <<200*.6=120>>120
+80 students are girls because 200 - 120 = <<200-120=80>>80
+She gets 81 votes from boys because 120 x .675 = <<120*.675=81>>81
+She needs 20 votes from girls because 101 - 81 = <<101-81=20>>20
+She needs a proportion of .25 of girl's votes to win because 20 / 80 = <<20/80=.25>>.25
+The percentage she needs is 25 because 100 x .25 = <<100*.25=25>>25

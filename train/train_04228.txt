@@ -1,0 +1,5 @@
+A community is building a metal fence. Each fence panel is made of 3 metal sheets, and 2 metal beams. The fence is made of 10 fence panels. If each sheet is made of 10 metal rods and each metal beam is made of 4 metal rods, how many metal rods does the community need for the fence?
+In each panel, the metal sheets use 3 metal sheets * 10 metal rods = <<3*10=30>>30 metal rods.
+In each panel, the metal beams use 2 metal beams * 4 metal rods = <<2*4=8>>8 metal rods.
+So each panel uses 30 + 8 = <<30+8=38>>38 metal rods.
+The entire fence therefore needs 38 metal rods * 10 fence panels = <<38*10=380>>380 metal rods.

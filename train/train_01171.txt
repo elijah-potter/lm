@@ -1,0 +1,5 @@
+Andy is running late. School starts at 8:00 AM and it normally takes him 30 minutes to get there, but today he had to stop for 3 minutes each at 4 red lights and wait 10 minutes to get past construction. If he left his house at 7:15, how many minutes late will he be?
+First find how many minute Andy had to get to school when he left his house: 8:00 AM - 7:15 AM = 45 minutes
+Then find the total time he spent waiting at red lights: 3 minutes/light * 4 lights = <<3*4=12>>12 minutes
+Now add the normal travel time, red light time, and construction wait time to find Andy's total travel time: 30 minutes + 12 minutes + 10 minutes = <<30+12+10=52>>52 minutes
+Now subtract the amount of time Andy had when he left his house from that number to find how many minute late he is: 52 minutes - 45 minutes = <<52-45=7>>7 minutes

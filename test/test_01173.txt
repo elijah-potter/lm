@@ -1,0 +1,6 @@
+Alice likes to count the puffs of clouds in the sky while she eats her lunch outside at school. On Monday she counts just 3 puffs of clouds. Each day after that through Friday, though, she sees double the number of clouds in the sky as the day before. At the end of the week, how many clouds will she have counted in the sky at lunch across all five days?
+On Monday Alice counts 3 puffs of clouds in the sky, and double that on Tuesday, 3 x 2 = <<3*2=6>>6 puffs of clouds.
+On Wednesday she sees twice that amount, 6 x 2 = <<6*2=12>>12 puffs of clouds.
+On Thursday she sees twice that amount, 12 x 2 = <<12*2=24>>24 puffs of clouds.
+On Friday she sees twice the amount of the day before, 24 x 2 = <<24*2=48>>48 puffs of clouds.
+In total, across all five days, she sees 3 + 6 + 12 + 24 + 48 = <<3+6+12+24+48=93>>93 total cloud puffs.

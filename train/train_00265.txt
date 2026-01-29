@@ -1,0 +1,5 @@
+An Italian restaurant earns $600 every weekday and twice as much on the weekend. How much money does it earn by the end of the month?
+On weekdays it earns $600/weekday * 5 weekdays = $<<600*5=3000>>3000
+During the weekend it earns twice as much each day so it makes ($600 * 2)/weekend day * 2 weekend days = $<<(600*2)*2=2400>>2400
+Every week it earns $3000 + $2400 = $<<3000+2400=5400>>5400
+By the end of the month, it earns $5400/week * 4 weeks = $21600

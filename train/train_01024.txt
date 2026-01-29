@@ -1,0 +1,4 @@
+Cooper is building a brick fence around all four sides of his property.  Each of the four walls of his fence is 20 bricks long, 5 bricks high, and 2 bricks deep.  How many bricks does Cooper need to complete his fence?
+A single layer of each wall requires 5 rows * 20 bricks per row = <<5*20=100>>100 bricks.
+As each wall has a thickness of 2 bricks, he will need 100 bricks * 2 = <<100*2=200>>200 bricks per wall.
+If the complete fence contains four walls, he will require a total of 200*4=<<200*4=800>>800 bricks.

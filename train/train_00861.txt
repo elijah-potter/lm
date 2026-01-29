@@ -1,0 +1,8 @@
+Earl has $90; Fred has $48; Greg has $36. Earl owes Fred $28. Fred owes Greg $32. Greg owes Earl $40. When all debts are paid, how much will Greg and Earl have together in dollars?
+Earl will have $90 - $28 = $<<90-28=62>>62 after paying off his debt to Fred.
+Fred will have $48 + $28 = $<<48+28=76>>76 after being paid by Earl.
+But then Fred will have $76 - $32 = $<<76-32=44>>44 after paying Greg.
+Greg will have $36 + $32 = $<<36+32=68>>68 after Fred paid him.
+Then, Greg will have $68 - $40 = $<<68-40=28>>28 after paying off his debt to Earl.
+Then, Earl will then have $62 + $40 = $<<62+40=102>>102.
+So together, Greg and Earl will have $28 + $102 = $<<28+102=130>>130.

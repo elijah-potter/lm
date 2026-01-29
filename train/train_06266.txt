@@ -1,0 +1,4 @@
+Hunter needs to make a square patch of land whose perimeter is twice as large as a rectangular patch of land. If the rectangular patch of land has a length of 400 feet and a width of 300 feet, calculate the length of one side of the square patch of land.
+If the rectangular patch of land measures 400 feet by 300 feet, the total length around it or its perimeter is given by 2 * 400 + 2 * 300 = 800 + 600 = <<2*400+2*300=1400>>1400
+The square patch's perimeter is double that length, so it's 1400 * 2 = <<1400*2=2800>>2800
+Since the square has four equal sides, one side of the square patch of land will have a length of 2800/4 = <<2800/4=700>>700 feet

@@ -1,0 +1,7 @@
+Teresa sells large stuffed animals for three times the price of small stuffed animals. Today, she sold twice as many small stuffed animals as large ones and earned $120 from the sales. Each small stuffed animal costs $4. How many small stuffed animals did she sell?
+Let A be the number of large stuffed animals Teresa sold.
+Thus, she sold 2A small stuffed animals.
+Large stuffed animals cost 3 * 4 = $<<3*4=12>>12.
+She earned 12A + 4 * 2A = 12A + 8A = 20A = $120 from selling stuffed animals today.
+Thus, she sold A = 120 / 20 = <<120/20=6>>6 large stuffed animals today.
+Teresa sold twice as many small stuffed animals, so she sold 6 * 2 = <<6*2=12>>12 small stuffed animals today.

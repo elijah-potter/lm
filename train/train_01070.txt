@@ -1,0 +1,6 @@
+Maria has 4 dimes, 4 quarters, and 7 nickels in her piggy bank. Her mom gives her 5 quarters. How much money, in dollars, does Maria have now?
+Maria has 4 + 5 = <<4+5=9>>9 quarters.
+The number of dollars from the quarters is 9 * $0.25 = $<<9*0.25=2.25>>2.25
+The number of dollars from the dimes is 4 * $0.10 = $<<4*0.10=0.40>>0.40
+The number of dollars from the nickels is 7 * $0.05 = $<<7*0.05=0.35>>0.35
+The total number of dollars is $2.25 + $0.40 + $0.35 = $<<2.25+0.40+0.35=3>>3

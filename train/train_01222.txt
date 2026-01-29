@@ -1,0 +1,5 @@
+Mary sees a flock of ducks crossing the street. There are 2 ducks with 5 ducklings each, 6 ducks with 3 ducklings each, and 9 ducks with 6 ducklings each. How many ducks and ducklings are there total?
+First find the total number of ducklings the first two ducks have: 2 ducks * 5 ducklings/duck = <<2*5=10>>10 ducklings
+Then find the total number of ducklings the next six ducks have: 6 ducks * 3 ducklings/duck = <<6*3=18>>18 ducklings
+Then find the total number of ducklings the last 9 ducks have: 9 ducks * 6 ducklings/duck = <<9*6=54>>54 ducklings
+Then add up all the ducks and ducklings to find the total number: 10 ducklings + 18 ducklings + 54 ducklings + 2 ducks + 6 ducks + 9 ducks = <<10+18+54+2+6+9=99>>99 ducks

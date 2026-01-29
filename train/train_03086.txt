@@ -1,0 +1,6 @@
+Caden has four jars of coins. One jar of pennies, one jar of nickels, one jar of dimes and one jar of quarters. He has twice as many quarters as he does dimes. He has five times as many nickels as he does dimes. He has three times as many pennies as he does nickels. If he has 120 pennies, how much money does he have?
+Starting with 120 pennies he has $1.20
+If he has three times as many pennies as he does nickels, he has 120 pennies / 3 nickels per penny = 40 nickels. 40 nickels = 40 * $0.05 = $<<40*0.05=2>>2
+If he has five times as many nickels as dimes he has 40 nickels / 5 dimes per nickel = 8 dimes. 8 * $0.10 = $<<40/5*0.10=0.80>>0.80
+if he has twice as many quarters than he does dimes, he has 8 dimes * 2 quarters per dime = 16 quarters = 16 *$ 0.25 = $<<8*2*0.25=4.00>>4.00
+In all he has $1.20 + $2.00 + $0.80 + $4.00 = $<<1.20+2+0.8+4=8.00>>8.00

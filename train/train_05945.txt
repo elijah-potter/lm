@@ -1,0 +1,5 @@
+A farmer is checking his fields to make sure all of his crops are growing as they should. Rows of corn stalks should produce 9 corn cobs each, and rows of potatoes should produce 30 potatoes each. As he’s checking crop quality, he notices that there are more pests than usual and they have destroyed some of his crops. He thinks that half of his crops have been destroyed by the pests. If the farmer has 10 rows of corn stalks and 5 rows of potatoes, how many crops does the farmer still have?
+The farmer had a total of 10 rows of corn stalks * 9 corn cobs each = <<10*9=90>>90 corn cobs.
+He also had a total of 5 rows of potatoes * 30 potatoes each = <<5*30=150>>150 potatoes.
+This was a total of 90 corn cobs + 150 potatoes = <<90+150=240>>240 crops.
+Because pests destroyed half of his crops, he now has 240 crops * 0.5 = <<240*0.5=120>>120 crops.

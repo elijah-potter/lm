@@ -1,0 +1,6 @@
+Jordan is a hockey goalie. In the first period of a game, he blocked four shots. In the second period, he blocked twice as many shots. In the third period, he blocked three fewer than in the second period. When the game ended after the fourth period, he had blocked 21 shots in all. How many did Jordan block in the fourth period?
+Let F be the number of shots Jordan blocked in the fourth period.
+In the second period, he blocked 2 * 4 = <<2*4=8>>8 shots.
+In the third period, he blocked 8 - 3 = <<8-3=5>>5 shots.
+In the whole game, he blocked 4 + 8 + 5 + F = 17 + F = 21 shots.
+Thus, Jordan blocked F = 21 - 17 = <<21-17=4>>4 shots in the fourth period.

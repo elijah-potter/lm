@@ -1,0 +1,9 @@
+James buys $3000 worth of stuff from Amazon.  He has to return a TV that cost $700 and a bike that cost $500.  He also sells another bike that cost 20% more than the bike he returned for 80% of what he bought it for.  He then buys a toaster for $100.  How much is he out of pocket for everything?
+The items he returned were valued at $700 + $500 = $<<700+500=1200>>1200
+So far he is out 3000-1200 = <<3000-1200=1800>>1800 after recouping 1200.
+An item that is 20% more expensive cost 1 + .2 = 1.2 times as much as the item
+So that means the bike he sold cost $500 * 1.2 = $<<500*1.2=600>>600
+He sold it for $600 * .8 = $<<600*.8=480>>480
+From the bike that he had bought for 600, he was out 600-480 =<<600-480=120>>120
+So far he is out 1800+120 = <<1800+120=1920>>1920
+If he also bought a toaster worth 100, he was out 1920+100 = <<1920+100=2020>>2020

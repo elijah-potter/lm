@@ -1,0 +1,5 @@
+In a forest, there are three anthills. In the first anthill, there are 100 ants, and in each next anthill, there are 20% fewer ants than in the previous one. How many ants are in the third anthill?
+In the second anthill, there are 20/100 * 100 = <<20/100*100=20>>20 ants less.
+This means there are 100 - 20 = <<100-20=80>>80 ants in the second anthill.
+In the third anthill, there are 20/100 * 80 = <<20/100*80=16>>16 ants less compared to the second one.
+So in the third anthill, there are 80 - 16 = <<80-16=64>>64 ants.

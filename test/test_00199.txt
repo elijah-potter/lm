@@ -1,0 +1,6 @@
+Elaine initially had 20 Pokemon cards. After a month, she collected three times that number. In the second month, she collected 20 fewer cards than those she collected in the first month. In the third month, she collected twice the combined number of pokemon cards she collected in the first and second months. How many pokemon cards does she have now in total?
+In the first month, Elaine collected 3*20= <<3*20=60>>60 pokemon cards.
+In the second month, she collected 60-20 = <<60-20=40>>40 cards.
+After the two months, the new pokemon cards she'd collected is 40+60 = <<40+60=100>>100
+The number of cards in the third month is twice the combined number in the first and second month, which totals 2*100 = <<2*100=200>>200 pokemon cards.
+In total, Elaine has 20 cards she initially had+100 cards collected in the first and second month +200 cards collected in the third month = <<20+100+200=320>>320 cards

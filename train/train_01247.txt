@@ -1,0 +1,9 @@
+A spaceship is traveling to another planet. The spaceship travels at a consistent speed its entire journey unless it is stopped for the crew’s break. After launch, the spaceship traveled for 10 hours then stopped for 3 hours. It then traveled for another 10 hours then stopped for 1 hour. After this, the spaceship would take an hour’s break after every 11 hours of traveling and maintained this routine until the end of its journey. If the entire journey took 3 days then how long, in hours, was the spaceship not moving?
+On the first day, the spaceship spent a total of 10 hours + 10 hours = <<10+10=20>>20 hours traveling.
+On the first day, the spaceship spent a total of 3 hours + 1 hour = <<3+1=4>>4 hours not moving.
+This is a total of 20 hours traveling + 4 hours not moving = <<20+4=24>>24 hours or 1 day.
+So the rest of the journey took place over 3 days journey – 1 first day = <<3-1=2>>2 days.
+This is the same as 2 days * 24 hours = <<2*24=48>>48 hours.
+In these 2 days, the spaceship’s time is split into 11 hours traveling + 1 hour break = <<11+1=12>>12 hour blocks.
+So in the last 2 days, the spaceship wasn't moving for a total of 48 hours / 12 hour blocks = <<48/12=4>>4 hours.
+Adding this to breaks from the first day shows that the spaceship was not moving for a total of 4 + 4 = <<4+4=8>>8 hours.

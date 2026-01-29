@@ -1,0 +1,3 @@
+OpenAI runs a robotics competition that limits the weight of each robot. Each robot can be no more than twice the minimum weight and no less than 5 pounds heavier than the standard robot. The standard robot weighs 100 pounds. What is the maximum weight of a robot in the competition?
+the minimum is 5 more than 100 so 100+5=<<100+5=105>>105
+the maximum weight of a robot is twice the minimum 105*2=<<105*2=210>>210

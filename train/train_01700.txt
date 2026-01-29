@@ -1,0 +1,6 @@
+A garden is filled with 105 flowers of various colors. There are twice as many red flowers as orange. There are five fewer yellow flowers than red. If there are 10 orange flowers, how many pink and purple flowers are there if they have the same amount and there are no other colors?
+The number of red flowers is twice as many as orange so 2 * 10 orange = <<2*10=20>>20 red flowers
+The number of yellow flowers is 5 less than red so 20 red - 5 = <<20-5=15>>15 yellow flowers
+The number of red, orange and yellow flowers is 20 red + 10 orange + 15 yellow = <<20+10+15=45>>45 flowers
+The number of pink and purple flowers total is 105 flowers total - 45 flowers that are not pink or purple = <<105-45=60>>60 flowers
+The number of pink and purple flowers each is 60 flowers / 2 = <<60/2=30>>30 flowers each

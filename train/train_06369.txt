@@ -1,0 +1,8 @@
+Nigella is a realtor who earns a base salary of $3,000 a month plus a 2% commission on every house she sells. One month, Nigella sells 3 houses and earns $8,000 total. House B costs three times as much as House A. House C cost twice as much as House A minus $110,000. How much did House A cost?
+First figure out how much money Nigella earned from commission by subtracting her base salary from her total earnings: $8,000 - $3,000 = $<<8000-3000=5000>>5,000.
+Next, figure out how much all three houses cost by dividing Nigella's commission money by her commission rate: $5,000 ÷ 0.02 = $<<5000/0.02=250000>>250,000.
+Next, express each house's price in terms of A's price: B = 3A, and C = 2A - $110,000.
+Now we know that A + 3A + 2A - $110,000 = $250,000.
+We can combine like terms to find that 6A - $110,000 = $250,000.
+Now we add $110,000 to both sides of the equation and get 6A = $360,000.
+We can divide both sides by 6 to find A = $60,000.

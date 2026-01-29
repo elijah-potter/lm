@@ -1,0 +1,7 @@
+Bill is a painter who is hired to paint a client’s house. The house has three bedrooms, and twice as many other rooms as bedrooms. The client wants each bedroom painted a different color, and the other rooms painted white. Each room takes 2 gallons of paint. Color paint comes in 1-gallon paint cans, and white paint comes in 3-gallon cans. How many cans of paint will Bill need for the whole house?
+Bill needs 2 * 3 = <<2*3=6>>6 gallons of color paint for the 3 bedrooms.
+Thus, he needs 6 / 1 = <<6/1=6>>6 cans of color paint for the bedrooms.
+There are 2 * 3 = <<2*3=6>>6 other rooms in the house.
+He needs 2 * 6 = <<2*6=12>>12 gallons of white paint for the other rooms.
+Thus, he needs 12 / 3 = <<12/3=4>>4 cans of white paint.
+In all, Bill needs 4 + 6 = <<4+6=10>>10 cans of paint for the whole house.

@@ -1,0 +1,6 @@
+Hannah has a mental breakdown while studying for finals and starts smashing windows in the high school's parking lot. She smashes a quarter of the students' cars' windows and 3/4ths of the teachers' cars' windows. If there are 64 students' cars with four windows each and 32 teachers' cars with two windows each, how many windows does Hannah smash?
+First find how many student cars Hannah smashed: 64 cars * 1/4 = <<64*1/4=16>>16 cars
+Then find how many teacher cars Hannah smashed: 32 cars * 3/4 = <<32*3/4=24>>24 cars
+Then find how many windows the students' cars had smashed: 16 cars * 4 windows/car = <<16*4=64>>64 windows
+Then find how many windows the teachers' cars had smashed: 24 cars * 2 windows/car = <<24*2=48>>48 windows
+Then add the number of students' and teachers' windows smashed to find the total number of windows smashed: 64 windows + 48 windows = <<64+48=112>>112 windows

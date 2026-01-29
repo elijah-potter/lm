@@ -1,0 +1,6 @@
+To buy a book, you pay $20 for each of the first 5 books at the supermarket, and for each additional book you buy over $20, you receive a discount of $2. If Beatrice bought 20 books, how much did she pay at the supermarket?
+For the first five books, the total cost is $20*5 = $<<20*5=100>>100
+For every additional book over $5, you pay $2 less, totaling to $20-$2 = $18
+Beatrice bought 20 books, so the number of books at which she received the $2 discount is 20-5 = <<20-5=15>>15 books.
+For the 15 books, Beatrice paid 15*$18 = $<<15*18=270>>270
+In total, Beatrice paid $100+$270 = $<<100+270=370>>370 for the 20 books.

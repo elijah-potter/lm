@@ -1,0 +1,5 @@
+Two vampires have come to the sleepy village of Willowton, population 300. Every night, each vampire turns 5 more people into vampires. How many vampires are there after two nights?
+First find the number of new vampires after one night: 5 people/vampire * 2 vampires = <<5*2=10>>10 people
+Add that to the starting number of vampires to find the total number of vampires after one night: 10 vampires + 2 vampires = <<10+2=12>>12 vampires
+Then find the number of new vampires on the second night: 5 people/vampire * 12 vampires = <<5*12=60>>60 people
+Add that number to the starting number of vampires on the second night to find the total number of vampires after two nights: 60 vampires + 12 vampires = <<60+12=72>>72 vampires

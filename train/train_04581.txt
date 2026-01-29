@@ -1,0 +1,6 @@
+Sarah is playing tic-tac-toe. She wins $1 for every game she wins, $0 for every game she ties, and she loses $2 for every game she loses. If she played 100 games where she tied 40 of them, and she lost $30, how many games did she win?
+She either won or lost 60 games because 100 - 40 = <<100-40=60>>60
+We know that 1(60-Losses) -2(Losses) = -30 because she lost $30
+Therefore 60 - Losses - 2 Losses= -30
+Therefore - 3 Losses = -90
+Therefore, Losses = <<30=30>>30

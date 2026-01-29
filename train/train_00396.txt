@@ -1,0 +1,5 @@
+Utopia National Park hosted 30,000 elephants on Friday night. The next morning, there was a 4-hour elephant exodus out of the park, at a constant rate of 2,880 elephants/hour. Over the next 7-hour period, new elephants entered the park at a constant rate. If the final number of elephants in the park was 28,980, at what rate did the new elephants enter the park?
+The Saturday morning exodus out of the park comprised 4*2880 = <<4*2880=11520>>11520 elephants
+This means that after the exodus, the park was left with 30000 - 11520 = <<30000-11520=18480>>18480 elephants
+Since the final number of elephants was 28,980, the new elephants that entered were 28980 - 18480 = <<28980-18480=10500>>10500
+The rate at which the new elephants entered the park was therefore 10500/7 = <<10500/7=1500>>1500 elephants/hour

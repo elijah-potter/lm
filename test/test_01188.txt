@@ -1,0 +1,5 @@
+Jay is making snowballs to prepare for a snowball fight with his sister. He can build 20 snowballs in an hour, but 2 melt every 15 minutes. How long will it take before he has 60 snowballs?
+Every hour, Jay makes 20 snowballs.
+At the same time, each hour 2 * 60/15 = <<2*60/15=8>>8 snowballs melt.
+This means that each hour, Jay ends up with 20 – 8 = <<20-8=12>>12 more snowballs.
+It will take Jay 60 / 12 = <<60/12=5>>5 hours to create enough snowballs.

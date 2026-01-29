@@ -1,0 +1,5 @@
+On his calculator, August had solved a math problem with an answer of 600. The following math problem had an answer twice as big as the answer of the first math problem, and the third math problem had an answer 400 less than the combined total answers of the first and the second math problems. What's the total of August's answers from solving the three math problems on his calculator?
+August solved a math problem that had an answer twice as big as the answer of the first math problem, meaning the next answer was 600*2 = <<600*2=1200>>1200
+The first math problem and the second math problem has answers totaling 1200+600 = <<1200+600=1800>>1800
+The third math problem had an answer 400 less than the combined total answers of the first and the second math problems, meaning the third answer was 1800-400 = <<1800-400=1400>>1400
+Altogether, the math problems that August solved on his computer had answers totaling 1800+1400= <<1800+1400=3200>>3200

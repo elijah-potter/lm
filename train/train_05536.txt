@@ -1,0 +1,5 @@
+There are 13 3-year-olds, 20 4-year-olds, 15 5-year-olds, and 22 six-year-olds at a particular Sunday school. If the 3 and 4-year-olds are in one class and the 5 and 6-year-olds are in another class, what is the average class size?
+First find the total number of 3- and 4-year-olds: 13 kids + 20 kids = <<13+20=33>>33 kids
+Then find the total number of 5- and 6-year-olds: 15 kids + 22 kids = <<15+22=37>>37 kids
+Then add the two class sizes: 33 kids + 37 kids = <<33+37=70>>70 kids
+Then divide the number of kids by the number of classes to find the average class size: 70 kids / 2 classes = <<70/2=35>>35 kids/class

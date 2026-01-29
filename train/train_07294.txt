@@ -1,0 +1,5 @@
+Brenda is a vet who needs to spay some cats and twice as many dogs. If she needs to spay 21 animals total today, how many cats does she need to spay?
+Let c be the number of cats Brenda needs to spay and d be the number of dogs. We know that c + d = 21 and d = 2c.
+Substituting the second equation into the first, we get c + 2c = 21
+Combining like terms, we get 3c = 21
+Dividing both sides by 3, we get c = 7

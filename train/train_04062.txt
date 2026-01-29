@@ -1,0 +1,6 @@
+Ken likes to bike when it's raining and can cycle 30 miles in 20 minutes during this time. However, when it's snowing Ken can't stand the cold and can only cycle 10 miles in 20 minutes. If it rains 3 times and snows 4 times in one week, how many miles did Ken reach if he cycles 1 hour a day?
+For 1 hour on a rainy day, Ken can cycle 3*30=90 miles.
+For 1 hour on a snowy day, Ken can cycle 3*10=<<3*10=30>>30 miles.
+On the rainy days this week, Ken cycled 90*3=<<90*3=270>>270 miles.
+On the snow days of the week, Ken cycled 30*4=<<30*4=120>>120 miles.
+In total, Ken cycled 120+270=<<120+270=390>>390 miles this week.

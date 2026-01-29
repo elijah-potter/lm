@@ -1,0 +1,6 @@
+Bobby buys two packets of candy. He eats two candies every day from Monday through Friday and takes one each during the remaining days of the week. If it takes him 3 such weeks to finish the 2 packets, how many candies are in a packet?
+He eats 2 each from Monday through Friday for a total of 2*5 = <<2*5=10>>10 candies
+He eats 1 each every other day of the week (Saturday and Sunday) for a total of 1*2 = <<1*2=2>>2 candies
+In a week, he consumes a total of 10+2 = <<10+2=12>>12 candies
+Doing this for 3 weeks, he will consume 3*12 = <<3*12=36>>36 candies
+If 2 packets contain 36 candies, then 1 contains 36/2 = 18 candies

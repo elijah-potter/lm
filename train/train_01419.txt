@@ -1,0 +1,4 @@
+Maria wants to paint a picture and needs some tools to do that. She wants to buy a set of brushes for $20 and some canvas for three times more than the brushes. The paint costs Maria $8 per liter, and she needs at least 5 liters. How much money will she earn on the painting if she will be able to sell it for $200?
+Maria wants to pay 3 * 20 = $<<3*20=60>>60 for the canvas.
+Maria needs 5 liters of paint, so the cost of it would be 8 * 5 = $<<8*5=40>>40.
+So in total Maria will earn 200 - 40 - 60 - 20 = $<<200-40-60-20=80>>80 if she will be able to sell the painting at the mentioned price.

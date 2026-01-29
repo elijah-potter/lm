@@ -1,0 +1,7 @@
+Nancy carves statues out of jade. A giraffe statue takes 120 grams of jade and sells for $150. An elephant statue takes twice as much jade and sells for $350. If Nancy has 1920 grams of jade, how much more money will she make turning it all into elephants instead of giraffes?
+First find how many giraffe statues Nancy can make by dividing the total amount of jade by the amount used per giraffe statue: 1920 g / 120 g/giraffe = <<1920/120=16>>16 giraffes
+Then multiply that number by the price per giraffe to find how much Nancy earns total from giraffes: 16 giraffes * $150/giraffe = $<<16*150=2400>>2400
+Then find how much jade each elephant statue uses by doubling the jade used by the giraffe statues: 120 g/giraffe * 2 = <<120*2=240>>240 g/elephant
+Then find how many elephant statues Nancy can make by dividing the total amount of jade by the amount used per elephant statue: 1920 g / 240 g/elephant = <<1920/240=8>>8 elephant
+Multiply that number by the price per elephant to find Nancy's total earnings from elephants: 8 elephants * $350/elephant = $<<8*350=2800>>2800
+Finally, subtract Nancy's total earnings from the giraffes from her total earnings from the elephants to find the difference: $2800 - $2400 = $<<2800-2400=400>>400

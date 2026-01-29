@@ -1,0 +1,7 @@
+John builds a box.  The box is 26 inches by 26 inches by 14 inches.  The walls are 1 inch thick on each side.  How much is the internal volume in cubic feet?
+The walls take away 2*1=<<2*1=2>>2 inches from each dimension
+So the longer sides are 26-2=<<26-2=24>>24 inches
+That is 24/12=<<24/12=2>>2 feet
+The smaller dimension is 14-2=<<14-2=12>>12 inches
+That is 12/12=<<12/12=1>>1 foot
+So the internal volume is 2*2*1=<<2*2*1=4>>4 cubic feet

@@ -1,0 +1,5 @@
+A museum has eight different wings displaying four times as many artifacts as paintings displayed. Three of the wings are dedicated to paintings. The artifacts are divided evenly among the remaining wings. One painting is so large it takes up an entire wing, and the other two wings house 12 smaller paintings each. How many artifacts are in each artifact wing?
+The museum has 2 * 12 + 1 = <<2*12+1=25>>25 paintings displayed in the painting wings.
+There are 4 times as many artifacts displayed, so there are 25 * 4 = <<25*4=100>>100 artifacts.
+There are 8 wings and 3 are painting wings, so there are 8 - 3 = <<8-3=5>>5 artifact wings.
+Each artifact wing has 100 / 5 = <<100/5=20>>20 artifacts in it.

@@ -1,0 +1,8 @@
+At a shop in Japan, women's T-shirts are sold every 30 minutes for $18, and men's T-shirts are sold every 40 minutes for $15. This shop is open from 10 am until 10 pm. How much does the shop earn selling T-shirts per week?
+First, the shop is open 12 hours * 60 minutes = <<12*60=720>>720 minutes per day.
+So, 720 / 30 = <<720/30=24>>24 women's T-shirts sold per day.
+The shop earns 24 * $18 = $<<24*18=432>>432 selling women's T-shirts per day.
+Similarly, 720 / 40 = <<720/40=18>>18 men's T-shirts are sold per day.
+The shop earns 18 * $15 = $<<18*15=270>>270 selling men's T-shirts per day.
+The shop earns $432 + $270 = $<<432+270=702>>702 per day selling T-shirts.
+The shop earns $702 * 7 = $<<702*7=4914>>4914 per week.

@@ -1,0 +1,6 @@
+The math teacher would be happy if the class average test score was at least 85. There are 10 students in the class, 5 of which scored a 92 on the test and 4 of which scored an 80. What would the last student have to score to at least make the teacher happy?
+5 students scored a combined total of 92 * 5 = <<92*5=460>>460
+4 additional students scored a combined total of 80 * 4 = <<80*4=320>>320
+9 students therefore scored a combined total of 460 + 320 = <<460+320=780>>780
+We know the total combined score for 10 students must be at least 85 average * 10 students = <<85*10=850>>850
+Therefore, the last student must score at least an 850 - 780 = <<850-780=70>>70

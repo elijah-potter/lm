@@ -1,0 +1,5 @@
+Two track teams are competing against each other in a 4 by 400 meter relay; a race where each competing team has four members that each run 400 meters, or one lap, around a standard track.  One of the two teams is very well-rounded and each of their members will run their 400 meter leg in precisely 55 seconds.  The other team is less well-rounded; their first runner will run their 400 meter leg in 60 seconds then each subsequent runner will be 3 seconds faster than the previous runner.  Using this information, how many seconds will the faster team win by?
+The first team will finish the relay in 4*55 = <<4*55=220>>220 seconds.
+On the second team we must determine each runner's individual pace. We know the first runner will complete their leg in 60 seconds, so the second runner will take 60 - 3 = 57 seconds, then the third will take 57 - 3 = 54 seconds, and the fourth will take 54 - 3 = 51 seconds.
+Thus, the second team will finish the relay in 60 + 57 + 54 + 51 = <<60+57+54+51=222>>222 seconds.
+Therefore, the first team will finish 222 - 220 = <<222-220=2>>2 seconds faster than the second team.

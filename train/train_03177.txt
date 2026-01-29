@@ -1,0 +1,8 @@
+Cynthia has three children whose ages add up to 35. Matthew is two years older than Rebecca and four years younger than Freddy. How many years old is Freddy?
+Let A be Matthew’s age.
+Rebecca is A - 2 years old.
+Freddy is A + 4 years old.
+Their ages add up to 35, so A + A - 2 + A + 4 = 3A + 2 = 35.
+Therefore, 3A = 35 - 2 = 33.
+Matthew is A = 33 / 3 = <<33/3=11>>11 years old.
+Thus, Freddy is 11 + 4 = <<11+4=15>>15 years old.

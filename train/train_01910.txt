@@ -1,0 +1,5 @@
+40 kids are running a race. 10% of them pass the finish line in less than 6 minutes. Three times that number finish in less than 8 minutes. 1/6 of the remaining kids take more than 14 minutes. How many kids take more than 14 minutes?
+First find how many kids finish in under 6 minutes: 40 kids * 10% = <<40*10*.01=4>>4 kids
+Then triple that number to find how many finish in less than 8 minutes: 4 kids * 3 = <<4*3=12>>12 kids
+Then subtract those two numbers from the total number of kids to find the number of remaining kids: 40 kids - 4 kids - 12 kids = <<40-4-12=24>>24 kids
+Then divide that number by 6 to find how many kids take more than 14 minutes: 24 kids / 6 = <<24/6=4>>4 kids

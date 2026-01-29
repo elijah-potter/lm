@@ -1,0 +1,6 @@
+Linda is building a new hotel with two wings. The first wing has 9 floors and each floor has 6 halls each with 32 rooms. The second wing has 7 floors each with 9 halls with 40 rooms each. How many rooms are in the hotel total?
+First find the number of rooms per floor in the first wing: 32 rooms/hall * 6 halls/floor = <<32*6=192>>192 rooms/floor
+Then find the total number of rooms in the first wing by multiplying that number by the number of floors: 192 rooms/floor * 9 floors = <<192*9=1728>>1728 rooms
+Then find the number of rooms per floor in the second wing: 40 rooms/hall * 9 halls/floor = <<40*9=360>>360 rooms/floor
+Then find the total number of rooms in the second wing by multiplying that number by the number of floors: 360 rooms/floor * 7 floors = <<360*7=2520>>2520 rooms
+Then add the total number of rooms in each wing to find the overall total: 1728 rooms + 2520 rooms = <<1728+2520=4248>>4248 rooms

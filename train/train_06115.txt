@@ -1,0 +1,6 @@
+Nancy has six pairs of boots, nine more pairs of slippers than boots, and a number of pairs of heels equal to three times the combined number of slippers and boots. How many shoes (individual shoes, not pairs) does she have?
+First find how many pairs of slippers Nancy has: 6 pairs + 9 pairs = <<6+9=15>>15 pairs
+Then add that number to the number of pairs of boots she has: 15 pairs + 6 pairs = <<15+6=21>>21 pairs
+Then triple that number to find how many pairs of heels she has: 21 pairs * 3 = <<21*3=63>>63 pairs
+Then add the number of pairs of each kind of shoe she has: 15 pairs + 6 pairs + 63 pairs = <<15+6+63=84>>84 pairs
+Then multiply the number of pairs by 2 to find the number of individual shoes she has: 84 pairs * 2 shoes/pair = <<84*2=168>>168 shoes

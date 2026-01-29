@@ -1,0 +1,5 @@
+The price of a book was $400. If the book's price is decreased by 15% and then increased by 40%, what is the final price of the book?
+When the price of the book is decreased by 15%, the total price decrease is 15/100*$400=$<<15/100*400=60>>60
+The new price of the book becomes $400-$60 = $<<400-60=340>>340
+The price of the book is then increased by 40/100*340 = $<<40/100*340=136>>136
+The final price of the book is $340+$136 = $<<340+136=476>>476

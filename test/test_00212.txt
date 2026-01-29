@@ -1,0 +1,8 @@
+Jerry has a flock of chickens. The red chickens produce 3 eggs a day, and the white chickens produce 5 eggs a day. Every day Jerry collects 42 eggs. If he has two more white chickens than red chickens, how many red chickens does he have?
+First, set up the equation for the number of eggs the chickens lay each day: 3r + 5w = 42, where r is the number of red chickens and w is the number of white chickens.
+Then, express r in terms of w based on the information in the problem: w = r + <<+2=2>>2
+Now substitute r + 2 for w in the equation for the number of eggs: 3r + 5(r + 2) = 42
+Now multiply 5 through the parentheses: 3r + 5r + 10 = 42
+Now add like terms to get 8r + 10 = 42
+Now subtract 10 from both sides of the equation: 8r = 32
+Finally, divide both sides of the equation by 8 to get r = 4

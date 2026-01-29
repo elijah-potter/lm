@@ -1,0 +1,8 @@
+Paul's grades last semester were very bad. To encourage him, Paul's dad promised him $5 for every B+ he gets in his next scorecard and twice that amount for every A. If Paul obtains at least two A+ he'll double the previous rewards and would receive a flat $15 for every A+ obtained (with no extra bonus). If there are 10 courses with grades in Paul's scorecard, what's the maximum amount he could receive from his dad?
+We know Paul would get $5 for a B+. However, we know this could be (2x) doubled if he obtains at least two A+. This means 2*$5 = $<<2*5=10>>10 for a B+ if Paul gets at least two A+
+We know Paul would get twice the reward of a B+ if he gets an A. This means 2*$5 = $<<5*2=10>>10 for every A
+However, we know his reward for every A could be (2x) doubled if he obtains at least two A+. This means 2*$10 = $<<2*10=20>>20 for every A if Paul gets at least two A+
+We learn here then that Paul will get a higher reward for obtaining A grades ($20) than getting A+ grades ($15) as long as he's able to score at least two A+.
+To maximize his payout, Paul will need to get only (2) two A+ from his 10 courses. Therefore he should aim to get an A in the remaining 10-2 = <<10-2=8>>8 courses
+Assuming Paul can get two A+ and eight A in his next scorecard his total payout would be 2*$15 + 8*$20
+This translates into $30 + $160 or $<<30+160=190>>190

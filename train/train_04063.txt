@@ -1,0 +1,6 @@
+Jenna wants to buy a concert ticket that costs $181, plus five drink tickets for $7 each. If Jenna earns $18 an hour and works 30 hours a week, what percentage of her monthly salary will she spend on this outing?
+First find the total cost of the drink tickets: 5 tickets * $7/ticket = $<<5*7=35>>35
+Then add that cost to the cost of the ticket to find the total cost: $35 + $181 = $<<35+181=216>>216
+Then multiply Jenna's hourly rate by the number of hours she works each week to find her weekly earnings: $18/hour * 30 hours/week = $<<18*30=540>>540/week
+Then multiply her weekly earnings by the number of weeks she works each month: $540/week * 4 weeks/month = $<<540*4=2160>>2160/month
+Then divide the cost of the concert by Jenna's monthly earnings and multiply by 100% to express the answer as a percentage: $216 / $2160 * 100% = 10%

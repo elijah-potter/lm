@@ -1,0 +1,5 @@
+Carter has a jar with 20 green M&Ms and 20 red M&Ms. He eats 12 of the green M&Ms, then his sister comes and eats half the red M&Ms and adds 14 yellow M&Ms. If Carter picks an M&M at random now, what is the percentage chance he'll get a green M&M?
+First find the final number of green M&Ms by subtracting 12 from the starting number: 20 M&Ms - 12 M&Ms = <<20-12=8>>8 green M&Ms
+Then find the final number of red M&Ms by dividing the starting number by half: 20 M&Ms / 2 = <<20/2=10>>10 red M&Ms
+Then find the total number of M&Ms at the end by adding the number of red, green and yellow M&Ms: 8 M&Ms + 10 M&Ms + 14 M&Ms = <<8+10+14=32>>32 M&Ms
+Then divide the number of green M&Ms by the total number of M&Ms and multiply by 100 to find the percentage chance Carter gets a green M&M: 8 M&Ms / 32 M&Ms * 100 = <<8/32*100=25>>25%

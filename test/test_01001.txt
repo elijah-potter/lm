@@ -1,0 +1,6 @@
+Doctor Jones is scheduling his time for Monday. He is spending nine hours at the clinic where he works that day. He has to do rounds to check on inpatients staying at the clinic, which takes twenty minutes per inpatient, and he has ten appointments, which take thirty minutes each. How many hours will Doctor Jones have left to update his records if he has 9 inpatients at the clinic?
+Doctor Jones has 9 inpatients, so his rounds will take 9 * 20 = <<9*20=180>>180 minutes.
+He has ten appointments, which will take 10 * 30 = <<10*30=300>>300 minutes.
+The rounds and appointments will take 180 + 300 = <<180+300=480>>480 minutes total.
+An hour is 60 minutes, so rounds and appointments will take 480 / 60 = <<480/60=8>>8 hours.
+Doctor Jones will have 9 - 8 = <<9-8=1>>1 hour left to update his records.

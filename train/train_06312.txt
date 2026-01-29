@@ -1,0 +1,6 @@
+An online website offers a flat rate shipping price of $5.00 if the purchase is below $50.00.  If it's above $50.00 then they will charge 20% of the purchase price for shipping.  Thomas orders 3 shirts for $12.00 each, a pack of socks for $5.00, 2 pairs of shorts for $15.00 each and a pair of swim trunks for $14.00  How much will his total bill be, including shipping?
+He orders 3 shirts at $12.00 each for a total of 3*12 = $<<3*12=36.00>>36.00
+He orders 2 pair of shorts for $15.00 each for a total of 2*15 = $<<2*15=30.00>>30.00
+He spends $36.00 on shirts, $5.00 on socks, $30.00 on shorts and $14.00 on a pair of swim trunks for a total of 36+5+30+14 = $<<36+5+30+14=85.00>>85.00
+His order is over $50.00 so he will be charged 20% shipping on his $85.00 order so he'll pay .20*85 = $17.00 in shipping
+His order is $85.00 and he's paying $17.00 in shipping for a total bill of 85+17 = $<<85+17=102.00>>102.00

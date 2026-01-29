@@ -1,0 +1,5 @@
+Fern is trying to decide between buying the Widgeteer 3000, which makes 60 widgets an hour, and the WidgetMaster 9000, which makes 45 widgets an hour. Each widget sells for $6. How much more money will Fern make from the Widgeteer 3000 vs. the WidgetMaster 9000 if it runs 24 hours a day for a month with 30 days?
+First find how many more widgets the Widgeteer 3000 makes per hour: 60 widgets/hour - 45 widgets/hour = <<60-45=15>>15 widgets/hour
+Then multiply that difference by the number of hours in a day to find the daily difference: 15 widgets/hour * 24 hours/day = <<360=360>>360 widgets/day
+Then multiply the daily difference by the number of days in a month to find the monthly difference: 360 widgets/day * 30 days/month = <<360*30=10800>>10,800 widgets/month
+Then multiply that number by the cost per widget to find the total earnings difference: 10,800 widgets/month * $6/widget = $<<10800*6=64800>>64,800

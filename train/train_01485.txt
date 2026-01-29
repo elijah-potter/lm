@@ -1,0 +1,7 @@
+Lucy lost one-third of her money. She then spent one-fourth of the remainder, and only left with $15. How much money did Lucy have at the beginning?
+The $15 is 1 - 1/4 = 3/4 of the money left.
+Since 3/4 is equal to $15, then 1/4 is equal to $15/3 = $5.
+So Lucy had $5 x 4 = $<<5*4=20>>20 left after losing 1/3 of her money.
+Hence, $20 is 1 - 1/3 = 2/3 of the money that Lucy had at the beginning.
+Since 2/3 is equal to $20, then 1/3 is equal to $20/2 = $10.
+Therefore, Lucy had $10 x 3 = $<<10*3=30>>30 at the beginning.

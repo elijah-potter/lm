@@ -1,0 +1,6 @@
+In November, a toy was $40. In December, the price increased by 80%. In January, the price decreased by 50%. What was the price of the toy after it was discounted in January?
+In November, the toy's price was $<<40=40>>40.
+The 80% increment represents 40*0.8=$32
+In December, the toy's price was 40 + 32 = $<<40+32=72>>72.
+The 50% increment from January represents 72*0.5=<<72*0.5=36>>36
+In January, the toy's price is 72 - 36 = $<<72-36=36>>36.

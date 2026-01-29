@@ -1,0 +1,5 @@
+At 8:00, 5000 people lined up at a polling station to cast their vote on election day. By midday 2/5 of the people had voted and by 16:00 2/3 of the remaining people had voted. What's the number of those who had not voted by 16:00?
+If the number of people who turned up to vote was 5000, by midday 2/5*5000 = <<2/5*5000=2000>>2000 had voted.
+The number of voters who had not cast their vote is 5000-2000 = <<5000-2000=3000>>3000
+By 16:00, the additional number of voters who had cast their vote is 2/3*3000 = <<2/3*3000=2000>>2000
+The number of people who had not cast their votes by 16:00 is 3000-2000 = <<3000-2000=1000>>1000 voters.

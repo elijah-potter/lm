@@ -1,0 +1,8 @@
+Walter goes to the zoo, where he spends a certain amount of time looking at the seals, eight times as long looking at the penguins, and 13 minutes looking at the elephants. If he spent 2 hours and 10 minutes at the zoo, how many minutes did he spent looking at the seals?
+First find the number of minutes in 2 hours: 2 hours * 60 minutes/hour = <<2*60=120>>120 minutes
+Then add 10 minutes to that amount to find the total number of minutes Walter spent at the zoo: 120 minutes + 10 minutes = <<120+10=130>>130 minutes
+Let s be the amount of time he spends looking at the seals and p be the amount of time he spends looking at the penguins. From the problem, we know that s + p + 13 = 130 and p = 8s.
+Substituting the second equation into the first, we get s + 8s + 13 = 130
+Combining like terms, we get 9s + 13 = 130
+Subtracting 8 from both sides, we get 9s = 117
+Dividing both sides by 9, we get s = 13

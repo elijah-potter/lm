@@ -1,0 +1,5 @@
+Julia's internet speed is 20 MBps (megabytes per second). How many songs she can download in half an hour if the size per song is 5MB?
+1 hour has 60 minutes, therefore 1/2 hour has 1/2*60 = <<1/2*60=30>>30 minutes
+1 minute has 60 seconds, therefore 30 minutes has 30*60 = <<1800=1800>>1800 seconds
+If Julia's internet speed is 20MBps and each song has a size of 5MB, then it would take 5/20=1/4 seconds to download one song
+If it takes 1/4 seconds to download 1 song, then in 1800 seconds, Julia could download 1800/(1/4) = 1800 * 4 = 7200 songs

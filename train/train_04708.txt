@@ -1,0 +1,5 @@
+For every white duck at the lake there are 5 fish.  For every black duck there are 10 fish and for every multicolor duck there are 12 fish.  Currently there are 3 white ducks, 7 black ducks and 6 multicolored ducks.  How many fish are in the lake?
+For every white duck there are 5 fish and there are 3 white ducks for a total of 5*3 = <<5*3=15>>15 fish
+For every black duck there are 10 fish and there are 7 black ducks for a total of 10*7 = <<10*7=70>>70 fish
+For every multicolored duck there are 12 fish and there are 6 multicolored ducks for a total of 12*6 = <<12*6=72>>72 fish
+All total there are 15+70+72 = <<15+70+72=157>>157 fish in the lake

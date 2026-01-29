@@ -1,0 +1,8 @@
+Kim loves to knit sweaters and can knit as many as 10 sweaters in a day if she gets the time. On a particular week, she knit 8 sweaters on Monday, 2 more sweaters on Tuesday than on Monday, 4 fewer sweaters on both Wednesday and Thursday than on Tuesday, and half the number of sweaters she had knit on Monday on Friday. Calculate the total number of sweaters she knit that week.
+If she knit 8 sweaters on Monday and 2 more on Tuesday, she knit 8+2 = <<8+2=10>>10 sweaters on Tuesday.
+The total number of sweaters she had knit on Monday and Tuesday is 10+8 = <<10+8=18>>18
+On Wednesday, she knit four fewer sweaters than the number she knit on Tuesday, which totals 10-4 = <<10-4=6>>6 sweaters.
+By Wednesday, she had knit 18+6 = <<18+6=24>>24 sweaters.
+On Thursday, she knit the same number of sweaters she had knit on Thursday, giving a total of 24+6 = <<24+6=30>>30 sweaters.
+On Friday, she knit half the number of sweaters she had knit on Monday, which totals 1/2*8 = <<8*1/2=4>>4 sweaters on Friday.
+So far, she has knit 30+4 = <<30+4=34>>34 sweaters by Friday.

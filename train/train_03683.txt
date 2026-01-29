@@ -1,0 +1,6 @@
+Gail has some bills in her wallet which amount to $100. She has four $5 bills and three $20 bills, and the rest are $10 bills. How many $10 bills are in her wallet?
+Four $5 bills amount to $5 x 4 = $<<5*4=20>>20.
+Three $20 bills amount to $20 x 3 = $<<20*3=60>>60.
+So Gail's $5 and $20 bills amount to $20 + $60 = $80.
+Thus, her $10 bills amount to $100 - $80 = $20.
+Therefore, she has $20/$10 = <<20/10=2>>2 $10 bills.

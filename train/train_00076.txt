@@ -1,0 +1,6 @@
+Dale and Andrew had breakfast at a cafe. A slice of toast costs £1, and eggs cost £3 each. Dale had 2 slices of toast and 2 eggs. Andrew had 1 slice of toast and 2 eggs. How much did their breakfast cost?
+The cost of Dale's toast is 2 × $1 = $<<2*1=2>>2.
+The cost of Andrew's toast is 1 × $1 = $<<1*1=1>>1.
+The cost of Dale's eggs is 2 × $3 = $<<2*3=6>>6.
+The cost of Andrew's eggs is 2 × $3 = $<<2*3=6>>6.
+Their breakfast cost $2 + $1 + $6 + $6 = $<<2+1+6+6=15>>15.

@@ -1,0 +1,6 @@
+Heather helps her neighbour pick weeds out of her garden. She gets paid 5 cents for every weed she picks. On average, how many seconds can she take to pick a weed if she wants to earn $10 an hour?
+In an hour, she needs to earn $10 * 100 cents / $1 = <<10*100=1000>>1000 cents.
+In an hour, she must pick 1000 cents / 5 cents = <<1000/5=200>>200 weeds.
+There are 1hr * (60 minutes / 1 hr) = <<1*60=60>>60 minutes in an hour.
+There are 60 minutes * (60 seconds / 1 minute) = <<60*(60/1)=3600>>3600 seconds in an hour.
+She has 3600 seconds / 200 = <<3600/200=18>>18 seconds to pick each weed.

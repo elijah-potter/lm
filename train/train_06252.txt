@@ -1,0 +1,6 @@
+Susan walked to the market to buy five dozen peaches.  To carry them home, she brought two identically-sized cloth bags and a much smaller knapsack.  Into the knapsack she placed half as many peaches as she placed in each of the two cloth bags. How many peaches did she put in the knapsack?
+5 dozen peaches is 5*12=<<5*12=60>>60 peaches.
+Let "x" be the number of peaches put into the knapsack.
+Thus, the total number of peaches is x+(2*x)+(2*x)=60.
+Simplifying the expression, we see that 5*x=60.
+Dividing each side of the equation by 5, we see that x=12 peaches,

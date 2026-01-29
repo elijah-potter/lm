@@ -1,0 +1,4 @@
+Toby is in a juggling contest with a friend. The winner is whoever gets the most objects rotated around in 4 minutes. Toby has 5 baseballs and each one makes 80 rotations. His friend has 4 apples and each one makes 101 rotations. How many total rotations of objects are made by the winner?
+Toby gets 400 full rotations because 5 x 80 = <<5*80=400>>400
+His friend get 404 rotations because 4 x 101 = <<4*101=404>>404
+The winner rotated 404 objects because 404 > 400

@@ -1,0 +1,5 @@
+An earthquake caused four buildings to collapse. Experts predicted that each following earthquake would have double the number of collapsing buildings as the previous one, since each one would make the foundations less stable. After three more earthquakes, how many buildings had collapsed including those from the first earthquake?
+The second earthquake caused 2 * 4 = <<2*4=8>>8 buildings to collapse.
+The third earthquake caused 2 * 8 = <<2*8=16>>16 buildings to collapse.
+The fourth earthquake caused 16 * 2 = <<16*2=32>>32 buildings to collapse.
+Including the first earthquake, the earthquakes caused 4 + 8 + 16 + 32 = <<4+8+16+32=60>>60 buildings to collapse.

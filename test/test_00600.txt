@@ -1,0 +1,5 @@
+A pet store currently has 5 dogs, 2 cats, and 10 birds. How many legs in total do the pets in the store have?
+The dogs have 5 dogs * 4 legs/dog = <<5*4=20>>20 legs.
+The cats have 2 cats * 4 legs/cat = <<2*4=8>>8 legs.
+The birds have 10 birds * 2 legs/bird = <<10*2=20>>20 legs.
+The pets have 20 legs + 8 legs + 20 legs = <<20+8+20=48>>48 legs.

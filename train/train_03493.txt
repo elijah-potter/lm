@@ -1,0 +1,7 @@
+Samuel has $5, $10, and $20 bills which amount to $150 in his wallet. His $10-bills amount to $50, and he has 4 $20-bills. How many bills does Samuel have in his wallet?
+His $20 bills amount to 4 x $20 = $<<4*20=80>>80.
+So the total amount of the $10 and $20 bills is $80 + $50 = $<<80+50=130>>130.
+Hence, the remaining $5 bills amount to $150 - $130 = $20.
+This means that there are $20/$5 = <<20/5=4>>4 $5 bills.
+There are also $50/$10 = 5 $10 bills.
+Therefore, Samuel has 4 + 4 + 5 = <<4+4+5=13>>13 bills in his wallet.

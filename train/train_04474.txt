@@ -1,0 +1,6 @@
+Tony read 23 books, Dean read 12 books and Breanna read 17 books. Tony and Dean read 3 of the same books and all three had read the same book as well. In total how many different books have Tony, Dean, and Breanna read?
+Tony and Dean together read 23 + 12 = <<23+12=35>>35 books
+3 of these books were duplicates so Tony and Dean together read 35 - 3 = <<35-3=32>>32 unique books
+All three read 32 + 17 = <<32+17=49>>49 books
+Because the books are being counted three times, the book is counted 3 - 1 = <<3-1=2>>2 extra times.
+All together they have read 49 - 2 = <<49-2=47>>47 different books

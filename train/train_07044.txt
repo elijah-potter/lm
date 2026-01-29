@@ -1,0 +1,8 @@
+Stephanie is checking her household budget, and needs to calculate how much she has left to pay for her bills. Her electricity bill costs $60, and this is paid in full. Her gas bill was $40, and she has already paid three-quarters of this. She makes another payment of $5 towards her gas bill while checking her budget. Her water bill is $40, which she has paid half of, and her internet bill is $25, which she has made 4 payments of $5 towards. Overall, how many dollars does Stephanie still need to pay to finish paying her bills?
+Stephanie has paid three-quarters of her gas bill, which is 40 * 0.75 = $<<40*0.75=30>>30.
+She then made another payment, which means she has paid 30 + 5 =$<<30+5=35>>35 of her gas bill.
+She has paid half of her water bill, which is 40 * 0.5 = $<<40*0.5=20>>20.
+She has made 4 payments towards her internet bill, which is a total of 4 * 5 = $<<4*5=20>>20.
+Overall, her bills were 60 + 40 + 40 + 25 = $<<60+40+40+25=165>>165.
+Overall, she has made payments of 60 + 35 + 20 + 20 = $<<60+35+20+20=135>>135.
+Therefore, she still has to pay 165 – 135 = $<<165-135=30>>30.

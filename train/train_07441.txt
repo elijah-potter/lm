@@ -1,0 +1,5 @@
+Baking in batches of 65 cupcakes, Carla made 45 batches of cupcakes for her daughter's birthday party. She then took 5 cupcakes from each batch, and fed them to her dogs. If Carla's daughter had 19 friends and they shared the remaining cupcakes equally among them, including the daughter, calculate the number of cupcakes that each of Carla's daughter's friends ate.
+If Carla sampled 5 cupcakes from each batch and fed them to her dogs, each batch had 65-5 = 60 cupcakes afterwards.
+Since Carla made 45 batches of cupcakes for her daughter's birthday party, after removing the 5 cupcakes from each batch, Carla's daughter and her friends received 45*60 = <<45*60=2700>>2700 cupcakes.
+The total number of people at the party is 19 friends + 1 daughter = <<19+1=20>>20
+After sharing the cupcakes equally among them, Carla's daughter and her friends each received 2700/20 = <<2700/20=135>>135 cupcakes

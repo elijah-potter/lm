@@ -1,0 +1,5 @@
+Julie works at a restaurant that pays her an hourly rate of $5. She works 8 hours a day and 6 days a week. How much is her monthly salary if she was not able to go to work for a day?
+Julie's daily earnings are $5 x 8 = $<<5*8=40>>40.
+Her weekly earnings are $40 x 6 = $<<40*6=240>>240.
+Her monthly earnings are $240 x 4 = $<<240*4=960>>960.
+Since she was not able to work for a day, her salary will be $960 - $40 = $<<960-40=920>>920.

@@ -1,0 +1,8 @@
+Mark wants to have a water balloon fight with his friends. He goes to the store to buy balloons and sees that they sell small bags for $4, medium bags for $6 and extra large bags for $12. He has $24 and wants to get the most balloons as possible. If the $4 bags contain 50 balloons, the $6 bags contain 75 balloons and the $12 bags contain 200 balloons, what is the greatest number of balloons he can buy?
+He can buy 6 small bags because 24 / 4 = <<24/4=6>>6
+These give him 300 balloons, because 6 x 50 = <<6*50=300>>300
+He can buy 4 medium bags because 24 / 6 = <<24/6=4>>4
+These give him 300 balloons because 4 x 75 = <<4*75=300>>300
+He can buy 2 extra large bags because 24 / 12 = <<24/12=2>>2
+This gives him 400 balloons because 2 x 200 = <<2*200=400>>400
+400 is the most he can buy because 400 is greater than 300

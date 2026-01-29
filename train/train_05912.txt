@@ -1,0 +1,6 @@
+A building has 20 floors. Each floor is 3 meters high, except for the last two floors. The last two floors are each 0.5 meters higher. How tall is the building?
+There are 20 - 2 = <<20-2=18>>18 floors that are each 3 meters high.
+So the first 18 floors is 18 x 3 = <<18*3=54>>54 meters high.
+The last two floors are each 3 + 0.5 = <<3+0.5=3.5>>3.5 meters high.
+So the total height of the last two floors is 3.5 x 2 = <<3.5*2=7>>7 meters.
+Therefore, the building is 54 + 7 = <<54+7=61>>61 meters high.

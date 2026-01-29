@@ -1,0 +1,4 @@
+On a 16 GB (gigabyte) capacity USB drive, 50% is already busy. Calculate the number of gigabytes still available.
+We calculate 50% of 16 GB:
+50/100 * 16 GB = 0.5 * 16 GB = <<50/100*16=8>>8 GB
+That leaves 16 GB - 8 GB = <<16-8=8>>8 GB available on this key.

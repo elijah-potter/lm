@@ -1,0 +1,6 @@
+The total distance between 2 towns is 200 miles. Roger and his friend drove 1/4 of the total distance, taking 1 hour to do so. They take lunch for another 1 hour and then drove the remaining distance going at the same speed as before. What's the total amount of time, in hours, Roger and his friend took to travel between the two towns?
+When they covered 1/4 of the total distance, they were 1/4 * 200 = <<1/4*200=50>>50 miles away from the starting point.
+The total distance remaining is 200 - 50 = <<200-50=150>>150 miles.
+If they took 1 hour to travel 50 miles, their speed was 50/1 = <<50/1=50>>50 miles per hour.
+If Roger was driving at 50 miles per hour, then the total time it took him to travel 150 miles is 150/50 = <<150/50=3>>3 hours.
+The total amount of time taken for the whole journey is 3 + 1 + 1= 5 hours.

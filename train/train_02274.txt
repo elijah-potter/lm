@@ -1,0 +1,6 @@
+Andrea buys herself a pony for her 30th birthday. She pays $500/month to rent a pasture for it, $10 a day for food, and $60/lesson for two lessons a week. How much does she spend on her pony in a year?
+First find the annual cost of food: $10/day * 365 days = $<<10*365=3650>>3650
+Then find how much she spends a week on lessons: $60/lesson * 2 lessons = $<<60*2=120>>120
+Then multiply that weekly cost by the number of weeks per year to find the annual cost: $120/week * 52 weeks/year = $<<120*52=6240>>6240
+Then find the annual cost of the pasture: $500/month * 12 months/year = $<<500*12=6000>>6000
+Then add all the costs to find the total cost: $6000 + $6240 + $3650 = $<<6000+6240+3650=15890>>15890

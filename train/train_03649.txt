@@ -1,0 +1,5 @@
+Carla is dividing up chores for her two kids, Anna and Billy. She wants each of them to spend the same number of minutes working. Sweeping takes 3 minutes per room, washing the dishes takes 2 minutes per dish, and doing laundry takes 9 minutes per load. If Anna does the sweeping for 10 rooms and Billy does two loads of laundry, how many dishes should Billy wash so they spend the same amount of time doing chores?
+First find the total time Billy spends on laundry: 2 loads * 9 minutes/load = <<2*9=18>>18 minutes
+Then find the total time Anna spends sweeping: 3 minutes/room * 10 rooms = <<3*10=30>>30 minutes
+Then find how much longer Anna has already worked than Billy: 30 minutes - 18 minutes = <<30-18=12>>12 minutes
+Then divide the difference in work time by the time to wash one dish to find the number of dishes Billy has to wash to work the same amount of time as Anna: 12 minutes / 2 minutes/dish = <<12/2=6>>6 dishes

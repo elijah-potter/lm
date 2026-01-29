@@ -1,0 +1,5 @@
+Emily can peel 6 shrimp a minute and saute 30 shrimp in 10 minutes. How long will it take her to peel and cook 90 shrimp?
+First find how long it takes Emily to peel the shrimp: 90 shrimp / 6 shrimp/minute = <<90/6=15>>15 minutes
+Then find how many batches of shrimp she needs to cook: 90 shrimp / 30 shrimp/batch = <<90/30=3>>3 batches
+Then multiply the number of batches by the time per batch to find the total cook time: 3 batches * 10 minutes/batch = <<3*10=30>>30 minutes
+Then add the peeling time to find the total time Emily spends: 30 minutes + 15 minutes = <<30+15=45>>45 minutes

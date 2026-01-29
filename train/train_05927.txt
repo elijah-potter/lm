@@ -1,0 +1,5 @@
+Jack has 42 pounds, 11 euros, and 3000 yen. If there are 2 pounds per euro and 100 yen per pound, how much does Jack have in yen?
+First convert the euros to pounds: 11 euros * 2 pounds/euro = <<11*2=22>>22 pounds.
+Then add that amount to the amount Jack has in pounds: 22 pounds + 42 pounds = <<22+42=64>>64 pounds.
+Then convert the pounds to yen: 64 pounds * 100 yen/pound = <<64*100=6400>>6400 yen.
+Then add that amount to the amount Jack has in yen: 6400 yen + 3000 yen = <<6400+3000=9400>>9400 yen.

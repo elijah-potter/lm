@@ -1,0 +1,7 @@
+A group of 6 students organized a fundraiser to go to Nicaragua for the summer. For them to go on the trip, each of them needs at least $450. On top of that, they need $3000 for their miscellaneous collective expenses. On the first day of their fundraiser, they receive $600. On the second day, they receive $900, and on the third day, they receive $400. For the next 4 days, they receive only half of what they raised on the first 3 days. How much more money does each person need to raise for them to reach their goal?
+All together, they need to raise ($450 x 6) + $3000 = $<<450*6+3000=5700>>5700
+The raised $600 + $900 + $400 = $<<600+900+400=1900>>1900 the first 3 days.
+For the next 4 days, they only raised $1900/2 = $<<1900/2=950>>950
+In the week, they raised $1900 + $950 = $<<1900+950=2850>>2850
+They still need $5700 - $2850 = $<<5700-2850=2850>>2850
+Each person still needs $2850/6 = $<<2850/6=475>>475

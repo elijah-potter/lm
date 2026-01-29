@@ -1,0 +1,3 @@
+A type C school bus contains 13 rows of seats, with an aisle running down the middle of the bus, splitting each row into two sections.  If the school only allowed two students to sit in each section, how many students could be seated on the bus?
+13 rows, with 2 sections per row would contain 13*2=<<13*2=26>>26 sections.
+If two students sat per section, there would be capacity for 26*2=<<26*2=52>>52 students.

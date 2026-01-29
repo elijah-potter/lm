@@ -1,0 +1,5 @@
+Joan is at the grocery store. She has a total of $60 to spend. She is going to purchase 2 containers of hummus, which are $5 each. She is going to purchase chicken for $20, bacon for $10, and vegetables for $10. She wants to purchase apples which are $2 each. With her remaining money, how many apples can she purchase?
+The total cost of the hummus is 2 * $5 = $<<2*5=10>>10
+The total cost of the chicken, bacon, and vegetables is $20 + $10 + $10 = $<<20+10+10=40>>40
+The remaining money she has is $60 - $10 - $40 = $<<60-10-40=10>>10
+The amount of apples she can purchase is $10 / $2 = <<10/2=5>>5

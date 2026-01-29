@@ -1,0 +1,4 @@
+A leaf is being blown down a sidewalk by swirling gusts of wind. For every five feet that a gust blows it forward, the wind swirls and blows it back two feet. How many feet has it traveled down the sidewalk after 11 gusts of wind?
+Each gust blows the leaf forward 5 feet, so 11 gusts will blow it forward 5 * 11 = <<5*11=55>>55 feet.
+Each swirl after a gust blows it back 2 feet, so 11 swirls will blow it back 2 * 11 = <<11*2=22>>22 feet.
+After 11 gusts, the leaf has traveled 55 - 22 = <<55-22=33>>33 feet down the sidewalk.

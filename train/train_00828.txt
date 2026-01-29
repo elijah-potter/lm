@@ -1,0 +1,3 @@
+There are six chairs in each row in a church. If there are 20 rows of chairs in the church, and each chair holds five people, calculate the number of people who have to sit in the chairs for the church to be full.
+If there are six chairs in each row in the church, the total number of chairs in the church is 6*20 = <<6*20=120>>120
+Since each chair holds 5 people, 5*120 = <<5*120=600>>600 people must sit in all of the chairs for the church to be full.

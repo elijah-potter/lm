@@ -1,0 +1,6 @@
+Ellen is painting flowers on a vase. It takes her 5 minutes to paint a lily, 7 minutes to paint a rose, 3 minutes to paint an orchid, and 2 minutes to paint a vine. How long will it take her to paint 17 lilies, 10 roses, 6 orchids and 20 vines?
+First find the total time Ellen spends painting lilies: 5 minutes/lily * 17 lilies = <<5*17=85>>85 minutes
+Then find the total time Ellen spends painting roses: 7 minutes/lily * 10 roses = <<7*10=70>>70 minutes
+Then find the total time Ellen spends painting orchids: 3 minutes/orchid * 6 orchids = <<3*6=18>>18 minutes
+Then find the total time Ellen spends painting vines: 2 minutes/lily * 20 vines = <<2*20=40>>40 minutes
+Then add the amount of time Ellen spends on each type of flower to find the total time: 85 minutes + 70 minutes + 18 minutes + 40 minutes = <<85+70+18+40=213>>213 minutes

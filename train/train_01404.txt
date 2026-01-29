@@ -1,0 +1,7 @@
+Brad’s zip code consists of five numbers that add up to 10. The first and second numbers are the same. The third number is zero. The fourth number is double the first number. The fourth and fifth numbers add up to 8. What is Brad’s zip code?
+The five numbers add up to 10, so the first three numbers add up to 10 - 8 = <<10-8=2>>2.
+The third number is 0, so the first two numbers add up to 2 - 0 = <<2-0=2>>2.
+The first and second numbers are equal, so they are both 2 / 2 = <<2/2=1>>1.
+The fourth number is double the first number, so it is 2 * 1 = <<1*2=2>>2.
+The fifth number is 8 - 2 = <<8-2=6>>6.
+Thus, Brad’s zip code is 11026.

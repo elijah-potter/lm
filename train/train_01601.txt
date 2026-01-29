@@ -1,0 +1,4 @@
+Mary is counting the number of minnows in the pond. 40% of the minnows have red bellies, 30% have green bellies and the rest have white bellies. If 20 minnows have red bellies, how many minnows have white bellies?
+First find the total number of minnows by dividing the number of red minnows by the percentage of minnows that are red: 20 minnows / 40% = 50 minnows
+Then subtract the percentages of red- and green-bellied minnows to find the percentage of white-bellied minnows: 100% - 40% - 30% = 30%
+Then multiply the total number of minnows by the percentage that have white bellies: 30% * 50 minnows = <<30*.01*50=15>>15 minnows

@@ -1,0 +1,6 @@
+William is a jockey. He can ride his horse for 6 hours a day. Over 6 days, he only used the maximum riding time twice.  On two days he rode his horse for only 1.5 hours a day and half the maximum time for the next two days. How many hours did William ride his horse during those 6 days?
+William used two days to the limit, which means 6 * 2 = <<6*2=12>>12 hours of horse riding.
+For two days he rode a horse 1.5 a day, which makes up to 1.5 * 2 = <<1.5*2=3>>3 hours.
+For the next two days, he used only half of the maximum time which means 6 * 0.5 = <<6*0.5=3>>3 hours a day.
+That means 2 * 3 = <<2*3=6>>6 hours during these two days.
+So in total William rode his horse for 12 + 3 + 6 = <<12+3+6=21>>21 hours.

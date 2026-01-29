@@ -1,0 +1,8 @@
+Rose is out picking flowers for a vase she wants to fill.  She starts off by picking 3 flowers with 5 petals each.  She then picks 4 flowers with 6 petals each.  She then adds another 5 flowers with 4 petals each.  Lastly she picks 6 flowers with 7 petals each.  As she's carrying these flowers over to fill the vase, she drops 1 of each and the wind blows them away.  She puts the remaining flowers in the vase.  How many petals in total are on the flowers in the vase?
+Rose picks 3*5=<<3*5=15>>15 petals worth of the 5 petal flowers.
+Rose then picks 4*6=<<4*6=24>>24 petals worth of the 6 petal flowers.
+Rose then picks 5*4=<<5*4=20>>20 petals worth of the 4 petal flowers.
+Finally, Rose picks 6*7=<<6*7=42>>42 petals worth of the 7 petal flowers.
+Rose carries 15+24+20+42=<<15+24+20+42=101>>101 petals worth of flowers back to the vase.
+But the wind blows 5+6+4+7=<<5+6+4+7=22>>22 petals worth of flowers away.
+So Rose has 101-22=<<101-22=79>>79 petals worth remaining

@@ -1,0 +1,4 @@
+For a New Year's resolution, Andy wants to lose 30 lbs. by his birthday, which is July 19th. Today is December 31st. If Andy needs to burn 3500 calories to lose a pound, how much of a calorie deficit (net amount of calories burned vs. calories consumed) does he need each day to reach his goal?
+January, March, and May have 31 days, February has 28, and April and June have 30, and Andy's birthday is on the 19th day of July. So there are 3 * 31 days + 28 + 2 * 30 days + 19 days = 93 days + 28 + 60 days + 19 days = <<3*31+28+2*30+19=200>>200 days until Andy's birthday.
+He wants to lose 30 lbs. At 3500 calories per pound, this is 30 * 3500 = <<30*3500=105000>>105,000 calories total,
+To reach his goal, he will have to burn 105,000 calories / 200 days = <<105000/200=525>>525 calories per day more than he consumes.

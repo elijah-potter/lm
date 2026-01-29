@@ -1,0 +1,6 @@
+Mark took a test yesterday that consisted of 75 questions. He completed the test at a rate of 5 questions per hour. Today, he took another test of 100 questions at the same rate. If Mark had 8 hours to complete the first test and 6 hours to complete the second one, how many questions did he leave incomplete?
+Questions Mark completed in yesterday’s test: 5*8 = <<5*8=40>>40.
+Questions Mark completed in today’s test: 5*6 = <<5*6=30>>30.
+Questions Mark left incomplete in yesterday’s test: 75-40 = <<75-40=35>>35
+Questions Mark left incomplete in today's test: 100-30 = <<100-30=70>>70
+Missed questions in total 35+70 = <<35+70=105>>105.

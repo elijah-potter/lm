@@ -1,0 +1,6 @@
+Alex is on a cross-country bike trip. After starting this morning, he manages an average speed over flat ground of about 20 miles per hour. Four and a half hours later, the road started to incline upwards enough that he could only manage 12 miles per hour. Two and a half hours later, though, the road declined downhill and was able to mostly coast at 24 miles per hour. Unfortunately, he only got to enjoy this for one and a half hours before he punctured a tire. He had forgotten to pack a repair kit, so he had to walk his bike the rest of the way to the next town. If the next town was 164 miles from where he started this morning, how far did Alex have to walk?
+Alex traveled at 20 miles per hour for 4.5 hours, so 20 * 4.5 = <<20*4.5=90>>90 miles on flat ground.
+He traveled 12 miles per hour uphill for 2.5 hours, so 12 * 2.5 = <<12*2.5=30>>30 miles uphill.
+He traveled downhill 24 miles per hour for 1.5 hours = 24 * 1.5 = <<24*1.5=36>>36 miles downhill.
+Before his tire punctured, he traveled 90 + 30 + 36 = <<90+30+36=156>>156 miles.
+So as the next town is 164 miles from where he began, Alex had to walk for 164 - 156 = <<164-156=8>>8 miles.

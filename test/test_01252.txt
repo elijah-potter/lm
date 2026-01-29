@@ -1,0 +1,6 @@
+It takes John 5 minutes to get to the first side of the Rubik's cube.  The second and third sides each take twice that long.  The last 2 sides each take half as long as the first, and once you get the 5th side you have all 6 sides.  How long does the Rubik's cube take?
+The second and third side each take 2*5=<<2*5=10>>10 minutes
+So they take 10*2=<<10*2=20>>20 minutes together
+The last 2 sides take 5/2=<<5/2=2.5>>2.5 minutes
+So they take 2.5*2=<<2.5*2=5>>5 minutes
+So the total time is 5+20+5=<<5+20+5=30>>30 minutes

@@ -1,0 +1,5 @@
+Michael is stuck in an elevator that is slowly moving to the bottom floor. The elevator needs to move down 20 floors to reach the bottom. It takes 15 minutes for the elevator to travel down the first half of the floors. The elevator then takes 5 minutes per floor to travel down the next 5 floors. It then takes 16 minutes per floor for the elevator to finish traveling down the final 5 floors. In hours, how long did it take for the elevator to reach the bottom?
+Over 5 of the floors, it takes the elevator 5 floors * 5 minutes per floor = <<5*5=25>>25 minutes to lower.
+Over the final 5 floors, it takes the elevator 5 floors * 16 minutes per floor = <<5*16=80>>80 minutes to lower.
+So in total, the elevator takes 15 minutes in the first half + 25 minutes in the next five floors + 80 minutes in the final five floors = <<15+25+80=120>>120 minutes to lower to the bottom.
+This is the same as 120 minutes / 60 minutes per hour = <<120/60=2>>2 hours.

@@ -1,0 +1,8 @@
+Steve bought $25 worth of groceries. He bought a gallon of milk for $3, two boxes of cereal for $3.5 each, 4 bananas for $.25 each, four apples that cost $.5 each and a number of boxes of cookies. The cookies cost twice as much per box as the gallon of milk. How many boxes of cookies did he get?
+He spent $7 on cereal because 2 x 3.5 = <<2*3.5=7>>7
+He spent $1 on bananas because 4 x .25 = <<4*.25=1>>1
+He spent $2 on apples because 4 x .5 = <<4*.5=2>>2
+He spent 13 on everything but the cookies because 3 + 7 + 1 + 2 = 13
+He spent $12 on cookies because 25 - 13 = <<25-13=12>>12
+Each box of cookies is $6 because 3 x 2 = <<3*2=6>>6
+He bought 2 boxes of cookies because 12 / 6 = <<12/6=2>>2

@@ -1,0 +1,5 @@
+The file, 90 megabytes in size, downloads at the rate of 5 megabytes per second for its first 60 megabytes, and then 10 megabytes per second thereafter. How long, in seconds, does it take to download entirely?
+The first 60 megabytes take 60/5=<<60/5=12>>12 seconds.
+There are 90-60=<<90-60=30>>30 remaining megabytes.
+The remaining 30 megabytes take 30/10=<<30/10=3>>3 seconds.
+And 12+3=<<12+3=15>>15 seconds.

@@ -1,0 +1,6 @@
+Mark is a lawyer who works at the county courthouse every day. It takes him 5 minutes to find parking and 3 minutes to walk into the courthouse. 2 days of the week it takes him 30 minutes to get through the metal detector and the other 3 days are less crowded so he gets through in 10 minutes. How long does he spend on all these activities in a week with 5 work days?
+First find how long Mark spends on parking and walking each day: 5 minutes + 3 minutes = <<5+3=8>>8 minutes
+Then multiply that number by his number of workdays to find the total walking and parking time: 8 minutes/day * 5 days/week = <<8*5=40>>40 minutes/week
+Then multiply the number of long-wait days by the time of each long wait: 2 days/week * 30 minutes/day = <<2*30=60>>60 minutes/week
+Then multiply the number of short-wait days by the time of each short wait: 3 days/week * 10 minutes/day = <<3*10=30>>30 minutes/week
+Then add the length of time Mark spends on each activity to find the total time spent: 30 minutes/week + 60 minutes/week + 40 minutes/week = <<30+60+40=130>>130 minutes/week

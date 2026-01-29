@@ -1,0 +1,7 @@
+A bag of dozen apples costs $14 and Brian has already spent $10 on kiwis and half that much on bananas. What's the maximum number of apples Brian can buy if he left his house with only $50 and needs to pay the $3.50 subway fare each way?
+Brian requires a total of $3.50 + $3.50 = $<<3.5+3.5=7>>7 to pay for the round trip subway fare
+We also know he has spent half (1/2) the amount he spent on kiwis on bananas, so he'll spend (1/2) * $10 = $5 on bananas
+So far in total he has spent $7 for his subway fare + $5 on bananas + $10 on kiwis = $7 + $5 + $10 = $<<7+5+10=22>>22
+If he left his house with only $50, then all he will have left for apples would be $50 - $22 = $<<50-22=28>>28
+If a bag of apples costs $14, then Brian would only be able to buy a maximum of $28/$14 = 2 bags of apples
+If each bag of apples has a dozen (12) apples, then (2) two bags will have 12*2= <<2*12=24>>24 apples

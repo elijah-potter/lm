@@ -1,0 +1,5 @@
+Candace is trying to decide whether to wear her old shoes or new high-tech shoes for a hike. The high-tech shoes will help Candace walk twice as fast, but they're not broken in yet, so she'll get 1 blister after every 2 hours she spends walking in them. Each blister slows Candance down by 2 miles per hour. If Candance walks 6 miles per hour in the old shoes and plans to hike for 4 hours, how many miles per hour can she go in the new shoes?
+Wearing the high-tech shoes, Candace can hike 6 mph * 2 = <<6*2=12>>12 mph for the first two hours.
+Then she gets one blister, so her speed drops to 12 mph - 2 mph = <<12-2=10>>10 mph for the next two hours of the hike.
+After that time Candace gets another blister, but 2 hours + 2 hours = <<4=4>>4 hours, so the hike is over and we don't care about her speed anymore.
+Candace spends an equal amount of time walking at 12 mph and 10 mph, so we can average the two speeds to find an overall speed of (12 mph + 10 mph)/2 = <<(12+10)/2=11>>11 mph.

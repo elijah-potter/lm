@@ -1,0 +1,4 @@
+In a block of flats, there are 120 apartments. 85% of them have at least 1 resident, while 60% of the apartments have at least two residents. How many apartments have only one resident?
+At least one person lives in 85/100 * 120 = <<85/100*120=102>>102 apartments.
+At least two persons live in 60/100 * 120 = <<60/100*120=72>>72 apartments.
+So in every of the 102 - 72 = <<30*1=30>>30 apartments, only one person is living.

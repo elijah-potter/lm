@@ -1,0 +1,7 @@
+Annie is building a diorama for her history class. The amount of time she spent building it is equal to three times the amount of time she spent planning it minus 5 minutes. If she spent 67 minutes on the diorama total, how many minutes did she spend building it?
+Let p be the planning time in minutes and b be the building time. We know that b = 3p - 5 and b + p = 67
+Substituting the first equation into the second equation, we get 3p - 5 + p = 67
+Combining like terms, we get 4p - 5 = 67
+Adding 5 to both sides, we get 4p = 72
+Dividing both sides by 4, we get p = 18
+Substituting this value into b = 3p - 5, we find that b = 3 * 18 - 5 = <<3*18-5=49>>49

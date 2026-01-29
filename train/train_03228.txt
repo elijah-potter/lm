@@ -1,0 +1,9 @@
+Raj's house has an area equal to 1,110 square feet. It has 4 bedrooms that each measure 11 x 11 feet. There are 2 bathrooms that are 6 x 8 feet each. The kitchen and living area complete the home and they have the same sized area. How many square feet is the area of the kitchen?
+Area of 1 bedroom = 11 * 11 = <<11*11=121>>121 square feet
+Area of 4 bedrooms = 121 * 4 = <<121*4=484>>484 square feet
+Area of 1 bathroom = 6 * 8 = <<6*8=48>>48 square feet
+Area of 2 bathrooms = 2 * 48 = <<2*48=96>>96 square feet
+Area of all bedrooms and bathrooms = 484 + 96 = <<484+96=580>>580 square feet
+Kitchen + living room = 1,110 - 580 = <<1110-580=530>>530
+Kitchen = 530/2 = <<530/2=265>>265
+The kitchen is 265 square feet.

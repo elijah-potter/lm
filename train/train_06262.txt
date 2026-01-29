@@ -1,0 +1,5 @@
+At the same store, Peter bought 2 pairs of pants and 5 shirts for $62 total, and Jessica bought 2 shirts for $20 total. Each pair of pants cost the same price, and each shirt cost the same price. How much does 1 pair of pants cost?
+The shirts each cost $20 / 2 shirts = $<<20/2=10>>10.
+Let X be the pants' cost. Peter bought 2 pairs of pants and 5 shirts for 2*X + 5 shirts * $10/shirt = $62.
+Subtracting $50 from both sides, we get 2*X = $12.
+Dividing both sides by 2, we get X = $6.

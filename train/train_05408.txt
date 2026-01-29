@@ -1,0 +1,5 @@
+Jill has a difficult test to study for.  She decides to study one day for 2 hours.  The next day she doubles this amount, and the day after that she studies one hour less than the previous day.  How many minutes does Jill study over the 3 days?
+First, we need to determine how many hours Jill studied in total. To find this out, we begin by performing 2*2= <<2*2=4>>4 hours spent on day two, double what she spent on day 1.
+Next, we perform 4-1= <<4-1=3>>3 hours to determine the amount she studied on the third day.
+We then add 2+4+3= <<2+4+3=9>>9 hours spent in total across 3 days.
+Since there are 60 minutes in an hour, she studied 9*60=<<9*60=540>>540 minutes in total.

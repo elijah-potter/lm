@@ -1,0 +1,4 @@
+Jane is dividing up minnows to be carnival prizes. She bought 600 minnows, and each prize is a bowl with 3 minnows. If 800 people are going to play the game and 15% win a prize, how many minnows will be left over?
+First find the number of people that win a prize: 800 people * 15% = <<800*15*.01=120>>120 people
+Then multiply that number by the number of minnows each person wins: 120 people * 3 minnows/person = <<120*3=360>>360 minnows
+Then subtract that number of minnows won from the starting number to find the number that are left: 600 minnows - 360 minnows = <<600-360=240>>240 minnows

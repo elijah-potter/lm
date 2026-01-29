@@ -1,0 +1,5 @@
+There are six peregrine falcons and 40 pigeons nesting in Malcolm's skyscraper. Each pigeon has 6 chicks. If the peregrines eat 30% of the pigeons, how many pigeons are left?
+First find the total number of chicks: 40 pigeons * 6 chicks/pigeon = <<40*6=240>>240 chicks
+Then add that to the number of adult pigeons to find the total number of pigeons: 240 chicks + 40 pigeons = <<240+40=280>>280 pigeons
+Then multiply that number by 30% to find the number of pigeons that were eaten: 280 pigeons * 30% = <<280*30*.01=84>>84 pigeons
+Then subtract that number from the total number of pigeons to find the number that are left: 280 pigeons - 84 pigeons = <<280-84=196>>196 pigeons

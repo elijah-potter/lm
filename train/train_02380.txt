@@ -1,0 +1,5 @@
+Carla needs to bring water to her animals. Each horse needs twice as much water as a pig, and the chickens drink from one tank that needs 30 gallons. How many gallons of water does Carla need to bring if she has 8 pigs and 10 horses and each pig needs 3 gallons of water?
+First figure out how much water all the pigs need: 8 pigs * 3 gallons/pig = <<8*3=24>>24 gallons
+Then figure out how much water one horse needs by multiplying a pig's needs by 2: 3 gallons * 2 = <<3*2=6>>6 gallons
+Now find how much water all the horses need: 10 horses * 6 gallons/horse = <<10*6=60>>60 gallons
+Finally, add up all the animals' water needs: 24 gallons + 60 gallons + 30 gallons = <<24+60+30=114>>114 gallons

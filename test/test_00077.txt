@@ -1,0 +1,6 @@
+Cecilia just bought a new puppy. According to her veterinarian, she has to feed the puppy 1 cup of dog food every day for the first 180 days. Then she has to feed the puppy 2 cups of dog food every day for the rest of its life. If one bag of dog food contains 110 cups, how many bags of dog food will Cecilia use in the first year?
+The number of cups of dog food given for the first 180 days is 180 * 1 = <<180*1=180>>180 cups
+The number of days left in the year is 365 - 180 = <<365-180=185>>185
+The number of cups of dog food given for the rest of the first year is 185 * 2 = <<185*2=370>>370 cups
+The total number of cups given in the first year is 180 + 370 = <<180+370=550>>550 cups
+The number of bags of dog food used in the first year is 550 / 110 = <<550/110=5>>5 bags

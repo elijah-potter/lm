@@ -1,0 +1,4 @@
+Krystian works in the library. He borrows an average of 40 books every day. Every Friday, his number of borrowed books is about 40% higher than the daily average. How many books does he borrow in a week if the library is open from Monday to Friday?
+The number of books borrowed on Friday is higher by 40 * 40/100 = <<40*40/100=16>>16 books.
+There are 5 days from Monday to Friday inclusive, so Krystian borrows an average of 5 * 40 = <<5*40=200>>200 books during that time.
+With Friday's increase in borrowings, during one week Krystian borrows 200 + 16 = <<200+16=216>>216 books.

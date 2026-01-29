@@ -1,0 +1,8 @@
+A company has a tank that is already filled at a maximum capacity of 350,000 gallons of water. One day the tank starts losing 32,000 gallons/hour for 5 hours, after that time the company repaired the tank but it wasn't enough because the tank was still losing 10,000 gallons/hour. It stayed like that for 10 hours. In the second attempt, they managed to repair the tank and started filling it with 40,000 gallons/hour. After 3 hours, how many gallons are missing for the tank to be at maximum capacity again?
+In the first 5 hours the tank losses 32000 gallons/hour x 5 hours = <<32000*5=160000>>160000 gallons
+In the next 10 hours the tank losses 10,000 gallons/hour x 10 hours = <<10000*10=100000>>100000 gallons
+The total amount of water loss so far is 100000+160000 = <<100000+160000=260000>>260000 gallons
+The total amount of water remaining in the tank is 350000-260000 = <<350000-260000=90000>>90000 gallons.
+Once repaired, after 3 hours, the tank gains 40000 gallons/hour x 3 hours = <<40000*3=120000>>120000 gallons
+The total amount of water in the tank after the tank is filled for 3 hours is 120000+90000 = <<120000+90000=210000>>210000 gallons.
+The amount of water missing in the tank for it to be full is 350000-210000 = <<350000-210000=140000>>140000 gallons

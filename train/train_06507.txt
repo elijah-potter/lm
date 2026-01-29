@@ -1,0 +1,5 @@
+Polly the parakeet tweets all day long.  When she is happy, she tweets 18 times per minute.  When she is hungry, she tweets 4 times per minute.  And when she watches herself in the mirror, she tweets 45 times per minute.  During a time period where she is happy for 20 minutes, hungry for 20 minutes, and watches her reflection for 20 minutes, what is the total number of times she will tweet?
+In 20 minutes, she happy tweets for 20*18=<<20*18=360>>360 times
+In 20 minutes, she hungry-tweets for 20*4=<<20*4=80>>80 times
+In 20 minutes, she tweets at her reflection 20*45=<<20*45=900>>900 times
+Altogether, she tweets 360+80+900=<<360+80+900=1340>>1340 times

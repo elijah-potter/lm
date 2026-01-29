@@ -1,0 +1,5 @@
+James has an old printer that crumples every seventh page and blurs the ink on every third page. If he prints 42 pages, how many are neither crumpled or blurred?
+First find the total number of pages that are crumpled: 42 pages / 7 = <<42/7=6>>6 pages
+Then find the total number of pages that are blurred: 42 pages / 3 = <<42/3=14>>14 pages
+Then find the number of pages that are both blurred and crumpled by finding how many numbers are less or equal to 42 and divisible by both 3 and 7: there are two, 21 and 42.
+Then subtract the number of crumpled and blurred pages from the total number of pages, and add the number of pages that were double-counted because they were both blurred and crumpled: 42 pages - 6 pages - 14 pages + 2 pages = <<42-6-14+2=24>>24 pages

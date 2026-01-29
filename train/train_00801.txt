@@ -1,0 +1,7 @@
+Cappuccinos cost $2, iced teas cost $3, cafe lattes cost $1.5 and espressos cost $1 each. Sandy orders some drinks for herself and some friends. She orders three cappuccinos, two iced teas, two cafe lattes, and two espressos. How much change does she receive back for a twenty-dollar bill?
+Find the total cost of the cappuccinos by multiplying the price by the quantity: 3 cappuccinos x $2/cappuccino = $<<3*2=6>>6
+Then do the same for the iced teas: 2 iced teas x $3/tea = $<<2*3=6>>6
+Then do the same for the cafe lattes: 2 lattes x $1.5/latte = $<<2*1.5=3>>3
+Then do the same for the espressos: 2 espressos x $1 = $<<2*1=2>>2
+In total Sandy pays $6 + $6 + $3 + $2 = $<<6+6+3+2=17>>17
+Sandy will receive $20 - $17 = $<<20-17=3>>3 in change

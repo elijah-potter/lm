@@ -1,0 +1,7 @@
+Jerome had 4 friends who came to visit him on a certain day. The first friend pressed on the doorbell 20 times before Jerome opened, the second friend pressed on the doorbell 1/4 times more than Jerome's first friend. The third friend pressed on the doorbell 10 times more than the fourth friend. If the fourth friend pressed on the doorbell 60 times, how many doorbell rings did the doorbell make?
+The second friend pressed on the doorbell 1/4 times more than Jerome's first friend, a total of 1/4*20=<<1/4*20=5>>5 times.
+Jerome's second friend pressed on the doorbell 20+5=<<20+5=25>>25
+The first two friends pressed on the doorbell 25+20=<<25+20=45>>45 times altogether before Jerome could open the door.
+Jerome's third friend pressed on the doorbell 60+10=<<60+10=70>>70 times before Jerome could open the door.
+Altogether, Jerome's third and fourth friends pressed on the doorbell 70+60=<<70+60=130>>130 times before Jerome could open.
+The number of doorbell rings that Jerome's friend made before Jerome could open the door is 130+45=<<130+45=175>>175 times.

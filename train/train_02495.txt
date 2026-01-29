@@ -1,0 +1,6 @@
+Sydney and Conner are having a three day rock collecting contest to see who can have the largest collection after adding to their existing collections. Before they start, Sydney has 837 rocks and Conner has 723. On day one, Sydney collects 4 rocks and Conner collects 8 times as many. On day two Sydney rests and Conner collects 123. On the third day, Sydney collects twice as many as Conner did on the first day. How many does Conner have to collect on day three to make sure he at least ties Sydney?
+On day one Conner collects 32 rocks because 8 x 4 = <<8*4=32>>32
+On day three Sydney collects 64 because 32 x 2 = <<32*2=64>>64
+After three days Sydney has 915 rocks because 837 + 0 + 4 + 64 =<<837+0+4+64=905>>905
+Before the third day Conner has 878 because 723 + 32 + 123 = <<723+32+123=878>>878
+Conner needs to collect 37 on day three to tie Sydney because 905 - 878 = 27

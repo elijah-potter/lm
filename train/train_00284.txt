@@ -1,0 +1,7 @@
+Lily has 5 lottery tickets to sell.  She sells the first ticket for $1.  She then sells each successive ticket for a dollar more than the previous ticket. She plans to keep a $4 profit and give the remaining money as the prize. How much money will the winner of the lottery receive?
+The second ticket sold will cost $1 + $1 = $<<1+1=2>>2.
+The third ticket sold will cost $2 + $1 = $<<2+1=3>>3.
+The fourth ticket sold will cost $3 + $1 = $<<3+1=4>>4.
+The fifth ticket sold will cost $4 + $1 = $<<4+1=5>>5.
+The total money collected is $1 + $2 + $3 + $4 + $5 = $<<1+2+3+4+5=15>>15.
+After taking profit, the total prize money will be $15 - $4 = $<<15-4=11>>11.

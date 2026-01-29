@@ -1,0 +1,6 @@
+Bob is building raised beds for his vegetable garden. Each bed is 2 feet high, 2 feet wide, and 8 feet long. The sides are going to be built of 1-foot wide planks. If Bob buys his lumber in 8-foot-long boards, planning to cut some of them for the shorter lengths he'll need, how many 8-foot long planks will he need to construct 10 raised beds?
+Each raised bed is 8 feet long, the same as the planks, so the long sides of the beds will each be 1 plank long.
+Each raised bed is 2 feet wide, or 2/8 = 1/4 the length of the planks, so the short sides will each be 1/4 plank long.
+Each bed is 2 feet tall, and the planks are 1 foot wide, so each side will need 2 pieces of lumber of the same length.
+So each bed will require 2 * 2 * 1.25 = 4 * 1.25 = <<2*2*1.25=5>>5 planks of wood.
+Bob wants to build 10 raised beds, so he will need 10 * 5 = <<10*5=50>>50 planks of lumber.

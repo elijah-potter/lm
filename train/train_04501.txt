@@ -1,0 +1,6 @@
+Uncle Bradley has a $1000 bill that he wants to change into smaller bills so he could give them to his nieces and nephews. He wants to change 3/10 of the money into $50 bills while the rest into $100 bills. How many pieces of bills will Uncle Bradley have in all?
+There will be $1000 x 3/10 = $<<1000*3/10=300>>300 worth of money that will be changed into $50 bills.
+Uncle Bradley will have $300/$50 = <<300/50=6>>6 pieces of $50 bills.
+He will change $1000 - $300 = $<<1000-300=700>>700 worth of money into $100 bills.
+So there will be $700/$100 = <<700/100=7>>7 pieces of $100 bills.
+Thus, there will be a total of 6 + 7 = <<6+7=13>>13 pieces of $50 and $100 bills in all.

@@ -1,0 +1,5 @@
+A family's water and electricity bills average $30 a month for the first 4 months and $24 a month for the last 2 months. If the family's bills were averaged over all 6 months, what would the average monthly bill be?
+The sum of the bills of the family in the first 4 months is $30/month x 4 months = $<<30*4=120>>120.
+The sum of the bills of the family in the last 2 months is $24/month x $2 = $<<24*2=48>>48.
+The sum of the bills of the family over the 6 months is $120 + $48 = $<<120+48=168>>168.
+Hence, their average monthly bill is $168/6 months = $<<168/6=28>>28/month.

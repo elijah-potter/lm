@@ -1,0 +1,5 @@
+Mark wants to order a pair of slippers for his wife with her initials embroidered on top.  The slippers are currently $50.00 and are 10% off.  The embroidery will be $5.50 per shoe and shipping is a flat rate of $10.00.  How much will the slippers cost?
+The slippers are $50.00 and currently 10% off so that’s 50*.10 = $<<50*.10=5.00>>5.00 discount
+The slippers are $50.00 with a $5.00 discount which makes them 50-5 = $<<50-5=45.00>>45.00
+The embroidery will be $5.50 per shoe, and 2 shoes make a pair so it will cost 5.50*2 = $<<5.50*2=11.00>>11.00
+The shoes are on sale for $45.00, the embroidery will be $11.00 and the shipping is $10.00 for a total of 45+11+10 = $<<45+11+10=66.00>>66.00

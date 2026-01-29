@@ -1,0 +1,5 @@
+An amoeba reproduces by fission, splitting itself into two separate amoebae. An amoeba reproduces every two days. How many days will it take one amoeba to divide into 16 amoebae?
+The amoeba will divide into 1 * 2 = <<1*2=2>>2 amoebae after 2 days.
+The amoeba will divide into 2 * 2 = <<2*2=4>>4 amoebae after 4 days.
+The amoeba will divide into 4 * 2 = <<4*2=8>>8 amoebae after 6 days.
+The amoeba will divide into 8 * 2 = <<8*2=16>>16 amoebae after 8 days.

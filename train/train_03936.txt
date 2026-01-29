@@ -1,0 +1,7 @@
+Karen works at an animal shelter with 30 dogs, 28 cats, and 20 lizards. Every month, 50% of the dogs are adopted, 25% of the cats are adopted, and 20% of lizards are adopted. If the shelter takes in 13 new pets a month, how many pets are there after one month?
+First find how many dogs get adopted each month by multiplying the number of dogs by their chance of getting adopted: 30 dogs * 50% = <<30*50*.01=15>>15 dogs
+Then do the same thing for the cats: 28 cats * 25% = <<28*25*.01=7>>7 cats
+And do the same thing for the lizards: 20 lizards * 20% = <<20*20*.01=4>>4 lizards
+Now add up the number of each kind of pet to find the initial total number of pets: 30 dogs + 28 cats + 20 lizards = <<30+28+20=78>>78 pets
+Now subtract all the pets that get adopted in one month from the initial number of pets: 78 pets - 15 dogs - 7 cats - 4 lizards = <<78-15-7-4=52>>52 pets
+Now add the extra 13 pets the shelter takes in that month to find the final number of pets: 52 pets + 13 pets = <<52+13=65>>65 pets

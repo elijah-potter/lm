@@ -1,0 +1,4 @@
+A library has a collection of 100 historical novels arranged on a shelf. 5 people borrow 2 books each from the shelf on a particular day,  and 20 more books are borrowed from the shelf on the second day. How many books are remaining on the shelf after the second day?
+Five people borrowed 5 people * 2 books/person = <<5*2=10>>10 books on the first day.
+After the second day, the total number of borrowed books increased to 10 books + 20 books = <<10+20=30>>30 books.
+The total number of books on the shelf after the second day is 100 books - 30 books = <<100-30=70>>70 books

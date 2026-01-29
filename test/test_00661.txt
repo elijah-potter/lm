@@ -1,0 +1,9 @@
+Lee rears only sheep and geese on his farm.  If the total number of animal legs is 70, and the total number of animal heads is 20, how many sheep live on Lee's farm?
+Let g be the number of geese and let s be the number of sheep. The farm has g + s = 20 animals.
+Therefore Lee has s = 20 - g sheep.
+The animals have 2g + 4s = 70 legs.
+Using the value of s above, 2g + 4(20-g) = 70.
+2g + 80 - 4g = 70.
+2g = 10.
+There are therefore 10/2 = <<10/2=5>>5 geese.
+There are 20 - 5 = <<20-5=15>>15 sheep remaining on the farm.

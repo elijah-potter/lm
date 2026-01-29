@@ -1,0 +1,5 @@
+Jenny is scraping gum off the bottom of the seats in a stadium with two sections. Section A has 1 subsection with 60 seats and 3 subsections with 80 seats each. Section B has 20 more seats than 3 times as many seats as Section A has total. How many seats does Section B have?
+First find how many total seats are in the 80-seat subsections: 80 seats/subsection * 3 subsections = 240 seats
+Then add the number of seats in the 60-seat section to find the total number of seats in Section A: 240 seats + 60 seats = <<240+60=300>>300 seats
+Then triple that number: 300 seats * 3 = <<300*3=900>>900 seats
+Then add 20 seats to find the total number of seats in Section B: 900 seats + 20 seats = <<900+20=920>>920 seats

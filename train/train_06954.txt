@@ -1,0 +1,9 @@
+Haleigh decides that instead of throwing away old candles, she can use the last bit of wax combined together to make new candles. Each candle has 10% of it's original wax left. How many 5 ounce candles can she make if she has five 20 oz candles, 5 five ounce candles, and twenty-five one ounce candles?
+She gets 2 ounces of wax from a 20 ounce candle because 20 x .1 = <<20*.1=2>>2
+She gets 10 ounces total from these candles because 5 x 2 = <<5*2=10>>10
+She gets .5 ounces of wax from each five ounce candle because 5 x .1 = <<5*.1=.5>>.5
+She gets 1.5 ounces total from these candles because 5 x .5 = <<5*.5=2.5>>2.5
+She gets .1 ounces from each one ounce candle because 1 x .1 = <<1*.1=.1>>.1
+She gets 2.5 ounces from these candles because 25 x .1 = <<25*.1=2.5>>2.5
+She gets 15 ounces total because 10 + 2.5 + 2.5 = <<10+2.5+2.5=15>>15
+She can make 3 candles because 15 / 5 = <<15/5=3>>3

@@ -1,0 +1,5 @@
+Lori owns a carsharing company. There are three red cars and two white cars available to rent. Renting the white car costs $2 for every minute and the red car $3 for every minute. All cars were rented for 3 hours. How much money did Lori earn?
+Both white cars were rented for 2 * 2 = $<<2*2=4>>4 for every minute.
+All three red cars were rented for 3 * 3 = $<<3*3=9>>9 for every minute.
+So all Lori's cars were rented for 4 + 9 = $<<4+9=13>>13 for every minute.
+Three hours are 180 minutes, so Lori earned 13 * 180 = $<<13*180=2340>>2340 for renting all the cars.

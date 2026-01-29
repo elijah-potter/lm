@@ -1,0 +1,5 @@
+Luke is planning a trip to London and wants to see how long it will take him to travel there. He decides that he will take a bus to the town center, walk for 15 minutes to the train center, wait twice this long for the train to arrive, and then take the 6-hour train ride to London. If Luke’s entire trip takes him 8 hours, how many minutes does his bus ride take?
+Removing the time of the train ride from the journey shows that his trip to get on the train took him 8 hours – 6 hours = <<8-6=2>>2 hours.
+Converting this time into minutes shows that getting to the train took 2 hours * 60 minutes/hour = <<2*60=120>>120 minutes.
+Waiting for the train to arrive took twice as long as his walk, so 15 minutes * 2 = <<15*2=30>>30 minutes.
+This means that his bus ride must have taken 120 minutes – 30 minutes - 15 minutes = <<120-30-15=75>>75 minutes.

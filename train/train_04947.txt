@@ -1,0 +1,4 @@
+There are three buckets of seeds labeled A, B, and C with 100 seeds. There are ten more seeds in bucket A than in bucket B, and bucket B has 30 seeds. How many seeds are in bucket C?
+Bucket A has 10 more seeds than bucket B: so there are 10 seeds + 30 seeds = <<10+30=40>>40 seeds in bucket A.
+Bucket A and bucket B have 40 seeds + 30 seeds = <<40+30=70>>70 seeds together.
+If there are 100 seeds in all the buckets, then bucket C has 100 seeds - 70 seeds = <<100-70=30>>30 seeds.

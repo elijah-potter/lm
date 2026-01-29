@@ -1,0 +1,5 @@
+Chad ordered a build-your-own burrito for lunch.  The base burrito is $6.50.  He adds extra meat for $2.00, extra cheese for $1.00, avocado for $1.00 and 2 sauces for $0.25 each.  He decides to upgrade his meal for an extra $3.00 which will add chips and a drink.  He has a gift card for $5.00 that he uses at check out.  How much does he still owe?
+He orders 2 sauces at $0.25 each so 2*.25 = $<<2*.25=0.50>>0.50 for sauce
+He orders extra meat for $2.00, extra cheese for $1.00, avocado for $1.00 and $0.50 for sauce for a total of 2+1+1+.50 = $<<2+1+1+.5=4.50>>4.50 in extras
+His burrito cost $6.50 and he adds $4.50 in extras and upgrades his meal for $3.00 so now he owes, 6.50+4.50+3 = $<<6.50+4.50+3=14.00>>14.00
+He has a $5.00 gift card and his current bill is $14.00 so he will owe 14-5 = $<<14-5=9.00>>9.00

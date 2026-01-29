@@ -1,0 +1,5 @@
+Anna is reading a 31-chapter textbook, but she skips all the chapters that are divisible by 3. If it takes her 20 minutes to read each chapter, how many hours does she spend reading total?
+First divide 32 by 3, ignoring the remainder, to find how many chapters in the book are divisible by 3: 31 / 3 = 10.33..., which means 10 chapters are divisible by 3
+Then subtract that number from the total number of chapters to find how many chapters she reads: 31 chapters - 10 chapters = <<31-10=21>>21 chapters
+Then multiply the number chapters by the time to read each chapter to find the total time she spends reading: 21 chapters * 20 minutes/chapter = <<21*20=420>>420 minutes
+Then divide that time by the number of minutes per movie to find the total time spent reading in hours: 420 minutes / 60 minutes/hour = <<420/60=7>>7 hours

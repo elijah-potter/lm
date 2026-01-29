@@ -1,0 +1,5 @@
+Every Halloween one house in the neighborhood gives out toothbrushes instead of candy, so it always gets egged and covered in toilet paper. If the owner spends 15 seconds cleaning up each egg and 30 minutes cleaning up each roll of toilet paper, how long (in minutes) will they have to spend cleaning up 60 eggs and 7 rolls of toilet paper?
+First find how many eggs per minute the owner can clean up: 60 seconds/minute / 15 seconds/egg = <<60/15=4>>4 eggs/minute
+Then divide the total number of eggs by the number of eggs cleaned per minute to find how long the owner spends cleaning them up: 60 eggs / 4 eggs/minute = <<60/4=15>>15 minutes
+Then find the total time the owner spends cleaning up toilet paper: 7 rolls * 30 minutes/roll = <<7*30=210>>210 minutes
+Finally, add that amount to the egg cleaning time to find the total cleaning time: 210 minutes + 15 minutes = <<210+15=225>>225 minutes

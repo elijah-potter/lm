@@ -1,0 +1,7 @@
+On Tuesday, Clara bought 20 pomegranates at $20 each. At the till she got $2 off because she had a voucher. The next day, the price shot to $30 per fruit, but the store also offered a 10% discount on the total cost. Sheila took advantage of the discount and bought 20 pomegranates. What is the difference between the final prices paid for the pomegranates on the two days?
+On Tuesday, the pomegranates cost Clara 20 pomegranates * $20/pomegranates = $<<20*20=400>>400
+Using the voucher, she paid $400 - $2 = $<<400-2=398>>398
+On Wednesday, the pomegranates cost Sheila 20 pomegranates * $30 = $<<20*30=600>>600.
+She then got a discount of 10/100 * $600 = $<<10/100*600=60>>60
+Sheila ended up paying $600 - $60 = $<<600-60=540>>540
+The difference is therefore $540 - $398 = $<<540-398=142>>142

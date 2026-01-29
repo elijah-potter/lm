@@ -1,0 +1,7 @@
+The area of square A is 25. The area of square B is 81. What's the length difference between the sides of square A and B?
+The area of a square is calculated as length * width. Because all a square has all sides equal then we can say that given a side S, the area is S*S
+For square A of sides A, the area is A*A=25 or A^2=25
+Solving for A we know that A=<<5=5>>5
+For square B of sides B, the area is B*B=81 or B^2=81
+Solving for B we know that B=<<9=9>>9
+The side difference between A and B is 9-5=<<9-5=4>>4

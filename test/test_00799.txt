@@ -1,0 +1,6 @@
+When Billy was first hired, he was paid at a rate of $10 per hour.  After 2 months, he was given a raise of $0.50 per hour.  On his first anniversary at work, he was given a raise of $1.00 per hour.  Sally just started working at a different business, and her starting salary is $0.50 more per hour than Billy's starting salary was.  If both Billy and Sally work 20 hours, how much more money will Billy earn than Sally, in dollars?
+Billy has a salary of $10+0.50+$1.00=$<<10+0.5+1=11.50>>11.50 per hour.
+Sally is paid $0.50 more per hour than Billy's initial salary, for a total of $10+$0.50=$<<10+0.5=10.50>>10.50 per hour.
+If Billy works 20 hours, he will be paid 20*$11.50=$<<20*11.5=230>>230
+If Sally works 20 hours, she will be paid 20*$10.50=$<<20*10.50=210>>210.
+Thus, if both work 20 hours, Billy will be paid $230-$210=$20 more.

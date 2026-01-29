@@ -1,0 +1,4 @@
+Darry is a roofer and has to climb ladders multiple times a day. He climbs his full ladder, which has 11 steps, 10 times today. He also climbs his smaller ladder, which has 6 steps, 7 times today. He did not climb any steps otherwise. In total, how many times has Darry climbed a step today?
+Climbing the full ladder means Darry has climbed 11 steps * 10 times = <<11*10=110>>110 steps so far.
+On his smaller ladder, he has climbed 6 steps * 7 times = <<6*7=42>>42 steps.
+So he has climbed a step a total of 110 + 42 = <<110+42=152>>152 times today.

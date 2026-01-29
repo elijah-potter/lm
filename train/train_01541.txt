@@ -1,0 +1,6 @@
+Sam invested $10,000 and earned 20% interest compounded for 3 years. He then invested more until he had three times as much invested. The next year, he got a 15% return on his investment. How much money does he have now?
+After one year, Sam had $10,000 * 1.2 = $<<10000*1.2=12000>>12,000.
+After two years, he had $12,000 * 1.2 = $<<12000*1.2=14400>>14,400.
+After the third year, he had $14,400 * 1.2 = $<<14400*1.2=17280>>17,280.
+He then invested more money until he had 3 * $17,280 = $<<3*17280=51840>>51,840.
+The first year after that, he had $51,840 * 1.15 = $<<51840*1.15=59616>>59,616.

@@ -1,0 +1,8 @@
+Nick is choosing between two jobs. Job A pays $15 an hour for 2000 hours a year, and is in a state with a 20% total tax rate. Job B pays $42,000 a year and is in a state that charges $6,000 in property tax and a 10% tax rate on net income after property tax. How much more money will Nick make at the job with a higher net pay rate, compared to the other job?
+First calculate the gross annual salary for Job A: 2000 hours * $15/hour = $<<2000*15=30000>>30,000
+Next, calculate the amount of taxes Nick pays at Job A by multiplying his net salary by the 20% tax rate: .2 * $30,000 = $<<30000*.2=6000>>6,000
+Now subtract Nick's taxes from his net pay to find his gross pay at Job A: $30,000 - $6,000 = $<<30000-6000=24000>>24,000
+Now subtract Nick's property taxes from his gross income at Job B: $42,000 - $6,000 = $<<42000-6000=36000>>36,000
+Now multiply Nick's income after property tax by 10% to find his income tax at Job B: $36,000 * 10% = $<<36000*10*.01=3600>>3,600
+Now subtract the income tax amount from Nick's earnings after property tax to find his net income at Job B: $36,000 - $3,600 = $<<36000-3600=32400>>32,400
+Now subtract the net income from the lower-paying job (A) from the net income from the higher-paying job (B): $32,400 - $24,000 = $<<32400-24000=8400>>8,400

@@ -1,0 +1,8 @@
+Betty is growing parsnips in her vegetable garden. When the parsnips are grown, they are harvested and bundled into boxes that can hold up to 20 parsnips each. Each harvest, three-quarters of the boxes are full, and the remaining boxes are half-full. She gets an average of 20 boxes each harvest. How many parsnips does Betty grow in an average harvest?
+If three-quarters of the boxes are full, then 1 – ¾ = ¼ of the boxes are half-full.
+On average, each harvest therefore has 20 boxes * 0.25 = <<20*0.25=5>>5 boxes that are half-full.
+This leaves 20 total boxes – 5 half-full boxes = <<20-5=15>>15 full boxes.
+Half-full boxes hold 20 parsnips / 2 = <<20/2=10>>10 parsnips each.
+In total, the half-full boxes, therefore, hold 5 boxes * 10 parsnips = <<5*10=50>>50 parsnips.
+The full boxes hold a total of 15 boxes * 20 parsnips = <<15*20=300>>300 parsnips.
+So Betty harvests a total of 50 + 300 = <<50+300=350>>350 parsnips in an average harvest.

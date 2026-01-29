@@ -1,0 +1,5 @@
+A library cabinet houses five ancient scrolls. The first scroll is 4080 years old. If each scroll is older than the last by half as many years as the last scroll’s age, how old is the fifth scroll?
+The second scroll is 4080 + 4080 / 2 = 4000 + 2040 = <<4080+4080/2=6120>>6120 years old.
+The third scroll is 6120 + 6120 / 2 = 6120 + 3060 = <<6120+6120/2=9180>>9180 years old.
+The fourth scroll is 9180 + 9180 / 2 = 9180 + 4590 = <<9180+9180/2=13770>>13770 years old.
+The fifth scroll is 13770 + 13770 / 2 = 13770 + 6885 = <<13770+13770/2=20655>>20655 years old.

@@ -1,0 +1,4 @@
+A basket contains 25 oranges among which 1 is bad, 20% are unripe, 2 are sour and the rest are good. How many oranges are good?
+20% of 25 oranges is (20/100)*25 = <<(20/100)*25=5>>5 oranges
+The total number of bad, unripe and sour oranges is therefore 1+5+2 = <<1+5+2=8>>8 oranges
+The rest which is 25-8 = <<25-8=17>>17 oranges are good

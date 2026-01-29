@@ -1,0 +1,6 @@
+An avant-garde sushi house sells jellyfish for a certain amount and eel for nine times that amount. If the combined cost of one order each kind of sushi is $200, how much does the eel cost?
+Let j be the cost of the jellyfish and e be the cost of the eel. We know that j + e = $200 and e = 9j.
+Substituting the second equation into the first equation, we get j + 9j = $200
+Combining like terms, we get 10j = $200
+Dividing both sides by 10, we get j = $20
+Substituting this value back into e = 9j, we get e = 9 * $20 = $<<9*20=180>>180

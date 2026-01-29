@@ -1,0 +1,8 @@
+There are four growing trees. The first tree grows 1 meter/day, the second grows the same amount in half the time, the third grows 2 meters/day, and the fourth tree grows a meter more than the third each day. How many meters did the trees grow in total in 4 days?
+The second tree grows 1*2 = <<1*2=2>>2 meters a day.
+The fourth tree grows 2+1 = <<2+1=3>>3 meters a day.
+The first tree grows 4*1 = <<4*1=4>>4 meters in 4 days.
+The second tree grows 2*4 = <<2*4=8>>8 meters in 4 days.
+The third tree grows 2*4 = <<2*4=8>>8 meters in 4 days.
+The fourth tree grows 3*4 = <<3*4=12>>12 meters in 4 days.
+In 4 days, all four trees grew 4+8+8+12 = <<4+8+8+12=32>>32 meters combined.

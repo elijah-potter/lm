@@ -1,0 +1,5 @@
+A portable computer drive has enough kilobytes of storage space to store 2000 photos. Each photo is 1.5 kilobytes in size. How many 200-kilobyte videos can it store if it already has 400 photos on it?
+The drive has 1.5 * 2000 = <<1.5*2000=3000>>3000 kilobytes of storage space.
+It already has 1.5 * 400 = <<1.5*400=600>>600 kilobytes of storage space taken up.
+Thus, it has 3000 - 600 = <<3000-600=2400>>2400 kilobytes of space left.
+The portable drive can store 2400 / 200 = <<2400/200=12>>12 200-kilobyte videos on it with 400 photos.

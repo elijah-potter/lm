@@ -1,0 +1,6 @@
+Candace decides to enter a race. The race is run in 4 segments, with racers eliminated at the end of each segment. 10 racers are eliminated after the first segment. A third of the remaining racers are eliminated after the next section. Half of the remaining racers are eliminated before the last leg of the race. If 100 racers started the race, how many will run in the final section of the race?
+After the first segment, there are 100 – 10 = <<100-10=90>>90 racers left in the race.
+After the second segment, 90 / 3 = <<90/3=30>>30 racers are eliminated.
+This leaves 90 – 30 = <<90-30=60>>60 racers to compete in the third segment.
+After the third segment, 60 / 2 = <<60/2=30>>30 more racers are eliminated.
+This leaves 60 – 30 = <<60-30=30>>30 racers to run in the final section of the race.

@@ -1,0 +1,4 @@
+Xena is trying to outrun a dragon to get to the safety of a cave it's too big to fit into. Xena has a 600 foot head start, but the dragon can burn her if it gets within 120 feet of her. If Xena runs 15 feet per second and the dragon flies 30 feet per second, how many seconds does Xena have to get to the cave?
+First find the size of the gap the dragon needs to close to burn Xena: 600 ft - 120 ft = <<600-120=480>>480 ft
+Then find how many feet closer the dragon gets each second by subtracting Xena's speed from the dragon's speed: 30 ft/sec - 15 ft/sec = <<30-15=15>>15 ft/sec
+Then divide the distance by the speed difference to find how many seconds it takes for the dragon to get close enough to burn Xena: 480 ft / 15 ft/sec = <<480/15=32>>32 sec

@@ -1,0 +1,6 @@
+Danivan Drugstore has 4500 bottles of hand sanitizer gel in inventory at the beginning of the week. On Monday 2445 bottles were sold, on Tuesday 900 bottles were sold, and 50 bottles each day for the rest of the week were sold (from Wednesday until Sunday). On Saturday, the supplier delivers an order for 650 bottles. How many bottles of sanitizer gel does the Drugstore have at the end of the week?
+The number of bottles sold on Monday and Tuesday is 2445 + 900 = <<2445+900=3345>>3345 bottles
+Each day of the rest of the week, 50 bottles were sold, that is 5 * 50 = <<50*5=250>>250 bottles sold.
+Now the total of bottles sold in a week is 3345 + 250= <<3345+250=3595>>3595 bottles
+The drugstore has in stock 4500 – 3595= <<4500-3595=905>>905 bottles
+Finally the drugstore has 905 + 650 the supplier brought = <<905+650=1555>>1555 bottles at the end of the week.

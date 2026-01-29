@@ -1,0 +1,5 @@
+Andy works in the pro shop of a tennis resort. He has 12 racquets that need restringing. 3 of them are to be strung with synthetic gut, 5 of them will be strung with polyester string, and 4 of them will be strung with a hybrid set (half synthetic gut, half polyester string). How long will it take Andy to string all of those racquets if it takes him an average of 15 minutes for him to string with synthetic gut, 22 minutes to string with polyester string, and 18 minutes for hybrid sets?
+Andy is stringing 3 racquets with synthetic gut, so those will take 3 synthetic gut jobs * 15 minutes per synthetic gut job = <<3*15=45>>45 minutes.
+He is stringing 5 racquets with polyester string, so those will take 5 polyester string jobs * 22 minutes per polyester string job = <<5*22=110>>110 minutes.
+He has 4 hybrid string jobs, so those will take 4 hybrid string jobs * 18 minutes per hybrid job = <<4*18=72>>72 minutes.
+So Andy should finish stringing all the racquets in 45 minutes + 110 minutes + 72 minutes = <<45+110+72=227>>227 minutes.

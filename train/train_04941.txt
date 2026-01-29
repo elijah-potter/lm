@@ -1,0 +1,9 @@
+A shop is offering a discount on pens. If you buy 10 pens at the regular price, you can get the next 10 for half off. A customer came in and bought 20 pens for $30. What's the regular price of one pen in dollars?
+Let p be the cost of a full-priced pen.
+We know that the first 10 pens are sold at the regular price, so they cost 10*p.
+We also know the any pens purchased after the first 10 are half-price, so they cost (20 pens - 10 pens) * p/2 on those.
+If we add the cost of the first 10 pens and the pens sold at half-price it equals the total purchase of price of $30=10*p + (20-10)*p/2.
+Thus, $30 = 10*p + 10 * p/2.
+And, $30 = 10 *p + 5*p.
+So, $30 = 15* p.
+Finally, p=$<<2=2>>2.

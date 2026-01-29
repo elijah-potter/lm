@@ -1,0 +1,7 @@
+Tomas is hoping to run a marathon next year, which is 26.3 miles. He knows that each month he trains, he can run twice as far as the month before. If he can run 3 miles during the first month of training, how many total months before the marathon should he start training to ensure he can run far enough?
+In the first month he can run 3 miles.
+In the second month he can run 6 miles because 3 x 2 = <<3*2=6>>6
+In the third month he can run 12 miles because 6 x 2 = <<6*2=12>>12
+In fourth month he can run 24 miles because 12 x 2 = <<12*2=24>>24
+In fifth month he can run 48 miles because 24 x 2 = <<24*2=48>>48
+He needs to start training 5 months ahead of time because 24 < 26.3 and 48>26.3.

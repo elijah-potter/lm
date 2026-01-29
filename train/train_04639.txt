@@ -1,0 +1,6 @@
+Five people are planning a party. Sonja will buy a loaf of French bread ($3 a loaf) and a platter of cold cuts ($23). Barbara will buy the soda ($1 per person) and two boxes of crackers ($2 per box). Mario and Rick will split the cost of two packages of Cheese Doodles ($3 per package). Danica will supply a package of paper plates for $4. How much more will Sonja spend than the rest of the office put together?
+Sonja will spend $3 + $23 = $<<3+23=26>>26.
+Barbara will spend 5 + ( 2 * 2) = $<<5+2*2=9>>9.
+Mario and Rick will spend 2 * 3 = $<<2*3=6>>6.
+Everyone but Sonijs spend $9 + $6 + $4 = $<<9+6+4=19>>19.
+Sonija spent $26 - $19 = $<<26-19=7>>7 more than the rest of the people at the party.

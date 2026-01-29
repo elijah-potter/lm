@@ -1,0 +1,7 @@
+The combined age of Peter, Paul and Jean is 100 years old. Find the age of Peter knowing that Paul is 10 years older than John and that Peter’s age is equal to the sum of Paul and John's age.
+Let x be the age of John. Paul’s age is x + 10
+Peter’s age is x + (x + 10) = 2x + 10
+We have (2x + 10) + (x + 1) + x = 100
+Combining like terms, we get 4x + 20 = 100
+Subtracting 20 from both sides and dividing by 4, we get x = 80/4 = 20 years old.
+John is 20 years old, Paul is 20 + 10 = 30 years old, and Peter is 2 * 20 + 10 = 50 years old.

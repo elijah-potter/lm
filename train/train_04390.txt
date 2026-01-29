@@ -1,0 +1,5 @@
+Jane is trying to decide whether to buy a house or a trailer. A house costs $480,000 and a trailer costs $120,000. Each loan will be paid in monthly installments over 20 years. How much more is the monthly payment on the house compared to the trailer?
+First find how many months the loans last: 20 years * 12 months/year = <<20*12=240>>240 months
+Then divide the cost of the house by the number of payments to find the monthly payment before interest: $480,000 / 240 months = $<<480000/240=2000>>2000/month
+Then do the same thing to find the monthly payment before interest on the trailer: $120,000 / 240 months = $<<120000/240=500>>500/month
+Then subtract the cost of the trailer payment from the cost of the house payment to find the difference: $2000/month - $500/month = $<<2000-500=1500>>1500/month

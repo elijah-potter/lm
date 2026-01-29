@@ -1,0 +1,5 @@
+Cara has 60 marbles in a bag. 20 of them are yellow, half as many are green, and the remaining marbles are equally divided between red and blue. If Cara picks a marble at random, what are the odds it's blue (expressed as a percentage)?
+First find the number of green marbles: 20 yellow marbles / 2 = <<20/2=10>>10 green marbles
+Then find how many marbles are either red or blue: 60 marbles - 20 yellow marbles - 10 green marbles = <<60-20-10=30>>30 marbles
+Divide this number in half to find how many marbles are blue: 30 marbles / 2 = <<30/2=15>>15 blue marbles
+Finally, divide the number of blue marbles by the total number of marbles and multiply by 100 to find the percentage chance of getting a blue marble: 15 marbles / 60 marbles * 100 = <<15/60*100=25>>25%

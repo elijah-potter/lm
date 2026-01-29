@@ -1,0 +1,4 @@
+Tom is playing a game and gets 10 points for killing an enemy.  If he kills at least 100 enemies he gets a 50% bonus to his score.  What was his total score if he killed 150 enemies?
+He gets 150*10=<<150*10=1500>>1500 points
+The bonus is worth 1500*.5=<<1500*.5=750>>750 points
+So his total score is 1500+750=<<1500+750=2250>>2250 points

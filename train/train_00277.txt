@@ -1,0 +1,8 @@
+Sabrina went to the library and found a historical series novel called The Rangers Apprentice. There are 14 books in the series, and each book has 200 pages. She read four books in a month and half the number of books remaining in the second month. What's the total number of pages Sabrina has to read to finish the whole series?
+The total number of pages in the series is 14 books * 200 pages/book = <<14*200=2800>>2800 pages.
+Sabrina read 4 books *200 pages/book = <<4*200=800>>800 pages in the first month.
+She still has 14 books - 4 books = <<14-4=10>>10 books after reading four books.
+In the second month, she read 1/2*10 books = <<1/2*10=5>>5 books.
+The total number of pages she read is 5 books * 200 pages/book = <<5*200=1000>>1000 in the second month.
+In total, Sabrina 1000 pages + 800 pages = <<1000+800=1800>>1800 pages in two months.
+Sabrina has to read 2800 pages - 1800 pages = <<2800-1800=1000>>1000 more pages to complete the total series.

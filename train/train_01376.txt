@@ -1,0 +1,6 @@
+A farmer owns a hog that recently gave birth to 6 piglets.  If the farmer raises the piglets until they are fully grown, he can sell the fully grown pig for $300.  Each piglet must grow for at least 12 months before it is large enough to be sold. It costs the farmer $10 per month to feed each animal until it is sold.  If the farmer sells 3 pigs after 12 months, and the remaining 3 pigs after 16 months, how much profit did he earn in total (after deducting the cost of food)?
+The 3 pigs that are sold after 12 months will cost the farmer 12*10*3 = $<<12*10*3=360>>360 in food costs.
+The 3 pigs that are sold after 16 months will cost the farmer 16*10*3 = $<<16*10*3=480>>480 in food costs.
+Thus, the total food cost to raise the 6 piglets was 360 + 480 = $<<360+480=840>>840.
+Next, selling the 6 fully grown pigs will earn the farmer 6*300 = $<<6*300=1800>>1800 in revenue.
+Therefore, the earn the farmer 1800 - 840 = $<<1800-840=960>>960 in profit from these sales.

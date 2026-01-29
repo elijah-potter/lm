@@ -1,0 +1,6 @@
+John wants to start a zoo.  He has 15 snakes.  He has twice as many monkeys as he does snakes.  He has 5 fewer lions than he does monkeys.   John has 8 more pandas than he does lions.  John has 1/3 as many dogs as he does pandas.  How many total animals does John have?
+John has 15 snakes * 2 = <<15*2=30>>30 monkeys.
+John has 30 monkeys - 5 = <<30-5=25>>25 lions.
+John has 25 lions + 8 = <<25+8=33>>33 pandas.
+John has 33 pandas / 3 = <<33/3=11>>11 dogs.
+John has 15+30 + 25 + 33 + 11 = <<15+30+25+33+11=114>>114 animals.

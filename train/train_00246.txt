@@ -1,0 +1,5 @@
+There are 12 crates that each contain 150 oranges. There are 16 boxes that each hold 30 nectarines. How many pieces of fruit are in the crates and the boxes in total?
+Oranges = 12 * 150 = <<12*150=1800>>1800
+Nectarines = 16 * 30 = <<16*30=480>>480
+1800 + 480 = <<1800+480=2280>>2280
+There are 2280 pieces of fruit in total.

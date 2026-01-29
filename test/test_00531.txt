@@ -1,0 +1,7 @@
+After tracking his workout routine for 8 weeks, Josh discovered that he had spent 4 hours working out every week except on some occasions. At one point, he spent 5 hours each for two consecutive weeks. Another time, he spent 6 hours in one week. What is the total number of hours he has spent working out across the 8 weeks?
+For 2 weeks, he spent 5 hours each for a total of 5*2 = <<5*2=10>>10 hours
+In another week, he spent 6 hours; which gives a total of 10+6 = <<10+6=16>>16 hours
+2+1 = <<2+1=3>>3 weeks have been accounted for
+He tracked 8 weeks so there are 8-3 = <<8-3=5>>5 weeks left
+He spent 4 hours each week for 5 weeks for a total of 4*5 = <<4*5=20>>20 hours
+The total across the 8 weeks is: 16+20 = <<16+20=36>>36 hours

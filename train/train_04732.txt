@@ -1,0 +1,6 @@
+Billy ate 20 apples this week. On Monday, he ate 2 apples. On Tuesday, he ate twice as many as he ate the day before. He’s not sure what he ate on Wednesday. On Thursday, he ate four times as many as he ate on Friday. On Friday, he ate half of the amount he ate on Monday.  How many apples did he eat on Wednesday?
+On Tuesday, Billy ate 2 * 2 = <<2*2=4>>4 apples.
+On Friday, he ate 2 * 0.5 = <<2*0.5=1>>1 apple.
+On Thursday, he ate 4 * 1 = <<4*1=4>>4 apples.
+So for Monday, Tuesday, Thursday, and Friday, Billy ate a total of 2 + 4 + 4 + 1 = <<2+4+4+1=11>>11 apples.
+This means that on Wednesday, he must have eaten 20 – 11 = <<20-11=9>>9 apples.

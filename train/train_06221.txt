@@ -1,0 +1,6 @@
+Lily bought a Russian nesting doll as a souvenir. The biggest doll is 243 cm tall, and each doll is 2/3rd the size of the doll that contains it. How big is the 6th biggest doll?
+First find the size of the second-biggest doll: 243 cm * 2/3 = <<243*2/3=162>>162 cm
+Then find the size of the third-biggest doll: 162 cm * 2/3 = <<162*2/3=108>>108 cm
+Then find the size of the fourth-biggest doll: 108 cm * 2/3 = <<108*2/3=72>>72 cm
+Then find the size of the fifth-biggest doll: 72 cm * 2/3 = <<72*2/3=48>>48 cm
+Then find the size of the sixth-biggest doll: 48 cm * 2/3 = <<48*2/3=32>>32 cm

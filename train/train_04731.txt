@@ -1,0 +1,7 @@
+There are twice as many cows as dogs at a petting farm. If there are currently 184 cows at the farm, and the farm owner decides to sell 1/4 of the cows and 3/4 of the dogs, how many animals are remaining on the farm?
+If there are 184 cows, twice the number of dogs, then there are 184/2 =<<184/2=92>>92 dogs on the farm.
+When the farm owner decided to sell 1/4 of cows, he sold 1/4*184 = 46 cows
+The total number of cows remaining on the farm is 184-46 = <<184-46=138>>138
+If the farm owner also sold 3/4 of the dogs, he sold 3/4*92 = <<3/4*92=69>>69
+The total number of dogs remaining on the farm is 92-69 = <<92-69=23>>23
+The total number of animals remaining on the farm is 23+138 = <<23+138=161>>161

@@ -1,0 +1,7 @@
+Peter has four horses. Each one eats 4 pounds of oats, twice a day, and 3 pounds of grain once a day. How many pounds of food does he need to feed his horses for 3 days?
+Peter needs 2 * 4 pounds of oats = <<2*4=8>>8 pounds of oats per horse per day.
+Peter will need 8 pounds oats * 3 days = <<8*3=24>>24 pounds of oats per horse.
+Peter will need 24 pounds of oats * 4 horses = <<24*4=96>>96 pounds of oats total.
+Peter needs 3 pounds of grain * 3 days per horse = <<3*3=9>>9 pounds of grain per horse.
+Peter will need 9 pounds of grain * 4 horses = <<9*4=36>>36 pounds of grain total.
+For 3 days Peter will need a total of 96 pounds oats + 36 pounds grain = <<96+36=132>>132 pounds total.

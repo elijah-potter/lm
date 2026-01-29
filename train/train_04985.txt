@@ -1,0 +1,6 @@
+Bill and Joan both work for a library. 5 years ago, Joan had 3 times as much experience as Bill. Now she has twice as much experience as Bill. How many years of experience does Bill have now?
+Let b be Bill's years of experience and j be Joan's years of experience. We know that j - 5 = 3(b - 5) and j = 2b.
+Substituting the second equation into the first equation, we get 2b - 5 = 3(b - 5)
+Multiplying through the parentheses, we get 2b - 5 = 3b - 15
+Adding 15 to both sides, we get 2b + 10 = 3b
+Subtracting 2b from both sides, we get 10 = b

@@ -1,0 +1,6 @@
+Fern is checking IDs to get into an R-rated movie. She denied 20% of the 120 kids from Riverside High, 70% of the 90 kids from West Side High, and half the 50 kids from Mountaintop High. How many kids got into the movie?
+First find how many kids from Riverside High are rejected: 20% * 120 kids = <<20*.01*120=24>>24 kids
+Then find how many kids from West Side High are rejected: 70% * 90 kids = <<70*.01*90=63>>63 kids
+Then find how many kids from Mountaintop High are rejected: 50 kids / 2 = <<50/2=25>>25 kids
+Then add the number of kids from each school to find the total number of kids: 120 kids + 90 kids + 50 kids = <<120+90+50=260>>260 kids
+Then subtract all the kids who were rejected from the total number of kids to find the number who got in: 260 kids - 24 kids - 63 kids - 25 kids = <<260-24-63-25=148>>148 kids

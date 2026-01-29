@@ -1,0 +1,8 @@
+Pauline visits her favorite local museum three times a year. The cost of one visit is $2. After 5 years, the cost of one visit has increased by 150%, but Pauline decided not to give up any visit and continued to go to the museum for 3 more years. How much did Pauline spend on all visits to the museum?
+Pauline visited the local museum 3 times a year, so she paid 3 * 2 = $<<3*2=6>>6 every year on visits.
+That means during the first 5 years Pauline spend 5 * 6 = $<<5*6=30>>30 on tickets.
+After 5 years the cost of one visit increased by 150/100 * 2 = $<<150/100*2=3>>3.
+That means the new price of the ticket was 2 + 3 = $<<2+3=5>>5.
+So for per year Pauline paid 3 * 5 = $<<3*5=15>>15.
+During the last 3 years, she paid in total 3 * 15 = $<<3*15=45>>45.
+In total Pauline spend 30 + 45 = $<<30+45=75>>75 on visits at the museum.

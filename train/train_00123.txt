@@ -1,0 +1,4 @@
+In a conference room, 40 chairs with a capacity of 2 people each were arranged in rows in preparation for the board meeting of a company, whose number of members was the same as the chairs' capacity. If 2/5 of the chairs were not occupied, and the rest each had two people, calculate the number of board members who did attend the meeting.
+The total capacity of the 40 chairs was 40*2=<<40*2=80>>80 people.
+If 2/5 of the chairs were unoccupied, 2/5*80=<<2/5*80=32>>32 people missed the board meeting since the number of members was the same as the chair's capacity.
+The number of board members who attended the meeting was 80-32=<<80-32=48>>48

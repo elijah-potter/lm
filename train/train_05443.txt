@@ -1,0 +1,5 @@
+Francis' family has 2 ukuleles, 4 guitars, and a certain number of violins. Each ukulele has 4 strings. Each guitar has 6 strings. Each violin has 4 strings. If the total number of strings among the ukuleles, guitars, and violins is 40 strings, how many violins does Francis' family have?
+From the ukuleles, there are 2 * 4 = <<2*4=8>>8 strings
+From the guitars, there are 4 * 6 = <<4*6=24>>24 strings
+From the violins, there are 40 - 8 - 24 = <<40-8-24=8>>8 strings
+The total number of violins Francis' family has is 8 / 4 = <<8/4=2>>2 violins

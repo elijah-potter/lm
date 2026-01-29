@@ -1,0 +1,5 @@
+Bob is building a vegetable garden. It is 220 feet long by 120 feet wide. Half of the garden is going to be tilled land. A third of the rest of it will have trellises for vining plants, and the rest will be devoted to raised beds. How big will the raised bed section of the garden be?
+The garden is 220 * 120 = <<220*120=26400>>26,400 square feet.
+The tilled land will take up half the area, and the trellises and raised beds will be the other half. Each half is 26,400 / 2 = <<26400/2=13200>>13,200 square feet.
+The trellises will take up 1/3 of the remaining land, so the raised beds will take 1 - 1/3 = 2/3 of the remaining land.
+So the total area of the raised bed area will be 13,200 square feet * (2 / 3) = <<13200*(2/3)=8800>>8,800 square feet.

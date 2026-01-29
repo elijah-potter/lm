@@ -1,0 +1,9 @@
+Carly is a pet groomer. Today, her task was trimming the four nails on dogs’ paws. She trimmed 164 nails, but three of the dogs had only three legs. How many dogs did Carly work on?
+Let N be the number of dogs with 4 legs Carly worked on.
+All the dogs with 4 legs had 4N paws.
+There were 3 * 3 = <<3*3=9>>9 paws on dogs with 3 legs.
+At 4 nails per paw, she trimmed 164 / 4 = <<164/4=41>>41 paws.
+She worked on 4N + 9 = 41 paws.
+Thus, she worked on 4N = 32 paws on dogs with 4 legs.
+She worked on N = 32 / 4 = <<32/4=8>>8 dogs with 4 legs.
+Thus, Carly worked on 8 + 3 = <<8+3=11>>11 dogs.

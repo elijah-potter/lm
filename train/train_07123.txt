@@ -1,0 +1,4 @@
+Mark bought 2 pounds of tomatoes for $5 per pound and 5 pounds of apples, at $6 per pound. How much did he spend in total?
+Mark bought 2 pounds of tomatoes for $5/pound * 2 pounds = $<<2*5=10>>10.
+Mark bought 5 pounds of apples for $6/pound * 5 pounds = $<<6*5=30>>30.
+Now add those two quantities to find Mark's total spending: $30 + $10 = $<<30+10=40>>40.

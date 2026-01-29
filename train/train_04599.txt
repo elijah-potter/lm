@@ -1,0 +1,7 @@
+Juan bought T-shirts for his employees. He bought shirts for men and women. Women's t-shirts are $5 cheaper than men's t-shirts of the same color. His company has 2 sectors, one in white t-shirts and the other in black t-shirts. He paid $20 for white men's t-shirts and $18 for black men's t-shirts. The 2 sectors have the same number of men and women, with a total of 40 employees. How much did he spend total on buying t-shirts?
+For each type of shirt, he needed to buy, 40 employees / 4 = <<40/4=10>>10 shirts.
+White men's T-shirts cost $20/shirt * 10 shirts = $<<20*10=200>>200.
+White women's T-shirts cost $5 less, or ($20/shirt - $5/shirt) * 10 shirts = $15/shirt * 10 shirts = $150.
+Black men's t-shirts cost, $18/shirt * 10 shirts = $<<18*10=180>>180.
+Black women's T-shirts cost $ 5 less, so ($18/shirt - $5/shirt) * 10 shirts = $13/shirt * 10 shirts = $<<(18-5)*10=130>>130.
+Now add up all these quantities to find the total: $200 + $150 + $180 + $130 = $<<200+150+180+130=660>>660.

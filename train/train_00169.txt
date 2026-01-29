@@ -1,0 +1,7 @@
+Silvia’s bakery is offering 10% on advanced orders over $50.00.  She orders 2 quiches for $15.00 each, 6 croissants at $3.00 each and 6 buttermilk biscuits for $2.00 each.  How much will her order be with the discount?
+She orders 2 quiches for $15.00 each so they cost 2*15 = $<<2*15=30.00>>30.00
+She orders 6 croissants at $3.00 each so they cost 6*2.5 = $<<6*3=18.00>>18.00
+She orders 6 biscuits at $2.00 each so they cost 6*2 = $<<6*2=12.00>>12.00
+Her advance order is 30+18+12 = $<<30+18+12=60.00>>60.00
+Her advance order is over $50.00 so she can get 10% off so .10*60 = $6.00
+Her order is $60.00 and she gets $6.00 off so her advanced order will cost 60-6=$<<60-6=54.00>>54.00

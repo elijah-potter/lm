@@ -1,0 +1,4 @@
+Jenny brought in 40 peanut butter cookies and 50 chocolate chip cookies for the bake sale. Marcus brought in 30 peanut butter cookies and and 20 lemon cookies. If Renee, who's allergic to peanuts, picks a cookie at random, what is the chance she'll have an allergic reaction expressed as a percentage?
+First find the total number of peanut butter cookies: 40 peanut butter cookies + 30 peanut butter cookies = <<40+30=70>>70 peanut butter cookies
+Then find the total number of cookies by adding the number of peanut butter cookies to the number of the other two types: 70 peanut butter cookies + 50 chocolate chip cookies + 20 lemon cookies = <<70+50+20=140>>140 cookies
+Then divide the number of peanut butter cookies by the total number of cookies and multiply by 100% to find the percentage chance of Renee getting a peanut butter cookie: 70 peanut butter cookies / 140 cookies * 100% = 50%

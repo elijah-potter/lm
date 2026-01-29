@@ -1,0 +1,6 @@
+Alan likes to support music creators, so instead of downloading songs from the internet, he visits a record store once in a while. He decided now to buy 2 CDs by "The Dark", 1 CD by the creator "AVN", and 5 CDs that are mixes of songs from the 90s. The price of the "AVN" CD is $12 and it is half the price of one CD by "The Dark". The 5 CDs of 90s music cost is 40% of all the cost of all other CDs Alan is going to buy. How much will Alan have to pay for all the products?
+If one "AVN" is half the price of one "The Dark" CD, that means one CD of "The Dark" costs 12 * 2 = $<<12*2=24>>24.
+So for two "The Dark" CDs, Alan needs to pay 24 * 2 = $<<24*2=48>>48.
+So all CDs cost by now 12 + 48 = $<<12+48=60>>60.
+The 90s music CDs cost 40/100 * 60 = $<<40/100*60=24>>24.
+That means for all CDs Alan needs to pay 60 + 24 = $<<60+24=84>>84.

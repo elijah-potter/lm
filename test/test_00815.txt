@@ -1,0 +1,9 @@
+A new arcade opens up and Jack decides to play with his 3 friends.  Jack can play a game with 1 quarter for 20 minutes.  Two of his friends are significantly worse than him and can only play half as long.  One of them is significantly better and can play for 1.5 times as long.  They play for 4 hours.  How much money is used?
+Jack puts change in 60/20=<<60/20=3>>3 times an hour
+So he spends 3*.25=$<<3*.25=.75>>.75 an hour
+His two friends add change 3*2=<<3*2=6>>6 times an hour
+So they spend 6*.25=$<<6*.25=1.5>>1.5 an hour
+His last friend puts in money 3/1.5=<<3/1.5=2>>2 times an hour
+So he spends 2*.25=$<<2*.25=.50>>.50 an hour
+So in total they spend .75+1.5+.5=$<<.75+1.5+.5=2.75>>2.75 an hour
+So they spend 2.75*4=$<<2.75*4=11>>11 in the 4 hours

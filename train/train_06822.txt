@@ -1,0 +1,7 @@
+Benjamin is tracking how many miles he walks in a week. He walks to work and home five days a week, walks his dog twice a day every day, walks to his best friend’s house once a week, and walks to the convenience store twice a week. Work is six miles away, dog walks are two miles, his best friend’s house is one mile, and the convenience store is three miles. How many miles does Benjamin walk in a week?
+Benjamin walks 6 miles to work and 6 miles home, so he walks 6 * 2 = <<6*2=12>>12 miles to work and home.
+He walks to work 5 days a week, so he walks 12 * 5 = <<12*5=60>>60 miles to work and home a week.
+He walks his dog 2 times a day for 2 miles, so he walks 2 * 2 = <<2*2=4>>4 miles a day for his dog.
+He walks his dog 7 days a week, so he walks 4 * 7 = <<4*7=28>>28 miles for his dog.
+He walks 3 miles to the store 2 times a week, so he walks 2 * 3 = <<2*3=6>>6 miles to the store each week.
+Adding his weekly 1 mile to his friend’s house, Benjamin walks 60 + 28 + 6 + 1 = <<60+28+6+1=95>>95 miles in a week.

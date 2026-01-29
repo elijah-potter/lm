@@ -1,0 +1,5 @@
+Alex is stacking his books in a pyramid. Each level of the pyramid has 80% as many books as the number of books in the previous level. If he makes four levels and the top level has 64 books, how many books are in the pyramid in total?
+The third level has 80 books because 64 / .8 = <<64/.8=80>>80
+The second level has 100 books because 80 / .8 = <<80/.8=100>>100
+The first level has 125 books because 100 / .8 = <<100/.8=125>>125
+In total there are 369 books because 64 + 80 + 100 + 125 = <<64+80+100+125=369>>369

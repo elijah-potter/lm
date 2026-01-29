@@ -1,0 +1,6 @@
+A dog is being treated for fleas. One flea treatment gets rid of half the fleas. After four treatments, the dog has 14 fleas left. How many more fleas did the dog have before the flea treatments than after?
+After three treatments, the dog had 14 * 2 = <<14*2=28>>28 fleas.
+After two treatments, the dog had 28 * 2 = <<28*2=56>>56 fleas.
+After one treatment, the dog had 56 * 2 = <<56*2=112>>112 fleas.
+Before any treatments, the dog had 112 * 2 = <<112*2=224>>224 fleas.
+Thus, the dog had 224 - 14 = <<224-14=210>>210 more fleas before the treatments than after.

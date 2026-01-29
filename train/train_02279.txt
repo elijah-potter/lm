@@ -1,0 +1,8 @@
+Johnny is a dog walker. He can walk 3 dogs at once. He gets paid $15 for a 30-minute walk and $20 for a 60-minute walk. Johnny works for 4 hours per day. If he always walks the maximum number of dogs possible and 6 dogs have 60-minute walks per day, how much money does he make in a week where he works 5 days?
+Johnny spends 6/3=2 hours walking the 6 dogs who have 60-minute walks.
+He makes $20*6=$<<20*6=120>>120 for these walks.
+Thus, he has 4-2=2 hours=120 minutes left to walk the other dogs.
+He can walk 3*(120/30)=<<3*(120/30)=12>>12 dogs in this time.
+Thus, he will make $15*12=$<<12*15=180>>180 on these walks.
+In total per day, he makes $120+$180=$<<120+180=300>>300 per day.
+Thus, during the week, he makes $300*5=$<<300*5=1500>>1500.

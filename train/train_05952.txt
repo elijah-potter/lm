@@ -1,0 +1,6 @@
+Cora started reading a 158-page book on Monday, and she decided she wanted to finish it by the end of Friday. She read 23 pages on Monday, 38 pages on Tuesday, and 61 pages on Wednesday. She knows she will have time to read twice as much on Friday as she does on Thursday. How many pages does she have to read on Thursday to finish the book in time?
+Let P be the number of pages Cora has to read on Thursday.
+If she finishes the book by the end of Friday, she will have read 23 + 38 + 61 + P + 2P = 158 pages.
+The pages she has left to read by Thursday are P + 2P = 3P = 158 - 23 - 38 - 61 = pages.
+Thus, by Thursday she has 3P = 36 pages left to read.
+Therefore, to finish the book on Friday, Cora has to read P = 36 / 3 = <<36/3=12>>12 pages on Thursday.

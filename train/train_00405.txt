@@ -1,0 +1,9 @@
+A hay farmer harvested 560 bales of hay from 5 acres of grass per month last year. This year, he planted an additional 7 acres of grass. If the farmer also owns 9 horses and each horse consumes 3 bales of hay a day, how many bales of hay would the farmer have left by the end of December if he starts feeding them this year's hay beginning the first day of September?
+For every acre of grass, the farmer can harvest 560/5 = <<560/5=112>>112 bales of hay each month.
+This year, the farmer has 7 + 5 = <<7+5=12>>12 acres of grass.
+He can expect to harvest 12 x 112 = <<12*112=1344>>1344 bales of hay per month.
+The total hay production this year is 1344*12 = <<1344*12=16128>>16128
+From September to December, the farmer would have to feed his horses for a total of 30 + 31 + 30 + 31 = <<30+31+30+31=122>>122 days
+Each day his horse eats a total of 3*9 = <<3*9=27>>27 bales of hay.
+For the 122 days, the horses will eat a total of 27*122 = <<27*122=3294>>3294 bales.
+The total number of bales remaining will be 16128-3294 = <<16128-3294=12834>>12834.

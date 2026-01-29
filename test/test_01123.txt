@@ -1,0 +1,9 @@
+A toy manufacturer receives an order for 400 toys. 5 workers are available to work on the order. 2 of the workers produce 6 toys an hour, and another 2 workers produce 4 toys an hour. They all work on the order during their 10-hour shift, and by the end of their shift the manufacturer still needs another 20 toys to be able to ship the order. How many toys per hour does the fifth worker produce?
+In the first group of workers, each produces 6 toys * 10 hours = <<6*10=60>>60 toys over their shift.
+This is a total of 60 toys * 2 workers = <<60*2=120>>120 toys.
+In the second group of workers, each produces 4 toys * 10 hours = <<4*10=40>>40 toys over their shift.
+This is a total of 40 toys * 2 workers = <<40*2=80>>80 toys.
+Together, these two groups produce 120 + 80 = <<120+80=200>>200 toys.
+If the order is still short, then all the workers combined have produced 400 ordered toys – 20 remaining toys = <<400-20=380>>380 toys.
+This means the fifth worker produced 380 – 200 = <<380-200=180>>180 toys in total.
+The fifth worker therefore produced 180 toys / 10 hours = <<180/10=18>>18 toys per hour.

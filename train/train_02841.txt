@@ -1,0 +1,4 @@
+In a parking lot, there are cars and motorcycles.  Each car has 5 wheels (including one spare) and each motorcycle has 2 wheels. There are 19 cars in the parking lot. Altogether all vehicles have 117 wheels. How many motorcycles are at the parking lot?
+There are 19 cars at the lot, so there are 5 * 19 = <<19*5=95>>95 wheels of cars.
+So there are 117 - 95 = <<117-95=22>>22 wheels of motorcycles in the parking lot.
+Each motorcycle has 2 wheels, so that leaves us with 22 / 2 = <<22/2=11>>11 motorcycles in the parking lot.

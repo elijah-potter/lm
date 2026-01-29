@@ -1,0 +1,4 @@
+A woman needs to buy 16 oz of butter for a dessert recipe.  She can either buy a single 16 oz package of the store-brand butter for $7, or she can buy an 8oz package of store butter for $4 and use a coupon to get an additional two 4 oz packages that normally sell for $2.0 each at a 50% discount (which is applied to each 4oz package separately).  What is the lowest price she can pay for the 16 oz of butter she needs?
+If she uses the coupon, she will pay 2*0.5 = $<<2*0.5=1>>1 for each 4oz package.
+Thus, she will pay 4 + 2*1 = $<<4+2*1=6>>6 in total for the 8oz package and the two 4oz packages she needs to reach 16 oz of butter when using the coupon.
+Therefore, the lowest amount she can pay is $6, as this is cheaper than the $7 price for a 16 oz package.

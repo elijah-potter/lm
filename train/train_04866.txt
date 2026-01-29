@@ -1,0 +1,8 @@
+A city has a population of 300,000.  50,000 people immigrate to the country and then 30,000 people leave.  After that 1/8 of the population gets pregnant and 1/4 of those people have twins.  How many people are there after the births?
+There was a net immigration to the country of 50,000-30,000=<<50000-30000=20000>>20,000
+So the total number of people before birth is 300,000+20,000=<<300000+20000=320000>>320,000
+That means 320,000/8=<<320000/8=40000>>40,000 get pregnant
+So 40,000/4=<<40000/4=10000>>10,000 have twins
+So that means they have 10,000*2=<<10000*2=20000>>20,000 children
+There are 40,000-10,000=<<40000-10000=30000>>30,000 children from single births
+So the total number of people is 320,000+30,000+20,000=<<320000+30000+20000=370000>>370,000

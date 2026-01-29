@@ -1,0 +1,7 @@
+A small pizza has 6 slices, a medium pizza has 8 slices whereas a large pizza has 12 slices. How many slices of pizza will you have if you bought a total of 15 pizzas and you know you ordered 4 small pizzas and 5 medium pizzas?
+We know that 4 small pizzas and 5 medium pizzas = 4+5 = 9 non-large pizzas were purchased
+Because a total of 15 pizzas were purchased then 15 - 9 = <<15-9=6>>6 large pizzas were ordered
+If 1 small pizza has 6 slices then 4 small pizzas will have 4 * 6 = <<4*6=24>>24 slices
+Similarly, If 1 medium pizza has 8 slices then 5 medium pizzas will have 5 * 8 = <<8*5=40>>40 slices
+Similarly, If 1 large pizza has 12 slices then 6 large pizzas will have 6 * 12 = <<6*12=72>>72 slices
+That means in total we have 24 small slices + 40 medium slices + 72 large slices = 24 + 40 + 72 = <<24+40+72=136>>136 slices of pizza

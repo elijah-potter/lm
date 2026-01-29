@@ -1,0 +1,3 @@
+Max can trade 3 coconuts for a crab and 6 crabs for a goat. If he has 342 coconuts and he wants to convert all of them into goats, how many goats will he have?
+First find the number of crabs Max can get by dividing the number of coconuts by the exchange rate with crabs: 342 coconuts / 3 coconuts/crab = <<342/3=114>>114 crabs
+Then divide the number of crabs by the exchange rate with goats: 114 crabs / 6 crabs/goat = <<114/6=19>>19 goats

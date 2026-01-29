@@ -1,0 +1,7 @@
+Luke started working on a 1000-piece jigsaw puzzle. The first day he worked on it, he put together 10% of the pieces. On the second day, he put together another 20% of the remaining pieces from the first day. On the third day, he put together 30% of the remaining pieces from the previous day. How many pieces does he have left to complete after the third day?
+Luke started putting together, 1000 x 0.1 = <<1000*0.1=100>>100 pieces.
+The next day, there were 1000-100 = <<1000-100=900>>900 pieces left.
+Then he put together 900 * 0.2 = <<900*0.2=180>>180 pieces on the second day.
+So there were 900 - 180 = <<900-180=720>>720 pieces left.
+On the third day, he put together 720 * 0.3 = <<720*0.3=216>>216 pieces.
+Therefore, Luke still has 720 - 216 = <<720-216=504>>504 pieces left to complete the puzzle.

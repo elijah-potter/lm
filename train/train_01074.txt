@@ -1,0 +1,6 @@
+1,800 fish swim westward, 3,200 swim eastward, and 500 swim north. What is the number of fish left in the sea, if fishers catch 2/5 of the fish that swam eastward and 3/4 of the fish that swam westward?
+When fishers caught 3/4 of the fish that swam westward, their total number reduced by 3/4 * 1800 fish = <<3/4*1800=1350>>1350
+The total number of fish that remained from the total number that swam eastward is 1800 fish - 1350 fish = <<1800-1350=450>>450 fish
+If fishers caught 2/5 of the fish that swam eastward, their total number reduced by 2/5 * 3200 fish = <<2/5*3200=1280>>1280 fish
+3200 fish - 1280 fish = <<3200-1280=1920>>1920 fish remained in the sea from the number that swam westward.
+The total number of fish in the sea after fishers caught some is 500 of the number that went north + 450 of the fish that swam westward + 1920 of the fish that swam eastward = <<500+450+1920=2870>>2870 fish

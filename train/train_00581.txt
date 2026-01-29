@@ -1,0 +1,5 @@
+Libby is building an igloo in her backyard using bricks of snow. She builds her igloo in rows, using a total of 10 rows of bricks of snow. The bottom half of the igloo has 12 bricks of snow in each row while the top half of the igloo has 8 bricks of snow in each row. How many bricks of snow did Libby use for her igloo?
+In the bottom half of the igloo, there are 10 rows / 2 = <<10/2=5>>5 rows of bricks of snow.
+So in the bottom half of the igloo, there are 5 rows * 12 bricks of snow in each row = <<5*12=60>>60 bricks of snow.
+In the top half of the igloo, there are 5 rows * 8 bricks of snow in each row = <<5*8=40>>40 bricks of snow.
+There is therefore a total of 60 + 40 = <<60+40=100>>100 bricks of snow in the igloo.

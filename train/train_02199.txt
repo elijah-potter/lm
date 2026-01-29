@@ -1,0 +1,7 @@
+Jonas is trying to expand his wardrobe.  He has 20 pairs of socks, 5 pairs of shoes, 10 pairs of pants and 10 t-shirts.  How many pairs of socks does he need to buy to double the number of individual items in his wardrobe?
+First, we must recognize that all pairs of shoes and socks are actually two items each, whereas the pants and the t-shirts are individual items. Therefore there are 20*2= <<20*2=40>>40 individual socks in 20 pairs of socks.
+Similarly, there are 5*2=<<5*2=10>>10 individual shoes in 5 pairs of shoes.
+Therefore, Jonas has 40+10+10+10= <<40+10+10+10=70>>70 individual items in his collection.
+To double this number, we perform 70*2=<<70*2=140>>140.
+This means we need 140-70=<<140-70=70>>70 new items to double the size.
+Since there are 2 individual socks in each pair, we take 70/2= <<70/2=35>>35 new pairs of socks.

@@ -1,0 +1,4 @@
+The grocery store sells chips for $2 per packet and corn chips for $1.5 per packet. John would like to buy 15 packets of chips, and with the rest of the money he has left, buy as many packets of corn chips as he can. How many packets of corn chips could John buy if he has $45 for his entire purchase?
+John wants to buy 15 packets of chips, which will cost him 15 * 2 = $<<15*2=30>>30.
+So John would have 45 - 30 = $<<45-30=15>>15 left for the corn chips.
+John could buy for the rest of the money 15 / 1.5 = <<15/1.5=10>>10 packets of corn chips.

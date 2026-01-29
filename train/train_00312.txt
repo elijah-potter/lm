@@ -1,0 +1,5 @@
+The seats of a bus are arranged in 23 rows of 4 seats. At the start, 16 people climb. At the first stop, 15 people board the bus and 3 get off. At the second stop, 17 people get on the bus and 10 get off. How many empty seats are there after the second stop?
+There are 23 * 4 = <<23*4=92>>92 seats on this bus.
+After the first stop, there are 16+15 - 3 = <<16+15-3=28>>28 people on the bus.
+After the 2nd stop, there are 28+17 - 10 = <<28+17-10=35>>35 people on the bus.
+So there are 92 - 35 = <<92-35=57>>57 empty seats on the bus after the 2nd stop.

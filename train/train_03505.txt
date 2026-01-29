@@ -1,0 +1,5 @@
+Joe and Adam built a garden wall with three courses of bricks. They realized the wall was too low and added 2 more courses. If each course of the wall had 400 bricks, and they took out half of the bricks in the last course to allow easy checkup of the garden, calculate the total number of bricks the wall has.
+When they added two more courses for the wall, the number of courses became 3+2 = <<3+2=5>>5
+Since each course has 400 bricks, the total number of bricks for 5 courses is 5*400 = <<5*400=2000>>2000
+To allow for an easy checkup of the wall, they removed 1/2*400 = <<1/2*400=200>>200 bricks from the last course of the wall.
+In total, the wall has 2000-200= <<2000-200=1800>>1800 bricks.

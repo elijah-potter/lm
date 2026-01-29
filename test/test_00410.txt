@@ -1,0 +1,8 @@
+Carolyn works for a delivery service company that hires on a contract basis. In May, they hired 40 employees, paying each employee $15 per hour for a 40-hour workweek. In June, 1/4 of the employees' contracts expired. Calculate the total amount of money the company paid to the employees in the two months.
+When hired, each employee is paid $15*40 = $<<15*40=600>>600 per week.
+The total earnings of a contracted employee in a month are 4 weeks * $600 per week = $<<4*600=2400>>2400
+Paying 40 employees, the company paid 40*$2400= $<<40*2400=96000>>96000 to all of its contract employees in May.
+In June, 1/4 of the employees' contracts expired, that is 1/4*40 = <<1/4*40=10>>10 employees.
+The total number of employees whose contracts were valid in June was 40-10 = <<40-10=30>>30 employees.
+The total amount of money paid to the contracted employees in June is 30*$2400 = $<<30*2400=72000>>72000
+In the two months, the company paid a total of $72000+$96000 = $<<72000+96000=168000>>168000

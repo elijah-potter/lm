@@ -1,0 +1,9 @@
+Ms. Estrella is an entrepreneur with a startup company having 10 employees. The company makes a revenue of $400000 a month, paying 10% in taxes, 5% of the remaining amount on marketing and ads, 20% of the remaining amount on operational costs, and 15% of the remaining amount on employee wages.  Assuming each employee receives the same wage, calculate the amount of money each employee is paid monthly.
+The company pays a total of 10/100*$400000 = $<<10/100*400000=40000>>40000 on taxes
+After taxes, the company revenue is $400000-$40000 = $<<400000-40000=360000>>360,000
+The costs of marketing and ads campaign are 5/100*$360000 = $<<5/100*360000=18000>>18000
+After deducting the costs of marketing and adds campaign, the company remains with = $342,000 in revenue
+Operational costs for the company are 20/100*$342000 = $<<20/100*342000=68400>>68400
+After taking out the operational costs, the company remains with $342000-$68400 = $273600
+The company also pays employee wages of 15/100*$273600 =$<<15/100*273600=41040>>41040
+If the total number of employees is 10, each employee is paid a salary of $41040/10 = $4104 per month

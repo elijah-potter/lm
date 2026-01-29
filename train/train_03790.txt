@@ -1,0 +1,5 @@
+Doris works at the Widget Factory in the packing department. She puts 3 widgets in each carton, which are 4 inches wide, 4 inches long, and 5 inches tall. She then packs those cartons into a shipping box before sending it to the loading bay. The shipping boxes are 20 inches wide, 20 inches long, and 20 inches high. How many widgets get shipped in each shipping box?
+Each carton has an area of 4*4*5 = <<4*4*5=80>>80 square inches.
+Each shipping box has an area of 20*20*20 = <<20*20*20=8000>>8000 square inches
+The total number of cartons that will fit into each box is 8000/80 = <<8000/80=100>>100
+Since there are 3 widgets in each carton, the total number of cartons in each box will be 3*100 = <<3*100=300>>300

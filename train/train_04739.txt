@@ -1,0 +1,6 @@
+There are 2000 pinecones on the ground. 20% are eaten by reindeer. Twice as many are eaten by squirrels as reindeer. 25% of the remainder are collected to make fires. How many pinecones are left?
+First find the number of pinecones eaten by reindeer: 20% * 2000 pinecones = <<20*.01*2000=400>>400 pine cones
+Then find the total number of pinecones eaten by squirrels: 400 pine cones * 2 = <<400*2=800>>800 pine cones
+Then subtract those two amounts to find the number of pinecones left: 2000 pinecones - 400 pine cones - 800 pine cones = <<2000-400-800=800>>800 pinecones
+Divide that number by 4 to find the number that are collected for fires: 800 pinecones / 4 = <<800/4=200>>200 pine cones
+Then subtract that number from the 800 pinecones to find the total left on the ground: 800 pine cones - 200 pinecones = <<800-200=600>>600 pine cones

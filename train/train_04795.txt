@@ -1,0 +1,5 @@
+Yuko likes to play board games. He decides to play a game with his brother Yuri. They must roll 3 dice at the same time and move the squares corresponding to the value of the 3 dice. Yuri started and his dice had the following combination: 2, 4, and 5. On Yuko's turn, he rolled 1, 5, and X. How many squares must Yuko's last die move him so that he is in front of his brother?
+The sum of Yuri's dice gave, 2 + 4 + 5 = <<2+4+5=11>>11 squares.
+For Yuko to get the same sum in the dice, 1 + 5 + X = 11 squares.
+Solving the equation, X = 11 - 6, X = <<11-6=5>>5 squares.
+To stand in front of his brother, Yuko needs to be at least 1 place in front, so his last die will move him, 5 + 1 = <<5+1=6>>6 squares.

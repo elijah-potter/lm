@@ -1,0 +1,8 @@
+Michael and Thomas are selling their lego collections. They agree to split any money they earn. They sell them based on how many circles are on top. Each circle costs 1 cent. They earned $5 each after selling 100 single pieces, 45 double pieces, 50 triple pieces and a number of quadruple pieces. How many quadruple pieces did they sell?
+They made $10 because 2 x 5 = <<2*5=10>>10
+They made $1 off single pieces because 100 x .01 = <<100*.01=1>>1
+They made $.9 off double pieces because 45 x .02 = <<45*.02=.9>>.9
+They made $1.5 off triple pieces because 50 x .03 = <<50*.03=1.5>>1.5
+They earned $3.4 off the first three types because 1 + .9 + 1.5 = <<1+.9+1.5=3.4>>3.4
+They earned $6.6 off the quadruple pieces because 10 - 3.4 = <<10-3.4=6.6>>6.6
+They sold 165 quadruple pieces because 6.6 / .04 = <<6.6/.04=165>>165

@@ -1,0 +1,6 @@
+Mary is going on a business trip. It takes 10 minutes for her Uber to get to her house and 5 times longer to get to the airport. It takes 15 minutes to check her bag and three times as long to get through security. Then she has to wait for 20 minutes for her flight to start boarding and twice as long before the plane is ready to take off. How many hours will this process take total?
+First find the time to drive to the airport: 10 minutes * 5 = <<10*5=50>>50 minutes
+Then find the time it takes to get through security: 15 minutes * 3 = <<15*3=45>>45 minutes
+Then find the time Mary spends waiting for the plane to take off: 20 minutes * 2 = <<20*2=40>>40 minutes
+Then add the time to each step to find the total time: 10 minutes + 50 minutes + 15 minutes + 45 minutes + 20 minutes + 40 minutes = <<10+50+15+45+20+40=180>>180 minutes
+Then divide that amount by the number of minutes per hour to cover the total time to hours: 180 minutes / 60 minutes/hour = <<180/60=3>>3 hours

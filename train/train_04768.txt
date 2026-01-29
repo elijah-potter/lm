@@ -1,0 +1,5 @@
+Katerina purchases 3 pots and 4 pans at the home goods store. Each pot costs $20. The total cost of Katerina's items is $100. If each pan is the same price, what is the cost of 2 pans?
+The cost of the pots is 3 * $20 = $<<3*20=60>>60
+The cost of 4 pans is $100 - $60 = $40
+Since each pan is the same price, the cost of 1 pan is $40 / 4 = $<<40/4=10>>10
+The cost of 2 pans is $10 + $10 = $<<10+10=20>>20

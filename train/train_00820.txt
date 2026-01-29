@@ -1,0 +1,6 @@
+James decides to build a tin house by collecting 500 tins in a week. On the first day, he collects 50 tins. On the second day, he manages to collect 3 times that number. On the third day, he collects 50 tins fewer than the number he collected on the second day. If he collects an equal number of tins on the remaining days of the week, what's the number of tins he collected each day for the rest of the week?
+On the second day, he collected 3 times the number of tins he collected on the first day, which is 3*50 = <<3*50=150>>150 tins.
+On the third day, he collected 50 tins fewer than the second day, which is 150-50 = <<150-50=100>>100 tins
+The total for the three days is 150+100+50 = <<150+100+50=300>>300 tins.
+To reach his goal, he still needs 500-300 = <<500-300=200>>200 tins.
+Since the total number of days left in the week is 4, he'll need to collect 200/4 = <<200/4=50>>50 tins per day to reach his goal

@@ -1,0 +1,5 @@
+Candice buys all the bread she and her family needs for the week from a local bakery.  She needs 2 loaves of white bread for sandwiches that cost $3.50 each.  She also needs a baguette that costs $1.50 and 2 loaves of sourdough bread that cost $4.50 each.  She also treats herself to a $2.00 almond croissant each visit.  How much does Candice spend at the bakery over 4 weeks?
+2 loaves of white bread are $3.50 each so they cost 2*3.50 = $<<2*3.50=7.00>>7.00
+2 loaves of sourdough bread are $4.50 each so they cost 2*4.50 = $<<2*4.50=9.00>>9.00
+The white bread comes to $7.00, the sourdough is $9.00 and she gets a baguette for $1.50 and a croissant for $2.00 so she spends 7+9+1+2 = $19.50 per week
+If she buys this same order of $19.50 every week for 4 weeks then she spends 19.50*4 = $<<19.50*4=78.00>>78.00 over 4 weeks

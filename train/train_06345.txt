@@ -1,0 +1,4 @@
+Daniel has 5 jars of juice containing 2 liters each. He wants to serve a full glass of juice to each person at a party. He knows that each glass can hold up to 250 milliliters of juice. How many full glasses can he give?
+The total liters of juice he has is 5 jars x 2 liters/jar = <<5*2=10>>10 liters of juice
+Then he needs to convert this amount to milliliters: 10 liters x 1000 milliliters/liter = <<10000=10000>>10,000 milliliters
+He can fill up to 10,000 ml / 250 ml/glass = <<10000/250=40>>40 glasses

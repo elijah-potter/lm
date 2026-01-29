@@ -1,0 +1,6 @@
+Magdalena has an apple tree on their farm, producing very few apples each year for a while now. However, this year, the apple tree yield was excellent, and it grew 200 apples. Magdalena picked 1/5 of the fruits on the first day, twice that number on the second day, and 20 more apples than he picked on the first day on the third day. Calculate the total number of apples remaining in the tree.
+Magdalena picked 1/5 * 200 apples = <<1/5*200=40>>40 apples on the first day.
+On the second day, she picked 2 * 40 apples = <<2*40=80>>80 apples from the tree
+The total number of apples that he picked on the third day is 40 apples + 20 apples = <<40+20=60>>60 apples
+In total, she picked 40 apples + 80 apples + 60 apples = <<40+80+60=180>>180 apples in the three days.
+The total number of apples remaining in the tree is 200 apples - 180 apples = <<200-180=20>>20 apples

@@ -1,0 +1,4 @@
+A large puzzle costs $15. A small puzzle and a large puzzle together cost $23. How much would you pay for 1 large and 3 small puzzles?
+A small puzzle costs $23 - $15 = $<<23-15=8>>8.
+Three small puzzles cost $8 x 3 = $<<8*3=24>>24.
+So, 1 large and 3 small puzzles cost $24 + $15 = $<<24+15=39>>39.

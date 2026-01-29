@@ -1,0 +1,4 @@
+Bob started out the week with $80. On Monday alone, he spent half the money. On Tuesday, he spent one-fifth of the amount left from Monday. On Wednesday, he spent 3/8ths of the amount left from Tuesday. How much does he have left now?
+On Monday, he spent half of $80 leaving him with $80-(1/2)*$80 = $<<80-(1/2)*80=40>>40
+On Tuesday, he spent 1/5th of $40 leaving $40-(1/5)*40 = $<<40-(1/5)*40=32>>32
+On Wednesday, he spent 3/8ths of $32 leaving $32-(3/8)*$32 = $20

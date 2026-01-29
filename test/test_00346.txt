@@ -1,0 +1,4 @@
+A restaurant has 40 tables with 4 legs and 50 tables with 3 legs. Calculate the total number of legs the restaurant's tables have.
+The total number of legs which the tables with four legs have is 40*4 = <<40*4=160>>160 legs
+The three-legged tables have a total of 50*3 = <<50*3=150>>150 legs.
+The total number of legs that the restaurant's table have is 150+160 = <<150+160=310>>310

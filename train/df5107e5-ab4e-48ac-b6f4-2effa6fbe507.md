@@ -1,0 +1,5 @@
+Once there was a tiny little bunny named Pip who loved to hop around the sunny meadow. One day, Pip found a shiny red berry that sparkled in the sunlight. "Mmm, what a tasty berry!" Pip said, and he nibbled a little bit. Suddenly, Pip felt a tickle in his nose. He sniffed and giggled—it was a butterfly’s wings fluttering!
+
+Pip chased the butterfly, who danced around the flowers. "Come on, Pip! Follow me!" the butterfly giggled. Pip hopped after and saw a big, friendly fox watching from a tree. The fox had a basket of berries. "Hey, little bunny," the fox said kindly, "you shouldn’t chase butterflies. They’re special!"
+
+Pip’s ears perked up. "But why?" he asked. The fox smiled. "Because butterflies help the flowers grow bigger and sweeter berries!" Pip nodded. "I’ll be more careful," he said. The butterfly fluttered away, and Pip hopped home, his heart full of kindness. That night, Pip dreamed of dancing with butterflies and sharing berries with his friends. And from that day on, Pip always hopped gently, helping all his meadow friends grow big and happy.

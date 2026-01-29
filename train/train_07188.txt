@@ -1,0 +1,8 @@
+There are several cookies in the jar. Taking 1 cookie away would leave half as many in the jar as if 5 were added. How many cookies are in the jar?
+Let C be the number of cookies
+There would be C-1 cookies.
+There would be (C+5)/2 cookies.
+C-1=(C+5)/2.
+2(C-1)=C+5
+2C-2=C+5
+C=<<7=7>>7

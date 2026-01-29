@@ -1,0 +1,4 @@
+Susan is picking strawberries. She's trying to fill her basket, but out of every handful of 5 strawberries she can't help but eat one of them herself. If her basket holds 60 strawberries, how many berries will she actually pick before she fills it?
+Out of every 5 berries, she eats 1, so only 5 strawberries - 1 strawberry = <<5-1=4>>4 strawberries go into the basket for each handful.
+The basket holds 60 strawberries, so it will take 60 strawberries / 4 strawberries per handful = <<60/4=15>>15 handfuls to fill the basket.
+So in total, Susan will pick 60 strawberries + 15 handfuls * 1 strawberry eaten per handful = <<60+15*1=75>>75 strawberries.

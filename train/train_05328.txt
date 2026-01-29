@@ -1,0 +1,7 @@
+Mr. Rocky went to the market to sell his handmade crafts on a particular week. He was selling jewelry at $30 each and paintings at $100 each. However, he realized the income from the sales wasn't worth the labor and materials he had used, so he decided to increase the price of jewelry by $10 each and the cost of each painting by 20%. Calculate the total price a buyer who takes two pieces of jewelry and five paintings would pay
+After increasing the price of a piece of jewelry, the price increased from $30 to $30+$10 = $<<30+10=40>>40 each.
+He also increased the price of each painting by 20/100*100 = $<<20/100*100=20>>20
+The total price for buying one painting at the new price is $100+$20 = $<<100+20=120>>120
+If a buyer purchases two pieces of jewelry, the total cost becomes 2*$40 = $<<2*40=80>>80
+When the buyer also buys 5 paintings, he pays a total of $120*5 = $<<120*5=600>>600
+2 pieces of jewelry and 5 paintings cost $600+$80 = $680 at the new prices.

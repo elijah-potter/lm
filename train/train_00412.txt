@@ -1,0 +1,5 @@
+Max has 8 children and each of his children has the same number of children as he does except for 2 who have 5 children each. How many grandchildren does he have?
+Out of his 8 children, 2 have only 5 children so the rest who have 8 ( the same number as him) are 8-2 = <<8-2=6>>6
+6 of Max's children have 8 children each for a total of 6*8 = <<6*8=48>>48 grandchildren
+2 of Max's children have 5 children each for a total of 5*2 = <<5*2=10>>10 grandchildren
+In total he has 48+10 = <<48+10=58>>58 grandchildren

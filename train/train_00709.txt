@@ -1,0 +1,5 @@
+Robi Ney wants to fill a 120-liter tub. He is amused by letting the water run for 1 minute, then closing the water supply for 1 minute, and so on alternating opening and closing the water supply. But the cap at the bottom of the tub is not very airtight and lets 1 liter of water escape per minute. The flow rate of the tap is 12 liters per minute. How long does it take to fill the tub in minutes?
+In 2 minutes, 12 liters of water flow into the bathtub and 2 liters (2 minutes x 1 liter/minute ) escape.
+This will leave 12 – 2 = <<12-2=10>>10 liters of water every two minutes
+We can divide the number of liters by the number of minutes to find the average flow per minute, which is 10 / 2 = <<10/2=5>>5 liters per minute
+To fill the tub, it will take 120 liters / 5 liters/min = <<120/5=24>>24 min

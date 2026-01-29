@@ -1,0 +1,7 @@
+Jenny collects cans and bottles to take down to the recycling center. Each bottle weighs 6 ounces and each can weighs 2 ounces. Jenny can carry a total of 100 ounces. She collects 20 cans and as many bottles as she can carry. If she gets paid 10 cents per bottle and 3 cents per can, how much money does she make (in cents)?
+First, the weight of 20 cans is 20 cans * 2 oz per can = <<20*2=40>>40 oz.
+Thus, Jenny has the capacity to carry 100 oz - 40 oz = <<100-40=60>>60 oz of bottles.
+Jenny can carry 60 oz / 6 oz per bottle = <<60/6=10>>10 bottles.
+Jenny earns 10 bottles * 10 cents per bottle = <<10*10=100>>100 cents for the bottles.
+Jenny earns 20 cans * 3 cents per can = <<20*3=60>>60 cents for the cans.
+In total, she earns 100 cents + 60 cents = <<100+60=160>>160 cents.

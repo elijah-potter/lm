@@ -1,0 +1,6 @@
+David has a store where he sells cell phones. When he takes inventory at the end of the day, he notices that he has 10 Samsung cell phones but he started the day with 14 Samsung cell phones. Then he notices that he has 5 iPhones and in the initial inventory, but started with 8. His staff then told him that in the afternoon they realized that 2 Samsung cell phones were damaged and 1 iPhone had a manufacturing defect in the screen, so they threw these out during the day. What was the total number of cell phones that were sold today?
+The actual initial inventory of Samsung cell phones was 14, but there were 2 defective phones so 14 - 2 = <<14-2=12>>12 is the initial inventory of working Samsung phones.
+The actual initial inventory of iPhone cell phones was 8, but there was one defective phone, so 8 - 1 = <<8-1=7>>7 is the actual initial inventory of working iPhones.
+Thus only 12 - 10 = <<12-10=2>>2 Samsung cell phones were sold.
+Thus only 7 - 5 = <<7-5=2>>2 iPhones were sold.
+Thus the total number of phones sold is 2 Samsung + 2 iPhone = <<2+2=4>>4 cell phones.

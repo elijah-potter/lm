@@ -1,0 +1,6 @@
+The price of candy bars is twice the cost of caramel, and the cost of cotton candy is half the price of 4 candy bars. If the price of 1 caramel is $3, how much do 6 candy bars, 3 caramel, and 1 cotton candy cost together?
+The candy bars each cost $3 * 2 = $<<3*2=6>>6.
+The cotton candies each cost 1/2 * (4 * $6) = $12
+6 candy bars cost 6 bars * $6/bar = $<<6*6=36>>36.
+3 caramels cost 3 caramels * $3/caramel = $<<3*3=9>>9.
+All the candies together cost $36 + $9 + $12 = $<<36+9+12=57>>57.

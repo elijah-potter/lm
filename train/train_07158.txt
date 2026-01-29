@@ -1,0 +1,7 @@
+Haley is making cider. It takes 20 golden delicious apples and 40 pink lady apples to make one pint of cider. Each of her 6 farmhands can pick 240 apples per hour and will work 5 hours today. How many pints of cider can Haley make with the apples gathered today, provided that the ratio of golden delicious apples to pink lady apples gathered is 1:2?
+First figure out how many apples total are needed for one pint of cider: 20 golden delicious/pint + 40 pink lady/pint = <<20+40=60>>60 apples/pint
+Then multiply that number by 8 to find the number of apples needed for a gallon of cider: 60 apples/pint * 8 pints/gallon = <<60*8=480>>480 apples/gallon
+Now find how many apples per hour all 8 farmhands pick: 240 apples/hour/farmhand * 6 farmhands = <<240*6=1440>>1440 apples/hour
+Then multiply that amount by the number of hours worked to find the total number of apples gathered: 1440 apples/hour * 5 hours = <<1440*5=7200>>7200 apples
+Divide the total number of apples gathered by the number of apples used by gallon to find the number of gallons of cider made: 7200 apples / 480 apples/gallon = <<7200/480=15>>15 gallons
+Since there are 8 pints in a gallon, the final answer is 15 gallons * 8 pints / gallon = <<15*8=120>>120 pints

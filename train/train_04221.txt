@@ -1,0 +1,4 @@
+A warehouse store sells cartons of gum. Each carton contains 5 packs of gum, and there are 3 sticks of gum in each pack. Each brown box contains 4 cartons of gum. How many sticks of gum are there in 8 brown boxes?
+5 packs of gum contain 5*3=<<5*3=15>>15 sticks of gum.
+If each brown box contains 4 cartons, 8 brown boxes contain 8 * 4= <<8*4=32>>32 cartons.
+So, 8 brown boxes contain 32 * 15=<<32*15=480>>480 sticks of gum.

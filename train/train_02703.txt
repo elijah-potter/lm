@@ -1,0 +1,6 @@
+Stephen ordered 2 large pizzas, both cut into 12 slices.  He ate 25% of the pizza.  His friend Pete ate 50% of the remaining pizza.  How many slices are left over?
+He ordered 2 pizzas, each cut into 12 slices so that’s 2*12 = <<2*12=24>>24 slices
+Stephen ate 25% of the pizza so he ate .25*24 = <<25*.01*24=6>>6 slices
+That leaves 24-6 = <<24-6=18>>18 slices
+18 slices are left and Pete eats 50% of 18 slices so he eats 18*.50 = <<18*50*.01=9>>9 slices
+If there were 18 slices and Pete ate 9 slices then there are 18-9 = <<18-9=9>>9 slices left over

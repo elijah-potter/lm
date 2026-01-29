@@ -1,0 +1,6 @@
+Marie ordered one chicken meal that costs $12, 5 packs of milk that costs $3 each, 4 apples that cost $1.50 each, and some boxes of pizza. Marie paid a total of $50. How many boxes of pizza did Marie order if each box costs $8.50?
+Five packs of milk cost $3 x 5 = $<<3*5=15>>15.
+Four apples cost $1.50 x 4 = $<<1.5*4=6>>6.
+The total cost of the chicken meal, milk, and apples is $12 + $15 + $6 = $<<12+15+6=33>>33.
+Thus, the boxes of pizza cost $50 - $33 = $<<50-33=17>>17.
+Therefore, Marie ordered $17/$8.50 = <<17/8.5=2>>2 boxes of pizza.

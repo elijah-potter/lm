@@ -1,0 +1,6 @@
+A school library has 120 books.  Each student needs 5 books for their classes.  The library was able to help 4 students on the first day of school, 5 students on the second day and 6 students on the third day.  How many students can the library help out on the fourth day of school?
+On the first day, the library used 4 students * 5 books = <<4*5=20>>20 books.
+On the second day, the library used 5 students * 5 books = <<5*5=25>>25 books.
+On the third day, the library used 6 students * 5 books = <<6*5=30>>30 books.
+On the fourth day, the library had 120 books - 20 - 25 - 30 = <<120-20-25-30=45>>45 books remaining.
+The library can help 45 books / 5 books = <<45/5=9>>9 students on the fourth day.

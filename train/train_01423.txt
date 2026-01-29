@@ -1,0 +1,5 @@
+Every 10 seconds, there is a car collision, and every 20 seconds there is a big crash. How many accidents overall will happen in 4 minutes?
+1 minute is 60 seconds, so 4 minutes is 4 * 60 = <<4*60=240>>240 seconds.
+During this time there would be 240 / 20 = <<240/20=12>>12 big crashes.
+And also 240 / 10 = <<240/10=24>>24 car collisions.
+So in total during 4 minutes there would be 12 + 24 = <<12+24=36>>36 accidents.

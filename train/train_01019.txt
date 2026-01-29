@@ -1,0 +1,4 @@
+Ron is part of a book club that allows each member to take a turn picking a new book every week. The club is made up of three couples and five single people along with Ron and his wife. How many times a year does Ron get to pick a new book?
+There are 3 couples in the club, so there are 3 * 2 = <<3*2=6>>6 people in couples in the club.
+Along with the singles and Ron and his wife, there are 6 + 5 + 2 = <<6+5+2=13>>13 people in the book club.
+There are 52 weeks in a year, so Ron gets to pick a new book 52 / 13 = <<52/13=4>>4 times a year.

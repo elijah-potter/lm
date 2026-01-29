@@ -1,0 +1,5 @@
+Vicki is planning a pop concert at her high school. The show will be 2 hours. She is allowing each group 2 minutes to get on stage, 6 minutes to perform, and then 2 minutes to exit the stage. If she allows a 10-minute intermission, how many groups can perform in the concert?
+First, we should convert the 2 hours of showtime into minutes for our calculations. Since there are 60 minutes in 1 hour, the show will be 2 x 60 = <<2*60=120>>120 minutes.
+Of those 120 minutes, 10 will be used for intermission, so 120 – 10 = <<120-10=110>>110 minutes for performances.
+Each group will use 2 minutes to get on stage + 6 minutes to perform + 2 minutes to exit the stage = <<2+6+2=10>>10 minutes of show time.
+Of the 110 minutes of performances, 10 are used per group, so 110 minutes / 10 = <<110/10=11>>11 groups can perform.

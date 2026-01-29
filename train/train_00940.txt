@@ -1,0 +1,7 @@
+There are 20 students in the class. Half of them play basketball. Two-fifths play volleyball and one-tenth play both basketball and volleyball.  How many students in this class do not play either game?
+Half of the students are playing basketball, which means 20 / 2 = <<20/2=10>>10 students play basketball.
+Two-fifths plays volleyball, which leaves us with 20 * 2/5 = <<20*2/5=8>>8 students.
+One-tenth play both games, which means 20 * 1/10 = <<20*1/10=2>>2 students.
+There are 10 + 8 = <<10+8=18>>18 students who play basketball or volleyball.
+Among these 18 students, 2 of them are playing both games, so that means 18 - 2 = <<18-2=16>>16 students play only one of the two games.
+So finally, 20 - 16 = <<20-16=4>>4 students do not play either game.

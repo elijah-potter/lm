@@ -1,0 +1,8 @@
+Cameron guides tour groups in a museum. He usually answers two questions per tourist. Today, he did four tours. The early morning first group was only 6 people. The following group was a busy group of 11. The third group had 8 people, but one was inquisitive and asked three times as many questions as usual. The last group of the day was a late group of 7. How many questions did Cameron answer?
+Cameron answered 2 * 6 = <<2*6=12>>12 questions for the first group.
+He answered 2 * 11 = <<2*11=22>>22 questions for the second group.
+The third group had 8 - 1 = 7 tourists that asked 2 questions each.
+The third group also had 1 tourist that asked 2 * 3 = <<1*2*3=6>>6 questions.
+Thus, the third group asked 7 * 2 + 6 = 14 + 6 = <<7*2+6=20>>20 questions.
+The last group asked 7 * 2 = <<7*2=14>>14 questions.
+For all four tours, Cameron answered 12 + 22 + 20 + 14 = <<12+22+20+14=68>>68 questions.

@@ -1,0 +1,7 @@
+Joseph had socks of many different colors. His dresser drawer was filled to overflowing with red, blue, black, and white socks. Uncertain of how many pairs he had of each color, he began to sort his socks. He discovered that he had three more pairs of blue socks than he had pairs of black socks.  He had one less pair of red socks than he had pairs of white socks. He had twice as many blue socks as he had of red socks. And he counted a total of 6 red socks.  What is the total number of Joseph's socks?
+Starting with 6 red socks, twice the number of blue socks as red meant Joseph had 2*6=12 blue socks.
+With one less pair of red socks than white socks, this meant 2 fewer red socks than white, for a total of 6-2=<<6-2=4>>4 white socks.
+Also, 12 blue socks=6 pairs of blue socks.
+With three more pairs of blue socks than pairs of black socks, this means he had 6-3=<<6-3=3>>3 pairs of black socks.
+And three pairs of black socks corresponds to 3*2=<<3*2=6>>6 black socks.
+Thus, in total, he had 6+12+4+6=<<6+12+4+6=28>>28 socks.

@@ -1,0 +1,6 @@
+Jack leaves his bathtub's faucet dripping at a rate of 40 ml/minute. Water evaporates from the bathtub at a rate of 200 ml/hour. If he leaves the water running for 9 hours, then dumps out 12 liters, how many milliliters of water are left in the bathtub?
+First find how much water fills the bathtub per hour: 40 ml/minute * 60 minutes/hour = <<40*60=2400>>2400 ml/hour
+Then subtract the water that evaporates to find the total amount of water added per hour: 2400 ml/hour - 200 ml/hour = <<2400-200=2200>>2200 ml/hour
+Then multiply that amount by the number of hours to find the total amount of water in the tub: 2200 ml/hour * 9 hours = <<2200*9=19800>>19800 ml
+Then find the number of milliliters in 12 liters: 12 liters * 1000 ml/liter = <<12*1000=12000>>12000 ml
+Then subtract the water Jack removes from the total amount of water to find the remaining amount of water: 19800 ml - 12000 ml = <<19800-12000=7800>>7800 ml

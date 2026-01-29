@@ -1,0 +1,6 @@
+A competition has racers competing on bicycles and tricycles to win a grand prize of $4000. If there are 40 people in the race, and 3/5 of them are riding on bicycles, how many wheels do the bicycles and tricycles in the race have combined?
+If 3/5 of the people in the race are riding bicycles, their number is 3/5 * 40 people = <<3/5*40=24>>24 people
+Since a bicycle has 2 wheels, and 24 people were riding on a bicycle each, the total number of bicycle wheels in the race is 2 wheels/bike * 24 bikes = <<2*24=48>>48 wheels
+The number of racers on tricycles is 40 people - 24 people = <<40-24=16>>16 people
+Since a tricycle has 3 wheels, and 16 people were riding on a tricycle each, the total number of tricycle wheels in the race is 3 wheels/trike * 16 trikes = <<3*16=48>>48 wheels
+The combined total for bicycle and tricycle wheels in the race is 48 wheels + 48 wheels = <<48+48=96>>96 wheels

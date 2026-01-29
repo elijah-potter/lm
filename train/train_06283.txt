@@ -1,0 +1,9 @@
+There is a massive rainstorm lasting 4 days.  There is an area that collects water to prevent flooding in the area.  It ends up overflowing on the 4th day.  The area can hold the equivalent of 6 feet of rain.  It can also drain out the equivalent of 3 inches of rain per day to the nearby river without causing problems.  The first day it rained 10 inches.  The second day it rained twice that much.  On the third day, it rained 50% more than the second day.  It flooded the fourth day before getting a chance to do any of the draining.  What is the minimum amount it rained on the fourth day?
+The second day it rained 10*2=<<10*2=20>>20 inches
+On the third day it rained 20*1.5=<<20*1.5=30>>30 inches
+So in the first 3 days, it rained 10+20+30=<<10+20+30=60>>60 inches
+It drained 4-1=<<4-1=3>>3 days
+So it drained 3*3=<<3*3=9>>9 inches
+That means on the start of the fourth day, there were 60-9=<<60-9=51>>51 inches in the pond
+The area can hold 6*12=<<6*12=72>>72 inches
+So it rained at least 72-51=<<72-51=21>>21 inches

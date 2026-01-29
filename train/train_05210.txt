@@ -1,0 +1,8 @@
+Samantha, Aira, and Joe received 6 rubber bands each after they divided their bands equally.  If Samantha had 5 more bands than Aira and Aira had 1 fewer band than Joe, how many rubber bands did Aira have?
+Samantha, Aira, and Joe have 6 x 3 = <<6*3=18>>18 rubber bands altogether.
+If we let x be the number of bands that Aira had, then Samantha had x + 5.
+Since Aira had 1 fewer band than Joe, then Joe had x + 1.
+Since the total number of bands is 18, then the equation is x + (x + 5) + (x + 1) = 18.
+By simplifying the left side of the equation, we have 3x + 6 = <<3*+6=18>>18.
+Putting all the constant terms on the right side gives 3x = 12.
+So the value of x is 12/3 = 4. Hence, Aira had 4 rubber bands.

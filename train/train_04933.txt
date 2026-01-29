@@ -1,0 +1,8 @@
+A movie theater charges $5 for matinee tickets, $7 for evening tickets, and $10 for opening night tickets. A bucket of popcorn costs $10. On Friday, they had 32 matinee customers, 40 evening customers, and 58 customers for an opening night showing of a movie. If half the customers bought popcorn, how much money in dollars did the theater make on Friday night?
+The movie theater made 5 * 32 = $<<5*32=160>>160 in matinee tickets.
+It made 7 * 40 = $<<7*40=280>>280 in evening tickets.
+It made 10 * 58 = $<<10*58=580>>580 in opening night tickets.
+There were 32 + 40 + 58 = <<32+40+58=130>>130 customers.
+Half of the customers bought popcorn, so 130 / 2 = <<130/2=65>>65 bought popcorn.
+Thus, the theater made 10 * 65 = $<<10*65=650>>650 from popcorn.
+Therefore, in all, the theater made 160 + 280 + 580 + 650 = $<<160+280+580+650=1670>>1670 on Friday night.

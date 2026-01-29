@@ -1,0 +1,6 @@
+The water pressure of a sink has a steady flow of 2 cups per 10 minutes for the first 30 minutes. It still flows at 2 cups per 10 minutes for the next 30 minutes after. For the next hour, the water pressure maximizes to 4 cups per 10 minutes and stops. Shawn now has to dump half of the water away. How much water is left?
+For the first 30 minutes, 3*2=<<3*2=6>>6 cups of water came out.
+For the next 30 minutes, 3*2=<<3*2=6>>6 cups of water came out.
+For the next hour, 6*4=<<6*4=24>>24 cups of water came out.
+A total of 6+6+24=<<6+6+24=36>>36 cups of water came out.
+Shawn had to dump water which left 36/2=<<36/2=18>>18 cups of water.

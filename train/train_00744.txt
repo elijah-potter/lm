@@ -1,0 +1,7 @@
+Carol is an aviation engineer deciding how much fuel to put in a jet. The empty plane needs 20 gallons of fuel per mile. Each person on the plane increases this amount by 3 gallons per mile, and each bag increases it by 2 gallons per mile. If there are 30 passengers and 5 flight crew, and each person brought two bags, how many gallons of fuel does the plane need for a 400-mile trip?
+First find the total number of people by adding the number of passengers and flight crew: 30 people + 5 people = <<30+5=35>>35 people
+Then find the total number of bags by doubling the total number of people: 35 people * 2 bags/person = <<35*2=70>>70 bags
+Then find the fuel increase caused by the people by multiplying their number by the fuel increase per person: 35 people * 3 gallons/mile/person = <<35*3=105>>105 gallons/mile
+Then multiply the number of bags by the fuel increase per bag to find the total fuel increase they cause: 70 bags * 2 gallons/mile/bag = <<70*2=140>>140 gallons/mile
+Now add the fuel increases to the base fuel consumption to find the total fuel needed per mile: 140 gallons/mile + 105 gallons/mile + 20 gallons/mile = <<140+105+20=265>>265 gallons/mile
+Now multiply the fuel consumption per mile by the number of miles flown to find the total amount of fuel needed: 265 gallons/mile * 400 miles = <<265*400=106000>>106,000 gallons of fuel

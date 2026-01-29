@@ -1,0 +1,3 @@
+Jerry is refilling the duck pond in his backyard during a drought. The pond can hold 200 gallons of water. Jerry's hose can normally pump 6 gallons/minute, but due to drought restrictions, it can only pump 2/3rds as fast right now. How many minutes will it take Jerry to fill his pond?
+First find the current rate the hose pumps by multiplying its normal rate by 2/3: 6 gallons/minute * 2/3 = <<6*2/3=4>>4 gallons/minute
+Then divide the number of gallons in the pond by the number of gallons pumped each minute to find how many minutes filling the pond takes: 200 gallons / 4 gallons/minute = <<200/4=50>>50 minutes

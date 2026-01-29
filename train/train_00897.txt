@@ -1,0 +1,5 @@
+The math questions in a contest are divided into three rounds: easy, average, and hard. There are corresponding points given for each round. That is 2, 3, and 5 points for every correct answer in the easy, average, and hard rounds, respectively. Suppose Kim got 6 correct answers in the easy; 2 correct answers in the average; and 4 correct answers in the difficult round, what are her total points in the contest?
+Kim got 6 points/round x 2 round = <<6*2=12>>12 points in the easy round.
+She got 2 points/round x 3 rounds = <<2*3=6>>6 points in the average round.
+She got 4 points/round x 5 rounds = <<4*5=20>>20 points in the difficult round.
+So her total points is 12 points + 6 points + 20 points = <<12+6+20=38>>38 points.

@@ -1,0 +1,3 @@
+Jack is trying to stack cans in his emergency bunker. If he can fit 12 cans in one row, 4 rows on one shelf, and 10 shelves in one closet, how many cans can he store in each closet?
+First find the total number of cans Jack can fit on one shelf: 12 cans/row * 4 rows/shelf = 48 cans/shelf
+Then find the number of cans he can fit on all the shelves in one closet: 48 cans/shelf * 10 shelves = <<48*10=480>>480 cans

@@ -1,0 +1,5 @@
+Three friends: Mike, Jim, and Tony decided to play a game. After 3 rounds Mike has 21 points, Jim 3 points less than Mike, and Tony 2 times more than Mike. In the fourth round, every player gets an extra point if they have over 20 points. How many points do all three players have in total after the extra points had been distributed?
+After 3 rounds Jim has 21 points - 3 points = <<21-3=18>>18 points.
+Tony has 2 times more points than Mike, so he has 2 * 21 points = <<2*21=42>>42 points.
+In total they have 42 points + 18 points + 21 points = <<42+18+21=81>>81 points.
+Only two of them have over 20 points, so in total, all friends have 81 points + 2 points = <<2+81=83>>83 points.

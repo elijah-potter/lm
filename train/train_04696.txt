@@ -1,0 +1,6 @@
+Nancy takes 3 antacids per day when she eats Indian food, 2 antacids per day when she eats Mexican food, and 1 antacid per day otherwise. If Nancy eats Indian three times a week and Mexican twice a week, how many antacids does she take per month?
+First find the total number of antacids Nancy takes after eating Indian food per week: 3 antacids/day * 3 days/week = <<3*3=9>>9 antacids/week
+Then find the total number of antacids Nancy takes after eating Mexican food per week: 2 antacids/day * 2 days/week = <<2*2=4>>4 antacids/week
+Then find the number of days she doesn't eat Indian food or Mexican food: 7 days/week - 3 days/week - 2 days/week = 2 days/week
+Then find the total number of antacids Nancy takes per week: 9 antacids/week + 4 antacids/week + 2 antacids/week = <<9+4+2=15>>15 antacids/week
+Then multiply her weekly antacid consumption by the number of weeks per month to find her monthly consumption: 15 antacids/week * 4 week/month = <<15*4=60>>60 antacids/month

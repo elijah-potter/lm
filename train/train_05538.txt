@@ -1,0 +1,7 @@
+Cody has an insurance plan that will give him a discount if he logs a total of 100,000 steps. For the first week, he logs 1,000 steps a day.  He increases his daily number of steps by 1,000 every week.  After 4 weeks how far away from his step goal will he be?
+For the first week, Cody will log a total of 7 * 1,000 = <<7*1000=7000>>7,000 steps.
+For the second week, Cody will log a total of 7 * 2,000 = <<7*2000=14000>>14,000 steps.
+For the third week, Cody will log a total of 7 * 3,000 = <<7*3000=21000>>21,000 steps.
+For the fourth week, Cody will log a total of 7 * 4,000 = <<7*4000=28000>>28,000 steps.
+For the month, Cody will log a total of 7,000 + 14,000 + 21,000 + 28,000 = <<7000+14000+21000+28000=70000>>70,000 steps.
+This means, Cody will be 100,000 - 70,000 = <<100000-70000=30000>>30,000 steps short of his goal.

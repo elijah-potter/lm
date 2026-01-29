@@ -1,0 +1,5 @@
+Jerry needs to shingle 3 roofs. Each roof is made of two slanted rectangular sides measuring 20 feet by 40 feet. If he needs 8 shingles to cover one square foot of roof, how many shingles does he need total?
+First find the area of one side of a roof: 20 feet * 40 feet = <<20*40=800>>800 square feet
+Then multiply that number by 2 to find the total area of both sides of the roof: 800 square feet/side * 2 sides = 1600 square feet
+Then multiply that number by the number of roofs to find the total area of all the roofs: 1600 square feet/roof * 3 roofs = 4800 square feet
+Then multiply the total area of the roofs by the number of shingles needed per square foot to find the total number of shingles needed: 4800 square feet * 8 singles/square foot = <<4800*8=38400>>38400 shingles

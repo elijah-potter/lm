@@ -1,0 +1,6 @@
+Chip has a $50.00 balance on his credit card.  Since he didn't pay it off, he will be charged a 20% interest fee.  He puts $20.00 on his credit card the following month and doesn't make any payments to his debt.  He is hit with another 20% interest fee.  What's the current balance on his credit card?
+He has a balance of $50.00 and is charged 20% interest so that's 50*.20 = $<<50*.20=10.00>>10.00
+He had a balance of $50.00 and now has a $10.00 interest fee making his balance 50+10 = $<<50+10=60.00>>60.00
+His balance is $60.00 and he puts another $20.00 on his card for a total of 60+20 = $<<60+20=80.00>>80.00
+He didn't make a payment that month and is hit with another 20% interest fee so that's 80*.20 = $<<80*.20=16.00>>16.00 in interest
+His new balance is 80+16 = $<<80+16=96.00>>96.00

@@ -1,0 +1,5 @@
+A factory uses robots to manufacture batteries. For each battery that is made, it takes a robot 6 minutes to gather the materials for the battery and 9 minutes to create the battery. If the factory has 10 robots working on batteries at the same time, how many batteries can the robots manufacture in 5 hours?
+For each battery that a robot makes, it takes 9 + 6 = <<9+6=15>>15 minutes to create the battery.
+In 60 minutes, one robot can make 60 / 15 = <<60/15=4>>4 batteries per hour.
+If the factory uses 10 robots at the same time, then they can produce 10 * 4 = <<10*4=40>>40 batteries per hour.
+At a rate of 40 batteries per hour, 10 robots can produce 40 * 5 = <<40*5=200>>200 batteries in 5 hours.

@@ -1,0 +1,5 @@
+Smaug the dragon hoards 100 gold coins, 60 silver coins, and 33 copper coins. If each silver coin is worth 8 copper coins, and each gold coin is worth 3 silver coins, what is the total value of Smaug's hoard expressed as a number of copper coins?
+First figure out how many silver coins the 100 gold coins are worth by multiplying the number of gold coins by the exchange rate between gold and silver: 100 gold * 3 silver/gold = <<100*3=300>>300 silver
+Then add the value of the gold in silver to the number of silver coins to find the total value of the gold and silver expressed in silver coins: 300 silver + 60 silver = <<300+60=360>>360 silver
+Now multiply that value by the exchange rate between silver and copper to express its value in terms of copper coins: 360 silver * 8 copper/silver = <<360*8=2880>>2880 copper
+Then add the value of the gold and silver expressed in copper coins (the value from the last step) to the number of copper coins to find the total value of the hoard: 2880 + 33 = <<2880+33=2913>>2913

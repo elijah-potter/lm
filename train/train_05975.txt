@@ -1,0 +1,6 @@
+In a court-mandated traffic class, there are a certain number of drunk drivers and 3 less than 7 times that many speeders. If there are 45 students total, how many drunk drivers are there?
+Let d be the number of drunk drivers and s be the number of speeders. We know that d + s = 45 and s = 7d - 3.
+Substituting the second equation into the first equation, we get d + 7d - 3 = 45
+Combining like terms, we get 8d - 3 = 45
+Adding 4 to both sides, we get 8d = 48
+Dividing both sides by 8, we get d = 6

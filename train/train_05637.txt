@@ -1,0 +1,5 @@
+Dakota and Ben order eggs for $3, pancakes for $2, and 2 mugs of cocoa for $2 each. The tax is $1. Later, Ben then decides to order 1 more batch of pancakes and 1 more mug of cocoa as he is still hungry. How much change should they get from $15?
+The cost of the food is $3 + $2 + $2 + $2 = $<<3+2+2+2=9>>9.
+The original total cost, including tax is $9 + $1 = $<<9+1=10>>10.
+Ben increases the total cost to $10 + $2 + $2 = $<<10+2+2=14>>14.
+They should get $15 - $14 = $<<15-14=1>>1 in change.

@@ -1,0 +1,4 @@
+A group of security guards were hired for the night shift at a factory. The four guards agreed to a rotating schedule to cover the nine hours of the night shift. The first guard would take three hours since they were still awake, the last guard would wake up early and take two hours, and the middle two guards would split the remaining hours. How many hours will each middle guard take?
+The first and last guard will take 3 + 2 = <<3+2=5>>5 hours of the night shift.
+There are 9 hours in the night shift, so the middle two guards will cover 9 - 5 = <<9-5=4>>4 hours.
+Each middle guard will take 4 / 2 = <<4/2=2>>2 hours.

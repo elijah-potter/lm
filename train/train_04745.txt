@@ -1,0 +1,5 @@
+A football team shares a single water cooler during practice.  During practice, linemen get the first water break and will drink 8 ounces each.  Skill position players get the second water break and drink 6 ounces each.  The team has 12 linemen and 10 skill position players.  If the cooler holds 126 ounces of water, how many skill position players must wait for the cooler to be refilled before they can get a drink?
+The 12 linemen go first and will drink a total of 12*8 = <<12*8=96>>96 ounces of water from the cooler.
+This will leave 126 - 96 = <<126-96=30>>30 ounces for the skill position players.
+Then, the 30 ounces of water that remains is enough for 30/6 = <<30/6=5>>5 of the skill position players.
+Therefore, 10 - 5 = <<10-5=5>>5 skill position players must wait for the cooler to be refilled before they can get a drink.

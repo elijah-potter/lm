@@ -1,0 +1,9 @@
+Last month, a factory made 12000 dolls and their associated accessories.  The accessories for each doll included 2 shoes, 3 bags, 1 set of cosmetics, and 5 hats.  If each doll took 45 seconds to make and each accessory took 10 seconds to make, what was the total combined machine operation time, in seconds, required to manufacture all of the dolls and their accessories?
+The number of shoes the factory made was 12000 dolls x 2 shoes/doll = <<12000*2=24000>>24000 shoes
+The factory also made for each doll 12000 dolls x 3 bags/doll = <<12000*3=36000>>36000 bags
+The set of cosmetics made for each doll was just one, so there are <<12000=12000>>12000 cosmetics sets
+Finally, the number of hats for the dolls was 12000 dolls x 5 hats/doll = <<12000*5=60000>>60000 hats
+In total, the number of accessories was 24000 + 36000 + 12000 + 60000 = <<24000+36000+12000+60000=132000>>132000 accessories
+The dolls took in total 12000 dolls x 45 seconds/doll = <<12000*45=540000>>540000 seconds to be made
+All the accessories also took 132000 accessories x 10 seconds/accessory = <<132000*10=1320000>>1320000 seconds
+Combing both results, we have that the total time the machinery was working was 1320000 + 540000 = <<1320000+540000=1860000>>1860000 seconds

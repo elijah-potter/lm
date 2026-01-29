@@ -1,0 +1,3 @@
+A classroom has a whiteboard which is shared between the 4 teachers who take turns using the classroom. Each teacher has 2 lessons per day and uses the whiteboard in each lesson. If the whiteboard is cleaned 3 times per lesson, how many times is the whiteboard cleaned in a day?
+In one day, there are a total of 4 teachers * 2 lessons each = <<4*2=8>>8 lessons.
+The whiteboard is therefore cleaned 8 lessons * 3 cleans per lesson = <<8*3=24>>24 times.

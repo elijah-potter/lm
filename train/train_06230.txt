@@ -1,0 +1,5 @@
+It’s Meghan’s turn to pick up her team's coffee order.  She needs 2 drip coffees that are $2.25 each and one double shot espresso that’s $3.50.  She needs 2 lattes that are $4.00 and needs to add vanilla syrup to one of those for an additional $0.50.  She also needs 2 cold brew coffees that are $2.50 each and 1 cappuccino for $3.50.  How much is the coffee order?
+She needs 2 drip coffees that are $2.25 each so 2*2.25 = $<<2*2.25=4.50>>4.50
+She needs 2 lattes that are $4.00 each so 2*4 = $<<2*4=8.00>>8.00
+She needs 2 cold brew coffees that are $2.50 each so 2*2.50 = $<<2*2.50=5.00>>5.00
+So the drips are $4.50, lattes are $8.00 plus $0.50 for syrup, cold brew is $5.00, a double shot for $3.50 and a cappuccino for $3.50 for a total of 4.50+8.00+.50+5.00+3.50+3.50 = $<<4.50+8.00+.50+5.00+3.50+3.50=25.00>>25.00

@@ -1,0 +1,6 @@
+Barney can perform 45 sit-ups in one minute. Carrie can do twice as many sit-ups per minute as Barney can.  And Jerrie can do 5 more sit-ups per minute than Carrie can do.  If Barney does sit-ups for 1 minute, and Carrie does sit-ups for two minutes, and Jerrie does sit-ups for three minutes, what would be the combined total number of sit-ups performed?
+Carrie can do 2*45=<<2*45=90>>90 sit-ups per minute.
+Jerrie can do 90+5=<<90+5=95>>95 sit-ups per minute.
+In two minutes, Carrie would perform 90*2-180 sit-ups.
+And in three minutes, Jerrie would perform 3 * 95=<<3*95=285>>285 sit-ups.
+Thus, in the scenario described, in total, the three would perform 45+180+285=<<45+180+285=510>>510 sit-ups.

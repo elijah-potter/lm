@@ -1,0 +1,5 @@
+Christina records her mood every day on a calendar. Over the past thirty days of moods, she had twelve good days and eight bad days and the rest were neutral. Her first eight days were good, her second eight days were bad, and her third eight days were neutral. If the next three days were good, neutral, and good, how many good days were left in the month?
+Christina had 30 - 12 - 8 = <<30-12-8=10>>10 neutral days in the month.
+After the first three 8-day periods, she had 30 - 8 * 3 = 30 - 24 = <<30-8*3=6>>6 days of moods left.
+Of those days, 12 - 8 = <<12-8=4>>4 days were good.
+After the next 3 days with 2 good days, Christina had 4 - 2 = <<4-2=2>>2 good days left.

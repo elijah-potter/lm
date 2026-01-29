@@ -1,0 +1,4 @@
+A mechanic charges different rates to repair the tires of trucks and cars.  For each truck tire that is repaired, the mechanic will charge $60 and for each car tire that is repaired, the mechanic will charge $40.  On Thursday, the mechanic repairs 6 truck tires and 4 car tires.  On Friday, the mechanic repairs 12 car tries and doesn't repair any truck tires.  How much more revenue did the mechanic earn on the day with higher revenue?
+On Thursday the mechanic charged a total of 6*60 + 4*40 = $<<6*60+4*40=520>>520.
+On Friday the mechanic charged a total of 12*40 = $<<12*40=480>>480.
+Thus, on Thursday, the day with higher revenue, the mechanic had 520-480 = $<<520-480=40>>40 more revenue than on Friday.

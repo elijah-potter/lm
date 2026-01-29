@@ -1,0 +1,7 @@
+Rocco stores his coins in piles of 10 coins each. He has 4 piles of quarters, 6 piles of dimes, 9 piles of nickels, and 5 piles of pennies. How much money does Rocco have?
+Each pile has 10 coins, so he has:
+10 * 4 * $.25 = $<<10*4*.25=10.00>>10.00 worth of quarters,
+10 * 6 * $.10 = $<<10*6*.10=6.00>>6.00 worth of dimes,
+10 * 9 * $.05 = $<<10*9*.05=4.50>>4.50 worth of nickels, and
+10 * 5 * $.01 = $<<10*5*.01=0.50>>0.50 worth of pennies.
+Altogether he has $10.00 + $6.00 + $4.50 + $0.50 = $<<10+6+4.5+0.5=21.00>>21.00

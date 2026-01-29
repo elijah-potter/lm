@@ -1,0 +1,9 @@
+There are 3 consecutive odd integers that have a sum of -147. What is the largest number?
+Let N = smallest number
+N + 2 = next number
+N + 4 = largest number
+N + (N + 2) + (N + 4) = -147
+3N + 6 = -147
+3N = <<-153=-153>>-153
+N = -51
+The largest number is <<-47=-47>>-47.

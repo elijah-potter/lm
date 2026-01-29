@@ -1,0 +1,6 @@
+In a shopping mall, one T-shirt costs $20 each; a pair of pants costs $80; a pair of shoes costs $150. All items will get a 10% discount. How much does Eugene have to pay if he buys four T-shirts, three pairs of pants, and two pairs of shoes?
+The total cost of the four T-shirts is 4 x $20 = $<<4*20=80>>80.
+Three pairs of pants cost 3 x $80 = $<<3*80=240>>240.
+Two pairs of shoes cost 2 x $150 = $<<2*150=300>>300.
+The total amount of all the items is $80 + $240 + $300 = $<<80+240+300=620>>620.
+Thus, Eugene will get a discount of 10/100 x $620 = $62. Therefore, Eugene will have to pay $620 - $62 = $<<620-62=558>>558.

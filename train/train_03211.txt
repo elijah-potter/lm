@@ -1,0 +1,5 @@
+Anna has a certain number of phone chargers and five times more laptop chargers than phone chargers. If she has 24 chargers total, how many phone chargers does she have?
+Let p be the number of phone chargers Anna has and l be the number of laptop chargers. We know that l = 5p and l + p = 24.
+Substituting the first equation into the second equation, we get 5p + p = 24
+Combining like terms, we get 6p = 24
+Dividing both sides of the equation by 6, we get p = 4

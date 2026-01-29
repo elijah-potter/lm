@@ -1,28 +1,17 @@
 use crate::batcher::BatchItem;
 use crate::tokenizer::MAX_SEQ_LEN;
 use crate::tokenizer::VOCAB_SIZE;
-use burn::backend::{Autodiff, NdArray};
-use burn::train::metric::CudaMetric;
-use burn::train::{InferenceStep, Learner};
+use burn::train::InferenceStep;
 use burn::{
-    backend::Wgpu,
-    data::{dataloader::DataLoaderBuilder, dataset::transform::SamplerDataset},
-    lr_scheduler::noam::NoamLrSchedulerConfig,
     nn::{
         Dropout, DropoutConfig, Embedding, EmbeddingConfig, Relu,
         loss::CrossEntropyLossConfig,
         transformer::{TransformerEncoder, TransformerEncoderConfig, TransformerEncoderInput},
     },
-    optim::{AdamConfig, decay::WeightDecayConfig},
     prelude::*,
-    record::CompactRecorder,
     tensor::backend::AutodiffBackend,
-    train::{
-        ClassificationOutput, SupervisedTraining, TrainOutput, TrainStep,
-        metric::{AccuracyMetric, LearningRateMetric, LossMetric, PerplexityMetric},
-    },
+    train::{ClassificationOutput, TrainOutput, TrainStep},
 };
-use log::info;
 
 #[derive(Module, Debug)]
 pub struct Model<B: Backend> {
@@ -56,12 +45,12 @@ impl<B: Backend> Model<B> {
         (tok_embedding + pos_embedding) / 2
     }
 
-    fn device(&self) -> B::Device {
+    pub fn device(&self) -> B::Device {
         let devices = self.devices();
         devices[0].clone()
     }
 
-    fn forward_train(
+    pub fn forward_train(
         &self,
         input: Tensor<B, 2, Int>,
         target: Tensor<B, 2, Int>,
@@ -112,6 +101,11 @@ impl<B: Backend> Model<B> {
         let loss = loss_fn.forward(output_flat.clone(), target_flat.clone());
 
         ClassificationOutput::new(loss, output_flat, target_flat)
+    }
+
+    pub fn forward(&self, input: Tensor<B, 2, Int>) -> Tensor<B, 2> {
+        let class = self.forward_infer(input.clone(), input);
+        class.output
     }
 }
 

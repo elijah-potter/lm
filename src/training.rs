@@ -6,6 +6,7 @@ use burn::data::dataset::transform::SamplerDataset;
 use burn::lr_scheduler::noam::NoamLrSchedulerConfig;
 use burn::optim::AdamConfig;
 use burn::optim::decay::WeightDecayConfig;
+use burn::prelude::Backend;
 use burn::record::CompactRecorder;
 use burn::train::metric::{
     AccuracyMetric, CudaMetric, LearningRateMetric, LossMetric, PerplexityMetric,
@@ -17,16 +18,13 @@ use crate::batcher::GenBatcher;
 use crate::dataset::FileFolderDataset;
 use crate::model::{Model, ModelConfig};
 
-type TargetBackend = Autodiff<Wgpu<f32, i32>>;
-pub type ReturnBackend = Wgpu<f32, i32>;
-
-pub fn train(
+pub fn train<B: Backend>(
     m: ModelConfig,
     train_folder: impl AsRef<Path>,
     test_folder: impl AsRef<Path>,
-) -> Model<ReturnBackend> {
+) -> Model<B> {
     let device = Default::default();
-    let model = m.init::<TargetBackend>(&device);
+    let model = m.init::<Autodiff<B>>(&device);
 
     let dataset_train = FileFolderDataset::load_from_folder(train_folder);
     let dataset_test = FileFolderDataset::load_from_folder(test_folder);

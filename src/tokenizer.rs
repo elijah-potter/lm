@@ -25,6 +25,17 @@ pub fn text_to_indices<B: Backend>(text: &[char], device: &B::Device) -> Tensor<
     tok_tensor_indices
 }
 
+pub fn indices_to_text<B: Backend>(tensor: Tensor<B, 2, Int>) -> Vec<char> {
+    let data = tensor.into_data();
+    let idxs: Vec<i32> = data.to_vec().unwrap();
+
+    idxs.into_iter()
+        .take(MAX_SEQ_LEN)
+        .filter(|&i| i != 0)
+        .map(index_to_char)
+        .collect()
+}
+
 fn char_to_index(c: char) -> i32 {
     match c {
         'a'..='z' => (c as i32) - ('a' as i32) + 1,

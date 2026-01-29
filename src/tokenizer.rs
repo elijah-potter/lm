@@ -39,7 +39,12 @@ pub fn indices_to_text<B: Backend>(tensor: Tensor<B, 2, Int>) -> Vec<char> {
 fn char_to_index(c: char) -> i32 {
     match c {
         'a'..='z' => (c as i32) - ('a' as i32) + 1,
-        'A'..='Z' => (c as i32) - ('A' as i32) + 1,
+        'A'..='Z' => (c as i32) - ('A' as i32) + 27,
+        '!' => 53,
+        '.' => 54,
+        ',' => 55,
+        ':' => 56,
+        '?' => 57,
         ' ' => VOCAB_SIZE as i32 - 1,
         _ => 0,
     }
@@ -48,6 +53,12 @@ fn char_to_index(c: char) -> i32 {
 fn index_to_char(i: i32) -> char {
     match i {
         1..=26 => (('a' as i32) + i - 1) as u8 as char,
+        27..=52 => (('A' as i32) + i - 27) as u8 as char,
+        53 => '!',
+        54 => '.',
+        55 => ',',
+        56 => ':',
+        57 => '?',
         val if val as usize == VOCAB_SIZE - 1 => ' ',
         _ => '\0',
     }

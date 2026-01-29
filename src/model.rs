@@ -139,14 +139,14 @@ impl<B: Backend> InferenceStep for Model<B> {
 #[derive(Config, Debug)]
 pub struct ModelConfig {
     #[config(default = "0.5")]
-    dropout: f64,
+    pub dropout: f64,
     /// The total number of transformer blocks.
-    transformer_blocks: usize,
-    embed_dims: usize,
+    pub transformer_blocks: usize,
+    pub embed_dims: usize,
     /// The number of attention heads to use in the transformer.
-    attn_heads: usize,
+    pub attn_heads: usize,
     /// The size of the perceptrons between the attention blocks.
-    percept_size: usize,
+    pub percept_size: usize,
 }
 
 impl ModelConfig {

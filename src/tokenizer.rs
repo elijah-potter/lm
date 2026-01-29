@@ -63,3 +63,20 @@ fn index_to_char(i: i32) -> char {
         _ => '\0',
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use burn::backend::NdArray;
+
+    type TestBackend = NdArray<f32, i32>;
+
+    #[test]
+    fn roundtrip_text() {
+        let device = Default::default();
+        let text = "Hello World!?:,.".chars().collect::<Vec<_>>();
+        let indices = text_to_indices::<TestBackend>(&text, &device);
+        let output = indices_to_text(indices);
+        assert_eq!(output, text);
+    }
+}

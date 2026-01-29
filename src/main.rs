@@ -74,6 +74,33 @@ impl<B: Backend> Model<B> {
         input: Tensor<B, 2, Int>,
         target: Tensor<B, 2, Int>,
     ) -> ClassificationOutput<B> {
+        let embedding = self.dropout.forward(self.embed(input));
+
+        let [batch_size, seq_length, embedding_dims] = embedding.dims();
+        assert_eq!(seq_length, MAX_SEQ_LEN);
+
+        let output = self
+            .transformer
+            .forward(TransformerEncoderInput::new(embedding));
+        let output = self.dropout.forward(output);
+
+        let loss_fn = CrossEntropyLossConfig::new().init(&self.device());
+
+        let output_flat = output
+            .clone()
+            .reshape([batch_size * seq_length, embedding_dims]);
+        let target_flat = target.reshape([batch_size * seq_length]);
+
+        let loss = loss_fn.forward(output_flat.clone(), target_flat.clone());
+
+        ClassificationOutput::new(loss, output_flat, target_flat)
+    }
+
+    fn forward_infer(
+        &self,
+        input: Tensor<B, 2, Int>,
+        target: Tensor<B, 2, Int>,
+    ) -> ClassificationOutput<B> {
         let embedding = self.embed(input);
 
         let [batch_size, seq_length, embedding_dims] = embedding.dims();
@@ -113,7 +140,7 @@ impl<B: Backend> InferenceStep for Model<B> {
     type Output = ClassificationOutput<B>;
 
     fn step(&self, item: BatchItem<B>) -> ClassificationOutput<B> {
-        self.forward_train(item.input, item.target)
+        self.forward_infer(item.input, item.target)
     }
 }
 

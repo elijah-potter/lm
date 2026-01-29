@@ -2,6 +2,6 @@
 
 while [[ true ]];
 do
-  ofc -m ministral-3:3b "Write a story for four-year-olds. Do not include a title or any other formatting." | tee ./train/`uuidgen`.md
+  ofc "Write a story for middle schoolers. Do not include a title or any other formatting." | tee ./train/`uuidgen`.md
 done
 

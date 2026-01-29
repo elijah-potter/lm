@@ -4,7 +4,7 @@ mod dataset;
 mod tokenizer;
 
 use crate::batcher::BatchItem;
-use burn::backend::Autodiff;
+use burn::backend::{Autodiff, NdArray};
 use burn::train::metric::CudaMetric;
 use burn::train::{InferenceStep, Learner};
 use burn::{
@@ -25,6 +25,7 @@ use burn::{
         metric::{AccuracyMetric, LearningRateMetric, LossMetric, PerplexityMetric},
     },
 };
+use log::info;
 
 use self::{batcher::GenBatcher, dataset::FileFolderDataset};
 
@@ -187,13 +188,18 @@ fn main() {
         .metric_valid_numeric(AccuracyMetric::new().with_pad_token(0))
         .metric_train_numeric(PerplexityMetric::new().with_pad_token(0))
         .metric_valid_numeric(PerplexityMetric::new().with_pad_token(0))
-        .metric_train(LossMetric::new())
-        .metric_valid(LossMetric::new())
+        .metric_train_numeric(LossMetric::new())
+        .metric_valid_numeric(LossMetric::new())
         .metric_train_numeric(LearningRateMetric::new())
         .with_file_checkpointer(CompactRecorder::new())
         .grads_accumulation(accum)
-        .num_epochs(32)
+        .num_epochs(128)
         .summary();
 
+    info!("Selected device: {:?}", device);
+
     let result = training.launch(Learner::new(model, optim, lr_scheduler));
+
+    let recorder = CompactRecorder::new();
+    result.model.save_file("model", &recorder).unwrap();
 }

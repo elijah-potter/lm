@@ -14,7 +14,7 @@ use burn::record::{CompactRecorder, FullPrecisionSettings, NamedMpkFileRecorder,
 use clap::Parser;
 
 use self::generation::generate;
-use self::model::{Model, ModelConfig, ModelRecord};
+use self::model::{ModelConfig, ModelRecord};
 
 #[derive(Parser, Debug)]
 enum Command {

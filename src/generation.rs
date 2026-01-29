@@ -11,7 +11,7 @@ pub fn generate<B: Backend>(model: &Model<B>, context: &str) {
 
     let output = model.forward(input);
 
-    let indices = output.argmax(0);
+    let indices = output.argmax(1);
     let text = indices_to_text(indices);
 
     let text_str: String = text.into_iter().collect();

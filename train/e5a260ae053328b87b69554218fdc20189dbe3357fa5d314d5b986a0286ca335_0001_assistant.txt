@@ -1,0 +1,3 @@
+
+
+The basic form of a model comes from the assumption that a sequence of data has a true distribution. This data is a sequence of n-dimensional vectors that exist as inputs to the model, which seeks to learn how to predict a specific value in the vector from the rest. The predictor is a function that maps the values of a vector to the chosen predicted value. For this, there is an assumption that there is a true value that we are attempting to attain. This can be more formally defined with sigma algebras.

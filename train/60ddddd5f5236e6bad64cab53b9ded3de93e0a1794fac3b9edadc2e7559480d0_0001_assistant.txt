@@ -1,0 +1,1 @@
+The measureText function measures the width of a text string by generating a canvas element, writing the text onto the canvas with an optionally provided font, and then measuring the width of the written text.

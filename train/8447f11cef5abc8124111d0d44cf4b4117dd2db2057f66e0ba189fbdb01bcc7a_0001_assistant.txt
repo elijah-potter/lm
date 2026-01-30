@@ -1,0 +1,31 @@
+Sure! Here is a Python script that creates a GUI window according to your specifications. 
+
+import PySimpleGUI as sg
+
+sg.theme('DarkGrey2')
+
+# window layout
+layout = [
+    [sg.Input(key='-INPUT1-'), sg.Text('+'), sg.Input(key='-INPUT2-')],
+    [sg.Button('Calculate')],
+    [sg.Text('Result:'), sg.Output(key='-OUTPUT-')]
+]
+
+# initialize the window
+window = sg.Window('Calculator', layout)
+
+# main loop
+while True:
+    event, values = window.read()
+    if event == sg.WINDOW_CLOSED:
+        break
+    if event == 'Calculate':
+        try:
+            num1 = int(values['-INPUT1-'])
+            num2 = int(values['-INPUT2-'])
+            result = num1 + num2
+            window['-OUTPUT-'].update(result)
+        except ValueError:
+            window['-OUTPUT-'].update('Invalid input')
+
+Note that this code uses the Python module PySimpleGUI which you may need to install using pip or the package manager of your choice.

@@ -1,0 +1,9 @@
+No problem! Here is a short Python function that should add a 20 percent error after each number in a text:
+
+def errormargin(text):
+    
+    numlist = [int(s) for s in text.split() if s.isdigit()]
+    for item in numlist:
+        num_err = str(item) + ' +-' + str(int(item*.2))
+        text = text.replace(str(item), num_err)
+    return text

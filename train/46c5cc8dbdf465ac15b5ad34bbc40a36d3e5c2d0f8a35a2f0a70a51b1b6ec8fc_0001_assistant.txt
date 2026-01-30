@@ -1,0 +1,7 @@
+Ruby methods are enclosed within a `def` and `end` block, and this code is missing the `end` keyword. Here is a fixed version:
+
+```ruby
+def multiply_by_two(x)
+  return x * 2  
+end  
+```

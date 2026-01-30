@@ -1,0 +1,38 @@
+We'll need to use MatPlotLib, Scikit-Learn, NumPy, and Pandas DataFrames for that.
+
+# Import the modules
+from sklearn import datasets, linear_model
+import matplotlib
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+# Load the CSV file
+df = pd.read_csv("threading.csv")
+# Define the x and y values
+y = df["threads"]
+x = df["data"]
+x = x.reshape(len(x),1)
+y = y.reshape(len(y),1)
+# Split the data into training and testing data
+x_train = x[:-100]
+x_test = x[-100:]
+y_train = y[:-100]
+y_test = y[-100:]
+
+# Plot the data
+plt.scatter(x_test, y_test)
+plt.xlabel("Threads")
+plt.ylabel("Data")
+plt.xticks(())
+plt.yticks(())
+
+# Train the model and create the regression line
+regr = linear_model.LinearRegression()
+regr.fit(X_train, Y_train)
+plt.plot(X_test, regr.predict(X_test))
+
+# Show the plot
+plt.show()
+
+The code above first imports the `sklearn`, `matplotlib`, and `pandas` modules. The Pandas module, `pd`, is used in the first step of importing the data from the CSV file "threading.csv". That data is used to define the `x` and `y` variables, which the `.reshape()` method will reshape into the appropriate arrays for training and testing. The data is then split into training and testing data, `x_train`, `x_test`, `y_train`, and `y_test`, with the training data as 10% of the total data. The test data is plotted on the graph with `plt.scatter()` for a scatterplot, with labels for the x and y axes. Finally, the `sklearn` function `linear_model.LinearRegression()` is used to fit the data to a regression line, which is predicted and plotted on the graph. The `plt.show()` line displays the final graph.

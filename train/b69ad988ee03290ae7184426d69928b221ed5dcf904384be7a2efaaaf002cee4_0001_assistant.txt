@@ -1,0 +1,12 @@
+Yes, Pandas DataFrames provides a simple method to drop unwanted columns using the drop() method. You can create a list of the columns that you want to drop when you import the CSV file and then pass the list to the drop() method with the axis parameter set to '1' to indicate columns instead of index to the drop() method. This is an example:
+
+import pandas as pd
+
+# load data from the CSV file
+my_csv = pd.read_csv("my_csv.csv)
+
+# create a list of columns to drop
+columns_to_drop = ['column_name1', 'column_name2', 'column_name3']
+
+# drop unwanted columns
+my_csv = my_csv.drop(columns_to_drop, axis=1)

@@ -1,0 +1,23 @@
+I can help with that! This code will import the `cowsay` module and use the methods `cow()`, `turkey()`, and `pig()` to print ASCII creatures having the conversation you created. With the library imported, it defines a function `old_macdonald()` that accepts a number, `n`, and uses a `for` loop to repeat the conversation n times. The `pigs` variable accepts the user's entered number of pigs on the farm with an `input()` converted to an integer with `int()`. When the function is called with the `pigs` integer as its argument, it will print the conversation once for every pig on the farm.
+
+# Import the cowsay module
+import cowsay
+
+# Create the conversation as a function
+def old_macdonald(n):
+    # Repeat n times
+    for i in range (0, n):
+        cowsay.cow("Old MacDonald had a farm.")
+        cowsay.turkey("E-I-E-I-O.")
+        cowsay.cow("And on that farm he had some pigs.")
+        cowsay.turkey("E-I-E-I-O.")
+        cowsay.pig("With an oink oink here and an oink oink there.")
+        cowsay.pig("Here an oink, there an oink, everywhere an oink, oink.")
+        cowsay.cow("Old MacDonald had a farm.")
+        cowsay.turkey("E-I-E-I-O.")
+
+# Get the number of pigs
+pigs = int(input("How many pigs are on the farm? "))
+
+# Call the function
+old_macdonald(pigs)

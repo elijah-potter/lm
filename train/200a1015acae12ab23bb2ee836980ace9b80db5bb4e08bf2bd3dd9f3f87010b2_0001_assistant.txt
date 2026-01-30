@@ -1,0 +1,33 @@
+Sure! A linked list is a set of nodes, with each one pointing to the next one. For this basic example implementation, we'll do a linked list of integers, but you can use other data types, as well.
+
+#include <stdlib.h> //For malloc
+#include <stdio.h> //For printing our list
+
+//Set up a struct for a node of our linked list.
+typedef struct ListNode {
+    int val;
+    struct ListNode *next;
+} ListNode;
+
+int main(int argc, char **argv) {
+
+    //Declare the first three nodes for our list and initialize each with a value. It is conventional to call the first one the head.
+    ListNode *head = malloc(sizeof(ListNode));
+    ListNode *second = malloc(sizeof(ListNode));
+    ListNode *third = malloc(sizeof(ListNode));
+    head -> val = 1;
+    second -> val = 2;
+    third -> val = 3;
+
+    //Point nodes to the following nodes. "next" for the third node will be null, as there is no node left thereafter.
+    head -> next = second;
+    second -> next = third;
+
+    //Loop through and print out all of the values of the linked list.
+    while(head) {
+        printf("%d\n", head -> val);
+        head = head -> next;
+    }
+
+    return 0;
+}

@@ -1,0 +1,11 @@
+Your program is not actually making a new file every time. You are opening the text file in write mode by using `w` in the `open()` method, which will open an existing file with the position at the beginning and overwrite previously written data. You can fix it by changing the "w" to "a" to open the file in append mode.
+
+data_list1 = ["gKXazeS", "INexBoi", "eWY6ij8", "hCNr7Sy", "h0iYu1Z", "yJNpcui", "VT9aRRo", "SeXUb26", "dTc2rT4", "9cgXybJ"]
+
+# Open in append mode
+datafile = open("sfn_data.txt","a")
+
+datafile.writelines(data_list1)
+datafile.close()
+
+This will open the file positioned at the end and append the new information to the file instead of overwriting it.

@@ -1,0 +1,32 @@
+I've added the comments you requested. Let me know if any need clarification!
+
+import java.util.Scanner;
+//This class compares two names and determines if they are the same or different.
+public class Names {
+	public static void main(String[] args) {
+		//Declaring two String variables.
+		String a, b;
+        //Creating a new Scanner object.
+		Scanner s = new Scanner(System.in);
+        //Storing a name to each String variable.
+		System.out.print("Enter name: ");
+		a = s.next();
+		System.out.print("Enter another name: ");
+		b = s.next();
+		//Case when both names are identical.
+		if (a.equals(b) == true) {
+			System.out.println("Both names are the same.");
+		}
+        //Case when both names are not identical.
+		else {
+			//Case when both names are identical if upper and lower case letter differences are ignored.
+			if ((a.equalsIgnoreCase(b)) == true){
+				System.out.println("Both names are equal if case is ignored.");
+			}
+			//Case when names are different.
+			else {
+				System.out.println("Names are not equal.");
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+Of course, that's no problem! Here is a short code snippet that creates and graphs a Poisson distribution:
+
+import numpy
+import math
+import matplotlib.pyplot as plt
+
+def poisson(mean, n):
+    
+    y = [numpy.e**(-mean)*mean**i/math.factorial(i) for i in range(n)]
+
+    return y
+    
+Poisson = poisson(mean, n)
+
+plt.plot(Poisson)

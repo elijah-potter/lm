@@ -1,0 +1,20 @@
+There is a useful module called MatPlotLib that can help you achieve this. If you have not already, you will need to install the module first.
+
+To install it with PIP, open your command line and enter:
+pip install matplotlib
+
+To install it with Conda, enter:
+conda install -c conda-forge matplotlib
+
+Then you can import the module into your Python code. Here is the full code:
+```python
+from matplotlib import pyplot as plt
+
+list1 = ["USA", "China", "Russia", "Brazil", "Japan"]
+list2 = [22, 53, 32, 45, 56]
+
+plt.bar(list1, list2)
+plt.show()
+```
+
+This will display a bar chart with list1 on the x-axis and list2 on the y-axis.

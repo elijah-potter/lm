@@ -1,0 +1,13 @@
+Here's a fully type-safe asynchronous Array#map function written in TypeScript. 
+async function asyncArrayMap<Element, Return>(
+        array: Element[],
+        callback: (item: Element, index: number, array: Element[]) => Return | Promise<Return>
+): Promise<U[]> {
+        const results: Return[] = [];
+        for (let i = 0; i < array.length; i++) {
+                results.push(await callback(array[i], i, array));
+        }
+        return results;
+}
+
+This function uses a for loop to iterate over each element in the provided array and apply the callback to it, then pushes the resulting values to a new array which it returns once the for loop has completed. It uses a generic type parameter Element to represent the type of the elements in the array, and a generic type parameter Return to represent the return type of the callback.

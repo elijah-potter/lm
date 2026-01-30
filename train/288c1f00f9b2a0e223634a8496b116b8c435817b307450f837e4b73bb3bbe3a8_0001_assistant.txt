@@ -1,0 +1,12 @@
+Yes, that's no problem. See below:
+
+```
+ParsedArray := []
+StringSplit, clipboard, ParsedArray, ","
+```
+
+If you add one more line you can call specific elements of the array. In this case, it's calling the first. 
+
+```
+SpecificElement := ParsedArray[1]
+```

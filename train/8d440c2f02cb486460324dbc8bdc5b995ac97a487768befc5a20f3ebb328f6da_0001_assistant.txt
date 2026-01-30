@@ -1,0 +1,14 @@
+That's a good start for your Basic Game in Python! So far I can see that you've drawn a window, a character sprite, and a background, as well as doing timer calculation and drawing and handling keyboard input. To quit with Ctrl-Q we'll modify the event handling like so:
+
+# Handle quit event
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+         # listen for KEYDOWN
+        elif event.type == pygame.KEYDOWN:
+            # if KEYDOWN and keys ctrl AND q
+            if event.key == pygame.K_q and pygame.key.get_mods() & pygame.KMOD_CTRL:
+                 #quit
+                running = False
+
+This code handles quit events in two ways. First, it listens for pygame.QUIT, which is triggered when the user clicks the X button to close the window, and second, it listens for the pygame.KEYDOWN event and if that event contains CTRL and Q, the quit event is triggered.

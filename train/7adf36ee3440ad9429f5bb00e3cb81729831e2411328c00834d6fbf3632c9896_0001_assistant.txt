@@ -1,0 +1,6 @@
+Of course! Here is a PowerShell script that will iterate through all the files that match the *.mkv format. It will then run the ffmpeg command, use as input each file that it finds, compress it, and output it with a new mp4 extension.
+
+Get-ChildItem .\ -Filter *.mkv | ForEach-Object {
+  $new_name = $_.BaseName + ".mp4"
+  ffmpeg -i $_.FullName -c:v libx264 -preset slow -crf 22 -c:a aac $new_name
+}

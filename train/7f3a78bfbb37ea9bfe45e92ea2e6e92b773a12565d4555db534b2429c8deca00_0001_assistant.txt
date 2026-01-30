@@ -1,0 +1,11 @@
+No problem! Here is a short Python function that classifies stars based on the input temperature:
+
+def Star_ID(temp):
+    if temp < 2400: return 'The temperature is too low to classify as a star'
+    elif temp in range(2400, 3700): return 'M'
+    elif temp in range(3700, 5200): return 'K'
+    elif temp in range(5200, 6000): return 'G'
+    elif temp in range(6000, 7500): return 'F'
+    elif temp in range(7500, 10000): return 'A'
+    elif temp in range(10000, 30000): return 'B'
+    elif temp > 30000: return 'O'

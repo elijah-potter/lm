@@ -1,0 +1,18 @@
+Here is an example of a program that solves for the first number that can be written as the sum of primes in over 3 thousand different ways.
+
+import eulerlib, itertools
+
+def sumOfPrimes():
+	cond = lambda n: num_prime_sum_ways(n) >= 3000
+	ans = next(filter(cond, itertools.count(2)))
+	return str(ans)
+
+def num_prime_sum_ways(n):
+	for i in range(primes[-1] + 1, n + 1):
+		if eulerlib.is_prime(i):
+			primes.append(i)
+	ways = [1] + [0] * n
+	for p in primes:
+		for i in range(n + 1 - p):
+			ways[i + p] += ways[i]
+	return ways[n]

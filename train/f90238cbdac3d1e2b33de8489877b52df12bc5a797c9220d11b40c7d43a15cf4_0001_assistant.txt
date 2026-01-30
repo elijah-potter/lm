@@ -1,0 +1,5 @@
+You should Ask:
+1. if the string is an ASCII string or a Unicode string
+2. if it's ASCII, ask if it's extended ASCII (256 characters)
+3. Are uppercase and lowercase letters considered to be unique characters? In other words, is "A" considered to be different from "a"?
+These questions should clarify an implicit assumption you have and show that you have an eye for details

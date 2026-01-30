@@ -1,0 +1,1 @@
+lowercase_names = names.map{ |name| name.downcase }

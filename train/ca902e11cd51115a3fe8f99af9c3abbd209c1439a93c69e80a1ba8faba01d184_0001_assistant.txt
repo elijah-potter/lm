@@ -1,0 +1,16 @@
+I'd be happy to help you with that. Here is a function that pairs a randomly selected greeting with the user-input name:
+
+function multiGreet(name) {
+  const multiHello = [
+    "Hello",
+    "Hola",
+    "������������������",
+    "���������������������������������������������",
+    "���������������������������������������������",
+    "Xin chao"
+  ];
+
+console.log(multiHello[Math.floor(Math.random()*multiHello.length)] + ', ' + name + ".")
+}
+
+For example, the call multiGreet('Sally') could return "Hello, Sally." or "Hola, Sally."

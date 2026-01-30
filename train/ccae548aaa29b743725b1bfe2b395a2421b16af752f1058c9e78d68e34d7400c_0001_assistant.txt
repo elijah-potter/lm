@@ -1,0 +1,15 @@
+Sure, no problem!
+
+```
+status = "flight 826 is now boarding"
+ 
+if (InStr("departed", status))
+{
+   Return True
+}
+ 
+if (InStr("boarding", status))
+{
+   Return False
+}
+```

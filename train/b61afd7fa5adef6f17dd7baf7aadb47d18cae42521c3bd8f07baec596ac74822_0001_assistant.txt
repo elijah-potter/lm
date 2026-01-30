@@ -1,0 +1,1 @@
+The negArray function creates a proxy around a provided array that behaves like the array but allows retrieving and setting values with negative indexes.

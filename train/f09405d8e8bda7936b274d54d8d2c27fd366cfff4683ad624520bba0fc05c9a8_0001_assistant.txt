@@ -1,0 +1,6 @@
+There are 4 conditional directives offered by Vue js for showing and hiding elements based on conditions. They include:
+
+. v-if : This directive adds or removes DOM elements based on a given expression.
+. v-else : This directive is used to display content only when the expression adjacent v-if resolves to false.
+. v-else-if : This directive is used when we need more than two options to be checked.
+. v-show : This directive renders all of the elements to the DOM and then uses the CSS display property to show or hide elements.

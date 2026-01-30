@@ -1,0 +1,21 @@
+Sure, absolutely! Here's a simple implementation of a square class in C++:
+
+#include <iostream>
+
+class Square {
+        public:
+                int side_length;
+                Square(int n) {
+                        side_length = n;
+                }
+
+                int get_area() {
+                        return side_length * side_length;
+                }
+};
+
+int main() {
+        Square my_square(4);
+        std::cout << "Side length: " << my_square.side_length << ", Area: " << my_square.get_area() << std::endl;
+        return 0;
+}

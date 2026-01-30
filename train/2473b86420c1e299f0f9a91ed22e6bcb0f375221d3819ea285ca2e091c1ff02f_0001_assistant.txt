@@ -1,0 +1,15 @@
+Here is a Python function that groups all the anagrams together in separate lists.
+
+from collections import defaultdict
+
+def groupAnagrams(strs):
+    a = defaultdict(list)
+    for s in strs:
+        count = [0] * 26
+
+        for c in s:
+            count[ord(c) - ord("a")] += 1
+        a[tuple(count)].append(s)   
+    return a.values()
+
+Let me know if you need anything else.

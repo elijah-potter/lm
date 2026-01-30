@@ -1,0 +1,59 @@
+Sure! You can do this by adding an event listener to the canvas element that will fire every time the user's mouse moves. Then you can store the mouse's current position from the event in an instance variable, and use that to draw the paddle. Here's the new version of the code:
+
+  <script>
+    class BouncingCanvas {
+        constructor(args) {
+            Object.assign(this, args);
+            this.canvas = document.getElementById(this.canvas_id);
+            this.canvas.addEventListener('mousemove', (e) => { this.paddle_x = e.clientX; }, false);
+
+            this.ball_x = this.ball_y = this.ball_radius;
+
+            this.paddle_width = this.ball_radius * 4;
+            this.paddle_height = 40;
+            this.paddle_x = this.paddle_width / 2;
+
+            window.requestAnimationFrame(this.draw);
+        }
+
+        checkForBounce = () => {
+            if (this.ball_x + this.ball_radius >= this.canvas.width || this.ball_x - this.ball_radius <= 0) {
+                this.x_movement_rate = this.x_movement_rate * -1;
+            }
+
+            if (this.ball_y + this.ball_radius >= this.canvas.height - this.paddle_height || this.ball_y - this.ball_radius <= 0) {
+                this.y_movement_rate = this.y_movement_rate * -1;
+            }
+        }
+
+        draw = () => {
+            let ctx = this.canvas.getContext("2d");
+
+            // Draw blank canvas background over the last frame
+            ctx.fillStyle = "blue";
+            ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+
+            // Draw the paddle at the current mouse location
+            ctx.beginPath();
+            ctx.moveTo(0, 0);
+            ctx.fillStyle = 'black';
+            ctx.fillRect(this.paddle_x - this.paddle_width/2, this.canvas.height - this.paddle_height, this.paddle_width, this.paddle_height);
+
+            // Move the ball and then draw it
+            this.ball_x += this.x_movement_rate;
+            this.ball_y += this.y_movement_rate;
+
+            ctx.beginPath();
+            ctx.moveTo(0, 0);
+            ctx.fillStyle = "green";
+            ctx.arc(this.ball_x, this.ball_y, this.ball_radius, 0, 2 * Math.PI);
+            ctx.fill();
+
+            this.checkForBounce();
+
+            window.requestAnimationFrame(this.draw);
+        }
+    }
+
+    bc = new BouncingCanvas({'canvas_id': 'animation_canvas', 'ball_radius': 50, 'x_movement_rate': 4, 'y_movement_rate': 3});
+  </script>

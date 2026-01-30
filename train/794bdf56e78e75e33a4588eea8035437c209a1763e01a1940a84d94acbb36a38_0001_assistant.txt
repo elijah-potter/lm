@@ -1,0 +1,21 @@
+Sure! We'll use the JavaScript fetch method to make a request to the API like so:
+
+function getCustomerEntries() {
+  
+// send a request to the API endpoint
+  fetch('https://example.com/api_endpoint')
+    
+ // if we receive a response, convert it to a JSON object
+    .then(response => response.json())
+    
+// and log it to the console
+    .then(data => console.log(data))
+  
+ // otherwise print an error
+    .catch(error => console.error(error));
+}
+
+In this example, we define a function getCustomerEntries which can be called from elsewhere, or directly, like this:
+getCustomerEntries();
+
+This allows you to add other functionality to your customer database script, such as parsing and processing the data and passing it on to the database.

@@ -1,0 +1,18 @@
+Here is a Python function to split strings (names) into groups, keeping them as even as possible. It shuffles the names randomly, then assigns them to groups in the new random sequence.
+
+import random
+
+
+def assign_names(names, num_of_groups):
+    random.shuffle(names)
+    counter = 0
+    assigned_names = []
+    for name in names:
+        if len(assigned_names) <= counter:
+           assigned_names.append([])
+        assigned_names[counter].append(name)
+        counter = (counter + 1) % num_of_groups
+
+    return assigned_names
+
+Note this uses the random library, which generates pseudo-random numbers. This is fine for most purposes, but if you need true randomness (for example, for cryptography or lotteries), you should use random.SystemRandom.

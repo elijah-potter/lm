@@ -1,0 +1,9 @@
+The objective of the game Solitaire is to organize the cards based on suit. The playing area is called a tableau which consists of seven card piles.  Four foundation piles are needed, one for each suit that runs from Ace to King.  The stockpile is the set of cards not being used to create the tableau.  
+The game begins with a deck of 52 shuffled playing cards. Begin by creating your tableau, placing one card for each of the seven piles. In descending order, place additional cards on the piles so that the first pile has only one card, the second has two, and so forth with the last pile having seven cards all face down.  The remaining cards are placed in a stockpile at the top of the board. Begin play by turning over the top card on each of the seven piles.  Look at the face-up cards, if there is an Ace, move them above the tableau and form your first foundation pile. 
+If there are no aces, rearrange your cards by moving only the face-up cards. On your top card, place a card under it that is of a value less and alternating color. Continue placing cards on the piles until you can no longer move.
+
+Ensure that you arrange in descending order from King to Ace. Also, make sure that you can see the card on top of each stack meaning that it should face up. And if you move it, don’t forget to turn over the card beneath it.
+
+When you run out of moves, use the cards in the stockpile. Flip the cards over either three at a time or one at a time. There can also be only a certain number of times you can go through your stockpile to make the game more challenging.  
+
+If you have hidden cards, make sure that you make moves that will uncover them until you can hold, grab and put them eventually in the slot you desire.

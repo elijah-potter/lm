@@ -1,0 +1,8 @@
+public String extractDecimal(double d) {
+		String doubleAsString = String.valueOf(d); 
+		int indexOfDecimal = doubleAsString.indexOf("."); 				
+		String decimalPart = doubleAsString.substring(indexOfDecimal+1);
+		return decimalPart;		
+	}		
+
+This method first converts the double value into a string. Then it looks for the decimal point's index within the string. Finally, it uses the index as the starting position for extracting the decimal portion. The numbers extracted are returned as a string.

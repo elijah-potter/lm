@@ -1,0 +1,9 @@
+Here is an example code snippet in AutoHotkey 2.0.2 that creates a variable called new_user with the specified properties:
+    new_user := { 
+        name: "Snake Pliskin",
+        location: "Unknown",
+        rank: "Lieutenant",
+        dob: "March/1967"
+}
+
+This code creates a new variable new_user and assigns it an object with four properties: name, location, rank, and dob. Those then have a value of Snake Pliskin, Unknown, Lieutenant, March/1967.

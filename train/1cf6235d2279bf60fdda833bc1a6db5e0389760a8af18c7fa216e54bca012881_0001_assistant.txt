@@ -1,0 +1,26 @@
+Sure! The code below uses a `try`/`except` block to accomplish that. It first tries the function `operation_synthesis()`, then returns a custom message for each type of error. For example, if an AttributeError occurs, the `except AttributeError` block will print the message, `"A method or function was called on an invalid data type."` and close the file by using `.close()` on the `red_3` file variable. By using `as err` on the `except` statements, you can bind the exception to a variable called `err` so you can access details about it.
+
+```
+# Try the function
+try:
+    operation_synthesis()
+# Except for each type of error and close the file
+except AttributeError as err:
+    print("A method or function was called on an invalid data type.")
+    red_3.close()
+except SyntaxError as err:
+    print("There was a syntax error in the code.")
+    red_3.close()
+except NameError as err:
+    print("A variable was used before definition.")
+    red_3.close()
+except IndexError as err:
+    print("There was an attempt to access an item that was not present in the list.")
+    red_3.close()
+except KeyError as err:
+    print("A key was not found in a dictionary.")
+    red_3.close()
+except ModuleNotFoundError as err:
+    print("An import failed because the module could not be found.")
+    red_3.close()
+```

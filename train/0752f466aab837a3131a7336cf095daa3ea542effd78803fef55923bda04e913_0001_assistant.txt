@@ -1,0 +1,46 @@
+Sure! Here are the bugs I found and their respective solutions.
+
+1. The `aws_vpc` resource does not have a `name` argument. Either remove that line or use the `tags` argument with a key of `name` on it.
+
+Here is the correct code for the `aws_vpc` block:
+
+```
+resource "aws_vpc" "main" {
+  cidr_block = "10.0.0.0/16"
+  tags = {
+    name = "MyVPC"
+  }
+}
+```
+
+2. The `cidr_block` and `availability_zone` arguments in the `private` resource used the `count` object which does not work for string interpolation and the list index. Use `count.index` instead to return the numerical value. 
+
+The fixed code for that part would be:
+
+```
+resource "aws_subnet" "private" {
+  count = 5
+
+  vpc_id            = aws_vpc.main.id
+  cidr_block        = "10.0.${count.index}.0/24"
+  availability_zone = data.aws_availability_zones.available.names[count.index]
+}
+```
+
+3. Both `subnet_ids` in the `rds` and `elasticache` subnet group resources are referring to `aws_subnet.private`, which is a list of resources (as implied by the usage of `count`) instead of a singular resource. You should use the splat syntax `[*]` to expand the resource list into multiple items.
+
+Here is the correct code for those resource blocks:
+
+```
+resource "aws_db_subnet_group" "rds" {
+  subnet_ids = aws_subnet.private[*].id
+}
+
+resource "aws_elasticache_subnet_group" "elasticache" {
+  subnet_ids = aws_subnet.private[*].id
+}
+```
+
+You can run both `terraform validate` and `terraform plan` on your project's root directory to check for any other syntax or logical errors and to see if the Terraform config works.
+
+I hope that helps! Let me know if you have any other questions or requests.

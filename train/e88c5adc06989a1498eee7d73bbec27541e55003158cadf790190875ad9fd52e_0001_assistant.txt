@@ -1,0 +1,13 @@
+I can help you with that! Here is a python function that counts the amount of time that has passed in n seconds.
+
+import time
+def increment_loop(n):
+    i = 0
+    if n == 0:
+        return i
+    start = time.time()
+    while time.time() - start <= n:
+        i += 1
+    return i
+
+Let me know if you have any questions!

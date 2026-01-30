@@ -1,0 +1,8 @@
+You are seeing a Type Error because you are trying to call an item in a set using indexing. In Python, sets are unordered, so their values cannot be accessed with indexing the way that lists, tuples, and dictionaries can. To access items in a set, you can iterate over the set with a `for` loop like this:
+
+# ... More code above ...
+answerset = {18, 2, 14, True, False, 7, True}
+for answer in answerset:
+    print(answer)
+
+This will print each of the items in the set `answerset` as the iterable object `answer`  using a `print()` statement in the `for` loop.

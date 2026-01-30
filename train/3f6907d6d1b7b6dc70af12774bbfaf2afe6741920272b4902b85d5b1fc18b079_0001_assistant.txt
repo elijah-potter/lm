@@ -1,0 +1,16 @@
+No problem, that's an easy fix!
+
+Here, we can replace the sortedwords.extend(wordslen) with wordslen.extend(sortedwords) and have sortedwords reassigned to this new value. This is possible because wordslen will be overwritten in the next loop and it need not be preserved as is.
+
+Here is you code with this change made:
+
+def sort_by_length(words):
+    wordlength = 1
+    sortedwords = []
+    while len(words) != len(sortedwords):
+        wordslen = sorted([word for word in words if len(word) == wordlength])
+        wordslen.extend(sortedwords)
+        sortedwords = wordslen
+        wordlength += 1
+        
+    return sortedwords

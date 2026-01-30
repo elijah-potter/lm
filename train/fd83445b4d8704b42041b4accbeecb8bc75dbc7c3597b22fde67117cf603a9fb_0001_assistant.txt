@@ -1,0 +1,10 @@
+The exec() method tests for a match in a string. If it finds a match, it returns a result array; otherwise, it returns null. For example...
+
+const regex1 = RegExp('foot*', 'g');
+const str1 = 'piano football, foosball';
+let array1;
+
+while ((array1 = regex1.exec(str1)) !== null) {
+  console.log(`Located ${array1[0]}. Proceeds from ${regex1.lastIndex}.`);
+  // Expected output: "Located foot. Proceeds from 10."
+}

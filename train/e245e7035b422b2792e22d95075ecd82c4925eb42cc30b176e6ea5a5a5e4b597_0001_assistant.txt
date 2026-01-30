@@ -1,0 +1,13 @@
+Sure! Here is a python solution that creates a list with the alternating values given.
+
+def alternate(n, value1, value2):
+    array = []
+    for i in range(n):
+        if i % 2 == 0:
+            array.append(value1)
+        else:
+            array.append(value2)
+
+    return array
+
+Let me know if I can help you further.

@@ -1,0 +1,15 @@
+Below is an example of children prop in React JS...
+
+const MyDiv = React.createClass({
+  render: function () {
+    return <div>{this.props.children}</div>;
+  },
+});
+
+ReactDOM.render(
+  <MyDiv>
+    <span>{"Hello"}</span>
+    <span>{"World"}</span>
+  </MyDiv>,
+  node
+);

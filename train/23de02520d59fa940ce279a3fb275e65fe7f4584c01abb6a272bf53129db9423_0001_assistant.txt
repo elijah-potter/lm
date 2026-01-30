@@ -1,0 +1,3 @@
+Yes, even if you have an extra file you can bundle it using the --onefile flag with PyInstaller. To explicitly pass the file to PyInstaller use this syntax:
+pyinstaller --onefile file.py secrets.json
+Doing this will embed the extra file directly in the executable bundle.

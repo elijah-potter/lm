@@ -1,0 +1,39 @@
+Sounds like a fun project! Here's some code to get started. 
+
+const gameContainer = document.createElement('div');
+const canvas = document.createElement('canvas');
+canvas.width = 400;
+canvas.height = 400;
+canvas.id = "canvas";
+gameContainer.id = 'game-container';
+document.body.appendChild(gameContainer);
+gameContainer.appendChild(canvas);
+
+
+// CSS rules for the game container and canvas
+const style = document.createElement('style');
+style.innerHTML = `
+body {
+    background-color: #f0f0f0;
+}
+#game-container {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 50vh;
+width: 50vh;
+border: 3px solid black;
+}
+
+canvas {
+    background-color: white;
+    border: 3px solid black;
+}
+`;
+document.head.appendChild(style);
+
+This code creates a centered frame with a black border to hold the game. Let me know what you want to work on next!

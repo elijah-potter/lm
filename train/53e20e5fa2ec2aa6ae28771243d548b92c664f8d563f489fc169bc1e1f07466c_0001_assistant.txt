@@ -1,0 +1,10 @@
+Here is a short Python function that should complete the task you're looking for:
+
+def replace_in_string(string, z, l):
+    split = string.split()
+
+    if len(split) < z:
+        raise Exception('Your z value exceeds the length of the sentence')
+
+    split[z-1] = str(l)
+    return ' '.join(split)

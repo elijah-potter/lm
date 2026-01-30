@@ -1,0 +1,12 @@
+Here's a very basic web server in Node.js, which uses Express:
+
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+        return res.send('Working!');
+});
+
+app.listen(process.env.PORT || 3000); 
+
+Please note that, to run this, you'll need to have Express installed, which can be done via NPM.

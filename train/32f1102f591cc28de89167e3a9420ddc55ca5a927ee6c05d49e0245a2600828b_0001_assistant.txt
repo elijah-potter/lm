@@ -1,0 +1,17 @@
+Here is a solution to that problem:
+
+def find_missing_number(numbers):
+    x = len(numbers)
+    total = sum(numbers)
+    rest = ((x+1)*(x+2))
+    rest = rest/2
+    missing = rest - total
+    
+    return missing
+
+Here is an explanation of how the code works.
+1.) First the length of the input list numbers is calculated and stored in the variable x.
+2.) Then the sum of the numbers from the input is computed using sum()
+3.) The formula to find the sum of an arithmetic sequence is used to find what the sum would be if there were no numbers missing.
+4.) The missing number is calculated by subtracting the sum of the numbers from the input from the sum of the arithmetic sequence from 1 to n.
+5.) Finally, the function returns the value of missing.

@@ -1,0 +1,20 @@
+Creating functions is a good way to save space in a script that would otherwise repeat the same lines of code. Let's look at an example of a simple addition function in AutoHotKey:
+
+Addition(a, b)
+{
+    return a + b
+}
+
+While this particular example does not represent space efficiency itself, each time this function is called, it will save a line of code.
+
+For a concrete example, see below where we want to add four numbers together using the function nested twice in a function:
+
+Mynumber := Addition(Addition(1,2),Addition(3,4))
+
+This line would return 10 because the function is called three times: first for (1+2), second for (3+4), and finally for (3+7). 
+
+AHK also has mathematical functions predefined. If you wanted to achieve this more simply, you could use this code:
+
+Mynumber:= 1 + 2 + 3 + 4
+
+This avoids writing a function for extant features.

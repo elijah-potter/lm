@@ -1,0 +1,6 @@
+Here is an explanation of the ExtractPII type:
+1. Type parameter ��������� The ExtractPII type takes a single type parameter called Type.
+2. Object type ��������� The ExtractPII type produces an object type.
+3. Mapped type ��������� The object type contains a value for each key in Type.
+4. Mapped type value ��������� The value in the produced object for a given key depends on whether its value in the type parameter is an object with the "pii" property equal to "true".
+5. Conditional type ��������� The value for a given key in the produced object is true if its "pii" property in the type parameter is true, and false otherwise.

@@ -1,0 +1,9 @@
+I checked the code and noticed you have a typo in line 17. It says "measurement" instead of "measurements" when the list you defined is called `measurements`. This fix should solve the error:
+
+measurements = [19923, 380124, 1513, 1351251, 1521351, 112, 21351, 112879, 197987]
+# Line 17 fixed
+del measurements[5]
+
+print(f"The measurements without outliers are {measurements}.")
+
+I replaced `measurement` with `measurements` to match the defined list name. Does this solve your error?

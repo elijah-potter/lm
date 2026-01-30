@@ -1,0 +1,1 @@
+The modulo function returns the remainder of a division when supplied with a dividend and divisor. Consider mod(8,2). This would return 0 because 2 divides into 8 without a remainder. Mod(9,2) would return 1 because 9/2 is 4 remainder 1.

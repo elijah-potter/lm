@@ -1,0 +1,46 @@
+First, you need to create a canvas element on your HTML page and specify its width, height, and id:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bouncing Ball Animation</title>
+</head>
+<body>
+  <canvas id="animation_canvas" width="400" height="400"></canvas>
+  <script>
+      // Animation code will go here
+  </script>
+</body>
+</html>
+
+Next, we need to write the animation script. There are three parts to the script:
+
+1. The constants that define the ball's size and speed and the canvas's size.
+2. The draw() function. Every time the next frame of the animation is rendered, this function is called to draw the ball in its new position.
+3. The calls to window.requestAnimationFrame(draw). The call at the bottom of the code renders the first frame of the animation. Then, every time the draw() function finishes, it calls window.requestAnimationFrame(draw) again to draw the next frame.
+
+Here's what the full script looks like:
+
+  <script>
+    const movement_rate = 2; // number of pixels moved per frame
+    const ball_radius = 50;
+    const canvas_width = canvas_height = 400;
+
+    function draw() {
+        let canvas = document.getElementById("animation_canvas");
+        let ctx = canvas.getContext("2d");
+        ctx.fillStyle = "purple";
+
+        ctx.clearRect(0 - movement_rate, 0 - movement_rate, canvas_width + movement_rate, canvas_height + movement_rate);
+        ctx.translate(movement_rate, movement_rate);
+
+        ctx.beginPath();
+        ctx.arc(ball_radius, ball_radius, ball_radius, 0, 2 * Math.PI);
+        ctx.fill();
+
+        window.requestAnimationFrame(draw);
+    }
+
+    window.requestAnimationFrame(draw);
+  </script>

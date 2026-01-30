@@ -1,0 +1,21 @@
+Here is a TypeScript function that uses a binary search to find the index of first item for which a partition callback returns true:
+
+export function binaryFindPartition<T>(
+    array: readonly T[],
+    partition: (item: T) => boolean
+): number {
+    if (array.length === 0) {
+        return -1;
+    }
+    let low = 0, high = array.length - 1;
+    while (high > low) {
+        const mid = low + Math.floor((high - low) / 2);
+        if (partition(array[mid])) {
+            high = mid;
+        } else {
+            low = mid + 1;
+        }
+    }
+
+    return partition(array[low]) ? low : -1;
+}

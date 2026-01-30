@@ -1,0 +1,14 @@
+Here is a solution to your programming prompt:
+
+def calculate(string):
+    num = []
+    for word in string.split():
+        if word == 'loses':
+            operator = '-'
+        elif word == 'gains':
+            operator = '+'
+        elif word.isdigit():
+            num.append(word)
+    return eval(str(num[0]) + operator + str(num[1]))
+
+The code works by first splitting the input string and iterating over each word while looking for the words "loses" or "gains". If it finds one of those keywords, it stores the associated operator in the operator variable. It then checks the word to see if it is a digit using .isdigit(), and then it stores it in the num list. Finally, the values found and the operators found in the string are evaluated and the result is returned.

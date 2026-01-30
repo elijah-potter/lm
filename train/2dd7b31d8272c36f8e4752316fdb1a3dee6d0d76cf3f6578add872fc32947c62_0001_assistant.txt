@@ -1,0 +1,9 @@
+Here is one regex that will do the job for you:
+
+([A-Za-z0-9]+[\+.-_])*[A-Za-z0-9]+@([A-Za-z0-9]+[-])*[A-Za-z0-9]+(\.[A-Z|a-z]{2,})+
+
+The first part of the regular expression defines valid formats for the username. It allows for ".", or "-" or "_" or "+" to be used in the middle of your alphanumeric characters, looking for at minimum one alphanumeric character before the optional special character if a special character exists and minimum one alphanumeric character after the special character if it exists. If there's no special character, we just look for at least one alphanumeric character. An e-mail address that starts with or ends on a special character as its username should be invalid. 
+
+Then we have the @ separator.
+
+After that is the domain, which should contain alphanumeric characters and a hyphen, so we use the same format as the username for the domain name (except we exclude more special characters). Finally, we look for a 2-letter+ long TLD that comes after a period after the domain name.

@@ -1,0 +1,16 @@
+I'm happy to help you with that! I'm not sure yet exactly what you want to accomplish with it. However, I'll give you an example of something you can do. You'll need either an online account or a local installation running to get started. We'll use a package called pymongo, which can be installed with pip (pip install pymongo or pip3 install pymongo). This sample code uses a database called my_database with a collection inside called my_collection, and adds in a document, represented in the code as a Python dictionary:
+
+from pymongo import MongoClient
+
+URI = 'mongodb+srv://your_username:your_password@cluster0.ve4u3.mongodb.net/my_test_database?retryWrites=true&w=majority'
+client = MongoClient(URI)
+db = client.my_database
+collection = db.my_collection
+
+document = {
+    'name': 'Jo',
+    'phone': '123-456-7890',
+    'email': 'example@example.com'
+}
+
+collection.insert_one(document)

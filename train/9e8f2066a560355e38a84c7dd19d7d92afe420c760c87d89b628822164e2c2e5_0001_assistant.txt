@@ -1,0 +1,29 @@
+That TypeError is most likely arising from the `randint()` line. The `randint()` method does not have a `size` parameter to create a list of numbers, but that can be easily fixed by using NumPy. NumPy has its own version of `randint()` that will create an array of a given size. For your code to work, it can import that NumPy library and substitute `np.random.randint()` for the `random.randint()` the script currently uses. Here is the corrected code:
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Use the np.random.randint() function instead
+df = pd.DataFrame(np.random.randint(1, 20, size = (10, 5)))  
+
+# Print the DataFrame
+print(df)
+
+# Plot and save the scatterplot
+df.plot.scatter(x = 0, y = 1)
+plt.savefig("scatterplot.png")
+
+The DataFrame should look something like this, with random integers in the frame.
+
+0   1   2   3   4
+0   6   8   7   1  11
+1  11  16  10  10   8
+2  12   3  17  12  12
+3   4   6  17  11  14
+4   1  12  16   4  19
+5   1  16  15  16  19
+6  13   8   5  11   7
+7   3   1  19   1  19
+8  13   8  12   4   6
+9   2  16  11  13  18

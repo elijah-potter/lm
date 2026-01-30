@@ -1,0 +1,10 @@
+Here is a method to shorten the solution into one line.
+
+import pandas as pd
+
+def flatten(dataframe, col): 
+    return dataframe.explode(col).reset_index(drop=True)
+
+The code heavily relies on the explode function to replicate the rows of the dataframe for each value in col value.
+After the explode function is executed the reset_index is used to reset the index of the dataframe.
+Let me know if you need anything else.

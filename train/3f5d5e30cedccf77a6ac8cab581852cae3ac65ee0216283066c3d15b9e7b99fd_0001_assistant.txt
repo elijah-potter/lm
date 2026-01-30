@@ -1,0 +1,136 @@
+The cause of the problem is the way that Python handles mutable objects, compared to how it handles immutable data types.
+
+The code you have provided generates a game grid as a list of lists, and lists are a mutable data type in Python. When the code assigns solution = grid, it is generating a reference to the list of lists described by grid, and not creating a duplicate list of lists. As the code causes subsequent changes to the contents of grid, these changes are also passed to the solution, as both solution and grid are pointing to the same object. Therefore, when the code displays both the grid and the solution, it displays the same object twice.
+
+To avoid the issue of modifications to the grid list affecting the solution, it's necessary to create a separate copy of the list. One way of implementing this is to import the copy library, which provides the deepcopy() library function. The deepcopy() function creates a deep copy of an object, including all nested objects, ensuring that modifications to one copy do not affect the other.
+
+```Python
+#Import Python's random library, which allows for random number generation
+import random
+#Import Python's copy library to enable the use of the deepcopy function
+import copy
+
+def generate_sudoku():
+    # Create an empty 9x9 grid
+    grid = [[0] * 9 for _ in range(9)]
+    
+    # Fill in the grid to create a completed Sudoku grid
+    fill_numbers(grid)
+    
+    # Store the completed grid as the solution
+    solution = copy.deepcopy(grid)
+    
+    # Remove some numbers to turn a completed
+    # Sudoku grid into a puzzle
+    remove_numbers(grid)
+    
+    # Output the generated puzzle and the solution
+    return grid, solution
+
+def fill_numbers(grid):
+    # Generate a shuffled list of numbers from 1 to 9
+    num_list = list(range(1, 10))
+    random.shuffle(num_list)
+    
+    # Start the recursive process to fill numbers in the grid
+    return fill_numbers_recursive(grid, num_list, 0)
+
+def fill_numbers_recursive(grid, num_list, index):
+    # Base case: if the index exceeds the last cell, the grid is filled completely
+    if index >= 81:
+        return True
+
+    row = index // 9  # Calculate the row index from the current index
+    col = index % 9   # Calculate the column index from the current index
+
+    if grid[row][col] != 0:
+        # If the current cell is already filled, move to the next cell
+        return fill_numbers_recursive(grid, num_list, index + 1)
+
+    random.shuffle(num_list)
+    for num in num_list:
+        if is_valid_move(grid, row, col, num):
+            # If the current number is valid for the current cell, fill it in
+            grid[row][col] = num
+            if fill_numbers_recursive(grid, num_list, index + 1):
+                # Recursively fill the next cell
+                return True
+            grid[row][col] = 0  # Backtrack if the next cell cannot be filled
+
+    return False
+
+def is_valid_move(grid, row, col, num):
+    # Check if assigning the number to the given cell violates Sudoku rules
+    
+    # Check the row
+    for j in range(9):
+        if grid[row][j] == num:
+            return False
+    
+    # Check the column
+    for i in range(9):
+        if grid[i][col] == num:
+            return False
+    
+    # Check the 3x3 box
+    box_start_row = 3 * (row // 3)
+    box_start_col = 3 * (col // 3)
+    for i in range(3):
+        for j in range(3):
+            if grid[box_start_row + i][box_start_col + j] == num:
+                return False
+    
+    return True
+
+def remove_numbers(grid):
+    # Remove some numbers from the solved puzzle to create the puzzle
+    
+    # Determine the difficulty level (adjust the range of removals as desired)
+    num_removals = 64
+    
+    # Check to see if the number of removals has been set to a value greater
+    # than 64. Valid Sudoku puzzles must have at least 17 values
+    # so this code ensures no more than 64 numbers are removed from the
+    # completed Sudoku game.
+    if num_removals >= 65:
+        num_removals = 64
+
+    # Collect the indices of non-zero cells
+    non_zero_indices = [(i, j) for i in range(9) for j in range(9) if grid[i][j] != 0]
+    
+    # Randomly select cells from non_zero_indices and remove their values
+    removal_indices = random.sample(non_zero_indices, num_removals)
+    for row, col in removal_indices:
+        grid[row][col] = 0
+    
+    return grid
+
+
+def display_sudoku(grid):
+    # Display the Sudoku grid
+    for i in range(9):
+        if i % 3 == 0 and i != 0:
+            # Create a decorative horizontal dashed line to segment rows
+            print("- - - - - - - - - - -")
+        for j in range(9):
+            if j % 3 == 0 and j != 0:
+                # Create a decorative vertical dashed line to segment columns
+                print("|", end=" ")
+            if grid[i][j] == 0:
+                # Fill each blank cell with a dot
+                print(".", end=" ")
+            else:
+                # Place the numbers in the displayed puzzle
+                print(grid[i][j], end=" ")
+        print()
+
+if __name__ == "__main__":
+    # Generate and display a new Sudoku puzzle
+    grid, solution = generate_sudoku()
+    
+    print("Here is your puzzle:")
+    display_sudoku(grid)
+    
+    print("\nHere is the completed puzzle:")
+    display_sudoku(solution)
+```

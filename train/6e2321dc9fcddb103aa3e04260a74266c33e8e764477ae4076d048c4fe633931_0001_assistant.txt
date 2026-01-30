@@ -1,0 +1,111 @@
+Reviewing the code you provided, I see some issues which may be causing the unexpected behavior you described.
+
+The first issue you reported, the cursor failing to reach the edge of the window, is related to the mismatch between the size of the window and the if statement which detects the edge of the window. It's possible that in your earlier testing, you were using a window size of 600 by 600 pixels, based on the implementation of edge detection in the following if statement:
+
+```Python
+if cursor.xcor() > 290 or cursor.xcor() < -290 or cursor.ycor() > 290 or cursor.ycor() < -290:
+```
+The way this line of code works is it measures the distance the cursor has traveled from the origin 0,0 which is the center of the window created by your code. You can correct this problem by changing the dimensions of the window to a height and width of 600 pixels, or you can modify the if statement to make the boundaries relative to the window. Here's one way of implementing a relative boundary:
+
+```Python
+# Define window edges
+left_edge = 0 - (window_width / 2) + 10
+right_edge = 0 + (window_width / 2) - 10
+top_edge = 0 + (window_height / 2) - 10
+bottom_edge = 0 - (window_height / 2) + 10
+```
+
+With these four new variables, which are based on the size of the window, the if statement which monitors the position of the cursor for edge collisions can be changed to use the variables.
+
+```Python
+if cursor.xcor() > right_edge or cursor.xcor() < left_edge or cursor.ycor() > top_edge or cursor.ycor() < bottom_edge:
+```
+
+The second issue you reported, the unexpected shortening of the cursor in the direction of movement, is likely related to a combination of the cursor's movement speed and the program's tick rate. The tick variable determines how often the window is updated. Currently, the tick variable is assigned a value of 0.01, which would mean that the window would update 100 times per second. This may cause unexpected behavior, especially if the window is viewed on a display with a 60-hertz refresh rate. The tick rate can be modified to a larger value, which may resolve the display issue you described. Setting the value of the tick variable to 0.016 would cause the window to update 60 times per second, which may result in better performance and avoid the visual artifact you described. Additional changes to the cursor's movement speed may also be useful. The cursor is currently set to a speed of 10 units in the current direction of travel. Lowering this value may make the appearance of the cursor's motion more smooth.
+
+Below is a revised version of the code you shared in your request, altered to incorporate the relative screen edge collision detection and a lower tick rate.
+
+
+```Python
+# import modules
+import turtle
+import time
+
+# Set tick rate
+tick = 0.016
+
+# Create a window
+wn = turtle.Screen()
+wn.title("Cursor Test")
+wn.bgcolor("white")
+
+# Set window size
+window_width = 1000
+window_height = 1000
+wn.setup(window_width, window_height)
+wn.tracer(0)
+
+# Define window edges
+left_edge = 0 - (window_width / 2) + 10
+right_edge = 0 + (window_width / 2) - 10
+top_edge = 0 + (window_height / 2) - 10
+bottom_edge = 0 - (window_height / 2) + 10
+
+# Implement cursor
+cursor = turtle.Turtle()
+cursor.shape("square")
+cursor.color("black")
+cursor.penup()
+cursor.goto(0, 0)
+cursor.direction = "Stop"
+
+# Implement inputs
+def move_up():
+    if cursor.direction != "down":
+        cursor.direction = "up"
+def move_down():
+    if cursor.direction != "up":
+        cursor.direction = "down"
+def move_left():
+    if cursor.direction != "right":
+        cursor.direction = "left"
+def move_right():
+    if cursor.direction != "left":
+        cursor.direction = "right"
+def halt():
+    cursor.direction = "Stop"
+
+def move():
+    if cursor.direction == "up":
+        y = cursor.ycor()
+        cursor.sety(y + 10)
+    if cursor.direction == "down":
+        y = cursor.ycor()
+        cursor.sety(y - 10)
+    if cursor.direction == "left":
+        x = cursor.xcor()
+        cursor.setx(x - 10)
+    if cursor.direction == "right":
+        x = cursor.xcor()
+        cursor.setx(x + 10)
+
+# Keyboard inputs
+wn.listen()
+wn.onkeypress(move_up, "w")
+wn.onkeypress(move_down, "s")
+wn.onkeypress(move_left, "a")
+wn.onkeypress(move_right, "d")
+wn.onkeypress(halt, "space")
+
+# Scroll Cursor based on user inputs
+while True:
+    wn.update()
+    if cursor.xcor() > right_edge or cursor.xcor() < left_edge or cursor.ycor() > top_edge or cursor.ycor() < bottom_edge:
+        time.sleep(1)
+        cursor.goto(0, 0)
+        cursor.direction = "Stop"
+    move()
+    time.sleep(tick)
+
+wn.mainloop()
+```

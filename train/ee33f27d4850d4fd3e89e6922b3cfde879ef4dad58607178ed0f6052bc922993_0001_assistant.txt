@@ -1,0 +1,5 @@
+The function takes the parameter `n` which is the number of seconds the while loop will run. The return value, `i`, represents the number of iterations of the loop that have run.
+
+In summary, the code executes a while loop for n seconds and counts the number of loop iterations that occur during that time. The function then returns the count of iterations.
+
+Let me know if you need anything else!

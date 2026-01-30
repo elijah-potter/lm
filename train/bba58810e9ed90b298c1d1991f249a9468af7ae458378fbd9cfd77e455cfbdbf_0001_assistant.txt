@@ -1,0 +1,19 @@
+Here is a Python function that counts the number of overlapping characters between two strings:
+
+def overlap(string1, string2):
+    if len(string2) < len(string1):
+        temp = string1
+        string1 = string2
+        string2 = temp
+    
+    for i in range(0, len(string1) + 1):
+        if (string1[i:] == string2[:(len(string1) - i)]):
+            break
+
+    for j in range(0, len(string1) + 1):
+        if (string2[j:] == string1[:(len(string2) - j)]):
+            break
+
+    return max(len(string1) - i, len(string1) - j)
+
+This function starts by comparing the whole shorter string to the beginning of the longer string. If that doesn't match, it tries every suffix of the shorter string in decreasing order of length until it finds a match to the beginning of the other string. Then the function does the same thing again, except it compares the beginning of the shorter string to the suffix of the longer string.

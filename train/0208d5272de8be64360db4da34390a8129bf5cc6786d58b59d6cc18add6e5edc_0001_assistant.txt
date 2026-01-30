@@ -1,0 +1,7 @@
+There are a few reasons that you might not be getting any output from your code.
+
+1. You have an error such as a SyntaxError. This can occur when there is a mistake in your code, but if you do not debug your code, you may not realize the error is present. You can check the logs when debugging the code to identify any errors and make sure all expressions in the code follow the required syntax.
+2. Your code may be buffering the `stdout` stream in the terminal instead of printing it. This can be solved by setting the `PYTHONUNBUFFERED` environment to `True` or another nonzero value using `$export PYTHONUNBUFFERED=true` in the command shell.
+3. The `print()` line is missing the answer as a variable. If you have not passed the variable you want to print to the `print()` function as an object, there will be no output printed.
+
+Let me know if any of these solutions fix your problem.

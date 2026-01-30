@@ -1,0 +1,36 @@
+Here's an example Terraform code to create a VPC and public subnet in the us-west-1 region:
+
+```
+terraform {
+
+  # NOTE: Replace with the version that you need or use
+  required_version = ">= 1.2.0"
+
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      # NOTE: Replace with the version that you need or use
+      version = "~> 4.16"
+    }
+  }
+}
+
+# Define the provider and region
+provider "aws" {
+  region = "us-west-1"
+}
+
+# Resources
+resource "aws_vpc" "main" {
+  cidr_block = "10.0.0.0/16"
+}
+
+resource "aws_subnet" "public" {
+  vpc_id     = aws_vpc.main.id
+  cidr_block = "10.0.1.0/24"
+}
+```
+
+This Terraform config specifies the required versions for Terraform and the AWS provider. The specified region is us-west-1. It creates a VPC and public subnet and associates them both together.
+
+I hope that helps! Let me know if you need help with anything else.

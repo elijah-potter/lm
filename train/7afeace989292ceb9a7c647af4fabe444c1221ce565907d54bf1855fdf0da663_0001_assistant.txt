@@ -1,0 +1,1 @@
+The dependencies parameter in this function is provided as the second parameter to the useCallback call. The useCallback hook returns a memoized version of the provided callback that will be re-evaluated if any of the dependencies change.

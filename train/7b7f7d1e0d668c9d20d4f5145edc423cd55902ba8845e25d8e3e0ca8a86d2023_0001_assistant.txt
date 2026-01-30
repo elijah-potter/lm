@@ -1,0 +1,1 @@
+The Utils.rs function returns a random string of the length provided. It does this by generating an array with random numbers between 0 and 35 and then converting each to a base36 string and joining the resulting array.

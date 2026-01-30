@@ -1,0 +1,53 @@
+Sure! Let's make a sample app that takes the first non-program-name argument from the command line, and shows that text in a window. First, make sure you have GTK+ 3 installed, which can be done through Homebrew: brew install gtk+3
+
+gtkapp.c:
+#include <stdio.h>
+#include <gtk/gtk.h>
+
+static void print_text (GtkWidget *widget, gpointer data)
+{
+  printf("%s\n", (char*) data);
+}
+
+static void init (GtkApplication *app, gpointer user_data) {
+  GtkWidget *window;
+  GtkWidget *button;
+  GtkWidget *button_box;
+
+  window = gtk_application_window_new(app);
+  gtk_window_set_title(GTK_WINDOW(window), "My App");
+  gtk_window_set_default_size(GTK_WINDOW (window), 400, 400); //400x400 window
+
+  button_box = gtk_button_box_new(GTK_ORIENTATION_HORIZONTAL);
+  gtk_container_add(GTK_CONTAINER(window), button_box);
+
+  char *text = (char*) user_data;
+
+  button = gtk_button_new_with_label(text);
+  g_signal_connect(button, "clicked", G_CALLBACK(print_text), text);
+  gtk_container_add(GTK_CONTAINER(button_box), button);
+  gtk_widget_show_all(window);
+}
+
+int main (int argc, char **argv) {
+
+  char buffer[50];
+
+  printf("Enter a string to print: ");
+  scanf("%49s", buffer); //Max 49 characters, to allow room for null termination in buffer.
+
+  GtkApplication *app;
+  int status; //Will be set by the g_application_run function later, and returned as our status code at the end.
+
+  app = gtk_application_new("com.me.app", G_APPLICATION_DEFAULT_FLAGS);
+  g_signal_connect(app, "activate", G_CALLBACK(init), &buffer); //Send the address of our buffer to our init function as the gpointer user_data argument.
+  status = g_application_run(G_APPLICATION(app), argc, argv);
+  g_object_unref(app);
+
+  return status;
+}
+
+
+makefile:
+gtkapp: gtkapp.c
+	gcc `pkg-config --cflags gtk+-3.0` -o gtkapp gtkapp.c `pkg-config --libs gtk+-3.0`

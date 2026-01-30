@@ -1,0 +1,19 @@
+The 720 rule for anodization is most often used as a quick way to estimate the time it will take to create an anodized layer of the thickness you want. It’s an algebra formula, so you can also rearrange it to tell you how thick your layer will be after a specified time.
+
+To use this formula you need to know two of the three variables listed here:
+
+-	Desired anodization layer thickness 
+-	Current density
+-	Anodization time
+
+The current density can itself be determined by dividing the anodization machine’s current output by your part’s surface area. It should come out in units of Amps per square foot. The desired thickness of the anodized layer is measured in mils (one mil is equal to 1/1000 inch or 0.001 inches)
+
+Most users employ the 720 rule to decide how long to leave their part in the anodization bath. If that’s your goal, the equation will look like: 
+
+-	Time (minutes) = 720 * desired thickness (mils) / current density (A/sq ft)
+
+The 720 value in this equation is a known constant, so it’s the same each time you use the equation.
+
+There are limitations to this equation. It only applies to parts made of aluminum (and a few exotic aluminum alloys have enough other elements that the rule doesn’t work). It also assumes that your anodization setup is a so-called constant-current style. A constant-current device must ramp up the voltage as the anodization layer gets thicker so that the electrical current that reaches the underlying surface remains constant. Constant-current devices are the most common in the industry.
+
+If those qualifications are met, the 720 rule should give you good estimations of how much time parts need to spend in the anodization bath.

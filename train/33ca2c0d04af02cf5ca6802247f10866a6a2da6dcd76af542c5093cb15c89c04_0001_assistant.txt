@@ -1,0 +1,32 @@
+Sure, that's quite simple. We can use the abs function in C's standard library like this:
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int abs_max(int *arr, int len) {
+    int n = abs(arr[0]);
+    for(int i = 1; i < len; i++) {
+        if(abs(arr[i]) > n) n = abs(arr[i]);
+    }
+    return n;
+}
+
+int abs_min(int *arr, int len) {
+    int n = abs(arr[0]);
+    for(int i = 1; i < len; i++) {
+        if(abs(arr[i]) < n) n = abs(arr[i]);
+    }
+    return n;
+}
+
+int main(int argc, char **argv) {
+    int len = argc - 1;
+    int *nums = malloc(sizeof(int) * len);
+    for(int i = 1; i < argc; i++) {
+        nums[i - 1] = atoi(argv[i]);
+    }
+    printf("Absolute minimum: %d\n", abs_min(nums, len));
+    printf("Absolute maximum: %d\n", abs_max(nums, len));
+}
+
+For the purposes of this exercise, we are taking in input from the command line arguments, converting each to an integer with atoi (also in the standard library), and then calling our functions and printing the results.

@@ -1,0 +1,9 @@
+Of course, that is relatively straight forward. Consider the following script:
+
+Value = 4
+ValueMinusTwo := value - 2
+Msgbox % ValueMinusTwo
+
+The first line of the script defines Value as an integer. The second line is defining ValueMinusTwo as a variable in function mode - if the colon was not used with the equals then the variable might interpret Value as a string and math functions would not work as expected. 
+
+Then it is a simple matter of defining the variable as Value - 2 , which is 2, and this will be stored in the variable ValueMinusTwo. The third line of the script returns 2 as above.

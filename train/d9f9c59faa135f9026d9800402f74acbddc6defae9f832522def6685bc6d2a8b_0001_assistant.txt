@@ -1,0 +1,12 @@
+To check if a value is in a list of numbers, you can use the `in` operator to test if it is present and an `if/else` statement to indicate whether or not it's found in the list. Here is an example script:
+
+# define a list of numbers
+number_list = [1, 2, 3, 4, 5, 6]
+
+# check if the desired value is in the list
+if 3 in number_list:
+  print(f"3 is in the list.")
+else:
+  print(f"3 is not in the list.")
+
+This will define the list of numbers you want to check, then it will check each number in the list and compare it to the value in the `if` statement, which is 3 in the example above. If the number is found in `number_list`, it will print a message that 3 is in the list. If the number is not in the list, it will print a message that it is not found in the list.

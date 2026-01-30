@@ -1,0 +1,21 @@
+This AutoHotKey script should do what you requested:
+
+Check(a)
+{
+  Number := (a * 42) - 8
+  If (Mod(Number, 2) == 0) {
+    Return True
+  }
+  Else {
+    Return False
+  }
+}
+
+InputBox, UserNum, Enter number
+If (Check(UserNum)) {
+  FileAppend, %UserNum% `r`n, log.txt
+  Return
+}
+Else 
+  Msgbox, Lovely Spam! Wonderful Spam! Spam, Spam, Spam, Spam!
+Return

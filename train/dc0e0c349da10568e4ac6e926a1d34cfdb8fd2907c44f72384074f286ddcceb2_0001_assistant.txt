@@ -1,0 +1,8 @@
+You can use the module date from datetime.
+
+from datetime import date
+
+def findDate():
+    return date.today()
+
+This will return today's date in this format: YYYY-MM-DD

@@ -1,0 +1,73 @@
+Sure! Here's Terraform code that creates an EC2 instance in the Northern Virginia (us-east-1) region that meets the specified requirements:
+
+```
+terraform {
+
+  # NOTE: Replace with the version that you need or use
+  required_version = ">= 1.2.0"
+
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      # NOTE: Replace with the version that you need or use
+      version = "~> 4.16"
+    }
+  }
+}
+
+# Define the provider and region
+provider "aws" {
+  region = "us-east-1"
+}
+
+# Retrieve the latest Amazon Linux 2 image that is gp2 compatible
+data "aws_ami" "amazon_linux_2" {
+  most_recent = true
+
+  filter {
+    name   = "name"
+    values = ["amzn2-ami-hvm-2.0.*-x86_64-gp2"]
+  }
+
+  filter {
+    name   = "state"
+    values = ["available"]
+  }
+}
+
+# Create a security group for the EC2 instance to allow ingress SSH from any IP and egress all ports to any IP
+resource "aws_security_group" "ec2_sg" {
+
+  ingress {
+    description = "SSH from anywhere"
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  egress {
+    description = "Egress to anywhere"
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
+
+# Create an EC2 instance
+resource "aws_instance" "sample" {
+  ami             = data.aws_ami.amazon_linux_2.image_id
+  instance_type   = "t3.micro"
+  security_groups = [aws_security_group.ec2_sg.name]
+}
+
+```
+
+In this code, we first define the Terraform and AWS provider versions, then specify the provider to be AWS and deploy the resources to the "us-east-1" (Northern Virginia) region.  
+
+Then, we create a security group that allows all inbound SSH and all outbound traffic. 
+
+Finally, we define an EC2 instance with the latest Amazon Linux 2 image, "t3.micro" instance type, and attach the security group to it.
+
+I hope that helps!

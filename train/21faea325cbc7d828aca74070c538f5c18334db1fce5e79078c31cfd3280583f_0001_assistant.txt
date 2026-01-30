@@ -1,0 +1,12 @@
+Sure, Python's `random` module will let you select a random meal from your list every night. 
+
+# Import the `random` module
+import random
+
+# Define the list of meals
+mealplan = ["Lemon Chicken and Herb Rice", "Chile Pork and Black Beans", "Pepper Steak and Romaine Salad", "Pork Chops and Baked Potato", "Salmon and Roasted Asparagus", "Pasta Primavera and Garlic Bread"]
+
+# Print a random meal
+print(f"Today's dinner is {random.choice(mealplan)}.")
+
+The program imports the `random` module, then uses the method `.choice()` to select a random choice from the list `mealplan` and print it in the `print()` statement at the end.

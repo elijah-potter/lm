@@ -1,0 +1,22 @@
+Here you go. 
+
+```Python
+customers = []
+sales = []
+thread_sold = []
+
+for sale in transactions:
+  customers.append(sale[0])
+  sales.append(sale[1])
+  thread_sold.append(sale[2])
+
+# Determine the total value of the sales
+total_sales = 0
+for sale in sales:
+  total_sales += float(sale.replace("$", ""))
+print(total_sales)
+```
+
+This code creates a for loop that appends the values to the new lists `customers`, `sales`, and `thread_sold`. 
+
+It then determines the total value of the sales by using a for loop to loop through the sales list and remove the dollar sign from the strings. That string is then wrapped in the built-in float function to convert the string into a float so that the sales can be added together. The total_sales should print out 1498.7400000000005.

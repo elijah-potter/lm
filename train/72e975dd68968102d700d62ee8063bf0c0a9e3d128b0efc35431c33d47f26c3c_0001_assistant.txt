@@ -1,0 +1,20 @@
+You can do this by entering "tailwind.config.js" and extending the font family in the default theme, For example...
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend:
+    {
+      fontFamily: {
+        'brandnew': ['New-font', 'sans-serif']
+      },
+    },
+  },
+  plugins: [],
+}
+
+As well as properly importing the desired font into your "index.css" file.

@@ -1,0 +1,10 @@
+Yes, it's possible to assign a new name to a Python function. Below is an example of the function `display_employee()` being assigned a new name.
+
+def display_employee(name, age):
+    print(name, age)
+
+display_employee("Emma", 26)
+
+showEmployee = display_employee
+
+showEmployee("Emma", 26)

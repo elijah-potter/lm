@@ -1,0 +1,23 @@
+It looks like the code is missing a few terms that you'll need to successfully scrape a website.
+
+1. `BeautifulSoup("html.parse")` is missing a parameter to indicate what it should parse for headings. It needs to include `response.content`, which will tell it to use the `response` object from the `requests.get()` call. It's better to use `.content` than `.text` when parsing for HTML tags to prevent character encoding from causing issues. Using `.text` is better when printing the content directly for readability, but `.content` uses raw bytes, which are easier for the scraper to decipher.
+
+2. The other issue with the code is that it uses `find()` instead of `find_all()`. With `find()`, you'll only return the first instance of h1 tags. By using `find_all()`, you'll be locating and returning them all.
+
+This version of the code should work:
+
+```
+import requests
+from bs4 import BeautifulSoup
+
+url = "https://thisiswhereIwasgonnaputmyurl.com"
+response = requests.get(url)
+
+# Call BeautifulSoup with the response content
+soup = BeautifulSoup(response.content, "html.parse")
+
+# Find all the headings
+headings = soup.find_all("h1")
+for title in titles:
+    print(title.text)
+```

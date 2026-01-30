@@ -1,0 +1,8 @@
+Here's an asynchronous Node function in Typescript that will create a file and its directory structure at a given path.
+
+async function createFile(fileName: string, data: string) {
+    await fsp.mkdir(dirname(fileName), {
+        recursive: true
+    });
+    await fsp.writeFile(fileName, data);
+}

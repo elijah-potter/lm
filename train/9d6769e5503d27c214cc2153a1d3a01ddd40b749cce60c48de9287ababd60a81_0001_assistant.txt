@@ -1,0 +1,10 @@
+When you use the `/` operator to divide numbers, it returns a float value. Indexing a list requires an integer value. In your code, `quarteryears` is a float, so using it as the index value for `years` has raised a type error. To get an integer instead, you can replace the `/` with `//` instead. Here is the fixed code:
+
+years = [1998, 2002, 1992, 1994, 1993, 2003, 1980, 1985]
+
+# Use // instead of / to get an integer
+quarteryears = len(years)//4
+
+first2years = years[:quarteryears]
+
+print(first2years)

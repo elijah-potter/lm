@@ -1,0 +1,13 @@
+Here is a Python function that adds a new player to the players list with error checking. 
+
+```Python
+def add_player(player, player_list):
+    if ('name' in player and 'availability' in player):
+        player_list.append(player)
+```
+
+The function add_player accepts 2 arguments:
+1. player - a dictionary with the player details
+2. player_list - a list that holds the players
+
+Inside the function, it checks if the key 'name' and 'availability' exists. If the keys exists, it appends the player to the player_list. A call to the function will look like this: `add_player(bob, players)`

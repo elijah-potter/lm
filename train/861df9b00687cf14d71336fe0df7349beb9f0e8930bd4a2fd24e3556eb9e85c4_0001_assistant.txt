@@ -1,0 +1,82 @@
+Here is code that creates a MQTT broker using the Arduino MKR WIFI 1010:
+
+#include <WiFiNINA.h>
+#include <PubSubClient.h>
+
+// Update these with your Wi-Fi network credentials
+const char* ssid = "your_SSID";
+const char* password = "your_PASSWORD";
+
+// Update the MQTT broker details
+const char* mqttServer = "your_MQTT_broker_IP";
+const int mqttPort = 1883;
+
+// Create an instance of the Wi-Fi client
+WiFiClient wifiClient;
+
+// Create an instance of the MQTT client
+PubSubClient mqttClient(wifiClient);
+
+void setup() {
+  // Initialize serial communication
+  Serial.begin(9600);
+  
+  // Connect to Wi-Fi network
+  WiFi.begin(ssid, password);
+  
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  
+  Serial.println("\nConnected to Wi-Fi");
+  
+  // Connect to MQTT broker
+  mqttClient.setServer(mqttServer, mqttPort);
+  
+  while (!mqttClient.connected()) {
+    if (mqttClient.connect("MKR-WIFI-1010")) {
+      Serial.println("Connected to MQTT broker");
+      mqttClient.subscribe("topic/example");
+    } else {
+      Serial.print("Failed to connect to MQTT broker, rc=");
+      Serial.print(mqttClient.state());
+      Serial.println(" Retrying in 5 seconds...");
+      delay(5000);
+    }
+  }
+}
+
+void loop() {
+  // Maintain MQTT connection
+  if (!mqttClient.connected()) {
+    reconnect();
+  }
+  mqttClient.loop();
+}
+
+void reconnect() {
+  // Attempt to reconnect to the MQTT broker
+  while (!mqttClient.connected()) {
+    if (mqttClient.connect("MKR-WIFI-1010")) {
+      Serial.println("Connected to MQTT broker");
+      mqttClient.subscribe("topic/example");
+    } else {
+      Serial.print("Failed to connect to MQTT broker, rc=");
+      Serial.print(mqttClient.state());
+      Serial.println(" Retrying in 5 seconds...");
+      delay(5000);
+    }
+  }
+}
+
+void callback(char* topic, byte* payload, unsigned int length) {
+  // Handle incoming MQTT messages
+  Serial.print("Received message [");
+  Serial.print(topic);
+  Serial.print("]: ");
+  for (int i = 0; i < length; i++) {
+    Serial.print((char)payload[i]);
+  }
+  Serial.println();
+}

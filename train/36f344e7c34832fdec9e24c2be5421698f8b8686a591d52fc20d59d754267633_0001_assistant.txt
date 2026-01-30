@@ -1,0 +1,64 @@
+Sure, I can help you with that. First, we'll create an HTML skeleton and a button to initiate a GET request.
+
+window.addEventListener('load', function() {
+    main();
+});
+
+function main() {
+    const htmlSkel = `
+    <!DOCTYPE html>
+    <html>
+    <head>
+    </head>
+    <body>
+    <h1>Python/JavaScript Fetch Test</h1>
+    <button id="goButton">Load HTML</button>
+    <div id="html-container"></div>
+    </body>
+    </html>
+    `;
+
+    const parentDiv = document.createElement("div");
+    parentDiv.innerHTML = htmlSkel;
+    document.body.appendChild(parentDiv);
+    
+    function loadHTML() {
+        fetch('http://localhost:8000/html-file') // send a request to the html-file endpoint
+        .then(response => response.text())
+        .then(html => {
+            document.querySelector('#html-container').innerHTML = html; // insert the htm into the page
+        });
+    }
+    
+    const buttonListener = document.getElementById("goButton")
+    buttonListener.addEventListener("click", function(){
+        loadHTML()
+    })}
+
+Next, we'll modify the Python server to handle requests to the /html-file endpoint.
+
+import socket
+
+server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server_address = ('localhost', 8000)
+server_socket.bind(server_address)
+server_socket.listen(1)
+
+while True:
+    client_socket, client_address = server_socket.accept()
+    data = client_socket.recv(1024)
+    if data:
+        message = data.decode()
+        # watch for a GET request to /html-file
+        if message.startswith("GET /html-file"):
+            with open("index.html", 'r') as f:
+                html = f.read()
+            response = "HTTP/1.1 200 OK\r\n" \
+                       "Access-Control-Allow-Origin: *\r\n" \
+                       f"Content-Length: {len(html)}\r\n" \
+                       "Content-Type: text/html\r\n\r\n" \
+                       f"{html}"
+            client_socket.sendall(response.encode())
+            client_socket.close()
+
+In the Javascript code, we have associated the function loadHTML() with a button click event. The loadHTML() function sends a GET request to the /html-file endpoint, which is handled by the Python code. The Python code reads in a file named index.html and sends its contents back to the calling function, which inserts it into the page. This code assumes the presence of an index.html file in the same directory as the server code, so you may need to modify the code if your HTML file has a different name or location.

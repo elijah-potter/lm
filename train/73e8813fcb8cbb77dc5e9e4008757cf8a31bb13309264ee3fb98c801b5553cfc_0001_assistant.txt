@@ -1,0 +1,17 @@
+Of course! Here is a Python script that will calculate the number of yards of fabric to make your bean bags:
+
+# Define a function to calculate yardage based on number of bean bags
+def yardage(beanbag_count):
+    # Convert bean bag inches of fabric to yards
+    beanbag_inches = beanbag_count * 49
+    beanbag_yards = beanbag_inches / 36
+    return beanbag_yards
+
+# Get the number of bean bags    
+beanbag_count = float(input("How many beanbags are you making? "))
+
+# Call the function
+yards_fabric = yardage(beanbag_count)
+print(f"You will need {yards_fabric} yards of fabric for {beanbag_count} bean bags.")
+
+This script defines the function `yardage(beanbag_count)` to calculate the yards based on the number of bean bags you are making. It converts the bean bag number to inches by multiplying it by 7 x 7 = 49 inches per bean bag, then converts inches to yards by dividing the number by 36 inches per yard. These could be consolidated into one line of code, but separating them makes the code more comprehensible. The function then returns the yards of fabric needed for the bean bags. The bean bag count is requested with an `input()` function that is converted to a floating point decimal from a string with `float()`, then it is passed as an argument to `yardage()` to get the variable `yards_fabric`. This amount is printed with `print()` to display the yards of fabric you will need.

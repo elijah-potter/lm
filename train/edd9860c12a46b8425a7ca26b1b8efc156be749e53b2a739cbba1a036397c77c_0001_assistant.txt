@@ -1,0 +1,13 @@
+The code snippet implements the Merge Sort algorithm which is a sorting algorithm that uses a divide-and-conquer approach. The algorithm recursively divides the input array into two subarrays, sorts them separately and then merges them back in a sorted order. We can go through each function to understand what it is doing.
+
+1. `merge_sort(arr)`: This function takes an array and returns the sorted array.
+  - The function has a base case for when the length of the input array is less than or equal to 1 since an array size of 1 means that it is already sorted.
+  - If the base case fails, then we continue the algorithm.
+  - The algorithm finds the middle of the array and divides the elements into two halves `left_half` and `right_half`.
+  - It calls `merge_sort` on these two halves and then returns the merge of the two sorted halves.
+
+2. `merge(left, right)`: This function merges two sorted arrays left and right into one sorted array.
+  - It initializes an empty array to store the new array and two variables to store the current index of each array.
+  - The algorithm does a while loop until one array is exhausted of elements.
+  - Within the loop, the lower of the elements between the current left element and the current right element is stored in the array.
+  - After one of the arrays is fully traversed, the remainder of the other array is added to the array.

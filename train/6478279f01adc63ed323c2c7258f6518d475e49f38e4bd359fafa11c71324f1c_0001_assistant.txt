@@ -1,0 +1,7 @@
+Of course. Here's a Bash script that will set up a text file for taking notes:
+
+FILENAME=$(date +%Y-%m-%d).txt
+mkdir -p ~/notes/$(date +%Y-%m-%d)
+cd ~/notes/$(date +%Y-%m-%d)
+touch $FILENAME
+open $FILENAME

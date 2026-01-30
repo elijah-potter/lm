@@ -1,0 +1,32 @@
+Sure! Here's a React hook called `useMergeState` that allows a new state object to be merged with the current state. It also accepts a function for modifying the old state before merging:
+
+```
+import { useState, useCallback } from 'react';
+
+type State = { [key: string]: any };
+type MergeStateFunction = (newState: Partial<State> | ((prevState: State) => Partial<State>)) => void;
+type UseMergeState = [State, MergeStateFunction];
+
+const useMergeState = (initialState: State = {}): UseMergeState => {
+  const [state, setState] = useState<State>(initialState);
+
+  const mergeState = useCallback<MergeStateFunction>(newState => {
+    setState(prevState => {
+      if (typeof newState === 'function') {
+        return { ...prevState, ...newState(prevState) };
+      } else {
+        return { ...prevState, ...newState };
+      }
+    });
+  }, []);
+
+  return [state, mergeState];
+};
+
+export default useMergeState;
+```
+
+This initializes the state with `useState` using either a provided state object or an empty object. It utilizes`useCallback` to maintain a stable reference across re-renders.
+It checks whether the `newState` variable is a function or not and proceeds accordingly:
+1. If it is a function, it uses the previous state as an input to this function and then merges the result.
+2. If it is not a function, it merges it with the previous state as is.

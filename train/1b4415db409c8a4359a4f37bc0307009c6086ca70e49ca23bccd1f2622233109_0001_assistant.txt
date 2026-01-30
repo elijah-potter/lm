@@ -1,0 +1,22 @@
+One way you could more easily print all of the data points in your list is to use the `enumerate()` function to iterate over the list in a `for` loop. Here is an example of what your code would look like using that:
+
+dataset = [1982, 17214, 41879, 994, 96273, 1247, 1947]
+
+# Enumerate the object and print with a for loop
+for index, number in enumerate(dataset, 1):
+    print(f"Data Point {index}: {number}")
+
+def add_data_point():
+    addpoint = input("Would you like to add a Data Point? y/n ")
+    if addpoint == "y":
+        newpoint = input("Enter new Data Point: ")
+        int(newpoint)
+        dataset.append(newpoint)
+        for index, number in enumerate(dataset):
+            print(f"Data Point {index}: {number}")
+    else:
+        return dataset
+
+add_data_point()
+
+Using `enumerate()` creates an iterable object from the list `dataset`. It then uses a `for` loop to print the Data Point for each item with the index number `index` of the item and the value `number`. This eliminates much of the repetitive `print()` functions to make your code more readable.

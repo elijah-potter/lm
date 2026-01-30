@@ -1,0 +1,10 @@
+def filename_extension(file):
+    # Split the file name into a tuple containing everything up to the last instance of '.', the string '.', and everything after the last instance of '.'
+    parts = file.rpartition('.')
+    # If '.' is indeed present in the file name and its only instance is not at the beginning of the file name:
+    if parts[0] != '' and parts[1] != ':
+        # Return a '.' followed by the lowercased string that follows the last '.' in the file name
+        return '.' + parts[-1].lower()
+    else:
+        # Return an empty string
+        return ''

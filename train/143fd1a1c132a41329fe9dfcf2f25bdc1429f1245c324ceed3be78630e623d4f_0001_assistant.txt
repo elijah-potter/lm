@@ -1,0 +1,25 @@
+Here is a Python script that converts your story into a Mad Libs program:
+
+# Define each placeholder as a variable
+noun1 = input("Enter a noun: ")
+adjective1 = input("Enter an adjective: ")
+noun2 = input("Enter a noun: ")
+noun3 = input("Enter a noun: ")
+adjective2 = input("Enter an adjective: ")
+noun4 = input("Enter a noun: ")
+adjective3 = input("Enter an adjective: ")
+adjective4 = input("Enter an adjective: ")
+verb_past1 = input("Enter a verb in past tense: ")
+noun5 = input("Enter a noun: ")
+noun6 = input("Enter a noun: ")
+verb_past2 = input("Enter a verb in past tense: ")
+adverb = input ("Enter an adverb: ")
+noun7 = input("Enter a noun: ")
+noun8 = input("Enter a noun: ")
+adjective5 = input("Enter an adjective: ")
+noun9 = input("Enter a noun: ")
+
+# Print the story
+print(f"One day, a fearsome {noun1} kidnapped the {adjective1} princess of the Kingdom of {noun2.title()}. It took her to its {noun3} and stood in front of the {adjective2} entrance, breathing terrible {noun4}. A(n) {adjective3} knight in {adjective4} armor {verb_past1} out to rescue the {noun5} at the king's command. When the {noun6} reached the cave, the {noun1} roared at him. He {verb_past2} the beast {adverb}. Though its scales were hard as {noun7}, he defeated it and rescued the {noun8}. The king rewarded him with a(n) {adjective5} chest full of {noun9}.")
+
+Each placeholder part of speech in the story is defined with an `input()` function and numbered based on its place in the story. The `print()` statement replaces each placeholder in parentheses with the corresponding variable in an f-string.

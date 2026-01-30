@@ -1,0 +1,10 @@
+Here is the Python code that prints the date of Memorial Day in 2021 using the format "MM - DD - YYYY".
+
+```Python
+from datetime import datetime
+
+memorial_day_2021 = datetime.utcfromtimestamp(1622433600).strftime('%m - %d - %Y')
+print(memorial_day_2021)
+```
+
+The code imports the datetime module and utilizes its utcfromtimestamp method along with its strftime method to produce the result from the unix timestamp. The printed result is "05 - 31 - 2021".

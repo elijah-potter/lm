@@ -1,0 +1,1 @@
+In the Java function provided, i is initialized to 0, and the for loop will continue, adding 1 to i after each iteration as long as i is less than 15. As long as i is not equal to 12, each iteration of i will be printed. Once i is equal to 12, the for program will break out of the for loop and stop. Thus, the numbers from 0 to 12 will be printed.

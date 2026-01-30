@@ -1,0 +1,26 @@
+I can do that for you. I have updated the code to include an additional dictionary variable named player_and_points. This variable is then populated with the total points that each player should have. Check out the full code below:
+
+```python
+scrabble_letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", ""]
+scrabble_points = [1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 4, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10, 0]
+player_and_words = {"player_1": ["RED", "GOLD", "ENTER"], "player_2": ["MARS", "NOSE", "ROBOT"], "player_3": ["PENCIL", "BUTTON", "DOG"], "player_4": ["ZEBRA", "COMB", "POINT"] }
+letter_to_points = {key:value for key, value in zip(scrabble_letters, scrabble_points)}
+player_and_points = {}
+
+def score_the_word(word):
+  point_total = 0
+  for letter in word:
+    point_total += letter_to_points.get(letter, 0)
+  return point_total
+
+for player, words in player_and_words.items():
+  player_points = 0
+  for word in words:
+    player_points += score_the_word(word)
+  player_and_points[player] = player_points
+
+print(player_and_points)
+# Output: {'player_1': 18, 'player_2': 20, 'player_3': 29, 'player_4': 36}
+```
+
+To calculate the total points for each player, a for loop is used to iterate through the items in player_and_words. Within the loop, we initialize the player_points variable which will increment within the nested loop. The nested loop iterates through each word the player has and uses the previously defined function called `score_the_word()` the retrieve the points for that word. Lastly, it prints the dictionary player_and_points.

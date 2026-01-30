@@ -1,0 +1,1 @@
+This function takes one argument followed by variadic arguments as input. The first argument is an object of type T, the first type parameter. The remaining arguments are each of type K, which is the second type parameter and represents any of the keys of T. It returns an object comprised only of the keys of T that are provided as arguments.

@@ -1,0 +1,16 @@
+Sure! here is a program that will let you input an exercise and a number of minutes to see how many calories you burned:
+
+# Create a dictionary of calories
+calories = {"pushups": 7,
+            "situps": 9,
+            "chinups": 30,
+            "pullups": 33}
+
+# Get user input for exercise and minutes
+exercise = input("What exercise did you do? ")
+minutes = int(input("How many minutes did you exercise? "))
+
+# Print the calories burned
+print(f"You burned {calories[exercise.lower()] * minutes} calories.")
+
+This creates a dictionary named `calories` that stores each exercise and its corresponding calories burned per minute. It uses a standard `input()` statement to ask what exercise you did, and it uses an `input()` statement that converts the input from a string to an integer with `int()` to get the number of minutes you did that exercise. Finally, it prints the number of calories you burned with an f-string that retrieves the calories from the dictionary by the input exercise using `.lower()` to allow input of any capitalization and multiplies the calories by the minutes of exercise. Let me know if you have any questions!

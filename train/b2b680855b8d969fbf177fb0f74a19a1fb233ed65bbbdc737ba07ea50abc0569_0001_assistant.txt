@@ -1,0 +1,34 @@
+Here is a Python function that accepts a message, offset, and direction and returns a new message where the letters are shifted along the alphabet.
+
+```Python
+def caesar_cipher(message, offset, direction):
+    alphabet = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
+    new_message = ""
+    
+    if direction != 'left' and direction != 'right':
+        return False
+    
+    for char in message:
+        alphabet_index = alphabet.find(char)
+
+        if alphabet_index == -1:
+            new_message += char
+        else:
+            new_letter = alphabet[alphabet_index - offset]  if direction == 'left' else alphabet[alphabet_index + offset]
+            new_message += new_letter
+            
+    return new_message
+```
+
+This function accepts three arguments.
+- message: a string
+- offset: an integer
+- direction: a string. *If the direction does not equal "left" or "right", the function will return False. 
+
+Inside the function, it uses a for loop to iterate through the message for its characters. It checks if the characters can be found in the alphabet or not. If so, it uses the offset and direction to set the new letter in the alphabet. If the character is not found in the alphabet, it will set the character as is. You may have noticed that the alphabet variable is equal to 2 sets of the alphabet. This is so that the index stays in bounds if the offset is too high. Once the new_message variable is fully populated within the loop, it returns the new_message.
+
+Example usage: 
+message = "please encrypt me."
+caesar_cipher(message, 1, 'left')
+
+Example output: "okdzrd dmbqxos ld."

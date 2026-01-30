@@ -1,0 +1,33 @@
+Certainly! We'll use the Python requests module to make a request to the Wikipedia API and the HTML parsing package BeautifulSoup to extract the references. 
+
+import requests
+from bs4 import BeautifulSoup
+
+# title of the article to request
+title = "Python (programming language)"
+
+# wikipedia api URL
+url = f"https://en.wikipedia.org/w/api.php?action=parse&page={title}&prop=text&format=json"
+
+# send a request
+response = requests.get(url)
+
+# parse the response 
+data = response.json()
+html = data["parse"]["text"]["*"]
+soup = BeautifulSoup(html, "html.parser")
+
+# find all the <cite> tags and extract the URLs
+urls = []
+for cite in soup.find_all("cite"):
+        url = cite.find("a").get("href")
+        # ignore internal URLs and partial URLs
+        if not url.startswith("http") or "wikipedia.org" in url:
+            continue
+        urls.append(url)
+
+# print each URL to the console
+for url in urls:
+    print(url)
+
+I hope this helps! Let me know if you have any other questions.

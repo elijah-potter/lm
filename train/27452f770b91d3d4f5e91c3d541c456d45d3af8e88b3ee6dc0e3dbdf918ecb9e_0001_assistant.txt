@@ -1,0 +1,48 @@
+Absolutely! The easiest way is to use an associative array based on char codes. Here's a sample implementation:
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <string.h>
+
+
+#define ARR_LENGTH 26
+#define CHAR_DIFF 97
+
+bool compare(int *arr1, int *arr2) {
+	for(int i = 0; i < ARR_LENGTH; i++) {
+		if(arr1[i] != arr2[i]) return false;
+	}
+	return true;
+}
+
+int *populate(char *s, int len) {
+	int *arr = malloc(sizeof(int) * ARR_LENGTH);
+	for(int i = 0; i < len; i++) {
+		//Use the ASCII codes to get us the indices of the array. For example, since 'a' is 97, we subtract CHAR_DIFF from it to get 0, the beginning of the array.
+		arr[s[i] - CHAR_DIFF]++;
+	}
+	return arr;
+}
+
+bool anagrams(char *s1, char *s2) {
+	//Get lengths of strings. We can exit early if the lengths are not the same, because they will not be anagrams.
+	int len = strlen(s1);
+	if(len != strlen(s2)) return false;
+	//Populate the associative arrays.
+	int *arr1 = populate(s1, len);
+	int *arr2 = populate(s2, len);
+	//Loop through arrays and check for equality.
+	return compare(arr1, arr2);
+}
+
+int main(int argc, char **argv) {
+	//Get our two strings from the arguments passed to the program in the command line.
+	char *s1 = argv[1];
+	char *s2 = argv[2];
+	bool are_anagrams = anagrams(s1, s2);
+	if(are_anagrams) printf("Anagrams!\n");
+	else printf("Not anagrams!\n");
+}
+
+Note that this version of the code doesn't include error handling and will crash when run without arguments.

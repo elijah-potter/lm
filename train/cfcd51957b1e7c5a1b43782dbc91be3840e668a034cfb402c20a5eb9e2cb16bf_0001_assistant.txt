@@ -1,0 +1,20 @@
+This Python script will calculate the slope of a line for you:
+
+# Define a function to calculate the slope
+def slope(x1, y1, x2, y2):
+    # Check for a division by 0
+    if (x2 - x1) != 0:
+        return (y2 - y1)/(x2 - x1)
+    else:
+        print("Cannot divide by 0.")
+
+# Set the known coordinates
+x1 = 4
+y1 = 2
+x2 = 2
+y2 = 1
+
+# Print the result of the function
+print(slope(x1, y1, x2, y2))
+
+The script defines a `slope()` function that accepts the arguments `x1`, `y1`, `x2`, and `y2`. It checks for a potential division by zero with an `if/else` statement, then returns the value of the slope based on the equation (y2 - y1)/(x2 - x1). The coordinates are set with the variables `x1`, `y1`, `x2`, and `y2`, and the function is called with respect to those variables in a `print()` statement that outputs the returned slope value.

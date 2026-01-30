@@ -1,0 +1,12 @@
+Spell Name: Frozen Orb
+
+Concept: Frozen Orb is a powerful ice-based long-range offensive spell that not only deals massive cold damage to multiple targets but freezes/slows them down as well.
+
+Visuals: Once cast, a snowy orb will be launched from the spell caster towards the target in a straight line fashion. As the orb travels, it shoots a flurry of icy shards in all directions. When the orb finishes its length of travel, a big explosion ensues. 
+
+Damage Scaling: 
+Damage starts with 50 at level 1. This is the damage of one individual icy shard.  
+Level 2-5: +50 damage per level
+Level 6-10: +30 damage per level
+Level 11-20: +20 damage per level
+At level 20, each shard will do 600 damage.

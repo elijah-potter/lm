@@ -1,0 +1,16 @@
+It looks like the way you are storing the digits after you extract them from the string is the wrong approach.
+
+def calculate(string):
+    num = [] # use a list to store the numbers
+    for word in string.split():
+        if word == 'loses':
+            operator = '-'
+        elif word == 'gains':
+            operator = '+'
+        elif word.isdigit():
+            num.append(word) #append instead of adding
+    return eval(str(num[0]) + operator + str(num[1])) #change the return statement to use the list
+
+1.) Change the variable num into a list. This allows you to store both numbers from the sentence.
+2.) Now append the value to the num list instead of adding it to the num
+3.) Lastly, evaluate the expression using the operator you found and the two numbers stored in the num list

@@ -1,0 +1,27 @@
+React Router is an extension of React that allows for client-side rendering. Typically page changes on traditional websites are handled by requests being made to a server. Client-side rendering allows for the application to update the URL and make changes to the web page without having to make further requests to the server for new documents or elements. Below is an example of a React router program.
+
+import React from "react";
+import { createRoot } from "react-dom/client";
+import {createBrowserRouter,RouterProvider,Route, Link} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      <div>
+        <h1>Hello Agent</h1>
+        <Link to="about">About</Link>
+      </div>
+    ),
+  },
+  {
+    path: "about",
+    element: <div>This is the About Page</div>,
+  },
+]);
+
+createRoot(document.getElementById("root")).render(
+  <RouterProvider router={router} />
+);
+
+This React Router program has routes for a default page that has a heading tag with "Hello World" and a link to the other route which is labeled "about" and leads to a page that has just a div with "This is the About Page" in it.

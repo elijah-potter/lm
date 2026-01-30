@@ -1,0 +1,18 @@
+Here are edge case tests for you to run.
+
+Same length vowel substrings.
+print(solve("aaiioouu"))
+
+No Vowels:
+print(solve("bcdfghjkl"))
+
+Empty string:
+print(solve(""))
+
+Single Vowel:
+print(solve("a"))
+
+Test case with alternating vowels and consonants:
+print(solve("aeioubcdfghjkl"))
+
+Those test cases should cover all the edge cases. Let me know if you need anything else!

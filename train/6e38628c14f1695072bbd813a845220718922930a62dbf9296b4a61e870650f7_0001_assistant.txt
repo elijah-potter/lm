@@ -1,0 +1,12 @@
+Directives are a means of adding some type of behavior to an existing DOM element or an existing component instance. For example, the code below shows a directive that extends HTML element behavior with a green background.
+
+import { Directive, ElementRef, Input } from '@angular/core';
+
+@Directive({ selector: '[myStyle]' })
+export class HighlightDirective {
+    constructor(el: ElementRef) {
+       el.nativeElement.style.backgroundColor = 'green';
+    }
+}
+
+<p myStyle>Highlight me!</p>

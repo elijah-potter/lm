@@ -1,0 +1,9 @@
+Certainly. This can be accomplished by using Python's built-in function `open("poem1.txt")` to read the file. After reading the file, you can use the `readlines()` method to return a list of each line from the poem1.txt file. From there, you can use a for loop to iterate through each line of the file and print the results within the loop. Here is an example:
+
+```Python
+with open('poem1.txt') as poem_txt:
+  for line in poem_txt.readlines():
+    print(line)
+```
+
+With just a few lines of code, each line from poem1.txt is printed. If you have any other questions, please let me know.

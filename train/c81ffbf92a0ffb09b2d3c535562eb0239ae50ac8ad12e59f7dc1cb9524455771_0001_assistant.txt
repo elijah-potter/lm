@@ -1,0 +1,31 @@
+Here is a Bash script that calculates the average execution time and standard deviation of a program:
+```
+#!/bin/bash
+
+program="$1"
+runs=50
+times=()
+
+for ((i=1; i<=$runs; i++)); do
+  exec_time=$(time -f "%e" -q "$program" 2>&1 /dev/null)
+  times+=("$output")
+done
+
+total=0
+for time in "${times[@]}"; do
+  total=$(echo "$total + $time" | bc)
+done
+average=$(echo "scale=6; $total / $runs" | bc)
+
+sum_sq_diff=0
+for time in "${times[@]}"; do
+  diff=$(echo "$time - $average" | bc)
+  sq_diff=$(echo "$diff * $diff" | bc)
+  sum_sq_diff=$(echo "$sum_sq_diff + $sq_diff" | bc)
+done
+variance=$(echo "scale=6; $sum_sq_diff / $runs" | bc)
+std_deviation=$(echo "scale=6; sqrt($variance)" | bc)
+
+echo "Average execution time: $average seconds"
+echo "Standard deviation: $std_deviation seconds"
+```

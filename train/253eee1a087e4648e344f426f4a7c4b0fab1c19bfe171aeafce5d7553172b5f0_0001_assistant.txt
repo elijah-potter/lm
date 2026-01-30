@@ -1,0 +1,13 @@
+If you want to force a restart on PowerShell, then you can use the -Force flag when restarting the computer. Your new command would look something like this:
+
+> Restart-Computer -ComputerName "REMOTECOMPUTER" -Force
+
+For future reference, if you only need to forcefully log users off from your remote computer, you can use the quser and logoff commands in PowerShell.
+
+The quser command will give you the user ID you will need to log someone off:
+
+> Invoke-Command -ComputerName 'REMOTECOMPUTER' -ScriptBlock { quser }
+
+Then you can use the logoff command for each user found:
+
+> Invoke-Command -ComputerName 'REMOTECOMPUTER' -ScriptBlock { logoff USER_ID }

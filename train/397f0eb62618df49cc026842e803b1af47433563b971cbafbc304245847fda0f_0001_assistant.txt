@@ -1,0 +1,8 @@
+Here is a JavaScript function that returns a boolean indicating whether or not a string is a valid tag.
+
+export function isValidTag(tag: string): boolean {
+        return tag
+                .replaceAll("#", "")
+                .split("")
+                .every((char) => ["P", "Y", "L", "Q", "G", "R", "J", "C", "U", "V", "0", "2", "8", "9"].includes(char));
+}

@@ -1,0 +1,1 @@
+The reduce function reduces a provided object to an array, calling a provided predicate function for each key-value pair in the object and appending the result to the array.

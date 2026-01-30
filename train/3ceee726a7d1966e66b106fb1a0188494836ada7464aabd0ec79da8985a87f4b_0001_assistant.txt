@@ -1,0 +1,24 @@
+Here is a C# function that reverses the case in a string as you requested:
+
+string ReverseCase(string s)
+{
+        StringBuilder reversedString = new StringBuilder();
+        foreach(var letter in s)
+        {
+                if(!char.IsLetter(letter))
+                {
+                        reversedString.Append(letter);
+                        continue;
+                }
+                if(char.IsUpper(letter))
+                {
+                        reversedString.Append(char.ToLower(letter));
+                }
+                if(char.IsLower(letter))
+                {
+                        reversedString.Append(char.ToUpper(letter));
+                }
+        }
+        
+        return reversedString.ToString();
+}

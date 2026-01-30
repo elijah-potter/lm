@@ -1,0 +1,39 @@
+Of course! Here's how you can use bash to handle the basic functionality and Tcl/Tk to display the result in a window. 
+
+#!/bin/bash
+# fileManager.sh
+
+# redirect file list to a temporary file
+ls > /tmp/fileList
+
+...
+
+#!/usr/bin/env wish
+# fileManager.tcl
+
+# read the temporary file from the bash script
+set file_list [exec cat /tmp/fileList]
+
+# display the result in a window
+wm title . "File Manager"
+text .fileList -width 80 -height 20
+pack .fileList
+.fileList insert end $file_list
+
+...
+
+#!/bin/bash
+#startFileManager.sh
+
+# run fileManager.sh script in the background
+./fileManager.sh &
+
+# wait for the temporary file to be written 
+while [ ! -f /tmp/fileList ]; do sleep 0.1; done
+
+# run fileManager.tcl 
+./fileManager.tcl
+
+As you can see, this program uses three files: fileManager.sh to run file operations, fileManager.tcl to handle the GUI, and a control script, startFileManager.sh, to coordinate execution. Note that you may need to install Tcl/Tk, which is freely available in the repositories of most Linux distributions. 
+
+Let me know if you need further assistance.

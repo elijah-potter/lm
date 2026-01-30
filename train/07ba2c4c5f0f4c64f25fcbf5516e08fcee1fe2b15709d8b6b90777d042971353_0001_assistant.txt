@@ -1,0 +1,16 @@
+You can make a DataFrame into a list by converting its values into a with `.tolist()`. This code displays how you could do that:
+
+# Import the Pandas module as pd
+import pandas as pd
+
+# Create a DataFrame
+data = {1: [1, 2, 3, 4],
+        2: [5, 10, 15, 20],
+        3: [1, 10, 100, 1000]}
+
+df = pd.DataFrame(data)
+
+# Convert the DataFrame to a list
+datalist = df.values.tolist()
+
+print(datalist)

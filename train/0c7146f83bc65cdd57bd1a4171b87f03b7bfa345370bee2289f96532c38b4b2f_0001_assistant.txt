@@ -1,0 +1,7 @@
+This is a script that selects one of three designated ahk scripts randomly and runs it. 
+
+The first line (MyFiles := ...) Is creating an array and filling the indices with the three scriot locations. The second line calls a run function that will open the randomly selected script.
+
+The script is randomly selected by creating another array that selects the index number between 1 and the length of the MyFiles array. 
+
+If you wanted to expand the number of selectable scripts, you would expand the MyFiles array according to the AHK documentation. The second line will automatically adjust to include the longer list because the secondary argument for random() calls the length of the list then a set integer.

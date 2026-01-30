@@ -1,0 +1,13 @@
+Of course! Here is a short Python function that replaces all the year dates in a given string with '---':
+
+def remove_num(string):
+    numbers = []
+    for word in string.split():
+        if any(char.isdigit() for char in [*word]):
+            word = ''.join([char for char in [*word] if char.isdigit()])
+            numbers.append(word)
+    for num in numbers:
+        if len(num) == 4:
+            string = string.replace(num, '----')
+        
+    return string

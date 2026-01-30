@@ -1,0 +1,1 @@
+The zip generator function will take any number of iterables as parameters. Each time it is called, it will return a tuple containing the next value of each iterator. It will stop returning values when it has reached the end of any of its iterables.

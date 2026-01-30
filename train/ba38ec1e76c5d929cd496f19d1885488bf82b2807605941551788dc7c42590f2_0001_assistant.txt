@@ -1,0 +1,32 @@
+Sure!
+
+// define request variables
+const url = 'https://api.weatherapi.com/v1/current.json';
+const api_key = 'KEY';
+const params = {
+  q: 'New York',
+  key: api_key,
+  aqi: 'no'
+};
+
+// construct request URL
+const queryParams = new URLSearchParams(params);
+const apiUrl = `${url}?${queryParams}`;
+
+// send request
+function getWeather() {
+  fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error(error));
+}
+
+// create button to initiate request
+const button = document.createElement('button');
+button.textContent = 'Get Weather';
+button.addEventListener('click', getWeather);
+document.body.appendChild(button);
+
+We have defined a single function, getWeather(), which uses the API URL and query parameters to send a request to the API, parse the response as JSON, and print it to the console, as well as log an error if there is a bad response. Note that you will need to insert your correct API key in the api_key variable. 
+
+Let me know if you need additional assistance!

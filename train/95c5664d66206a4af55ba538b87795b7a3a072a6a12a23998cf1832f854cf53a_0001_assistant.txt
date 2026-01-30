@@ -1,0 +1,27 @@
+Below is an example of an Angular program that defines routes.
+
+ const appRoutes: Routes = [
+  { path: 'todo/:id',      component: TodoDetailComponent },
+  {
+    path: 'todos',
+    component: TodosListComponent,
+    data: { title: 'Todos List' }
+  },
+  { path: '',
+    redirectTo: '/todos',
+    pathMatch: 'full'
+  },
+  { path: '**', component: PageNotFoundComponent }
+];
+
+@NgModule({
+  imports: [
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true } // <-- debugging purposes only
+    )
+    // other imports here
+  ],
+  ...
+})
+export class AppModule { }

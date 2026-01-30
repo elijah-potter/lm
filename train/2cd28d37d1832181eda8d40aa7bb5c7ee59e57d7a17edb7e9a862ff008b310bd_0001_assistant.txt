@@ -1,0 +1,42 @@
+Sure! We'll use Python's Tkinter module to create a window and a menu.
+
+import tkinter as tk
+from tkinter import filedialog
+
+# open a window
+root = tk.Tk()
+root.title("Note-taking App")
+
+# insert a text box
+text_box = tk.Text(root)
+text_box.pack()
+
+# insert a menu bar
+menu_bar = tk.Menu(root)
+root.config(menu=menu_bar)
+file_menu = tk.Menu(menu_bar, tearoff=0)
+
+# open file function
+def open_file():
+    file_path = filedialog.askopenfilename()
+    with open(file_path, "r") as file:
+        text = file.read()
+        text_box.delete("1.0", tk.END)
+        text_box.insert("1.0", text)
+        
+# save file function
+def save_file():
+    file_path = filedialog.asksaveasfilename()
+    with open(file_path, "w") as file:
+        text = text_box.get("1.0", tk.END)
+        file.write(text)
+        
+# file menu labels and commands
+file_menu.add_command(label="Open", command=open_file)
+file_menu.add_command(label="Save", command=save_file)
+menu_bar.add_cascade(label="File", menu=file_menu)
+
+# main loop
+root.mainloop()
+
+Let me know if you have any questions or need assistance adding additional features to your script.

@@ -1,0 +1,20 @@
+Here is your ATBASH cipher written in Python:
+
+# Create a cipher dictionary to reverse the alphabet
+atbash_cipher = {"A" : "Z", "B" : "Y", "C" : "X", "D" : "W", "E" : "V", "F" : "U", "G" : "T", "H" : "S", "I" : "R", "J" : "Q", "K" : "P", "L" : "O", "M" : "N", "N" : "M", "O" : "L", "P" : "K", "Q" : "J", "R" : "I", "S" : "H", "T" : "G", "U" : "F", "V" : "E", "W" : "D", "X" : "C", "Y" : "B", "Z" : "A", " " : " "}
+
+# Define a function to encipher a message
+def atbash(message):
+    cipher = ""
+    # Loop through the message to convert it with the created dictionary
+    for letter in message:
+        cipher += atbash_cipher[letter]
+    return cipher
+
+# Get a message to encipher
+message = input("Enter a message: ")
+
+# Print the message in ATBASH
+print(atbash(message.upper()))
+
+This code creates a dictionary named `atbash_cipher` to make key-value pairs of the corresponding ATBASH letter for each letter of the alphabet with an added space-to-space pair to ensure spaces are included in the enciphered message. It defines the `atbash()` function that accepts the variable `message` as an argument, creates an empty variable `cipher` to store the ATBASH-enciphered string, and loops through the message character by character with a `for` loop to convert each one to the corresponding dictionary value. It adds each character to the `cipher` string, then returns the full string. The `input()` statement prompts a message to be entered, and the `print()` statement calls the `atbash(message)` function for that message in upper case with the `upper()` method to output the ciphered message in upper case letters.

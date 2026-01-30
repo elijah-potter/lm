@@ -1,0 +1,14 @@
+In order to have values placed in scientific notation, simply add an E after the decimal limiter in the formatting brackets. Here is your code with this change made:
+
+import numpy
+
+def wave_analysis(wavelength):
+    wavelength_m = wavelength*10**-9
+    freq = 3e8/wavelength_m
+    ang_freq = 2*numpy.pi*freq
+    wave_num = 2*numpy.pi/wavelength_m
+    
+    print(f'The wavelength given is: {wavelength_m:.3E} m\n'+\
+          f'The frequency is: {freq:.3E} Hz\n'+\
+          f'The angular frequency is: {ang_freq:.3E} Hz\n'+\
+          f'The wave number k is: {wave_num:.3E} /m\n')

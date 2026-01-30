@@ -1,0 +1,14 @@
+Yes, I can write a script that will create an employee username from their first name, last name, and employee number. Here is the basic code:
+
+# Get employee information input
+firstname = input("Enter your first name: ")
+lastname = input("Enter your last name: ")
+employeenum = input("Enter your employee number: ")
+
+# Create the username as a variable
+username = firstname[:3] + lastname[:3] + employeenum
+
+# Print the username
+print(f"Your employee username is {username}.")
+
+This will first prompt the employee to enter their first name, last name, and employee number with three `input()` functions. The code will then join the three inputs while specifying the first three characters of the names with `[:3]`. Since the inputs are strings, you do not need to convert the employee number from an integer. The strings will be concatenated by the `+` operator instead of added mathematically. Finally, the code will inform the employee of their new username with `print()`. Will this script work for your needs?

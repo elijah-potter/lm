@@ -1,0 +1,7 @@
+Absolutely! You can start by importing the `random` module to simplify this task. Then you can use its randint() method to generate a random number between two numbers. Here is the code for the list comprehension. 
+
+```Python
+import random
+
+random_list = [random.randint(0, 100) for i in range(100)]
+```

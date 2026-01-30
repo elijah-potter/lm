@@ -1,0 +1,13 @@
+When you create an empty set, you cannot use `{}` to do so because Python recognizes this as an empty dictionary. Instead, you want to use the `set()` method. Here is a simple fix for your code:
+
+# Create a set
+my_set = set()
+
+def add_myset(value):
+    my_set.add(value)
+    return my_set
+    
+value = float(input("Enter number value to add to set: "))
+print(add_myset(value))
+
+Now `my_set` will be created as an empty set rather than a dictionary.

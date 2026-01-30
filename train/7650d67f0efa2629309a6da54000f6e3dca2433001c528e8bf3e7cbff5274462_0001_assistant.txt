@@ -1,0 +1,1 @@
+The provided function checks to see whether the client is using a mobile browser. This method runs through a list of devices and tries to cross-reference them with userAgent.

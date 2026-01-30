@@ -1,0 +1,13 @@
+The `requests` module is a great way to do that. Loading the `requests` module will enable you to make HTTP requests to a specified URL with your code. It can be combined with the `open()` function to write the data to a file. Here is an example:
+
+# Import the requests module
+import requests
+
+# Get the data from a URL
+my_url = "https://www.website.com/websitefile.csv"
+r = requests.get(my_url)
+
+# Open a CSV file to write the data
+open("my_csv.csv", "w").write(r.content.decode())
+
+In this code, the `requests` module is imported to start. The URL is defined with `my_url` and passed to the `.get()` method, which requests the file from the URL and saves it as `r`. The `open()` method opens a CSV file called `my_csv` with the parameter `w` to put it in write mode, then uses `.write()` to write the content of `r` to the CSV file. This should allow you to download a CSV from a website.

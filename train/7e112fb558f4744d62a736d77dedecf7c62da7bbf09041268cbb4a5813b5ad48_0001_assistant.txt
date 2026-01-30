@@ -1,0 +1,35 @@
+No problem. Here's the mostly equivalent code in Rust:
+
+pub fn print_single_styled_line(text: &str, fg_color: &str, bg_color: &str, trailing_newlines: usize) -> () {
+    println!("{}{}{}", fg_color, bg_color, text);
+    for i in 0..trailing_newlines {
+        println!("\n");
+    }
+}
+
+
+#[allow(non_snake_case)]
+    pub fn main() -> () {
+        let BLACK_FG = "\x1b[30m";
+        let RED_FG = "\x1b[31m";
+        let GREEN_FG = "\x1b[32m";
+        let YELLOW_FG = "\x1b[33m";
+        let BLUE_FG = "\x1b[34m";
+        let MAGENTA_FG = "\x1b[35m";
+        let CYAN_FG = "\x1b[36m";
+        let WHITE_FG = "\x1b[37m";
+        let DEFAULT_FG = "\x1b[39m";
+        
+        let BLACK_BG = "\x1b[40m";
+        let RED_BG = "\x1b[41m";
+        let GREEN_BG = "\x1b[42m";
+        let YELLOW_BG = "\x1b[43m";
+        let BLUE_BG = "\x1b[44m";
+        let MAGENTA_BG = "\x1b[45m";
+        let CYAN_BG = "\x1b[46m";
+        let WHITE_BG = "\x1b[47m";
+        let DEFAULT_BG = "\x1b[49m";
+
+        print_single_styled_line("Hello, world!", CYAN_FG, YELLOW_BG, 0);
+    }
+The ANSI escape strings are changed at the beginning to work with Rust (octal vs. hex), but they are otherwise the same. However, the caveat is that Rust's println macro automatically adds a new line, so the trailing new lines you would pass in would be one less than you would want. There's no straightforward way to have no newline at all.

@@ -1,0 +1,8 @@
+This problem is primarily a word processing problem. Here are the steps and things you should keep in mind while solving this problem.
+1.) Think about how you are going to split up the input to parse the data.
+2.) What are the keywords you are looking for? The only operators you are looking for are "gains" and "loses".
+3.) How will you extract the numbers after you have split the input?
+
+Keep in mind also the order of the numbers, as the input cannot be negative.
+
+Hope this helps, let me know if you need more help.

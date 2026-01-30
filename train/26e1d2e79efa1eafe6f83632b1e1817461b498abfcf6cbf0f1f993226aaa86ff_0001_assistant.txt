@@ -1,0 +1,36 @@
+To load JSON files in Python, you will need to import the `json` module.
+
+# Import the json module
+import json
+  
+# Open the JSON file
+json_file = open("file.json")
+  
+# Load the JSON file as a dictionary
+file_dict = json.load(json_file)
+
+# Print the dictionary
+print(file_dict)
+
+# Close the JSON file
+json_file.close()
+
+The code first loads the `json` module so that `open()` can be used to open the JSON file as an object. If the JSON is a string, it can be loaded to a dictionary with `.loads()`, the syntax for "load string". However, if the JSON is not a single string, `.load()` must be used and iterated through the JSON file.
+
+# Import the json module
+import json
+  
+# Open the JSON file
+json_file = open("file.json")
+  
+# Load the JSON file as a dictionary
+data = json.load(json_file)
+
+# Iterate through the JSON data and print
+for i in data["Class"]:
+    print(i)
+
+# Close the JSON file
+json_file.close()
+
+The `for` loop will iterate over the JSON data and print each line of the desired class in the dictionary. The placeholders can be customized to your JSON file name and desired class.

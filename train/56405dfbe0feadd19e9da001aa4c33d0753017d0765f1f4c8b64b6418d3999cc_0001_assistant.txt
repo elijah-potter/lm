@@ -1,0 +1,11 @@
+Here is your Python function that returns 10 randomly chosen items from a list. It imports the module `random` and uses the method `sample()` to help make this process easier. This method takes 2 arguments, the list that you want to pull the items from, and the amount of items that you want to pull. The function returns the 10 items as a list. 
+
+```Python
+import random
+
+def random_sample(list): 
+    return random.sample(list, 10)
+
+list = range(1000)
+print(random_sample(list))
+```

@@ -1,0 +1,41 @@
+One easy way to do this is to put the image in an HTML canvas element. Then you can use the drawImage() command from the Canvas Web API to edit the image, including magnifying a section. Here's sample code that magnifies a square 10% of the size of the total image wherever the user clicks:
+
+```javascript
+        class ZoomableCanvas {
+            constructor(canvas_id, img_src, zoom_factor) {
+                this.canvas = document.getElementById(canvas_id);
+                this.canvas.addEventListener('click', this.zoomOnClick, false);
+                this.area_size = Math.max(this.canvas.width, this.canvas.height) * .1;
+                this.zoom_size = this.area_size * zoom_factor;
+                
+                this.img = new Image(); 
+                this.img.addEventListener("load", this.drawImage, false);
+                this.img.src = img_src;
+
+                this.isZoomed = false;
+            }
+
+            zoomOnClick = (e) => {
+                if (this.isZoomed) {
+                    this.isZoomed = false;
+                    this.drawImage();
+                } else {
+                    this.isZoomed = true;
+                    this.drawZoomSection(e.offsetX, e.offsetY);
+                }
+            }
+
+            drawZoomSection = (x, y) => {
+                const ctx = this.canvas.getContext("2d");
+                ctx.drawImage(this.img, x - this.area_size/2, y - this.area_size/2, this.area_size, this.area_size, x - this.zoom_size/2, y - this.zoom_size/2, this.zoom_size, this.zoom_size);
+            }
+
+            drawImage = () => {
+                const ctx = this.canvas.getContext("2d");
+                ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                ctx.drawImage(this.img, 0, 0);
+            }
+        }
+
+        zc = new ZoomableCanvas('zoomable_canvas', 'img/sunflowers.jpg', 3);
+```

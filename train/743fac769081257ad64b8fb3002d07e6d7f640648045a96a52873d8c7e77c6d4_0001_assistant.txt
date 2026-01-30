@@ -1,0 +1,6 @@
+Here is the SQL code with comments showing how to access the table customer and return all rows where the last_name column starts with st.
+
+--Select all columns from the table customer
+SELECT * FROM customer
+--Where the last name column starts with st, regardless of case
+WHERE last_name ILIKE "st%"

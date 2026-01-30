@@ -1,0 +1,36 @@
+Below is an example of the use of State in React Native through the use of the useState hook. One useState holds just a name while the other holds an age and name. Both change upon the press of a button.
+
+import React, { useState } from 'react';
+import { StyleSheet, Text, View, Button } from 'react-native';
+
+export default function App() {
+  const [name, setName] = useState('shaun');
+  const [person, setPerson] = useState({ name: 'mario', age: 40 });
+
+  const clickHandler = () => {
+    setName('chun-li');
+    setPerson({ name: 'luigi', age: 45 });
+  };
+
+  return (
+    <View style={styles.container}>
+      <Text>My name is {name}</Text>
+      <Text>His name is {person.name} and his age is {person.age}</Text>
+      <View style={styles.buttonContainer}>
+        <Button title='update state' onPress={clickHandler} />  
+      </View>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  buttonContainer: {
+    marginTop: 20,
+  }
+});

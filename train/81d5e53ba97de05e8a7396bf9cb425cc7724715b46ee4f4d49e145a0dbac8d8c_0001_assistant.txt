@@ -1,0 +1,34 @@
+Customer (C)/Employee (E)
+
+E: Hello, thank you for calling Titan Pizza, would you like to hear about our specials for today?
+C: Yes, please.
+E: We have a promotion going on right now, if you buy a medium two-topping pizza, you get a second medium two-topping pizza for half off. We also have a promotion on our new Big Pizza, it's a three-topping extra-large pizza for $15.99, if you buy the Big Pizza you get a free side order of breadsticks.
+C: Hmm...okay.
+E: What can I get for you today?
+C: I'd like to get three medium pizzas, all flat crusts.
+E: Okay, and what kind of toppings would you like on the first pizza?
+C: I'd like pepperoni and sausage on the first pizza.
+E: Got it, and the second pizza?
+C: Mushrooms and olives.
+E: Got it, and the third pizza?
+C: Canadian bacon and pineapple.
+E: Hold on for just a second.
+C: Okay.
+E: We don't have Canadian bacon today, we seemed to have run out. We do have ham. Would you like that in place of the Canadian bacon?
+C: Sure, that's fine.
+E: Okay. Anything else?
+C: I was wondering about your cheesy breadsticks, how many come in one order?
+E: We have a small order of breadsticks which comes with 3 breadsticks, the medium order is 5 breadsticks, and the large is 8 breadsticks.
+C: Can I get a large order of breadsticks, please?
+E: Sure. Anything else?
+C: No, I think that's it.
+E: Would you like to add a liter of soda to your order? It costs only a dollar extra with the purchase of any pizza and large breadsticks.
+C: Sure, do you have diet soda?
+E: Yes, would you like to add that to your order?
+C: Yes, please.
+E: Okay. So I have you down for one medium flat-crust pepperoni and sausage pizza, one medium flat-crust mushroom and olive pizza, one medium flat-crust ham and pineapple pizza, one large order of breadsticks, and one liter of diet soda. Is that correct?
+C: Yes.
+E: Anything else for today?
+C: No, that's it, thank you.
+E: Okay, your total comes out to $45 even, and it will be ready to pick up in 30 minutes.
+C: Okay, thanks.

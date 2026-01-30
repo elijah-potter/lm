@@ -1,0 +1,32 @@
+My suggestion would be to use a wrapper for cURL, which is a great utility for this kind of use case. I recommend trying cURLpp. Here's some example code where we fetch data from an API:
+
+#include <curlpp/cURLpp.hpp>
+#include <curlpp/Easy.hpp>
+#include <curlpp/Options.hpp>
+
+int main() {
+	try
+	{
+		cURLpp::initialize();
+		curlpp::Easy req;
+		//We will use a weather API as our example.
+		req.setOpt<curlpp::options::Url>("https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current_weather=true&hourly=temperature_2m,relativehumidity_2m,windspeed_10m");
+		req.perform();
+		//Clean up
+		cURLpp::terminate();
+		return 0;
+	}	
+	catch(curlpp::RuntimeError & e)
+	{
+		std::cerr << e.what() << std::endl;
+	}
+	catch(curlpp::LogicError & e)
+	{
+		std::cerr << e.what() << std::endl;
+	}
+}
+
+Here is an example makefile:
+
+my_curl_program: my_curl_program.cpp
+        g++ -o my_curl_program -std=c++11 -Iinclude -lcurlpp -lcurl my_curl_program.cpp

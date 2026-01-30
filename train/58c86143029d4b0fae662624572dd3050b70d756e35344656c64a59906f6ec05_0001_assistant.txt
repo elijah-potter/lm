@@ -1,0 +1,19 @@
+Certainly! We can use the tkcalendar Python module to display a calendar in a window.
+
+import tkinter as tk
+from tkcalendar import Calendar
+import datetime as dt
+
+# open a window
+root = tk.Tk()
+root.title("Calendar")
+
+# get current date and initialize calendar widget
+today = dt.date.today()
+calendar = Calendar(root, date_pattern="mm-dd-yyyy", date=today.year * 10000 + today.month * 100 + 1)
+calendar.pack(padx=10, pady=10)
+
+# main loop
+root.mainloop()
+
+The tkcalendar module is not included in every Python installation, so it may need to be installed separately with pip or the package manager of your choice. Let me know if you need further assistance!

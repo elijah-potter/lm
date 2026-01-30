@@ -1,0 +1,1 @@
+The provided function takes in two arrays as parameters and returns an array that consists of all the elements that both arrays have in common. For example, if you provided the arrays consisting of [1,2,3,4,5,6,7] and [3,5,7,8,9,10], then the function would return an array consisting of [3,5,7] as a result.

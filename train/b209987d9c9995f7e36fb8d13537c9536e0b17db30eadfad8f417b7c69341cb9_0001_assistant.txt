@@ -1,0 +1,1 @@
+Once items are added to a dictionary, you can call them by indexing the dictionary with a string corresponding to a key in the dictionary. This will then return the value corresponding to that key. In your example code, you would call the dictionary using database["person"] and it will return the ID string corresponding to that individual.

@@ -1,0 +1,16 @@
+Here's a script that should help:
+
+needle := "fox"
+Input1 := "the quick brown fox jumped over the lazy dog"
+Input2 := "sphynx of black quartz judge my vow"
+Input3 := "pack my box with five dozen liquor jugs"
+If InStr(Input1, needle)
+    MsgBox, The string was found in Input 1.
+If InStr(Input2, needle)
+    MsgBox, The string was found in Input 2.
+If InStr(Input3, needle)
+    MsgBox, The string was found in Input 3.
+Else
+    MsgBox, The string was not found.
+
+This script will return successfully for input 2. As part of a longer program, it could be useful to incorporate this as a function to avoid repetition.

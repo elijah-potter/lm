@@ -1,0 +1,13 @@
+NumPy has an `astype` method that can be used to convert arrays between data types. This code should do what you want:
+
+import numpy as np
+
+mylist = ["1", "10", "100"]
+
+myarray = np.asarray(mylist)
+
+floatarray = myarray.astype(float)
+
+print(floatarray)
+
+First, the `numpy` module is imported as `np` and the list of strings `mylist` is defined. Using the `.asarray()` NumPy method converts `mylist` to an array in order to be able to apply NumPy array methods. The `.astype()` method with the parameter `float` creates the new array `floatarray` with the values from `myarray` as floats. The new array is then printed to display the output.

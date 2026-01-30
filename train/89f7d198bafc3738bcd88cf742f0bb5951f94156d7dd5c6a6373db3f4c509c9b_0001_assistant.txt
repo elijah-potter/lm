@@ -1,0 +1,12 @@
+The `random` module will enable you to generate a random number to your specifications. Here is how it's used:
+
+# import the random module
+import random
+
+# get a random multiple of 3
+multiple = random.randrange(3, 3000, 3)
+
+# print the multiple
+print(multiple)
+
+This uses `import` to load the `random` module, then using the `.randrange()` function to retrieve a random multiple of 3 from 3 to 3000. The `.randrange()` sets the start value as 3, the stop value as 3000, and the step as 3. The value it generates defines the variable `multiple` which is then printed with `print()`.

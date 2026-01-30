@@ -1,0 +1,16 @@
+Here is example code to input text into a text box:
+
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
+driver = webdriver.Chrome()
+
+driver.get("http://www.google.com")
+
+# Select the text box using its xpath
+textbox = driver.find_element_by_xpath("/html/body/center/form/div[1]/div[1]/div[2]/input")
+
+# Input text into the text box
+textbox.send_keys("input text")
+
+driver.close()

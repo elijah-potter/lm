@@ -1,0 +1,19 @@
+It will be my pleasure. Here is the Python code that prints the usernames from the users.csv file:
+
+```Python
+import csv
+
+with open('users.csv') as users_csv:
+  users_csv_dict = csv.DictReader(users_csv)
+  for row in users_csv_dict:
+    print(row['Username'])
+```
+
+Importing the CSV module is the first step to getting the usernames in the CSV file. Next, we use the built-in function `open()` to read the users.csv file and set it to the temporary variable `users_csv`. Next, we use csv's `DictReader()` method to return users_csv as a dictionary. Lastly, we loop through the dictionary to get the CSV rows and print the username. 
+
+Here is the result:
+booker12
+grey07
+johnson81
+jenkins46
+smith79

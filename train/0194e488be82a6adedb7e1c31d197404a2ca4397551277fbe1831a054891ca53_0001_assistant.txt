@@ -1,0 +1,27 @@
+That's no problem, I'd be happy to do that for you! Here is your code commented:
+
+'''
+find_caps()
+Finds the capital letters in a string and outputs them as a list, as well as the ratio of lowercase to capital letters in the text.
+Inputs:
+     string -- string to be analyzed.
+Outputs: 
+     capitals -- list of all capital letters in order of appearance in string.
+     ratio -- ratio of lowercase letters to capital letters in float format.
+'''
+
+def find_caps(string):
+
+    # Initialize empty lists
+    capitals = []
+    lettertot = []
+
+    # Iterate through each word in the string
+    for word in string.split():
+        capitals.extend([letter for letter in word if letter.isupper()]) # Generate a list of uppercase letters
+        lettertot.extend([letter for letter in word if letter.isalpha()]) # Generate a list of all letters
+
+    # Calculate the ratio of lowercase letters to capitals letters
+    ratio = len(lettertot)/len(capitals) - 1 
+   
+    return capitals, ratio

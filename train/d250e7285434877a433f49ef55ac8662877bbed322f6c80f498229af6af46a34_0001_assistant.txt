@@ -1,0 +1,11 @@
+I'd be happy to explain them to you. Forward refs refer to "Ref forwarding" which is a feature of React components that allows them to take a ref that they receive and pass it down to their children. For example....
+
+const ButtonElement = React.forwardRef((props, ref) => (
+  <button ref={ref} className="ExampleButton">
+    {props.children}
+  </button>
+));
+
+// Create ref to the DOM button:
+const ref = React.createRef();
+<ButtonElement ref={ref}>{"Example of Forward Ref"}</ButtonElement>;

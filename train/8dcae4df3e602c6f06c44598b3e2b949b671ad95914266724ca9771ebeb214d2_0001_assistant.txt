@@ -1,0 +1,17 @@
+I created this Python script that will strip non-alphabetical characters from a string and print the alphabetical characters:
+
+# Get a string
+text = input("Enter a string: ")
+
+# Create a variable to store the new string
+alpha_text = ""
+
+# Remove non-alphabetical characters
+for character in text:
+    if character.isalpha():
+        alpha_text = alpha_text + character
+
+# Print the new string
+print(alpha_text)
+
+This script accepts a string with `input()` to define the variable `text`, then makes a new empty `alpha_text` variable to hold the modified contents. The `for` loop iterates over every character in `text`, checking if each one is an alphabetical character with `isalpha()`. If it is, the character is added to the `alpha_text` string. The completed string of alphabetical characters is printed with `print()`.

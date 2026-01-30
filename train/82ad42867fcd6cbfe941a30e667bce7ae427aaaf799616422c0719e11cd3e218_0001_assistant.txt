@@ -1,0 +1,21 @@
+Sure, this code will do what you require.
+
+window.addEventListener('load', function() {
+  function colorRandomizer() {
+
+  // calculate a random number for each RGB channel
+    const red = Math.floor(Math.random() * 256);
+    const green = Math.floor(Math.random() * 256);
+    const blue = Math.floor(Math.random() * 256);
+
+  // concatenate the color into an RGB string and apply it to document.body
+    const color = `rgb(${red}, ${green}, ${blue})`;
+    document.body.style.backgroundColor = color;
+  }
+
+ // add a button to call colorRandomizer
+  const button = document.createElement('button');
+  button.textContent = 'Change Color';
+  button.addEventListener('click', colorRandomizer);
+  document.body.appendChild(button);
+});

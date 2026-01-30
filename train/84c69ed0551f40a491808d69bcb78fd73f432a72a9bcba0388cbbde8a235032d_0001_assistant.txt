@@ -1,0 +1,14 @@
+Here is a short python program that receives an x and y value, which determines the dimensions of a checkered two-dimensional array, which is subsequently returned:
+
+def gen_checkers(x, y):
+    check = [0,1]
+    board = []
+    for column, i in enumerate(range(y)):
+        if x % 2 ==0 : check.reverse()
+        row = []
+        for val in range(x):
+            row.append(check[0])
+            check.reverse()
+        board.append(row)
+    
+    return np.array(board)

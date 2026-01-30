@@ -1,0 +1,5 @@
+I'm happy to help with that! To accomplish what you asked for, we first create a set so we can track whether we've already added an element or not. Then, we will use the filter method, which will only pass through elements that evaluate to true in a given function and assign it a lambda function that checks whether the given element is in the existing set or not. Note that in Python, the add method returns None and not a boolean value about the existence of the element like in other languages such as Java. So the return statement of our lambda function first checks whether x is already in the set or not. If it's not in the set, then we want to add the element x to the set and return true (so to return true from a value of None, we must add a not condition in front of it).
+
+def unique(n):
+    added = set()
+    return list(filter(lambda x: ( x not in added and not added.add(x) ) , n))

@@ -1,0 +1,12 @@
+Sure, I can write a program to calculate your caffeine consumption by milliliters of coffee. Here you are:
+
+# Get the amount of coffee drunk
+ml_coffee = float(input("How many milliliters of coffee have you had to drink today? ")) 
+
+# Calculate grams of caffeine
+g_caffeine = ml_coffee * 0.0004
+
+# Print the caffeine consumed
+print(f"You have consumed {g_caffeine} grams of caffeine today.")
+
+The program requests the number of milliliters of coffee with `input()` and converts the input from a string to a floating point variable with `float()` to allow mathematical operations to be performed on the variable it defines for the milliliters of coffee named `ml_coffee`. It then consolidates the calculation from milliliters to milligrams and milligrams to grams by multiplying it by 0.0004, which is the value of 400 mg/L divided by 1000 mL/L to get 0.4 mg/mL followed by dividing 0.4 mg/mL by 1000 mg/g to get 0.0004 g/mL. It then prints the grams of coffee consumed with `print()`.

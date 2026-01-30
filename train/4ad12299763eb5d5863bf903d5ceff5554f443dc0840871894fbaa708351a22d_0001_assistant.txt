@@ -1,0 +1,1 @@
+The query function returns an asynchronous callback that attempts to call a provided function. If there is an error, it executes the provided error handling function and retries the function call if possible.

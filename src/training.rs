@@ -23,6 +23,7 @@ pub fn train<B: Backend>(
     train_folder: impl AsRef<Path>,
     test_folder: impl AsRef<Path>,
     epochs: usize,
+    lr_factor: f64,
 ) -> Model<B> {
     let device = Default::default();
     let model = m.init::<Autodiff<B>>(&device);
@@ -46,7 +47,7 @@ pub fn train<B: Backend>(
 
     let accum = 6;
 
-    let lr_scheduler = NoamLrSchedulerConfig::new(0.1 / accum as f64)
+    let lr_scheduler = NoamLrSchedulerConfig::new(lr_factor / accum as f64)
         .with_warmup_steps(6000)
         .with_model_size(m.embed_dims)
         .init()

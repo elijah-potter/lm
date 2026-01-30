@@ -33,6 +33,9 @@ enum Command {
         train_data: PathBuf,
         test_data: PathBuf,
         dropout: f64,
+        /// Base learning-rate factor for the Noam scheduler.
+        #[clap(default_value_t = 0.1)]
+        lr_factor: f64,
         /// The total number of transformer blocks.
         transformer_blocks: usize,
         embed_dims: usize,
@@ -55,6 +58,7 @@ fn main() {
             train_data,
             test_data,
             dropout,
+            lr_factor,
             transformer_blocks,
             embed_dims,
             attn_heads,
@@ -68,6 +72,7 @@ fn main() {
                 train_data,
                 test_data,
                 epochs,
+                lr_factor,
             );
 
             let recorder = CompactRecorder::new();

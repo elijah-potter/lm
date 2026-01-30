@@ -1,3 +1,5 @@
+use std::collections::VecDeque;
+
 use burn::Tensor;
 use burn::prelude::Backend;
 use burn::tensor::{Int, Shape, TensorData};
@@ -6,19 +8,23 @@ pub const VOCAB_SIZE: usize = 64;
 pub const MAX_SEQ_LEN: usize = 64;
 
 pub fn text_to_indices<B: Backend>(text: &[char], device: &B::Device) -> Tensor<B, 2, Int> {
-    let mut idxs: Vec<_> = text
+    let mut idxs: VecDeque<_> = text
         .iter()
         .copied()
         .map(char_to_index)
+        .rev()
         .take(MAX_SEQ_LEN)
+        .rev()
         .collect();
 
     while idxs.len() < MAX_SEQ_LEN {
-        idxs.push(0);
+        idxs.push_front(0);
     }
 
-    let tok_tensor_indices =
-        Tensor::<B, 2, Int>::from_data(TensorData::new(idxs, Shape::new([1, MAX_SEQ_LEN])), device);
+    let tok_tensor_indices = Tensor::<B, 2, Int>::from_data(
+        TensorData::new(idxs.into(), Shape::new([1, MAX_SEQ_LEN])),
+        device,
+    );
 
     assert_eq!(tok_tensor_indices.dims(), [1, MAX_SEQ_LEN]);
 

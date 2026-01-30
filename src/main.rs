@@ -7,8 +7,9 @@ mod tokenizer;
 mod training;
 
 use std::path::PathBuf;
+use std::time::Instant;
 
-use burn::backend::Wgpu;
+use burn::backend::{NdArray, Wgpu};
 use burn::module::Module;
 use burn::record::{CompactRecorder, FullPrecisionSettings, NamedMpkFileRecorder, Recorder};
 use clap::Parser;
@@ -26,6 +27,7 @@ enum Command {
         attn_heads: usize,
         /// The size of the perceptrons between the attention blocks.
         percept_size: usize,
+        temperature: f64,
         load_from: PathBuf,
         context: String,
     },
@@ -48,7 +50,7 @@ enum Command {
     },
 }
 
-type TargetBackend = Wgpu<f32>;
+type TargetBackend = Wgpu<f32, i32>;
 
 fn main() {
     let command = Command::parse();
@@ -85,6 +87,7 @@ fn main() {
             transformer_blocks,
             embed_dims,
             attn_heads,
+            temperature,
             percept_size,
         } => {
             let device = Default::default();
@@ -102,7 +105,9 @@ fn main() {
 
             let ctx_chars: Vec<_> = context.chars().collect();
 
-            generate_n_tokens(&model, &ctx_chars, 20);
+            let now = Instant::now();
+            generate_n_tokens(&model, &ctx_chars, 64, temperature);
+            println!("{}", now.elapsed().as_millis());
         }
     }
 }

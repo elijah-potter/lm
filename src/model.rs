@@ -70,7 +70,7 @@ impl<B: Backend> Model<B> {
         let output = self.resizer.forward(trans_out);
         let output = self.dropout.forward(output);
 
-        let loss_fn = CrossEntropyLossConfig::new().init(&self.device());
+        let loss_fn = CrossEntropyLossConfig::new().with_pad_tokens(Some(vec![0])).init(&self.device());
 
         let output_flat = output
             .clone()

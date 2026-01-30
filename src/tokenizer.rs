@@ -37,7 +37,6 @@ pub fn indices_to_text<B: Backend>(tensor: Tensor<B, 2, Int>) -> Vec<char> {
 
     idxs.into_iter()
         .take(MAX_SEQ_LEN)
-        .filter(|&i| i != 0)
         .map(index_to_char)
         .collect()
 }

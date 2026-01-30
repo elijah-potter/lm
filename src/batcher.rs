@@ -2,7 +2,6 @@ use burn::Tensor;
 use burn::data::dataloader::batcher::Batcher;
 use burn::prelude::Backend;
 use burn::tensor::Int;
-use log::info;
 use rand::Rng;
 
 use crate::tokenizer::text_to_indices;

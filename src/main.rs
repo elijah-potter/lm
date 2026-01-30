@@ -13,7 +13,7 @@ use burn::module::Module;
 use burn::record::{CompactRecorder, FullPrecisionSettings, NamedMpkFileRecorder, Recorder};
 use clap::Parser;
 
-use self::generation::generate;
+use self::generation::generate_n_tokens;
 use self::model::{ModelConfig, ModelRecord};
 
 #[derive(Parser, Debug)]
@@ -100,7 +100,9 @@ fn main() {
                     .init(&device);
             model = model.load_record(record);
 
-            generate(&model, context.as_str())
+            let ctx_chars: Vec<_> = context.chars().collect();
+
+            generate_n_tokens(&model, &ctx_chars, 20);
         }
     }
 }

@@ -89,7 +89,7 @@ impl<B: Backend> Model<B> {
     ) -> ClassificationOutput<B> {
         let embedding = self.embed(input);
 
-        let [batch_size, seq_length, embedding_dims] = embedding.dims();
+        let [batch_size, seq_length, _embedding_dims] = embedding.dims();
         assert_eq!(seq_length, MAX_SEQ_LEN);
 
         let trans_out = self

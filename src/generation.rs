@@ -1,20 +1,51 @@
 use burn::Tensor;
 use burn::prelude::Backend;
+use burn::tensor::activation::softmax;
+use burn::tensor::{Distribution, Int, Shape, TensorData};
+use rand::distr::weighted::WeightedIndex;
+use rand::rng;
 
 use crate::model::Model;
-use crate::tokenizer::{self, indices_to_text, text_to_indices};
+use crate::tokenizer::{indices_to_text, text_to_indices};
 
-pub fn generate<B: Backend>(model: &Model<B>, context: &str) {
-    let chars: Vec<_> = context.chars().collect();
-
-    let input = text_to_indices(&chars, &model.device());
+pub fn generate_single_pass<B: Backend>(model: &Model<B>, context: &[char]) -> Vec<char> {
+    let input = text_to_indices(&context, &model.device());
 
     let output = model.forward(input);
 
-    let indices = output.argmax(1);
+    let indices = weighted_argmax_logits(output);
     let text = indices_to_text(indices);
 
-    let text_str: String = text.into_iter().collect();
+    text
+}
 
-    dbg!(text_str);
+pub fn weighted_argmax_logits<B: Backend>(logits: Tensor<B, 2>) -> Tensor<B, 2, Int> {
+    let u = logits.random_like(Distribution::Uniform(0.0, 1.0));
+    let g = -(-u.log()).log();
+    (logits + g).argmax(1)
+}
+
+pub fn generate_n_tokens<B: Backend>(model: &Model<B>, context: &[char], n: usize) -> Vec<char> {
+    let mut output = Vec::with_capacity(n);
+    let mut context: Vec<char> = context.to_vec();
+
+    print!("\"");
+
+    for c in &context {
+        print!("{}", c);
+    }
+
+    for _ in 0..n {
+        let pass = generate_single_pass(model, &context);
+        let new_tok = pass.last().unwrap();
+
+        output.push(*new_tok);
+        context.push(*new_tok);
+
+        print!("{}", new_tok);
+    }
+
+    print!("\"");
+
+    output
 }

@@ -2,6 +2,7 @@ use crate::batcher::BatchItem;
 use crate::tokenizer::MAX_SEQ_LEN;
 use crate::tokenizer::VOCAB_SIZE;
 use burn::nn::LinearConfig;
+use burn::nn::attention::generate_autoregressive_mask;
 use burn::train::InferenceStep;
 use burn::{
     nn::{
@@ -62,15 +63,19 @@ impl<B: Backend> Model<B> {
         let [batch_size, seq_length, _embedding_dims] = embedding.dims();
         assert_eq!(seq_length, MAX_SEQ_LEN);
 
+        let mask = generate_autoregressive_mask(batch_size, seq_length, &self.device());
+
         let trans_out = self
             .transformer
-            .forward(TransformerEncoderInput::new(embedding));
+            .forward(TransformerEncoderInput::new(embedding).mask_attn(mask));
         let trans_out = self.dropout.forward(trans_out);
 
         let output = self.resizer.forward(trans_out);
         let output = self.dropout.forward(output);
 
-        let loss_fn = CrossEntropyLossConfig::new().with_pad_tokens(Some(vec![0])).init(&self.device());
+        let loss_fn = CrossEntropyLossConfig::new()
+            .with_pad_tokens(Some(vec![0]))
+            .init(&self.device());
 
         let output_flat = output
             .clone()

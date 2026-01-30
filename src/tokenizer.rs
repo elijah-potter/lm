@@ -50,6 +50,7 @@ fn char_to_index(c: char) -> i32 {
         ',' => 55,
         ':' => 56,
         '?' => 57,
+        '\'' | 'ʼ' => 58,
         ' ' => VOCAB_SIZE as i32 - 1,
         _ => 0,
     }
@@ -64,6 +65,7 @@ fn index_to_char(i: i32) -> char {
         55 => ',',
         56 => ':',
         57 => '?',
+        58 => '\'',
         val if val as usize == VOCAB_SIZE - 1 => ' ',
         _ => '\0',
     }

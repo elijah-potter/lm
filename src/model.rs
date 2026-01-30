@@ -97,12 +97,16 @@ impl<B: Backend> Model<B> {
         let [batch_size, seq_length, _embedding_dims] = embedding.dims();
         assert_eq!(seq_length, MAX_SEQ_LEN);
 
+        let mask = generate_autoregressive_mask(batch_size, seq_length, &self.device());
+
         let trans_out = self
             .transformer
-            .forward(TransformerEncoderInput::new(embedding));
+            .forward(TransformerEncoderInput::new(embedding).mask_attn(mask));
         let output = self.resizer.forward(trans_out);
 
-        let loss_fn = CrossEntropyLossConfig::new().init(&self.device());
+        let loss_fn = CrossEntropyLossConfig::new()
+            .with_pad_tokens(Some(vec![0]))
+            .init(&self.device());
 
         let output_flat = output
             .clone()

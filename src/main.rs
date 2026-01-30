@@ -9,7 +9,7 @@ mod training;
 use std::path::PathBuf;
 use std::time::Instant;
 
-use burn::backend::{NdArray, Wgpu};
+use burn::backend::Wgpu;
 use burn::module::Module;
 use burn::record::{CompactRecorder, FullPrecisionSettings, NamedMpkFileRecorder, Recorder};
 use clap::Parser;

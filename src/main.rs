@@ -14,7 +14,7 @@ use burn::module::Module;
 use burn::record::{CompactRecorder, FullPrecisionSettings, NamedMpkFileRecorder, Recorder};
 use clap::Parser;
 
-use self::generation::generate_n_tokens;
+use self::generation::{generate_n_tokens, generate_tokens};
 use self::model::{ModelConfig, ModelRecord};
 
 #[derive(Parser, Debug)]
@@ -105,9 +105,7 @@ fn main() {
 
             let ctx_chars: Vec<_> = context.chars().collect();
 
-            let now = Instant::now();
-            generate_n_tokens(&model, &ctx_chars, 64, temperature);
-            println!("{}", now.elapsed().as_millis());
+            generate_tokens(&model, &ctx_chars, temperature);
         }
     }
 }

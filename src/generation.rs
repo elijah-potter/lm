@@ -1,3 +1,5 @@
+use std::io::{self, Write};
+
 use burn::Tensor;
 use burn::prelude::Backend;
 use burn::tensor::{Distribution, Int};
@@ -58,4 +60,22 @@ pub fn generate_n_tokens<B: Backend>(
     println!("\"");
 
     output
+}
+
+pub fn generate_tokens<B: Backend>(model: &Model<B>, context: &[char], temperature: f64) {
+    let mut context: Vec<char> = context.to_vec();
+
+    for c in &context {
+        print!("{}", c);
+    }
+
+    loop {
+        let pass = generate_single_pass(model, &context, temperature);
+        let new_tok = pass.last().unwrap();
+
+        context.push(*new_tok);
+
+        print!("{}", new_tok);
+        io::stdout().flush().unwrap();
+    }
 }

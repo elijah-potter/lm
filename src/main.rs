@@ -9,7 +9,7 @@ mod training;
 use std::path::PathBuf;
 use std::time::Instant;
 
-use burn::backend::Wgpu;
+use burn::backend::{NdArray, Wgpu};
 use burn::module::Module;
 use burn::record::{CompactRecorder, FullPrecisionSettings, NamedMpkFileRecorder, Recorder};
 use clap::Parser;
@@ -50,7 +50,8 @@ enum Command {
     },
 }
 
-type TargetBackend = Wgpu<f32, i32>;
+type TrainingBackend = Wgpu<f32, i32>;
+type InferenceBackend = NdArray<f32, i32>;
 
 fn main() {
     let command = Command::parse();
@@ -68,7 +69,7 @@ fn main() {
             epochs,
             save_to,
         } => {
-            let model = training::train::<TargetBackend>(
+            let model = training::train::<TrainingBackend>(
                 ModelConfig::new(transformer_blocks, embed_dims, attn_heads, percept_size)
                     .with_dropout(dropout),
                 train_data,
@@ -92,7 +93,7 @@ fn main() {
         } => {
             let device = Default::default();
 
-            let record: ModelRecord<TargetBackend> =
+            let record: ModelRecord<InferenceBackend> =
                 NamedMpkFileRecorder::<FullPrecisionSettings>::new()
                     .load(load_from.into(), &device)
                     .expect("Should be able to load the model weights from the provided file");

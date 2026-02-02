@@ -38,7 +38,7 @@ pub fn train<B: Backend>(
     let dataset_test = FileFolderDataset::load_from_folder(test_folder);
 
     let dataloader_train = DataLoaderBuilder::new(GenBatcher)
-        .batch_size(128)
+        .batch_size(64)
         .num_workers(4)
         .build(SamplerDataset::new(dataset_train, 100_000));
 

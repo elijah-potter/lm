@@ -1,0 +1,1 @@
+The weight of quiet moments pressed between breaths, a soft hum beneath the skin, neither loud nor still. A thread of warmth in the hollows where shadows linger, a pulse in the stillness that doesn’t need to be named. The way time slows when the world’s edges blur into something familiar yet unseen.

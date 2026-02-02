@@ -1,0 +1,5 @@
+The flickering light of a single bulb cast long shadows across the dust-covered floor of an abandoned library. Your fingers trace the worn spines of forgotten tomes, each one a potential clue. The air smells of old paper and damp stone, thick with the weight of centuries.
+
+You kneel beside a cracked bookshelf, its contents scattered—pages torn from books, a half-melted candle stub, and a single, unread journal. The journal lies open, its pages filled with frantic scribbles: *"It's not here. It's not here."* Your breath fogs in the cold, but you ignore it. The search feels like a living thing, a whisper in the dark that only you hear.
+
+A low groan echoes from the hallway, the sound of something heavy shifting. The journal’s ink smudges—maybe the words will change if you read them wrong. The search isn’t for answers. It’s for the thing that moves when no one’s looking.

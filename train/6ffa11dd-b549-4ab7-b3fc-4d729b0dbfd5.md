@@ -1,0 +1,7 @@
+Two figures—one clad in a black coat, the other in a crisp white lab coat—stand at opposite ends of a dimly lit lab, their reflections flickering in a cracked microscope slide between them. The black-clad figure holds a vial of dark fluid labeled *"Unknown"*; the white-clad one taps a keyboard, tracing a graph of erratic spikes labeled *"Data Point 24:17"*.
+
+The screen above them glitches, displaying the same number: **42.378**. The black-clad figure exhales sharply, then murmurs, *"You’ve been measuring it wrong for years."* The white-clad one, mid-click, freezes as their mouse pointer hovers over a line that suddenly loops back to itself—rewriting the timeline in real time.
+
+A server hums in the corner, its display now overlaying the scene: **"WARNING: DUPLICATE CONDITIONS DETECTED. RESOLVE OR FAIL."** The black-clad figure steps forward, gripping the vial. The white-clad one’s screen glitches—text appears, then vanishes: *"You cannot have both. Choose."* The vial shatters against the floor, dissolving into static. The two figures stand frozen, their shadows merging into a single, unstable silhouette against the fluorescent lights.
+
+The system’s warning persists, static humming like a heartbeat: **`ERROR: TRUTH CONFLICT DETECTED. INITIATING FAILURE MODE.`**

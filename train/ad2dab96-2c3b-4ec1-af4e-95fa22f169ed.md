@@ -1,0 +1,3 @@
+Miscommunication led to confusion when Sarah thought she’d received an invitation to the company’s annual tech summit, but the email was marked as "internal draft" and forwarded by mistake. The actual invite went to HR, not her—her manager had intended to share the details with the team during a team sync.
+
+After a quick check, Sarah realized she’d misinterpreted the subject line ("Tech Summit Prep: Next Steps") as an invitation, only to learn the correct info was already sent to her manager. The confusion cleared when she asked for clarification, confirming the meeting was scheduled for HR training, not a company-wide event.

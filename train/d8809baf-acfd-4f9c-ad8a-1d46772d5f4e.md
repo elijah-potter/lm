@@ -1,0 +1,5 @@
+The dim glow of a flickering laptop screen cast long shadows across the cluttered study. A half-empty coffee cup sat beside a half-eaten sandwich, its crust crumbling into the spilled remains. The air smelled of stale air and old paper. A hand hovered over a search bar, fingers tracing the keys with hesitant precision—each press sending a stream of queries into the void.
+
+*"What is it?"* The question echoed in hollow, restless loops through the mind. Not a physical object, but something woven into the threads of memory, the ghost of a feeling, a whisper lost in translation. The search results flickered: fleeting faces, fragmented moments, echoes of names and places that didn’t quite add up.
+
+The screen went black. A single line appeared, unreadable: *"You are searching for something you can’t name."* The cursor blinked. The search was never finished.

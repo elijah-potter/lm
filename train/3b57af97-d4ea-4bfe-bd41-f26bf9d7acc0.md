@@ -1,0 +1,11 @@
+A crumbling stone archway stands at the edge of a cramped, sun-bleached alley, its once-vibrant mortar peeling like old skin. The pavement beneath is a patchwork of cracked concrete and scattered bricks, some missing entirely, revealing the rusted remains of forgotten pipes or wiring. Dust swirls in the thin air, carried by the faintest breeze that seems to linger in this place too long.
+
+A boarded-up storefront looms to the left, its glass shattered in a thousand jagged pieces, some still trapped between the warped wood and others crunched beneath the weight of time. The windows are covered in layers of grime, and the peeling paint tells stories of decay and neglect. Inside, the silence is absolute, broken only by the distant hum of a dying refrigerator in another alley.
+
+In the distance, a rusted metal gate swings slightly on its rusted hinges, its latch broken. Beyond it, a series of abandoned buildings stretch like skeletal fingers into the sky. Some are still standing, their facades sagging under the weight of years, while others have collapsed entirely, their timbers twisted into grotesque shapes. The roof of one house is missing, exposing the rotted interior to the elements.
+
+A lone tree, its branches gnarled and twisted, leans precariously over the edge of the alley, its leaves brittle and dead. It seems to be reaching out, as if trying to grasp something just beyond sight. The ground is overgrown with wildflowers and weeds, their vibrant colors muted by the gloom of the surroundings.
+
+At the far end of the alley, a rusted dumpster stands guard, its once-smooth surface now pitted and scarred. It’s filled to the brim with discarded items—broken furniture, old appliances, and the occasional forgotten possession left behind by people who once lived here. A single, half-eaten sandwich wrapper peeks out from beneath a pile of trash, a faint scent of grease lingering in the air.
+
+This place feels like it’s holding its breath, waiting. The air hums with the quiet desperation of something that has been abandoned, forgotten. It’s not just a place—it’s a mood, a state of being, a lingering ache in the bones of the city.

@@ -1,0 +1,1 @@
+A technician misaligns a small bearing in a conveyor belt assembly, causing uneven material flow and increased friction, leading to sudden stops and mechanical damage requiring an emergency shutdown and costly repairs.

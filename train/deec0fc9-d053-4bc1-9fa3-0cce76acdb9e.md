@@ -1,0 +1,1 @@
+A sleek, silver smartphone passed between hands—a child’s trembling grip holding a cracked screen, their mother’s fingers brushing it to stabilize. Nearby, a cluttered desk held loose change, a half-eaten sandwich wrapper, and a half-empty coffee cup. A clock ticked relentlessly above the clutter: **14:32**. The exchange was brief, unnoticed.

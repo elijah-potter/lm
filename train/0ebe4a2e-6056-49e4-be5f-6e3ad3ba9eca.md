@@ -1,0 +1,5 @@
+A quiet afternoon in a cramped room, walls lined with dust motes drifting like ghosts. The air smelled faintly of old books and unresolved tension. A choice hung between two doors—one, warm and inviting with a lantern flickering inside; the other, cold and silent, its frame etched with strange symbols. My fingers trembled as I traced the edge of the nearest door, the weight of what lay beyond pressing against my ribs.
+
+*"Do you dare?"* the voice inside whispered, but it was my own, echoing louder than any answer. The first door called to me like a siren’s song—comfort, safety, the familiar. The second door was a mirror, reflecting back my deepest fear: failure, regret, the unspoken *what ifs*. The air turned thick, suffocating, as I stood there, paralyzed. The lantern’s light blurred into static, and for a moment, time itself seemed to pause.
+
+What would you choose? The path of least resistance, or the unknown? The answer was written in the shadows, waiting to be claimed.

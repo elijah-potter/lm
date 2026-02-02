@@ -1,0 +1,1 @@
+A junior developer, mid-meeting, asked the team about a complex database optimization query mid-discussion on the upcoming product roadmap. The response was drowned out by excited murmurs about the next sprint’s features. Later, the query went unanswered until the next day, leaving the developer frustrated and the team scrambling to explain the delay.

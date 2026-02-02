@@ -1,0 +1,5 @@
+A flicker of light caught his eye—just a moment before the storm’s howl drowned out everything else. The old clock tower’s hands stopped at 5:59, then spun into reverse. Outside, the rain had turned to sleet, tapping against the grimy windows like a thousand tiny hammers. Inside, Elena adjusted the thermostat’s dial one degree lower before the power cut out.
+
+In the sudden darkness, the only sound was her breath. The fridge hummed, then died. A single candle flickered to life in the corner, its flame trembling like a dying man. She reached for the phone on the desk—static crackled, then cut out. The last thing she heard was her own heartbeat, slow and steady, before the world tilted.
+
+When the lights came back on, the tower’s clock stood frozen at 6:00. Outside, the storm had passed, but the wind carried a single, strange note—like a violin playing *a single, perfect note* against the sky.

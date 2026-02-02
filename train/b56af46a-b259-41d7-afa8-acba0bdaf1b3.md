@@ -1,0 +1,7 @@
+In the dim glow of an abandoned clock tower, time had long since stopped. The hands of the massive brass clock, once ticking with precision, now hung motionless, frozen at 3:17 AM. Each second, a whisper echoed through the hollowed stone—*"Tick… Tock…"*—but it was no longer a sound but a haunting memory.
+
+The clock’s face was cracked, revealing the faces of a dozen ghosts who had once watched the hands move. They moved their fingers, tracing the seconds as they were meant to, but their hands had grown stiff with decades of neglect. One ghost, a child who had played here as a child, spun in a circle, her eyes wide with wonder. *"Why does time stop?"* she asked the clock.
+
+The clock’s gears groaned, then stilled. The tower trembled as the seconds *unraveled*—not in reverse, but in a slow, eerie unspooling. The ghosts began to dissolve, their forms stretching like liquid wax as the clock’s hands *unfroze*. The child’s laughter turned to screams as she was pulled into the fabric of time itself, her body dissolving into the air.
+
+By dawn, the tower stood silent again, but the clock’s hands were no longer still. They spun—*tick… tock…*—and for the first time in centuries, they counted again. The ghosts were gone, but time had returned, though never the same. Somewhere, a new child would arrive, their eyes wide with wonder, and the clock would begin its endless dance once more.

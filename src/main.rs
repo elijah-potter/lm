@@ -46,6 +46,7 @@ enum Command {
         /// The size of the perceptrons between the attention blocks.
         percept_size: usize,
         epochs: usize,
+        start_model: Option<PathBuf>,
         save_to: PathBuf,
     },
 }
@@ -67,8 +68,18 @@ fn main() {
             attn_heads,
             percept_size,
             epochs,
+            start_model,
             save_to,
         } => {
+            let record = if let Some(path) = start_model {
+                let device = Default::default();
+                NamedMpkFileRecorder::<FullPrecisionSettings>::new()
+                    .load(path.into(), &device)
+                    .expect("Should be able to load the model weights from the provided file")
+            } else {
+                None
+            };
+
             let model = training::train::<TrainingBackend>(
                 ModelConfig::new(transformer_blocks, embed_dims, attn_heads, percept_size)
                     .with_dropout(dropout),
@@ -76,6 +87,7 @@ fn main() {
                 test_data,
                 epochs,
                 lr_factor,
+                record,
             );
 
             let recorder = CompactRecorder::new();

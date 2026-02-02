@@ -46,6 +46,7 @@ enum Command {
         /// The size of the perceptrons between the attention blocks.
         percept_size: usize,
         epochs: usize,
+        #[arg(short, long)]
         start_model: Option<PathBuf>,
         save_to: PathBuf,
     },

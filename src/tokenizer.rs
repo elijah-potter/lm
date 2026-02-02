@@ -5,7 +5,7 @@ use burn::prelude::Backend;
 use burn::tensor::{Int, Shape, TensorData};
 
 pub const VOCAB_SIZE: usize = 64;
-pub const MAX_SEQ_LEN: usize = 64;
+pub const MAX_SEQ_LEN: usize = 128;
 
 pub fn text_to_indices<B: Backend>(text: &[char], device: &B::Device) -> Tensor<B, 2, Int> {
     let mut idxs: VecDeque<_> = text

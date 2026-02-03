@@ -1,0 +1,30 @@
+In our calculus class today, we did an activity that takes advantage of optimization techniques. We spent the three previous classes learning how to use the derivative to find maximum and minimum values of functions.
+I have 12 students in this section, so I split them into 6 pairs. I handed out one piece of paper to each group. There were 3 different sizes of paper. The task I assigned them was to construct a box of maximum volume by cutting off squares from the corners and folding up the tabs to form the sides of the box:
+I also provided scissors, tape, and a ruler to each team.
+Since each pair of teams had the same size of paper, they were able to compare results, and check each others’ work.
+The pieces of paper we worked with were 8.5″ x 11″, 8.5″ x 14″, and 11″ x 14″. Each pair of teams came up with very close matches for dimensions of boxes that contained maximum volume.
+The 8.5″ x 11″ results were 1.6″ x 7.8″ x 5.4″ for a volume of 67 cubic inches. The teams with the 8.5″ x 14″ sheets of paper came up with 10.7″ x 5″ x 1.7″ for a volume of 91 cubic inches. Those working with the 11″ x 14″ sheets built 12.6″ x 6.6″ x 2.1″ boxes for a volume of 183 cubic inches.
+Here are their masterpieces:
+Here are the steps I provided on the student handout:
+Calculus Activity: Optimization
+In this activity, you will figure out the dimensions of an open box that will maximize its volume, given a specified amount of paper to work with.
+1. Measure the initial dimensions of your sheet of paper.
+Length = ____________________________ inches
+Width = ____________________________ inches
+Area = ______________________________ in2
+To construct your box, you will cut a square x inches wide off of each corner, fold up the remaining tabs, and tape them together to make the box’s sides.
+2. Figure out a volume function in terms of x based on your given sheet of paper.
+Volume function V(x) = ____________________________________
+3. Use calculus to determine the value of x that maximizes the volume.
+x = ___________________________ inches
+Max volume = ________________________ in3
+Cut off the corners, and build your box!
+4. Measure the dimensions of your box, and see if the volume matches the one you calculated in Step 3.
+Length = _________________________ inches
+Width = __________________________ inches
+Height = _________________________ inches
+Volume = ________________________ in3
+5. One other group was given a piece of paper the same size as yours. Compare their results to yours.
+Their volume = ________________________in3
+% difference = ______________________
+An interesting followup to this activity would be to investigate the relationship between the area of the given sheet of paper and the volume of the constructed box, and then try to generalize that result!

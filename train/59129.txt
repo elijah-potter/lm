@@ -1,0 +1,91 @@
+This project, an ultrasonic rangefinder from
+1979, shows how to make a distance finding device using ultrasonic sound waves.
+This includes only the block diagrams and no circuit but detailed description shows what is going on.
+The interesting part of this design is not so much the range finder itself (since using microcontrollers you can build one more easily), rather it is using a simple RC circuit to differentiate a monostable pulse output (a square pulse). And then using a comparator to trigger activation of the receiver.
+Not only this but the received ultrasonic signal is used as input to the other side of the comparator as a reference i.e. to trigger the measurement action. The key point is that the differentiated pulse lowers the threshold for the comparator trigger meaning that the circuit should respond better to lower signal levels i.e. reflected ultrasonic sounds received from a greater distance.
+There is a free project on this site for a microcontroller based ultrasonic range finder
+with circuit diagrams - it would be interesting to add in the variable threshold and see if it can be improved! it should do so as the level detected will be improved the further the distance that the ultrasonic sound wave is reflected.
+For changes in that circuit (in the above link): You can see the threshold comparator U6 and threshold adjust VR2. You would need to use a spare output from the 16F88 say one of the spare signals on port RB, to generate a pulse and then add the CR network to differentiate that and feed into the comparator (pin 3).
+Executive Summary of the Ultrasonic Rangefinder
+An ultrasonic rangefinder providing a correct distance measurement and comprising a first transducer for transducing electric signals into ultrasonic waves and transmitting the ultrasonic waves, a second transducer for receiving the ultrasonic waves and transducing the ultrasonic waves into electric signals, a differentiation circuit, and a comparator for comparing a level of a differentiated output signal from the differentiation circuit with an output signal level of the second transducer and detecting a threshold time when the level of the differentiated output signal from the differentiation circuit becomes lower then the output signal level of the second transducer where a threshold signal level of the comparator is automatically varied with respect to a time lapse of the travelling ultrasonic waves coming back to the rangefinder after being reflected by an object, thus overcoming the conventional problems due to the spurious-like direct waves.
+Background of the Ultrasonic Rangefinder
+Various rangefinders have been proposed for ranging by a time difference between a sending time and a receiving time of ultrasonic waves. The conventional rangefinders have the following problems as follows. In general, a receiving microphone for the ultrasonic waves, which is disposed adjacent to an ultrasonic wave speaker, receives direct waves which are other than the ultrasonic reflection waves from a ranging object, and travelling through short space from the speaker to the microphone, although the strength of the direct waves coming back from various directions depends on directivity of the sending speaker.
+When the sending speaker and the receiving microphone are both mounted on a same supporter or a frame, solid waves are also transmitted through a direct path in the supporter from the speaker to the microphone. In the conventional rangefinders, an amplification degree of a signal for the reflection waves is selected to be sufficient for receiving a small intensity signal produced by the reflection waves from the object of a maximum range distance Lmax. But in such a case, the direct waves may come back to the rangefinder earlier than the correct reflection waves and even small direct waves may be amplified well to result in a pseudo-signal which is erroneously used for the time difference determination.
+This problem would be resolved by decreasing the amplification degree for the direct waves, but paradoxically the maximum range distance also becomes shorter by such a measure. Therefore, the conventional rangefinders have been subject to the problems of the direct waves. The conventional rangefinders have a further drawback that circuit configurations are complicated.
+Summary of the Ultrasonic Rangefinder
+The present design provides a rangefinder free from the conventional problems arising from the undesirable direct waves, wherein a signal level for detecting a right signal due to the reflection waves from a ranging object is automatically varied and the detection of the right signal is made by the time-dependent signal level.
+Description of the Ultrasonic Rangefinder
+The present design provides an ultrasonic rangefinder comprising a first transducer for transducing electric signals into ultrasonic waves and transmitting said ultrasonic waves, a second transducer for receiving said ultrasonic waves and transducing said ultrasonic waves into electric signals, a first timer means for determining a starting time for transmitting said ultrasonic waves, a carrier frequency generator for generating a carrier signal of a frequency of said ultrasonic waves, a second timer means for generating a pulse having a time width at least longer than a time corresponding to a travelling time of said ultrasonic waves from said first transducer to said second transducer at the time when said first transducer begins to transmit said ultrasonic waves, a differentiation circuit for differentiating said pulse of said second timer means, and a comparator for comparing a level of said differentiated output signal from said differentiation circuit with an output signal level of said second transducer and detecting a threshold time when said level of said differentiated output signal from said differentiation circuit becomes lower than said output signal level of said second transducer.
+Figure 1 : Is a block diagram of an ultrasonic rangefinder in accordance with the present invention for the ultrasonic rangefinder
+Figure 2 : Is a timing chart showing signals designated by curves (a)-(h) of the outputs of several blocks shown in fig. 1 for the ultrasonic rangefinder
+The preferred embodiment of the present design is elucidated by referring to the accompanying drawings. FIG. 1 is a block diagram of an ultrasonic rangefinder in accordance with the present design. FIG. 2 is a timing chart showing signals designated by curves (a)-(h) in several blocks of FIG. 1.
+A pulse generating circuit (PGC) 1 of FIG. 1 generates one start pulse P1
+shown by the curve (a) of FIG. 2 every time a switch SW is turned on. A first monostable multivibrator (MMV) 2 serves as a first timer means, is triggered by the start pulse P1,
+and generates an output signal which has a high logic level part PA for a time period of t2
+as shown by the curve (b) of FIG. 2.
+A carrier frequency generator (CFG) 3 continuously generates a signal of a carrier wave frequency used for the ultrasonic rangefinding. An AND gate circuit 4 passes the continuously generated signal for the time period t2
+and gives a burst signal A shown in the curve (c) of FIG. 2.
+Therefore, the burst signal A lasts only during the time period t2
+when the output signal of the monostable multivibrator (MMV) 2 is at the high logic level. A power amplifier 5 amplifies the burst signal A of an ultrasonic frequency, thereby driving a transducer such as a speaker 6 for producing the ultrasonic waves.
+An ultrasonic wave is reflected by an object 13 and reaches a microphone 8 which converts the ultrasonic wave into an electric signal. An amplifier 7 amplifies the electric signal sent out from the microphone 8. A center frequency of the amplifier 7 is set to be the ultrasonic frequency of the burst signal A, namely the carrier frequency generator (CFG) 3, so that the reflected ultrasonic signal only is amplified thereby.
+A second monostable multivibrator (MMV) 9 serves as a second timer means, is triggered by the abovementioned start pulse P1,
+and generates an output signal PB having a high logic level for a time period t9
+as shown by the curve (d) of FIG. 2. A differentiation circuit 10 having a relatively long predetermined time constant differentiates the output signal of the second monostable multivibrator (MMV) 9.
+Figure 3 : Is a circuit diagram of a typical differentiation circuit together with input and output signal waveforms for the ultrasonic rangefinder
+FIG. 3 is a circuit diagram showing a typical differential circuit together with input and output signal waveforms. The differentiation circuit 10 generates a signal V1
+changing its waveform exponentially as shown by the curve (e) of FIG. 2. An analog comparator 11 compares the voltage of the signal V1
+of the differentiation circuit 10 with that of an output signal V2
+of the amplifier 7, and inverts a logic level of an output signal to a high logic level when the voltage of the signal V1
+is lower than that of the signal V2.
+A flip-flop (FF) 12 has been previously set by the abovementioned start pulse P1
+thereby holding its output signal shown by the curve (h) of FIG. 2 at a high logic level until the output signal of the analog comparator 11 is inverted to the high logic level.
+When the switch SW is turned on, the ultrasonic waves are generated from the speaker 6 during the time period t2.
+They reach the object 13 and are reflected from the object 13. Then, the microphone 8 detects the reflected ultrasonic waves thereby generating an electric signal, which is then selectively amplified by the amplifier 7. The output signal V2
+of the amplifier 7 is an analog signal F2
+shown by the curve (f) of FIG. 2.
+The output signal V1
+of the differentiation circuit 10 is expressed by using the input signal thereof, i.e. an output signal E of the second monostable multivibrator (MMV) 9 as,
+where C and R are a capacitance and a resistor of the differentiation circuit 10, respectively, and t is the time. The equation (1) can be approximately expanded to result in
+The level of the signal V2
+in proportion to the received ultrasonic waves also decays as the time passes. Therefore, it is necessary that the sensitivity of the analog comparator (COM) 11 complies with a distance from the rangefinder to the object 13 (in other words, with the time required for the ultrasonic waves to be reflected from the object 13 and to return to the rangefinder).
+For this purpose, the output signal of the flip-flop (FF) 12 is turned to a low logic level when the signal V2
+by the received ultrasonic waves becomes higher than the output signal V1
+of the differentiation circuit 10 after a predetermined time t12
+from the time when the flip-flop (FF) 12 is set by the start pulse P1.
+An indication means 14 is used to display a time period during which the logic level of the flip-flop 12 is at the high logic level.
+Suitable indicating means are known to those in this art and could, for example, be a counter. It is a known technique to display a value responding to a distance by selecting a clock pulse frequency used for the counting.
+The sound wave propagation velocity v (m/sec) in the air is expressed by
+where T is the temperature in centigrade. A distance L(m) from the rangefinder to the object 13 can be calculated by
+Figure 4 : Is a graph showing waveforms of ultrasonic wave signals versus time for the ultrasonic rangefinder
+is the time corresponding to the time from the sending to the receiving of the ultrasonic waves. The relationship between the sound strength of the received ultrasonic waves and the distance L is that the former is inversely proportional to the latter. Therefore, when an ultrasonic wave pulse shown by a curve (c') of FIG. 4 is used for the rangefinding of three different objects O1,
+positioned at different places distant from the rangefinder, the sound strength of the received ultrasonic waves decreases in accordance with the distances of the objects from the rangefinder as shown by a curve (f') of FIG. 4, even when the reflection coefficients of the objects are equal to each other.
+The rangefinder in accordance with the present design uses the output signal V1
+of the differentiation circuit 10 as a threshold value of the analog comparator (COM) 11. The output signal V1
+is time-dependent as described above, and therefore the rangefinder in accordance with the present design is devised in such a manner that the threshold value used for the comparison in the analog comparator (COM) 11 is automatically varied in accordance with the time required for the ultrasonic waves to reach the rangefinder after the reflection.
+When the direct waves are received by the microphone 8 immediately after the ultrasonic waves are transmitted from the speaker 6 and before the reflection waves are received by the microphone 8, the amplifier 7 produces a spurious output signal F1
+in the curve (f) of FIG. 2. At this time, the signal V1
+is higher than the spurious output signal F1
+so that the comparator 11 does not generate the inverted high level signal.
+Accordingly, it is possible to remove effects of undesirable spurious electric signals induced by the direct ultrasonic waves. It is thus possible to correctly carry out the rangefinding even for the object positioned at an extremely proximate place from the rangefinder.
+It is naturally that the speaker 6 for producing the ultrasonic waves and the microphone 8 for receiving the ultrasonic waves are transducers designed for the ultrasonic wave range having the most preferable electric-mechanical and mechanic-electrical conversion efficiency values in the ultrasonic frequency range controlled by the carrier frequency generator (CFG) 3.
+In the timing chart of FIG. 2 analog signal parts are enlarged in the time axis. When the oscillation frequency of the carrier frequency generator (CFG) 3 is set to be 40 KHz, the predetermined time period t2
+of the first monostable multivibrator (MMV) 2 be 2 m sec and the maximum setting distance value be 3.4 m, then the predetermined time period t9
+of the second monostable multivibrator (MMV) 9 becomes 20 m sec.
+It is possible that the ultrasonic rangefinder in accordance with the present design further comprises a display means (not shown in FIG. 1) to indicate that the ultrasonic rangefinder is unable to measure the object distance when the output signal (h) of the flip-flop (FF) 12 does not invert the output signed within the predetermined time period t9
+of the second monostable multivibrator (MMV) 9 (i.e. the reflection waves are not obtained within the predetermined time period t9).
+It is further possible to provide a counter means in the ultrasonic rangefinder of the present design by using a suitable clock signal and the output signal (h) of the flip-flop (FF) 12 as a gate signal.
+Figure 5 : Is a circuit diagram of a known simple oscillator circuit for the ultrasonic rangefinder
+FIG. 5 is a circuit diagram showing a known simple oscillation circuit comprising a capacitor C', a resistor R' and an inverter 14. Such an oscillation circuit is applicable to the first and second monostable multivibrators 2 and 9. An oscillation frequency of the oscillation circuit is variable by selecting a suitable time constant of the capacitor C' and the resistor R'.
+It is therefore possible to remove a temperature-dependent effect of the sound velocity from the measured distance value by using a temperature-sensitive device such as a thermistor instead of the resistor R' in such a manner that the frequency dependence of the clock signal on the temperature coincides with the sound velocity dependence on the temperature expressed by the equation (3).
+It is still further possible to employ the oscillation circuit of FIG. 5 as the carrier frequency generator (CFG) 3 when the temperature compensation is made therein, since the frequency characteristics of the speaker 6 and the microphone 8 and the frequency characteristics of the amplifier 7 are not affected within the variable range of the sound velocity expressed by the equation (3).
+When the oscillation frequency of the carrier frequency generator 3 is set to be around 34 KHz, the distance corresponding to one cycle of the ultrasonic waves is 1 cm (assuming the temperature is around 10° C.). Thus a direct indication in centimeter unit is possible by using a signal as a counter clock signal for the time period t12
+after dividing the signal of the carrier frequency generator (CFG) 3 to get the signal of the frequency of a half of the oscillation frequency.
+It is preferable that the time period t2
+of the first monostable multivibrator (MMV) 2 for determining a pulse width of the transmitting ultrasonic waves is set to be a value equal to or slightly longer than response times of the speaker 6 and microphone 8, which response times are given by the mechanical Q values thereof.
+The ultrasonic rangefinder of the present design provides a possibility of a correct distance measurement with a simple circuit constitution where the threshold signal level of the analog comparator 11 to the reflection waves is automatically varied with respect to the time lapse of the travelling of the ultrasonic waves thus overcoming the conventional problems due to the direct waves.
+Click here for more project
+Claim Your: Useful
+"Arduino Software Guide"
+Jump from the ultrasonic rangefinder page to
+| About Me
+Best Microcontroller Projects Home Page.

@@ -1,0 +1,19 @@
+When carrying a backpack during summer time, heat often cannot be dissipated from your back easily. This happens to backpackers when they want to travel in long distance or students taking walk from home to school, sweat and heat often makes people feel extremely uncomfortable. So, what if we come out a solution to make a fan to locate in between the backpack and your back to circulate the air.
+I have tested it and it lowers my body temperature by 4 degrees, and it works even better if you are sweating since the air circulated can quickly take away the heat and sweat
+Here is the youtube link to show how the device works.
+Material that you need:
+1) 12V Computer Fan x2
+2) 12V battery x1
+3) DC IN connector head
+4) Velcro x3
+5) 3D printer
+Step 1: Sketching and Dummy Prototype
+Starting with measuring your backpack and do some sketches. I did my dummy prototype with some paper boards , this is to calculate the best dimension and design the best comfort that the device can fit to your waist. The thickness of the device is going to impact how much air can be drawn through the tunnel. If it is too thick, it is less comfortable to attach to your waist, but effective to draw enough air to dissipate heat. If it is too thin, little amount of air can be drawn and less effective the device is
+Step 2: Fan and Its Casing
+The device consists 6 parts, 2 parts are assembled to hold the fan. The grey casing is the bottom part, and bright yellow is the top casing, I designed the top casing in the way so the fan can be slide in easily without any screw. I also add 4 stand off to the top casing, so once the fan is installed, the bottom casing can be assembled to the top casing with 4 screws.
+I also design a slot so velcro can be slided through, Velcro is used to fix the device to the backpack.
+Step 3: Middle Parts
+Beside 4 parts are used to assemble the 2 fans, there are also two parts that are used to form the shape for the air tunnel. I designed a structure so it has a push button that it can be pushed and pulled to separate the device to individual part, this way it can be carried or stored easily. I also added a velcro to the rear so it can be attached to the backpack.
+Step 4: Wiring and Assembly
+I designed a hole so a DC-in connector can be inserted, the rest is about wiring and assemble the 3 major parts together. You probably need an extension cable to connect the battery to the DC-in connector. I added Aluminum foil to get around EMI problem.(Fan should have very low EMI, but adding Al foil is still a good thing to do.)
+Fix it to your backpack with the 3 velcros, and enjoy the cool air during the summer time.

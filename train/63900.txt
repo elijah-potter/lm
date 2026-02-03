@@ -1,0 +1,9 @@
+gives the argument of the complex number z.
+- Mathematical function, suitable for both symbolic and numerical manipulation.
+- Arg[z] is left unevaluated if z is not a numeric quantity.
+- Arg[z] gives the phase angle of z in radians.
+- The result from Arg[z] is always between and .
+- Arg[z] has a branch cut discontinuity in the complex z plane running from to 0.
+- Arg gives 0.
+- Arg automatically threads over lists.
+Introduced in 1988Updated in 2007

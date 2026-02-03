@@ -1,0 +1,3 @@
+... >> Technology >> Information Technology >> Session Layer
+Definition: In the OSI Reference Model of computer network architecture, the third of seven layers, in which a virtual connection is established with a corresponding service at the same layer on another computer. (The connection is virtual because the link to the destination computer at this level is only apparent; the actual connection requires passing the data down the protocol stack all the way to the physical layer, where the data is sent out over the network.) Protocols at the session layer govern this virtual connection.
+Source: Pfaffenberger, Bryan. Webster's new world computer dicdtionary. London: Wiley, 2003. Print.

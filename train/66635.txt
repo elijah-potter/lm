@@ -1,0 +1,21 @@
+Some early computers used a membrane keyboard (ZX80, ZX81, Atari 400), or semi-membrane with minimal keys (ZX Spectrum).
+Not just early ones. Membrane keyboards are still made and used today, usually for industrial use, as they have inherent advantages - like every design.
+This is because it was cheaper than a mechanical keyboard.
+That's right, at least for early, mass produced home computers. While a (custom) membrane keyboard has a higher setup cost, the production cost per unit is quite low compared to (back then standard) single switch keyboards. Also, they allow custom layouts and labeling with (next to) no additional cost.
+Intuitively I would have thought it would be very reliable and robust (no moving parts).
+Yes, they are. Within their capabilities. And of course the materials used.
+But according to Why did the Sinclair ZX-Spectrum use a membrane keyboard? the membrane was a very common failure point on Sinclair computers.
+First of all, as with most anecdotal collection of 'failure', the 'knowledge' about is the usual mixture of different use cases and different ideas what is a failure.
+Is this because keyboard membranes are counterintuitively fragile, or did Sinclair just get a bad supplier?
+I'd say neither. There are many factors to consider:
+- Like any other keyboard they are designed for a certain use rate - pressing WASD over 200 hours of game play wasn't part of the specs.
+- Like any other switch there is a switching time and time in between 'key' presses. Membrane keyboards are not really made for fast typing.
+- Material selection does play a role in durability, as for example the top layer may stretch and contact becomes less reliable over prolonged usage
+- As mentioned, they are not really good for typing.
+- Missing key travel
+- Missing feedback
+All these factors (and more) will result in a less than good performance when used in an environment where other qualities are more sought after.
+In fact, the way the ZX80/81 input logic is set up, it is appropriate for a membrane keyboard. No dual key usage, only single keystrokes(usually) no typing flow and context sensitive meaning are all features that go well with membrane keyboards - not as much with traditional ones, where simultaneous pressed modifier keys would be appropriate.
+Bottom line: If one expect from a lorry to handle (and perform) like a family car, disappointment is built in.
+For example, what was the track record of the Atari 400 keyboard?
+Well, I don't know of any real study here, so it stays anecdotal. Personally I had never an issue with a ZX81 or Atari 400. Worked as expected - and even way more long time stable than 'regular' keyboards, no matter how long they are in storage.

@@ -1,0 +1,26 @@
+In this tutorial you will learn how to check which Windows 10 version, build number and more that it's running on your computer.
+Method 1 - By Using Windows 10 Control Panel
+Right click over the start menu button
+Once you right click over the windows button it should open the settings menu as shown in the screenshot below, then simply go to "System"
+Next , scroll down and go to About section on the left
+In this window you can see your Device Specifications such as
+Device name - Your computer's name
+Processor - Processor type you are using
+Ram - Total Ram installed on your computer
+Device ID - The ID of your device
+Product ID - Product ID
+System Type - Whether you are running x86(32bit) or x64(64bit) operating system
+Another useful feature is the copy button, which allows you to copy all this information and paste it anywhere you want this information saved. This is useful in cases when you are having issues with your computer and you need more details about your system in order to troubleshoot the issues.
+Scroll down to see Windows Specifications, in this section you can see only details about your Operating System, such as :
+Edition - Shows which Windows 10 Edition you are using
+Version - Windows 10 Version
+Installed on - Time when OS was Installed
+OS Build - Operating System build version
+Experience - Build number of Windows Feature Pack
+Method 2 - By Using winver Command
+Step 1- Launch run command box
+Press ctrl + R to launch run
+Step 2 - Type winver in the run box
+Now simply type "winver" without quotes in run and press enter
+And it should show you which Windows 10 Edition, version and build number you are using on your computer.
+By now you should know how to check which windows 10 version, build number and edition you are using.

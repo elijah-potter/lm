@@ -1,0 +1,23 @@
+Part Number: BDW23
+Function: 45V, 6A, NPN Transistor
+Package: TO-220 Type
+Manufacturer: Fairchild Semiconductor
+Fairchild Semiconductor is a company that designs and manufactures a wide range of semiconductor devices, including integrated circuits, power transistors, diodes, and optoelectronics.
+Today, Fairchild Semiconductor is part of ON Semiconductor, a leading supplier of power management and semiconductor solutions.
+Image and Pinouts:
+A NPN transistor is a type of bipolar junction transistor (BJT) that consists of two p-type semiconductor materials separated by a single n-type material.
+The BDW23 is General purpose NPN Darlington transistor.
+Characteristics of NPN Transistors:
+1. Forward Biased: In order to operate, the base-emitter junction of an NPN transistor must be forward biased, meaning that the base must be connected to a positive voltage relative to the emitter.
+2. High Input Impedance: NPN transistors have a high input impedance, which means that they are less likely to draw current from the input source, and are therefore less likely to cause a drop in voltage across the source.
+3. Inverted Output: NPN transistors are known for producing an inverted output relative to their input. That is, if the input signal is high, the output signal will be low, and vice versa. This behavior is due to the way the transistor is designed and is an important characteristic for many electronic applications.
+1. Power Darlington TR
+2. Complement to BDW24, BDW24A, BDW24B and BDW24C respectively
+Absolute Maximum Ratings
+1. Collector-Base Voltage: Vcbo = 45 V
+2. Collector-Emitter Voltage: Vceo = 45 V
+3. Emitter-Base Voltage: Vebo = 5 V
+4. Collector Current (DC) : Ic = 6 A
+5. Collector Dissipation : Pc = 50 W
+1. Hammer Drivers, Audio Amplifier
+Other data sheets are available within the file: BDW23A, BDW23B, BDW23C

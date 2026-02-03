@@ -1,0 +1,29 @@
+By Ruchita Rathi
+The government of India initiated Aadhar card (UID project to uniquely & digitally identify people with the prime motive of tracking the social security of an individual. The project is inspired by the Social Security Number (SSN) issued in the USA. The goal of Aadhar project was to disseminate education, health, employment to all the stratas of Indian society.
+For the poor,lack of any documents to prove their identity traps them in the vicious circle of poverty. This situation marginalizes the poor because an inability to prove identity means this strata of society will never have access to public benefits and subsidies and are thus denied opportunity to lead a dignified life.
+The concept paper on Aadhar identifies this marginalized section of the Indian society as:
+1. Persons with disabilities
+3. Homeless persons;
+5. Drug Addicts,
+6. Domestic Workers;
+7. Prisoners, including Juvenile delinquents in institutions;
+8. Patients suffering from diseases like, leprosy that results in isolation from society;
+9. Widows/ Aged Residents/senior citizen and;
+10.Such vulnerable groups like Sex-workers/transgender.
+Aadhaar is a 12-digit unique number which the UIDAI will issue for all residents in India (on a voluntary basis). The number will be stored in a centralized database and linked to the basic demographics and biometric information – photograph, ten fingerprints and iris – of each individual.
+Citizens currently have to go through a grueling process of filling two forms (one Aadhar card and other a state form - depending on your state of residence in India). Then they stand in line to get these forms verified against Government issued documents like Passport, etc. Then they are further asked to stand in line for a token to get the date of data collection. And finally they proceed for the biometrics collection. During the entire process there are various touchpoints where the operators rely on manual data entry. This entire process is estimated to cost upward of a billion man hours just for the data collection process.
+Aadhar's promises of social inclusion for the marginalized seems to be a utopian dream. Consider the case of widows that are languishing in Vrindavan. These widows did get the much touted Aadhar card but they still are ineligible to vote or avail any other basic rights which are a given for any Indian citizen. 
+Also, if we look at the technical feasibilities of the UIDAI project, there are several glaring gaps that emerge:
+1. Dr. R. Ramakumar, Expert, who analyzed UID project on behalf of Government of India's Planning Commission expressed his dissent as follows:
+"…..it has been proven again and again that in the Indian environment, the failure to enroll with fingerprints is as high as 15% due to the prevalence of a huge population dependent on manual labour. These are essentially the poor and marginalised sections of the society. So, while the poor do indeed need identity proofs, aadhaar is not the right way to do that…" 
+He also argues that "The UID project is part of a larger effort to dismantle the PDS in India. The aim is to ensure a back-door entry of food stamps in the place of PDS, and later graduate it to a cash transfer scheme, thereby completing the state's withdrawal from the sphere of food procurement and distribution."
+2. Further the Indian Ministry has responded for the technical feasibility of the project as
+" …..UIDAI is cognizant of the fact that biometric matching (which is a patterns matching) by its very nature will suffer from inaccuracy. However, these inaccuracy levels are less than 1%. This cannot be a reason for not attempting to use the technology. "
+In a news article, one of the representatives of the UIDAI has admitted that the quality of fingerprints is bad because of the rough exterior of fingers caused by hardwork, and this poses a challenge for later authentication. 
+3. Additionally, there is also the concern of illegal residents getting Aadhar numbers.
+Despite these serious concerns about Aadhar cards, the UIDAI chose to ignore the directives of Indian Parliament and has continued to roll-out Aadhar cards. To quote Dr. R. Ramakumar, "The UID project is marked by both “security” and “developmental” dimensions. The former leads to an invasive state; the latter leaves us with a retreating state. Either way, the “citizen” is worse off." Additionally, in any type of ICTD projects, historically, using a cutting-edge technology solution without focusing on user centered design is a guaranteed way to spell failure. Aadhar seems to have used the top-down model of implementing technology solution without really considering user needs.
+ Concept Paper - Social Inclusion
+ Three Lessons from Aadhar rollout
+ Politicians turn blind eye to voteless vrindavan widows
+ Planning Commission directive to stop UID implementation
+ R.Ramakumar's views on Aadhar

@@ -1,0 +1,25 @@
+Space and Atmospheric Burst Reporting System (SABRS) (U)
+(U) The Space Atmospheric Burst Reporting System (SABRS), is a compact, lightweight, low-impact but highly capable nuclear detonation detection system, designed to meet the needs of the United States Nuclear Detonation Detection System in the post-DSP era. This payload also provides space environment data. It has been leveraged with investments in past operational sensor systems as well as design work underwritten by the Department of Energy Office of Research and Development (DOE/NN-20). But without appropriate resources allocated to the SBIRS program, the payload will not fly on SBIRS when the DSP flights come to an end. However, under a development program supported by the Department of Energy Office of Research and Development, the SABRS is designed to replace specific nuclear detonation detection capabilities currently operating at geosynchronous orbit, and to thoroughly complement planned GPS/NDS capabilities such as enhanced X-ray monitoring. Because of the limited payload margins anticipated for future platforms, SABRS is designed to provide maximum capabilitiy at minimum weight, power and cost. In addition, it is designed to operate within existing satellite telemetry architectures and to minimize impact on ground data systems.
+Description User Impact Programmatics Images Related Initiatives Related Requirements Related Categories Road Map Placements Additional Hotlinks Lead Office POC
+(U) The SABRS data is essential for the detection, identification, and characterization of higher altitude nuclear detonations, particularly low-performance entry-level weapons in problematic regions, in support of Presidential Decision Directive 18 (PDD-18). SABRS has five measurement capabilities: (1) Neutron time-of-flight (hence energy) spectrum; (2) Prompt gamma rays from a nuclear detonation (very high flux for a very short time); (3) Delayed gamma rays from the nuclear detonation debris cloud (lower flux for very long times); (4) Background environment of energetic ions and electrons (energies from about 100 keV to greater than 100 MeV); (5) Monitoring of spacecraft charging levels by low energy particle measurements (energies from 1 eV to 40 keV). The background monitoring capability is included primarily for the radiation detectors, but also functions as a spacecraft environment monitor and satellite dosimeter. Built into SABRS electronics are the electronics required to recognize an event and provide cross-triggering, as well as to condition and supply power and command/control to the sensors. SABRS is intended to be integrated as a single box/single interface payload, thereby reducing integration costs to the satellite contractor. The payload weighs 35 lbs, consumes 19 Watts maximum, measures 12"x12"x12", and produces a steady-state telemetry load of about 2 kilobits/sec.
+(U) Because of current and anticipated requirements on the flow of nuclear detonation and space weather data, the Air Force Space-Based InfraRed System (SBIRS) geosynchronous platform is the most sensible and cost-effective host for SABRS. Moreover, the SBIRS Program Office has indicated to us that reserve payload space has been designed into the SBIRS satellite to allow for just such payloads. In addition, the SBIRS program has expressed an interest in the space environment data which SABRS can provide. Hosting SABRS on SBIRS would allow the critical gamma ray and neutron monitoring measurements to continue after DSP ends.
+User Impact (U):
+(U) For environmental monitoring, the SABRS
+(U) Organizations and Funding:
+- (U) SMC: Funding Source.
+Related Initiatives (U):
+Name Title DSP Defense Support Program (DSP) DSP/NDS Defense Support Program(DSP)/Nuclear Detonation (NUDET) Detection System (NDS) Improved Space Env. Models Improved Space Environment Models SBIRS (High) NUDET Package Space Based Infrared System (SBIRS) (HIGH) Nuclear Exo-atmospheric Detonation (NUDET) PACKAGE SOBEDS Small On-Board Environmental Diagnostic System (SOBEDS) This Table Is Unclassified.
+Related Requirements (U):None.
+Related Categories (U):
+Name Title Space-Based Sensors Space Based Sensors This Table Is Unclassified.
+Road Map Placements (U):
+Name Title ENVIRONMENTAL MONITORING SPACE FORCE ENHANCEMENT: ENVIRONMENTAL MONITORING This Table Is Unclassified.
+Requirements, Funding and Additional Hotlinks (U):
+Lead Office (U):
+(U) Los Alamos National Lab.
+Point of Contact (U):
+(U) Dr. Richard "Rick" C. Elphic, Open Phone: (505) 665-3693.
+(U) Lt Col Debra Matson, Open Phone: DSN 833-6365.
+Date Of Information (U):
+(U) 29 January 1998
+(U) Road Map Production Date: 12 July 1999

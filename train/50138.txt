@@ -1,0 +1,13 @@
+Manual Section... (3) - page: telldir
+NAMEtelldir - return current location in directory stream
+#include <dirent.h> long telldir(DIR *dirp);
+Feature Test Macro Requirements for glibc (see feature_test_macros(7)):
+DESCRIPTIONThe telldir() function returns the current location associated with the directory stream dirp.
+RETURN VALUEOn success, the telldir() function returns the current location in the directory stream. On error, -1 is returned, and errno is set appropriately.
+- Invalid directory stream descriptor dirp.
+CONFORMING TO4.3BSD, POSIX.1-2001.
+NOTESIn glibc up to version 2.1.1, the return type of telldir() was off_t. POSIX.1-2001 specifies long, and this is the type used since glibc 2.1.2.
+SEE ALSOclosedir(3), opendir(3), readdir(3), rewinddir(3), scandir(3), seekdir(3)
+COLOPHONThis page is part of release 3.24 of the Linux man-pages project. A description of the project, and information about reporting bugs, can be found at http://www.kernel.org/doc/man-pages/.
+This document was created by man2html, using the manual pages.
+Time: 15:26:56 GMT, June 11, 2010

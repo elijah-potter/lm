@@ -1,0 +1,7 @@
+Add a term and its corresponding meaning to a glossary. So everyoneï¿½who comes across with this term will comprehend in the same way.
+Having a standard meaning of domain vocabulary between business users and developers is important.
+Not merely to achieve efficient communications but also to ensure the system can work according to users' expectation to prevent unpredicted behaviors and unknown terminology used in UI.
+The Glossary Grid is ready for you to collect and define significant terms in project.
+Besides entering domain terms into a glossary manually, you can also extract terms directly from the model. When you read through a description of a shape, simply right click on any key terms to add them into the glossary. You can apply this technique to identify terms from shape names, user story's scenario, the 3'C' of user story (conversation, confirmation, card) and problem statement (in Textual Analysis).
+The definition of a term is not just about a text description, but also its aliases (i.e. synonyms) and possibly any user-defined properties associated with the term. The Glossary feature enables you to define terms in detail by specifying its aliases, tagged values and attributes.
+Once a glossary grid is established, occurrences of terms in shapes' name and description would be highlighted. You can click on any highlighted term to read their its definition.

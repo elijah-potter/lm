@@ -1,0 +1,70 @@
+Circles and PiSpheres, Cones and Cylinders
+In the previous sections, we studied the properties of circles on a flat surface. But our world is actually three-dimensional, so lets have a look at some 3D solids that are based on circles:
+Every point on the surface of a
+Notice how the definition of a sphere is almost the same as the definition of a
+Here you can see the cylindrical Gasometer in Oberhausen, Germany. It used to store natural gas which was used as fuel in nearby factories and power plants. The Gasometer is 120m tall, and its base and ceiling are two large circles with radius 35m. There are two important questions that engineers might want to answer:
+- How much natural gas can be stored? This is the
+of the cylinder.
+- How much steel is needed to build the Gasometer? This is (approximately) the
+of the cylinder.
+Let’s try to find formulas for both these results!
+Volume of a Cylinder
+The top and bottom of a cylinder are two congruent circles, called bases. The height h of a cylinder is the perpendicular distance between these bases, and the radius r of a cylinder is simply the radius of the circular bases.
+We can approximate a cylinder using a
+Even though a cylinder is technically not a prism, they share many properties. In both cases, we can find the volume by multiplying the area of their base with their height. This means that a cylinder with radius r and height h has volume
+Remember that radius and height must use the same units. For example, if r and h are both in cm, then the volume will be in
+In the examples above, the two bases of the cylinder were always directly above each other: this is called a right cylinder. If the bases are not directly above each other, we have an oblique cylinder. The bases are still parallel, but the sides seem to “lean over” at an angle that is not 90°.
+The volume of an oblique cylinder turns out to be exactly the same as that of a right cylinder with the same radius and height. This is due to
+Imagine slicing a cylinder into lots of thin disks. We can then slide these disks horizontal to get an oblique cylinder. The volume of the individual discs does not change as you make it oblique, therefore the total volume also remains constant:
+Surface Area of a Cylinder
+To find the surface area of a cylinder, we have to “unroll” it into its flat
+There are two
+- The two circles each have area
+- The height of the rectangle is
+and the width of the rectangle is the same as the of the circles: .
+This means that the total surface area of a cylinder with radius r and height h is given by
+Cylinders can be found everywhere in our world – from soda cans to toilet paper or water pipes. Can you think of any other examples?
+The Gasometer above had a radius of 35m and a height of 120m. We can now calculate that its volume is approximately
+The radius of the cone is the radius of the circular base, and the height of the cone is the perpendicular distance from the base to the vertex.
+Just like other shapes we met before, cones are everywhere around us: ice cream cones, traffic cones, certain roofs, and even christmas trees. What else can you think of?
+Volume of a Cone
+We previously found the volume of a cylinder by approximating it using a prism. Similarly, we can find the volume of a cone by approximating it using a
+Here you can see a
+This also means that we can also use the equation for the volume:
+Notice the similarity with the equation for the volume of a cylinder. Imagine drawing a cylinder around the cone, with the same base and height – this is called the circumscribed cylinder. Now, the cone will take up exactly
+Note: You might think that infinitely many tiny sides as an approximation is a bit “imprecise”. Mathematicians spent a long time trying to find a more straightforward way to calculate the volume of a cone. In 1900, the great mathematician
+Just like a cylinder, a cone doesn’t have to be “straight”. If the vertex is directly over the center of the base, we have a right cone. Otherwise, we call it an oblique cone.
+Once again, we can use Cavalieri’s principle to show that all oblique cones have the same volume, as long as they have the same base and height.
+Surface Area of a Cone
+Finding the surface area of a cone is a bit more tricky. Like before, we can unravel a cone into its net. Move the slider to see what happens: in this case, we get one circle and one
+Now we just have to add up the area of both these components. The base is a circle with radius r, so its area is
+The radius of the sector is the same as the distance from the rim of a cone to its vertex. This is called the slant height s of the cone, and not the same as the normal height h. We can find the slant height using
+The arc length of the sector is the same as the
+Finally, we just have to add up the area of the base and the area of the sector, to get the total surface are of the cone:
+You can think of a sphere as a “three-dimensional
+In a previous section, you learned how the Greek mathematician
+Volume of a Sphere
+To find the volume of a sphere, we once again have to use Cavalieri’s Principle. Let’s start with a hemisphere – a sphere cut in half along the equator. We also need a cylinder with the same radius and height as the hemisphere, but with an inverted cone “cut out” in the middle.
+As you move the slider below, you can see the cross-section of both these shapes at a specific height above the base:
+Let us try to find the cross-sectional area of both these solids, at a distance height h above the base.
+The cross-section of the hemisphere is always a
+The radius x of the cross-section is part of a right-angled triangle, so we can use
+Now, the area of the cross section is
+The cross-section of the cut-out cylinder is always a
+The radius of the hole is h. We can find the area of the ring by subtracting the area of the hole from the area of the larger circle:
+It looks like both solids have the same cross-sectional area at every level. By Cavalieri’s Principle, both solids must also have the same
+A sphere consists of
+The Earth is (approximately) a sphere with a radius of 6,371 km. Therefore its volume is
+The average density of the Earth is
+That’s a 6 followed by 24 zeros!
+If you compare the equations for the volume of a cylinder, cone and sphere, you might notice one of the most satisfying relationships in geometry. Imagine we have a cylinder with the same height as the diameter of its base. We can now fit both a cone and a sphere perfectly in its inside:
+This cone has radius
+This sphere has radius
+This cylinder has radius
+Notice how, if we
+Surface Area of a Sphere
+Finding a formula for the surface area of a sphere is very difficult. One reason is that we can’t open and “flatten” the surface of a sphere, like we did for cones and cylinders before.
+This is a particular issue when trying to create maps. Earth has a curved, three-dimensional surface, but every printed map has to be flat and two-dimensional. This means that Geographers have to cheat: by stretching or squishing certain areas.
+Here you can see few different types of maps, called projections. Try moving the red square, and watch what this area actually looks like on a globe:
+To find the surface area of a sphere, we can once again approximate it using a different shape – for example a polyhedron with lots of faces. As the number of faces increases, the polyhedron starts to look more and more like a sphere.
+COMING SOON: Sphere Surface Area Proof

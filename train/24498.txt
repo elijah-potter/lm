@@ -1,0 +1,18 @@
+A flaw found in Apple's iPhone that can allow text messages to sidestep Apple's safeguard is "severe", according to an iPhone security researcher.
+In a blog post, the researcher, named Pod2g, said that the issue could mean that cyber criminals can send a message, which seemingly comes from the bank of the receiver, asking for private information or entreating them to visit a malicious website.
+The flaw, which affects iOS 6 beta 4, could also allow hackers to send a fake message to a person's device to use as false evidence.
+The researcher added that he or she was confident that other researchers, and cyber criminal groups, already know of the vulnerability. This means that it could already be being actively exploited.
+The science bit
+When a user writes a SMS message, it is converted to PDU (Protocol Description Unit) by the mobile and passed to the carrier for delivery.
+Within the text field, an option within the UDH (User Data Header) section allows the user to change the reply address of the text, according to Pod2g.
+"If the destination mobile is compatible with [this feature] and if the receiver tries to answer to the text, he will not respond to the original number, but to the specified one," the researcher said.
+Pod2g added that most carriers do not check this part of the message, allowing the user to write a special number like 999 or the number of somebody else in the text field.
+"In a good implementation of this feature, the receiver would see the original phone number and the reply-to one. On iPhone, when you see the message, it seems to come from the reply-to number, and you lose track of the origin," Pod2g said.
+Tyler Shields, a senior security researcher at application security testing vendor Veracode, emphasised the significance of the flaw.
+"At first glance, this type of flaw seems tame, but in reality it can be used very effectively in spoofing and social engineering-based threat models. I would rate this attack a medium severity because it relies on 'tricking' the user into doing something specific based on a falsified level of trust," he told security firm Kaspersky Lab's news service, Threatpost.
+Does Google know too much about you?
+The trend towards non-desktop-based devices is enabling more flexible working practices and behaviours
+Date: 29 May 2013
+THIS EVENT HAS BEEN POSTPONED DUE TO ILLNESS. Business intelligence is enjoying an upsurge of interest. In an era in which businesses and organisations...
+Date: 11 Jun 2013
+The enterprise mobility summit will examine how organisations can manage the increasing array of endpoints which are enabling mobile computing in business....

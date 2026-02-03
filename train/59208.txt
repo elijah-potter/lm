@@ -1,0 +1,48 @@
+taught by Anthony Babinec
+Aim of Course:
+In this online course, “Cluster Analysis,” you will you how to use various cluster analysis methods to identify possible clusters in multivariate data. In marketing applications, clusters of customer records are called market segments (and the process is called market segmentation). Methods discussed include:
+- hierarchical clustering (in which smaller clusters are nested inside larger clusters);
+- k-means clustering;
+- two-step clustering;
+- normal mixture models for continuous variables.
+After taking this course, a student will be able to:
+- Conduct hierarchical cluster analysis and k-means clustering to identify clusters in multivariate data
+- Apply normalization of data appropriately in cluster analysis
+- Identify the assignment of cases to clusters
+- Apply mixture models to multivariate data and interpret the output
+- Interpret/diagnose the output of different clustering procedures
+This course may be taken individually (one-off) or as part of a certificate program.
+WEEK 1: Hierarchical Clustering
+- Hierarchical clustering - dendrograms
+- Divisive vs. agglomerative methods
+- Different linkage methods
+WEEK 2: K-means Clustering
+WEEK 3: Normal Mixture Model
+- Finite mixture model
+- K-means cluster as a special case
+WEEK 4: Other Approaches
+Homework in this course consists of short answer questions to test concepts and guided data analysis problems using software. In addition to assigned readings, this course also has an end of course data modeling project.
+Who Should Take This Course:
+- Marketing analysts who need to cluster customer data as part of a market segmentation strategy;
+- Computational biologists (e.g. for taxonomy);
+- Environmental scientists (e.g. for habitat studies);
+- IT specialists (e.g. in modeling web traffic patterns);
+- Military and national security analysts (e.g. in automated analysis of intercepted communications).
+Some familiarity with multivariate data is also helpful, such as that provided in Regression
+or Predictive Analytics 1
+(though the specific methods discussed in those courses are not required for this course).
+Organization of the Course:
+This course takes place online at the Institute for 4 weeks. During each course week, you participate at times of your own choosing - there are no set times when you must be online. Course participants will be given access to a private discussion board. In class discussions led by the instructor, you can post questions, seek clarification, and interact with your fellow students and the instructor.
+At the beginning of each week, you receive the relevant material, in addition to answers to exercises from the previous session. During the week, you are expected to go over the course materials, work through exercises, and submit answers. Discussion among participants is encouraged. The instructor will provide answers and comments, and at the end of the week, you will receive individual feedback on your homework answers.
+About 15 hours per week, at times of your choosing.
+Students come to the Institute for a variety of reasons. As you begin the course, you will be asked to specify your category:
+- You may be interested only in learning the material presented, and not be concerned with grades or a record of completion.
+- You may be enrolled in PASS (Programs in Analytics and Statistical Studies) that requires demonstration of proficiency in the subject, in which case your work will be assessed for a grade.
+- You may require a "Record of Course Completion," along with professional development credit in the form of Continuing Education Units (CEU's). For those successfully completing the course, CEU's and a record of course completion will be issued by The Institute, upon request.
+Cluster Analysis has been evaluated by the American Council on Education (ACE) and is recommended for the upper-division baccalaureate degree category, 3 semester hours in statistics or data mining. Note: The decision to accept specific credit recommendations is up to each institution. More info here
+This course is also recognized by the Institute for Operations Research and the Management Sciences (INFORMS) as helpful preparation for the Certified Analytics Professional (CAP®) exam, and can help CAP®analysts accrue Professional Development Units to maintain their certification .
+This course will use papers that will be made available electronically, and will also refer to sections from the book Cluster Analysis, 5th Edition, by Brian S. Everitt, Dr Sabine Landau, Dr Morven Leese, Dr Daniel Stahl.
+PLEASE ORDER YOUR COPY IN TIME FOR THE COURSE STARTING DATE.
+This is a hands-on course. Participants will apply cluster methods algorithms to real data, and interpret the results, so software capable of doing cluster analysis is required; most general purpose statistical software (SAS, SPSS, Stata, etc.) can do this. The instructor is familiar with SPSS and XLStat. For information on software, including free licenses for students, click here.
+June 02, 2017 to June 30, 2017June 01, 2018 to June 29, 2018
+Course Fee: $589

@@ -1,0 +1,112 @@
+Home > Preview
+The flashcards below were created by user
+on FreezingBlue Flashcards.
+What are the requirements for MRI?
+- strong magnetic field
+- external RF energy source
+- odd number of nuclear protons
+why is a strong magnetic field required?
+because the patient must be situated within a magnetic environment in order to generate the MR signal that's used to create the MR images
+why is an external energy source required? what kind of energy source is used?
+- because the patient's tissues must be stimulated with energy before those tissues can generate the MR signal that's used to create the MR images
+- a radio transmitter similar to that used for AM radio broadcasts known as radio frequency or RF energy
+what are the two prerequisites in order for a material in the human body to be suitable for MR imaging to be able to respond appropriately to the external magnetic field and external energy source?
+- it must be abundant throughout the body
+- it must be a stable atomic nucleus with an odd number of protons
+which atom is the most abundant in the human body that consists of a single proton that is the particle of interest in MRI?
+The hydrogen proton is positively or negatively charged?
+A proton that's fixed in its position within the nucleus of the atom still spins about its own axis, what is the main characteristic of a moving charged particle?
+the significance of the positive charge and the spinning behavior is that any charged particle which is moving, no matter where it is generates a magnetic field
+what is the significance of protons generating a magnetic field?
+this means that all of the hydrogen protons in the human body have magnetic properties
+Why can't we experience magnetic forces in our bodies during a normal day?
+that's because the proton dipoles are randomly oriented in space, and the magnetic effects are canceled
+What happens to the spins of the protons when placed in a strong, external magnetic field, like the one used in MRI?
+the protons orient themselves in one of two opposite orientations within the magnetic field
+what are the two opposite orientations within the magnetic field do protons align with and what are their differences?
+antiparallel- an excited, high energy state of these protons that causes their spin axes to align against the external magnetic field so that the north pole of the proton aligns with the north pole of the external magnet.
+parallel- which is a more relaxed, low-energy state. North pole of their axes align with the south pole of the external magnet. This is also called the ground state
+The external magnetic field is also known as
+What is net magnetization?
+the overall collective behavior of a group of protons
+Can you measure the net magnetization of protons while it is lined up with the magnetic field of the MR system?
+how can you measure the net magnetization of protons while it is aligned with
+tilt it away from
+what is precession?
+wobbling motion of protons around the main magnetic field
+the rate of precession, or wobble of the net magnetization (of hydrogen protons) is called
+precessional frequency or resonant frequency
+the resonant frequency of the net magnetization is determined by the strength of
+the resonant frequency of net magnetization not only depends on the magnetic field strength that those nuclei are exposed to, but also depends on a mathematical constant which is unique for each type of nucleus (hydrogen for MRI). What is this constant called?
+what is the gyromagnetic ratio for hydrogen protons?
+42.6 megahertz per tesla
+This means that in a 1 tesla magnetic field, the net magnetization of protons will precess at a rate of 42.6 million complete rotations per second
+what does the Larmor Equation calculate?
+the resonant or precessional frequency
+what is the Larmore Equation?
+f = (42.6 MHz/T) x
+what is the resonant frequency of hydrogen protons in a 3T, 1.5T, 1T and a 0.5T magnetic field?
+3T: (42.6) x 3 = 127.8 MHz
+1.5T: (42.6) x 1.5= 63.9 MHz
+1T: (42.6) x 1 = 42.6 MHZ
+0.5T: (42.6) x 0.5 = 21.3 MHz
+what is the goal in MRI?
+to differentiate one type of body tissue from another in order to depict normal tissue as well as pathology
+how do you learn about the tissue you want to image?
+disturb the proton's equlibrium and move their net magnetization out of alignment with the main magnetic field. Once we stop the applied disturbance, the magnetization will move back, or relax, toward its equilibrium position through two distinct relaxation processes
+it is through what processes that the tissues can be distinguished from each other?
+what is resonance?
+the phenomenon which permits the efficient transfer of energy from one object or system to another
+the longitudinal direction is parallel or perpendicular to the main magnetic field?
+the transverse direction is parallel or perpendicular to the main magnetic field?
+what happens to the protons when RF energy is applied?
+the net magnetization tilts away from the longitudinal direction towards the transverse plane in a somewhat spiral fashion
+what is the RF flip angle?
+the angle that the net magnetization is tilted away from the main magnetic field
+what RF flip angle is the most often used in spin echo pulse sequence
+90 degree flip angle
+a flip angle of less than 90 degrees is used in which pulse sequence?
+gradient echo pulse sequence
+the amount of spiral motion away from alignment with the external field is determined by the power of the RF pulse, which depends on which 2 factors?
+- RF amplitude
+- RF pulse duration
+what happens after the RF energy is turned off?
+the nuclei return to equilibrium, losing energy by transferring it to the surrounding molecular environment while emitting the MR signal in the form of radio waves
+the process by which energy is lost to the environment is called what?
+what are the two types of relaxation?
+- T1 relaxation or spin lattice
+- T2 relaxation or spin-spin
+the dissipation of energy from the protons into the surrounding molecular lattice after the RF signal is turned off is called?
+- T1 or spin lattice relaxation
+- the rate at which the protons can dissipate this energy into their surrounding molecular environment is unique for each tissue type
+T1 relaxation time is defined as
+the time required for the net magnetization to grow to 63% of its final amplitude (from transverse to longitudinal)
+which of these tissues has the shortest T1 relaxation time? CSF, gray matter, white matter
+- white matter has a very short T1 relaxation time
+- gray matter has a somewhat longer T1 relaxation time
+- CSF has an even longer T1 relaxation time
+immediately following the application of the RF pulse, the net magnetization is tilted into the the transverse plane and is oriented such that the magnetic contribution from each proton is synchronized in the same direction. The protons in this condition are said to be in phase coherence or in phase. As time passes, however, and while T1 relaxation is occurring, what happens to the protons?
+the protons' individual moments start to cancel each other out which results in a drop in the transverse net magnetization, or called dephasing.
+Dephasing or loss of transverse magnetization occurs for several reasons which are
+- the phase effects of chemical shift properties
+- local magnetic field inhomogeneities
+- magnetic susceptibility
+- spin-spin interaction
+what is the free induction decay (FID)?
+the signal decay that occurs as a result of the dephasing of the transverse magnetization
+what does the FID represent?
+the amplitude of the precessing MR signal in the transverse plane during the time course of dephasing
+what happens if the dephasing were allowed to continue long enough?
+magnetic effects of protons will cancel each other completely or decay to zero and no signal left to sample
+what needs to be done in order to collect the MR signal in the transverse plane before it decays completely?
+by rephasing the dephased magnetization through the use of pulse sequences such as spin echo
+the reduction of transverse magnetization due to spin-spin interactions is known as
+T2 relaxation time is defined as
+the time at which the transverse magnetization has decayed to 37% of its full value due entirely to spin-spin interactions
+tissues with longer T2 relaxation times exhibit a longer-lasting transverse magnetization or
+dephases more slowly
+which of these tissues has the longest T2 relaxation time? CSF, gray matter, white matter
+- CSF has a long T2 relaxation time
+- gray matter has an intermediate
+- white matter has a short T2 relaxation time
+Now we need to tie together the entire concept of the two relaxation processes. A single contrast, spin echo sequence is described for simplicity. First, remember that when the patient is placed within the strong magnetic field of the magnet of an MRI system, the net magnetization of protons lines up with the main magnetic field along the longitudinal direction. Then, the 90" RF pulse is applied, and this tilts the magnetization into the transverse plane. Immediately after the 90" RF pulse, dephasing of the magnetization will occur. Next, the 180" RF pulse is applied causing the magnetization to rephase and form an echo, which is the tiny MR signal. The echo is detected as the precessing transverse magnetization induces a volt- age in a conductive loop of wire, called an RF coil, which actually is a specialized type of radio antenna (see fl StudyModule Three). The echo contains the contrast information necessary to differentiate the appearance of the soft tissues of the body in the resulting MR image. This entire process must be repeated many times in order to collect enough echoes to generate an image

@@ -1,0 +1,9 @@
+What is docker
+Docker containers wrap up a piece of software in a complete file system that contains everything it needs to run: code, runtime, system tools, system libraries – anything you can install on a server. This guarantees that it will always run the same, regardless of the environment it is running in.
+When you develop with docker development, test and production can all have the same container. Which means if it works for development it will work in production. Makes it easy to update, test and change.
+Docker runs on the linux kernal which means it can not run windows inside a container but you can get Docker to run on a windows server with either virtual box or HyperV
+Docker VS virtual machines
+Docker looks like a virtual machine but it isn't a virtual machine. With Docker think in terms of PAAS.
+Virtual machines have a full OS with its own memory management installed with the associated overhead of virtual device drivers. In a virtual machine, valuable resources are emulated for the guest OS and hypervisor, which makes it possible to run many instances of one or more operating systems in parallel on a single machine (or host). Every guest OS runs as an individual entity from the host system.
+On the other hand Docker containers are executed with the Docker engine rather than the hypervisor. Containers are therefore smaller than Virtual Machines and enable faster start up with better performance, less isolation and greater compatibility possible due to sharing of the host’s kernel.
+You can also run Docker on the cloud

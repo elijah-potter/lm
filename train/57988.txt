@@ -1,0 +1,9 @@
+TeX is a typesetting system based on a markup language. Its strong suits include elegant mathematical typesetting, programmability and stability. TeX works well with PostScript and pdf.
+The source code is freely available, and there are versions for just about every computer platform, usually for free.
+TeX is popular among mathematicians and scientists. Several scientific publishers, e.g. Kluwer Academic Publishers, use TeX for typesetting their journals.
+For more information, visit the sites of the Dutch Language Oriented Users Group and of the international TeX Users Group.
+TeX is generally used in combination with a macro package. Important examples are LaTeX and Context. Such macro packages implement an xml-like document structure and allow definition of details of layout in a separate file.
+LaTeX is the most commonly used macro package. Context, on the other hand, is more modern and is much more suitable for complex layouts. Context also offers advanced options for creating interactive presentations in pdf format.
+Elvenkind is actively involved in the TeX community and in development efforts connected with TeX and Context.
+Our Forge project, that aims to typeset XML in an automated fashion, is based on TeX and Context.
+|Copyright © 2014 Elvenkind B.V.||Browser support|

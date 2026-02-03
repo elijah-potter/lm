@@ -1,0 +1,6 @@
+Data Type Date (date field: A type of field whose content is a date. Examples include the Baseline Start and Early Finish fields.)
+Entry Type Calculated (calculated field: A field in which the value is determined by Project based on information in other fields. Project may recalculate the value automatically or when you specify, depending on your choice of calculation settings.)
+Description The Created field contains the date and time when a task was added to the project.
+How Calculated Microsoft Project assigns the current date to this field based on the current date set in Microsoft Windows.
+Best Uses Add the Created field to a task view when you need to see when tasks were created. This can be particularly useful if you have a large number of tasks and you want to filter for tasks created within a certain time frame.
+Example You need to review all the tasks that were created after February because you want to make a global change to those tasks. Create a filter that uses the Created field to view all tasks that were created after February.

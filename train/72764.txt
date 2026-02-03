@@ -1,0 +1,28 @@
+Design of the Genode OS Architecture: Process creation
+The previous section presented the services implemented by core. In this section, we show how to combine these basic mechanisms to create and execute a process. Process creation serves as a prime example for our general approach to first provide very simple functional primitives and then solve complex problems using a composition of these primitives. We use slightly simplified pseudo code to illustrate this procedure. The env() object refers to the environment of the creating process, which contains its RM session and RAM session.
+- Obtaining the executable ELF binary
+If the binary is available as ROM object, we can access its data by creating a ROM session with the binary's name as argument and attaching its dataspace to our local address space:
+Rom_session_capability file_cap; file_cap = session("ROM", "filename=init"); Rom_dataspace_capability ds_cap; ds_cap = Rom_session_client(file_cap).dataspace(); void *elf_addr = env()->rm_session()->attach(ds_cap);
+The variable elf_addr now points to the start of the binary data.
+- ELF binary decoding and creation of the new region map
+We create a new region map using the RM service:
+Rm_session_capability rm_cap; rm_cap = session("RM"); Rm_session_client rsc(rm_cap);
+Initially, this region map is empty. The ELF binary contains CODE, DATA, and BSS sections. For each section, we add a dataspace to the region map. For read-only CODE and DATA sections, we attach the corresponding ranges of the original ELF dataspace (ds_cap):
+rsc.attach(ds_cap, size, offset, true, addr);
+The size and offset arguments specify the location of the section within the ELF image. The addr argument defines the desired start position at the region map. For each BSS and DATA section, we allocate a read-and-writeable RAM dataspace
+Ram_dataspace_capability rw_cap; rw_cap = env()->ram_session()->alloc(section_size);
+and assign its initial content (zero for BSS sections, copy of ELF DATA sections).
+void *sec_addr = env()->rm_session()->attach(rw_cap); ... /* write to buffer at sec_addr */ env()->rm_session()->detach(sec_addr);
+After iterating through all ELF sections, the region map of the new process is completely initialized.
+- Creating the first thread
+For creating the main thread of the new process, we create a new CPU session from which we allocate the thread:
+CPU_session_capability cpu_cap = session("CPU"); Cpu_session_client csc(cpu_cap); Thread_capability thread_cap = csc.create_thread();
+When the thread starts its execution and fetches its first instruction, it will immediately trigger a page fault. Therefore, we need to assign a page-fault handler (pager) to the thread. With resolving subsequent page faults, the pager will populate the address space in which the thread is executed with memory mappings according to a region map:
+Thread_capability pager_cap = rsc.add_client(thread_cap); csc.set_pager(thread_cap, pager_cap);
+- Creating a protection domain
+The new process' protection domain corresponds to a PD session:
+Pd_session_capability pd_cap = session("PD"); Pd_session_client pdsc(pd_cap);
+- Assigning the first thread to the protection domain
+- Starting the execution
+Now that we defined the relationship of the process' region map, its main thread, and its address space, we can start the process by specifying the initial instruction pointer and stack pointer as obtained from the ELF binary.
+csc.start(thread_cap, ip, sp);

@@ -1,0 +1,8 @@
+|Defines whether there is at least one handrail|
+|Used on these elements|
+|Status: De facto|
+|Tools for this tag|
+Handrails are rails designed to be grasped by the hand so as to provide stability. The handrail key and its variants describe the presence of handrails on steps and paths.
+Define whether there is a handrail at all:
+Define the position of the handrails (in the direction of the OSM way):
+See highway=steps for more examples.

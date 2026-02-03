@@ -1,0 +1,12 @@
+Use POST to send requests that modify data at the server.
+By the HTTP specification, GET requests (e.g., parameters in the URL) should only be used for requests to retrieve (hence the name GET) but not modify data. POST requests (non-visible parameters, but still unencrypted in the HTTP request) should be used whenever the request creates/updates/modifies data that's to be stored in the database (other than standard logs). This makes it slightly harder for attackers to do cross-site request forgeries, as well as less likely to accidentally double-submit or store secret information in your web page history/web server logs.
+Is the pin variable a secret?
+What you are doing at the moment seems like it could be unsafe depending on the meaning of the
+pin variable. Does this need to be kept secret from potential eavesdroppers or could people intercepting the pin do some sort of attack with it? If so, only use HTTPS (for end-to-end encryption over the transport layer) for every request with this secret data. The base-64 value you used seemed to be
+3000670269 (granted I had to append two equal signs to make it a proper b64 encoding).
+What would happen if an attacker tried using other pins?
+Let's say my
+pin='300670269', but to test your system I sent
+pin='3000670259'). Would that let them effectively break into another users account? If so, at the very least, you should do something like have an extra POST variable like
+secret_server_side_string is some long random string (e.g., something like
+de10RRORX50UAUhx0dDIxJnzXKBAs68yjdWVz8QQ - 40 random upper+lower+numbers characters has lg(62)*40 = 238 bits of entropy), and your applications only act on the pin if the checksum matches the pin. Your application should generate the checksum (without revealing the secret_server_side_string to the client). You also have to be careful that your application does constant-time string comparisons when checking the checksum with the pin, so your application isn't vulnerable to timing attacks.

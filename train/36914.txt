@@ -1,0 +1,6 @@
+In my understanding, the net-id, subnet-id and host-id of a host IP address are portions of it, indicating which bits in its binary notation they corresponds to.
+From them we can evaluate the network address and subnet address, which instead are IP addresses.
+The converse is not true, unless you specify the subnet mask or CIDR.
+In this way it does not make sense to specify the subnet-id with a single decimal number, f.i.
+in 18.104.22.168/13 the subnet-id is the 5 most significant bits of the second byte, but if I specify the subnet address 22.214.171.124 without the CIDR or subnet mask I can't get the subnet-id. "176" does not specifies the subnet-id as 126.96.36.199/13 and 188.8.131.52/15 have the same "176" but different subnet-id's.
+Is that correct? I see that in some textbooks the terms are used interchangeably.

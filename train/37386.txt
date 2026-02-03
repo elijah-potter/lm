@@ -1,0 +1,20 @@
+Queue is a linear data structure which orders elements in a First-In-First-Out (FIFO) manner, where the first element inserted is the first one to be removed.
+In this post, we’ll see how to implement a queue using ArrayDeque — a resizable array implementation of the Deque interface. Java provides the ArrayDeque class as part of the Java Collections Framework. For an overview of the Java Collections Framework, check out my post Overview of the Java Collections Framework.
+Some important methods provided by the ArrayDeque class for implementing a queue are:
+- add(E element)
+- offer(E element)
+Array deques have no capacity restrictions, which means they grow as necessary to support usage.
+ArrayDeque class prohibits
+null elements. Even if it had allowed, it is not recommended to insert nulls because
+null is used as a special return value by various methods to indicate that the deque is empty.
+The following example demonstrates how to implement a queue using the ArrayDeque class.
+Let us look at the methods available to us.
+1) add(E element)
+This method inserts an element at the end of the deque.
+It retrieves, but does not remove, the head of the queue represented by this deque. It returns
+null if the deque is empty.
+It retrieves and removes the head of the queue represented by this deque. If the deque is empty, it returns
+This method returns true if the deque contains no elements, or false otherwise.
+The offer(E element) method is exactly similar to the add(E element) method. element() and remove() methods also function similar to the methods peek() and poll() respectively but don’t return
+null if the queue is empty.
+Now since you know how to implement a queue using the ArrayDeque class, check out how to create a Queue using LinkedList.

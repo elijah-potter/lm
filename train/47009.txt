@@ -1,0 +1,13 @@
+Early 3D games used a relatively small number of polygons to create a blocky “low-poly” approximation of a game environment.
+Three styles that occasionally come close to the low-poly look are:
+- Mid-Century Modern
+- Scandinavian design (e.g. IKEA)
+But none of these styles are specifically aiming to minimize the number of visible surfaces in a building or interior.
+In order to bring the “1996 Playstation graphics” look to interior design, the following easy-to-assemble low-polygon furnishings are proposed:
+Fig. 1: At left, we see a normal chair. On the right, the number of visible surfaces has been reduced to almost the bare minimum. The chair on the right could easily be rendered by a Nintendo 64.
+Fig. 2: Even this blocky chair still consists of 32 triangles. For computer-related reasons, surfaces are counted in triangles (the most minimalist polygon) rather than rectangles. Note that this chair essentially consists of three stretched-out cubes. Normally that would result in 36 triangles (3 cubes * 6 faces/cube * 2 triangles / face = 36 triangles), but we have saved a few triangles by merging the cubes in this way.
+Fig. 3: The standard lamp (left) can be converted into a low-poly lamp (right). The cord is unaffected—a segmented low-poly cord would unfortunately violate the electrical safety codes in most jurisdictions.
+Fig. 4: The lamp above can be reduced to 21 surface-facing triangles if we allow the base (labeled “1*”) to be a single triangle.
+PROS: This never-before-seen look combines minimalism with early-3D nostalgia in a way that is appealing to everyone.
+CONS: Only slightly different from existing furniture you can get at IKEA, so differentiation of this style from “the cheapest possible furniture” style may be difficult. Safety regulations prevent the use of low-poly stylings everyone (e.g. in electrical cords).
+You must be logged in to post a comment.

@@ -1,0 +1,12 @@
+This Example describes the way to retrieve the String using regular expression. For this we are going to make program named Pattern_Resetting.java. The steps involved in program Pattern_Resetting.java are described below:-
+String regex = "[frb][aiu]":-Defining regression in string form, Here " " determines text and finds parts that match the provided specification.
+Pattern pattern = Pattern.compile(regex):-Creating a pattern object and compiling the given regular expression into a given pattern.
+String text = "fix the rug ":-Declaring text from where match will be provided.
+Matcher matcher = pattern.matcher(text):- Creates a matcher for matching the given input against pattern.
+(matcher.find()):- This is the method of matcher class which is used for finding the next subsequence of the input sequence and it usually returns a boolean value.
+Output of the program:-
+|fi ru fi ri|
+Ask Questions? Discuss: Pattern resetting using regular expression
+Post your Comment
+If you are facing any programming issue, such as compilation errors or not able to find the code you are looking for.
+Ask your questions, our development team will try to give answers to your questions.

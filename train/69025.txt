@@ -1,0 +1,8 @@
+Hacking/Background knowledge/Computer architecture/Python
+<Python For Hacking>
+Python is a dynamically-typed and garbage-collected structured, high-level and general-purpose programming language.There are excellent python pre-built libraries that can be used for both hacking or writing traditional programs.
+At Centrum Wiskunde & Informatica (CWI) in the Netherlands, Guido van Rossum conceived Python in the late 1980s as a successor to the ABC programming language, which was inspired by SETL, capable of managing exceptions and interfacing with the Amoeba operating system.
+The Basic Syntax Of Python3 Is :
+var = 1
+input ("Enter Something")
+There Are Hundreds Of Cyber Security Tools Written In Python.The basic Python library and modules provide a broad variety of functionality including built-in data types handling of exceptions,arithmetic modules etc.

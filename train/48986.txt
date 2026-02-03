@@ -1,0 +1,56 @@
+This article has been originally published in italian (here). Feedbacks on content and translation are appreciated. Contributions are welcome. The original article must be considered the reference in case of updates.
+Following a call for help from Qwertyminus, brand new GNU/Linux user, in his comment here, a comprehensive tutorial explaining how to persuade two penguins to become roommates, sharing the /home (or another partition). Because noobs deserve support.
+User “qwerty” on system “Linux-1″ can share his home folder (/home/qwerty) or a dedicated partition in different ways:
+- with an user having the same name on another system installed in the same computer (“Linux-2″)
+- with a different user (I will name it “minus”) on the same system “Linux-1″ or “Linux-2″
+User names are picked absolutely haphazard, aren’t they?
+#1: Two penguins, one master
+The first scenario is the simplest and the most likely, on a home pc with only one user set up. Suppose we start from scratch, empty disk, fresh install of the first penguin. First off, let’s have a proper disk partitioning, in order to have a / partition for each system, one swap and a /home, both to be shared.
+In addition I have already made a partition (with the fancy name “Condivisa” – italian for “Shared”) bound to be used by all systems in scenario (2). This step can be skipped if we do not mean to have such a common data area.
+Dimensions of disk slices are merely chosen for test purposes. If you have an additional drive you might even choose to place some specific partitions on it; we will have to take care later that each disk (tipically you will see sda and sdb) and partition are correctly addressed by each system.
+I have preferred to start a live session of the first distribution (I chose Lubuntu) to have the full Gparted interface running and make partitioning operations easier to manage. Setting meaningful labels for each partition is a good practice that helps recognizing them at a later stage.
+Right after that, we proceed to install the first system, choosing the manual partitioning.
+This choice allows us to define the use of each partition (previously set up, although we might do the same from the next windows). Just select the proper one and click “Modifica…” (“Modify”).
+We are so assigning the mount point for each partition: /dev/sda1 will be / on the first system, /dev/sda5 will be swap and /dev/sda4 will be /home. We may ignore the remaining two for the moment. Formatting the partitions can also be skipped (i.e. don’t flag the box) since we have actually already done this operation at the beginning with GParted: bravely neglect the messages from the installer warning us not to mix old and new data (any way disk is empty, isn’t it?). Take care mainly not to format the future /home if it still contains user data from an existing installation.
+Install process goes on with usual questions (time, date, language, etc.) since we get to user name and host name selection screen. User name is the key to data sharing: in the second install choosing the same user name will be enough to gain access to data. By the way, host name was picked almost randomly, too.
+Once we have accommodated the first penguin, we can treat the second one the very same way (manual partitioning,mount point choice, etc.). When also the second set-up is finished, no additional trick is required. Starting each system we will find our user home (the same one!) with full access to files, since we are the very same person for both systems. No command line alchemy or configuration files voodoo.
+What about “Condivisa”? That might be a nice place to share data, even in a “cleaner” way than using /home. Actually /home contains also configuration files of some softwares (both system like terminal and user installed software) that are hidden (filename beginning with “.”). The “ls -a” command from terminal lists also these files and /home suddenly appears more crowded than it seemed:
+qwerty@scrilepecia:~$ ls -a . .dbus Modelli .vboxclient-display.pid .. .dmrc Musica .vboxclient-seamless.pid .bash_history Documenti .profile Video .bash_logout .gconf Pubblici .Xauthority .bashrc .gnome2 Scaricati .xscreensaver .cache .gvfs Scrivania .xsession-errors Condivisa Immagini .thumbnails .xsession-errors.old .config .local .vboxclient-clipboard.pid
+The risk we run (a minor one, anyway) when sharing the /home between multiple systems is that each of them modify the same files, related to a common component (quite like the terminal emulator, for example). From this standpoint a separate “data only” partition will preserve us from this annoyance: we might then direct here downloads, picture import and every other “heavy” file. As a side note, a “data only” partition separated from /home/user allows us to have a smaller /home partition, just a few GBs enough to handle files passing through and awaiting their “final destination”.
+#2: Two penguins, one or two masters and a shared closet
+Let’s move on to the second scenario, where each system has its own users/usernames or a dedicated space has to be reserved for shared data. Examining this case I took some suggestions from a tutorial on Linuxuser.
+Like before, choosing the same user name automatically grants full access to files, even when on a separate partition. Simply create a folder to be used as mount point and ensure that it is mount at boot. The folder can be conveniently created also in user home folder:
+$ mkdir ~/Condivisa
+We need the partition UUID (it’s /dev/sda6):
+Lastly, we have to edit /etc/fstab (copying the UUID of sda6 from previous command output) by
+$ sudo nano /etc/fstab
+adding a line for the partition (the UUID we got must be pasted without quotes) and an optional comment line (# …):
+# Shared partition sda6 UUID=343cc807-0e12-4b61-a926-aa89653597de /home/qwerty/Condivisa ext4 user,defaults 0 0
+After saving fstab and mounting the partition (comando “mount -a”) we have to reclaim the ownership of it (with “chown”) because mount command has transferred it to root user:
+$ sudo mount -a $ ls -ld Condivisa/ drwxr-xr-x 3 root root 4096 ott 31 23:37 Condivisa/ $ sudo chown -R qwerty:qwerty Condivisa $ ls -ld Condivisa/ drwxr-xr-x 3 qwerty qwerty 4096 ott 31 23:37 Condivisa/
+In the most general case we make a common partition accessible by user “minus” on “Linux-2″ and “qwerty” on “Linux-1″, that are not the “same person” any more. Differences from what described till now are few.
+First of all we’d better place the mount point out of /home (for convenience and visibility sake). Usually the /mnt folder is the target for such mount points, related to “extra” disks/partition to mount at each boot (for example additional drives for data and backups):
+$ sudo mkdir /mnt/Condivisa
+The line in /etc/fstab will read slightly differently:
+# Shared partition sda6 UUID=343cc807-0e12-4b61-a926-aa89653597de /mnt/Condivisa ext4 user,defaults 0 0
+Let’s fix access permissions for users from both systems, looking back to one of the previously issued commands:
+drwxr-xr-x 3 qwerty qwerty 4096 ott 31 23:37 Condivisa/
+informing us that Condivisa is a directory (d) in which the owner has read, write and execution permissions (rwx), group and other users have only read and execution permissions (r-xr-x). The owner is qwerty belonging to main group qwerty.
+The “quick and dirty” fix to grant write permissions (add/remove/modify files) to all users is simple:
+$ sudo chmod -R a+w /mnt/Condivisa
+And that’s all. Considering that this solution is aimed to an home set-up, without multiple users simultaneous access and data protection requirements, I think it’s more than enough.
+As usual questions, suggestions and corrections are welcome. I hope I was clear enough and I made no mistakes, despite the long explanation. I will try therefore a final summary, sorted by “difficulty level”:
+|User/System||Shared folder||Required Operations||Notes|
+|/home/user1||◊ Manual partitioning
+|Dedicated partition||◊ Manual partitioning
+◊ Create mount points
+◊ Modify fstab
+◊ Modify folder owner (chown)
+|◊ Manual partitioning
+◊ Create mount points
+◊ Modify fstab
+◊ Modify folder owner (chown)
+◊ Modify folder permissions (chmod)
+|Flexible solution for different
+cases (multiuser set-up)
+Next time, dear Qwerty, you’ll be taught not to ask questions that require such a looooooong answer!

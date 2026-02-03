@@ -1,0 +1,10 @@
+C++ is an object oriented programming language developed by Bjarne Stroustrup for AT&T Bell Lab in 1980. It’s main purpose was to make writing good programs which will be more pleasant for the individual user. C++ is a superset of C language. In addition to the features provided by C, C++ provides flexible and efficient features to set out new types.
+In general C++ has been designed to provide support for data abstraction and OOP to make c a better language. C++ is make by combining the features of two languages C and simula67. C provides low level features while simula67 provides object oriented features.
+Structure of C++ Program:
+# include <iostream.h>
+Count <<“Hello World”;
+Type the program using turbo C++. It provides a good platform for learning C++. It is IDE that puts all the tools that you need for C++ program development into a single convenient screen display.
+Save the file as hello.cpp.
+After saving this file compile it. The compiler is software that translates a program written in high level language into machine language. If the program is complied successfully run it. The output will be displayed on the screen as:
+Remember: Every executable C++ program must contain a function called main(). The function main() is the function that gets executed first.
+Hope you enjoyed this helpful tutorial, keep visit us for more education tips and tutorial like this.

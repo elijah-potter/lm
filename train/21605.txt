@@ -1,0 +1,66 @@
+For a successful technology,
+reality must take precedence over public relations,
+for Nature cannot be fooled.
+Richard P. Feynman
+Science is hard, that’s why communicating clearly is so difficult.
+And science is consequential, that’s why communicating clearly is so important.
+One of the most striking examples of this difficulty and importance is the case made by Edward R. Tufte in “Visual and statistical thinking: Displays of evidence for making decisions”. He looks at the “Challenger” Space Shuttle disaster and how bad communication might have been one major factor.
+You find more information about the disaster on Wikipedia, but it essentially turned this:
+because two rubber O-rings leaked. The cold temperature at launch day reduced the resilience of the rings, thus they did not effectively seal the rocket and Challenger was history.
+Tufte looks at the way information was communicated, prior and after the disaster.
+Prior to the disaster, information was fragmented and there was no consideration of variances in temperature and variances of damage to the O-rings. Thus, the arguments for delaying the launch were weak and eventually cast aside.
+“The 13 charts failed to stop the launch. Yet, as it turned out, the chartmakers had reached the right conclusion. They had the correct theory and they were thinking causally, but they were not displaying causally. Unable to get a correlation between O-ring distress and temperature, those involved in the debate concluded that they didn’t have enough data to quantify the effect of the cold.”
+One major problem was not looking at the total number of starts, which included successful starts without damage. The good comparisons were missing. As Tufte writes:
+“in reasoning about causality, variations in the cause must be explicitly and measurably linked to variations in the effect“.
+Even after the disaster, one image used by NASA to determine the connection between low temperatures and O-ring failure was abysmal:
+While the graphic looks nice and “contains all the information necessary to diagnose the relationship between temperature and damage” (Tufte, 1997), you can’t see it. Tufte criticizes (here and during the discussion of other charts):
+- Not providing the names of the people who have prepared the material (indicating a lack of confidence — names denote responsibility — and preventing follow up questions)
+- The Disappearing Legend (for the severity of the damage, shown only on a previous slide)
+- Not providing a damage index (instead breaking up problems with the O-rings in fragments)
+- Chartjunk (the outlines of the rockets, not needed)
+- Lack of Clarity in Depicting Cause and Effect (temperature sideways; damage by visual code needing a legend)
+- Wrong Order (time series of start, “the little rockets must be placed in order by temperature, the possible cause”)
+The last point — wrong order — again violates that “in reasoning about causality, variations in the cause must be explicitly and measurably linked to variations in the effect“.
+Tufte (1997) provides a much better graphic:
+For those who are not in the US, here’s it with a little more context (using xkcd’s “Converting to Metric”) and converted into Celsius:
+I resist in drawing a line through the dots — I don’t think there’s enough data to support such a plot — but as Tufte points out, “every launch below 66° [F, about 18,9° C] resulted in damaged O-rings”.
+In his book, Tufte strongly argues for intellectual clarity in reasoning about evidence:
+“Once again Jonson’s Principle: these problems are more than just poor design, for a lack of visual clarity in arranging evidence is a sign of a lack of intellectual clarity in reasoning about evidence.”
+and stresses his conclusion:
+“if displays of data are to be truthful and revealing, then the design logic of the display must reflect the intellectual logic of the analysis:
+Visual representations of evidence should be governed by principles of reasoning about quantitative evidence. For information displays, design reasoning must correspond to scientific reasoning. Clear and precise seeing becomes as one with clear and precise thinking.”
+What is true for science (e.g., controlled comparisons) must be true for the communication of scientific data (“depict comparisons and contexts”).
+His recommendations are the same “for reasoning about statistical evidence and for the design of statistical graphics”:
+(1) documenting the sources and characteristics of the data,
+(2) insistently enforcing appropriate comparisons,
+(3) demonstrating mechanisms of cause and effect,
+(4) expressing those mechanisms quantitatively,
+(5) recognizing the inherently multivariate nature of analytic problems, and
+(6) inspecting and evaluating alternative explanations.
+That is asking a lot, but is needed:
+“On the day before the launch of Challenger, the rocket engineers and managers needed a quick, smart analysis of evidence about the threat of cold to the O-rings, as well as an effective presentation of evidence in order to convince NASA officials not to launch.”
+Because you cannot expect managers and administrators to learn about science and engineering. It takes years and years of hard work. So you need to communicate your findings clearly. Especially when these people have to justify themselves to others, whether it’s to high-level politicians or to their subordinates.
+And as probably obvious from the use of quotations and images here, I strongly recommend having a look at Tufte’s books on how to visualize data. He has written several. Especially interesting here is the cited 1997 booklet about the Challenger Disaster (and the Cholera Epidemic in London as another case). Sure, it’s always easier to see what could have been done better with the benefit of hindsight. But his books should prevent people from having to look at these events with the benefit of hindsight.
+As for the pressure to go ahead, especially the PR pressure, I can only repeat the quote at the beginning of this posting:
+“For a successful technology, reality must take precedence over public relations, for Nature cannot be fooled.”
+Richard P. Feynman
+And as in the Space Shuttle disaster, nature has a way of making itself heard. With disastrous consequences. One thing that might be missed in this disaster is that it not only destroyed billions worth of equipment and set back space exploration for months. Part of the breakup debris:
+was this here:
+which is the crew cabin, containing these people:
+to whom this happened:
+“After vehicle breakup, the crew compartment continued its upward trajectory, peaking at an altitude of 65,000 feet [ca. 20 km] approximately 25 seconds after breakup. It then descended striking the ocean surface about two minutes and forty-five seconds after breakup at a velocity of about 207 miles [333 km] per hour. The forces imposed by this impact approximated 200 G’s [1 G = earth’s gravity], far in excess of the structural limits of the crew compartment or crew survivability levels.”
+Chilling, to say the least.
+While this an extreme and easy to recognize example, showing how much clear communication matters (based on equally clear thinking), the same principle holds true in other scientific areas. Whether there’s public relations pressure or personal opinions which bias dealing with data.
+Michael Specter made this point clear in his talk about some people’s negative attitudes towards vaccinations.
+“[…] everyone’s entitled to their opinion; […]
+But you know what you’re not entitled to?
+You’re not entitled to your own facts.
+Sorry, you’re not.”
+Michael Specter: The danger of science denial (2010)
+But it’s equally true for the social world. There’s a T-Shirt with the slogan: “Trust me, I’m a social scientist” printed on it. Same deal here. Reasoning about the social world should be governed by science as much as reasoning about the physical world is.
+Sure, people have values and opinions, and science can shed light on why people have these values and opinions. And like the sciences more concerned with the physical world, science can try to influence and even control the world, here the social world. But we first need an accurate assessment of the social world — and for this, opinions are not enough. And ideology is downright dangerous and damaging. In societal decisions and on a personal level. Sadly, many activists and social justice warriors seem to miss this point.
+Because science has consequences, whether it’s on the “billion dollar multiple lives” end of the scale or the “one individual whose life is negatively impacted” end.
+So, yup, know what you are talking about, find out what the data mean — and communicate clearly.
+Tufte, E. R. (1997). Visual and Statistical Thinking: Displays of Evidence for Making Decisions. Cheshire, CT: Graphics Press.
+[It pays to go looking for this book. The citation should help you find it.]
+Note: Removed a secondary point on 2014-06-03 because it distracted from the overall structure of the posting. Will reappear in another posting.

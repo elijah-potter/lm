@@ -1,0 +1,141 @@
+Peter Edwin Hook and Omkar N. Koul
+University of Michigan and Central Institute of Indian Languages
+If the Indo-Aryan language Kashmiri is known at all to members of the general linguistics community, it is known for its word order: Unlike nearly every other South Asian language, of whatever language family, and independently of West European languages like German, Dutch, and Old French, Kashmiri is a V-2 language(fn 1). In matrix clauses the finite verb comes in clause-second position (1), while in relative and certain other subordinate clauses it comes at the end of its clause (2):
+(1) az kor mye baagas manz seer
+today made I.Erg garden in walk (fn 3)
+'Today I took a walk in the garden.'
+(2) yi chu su naphar [yemy
+mye siity az baagas manz seer kor]
+this is that person who.Erg me with today garden in walk made
+'This is the person who took a walk with me in the garden today.'
+One of the systematic ways in which V-2 in Kashmiri differs from that of German and Dutch is that in Kashmiri an interrogative element, if present, follows the first constituent and bumps the finite verb into clause-third position. Compare the position of the finite element chu 'is' in the question (3) and answer (4):
+(3) kalas pyeTh kyaa chu aas-aan ?
+head on what is be-ing
+'What is found on the head?'
+(4) kalas pyeTh chu mas aas-aan
+head on is hair be-ing
+'Hair is found on the head.'
+Another difference is that unlike in German and Dutch in Kashmiri the position of the finite element in sentential objects is the same as that found in matrix clauses:
+(3') yi prutsh-m-ay tsye
+[zyi kalas pyeTh kyaa chu aas-aan] ?
+this asked-1sA-2sD you.Dat that head on what is be-ing
+'I asked you what is found on the head?'
+(4') ti yi von-m-ay
+tsye [zyi kalas pyeTh chu mas aas-aan]
+and this said-1sa-2sD you.Dat that head on is hair be-ing
+'And I told you that hair is found on the head.'
+A similarity with Germanic is that there has been some debate over what (if any) order of clause elements is to be taken as basic. It is this question that we address here today.
+As we have seen one of the general restrictions on word order in Kashmiri is that the finite element of the verb must come after the first phrasal constituent of a matrix clause. As non-finite elements of the verb are not themselves full phrases, they generally cannot precede the finite. For example, in ex. (5) either the subject (5a), the object (5b), the postpositional phrase (5c), or the adverb (5d) may come first, but the non-finite part of the verb may not (except in poetry) (5e):
+(5a) bi oosu-s az baagas manz seer
+I was-1sN today garden in walk making
+'I was walking today in the garden.'
+(b) seer oosus baagas manz bi az karaan
+(c) baagas manz oosus bi az seer karaan
+(d) az oosus bi baagas manz seer karaan
+(e) *karaan oosus bi az baagas manz seer (except in poetry)
+If the verb is transitive, its direct object can count as a moveable constituent of the clause. But the direct object plus the non-finite part of the verb cannot (except in poetry):
+(6a) tyim chi nyebari caay cev-aan
+they are outside tea drink-ing
+'They are drinking tea somewhere outside.'
+(b) nyebari chi tyim caay cevaan
+(c) caay chi tyim nyebari cevaan
+(d) *caay cevaan chi tyim nyebari (except in poetry)
+Even if a direct object plus a non-finite form constitute a complement of the verb in the matrix clause, they cannot move as a unit (7c): no pied-piping [pace Raina 1996:70 (fn 4)]; although as in (6c) the direct object alone can move to the clause-initial position (7d):
+(7a) bi chus yatshaan az
+I am wanting today film see.Inf
+'I want to see a film today.'
+(b) az chus bi yatshaan phyilim vuchiny
+(c) *phyilim vuchiny chus bi az yatshaan
+(d) phyilim chus bi az vuchiny yatshaan
+However, it is not uncommon to have sentences in Kashmiri in which there are no noun phrases, adverbs, or postpositional phrases, in which all the words are forms of verbs. What happens in such cases? Clearly some non-finite element must occupy the clause-initial position. However, it turns out that not just any non-finite element may do so. Study of such sentences provides additional insight into the form, scope, and applicational order of word-order rules in Kashmiri.
+Let us take a sentence which means 'I couldn't learn to dance.' In the Kashmiri version that we will examine there are four words, all of them verbial. If word order were completely free a four-word sentence would have 24 possible orderings. Since in Kashmiri the finite verbal element must come second, a four-element sentence has no more than six possible orderings. However, when all of the elements are verbial only two or three of the six are acceptable as normal freely occurring orders:
+(8a) nats.un oosus-ni hyech.ith hyek.aan
+dance was-not learn able
+'I was not able to learn to dance.'
+(b) natsun oosus-ni hyekaan hyechith
+(c) ?hyekaan oosus-ni natsun hyechith
+(d) ??hyekaan oosus-ni hyechith natsun (except in poetry)
+(e) ??hyechith oosus-ni hyekaan natsun (except in poetry)
+(f) ??hyechith oosus-ni natsun hyekaan (except in poetry)
+In the vast majority of other South Asian languages the normal order of elements in the verb complex is roughly as follows:
+(9) verb (vector) (passive) (compverb) (modal) (aspectual 'be') tense/mood
+where 'vector' stands for completive auxiliaries such as Hindi-Urdu le (from le 'take'), de (from de 'give'), jaa (from jaa 'go'), etc.; 'passive' is usually an auxiliary derived from some verb meaning 'go' (Hindi-Urdu jaa ) or 'come' (Gujarati aa); 'compverb' refers to those predicates that subcategorize or take VP complements: Hindi-Urdu de 'let' (from de 'give'), caah 'want', siikh 'learn', Suruu kar 'begin', etc.; 'modal' means 'modal of ability' (Hindi-Urdu sak 'can, be able'); aspectual 'be' is either the progressive (Hindi-Urdu rah@ h-), the habitual (Hindi-Urdu -t@ h-) or the perfect (Hindi-Urdu -@ h-). In general, it is difficult to find acceptable strings containing more than six of these items. However, a complete instantiation may be seen in the following, from Hindi-Urdu:
+(10) kyaa m. teraa naam bataa diyaa jaane de
+QM I your name tell give go let be.able be-1sgPres
+verb (vector) (passive) (compverb) (modal) (aspectual 'be') tense
+'Can I allow your name to be divulged?'
+Since the V-2 word order in Kashmiri (and a small number of nearby languages: Shina of Gurez, Upper Poguli, Watali...) is geographically isolated, and since surrounding languages are verb-final and have the order of elements shown in (9); let us assume the V-2 order of Kashmiri to be an innovation. That is, at some stage in the past Kashmiri, too, would have had the order of elements shown in (9). Since that order is also the usual order of items in Kashmiri relative clauses, we have an additional reason to propose it as the base order for elements in root clauses, as well:
+(11) verb-stem (-ini yi- ) (-yith + hyak-
+) (-aan/-mut + aas- ) tense/mood
+-Inf Passive -CP can -ing/PP be Pres/Past/Cond
+If the assumption of a basic order in the verb complex as given in (11) is correct for Kashmiri, it should be possible to find a fairly simple set of rules that will give us the order of elements actually found in root clauses and none of the orders not found.
+Given strings consonant with (11), three rules suffice to move constituents in such a way as to yield the two (or sometimes three) acceptable orders. They do not give the dispreferred orders.
+(12) Rule 1. Move finite element to the left of its next-left neighbor.
+Rule 2. If the last element is a non-finite one move it to clause-initial position.
+Rule 3. Move finite element (together with elements to its right) to the second position in the clause.
+In Kashmiri, restrictions on the cooccurrence of the options in (11) are even tighter than the corresponding restrictions in other Indo-Aryan languages. Five (including the mandatory tense affix) seems to be the highest number of items that can cooccur in a single verb complex. Let us rearrange the elements in (8) according to the template in (11) based on the general Indic data in (13):
+(13a) naacnaa siikh (na) saktaa th-aa (Hindi-Urdu)
+(b) naatsNa shiku shakat
+(na-) ho-to (Marathi)
+dance learn (not) be.able (not) be-Past
+V comp V
+(c) (*) nats.un hyech.ith hyek.aan oosus-ni (*Kashmiri)
+dance learn be.able was-not
+'I was not able to learn to dance.'
+The first two rules in (12) are options. The first rule may apply in a finite clause whether root or not. In relative clauses we need the first rule in order to account for the frequent occurrence of the finite part of the verb as the last but one item in the verb complex:
+(14) yi chu su naphar [yus ni
+natsun hyechith oos hyekaan]
+this is that person who not dance learn was able
+'This is the person who couldnUt learn to dance.'
+(However, there are further complexities involved in the order of elements in verb complexes in relative clauses which we will not attempt to account for here.) Rule 1 must apply before the V-2 rule in order to account for the order found in (8b):
+(8b) natsun oosus-ni hyekaan hyechith
+The second rule depends on the first to create the necessary conditions for its application and applies only in root clauses. The least important of the three rules, it is needed only for the marginal third alternative in (8c):
+(8c) ?hyekaan oosus-ni natsun hyechith
+However, as we shall see below, there are other verb complexes whose optimal ordering requires the second rule. The third rule is, of course, the key rule in an account of word order in Kashmiri and must apply in all root clauses.
+To retest our analysis we have taken another, rather different four-element clause in which (again) all the items are verbial. It is the Kashmiri for 'They do not let her fall down'. Acceptability judgments for all six possible orderings of this sentence are given in (15).
+(15a) ?ves.yith chi-s-ni pye.nyi dyiv.aan
+(by Rule 3)
+descend are-3sD-Neg fall let
+'They do not let her fall down.'
+(b) vesyith chi-s-ni dyivaan pyenyi (by Rules 1 and 3)
+(c) dyivaan chi-s-ni vesyith pyenyi (by Rules 1, 2, and 3)
+(d) ??dyivaan chi-s-ni pyenyi vesyith (cannot be generated)
+(e) ??pyenyi chi-s-ni dyivaan vesyith (cannot be generated)
+(f) ??pyenyi chi-s-ni vesyith dyivaan (cannot be generated)
+The basic order postulated for (15) is given in (15g):
+(15g) (*) ves.yith pye.nyi dyiv.aan chi-s-ni
+descend fall let are-3sD-Neg
+We have keyed the six orderings in (15) in such a way that they can be directly compared with the six items in (8). That is, if we assume pan-Indic order as basic in Kashmiri, each corresponding pair of items in (8) and (15) is obtained by applying the same rule or rules. Thus, both (8a) and (15a) involve only Rule 3; both (8b) and (15b) require the application of Rules 1 and 3; and so on.
+Comparing the two data sets, notice that the (a) and (b) orderings are preferred in (8) while the (b) and (c) orderings are judged to be the two most felicitous orders in (15). What is responsible for this difference?
+Additional testing will be required. But a comparison of the four items in the two different verb complexes reveals triclausal structure in (8) and biclausal structure in (15). Crucially the sequence vesyith pyeth 'fall' in (15) represents a single constituent at some abstract level of analysis while the corresponding natsun hyechith 'learn to dance' of (8) is not. It is derivable from an (abstract) biclausal structure. Thus, inserting the finite element between natsun and hyechith interferes less with the transparency of (8a) than does the intercalation of chisni in (15a). In essence, there is a kind of trade-off involved in the derivation of the alternate orderings. Accounting for the (a) pairs involves fewer rule applications, while the (c) pairs of output are less disruptive of any constituency existing between the two leftmost items at more abstract levels of analysis. Trade-offs of this kind between derivational complexity and constituent integrity suggest that applying Optimality Theory to the analysis of Kashmiri word order might be productive. We will leave such an experiment to other hands or for a later occasion.
+2. In the transcription system used for Kashmiri in this paper reduplicating a symbol denotes (contrastive) length. The letter i represents a high (allophonically front or central) vowel, while e represents a high (either front or central) vowel. Palatalization is uniformly indicated with the letter y (j, ch, c and sh are inherently palatalized). The digraph ts is a dental affricate.
+3. For a general overview of the pronominal suffixing systems of Kashmiri, see Grierson 1973, and Hook and Koul 1984. In this paper what are termed "nominative" (=N) pronominal suffixes correspond to what we have termed "absolutive" suffixes in some earlier papers and what we here call "agentive" (=A) corresponds to "anti-absolutive" there. While there are important conceptual differences informing these terminological ones, they are not relevant to the present dis-cussion.
+4. Only if a direct object and/or other constituents plus non-finite form constitute a conjuncted or nominalized clause (rather than a com-plement of the main verb) can they move as a unit to clause-initial position. Compare (a) and (b) with (c) and (d):
+(a) phyilim vuch-ith gatshi bi
+film see-CPM go-Fut.1sg I home
+'I will see a movie and (then) go home.'
+(b) phyilim vuch-n-as kheetri gatshi bi
+film see-Inf-Dat for go-Fut.1sg I home
+'I will go to town in order to see a movie.'
+(c) *phyilim vuch-nyi gatshi
+film see-Inf go-Fut.1sg I city
+'I will go to town to see a movie.'
+(d) bi gatshi Sahar phyilim vuch-nyi
+I go-Fut.1sg city film see-Inf
+'I will go to town to see a movie.'
+The reason for this difference may reflect a higher degree of clausal integration in (d). For some speakers the finite form gatshi 'will go' in (d) may inflect for a direct object of the dependent infinitive. See Hook and Kaul (1985) for discussion.
+Grierson, Sir George A. 1973. Standard Manual of the Kashmiri Language. 2 vols. Rohatak: Light and Life Publishers. (Reprint of the 1911 Oxford Univ Press edition)
+Hook, P.E. 1984. Some further observations on word order in Kashmiri. In Koul and Hook, Eds. Pp 145-53.
+______. 1976. Is Kashmiri an SVO language? Indian Linguistics 37:133-42.
+Hook, P.E., and V.K. Kaul. 1987. Case Alternation, Transitionality and the Adoption of Direct Objects in Kashmiri. Indian Linguistics 48: 52-69.
+Hook, P.E., and O.N. Koul. MS. The Structure of Kashmiri. ______. 1996. Kashmiri as a V-2 Language. In Word Order in Indian Languages. Hyderabad: CASL-Osmania. Pp. 95-106.
+______. 1984. Pronominal suffixes and split ergativity in Kashmiri. In Koul and Hook. 1984. Pp. 123-135.
+Hook, P.E., and A. Manaster-Ramer. 1985. The Verb-Second Constraint in Kashmiri and Germanic: Toward a Typology of V-2 Languages. In Germanic Linguistics: Papers from a Symposium at the University of Chicago. J. TerjeFaarlund, Ed. Bloomington: The Indiana University Linguistics Club. Pp 46-58.
+Koul, O.N. 1985. An Intensive Course in Kashmiri. Mysore: Central Institute of Indian Languages.
+Koul, O. N., and P. E. Hook, Eds. 1984. Aspects of Kashmiri Linguistics. New Delhi: Bahari Publications.
+Raina, A.M. 1996. Question-Phrases in Kashmiri: A Case for Movement to Tense. South Asia Language Review 6:60-71.
+______. 1995. The Verb-Second Phenomenon in Kashmiri. Indian Linguistics 56:1-14.
+______. 1994. Verb-Second in Kashmiri: A PF Level Constraint. Pondichery Journal of Dravidian Studies 4:137-43.
+Wali, K., and A.K. Koul. 1996. Subjects and other Constituents in Kashmiri. South Asia Language Review 6:47-59.
+Wali, K., and O.N. Koul. 1996. Kashmiri: A Cognitive and Descriptive Grammar. New York and London: Routledge.
+(draft of 28.Feb.1997)

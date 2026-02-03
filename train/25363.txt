@@ -1,0 +1,8 @@
+(pronounced as separate letters) Short for Internet Protocol. IP specifies the format of packets, also called datagrams, and the addressing scheme. Most networks combine IP with a higher-level protocol called Transmission Control Protocol (TCP), which establishes a virtual connection between a destination and a source.
+IP by itself is something like the postal system. It allows you to address a package and drop it in the system, but there's no direct link between you and the recipient. TCP/IP, on the other hand, establishes a connection between two hosts so that they can send messages back and forth for a period of time.
+The current version of IP is IPv4. A new version, called IPv6 or IPng, is under development.
+Featured Partners Sponsored
+- Increase worker productivity, enhance data security, and enjoy greater energy savings. Find out how. Download the “Ultimate Desktop Simplicity Kit” now.»
+- Find out which 10 hardware additions will help you maintain excellent service and outstanding security for you and your customers. »
+- Server virtualization is growing in popularity, but the technology for securing it lags. To protect your virtual network.»
+- Before you implement a private cloud, find out what you need to know about automated delivery, virtual sprawl, and more. »

@@ -1,0 +1,20 @@
+Nice tutorial from David L. Jones at EEVBlog.
+The EEVblog Lab had a HD Dropcam so that people could watch what was happening live in the lab. It worked well enough, but then Dropcam changed their terms and conditions and wanted to merge with Nest (who bought them). This was bothering Dave so the search for an alternative began.
+Surprising, there are very few options on the market that:
+a) Allow low frame rates in order to reduce upload bandwidth (The lab ISP has a monthly bandwidth cap)
+b) Are low enough power and work completely autonomously
+c) Don’t cost an arm and a leg
+d) Provide the ability to embed the stream into a public website so people could watch without having to go another site.
+We had spare Logitech webcams (UVC ones should work fine, H264) which were that would provide good image performance, so it was simply a matter of finding a hardware and software solution to match. A Logitech C905 was used in the final solution even though we had better C920’s, they will be saved for use as the live show cameras.
+We have several Raspberry Pi 2 sitting around and their power usage won’t substantially increase the power bill, so it seemed natural to use one of them.
+A CDN(Content Delivery Network) would allow bandwidth usage to be constant and predictable, allowing us to ensure we stay under the monthly bandwidth cap. They take one stream from the client and then provide the bandwidth and the means to serve as many people who want to view it. Youtube, Ustream, Vimeo et.al are all examples of CDN’s. A million people can watch the live stream at once and the bandwidth used from the lab is that of only one stream.
+Each Friday is PiDay here at Adafruit! Be sure to check out our posts, tutorials and new Raspberry Pi related products. Adafruit has the largest and best selection of Raspberry Pi accessories and all the code & tutorials to get you up and running in no time!
+Have an amazing project to share? Join the SHOW-AND-TELL every Wednesday night at 7:30pm ET on Google+ Hangouts.
+Join us every Wednesday night at 8pm ET for Ask an Engineer!
+Learn resistor values with Mho’s Resistance or get the best electronics calculator for engineers “Circuit Playground” – Adafruit’s Apps!
+Maker Business — Transforming Today’s Bad Jobs into Tomorrow’s Good Jobs
+Wearables — Avoid burnout
+Electronics — USB Powered Mayhem!
+Biohacking — Biohacking : BiAffect – App that Detects BiPolar Disorder
+No comments yet.
+Sorry, the comment form is closed at this time.

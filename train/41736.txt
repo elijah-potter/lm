@@ -1,0 +1,41 @@
+Due to some reason if the loudspeaker of a power amplifier gets shorted, that may lead to a fatal damage to the amplifier component. To prevent this an amplifier short circuit protector circuit can be very useful.
+The following article explains 2 simple amplifier short circuit or overload protection circuits for safeguarding amplifiers from burning.
+Why we need a Short Circuit Protection
+While working with high power amplifier designs, two things become crucial, the protection of the amplifier and the protection of the speakers from an accidental over current influx.
+Especially when the amplifier design involves costly mosfets, the design becomes specifically vulnerable to short circuits at the outputs. A short circuit at the output may be caused due to mishandling or ignorance from the part of the user.
+Whatever might be the reason, the end results in the destruction of the precious MOSFETs inside the amplifier box.
+The above mishap can be prevented by adding a small circuit for detecting a short circuit conditions at the outputs of an amplifier.
+The given amplifier short/overload protection circuit diagram, shows an inexpensive design using just a single transistor for implementing the intended feature.
+Normally a low value resistor is usually employed at the output of mosfet amplifiers, the current developed across this resistor can be well exploited for tripping a relay in case it exceeds the safe maximum current value.
+The current threshold across the above resistor is sensed by an LED inside an optocoupler, which lights up the moment a short or overload conditions is sensed.
+This instantly triggers the opto transistor which in turn switches ON the transistor driver and the associated relay mechanism.
+Since the relay coils support the amplifier connection with the speaker output, disconnects the amplifier from the output connection, preventing the amplifier devices from a possible damage.
+The capacitor at the base of the transistor keeps the transistor switched for a few seconds so that the relay does not oscillate randomly.
+The next simple short circuit and overload protector design presented here can be used for protecting valuable mains operated gadgets like amplifiers, TV sets, DVD players or any other similar appliance. The circuit was requested by Mr. Ashish.
+I really found very very useful circuits in your blog and I have tried most of it , Thanks for that .
+I have made a 150 Watt Mosfet Stereo Amplifier and I was searching for a good, simple short circuit protection circuit for this amp , I only found protection circuit for speakers in your blog and I have added it .
+I wanted a simple low cost Short circuit protection circuit after the rectification stage to protect sensitive Mosfets and costly transformer . I thought you would help , Thank you
+My amplifier runs at +/- 36 V and I really needed it as I live near a village where there is lot of Power problems . Can you help ????
+Normally all sophisticated gadgets today incorporate an in built short circuit protector arrangement, yet still adding a more comprehensive external protection device could only benefit the connected system.
+Moreover, for gadgets such as amplifiers which are home built this protection device could prove to be very effective and useful. Also for an hobbyist who prefers building electronic gadgets at home could be greatly benefited with the present idea.
+The presented short circuit protector design works on a very basic principle and costs not more than a couple of dollars.
+Let's learn the functioning details of the proposed circuit.
+On applying power, the high current from the 220V input is dropped sufficiently by C1, rectified by D1 and filtered by C2 to feed the gate of the triac T1.
+The triac conducts and switches ON the connected transformer primary thus switching ON the load which in this case is a power amplifier.
+The transistor Q1 along with R1, R2 forms a current sensor stage.
+R2 specifically is chosen such that it develops adequate voltage across itself at the specified dangerous high current threshold.
+As usual the formula for determining R2 = 0.6/current(A)
+As soon as the triggering voltage accumulates across R2, Q1 activates and sinks the gate voltage of the triac to ground making it switch off.
+The regulation continues as long as the short or overload condition is not removed.
+The above short circuit regulation ensures that the current level above the specified dangerous level is restricted safeguarding the precious devices associated with the connected amplifier.
+If a latching feature is required for the above design, the emitter Q1 can be configured with an SCR and the SCR can be used for latching and switching off the triac.
+- R1 = 100 ohms
+- R2 = see text
+- R3 = 1k
+- R4 = 10k
+- C1 = 0.33/400V
+- C2 = 1uf/250V
+- Q1 = BC547
+- Z1 = 12V/1 watt zener diode
+- T1 = BT136 or as per current rating
+- TR1 = As per load requirement specs.

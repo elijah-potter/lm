@@ -1,0 +1,19 @@
+BEOL (Back End of Line: interconnect process, the second half of wafer processing)
+A dielectric film is deposited as an inter metal dielectric, a trench and via pattern is formed by photo resist patterning and etching, and trenches and vias are filled with Cu (copper) metal by electroplating. The method of filling trenches and vias with Cu at the same time is called dual damascene.
+Metal-2 Cu filling: A Cu film is deposited in the trenches and the vias by electroplating.
+Metal-2 Cu Polishing: Excess Cu is removed by surface polishing to leave Cu only in the trenches and the vias.
+In accordance with the circuit scale, wiring is layered by repeating the steps from “11-1. Growth of metal-2 dielectric film” to “11-6. Metal-1 Cu polishing.”
+11-1. Growth of metal-2 dielectric film
+A thick film of silicon oxide or similar material is formed on the silicon wafer surface using the CVD method.
+11-2. Formation of metal-2 via hole resist pattern
+11-3. Metal-2 via hole etching
+Using the via hole pattern as a mask, via holes are formed in the dielectric film using etching treatment. After etching, the resist pattern is removed.
+11-4. Formation of metal-2 trench resist pattern
+11-5. Metal-2 trench etching
+Using the metal-2 trench pattern as a mask, trenches are formed in the dielectric film by performing etching treatment. After etching, the resist pattern is removed.
+11-6. Metal-2 Cu burial
+11-7. Metal-2 Cu polishing
+FEOL (Front End of Line: substrate process, the first half of wafer processing)
+| 1. Isolation| 2. Well and channel formation| 3. Gate oxidation and gate formation| 4. LDD formation|
+5. Side wall spacers | 6. Source/drain| 7. Silicide | 8. Dielectric film|
+9. Contact holes|

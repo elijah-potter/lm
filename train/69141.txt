@@ -1,0 +1,38 @@
+If you're exploring Linux or Unix, you might hear the terms terminal, command line, shell, and console, and you may justifiably be confused about which is which and whether they're the same thing. They're definitely all related, but there are nuances to each that have important implications. This article guides you through the terminology of Linux text-based interfaces.
+How computers work
+When a computer boots up, a kernel recognizes its own physical hardware and enables each component to talk with one another. There are many different kernels out there: long ago, there was a Unix kernel, a Sun kernel, a BSD kernel, and later there came the Linux kernel, the Hurd kernel, a Mach kernel, and an NT kernel.
+And that's not all of them. There are specialized kernels for all manner of computational devices. Some are very simple, and others are very complex, depending on the needs of the device it's running.
+The most basic set of instructions for a computer keeps it powered on. Hardware drivers, orchestrated by the kernel, keep fans active to prevent overheating, disk space is monitored, RAM states managed, new devices are detected, and so on. Very early computers did even less than this in their idle state, and each program that an early computer ran was essentially its sole purpose for existing, at least while that program (in the form of punch cards) was being executed. The concept of running a background job, or two applications at once, was unimaginable. If you wanted to process two jobs at once, you got a second computer.
+Once computers advanced, though, some scientists recognized that programming a computer for one purpose each time it booted was inefficient and, with advances in technology, under-powered. So they developed something they called a shell.
+There are different accounts on why the term "shell" was chosen, but a believable and satisfying explanation is that the shell interface surrounds the kernel just as a nutshell surrounds a nut. The shell is the part that a user interacts with, while the requests for computing power is managed by the kernel.
+The important thing to understand about a shell is that it marked a new age for computing. The shell transformed computers from an appliance into a power tool that could change its function on demand. Computers had become interactive. Even in modern computing, a shell is the lowest level of interaction you can have with your computer. That makes it the most direct way to instruct a computer about what you want it to do next, so learning the shell is an invaluable tactic of power users.
+The shell is an abstract concept for many people. When thinking about a shell, it's helpful to think of a specific one, and there are plenty to choose from. The most popular is (GNU) Bash, but Zsh and Fish are popular Bash alternatives. Tcsh and Ksh are reliable old favorites from early UNIX, with strict POSIX compliance. Ash and Dash aim to be lightweight and fast, making them ideal for embedded systems and for minimal environments. Microsoft's Powershell is an open source .NET-based shell.
+When you access a shell, you get a prompt. Some people call the shell prompt a command line, which is indeed descriptive: a prompt indicates a line into which you can type a command.
+A prompt is some symbol to let you know that the shell is awaiting your instructions. A common symbol is a dollar sign (
+$), but it could also be a percent sign (
+%), an angle-bracket (
+>), an octothorpe (
+#), or something else entirely. That means that when you're using a shell, your default view looks something like this:
+The noticeable difference between shells is syntax. For instance, in Bash and Zsh and Ash and Ksh, you set variables with an "equals" declaration:
+$ foo=bar $ echo $foo bar
+In Tcsh, however, you use the keyword
+set for variables:
+$ set foo=bar $ echo $foo bar
+On the surface, the shell interface isn't exactly user-friendly. On the contrary, it seems you're expected to know what to do with a shell. This isn't what most modern computerists are used to, because graphical applications at least provide users with buttons and menus to explore, even if they don't know exactly what the application does.
+Even if a user understands that the shell is awaiting input, common words, English or otherwise, render either errors or unhelpful output.
+For instance, if you type
+help at a Bash prompt, you get a list of built-in commands, few of which themselves produce useful results or enable further interaction.
+In that sense, the shell isn't your typical application. It truly is mostly a command line: a line for you to type commands into. It's up to the user to know what commands are available, and it's assumed that a user opening a shell has been made familiar with at least the most rudimentary commands so that they can learn more about the system.
+Because that's not always the case, it's useful on public systems to globally alias the mostly useless command
+help to something informative, such as shellp.
+You can access a shell on Linux or BSD by not running a GUI at all (so a shell is all that remains), or else by pressing Alt+Shift and a function key 2 through 6. Each function key takes you to a screen provided by getty (or agetty, or something similar, depending on what your distribution uses). The screen provides a login prompt to a shell, and this screen is often casually referred to as a console. More accurately, it's a getty session or an emulated tty device.
+On Mac, there's no way to opt-out of running a GUI on a running system, although at boot time, you can use snag keys to boot into Single User mode. Single User mode on Mac OS disables many features, including user management, so it's not generally advisable.
+The most common way of accessing a shell on modern computers is to open a terminal emulator, which runs a shell inside of it.
+A terminal was historically a physical device, before the concept of a personal computer (PC) even existed. A terminal was a computer-like object, but it was, in fact, just a screen (or sometimes just a printer!) with a keyboard attached. A terminal window on a modern computer is an emulation of that historical object, and you can usually run any shell inside of a terminal emulator.
+For example, on your Linux desktop, you can run one instance of a GNOME Terminal to serve as a window into a Bash shell, and another instance of GNOME Terminal to serve as a window into a Tcsh shell.
+The terminal itself is only there to house a running shell. A terminal emulator doesn't process data or run commands, although it may add user interface features, such as special keyboard shortcuts, the ability to drag-and-drop files into a shell, color themes, and so on.
+There are many terminal emulators available across all platforms. Linux and BSD desktops ship with
+xterm as a fallback, and usually include a modern emulator for daily use (such as GNOME Terminal, Konsole, and so on). Mac OS ships with a proprietary terminal emulator, but iTerm2 is a far superior replacement (and its license is GPLv2).
+For Windows, PowerShell is the default, but there are many other open source options such as ConEmu and Cmder.
+You can learn more about terminals and the shells they run by reading up on how to navigate in the shell, how to manage files in the shell, and how to customize your shell. If you learn better by doing, then consider taking introductory courses from Red Hat Training.
+[ Need help figuring out what to type at the terminal? Download the Linux Commands Cheat Sheet. ]

@@ -1,0 +1,119 @@
+What is a Microcontroller? Programming, Definition, Types & Examples
+Today, I am going to unlock the details on the Introduction to Microcontrollers. Microcontroller is an electronic device which is capable of doing various task efficiently and consists of memory, I/O ports and processor. We use C and assembly language to program the microcontroller.
+Hi Guys! I hope you all are doing great. In today's tutorial, we will have a look at What is a Microcontroller? We will also get an overview of Microcontroller Programming, Definition, Types, Examples etc. Microcontroller bought a revolution in modern electronics. Normally, C and assembly languages are used to program microcontroller (we will discuss in detail shortly).
+Microcontroller is like a tiny computer which follows the instructions defined in its programming. I'll try to cover each and every aspect related to microcontroller. So, let's first answer this question: What is a Microcontroller?
+What is a Microcontroller?
+Microcontroller is considered as the backbone of Embedded Systems(please read it once, before moving forward) & it's most important feature is: "It can think". A Microcontroller looks like a simple electronics chip, but in actual its too powerful (also called Embedded Computer) because its programmable. Using programming code, we can control all I/O pins of a micontroller and can perform multiple functions(We will discuss them later).
+Before microcontrollers, DLD gates were used to create logics i.e. adding delays, turning signals ON/OFF etc. DLD is still in practice for small projects but if you are working on big industrial projects, then DLD circuits become too messy & thus too difficult to handle. In below figure, I have added two circuits of traffic signal lights:
+Left Circuit: 555 Timer is used for creating the LED sequences.
+Right Circuit: Microcontroller is used for controlling LEDs.
+As you can see, DLD circuit is quite messy as compared to microcontroller one. Moreover, 555 Timer circuit is controlling 3 LEDs only, if we want to add more LEDs, we have to replicate the circuit, thus more components, so it won't be cost efficient. On the other hand, a single microcontroller can easily control 4 sets of traffic lights, as shown in below image and it can still control a lot more. Moreover, Microcontroller's circuit is too simple, easy to handle/debug.
+We will discuss Microcontroller advantages in detail later, but for now let's take an example: Suppose you want to increase the ON period of Green LED in traffic signal lights, if you are working on DLD circuit then you have to change hardware components i.e. changing resistances values(may involve soldering). But if you are working on Microcontroller, you just need to make changes in the software & upload the code in your Microcontroller. So, with the invention of Microcontroller, you don't need to design logics using electronics hardware components anymore, instead you can design logics in programming (software). Now let's have a look at what are Microcontrollers' Compilers? & what's the procdure for programming a Microcontroller:
+Microcontrollers Compilers (i.e. MPLAB, MikroC, Keil etc.) are windows-based software, used to write & compile programming codes for Microcontrollers.
+Now, you must be thinking How Microcontroller is controlling all these LEDs and how does it know which LED to turn ON/OFF. As I told earlier, Microcontrollers have the ability to think and this intelligence is fed into them using programming. Programming a Microcontroller is not that easy but its not as difficult as it sounds. Microcontrollers' manufacturers have designed their own compilers(third party compilers are also available), which are used for writing & compiling codes. These compilers generate .HEX file(machine code), which is then uploaded in the ROM of Microcontrollers by another hardware named as Microcontrollers' Programmer/Burner(i.e. PICKit3). Here's a flow diagram for programming a Microcontroller:
+Now let's have a look at a proper Microcontrollers Definition:
+A Microcontroller(also called Embedded Computer) is a mini(but powerful) computer, embedded in a compact IC(Integrated Circuit) chip, contains on-chip processor(one or more), memory(i.e. RAM, ROM, EEPROM etc.) & programmable I/O Ports(used for multiple functions).
+Microcontroller is used in embedded projects i.e. security systems, laser printers, automation system, robotics and a lot more.
+Microcontroller was first designed by Michael Cochran and Gary Boone. (Love these guys :D )
+C and assembly languages are used for programming a microcontroller but the HEX File is in machine languge which actually gets uploaded in Microcontrollers.
+There are also other languages available for programming a microcontroller but if you are a beginner, you should start with assembly language as it provides a clear concept about microcontroller's architechture.
+Below image shows few of the most commonly used Microcontrollers(We will discuss them in detail later):
+Now let's have a look at Microcontrollers Architechture i.e. what's inside microcontroller?
+RISC Architechture is considered the most advanced Microcontrollers Architecture so far & it comes with few standard components, which we will discuss here.
+Here's a Flow Diagram of Microcontroller's Architecture:
+As you can see in above figure, Microcontroller's Architechture consists of:
+EEPROM(Electrically-Erasable Programmable Read-only memory) is a semi-volatile memory & is norammly used to save permanent data, which doesn't need to change that often i.e. Admin Settings.
+If you upload code in your microcontroller, it will erase the EEPROM memory same as ROM memory.
+If you restart your microcontroller, it won't affect the EEPROM memory, EEPROM data will remain intact. (same as ROM memory)
+But EEPROM data can be updated/deleted using programming(unlike ROM memory).
+Let me give you an example: People change their desktop wallpaper once in a month, such settings should be saved in EEPROM memory.
+Microcontroller Ports I/O
+In Microcontrollers, multiple pins are dedicated for input/ouput (I/O) purposes & controlled by programming.
+A Port consists of multiple I/O Pins and there are multiple Ports in Microcontrollers.
+They are used to interface external devices (i.e. printers, LCD, LED, sensors etc.) to the microcontroller.
+Microcontroller comes with multiple built-in timers, used for counting purposes.
+Timers are very handy in achieving different tasks i.e. pulse generation, frequency generation, clock function, modulation, interrupts etc.
+Timers are synchronized with microcontroller's clock, used for measuring time intervals between two events and can count up to 255 for 8-bit microcontroller and 65535 for 16-bit microcontroller.
+Microcontroller Interrupts are used for urgent scenerios and whenever interrupt is recevied by the microcontroller, it stops everything & first deals with the interrupt call.
+So, as their name indicates, they actually interrupt the microcontroller from its regular task & force it to deal with them first.
+Types of Microcontrollers
+There are different types of Microcontrollers available and are classified based on Bus-width, Memory, Insutruction Set, Architecture, & Manufacturer.
+Here's a flow chart of Microcontrollers types:
+Microcontrollers Types based on Bus-Width
+Microcontrollers come in 8 bit, 16 bit, 32 bit and 64 bit. Some most advanced microcontrollers have bits more than 64 which are capable of executing particular functions in the embedded systems.
+8 bit microcontroller is capable of executing smaller arithmetic and logic instructions. Most common 8 bit microcontrollers are atmel 8031 and 8051.
+In contrast to 8 bit microcontroller, 16 bit microcontroller executes program with higher precision and accuracy. Most common 16 bit microcontroller is 8096.
+32 bit microcontroller is applied into automatic control systems and robotics where high durability and reliability is required. Office machines and some power and communication systems use 32 bit controller to execute different instructions.
+Microcontrollers Types based on Memory
+Based on memory, microcontrollers are divided into two types i.e.external memory microcontrollers and embedded memory microcontrollers.
+When embedded system needs both microcontroller and external functioning block that is not incorporated in microcontroller, then microcontroller is called external memory microcontroller. 8031 is an example of external memory microcontroller.
+When all functioning blocks are incorporated in a single chip that is connected with embedded system, then microcontroller is called embedded memory microcontrollers. 8051 is an example of embedded memory microcontrollers.
+Microcontrollers Types based on Instruction Set
+Based on instruction set, microcontrollers are classified into two types i.e CISC-CISC and RISC-RISC.
+CISC is referred as complex instruction set computer. One valid instruction is enough to replace number of instructions.
+RISC is referred as reduced instruction set computer. RISC helps in reducing the operation time of executing the program. It does it by reducing the clock cycle per instruction.
+Types of Microcontrollers based on Manufacturer
+There are numerous types of microcontrollers and I am gonna discuss few of them in detail here:
+1. 8051 Microcontroller
+8051 microcontroller is a 40 pin 8 bit microcontroller invented by Intel in 1981.
+8051 comes with 128 bytes of RAM and 4KB of built in ROM.
+Based on priorities, 64 KB external memory can be incorporated with the microcontroller.
+A crystalline oscillator is embedded on this microcontroller which comes with a frequency of 12 MHz.
+Two 16 bit timers are integrated in this microcontroller that can be used as a timer as well as a counter.
+8051 consists of 5 interrupts including External interrupt 0, external interrupt 1, Timer interrupt 0, timer interrupt 1 and Serial port interrupt.
+It also consists of four 8 bits programmable ports.
+2. PIC Microcontroller
+Microchip invented PIC(Peripheral Interface Controller) Microcontroller which supports Harvard architecture.
+Microchip Technology is very concerned with the needs and requirements of the customers so they constantly keep on upgrading their products, in order to provide top notch service.
+Low cost, serial programmable ability, and wide availability make this microcontroller stand out of the party.
+It consists of ROM, CPU, serial communication, timers, interrupts, I/O ports and set of registers that also behave as a RAM.
+Special purpose registers are also incorporated on chip hardware.
+Low power consumption makes this controller an ideal choice for an industrial purpose.
+3. AVR Microcontroller
+AVR is referred as Advances Virtual RISC which was produced by Atmel in 1966.
+It supports Harvard Architecture in which program and data is stored in different spaces of microcontroller and can easily be accessed.
+It is considered as earlier types of controllers in which on-chip flash is used for storing program.
+AVR architecture was introduced by Vegard Wollan and Alf-Egil Bogen.
+AT90S8515 was the first controller that was based on AVR architechture.
+However, AT90S1200 was the first AVR microcontroller that was commercially available in 1997.
+The flash, EEPROM and SRAM all are integrated on a single chip, which removes the possibility of joining any external memory with the controller.
+This controller has a watchdog timer and many power saving sleep modes that make this controller reliable and user-friendly.
+Now let's have a look at difference between Microcontroller & Microprocessor:
+Microcontroller Vs Microprocessor
+Microprocessor use external circuity in order to build communication with peripheral environment, but microcontroller doesn't involve any external circuitry to put it in a running condition as it comes with a specified built-in circuity that saves both space and cost to design a device of similar characteristics.
+As compared to microprocessor which are widely used in PCs, laptops and notepads, microcontrollers are specially made for embedded system.
+When we talk about embedded system, we actually refer to a devices that come with built in circuitry and need load of proper instructions to control the devices.
+Great thing about embedded system is that it involves customized programming that is directly connected to internal circuitry which can be modified again and again till you achieve your desired result.
+Clock speed of microprocessor is much larger than microcontroller and they are capable of doing complex tasks. They can operate at the frequency of 1 GHZ.
+I have pointed out key differences between Microcontroller and microprocessor in below table:
+Comparison with Desktop Computers
+In contrast to our desktop computer, microcontrollers are tiny computers which contains memory much less than desktop computer.
+Also the speed of desktop computer is much larger than speed of the simple microcontroller.
+However, microcontrollers exhibit some features similar to desktop computers like it comes with central processing unit which is brain of the microcontroller.
+These CPU in microcontrollers come with different word length i.e from 4 bit to 64 bit.
+They can operate at lower frequencies at 4 kHZ and have an ability to retain functionality before reset button is pressed or some interrupt is called.
+In modern technologies, some microcontrollers devices constitute a complex design and are capable of having word length more than 64 bit.
+Microcontroller consists of built in components including EPROM, EEPROM, RAM, ROM, timers, I/O ports and reset button. RAM is used for data storage while ROM is used for program and other parameters storage.
+Modern microcontroller are designed using CISC (complex instruction set computer) architecture which involves marco-type instructions.
+Single macro type instruction is used to replace the number of small instructions.
+Modern microcontrollers operate at much lower power consumption as compared to older ones.
+They can operate at a lower voltage ranging from 1.8 V to 5.5 V.
+Flash memory like EPROM and EEPROM are very liable and advanced features in latest microcontrollers which set them apart from older microcontrollers.
+EPROM is faster and quick than EEPROM memory. It allows to erase and write cycles as many times as you want which makes it user friendly.
+Now let's have a look at Microcontrollers applications:
+Micrcontroller has numerous application, here I have mentioned, few of them:
+Peripheral controller of a PC
+Robotics and Embedded systems
+Communication and power systems
+Automobiles and security systems
+Implanted medical equipment
+Fire detection devices
+Temperature and light sensing devices
+Industrial automation devices
+Process control devices
+Measuring and Controlling revolving objects
+That's all for today. I hope you have enjoyed the article. Our job is to provide you useful information step by step, so you can digest the information without much effort. However, if still you feel skeptical or have any doubt you can ask me in the comment section below. I'd love to help you according to best of my expertise. Stay Tuned.
+I am Syed Zain Nasir, the founder of The Engineering Projects (TEP). I am a
+programmer since 2009 before that I just search things, make small projects and now I am sharing my
+knowledge through this platform. I also work as a freelancer and did many projects related to
+programming and electrical circuitry. My Google Profile+Follow

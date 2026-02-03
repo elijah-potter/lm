@@ -1,0 +1,106 @@
+This tutorial shows you some handy time-saving shortcuts in linux. Once you have a good understanding of how the command line works, you will want to learn how to work more efficiently.
+Linux command line fundamentals.
+- Save you time when working on a linux system
+- Increase your appreciation of the power of linux
+Step 1 -- The Arrow Keys
+Note: even if you know how to use the up arrow in linux, you need to enter the commands in this section because they are used in the following sections. So to begin this tutorial, go to your home directory and create a new directory called ShortCuts:
+$ cd $ mkdir Shortcuts $ cd Shortcuts
+(If a directory or file named "Shortcuts" already exists, name it something else.)
+Imagine typing in a long linux command and making a typo. This is one of the frustrating things about a command line interface -- you have to retype the command, correcting the typo this time. Or what if you have to type several similar commands -- wouldn't it be nice to have a way to recall a previous command, make a few changes, and enter the new command? This is what the up arrow is for.
+Try the following:
+$ cd .. $ cd ShortCuts (type a capital C)
+Linux should tell you there is no directory with that name.
+Now type the up arrow key -- the previous command you entered shows up on the command line, and you can use the left arrow to move the cursor just after the capital C, hit Backspace, and type a lower case c. Note you can also position the cursor before the capital C and hit Delete to get rid of it.
+Once you have changed the capital C to a lower case c you can hit Return to enter the command -- you do not have to move the cursor to the end of the line.
+Now hit the up arrow key a few times, then hit the down arrow key and notice what happens. Play around with this until you get a good feel for what is happening.
+Linux maintains a history of commands you have entered. Using the up and down arrow keys, you can recall previously-entered commands to the command line, edit them and re-issue them.
+Note that in addition to the left and right arrow keys you can use the Home and End keys to move to the beginning or end of the command line. Also, if you hold down the Ctrl key when you type an arrow key, the cursor will move by an entire word instead of a single character -- this is useful is many situations and works in many editors.
+Let's use this to create a directory hierarchy and a few files. Start in the Shortcuts directory and enter the following commands, using the arrow keys to simplify your job:
+$ mkdir directory1 $ mkdir directory1/directory2 $ mkdir directory1/directory2/directory3 $ cd directory1/directory2/diectoryr3 (remember the Home key and the Ctrl key with left and right arrows) $ hostname > file1 $ whoami > file2 $ mkdir directory4 $ cal > directory4/file3
+Step 2 -- Using the TAB key
+Linux has short, cryptic command names to save you typing -- but it is still a command line interface, and that means you interact with the operating system by typing in commands. File names can be long, directory hierarchies can be deep, and this can mean you have to type a lot to specify the file you want or change to current working directory. Not only that, but you have to remember the names of files and directories you type in. The TAB key gives you a way to enter with commands with less typing and less memorization.
+Go back to the Shortcuts directory:
+$ cd $ cd Shortcuts
+Now enter the following:
+$ hostname > file1 $ cal > file2 $ whoami > different-file $ date > other-file $ cal > folio5
+Now type the following, without hitting the Return key:
+$ cat oth <Tab>
+What happened? Linux completed the name "other-file" for you! The Tab key is your way of telling Linux to finish the current word you are typing, if possible. Because there is only one file in the directory whose name begins with "oth", when you hit the Tab key Linux is able to complete the name.
+Hit Return (if you haven't already) to enter the cat command. Now try
+$ cat d <Tab>
+As you would expect, Linux completes the name "different-file"
+What if you enter
+$ cat fi <Tab>
+Notice Linux completes as much of the name as possible. You can now enter a "1" or a "2" to finish it off.
+But what if you forget what the options are? What if you can't remember if you created "file1" and "file2" or if you created "fileA" and fileB"?
+With the comman line showing this:
+$ cat file
+hit the Tab key twice. Aha! Linux shows you the possible choices for completing the word.
+$ cat f <Tab>
+The Tab will not add anything -- the command line will still read
+$ cat f
+Now type the letter o followed by a Tab -- once you add the o there is only one possible completion -- "folio".
+Now enter the following:
+$ cat directory1/directory2/directory3/directory4/file3
+That's kind of a painful to type.
+Now type the following without entering Return:
+$ ls dir <Tab>
+Nice! As you would expect, Linux completes the name of the directory for you. This is because there is only one file in the Shortcuts directory whose name begins with "dir"
+Hit Return and Linux will tell you that directory1 contains directory2.
+Now type this:
+$ ls dir <Tab>
+and before you hit return type another d followed by another Tab. Your command line should now look like this:
+$ ls directory1/directory2/
+If you hit Return, Linux will tell you that directory2 contains directory3.
+Now try this:
+$ ls dir <Tab>
+then type another d followed by <Tab> then another d followed by tab. Don't hit Return yet. Your command line should look like this:
+$ ls directory1/directory2/directory3/
+Don't hit Return yet. Now type the letter f followed by a Tab. What do you think should happen?
+Step 3 -- The Exclamation Point
+Hitting the up arrow key is a nice way to recall previously-used commands, but it can get tedious if you are trying to recall a command you entered a while ago -- hitting the same key 30 times is a good way to make yourself feel like an automaton. Fortunately, linux offers a couple of other ways to recall previous commands that can be useful.
+Go back to the Shortcuts directory
+$ cd ~/Shortcuts
+and enter the following:
+$ hostname $ cal $ date $ whoami
+Now enter this:
+and hit return.
+What happened? Now try
+and hit return.
+The exclamation point ("bang" to Americans, "shriek" to some Englishmen I've worked with) is a way of telling linux you want to recall the last command which matches the text you type after it. So "
+!c" means recall the last command that starts with the letter c, the "
+cal" command in this case. You can enter more than one character after the exclamation point in order to distinguish between commands. For example if you enter
+$ cd ~/Shortcuts $ cat file1 $ cal $ !c
+the last command will redo the "
+cal" command. But if you enter
+$ cat file1 $ cal $ !cat
+the last command re-executes the "
+Step 4 -- Ctrl-r
+One problem with using the exclamation point to recall a previous command is that you can feel blind -- you don't get any confirmation about exactly which command you are recalling until it has executed. Sometimes you just aren't sure what you need to type after the exclamation point to get the command you want.
+Typing Ctrl-r (that's holding down the Ctrl key and typing a lower case r) is another way to repeat previous commands without having to type the whole command, and it's much more flexible than the bang. The "r" is for "reverse search" and what happens is this. After you type Ctrl-r, start typing the beginning of a previously entered command -- linux will search, in reverse order, for commands that match what you type. To see it in action, type in the following commands (but don't hit <Enter> after the last one):
+$ cd ~/Shortcuts $ cat file1 $ cat folio5 $ cal $ Ctrl-r cat
+You should see the following on your command line:
+(reverse-i-search)`cat': cat folio5
+Try playing with this now. Type in " fi" (that's a space, an "f" and an "i") -- did the command shown at the prompt change? Now hit backspace four times.
+Now enter a right or left arrow key and you will find yourself editing the matching command. This is one you have to play around with a bit before you understand exactly what it is doing. So go ahead and play with it.
+Step 5 -- history
+and hit return.
+Cool, huh? You get to see all the commands you have entered (probably a maximum of 1000.) You can also do something like
+$ history | grep cal
+to get all the commands with the word "cal" in them. You can use the mouse to cut and paste a previous command, or you can recall it by number with the exclamation point:
+re-executes the command number 874 in your history.
+For more information about what you can do to recall previous commands, check out http://www.thegeekstuff.com/2011/08/bash-history-expansion/
+Step 6 -- Ctrl-t
+I am just including this because to me it is a fun piece of linux trivia. I don't find it particularly useful. Type
+$ cat file1
+and hit <Return>. Now hit the up arrow key to recall this command and hist the left arrow key twice so the cursor is on the "e" of "file1". Now hit Ctrl-t (again, hold down the control key and type a lower case t.) What just happened? Try hitting Ctrl-t a couple more times. That's right -- it transposes two characters in the command line -- the one the cursor is on and the one to its left. Also, it moves the cursor to the right. Frankly, it takes me more time to think about what is going to happen if I type Ctrl-t than it takes me to delete some characters and retype them in the correct order. But somewhere out there is a linux black belt who gets extra productivity out of this shortcut.
+Step 7 -- The alias command
+Another nice feature of linux is the alias command. If there is a command you enter a lot you can define a short name for it. For example, we have been typing "
+cat folio5" a lot in this tutorial. You must be getting sick of typing "
+cat folio5". So enter the following:
+$ alias cf5='cat folio5'
+and hit return. Nice -- you now have a personal shortcut for "
+cat folio5". I use this for the ssh commands:
+$ alias gogl='ssh -Y firstname.lastname@example.org'
+I put this in the
+.bash_aliases file on my laptop so that it is always available to me.

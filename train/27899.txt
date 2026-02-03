@@ -1,0 +1,5 @@
+Regions are the different segments of a sound file in ProTools jargon.
+To split an audio track into differennt regions, use the Selector tool and place the cursor wherever you want to split your track. You'll see the blue markers above the timeline jump to the location you clicked.
+Separate the track into regions by going to the menu at the top of the screen and selecting Edit...Separate Region. You can also use the shortcut Cmd-E.
+Notice that your track now has two regions, like this:
+Double click on a region to highlight it. Now that the sections are divided form one another, you can move or delete them independently.

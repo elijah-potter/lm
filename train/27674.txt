@@ -1,0 +1,49 @@
+Shading System Proposal
+- Materials and textures will be based on nodes.
+- Shader presets and texture stacks provide high level control that does not require creating nodes manually.
+- Surfaces shaders will output a BXDF by default that is usable for all lighting algorithms, while still optionally allowing to set individual render passes.
+- Refactor internal shading code.
+- Solve premul/key and other alpha issues.
+- Change texface to be better integrated with the material system.
+These are good things to have but not part of this particular refactor, though good to keep in mind for how such things might fit in later (even if they aren't planned):
+- Support for new light interactions like indirect diffuse illumination or caustics.
+- Improved sampling for raytracing.
+- Spectral shading, stick to RGB for now.
+- Shading language.
+A material is what gets linked to the object/geometry, the overall representation of how the objects reacts to light and how it is displaced. A material consists of multiple shaders (not all required to be set).
+A shaders is a collection of nodes, that determines how a specific part of the material (surface/volume/displacement) reacts. It has an output node that defines a bxdf, or other more specific passes.
+These nodes may be either manually created, or based on a shader preset.
+A shader preset defines a node setup and a subset of node inputs and values to show in the material panel. This way the shader still works with nodes internally, but they can be hidden, or be the preset can be used as a starting point.
+A BXDF (Bidirectional scattering distribution function) is a function that can both be evaluated and importance sampled. This is what a shader outputs by default and what nodes pass along to the BXDF output.
+For physically based rendering, this is all that is used. However for more flexible material setups, for example to do non-photorealistic rendering, it is also possible to output a color directly.
+Any node input can have a texture attached to it through nodes. It will be possible to do this in the shading node tree, but also from the properties window. A material parameter could be marked as being texture, after which it would automatically create a texture node.
+The texture node would be able to contain more than one texture and mapping information, to create a small texture stack.
+BXDFs and Physically Based Rendering
+All light interactions will be able to use a BXDF. Such a BXDF basically has two functions, one to evaluate it giving in/outgoing vectors, and one to sample outgoing vectors, using importance sampling whenever possible.
+A BXDF can be a simple self contained function like a Lambert BRDF, but by making node trees we get a composite BXDF, layer for example multiple BRDFs. This means nodes such as a layer BXDF node both implement evaluation and importance sampling.
+We can still provide scene level settings to use BXDF's with different levels of accuracy. For example lighting of environments or area lamps may be noisy, for speed then an averaged direction may be used instead to do only a single BXDF call.
+- No light interaction
+- Use Simple Lambert/Phong BXDF
+- BXDF applied to averaged direction (bent normal)
+- Full BXDF for all directions
+Passes and Non Physically Based Rendering
+Even though BXDFs are a good way to get consistent and correct light interactions, they may not be suitable for everything. For this reason outputs other than the BXDF are provided corresponding to render passes.
+The first reason for render passes is compositing, each shader will be able to connect to outputs for these passes to fill them in manually. If they are not provided, the pass may be automatically derived from the BXDF.
+Another reason for manual control over such passes is that outputting a color is more flexible than outputting a BXDF. Not all nodes work as part of a BXDF, for example if you want to do non-photorealistic rendering you may want to do shading in more flexible ways. A light node will be provided which takes the BXDF and outputs a color which then can be freely manipulated and connected to the combined pass output.
+Important to realize is that this then is only usable for shading the first hit, other algorithms can not use this color. For example transparent shadows need an RGBA color and SSS needs a diffuse color, so the combined color is not usable. For these cases again the diffuse and RGBA pass outputs can be set, if they are not set, again the BXDF output will be used (or simply be black if there is no BXDF).
+Defining Shape with Materials
+Currently materials also influence the shape of the mesh, for example halo and wire rendering, or strand width are defined by the material. Instead these will become object and particle system settings.
+Even though nodes are powerful, a texture stack can still be an efficient way to set up textures. The intention is to make it simpler an leave more complex blending to nodes, while making it more flexible in that you can attach it to any parameter.
+Any node input will be able to get an associated texture node containing a texture stack. From the node system point of view this would be a texture node that is linked to that node input. A texture node then contains a list of textures and texture mappings, but no influence values. Node inputs and their associated texture stack will be editable from the texture buttons.
+This may sound a bit complicated but the workflow should still be simple. A material parameter would have a button or some option in the right click menu to say, texture this, after which the parameter would appear along with others in the texture buttons to get one ore more textures assigned.
+How complex we still allow blending to be, e.g. using stencils, is unsure still, though the tendency should be to move things that are difficult to understand as a stack should be done as nodes instead.
+Texface should be separated from uv layers, and managed from the texture buttons. The image texture can work as it does now, and by default just use one image. But then there can also be an option to assign an image texture per face rather than using one image, basically replacing texface. This would still be stored in the mesh of course in "image" layers.
+The active texture in the texture buttons could be used for display, texture painting, uv editing, rather than the active uv texture layer.
+The concept of tangent shading in Blender confusing, rather we should think of it as two separate things.
+Individual BXDFs will be able to implement anisotropy, all shaders will have both the normal and tangents available to do anisotropic shading.
+Hair strand shading needs the "tangent" to be able to shade as if a flat polygon is actually a cylinder. Hence such hair BXDFs should get a different kind of geometry input where no normal is available but only the cylinder direction and shape.
+Single vs. Multiple Shader Node Trees
+It is convenient to have all shaders in a single node tree, but it also makes it less clear which nodes are available for which outputs. For example a BXDF node can't be used for a displacement output. Having them separate means it is more clear which nodes you're allowed to use, and makes it also easier to reuse node trees without grouping.
+BXDF and Pass Outputs in a Single Node Tree
+Another question is if we should put the BXDF and pass outputs in a single node tree. Again certain nodes are not allowed in BXDF node trees, and having it separate would make that more clear. Having a separate node tree also gives a clear separation of physical and non-physical behavior. Though it is useful to have all nodes together, as for example a subset of the BXDF nodes may be used for pass output.
+Where does emission fit? And extra output next to BXDF that takes a color, or do we also support putting a BXDF into that? It may be useful to be able to vary the amount of emission for different directions. There also exists an Emittance Distribution Function (EDF), which is like a BXDF with only an outgoing and no an incoming vector. We could get away just outputting a color for now and maybe support EDFs later.

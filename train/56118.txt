@@ -1,0 +1,9 @@
+A field "checkbox" is a list of boxes (On / Off) to check, providing to a user multiple choices. Each choice offered by one of these boxes is an option. A field "checkbox" must contain at least one option.
+An option is composed of a part "text" and a part "value". The "text" is the text displayed on the form. The "value" is the recorded value, notably used in a template content or in a search process.
+Common Plugin Settings (Link to the article)
+Write at least one option of the list. The format is text = value. If an option contains only "value" or "text" then the 2 have the same value.
+- If the field is used in a search form, the search is performed only on the "value".
+- If several options are selected, the stored value is the concatenation of all values of selected options, separated by commas "," or other character designated by the parameter "Separator".
+- Option1 (Following option): to maintain the existing order,
+- Option2 (Alphabetical A > Z): order the options in ascending alphabetical order (A-> Z), consider the "text" part of the option,
+- Option3 (Alphabetical Z > A): order the options in descending alphabetical order (Z-> A).

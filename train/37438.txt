@@ -1,0 +1,29 @@
+Separate memory modules on a standardized interface provide several advantages:
+- Reduced overall production cost
+- Greater flexibility in RAM selection
+- expansion way beyond what a classic (pre-SIMM) motherboard would support.
+- Reduced motherboard design cost
+- Greatly reduced motherboard production cost
+- Faster innovation cycles due to defined and spacious interface definition
+- Move of RAM choice and investment to point of sales (or later)
+- More option and reduced investment for retailers.
+- Modules will be usable across different brands and boards.
+And maybe most important
+- Greatly reduced cost of memory cards (in addition to reduced mainboard cost)
+The advantage with ZIP over DIP was obvious - more RAM chips in the same board area. Of course, you needed different sockets.
+That's why it was added, and especially used in graphics cards, where space was always a premium - at least when trying to provide upper end features - And RAM was (more often than not) already provided in full with the card.
+SIMM offered the same space advantage, but with a more complicated socket and with the RAM chips having to be soldered onto a PCB. Overall, seems like a more costly way to go than ZIP RAM, but SIMM obviously won in the market.
+Not really, as it reduced the amount of parts. Instead of having a socket for each and every ram chip a single socket was needed holding 8 (or sometimes up to 32) chips. Quite a reduction from the point of a motherboard manufacturer. The memory modules itself could carry the chips without any socket. Further it allowed to separate RAM mounting technology (thruhole or SMD) from motherboard manufacturing. A SIMM Module could use any kind of RAM, no matter if it is DIP, SIP, ZIP or SMD like TQFP or BGA.
+It further decoupled RAM pinout from motherboard layout. Now larger or smaller RAMs from various manufacturers could be incorporated. This include pinouts that were not known/available at the point the motherboard was designed.
+And most important, it removed the need to design a motherboard for a specific amount of memory and, as follow up, the design of specific memory cards. A motherboard can only hold sockets for a specific amount of RAM of a specific pinout. When they are filled, some kind of memory or I/O bus card must be made to add more memory.
+Using memory modules is, well, modularization. Much like having a nice, clear API, designed with an upgrade path in mind allows independent development and sales.
+So why were the added manufacturing costs for SIMMs not an issue and why did they quickly replace ZIPs?
+Because manufacturing costs were not higher but lower. Lower for all parties involved, Motherboard and RAM module manufacturers as well as retailers.
+- On the motherboard side, buying one (complex) socket is less expensive then adding 32 (or more) single chip sockets.
+- Similar, placing one (or even 4) SIMM sockets is faster and less expensive than 32 separate sockets.
+- For the RAM manufacturer the board design will be way less expensive than for a traditional (large) memory expansion board (like ISA Memory cards for the PC).
+- Similar board production will cost way less.
+- For the retailer taking the RAM (socket/space) cost out of the motherboard reduces upfront investment on motherboards, as well as on RAM modules
+Note: I get that SIMM insertion and removal is relatively easy, but that ease-of-upgrade option only makes sense if it was a major consumer selling point. My recollection is that most motherboard RAM upgrades happened at the point-of-sale, with vendors likely choosing the cheapest solution.
+The profit of vendors/resellers configuring a PC is quite dependent on the time invested to configure a PC to the customers specs, and inserting 8, 16 or more flimsy ZIP chips without bending a pin and good insertion and so on, is a great burden compared with clipping in one or two SIMMs. Time is money.
+Stock cost is as well important for a vendor/reseller. Modularized structure does enable a considerable lower stock by only holding a few different memory modules instead of many different chips and even more model specific memory expansion boards.

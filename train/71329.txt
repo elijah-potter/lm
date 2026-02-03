@@ -1,0 +1,36 @@
+The next biggest blockchain with a larger network after Bitcoin is Ethereum. It is on the making of switching its functioning to the proof-of-stake consensus mechanism as an eco-friendly act to approve its transactions on the blockchain.
+The current Proof-of-work mechanism comes with its own set of drawbacks which alarms the dire need for an alternative way.
+Energy Usage By Ethereum Network
+Blockchain uses Digital Ledger technology to record the transactions on blocks. But who validates and stores these transactions in the blockchain? The miners assess the transactions and perform mathematical calculations using superfast systems to verify and add data to the blocks.
+The main catch here is that the proof of work model consumes a lot of energy to verify transactions.
+Digiconomist has found that it uses roughly 112 terawatt-hours of electricity and that a single Ethereum transaction requires the energy that equals the power consumption of an average US household over 9 days.
+To overcome this problem, Ethereum is on the move to bring about the change for mining coins in a more eco-friendly way. This major update to the Ethereum blockchain targets decreasing energy consumption by 99.95 per cent.
+Before long, let’s unwind the concept of Proof of work and find out how Proof of stake is better than the existing one.
+Proof of Work vs Proof of Stake
+- Both the Proof of Work and Proof of stake forms the core process of mining Ethereum. With the world facing a shortage in power supply, Proof of work that consumes hefty energy is drawing in controversies.
+On the other hand, Proof of stake operates on users staking the coins to validate transactions with 99% less energy consumption.
+- Ethereum’s proof of work model is slow and processes only 15 transactions per second with very low scalability.
+Proof of stake allows the network to scale while processing 100,000 transactions per second.
+What Is Proof Of Work? How Does It Work?
+Bitcoin was the first to implement Proof of work. To avoid the issue of double-spending, the creator came up with this mechanism. For a authenticate validation process, the “proof of work” was brought in wherein the validator of the nodes has to invest in hardware to perform calculations.
+This hardware is a complex system that helps prevent malicious users from setting up a large number of virtual nodes and gaining access over the network. Approximately every 10 mins, the Bitcoin miners compete to solve the calculations and add them to blocks.
+It uses the most powerful computer to perform logical guesses. And for every new block added, the winner is given the coins as the block reward. Larger the mining operation, the larger its contribution to the market share.
+Ethereum, as proposed in its white paper, was supposed to work on Proof of stake. But since its development is a complicated process, it was launched on a proof of work model. But as per the announcement of the founder, during “The Merge” event in 2022, Ethereum will shift its working to the proof of stake model.
+Instead of energy-intensive computers, proof of stake involves the block validators investing in the native coins and becoming part of the node.
+The process goes such that it requires locking a certain amount of tokens in the smart contracts to be a validator.
+Ethereum specifically requires locking up 32 Ether for participants to serve as validators. The validators are given a chance based on the amount of tokens they stake. More the number of coins staked increases the chances of winning the lottery.
+An algorithm functions the task of choosing the validators based on the funds staked, and once the users validate the blocks that are added to the blockchain, they are rewarded with Ether coins.
+The latest updates by the team confirm Ethereum will go on Proof of stake in the next few months. Proof of stake is widely praised for being more secure than Proof of work, as proof of work requires owning half of the computing power to gain influence on the network, while that of proof of stake needs half of the coins in the network.
+Improvements In The Proof Of Stake Mechanism
+Having known about the working of both the POW and POS model, let’s look at the pointers jotting down how POS proves to be better.
+- Less energy requirement for computation makes it an energy-efficient model.
+- Less energy usage leads to less issuance of ETH to incentivise participants
+- Do not require advanced hardware to add blocks
+- Brings in much decentralization as more nodes are present to secure the network.
+- Penalties for performing illicit activities tighten the network from getting exposed to 51% attacks.
+Quick Gist On Pros And Cons
+|Promotes decentralization and is easy to run on a normal system.||Less tested when compared to Proof of work.|
+|Provides great economic security||Includes complex process than proof of work|
+|Incentivizing participants can be done with less number of Ether.||Involves three parts of software: an execution client, a consensus client and a validator.|
+Though Proof of stake offers better reliability, the transition of Ethereum blockchain that involves a huge number of underlying assets is at the risk of staking. Also, Proof of stake is in the developing stage, exposing the possibility of new bugs surfacing the system.
+So, Ethereum’s move to switch to Proof of stake comes with its own set of challenges to address.

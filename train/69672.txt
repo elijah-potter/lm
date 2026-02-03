@@ -1,0 +1,9 @@
+Because standard scores (z-scores) have a mean of zero and involve negative numbers, they can be confusing to people who have not studied statistics. To get around this problem, researchers often transform standard scores to another scale that does not have negative values. An important example of a transformed standard score is known as a T-score. T-scores are standardized scores with a mean of 50.00 and a standard deviation of 10.00.
+To calculate a T-score, simply multiply the person’s z-score by 10 and then add 50. This can be done for each case to transform an entire set of data. The constant 50 is the mean of the transformed scores. That is, if a person had a z-score of 0.00, they would have a T score of 50.00. Since the standard deviation is 10, you can surmise that the practical range of T-scores is 20 to 80 because of the 99.7% rule.
+Computing an Individual’s T Score
+To compute an individual’s T score, use the following formula:
+-Where z is the person’s standardized score
+By following the general method used to compute a T-score, we can transform z-scores into a new scale with any mean or standard deviation. For example, we can convert a set of z-scores into IQ scores with a mean of 100 and a standard deviation of 15:
+IQ = (z)(15) + 100
+Raw Score, Standard Score, z-Score, Transformed Score, T Score
+Last Modified: 06/03/2021

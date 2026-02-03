@@ -1,0 +1,46 @@
+JRuby Tutorials Posted on: June 13, 2009 at 12:00 AM
+JRuby team developed JRuby, which is a pure implementation of Ruby language into Java programming language.
+Hello World Program in JRuby JRuby team developed JRuby, which is a pure implementation of Ruby language
+into Java programming language. JRuby supports various features of both Java and
+Ruby such as Object Oriented Programming and duck-typing as Ruby.
+factorial in JRuby In the previous section of "Running first JRuby
+program" example you must be aware with the way to run JRuby program.
+Now in this example you will know to "Calculate Factorial in JRuby".
+Printing Table in JRuby In the previous sections of JRuby tutorials you
+have studied how to run program in JRuby and to calculate factorial in
+JRuby. Now in this part of JRuby tutorial we will tell you how to take input
+in JRuby from the console and print output table on the console output.
+File Reader example in JRuby In this section of JRuby tutorial we will study to Read
+File in JRuby. We can read and write file on the console or in a file with
+the JRuby. Here in our example we are reading a text file and printing its
+content on the console.
+Printing Command Line arguments in JRuby In this section of JRuby tutorial we will discuss about
+printing command line arguments in JRuby program. We can also take arguments
+from the command line into our JRuby program.
+TreeSet example in JRuby In the previous sections of JRuby tutorials we have
+learned about how to use Java classes in JRuby program now here is one more example that
+uses Java class TreeSet.
+"Hello World" program in Swing and JRuby In the previous section of JRuby Tutorials you have studied how to use Java classes in JRuby examples to show results on your
+console. Now we are going to describe you how to use Swing in JRuby
+For Loop example in JRuby In previous section you have studied a lot about JRuby
+example. In this example we will show you how to use For-loop in JRuby.
+Using "Case" control in JRuby In the previous section of JRuby tutorial you have
+learned to use for-loop in JRuby. Now we will discuss that how to use "Case"
+control in our program to provide working of program on selected case
+Creating Class in JRuby In this part of JRuby tutorial you will come to know
+that how one can define a class in JRuby and can define methods in class as well
+as can call them.
+Inheritance example in JRuby In the previous sections of JRuby tutorials you became familiar with the way
+that how Classes are to be declared in JRuby and how these can be used to call
+methods of a class. Now you will learn that how to implement Inheritance
+Method Overriding in JRuby In this part of JRuby tutorial you will know to
+implement overriding of methods between the classes. In earlier examples of
+JRuby you have studied a lot about to create class, inheriting class and calling
+methods of classes.
+ArrayList example in JRuby In this section of JRuby tutorial you will learn how to
+create and add elements in ArrayList using the JRuby. ArrayList is
+used to store elements in the list which can be accessed sequentially.
+Defining Class Constants in JRuby In this example you will learn about using Class
+Constants in JRuby program. Constants can be defined within the scope of
+classes, but they are not as instance variables, constants can be accessed
+from outside the class.

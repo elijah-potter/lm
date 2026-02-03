@@ -1,0 +1,93 @@
+A truth table is a mathematical table used in logic—specifically in connection with Boolean algebra, boolean functions, and propositional calculus—to compute the functional values of logical expressions on each of their functional arguments, that is, on each combination of values taken by their logical variables (Enderton, 2001). In particular, truth tables can be used to tell whether a propositional expression is true for all legitimate input values, that is, logically valid.
+Practically, a truth table is composed of one column for each input variable (for example, A and B), and one final column for all of the possible results of the logical operation that the table is meant to represent (for example, A XOR B). Each row of the truth table therefore contains one possible configuration of the input variables (for instance, A=true B=false), and the result of the operation for those values. See the examples below for further clarification. Ludwig Wittgenstein is often credited with their invention in the Tractatus Logico-Philosophicus.
+Unary operations 
+Logical identity 
+The truth table for the logical identity operator is as follows:
+Logical negation 
+The truth table for NOT p (also written as ¬p, Np, Fpq, or ~p) is as follows:
+Binary operations 
+Truth table for all binary logical operators 
+Here is a truth table giving definitions of all 16 of the possible truth functions of 2 binary variables (P,Q are thus boolean variables):
+where T = true and F = false.
+|9||Epq||XNOR||If and only if||Logical biconditional|
+Logical operators can also be visualized using Venn diagrams.
+Logical conjunction 
+The truth table for p AND q (also written as p ∧ q, Kpq, p & q, or p q) is as follows:
+|p||q||p ∧ q|
+In ordinary language terms, if both p and q are true, then the conjunction p ∧ q is true. For all other assignments of logical values to p and to q the conjunction p ∧ q is false.
+It can also be said that if p, then p ∧ q is q, otherwise p ∧ q is p. There is maintance work here!
+Logical disjunction 
+The truth table for p OR q (also written as p ∨ q, Apq, p || q, or p + q) is as follows:
+|p||q||p ∨ q|
+Stated in English, if p, then p ∨ q is p, otherwise p ∨ q is q.
+Logical implication 
+Logical implication and the material conditional are both associated with an operation on two logical values, typically the values of two propositions, that produces a value of false just in the singular case the first operand is true and the second operand is false.
+The truth table associated with the material conditional if p then q (symbolized as p → q) and the logical implication p implies q (symbolized as p ⇒ q, or Cpq) is as follows:
+|p||q||p → q|
+It may also be useful to note that p → q is equivalent to ¬p ∨ q.
+Logical equality 
+Logical equality (also known as biconditional) is an operation on two logical values, typically the values of two propositions, that produces a value of true if both operands are false or both operands are true.
+The truth table for p XNOR q (also written as p ↔ q, Epq, p = q, or p ≡ q) is as follows:
+|p||q||p ≡ q|
+So p EQ q is true if p and q have the same truth value (both true or both false), and false if they have different truth values.
+Exclusive disjunction 
+The truth table for p XOR q (also written as p ⊕ q, Jpq, or p ≠ q) is as follows:
+|p||q||p ⊕ q|
+For two propositions, XOR can also be written as (p = 1 ∧ q = 0) ∨ (p = 0 ∧ q = 1).
+Logical NAND 
+The logical NAND is an operation on two logical values, typically the values of two propositions, that produces a value of false if both of its operands are true. In other words, it produces a value of true if at least one of its operands is false.
+The truth table for p NAND q (also written as p ↑ q, Dpq, or p | q) is as follows:
+|p||q||p ↑ q|
+It is frequently useful to express a logical operation as a compound operation, that is, as an operation that is built up or composed from other operations. Many such compositions are possible, depending on the operations that are taken as basic or "primitive" and the operations that are taken as composite or "derivative".
+In the case of logical NAND, it is clearly expressible as a compound of NOT and AND.
+The negation of a conjunction: ¬(p ∧ q), and the disjunction of negations: (¬p) ∨ (¬q) can be tabulated as follows:
+|p||q||p ∧ q||¬(p ∧ q)||¬p||¬q||(¬p) ∨ (¬q)|
+Logical NOR 
+The logical NOR is an operation on two logical values, typically the values of two propositions, that produces a value of true if both of its operands are false. In other words, it produces a value of false if at least one of its operands is true. ↓ is also known as the Peirce arrow after its inventor, Charles Sanders Peirce, and is a Sole sufficient operator.
+The truth table for p NOR q (also written as p ↓ q, Xpq, or p ⊥ q) is as follows:
+|p||q||p ↓ q|
+The negation of a disjunction ¬(p ∨ q), and the conjunction of negations (¬p) ∧ (¬q) can be tabulated as follows:
+|p||q||p ∨ q||¬(p ∨ q)||¬p||¬q||(¬p) ∧ (¬q)|
+Inspection of the tabular derivations for NAND and NOR, under each assignment of logical values to the functional arguments p and q, produces the identical patterns of functional values for ¬(p ∧ q) as for (¬p) ∨ (¬q), and for ¬(p ∨ q) as for (¬p) ∧ (¬q). Thus the first and second expressions in each pair are logically equivalent, and may be substituted for each other in all contexts that pertain solely to their logical values.
+This equivalence is one of De Morgan's laws.
+Truth tables can be used to prove many other logical equivalences. For example, consider the following truth table:
+|p||q||¬p||¬p ∨ q||p → q|
+This demonstrates the fact that p → q is logically equivalent to ¬p ∨ q.
+Truth table for most commonly used logical operators 
+Here is a truth table giving definitions of the most commonly used 6 of the 16 possible truth functions of 2 binary variables (P,Q are thus boolean variables):
+- T = true, F = false
+- = AND (logical conjunction)
+- = OR (logical disjunction)
+- = XOR (exclusive or)
+- = XNOR (exclusive nor)
+- = conditional "if-then"
+- = conditional "(then)-if"
+Logical operators can also be visualized using Venn diagrams.
+Condensed truth tables for binary operators 
+For binary operators, a condensed form of truth table is also used, where the row headings and the column headings specify the operands and the table cells specify the result. For example Boolean logic uses this condensed truth table notation:
+This notation is useful especially if the operations are commutative, although one can additionally specify that the rows are the first operand and the columns are the second operand. This condensed notation is particularly useful in discussing multi-valued extensions of logic, as it significantly cuts down on combinatoric explosion of the number of rows otherwise needed. It also provides for quickly recognizable characteristic "shape" of the distribution of the values in the table which can assist the reader in grasping the rules more quickly.
+Truth tables in digital logic 
+Truth tables are also used to specify the functionality of hardware look-up tables (LUTs) in digital logic circuitry. For an n-input LUT, the truth table will have 2^n values (or rows in the above tabular format), completely specifying a boolean function for the LUT. By representing each boolean value as a bit in a binary number, truth table values can be efficiently encoded as integer values in electronic design automation (EDA) software. For example, a 32-bit integer can encode the truth table for a LUT with up to 5 inputs.
+When using an integer representation of a truth table, the output value of the LUT can be obtained by calculating a bit index k based on the input values of the LUT, in which case the LUT's output value is the kth bit of the integer. For example, to evaluate the output value of a LUT given an array of n boolean input values, the bit index of the truth table's output value can be computed as follows: if the ith input is true, let Vi = 1, else let Vi = 0. Then the kth bit of the binary representation of the truth table is the LUT's output value, where k = V0*2^0 + V1*2^1 + V2*2^2 + ... + Vn*2^n.
+Truth tables are a simple and straightforward way to encode boolean functions, however given the exponential growth in size as the number of inputs increase, they are not suitable for functions with a large number of inputs. Other representations which are more memory efficient are text equations and binary decision diagrams.
+Applications of truth tables in digital electronics 
+In digital electronics and computer science (fields of applied logic engineering and mathematics), truth tables can be used to reduce basic boolean operations to simple correlations of inputs to outputs, without the use of logic gates or code. For example, a binary addition can be represented with the truth table:
+A B | C R 1 1 | 1 0 1 0 | 0 1 0 1 | 0 1 0 0 | 0 0 where A = First Operand B = Second Operand C = Carry R = Result
+This truth table is read left to right:
+- Value pair (A,B) equals value pair (C,R).
+- Or for this example, A plus B equal result R, with the Carry C.
+Note that this table does not describe the logic operations necessary to implement this operation, rather it simply specifies the function of inputs to output values.
+With respect to the result, this example may be arithmetically viewed as modulo 2 binary addition, and as logically equivalent to the exclusive-or (exclusive disjunction) binary logic operation.
+In this case it can be used for only very simple inputs and outputs, such as 1's and 0's, however if the number of types of values one can have on the inputs increases, the size of the truth table will increase.
+For instance, in an addition operation, one needs two operands, A and B. Each can have one of two values, zero or one. The number of combinations of these two values is 2x2, or four. So the result is four possible outputs of C and R. If one were to use base 3, the size would increase to 3x3, or nine possible outputs.
+The first "addition" example above is called a half-adder. A full-adder is when the carry from the previous operation is provided as input to the next adder. Thus, a truth table of eight rows would be needed to describe a full adder's logic:
+A B C* | C R 0 0 0 | 0 0 0 1 0 | 0 1 1 0 0 | 0 1 1 1 0 | 1 0 0 0 1 | 0 1 0 1 1 | 1 0 1 0 1 | 1 0 1 1 1 | 1 1 Same as previous, but.. C* = Carry from previous adder
+See also 
+Further reading 
+- Bocheński, Józef Maria (1959), A Précis of Mathematical Logic, translated from the French and German editions by Otto Bird, Dordrecht, South Holland: D. Reidel.
+- Enderton, H. (2001). A Mathematical Introduction to Logic, second edition, New York: Harcourt Academic Press. ISBN 0-12-238452-0
+- Quine, W.V. (1982), Methods of Logic, 4th edition, Cambridge, MA: Harvard University Press.
+|Wikimedia Commons has media related to: Truth tables|
+- Hazewinkel, Michiel, ed. (2001), "Truth table", Encyclopedia of Mathematics, Springer, ISBN 978-1-55608-010-4
+- Truth Tables, Tautologies, and Logical Equivalence
+- Online Truth Table Generator

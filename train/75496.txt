@@ -1,0 +1,14 @@
+JBO Telescopes Live
+Virtual Radio Interferometer
+EVN Status Table
+NRAO Tape TRACK
+EVN Monitoring Reports
+APT, CMVA, LBA
+DRAO, VLA, VSOP
+17th May 2013
+MERLIN/VLBI National Facility - Jodrell Bank Observatory - VLBI Group
+VLBI is an observing technique used by radio astronomers. Radio telescopes around the world can be linked together electronically to create a synthetic telescope called an interferometer. Such an instrument creates the effect of one giant telescope as large as the largest separation of the individual antennas. These enormously powerful telescopes can image astrophysical objects in better detail than any other astronomical technique. To find out more about the VLBI technique try the Introduction.
+JBO generally operates three telescopes for VLBI observations within the EVN and/or Global VLBI Networks. We have also participated in VSOP observations. The telescopes in use are the 28-m Mk2 telescope (generally for frequencies above L-band; 1.4-1.6 GHz) and the 76-m Lovell telescope (generally for frequencies below C-band; 5.0 GHz). In addition, the 32-m Cambridge telescope can also observe at any standard frequency, often as a common telescope for joint EVN/MERLIN observations. In general, the Mk2 and Lovell telescopes are used in conjuction with a Mk4 data acquisition system and the Cambridge telescope with a VLBA4 system. Contact information for the JBO VLBI Group is as follows;
+VLBI Observers (both local and PIs) can find details of VLBI observations at JBO under our Local Documentation pages or, more generally, under the technical links in the side bar. Details of studies on eVLBI techniques and implementation can be found under the eVLBI page. Our interactive utilities which may be useful include the Jodrell Bank Live page (presenting real-time data on telescope operations), the VLBI Almanac page (for calculating target positions) and the Virtual Radio Interferometer page (for exploring the theory of aperture synthesis).
+VLBI Group, Jodrell Bank Observatory, University of Manchester, Macclesfield, Cheshire, SK11 9DL, United Kingdom
+Telephone +44 (0)1477 571321, Facsimile +44 (0)1477 571618

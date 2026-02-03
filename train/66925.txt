@@ -1,0 +1,101 @@
+Testing is an important part of a developer’s toolkit. After all, how are you supposed to know whether your software is doing what it was designed to do?
+Everyone knows that testing is essential but it is surprising how many companies don’t make testing a key part of their development workflow.
+Most people start with manual testing, but as your application gets larger it is impossible to manually test every possible scenario before your upcoming release. This is where automated tests come in.
+As a developer or a software developer engineer in test (SDET), your goal is to aim for 100% automated tests so that you know your application is working correctly before each release.
+Testing comes in many different shapes and sizes. This is often referred to as the Software Testing Pyramid.
+The pyramid is ordered by the number of tests, where the bottom level should make up the majority of your tests in your testing suite. As we go down the pyramid, we are also increasing the level of granularity.
+At the top of the pyramid, we have manual testing. These are the tests usually performed by a QA engineer instead of a solid automated testing framework.
+Some manual testing is necessary, as it may be either impossible to write automated tests for (like a captcha) or it would be too time-consuming to do so.
+There is always a trade-off with automated testing. If the time it would take to automate it is longer than the time it would take to test it for the year, then you need to ask yourself whether it is worth doing.
+In some cases, even if it takes longer to automate, if it is a critical part of the application, you may want to write an automated test for it just so it doesn’t get accidentally forgotten.
+The next level down is the first level of automated tests. These automated tests are replacing the work of the manual tester.
+Instead of a person clicking through the UI or calling the API with Postman, it is the job of the automated test.
+These tests are what we call black-box tests (see more below) they don’t have any knowledge of the internal workings of the system. The tests work by clicking the UI or calling the API in the same way a user would.
+For this testing, tools such as Selenium or Cypress are used. The tests are typically written in Gherkin language, such as:
+Given I am a user with edit permissions
+And I am logged in
+And I am on the View Post page
+When I click Edit Post
+Then I should be on the Edit Post page
+The goal should be to replace as many of your manual tests with automated UI and API tests.
+The main downside of these tests is they take a long time to run and can be quite “flaky” and therefore often need a lot of maintenance.
+When you have a lot of these tests, it is common to need to split them up into critical tests and everything else. The critical tests are run after each build or before a release.
+The rest of the tests are run overnight, as they can take several hours to complete.
+The integration tests are similar to the API tests above but as the name suggests focus on the integration between different components.
+For example, you might have a message in a queue that is picked up by a worker that then calls an API.
+It is the interaction between multiple components that are being tested here. Where an API test focuses on the end-to-end functionality of the application, an integration test focuses on just a few key integrations.
+The next level down is the component tests. These test individual components in isolation from other applications.
+With the integration tests, we were making sure that the individual components were interacting correctly.
+For component tests, we are only interested in how this one component is working. To do that we often need to isolate the component from other components by mocking all of its interactions.
+The last level of the pyramid is unit tests. Unit tests should make up the majority of the tests in your testing suite.
+As we shall see in this post, unit tests perform at the lowest level of your application. They test each unit of your code which is usually the individual functions.
+As we have seen in the software testing pyramid, unit tests make up the bottom layer of tests.
+A unit refers to the smallest testable part of your application which is usually the individual functions or methods.
+The goal is to make sure that at the lowest level, everything is working as expected so that when the units are combined they will also work as a whole.
+Functions and methods should always be tested in isolation from all other parts of your application.
+To do this we use mocks to simulate the responses from other functions. This allows us to test lots of different scenarios without having to affect other components.
+This is often easier said than done. If you don’t write your code with unit testing in mind, it can often be difficult to isolate different function calls. This is why Test Driven Development (TDD) is so useful as your code will always be testable as you wrote the test first.
+A unit test will never talk to a database, call another API or write a file to disk and you should able to run them in parallel with other unit tests.
+Unit tests shouldn’t include too much detail about the inner workings of the function you are testing. Your goal for a unit test is to test that given a set of inputs the correct outputs or operations are performed.
+Developers often go too granular when writing unit tests by verifying calls to other methods that aren’t outputs of the function being tested. By doing this, developers make their unit tests fragile to change. It should be possible to refactor a function without affecting the unit test. This is more common when unit tests are written after writing the code as you are testing the implementation rather than testing the desired outcome.
+Your aim when writing unit tests should be to achieve 100% code coverage. At the very least you need each line of your code executed by your unit tests.
+There are different levels of code coverage. If you are working on a project for the military or NASA for example, you will need to have MC/DC (Modified condition/decision coverage) coverage.
+This is Wikipedia’s definition:
+MC/DC requires all of the below during testing:
+- Each entry and exit point is invoked
+- Each decision takes every possible outcome
+- Each condition in a decision takes every possible outcome
+- Each condition in a decision is shown to independently affect the outcome of the decision.
+Unless you work in an industry that requires it, you probably don’t need to have this level of coverage but it is worth asking yourself, “Have I covered everything with these tests?”.
+Unit tests should always be automated as part of your build process and as a developer you should get in the habit of running your unit tests before committing your code.
+The best way of automatically running your unit tests is by adding them to your CI tools such as GitHub Actions, Jenkins or TeamCity. These can then be linked up to GitHub and added as checks to any pull request.
+If you find that your team is constantly committing broken code then it is worth adding a penalty. At one company I worked at we used to keep a broken build tally on the board. At the end of the sprint, whoever had the most points would have to buy the team doughnuts 🍩😋.
+Integration testing, unlike Unit Testing or Component Testing, doesn’t test code in isolation.
+The goal of integration testing is to make sure that components work together. Even if all your unit tests are passing contracts between components may be incorrect.
+It is quite common for two teams to work to a specification but one decides to do things slightly differently. Maybe they chose snake case instead of camel case for their API for example. Even though the contract meets the spec if the casing wasn’t specified this will break your integration.
+Integration testing always focuses on a few components at a time. It might be the interaction between an API and another message worker or between two APIs.
+Integration testing is usually performed after unit testing and component testing but before the end-to-end testing. It can help find and resolve issues early in development before a feature is completed.
+There are different levels of integration testing. Generally, anything that is larger than a unit test but smaller than an end-to-end test is considered an integration test.
+How you approach this will depend on whether you want to do bottom-up testing or top-down testing. For bottom-up testing, you test interactions between small units of code such as between functions. You then build up tests gradually increasing the scope of what you are testing. For top-down testing, you start with the big components such as interactions between APIs and then write tests that cover smaller and smaller interactions.
+For integration testing to work properly, you often need granular details of how your system works. This is why integration tests are generally considered white-box testing instead of black-box testing. As we aren’t performing end-to-end tests here there are going to be some integrations that will need to be mocked so that you can focus on the interactions that you are testing.
+If you are using AWS for example, your integration tests may use LocalStack to test that a message has been written to a queue or a file has been written to S3.
+Integration tests are usually performed as part of the build process although this usually depends on how long they take to run. If they take an hour to run then you might want to limit them to running just before a release.
+You should now have a good idea of what Unit testing and Integration testing are. So what is the difference?
+Unit testing focuses on testing individual units or components of an application in isolation, while integration testing focuses on testing how the components of an application work together.
+Unit testing is always performed early in the development process. If you are doing Test Driven Development (TDD) then unit tests will be written before any other code. The focus of a unit test is to ensure that the smallest part of the application is working as expected.
+Integration tests however are performed once a whole component has been written as well as the dependencies that they are being tested with. Integration usually happens before end-to-end tests are performed as they can be written when only a few components have been completed.
+If you find an error when running unit tests it is usually quite easy to fix as the test focuses on only a small part of the code. If the error occurs when running the integration test it usually takes a lot longer to debug as you will dealing with multiple components interacting with each other.
+There are some similarities between the two though:
+Integration tests and end-to-end (E2E) tests are very similar but are not the same. End-to-end tests focus on testing an application as a whole whereas Integration tests focus on the interactions between individual components.
+You might wonder why you need both. It comes down to the cost of fixing an error should it occur. If you find an error during E2E testing it is going to take a long time to track down what is causing the problem. If an error is found during integration testing then it is already isolated down to a couple of components with the problem.
+If you do find an error during testing it is important to always as add a test case for that scenario. The best way to do this is to write a test that simulates the error that you are seeing. Then fix the problem so that the test passes.
+If the error is found during end-to-end testing then you will likely need to write a test case at the integration and unit level as well.
+End-to-end tests are typically performed after integration testing and are only usually done before a release. E2E tests can be quite time-consuming to write, run and maintain which is why a lot of companies resort to manual testing for this phase.
+The recommended approach is to automate everything but you do need to look at the return on investment. If something takes 1 minute to test manually but will take 5 hours to automate then you would need to run that test 300 times before you are benefiting from the time invested.
+Figure out what the critical parts of your application are that might not get picked up in the other levels of testing and include those in your automated test suite.
+I have mentioned White-Box and Black-Box testing a few times already so I should probably clarify the difference.
+White box testing is sometimes called “clear box testing” which is a better analogy. White box testing involves understanding the inner workings of the application. You are not only testing the outcome but how it got to that outcome as well.
+Black-box testing, on the other hand, assumes no knowledge of the internal workings of the application. The application is a black box, we can’t see inside it and how it works is a mystery.
+For black-box testing, we have the same knowledge as a user using our application. So we can call public-facing APIs and UIs but internal processes are off-limits because we shouldn’t know they exist.
+If you were to give your application to someone who hasn’t worked on it and was only allowed to use the public documentation to test it, that would be considered black box testing.
+Unit-Testing comes under white-box testing as you don’t get much lower than the individual functions and lines of code.
+You can’t write any unit tests without at least seeing the function definitions of what you are going to test.
+Adding a bit of black-box mentality when writing your unit tests, however, will make them more robust.
+You need to remember that when writing tests you are testing what it is doing not how it is doing it.
+If you include too many details in your unit tests such as the individual calls that the function is making then you are going to make your tests fragile to changes.
+Integration tests are more grey than either black or white.
+With integration tests, you are testing the interaction between components. Some of those components however aren’t going to be public facing so you can’t consider it a completely black box.
+You should, however, consider each component as a black box and only test the integration instead of the inner workings of the component.
+When writing integration tests you are often going to want to mock out the other components that aren’t under test. This way your tests will be more reliable and easier to debug as it isn’t going to fail due to an error in another integration. This again falls more under white-box than black-box testing.
+Having a large suite of unit tests and integration tests is useless if they aren’t run regularly.
+I have seen people set up integration tests in the past but due to mocking and setting up the test environment they were hardly ever run. If you aren’t running your integration tests regularly, what is the point in writing them in the first place?
+You need to include your integration tests in your continuous integration and continuous deployment (CI/CD) pipeline otherwise errors are likely to go unnoticed.
+As a developer you should be running your unit tests before you put your code up for code review, anything else is lazy, to be honest.
+Unit tests even when in the hundreds should only take a couple of minutes to run. If your tests are taking longer than this you need to spend some time optimising them. After all, every developer is running these tests multiple times a day, how many minutes is that wasted for your team?
+Unit tests should then be included as part of the build process whenever someone creates a pull request or code is merged. This way you can find errors at the earliest opportunity and fix them.
+Integration tests are a little trickier. If they are quick to run then it is also worth running them before putting your code up for review. However, if you write a lot of integration tests this can take up a lot of time.
+For large integration test suites, it is worth splitting your tests up into groups and having a critical test suite which is quick to run and can be run on each merge.
+The other tests at the very least should be run once before release as well as on a schedule if you aren’t releasing every day.
+If you want to get to the point where you are releasing multiple times a day as they do with the GitHub flow then it is worth making your tests run as quickly as possible.
+Unit tests and integration tests are an important part of your project and you should include both in your suite of tests. They each have different purposes and complement each other.
+Unit tests are a lot quicker to write and run and should make up the foundation of your testing pyramid. If you rely on unit tests alone however then there is no guarantee that your application is going to work when you put everything together.

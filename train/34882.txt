@@ -1,0 +1,15 @@
+The HTML <!DOCTYPE> tag is used for specifying which version of HTML the document is using. This is referred to as the document type declaration (DTD).
+The <!DOCTYPE> declaration must be the very first thing in your HTML document, before the <html> tag.
+HTML 4.01 has 3 possible doctypes: HTML 4 Strict, HTML 4 Transitional, and HTML 4 Frameset. Every HTML document you create should have one of these three DTDs. The DTD you use will depend on how strict you want your HTML to be and whether you are using frames or not.
+HTML 4 Strict
+This document type includes all HTML elements except those that have been deprecated, and those that appear in frameset documents.
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+HTML 4 Transitional
+This document type includes all HTML elements including those that have been deprecated.
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+HTML 4 Frameset
+This document type includes all HTML elements in the transitional DTD as well as those in framed document.
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+HTML 5 <!DOCTYPE>
+The <!DOCTYPE> declaration must go right at the top of the page, before any other HTML code.
+<!DOCTYPE html> <html> <head> </head> <body> <p>Page content...</p> </body> </html>

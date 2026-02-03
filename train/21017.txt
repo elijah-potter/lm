@@ -1,0 +1,19 @@
+Researchers design reconfigurable materials
+StaffMaterials Harvard metamaterials
+The goal was to develop a material that could contain within its structure multiple functions and easily and autonomously switch between them.
+As products and processes advance, there is a need to explore new materials. Material scientists are examining different material compositions and properties in order to meet functional requirements. One area that researchers are exploring more and more is metamaterials — materials whose function is determined by structure, not composition.
+Yet, each of these functions requires a unique mechanical structure, making them great for specific tasks, but difficult to broadly implement.
+However, researchers at the Harvard John A. Paulson School of Engineering and Applied Sciences (SEAS) and the Wyss Institute of Biologically Inspired Engineering have been asking the question: what if a material could contain within its structure, multiple functions and easily and autonomously switch between them?
+The team has since developed a general framework to design reconfigurable metamaterials.
+The design strategy is scale independent—it can be applied to everything from meter-scale architectures to reconfigurable nano-scale systems such as photonic crystals, waveguides and metamaterials to guide heat.
+“In terms of reconfigurable metamaterials, the design space is incredibly large and so the challenge is to come up with smart strategies to explore it,” said Katia Bertoldi, John L. Loeb Associate Professor of the Natural Sciences at SEAS and senior author of the paper. “We found a way to generalize these rules and quickly generate a lot of interesting designs.”
+Bertoldi and Johannes Overvelde, who is the first author of the paper, collaborated with Chuck Hoberman, of the Harvard Graduate School of Design (GSD) and associate faculty at the Wyss and James Weaver, a senior research scientist at the Wyss, to design the metamaterial.
+The research began in 2014, when Hoberman showed Bertoldi his original designs for a family of foldable structures, including a prototype of an extruded cube.
+“We were amazed by how easily it could fold and change shape,” said Bertoldi. “We realized that these simple geometries could be used as building blocks to form a new class of reconfigurable metamaterials but it took us a long time to identify a robust design strategy to achieve this.”
+Assemblies of polyhedra can be used as a template to design extruded reconfigurable thin-walled structures, dramatically simplifying the design process.
+“By combining design and computational modeling, we were able to identify a wide range of different rearrangements and create a blueprint or DNA for building these materials in the future, ” said Overvelde, now scientific group leader of the Soft Robotic Matter group at FOM Institute AMOLF in the Netherlands.
+The same computational models can also be used to quantify all the different ways in which the material could bend and how that affected effective material properties like stiffness. This way they could quickly scan close to a million different designs, and select those with the preferred response.
+Once a specific design was selected, the team constructed working prototypes of each 3D metamaterial both using laser-cut cardboard and double-sided tape, and multimaterial 3D printing. Like origami, the resulting structure can be folded along their edges to change shape.
+“Now that we’ve solved the problem of formalizing the design, we can start to think about new ways to fabricate and reconfigure these metamaterials at smaller scales, for example through the development of 3D printed self actuating environmentally responsive prototypes.” said Weaver.
+This formalized design framework could be useful for structural and aerospace engineers, material scientists, physicists, robotic engineers, biomedical engineers, designers and architects.
+Print this page

@@ -1,0 +1,94 @@
+Blockchain is quoted as a decentralized and tamper-proof ledger. But this tamper-proof ledger is vulnerable to hacks and exploits. The decentralization, which is one of the strongest advantages of Blockchain, is one of the disadvantages.
+Well, that’s fine, but what about SDLC?
+The software lifecycle approach that we are about to discuss is based on classifying security vulnerabilities in smart contracts into multiple phases.
+In the first section, we have laid out the security issues in the smart contracts. And in the next section, we discuss its solutions divided into four phases; Security Design, Security Implementation, Testing before Deployment, and the last one, Monitoring and Analysis.
+ANALYSIS OF SECURITY ISSUES IN SMART CONTRACTS
+Smart contracts are vulnerable to various hacks and exploits. These contracts that are synonymous with real-world legal agreements run independently based on the terms of the native blockchains.
+But have you thought that even those native blockchains can also be responsible for potential security threats in smart contracts? Below, we present some of the characteristics of Blockchains for the same:
+Decentralization: It is considered one of the advantages of blockchain-based protocols. But the attackers have devised a way to turn this positive feature into a negative one.
+Malicious actors can create a fake identity to develop and deploy a smart contract. Sometimes, it becomes hard to identify a vulnerable contract as only the public address (or) public keys are available on public blockchains.
+Open-Source Code: This may surprise you, but yes, in general, most smart contract codes are somewhat open-source.
+Say, in the case of Ethereum Virtual Machine (EVM), its bytecode is always public. And some Solidity decompilers can help you get a smart contract address and the Solidity code. The exposure of source code makes this feature advantage for attackers.
+Unevolved blockchain platforms: For a developer, it’s a primary requirement to get familiar with the development platform. There are many underdeveloped or new blockchain platforms, so developers cannot develop a depth knowledge of operations on the blockchain.
+This inconsistency affects the smart contracts due to a lack of synchronization. The flaws in the blockchain platform remain unnoticed due to its continuous evolution.
+Unknown Transactions: In the first point, we have discussed anonymous identity; similarly, the transactions on blockchains are undisclosed. It is impossible to trace the transactions, leading to many illegal activities. As financial transactions are involved, any security issue can result in huge financial loss.
+SMART CONTRACT SECURITY SOLUTIONS
+Now, going ahead in the smart contract security, we can compare all the necessary steps required to secure a smart contract with its evolution. As in traditional software development, we tend to follow a development lifecycle; similarly, we can classify the contract development lifecycle.
+The smart contract development lifecycle can be divided into four phases: security design, security implementation, testing before deployment, and monitoring and analysis.
+1. SECURITY DESIGN
+This first phase encapsulates three themes; design principle, design pattern, and security modeling (as shown in the above figure). The primary focus of these themes is on contract design and how security threats can be averted.
+Design principles are fundamental ideas for designing secure smart contracts on the blockchain. There are five essential design principles for contracts: Prepare for failure, Rollout carefully, Keep contracts simple, Stay updated, and Must-know about blockchain properties.
+Now, you may think, how will they help create a secure smart contract?
+Let’s take any one of the principles from above, say, “Prepare for failure” this signifies that in the absence of patching schemes, the contract should be able to respond to bugs. And if any attack takes place, the contract should be able to pause to prevent any further loss.
+In software design, the design patterns are the solutions that can be reused to resolve a problem.
+If we take an example of Ethereum, there are six security patterns; Check-effects-interaction, Emergency stop, Mutex, Speed bump, Rate limit, and Balance limit.
+We can use these security patterns to address security issues in the blockchain like the reentrancy vulnerability can be handled by the Mutex pattern.
+At the same time, the Emergency stop pattern can help us terminate a contract’s execution if it gets affected by a vulnerability.
+There may be a difference between the developed code and the required code for contracts as Solidity is used to create contracts; this language satisfies the Turing completeness, but it’s prone to errors.
+The figure above shows that this sub-phase covers two phases; security design and implementation.
+Security modeling is directly related to business logic; as specifications are derived from the business, logic can be classified by error-free semantics. This helps later during the formal verification process performed to mitigate vulnerabilities.
+2. SECURITY IMPLEMENTATION
+In this section, we will cover two of the three themes; security
+Development, and Security template, as we have already covered Security modeling in the last phase.
+This section will see how vulnerabilities can be avoided during the contract implementation process.
+On the Ethereum platform, we have security EIPs (Ethereum improvement proposals) – recommendations to combat the security issues on the Ethereum platform. Thus, these EIPs are noteworthy for securely implementing smart contracts.
+Templates serve as the origin for new documents. The smart contract templates with operational parameters connect a legal agreement to an executable code.
+In context with smart contract security, it is possible to extract the standard contract templates with upgraded security parameters, such as security patterns and security libraries. This will reduce the possibility of errors in manual coding.
+3. TESTING BEFORE DEPLOYMENT
+Again, the requirement of this phase arises from one of the advantages of smart contracts – “Immutability”.
+Once the smart contracts are created, there is no way to alter them. Therefore, it is mandatory to carry out sufficient tests to ensure the security of smart contracts before deployment.
+This phase covers three security parameters to be followed before deploying a smart contract; Rigorous formal verification, Code analysis tools, and Security audit.
+RIGOROUS FORMAL VERIFICATION
+Formal verification is a well-defined process that leverages mathematical reasoning and mathematical proofs to verify desired properties of the system.
+We can perform formal verification on smart contracts as the contract program is short and time-bounded. There are multiple ways to formalize and verify smart contracts rigidly; some are based on contract code, and others on the semantics of the Ethereum virtual machine (EVM).
+CODE ANALYSIS TOOLS
+The analysis of the code is done without executing the programs. For this purpose, we use some tools called Static Application Security Testing (SAST) Tools. These tools help in the discovery of security flaws in the source code.
+The analysis performed by these tools may include one or all of the following steps:
+(i) Create an intermediate representation (IR), such as an abstract syntax tree (AST), for detailed analysis.
+(ii) Complement IR with sufficient information obtained from static control or date flow analysis and formal verification techniques; these techniques include: symbolic execution, abstract interpretation, and symbolic model checking.
+But what are the tools one can use to carry out code analysis on Smart Contract?
+Although there are many tools one can use to carry out the security analysis, Oyente is the most popular one.
+Oyente can be used to perform security analysis for the EVM smart contracts. It uses “symbolic execution” to discover four common bugs; transaction ordering dependence, timestamp dependence, mishandled exceptions, and reentrancy.
+The architecture of Oyente shows that it takes bytecode and presents Ethereum global state as input.
+One of the flip sides of Oyente is that it detects only security vulnerabilities. The symbolic execution technique used by Oyente doesn’t explore all possible paths. Thus, the need for other tools such as Security and manual audits arises.
+We’ll begin this section where we left the last one; the manual audits.
+But first, let’s understand the need for a security audit; be it the Ronin Network hack or the Poly Network hack, unaudited code is the most vulnerable to hacks and exploits.
+They lead to huge financial losses. Not just getting your Web3 project audited, as a matter of fact, but getting it audited by expert professionals also matters as it depends on the professional ability of the auditors to perform security audits.
+Again, where to find those professional experts? You need not go anywhere looking for trustworthy auditors; click https://t.me/quillhash to get in touch with one of them!
+An ideal smart contract audit is a combination of manual and automated code analysis; as we have discussed in the previous point, even though going after automated code analysis from tools such as Oyente, there is the possibility of unidentified vulnerabilities in the contract.
+Thus, to overcome that, security auditors can manually analyze every line of code and test them against potential vulnerabilities.
+4. MONITORING AND ANALYSIS
+Remember the ever-evolving principle of Blockchain that we discussed initially?
+This phase is based on the same theme; once the contract has been deployed and run, some vulnerabilities that were left unnoticed in the previous stages may occur due to new releases and frequent updates that later make contracts less efficient.
+We can carry out; bug bounty, security monitoring, and post hoc analysis to overcome these barriers.
+As we are considering the post-deployment security issues with contracts, Bug Bounties can be helpful. The formal verification technique discussed previously is a static analysis technique. Bug bounty, on the other hand, is a dynamic analysis technique.
+The concept behind Bug bounty is simple; hackers discover bugs, and in return, they are paid with some financial rewards. Looks like a win-win situation, right? But it isn’t!
+The catch here is; that the value of bugs may be higher than the bounty in the gray markets, and the possibility is that hackers may exploit or sell the bugs to get a high price.
+Sometimes, the project owners deny paying the bounty unless the bugs are confirmed; hackers also worry about the uncertainty of payments post revelation of bugs.
+To overcome this, a bug bounty framework was proposed, known as “Hydra”.
+Hydra utilizes an exploit gap technology named N-of-N-version programming (NNVP) as a bug bounty system on the blockchain.
+We can use static code analysis to discover the security vulnerabilities, but this method is used before deploying the smart contracts.
+But to find bugs and potential vulnerabilities in real-time, we have to monitor and analyze transaction data on the blockchain.
+These vulnerabilities discovered by analyzing smart contracts can be called trace vulnerabilities. Three types of contracts lie at the focal of these trace vulnerabilities;
+(i) Greedy contracts (contracts that remain alive and lock Ether indefinitely).
+(ii) Prodigal contracts (contracts that leak funds carelessly to arbitrary users) and,
+(iii) Suicidal contracts (contracts that any arbitrary user can kill).
+Even a notion of Effectively Callback Free (ECF) objects was proposed to identify vulnerabilities by monitoring ECF objects.
+In context to this, an online algorithm was also presented; it helped discover unknown vulnerabilities. In the same proposal, it was suggested to execute smart contracts on Testnet before deploying on the Mainnet.
+Monitoring UI is a Blockchain monitoring platform utilizing React.js. This platform can be used to carry out transactions, keep a check on assets, and inquire about the state of Blockchain.
+We cannot rely on this platform for secure monitoring of smart contracts, but as most of the transaction data related to smart contracts can be found, we can detect exploits in real-time by tracking the transfer of assets.
+POST HOC ANALYSIS
+Post Hoc Analysis uses blockchain transaction data to analyze, discover, or trace potential threats on the blockchain in layman’s terms.
+If we discuss the Graph analysis, it was designed as an approach to gathering all the transaction data (this included internal transactions from smart contracts).
+With the help of this data, they prepared three graphs;
+(i) A money flow graph (MFG)
+(ii) Contract creation graph (CCG) and,
+(iii) Contract invocation graph (CIG)
+Based on the analysis of the graphs mentioned above, many new findings were proposed, such as solutions to security issues between multiple contracts interacting with each other.
+The Ponzi scheme is one of the classical fraud schemes through which a large number of funds can be acquired and affect the native blockchain. To combat this fraud, a classifier mechanism was proposed to detect Ponzi schemes on Ethereum.
+This mechanism utilizes data mining and machine learning to detect Ponzi contracts. This process works even if the source code of the smart contracts is unavailable.
+That’s it, yeah, that’s it for now!
+If you have been with us till now, we would appreciate it. Without stretching more, on a concluding note, we would only say that the ecosystem of smart contracts is decentralized, and it’s hard to patch for bugs.
+We’ve tried to break down the security of smart contracts from the software lifecycle perspective.
+We’ve first discussed the blockchain’s key features responsible for security issues in smart contracts. We classified the security solutions for the smart contracts into four phases. We hope to bring more posts to keep you ahead of the challenges in the growing Web3 ecosystem.
+What do you think of this agile SDLC approach for smart contract security? Share your thoughts in the comments below!

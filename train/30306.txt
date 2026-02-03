@@ -1,0 +1,17 @@
+Take P – E >= D. This formula can be made more concrete by assigning meanings (not values!) to terms.
+For instance, if P is my cash, E is my expenses and D is the cost of something I want to buy, then this formula tells me if I can afford to buy it.
+Or if P is the value of my chess piece, E the value of my opponent’s piece, and D how many points I’m willing to lose in order to gain the tactical advantage from this trade-off, then this formula tells me if I should do it.
+Sometimes, it’s useful to use the formula. In other cases, the meaning is all that matters to me.
+In the purchase example, I treat these terms as meaningless symbols and interpret at the last minute – when the result is ready. This distances me from my wish to buy the product, keeps my logic clear and reduces the temptation to fudge.
+In the chess example, I would rather use the meaning (play the game). I’m still doing the math but it’s more fun this way. It’s also a lot easier; I’m making very complex analyses, almost by reflex.
+This has ramifications for math education. Math can be divided into 3 parts:
+1. The actual idea.
+2. The notation used to represent it (formula)
+3. A meaning in which #2 is applied (e.g.: chess).
+The idea behind a math problem can tackled in many ways, but schools often confuse the idea with A notation used to express it. Therefore, when a student shows an understanding of the idea by a novel approach, s/he is penalized. Instead, the student is told to regurgitate a canned procedure – which is the opposite of understanding. Idea and notation need to be separated, and not just for this reason.
+Notation is a tool of thought, and can often mean the difference between solving and not solving a problem; with the right notation, some problems practically solve themselves. But to do this, students need to study notations in and of themselves, and not confuse the issue by rolling them with the ideas they represent. Students should learn how the right notation can manage complexity and bring out the essence of a problem, how to invent their own and the manipulation rules that go along with them, the pitfalls of intuition and how notation can combat them, and the trade-offs between brevity and readability. Unfortunately, schools do the opposite and then don’t even show students the advantages of the right notation!
+Schools often force students to use notation that makes problems more difficult. Why would anyone translate an easy problem into gibberish (a tough job in itself), only to make things even more difficult by trying to solve the gibberish with more gibberish? But sometimes, notation isn’t even necessary, if the right meaning is provided.
+With the right meaning, many students can solve problems without thinking about them. Indeed, much math education becomes redundant with the right meaning. People are good at handling some kinds of data; this should be taken into account. In addition, the meaning motivates. With the right meaning (e.g.: fun) tests aren’t needed to encourage students to learn. Here’s an idea of how meaning matters. Take this:
+X[t] = Y[t-1] and Y[t] = nil iff X[t] = nil or c(X[t]) <> c(Y[t-1])
+If this looks tough, please know it’s a SIMPLIFIED analysis of whether one can move a piece in chess – something even a beginning chess player can do without thinking! And simplified it is; it doesn’t take things like pinned pieces, or interstitial ones into account.
+The following two essays praise the beauty of math and attack math education:

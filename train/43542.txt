@@ -1,0 +1,14 @@
+Radiomics is a set of methods used to leverage medical imaging and extract quantitative features that can characterise a patient's phenotype. All modalities can be used with several different software packages. Specific informatics methods can then be used to create meaningful predictive models.
+Radiomics and artificial intelligence (AI) have become a norm in the oncology research field and are now often the go-to proposed solution for complex clinical prediction problems when imaging is available. This is fueled by the promise of radiomics (machine-learning approaches for image features analyses) and AI (neural networks that learn from the image directly) to be able to extract information in images that cannot be observed by the human eye.
+Nevertheless, more than just detecting meaningful features that cannot visually be observed, these machine-learning pipelines can facilitate pattern recognition in images, detection in biomarker data, and integration with non-imaging variables that cannot be comprehended by humans due to the large number of potential variables.
+The most evident example is risk prediction of overall survival or tumour control after treatment, based on imaging tumour and clinical characteristics in patients with head and neck cancer. By identifying patients who are at specific high or low risk of treatment failure before treatment, therapy can be tailored to their anticipated risk.
+There have been several machine learning models that have tried to address the above problem or an allied problem of similar nature. However, most of the algorithms do not succeed in replicating the model across different data sets (standardisation of solution is not always achievable). HCG would like to take this opportunity to explore the most appropriate solution to address this problem and become a game-changer in this industry.
+The desired solution should fulfil the following requirements:
+- The solution combines feature extraction from medical imaging. It uses deep learning to fuse data analytics to iteratively optimise one with respect to the other. In other words, deep learning provides radiomics models with optimal features and optimal data analysis for a specific clinical problem.
+- A deep learning algorithm that learns from existing datasets and suggests probable treatment protocol for similar patient characteristics.
+The expected development roadmap is as follows:
+- Phase I: Develop a response prediction model based on an existing dataset
+- Phase II: Implement the data model on a real-life application
+- Successful company will conduct a pilot project with HCG spanning 4 to 6 months to validate the solution and immediately enter into a commercial deployment after incorporating all the learnings from the pilot phase.
+- The pilot project will be supported by a SGD20,000 grant from Enterprise Singapore and close guidance from the HCG team.
+- Publicly available data source: https://www.cancerimagingarchive.net

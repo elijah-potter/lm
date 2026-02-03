@@ -1,0 +1,43 @@
+This page contains the documentation for LibDS, a data structures library written in ANSI C. LibDS was written by Peter Bozarov.
+LibDS contains a collection of useful data structures and functions to manipulate them. LibDS has been designed to be as generic as possible, which basically means that all the details about the implementation have been hidden inside the library, and that the API has been made as consistent as possible across all the different data structures.
+I started working on LibDS in 1999. I was reading a book on data structures and came across the topic on binary trees, which described how useful they were. The book gave a description of a binary tree implementation that guarantees that the tree will remain (almost) balanced at all times, even after multiple insertion/deletion operations. Those of us versed in binary tree theory know that the efficiency of the operations that a binary tree supports depends directly on the depth of the tree. Keeping the depth to a minimum (which amounts to keeping the tree as balanced as possible) ensures fast tree operations. The tree implementation in question was called an AVL tree, and its maximum depth could be proven to be 1.44log(n), with n being the number of nodes in the tree. This inspired me. (Well, if you're reading this then you're into computers so you realize that such things can actually inspire people). There was a data structure which supported addition, deletion, and searching of data in O(log n) time, with n being the number of data items in the tree.
+I realized that such a data structure could be a very useful instrument, and decided to write my own implementation. (Yes, reinventing the wheel and all, but, hey, I was learning to program anyway.) Well, to make a long story short, LibDS grew out of this original AVL tree implementation. At various occasions afterwards, whenever I came across the need to use a new data structure that wasn't in the original library, I implemented it and added it to the existing distribution, eventually producing an entire collection of useful data structures.
+So, here it is then.
+The way LibDS works is designed to be very simple and intuitive. (Whether that is the case will remain to be seen.) Here is a short overview.
+All LibDS data structures store
+void pointers to some
+user provided data. Those data structures that need to perform key
+comparisons must also be given a key that uniquely identifies the item
+stored. The key can be anything, from a variable length string, to
+binary keys of any size and type. There's a catch, however, to using
+anything else than a string as key: you need to define the comparison
+operators yourself. LibDS has support for this: you pass your own
+function that performs the comparisons at initialization time. The
+function must have the type
+int compare(DSKEY k1,DSKEY k2),
+and it must return a value less than 0 if k1 is smaller than k2, a value
+exactly equal to 0 if k1 is equal to k2, and a value larger than 0 if k1
+is larger than k2. You can cast the
+DSKEY to the
+appropriate data type that your keys have. Should you choose to use
+strings as keys, then LibDS will simply use the C function
+strcmp(), so make sure the keys are NULL terminated. If
+they are not, for whatever reason, use an own function.
+LibDS has a (more or less) uniform API for manipulating each of the data structure types it contains. Here, we will describe the API in generic terms, see the doc page for the particular data type to see the exact function names and signatures. (As we said, the function signatures have been made as similar as possible, to simplify the use of the library.) Also, not all data structures support all of the operations defined below, again refer to the particular doc page for more details
+LibDS supports the following operations on some user data D, a user data key K, and a data structure S (for structures that do not need a key, the function is the same, but without the key argument, except for items with *):
+|ADD(S,K,D)||Adds and item with key K to S.|
+|REMOVE(S,K)||Remove the item in S that has key K|
+|FIND(S,K,D)*||Find the item in S that has the key K|
+|FIRST(S)||Get the first item in S|
+|LAST(S)||Get the last item in S|
+|NEXT(S)||Get the next item in S|
+|PREV(S)||Get the previous item in S|
+|CURR(S)||Get the current item in S|
+|CLEARCURR(S)||Clears the current item in S|
+(There are more functions, but most of them are specific to the data structure in question, so check with the appropriate pages below.)
+LibDS supports the notion of currency. This means that LibDS remembers the location inside the data structure of the item upon which the most recent operation was performed. A subsequent operation uses this location as a starting point for its own execution.
+Currently, the currency is updated by the ADD(), FIND(), FIRST(), LAST(), NEXT(), PREV() and CURR() functions. REMOVE() won't change the currency. This is not a design flaw or feature, it's just how it is. Consequently, depending on experience this might change in the near future.
+There are currently five data structures present in LibDS. Check with the appropriate pages here for more extensive documentation on how to use them exactly.
+NOTE: All the Obscure Functionality sections in these pages document functionality which is exactly what the name says: obscure. This type of functionality can be changed without prior notice, or any form of backwards compatibility. Its there for the show...
+LibDS is Copyright (C) 1999, 2000, 2001, 2002 Peter Bozarov
+The official site for LibDS can be found at SourceFORGE.

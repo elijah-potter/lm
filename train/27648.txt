@@ -1,0 +1,18 @@
+A fundamental concept that applies
+in many engineering domains. An EngineeringComponent is an element of
+a Device that is a physically whole object, such as one might
+see listed as standard parts in a catalog. The main difference betweeen
+EngineeringComponents and arbitrary globs of matter is that
+EngineeringComponents are object-like in a modeling sense. Thus, an
+EngineeringComponent is not an arbtrary subregion, but a part of a
+system with a stable identity.
+SUMO / OBJECTS
+Related WordNet synsets
+See more related synsets on a separate page.
+- component, constituent, element
+- an artifact that is one of the individual parts of which a composite entity is made up; especially a part that can be separated from or attached to a system: "spare components for cars"; "a component or constituent element of a system"
+- a piece of machinery or a mechanical device; has moving parts that perform some function
+If comp 是 工程元件 的 實例, then there exists 裝置 device so that comp 是 device 的 元件.
+(instance ?COMP EngineeringComponent)
+(instance ?DEVICE Device)
+(component ?COMP ?DEVICE))))

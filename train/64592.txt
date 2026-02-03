@@ -1,0 +1,6 @@
+Execute experiment in different environment
+Currently, when executing an experiment on a local machine, the current environment is used and therefor must contain all the packages needed.
+This is sub-optimal as several different experiences might required different sets of packages.
+While this can't be done with the local executor, it can be implemented using the subprocess executor.
+The subprocess executor makes call to the scripts needed to run the algorithms/databases processes as would be with the docker executor. This fact can be used to run the scripts from another environment and thus will use the packages available there.
+This will also simplify the creation of new execution environment and their transition do docker images.

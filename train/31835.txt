@@ -1,0 +1,70 @@
+- Project tools
+- Nightly builds of docs
+- The ArgoUML Project
+- Using ArgoUML
+- How do I...
+|Over 500 more tools...
+Dependency is a relationship between two model elements
+showing that one depends on the other.
+Within the UML metamodel,
+is a sub-class of
+Dependency is represented as a dashed line with an open
+arrow head from the depending model element to that which it is
+18.14.1. Dependency Details Tabs
+The details tabs that are active for dependencies are
+Section 18.14.2, “Dependency Property Toolbar”
+and Section 18.14.3, “Property Fields For Dependency”
+Standard tab. See
+Section 13.4, “Documentation Tab”.
+The values in the "bounds" field of the
+are not editable, since they are determined
+by the properties of the endpoints of the line.
+Standard tab. In the UML metamodel,
+Dependency has no tagged values of its own,
+but through superclasses has the following standard
+tagged values defined.
+derived (from the
+true, meaning the
+dependency relationship is redundant—it can be
+formally derived from other elements, or
+false meaning it cannot.
+Derived dependencies still have their value
+in analysis to introduce useful names or
+18.14.2. Dependency Property Toolbar
+Navigate up through the package structure of the
+model. For a dependency this will be the package
+containing the dependency.
+This creates a new Stereotype (see
+Section 16.6, “Stereotype”) for the selected
+dependency, navigating immediately to the properties
+tab for that stereotype.
+This deletes the selected dependency from the
+This is a deletion from the model
+not just the diagram. To delete
+a dependency from the diagram, but keep it within the
+model, use the main menu
+Diagram (or press the Delete key).
+18.14.3. Property Fields For Dependency
+Text box. The name of the dependency.
+It is quite common to leave dependencies
+ArgoUML does not enforce any naming convention
+There is no representation of the name of a
+dependency on the diagram.
+Drop down selector. Dependency has no standard
+stereotypes of its own under UML 1.3. and so ArgoUML
+does not provide any. The stereotype is shown between «
+and » above or across the generalization.
+icon. If a stereotype has been selected, this will
+navigate to the stereotype property panel (see
+Section 16.6, “Stereotype”).
+Text box. Records the namespace for the
+dependency. This is the package hierarchy.
+Text area. Lists the end of the relationship that
+is supplying what is needed by the other end.
+Button 1 double click on a supplier will navigate
+to that element.
+Text area. Lists the “depending”
+ends of the relationship, i.e. the end that makes use
+of the other end.
+Button 1 double click on a client will navigate
+to that element.

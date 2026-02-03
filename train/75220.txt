@@ -1,0 +1,32 @@
+Buy the book!
+GDB can do four main kinds of things (plus other things in support of these) to help you catch bugs in the act:
+You can use GDB to debug programs written in C, C++, and Modula-2. Fortran support will be added when a GNU Fortran compiler is ready.
+GDB is invoked with the shell command gdb . Once started, it reads commands from the terminal until you tell it to exit with the GDB command quit . You can get online help from gdb itself by using the command help .
+You can run gdb with no arguments or options; but the most usual way to start GDB is with one argument or two, specifying an executable program as the argument:
+You can also start with both an executable program and a core file specified:
+gdb program core
+You can, instead, specify a process ID as a second argument, if you want to debug a running process:
+gdb program 1234
+would attach GDB to process 1234 (unless you also have a file named `1234 '; GDB does check for a core file first).
+Here are some of the most frequently needed GDB commands:
+Set a breakpoint at function (in file ).
+Display the value of an expression.
+For full details on GDB, see Using GDB: A Guide to the GNU Source-Level Debugger, by Richard M. Stallman and Roland H. Pesch. The same text is available online as the gdb entry in the info program.
+All the options and command line arguments you give are processed in sequential order. The order makes a difference when the `-x ' option is used.
+Read symbol table from file file .
+Use file file as the executable file to execute when appropriate, and for examining pure data in conjunction with a core dump.
+Read symbol table from file file and use it as the executable file.
+Use file file as a core dump to examine.
+Execute GDB commands from file file .
+Add directory to the path to search for source files.
+Batch mode may be useful for running GDB as a filter, for example to download and run a program on another computer; in order to make this more useful, the message
+Program exited normally.
+(which is ordinarily issued whenever a program running under GDB control terminates) is not issued when running in batch mode.
+Run GDB using directory as its working directory, instead of the current directory.
+Set the line speed (baud rate or bits per second) of any serial interface used by GDB for remote debugging.
+Run using device for your program's standard input and output.
+Permission is granted to make and distribute verbatim copies of this manual provided the copyright notice and this permission notice are preserved on all copies.
+Permission is granted to copy and distribute modified versions of this manual under the conditions for verbatim copying, provided that the entire resulting derived work is distributed under the terms of a permission notice identical to this one.
+Permission is granted to copy and distribute translations of this manual into another language, under the above conditions for modified versions, except that this permission notice may be included in translations approved by the Free Software Foundation instead of in the original English.
+|webmaster donations bookstore||delorie software privacy|
+|Copyright © 2003 by The Free Software Foundation||Updated Jun 2003|

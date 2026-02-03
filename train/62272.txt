@@ -1,0 +1,22 @@
+The microbridge mass airflow sensor operates on the theory of heat transfer. Mass airflow is directed across the surface of the sensing elements. Output voltage varies in proportion to the mass air or other gas flow through the inlet and outlet ports of the package. The specially designed housing precisely directs and controls the airflow across the microstructure sensing element. Mechanical design of the package allows it to be easily mounted to printed circuit boards.
+The microbridge mass airflow sensor has a unique silicon chip based on advanced microstructure technology. It consists of a thin-film, thermally isolated bridge structure containing heater and temperature sensing elements. The bridge structure provides a sensitive and fast response to the flow of air or other gas over the chip. Dual sensing elements positioned on both sides of a central heating element indicate flow direction as well as flow rate. Laser trimmed thick film and thin film resistors provide consistent interchangeability from one device to the next.
+The microbridge mass airflow sensor uses temperature sensitive resistors deposited within a thin film of silicon nitride. They are suspended in the form of two bridges over an etched cavity in the silicon. The chip is located in a precisely dimensioned airflow channel to provide a repeatable flow response. Highly effective thermal isolation for the heater and sensing resistors is attained by etching the cavity space beneath the flow sensor bridges. The small size and thermal isolation of the microbridge mass airflow sensor are responsible for the extremely fast response and high sensitivity to flows.
+Dual Wheatstone bridges control airflow measurement – one provides closed loop heater control, the other contains the dual sensing elements. The heater circuit minimizes shift due to ambient temperature changes by providing an output proportional to mass flow. The circuit keeps the heater temperature at a constant differential (160 °C) above ambient air temperature which is sensed by a heat-sunk resistor on the chip. The ratiometric voltage output of the device corresponds to the differential voltage across the Wheatstone bridge circuit.
+The effects of dust contamination, which may result form some applications, can be minimized. By design, dust particles that may be present in the air stream will flow past the chip parallel to the chip surface. In addition, the microstructure chip produces a thermophoretic effect, which repels micrometer sized dust particles away from the bridge structure.
+A simple filter will prevent dust adherence to chip edges and channel surfaces. Adequate filtering in most applications can be achieved with a disposable five-micron filter used in series on the upstream side of the airflow device.
+CAUTION: PRODUCT DAMAGE
+AWM Series Microbridge Mass Airflow Sensors are not designed to sense liquid flow and will be damaged by liquid flow through the sensor.
+Failure to comply with these instructions could result in product damage.
+|AWM40000 Series Airflow Sensors, Unamplified and Amplified||Catalog Information||English||245KB|
+|AWM Series Airflow Sensors Introduction||Catalog Information||English||186KB|
+|AWM40000 Series Microbridge Mass Gas-flow Sensors||Installation Instructions||English||192KB|
+|Airflow Sensors Line Guide||Product Line Guide||English||132KB|
+|Airflow, Force, and Pressure Sensors Range Guide||Product Range Guide||English||5MB|
+|Sensors and Switches for Potential Medical Applications||Product Range Guide||English||3MB|
+|Gas Media Compatibility & Correction Factors||Technical Information||English||96KB|
+|Airflow Sensor Glossary of Terms||Technical Information||English||154KB|
+|Mass Airflow Sensors Measuring Low Differential Pressures Altitude and Gas Density Correction||Technical Information||English||85KB|
+|Mass Flow Sensors: Mass Flow versus Volumetric Flow and Flow Rate Unit Conversions||Technical Information||English||190KB|
+|Mass Airflow Sensors Particle Contamination and Filter Manufacturers||Technical Information||English||99KB|
+|Pressure or Airflow Sensors?||Technical Information||English||546KB|
+|Energy and Environmental Design Trends||Technical Information||English||812KB|

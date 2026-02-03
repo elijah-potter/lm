@@ -1,0 +1,15 @@
+Switching Between Displaying Formulas and Their Values on a Worksheet
+When building a worksheet, you can create complex formulas up to 8,192 characters in length. Even if your formulas are far shorter, you may prefer not to see them so that you can focus on the data in your worksheet. You can press “Windows” and the "`" or grave accent key -- to the left of the "1" on your keyboard -- to toggle formulas on and off, but you also have the option to prevent others from doing this by protecting cells and hiding their formulas.
+Protect and Hide Formulas
+Open an Excel worksheet that has formulas you would like to protect and hide.
+"Press "Alt-A" and right-click any cell. Click "Format Cells" and then click the "Protection" tab that appears in the Format Cells dialog window. Remove the check mark from the "Locked" check box and click "OK."
+Select the cells whose formulas you wish to hide and right-click one of the cells. Select "Format Cells" to reopen the Format Cells dialog window.
+Click “Protection” and add a check mark to the “Locked” and “Hidden” check boxes. Click “OK | Review | Protect Sheet.”
+Click to insert a check mark in the box next to "Protect Worksheet and Contents of Locked Cells." Type a password in the "Password to Unprotect Sheet" text box if you want to prevent others from protecting the worksheet without supplying that password. Click "OK" to save the changes.
+Unhide Formulas and Turn Off Protection
+Click "Review" and select "Unprotect Sheet."
+Enter the password you created if you used one to protect the worksheet.
+Select the cells you want to unhide, right-click one of the cells, and then click "Format Cells." Remove the check mark from the "Hidden" check box and click "OK."
+- When you create a password to protect your worksheet's formulas, Excel always prompts you for that password whenever you edit the worksheet.
+- You also can toggle unprotected formulas on and off by clicking "Formulas" and then clicking the "Show Formulas" button.
+- Creatas Images/Creatas/Getty Images

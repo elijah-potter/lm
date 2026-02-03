@@ -1,0 +1,19 @@
+From Erlang Community
+In some cases we write functions that have a dual operation, for example *encode* and *decode*, *parse* and *pretty\_print*, or *convert\_to* and *convert\_from*.
+Developing both functions at the same time gives an advantage when testing, since one of the properties that one is interested in is
+encode(decode(X)) == X.
+Surely, one could easily implement functions that guarantee this operation and are still doing the wrong thing, thus only this property is insufficient for testing. That said, it still is a good idea to also check this property and many bugs have been found by simple properties like this.
+Erlang R12B has a module base64 in the standard library http://www.erlang.org/doc/man/base64.html. The module has a number of function, among which *encode* and *decode*.
+We write the obvious property. Just read the manual: Encodes a plain ASCII string into base64. Use http://en.wikipedia.org/wiki/ASCII wikipedia to remind yourself that a plain ascii character is a value between 0 and 127. Extended ascii goes to 255.
+prop_identity() -> ?FORALL(Data,list(plain_ascii_char()), base64:decode(base64:encode(Data)) == Data). plain_ascii_char() -> choose(0,127).
+We can run QuickCheck to find out that we haven't specified clear enough.
+eqc:quickcheck(base64_eqc:prop_identity()). Failed! After 1 tests.  false
+The authors of the module base64 allow the input of encode to be either a binary or a string, but the result is always a binary. As a result, the encoding of the empty string returns the empty binary.
+base64:decode(base64:encode("")). <<>> base64:decode(base64:encode("hello")). <<"hello">>
+Seems that we should be more successful if we check that the result is the right binary, and more precise if we also allow binaries as input. This makes the specification a bit more complicated.
+prop_identity() -> ?FORALL(Data,data(), begin Base64 = base64:decode(base64:encode(Data)), if is_list(Data) -> Base64 == list_to_binary(Data); is_binary(Data) -> Base64 == Data end end). data() -> ?LET(AsciiString, list(plain_ascii_char()), oneof([AsciiString,list_to_binary(AsciiString)])).
+We can run a few hundred tests on this one and will see that they all pass. Of course, when all tests pass, one starts wondering about the quality of the input data. Inspecting a sample shows that we do test quite a variety, but the data consists of rather short strings.
+67> eqc_gen:sample(base64_eqc:data()). <<"]C\t">> <<"ì">> <<"Ä ëÆ">> <<154,25,220,196,225>> [155,237] <<>> <<"kè lcJ">> "ÑV" <<97,76,162,46,216,155>> [72,127,71,113,159] <<28,129,39,246,204,83,204>> ok
+Probably we also like to test for some larger inputs. That can be done by replacing *list* by *longlist* in the specification. We define long lists to be about 20 times as long as normal lists:
+longlist(G) -> ?SIZED(Size,resize(Size*20,list(resize(Size,G)))).
+Another things we can experiment with, is the range of ascii values. Note that we only consider upto 127, but it turns out that even for values up to 255 the two functions executed after each other are equivalent with the identity function.

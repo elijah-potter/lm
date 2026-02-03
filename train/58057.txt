@@ -1,0 +1,49 @@
+Saturday, January 1, 2011
+Scratch Programming 3
+Make sure you have sound turned on for this one.
+Click the top right hand corner Green Flag to start the animation, and click the round stop sign to finish it.
+This post is all about using Scratch to animate your Name in interesting ways.
+We built this first project: "Animate Your Name: Passy Rocks" as follows.
+First we obtained some raw images of letters off the Internet. For each letter we obtained two images: the normal letter, and then another “old style” version of the letter. We then used Photoshop to reduce their size to 50x50 and saved them to our PC as .GIF files.
+We then set up our first sprite for the letter P, and imported two costumes for it, containing the normal letter, and the surprise “old style” version.
+We then set up the following Script on the letter P, to make it rock forward and back, and then pause on the surprise letter, and keep repeating forever. Later on we fine tuned the numerical values, but the script structure was kept the same.
+To create the remaining letters, it was just a matter of right clicking this Sprite in the Scratch work environment and selecting “Duplicate” and then modifying it to be a different letter in the costume, and dragging it to its position on the stage.
+We then created an additional Sprite containing a picture of a Guitarist, and made him appear only when the second set of letters appear by setting up his scripting as follows:
+This worked fine in the Scratch Environment, but the timing was out when it was played online on the web page here. We managed to fix this by creating a Broadcast message to the Guitar Sprite to appear when the letters change costume.
+To fix this we do NOT need to create a new variable called "LettersChanged". Instead we simply bring out a "Broadcast" control block, and we can define the message name of "LettersChanged" right there, via "new" on the control block.
+We set up the letter P to broadcast "LettersChanged", and the guitar sprite to receive this and act upon it by appearing on the stage. (Show/Hide commands).
+We also needed a restarting message, so that the guitarist could hide afterwards. We set this up in the letter P script as well.
+On the Guitarist Sprite, we then imported a Scratch "cymbal crash" sound into the project, and set up for it to play whenever the guitarist appears.
+For the Letter P sprite we introduced Drums, but had a problem with the Guitar Sprite turning them off, and so we had to add a receiving broadcast message statement to reactivate the drums.
+We then played around with some timings, and were done. Note that adding sounds took our project from 287K up to 432K in size.
+For the Stage background, we just used one of the “Indoors” backgrounds that comes with Scratch.
+However, when we put it on our website and played it online, the sounds did not quite sync up, and so we had to adjust the timings loop numbers etc again.
+Eventually we got it all working in time.
+Here is the final Letter P script:
+And here is the finished script for the Guitarist Sprite:
+The other letters of our name each have the following script on them:
+Making a Musical Name - Version 1
+This project was adapted from a Project made by "atyo-dickerson" that we found at the MIT site at: http://scratch.mit.edu/projects/atyo-dickerson/514178
+It uses X and Y coordinate positions of the mouse to create different pitched notes, when the mouse is moved across the background.
+Click the top right hand corner Green Flag to start the animation, and click the round stop sign to finish it. Now Drag the mouse all over the screen to paint the name and hear some wonderful music. Press the Space Bar to clear the screen at any time.
+To build this animation, four copies of the original name text were created as separate costumes.
+The following code was then used to alternate through the costumes while repeatedly cloning them with the "Stamp" command. The number 16 "Dulcimer" sound was used, as per the original MIT project.
+Making a Musical Name - Version 2
+Make sure you have sound turned on, then click the top right hand corner Green Flag to start the animation. Then move the mouse across the letters to play the piano note for each letter.
+Changing the bottom right hand corner speed will vary the sustain of the notes. (Space Bar Clears all line drawings).
+The main parts of this project were taken from a similar project by “Duckey355” from the MIT site at: http://scratch.mit.edu/projects/Duckey355/57592
+First of all the animation has some introductory instructions text contained in the costume for "Sprite1". The script for Sprite1 contains the "ghost" effect which immediately fades the text away as soon as the green Start flag is clicked.
+The letters for our name were all obtained by Photoshopping an Alphabet we got from Google Images, and saving each cropped letter as a transparent .PNG file.
+The Background has Scripting to set the "Speed" variable to an initial value of 0.2. There is also coding for space bar to clear the pen drawings at any time.
+The Speed variable icon was then right clicked on the Stage and set to "Slider" so that a range of values could be chosen between 0 and 1. Large values make long music notes, and short values make short stacatto type notes.
+The Letters are each set up the same. The coordinates of their start position in the script are obtained by reading off the values of where they are on the screen when moved to their stage positions during the build.
+When we click on the "Play Note" values it gives us a Piano keyboard to pick the note number. We used the notes for our letters as Middle-C=60, D=62, E=64, G=67, High-C=72. So by pressing the letters P, A, and S, on our name in the right order, we can actually play "Mary Had a Little Lamb".
+There is also code to make the Pen drawn lines and the letters return to their original start positions each time.
+Getting R2D2 to Say Our Name
+Make sure you have sound turned on, then click the top right hand corner Green Flag to start the animation. Type your text into the bottom of screen input box, and then click the tick mark to hear R2D2 say your message.
+We got this project by "Leylosh" from the MIT site at http://scratch.mit.edu/projects/complex/924468
+This project came with the alphabet of R2D2 sounds already imported, (one sound for each letter of the alphabet). When we type our name in the Input Box, the Script goes through each letter from left to right, making the appropriate R2D2 noise each time.
+All we did at Passy World was create a new red R2D2, to match a Background we saved from Google Images and Photoshopped to the standard Scratch background size of 480x360.
+Here is the Script that runs for the whole R2D2 translator.
+So that's our name done to the max in Scratch.
+Big Passy Wasabi

@@ -1,0 +1,64 @@
+What Is Die Casting?Die Casting and it is a precision casting method that obtains the same casting as the mold by injecting molten metal into a steel mold that is precisely machined to perfectly match the required casting shape. In addition to the advantages of almost no need for finishing as the dimensions are accurate, it has excellent mechanical properties and is capable of mass production.Die casting is also called pressure die casting. It is a precision casting method in which molten metal is injected into a steel mold that is precisely machined to perfectly match the required casting shape to obtain a casting identical to that of the mold. The product is called die-casting parts.
+In addition to the advantage that there is little need for finishing because the dimensions are accurate, it has excellent mechanical properties and can be mass-produced. The metal used is an alloy such as zinc, aluminum, tin, copper, and magnesium, and it is cooled and solidified by injecting it by air pressure, water pressure, or hydraulic pressure using a die-casting machine.
+There are many automobile parts as products, including parts for electrical equipment, optical equipment, vehicles, weaving equipment, construction equipment, and measuring instruments.
+The Definition And Terminology Of Die Casting
+Die casting is defined as “a casting method that mass-produces castings with excellent casting surfaces with high precision by pouring molten metal into a precision mold and products resulting from it”. In Japanese, the word “die casting” is also used, but American die casting is adopted. In the UK, mold casting is called gravity die casting, low pressure casting is called low pressure die casting, and die casting is called pressure die casting.
+The Characteristics Of Die Casting
+The main advantages and disadvantages of die casting are as follows.
+- Products with complex shapes can be mass-produced in one process.
+- Because it is high-speed and high-pressure filling, there is no molten metal vortex and the dimensional accuracy of the casting state is good.
+- Because it is a high-speed and high-pressure filling, the hot water flow is good, a thin product can be made, and the casting surface is beautiful.
+- The productivity per hour is good because it is fast charging and rapid cooling and solidification.
+- Mechanical properties are improved by the formation of a seven-layer by rapid cooling.
+- Coping with pores caused by the inflow of air or gas.
+- Solution treatment or welding cannot be performed due to the inflow of air or gas.
+- Since the mold is expensive, economical mass production cannot be secured.
+Die Casting Machine
+Because the sleeve and flanger are not in the molten metal and are not heated, it is called a gold chamber.On the other hand, a machine called a hot chamber is used for die casting of zinc or magnesium and is not used for aluminum alloy. Cold chamber die casting machines in Japan have a minimum clamping force of 0.5MN and a maximum of 40MN. The injection force is 1/10 to 10/20 of the clamp force.
+Die Casting Cycle
+One cycle of aluminum alloy die casting by cold chamber machine will be described.
+- a) Close the two molds by matching the movable mold to the fixed mold by the machine’s mold clamping operation. With a ladle, molten aluminum alloy is poured into a sleeve called a cold chamber.
+- b) The plunger operates and presses the molten metal into the mold cavity at high speed and high pressure. The mold is water cooled to prevent overheating.
+- c) When the molten metal solidifies, open the mold and return the flanger and the moving core to their original state.
+- d) Operate the extrusion pin to push the product out of the die casting molds.
+The size of the machine used depends on the size of the die-casting product. One cycle of die casting takes several seconds for small size and several minutes for large size. In recent die casting production, some factories are aiming to automate their operations and unmanned them.
+Casting pressure, which is a typical casting condition item of aluminum die casting, is in the range of 10 to 200 MPa, and the gate speed is in the range of 2 to 100 m/s. The casting conditions of die casting are quite different from those of gravity casting.
+Features are as follows
+- Cast with high pressure
+- Cast at high speed. Therefore, the filling time into the mold is very short
+- In the mold, the filled molten metal is rapidly cooled and solidified.
+Die Casting Manufacturing Process
+Die casting work performed in most factories is supported by automatic hot water supply device, plunger lubrication device, automatic spraying device, product dispensing device, etc., and is being mechanized and systemized. Fully automatic operation and unmanned operation are also being realized. The trimming device mainly relies on the knitting press operation, but sand blasting or shot blasting are also used in combination. In post-processing, machining and surface treatment are performed. For the surface treatment, buffing, chemical conversion, painting, anodizing, plating, and the like can be selected.
+Dimensional Tolerance Of Die Casting
+It goes without saying that the dimensional accuracy required for a product is after final processing, and errors in material and processing are added.
+The dimensional tolerance of the typical aluminum alloy die-casting ADC12 in the as-cast state can be interpreted as follows.
+- Dimensional tolerance = casting tolerance + mold tolerance + shrinkage vs. calculation tolerance + tolerance for casting operation
+- Calculation formula for maximum possible dimensional tolerance – ε=±0.75×10-³×L。(mm)
+- Calculation formula for precise dimension tolerance – ε=±(1.15×10-³×L。+0.1) (mm)
+- Calculation formula for general dimensional tolerance – ε=±(2.15×10-³×L。+0.2) (mm)
+In this case, L. is the length of the mold cavity at room temperature, and ε is the dimensional difference of the die casting. The factor that fluctuates the casting tolerance is the mold temperature difference.As a standard for dimensional tolerance, there is JIS B 0409 die casting normal tolerance, and the normal tolerance of length and the maximum value of degradation angle are determined.Japan Die Casting Association standardized the details again and indicated length tolerance, angle tolerance, flatness tolerance, and eccentricity tolerance.
+The Mechanical Properties Of Die Casting
+The mechanical properties of die casting show the measured values of the simple shape individual molten metal injection test pieces and the measured values of the test pieces cut from mass-produced products. In general, the former is larger than the latter. ASTM test pieces are distributed as individual molten metal injection test pieces.
+The strength of die casting cannot be guaranteed as a substitute characteristic. Apply a load corresponding to the actual and practical load to the die casting to destroy it, and obtain a numerical value that can be statistically guaranteed to withstand the load, for example, the lower limit of 3σ.
+Die Casting Defects And Countermeasures
+The extent to which defects are allowed depends on the required quality of the product, so the limit should be clearly defined when trading.
+(G) Japan Die Casting Association has suggested casting surface standards and foam standards. There is also a new defect name called Fracture Layer. It is explained that the solidified layer generated in the injection sleeve of die casting is an abnormal tissue that is broken by the flanger and flows into the molten metal into the cavity. The strength of the interface between the fractured layer and the normal tissue is significantly lower than the strength of the normal tissue as it is inserted at less than 9kgf/mm². This is the cause of extremely lowering the strength of the die casting. According to the degree of demand for the strength of die casting, the development of a method for preventing the occurrence of a fracture layer is in progress. Methods to increase the heat retention of the molten metal in the sleeve just before injection, such as the ceramic sleeve method and the powder lubrication method, are being sought.
+New Die Casting Method
+Die casting has been quantitatively expanded by using high productivity and good flow of hot water for thin products as sales points. However, the high-speed charging that realizes it, on the one hand, cannot avoid air bubbles due to mixing.
+may be the cause Several new die casting methods have been developed in response to product design requirements such as filling, airtightness, and strength leveling as castings, and heat treatment or welding.
+(1) Vacuum Method
+The history of vacuum method is quite old. Methods currently industrially known include the GF method, the mass vent method, the shutter-off pin method, the RSV method, the superback method, the MFT method, and the VACURAL method. The vacuum method widely used in Japan is the GF method.
+(2) PF Method
+Also called non-porous die casting. The principle is to eliminate air bubbles by purging the mold cavity and sleeve with oxygen, mixing oxygen with the molten metal in the spray state by high-speed injection, and fixing oxygen with Al₂O₃. Die casting made by PF method can be solution heat treated and artificial aging heat treated. Sometimes welding.
+(3) Local Pressure Method
+After filling the mold cavity with the molten metal, a local pressure higher than the casting pressure is applied to the molten metal or the reaction solid in the cavity by pressing a pressure pin by a predetermined stroke. There is an effect of filling the voids of the decrease in the cavity volume caused by such pressurization. It is effective as a countermeasure against air bubbles in the thick part isolated in the part away from the gate.
+(4) Hot Chamber Method
+The hot chamber machine method is named because the injection mechanism is immersed in the molten metal. Since the steel injection mechanism part is easily eroded by the molten aluminum alloy, a hot chamber machine is usually not used for aluminum alloy die casting. However, if this method can be applied with high productivity, high level of automation, and stability of molten metal quality, new demand development can be expected for aluminum alloy die casting. In 1987, the Small and Medium Business Corporation tested a hot chamber die casting machine with a clamping force of 2.5MN. Ceramic materials such as silicon nitride are used for parts in contact with molten aluminum alloy. As a result of the operation test, improvement in quality, slimming, productivity improvement, and energy saving can be expected.
+(5) Collapsible Core Method
+One of the disadvantages of die casting is the restriction on the undercut shape. One of the solutions is to use a metal neutralizer setting. Another method, which is a collapsible reactor, uses salt or silica sand as an aggregate.
+The Development Of Die Casting
+The global aluminum die-casting market is expected to show continuous growth in accordance with the trend toward lighter weight of parts used in the automotive and aerospace fields.
+Grand View Research’s ‘Global Aluminum Die Casting Market’ report that contains such content forecasts that it will grow at a CAGR of 5.1% from 2021 to 2028, reaching $35.64 billion in 2028.
+Aluminum die casting is a process of injecting molten aluminum by applying pressure to a mold, and is divided into pressure die casting and other processes depending on the production process.
+According to the report, high pressure die casting manufacturer (HPDC) in the production process sector accounted for the largest revenue share in 2020 and this trend is expected to continue through 2028. This is explained by the high preference for HPDC among casting manufacturers due to the high efficiency of the process.
+It also points out that increasing demand for aluminum die casting or zinc die casting products is intensifying competition in the market, leading market players to gain a competitive edge through strategic initiatives such as mergers and acquisitions (M&A) and increased production capacity and to gain a competitive edge in losses from the impact of COVID-19. expected to recover.

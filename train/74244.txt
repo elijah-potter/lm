@@ -1,0 +1,12 @@
+<artificial intelligence> The most common way to train a neural network;
+a kind of unsupervised learning; named after canadian neuropsychologist, Donald
+The algorithm is based on Hebb's Postulate, which states that where one cell's
+firing repeatedly contributes to the firing of another cell, the magnitude of
+this contribution will tend to increase gradually with time. This means that
+what may start as little more than a coincidental relationship between the
+firing of two nearby neurons becomes strongly causal.
+Despite limitations with Hebbian learning, e.g., the inability to learn certain
+patterns, variations such as Signal Hebbian Learning and Differential Hebbian
+Learning are still used.
+heavy metal « heavyweight « heavy wizardry «
+Hebbian learning » heisenbug » Helen Keller mode

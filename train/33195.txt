@@ -1,0 +1,8 @@
+Generators are a Python core language construct that allow a function's return value to behave as an iterator. A generator can allow more efficient memory usage by allocating and deallocating memory during the context of a large number of iterations. Generators are defined in PEP255 and included in the language as of Python 2.2 in 2001.
+An introduction to Python generators by Intermediate Pythonista is a well done post with code examples.
+This blog post entitled Python Generators specifically focuses on generating dictionaries. It provides a good introduction for those new to Python.
+Python 201: An Intro to Generators is another short but informative read with example generators code.
+Iterators & Generators provides code examples for these two constructs and some simple explanations for each one.
+Python: Generators - How to use them and the benefits you receive is a screencast with code that walks through generators in Python.
+The question to Understanding Generators in Python? on Stack Overflow has an impressive answer that clearly lays out the code and concepts involved with Python generators.
+Generator Tricks for Systems Programmers provides code examples for using generators. The material was originally presented in a PyCon workshop for systems programmers but is relevant to all Python developers working to understand appropriate ways to use generators.

@@ -1,0 +1,12 @@
+When a NULL value is stored in a column it’s easy to say what is the data type of it: it’s the data type of the column. This means that the NULL value stored in the DateTime column can be used in all the date & time functions like DATEADD() etc. But what is the default data type of the NULL itself?
+Imagine this simple SQL:
+SELECT NULL; GO
+What is the data type of the NULL value?
+Let’s test it. We will take the value, persist it in a table, and review column data type:
+SELECT NULL AS Value INTO tmp_NULL_Test GO SELECT t.name TableName, c.name ColumnName, tp.name TypeName FROM sys.tables t INNER JOIN sys.columns c ON c.object_id = t.object_id INNER JOIN sys.types tp ON tp.system_type_id = c.system_type_id AND tp.user_type_id = c.user_type_id WHERE t.name = 'tmp_NULL_Test' GO
+Yes, it’s INT. The same result is returned by sys.dm_exec_describe_first_result_set stored procedure:
+SELECT * FROM sys.dm_exec_describe_first_result_set ('SELECT NULL', N'', 1)
+You should remember that this is only true in case we are trying to persist the “untyped” NULL value. Otherwise, it doesn’t mean the NULL is always an INT data type. You can test it that way:
+SELECT TRIM(NULL) GO DECLARE @Int INT SELECT TRIM(@Int) GO
+The first batch will complete successfully but the second one will fail with the error, that argument data type INT is invalid for argument 1 of the TRIM() function. That means that NULL in the first batch is simply “untyped” NULL meaning the value is unknown.
+Because all that can lead to several confusions, I will recommend this article written by Robert Sheldon where he is explaining a lot of situations where proper handling of NULL values really matters.

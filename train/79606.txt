@@ -1,0 +1,47 @@
+Physical segmentation is common, but has been applied to an extreme.
+Logical segmentation is the process of outlining which endpoints need to be in the same local area network – better known as a LAN. Segmentation is a key
+consideration for an Industrial Automation Control System (IACS) network. Segmentation is important to help manage the real-time communication properties
+of the network, and yet support the requirements as defined by the network traffic flows.
+Security is also an important consideration in making segmentation decisions. A security policy may call for limiting access of plant floor personnel
+(such as a vendor or contractor) to certain areas of the plant floor (such as a functional area). Segmenting these areas into distinct subnets and Virtual
+LANs – commonly called VLANs – greatly assists in the application of these types of security considerations.
+Subnets and VLANs are two concepts that go hand-in-hand. A VLAN is a broadcast domain within a switched network. Devices within a VLAN can communicate with
+each other without a Layer-3 switch or router. Devices in different VLANs need a Layer-3 switch or router to communicate the traffic. Subnets are simply a
+subset of IP addresses assigned to a set of devices. Subnets are Layer-3 (Network/IP) concepts and VLANs are Layer 2 (data-link/Ethernet).
+Typically, devices in a VLAN are assigned IP addresses from the same subnet and a subnet has devices in one VLAN to make routing easier and more
+straightforward. Best networking practices call for a one-to-one relationship between VLANs and subnets.
+When designing IACS network logical segmentation plans, there are competing objectives. On one hand, all Level 0 to 2 devices that need to communicate
+multicast I/O between each other must be in the same LAN. It would seem easier to put all devices in one VLAN and subnet.
+However, the smaller the VLAN, the easier it is to manage and maintain real-time communications. That’s because the broadcast traffic and multicast traffic
+are constrained. Real-time communications are harder to maintain as the number of switches, devices and network traffic increases in a LAN.
+Smaller VLANs also isolate devices from those that are faulty or compromised, because the negative impact only occurs within the errant devices’ VLANs. For
+the same reason, VLANs form the basis for setting and implementing security policy and protection. VLANs provide the broadcast isolation, policy implementation,
+and fault-isolation benefits that are required in highly available networks.
+Segmentation approaches vary
+There are many approaches to segmenting a network. Manufacturing facility networks can be divided by functional sections of the plant floor
+(see 1 in Figure 1), product lines (see 2 in Figure 1), and traffic type (for example, I/O, controller-to-controller, and explicit message traffic).
+To achieve the goal of minimizing VLAN sizes, a mixture of all three may be used.
+Figure 1: Sample Plant Floor—Brewing and Bottling
+Segmentation can be achieved via the following two key mechanisms in the Cell/Area IACS network:
+- Physical – Using separate cabling and Layer-2 access switches.
+- VLAN (802.1Q) – Using the VLAN protocol that can be implemented on the same physical infrastructure
+Physical segmentation is a highly common approach in current Ethernet implementations, but has been applied to an extreme. For example, a common approach in
+current Ethernet deployments is to physically separate I/O traffic from HMI traffic and not to connect the I/O traffic to any interconnected Layer-3 distribution
+switch. In these cases, a controller has separate network interface connections (NIC) to each network, and the only means to communicate between the two networks
+is over the backplane of the controller. The I/O network is, therefore, reachable only via the controller backplane that processes only CIP traffic. (See Figure 2.)
+Figure 2: Gateway Physical Segmentation Example—Two NICs for Network Segmentation
+The effects of this include:
+- Devices on the I/O network are not accessible via non-CIP protocols (such as SNMP or HTTP), limiting overall interconnectivity.
+- A controller was not designed to route, switch or bridge continuous network traffic, and may introduce delays when used in this manner.
+- Network-based services (such as security, management, IP address allocation, and so on) must either be replicated in each network or are not available.
+- Increased costs occur because the available network resources in the HMI network (for example, open ports) are not available in I/O network.
+Best practices enable interconnectivity
+Although physical segmentation dedicates network resources to these various traffic types and helps increase the level of certainty that the traffic
+receives sufficient network resources, best practice is that these networks be at least connected to Layer-2 or Layer-3 switches to enable interconnectivity
+via other methods than the controller. In this way, the networks stay interconnected and get the full benefits of the converged network.
+Better still, consider other ways (for example, application of QoS) to ensure that critical network traffic (such as Implicit I/O) receives appropriate
+network performance. Even if physical segmentation is chosen, many of the design and implementation considerations here still apply (for example, security,
+availability, QoS, and multicast management) as the physically segmented network is still a Cell/Area or Layer 2 network.
+When traffic separation is a strong requirement, Figure 3 shows the recommended approach.
+Figure 3: Converged Cell/Area Zone Network —Two NICs for Scalability
+To learn more about the benefits and best practices for logical segmentation and VLANs, sign up for the Industrial IP Advantage industrial network design training here.

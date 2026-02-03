@@ -1,0 +1,19 @@
+What is a convex function in optimization?
+A convex optimization problem is a problem where all of the constraints are convex functions, and the objective is a convex function if minimizing, or a concave function if maximizing. Linear functions are convex, so linear programming problems are convex problems.
+Why convex is important in optimization?
+Convexity in gradient descent optimization Our goal is to minimize this cost function in order to improve the accuracy of the model. MSE is a convex function (it is differentiable twice). This means there is no local minimum, but only the global minimum. Thus gradient descent would converge to the global minimum.
+Why is convex optimization used in machine learning?
+Because the optimization process / finding the better solution over time, is the learning process for a computer. I want to talk more about why we are interested in convex functions. The reason is simple: convex optimizations are “easier to solve”, and we have a lot of reliably algorithm to solve.
+What are convex functions used for?
+Convex functions play an important role in many areas of mathematics. They are especially important in the study of optimization problems where they are distinguished by a number of convenient properties. For instance, a strictly convex function on an open set has no more than one minimum.
+Is convex optimization important for data science?
+Many Big Data problems will be traduced in an optimization of a convex problem. Efficient algorithms are available to optimize them : independently on the dimension of the underlying space. Primal – Dual formulations are important to overcome some constraints on the optimization.
+What is the difference between convex and non convex?
+A polygon is convex if all the interior angles are less than 180 degrees. If one or more of the interior angles is more than 180 degrees the polygon is non-convex (or concave).
+What is difference between convex and non convex function?
+A convex function: given any two points on the curve there will be no intersection with any other points, for non convex function there will be at least one intersection. In terms of cost function with a convex type you are always guaranteed to have a global minimum, whilst for a non convex only local minima.
+Is convex optimization important for deep learning?
+The answer is No. You might want to argue that convex optimization shouldn’t be that interesting for machine learning since we often encounter loss surfaces like image below, that are far from convex.
+Why is a convex function used?
+What are the example of convex?
+The definition of convex is curving outwards like the edge of a circle. An example of convex is the shape of the lens in eyeglasses. Having a surface or boundary that curves or bulges outward, as the exterior of a sphere.

@@ -1,0 +1,41 @@
+Agile Project Management
+How agile methodologies can work for your software team
+What is agile project management?
+Agile project management is an iterative approach to managing software development projects that focuses on continuous releases and incorporating customer feedback with every iteration.
+Software teams that embrace agile project management methodologies increase their development speed, expand collaboration, and foster the ability to better respond to market trends.
+Here is everything you need to know to get started or refine your agile project management practices.
+Agile project management articles
+A brief history of agile project management
+Stemming from Toyota's lean manufacturing concept of the 1940s, software development teams have embraced agile methodologies to reduce waste and increase transparency, while quickly addressing their customers' ever-changing needs. A stark change from waterfall project management that focuses on "big bang" launches, agile helps software teams collaborate better and innovate faster than ever before.
+Traditional agile project management can be categorized into two frameworks: scrum and kanban. While scrum is focused on fixed-length project iterations, kanban is focused on continuous releases. Upon completion, the team immediately moves on to the next.
+Agile project management framework 1: Scrum
+Scrum is a framework for agile project management that uses fixed-length iterations of work, called sprints. There are four ceremonies that bring structure to each sprint.
+It all starts with the backlog, or body of work that needs to be done. In scrum, there are two backlogs: one is the product backlog (owned by the product owner) which is a prioritized list of features, and the other is the sprint backlog which is filled by taking issues from the top of the product backlog until the capacity for the next sprint is reached. Scrum teams have unique roles specific to their stake in the process. Typically there's a scrum master, or champion of the scrum method for the team; the product owner, who's the voice of the product; and the scrum team, who are often cross-functional team members in charge of getting s@#$ done.
+The four ceremonies of scrum
+|Sprint Planning||Sprint Demo||Daily Standup||Retrospective|
+|A team planning meeting that determines what to complete in the coming sprint.||A sharing meeting where the team shows what they've shipped in that sprint.||Also known as a stand-up, a 15-minute mini-meeting for the software team to sync.||A review of what did and didn't go well with actions to make the next sprint better.|
+The scrum board
+A scrum board is used to visualize all the work in a given sprint. During the sprint planning meeting, the team moves items from the product backlog into the sprint backlog. Scrum boards can have multiple steps visible in the workflow, like To Do, In Progress, and Done. Scrum boards are the key component for increasing transparency in agile project management.
+Agile project management framework 2: Kanban
+Kanban is a framework for agile project management that matches the work to the team's capacity. It's focused on getting things done as fast as possible, giving teams the ability to react to change even faster than scrum.
+Unlike scrum, kanban has no backlogs (usually). Instead, work sits in the To Do column. This enables kanban teams to focus on continuous releases, which can be done at any time. All work is visible, scoped, and ready to execute on so that when something is completed, the team immediately moves on to the next. The amount of work is matched to the team's capacity through WIP limits, which is a predefined limit of work that can be in a single column at one time (except the To Do column). The kanban framework includes the following four components:
+The four components of kanban
+List of work
+Columns or lanes
+Work in Progress Limits (WIP)
+List of work, or stories, are defined as issues or tasks that need to get done.
+|Used on a kanban board to distinguish tasks from different workstreams, users, projects, etc.||A rule to limit the amount of work to be done based on the team's capacity.||The team works on the amount of stories within the WIP limit and can release at anytime.|
+The kanban board
+A kanban board is used to visualize all the work that's being done. It's also used for planning resources allowing project managers to see the work and develop timelines accordingly. A kanban board is structured into columns and lanes that stories pass through on their way to completion. Stories sit in the To Do column until the WIP limit allows for the next task to be worked on. The list of work should be split into relatively small issues and organized by priority. As you can see in this example, lanes can help keep the higher priority items separated from "everything else."
+Responsibilities of agile project managers
+Whatever agile framework you choose to support your software development, you'll need a way to see your team's progress so you can plan for future work or sprints. Agile project estimating helps both scrum and kanban teams understand their capacity. Agile reports show the team's progress over time. And backlog grooming helps project managers keep the list of work current and ready for the team to tackle.
+Agile project estimating
+Project estimating is an extremely important aspect of both kanban and scrum project management. For kanban, many teams set their WIP limit for each state based on their previous experiences and team size. Scrum teams use project estimating to identify how much work can be done in a particular sprint. Many agile teams adopt unique estimating techniques like planning poker, ideal hours, or story points to determine a numeric value for the task at hand. This gives agile teams a point of reference to refer back to during sprint retrospectives, to see how their team performed. Jira Software can be customized to capture your teams' unique project estimations.
+Project estimations come into play at the beginning and end of each sprint. They help teams determine what they can get done at the beginning of the sprint, but also show how accurate those initial estimates were at the end. Agile reports, such as Burndown charts, show how many "story points" are completed during the sprint. Jira Software offers dozens of out-of-the-box reports with real-time, actionable insights into how your teams are performing. Having data to support your retrospectives is an invaluable way for agile teams to improve.
+Backlog management and grooming
+A product backlog is a prioritized list of work for the development team to do that comes from product roadmap and its requirements. The development team pulls work from the product backlog for each sprint.
+Grooming and maintaining your backlog helps teams achieve their long-term goals by continually adding and removing items based on the team's long-term capacity and changing business objectives. Jira Software lets teams groom huge backlogs with multi-select ranking and order user stories and bugs by dragging and dropping issues. You can also filter with Jira Software's flexible search to find a particular user story or bug.
+Learn scrum with Jira Software
+A step-by-step guide on how to drive a scrum project, prioritize and organize your backlog into sprints, run the scrum ceremonies and more, all in Jira.Read this tutorial
+Scrum - a brief introduction to scrum methodology
+In scrum, a product is built in a series of fixed-length iterations called sprints. Learn how the scrum methodology can impact the software development.Read this article

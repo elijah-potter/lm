@@ -1,0 +1,116 @@
+Talking about goodness is easy; achieving it
+is difficult. Chinese
+fit to data provides estimates for parameters (and an error
+matrix). Inserting the estimates into the likelihood function
+yields a distribution that we hope will model the data reasonably
+well. How well the data are modeled by that distribution is known
+as goodness-of-fit. In general, extra work is needed to
+obtain a quantitative measure of the goodness-of-fit, and there
+is no universally accepted mathematical definition which is valid
+in all cases.
+Data-Points with Gaussian
+If the data are represented by discrete
+points with Gaussian uncertainties, the chi-square test can be
+used to measure how well the fit matches the data.
+If the data are represented by (integer)
+numbers of events in discrete bins, Poisson
+statistics rule. Pearson's chi-square test and the
+likelihood-ratio test are two well established methods of dealing
+with this case. These tests work best when the expected number of
+events in a bin (µ) is large:
+CDF note 5718 shows what
+happens at small µ.
+- Pearson's Chi-Square Test:
+Here we attach Pearson's name to the
+chi-square to distinguish it from the case with Gaussian
+errors (not a universal practice). The following references
+emphasize the Poisson case:
+- Likelihood Ratio of the Poisson
+The logarithm of the Poisson likelihood
+can be taken as the sum of contributions of the form
+n ln µ -
+represents the observed number of events in a bin and
+µ is the predicted number for that bin (see
+Data Analysis §6.10). Considered as a function of
+µ, the log likelihood is maximized when
+µ=n, achieving the value
+loglikelihood(n;n) = n ln
+n - nTaking the
+difference, the log likelihood ratio is defined as
+= n ln(µ/n) + n -
+2[(µ - n) + n
+chi-square) as µ becomes large, and has been
+suggested as an alternative to Pearson's chi-square in
+testing for goodness-of-fit. In this formula, the case
+n=0 uses 0ln(0)=0.
+- This test is mentioned in the
+Particle Data Group's
+Statistics (2004) Review in
+§32.1.2 (the method of maximum likelihood) and
+§32.2.2 (goodness-of-fit tests).
+- A more complete discussion is
+presented in S. Baker and R. D. Cousins, Nucl. Instrum.
+Methods 221, 437 (1984).
+- Kolmogorov-Smirnov Test:
+The Kolmogorov-Smirnov test is designed
+for the case of a one-dimensional continuous
+- Bin the Data
+- After performing an unbinned maximum
+likelihood fit, for example, to obtain goodness-of-fit one can
+simply bin the data and apply the methods designed for Poisson
+distributed data. This may be necessary in the case of multiple
+dimensions, where K-S is not available. However, binning the
+data is not a trivial panacea: On one hand, binning too
+coarsely destroys valuable information. On the other hand,
+binning too finely leads to difficulties in the interpretation
+of the goodness-of-fit statistic as its distribution deviates
+further from the asymptotic chi-square distribution. In
+general, one will need to merge bins, or calculate (often using
+Monte Carlo methods) the non-asymptotic behavior for the bins
+with small contents.
+Warnings, Fallacies, Traps,
+If you think it's simple, then you have
+misunderstood the problem. Bjarne Stroustrup
+- A bad fit does not necessarily produce
+Goodness-of-fit and parameter estimation
+are, in general, separate issues. Specifically:
+- Not every test statistic mentioned
+above is recommended for estimating parameters.
+- Unbinned maximum likelihood fits,
+while recommended wholeheartedly for parameter estimation,
+do not in general provide goodness-of-fit information.
+CDF note 5639 explains in detail why this is so.
+- The problems in the Poisson tests
+that show up at small µ (
+CDF note 5718) are specific to issues of goodness-of-fit: the
+loglikelihoodratio, in particular, is believed to
+be safe to use for parameter estimation at small
+µ. In fact, minimizing the
+loglikelihoodratio to obtain parameter estimates
+is mathematically equivalent to the maximum-likelihood
+method as normally applied to Poisson data.
+- The chi-square test does not check that
+the uncertainties are Gaussian; it assumes that they are
+Gaussian. Similarly, the Poisson-related tests assume the data
+is Poisson-distributed. If these assumptions are significantly
+violated, the tests may not be valid, and the tests won't
+necessarily tell you when they are not valid.
+- In some cases, having computed the
+goodness-of-fit statistic, one may need to do Monte Carlo work
+to calculate its significance (e.g. to estimate the probability
+that a random data sample selected from the distribution in
+question will produce a goodness-of-fit statistic this large or
+- Rather than quoting a single number
+representing the overall goodness-of-fit, it may be more useful
+to divide the data into regions (e.g. signal-region,
+mass-sideband region, negative-lifetime region, ...) and
+compute separate goodness-of-fit statistics for each region.
+Otherwise, if one region dominates the overall goodness-of-fit,
+it may hide problems present in other regions.
+- Having the goodness-of-fit come out too
+good (e.g. you ran 1000 toy Monte Carlo fits and none of them
+were as good as your fit to the real data) usually means that
+something is wrong.
+- Computing goodness-of-fit does not
+substitute for plotting the data, and vice versa.
+Last modified: April 1, 2004

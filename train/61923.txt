@@ -1,0 +1,14 @@
+23 January 2018
+- Last edited 23 January 2018
+Hi, Chris! I think you wish to make us think about using Electromagnetic Induction as a mirror, to reflect a wave such that it adds with the wave that produced it.
+However, I don't quite understand how to practically apply the relationship between the length of the wire, wavelength, frequency and DTC. I'll keep thinking and reading.
+There is a big question in my head: why Akula used 0.025% DTC with frequency 256 Hz for the length of the wire he is using. How did he come to these numbers?
+Hey CD - Coils, Currents, Magnetic Fields and Time are all related - This is Electromagnetic Induction.
+One Quarter Wavelength, λ * 0.25, or 25% Duty Cycle of the Current Wave Form is Peak Magnetic Field.
+Three Quarter's of the Wavelength is also Peak Magnetic Field, but this is irrelevant, its not used.
+In a DC Circuit, the Current in a Coil takes time to reach its maximum, this is normally 5 Time Constants, at this point the Magnetic Field is also at Maximum for the Voltage applied.
+Keeping the Voltage applied any longer than this is not bennificial if one is only requiring the Magnetic Field.
+The wave length and length of the wire have a relationship, now I am still learning so I encourage you to cross reference and check what I say, but, Energy, if impeded by a Miss-Matched wavelength, will reflect and as a result less power will be available on the output:
+The above videos are meant to tie in with the Picture I posted:
+I know your calculations resulted with a figure of: 0.025, there may be a harmonic used at this frequency, but the concepts apply. Remember, Akula was a Radio Electronics man, I think something like 9 years in the Radio Electronics arena. So he knew all about this stuff.
+Others, Floyd Sweet and Don Smith, no doubt more, knew about this also.

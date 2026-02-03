@@ -1,0 +1,14 @@
+Curl/Bash code for DELETE Request ExampleThis Curl/Bash code snippet was generated automatically for the DELETE Request example.
+<< Back to the DELETE Request example
+What is HTTP?
+HTTP (Hypertext Transfer Protocol) is a network communication protocol widely used to transfer data between an HTTP client (browser or mobile application) and the server. The HTTP protocol assumes the use of a client-server architecture for data transfer. The client application sends the request to the server, and the server processes the client's request and sends a response back to the client. Some server responses may contain data in the body of the server response (for example, an HTML page), and some may only have headers and an empty body. Each HTTP message consists of a request string, HTTP headers, and a message body.
+What is the HTTP DELETE request method?
+HTTP DELETE request allow the deletion of a resource from the server. The HTTP DELETE method should not contain a body, as sending a body in a DELETE request may cause some servers to reject it. The DELETE method is defined as idempotent, which means that multiple, identical DELETE requests should have the same impact on the server as a single request.
+What are the common HTTP DELETE response codes?
+HTTP response status codes indicate the status of a completed request. When the server has successfully processed a DELETE request, it can respond with several response status codes:
+- 200 (OK) - the action completed successfully. The server response may have a message body.
+- 204 (No Content) - the action completed successfully. The server response does not have a message body.
+- 202 (Accepted) - the action is likely to be successful but not yet complete.
+HTTP DELETE Request Example
+The following is an example of sending an HTTP DELETE request to a ReqBin echo URL:
+The server's response to our HTTP DELETE request:

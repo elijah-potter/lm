@@ -1,0 +1,71 @@
+Solve Quadratic Equation
+Learn about solving quadratic equations
+by factoring methods.
+A quadratic equation is a polynomial equation of degree 2. It can be simply represented
+in the form:
+ax2 + bx + c = 0
+where 'x' is the constant, a, b, c are the constant co efficient (which are not equal to 0).
+Method for Solving Quadratic Equations by FactoringBack to Top
+Here is the method to solving quadratic equations by factoring -
+In this method, we use the basic idea of factoring the co efficient 'b' in the manner
+shown: Know More About What is an Acute Angle
+b = a x c
+'b' should be broken in such a way that its original value turns out to b equal to the
+product of 'a' and 'c'.
+Let us take a general description of the method by solving the generalized equation.
+Assumption: Let 'p' and 'q' be the constants such that
+b = p + q
+Also we know the basic requirement for the application of this method, which is
+b = a x c
+Now to proceed further, we break 'b' such that it fol ows the above mentioned two
+conditions. Taking the general equation now :
+ax2 + bx + c = 0
+ax2 + px + qx +c = 0 (mentioned above: b = p+q)
+Now since we have also fol owed the condition b = a x c Learn More On :- Acute Angle Definition
+So 'a' tuns out to be a factor of 'p' and 'q' turns out to be a factor of 'c' also. Moving
+forward and taking the common terms out we get :
+x(x + p) + q(x + p) = 0
+(x + p) x (x + q) = 0
+Where 'p' and 'q' are the factors of the equation.
+To make the understanding further clear lets take an example
+How to Solve Quadratic Equations by Factoring
+Below is the example how to solve quadratic equations by factoring method
+Let us consider the following quadratic equation :
+x2 + x + 6 = 0
+here a = 1, b = 1, c = 6.
+Now we break 'b = 1' such that the who parts turn out to be the product of 'a x c' i.e.
+equal to 6.
+x2 + 3x - 2x + 6 = 0 ( both of our necessary conditions are fulfilled here).
+Systems Of Equations Solver
+Learn about systems of equations
+concept. A "system" of equations is a set or group
+of equations. Linear equations are easy than non-linear equations, and the simplest
+linear system is one with two equations and two variables.
+System of equations is a col ection of two or additional equations with a same set of
+unknowns. In solving a system of equations, we need to find values for every of the
+unknowns that will declare every equation in the system. The system of equation can
+be linear or non-linear. The problem can be spoken in sequence of actions form or the
+problem can be expressed in algebraic form.
+Types of Systems of Equations
+Elimination :- Elimination technique is considered as one of the algebraic method for
+solving systems. In elimination method an operation on 1 equation is performed so that
+cancelling one variable and finding the other variable.
+Substitution :- In substitution method the algebraic expression of one of the variable is
+substituted in another equation at the place of the respective variable and then the
+variable is solved. Again by substituting in any of the equation the value of the second
+variable is also found.
+Linear equation :- An algebraic expression which relate two variables and whose graph
+is a line.
+Matrix :- A rectangular array of number written in brackets and used to find solutions for
+complex systems of equations.
+Consistent System :- In this way we have the set of equations whole solutions set is
+represented by only one ordered pair.
+Solving Systems of Equations
+Below are the examples on solving systems of equations
+Given :- x + 27 = 71
+Step 1: x + 27 - 27 = 71 - 21 (Subtract 27 on both the sides) Read More On :- Define Acute Angle
+Step 2: x = 50 (So the answer is 50)
+a + 15 = 75.
+Step 1: We need to find the value of a.
+Step 2: Subtract 15 on both the sides.
+Step 3: So the value of a is 60.

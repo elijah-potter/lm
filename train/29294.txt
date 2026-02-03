@@ -1,0 +1,20 @@
+MySQL includes character set support that enables you to store
+data using a variety of character sets and perform comparisons
+according to a variety of collations. You can specify character
+sets at the server, database, table, and column level. MySQL
+supports the use of character sets for the
+InnoDB storage engines.
+This chapter discusses the following topics:
+What are character sets and collations?
+The multiple-level default system for character set assignment.
+Syntax for specifying character sets and collations.
+Affected functions and operations.
+The character sets and collations that are available, with notes.
+Character set issues affect not only data storage, but also
+communication between client programs and the MySQL server. If you
+want the client program to communicate with the server using a
+character set different from the default, you'll need to indicate
+which one. For example, to use the
+character set, issue this statement after connecting to the
+SET NAMES 'utf8';
+For more information about configuring character sets for application use and character set-related issues in client/server communication, see Section 10.1.5, “Configuring the Character Set and Collation for Applications”, and Section 10.1.4, “Connection Character Sets and Collations”.

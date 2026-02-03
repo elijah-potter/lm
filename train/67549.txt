@@ -1,0 +1,13 @@
+Ecometrica Forests 2020 – The Hectares Indicator
+The Hectares Indicator is a toolkit developed by Ecometrica for the UK Government, with assistance from the European Space Agency, to assess the effectiveness of interventions aimed at avoiding forest loss and promoting climate-smart land use. The toolkit is designed to answer the question: How much deforestation are we avoiding through our project’s interventions?
+The Hectares Indicator works by:
+- Defining the extent of forest at risk within the impact area
+- Setting a reference level using risk mapping or another approach
+- Measuring the actual forest loss within the impact area
+- Calculating the avoided loss and assessing project contribution
+The core of the Hectares Indicator toolkit is the establishment of a reference level from which users can estimate expected forest loss within a specific area. The toolkit recommends creating a risk map by considering factors that increase risk of forest loss in four categories:
+- forest accessibility
+- potential for cultivation
+- extractable value
+- protection status
+Users can work with these categories as a guide for identifying the risk parameters that are relevant to their area of interest, or they can produce a risk map (or other reference level map) using another appropriate method. Once this risk or reference level map has been produced, users upload the map along with actual forest loss data to their Mapping Platform application where they can adjust a pre-written query that automatically calculates and produces summary results for expected forest loss, actual forest loss and avoided deforestation. After the first Hectares Indicator results are produced, the toolkit is intended to be implemented as a light-touch, cost effective and quick annual reporting tool.

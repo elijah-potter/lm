@@ -1,0 +1,25 @@
+Calling Convention – Part II (__stdcall)
+Make sure you have read “Calling Convention – Part I” of this article.
+Standard calling convention ( __stdcall )
+This convention is usually used to call Win32 API functions.
+WINAPI is nothing but another name for
+#define WINAPI __stdcall
+We can explicitly declare a function to use the
+int __stdcall Add( int nValue1, int nValue2 );
+The main characteristics of
+__stdcall calling convention are:
+- Arguments are passed from right to left, and placed on the stack.
+- Stack cleanup is performed by the called function.
+Function Name Decoration For stdcall
+Function name is decorated by prefixing an underscore character ‘_’ and postfixing a ‘@’ character and number of bytes of stack space required by the arguments at end of the function name.
+_Add@8 //underscore before function name & @ and number of bytes space required on stack
+Now, take a look at an example of a __stdcall call:
+; // push arguments to the stack, from right to left push 3 push 2 ; // call the function call _Add@8 ; // copy the return value from EAX to a local variable (int nResult) mov DWORD PTR [nResult], eax
+The called function is shown below:
+; // function prolog push ebp mov ebp, esp push ebx push esi push edi ; // return nValue1 + nValue2; mov eax, DWORD PTR [nValue1] add eax, DWORD PTR [nValue2] ; // function epilog pop ebx pop esi pop edi mov esp, ebp pop ebp ;//Stack cleanup and return ret 8
+__stdcall is default calling convention for Win32 API’s.
+__stdcall calling convention is that it creates smaller executables than
+__cdecl, in which the code for stack cleanup will be cleaned by called function.
+Disadvantage of __stdcall calling convention is that functions with variable number of arguments (like
+printf()) can’t use __stdcall. Instead they must use
+__cdecl, because it is the only calling convention who knows the number of arguments in each function call; therefore only the caller can perform the stack cleanup.

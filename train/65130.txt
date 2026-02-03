@@ -1,0 +1,9 @@
+Answer : A
+a. Dangling pointer iii. Object identifier
+b. Page fault iv. Pointer-swizzling
+c. List representation ii. Variable-length records
+d. Toss-immediate i. Buffer replacement policy
+Dangling pointers arise during object destruction, when an object that has an incoming reference is deleted or deallocated, without modifying the value of the pointer, so that the pointer still points to the memory location of the deallocated memory.
+Pointer swizzling is converting pointers to handles when writing from memory to disk, and also converting handles to (different) pointers when reading the disk data back into memory.Refer this
+A page fault is a type of interrupt / trap, raised by computer hardware when a running program accesses a memory page that is mapped into the virtual address space, but not actually loaded into main memory.
+Connection of Toss-immediate with Buffer replacement policy is here

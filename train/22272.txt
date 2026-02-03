@@ -1,0 +1,17 @@
+MIT Open Sources Computer Vision Model that Teaches Itself Object Detection in 45 Minutes (with GitHub codes)
+- MIT’s researchers have designed a computer vision model that can detect objects and manipulate them by itself
+- The technique used in this system falls under the self-supervised learning category, an upcoming learning approach
+- A PyTorch implementation of the technique has been open sourced on GitHub, and a research paper is available as well for your perusal
+Computer Vision and deep learning techniques have so far produced incredible results, like sensing people and estimating their pose through walls, flipping burgers, etc. But there have been two primary caveats with them:
+- These models need to be trained on a huge amount of data to understand the environment around them
+- They are very narrow in the sense that they can just do the one task they were designed for, and cannot manipulate objects or their learnings
+So MIT’s researchers decided to work on a more generalized and less data greedy approach for solving this challenge. Their system, called Dense Object Nets (or DON, a more catchy name) makes robots capable of inspecting, analyzing, and manipulating objects they have not seen previously. Can you guess which learning technique is behind this system? It’s self-supervised learning!
+Before we go further and understand the technique, watch the below video to see a robot integrated with this model in action:
+DON has been trained to generate descriptions of objects, but not in a way you would initially think. It generates these descriptions in the form of coordinates. Instead of feeding the system tons of images of objects from different angles, the robot is left unsupervised in a room and it automatically locates, analyzes and trains itself to manipulate these objects inside an hour (45 minutes on average!). Note here that the system does rely on a RGB-D sensor to detect objects in a room.
+You can even get started with implementing this technique on your own! There is a PyTorch implementation available on GitHub which has enough documentation, and even a tutorial, to get you on your way.
+If you’re interested in reading about the approach and technique in more detail, the researchers have published their study in the form of a research paper. They will be presenting their findings at the Robot Learning conference in Zurich next month.
+Our take on this
+That research paper is a great read to start this week. Self-supervised learning is definitely garnering attention in recent months, with the most popular use case coming from Google’s CV model that tracks objects in videos. We’ve seen plenty of supervised and unsupervised learning, it might be time to accept self-supervised as a part of that classification.
+I’ll certainly be trying out the PyTorch implementation this week and I encourage you to do the same. I look forward to our community participating in such studies and advancing research.
+Subscribe to AVBytes here to get regular data science, machine learning and AI updates in your inbox!
+Leave a Reply Your email address will not be published. Required fields are marked *

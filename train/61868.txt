@@ -1,0 +1,10 @@
+About Schistosoma bovis
+The trematode Schistosoma bovis is a parasite of sheep, cattle and goats in North Africa, Mediterranean Europe and the Middle East. It exists in the same geographical areas as Schistosoma haematobium, with which it can hybridise. S. bovis-S. haematobium hybrids can infect humans, and have been reported in West African countries, namely Senegal, and during a 2013 outbreak on Corsica.
+Genome Assembly & Annotation
+The assembly was created using a combination of Illumina reads and PacBio long reads, as described by Oey et al. (2019).
+The annotation was prepared using MAKER with a Schistosoma specific Augustus model, S. haematobium ESTs, and protein alignments of SwissProt entries from several fluke species and C. elegans.
+- Oey H, Zakrzewski M, Gravermann K, Young ND, Korhonen PK, Gobert GN, Nawaratna S, Hasan S, Martínez DM, You H, Lavin M, Jones MK, Ragan MA, Stoye J, Oleaga A, Emery AM, Webster BL, Rollinson D, Gasser RB, McManus DP, Krause L. Whole-genome sequence of the bovine blood fluke Schistosoma bovis supports interspecific hybridization with S. haematobium. PLoS Pathog, 2019;15(1):e1007513
+|Data Source||University of Queensland|
+|Non coding genes||25|
+|Small non coding genes||25|
+This widget has been derived from the assembly-stats code developed by the Lepbase project at the University of Edinburgh

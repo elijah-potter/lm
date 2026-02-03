@@ -1,0 +1,29 @@
+Ultimate Guide to PCB trace | Printed Circuit Boards Canada
+What is PCB Trace?
+A PCB trace is a copper conductor on the PCB that conducts signals on the surface of the PCB. It is the flat, narrow portion of the copper foil that is left behind after etching. The electricity that flows through the copper traces generates a significant amount of heat. Correctly calibrated PCB traces width and thickness help minimize the buildup of heat in your board.PCB trace is a vital part of almost every Printed Circuit Board. If PCB trace is not identified or calculated accurately, fixing it can be time-consuming and sometimes can cause errors in the system.
+Printed Circuit Boards are equipped with numerous components and knowing exactly the required parts for repairing or assembling a Printed Circuit Board and kind of functions and formulas is very important.
+What is PCB Trace Width and PCB thickness?
+PCB Trace Width is the horizontal measurement of a trace and PCB thickness is a vertical dimension of the trace.
+The correctly measured PCB traces width and thickness results in the reduced accumulation of heat on your board. Wider trace has lower current resistance and less accumulated heat. The PCBs development starts with a default trace width which may or may not be suitable for the required PCB. You need to decide the trace width with regard to the current carrying capacity of the trace. Consider the below factors while determining the right trace width:
+- Copper Layer Thickness
+- Cross-sectional area of the trace
+- Position of the trace
+- PCB Trace Resistance
+Every material has some resistance. During the PCB Designing stage, it’s important to calculate and analyze the PCB traces resistance. Copper is one of the widely used components in Printed Circuit Boards and it comes with various compositions and properties. Inaccurate PCB traces resistance may result in numerous design and implementation issues which increases with the increased circuit complexity.
+PCB Trace Resistance Calculation
+Calculating the PCB trace resistance is quite simple, just like using the ohm’s law with the known parameters. Majority of PCB Design suits integrate a trace resistance calculator which can predict the resistance of final copper trace on the boards with the help of manufacturing profiles. The PCB Traces Resistance Calculator uses a standard formula for calculating the opposition.
+L = Length
+α= temperature coefficient of the copper
+p=resistivity of the material
+R = PCB trace Resistance
+This calculation can only conclude a close enough approximate value. The physical cost after production will fall nearby the calculated range.
+What is a PCB Trace Width Calculator?
+The PCB trace width is very important when it comes to PCB designing. PCB Designers need to assign a correct width in order to save it from damages because of increased temperature determined by the current carrying capacity of Printed Circuit Boards. The PCB traces are designed to manage a maximum current load before they fail. When a higher amount of current flows through a path, it produces heat. After some time if the current load surpasses the maximum limit , the trace will simply burn out and damage the PCBs lamination, which may also result in permanent damage.
+Features of Trace Width Calculator
+Trace width calculator can be used to determine the trace width on the basis of ampere capacity. You are required to provide the design specifications in the trace width calculator including the details like maximum current in amperage that will follow in the trace, total length if the path, increased temperature due to the trail ‘s resistance,
+After providing the specifications, the calculator will generate a calculated width of the trace. It will provide you the minimum width that needs to be matched with the design specifications. The calculated width will permit the current to pass safely without creating any damage in the PCB. The internal layers of the trace width are more extensive than the eternal layers as they produce more heat. And the outer layers are not prone to much heat because of convection.
+Keeping safety reasons in mind, we advise you to use internal traces width for the entire PCB.
+PCB Trace width Formula
+To calculate the trace width of your PCB, use the below formula for calculating the allowable current passing through a trace, as defined under IPC 2221.
+I stands for current and is taken as a constant. ΔT refers to the change in temperature, and A represents the cross-sectional area of the trace.
+PCB Crimp Circuits is one of the renowned PCB manufacturers in Canada with an experience of more than two decades in the industry. Our team has solid hands-on expertise in building nearly any PCB that comes their way. Feel free to contact us to share your requirements.

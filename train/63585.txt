@@ -1,0 +1,20 @@
+A MULTIPURPOSE TOOL FOR LEARNING ABOUT SOFTWARE AND HARDWARE.
+uStepper serves as a bridge between the software and hardware domain,
+and enable students to apply their theoretical knowledge in practical use.
+Made by students for students
+uStepper is made by students for students, the basis of the idea was to make a device to account for lost steps in stepper motors, but has evolved into so much more
+The Ustepper is a compact microcontroller with Arduino-compatibility, a stepper driver, encoder and voltage regulator. All of which enables applications such as robotic arms, linear actuators, PID feedback, but can also be used for introductory projects such as using a stepper motor, or applications in home automation and so much more. All of which can help the student gain efficiency in the hardware and software domain, without being bottle-necked by the technology in hand.
+The flexibility of the uStepper with integrated I/O pins and its Arduino compatibility gives a wide range of possibilities of applications and uses within the education system, where you can go from theoretical knowledge of the integrated components, to practical use, and learn about the possibilities of hardware and software, along with their limitations, and how each domain can compliment the other.
+We are also sure that students would find inspiration by working with a kickstater-funded project, developed by students just as them self, and would potentially help them realize their own potential and possibilities of developing their own products.
+Previous experience with uStepper in education
+uStepper is already being used in universities across the world, we had the pleasure of supplying Aalborg University with some of our devices, which was used in their course Electronics and IT. We are very proud to have our products in use at Aalborg University, which ranked number 4 in the world in the field of engineering. We hope that our product can also add value to your courses. We have taken the liberty to make a small list of possible ways to implement uStepper in your curriculum.
+- – The workings of a Stepper motor
+– PID (3d printer position feedback)
+– Stepper motors’ limitations and possibilities
+- – How to maximise your hardwares potential with software.
+- – Microstepping, what is it? And how does it work?
+- – An introduction to Electrical engineering.
+– An introduction to the Arduino language.
+– Understanding Circuit boards
+– Constructing Robots
+Below we’ve shown a chart of the specifications of the uStepper, along with a link to additional material, links and documentation, that could aid you and your students to understand and convert your knowledge in to practical examples.

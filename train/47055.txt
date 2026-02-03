@@ -1,0 +1,22 @@
+# Beam Elements
+The beam element stiffness is
+These are modified for a shear beam as follows
+The mass matrix is
+And the geometric stiffness is
+# Non-symmetric Beam Sections
+In a beam with a symmetric section the bending properties depend only on
+When the section is not symmetric and is loaded in the y or z
+direction there is a component of deflection orthogonal to the loading.
+This is because the bending properties depend on
+By rotating the section to principal axes this cross term can be omitted
+and if the beam is loaded in the
+For a beam with a non-symmetric section the user must consider if the beam is restrained (so that deflections are constrained to be in the direction of the loading) or if it will act in isolation (resulting in deflections orthogonal to the loading).
+If the beam is to act as constrained the user should use the local
+option for the bending axes. In this case the
+If the beam is to act in isolation the user should use the principal option for the bending axes. In this case the stiffness matrix for the element is calculated using the principal second moments of area and is then rotated into the element local axis system.
+The effect of shear is also a tensor quantity involving the inverse of
+the shear are factor
+Where the user has specified section modifiers these are specified in
+All catalogue and standard sections except angles are symmetric.
+Explicit sections are assumed to be defined such that the principal and
+local axes coincide so there is no

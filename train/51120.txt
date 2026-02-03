@@ -1,0 +1,181 @@
+Does your head start to hurt when some technogeek comes around to fix your
+computer and starts rambling off technical terms that make your ears bleed?
+In this article, I'll explain some of the basic operations of computers, in
+a way, I hope, will make the concepts easier to understand than through a mouthful
+The web is full of wonderful places to learn more about technical terminology.
+My favorite, quick site to get an answer is www.webopedia.com.
+If you ever are hit with a technical term that you don't understand, go to Webopedia,
+type in the term and you'll get details of it's meaning.
+If you look up RAM at Webopedia, you'll find the information below.
+Now wait! Before you read this, remember this is the techno-babble explanation!
+It's a good explanation, if you can understand it. But if you have trouble
+understanding what the explanation below means, don't run away yet!
+RAM = Pronounced ramm, acronym for random access memory, a type of computer
+memory that can be accessed randomly; that is, any byte of memory can be
+accessed without touching the preceding bytes. RAM is the most common type
+of memory found in computers and other devices, such as printers.
+There are two basic types of RAM:
+dynamic RAM (DRAM)
+static RAM (SRAM)
+The two types differ in the technology they use to hold data, dynamic RAM
+being the more common type. Dynamic RAM needs to be refreshed thousands
+of times per second. Static RAM does not need to be refreshed, which makes
+it faster; but it is also more expensive than dynamic RAM. Both types of
+RAM are volatile, meaning that they lose their contents when the power is
+In common usage, the term RAM is synonymous with main memory, the memory
+available to programs. For example, a computer with 8M RAM has approximately
+8 million bytes of memory that programs can use. In contrast, ROM (read-only
+memory) refers to special memory used to store programs that boot the computer
+and perform diagnostics. Most personal computers have a small amount of
+ROM (a few thousand bytes). In fact, both types of memory (ROM and RAM)
+allow random access. To be precise, therefore, RAM should be referred to
+as read/write RAM and ROM as read-only RAM.
+Ok, so what does all that gibberish mean! Let me give you a comparison explanation
+that I've used many times over the years to explain what all that means.
+If someone asks you how much space you have on your computer, they're asking
+you how much room you have to store things on your computerthe size of
+your hard drive. Time to visualize. Think of your computer as your dining room.
+In there you have a large table. You also have a cabinet. Think of the cabinet
+as the hard drive on your computer. In it, you can stuff things like a bunch
+of software boxes, photo albums, tapes with music, or folders with letters.
+Your hard drive also can contain these types of things. Both can store your
+When the cabinet gets full, it's time to buy a larger cabinet or get a second
+one. If you can't afford to buy a new one, it's time to sit down and clean out
+that cabinet. Take out the old junk that you no longer need. You can either
+put that stuff in a box to shove in the basement, in case you may need it again
+in the future. Or you can toss it in the trash. And if you take the time to
+organize that cabinet, you'll discover you can find stuff in there faster.
+The same is true with your computer. If you realize you're running low on hard
+drive space and you can't install more programs, it's time to start cleaning
+out the old junk to make more room. Copy old files onto floppy disks or burn
+onto CDs (if you have a CD burner) so you can store the files away in case you
+need them later. Or you can delete files you no longer need.
+However, don't delete files unless you're sure you know what they are!
+I can't tell you how many computers I've had to put back together because some
+genius friend decided to make room on their system and started just hitting
+delete on all the files he didn't recognize! <sigh> If you think you
+don't need the file, rather than deleting, move it into some holding folder
+and wait to see if moving the file messes up anything. If you get an error that
+the file is missing and needed, you can always move the file back where it belongs.
+You can also remove old software programs you don't use anymore. But don't
+just go into the folder and hit delete! Click Start/Settings and go to
+the Control Panel. There you'll find the Add/Remove icon. Open
+that icon and look for the program(s) you want to remove. From that dialog,
+you can properly uninstall programs you no longer need. This helps remove
+the extra system files you wouldn't be removing if you just ripped out the program's
+folder. Plus, removing the program through this dialog or through the programs
+official uninstall icon (if it has one) will help the system entries in your
+computer be removed and/or updated. This will remove all references to the program,
+so you won't get errors because your computer starts looking for a program that
+it thinks is still installed.
+If someone asks you how much memory your computer has, they're not talking
+about hard drive space. They're asking you how much RAM your computer
+has. Break out those visualization skills again and this time we'll associate
+the Random Access Memory (RAM) in your computer with your dining room table.
+You sit down at your dining room table, break out paper and pen because you're
+going to write a letter or work on some project. You spread out your papers.
+Depending on how difficult the project is, you may need a lot of space on that
+table to organize all the tools you need to get the job done.
+Just as with your computer, when you want to write a letter or work on some
+project, you need to open programs and spread them out within your computer's
+memoryit's RAM. If you have a simple note to write, you might use a little
+program like Notepad. If it's a more involved project, maybe you'll open Word
+or some special stationary program. The bigger the program, the more RAM will
+be needed and subsequently used.
+If you have a large dining room table, just like a lot of RAM, you'll find
+you don't have much difficulty getting the job done because you have lots of
+room on that table to work. Just as your computer has lots of RAM to allow programs
+to work quickly.
+Let's assume that while you're working on that project you have on the table,
+you realize you need to draw a few illustrations to go with the text portion
+you were writing. So you leave your project where it is and you move to the
+other side of the table and bring out some colored pencils and big sheets of
+paper. On your computer, you might leave Word open with your writing project,
+which is still in memory (RAM), and you open Power Point to put together some
+quick drawings. Just as your table is getting more crowded, there's now also
+less available RAM on your computer because much of it is now being taken up
+by the programs you now have open.
+Say you're tired of working on your project and decide to take a break. But
+you don't want to take the time to put away the other projects, because you'll
+need them again, soon. So you leave everything as it is on your table and pull
+out a puzzle to work on for a little mental relaxation. Now your table is really
+getting short of space and it's a bit difficult to get the puzzle spread out
+properly. Just as the memory on your computer would now get a little slow if
+you were to open a game program while you still have the other programs open.
+It might even freeze up or crash if you continue to push it to it's limits!
+Suddenly your child runs in with his homework and asks for help. There's very
+little room left on the table in which to work. It's going to take time to shove
+all those other papers over to make room so you and your child will have room
+to sit down and work. In the computer scenario, you have Word and PowerPoint
+open, you just opened a game and now you realize you also have to open your
+email program to send a quick note. But your computer is now working slowly
+or stalls. Your computer is having difficulty getting itself organized to work
+in the little amount of space that's now available, just as you and your child
+are now having difficulty making room within the little free space now available
+on that table.
+If another project comes up, you'll realize you're hitting the limits of what
+your table can handle. Just as your computer can run out of RAM if you have
+too many programs open. You may think you don't have much open, but just opening
+Word takes up some space. That screen saver you have sitting in the background
+just waiting to run when you leave your computer is also taking up resources.
+Not much yet, because it's not running, but it's a resident program,
+meaning it's open and waiting in the background. It is taking up some
+RAM. So are all those other items sitting down there waiting in your SysTray.
+Maybe you're connected to a network; you have your Internet connection open;
+or you have a fancy keyboard that uses special keyboard drivers that are also
+waiting. All those waiting programs are taking up RAM.
+You can turn off some of those extra programs by right clicking them
+and investigating their purpose. Closing them will give you a little more
+room. However, if you need a lot more room, you'll have to close some
+of the big programs that are still open. Just as you'll have to put some of
+those projects, that are taking up all that space on your table, back into the
+cabinet. However, just as you can add an extra leaf into your dining room table
+to give you more room, you can go out and purchase more RAM chips to install
+in your computer to give you more space in which to work within your computer,
+as well as allow the programs to run faster.
+Clearing Off the Table
+One thing you have to realize when you're doing this comparison, is that although
+you can clear off your dining room table completely by removing everything on
+it; when it comes to computers, just closing a program isn't always enough to
+make it go away. When you open a computer program, there are many application
+system files that go into memory (RAM) so that they're waiting and available
+for you. As with Word, you have the spell checker, graphics libraries, printer
+drivers, and so on, that come to attention when they see an associated program
+being opened. They will start taking up space in RAM waiting for you to call
+on them. Some of these tools only go into memory the first time you use them,
+but then many of them will stay in memory waiting for you to ask for
+their help again. When you close a program, all those tools don't always go
+away. Some of them kinda get stuck in your memory. Maybe the programmers didn't
+remember to free up the memory properly. Maybe the operating system forgot they
+were hiding out there. So to really clear off your computer's table (its RAM),
+you'll need to close Windows. This action will force any excess tools,
+that may still be hanging around, to go home.
+Another issue that you should be aware of, which is related to the Clearing
+off the Table scenario above, is that it's common that your computer can
+experience an afternoon drag on it's system. How many times have you
+noticed that your computer seems to slow down and/or start freezing or acting
+wacky late in the day? This is caused because of the all those extra tools that
+have not been removed when program close are starting to accumulate.
+You enter the office in the morning, turn on your computer and it's working
+pretty fast. As you're working away, you open and close lots of different programs.
+Each time you open a program, files go into memory. But when you close the programs,
+those extra system files and drivers don't always go away. If you open the same
+program again, usually it'll open a new set of system files, rather than knowing
+to use the ones that are already in memory. So as the day progresses, more and
+more clutter gets into your memory, but not all comes out. These start to accumulate.
+That means that by the time the day starts rolling to a close, your computer
+can really start acting up on you.
+A great way to avoid this problem is to give your computer a lunch break, too!
+When you come back from lunch, restart your computer. This will help force the
+morning's accumulation out of memory and give you a refreshed start on the afternoon.
+Now granted, newer operating systems are better at reallocating memory, meaning
+they're better at forcing those tools to go home and free up that used memory
+when programs close. And with reduced costs of RAM, computers have a lot more
+RAM than they used to have. But then again, the fancier programs today also
+take up more memory to run. If you have a good system, there may be no need
+to shut down the system during the day to help clear it. But if it's not the
+greatest system and you do notice lags after using the system for several hours,
+then a way around the problem is to give your PC a little breather by restarting
+As I love to say, "when in doubt, reboot!"
+To learn more about things you can do to improve how efficiently your computer
+works and to help solve some computer problems, check out this article, too:

@@ -1,0 +1,22 @@
+Static Assertion / Compile-Time Assertion
+This page answers questions like these:
+- How to do a compile-time assertion in C++?
+- How to do a compile-time assertion in C?
+- How to do a static assertion in C++?
+- How to do a static assertion in C?
+- How to stop a C/C++ program compiling if some condition is false?
+How to do a Compile-Time / Static Assertion in C++ or C?
+** Static Assertion Macro:
+** Example Usage: STATIC_ASSERT(sizeof(int) == 4, int_is_not_size_4);
+#define STATIC_ASSERT(condition, name) typedef int name[(condition) ? 1 : -1]
+- This is the simplest and most portable solution that works on all versions of C and C++. It doesn’t rely on an ANSI features or C++-specific features.
+- The value you use for name should be a unique legal identifier. See the example in the comment above the macro.
+- When the assertion fails, you will get a message something like this:
+program.c:7: error: size of array `int_is_not_size_4' is negative.
+- Caveats: Some recent versions of C++ define static_assert() hence we suggest you use uppercase STATIC_ASSERT or come up with your own macro name.
+Difference Between char* and char  and char s[n]
+Difference Between char* s = "string"; and char s = "string";
+What is TCP Keep Alive?
+How to Use TCP Keep Alive?
+Home > C++ / C > Static Assertion / Compile-Time Assertion
+Tags: static assertion, compile-time assertion, C++, C

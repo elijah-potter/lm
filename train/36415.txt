@@ -1,0 +1,243 @@
+Basic Mathematics for Biochemists
+Published by Oxford University Press
+paperback (ISBN 0 19 850216 8) £21.99 or $34.50.
+The prices were last checked on 23rd November 2004 but may change without notice.
+The hardback edition (ISBN 0 19 850217 6) is no longer available.
+An order form can be obtained from the publisher in
+This is a new edition of the book published under the same title by Chapman and Hall in 1981.
+Two chapters (the first and the last) are completely new, and the remainder have been thoroughly
+revised to make the treatment more suitable for modern students of biochemistry.
+This book is available from
+Chapter and Section Titles
+- Basic Ideas
+- Manipulating algebraic expressions
+- Converting between fractions and decimals
+- Relating numbers to powers of ten
+- Operations that leave expressions unchanged
+- Simplifying fractions
+- Probability as a mathematical concept
+- Permutations and combinations
+- Having a rough idea of the answer
+- Appendix: notes and solutions to the problems in Box 1.1
+- The Language of Mathematics
+- Priority rules for operators
+- The summation sign
+- Constants, variables and parameters
+- Dimensional analysis
+- Plotting graphs
+- Exponents and Logarithms
+- Integer powers
+- Fractional exponents
+- Addition and subtraction of exponents
+- Common logarithms
+- Negative numbers have no logarithms
+- Natural logarithms
+- Logarithms to base 2
+- Exponential decay
+- Logarithms as a method of scaling
+- Products of equilibrium constants
+- Logarithms of dimensioned quantities?
+- Metabolic "efficiency"
+- Redox potentials
+- Standard states
+- Dependence of redox potentials on pH
+- Differential Calculus
+- Coordinate geometry
+- Slope of a curve
+- Rapid differentiation
+- Derivatives of sums and products
+- Derivative of a "function of a function"
+- Derivative of a ratio
+- Higher derivatives
+- A note on terminology
+- Points of inflection
+- Sketching curves
+- Integral Calculus
+- Increases in area
+- Definite and indefinite integrals
+- Simple integrals
+- Other common integrals
+- Integral of 1/x
+- Differential equations
+- Numerical integration: evaluating the area under a curve
+- Solving Equations
+- Linear equations in one unknown
+- Rearranging equations
+- Simultaneous linear equations
+- Quadratic equations
+- Graphical solution of equations
+- Newton’s method
+- Approximate methods
+- Partial Differentiation
+- The meaning of a partial derivative
+- Exact and inexact differentials
+- Least-squares fitting of the Michaelis–Menten equation
+- Ideas of Statistics
+- Measures of dispersion
+- The idea of a population
+- Continuous distributions
+- Thinking statistically
+- Notes and Solutions to Problems
+Errors in the book as printed
+p.6, expression after line 4, and equation following it:
+- –6ab in the numerator should be –12ab
+p. 7, first displayed expression in Section 1.3
+- The third fraction in the expression should be 3/10 (instead of 3/100)
+p.8, equation after line 5, and the next equation three lines down
+- In the first equation, (2 – 6)/(15 – 6) – (1 – 15)/(6 – 15) should be
+(2 × 6)/(15 × 6) - (1 × 15)/(6 × 15),
+i.e. four out of the five minus signs in the expression should be multiplication signs. A very similar error occurs in the next equation,
+where (2 – 2)/(15 – 2) – (1 – 5)/(6 – 5) should be
+(2 × 2)/(15 × 2) – (1 × 5)/(6 × 5)
+p. 26, answer 2
+- Delete the second
+this (at the beginning of the last line).
+- p. 28, problem 1.3(e)
+- The expression given has no rational factors; to give the solution shown on p. 201 it should be 9x2 + 12xy + 4y2.
+p. 34, Box 2.3, part B
+- The decimal point in 8.7 should be written above the line. This may be difficult to show correctly on the web
+as not all browsers understand the code, but in principle this should be correct: 8·7
+p. 37, Box 2.5: line starting with 12/2/3
+- 6/32 should be 6/3=2
+- p. 35, Box 2.4
+- Line 3 of the right-hand column should read NOT 152 = 225. Being a negative statement the form actually given is not wrong, but there is no logical reason to give it rather than any other negative statement.
+p. 49, Fig. 2.7 legend (a)
+p. 56 Problem 2.1(e)
+- See correction to solution (p. 202) below.
+p. 67, line 6 from the bottom
+- The word
+No is missing from the beginning of the line. The sentence should read
+No corresponding formula exists for calculating logarithms to any other base....
+p. 73, line 13 of 2nd paragraph
+Similarly Ka means read
+Similarly pKa means (add
+p. 77, line 2 of 2nd paragraph
+Suppose that *gkcapdeltaG0 =
+Suppose that *gkcapdeltaG01 =
+(add subscript 1)
+p. 77, last line of 2nd paragraph
+E ln K1 = K2
+E ln K1 = ln K2
+p. 78, line 4
+- The value of the Faraday constant is 96485 coulomb mol–1.
+p. 78, first displayed equation on the page
+0.77 in the middle expression. The unit written at the end of the line was intended to refer to both terms, but to be 100% clear it might be better to write "volt" after the second
+0.77 as well.
+p. 84, second displayed equation
+- This should read *gkcapdeltaE0' = *gkcapdeltaG0'/nF
+p. 87, line 1
+any product read
+a product or ratio
+p. 87, Series of equations near the bottom of the page
+- The third line should read –0.11 + 0.03pKa – 0.09pH (i.e. the second minus should be plus).
+p. 88, Fig 3.2
+- The equation in the upper text of the graph should read Eo =
++0.03 – 0.09pH instead of
+Eo = –0.03 – 0.09pH
+- p. 90, Problem 3.1(i)
+- See correction to p. 203 below.
+p. 93, line 16
+- x = –b/a should read x = –a/b
+p. 103, 4th displayed equation
+- The approximately equal sign should be an ordinary = sign.
+p. 115, 5th displayed equation
+- This is identical to the equation above it, and should be deleted.
+p. 115, last displayed equation
+- Insert = before the second pKa
+p. 117, 2nd line of 1st displayed equation
+exp before the open curly bracket.
+p. 118, Problem 4.6
+- The y in
+and y is a constant should have a tilde.
+p. 122, Example 5.1
+- The function should be y = 6x2 – 2x + 5 instead of
+y = 4x2 – 2x + 5 in order to give the integral shown.
+p. 124, line 5
+will produce in a should read:
+will produce ln a.
+p. 127, first displayed equation
+- The numerator of the second term on the right-hand side should be A2.
+p. 127, Example 5.3 line for from the end
+so P + Q read
+so P = Q (replace plus by equals).
+p. 134, Mechanism in the middle of the page
+- The second step should be shown as reversible, with a rate constant k–2 for the reverse reaction.
+p. 136, penultimate line of text
+- The first (y1 + y2)h/2 should be (y0 + y1)h/2. (The second time this expression occurs in the line it is correct).
+p. 137, penultimate equation
+- The equation should read ch2 = (y2 - 2y1 + y0)/2
+p. 138, first equation
+- The expression in square brackets at the right-hand side should be
+ax + (1/2)bx2 + (1/3)cx3, i.e. the fraction (1/2) should be moved to the other side of the + sign.
+p. 139 Problem 5.1(e)
+- The denominator of the expression to be integrated should be 2 – x (minus, not plus), to give the solution shown on p. 205.
+p. 140 Problem 5.8
+- The last symbol in the first displayed equation should be c not C. Three lines down, the L in g/L should not be italic.
+p. 163, fourth equation (expression for [G2–])
+- The coefficient 5 × 10–10 should be 2 × 10–10
+p. 165, second equation
+- Delete the superscript 2 at the end of the equation. Note.When this error was first reported on this web page the page number was wrongly given as p. 163. There is a different correction to be made on p. 163.
+p. 167, Problem 6.2
+- The symbol V1 near the end of the first line should be
+p. 167, problem 6.3(a)
+- See the correction to the solution on p. 207.
+p. 170, first equation
+- The middle expression should be R/p instead of R/Tp
+p. 171, last sentence of last complete paragraph
+if we recall the expression for the derivative of a ratio (Section 4.6) read
+if we recall the expression for the derivative of a product (Section 4.4).
+p. 185, Box 8.3, line 9
+equal to ...
+- The summation should be *gkcapsigmax not *gkcapsigman.
+p. 193, Box 8.3 continued, table in the middle of the page
+- The value of 9.64 shown in line 3 as the squared of 3.1 should be 9.91, and the sum shown below it should be 39.14.
+In consequence the value of s2 shown in the first line of text after the table should be 2.807, not 2.817. However, the value s = 1.675 is correct.
+p. 192, legend to Fig. 8.1, line 2
+superimposed on panel (c) read
+superimposed on panel (e).
+p. 192, line 6 from the bottom
+and a sample mean close to the population standard deviation read
+and a sample standard deviation close to the population standard deviation.
+p. 196, Table 8.1
+- The value in the Probability corresponding to 4 in the first column should be 0.1730, not 0.0976.
+This error affects all of the later entries in the Cumulative probability column, which should be 0.4115, 0.5918, 0.7468, 0.8598, 0.9312, 0.9709, 0.9905,
+replacing 0.3360, 0.5163 ..., and also requires correction of the text on p. 197 (see below).
+p. 197, line 2 (effect of error in Table 8.1: see above)
+This means there is chance of 1 – 0.8557, i.e. 0.1443, or about 14% of observing at least nine read
+This means there is a chance of 1 – 0.9312, i.e. 0.0688, or about 7% of observing at least nine.
+p 192, line 13
+- The end of the sentence should read
+and a sample standard deviation close to the population standard deviation.
+- p. 201, Problem 1.3(e)
+- See correction to p. 28 above.
+p. 202, Problem 2.1(e)
+- The solution should be 3.617. (The solution given would be correct for summation from i = 1 to 6).
+- p. 203, Solution to problem 3.1(i)
+- 4 × 3 × 2 × 1 = 24 (not 120, which is 5!).
+p. 205, Solution to problem 5.1(e)
+- See the correction to the problem (p. 139, above).
+p. 207, Solution to problem 6.3(a)
+- The value of x should be 1, not –1.
+p. 207, Solution to problems 6.3(e–f)
+- The solution given for problem 6.3(e) is actually the solution to problem 6.3(f); the solution to problem 6.3(e) is missing. (It will be added here after checking)
+p. 207, Solution to problem 6.6(c)
+- The value should be 41, not 51.
+p. 208, Fourth line of page (remarks following solutions to problem 6.6)
+This is normal is scientific problems read
+This is normal in scientific problems.
+p. 208, Solution to problems 6.11-12
+- The solution given for problem 6.11 is actually the solution to problem 6.12; the solution to problem 6.11 is missing. (It will be added here after checking)
+p. 209, Solution to problem 8.6(c)
+- 1.48/70.5 = 0.56 (not 0.60).
+p. 216, the definition of point of inflection is not quite correct (though it is correct for the sort of functions normally
+encountered in elementary biochemistry). Rather than stating that the second derivative is zero it would be better to say that it is
+normally zero, though it may also be undefined, in certain cases beyond the scope of the book.
+This list was last updated on 22nd December 2006.
+If you notice any other errors, please let me know. I thank the following correspondents for drawing my attention to most of those noted:
+- David M. Behrman (Somerset, Kentucky)
+- Fred Boogerd (Amsterdam)
+- Isadora Cornish-Bowden (Marseilles)
+- Simon Harrison (Bristol)
+- Y. F. Leung (Hong Kong)
+- Shu-Kun Lin (Basle)
+- Bernd Müller-Fembeck (Austria)

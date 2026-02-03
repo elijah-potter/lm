@@ -1,0 +1,7 @@
+Why is it problematic to align DNA sequences of protein encoding genes? First, if you align coding DNA at the DNA level, then you are in effect ignoring your prior knowledge of the structure of the genetic code. Second, you are also ignoring the known evolutionary tendency of amino acids to be substituted with other amino acids that have similar physico-chemical properties. An example should make this clear:
+M L L I G
+ATG CTG TTA ATA GGG ATGCT-GTTAATAGGG
+ATG CTC GTT AAT GGG ATGCTCGTTAAT-GGG
+M L V T G
+In the context of the genetic code, it makes perfect sense to align CTG and CTC which both encode the amino acid leucine. However, from a "DNA point of view" it makes more sense to insert a gap so the terminal G in this codon aligns with the first G in the next codon. It is also acceptable to align the codons TTA (encoding leucine) and GTT (encoding valine) since the encoded amino acids have similar properties (they are both hydrophobic).
+Note: these observations also hold true for database searches. Always use a translated version of your coding sequence to search for similar genes!

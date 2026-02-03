@@ -1,0 +1,39 @@
+On Unix, MySQL uses the value of the
+environment variable as the path name of the directory in
+which to store temporary files. If
+is not set, MySQL uses the system default, which is usually
+On Windows, Netware and OS2, MySQL checks in order the values
+TMP environment variables. For the first
+one found to be set, MySQL uses it and does not check those
+remaining. If none of
+TMP are set,
+MySQL uses the Windows system default, which is usually
+Starting from MySQL 4.1, the
+--tmpdir option can be set to a
+list of several paths that are used in round-robin fashion.
+Paths should be separated by colon characters
+:”) on Unix and semicolon
+;”) on Windows,
+NetWare, and OS/2.
+To spread the load effectively, these paths should be located on different physical disks, not different partitions of the same disk.
+If the MySQL server is acting as a replication slave, you
+should not set
+point to a directory on a memory-based file system or to a
+directory that is cleared when the server host restarts. A
+replication slave needs some of its temporary files to survive
+a machine restart so that it can replicate temporary tables or
+INFILE operations. If files in the temporary file
+directory are lost when the server restarts, replication
+MySQL creates all temporary files as hidden files. This ensures that the temporary files are removed if mysqld is terminated. The disadvantage of using hidden files is that you do not see a big temporary file that fills up the file system in which the temporary file directory is located.
+MySQL Enterprise. Advisors provided by the MySQL Enterprise Monitor automatically detect excessive temporary table storage to disk. For more information, see http://www.mysql.com/products/enterprise/advisors.html.
+When sorting (
+ORDER BY or
+BY), MySQL normally uses one or two temporary files.
+The maximum disk space required is determined by the following
+(length of what is sorted + sizeof(row pointer)) * number of matched rows * 2
+The row pointer size is usually four bytes, but may grow in the future for really big tables.
+SELECT queries, MySQL
+also creates temporary SQL tables. These are not hidden and
+have names of the form
+ALTER TABLE creates a temporary
+table in the same directory as the original table.

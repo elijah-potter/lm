@@ -1,0 +1,12 @@
+DT (Dowker-Thistlethwaite) Codes
+From Knot Atlas
+- Start "walking" along K and count every crossing you pass through. If K has n crossings and given that every crossing is visited twice, the count ends at 2n. Label each crossing with the values of the counter when it is visited, though when labeling by an even number, take it with a minus sign if you are walking "over" the crossing.
+- Every crossing is now labeled with two integers whose absolute values run from 1 to 2n. It is easy to see that each crossing is labeled with one odd integer and one even integer. The DT code of K is the list of even integers paired with the odd integers 1, 3, 5, ..., taken in this order. Thus for example the pairing for the knot in the figure below is ((1,−8),(3,−10),(5,−2),(7,−12),(9,−4),(11,−6)), and hence its DT code is (−8,−10,−2,−12,−4,−6) (and as DT codes are insensitive to overall mirrors, this is equivalent to (8,10,2,12,4,6)).
+KnotTheory` has some rudimentary support for DT codes:
+(For In see Setup)
+(The DT code of an alternating knot is always a sequence of positive numbers but the DT code of a non alternating knot contains both signs.)
+DT codes and Gauss codes carry the same information and are easily convertible:
+Conversion between DT codes and/or Gauss codes and PD codes is more complicated; the harder side, going from DT/Gauss to PD, was written by Siddarth Sankaran at the University of Toronto:
+DT Codes for links are defined in a similar way (see [DollHoste]). Follow the same numbering process as for knots, except when you finish traversing one component, jump straight to the next. It is not difficult to see that there is always a choice of starting points along the components for which the resulting pairing is a pairing between odd and even numbers. (On the figure above one possible choice is indicated). Again, it is enough to only list the even numbers corresponding to ; call the resulting list λ. (Above, λ = (6,−8,−10,12,−14,2,−4)). Notice that the odd indices are naturally subdivided into sublists according to the component of the link on which they lie, and this induces a subdivision of λ into sublists. Thus with the choices made in the figure above, the DT code for the link L7n2 is .
+KnotTheory` knows about DT codes for links:
+[DollHoste] ^ H. Doll and J. Hoste, A tabulation of oriented links, Mathematics of Computation 57-196 (1991) 747-761.

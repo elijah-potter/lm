@@ -1,0 +1,32 @@
+Creating a Hyperlink
+Hyperlinks or "links" are clickable text or images that serve to move the user from the current webpage that they are viewing to a new page within your website, or to a page on another website altogether. Using a link is great way to refer to other content or information that would be useful to your user, making their experience visiting your website helpful and engaging.
+*Note:*Anchor Links are links that move the user to a new location within the same page. To learn more, read the article Creating Anchor Links
+Hyperlinks are are often signified within webpage content with blue text and underlining. Sometimes the text becomes underlined when the user rolls over it with their cursor. The cursor itself can even change into a hand with a pointing finger to indicate to the user that the text can be clicked on and will take them to another source of information. However, these standards can change from site to site based on webpage styling and design.
+To create a Hyperlink on your Small Farm Central website, you will use the Rich Text Editor. (For more about using the Rich Text Editor, read the article Using a Rich Text Editor article.
+First, highlight the text or image that you want the link to be attached to. Then find the "Insert/Edit Link" button on the Rich Text Editor toolbar. The button looks like a few links in a chain. See below:
+*Figure 1. Hyperlink Tool*
+Clicking on the chain link will open up the Insert/Edit Link window. See below:
+*Figure 2. The Insert/Edit Link Window*
+This is where you will put the URL address of the page you want to link to. A Uniform Reference Locator is a specific character string that references an Internet resource. It can sometimes be difficult and time-consuming to figure out where you want your link to lead on your site. To make this easier, use the "Link List" drop-down menu. This is a list of every page on your Small Farm Central site; simply click on the page you want to link to and the URL will be automatically populated.
+If you would like to create a link to another page on a website, you need to know the URL of the specific page. You can find this by going to the website and looking in the address bar of your browser. For example:
+*Figure 3. URL in a Browser's Address Bar*
+Then simply copy & paste or type it into the "Link URL" box. Make sure the the URL begins with " http:// " or the link will not work.
+Complete the process of creating a hyperlink by clicking the
+Insert button in the lower-left corner. Your text
+should turn blue to indicate that it is an active link. See the
+blue hyperlinked text in the image below:
+*Figure 4. Hyperlinked Text*
+Congratulations! You have just created a
+Hyperlink. Don't forget to
+Save changes when you are
+Now click the link to "Go to public site" in the top left of the Control Panel and check to make sure your new Hyperlink is working. Here is an example of what it would look like on a Small Farm Central webpage:
+*Figure 5. Hyperlinked Text on a Small Farm Central Webpage*
+Notice in the example that the text is not the traditional blue color or underlined. This is because of the design and color styling of this particular page. On this page, when the cursor is placed on the hyperlinked text, the text becomes underlined and the cursor turns into a pointer finger to indicate to the user that they can click the text for more information.
+Note: Read our article: Creating a Mailto Link for Your Email Address to learn how to make your email address a clickable link that prompts your users email provider and often opens up a window for them to compose a new email with your address into the "To:" field.
+##Ready to move on? Click on another article below:
+- How can I view the sign-up process for my CSA the same way my members will see it?
+- What does "Admin Season" mean?
+- Will setting up a new Season disrupt the Season I am currently running?
+- Can I change my Member Assembler subscription plan to accomodate more or less members?
+- How do I manually add a new membership?
+- View all (5 more)

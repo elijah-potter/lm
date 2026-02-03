@@ -1,0 +1,56 @@
+Link to here: walter.bislins.ch/Calc
+Choose a formating option to get the values in a certain format for copy and paste.
+The values used in this calculator can be found on Length and Height Units (Units Converting Tables and Formulas).
+The values used in this calculator can be found on Speed Units (Units Converting Tables and Formulas).
+The formulas used by this calculator can be found on Temperature Conversion Formulas (Units Converting Tables and Formulas).
+The following calculator calculates values for altitudes less than 84,852 m only. The calculator assumes International Standard Atmosphere. The values have an accuracy of 5 decimal places.
+See Barometric Formula for all formulas and tables used by this calculator.
+Advanced Earth Curvature Calculator: Version of this calculator with 3D representation for globe and flat earth.
+Note: Values marked with a * are not dependent on Refraction in reality. The marked values show the apparent values if refraction is not zero. So to display the real values, set Refraction = 0. This is true for all Horizon Data as well.
+Visible, Hidden: how much of the object size is hidden behind the horizon and how much is visible.
+Angular Size, Visible∠, Hidden∠: same as above but in angular size. The angular size is arctan( size / distance ) in degrees.
+Refraction Angle: How much of the object is lifted due to refraction expressed as an angular size. See Refraction-Angle ρ how this angle is calculated.
+Lift Absolute: absolute amount of apparent lift of the object with respect to eye level due to refraction.
+Relative to Horizon: amount of apparent lift of the object with respect to the horizon due to refraction. The horizon appears lifted with respect to eye level by refraction too. If an object lies behind the horizon, its lift relative to the horizon is smaller than the absolute lift of the object with respect to eye level.
+Target Top∠, Target Top∠ FE: Angle α between target top and eye level for globe and flat earth (FE) respectively. The angle is positive if the target top is above eye level. Some theodolites measure a so called zenith angle ζ. The zenith angle is the angle between the vertical up and the target top. The correlation between this angles is α = 90° − ζ.
+Tilt θ: is the angle the target is tilted backwards. This is the same as the angle between the observer, the center of the earth and the target.
+Drop: is the amount the surface at the target has dropped from the tangent plane at the surface of the observer. This is the exact value, not the approximation from "8 inches per miles squared".
+Bulge Height: is the maximal amount the surface appears to bulge up from the direct line through the earth from the surface at the observer and the surface at the target.
+Dist on Surf: is the distance of the horizon line from the base of the observer along the surface.
+Drop Angle: is the angle between the horizon line and the eye level line as measured at the observer.
+Dist from Eye: is the line of sight distance of the horizon line from the observer.
+Dist on Eye-Lvl: is the distance of the horizon measured on the eye level plane.
+Drop from Surf: is the drop of the horizon line as measured down from the tangential plane with origin at the surface of the obsever.
+Drop from Eye-Lvl: is the drop of the horizon line as measured down from the tangential plane with origin at the observer height. Drop from Eye−Lvl = Drop from Surf + Observer Height.
+If you enter Temp.Gradient then the Refr.Coeff. k, Refr.Factor and Apparent Earth Radius are calculated.
+If you enter Refr.Coeff. k, Refr.Factor or Apparent Earth Radius then the Temp.Gradient is calculated.
+If you enter Lift or Refr.Angle then the Refr.Coeff. k and all dependent other values are calculated.
+In each case the values of Pressure and Temperature are used as given fixed values. Use the Barometric Calculator to calculate pressure and temperature for a given altitude, using the standard atmosphere.
+Lift is the amount an object at Distance appears lifted due to refraction. Refr.Angle is the angle an object appears to be lifted due to refraction.
+Note: the Lift increases with the square of the distance, while the Refr.Angle increases linear with distance.
+See Deriving Equations for Atmospheric Refraction for the equations used in this panel.
+Move the first 5 sliders or enter the corresponding number into the field left of the slider. You can only enter values in the range the Ciddor equation is valid to a certain accuracy. To see the valid range move the slider full left and full right and read the number in the text field of the slider. The results are displayed in the last 2 fields. The Refractivity slider gives only an optical clue of the calculated value and can not be moved by hand.
+|h||Altitude of aircraft|
+|Mach||Mach Speed is TAS as a multiple of the speed of sound at altitude h|
+|a(h)||Speed of sound at altitude h|
+|T(h)||Air temperature at altitude h|
+|ps(h)||Static air pressure at altitude h|
+|ρ(h)||Air density at altitude h|
+|qc(h,TAS)||Dynamic pressure at TAS and altitude h for real compressible gas|
+|q(h,TAS)||Dynamic pressure at TAS and altitude h for idealized incompressible gas|
+The equations used are listed on the page Fluggeschwindigkeiten, IAS, TAS, EAS, CAS, Mach.
+This form only calculates the Coriolis effect in the horizontal plane of an observer on the surface of the earth. There is also a vertical component if you travel not exactly north/south, which is called the Eötvös effect.
+Latitudes in the northern hemisphere are positive, in the southern hemisphere negative values.
+Positive Acceleration, Force, Curvature Radius and Course Deviation act horizontally to the right as seen in the moving direction, negative values act to the left.
+An unbalanced Coriolis Acceleration causes a circular flight path to the right or left with a certain Curvature Radius. At a certain Distance you reach a certain Course Deviation from the straight course.
+Note: if the Curvature Radius gets too small, you can't reach the destination at Distance. You will turn back in a circle. In this case, as soon as the Course Deviation exceeds the Curvature Radius, the Course Deviation field will be dispayed with a red background color.
+Note: as you progress along your (curved) track, the Coriolis Acceleration would change in reality according to the current latitude and so would the Curvature Radius. This calculation assumes a constant Coriolis Acceleration along the track, just to give a picture. If you fly east near the equator and would not correct for the Coriolis acceleration, you would fly in a slalom course along the equator.
+For a more detailed explanation see How Airplanes correct for the Coriolis Effect.
+If the atmosphere would not be dragged along with the surface of the earth and the atmosphere would not drag embedded aircrafts with it, aircrafts would have to correct for the Coriolis force to maintain the desired ground track. The autopilot would correct the deviation by slightly bank the aircraft in the opposite direction of the coriolis force. This bank generates an equal but opposite horizontal force component that cancels the Coriolis Force. This bank angles are unperceivably small (much less than a degree). Pilots don't have to account for this correction, as the the atmosphere together with the auto pilot does this automatically while correcting for any course deviations e.g. due to side wind components.
+The Lift Force produced to balance the weight of the aircraft is:
+The bank angle to the left needed to balance the Coriolis Force would be:
+|About||Walter Bislin (wabis)|
+|More||Page Infos / Sitemap|
+|Created||Tuesday, August 27, 2019|
+|Scroll to||Top of Page|
+|Changed||Friday, June 11, 2021|

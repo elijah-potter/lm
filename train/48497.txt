@@ -1,0 +1,45 @@
+LOAD - Loading Data
+You load definitions and/or data into a Mimer SQL database using the LOAD statement.
+The LOAD command has the following syntax:
+where file-format-spec is:
+MIMLOAD, or with any ODBC-based SQL interpreter.
+For information on MIMLOAD, see EXPTOLOAD - Convert Old Format Export Files.
+The LOAD command copies definitions and/or data from one or more files. When loading information from more than one file, the files are read in the order defined. The input file(s) are expected to form a valid sequence of definitions, data descriptions and data.
+Triggers defined against the affected tables are applied when the data is loaded.
+When a file contains data for more than one table, the data for each table must be contained in a section that is introduced by a data description header. For more information, see Data Description Headers and Files.
+If the data in the file does not have a data description header, there must be a data description file that contains the header information.
+This means that the file can only contain data from one table. Data description files and data files can of course be concatenated into a single file containing data for several tables.
+A definition file contains definition statements to create objects. A definition file can, for example, be divided into two files where one file is place first in the file list; i.e. executed before any data is loaded, and the other file is placed at the end of the file list, i.e. executed after the data is loaded.
+An example file sequence can be as follows: first in the file list, a file that contains object definitions; second, a file that describes the data to be loaded (the information in this file is equal to the corresponding information that can be given as a header in the data file); third, the data file; and fourth, a second definition file including referential constraints and triggers.
+You can specify the name of the table into which the information shall be loaded in the data file header(s) or the data description file. The default is the table name from which the data was unloaded.
+When LOAD scans a file, it detects if a field uses a text qualifier by checking if the first character in the field is a text qualifier. If a text qualifier character is found in the field data, the character is doubled, i.e if the text qualifier is a double quote, the data ab'c is equal to the data 'ab''c'.
+The STDIN Option
+When you use the STDIN option, input is read from the standard input stream. See Using STDIN/STDOUT/STDERR.
+The AS Option
+By using the AS option together with a file name specification, you can specify the character set used by the file to be loaded.
+The character sets available are: LATIN1, UTF8, UTF16, UTF16BE, UTF16LE, UTF32, UTF32BE and UTF32LE.
+UTFxxBE and UTFxxLE means UTFxx format with big or little endian byte order. UTFxx without endian notion means that the common endian for the current platform is assumed.
+The default character set used, if you do not use the AS option, is the default used in your host operating system.
+For more information, see File Format Specifications.
+You specify the log file using LOG. This log file will include warnings and progress information about the load operation.
+The STDERR Option
+When you specify LOG STDERR, informational messages are written to the standard error stream. See Using STDIN/STDOUT/STDERR.
+The WITH SHARED ACCESS Option
+LOAD's default behavior implies that you have exclusive access to the databank being loaded with data. If you need shared access, you can use the WITH SHARED ACCESS option. In most cases, this will lead to a slower data load using row-wise insert.
+By default, LOAD uses a fast data load facility to increase performance. The alternative is to insert data row-wise as if using an SQL INSERT statement.
+LOAD uses the fast data load facility in most cases, but there are some situations that need row-wise insertion due to certain referential constraints. In such cases, a warning message will tell you that fast data load cannot be used and the operation will continue using row-wise insertions.
+When row-wise insertions are performed, loads are recorded in LOGDB (assuming the databank is defined with the LOG option).
+The START AT Option
+You can use the START AT option to restart a failed load operation.
+The START AT value can be set to a line where a data definition statement is located or a data descriptor header starts (#data).
+The USING Option
+The USING option enables you to use an SQL statement to specify the information to be loaded and the target for the information.
+The SQL statements you can use are: INSERT, UPDATE, DELETE or CALL to a procedure with input parameter markers only.
+The following example is a straightforward import of the input file, using default options:LOAD FROM 'table_t.data' LOG 'table_t.log';
+The following example imports a data file, preceded by a data description file, using the default options:LOAD FROM 'table_t.desc', 'table_t.data' LOG 'table_t.log';
+The following example imports the first four columns of data in the file to the table named details from a file in UTF16 format:LOAD FROM 'table_t.data' AS UTF16 LOG 'table_t_dataload.log' USING INSERT INTO details VALUES (?,?,?,?);
+The following example uses an UPDATE statement where the first column C1 and the second column C2 of the data input file are used:LOAD FROM 'table_t.data' AS UTF16 LOG 'table_t_dataload.log' USING UPDATE details SET c1=? WHERE c2=?;
+The following example uses a DELETE statement where the input data is used to qualify records to delete:LOAD FROM 'table_t.data' AS UTF16 LOG 'table_t_dataload.log' USING DELETE FROM details WHERE c2=? AND c3=?;
+Mimer Information Technology AB
+Voice: +46 18 780 92 00
+Fax: +46 18 780 92 40

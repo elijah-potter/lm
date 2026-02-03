@@ -1,0 +1,11 @@
+Products You May Like
+Researchers in China say they’ve created sarcasm detection AI that achieved state-of-the-art performance on a dataset drawn from Twitter. The AI uses multimodal learning that combines text and imagery since both are often needed to understand whether a person is being sarcastic.
+The researchers argue that sarcasm detection can assist with sentiment analysis and crowdsourced understanding of public attitudes about a particular subject. In a challenge initiated earlier this year, Facebook is using multimodal AI to recognize whether memes violate its terms of service.
+The researchers’ AI focuses on differences between text and imagery and then combines those results to make predictions. It also compares hashtags to tweet text to help assess the sentiment a user is trying to convey.
+“Particularly, the input tokens will give high attention values to the image regions contradicting them, as incongruity is a key character of sarcasm,” the paper reads. “As the incongruity might only appear within the text (e.g., a sarcastic text associated with an unrelated image), it is necessary to consider the intra modality incongruity.”
+On a dataset drawn from Twitter, the model achieved a 2.74% improvement on a sarcasm detection F1 score compared to HFM, a multimodal detection model introduced last year. The new model also achieved an 86% accuracy rate, compared to 83% for HFM.
+The paper was published jointly by the Chinese Academy of Sciences and the Institute of Information Engineering, both in Beijing, China. The paper was presented this week at the virtual Empirical Methods in Natural Language Processing (EMNLP) conference.
+The AI is the latest example of multimodal sarcasm detection to emerge since AI researchers began studying sarcasm in multimodal content on Instagram, Tumblr, and Twitter in 2016.
+University of Michigan and University of Singapore researchers used language models and computer vision to detect sarcasm in television shows, a model detailed in a paper titled “Towards Multimodal Sarcasm Detection (An Obviously Perfect Paper).” That work was highlighted as part of the Association for Computational Linguistics (ACL) last year.
+Best practices for a successful AI Center of Excellence:
+A guide for both CoEs and business units Access here

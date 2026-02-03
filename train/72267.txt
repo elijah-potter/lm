@@ -1,0 +1,41 @@
+My blog has gotten a little lofty lately, and it’s been a while since I just posted some plain old good ideas you could use tomorrow. Here’s one if you have access to a class set of laptops or a computer lab: have your students make tools in geogebra. I’m not going to try to frame this in a lesson plan – it’s just a tutorial for you. Open geogebra to follow along.
+We’ll make a midpoint tool1 in two different ways today. The first way will be geometrically, via construction. The second way will use an algebraic formula. This might be a fun way to connect geometry and algebra! If you already know both of these methods, skip down to the “Toolify” section. If you already know how to make tools, skip down to “The Point” section at the bottom!
+Midpoint via Construction
+To make tools in geogebra, you first do what you want the tool to do, and then tell geogebra about it. So to make our midpoint tool via construction, we first have to actually do the construction.
+- Start with two points.
+- Use the circle tool to draw a circle with center A and perimeter point B. Draw a second one with center B and perimeter point A.
+- The circles intersect at two points. Use the line tool to draw the line between them. Also draw the line from A to B.
+- Of course, these two lines intersect at the midpoint between A and B. Use the point tool to give it its own name.
+- A crucial step: test your construction by moving the points A and B. The entire construction should move, but E should still be the midpoint. Do not move on if your construction does not pass this “wiggle test.”When your construction passes the wiggle test, go to the “Toolifying” section below.
+Midpoint via Algebra
+We’ll do this construction entirely from the input bar. Text in bold is text you can type directly into the input bar.
+- A = (2, 4)
+B = (5, 6)
+Typing these commands creates two points, A and B, at the specified coordinates.
+- x_A = x(A)
+y_A = y(A)
+x_B = x(B)
+y_B = y(B)
+These commands create variables with which you can access the coordinates of points A and B. The thing on the left of the equal sign is the NAME of the variable. The thing on the right of the equal sign is the VALUE of the variable.
+- Do the wiggle test on your variables. When you wiggle points A and B, all four of the variables from step 2 should change. You can move point A by dragging it with the mouse, or by redefining it with something like A = (1, 4). Do not move on until your variables have passed the wiggle test.
+- E = ( (x_A + x_B) / 2 , (y_A + y_B) / 2 )
+This command creates the point . If all has gone well, you should see the midpoint appear.
+When this point E passes the wiggle test, move on to “Toolifying” below.
+Regardless of HOW your construction was made – via algebra, geometry, or even calculus2 – if it passes the wiggle test, you can make it into a tool.
+- From the “Tools” menu, choose “Create New Tool.” You’ll be presented with a dialog like the one below.
+- The most crucial part here is to identify to geogebra your output object. What is the RESULT of your tool supposed to be? In our case, we were trying to make a tool that finds the midpoint of two points. The output is that midpoint. We called it point E. Select that object from the list. You could also click on that object from the graph view.
+- Go to the “Input Objects” tab. On this tab you will select the objects that your tool needs to work. Our tool is supposed to create the midpoint from two starting points, so those two starting points must be listed as input objects.
+So far, in my experience, Geogebra has always guessed the necessary input objects for me. Point A and B are already listed because geogebra knows that they are at the root of your construction. This will save a lot of confusion with your students.
+- Head to the “Name & Icon” tab to personalize your tool. The “Tool Name” is what will appear on the tool bar. The “Command name” is what you would type on the input bar to use your command. The “Tool help” will appear in the toolbar when your tool is selected.
+- After you click Finish, your tool is created and ready to use. Let’s test it! First, make two new points.
+- Then, choose your tool from the toolbar and click those two points, one after the other. The order you click is important in some tools: the first object you click becomes the first input object, the second you click becomes the second input object, etc. If everything is working, you should see the midpoint appear between your two new input points!
+Remember to try the wiggle test by pressing escape and dragging F and G around! You will not be able to drag H around – geogebra cannot (yet?) run tools backwards like that. Note that geogebra does not create all the intermediate objects needed for the construction. If you want those objects to appear, include them in the list of output objects when you create the tool.
+- Your students will enjoy this and feel a sense of ownership of the math. It’s fun to use the tool on its own output, for multiple nested midpoints and things like that.
+You can even create other objects with the output of your tools for extra fun. Below is an actual geogebra applet – drag the blue points around for fun!
+Riley Lark, Created with GeoGebra
+The point (heh)
+When your students can program geogebra to perform a mathematical feat:
+- They will feel (and be) smart and empowered.
+- They will learn about programming computers – an invaluable tool not just for “the future” but for exploring mathematical concepts later in your class.
+- They will necessarily have mastered the concept at least one time with enough specificity that a computer can understand what they mean
+- They will have fun!

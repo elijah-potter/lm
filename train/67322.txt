@@ -1,0 +1,63 @@
+Securing Our Future
+Technology in Decision Making
+Emergency responders, whether in a civil domestic or a military setting, perform under high pressure and high-risk environments. Any sort of tool that can give the edge to an emergency responder can greatly affect the outcome of the situation. The biological limitations of humans, however, can be mitigated with the use of software technologies catered towards the situation. Software can act as an extra pair of eyes on the battlefield or mark the hazards that would impede performance. To put it simply, software can directly optimise the decision-making process in a positive manner. The software used is a central management system that is connected to the emergency responder. Items detected are recorded and actionable items can be selected to give clear instructions to the emergency responder.
+- Bobby Yan
+- Christopher Ho
+- Aniza Binti Abdul Halim
+Artificial Reality using the WebXR API
+Accessing XR applications can be difficult; they usually need to be loaded onto a device as a dedicated program, which restricts access, and makes testing harder. WebXR allows XR applications to be uploaded to a website, where a compatible device can access the application through a web browser. Our project aims to explore the potential of WebXR in real practice!
+- James March
+- Damon Evans
+- Hubert Au
+You can play, but you can’t hide
+The expansion of data mining throughout daily life also increases the platforms for attackers to steal private data of individuals. Harmful consequences are the result of reidentifying anonymous individuals and their sensitive information, even if data is collected for non-malicious purposes.
+Mixed Reality (MR) is such an exploitable platform, with data collection requiring Virtual Reality headsets and controllers to track continuous user movement and other attributes. The concept of the Metaverse expands on this technology, which will require more data and elicit more risk of privacy breaches.
+Ongoing research into privacy preserving mechanisms offers solutions to address the unique usages of MR data. The concept of Differential Privacy (DP) categorises algorithms that offer mathematical guarantees for levels of privacy, offering very secure methods of protecting users of MR devices. This project explores how non-DP and DP mechanisms operate to protect MR data, and the possible drawbacks on data utility.
+- Jason Lu
+Security Question Evaluator
+“What is your mother’s maiden name?” – You might have come across this question when you set up an online account for the first time. But how secure is your answer?
+Security question is one of the common techniques implemented by many organisations to assist users in a self-help password recovery process. It can also be used as an additional layer during authentication. The concept of security question builds on the assumption that the questions are personal and only the user is likely to know the answer. In practice, however, the answers to the questions may be easily sought online or deducted. In this project, we developed an evaluator for security questions and answers. The evaluator shall assess the quality of questions and answers, and alert users that their security questions/answers could be compromised due to information found online.
+- Archie Verma
+- Ian Wei Chong
+- Shameen Binti Ab Kalam
+Improved Resolution RADAR Imaging
+Using Inverse Synthetic Aperture Radar (ISAR) imaging methods, this project has aimed to both increase image resolution, and decrease target smearing through the use of improved resolution of the Fast-Fourier-Transform (FFT) algorithm.
+- Jeremy Parkinson
+Branching Process Approximations
+We consider the problem of inference for continuous time multitype branching processes, with partial observation. In particular, we develop and approximate algorithm for state and parameter estimation, which avoids the computational pitfalls of the standard sequential Monte Carlo methods, common for these types of problems. Moreover, we show how this algorithm is tunable based on an accuracy & computational time trade off. We illustrate the algorithm's applicability to both a simple & complex epidemic model, finding good adherence to theoretical posteriors in both cases.
+- Antonio Parella
+Performance Improvements for RDEs
+Air-breathing rotating detonation engines (RDEs) have the capability of providing efficient supersonic flight with larger payloads and cheaper operating costs. As a relatively new and novel propulsion technology with significant theoretical potential, understanding how to optimize the detonation wave is crucial in developing a greater understanding of the fundamental operation of an RDE. Our aim is to determine the effect the plenum pressure, injector geometry, and stoichiometry, respectively, have on the thrust and specific impulse of an RDE.
+- Connor Bakaj
+- Joshua Mason
+Morphing The Future Of Flight
+To reduce fuel usage and emissions produced by aircraft the focus is not purely on development of efficient engines but also on designing the most aerodynamic airframe possible. Implementation of morphing wings to control wing twist during flight allows for an aircraft to maximise its aerodynamic efficiency for a range of conditions, reducing fuel consumption and emissions. Using the Boeing 1303 UCAV flying wing as a baseline design, a scale model with automated twisting wings was created to evaluate performance of this concept within the Thebarton wind tunnel. Fabrication of the scale model and a test stand was completed with preliminary wind tunnel testing being undertaken to ensure the stability of the system for future research efforts.
+- Alex Caprile
+- Lucas Tan
+- Matthew Voss
+- Jordan Wei Chen Lim
+- Hiresh Nair Haridas
+- Jack Wells
+Inflatable Platform for Army Comms
+Defence forces around the world rely on radio telecommunications for command and control. Mobile ground deployments face one key issue when trying to communicate – raising their antennae to a suitable height above the ground. The current solution for the Australian Army is a telescopic mast, with guy ropes and two people required for set up. Our goal was to find a better solution, using the principle of buoyancy. With hydrogen and a suitable aerostat (balloon), an antenna platform can be quickly deployed 20 metres above the ground. The effects of wind and other weather conditions were carefully investigated through research and computer simulations. By designing all aspects of the antenna platform, the project formed a proof-of-concept for tethered aerostat use in portable telecommunications, although safety and cost concerns need to be addressed before bringing the product to market.
+- James Edwards
+- Tristan Hall
+- Jayden White
+- Lachlan Wood
+Sounds Bigger Than It Looks
+Modern naval warfare is trending towards the eerie presence of what is hidden underwater, hence it is imperative that the Royal Australian Navy stands ready to face any emerging threats. The Navy’s submarine fleet is underequipped to provide our mariners with sufficient training to be at peak combat readiness. The goal of our project, Delfin, is to provide the Navy with a means to create realistic live training scenarios, thus enhancing their anti-submarine capability. Delfin imitates the acoustic signature of a full-sized aggressor submarine for a duration of three days, all whilst being small enough to fit inside a shipping container. Tools such as numerical solvers and acoustic models were developed to help design Delfin. We present a high-level design and model of an AUV that the Navy can hunt to improve readiness and anti-submarine capability. The groundwork we present will guide future projects in the realization of Delfin.
+- Alex Buhlmann
+- Christian Makris
+- Conor Barry
+- Isiah Mcmillian
+- Kurtis Burmeister
+- Hendri Leon Immelmann
+Build Antenna for Tomorrow
+Detecting the Undetected
+Exploring Digital Twins in DevOps
+Giving Aircraft Maintenance a Crack
+Optimal Team Based Decision Making
+Predicting apps on your device
+Simulation Algorithms for HSDEs
+Sustainability of Macau water system
+Uncrewed Aerial Certification

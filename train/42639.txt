@@ -1,0 +1,251 @@
+This article needs additional citations for verification. (April 2021)
+In finance, return is a profit on an investment. It comprises any change in value of the investment, and/or cash flows (or securities, or other investments) which the investor receives from that investment, such as interest payments, coupons, cash dividends, stock dividends or the payoff from a derivative or structured product. It may be measured either in absolute terms (e.g., dollars) or as a percentage of the amount invested. The latter is also called the holding period return.
+A loss instead of a profit is described as a negative return, assuming the amount invested is greater than zero.
+To compare returns over time periods of different lengths on an equal basis, it is useful to convert each return into a return over a period of time of a standard length. The result of the conversion is called the rate of return.
+Typically, the period of time is a year, in which case the rate of return is also called the annualized return, and the conversion process, described below, is called annualization.
+The return on investment (ROI) is return per dollar invested. It is a measure of investment performance, as opposed to size (c.f. return on equity, return on assets, return on capital employed).
+The return, or the holding period return, can be calculated over a single period. The single period may last any length of time.
+The overall period may, however, instead be divided into contiguous subperiods. This means that there is more than one time period, each sub-period beginning at the point in time where the previous one ended. In such a case, where there are multiple contiguous subperiods, the return or the holding period return over the overall period can be calculated by combining together the returns within each of the subperiods.
+The direct method to calculate the return or the holding period return over a single period of any length of time is:
+- = final value, including dividends and interest
+- = initial value
+For example, if someone purchases 100 shares at a starting price of 10, the starting value is 100 x 10 = 1,000. If the shareholder then collects 0.50 per share in cash dividends, and the ending share price is 9.80, then at the end the shareholder has 100 x 0.50 = 50 in cash, plus 100 x 9.80 = 980 in shares, totalling a final value of 1,030. The change in value is 1,030 − 1,000 = 30, so the return is .
+Negative initial valueEdit
+Return measures the increase in size of an asset or liability or short position.
+A negative initial value usually occurs for a liability or short position. If the initial value is negative, and the final value is more negative, then the return will be positive. In such a case, the positive return represents a loss rather than a profit.
+If the initial value is zero, then no return can be calculated.
+Currency of measurementEdit
+The return, or rate of return, depends on the currency of measurement. For example, suppose a 10,000 USD (US dollar) cash deposit earns 2% interest over a year, so its value at the end of the year is 10,200 USD including interest. The return over the year is 2%, measured in USD.
+Let us suppose also that the exchange rate to Japanese yen at the start of the year is 120 yen per USD, and 132 yen per USD at the end of the year. The value in yen of one USD has increased by 10% over the period.
+The deposit is worth 1.2 million yen at the start of the year, and 10,200 x 132 = 1,346,400 yen at the end of the year. The return on the deposit over the year in yen terms is therefore:
+This is the rate of return experienced either by an investor who starts with yen, converts to dollars, invests in the USD deposit, and converts the eventual proceeds back to yen; or for any investor, who wishes to measure the return in Japanese yen terms, for comparison purposes.
+Without any reinvestment, a return over a period of time corresponds to a rate of return :
+For example, let us suppose that 20,000 USD is returned on an initial investment of 100,000 USD. This is a return of 20,000 USD divided by 100,000 USD, which equals 20 percent. The 20,000 USD is paid in 5 irregularly-timed installments of 4,000 USD, with no reinvestment, over a 5-year period, and with no information provided about the timing of the installments. The rate of return is 4,000 / 100,000 = 4% per year.
+Assuming returns are reinvested however, due to the effect of compounding, the relationship between a rate of return , and a return over a length of time is:
+which can be used to convert the return to a compound rate of return :
+For example, a 33.1% return over 3 months is equivalent to a rate of:
+per month with reinvestment.
+Annualization is the process described above of converting a return to an annual rate of return , where the length of the period is measured in years and the rate of return is per year.
+According to the CFA Institute's Global Investment Performance Standards (GIPS),
+- "Returns for periods of less than one year must not be annualized."
+This is because an annualized rate of return over a period of less than one year is statistically unlikely to be indicative of the annualized rate of return over the long run, where there is risk involved.
+Annualizing a return over a period of less than one year might be interpreted as suggesting that the rest of the year is most likely to have the same rate of return, effectively projecting that rate of return over the whole year.
+Note that this does not apply to interest rates or yields where there is no significant risk involved. It is common practice to quote an annualized rate of return for borrowing or lending money for periods shorter than a year, such as overnight interbank rates.
+Logarithmic or continuously compounded returnEdit
+The logarithmic return or continuously compounded return, also known as force of interest, is:
+and the logarithmic rate of return is:
+or equivalently it is the solution to the equation:
+- = logarithmic rate of return
+- = length of time period
+For example, if a stock is priced at 3.570 USD per share at the close on one day, and at 3.575 USD per share at the close the next day, then the logarithmic return is: ln(3.575/3.570) = 0.0014, or 0.14%.
+Annualization of logarithmic returnEdit
+Under an assumption of reinvestment, the relationship between a logarithmic return and a logarithmic rate of return over a period of time of length is:
+so is the annualized logarithmic rate of return for a return , if is measured in years.
+For example, if the logarithmic return of a security per trading day is 0.14%, assuming 250 trading days in a year, then the annualized logarithmic rate of return is 0.14%/(1/250) = 0.14% x 250 = 35%
+Returns over multiple periodsEdit
+When the return is calculated over a series of sub-periods of time, the return in each sub-period is based on the investment value at the beginning of the sub-period.
+Suppose the value of the investment at the beginning is , and at the end of the first period is . If there are no inflows or outflows during the period, the holding period return in the first period is:
+- is the growth factor in the first period.
+If the gains and losses are reinvested, i.e. they are not withdrawn or paid out, then the value of the investment at the start of the second period is , i.e. the same as the value at the end of the first period.
+If the value of the investment at the end of the second period is , the holding period return in the second period is:
+Multiplying together the growth factors in each period and :
+- is the holding period return over the two successive periods.
+This method is called the time-weighted method, or geometric linking, or compounding together the holding period returns in the two successive subperiods.
+Extending this method to periods, assuming returns are reinvested, if the returns over successive time subperiods are , then the cumulative return or overall return over the overall time period using the time-weighted method is the result of compounding the returns together:
+If the returns are logarithmic returns, however, the logarithmic return over the overall time period is:
+This formula applies with an assumption of reinvestment of returns and it means that successive logarithmic returns can be summed, i.e. that logarithmic returns are additive.
+In cases where there are inflows and outflows, the formula applies by definition for time-weighted returns, but not in general for money-weighted returns (combining the logarithms of the growth factors based on money-weighted returns over successive periods does not generally conform to this formula).
+Arithmetic average rate of returnEdit
+The arithmetic average rate of return over time periods of equal length is defined as:
+This formula can be used on a sequence of logarithmic rates of return over equal successive periods.
+This formula can also be used when there is no reinvestment of returns, any losses are made good by topping up the capital investment and all periods are of equal length.
+Geometric average rate of returnEdit
+If compounding is performed, (i.e. if gains are reinvested and losses accumulated), and if all periods are of equal length, then using the time-weighted method, the appropriate average rate of return is the geometric mean of returns, which, over n periods, is:
+The geometric average return is equivalent to the cumulative return over the whole n periods, converted into a rate of return per period. Where the individual sub-periods are each equal (say, 1 year), and there is reinvestment of returns, the annualized cumulative return is the geometric average rate of return.
+For example, assuming reinvestment, the cumulative return for four annual returns of 50%, -20%, 30%, and −40% is:
+The geometric average return is:
+The annualized cumulative return and geometric return are related thus:
+Comparisons between various rates of returnEdit
+In the presence of external flows, such as cash or securities moving into or out of the portfolio, the return should be calculated by compensating for these movements. This is achieved using methods such as the time-weighted return. Time-weighted returns compensate for the impact of cash flows. This is useful to assess the performance of a money manager on behalf of his/her clients, where typically the clients control these cash flows.
+To measure returns net of fees, allow the value of the portfolio to be reduced by the amount of the fees. To calculate returns gross of fees, compensate for them by treating them as an external flow, and exclude accrued fees from valuations.
+Money-weighted rate of returnEdit
+Like the time-weighted return, the money-weighted rate of return (MWRR) or dollar-weighted rate of return also takes cash flows into consideration. They are useful evaluating and comparing cases where the money manager controls cash flows, for example private equity. (Contrast with the true time-weighted rate of return, which is most applicable to measure the performance of a money manager who does not have control over external flows.)
+Internal rate of returnEdit
+The internal rate of return (IRR) (which is a variety of money-weighted rate of return) is the rate of return which makes the net present value of cash flows zero. It is a solution satisfying the following equation:
+- NPV = net present value
+- = net cash flow at time , including the initial value and final value , net of any other flows at the beginning and at the end respectively. (The initial value is treated as an inflow, and the final value as an outflow.)
+When the internal rate of return is greater than the cost of capital, (which is also referred to as the required rate of return), the investment adds value, i.e. the net present value of cash flows, discounted at the cost of capital, is greater than zero. Otherwise, the investment does not add value.
+Note that there is not always an internal rate of return for a particular set of cash flows (i.e. the existence of a real solution to the equation depends on the pattern of cash flows). There may also be more than one real solution to the equation, requiring some interpretation to determine the most appropriate one.
+Money-weighted return over multiple sub-periodsEdit
+Note that the money-weighted return over multiple sub-periods is generally not equal to the result of combining together the money-weighted returns within the sub-periods using the method described above, unlike time-weighted returns.
+Comparing ordinary return with logarithmic returnEdit
+The value of an investment is doubled if the return = +100%, that is, if = ln($200 / $100) = ln(2) = 69.3%. The value falls to zero when = -100%. The ordinary return can be calculated for any non-zero initial investment value, and any final value, positive or negative, but the logarithmic return can only be calculated when .
+Ordinary returns and logarithmic returns are only equal when they are zero, but they are approximately equal when they are small. The difference between them is large only when percent changes are high. For example, an arithmetic return of +50% is equivalent to a logarithmic return of 40.55%, while an arithmetic return of −50% is equivalent to a logarithmic return of −69.31%.
+Advantages of logarithmic return:
+- Logarithmic returns are symmetric, while ordinary returns are not: positive and negative percent ordinary returns of equal magnitude do not cancel each other out and result in a net change, but logarithmic returns of equal magnitude but opposite signs will cancel each other out. This means that an investment of $100 that yields an arithmetic return of 50% followed by an arithmetic return of −50% will result in $75, while an investment of $100 that yields a logarithmic return of 50% followed by a logarithmic return of −50% will come back to $100.
+- Logarithmic return is also called the continuously compounded return. This means that the frequency of compounding does not matter, making returns of different assets easier to compare.
+- Logarithmic returns are time-additive, meaning that if and are logarithmic returns in successive periods, then the overall logarithmic return is the sum of the individual logarithmic returns, i.e. .
+- The use of logarithmic returns prevents investment prices in models from becoming negative.
+Comparing geometric with arithmetic average rates of returnEdit
+The geometric average rate of return is in general less than the arithmetic average return. The two averages are equal if (and only if) all the sub-period returns are equal. This is a consequence of the AM–GM inequality. The difference between the annualized return and average annual return increases with the variance of the returns – the more volatile the performance, the greater the difference.[note 1]
+For example, a return of +10%, followed by −10%, gives an arithmetic average return of 0%, but the overall result over the 2 subperiods is 110% x 90% = 99% for an overall return of −1%. The order in which the loss and gain occurs does not affect the result.
+For a return of +20%, followed by −20%, this again has an average return of 0%, but an overall return of −4%.
+A return of +100%, followed by −100%, has an average return of 0% but an overall return of −100% since the final value is 0.
+In cases of leveraged investments, even more extreme results are possible: A return of +200%, followed by −200%, has an average return of 0% but an overall return of −300%.
+This pattern is not followed in the case of logarithmic returns, due to their symmetry, as noted above. A logarithmic return of +10%, followed by −10%, gives an overall return of 10% − 10% = 0% and an average rate of return of zero also.
+Average returns and overall returnsEdit
+Investment returns are often published as "average returns". In order to translate average returns into overall returns, compound the average returns over the number of periods.
+|Year 1||Year 2||Year 3||Year 4|
+|Rate of return||5%||5%||5%||5%|
+|Geometric average at end of year||5%||5%||5%||5%|
+|Capital at end of year||$105.00||$110.25||$115.76||$121.55|
+The geometric average rate of return was 5%. Over 4 years, this translates into an overall return of:
+|Year 1||Year 2||Year 3||Year 4|
+|Rate of return||50%||−20%||30%||−40%|
+|Geometric average at end of year||50%||9.5%||16%||−1.6%|
+|Capital at end of year||$150.00||$120.00||$156.00||$93.60|
+The geometric average return over the 4-year period was −1.64%. Over 4 years, this translates into an overall return of:
+|Year 1||Year 2||Year 3||Year 4|
+|Rate of return||−95%||0%||0%||115%|
+|Geometric average at end of year||−95%||−77.6%||−63.2%||−42.7%|
+|Capital at end of year||$5.00||$5.00||$5.00||$10.75|
+The geometric average return over the 4-year period was −42.74%. Over 4 years, this translates back into an overall return of:
+Annual returns and annualized returnsEdit
+Care must be taken not to confuse annual with annualized returns. An annual rate of return is a return over a period of one year, such as January 1 through December 31, or June 3, 2006, through June 2, 2007, whereas an annualized rate of return is a rate of return per year, measured over a period either longer or shorter than one year, such as a month, or two years, annualized for comparison with a one-year return.
+The appropriate method of annualization depends on whether returns are reinvested or not.
+For example, a return over one month of 1% converts to an annualized rate of return of 12.7% = ((1+0.01)12 − 1). This means if reinvested, earning 1% return every month, the return over 12 months would compound to give a return of 12.7%.
+As another example, a two-year return of 10% converts to an annualized rate of return of 4.88% = ((1+0.1)(12/24) − 1), assuming reinvestment at the end of the first year. In other words, the geometric average return per year is 4.88%.
+In the cash flow example below, the dollar returns for the four years add up to $265. Assuming no reinvestment, the annualized rate of return for the four years is: $265 ÷ ($1,000 x 4 years) = 6.625% (per year).
+|Year 1||Year 2||Year 3||Year 4|
+- Rates of return are useful for making investment decisions. For nominal risk investments such as savings accounts or Certificates of Deposit, the investor considers the effects of reinvesting/compounding on increasing savings balances over time to project expected gains into the future. For investments in which capital is at risk, such as stock shares, mutual fund shares and home purchases, the investor also takes into consideration the effects of price volatility and risk of loss.
+- Ratios typically used by financial analysts to compare a company's performance over time or compare performance between companies include return on investment (ROI), return on equity, and return on assets.
+- In the capital budgeting process, companies would traditionally compare the internal rates of return of different projects to decide which projects to pursue in order to maximize returns for the company's stockholders. Other tools employed by companies in capital budgeting include payback period, net present value, and profitability index.
+- A return may be adjusted for taxes to give the after-tax rate of return. This is done in geographical areas or historical times in which taxes consumed or consume a significant portion of profits or income. The after-tax rate of return is calculated by multiplying the rate of return by the tax rate, then subtracting that percentage from the rate of return.
+- A return of 5% taxed at 15% gives an after-tax return of 4.25%
+- 0.05 x 0.15 = 0.0075
+- 0.05 − 0.0075 = 0.0425 = 4.25%
+- A return of 10% taxed at 25% gives an after-tax return of 7.5%
+- 0.10 x 0.25 = 0.025
+- 0.10 − 0.025 = 0.075 = 7.5%
+- Investors usually seek a higher rate of return on taxable investment returns than on non-taxable investment returns, and the proper way to compare returns taxed at different rates of tax is after tax, from the end-investor's perspective.
+- A return may be adjusted for inflation. When return is adjusted for inflation, the resulting return in real terms measures the change in purchasing power between the start and the end of the period. Any investment with a nominal annual return (i.e., unadjusted annual return) less than the annual inflation rate represents a loss of value in real terms, even when the nominal annual return is greater than 0%, and the purchasing power at the end of the period is less than the purchasing power at the beginning.
+- Many online poker tools include ROI in a player's tracked statistics, assisting users in evaluating an opponent's performance.
+Time value of moneyEdit
+Investments generate returns to the investor to compensate the investor for the time value of money.
+Factors that investors may use to determine the rate of return at which they are willing to invest money include:
+- their risk-free interest rate
+- estimates of future inflation rates
+- assessment of the risk of the investment, i.e. the uncertainty of returns (including how likely it is that investors will receive interest/dividend payments they expect and the return of their full capital, with or without any possible additional capital gain)
+- currency risk
+- whether or not the investors want the money available (“liquid”) for other uses.
+The time value of money is reflected in the interest rate that a bank offers for deposit accounts, and also in the interest rate that a bank charges for a loan such as a home mortgage. The "risk-free" rate on US dollar investments is the rate on U.S. Treasury bills, because this is the highest rate available without risking capital.
+The rate of return which an investor requires from a particular investment is called the discount rate, and is also referred to as the (opportunity) cost of capital. The higher the risk, the higher the discount rate (rate of return) the investor will demand from the investment.
+Compounding or reinvestingEdit
+The annualized return of an investment depends on whether or not the return, including interest and dividends, from one period is reinvested in the next period. If the return is reinvested, it contributes to the starting value of capital invested for the next period (or reduces it, in the case of a negative return). Compounding reflects the effect of the return in one period on the return in the next period, resulting from the change in the capital base at the start of the latter period.
+For example, if an investor puts $1,000 in a 1-year certificate of deposit (CD) that pays an annual interest rate of 4%, paid quarterly, the CD would earn 1% interest per quarter on the account balance. The account uses compound interest, meaning the account balance is cumulative, including interest previously reinvested and credited to the account. Unless the interest is withdrawn at the end of each quarter, it will earn more interest in the next quarter.
+|1st quarter||2nd quarter||3rd quarter||4th quarter|
+|Capital at the beginning of the period||$1,000||$1,010||$1,020.10||$1,030.30|
+|Dollar return for the period||$10||$10.10||$10.20||$10.30|
+|Account balance at end of the period||$1,010.00||$1,020.10||$1,030.30||$1,040.60|
+At the beginning of the second quarter, the account balance is $1,010.00, which then earns $10.10 interest altogether during the second quarter. The extra dime was interest on the additional $10 investment from the previous interest accumulated in the account. The annualized return (annual percentage yield, compound interest) is higher than for simple interest because the interest is reinvested as capital and then itself earns interest. The yield or annualized return on the above investment is .
+Foreign currency returnsEdit
+As explained above, the return, or rate or return, depends on the currency of measurement. In the example given above, a US dollar cash deposit which returns 2% over a year, measured in US dollars, returns 12.2% measured in Japanese yen, over the same period, if the US dollar increases in value by 10% against the Japanese yen over the same period. The return in Japanese yen is the result of compounding the 2% US dollar return on the cash deposit with the 10% return on US dollars against Japanese yen:
+- 1.02 x 1.1 − 1 = 12.2%
+In more general terms, the return in a second currency is the result of compounding together the two returns:
+- is the return on the investment in the first currency (US dollars in our example), and
+- is the return on the first currency against the second currency (which in our example is the return on US dollars against Japanese yen).
+This holds true if either the time-weighted method is used, or there are no flows in or out over the period. If using one of the money-weighted methods, and there are flows, it is necessary to recalculate the return in the second currency using one of the methods for compensating for flows.
+Foreign currency returns over multiple periodsEdit
+It is not meaningful to compound together returns for consecutive periods measured in different currencies. Before compounding together returns over consecutive periods, recalculate or adjust the returns using a single currency of measurement.
+A portfolio increases in value in Singapore dollars by 10% over the 2015 calendar year (with no flows in or out of the portfolio over the year). In the first month of 2016, it increases in value by another 7%, in US dollars. (Again, there are no inflows or outflows over the January 2016 period.)
+What is the return on the portfolio, from the beginning of 2015, to the end of January 2016?
+The answer is that there is insufficient data to compute a return, in any currency, without knowing the return for both periods in the same currency.
+If the return in 2015 was 10% in Singapore dollars, and the Singapore dollar rose by 5% against the US dollar over 2015, then so long as there were no flows in 2015, the return over 2015 in US dollars is:
+- 1.1 x 1.05 − 1 = 15.5%
+The return between the beginning of 2015 and the end of January 2016 in US dollars is:
+- 1.155 x 1.07 − 1 = 23.585%
+Returns when capital is at riskEdit
+Risk and volatilityEdit
+Investments carry varying amounts of risk that the investor will lose some or all of the invested capital. For example, investments in company stock shares put capital at risk. Unlike capital invested in a savings account, the share price, which is the market value of a stock share at a certain point in time, depends on what someone is willing to pay for it, and the price of a stock share tends to change continually when the market for that share is open. If the price is relatively stable, the stock is said to have "low volatility". If the price often changes a great deal, the stock has "high volatility".
+US income tax on investment returnsEdit
+|End of:||1st quarter||2nd quarter||3rd quarter||4th quarter|
+|Total shares held||1.010204||1.020204||1.030204||1.040608|
+To the right is an example of a stock investment of one share purchased at the beginning of the year for $100.
+- The quarterly dividend is reinvested at the quarter-end stock price.
+- The number of shares purchased each quarter = ($ Dividend)/($ Stock Price).
+- The final investment value of $103.02 compared with the initial investment of $100 means the return is $3.02 or 3.02%.
+- The continuously compounded rate of return in this example is:
+To calculate the capital gain for US income tax purposes, include the reinvested dividends in the cost basis. The investor received a total of $4.06 in dividends over the year, all of which were reinvested, so the cost basis increased by $4.06.
+- Cost Basis = $100 + $4.06 = $104.06
+- Capital gain/loss = $103.02 − $104.06 = -$1.04 (a capital loss)
+For U.S. income tax purposes therefore, dividends were $4.06, the cost basis of the investment was $104.06 and if the shares were sold at the end of the year, the sale value would be $103.02, and the capital loss would be $1.04.
+Mutual fund and investment company returnsEdit
+Mutual funds, unit investment trusts or UITs, insurance separate accounts and related variable products such as variable universal life insurance policies and variable annuity contracts, and bank-sponsored commingled funds, collective benefit funds or common trust funds, all derive their value from an underlying investment portfolio. Investors and other parties are interested to know how the investment has performed over various periods of time.
+Performance is usually quantified by a fund's total return. In the 1990s, many different fund companies were advertising various total returns—some cumulative, some averaged, some with or without deduction of sales loads or commissions, etc. To level the playing field and help investors compare performance returns of one fund to another, the U.S. Securities and Exchange Commission (SEC) began requiring funds to compute and report total returns based upon a standardized formula—so-called "SEC Standardized total return", which is the average annual total return assuming reinvestment of dividends and distributions and deduction of sales loads or charges. Funds may compute and advertise returns on other bases (so-called "non-standardized" returns), so long as they also publish no less prominently the "standardized" return data.
+Subsequent to this, apparently investors who had sold their fund shares after a large increase in the share price in the late 1990s and early 2000s were ignorant of how significant the impact of income/capital gain taxes was on their fund "gross" returns. That is, they had little idea how significant the difference could be between "gross" returns (returns before federal taxes) and "net" returns (after-tax returns). In reaction to this apparent investor ignorance, and perhaps for other reasons, the SEC made further rulemaking to require mutual funds to publish in their annual prospectus, among other things, total returns before and after the impact of US federal individual income taxes. And further, the after-tax returns would include 1) returns on a hypothetical taxable account after deducting taxes on dividends and capital gain distributions received during the illustrated periods and 2) the impacts of the items in #1) as well as assuming the entire investment shares were sold at the end of the period (realizing capital gain/loss on liquidation of the shares). These after-tax returns would apply of course only to taxable accounts and not to tax-deferred or retirement accounts such as IRAs.
+Lastly, in more recent years, "personalized" brokerage account statements have been demanded by investors. In other words, the investors are saying more or less that the fund returns may not be what their actual account returns are, based upon the actual investment account transaction history. This is because investments may have been made on various dates and additional purchases and withdrawals may have occurred which vary in amount and date and thus are unique to the particular account. More and more funds and brokerage firms are now providing personalized account returns on investor's account statements in response to this need.
+With that out of the way, here's how basic earnings and gains/losses work on a mutual fund. The fund records income for dividends and interest earned which typically increases the value of the mutual fund shares, while expenses set aside have an offsetting impact to share value. When the fund's investments increase (decrease) in market value, so too the fund shares value increases (or decreases). When the fund sells investments at a profit, it turns or reclassifies that paper profit or unrealized gain into an actual or realized gain. The sale has no effect on the value of fund shares but it has reclassified a component of its value from one bucket to another on the fund books—which will have future impact to investors. At least annually, a fund usually pays dividends from its net income (income less expenses) and net capital gains realized out to shareholders as an IRS requirement. This way, the fund pays no taxes but rather all the investors in taxable accounts do. Mutual fund share prices are typically valued each day the stock or bond markets are open and typically the value of a share is the net asset value of the fund shares investors own.
+Mutual funds report total returns assuming reinvestment of dividend and capital gain distributions. That is, the dollar amounts distributed are used to purchase additional shares of the funds as of the reinvestment/ex-dividend date. Reinvestment rates or factors are based on total distributions (dividends plus capital gains) during each period.
+Average annual total return (geometric)Edit
+US mutual funds are to compute average annual total return as prescribed by the U.S. Securities and Exchange Commission (SEC) in instructions to form N-1A (the fund prospectus) as the average annual compounded rates of return for 1-year, 5-year, and 10-year periods (or inception of the fund if shorter) as the "average annual total return" for each fund. The following formula is used:
+P = a hypothetical initial payment of $1,000
+T = average annual total return
+n = number of years
+ERV = ending redeemable value of a hypothetical $1,000 payment made at the beginning of the 1-, 5-, or 10-year periods at the end of the 1-, 5-, or 10-year periods (or fractional portion)
+Solving for T gives
+Mutual fund capital gain distributionsEdit
+Mutual funds include capital gains as well as dividends in their return calculations. Since the market price of a mutual fund share is based on net asset value, a capital gain distribution is offset by an equal decrease in mutual fund share value/price. From the shareholder's perspective, a capital gain distribution is not a net gain in assets, but it is a realized capital gain (coupled with an equivalent decrease in unrealized capital gain).
+|Year 1||Year 2||Year 3||Year 4||Year 5|
+|Dividend per share||$0.26||$0.29||$0.30||$0.50||$0.53|
+|Capital gain distribution per share||$0.06||$0.39||$0.47||$1.86||$1.12|
+|Total distribution per share||$0.32||$0.68||$0.77||$2.36||$1.65|
+|Share price at end of year||$17.50||$19.49||$20.06||$20.62||$19.90|
+|Shares owned before distribution||70.373||71.676||74.125||76.859||84.752|
+|Total distribution (distribution per share x shares owned)||$22.52||$48.73||$57.10||$181.73||$141.60|
+|Share price at distribution||$17.28||$19.90||$20.88||$22.98||$21.31|
+|Shares purchased (total distribution / price)||1.303||2.449||2.734||7.893||6.562|
+|Shares owned after distribution||71.676||74.125||76.859||84.752||91.314|
+- After five years, an investor who reinvested all distributions would own 91.314 shares valued at $19.90 per share. The return over the five-year period is $19.90 × 91.314 / $1,000 − 1 = 81.71%
+- Geometric average annual total return with reinvestment = ($19.90 × 91.314 / $1,000) ^ (1 / 5) − 1 = 12.69%
+- An investor who did not reinvest would have received total distributions (cash payments) of $5.78 per share. The return over the five-year period for such an investor would be ($19.90 + $5.78) / $14.21 − 1 = 80.72%, and the arithmetic average rate of return would be 80.72%/5 = 16.14% per year.
+- Annual percentage yield
+- Average for a discussion of annualization of returns
+- Capital budgeting
+- Compound annual growth rate
+- Compound interest
+- Dollar cost averaging
+- Economic value added
+- Effective annual rate
+- Effective interest rate
+- Expected return
+- Holding period return
+- Internal rate of return
+- Modified Dietz method
+- Net present value
+- Rate of profit
+- Return of capital
+- Return on assets
+- Return on capital
+- Returns (economics)
+- Simple Dietz method
+- Time value of money
+- Time-weighted return
+- Value investing
+- ^ Consider the difference of squares formula, For (i.e. ) the terms have an arithmetic average of 100% but product less than 100%.
+- ^ "return: definition of return in Oxford dictionary (British & World English)". Archived from the original on July 8, 2012.
+- ^ "rate of return: definition of rate of return in Oxford dictionary (British & World English)".[dead link]
+- ^ Overview of the Global Investment Performance Standards "GIPS Standards".
+- ^ John Simpson (6 August 2012). "CIPM Exam Tips & Tricks".
+- ^ Brooks, Chris (2008). Introductory Econometrics for Finance. Cambridge University Press. p. 8. ISBN 978-0-521-87306-2.
+- ^ Strong, Robert (2009). Portfolio construction, management, and protection. Mason, Ohio: South-Western Cengage Learning. p. 527. ISBN 978-0-324-66510-9.
+- ^ Hudson, Robert; Gregoriou, Andros (2010-02-07). "Calculating and Comparing Security Returns is Harder than you Think: A Comparison between Logarithmic and Simple Returns". SSRN. doi:10.2139/ssrn.1549328. S2CID 235264677. SSRN 1549328.
+- ^ A. A. Groppelli and Ehsan Nikbakht (2000). Barron's Finance, 4th Edition. New York. pp. 442–456. ISBN 0-7641-1275-9.
+- ^ Barron's Finance. pp. 151–163.
+- ^ "Time Value of Money - How to Calculate the PV and FV of Money". Corporate Finance Institute. Retrieved 2020-10-06.
+- ^ U.S. Securities and Exchange Commission (1998). "Final Rule: Registration Form Used by Open-End Management Investment Companies: Sample Form and instructions".
+- A. A. Groppelli and Ehsan Nikbakht. Barron’s Finance, 4th Edition. New York: Barron’s Educational Series, Inc., 2000. ISBN 0-7641-1275-9
+- Zvi Bodie, Alex Kane and Alan J. Marcus. Essentials of Investments, 5th Edition. New York: McGraw-Hill/Irwin, 2004. ISBN 0073226386
+- Richard A. Brealey, Stewart C. Myers and Franklin Allen. Principles of Corporate Finance, 8th Edition. McGraw-Hill/Irwin, 2006
+- Walter B. Meigs and Robert F. Meigs. Financial Accounting, 4th Edition. New York: McGraw-Hill Book Company, 1970. ISBN 0-07-041534-X
+- Bruce J. Feibel. Investment Performance Measurement. New York: Wiley, 2003. ISBN 0-471-26849-6
+- Carl Bacon. Practical Portfolio Performance Measurement and Attribution. West Sussex: Wiley, 2003. ISBN 0-470-85679-3

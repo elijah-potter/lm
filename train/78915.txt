@@ -1,0 +1,26 @@
+Borjas, George J.
+Ethnicity, Neighborhoods, and Human Capital Externalities
+Investigates the link between ethnic externality and ethnic neighborhoods
+Journal Name or Institutional Affiliation:
+National Bureau of Economic Research
+Working Paper No. 4912, November
+- Census and NLSY data show strong patterns of residential segregation by ethnic group.
+- Ethnicity has an external effect on the human capital accumulation process.
+- Residential segregation is linked to the influence of ethnic capital on the process of intergenerational mobility.
+- Ethnic capital functions through neighborhood effects that influence intergenerational mobility.
+- Neighborhood effects alone do not account for the effect of ethnicity or intergenerational mobility, particularly for residents of ethnically segregated neighborhoods.
+- Ethnicity has an impact above and beyond parental and neighborhood effects for people who are frequently exposed to an ethnic environment.
+- Residential segregation and the external effect of ethnicity are linked, partly because ethnic capital summarizes the socioeconomic background of the neighborhood where the children were raised.
+- Ethnicity has an external effect, even among persons who grow up in the same neighborhood, when children are exposed frequently to persons who share the same ethnic background.
+Academic Achievement, Ethnicity, Human Capital, Neighborhood, Residential Segregation
+Secondary Survey Data
+Method of Analysis:
+Fixed Effects Regression Models
+Unit of Analysis:
+- The data are from the 1/100 Neighborhood File of the 1970 Public Use Sample of the US Census and the National Longitudinal Surveys of Youth (NLSY).
+- The NLSY provides ethnicity and ancestry information.
+- The Census file is used for individual demographic data and locates people into 42,950 neighborhoods that are equivalent to Census tracts.
+- The data identifies college graduates and first or second generation immigrant status.
+- This study analyzes persons ages 18-64.
+- DV: Skills (such as educational attainment or the log wage) of person I in ethnic group j.
+- IV: Skills of his father, average skills of the ethnic group in father's generation (ethnic capital), neighborhood fixed effects.

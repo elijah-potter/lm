@@ -1,0 +1,33 @@
+GCSE Science/Electrical Power
+The reason electricity has become so popular over the last 100 years or so is because it is a very good way of moving energy from one place to another. When you buy a light bulb is usually rated in watts. The watt is a unit of power. In this unit you are going to lean some equations rating current voltage, energy and power and apply the equations.
+Definition of power
+Power is defined as the rate of energy flow. Its unit is the watt — one watt is one joule per second.
+In electrical circuits the power can be found by multiplying the current and voltage together. One way of remembering this is to use an equation triangle like the one below. Memorize the positions of the symbols. P is power, V is voltage and I is current. If you want to know the power, cover its symbol up and what you have left is I×V, or current times voltage. Want to know the voltage? Cover it up and what you have left is P÷I, or power divided by current.
+Where does the equation P equals VI come from?
+From the definition above power is energy E per unit time t. ( how many joules per second)
+- P = E/t
+So where does P = IV come from?
+To find out we look at what I and V are defined as. I is electrical current. It is the amount of charge Q flowing past any point every sec. The voltage also determines the current, so the power is directly proportional to the voltage and the current. We know that from the definition of the volt, if 1 amp flows for 1 second, with a 1 volt potential difference, 1 joule of energy is used up per second, and therefore the power is 1 Watt.
+Michael plugs a 100 W light bulb into the mains, what is the resistance of the bulb? To find the resistance we need to know the current, to find the current we use the equation for power.Covering up the I in the triangle gives:
+- I = P/V = (100 W)/(230 V)
+- = 0.435 A
+Now we can use this in the equation for resistance.
+- R = V/I
+- = (230 V)/(0.435 A)
+- = 529 Ω
+How much charge flows through this bulb in 15 seconds?
+We use the definition of current, to work this out.
+I = C/t
+So C =It = (0.435 A)(15 s) = 6.53 coulombs (C)
+How much electrical energy is converted into heat and light energy in 15 s?
+For this we use the equation for power in its energy per second form.
+P = E/t
+So E = Pt = (100 W)(15 s) = 1500 joules (J)
+Q1) Put Ohm's law into a triangle like the one above.
+Q2) If a current of 3 A flows through a 12 V heater, how much energy will it transfer in half an hour? How much charge will have flowed through the heater in the same time?
+Q3) In the USA mains voltage is only 120 V. If a 60 W light bulb is connected to the mains in the USA, what current flows through it ?
+Q4)What current would flow through the same bulb if plugged into the mains in the UK (230 V) and what would be the power?
+Before we go on to looking at power transmission in the power lines of the national grid, we need to look at how energy is generated. We'll come back to this topic later on, after we look at the next module, which is on the magnetic effects of current.
+- Power is the rate of flow of energy. Power = energy/time
+- The unit of power is the watt, where 1 watt is 1 joule per second
+- Electrical power can be found by multiplying current and voltage. (P = IV)

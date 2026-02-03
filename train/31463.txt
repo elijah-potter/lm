@@ -1,0 +1,28 @@
+Module Study Targets
+It is a prerequisite course introducing students to circuit analysis, leading through to an intermediate level of using transforms (Laplace & Fourier).
+The student upon the completion of the course he will be able to:
+- Select the appropriate analysis methodology.
+- Apply all the analysis methods.
+- Competence to provide transfer functions, frequency response plots, impulse and step response for different circuits.
+- Construct the functions of simple circuits by interpretation of specifications.
+- Identify different circuits.
+- Apply theoretical knowledge in performing the lab measurements.
+- Prepare simulation programs.
+- Organize presentation of your lab work.
+- A laboratory project using ICT means.
+Module Acquired Abilities
+- Search, analysis and synthesis of data and information using the required technologies
+- Autonomous work
+- Introduction: Basic Principles & Definitions – Circuit Properties & Classification – Signals.
+- Circuit elements – Laws – Energy & Power.
+- Kirchhoff’s Laws – Analysis Methods: Loop-Current & Node-Voltage Methods, Matrix & Determinant Formulation of Equations.
+- Time Response: Natural – Forced – Complete Response.
+- Laplace Transform: Properties – Inverse Transform – Tables – Calculation Techniques.
+- Circuit Analysis: Transfer & Driving Point Functions – Poles & Zeros – Step & Impulse Response.
+- Fourier Transform: Frequency Analysis – Amplitude & Phase Response.
+- Analog Filters – Filter Orders – Passive & Active Filters – Operational Amplifiers.
+EXPERIMENTAL PART (13 weeks)
+- J.A. Edminister, "Electric Circuits", Schaum’s Outline Series, 6th edition, McGraw Hill, 2013
+- W.H. Hayt Jr. & J.E. Kemmerly, "Electric Circuit Analysis", McGraw Hill, 2002
+- W.D. Stanley, "Transform Circuit Analysis for Engineering and Technology", 5th edition, Prentice-Hall, 2002
+- M.E. Van Valkenburg, "Network Analysis", 3rd, Prentice-Hall, 1974

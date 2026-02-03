@@ -1,0 +1,9 @@
+Lease accounting: lease classification: meaning of 'present value'
+The ‘present value’ (sometimes referred to as ‘net present value’) is the current value of money due to be received at a later date. It is most easily explained by an example.
+Assume market interest rates are 10% a year payable annually in arrear. This means a sum of £1000 today will be worth £1,100 in a year’s time. On the other hand, £1000 receivable in a year’s time is worth £909.09 today (£909.09 plus 10% is £1000) and, of course, £1,100 receivable in a year’s time is worth £1000 now.
+On the same assumptions, and assuming that interest is compounded, £1,000 in two year’s time will be worth £826.45. (£826.45 x 110% x 110% = £1,000).
+The intervals at which compounding of interest occurs can have a significant effect. Interest at 10% calculated at monthly rests is worth more than interest at 10% calculated at annual rests. Interest is earned on interest earlier in the monthly case.
+It is relatively simple to calculate the value of a stream of rentals. On the simple assumptions used here (10% interest annually in arrears), rentals of £1,000 receivable annually for 10 years will have a value of £6,144.57.
+On the same assumptions, had the money receivable annually been £1,627.46 its net present value would have been £10,000.
+Had the interest rate been only 6% the net present value of £1000 receivable annually in arrears for 10 years would have been £7,360.09 and if £1,358.68 was receivable annually in arrears it would have a value of £10,000 today.
+Therefore, ignoring the complexities of profits and tax benefits, which, in practice are very important, if the interest rate was 10%, a lessor buying an asset for £10,000 would break even at an annual rental in arrears of £1,627.46. And if interest rates were 6% a rental of £1,358.68 would allow the lessor to break even.

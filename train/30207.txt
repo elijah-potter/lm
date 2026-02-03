@@ -1,0 +1,15 @@
+Since you will be writing either C++ or Java,
+you will need at least a text editor and a compiler
+for your language of choice.
+If you prefer to use an Integrated Development Environment (IDE) like Microsoft Visual C++ or then do so.
+However, we will not be designing a graphical user interface, so a simple character mode environment like
+Sun's JDK or emacs is all that is required.
+To download the JDK or free Unix C++ compilers, such as gcc, click the Resources button on the toolbar and then click the Software link at the top of the Resources page.
+To purchase recommended software online, visit the
+Concrete examples and exercises will all be pure character mode, using the basic I/O facilities common to all languages and operating systems.
+You should be able to complete this course using a Windows or Linux box..
+Stick to pure ANSI C++ or 100% pure Java.
+Visit the course Resources page by clicking on one of the links listed below.
+An investment in the recommended books can be made by visiting the course BookStore
+This book is highly recommended for the successful completion of this course.
+You can reach the Bookstore page at any time by clicking the link listed above.

@@ -1,0 +1,26 @@
+What really happens when you delete a file from your PC? When you delete a file, it isn’t really erased. It is still going to be there on your hard drive even if you delete it from the recycle bin. This is why File Recovery is possible. Most of the people are unaware of this and run into trouble.
+So here’s a brief take on Deleted files and File Recovery.
+There is both good and bad to file recovery. If you accidentally delete a file that is of critical importance to you, file recovery will be your best friend, but at the same time, if you are not careful, file recovery will also allow other people to recover all the deleted files on your PC, which includes your confidential files.
+Before we look at how to prevent this, let’s look at what really happens when you delete a file from your PC.
+Windows (also other Operating Systems) uses a technique called “Pointers” to keep track of where all the files are on your hard drive. Every file on your hard drive has a pointer which tells Windows where that file’s data begins and ends on the hard drive.
+When you delete a particular file, Windows removes the pointer directing to the file and marks the sector containing the file’s data as free space.
+Now if you try to access the file, it doesn’t exist because from the Windows point of view the file no longer exists on your hard drive and the sector which contained the file’s data are considered free space.
+Even though Windows no longer shows the file in your file system, until Windows actually writes new data over the sectors which contained the data of the file, the file is still recoverable.
+There are plenty of file recovery software that can scan through your hard drive and recover these deleted files.
+For those who are wondering why Windows doesn’t erase the files as soon as we delete them, it has got to do a lot with speed. Deleting a file’s pointer and marking
+the sector as free space is a very fast operation while erasing a file by overwriting its data takes a serious amount of time.
+For example, if you want to actually ERASE a 5GB file, it would take as much time as it would take to write a 5GB file to your hard drive, while when DELETING a 5GB
+file it would take only a few seconds.
+NOTE – SSD (Solid State Drives) work differently, in SSD’s deleted files, are removed immediately and they can not be recovered.
+Now let’s look at how to prevent deleted files from being recovered.
+This part is especially important to those of who has private and confidential files on your computer and is thinking of selling or handing over your computer or hard drive to anyone.
+So make sure you follow these steps.
+The easiest option is CCleaner’s integrated Drive Wiper tool. This will automatically wipe your hard drive’s free space erasing all your deleted and recoverable files.
+If you want to erase a specific file you can use a “File-shredding” software such as Eraser.
+When you delete a file through Eraser, it deletes the file, then overwrites that data completely, averting anyone from recovering the file. Simply right-click on the file you want to erase and go to Eraser -> Erase.
+Download Eraser – https://eraser.heidi.ie/download/
+NOTE – This way of deleting files take longer than usual, so only use this method to delete your private and confidential files.
+Also you can take extreme measures to prevent other people from recovering files. This is useful if you are getting rid of your computer or hard drive.
+To do this you can use a program such as DBAN. You can burn DBAN to a DVD and boot from it. It will erase everything on your hard drive including the OS and overwrite the whole hard drive with useless data.
+Download DBAN- https://dban.org/
+Now you should understand why deleted files can be recovered if you haven’t deleted them properly from your computer. Next time when you are selling or handing over your computer or hard drive to someone and you have private and confidential files, take the correct measures.!

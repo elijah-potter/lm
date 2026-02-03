@@ -1,0 +1,22 @@
+When you install Windows 10 anew on a PC or run it for the first time if it comes pre-installed with the computer, you create the first user account during that process.
+This is the main account on the system and configured to be an administrator account by default, but it is not the only one that is created during that process.
+Windows 10 creates two additional user accounts automatically which are both inactive by default. They are:
+The first is a guest account which Microsoft designed for users who access the device but don't have a permanent account on it.
+Guest accounts are severely limited as it is not possible to install software or hardware, or modify system settings.
+The second account that you find preinstalled on any Windows 10 device is the Administrator account.
+It is also inactive by default and needs to be enabled before it can be used. While not required at all, it is often used for troubleshooting or administrative purposes when it is enabled.
+A core difference between the administrator account of the user and the built-in administrator account is that the former receives UAC prompts while the latter does not. The first user account that is created by the actual user of the system on first start is an unelevated administrator account while the built-in Administrator account an elevated account.
+It is relatively easy to enable or disable accounts on Windows 10 devices provided that you sign in with your admin account. You cannot make user account changes if you sign in with a regular account and don't have access to an admin account on the system.
+The process involves running a series of commands from an elevated command line prompt. It is not possible to activate the default Administrator account on Windows 10 devices using the account related options found in the Settings application as default accounts are not listed there.
+To enable the Windows 10 administrator account do the following (note: this works in older versions of Windows as well):
+Verify that the account is activate by running net user administrator from the command line prompt. Check "account active" to verify the status of the account.
+The administrator account is active after you run the commands mentioned above which means that you can sign in to the system using it. It is not password protected by default which means that anyone with local access to the system can use it to sign in to it. While that is comfortable, it may also be a security risk.
+It is highly recommended to protect it with a password. This can also be done on the command line:
+To disable accounts at any time, use the following command:
+Other commands of interested are:
+Tip: if you are running Windows 8, check out this guide which walks you through the procedure on this version of Windows.
+Note: The following two methods work as well but they are only available on professional and Enterprise versions of the Windows 10 operating system.
+Windows users who prefer to work on user interfaces instead of the command prompt may use the built-in tool Local Users and Groups to manage accounts.
+The method activates the Administrator account on the Windows 10 machine.
+The second option to change the status of the built-in Administrator account on Windows 10 devices is to use Security Policies:
+Ghacks is a technology news blog that was founded in 2005 by Martin Brinkmann. It has since then become one of the most popular tech news sites on the Internet with five authors and regular contributions from freelance writers.

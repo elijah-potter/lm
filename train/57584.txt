@@ -1,0 +1,23 @@
+One of the amazing capabilities of the brand new CartoDB’s Data Observatory is that you can create and analyze information even without data. For the following example we are going to create the “Median Age Map” for Las Vegas Strip.
+Firstly, you need the boundaries for “Las Vegas Strip”. You can create a new table using a sql like this:
+create table vegas_census_tracts as
+ST_MakeEnvelope(-115.145958,36.143978, -115.18087,36.07098, 4326),
+Then, you must cartodbfy your table:
+select cdb_cartodbfytable(‘your_user’, ‘vegas_census_tracts’);
+Add a new column to store the median age values:
+alter table vegas_census_tracts add column median_age numeric;
+SET median_age =
+OBS_GetMeasure( st_centroid(the_geom), ‘us.census.acs.B01002001’);
+And voila!. Now you can create a new map using Cartodb’s Editor:
+Make up? Easy with the new “Color Test Bed“.
+To avoid that problem you will have to use the Dice tool. That tool “Subdivides a feature into smaller features based on a specified vertex limit“*. (Only available to “Arcinfo” , “ArcGIS for Desktop Advanced” or “Arcgis for Server Advanced” users).
+For example, if you have some geometries like these:
+and apply them the Dice tool, you will get results like these:
+The only problem is that the Dice tool could generate some invalid geometries (and the docs don’t tell you about it). Alternatives? Python / Arcpy to the rescue.
+The following script does the following:
+- Convert you features from multipart to singlepart.
+- Dice your geometries
+- Teplace the old data with the new generated features
+- Check and repair the new invalid features
+Easy, isn’t it?. You can tame those ugly godzillas with a little bit of python / arcpy.
+If you need to do something similar using open source software, probably the best option is the function “ST_SubDivide” from postgis. The following post from Paul Ramsey gives you more details about it: “Subdivide All the Things“.

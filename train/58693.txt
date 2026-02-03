@@ -1,0 +1,239 @@
+Endmills are cutting tools designed so as to be able to cut in the X- and Y- axis when mounted in a spindle. Some are also able to cut when plunging along the Z-axis (Centercutting), while others cannot (Non-centercutting).
+One consideration for endmills is the tolerance to which they are made and how the actual diameter relates to the nominal diameter. Arguably the best way to handle this is to cut a slot or a shape and measure the result, but one may wish to start by measuring the endmill itself (doing so in such a way as to avoid damaging the delicate cutting edges), esp. if one is using a spindle w/ very low runout.
+There is a direct correlation between price and quality and tool longevity. While one should not expect a cheap bit to perform well, one also should not spend excessively on high-end bits when first beginning, given the possibility of destroying the bit through accident or mis-use.
+Collets and endmills must be kept clean, any foreign material will increase runout and may lead to breakage.
+Endmills should be installed as deeply as is possible in a spindle, with this reduced so as to increase projection only so much as is needed to cut the deepest feature in a given job (and no more than the manufacturer's guidelines recommend). For light cuts, 3/8" should be considered the absolute minimum which is inserted.
+Tooling life is measured in linear inches.
+Excellent discussion of feeds, speeds and guidelines and more: http://community.carbide3d.com/t/need-some-help-w-this-gcode/746/8
+Lengthy discussion of characteristics: http://community.carbide3d.com/t/recommended-end-mills/161/12
+- 1 Acronyms
+- 2 End Mill Selection Guidelines
+- 3 Materials
+- 4 Geometry
+- 4.1 Shape
+- 4.2 Number of Flutes
+- 4.3 Flute shape
+- 4.4 Flute Length
+- 4.5 Coatings
+- 4.6 Other
+- 5 Milling Formula
+- 6 Mounting an endmill
+- 7 Total Indicated Runout Considerations
+- 8 Cooling
+- 9 Storage
+- 10 Accessories
+- 11 Maintenance and Usage
+- 12 Recycling
+- 13 Specific Bit and Brand Recommendations
+- 14 References
+LOC: Length of Cut so basically how much of the end mill has a cutting area on it
+FL or FOL: Flute Length - Length of flutes or grooves.
+OAL: Over all length or how long the bit is in total from one end to the other.
+End Mill Selection Guidelines
+All other things being equal:
+- Shorter endmills are more rigid, less-expensive and may provide a better finish (as a corollary, one should expose only the length of endmill beyond the cutting edge which is absolutely necessary)
+- Longer endmills, while not as rigid, afford the ability to cut more deeply, are more expensive and may not provide as nice a finish and may increase runout (see above note)
+- Number of flutes
+- One, two or three flutes are esp. suited for slotting or heavy stock removal
+- Four or more flutes provide a nicer finish and greater tool rigidity
+- Larger diameter tools are more rigid and will clear more material in a given pass
+- Smaller diameter tools will have a smaller radius at corners and allow one to remove less material when profiling or cutting out parts, resulting in less waste and fewer chips. This may have safety implications.
+- There is a direct relation between expense and tool life
+- Coatings will allow higher feeds, speeds, and will extend tool life
+- Certain coatings will prevent material from adhering to the bit
+Forum discussion here: Recommendation for End Mill and Dw660
+The best starting point is the default 2-flute, square-ended, straight-cutting (able to center-cut) 1/8" high speed steel (or solid carbide) endmill w/ no coatings. One should move away from that baseline as is dictated by the materials which you are cutting, and the fashion in which you wish to mount them in the work-area, and the quality of cut which you expect. Switching to a spiral up-cut endmill for better chip ejection is an obvious choice (to the detriment of cut quality and increased chipping at the top surface when cutting plywood).
+Suggested starter set
+- five 2-flute 1/8" straight endmills (such as the #102 endmills from Carbide 3D 
+- two 2-flute 1/8" ball end endmills (such as the #101 .125" Ball Cutters from Carbide 3D)
+- two smaller straight endmills (say 2 mm or so) (such as the #112 0.625" endmills from Carbide 3D)
+- a stub 1 mm or 0.8 mm straight endmill
+- possibly a small stub ball end too
+- V-carving bits (say 30 and 60 degrees)
+If one is starting with just a 1/4" collet:
+- three 2-flute 1/4" straight endmills (such as the #201 endmills from Carbide 3D --- one will be included with the machine, a pack of two will fill one out with: 1 for initial experimentation/roughing, 1 for finishing passes, and 1 spare
+- two 2-flute 1/4" ball end endmills (such as the #202 endmills from Carbide 3D)
+- two 90 degree V-bits such as the #301 from Carbide 3D
+Add the 1/8" endmills from the above SO2 section if getting a 1/8" collet for detailed work.
+A wide variety of materials are used for endmills. Detailed discussion here:
+High Speed Steel (HSS)
+High speed steel is commonly used when a special tool shape is needed, not usually used for high production processes, but since it will hold a sharper edge than carbide may be used for finishing passes for crisper edges and possibly more accurate dimensions. Inexpensive, at the cost of tool life, though resilient and often used for aluminum, but has a far narrower cutting speed range than carbide.
+Cobalt (M-42: 8% Cobalt)
+An improvement over high speed steel. Reduced chipping under severe cutting conditions allowing the tool to run faster than HSS.
+Powdered Metal (PM) Cobalt
+Cost-effective alternative to solid carbide.
+Able to run much faster than other materials, carbide is especially well-suited to use with rotary tools for general usage. Incredibly tough and long-lasting, it is brittle and subject to chipping, so should be handled with care. Carbide inserts are the most common because they are good for high production milling.
+Usually used to make large-diameter tools.
+Depending on the material being milled, and what task should be performed, different tool types and geometry may be used. For instance, when milling a material such as aluminium, it may be advantageous to use a tool with very deep, polished flutes and a very sharp cutting edge. When machining a tough material such as stainless steel, however, shallow flutes and a squared-off cutting edge will optimize material removal and tool life.
+Non-optimal geometry will create results similar to a dull bit, e.g., fuzzy cuts in softer species of wood. Making a final finishing pass may help (w/ a HSS bit if possible), another alternative is to spray a clear finish on the wood, allow it to dry and then re-run the finishing pass (the sprayed finish will soak into the wood and harden it).
+End mills are described using a number of characteristics:
+The most frequently used shapes are Square End (Flat) and Bell-End endmills.
+- Square End (Flat)--- general purpose, will cut a slot with squared off bottom
+- Fishtail --- The tips of the cutting edge extend down past the center of the bit, making it especially suitable for punching through thin materials or cutting fine details
+- Radiused (Bull Nose)--- general purpose, has corners slightly radiused so as to not cut a perfectly square corner at the bottom of the cut (see below)
+- Ball-End --- general purpose, will cut a slot with a rounded bottom. The radius will result in a stronger part, and will allow for more control over the shape of a pocket, but will require a large step-over value to avoid a scalloped appearance.
+- http://www.cnccookbook.com/CCCNCMillFeedsSpeedsStepover.htm --- discussion of the "sweet spot" for step over
+- http://www.custompartnet.com/calculator/step-over-distance --- will show you how much scallop your settings will leave Also: http://www.akeric.com/blog/?p=3825
+- V-cutting --- special purpose, used for engraving or chamfering, or cutting parts w/ angled sides. Identified by the angle of the V --- 90 degree bits can be used for mitering. Sharper angles will cut deeper for a given width of cut. Engraving bits with a single-flute (look like half cones) are able to cut more deeply w/ a single pass. Most V-bits are unable to clear chips, so require slower speeds. See also V-carving reference books.
+- If work cannot be completed in a single pass, some operators will grind the tip to a 0.5--1mm radius ball point so as to minimize stepping (esp. when cutting wood). Discussion here: http://www.sawmillcreek.org/showthread.php?240841-Steps-in-V-carve-file
+- # of Passes --- Size guidelines for adding a radius at the tip (may vary based on bit angle and material):
+- <10mm --- one pass
+- 10--20mm --- ~0.5mm
+- 20--35mm --- ~0.75mm
+- >35mm --- 1mm radius
+- The tradeoff is feature size vs. feature depth --- an acute angle allows one to cut a smaller, finer feature w/ more depth, while a more obtuse angle allows one to cut a larger area w/ a single pass and while having a single bottom, as opposed to a ragged set of scallops.
+- Recommended bit angle for a given text size:
+- <1" 45--60°
+- 1--2" 60°
+- 2--4" 60--90°
+- 4--6" 90°
+- 6--10" 90 to 120°
+- >10" 120° or greater
+- Recommended bit angle for a given text size:
+- Material guidelines:
+- hardest timber available
+- use conservative plunge and feedrates even when doing more than one pass
+- avoid overlapping V-cuts --- tends to cause splintering at the top edge, leave a ~0.5--1mm gap at the top
+- use a cutter w/ centered/symmetrical geometry
+- Formula for calculating the effective diameter of a V-bit at a given depth in Excel this is:
+=TAN(RADIANS(B3)) * B4 * 2
+Where B3 is the angle in degrees and B4 is the depth in inches
+Excellent image noting width considerations: http://community.carbide3d.com/t/carve-letters-depth/4548/5
+Note that the angle of a given endmill may vary slightly, esp. if it has been resharpened. One suggested technique is to prepare a series of files set to V-bits at different angles and cut them in a piece of scrap so as to determine which angle best suits a given endmill.
+Also available are tapered endmills which shape the cutter into a triangular shape (usually between 0.5 and 15 degrees) so as to increase rigidity
+End Cut Types
+- Centercutting --- one or more cutting edges at the tip to allow plunge, drill or ramp movement into a cut. Most flexible, best-suited for general-use.
+- Non-Centercutting --- only capable of side (radial) cut or contour cutting into an exterior surface. Special-purpose, only suited for applications where plunge cutting is not necessary.
+Similarly, flute geometry is available in several different forms:
+- Straight --- general purpose cutting (wood or plastic) --- will not cause as much chipping at the top as an up-cut spiral
+- up-cutting --- pulls up on the work-piece, pulls the bit and the machine down into the cut --- affords the best possible chip ejection --- may cause chipping at the top surface on some materials
+- down-cutting --- pushes the work-piece down, and won't lift up thin materials --- poor chip ejection may result in re-cutting of waste material, dulling the bit, cleaner top edges on shallow pockets
+- combination --- (also known as Compression) bottom portion of the cutting area is up-cutting and the upper portion is down-cutting, resulting in a better edge finish in materials which chip easily such as plywood. Requires that one be able to make a cut in a single pass for best results.
+Spiral cutting flutes may also vary in their geometry by the angle at which the helix works its way up the shaft of the tool (Variable Radius). Shallower angles are used for roughing, while sharper ones are used for tooling intended to create a fine finish.
+Endmills are also described by the shape of the flutes for some designs, e.g., O-flute.
+Comparison to drills
+Note that the cutting geometry for endmills is optimized for cutting horizontally, one guideline on this is that an endmill is 4x better at cutting along XY than a drill, while a drill is 4x better at plunge cutting vertically along -Z. Note that some CAM programs will build this consideration into their generation of paths, and so will require that holes be ~10% larger than the diameter of the endmill. This has implications for the surface, so will require a finishing pass.
+Number of Flutes
+Largest possible flute space allowing for the greatest possible chip carrying capacity. Used for aluminum and plastics on commercial machines, is well-suited for plastics on less-rigid equipment.
+Largest possible flute space in a symmetrical design. Used primarily in slotting and pocketing of non-ferrous materials where chip removal is a concern on commercial machines, is well-suited for general usage on less-rigid equipment.
+Similar flute space to two flute designs, but having more material and greater rigidity.
+Used for peripheral and finish milling on commercial machines. The additional flutes allow faster feed rates, but chip removal may be problematic. Provides a much finer finish than tools with three or fewer flutes.
+Various shapes and soakings afford differing capabilities, mostly related to chip clearing, but also to reduce chatter. In general, deeper flutes afford better chip clearing (suited for wood and plastics), while shallower flutes make for a more rigid tool and are better for harder materials (metals).
+Wood tools usually have a straight, neutral flute.
+The length of the flutes will determine how much of the endmill can be engaged in cutting. There is a trade-off between longer cutting length and rigidity of the endmill. Normal cutters will have a flute length of three times their diameter. Stub length endmills will have shorter cutting area while extra long cutters will have more.
+Note that it is important to not insert endmills so deeply in a collet that the cutting edges are in contact with the collet. Always follow the manufacturer guidelines for min. and max. depth of insertion.
+In the early 1990s, use of coatings to reduce wear and friction (among other things) became more common. Most of these coatings are referred to by their chemical composition, such as:
+- Titanium nitride (TiN) (a basic yellowish coating that has fallen out of wide use)
+- TiCN (a popular bluish-grey coating)
+- Titanium aluminium nitride (TiAlN and AlTiN) (an extremely popular dark purple coating)
+- TiAlCrN, AlTiCrN and AlCrTiN (PVD coating).
+- PCD veins. Though not a coating some endmills are manufactured with a 'vein' of polycrystaline diamond. The vein is formed in a high temperature-high pressure environment. The vein is formed in a blank and then the material is ground out along the vein to form the cutting edge. The tools can be very costly, however can last many times longer than other tooling.
+- ZRN --- for aluminum
+Advances in endmill coatings are being made, however, with coatings such as Amorphous Diamond and nanocomposite PVD coatings beginning to be seen at high-end shops.
+Double-ended endmills are available. They are intended for use in special holders w/ set screws to hold them safely.
+Note that there are special-purpose endmills intended for cutting threads using a helical toolpath, see: CAM#Thread_Cutting
+http://community.carbide3d.com/t/thread-milling-in-metal-on-the-shapeoko-3/5332 --- machining a tap into a threadmill
+- RPM = SFM x 3.82 / Tool Diameter
+- IPM = RPM x # of Flutes x Chip Load
+- Chip Load = IPM / RPM x # of Flutes
+- SFM = .262 x Tool Diameter x RPM
+Revolutions per Minute (RPM): Number of revolutions the endmill makes in a minute
+Inches per Minute (IPM): Number of inches the endmill passes through the workpiece in one minute
+Chip Load: The amount that each flute cuts during a single revolution of an endmill
+Surface Feet per Minute (SFM): This is the cutting speed of the endmill. It is the number of feet per minute that a given point on the circumference of a cutter travels per minute
+Mounting an endmill
+Follow the spindle manufacturer's instructions. Some users of low-end rotary tools with problematic collets have reported success using a bit of plumber's Teflon thread tape or some other material. It would be preferable to get a replacement collet (or tool).
+See Calibration and Squaring the Machine: Squaring the Spindle for techniques to mount it plumb.
+Collet and Endmill Size
+Note that collet and endmill shaft size must match (though ER and ER-style collets have a fairly broad clamping range). Consult your manual if you have any questions or concerns, and follow the router/spindle manufacturer's guidelines.
+Total Indicated Runout Considerations
+Another consideration is the interplay between bit diameter and the TIR (Total Indicated Runout) of a given spindle. If it is a significant portion of the end mill's diameter, the possibility of breakage increases significantly. Unfortunately, rotary tools often suffer from significant lack of concentricity in their bearings and other internals which often increases with wear/usage (see the Spindle Options page for further information and other options).
+Technique for measuring runout: Measuring spindle runout with a dial test indicator.
+Some materials require cooling when milling, various liquids are popular, but must be matched to the material.
+Other materials require care when using liquid coolant, since the dust from milling is abrasive. Such materials often use air cooling as discussed in, Use of air cooling and its effectiveness in dry machining processes. One source of tooling to support that is Vortec vortex tubes.
+As tough as they are, the edges of an endmill are very delicate and must be cared for as you would any fine tool. Always store them in their case when not in use.
+Designs for endmill storage
+Most endmills will come in a reusable container — a storage case of some sort is a worthwhile investment.
+Endmills may have a plastic ring, known as a depth collar, as the name implies, it allows one to consistently set the depth of cut when installed.
+An elegant alternative is shown in Quick alternative for setting Z-Zero after tool change.
+Maintenance and Usage
+While one must view endmills as a consumable item, they are also a fine piece of tooling. It is possible to sharpen certain endmills (but the companies which do so have a rather large minimum quantity for doing so). Another possibility is the old shop tradition of using used tooling for rougher work, or materials which do not require the same sharpness, then switching to a newer, sharper tool for a finishing pass.
+Don't mix tools: e.g. a tool used for aluminum should not be used for wood - the aluminum residues blunt the cutting edges and increase friction.
+High Speed Steel and Carbide are both welcome at recyclers and should be carefully recycled once one has a sufficient quantity of material to make a trip worthwhile.
+Carbide Processing will pay for used carbide tooling in suitable quantities.
+Specific Bit and Brand Recommendations
+The following bits have been used by specific users as noted below.
+- Carbide 3D (all carbide, no corner radius or taper angle, 2 flutes)
+- ZrN coated
+- Onsrud 63-701 1/16" Solid Carbide One Flute Upcut O Flute
+- http://www.onsrud.com/plusdocs/Doc/index.html?model.code=TECH021 --- bits for poly and plexi. Very smooth finishes.
+- End Mill 1-Flute lapped Ø3,0mm Z1 --- works well on acrylic
+- http://superiortoolservice.com/tools/tools-for-composite.html 
+- http://www.destinytool.com/viper-dvh.html — available from: http://www.discount-tools.com/destiny_tool-endmills-viper_3-s.cfm the V30805S has been used on aluminum 5083 and 6061 w/ good success.
+An appropriate coating is critical.
+- http://www.lakeshorecarbide.com/18variable2fluteendmillforaluminumzrn.aspx 
+- https://www.mcmaster.com/#catalog/122/2514/=14u4k56 
+- Niagara C330 1/8" 3 flute TiAlN coated end mill --- for cutting aluminum
+- https://www.amazon.com/EnPointTM-Carbide-Aluminum-Cutting-Metalworking/dp/B018QP8KXY 
+- Engraving Bit with 2-Flute 6mm Shank 0.3mm Tip 20 Degree CNC Marking Conical V-Bit (Amazon) [http://community.carbide3d.com/t/question-on-cutters/5002/10
+- http://www.ebay.com/itm/151402216873?_trksid=p2060778.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT 
+- http://www.grainger.com/product/MICRO-100-Engraving-Tool-16R919 
+- http://www.amazon.com/gp/product/B005BOQ14Y 
+- http://www.homanndesigns.com/index.php?main_page=index&cPath=58_60_48&zenid=4t3bghu6jj7rj2pc05bb7r6rs6 
+- http://benchtopprecision.com/diamond-drag-engraving-tool/ 
+- small endmill from drillman1: http://www.shapeoko.com/forum/viewtopic.php?f=30&t=8192&p=64327
+- http://www.precisebits.com/products/carbidebits/scoreengrave.asp 
+- PreciseBIT Tapered-stub End-mills, PCB Traces-isolation Bits (EM3E8) --- best bit I've used for making PCBs (also available from soigeneris.com) 
+- V-shaped bits from T-Tech (AS-KIT-MILL)
+- tapered T1 milling bits from T-Tech
+- http://www.precisebits.com/products/carbidebits/fcrouter.asp 
+- Garr Tool Series 620MEDP#41030 1/8"x3x1" --- excellent quality, long narrow bit w/ a long cutting length which makes workholding and fixturing much easier, and making through cuts (w/ a suitable number of passes) on 1" material feasible. Carbide Depot
+- Milescraft downcut bit
+- Kodiak Cutting Tools KCT166494 USA Made Solid Carbide End Mill, AlTiN Coated, 4 Flute, 1/4" Diameter, 3/4" Length of Cut, 2-1/2" Overall Length
+- 1/16" tapered bit from Precise Bits --- cuts nicely through red oak
+- http://www.lakeshorecarbide.com/14coateddrillmill2flute90deg.aspx 
+- Downcut bit for wood: Onsrud #57-240
+- eBay (US)
+- 30 degree angle x 1/4" carbide bits engraving and scoring tools --- engraving in aluminum, note it is a 1/4" shank and I use a Dewalt DW 660 
+- (5) 1/8" (.1250") 2 FLUTE CARBIDE ENDMILLS - NEW 
+- 1/32" (.0312") CARBIDE 2 FLUTE ENDMILL, STUB LENGTH, SQUARE END Kyocera -- will work very nicely for engraving letters in plastic down to 5-6 mm.
+- (10) 0.30mm (.0118") 2 FLUTE MICRO CARBIDE ENDMILLS Kyocera Tycom
+- (.0630") 3 FLUTE CARBIDE ENDMILLS - 0 HELIX
+- (5) - 30 degree angle carbide bits for scoring or engraving
+- eBay (UK)
+- 1/8" 2 flute square nose endmills work wonderfully on wood and aluminum
+- 1/16" ball nose is a good one to have on hand too
+- 1/8" ball nose bit --- 3D shapes on larger pieces.
+- single flute 1/8" square nose --- plastics
+- 90-degree-angle-x-1-4-034-carbide-bits-engraving-and-scoring-tool-2002-2500-090A1 90 degree angle x 1/4" carbide bits engraving and scoring tool 2002-2500.090A1 
+Note that for safety and other considerations one should not use bits which include bearings.
+- MLCS 6077 Woodworking 1/4-Inch shank Carbide-tipped Router Bit Set, 15-Piece
+- Tool Shop® Tool Shop 24 Piece Router Bit Set
+- CMT 60° Contractor V-Grooving Bit --- seem to last longer
+- Craftsman 5 pc. Router Bit Set on Wood Block --- starter set bit assortment, the 90 degree V-bit is useful for engraving and may be suited to cutting miters.
+- http://www.rockler.com/replacement-bit 
+- http://www.bunnings.com.au/ultra-6-4-x-18mm-straight-router-bit_p6373247 
+Note that for specialty bit shapes, one will need either a CAM tool which supports said shape (as of this writing, the only extant tool which does so is a commercial one for dovetail bits), or be willing to draw or hand-code suitable paths.
+Ogee bit --- 1mm depth passes and slow the speed way down around 300--400 mm/min
+- Bassett MCH-2R Series Solid Carbide End Mill, Uncoated (Bright) Finish, 2 Flute, 60 Degrees Profile Angle, Chamfer End, 0.45" Cutting Length, 1/4" Cutting Diameter, 2-1/2" Length
+- Amazon: Kodiak USA 1/4" Solid Carbide End Mill 2 Flute Extra Long 1-1/2" Length of Cut 4" OAL Made in USA from Premium Carbide
+- http://www.toolstoday.com/p-6009-in-groove-cnc-insert-engraving-tool-body-replacement-solid-carbide-insert-knives.aspx?variantids=10566,0 
+- http://onlinecarbide.com 2FL SE REG SQ - TiALN: 212500-C3 (for aluminum)
+- http://www.lakeshorecarbide.com/fireplug316variableflutestubcarbideroughingendmill.aspx 
+- Re: (Engraving) Letters in Aluminum
+Specific brand recommendations / notes:
+- Insert bits --- Amana and Gerber are noted as being the only large diameter bits which balance properly
+- Kyocera bits work well for one pass work
+- Onsrud bits work well
+Bits which have received positive mentions and may be worth investigating:
+- Amazon: Autek Hi Quality 3D Wood Making Router CNC Engraving V Groove Bit End Mill 32mm 60 Degree(V63260)
+- http://www.toolstoday.com/p-6221-solid-carbide-spiral-foam-cutting-up-cut-router-bits.aspx --- for foam
+- https://www.2linc.com/tools_armor_mill.htm  --- stone, granite and marble
+There are also recommendations for flycutters at the tramming section of the Calibration and Squaring the Machine page.
+Dremel tool bits are typically HSS and are serviceable in a pinch for light work.
+Forum discussion: http://www.shapeoko.com/forum/viewtopic.php?f=7&t=5476&p=40428#p40421
+- Inventables blog post: Milling 101: Understanding Milling Bits
+- Robert H. Todd, Dell K. Allen, Leo Alting, "Manufacturing Processes Reference Guide", Industrial Press Inc., New York, 1994 pg 49-53
+- BuildYourCNC: Some Information about End Mills (Rotational Cutters) for CNC Machines
+- Wikipedia: Endmill
+- Wikipedia: Milling cutter

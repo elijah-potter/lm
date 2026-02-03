@@ -1,0 +1,10 @@
+So I had this python web server and I wanted to write a script that does some maintenance. The problem was, if the maintenance script isn’t part of the “__init__.py” package tree, it couldn’t use any of the web server modules. A hacky way to get around this is to add the target module’s directory to the path:
+import sys sys.path.append('/usr/wherever_that_module_is') import your_module
+Another trick is using
+os.chdir. Even when importing modules from the same package things can become confusing as can be learned from PEP 328, PEP 366, an abundance of stackoverflow questions on the subject and many more. I’d like to quote The Zen of Python:
+Simple is better than complex. There should be one-- and preferably only one --obvious way to do it. If the implementation is hard to explain, it's a bad idea.
+I don’t believe any of these can be said about python imports, at least not for anything past the trivial case of one-folder-with-all-the-modules. The moment you want to organize your project in folders it becomes complex if not complicated and unnatural.
+“import math” just works and that’s great, I just wished there was an equivalent to the banal:
+From those inferior languages. So I wrote import_file which can be used like this:
+>>>from import_file import import_file >>>mylib = import_file('c:\\mylib.py') >>>another = import_file('relative_subdir/another.py')
+It’s very similar to the imp module syntax, except the function requires one argument less. This is the way it should be imo. Enjoy import_file at google code, from the cheese shop, “easy_install import_file” or pip, etc.

@@ -1,0 +1,33 @@
+Most multilingual conferences are bilingual – involving just two languages. Since this is the most common and also the simplest use case, throughout this web site the images of the ZipLine web phone mostly illustrate only two languages in use.
+This article describes setting up the ZipLine web phone for use by an interpreter working on a conference where more than two languages are involved.
+This is addressed in three parts:
+- Background on related concepts and terminology, intended to help those who are not themselves interpreters.
+- Configuring the Web Phone for Relay Interpretation.
+- An overview of interpreting when multiple languages are involved.
+So this makes sense to those of you who are not interpreters, I will begin with some background about interpretation and languages, including some related terminology. Interpreter’s already familiar with these ideas may to jump right to the web phone configuration.
+The ABC’s of Languages
+|Every interpreter has a primary language (A language) which is the language they know best. This is the language the learned as a child, literally their mother tongue.|
+|As a professional interpreter they will also know one or more additional languages. If they are able to both understand and speak another language, it’s known as one of their “B languages.” They are able to interpret to/from this language.|
+|They may also have one or more “C languages.” These are languages they understand, but do not speak sufficiently to interpret in both directions.|
+Amongst professional conference interpreters, English is always an A or B language. For example, even if their mother tongue is Russian, they will also be fluent in English.
+Bilingual: A Baseline
+In a bilingual conference the interpreter knows both languages being spoken. Both languages are their A or B languages.
+As the conversation occurs, they can interpret in either direction. Thus only one interpreter is required for two languages.
+Beyond Bilingual – Multilingual
+When a conference is configured for three or more languages additional interpreters are required. For example, a conference that will have participants in English, French, German and Spanish requires a minimum of three interpreters. That’s one interpreter for each language except the language currently spoken by the presenter on the floor.
+In our example, the French and Spanish interpreters might not understand German. Thus when someone is speaking German on the floor, they would opt to listen to the German interpreter, who would be interpreting from German-to-English at the time.
+When an interpreter is listening to another interpreter they are said to be “taking relay” from the other interpreter. The language they hear, English in this example, is known as their “pivot language.”
+2. Web Phone Configuration
+We’ll use as an example the settings for the English/French interpreter mentioned above. We’ll also assert that this interpreter is English/French only, with no other B or C languages. Thus their Primary language will be French and their pivot language (for relay) will be English.
+When is this done?
+The web phone must be configured once the interpreter is connected, in the period prior to the start of the conference. This is one of the reasons we recommend using the Host Advanced Start setting, allowing 10-20 minutes for hosts and interpreters to get prepared before the rest of the participants begin to join.
+How is this done?
+When the conference is configured for 3 or more languages some additional buttons are offering to the interpreters. In the case of our English/French example it should appear as shown below:
+Setting Primary Language
+Setting Relay Language
+While bilingual conferences are most common, ZipDX accommodates truly multilingual conferences where an interpreter may need to “take relay” from from another interpreter. The process takes only a few seconds to setup before the conference gets underway. It’s designed to mimic a traditional interpreters console, so it should be familiar to most professional conference interpreters,
+We encourage conference organizers and interpreters to experiment as necessary to become familiar with the process. If you need assistance please contact our support team.
+If you have questions about any aspect of ZipDX please contact our support team at:
+- Or, +1-312-348-8175,
+- Or, email email@example.com.
+We’re here to help you get down to business

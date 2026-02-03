@@ -1,0 +1,7 @@
+If you are using a single character value, you will use the type char.
+What is a char?
+Declaring and Initializing a char:
+To declare and initialize a char, you will use the following syntax:
+<type> <name> = <value>;
+One thing to note about char is the syntax around the char itself. Similar to a String, a char does not stand alone; however, unlike String, it is encompassed by single quotes, not double quotations marks.
+char firstLetter = 'a'; char lastLetter = 'Z'; char exclamation = '!'; char strikes = '3';

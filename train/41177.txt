@@ -1,0 +1,8 @@
+What's in the name
+Libreswan has its roots all the way back to The FreeS/WAN Project which was started by John Gilmore in the late nineties. When the FreeS/WAN Project came to an end, it was continued by the people who worked on it under the name Openswan. A legal dispute about the trademark and ownership of the name lead to the creation of The Libreswan Project. See History.
+There are two parts to setting up IPsec based VPN tunnels:
+- Internet Key Exchange protocol
+The IKE protocol is used by two end point systems to authenticate each other and agree to setup an IPsec tunnel for a specific network range using specific crypto parameters. Libreswan implements an IKE daemon ins a program called pluto.
+- IPsec protocol
+The IPsec protocol is the actual specification of this agreed policy for the system (usually maintained by the operating system kernel). For the Linux operating system, there are two choices for an IPsec implementation, the default builtin NETKEY (aka XFRM) IPsec stack, or the libreswan native KLIPS IPsec stack. See KLIPS vs NETKEY for a detailed discussion on which stack you should use, but as a rule of thumb, NETKEY is the preferred stack for full fledged Linux systems, while KLIPS is the preferred stack for embedded systems with crypto hardware acceleration cards.
+|If libreswan is running, you can issue "ipsec version" to see which IPsec stack you are using|

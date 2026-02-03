@@ -1,0 +1,22 @@
+Programs are managed from the "Workspace" area on the left of the Workbench main window. To work with programs, activate the workspace area and select the "Programs" tab in it.
+Here you can declare an manage the programs and User Defined Function Blocks (UDFBs) of your application. The workspace shows the list of all programs and UDFBs, initially sorted by alphabetic order.
+Press this button in the toolbar for creating a new program. You have to select its language at this time. The programming language of a program can be changed later by converting the program. You can also declare a child program for a selected SFC program.
+When you create a program or UDFB, you have to enter its properties. A wizard guides you for defining:
+- the identification and main
+attributes of the program
+- its advanced parameters for its execution at runtime
+- its description
+The same box can be used later to rename a program, change its properties and its description.
+The box also includes a wizard for defining/arranging input and output parameters in case of a UDFB or sub-program
+The program property box can also be used for protecting the program against editing.
+Programs must have unique names. The name cannot be a reserved keyword of the programming languages and cannot have the same name as a standard or "C" function or function block. A variable should not have the same name as a declared variable The name of a program should begin by a letter or an underscore ("_") mark, followed by letters, digits or underscore marks. It is not allowed to put two consecutive underscores within a name. Naming is case insensitive. Two names with different cases are considered as the same.
+Press Enter or double click on a program to open it with the appropriate editor. An open program cannot be renamed or deleted.
+Use the "File / Copy" command for duplicating the selected program. Copy cannot be used for erasing an existing program. You must enter a new name for the destination of the copy.
+Arranging programs in folder
+Default workspace shows all programs in alphabetic order. You can freely arrange them in a tree by creating folders. Use the "New folder" command in the right-click popup menu to create a new folder. Simply click on its name to rename it. You can create several levels of folders.
+Then, simply drag programs in folders to re-arrange the tree. Programs, sub-programs and UDFBs can be put together in the same folder. Within a folder, all items are sorted in alphabetic order.
+Defining the execution sequence
+Use the "Cycle" command in the context menu to define the execution order of various programs in a seperate box. The box shows the list of the main programs, as they will be executed in runtime cycles. You can:
+- use the "Move" buttons to change the order of the programs within the cycle.
+- use the "Select" buttons to specify if the program must be called in the cycle. Unselected programs are not kept at compiling time, and are shown with a "red cross" icon in the workspace.
+- use the "Increase/Decrease" buttons when the "Period" or "Phase" column is selected to change the scheduling of a program. This enables you to define "slow" programs that are not called on every cycle. See the "Program advanced properties" for further details.

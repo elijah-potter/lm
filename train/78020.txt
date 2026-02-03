@@ -1,0 +1,42 @@
+The header ctype.h in the ANSI C Standard Library for the C programming language contains declarations for character classification functions.
+Early toolsmiths writing in C under Unix began developing idioms at a rapid rate to classify characters into different types. For example, in the ASCII character set, the following test identifies a letter:
+if ('A' <= c && c <= 'Z' || 'a' <= c && c <= 'z')
+However, this idiom does not necessarily work for other character sets such as EBCDIC.
+Pretty soon, programs became thick with tests such as the one above, or worse, tests almost like the one above. A programmer can write the same idiom several different ways, which slows comprehension and increases the chance for errors.
+Before long, the idioms were replaced by the functions in <ctype.h>.
+Unlike the above example, the character classification routines are not written as comparison tests. In most C libraries, they are written as static table lookups instead of macros or functions.
+For example, an array of 256 eight-bit integers, arranged as bitfields, is created, where each bit corresponds to a particular property of the character, e.g., isdigit, isalpha. If the lowest-order bit of the integers corresponds to the isdigit property, the code could be written thus:
+#define isdigit(x) (TABLE[x] & 1)
+Early versions of Linux used a potentially faulty method similar to the first code sample:
+#define isdigit(x) ((x) >= '0' && (x) <= '9')
+This can cause problems if x has a side effect---for instance, if one calls isdigit(x++) or isdigit(run_some_program()). It would not be immediately evident that the argument to isdigit is being evaluated twice. For this reason, the table-based approach is generally used.
+The contents of <ctype.h>Edit
+The <ctype.h> contains prototypes for a dozen character classification functions. All of these functions except
+isxdigit are locale-specific; their behavior may change if the locale changes.
+|Tests||In the form
+Return a nonzero number for true and zero for false.
+||test for alphanumeric character|
+||test for alphabetic character|
+||test for blank character (new in C99)|
+||test for control character|
+||test for digit. Not locale-specific.|
+||test for graphic character, excluding the space character.|
+||test for lowercase character|
+||test for printable character, including the space character.|
+||test for punctuation character|
+||test for any whitespace character|
+||test for uppercase character|
+||test for hexadecimal digit. Not locale-specific.|
+|Character conversion||in the form
+Return the converted character unless it is not alphabetic.
+||convert character to lowercase|
+||convert character to uppercase|
+The Single Unix Specification Version 3 adds functions similar to the above:
+||test that the parameter is between 0 and 127|
+||converts a character to ASCII|
+The standard states (§7.4-1):
+- In all cases the argument is an int, the value of which shall be representable as an unsigned char or shall equal the value of the macro EOF. If the argument has any other value, the behavior is undefined.
+Unfortunately many programmers forget that a char type may be either signed or unsigned, depending on the implementation. If the char types are signed, the implicit conversion from char to int may generate negative values, resulting in undefined behavior. That usually means that if the argument is used as an index to a lookup table, it will access an area outside of the correct table, and may even crash the program.
+The correct way to use char arguments is to first cast them to unsigned char after checking for EOF condition.
+int-type values returned by
+fgetc are guaranteed to be in the range of unsigned char (or EOF), and thus no cast is needed in these cases.

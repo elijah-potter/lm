@@ -1,0 +1,60 @@
+Introduction to the NAG SMP Library
+Note: this document, in conjunction with the Essential Introduction, is essential reading for any prospective user of the NAG SMP Library.
+1 What is the NAG SMP Library?
+The NAG SMP Library is a library of Fortran routines intended for use on Symmetric Multiprocessor (SMP) machines, which are
+multi-processor platforms with a (real or virtual) shared memory.
+The NAG SMP Library contains all the routines currently available in the NAG Fortran Library. Routine interfaces are identical
+to those of the NAG Fortran Library; this makes the migration from using the NAG Fortran Library to using the NAG SMP Library
+Many routines, including those in the key areas of dense and sparse linear algebra and FFTs, have been specially coded for
+this Library to make optimal use of the processing power and shared memory parallelism of SMP systems. Many other routines
+in the NAG SMP Library benefit from this increased performance.
+2 The Features of the NAG SMP Library
+The main feature of the NAG SMP Library is that it maximizes the processing power potential of SMP machines in the key areas
+- Dense Linear Algebra
+- Sparse Linear Algebra
+Many routines in other areas have improved performance and scalability as a direct result of the tuning of key routines.
+The main areas affected are
+- Linear Regression
+- Multivariate Statistics
+Addititional features of the Library are that the full functionality of the NAG Fortran Library is included, and that the
+user programs can achieve high levels of performance and scalability simply by linking with the high performance NAG SMP Library
+Further details and listings of the specially tuned and enhanced routines are given in the Mark 21 News – NAG SMP Library
+3 How to Use the NAG SMP Library
+3.1 Linking and Executing Your Code
+If your code currently contains calls to NAG Fortran Library routines then it is a simple matter of relinking your code to
+the NAG SMP Library (in place of the NAG Fortran Library) to benefit from the optimized performance of the tuned NAG SMP Library
+routines. On most platforms, parallelism is requested by setting an environment variable equal to the number of processors
+you wish the routines to run on and then running your linked code.
+The steps required when compiling, linking and running programs on SMP machines, in order to fully exploit their parallelism
+are very much implementation specific. The particular details for your implementation are given in the Users' Note
+which should be read carefully before using the NAG SMP Library.
+More general information regarding the conventions used in this Library is provided in the Essential Introduction
+3.2 How to Maximize the Performance of Your Application
+There are a number of things you should consider when trying to maximize the performance of your code when linking to this
+Library. In the first instance you should be aware of the functionality of the Library and of which routines you should expect
+to achieve good levels of performance and scalability; for this you should consult the Tuned and Enhanced Routines in the NAG SMP Library
+document. There may be sections of your code which reproduce the functionality of a tuned/enhanced NAG routine or vendor
+BLAS routine; in such cases you should replace your sections of code with calls to the appropriate routines.
+In addition there are areas of the NAG SMP Library that require further guidance:
+- FFTs (Chapter C06): in many implementations the vendors supply their own FFT routines that are optimized for their given platforms. Where
+possible the NAG FFT routines call these vendor routines for optimal performance. For details see the Users' Note for your implementation.
+- Sparse Iterative Solvers (Chapter F11): when running the sparse iterative solvers with preconditioning on multiple processors, it may be beneficial to reduce
+the action of the preconditioner, e.g., by decreasing LFILL, or by increasing DTOL with LFILL<0 in F11DAF or F11JAF. This will tend to increase the number of iterations required to obtain a converged solution, but allow a greater percentage
+of the computational work to be spent in the parallelized iterative solvers, resulting in a lower overall time to solution.
+There is unfortunately no choice of the various preconditioner parameters which is optimal for all types of matrix, and all
+numbers of processors, and some experimentation will generally be required for each new type of matrix encountered.
+4 Structure of the Documentation
+The NAG SMP Library is the same collection of routines as available in the NAG Fortran Library which have been parallelized
+or enhanced and are intended for use on Symmetric Multiprocessor (SMP) machines and the document entitled ‘Essential Introduction
+’ is essential reading for NAG SMP Library users.
+4.1 Marks of the Library
+The NAG SMP Library was released as a Release
+at Release 1 and Release 2. The NAG SMP Library now contains the full suite of user-callable routines as provided by the
+NAG Fortran Library with parallelized and enhanced routines as listed in the document entitled ‘Tuned and Enhanced Routines in the NAG SMP Library
+’. We have consolidated the two products and will now refer to new releases of the NAG SMP Library as a Mark
+. At a new release of the NAG SMP Library, new routines are added, corrections and/or improvements are made to existing routines;
+and occasionally routines are withdrawn if they have been superseded by improved routines.
+At each Mark, the documentation of the Library is updated. You must make sure that your documentation has been updated to
+the same Mark as the Library software that you are using.
+The current Mark is
+© The Numerical Algorithms Group Ltd, Oxford, UK. 2006

@@ -1,0 +1,90 @@
+We have already seen how to train linear
+networks by gradient descent. In trying to do the same for multi-layer
+networks we encounter a difficulty: we don't have any target values for
+the hidden units. This seems to be an insurmountable problem - how could
+we tell the hidden units just what to do? This unsolved question was in
+fact the reason why neural networks fell out of favor after an initial
+period of high popularity in the 1950s. It took 30 years before the
+error backpropagation (or in short: backprop) algorithm
+popularized a way to train hidden units, leading to a new wave of neural
+network research and applications.
+In principle, backprop provides a way to train networks with any number
+of hidden units arranged in any number of layers. (There are clear
+practical limits, which we will discuss later.) In fact, the network does
+not have to be organized in layers - any pattern of connectivity that
+permits a partial ordering of the nodes from input to output is
+allowed. In other words, there must be a way to order the units such that
+all connections go from "earlier" (closer to the input) to "later" ones
+(closer to the output). This is equivalent to stating that their connection
+pattern must not contain any cycles. Networks that respect this constraint
+are called feedforward networks; their connection pattern forms a
+directed acyclic graph or dag.
+We want to train a multi-layer feedforward network by gradient descent to
+approximate an unknown function, based on some training data consisting
+of pairs (x,t). The vector x represents a pattern of input
+to the network, and the vector t the corresponding target
+(desired output). As we have seen before, the overall gradient with
+respect to the entire training set is just the sum of the gradients for
+each pattern; in what follows we will therefore describe how to compute
+the gradient for just a single training pattern.
+As before, we will number the units, and denote the weight from unit
+j to unit i by wij.
+the error signal for unit j:
+the (negative) gradient for weight wij:
+the set of nodes anterior to unit i:
+the set of nodes posterior to unit j:
+- The gradient.
+As we did for linear networks before,
+we expand the gradient into two factors by use of the chain rule:
+The first factor is the error of unit i. The second is
+Putting the two together, we get
+To compute this gradient, we thus need to know the activity and the error
+for all relevant nodes in the network.
+- Forward activaction.
+The activity of the input units
+is determined by the network's external input x. For all other
+units, the activity is propagated forward:
+Note that before the activity of unit i can be calculated, the
+activity of all its anterior nodes (forming the set Ai)
+must be known. Since feedforward networks do not contain cycles,
+there is an ordering of nodes from input to output that respects
+- Calculating output error.
+Assuming that we are using the sum-squared loss
+the error for output unit o is simply
+- Error backpropagation.
+For hidden units, we must propagate the error back from the output nodes
+(hence the name of the algorithm). Again using the chain rule, we can
+expand the error of a hidden unit in terms of its posterior nodes:
+Of the three factors inside the sum, the first is just the error of node
+i. The second is
+while the third is the derivative of node j's activation function:
+For hidden units h that use the tanh activation function, we can make use
+of the special identity
+tanh(u)' = 1 - tanh(u)2, giving us
+Putting all the pieces together we get
+Note that in order to calculate the error for unit j, we must first
+know the error of all its posterior nodes (forming the set Pj).
+Again, as long as there are no cycles in the network, there is an ordering
+of nodes from the output back to the input that respects this condition.
+For example, we can simply use the reverse of the order in which activity
+was propagated forward.
+For layered feedforward networks that are fully connected
+- that is, each node in a given layer connects to every node in
+the next layer - it is often more convenient to write the backprop
+algorithm in matrix notation rather than using more general graph
+form given above. In this notation, the biases weights, net inputs,
+activations, and error signals for all units in a layer are combined
+into vectors, while all the non-bias weights from one layer to the
+next form a matrix W. Layers are numbered from 0 (the input layer)
+to L (the output layer). The backprop algorithm then looks as follows:
+You can see that this notation is significantly more compact than the graph
+form, even though it describes exactly the same sequence of operations.
+- Initialize the input layer:
+- Propagate activity forward: for l = 1, 2, ..., L,
+where bl is the vector of bias weights.
+- Calculate the error in the output layer:
+- Backpropagate the error: for l = L-1, L-2, ..., 1,
+where T is the matrix transposition operator.
+- Update the weights and biases:
+[Next: A first example]
+[Back to the first page]

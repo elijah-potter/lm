@@ -1,0 +1,75 @@
+User forms in Excel usually have a particular ‘tab order’ that automatically navigates you to a given control as and when you enter data.
+However, sometimes you might want to override this order to ensure that a specific control gets ‘focus’ at a given instance.
+For example, you may want the cursor to automatically come to a specific text box so that you don’t have to manually select the text box before typing.
+The VBA SetFocus method helps you do just that.
+In this tutorial, we will discuss the SetFocus method in detail, including why they are used and how to use them.
+What Does the SetFocus Method do in Excel Forms?
+The SetFocus method helps shift the focus to a specific form, control, or field. The syntax for this function is:
+Here, expression is the expression that returns a command object.
+Why use SetFocus in Excel VBA?
+The SetFocus function is usually used when you want a particular field or control to have the focus, thereby directing the user’s input to that field/control.
+For example, consider the following user form:
+If you look at the Tab order for this form (by selecting View->Tab order), you will see that TextBox1 (the input box corresponding to the Name field) comes first (It is the first input box in the list).
+This means that as soon as the form opens, the focus goes to this input box (shown by the cursor blinking in this box), letting you enter your first input there.
+The Reset button in this form is meant to simply clear all inputs in the text boxes (in case the user makes a mistake), allowing you to re-enter data into these fields.
+However, since the tab order of CommandButton2 (the Close button) comes after that of CommandButton1 (the Reset button), the form’s focus will move to the Close button after the user presses the Reset button.
+But this is not what we usually want.
+Generally, we would prefer to have the focus return to TextBox1 (the Name input field) after clicking Reset, so that the user can re-enter data without having to explicitly click into the box (or press the tab key several times).
+This is where the SetFocus method comes in handy.
+Using this method, we can easily dictate which form control we want our focus to be on at any point, while the user form is running.
+How to Use SetFocus in Excel VBA
+Let us create a simple form to understand how and when the SetFocus method is applicable.
+Creating a Sample User Form in Excel VBA
+To create the form, you need to be in the Visual Basic window (by navigating to Developer->Visual Basic).
+Once you’re in, follow the steps shown below to create a very simple user form, that accepts a user’s Name and Email address:
+- Insert a label for Name: Click on the Label button from the userForm Toolbox and drag on the User form to create the label, as shown below:
+- Change the label caption: From the Properties window (on the left sidebar), set the Caption property to “Name:”. This will rewrite the label’s caption, as shown below:
+- Insert a label for Email address: Repeat steps 1 and 2 to create a label for Email Address.
+- Insert text boxes to receive name and email address inputs: Click on the Textbox button from the UserForm Toolbox and drag on the User form to create the input text box. Do this twice to create TextBox1 for the name input and TextBox2 for the email address input.
+- Insert the Reset button: Click on the CommandButton button from the Toolbox and drag on the form to create a button.
+- Change the button caption: From the Properties window, set the Caption property to “Reset”. This will rewrite the button’s caption, as shown below:
+- Insert the Close button: Repeat steps 5 and 6 to create the Close button.
+Your User form’s interface is now ready.
+Coding the Close Button
+Now we need to code the buttons to perform appropriate actions. We want the form to close when the Close button is pressed.
+For this, double-click on the Close button. It opens the Code window, where you can see the procedure created for the button.
+Enter the following line of code right after the first line:
+The above line will unload your form when the Close button is pressed (which means it will close the user form).
+Close the Code window.
+Coding the Reset Button
+When the Reset button is clicked, we want both input boxes cleared out, so that the user can provide fresh input.
+Double click on the Reset button to open the Code window:
+Enter the following lines of code right after the first line (Private Sub CommandButton1_Click()):
+These two lines simply replace the contents of TextBox1 and TextBox2 with blanks.
+Setting Focus to the Name Field on Pressing the Reset Button
+We are still not done yet.
+Once your input boxes are cleared, we want the focus to return to TextBox1 (the Name field).
+And this is where we will be using the SetFocus method in Excel VBA.
+For this, insert the following line:
+Here we simply used the SetFocus function on the handle returned by TextBox1 to set the focus to this control.
+Close the Code window.
+In the above three-line code for the Reset button (Command_Button1), we first asked it to remove anything that’s already there in the two text fields (TextBox1 and TextBox2), and then move the focus to TextBox1. Now, when you press the reset button, it will first clear the text fields and then bring your cursor to the first text box
+Running the User Form
+It’s now time to test out our User Form and all the coding we did so far.
+- Click on the Run button or press F5.
+- Type in a name and email address.
+- Click on the form’s Reset button.
+Notice that the inputs you had entered into both text boxes have been cleared.
+You should also notice a blinking cursor at the first input box (TextBox1), showing that the focus is now on this field, allowing you to type in the new name directly (without having to press the tab or click inside the textbox).
+Once you’re done, you can close the user form by clicking on the form’s Close button.
+Note that this tutorial was simply meant to help you understand the SetFocus method.
+We did not connect the sample user form to any cell in the Excel worksheet, as that would go beyond the scope of the tutorial.
+However, you can go ahead and further refine the form as you like.
+There are a few things that you should keep in mind when using the SetFocus method in Excel VBA:
+- You can only set focus on a single control at a time (this of course goes without saying).
+- A textbox has to have the focus on itself before you can read any of its Text properties.
+- You cannot set other properties of a control when it has the focus. For example, you cannot set/change the Visible or Enabled properties of an input box when it is in focus.
+The SetFocus method is commonly used in Excel VBA.
+In this tutorial, we explained what the SetFocus method does and how to apply it to a user form in Excel. We hope you found the tutorial informative and useful.
+Other Excel tutorials you may also find useful:
+- What is the Excel Personal Workbook Location?
+- Using Application.GetSaveAsFilename in VBA in Excel (Examples)
+- Using Application.EnableEvents in VBA in Excel (Explained with Examples)
+- How to Remove Macros from Excel? 3 Simple Methods
+- What is an Active Cell in Excel?
+- Subscript Out of Range Error in VBA – How to Fix!

@@ -1,0 +1,4 @@
+Wed Apr 28 2021
+Data Structure0 views
+A binary tree is an important type of structure which is characterized by the fact that any node can have at most two branches, there is no node with degree greater than two.
+The distinguish between the subtree on the left and on the right, whereas for trees the order of the subtree was irrelevant. Also a binary tree may have zero nodes. Thus a binary tree is really a different object than a tree. From a graph theory perspective, binary trees as defined here are actually arborescences.

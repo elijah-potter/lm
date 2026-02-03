@@ -1,0 +1,20 @@
+In the Cloze Drag & Drop question, students drag their responses from a list of options set by the author, into empty response boxes.
+Create a Question
+Enter the question stem into the Compose question area. In the Template Markup area below enter your text and add response boxes by clicking on the Insert Response button in the Editor. This will indicate the position of the response box in the text. You can also use the keyboard short cut, double underscore. See example below.
+In the Possible responses section, enter all possible responses for the student to choose from. The +Add button will add a new response box, and the trash can icon beside a response will delete it. The button to the left of each field allows you to re-order how the Multiple choice options appear to the student, through simple drag and drop
+You can now configure validation for your question. Follow these steps to set up score and correct response:
+- Insert value in the Point(s) box to set up a mark for the question. The default value is 1.
+- In the Correct tab you will see the text with empty response boxes and a container with possible response options. In order to validate the question drag and drop correct responses into the respective boxes. See example below.
+Scoring type menu can be found under More Options.
+The following scoring types are avaialable in Cloze Drag & Drop questions:
+- Exact Match - Student must answer all parts of the question correct to receive a mark.
+- Partial Match Per Response - Each correct response element will be awarded an individual score.
+- Partial Match - Each correct response element will be scored individually and the overall question score will be divided between responses.
+Enable Duplicate responses if you want the responses to be used infinite times. This means a response when dragged into a box will not disappear from the possible responses container and is reusable.
+Drag handles appear to the left of each possible response, and can be enabled or disabled. Both options can be found below Validation.
+Under More Options you will find additional question attributes that can be configured:
+Under More Options section you will find additional formatting options that can be applied to the question.
+From the Possibility List Position drop down menu choose where to position the possible responses container. Options are: Top, Bottom, Left or Right.
+Authors also have the ability to control the size of response boxes in the text. Width and height of all response boxes can be changed at once in the Response Container (global) section. However if you only wish to change the size of specific boxes go to Response Container (individual).
+If you set width to a fixed size enable Wordwrap, it will allow the response box to expand vertically to fit the response into it.
+Want information on other question types? Click the button below!

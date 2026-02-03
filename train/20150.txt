@@ -1,0 +1,66 @@
+Within ZenHub you can format text and comments using our markdown editor or by using markdown syntax. Markdown changes the way text is displayed in comments by using common non-alphabetic characters to add formatting.
+Using the markdown editor
+When formatting text in ZenHub, you can use the markdown editor to quickly and easily style your text:
+The buttons available to you within the editor are:
+- Title Styling: This allows you to add header text.
+- Bold Styling: This allows you to make text bold.
+- Italic Styling: This allows you to make text italic.
+- Quote Styling: This allows you to insert a quote.
+- Code Styling: This allows you to insert code.
+- Link Styling: This allows you to add a link.
+- Bulleted list: This allows you to add a bulleted list.
+- Numbered list: This allows you to add a numbered list.
+- Checkbox Styling: This allows you to add a checklist.
+- Mention Styling: This allows you to mention a user or team.
+Overview of markdown syntax
+Looking to make something bold? Add a header section? Or perhaps make a list of to-do items? Markdown helps you add these visual changes by using characters such as #, *, or _
+As an alternative to using the markdown editor, you can also format text using characters directly within the text. Below is a list of various non-alphabetic characters that are used in Markdown and their corresponding names.
+- #Hashtag (Used to create or to reference another Issue)
+- **Asterisk (Used to make text bold)
+- _Underscore (Used to italicize text)
+- ~Tilde is used to strikethrough text in comments.
+- - [ ] Hypen and closing square brackets are used to make checklists. Make sure to leave a space after each symbol to create an interactive checklist
+- ‐Dash (One dash is used before text to make an unordered list. Three dashes in a row between paragraphs is used to make a line)
+- >Greater-than symbol (Used to indicate a blockquote)
+- `Backtick (Used to create code snippets)
+- @Mention character (Used to reference another user)
+- `Backtick (Used to create snippets of code and have them appear as one block)
+Examples of markdown syntax
+To make certain words or sentences appear bold or italicized in Markdown, you can use double asterisks ** for bolding, underscore _ for italicizing, and ~ for strikethrough. Below is an example for each:
+**Text with two asterisks at the start and end of it appears bold**
+Text with asterisks at the start and end of it appears bold
+_Text with underscore at the start and end of it appears italicized_
+Text with underscore at the start and end of it appears italicized
+There are three types of lists that can be created using ZenHub markdown: unordered lists created by putting the dash ‐ before text, ordered lists, which are created by adding numbers with a dot (for example: 1.) before text, and checklists which are created using the [ and ] brackets. Below is an example of both list types:
+To create an unordered list, place a dash before each line item. Each new list item should be on a new line.
+- Lists are great for to do items.
+- Or when needing to list out findings.
+- They are also very scannable when reading an Issue!
+To create an ordered list, place the number, and a period before each line item.
+- Need to add a structured order to a list? Use numbers instead of dashes!
+- Your team will then know what comes first, second, third, and so forth.
+- Ordered lists are great for indicating next steps as well.
+A great way to organize information into sections is to make use of headers. To make a header using Markdown, you use the # character.
+The greater number of # used before the desired header text, the smaller the header will appear. Below are three different levels of headers.
+When creating titles, it is important to leave a space between the # characters and the actual title name. If you do not leave a space, the header will not properly form.
+Markdown header examples
+# I am the largest header
+I am the largest header
+## I am a slightly smaller header
+I am a slightly smaller header
+### I am a small header
+I am a small header
+3 levels of titles is most common, but you can go up to 6 #s to make a really small header.
+You can create inline links by adding link text between square brackets [ ], directly followed by the URL in parentheses( ).
+- [Opening square brackets, and ]Closing square brackets are used around the text section
+- (Opening oval brackets, and )Closing oval brackets are used around the link section
+Ensure there are no spaces between the oval brackets surrounding the text that you'd like to appear, and the link in oval brackets.
+To create an in-line quote, use the greater-than character > before a block of text to make it appear as a blockquote.
+Below is an example of how to use Markdown to create a blockquote and how it will render:
+> Place all the relevant text you would like to quote after the character.
+Place all the relevant text you would like to quote after the character.
+Using the ` character, you can create code snippets in-line by placing 1 ` on either end of text. To make a code snippet block, place 3 `s and create a line break before adding text (you will also need to make a line break and add the ` at the end of a block of text). Adding a ` on the line above and below text makes the text appear as 1 full block.
+Below are examples of in-line and block code snippets:
+To create a horizontal line within a comment to make a section break, or visually create breaks within the comment you can use the ‐ character 3 times in a row. To create an in-comment line, and not just create a title, it is important to leave a line-break before and after the dash.
+To create a cross-link between one Issue and another, use the # character and add the Issue number of the Issue you would like to mention.It is important when referencing other Issues to not leave a space between the # and the Issue information, otherwise a header will be created.
+To mention other team mates in an Issue, use the @ character and then begin typing the individual's GitHub username. This will cause a dropdown of users to appear where you can select your team mate. Once mentioned, they will receive a notification with your comment and the Issue information so they can follow-up.

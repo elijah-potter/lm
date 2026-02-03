@@ -1,0 +1,57 @@
+Acoustical sound measurement of SUNON fans is made in anechoic room with
+background noise less than 15 dBA. The measured fan is running in free air
+with a microphone at a distance of one meter from the fan intake.
+Sound Pressure Level (SPL), which is environmentally dependent, and Sound
+Power Level (SPL) are defined as following :
+= 20¡ê P¡þPref and SWL = 10¡ê
+- P = Pressure
+- Pref = A reference pressure
+- W = Acoustic power of the source
+- Wref = An acoustic reference power
+Fan noise data is usually plotted as SPL against the octave frequency
+bands. The following provides an indication of the effect of dBA changes
+- 3 dBA Barely Noticeable
+- 5 dBA Noticeable
+- 10 dBA Twice as loud
+Noise levels :
+- 0 ~ 20 dBA Very Faint
+- 20 ~ 40 dBA Faint
+- 40 ~ 60 dBA Moderate
+- 60 ~ 80 dBA Loud
+- 80 ~ 100 dBA Very Loud
+- 100 ~ 140 dBA Deafening
+The following five guidelines provide fan users the best approaches in minimizing
+- System Impedance
+As known, the area between inlet and outlet ports of a cabinet make
+up 60% to 80% of the total system impedance. In addition, the greater
+the air flow is, the higher the noise level is. The higher the total
+system impedance is, the more air flow is required to provide the necessary
+cooling. Therefore, system impedance must be reduced to the lowest possible
+level in order to reduce noise to the least.
+- Flow Disturbance
+Obstructions along the path of the flow of the turbulent air generated
+noise. Thus, obstructions, especially in the critical inlet and outlet
+area, must be avoided to reduce noise level.
+- Fan Speed and Size
+Since a high speed fan usually generates greater noise than a low speed
+fan does, a low speed fan should be tried and used whenever possible.
+Very often, a larger, slower fan is quieter than a smaller, faster fan
+while delivering the same air flow.
+- Temperature Rise
+Air flow is inversely proportional related to allowable temperature
+rise within a system. A little change in the allowable temperature rise
+leads to a significant change in air flow required. Therefore, if there
+is a little compromise to the limit imposed on allowable temperature
+rise, there will be a considerably less amount of air flow required.
+As a result, noise is remarkably reduced.
+In some cases, the system is light in weight or specified in some certain
+operating methods, a soft and flexible isolator is highly recommended
+to avoid the vibration transmission.
+- Voltage Variation
+Voltage variation affects the level of acoustic noise. When the higher
+voltage is applied to the fan, the higher vibration is generated due
+to the increased RPM. Thus, the higher noise level is generated.
+- Design Considerations
+The design of every component of the fan affects the level of acoustic
+noise. Low noise levels can be achieved by dimension of winding core,
+by design of impeller blades and housing and by precision manufacturing

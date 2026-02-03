@@ -1,0 +1,10 @@
+In this tutorial, we will introduce you to the <!-- --> comment tag of HTML5. This tag is used to insert the comment inside the source code. The text written inside comment tag will define what next piece of code are doing. Comment tag is always used inside the body.
+Text present in the comment tag will be ignored by the browser including html
+tag, scripting language etc. Text written in comment tag can be visible only for
+developer. It can not be read by user.
+Declaration syntax of comment tag in Html5.
+|<!-- Comment area -->|
+See the browser compatible page for successfully rendering the program.
+There is no difference in between HTML4.01 and HTML5 comment tag.
+If you are facing any programming issue, such as compilation errors or not able to find the code you are looking for.
+Ask your questions, our development team will try to give answers to your questions.

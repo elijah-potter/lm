@@ -1,0 +1,61 @@
+The Waterfall Model:
+The Waterfall Model is a very popular
+model to follow when undergoing systems analysis. It consists of 6 main steps
+that allow for a well-structured, thorough analysis of current system, and
+design of a newer model. The steps are as follows: definition, analysis,
+design, implementation, testing and maintenance. The following is a short
+description of each step.
+1. Definition: This stage is where the
+problem is fully outlined. A feasibility check will then be performed to see if
+it is possible to improve the system firstly, then if it will be economically
+and socially acceptable. As well as taking into account the costs of the
+process itself, they must realise that the new system could potentially render
+the jobs of some of their employees useless, warranting redundancy payments
+which can also cost them a lot of money. A brief investigation also happens to
+see roughly what needs to be done.
+2. Analysis: This stage only proceeds if
+the feasibility check from the previous step results in the recommendation of a
+new system. More detailed research will then be carried out about the current
+system; the analyst needs a full understanding of how exactly everything works
+and what is done with all the data. This is not the end of the research as more
+detail will be needed later on.
+3. Design: To commence this step, a
+system specification will be drawn out; this will detail all the features and
+functions needed by the customer. The designers will then produce both a
+logical and physical design, as well as a test plan.
+4. Implementation: This is when the new
+system is put into place. It is usually done one of three ways: direct, phased
+or parallel. Direct implementation is when the new system is immediately
+implemented – there is no changeover period. Phased implementation is when the
+new system is implemented in small parts over time; and parallel implementation
+is when the new system is run alongside the current, while continuing to test
+5. Testing: The test plan will then be
+run to ensure the system is functioning properly; If any errors are found, they
+will be corrected. When the testing stage is completed, the system can then be
+passed onto the users.
+6. Maintenance: The final stage of the
+Waterfall Model is the maintenance stage. This stage will continue throughout
+the life of the new system. It involves regular maintenance where any newly
+discovered problems are fixed and any new features can be added.
+Advantages of the Waterfall Model:
+is easy to use as each step is fairly self-explanatory;
+phases are all separate- there is no overlap. This means each stage can have
+the full attention of the team, reducing the likelihood of errors;
+stage can have clear goals/deadlines set, helping the team to be more
+time-efficient and meet deadlines easier; and
+to the separate stages, the development process can be very structured,
+allowing each step to be a task on its own.
+Disadvantages of the Waterfall Model:
+the initial requirements are wrong in any way, the final system will have those
+flaws present, and this will be very difficult to change;
+users are not very involved outside of the definition phase, so they can’t
+point out any flaws in the systems as it is developed;
+is very easy for the systems to overrun in terms of time and budget; and
+product won’t be tested until the end of development, so any mistakes will be
+very hard to detect until the end, making the initial maintenance longer.
+Appropriate Uses of the Waterfall Model:
+to the disadvantages listed previously, it is best to use this model when
+working on smaller projects that can be completed in a shorter amount of time.
+is also wise to only use this if the user is certain they have all of the
+requirements/specifications ready at the definition phase, due to the
+difficulty in changing these later on.

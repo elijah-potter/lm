@@ -1,0 +1,6 @@
+Packet sniffing is a technique of monitoring network traffic. It is
+effective on both switched and non-switched networks. This paper discusses
+several methods that result in packet sniffing on Layer 2 switched
+networks. Each of the sniffing methods will be explained in detail.
+The purpose of the paper is to show how sniffing can be accomplished
+on switched networks, and to understand how it can be prevented.

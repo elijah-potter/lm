@@ -1,0 +1,588 @@
+of Glauber Costa's talk at LinuxCon Europe 2012 started with the humorous
+note "I once heard that hypervisors are the living proof of operating
+system's incompetence". Glauber acknowledged that hypervisors have
+indeed provided a remedy for certain deficiencies in operating system
+design. But the goal of his talk was to point out that, for some cases,
+containers may be an even better remedy for those deficiencies.
+Operating systems and their limitations
+Because he wanted to illustrate the limitations of traditional
+UNIX systems that hypervisors and containers have been used to address,
+Glauber commenced with a recap of some operating system basics.
+In the early days of computing, a computer ran only a single program.
+The problem with that mode of operation is that valuable CPU time was
+wasted when the program was blocked because of I/O. So, Glauber noted
+"whatever equivalent of Ingo Molnar existed back then wrote a
+scheduler" in order that the CPU could be shared among processes;
+thus, CPU cycles were no longer wasted when one process blocked on I/O.
+A later step in the evolution of operating systems was the addition of
+virtual memory, so that (physical) memory could be more efficiently
+allocated to processes and each process could operate under the illusion
+that it had an isolated address space.
+However, nowadays we can see that the CPU scheduling and virtual memory
+abstractions have limitations. For example, suppose you start a browser or
+another program that uses a lot of memory. As a consequence, the operating
+system will likely start paging out memory from processes. However, because
+the operating system makes memory-management decisions at a global scope,
+typically employing a least recently used (LRU) algorithm, it can easily
+happen that excessive memory use by one process will cause another
+process to suffer being paged out.
+There is an analogous problem with CPU scheduling. The kernel
+allocates CPU cycles globally across all processes on the system.
+Processes tend to use as much CPU as they can. There are mechanisms to
+influence or limit CPU usage, such as setting the nice value of a process
+to give it a relatively greater or lesser share of the CPU. But these
+tools are rather blunt. The problem is that while it is possible to
+control the priority of individual processes, modern applications employ
+groups of processes to perform tasks. Thus, an application that
+creates more processes will receive a greater share of the CPU. In theory,
+it might be possible to address that problem by dynamically adjusting
+process priorities, but in practice this is too difficult, since processes
+may come and go quite quickly.
+The other side of the resource-allocation problem is denial-of-service
+attacks. With traditional UNIX systems, local denial-of-service attacks are
+relatively easy to perpetrate. As a first example, Glauber gave the
+following small script:
+$ while true; do mkdir x; cd x; done
+This script will create a directory structure that is as deep as
+possible. Each subdirectory "x" will create a dentry (directory entry)
+that is pinned in non-reclaimable kernel memory. Such a script can
+potentially consume all available memory before filesystem quotas or other
+filesystem limits kick in, and, as a consequence, other processes will not
+receive service from the kernel because kernel memory has been exhausted.
+(One can monitor the amount of kernel memory being consumed by the above
+script via the dentry entry in /proc/slabinfo.)
+Fork bombs create a similar kind of problem that affects unrelated
+processes on the system. As Glauber noted, when an application abuses
+system resources in these ways, then it should be the application's
+problem, rather than being everyone's problem.
+Hypervisors have been the traditional solution to the sorts of problems
+described above; they provide the resource isolation that is necessary to
+prevent those problems.
+By way of an example of a hypervisor, Glauber chose KVM. Under KVM,
+the Linux kernel is itself the hypervisor. That makes sense, Glauber said,
+because all of the resource isolation that should be done by the hypervisor
+is already done by the operating system. The hypervisor has a scheduler,
+as does the kernel. So the idea of KVM is to simply re-use the Linux
+kernel's scheduler to schedule virtual machines. The hypervisor has to manage
+memory, as does the kernel, and so on; everything that a hypervisor does is
+also part of the kernel's duties.
+There are many use cases for hypervisors. One is simple resource
+isolation, so that, for example, one can run a web server and a mail server
+on the same physical machine without having them interfere with one
+another. Another use case is to gather accurate service statistics. Thus,
+for example, the system manager may want to run top in order to
+obtain statistics about the mail server without seeing the effect of a
+database server on the same physical machine; placing the two servers in
+separate virtual machines allows such independent statistics gathering.
+Hypervisors can be useful in conjunction with network applications.
+Since each virtual machine has its own IP address and port number space, it
+is possible, for example, to run two different web servers that each use
+port 80 inside different virtual machines. Hypervisors can also be used to
+provide root privilege to a user on one particular virtual machine. That
+user can then do anything they want on that virtual machine, without any
+danger of damaging the host system.
+Finally, hypervisors can be used to run different versions of Linux on
+the same system, or even to run different operating systems (e.g., Linux
+and Windows) on the same physical machine.
+Glauber noted that all of the above use cases can be handled by
+hypervisors. But, what about containers? Hypervisors handle these use
+cases by running multiple kernel instances. But, he asked, shouldn't
+it be possible for a single kernel to satisfy many of these use cases?
+After all, the operating system was originally designed to solve
+resource-isolation problems. Why can't it go further and solve these other
+problems as well by providing the required isolation?
+From a theoretical perspective, Glauber asked, should it be possible
+for the operating system to ensure that excessive resource usage by one
+group of processes doesn't interfere with another group of processes?
+Should it be possible for a single kernel to provide resource-usage
+statistics for a logical group of processes? Likewise, should the kernel
+be able to allow multiple processes to transparently use port 80? Glauber
+noted that all of these things should be possible; there's no
+theoretical reason why an operating system couldn't support all of these
+resource-isolation use cases. It's simply that, historically, operating
+systems were not built with these requirements in mind. The only notable use
+case above that couldn't be satisfied is for a single kernel to run a
+different kernel or operating system.
+The goal of containers is, of course, to add the missing pieces that
+allow a kernel to support all of the resource-isolation use cases, without
+the overhead and complexity of running multiple kernel instances. Over
+time, various patches have been made to the kernel to add support for
+isolation of various types of resources; further patches are planned to
+complete that work. Glauber noted that although all of those kernel
+changes were made with the goal of supporting containers, a number
+of other interesting uses had already been found
+(some of these were touched on later in the talk).
+Glauber then looked at some examples of the various resource-isolation
+features ("namespaces") that have been added to the kernel. Glauber's
+first example was network namespaces. A
+network namespace provides a private view of the network for a group of
+processes. The namespace includes private network devices and IP addresses,
+so that each group of processes has its own port number space. Network
+namespaces also make packet filtering easier, since each group of processes
+has its own network device.
+Mount namespaces were one of the earliest namespaces added to the
+kernel. The idea is that a group of processes should see an isolated view
+of the filesystem. Before mount namespaces existed, some degree of
+isolation was provided by the chroot() system call, which could be
+used to limit a process (and its children) to a part of the filesystem
+hierarchy. However, the chroot() system call did not change the
+fact that the hierarchical relationship of the mounts in the filesystem was
+global to all processes. By contrast, mount namespaces allow different
+groups of processes to see different filesystem hierarchies.
+User namespaces provide isolation of
+the "user ID" resource. Thus, it is possible to create users that are
+visible only within a container. Most notably, user namespaces allow a
+container to have a user that has root privileges for operations inside the
+container without being privileged on the system as a whole. (There are
+various other namespaces in addition to those that Glauber discussed, such
+as the PID, UTS, and IPC namespaces. One
+or two of those namespaces were also mentioned later in the talk.)
+Control groups (cgroups) provide the other piece of
+infrastructure needed to implement containers. Glauber noted that cgroups
+have received a rather negative response
+from some kernel developers, but he thinks that somewhat misses the point:
+cgroups have some clear benefits.
+A cgroup is a logical grouping of processes that can be used for
+resource management in the kernel. Once a cgroup has been created,
+processes can be migrated in and out of the cgroup via a pseudo-filesystem
+API (details can be found in the kernel source file Documentation/cgroups/cgroups.txt).
+Resource usage within cgroups is managed by attaching controllers to a
+cgroup. Glauber briefly looked at two of these controllers.
+The CPU controller mechanism allows a system manager to control the
+percentage of CPU time given to a cgroup. The CPU controller can be used
+both to guarantee that a cgroup gets a guaranteed minimum percentage of CPU
+on the system, regardless of other load on the system, and also to set an
+upper limit on the amount of CPU time used by a cgroup, so that a rogue
+process can't consume all of the available CPU time. CPU scheduling is
+first of all done at the cgroup level, and then across the processes
+within each cgroup. As with some other controllers, CPU cgroups can be
+nested, so that the percentage of CPU time allocated to a top-level cgroup
+can be further subdivided across cgroups under that top-level cgroup.
+The memory controller mechanism can be
+used to limit the amount of memory that a process uses. If a rogue process
+runs over the limit set by the controller, the kernel will page out
+that process, rather than some other process on the system.
+The current status of containers
+It is possible to run production containers today, Glauber said, but
+not with the mainline kernel. Instead, one can use the modified kernel
+provided by the open source OpenVZ project that is
+supported by Parallels, the company where Glauber is employed. Over the
+years, the OpenVZ project has been working on upstreaming all of its
+changes to the mainline kernel. By now, much of that work has been done,
+but some still remains. Glauber hopes that within a couple of years
+("I would love to say months, but let's get realistic") it
+should be possible to run a full container solution on the mainline kernel.
+But, by now, it is already possible to run subsets of container
+functionality on the mainline kernel, so that some people's use cases can
+already be satisfied. For example, if you are interested in just CPU
+isolation, in order to limit the amount of CPU time used by a group of
+processes, that is already possible. Likewise, the network namespace is
+stable and well tested, and can be used to provide network isolation.
+However, Glauber said, some parts of the container infrastructure are
+still incomplete or need more testing. For example, fully functional user
+namespaces are quite difficult to implement. The current implementation is
+usable, but not yet complete, and consequently there are some limitations
+to its usage. Mount and PID namespaces are usable, but likewise still have
+some limitations. For example, it is not yet possible to migrate a process
+into an existing instance of either of those namespaces; that is a
+desirable feature for some applications.
+Glauber noted some of the kernel changes that are still yet to be
+merged to complete the container implementation. Kernel memory accounting
+is not yet merged; that feature is necessary to prevent exploits
+(such as the dentry example above) that consume excessive kernel memory.
+Patches to allow kernel-memory shrinkers to
+operate at the level of cgroups are still to be merged. Filesystem
+quotas that operate at the level of cgroups remain to implemented;
+thus, it is not yet possible to specify quota limits on a particular user
+inside a user namespace.
+There is already a wide range of tooling in place that makes use of
+container infrastructure, Glauber said. For example, the libvirt library makes it possible to start
+up an application in a container. The OpenVZ vzctl tool
+is used to manage full OpenVZ containers. It allows for rather
+sophisticated management of containers, so that it is possible to do things
+such as running containers using different Linux distributions on top of
+the same kernel. And "love it or hate it, systemd uses a lot of the
+infrastructure". The unshare command can be used to run a
+command in a separate namespace. Thus, for example, it is possible to fire
+up a program that operates in an independent mount namespace.
+Glauber's overall point is that containers can already be used to
+satisfy several of the use cases that have historically been served by
+hypervisors, with the advantages that containers don't require the creation
+of separate full-blown virtual machines and provide much finer granularity
+when controlling what is or is not shared between the processes inside the
+container and those outside the container. After many years of work, there
+is by now a lot of container infrastructure that is already useful. One can
+only hope that Glauber's "realistic" estimate of two years to complete the
+upstreaming of the remaining container patches proves accurate, so that
+complete container solutions can at last be run on top of the mainline
+Comments (36 posted)
+Karsten Gerloff is the current president of the Free Software Foundation Europe, the European
+sister organization of the FSF. He began his LinuxCon Europe 2012 talk,
+entitled "All watched over by machines of loving grace", by focusing on a
+number of technological trends. However, he prefaced that by saying that
+what he really wanted to focus on were the more interesting topics of
+society, power, and control.
+The number of computers in our lives is increasing. Karsten noted that
+he could count at least 17 computers in his home: in his camera, freezer,
+alarm clock, network router, car IVI system,
+laptop, and so on. All of those computers can in principle perform any
+computable task, but, in many cases, the software turns them into
+At the same time as the number of computers in our lives has
+increased, the cost of communication has plummeted, and the range of
+knowledge to which we have access has vastly increased. But, it is not so
+long since things were very different. To illustrate these points, Karsten
+drew a couple of examples from his own life. In 1994, he went as an
+exchange student from Germany to a high school the US. The following
+Christmas, his girlfriend asked her parents for just one thing in lieu of
+all other presents: a 30-minute phone call to her boyfriend. By contrast,
+today we think nothing of firing up a VOIP call to almost anywhere in the
+At university in the 1990s, when Karsten wanted to learn about a new
+subject, he went to the library. Where the resources of the library ended,
+so too did his research, more or less. Beyond that, the best he might
+attempt was to venture to a university library in another city, or request
+a book or two on inter-library loan, gambling that it might be relevant to
+his research. By contrast, today we start our research on a new topic by
+going to Wikipedia or a search engine, and increasingly, cutting-edge
+information appears first on the net.
+Karsten noted that these huge changes in the cost of communication and
+accessibility of information are based on two powerful tools:
+general-purpose computers that will do anything we teach them to do, and
+general-purpose networks that will transmit whatever we want.
+Restricted devices and products
+However, the technological advances described above are under threat
+from those who see profit in turning our general-purpose computers into
+limited appliances, or into devices that are controlled by someone other
+than the owner. So, Karsten says, when we approach a service or device, we
+need to ask: what can we do with this? For example, can I make the
+powerful computer in my phone do something it was not intended to do?
+Restrictions on functionality are often added
+when marketing gets involved in the product-design cycle. At this point,
+product features that get in the way of business goals are eliminated.
+Here, Karsten mentioned a couple of examples. All digital cameras produce
+raw image output. However, after converting that format to JPEG, low-end
+cameras then discard the raw data. Photographers who want the option of
+keeping the raw data must instead purchase a more expensive "professional"
+camera that doesn't discard the raw data. In the telecoms world, mobile
+phone operators often try to block
+VOIP over their data services, in an effort to force their customers to
+make and to pay for calls over the operator's own service.
+These sorts of marketing-driven restrictions are very much against our
+interests, because the kinds of technological leaps described
+above—the fall in the cost of sending information, the increase in
+speed of sending information, and the consequent increase in the amount of
+information that we have access to—were only possible because someone
+took a general-purpose computer and connected it to a general-purpose
+network, and made it do something that no one had thought of before.
+Allowing this sort of generality of operation paves the way for innovations
+that are often unforeseen. Thus, when Bob Kahn and Vint Cerf devised TCP in
+1974, they didn't think of the world wide web, but they designed TCP in a
+way that allowed the web to happen. Similarly, Tim Berners-Lee didn't
+conceive of Wikipedia when he designed the World Wide Web, but the Web was
+designed in a way that allowed Wikipedia to happen.
+A restricted device—a smart phone that can't make VOIP calls, for
+example—is inconvenient. But the real cost of these sorts of
+restrictions is the limitations they place on our ability to create and
+innovate, to come up with the next big idea. We thereby lose opportunities
+to improve the world, and, Karsten noted, in a world where thousands of
+people die of hunger and preventable diseases each day, that's a cost we
+Free software and the forces against it
+Given unrestricted hardware and networks, how do we implement our next
+big ideas? That is, of course, where free software comes in. Free
+software is powerful, Karsten said, because it allows us to share and reuse
+work, and to work across physical, geographical, and company boundaries.
+Everyone working on free software has their own purpose, but all benefit
+from the work. By being accessible and promoting a spirit of
+investigation, free software lets us control the technology we use, rather
+than vice versa.
+However, there are forces that work against free software innovation.
+Karsten looked at some current and notable examples of such forces: UEFI
+secure boot, DRM, patents, and centralized control of information.
+UEFI is the successor to BIOS. UEFI's secure boot protocol, or "restricted boot" as
+Karsten likes to call it, is a boot mechanism whereby UEFI checks that a
+boot loader is signed by an recognized key, and if the check fails, the
+machine will not boot. Secure boot provides a way for the person who does
+the authorizing to control what software you install on your machine. Of
+course, in this case, the authorizer is Microsoft. Hardware vendors that
+want to sell computers with a "Windows compatible" logo must comply with
+the rules that Microsoft defines (and can change).
+For example, Microsoft says that vendors of Intel PCs must provide a
+mechanism for users to disable secure boot. But, hardware vendors that
+want to use the "Windows compatible" logo on an ARM device are not
+allowed to provide a mechanism to disable UEFI secure boot. Thus, since
+Windows phones started shipping in October, millions of restricted
+computers are flooding onto the market every day. (Of course, this is in
+addition to the millions of Android and iPhone devices that are already
+locked down via vendor-specific equivalents of secure boot.) Returning to
+his earlier point that the real test of freedom is whether you can make
+your computer do something that was unintended by the manufacturer, Karsten
+said that if you buy a Windows phone (or another restricted phone) then,
+you don't own it, in the sense of having a general-purpose computing
+DRM (Digital Rights Management, or as Karsten prefers, "Digital
+Restrictions Management") started as the music industry's attempt to
+preserve a business model. But it has crept elsewhere, into devices such
+as the Kindle. The Kindle is a powerful tablet device that thanks to DRM
+has been turned into, essentially, a digital shopping catalog. "Once
+upon a time, companies used to send me catalogs at their expense.
+Nowadays, I'm being asked to buy the catalog. I'm not sure it's a good
+Karsten then turned his attention to patents and, in particular, the
+strategies of some companies that are acquiring large numbers of
+patents. He began with the observation that he really likes 3D printers
+because "I hope they'll do for manufacturing what free software did
+for computing: put control back in our hands." A few weeks ago
+someone obtained a patent on a DRM system for 3D printers. That patent is
+like other DRM patents: a patent for a piece of software in the printer
+that checks with a server to see if the hash of the to-be-printed file is
+in the set of files that the user is allowed to print; if it is not, then
+the file is not printed.
+Who obtained the patent? A company called Intellectual Ventures, which
+was cofounded by Nathan Myhrvold, former CTO of Microsoft. Intellectual
+Ventures is a company with a reputation:
+"Calling Intellectual Ventures a patent troll would be like calling
+the Atlantic Ocean a puddle." The company is rather secretive, so
+information about its workings is hard to come by. However, some
+researchers recently published a paper entitled The Giants
+Among Us that pulled together all of the information that they could
+find. By now, Intellectual Ventures controls tens of thousands of patents.
+The company's strategy is to monetize those patents in any way it can.
+Sometimes that is done by licensing the patents to people who make things,
+but more commonly it is done by "extorting" money from people who make
+something without asking Intellectual Ventures's permission first. The
+researchers identified around 1300 shell companies operated by Intellectual
+Ventures (but they suspect they haven't found them all).
+Intellectual Ventures pursues strategies such as threatening people
+with patent litigation, and demanding that companies pay money to avoid
+that litigation. The paper notes that "patent mass aggregators" such
+as Intellectual Ventures are also believed to employ hitherto unusual
+strategies for acquiring patents—for example, offering universities
+in developing countries contracts where, in exchange for cash, the
+university gives the company rights on all innovations that the
+universities create for the next N years.
+In short, Intellectual Ventures is trying to create a monopoly on
+innovation. And they are not alone: Intellectual Ventures is the largest
+of the mass aggregators, but there are many other companies now doing the
+However, Karsten is not without optimism. Patents and patent trolls
+constitute a powerful threat to innovation and free software. But free
+software is a powerful opponent, because "we work together and have
+a large shared interest…we don't acknowledge company or country
+borders, [and] we're very creative at working around restrictions and
+eventually beating them." It's Karsten's hope that the current
+patent system will start shaking at its foundations within five years, and
+will be breaking down within ten years.
+The problem of centralized control
+By design, the Internet was built with no central point of control.
+And on top of that distributed network, we've built distributed,
+decentralized systems such as email. But the general-purpose nature of our
+networks and computers is not a given natural order. It can be reversed.
+And indeed that is what is happening in many areas as companies erect
+structures that centralize control. Thus "Facebook defines who we
+are, Google defines what we think, and Amazon defines what we want",
+because we feed them information, and they place us in a "comfortable
+bubble" where we no longer see other opinions and cease being curious.
+The problem is that those companies will sell us out when it is in
+their interests to do so. Here, Karsten mentioned the case where Yahoo! surrendered
+the details of a Chinese blogger to the Chinese government. Most
+likely what happened was that the Chinese government threatened to exclude
+Yahoo! from doing business in China. Consequently, Yahoo! provided details
+identifying the blogger, despite apparently having some information that
+suggested they knew that the blogger had antigovernment sympathies and was
+therefore at risk of persecution.
+But, asked Karsten, this only happens in dictatorships, right? Well,
+no. In September, Twitter handed
+over messages by some of its users who were part of the Occupy Wall
+Street movement to New York prosecutors. After originally declining to do
+this on the grounds of protecting free speech, a judge threatened the
+company with a fine based on a percentage of its earnings. This threat
+constituted a double blow, since it would have required Twitter, a private
+company, to actually reveal its earnings. Given a choice between loyalty
+to private shareholders and loyalty to users, Twitter
+chose the former.
+We can, of course, leave these centralized structures of control. But,
+we do so much as dissidents left the Soviet Union, leaving behind friends
+and family. Yes, Karsten remarked, it is all only digital, but there is
+still some pain in leaving if you have invested part of your life in these
+Rather than submitting to centralized control, we can build
+decentralized structures, running on servers in every home. We already
+have enough computers to do that. And in fact we already have most of the
+required software components: it's just a matter of putting them together,
+which is the goal of the Freedom Box
+project. (A Freedom Box talk by Bdale Garbee was unfortunately scheduled at
+the conference at exactly the same time as Karsten's talk.) Here, Karsten
+listed a number of the tools and protocols that already exist: Diaspora and GNU social for social
+networking; protocols such as OStatus, WebFinger, and Federated
+Social Web that allow these services to work together; distributed file
+storage through ownCloud and GNUnet; user-owned ISPs; Bitcoin as a currency; and distributed
+search engines such as YaCy. We can replicate
+(in a decentralized fashion) all the things that we today use in a
+The key to controlling our own future is to master the necessary
+technologies and skills. Karsten quoted from Douglas Rushkoff's book Program or Be
+The real question is, do we direct technology, or do we let ourselves be
+directed by it and those who have mastered it? Choose the former and you
+gain access to the control panel of civilization. Choose the latter, and it
+could be the last real choice you get to make.
+So, said Karsten, when you see a system or a service, ask yourself: who
+controls this? If you don't like the answer, don't buy the product or the
+service. Go and build something better.
+The work of the FSFE
+Karsten concluded his talk with a few words about the activities of the
+FSFE. Like its sister organizations (FSF, FSF Latin America, FSF India),
+FSFE is a non-profit organization that engages in various activities to
+support free software. The organization does a lot of work in politics, to
+try and get rid of bad laws, and get good laws made. They run campaigns to
+increase people's awareness of free software. For example, they are
+a "Free your Android"
+campaign where they show people how
+to put a freer version of Android on their devices. (Interestingly, they
+are getting a lot of interest from people who characterize themselves as
+non-technical, but who are concerned about where their data is going.)
+Karsten extended an invitation to support the FSFE. There are many ways to do
+this, from simply signing up as a supporter to more actively engaging as a
+Fellow of the foundation. For individuals and companies that have the
+donations are of course useful. "But, more important than this,
+stop taking the road of least resistance. Start doing things that make
+yourselves more free."
+[For those who are curious, the title of Karsten's talk comes from the
+title poem in a book of poetry by the American writer Richard
+Brautigan, probably by way of a BBC documentary TV series of the same name. Both the book and the
+TV series have resonances for the topic of the talk. Brautigan licensed the poems to be
+freely reprinted in books and newspapers if they are given away for
+free. Wikipedia notes that the TV series "argues that computers have
+failed to liberate humanity and instead have distorted and simplified our
+view of the world around us".]
+Comments (9 posted)
+GPL violations, or allegations thereof, are typically handled in
+private—unless, of course, they get to the lawsuit stage. That makes
+it rather surprising to see a GPL violation accusation on the linux-kernel mailing list.
+The code in question is the LIO SCSI target implementation, which was
+merged for 3.1 after a prolonged struggle
+with another contender; the alleged
+violator is Rising Tide Systems (RTS), which was the original developer and
+LIO. As might be guessed, the dispute is rather messy; there are more
+questions than answers.
+The opening salvo was from Andy Grover to SCSI target maintainer (and RTS
+CTO) Nicholas Bellinger, with a copy to linux-kernel: "Your company appears to be shipping kernel features in RTS OS that are
+not made available under the GPL, specifically support for the
+EXTENDED_COPY and COMPARE_AND_WRITE SCSI commands, in order to claim
+full Vmware vSphere 5 VAAI support." Bellinger, however, didn't
+quite see things that way. He maintains
+that RTS owns the
+copyright to the code it
+contributed to Linux, so it can license it to its customers any way that it
+In fact, we are not violating GPL. In short, this is because we wrote
+the code you are referring to (the SCSI target core in our commercial
+RTS OS product), we have exclusive copyright ownership of it, and this
+code contains no GPL code from the community. GPL obligations only
+apply downstream to licensees, and not to the author of the code. Those
+who use the code under GPL are subject to its conditions; we are not.
+But there is a wrinkle here. RTS is shipping a Linux kernel, along with
+its proprietary SCSI target module, as RTS OS.
+Proprietary kernel modules have always been controversial, but they have
+largely been ignored when they are descended from another operating
+system's driver (e.g. NVIDIA) and are not distributed with the kernel.
+If that doesn't hold, it could become a bigger problem, as Dave Airlie pointed out:
+But if you distribute a kernel and a module in one place which I
+assume RTS OS does, then you are in dangerous territory and could be
+hit with cease and desist notices, which has happened to people
+shipping kernels and linked nvidia binary drivers before.
+In response, Bellinger made a common mistake regarding the kernel's
+symbol export macros. The EXPORT_SYMBOL() and
+EXPORT_SYMBOL_GPL() macros are an advisory mechanism that kernel
+developers use in an attempt to show which symbols can only be used by
+GPL-covered modules. Importantly,
+avoidance of EXPORT_SYMBOL_GPL() symbols is not, in itself, an
+indication that a module is not a derived work of the kernel (and thus
+subject to the terms of the GPL). It's somewhat of a tricky
+distinction, but anyone releasing a proprietary kernel module should very
+likely be getting legal advice; lawyers should have little trouble
+understanding the intent.
+Specifically, Bellinger responded: "we only use Linux kernel symbols that
+are not marked as GPL". That provoked a quick response from Alan Cox, who noted that the
+distinction lies in the question of whether the SCSI target module is a
+symbol tags are just a guidance". Furthermore, "either your work is [truly] not derivative of the kernel (which I find
+wildly improbable) or you have a problem". Cox also mentioned one
+other potential problem for RTS, certain patents (notably read-copy-update)
+are only licensed for use by GPL-covered code.
+There are some other things to consider as well. Bellinger clearly
+indicated that RTS maintains a separate repository for its proprietary SCSI
+target. The kernel's version of LIO has seen numerous changes and fixes from
+others, but those were contributed under the GPL; Grover questioned whether some of those changes were
+flowing back into the proprietary version. Without seeing the code, it's a
+little hard to say for sure.
+Enter the lawyer
+As it turns out, RTS has retained Lawrence Rosen, the well-known
+free software savvy attorney, for advice. He stepped into the thread in an effort to try to
+smooth things over a bit. He reiterated the RTS stance that it maintains a
+separate version that is completely owned by the company, which it licenses
+to its customers under non-GPL terms.
+Rosen also maintains that Oracle v. Google in the US (and, in Europe, SAS
+Programming) debunks the claim that using the Linux APIs automatically
+creates a derivative work. That's a bit lawyerly, as no one in the thread
+was making that particular argument. Cox, Airlie, Grover, and others were
+arguing that using the APIs could make a derivative work—in fact is
+likely to make one—but not that it automatically does so. In fact,
+Airlie gave two examples (the Andrew
+Filesystem and binary GPU drivers) where at least some in the kernel
+community believe derivative works are not created. In the end, though,
+the courts have not given us a definitive decision on what constitutes a
+derivative work in the software realm, which is part of the reason for the
+Beyond that, Bradley Kuhn pointed out
+that Rosen's interpretation of those two cases is not universally held. He
+also noted that there simply isn't enough information available for anyone
+outside of RTS to make any real assessment regarding the proprietary
+code. Whether that code is a derivative work or not requires more
+information, which has, as yet, not been forthcoming.
+There is yet another wrinkle here. Grover has been posting using his
+redhat.com email address, which could give the impression that
+this is some kind of official Red Hat accusation (though Grover
+never claims that it is). Both Bellinger and Rosen drag Red Hat into
+the conversation, as do others in the thread. In fact, Rosen's response is
+copied to lawyers for both Red Hat and the Linux Foundation. That
+escalates the issue further, of course.
+Enter the SCSI maintainer
+Kernel SCSI maintainer James Bottomley was not
+particularly pleased with Grover's accusation. He questioned some of
+Grover's assumptions about which SCSI commands were actually supported by
+RTS OS, but also strongly suggested verifying how the software worked
+before slinging any more potential "libel". Bottomley seems
+concerned—perhaps overly—that Grover needlessly "exposes
+us all to jeopardy of legal sanction". Kuhn, at least, thought the
+dangers were overblown, and suggested that Grover continue to "seek
+As of November 13, no further responses from Bellinger or Rosen have been
+his initial post, Grover noted that he had tried to discuss the problem
+with Bellinger and RTS CEO Marc Fleischmann via private email, without getting a
+"useful response". Grover's public post finally did elicit some
+response, one that he thinks clearly
+indicates a GPL violation. But he also pointed out another sticky issue:
+But let's forget licenses and talk community. Looking back, can anyone
+say that your push to get LIO accepted into mainline as the kernel
+target was in good faith? Back before LIO was merged, James chose LIO
+over SCST saying to the SCST devs:
+"Look, let me try to make it simple: It's not about the community you
+bring to the table, it's about the community you have to join when you
+become part of the linux kernel."
+RTS behaved long enough to get LIO merged, and then forget community.
+James is right, community is more important than code, and licenses
+enforce community expectations. RTS has appeared just community-focused
+enough to prevent someone else's code from being adopted, so it can
+extract the benefits and still maintain its proprietary advantage.
+It is an unprecedented situation and one that is likely to be messy to
+unwind. The Linux SCSI target appears to be missing features because its
+maintainer is adding them to a proprietary driver that ships with the
+GPL-covered kernel. There is certainly nothing that forces Bellinger or
+RTS to make their improvements available unless, of course, there is a GPL
+requirement to do so. But if some other developer were to come along with
+an implementation of the missing features, is Bellinger going to accept them
+into the mainline driver, forcing (further) divergence with the proprietary
+The open nature of the accusation, and that it is associated with Red
+Hat (fairly or not), will also complicate the issue. It is unlikely that
+the company would set out to address a possible violation in this way, but
+finds itself in a sticky situation. Extracting itself may be difficult,
+and completely ignoring the problem may not be possible either.
+If it turns out that there is no GPL violation, there has still been some
+damage done, it would seem. The idea behind the choice of the GPL for the
+kernel is that competitors all have equal access, but in this case RTS
+appears to be in a privileged position with respect to SCSI target
+features. That would seem to violate the spirit of Linux development, even
+if it doesn't violate the license.
+Comments (23 posted)
+Page editor: Jonathan Corbet
+Next page: Security>>

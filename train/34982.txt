@@ -1,0 +1,5 @@
+posted by missy .
+A model rocket is launches upward with an initial velocity of 160 feet per second. The height, in feet, of the rocket t seconds after the launch is given by h=-16t^2+160t. How many seconds after the launch will the rocket be 290 feet above the ground? Round to the nearest tenth of a second.
+290 = -16t^2 + 160t
+16t^2 - 160t + 290 = 0
+I don't think it factors, so use the formula to solve

@@ -1,0 +1,6 @@
+Attention! For all the game lovers, you should have a closer look in this project, EE316 Computer Engineering Junior Lab.
+Well, first of all, this is an open-ended project and you can use the DE2 FPGA board to make a video game console (It means this project only has virtual controller, rather than the solid controller).
+Beside that, you’ll need to use an Axis network camera to track the player by color and feed those information from the processing PC to the board using the JTAG UART.
+The main parts of this project consist of the Nios II softprocessor, SDRAM for code execution, the GPU and the SRAM, where the GPU uses as video memory.
+By the way, you also have to build a nice conditioning circuit to interface an optical oxygenation sensor to a LEGO NXT brick for processing matter. It responsible for determining the heart rate by timing the period between beats and transmits the information over Bluetooth to the computer. As a result, the heart rate is included in the packed of data that being sent to the game.
+In other words, by using the heart rate, you’re able to vary game speed and its difficulty easily!

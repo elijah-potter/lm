@@ -1,0 +1,49 @@
+OOP in Java: Polymorphism and Interfaces
+OOP in Java: Polymorphism and Interfaces
+Knock your next interview out of the park with this detailed look at fundamental Java concepts.
+Join the DZone community and get the full member experience.Join For Free
+As a senior member of my organization, I have to take interviews on regular basis as part of the recruitment process of our company. As an interviewer, I have witnessed some interesting observations about Java and the knowledge of individual interviewees. The experience ranges of the interviewees vary from around three to eight years.
+In many cases, my observation is that the candidate knows the topic very well. Their theoretical knowledge is very good. And their answer quality shows that they have had hands-on work experience in different areas of core Java, like exception handling, the collections framework, generics, and objects. They have a more or less clear idea of what those things are. And in many cases, they are aware of new features added in more recent versions.
+You may also like: A Systematic Approach to Write Better Code With OOP Concepts
+However, as an interviewer, the first observation I've made is that developers often show a lack of clear knowledge as to why they have used those features in their programs or projects. They seem to be missing the number of benefits they can gain from using said features, or if they hadn't used that feature, what problems or difficulties they would have faced otherwise.
+This lack of awareness stems from a lack of understanding many key areas of Java, things like the collections framework, polymorphism, interfaces, and even exception handling.
+In this post, I am going to discuss two core features of Java — polymorphism and interfaces.
+As polymorphism is one of the key principles of object-oriented programming, there will always be questions around this topic.
+In interviews, I typically being by asking: "what is polymorphism?"
+And surprisingly, in most cases, the answer received is: "polymorphism means many forms."
+In response, the next question is typically: "What do you mean by 'many forms?'"
+Next is where things get interesting. From that point onwards, I found that the concept of 'many forms' varies from candidate to candidate.
+The most common answer I received was: "There are two types of polymorphism — runtime polymorphism and static polymorphism. Method overriding is an example of runtime polymorphism, and method overloading is an example of static polymorphism."
+Obviously, they know why method overriding is called "runtime polymorphism" and why "method overloading" is called "static polymorphism." But it is difficult from these answers to come to a conclusion as to what they meant by 'many forms.' And although method overloading and method overriding are polymorphism, why are they are they polymorphism?
+The next most common answer to this question was: "Let me explain with an example..." And the example used to explain it is, again, the same method overloading and method overriding example explained previously.
+However, in very few cases, the candidate use the concept of object reference to explain polymorphism. Basically, the best uses of polymorphism in Java is the ability to refer to a child class by using the parent class reference. In polymorphism, 'many forms' means the ability of an object or method to take many forms. Method overriding and method overloading basically mean a behavior in Java that allows the developer to take advantage of that principle.
+Below is an example:
+In the above diagram, Shape is an Interface (it can be a Class as well) with one abstract method
+draw(). Triangle, Rectangle and Circle are three implementations of that Interface. Each concrete implementation has their own drawing process.
+Here, first, a reference of Shape Interface(or Class) is created. As all three other classes are implementing (or extending) it, the shape object can refer to any of them, i.e. it may take any form of Triangle, Rectangle, or Circle. And which drawing process will be used that is decided at runtime, depending on the form Shape has taken at that moment using the method overriding behavior in Java.
+Interface is another key feature in Java that is widely used in Java development. In interviews, it is common for a discussion on Interfaces to start with the simple question: "What is an Interface?"
+The answer given by nearly every candidate is: "An Interface is a class that has only a method body but no implementation. Any class implementing an Interface has to define or implement the methods of their own."
+This answer is only partially correct if you are an experienced Java programmer and have used Interfaces in your program.
+After receiving the above answer, the next questions I ask are: "What is the usage of Interface? What benefits will we get using an Interface? And what disadvantages we will face if we don't have it?"
+Here, the most common answer is that when the behavior of a particular functionality varies from object to object, then an Interface is used to create a superclass, and different sub-classes are created extending the super class and each sub-class implements its behavior. And the above (Shape, Triangle, Rectangle and Circle) or (Animal, Dog, Elephant) cases are cited as an example. Where Shape or Animal is a superclass implementing some Interface and the sub-classes extend that super class and implement that particular behavior.
+Another usage provided by many candidates is the implementation of multiple inheritances using Interfaces in Java, which otherwise is not possible.
+Both of the above answers are true. But the fact is that the first case can be done even without Interfaces or just by creating a super class and extending that class by different sub-classes. Most of the candidates I interviewed were stuck on that point. Even if we can do it without implementing an Interface, why should I use it?
+If we follow the Oracle docs, in the introduction of Interfaces, it says:
+"There are a number of situations in software engineering when it is important for disparate groups of programmers to agree to a "contract" that spells out how their software interacts. Each group should be able to write their code without any knowledge of how the other group's code is written. Generally speaking, interfaces are such contracts."
+Let us discuss those points one by one.
+Basically, an Interface is a contract that a developer must follow while implementing it. It states that when you are implementing something, you must provide the given set of the feature, or else you will be incomplete. Here, incomplete means that the class is not a complete one (for example, an abstract class).
+Here's an example:
+Shape is an interface with only one method, i.e.
+draw(). Basically, it is a contract that when you are implementing that interface, you have to implement the draw functionality, or else you are not a complete class. So for any class like Triangle or Rectangle, when we implement that Interface, they must implement the
+Another advantage — from a program design perspective — is the idea of 'programming to an Interface, not implementations.' That means that when we are designing our code, we should focus on the Interface or the functionalities that the Interface provides, not the actual implementation.
+Though we sometimes use an
+ArrayList, we are not as concerned about how the feature set by the List Interface have been implemented by
+ArrayList. We are only concerned with the functionalities provided by the List interface, thus creating a loose coupling in our code.
+If tomorrow we needed to use an
+LinkedList instead of an
+ArrayList, we could easily do that by changing:
+List l = new LinkedList();
+And we don't think of the behavior of
+ArrayList used in our program because we used them through the contract published by the Interface.
+When learning Java, or any other programming language, we should focus not only on important features, but also why we need them and the added benefit from using it. If we don't see any advantage, we should rethink why we are even using it.
+Opinions expressed by DZone contributors are their own.

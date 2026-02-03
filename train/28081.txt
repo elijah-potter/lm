@@ -1,0 +1,13 @@
+United States Painted Relief
+This painted relief map was created using GTOPO30 elevation data from the U.S. Geological Survey. More information on this dataset can be found at the following website: http://eros.usgs.gov/#Find_Data/Products_and_Data_Available/gtopo30_info The elevation data was transformed into a painted relief image using a process documented by Jeffery Nighbert of the Bureau of Land Management. This process was presented as a poster at the '95 ESRI User Conference. The State Soil Geographic (STATSGO) Database was used to overlay water bodies on the painted relief map.
+Cautions for this Product:
+The elevation data used to make this map has a coarse resolution (30 second arcs) and should not be used at less than regional scales.
+Source: State Soil Geographic Database (STATSGO)
+Distributor: USDA-NRCS, 1998
+Aggregate Layer: Grid
+Other Layers Displayed: State
+The State Soil Geographic (STATSGO) database is made by generalizing detailed soil survey data. The mapping scale is 1:250,000 (1:1,000,000 for Alaska). The level of mapping is designed to be used for broad planning and management uses covering state, regional, and multi-state areas. STATSGO map units average from 7,000 to 60,000 acres in size and have a minimum size of 1,544 acres.
+Product ID: 4015
+Production Date: 12/30/98
+Product Type: Map
+For additional information contact the Resources Inventory and Assessment Division. Please include the Product ID you are inquiring about. firstname.lastname@example.org or 1400 Independence Avenue SW - P.O. Box 2890 - Washington D.C. 20013. If you use our analysis products, please be aware of our disclaimer.

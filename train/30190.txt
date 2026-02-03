@@ -1,0 +1,7 @@
+3The slope of a line is given by: The slope at (1,1) can be approximated by the slope of the secant through (4,16).We could get a better approximation if we move the point closer to (1,1). ie: (3,9)Even better would be the point (2,4).
+4The slope of a line is given by: If we got really close to (1,1), say (1.1,1.21), the approximation would get better stillHow far can we go?
+5slopeslope atThe slope of the curve at the point is:
+6The slope of the curve at the point is: is called the difference quotient of f at a.If you are asked to find the slope using the definition or using the difference quotient, this is the technique you will use.Sometimes, you will see the problem already in the differencequotient, and have to figure out the limit.
+7The slope of a curve at a point is the same as the slope of the tangent line at that point. In the previous example, the tangent line could be found usingIf you want the normal line (perpendicular line), usethe negative reciprocal of the slope. (in this case, )
+9Review: velocity = slope These are often mixed up by Calculus students!average slope:slope at a point:average velocity:(slope)So are these!instantaneous velocity:(slope at 1 point)If is the position function:velocity = slope
+10(slope of the tangent line to graph at the point

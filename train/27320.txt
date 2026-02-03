@@ -1,0 +1,13 @@
+With large-scale impacts on coral reefs worldwide, increased efficiency and integration of monitoring efforts is required. Photographic and video methods are frequently used to optimize diver time. The random point count method is commonly used on frame-grabbed video or still images to estimate the community statistics of benthos.
+A computer program has been developed to facilitate this type of data collection and processing. CPCe is a standalone Windows-based program that automates the random point count method, and provides statistical analysis of coral coverage and diversity.
+Project and Findings
+CPCe was developed to aid researchers involved in coral community coverage and diversity. Underwater photographic frames are overlaid by a matrix of randomly generated points, and the fauna/flora species or substrate type lying beneath each point is identified. To avoid statistical bias, a different set of random points is calculated for each image. The coral code data for each frame is stored and the accumulated data of several frames are combined and saved as a transect dataset. The transect datasets are then statistically analyzed to give quantitative measurements over the area of interest. Analysis spreadsheets are automatically generated and provide coverage estimates and diversity indices at the species level.
+Additionally, CPCe allows the user to calibrate the analysis images, and thereby determine lengths and areas of photographed features. CPCe will continue to be improved, pending feedback from researchers worldwide.
+Implications for Management
+Local, state, and national governmental agencies involved with the monitoring and assessment of coral reef communities are faced with the need to analyze voluminous numbers of underwater images and to maintain the data derived from these images in an archival format. CPCe was designed to meet these needs by featuring an efficient method of data entry and an array of user-friendly tools which allow for the rapid analysis of underwater images. The software aids long-term monitoring efforts by creating archival datasets of reef resources and composition using random point count methodology. To date, NCRI has received more than 2000 inquiries regarding the CPCe software from researchers worldwide. NCRI anticipates this product will be of significant value and utility to management and research.
+NCRI via NOAA-CSCOR
+National Coral Reef Institute
+Nova Southeastern University
+8000 North Ocean Drive
+Dania Beach, FL 33004
+The Mission of the Oceanographic Center is to carry out innovative, basic and applied research and to provide high-quality graduate and undergraduate education in a broad range of marine science and related disciplines.

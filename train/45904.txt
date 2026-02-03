@@ -1,0 +1,6 @@
+To draw a straight line through a given point parallel to a given straight line.
+Let point A be the given point, and line BC the given straight line.
+It is required to draw a straight line through the point A parallel to the straight line BC.
+Take a point D at random on line BC. Join line AD. Construct the angle DAE equal to the angle ADC on the straight line DA and at the point A on it. Produce the straight line AF in a straight line with line EA.
+Since the straight line AD falling on the two straight lines BC and EF makes the alternate angles EAD and ADC equal to one another, therefore EAF is parallel to line BC.
+Therefore the straight EAF has been drawn through the given point A parallel to the given straight line BC.

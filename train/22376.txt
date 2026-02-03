@@ -1,0 +1,33 @@
+When it comes to learning a new language, framework or library, the first and important source of help comes from the documentation provided by the respective websites. But it is often difficult to go through the complete documentation immediately. And during development we need to refer to the documentation very frequently.
+Having an offline version of the documentation may help to find the information faster and whenever required. Also, it helps to work offline without any distractions from the facebook notifications.
+In this post, let's build the offline documentation for reactjs.
+Getting the source code
+The documentation for reactjs is available on reactjs.org website. The source code for this website is available as a github repository here.
+Fireup a cmd, clone this repository and cd into the directory
+git clone https://github.com/reactjs/reactjs.org cd reactjs.org
+Open the code editor of your choice. If using vscode, just enter
+Understanding the tech stack
+Once we have the source code, we can see many configuration files there. The most important ones that quickly gives us all the information we need are
+gatsby-*.js- these files tells us that Gatsby is used for generating the static HTML for the website.
+yarn.lock- it is using yarn as the package manager.
+vercel.json- the website is hosted on vercel
+package.json is the one file that any webdev will start looking at when they start working on a new project. Once we open this file, we can see the dependencies of the projects and the scripts used.
+From the file we can see the following scripts.
+Luckily, we have the build script that we require to build the static HTML.
+Now we have enough information to generate the documentation.
+Install all the dependencies using the
+Run the build script using
+This will generate the required static HTML, js, css and all assets in the public folder.
+Serve the documentation generated in public folder
+cd public python -m http.server // simpler // Or if you prefer nodejs yarn add global serve serve
+Congratulations! We now have reactjs documentation available offline.
+If you would like to have offline documentation for any framework/library you require, please tell us in the comments.
+Top comments (8)
+React-Native offline doc please....
+Hey @tdamilola I've created a repo with a collection of scripts for generating offline-docs. Please go to the repository and create an issue if you require any other tools. I'll be updating the repo with script for react-native docs soon today.
+Thanks Man. just seeing this, appreciate your good work bro.
+😀 thanks for the compliment, just what I wanted to finish my 50 scripts landmark which is long pending 😅
+Please check the repo, I just now added the script.
+Consider giving a star to the repo if you like :)
+How about offline docs for Laravel? That would be helpful if you're up to it.
+For sure, I'll hack a way! :)

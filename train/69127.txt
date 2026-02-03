@@ -1,0 +1,24 @@
+a. The baseband signal, which is the demodulated output from the phase detector in the demodulator
+section, is coupled to the baseband amplifier section where it passes through one of seven gain-adjust
+potentiometers. The gain-adjust potentiometers provide preset gain for the different modes of operation. The
+baseband-signal is fed through one of these potentiometers which is selected according to the mode of operation,
+b. The feedback-pair amplifier is a wideband amplifier with a 75-ohm output that is essentially flat from
+300 Hz to 500 kHz. This wideband output is not now being used but is available for future use.
+c. Buffer amplifier G2 is 4 baseband amplifier that accommodates 12 to 60 voice channels. It has a 75-
+ohm output with a frequency response of 300 Hz to 252 kHz. Amplitude reduction of the input signal's high-
+frequency components applied to this amplifier is provided by one of three selectable deemphasis filters. The
+broadband 75-ohm output is not currently used but is available for future multiple access use.
+d. Buffer amplifier G3 is the normal baseband amplifier and has a 600-ohm balanced output with a
+frequency response of 300 Hz to 20 kHz. This amplifier's input is deemphasized by the deemphasis filter. The
+output of this amplifier is coupled to the baseband patch panel in the terminal equipment. This output
+accommodates from one to five voice channels.
+MONITORS AND CONTROL CIRCUITS
+a. Meters and indicator lights are used to monitor AGC voltages, AFC-sweep voltages, voltage outputs
+from power supplies, baseband output levels, and threshold margin levels. Carrier loss and carrier lock-on signals
+from the equalizer and frequency control unit are coupled to the receiver control circuits. These signals are fed to
+indicator lamps to indicate whether or not the receiver is locked onto the received signals.
+b. The nine mode-select signals from the receiver control circuits are distributed to various modules in
+the receiver. These mode-select signals are applied through OR gates to the designated receiver circuits.
+c. The receiver control circuits, consisting of indicators and selector switches, are located on a remote-
+control panel. The remote-control panel contains nine electrically interlocked mode selector switches, four
+electrically interlocked satellite channel selector switches, a carrier loss/lock-on indicator, and a threshold margin

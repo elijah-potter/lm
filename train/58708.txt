@@ -1,0 +1,48 @@
+This section gives guidance on specifying air distribution systems for new and existing buildings to meet relevant energy efficiency requirements in the Building Regulations.
+10.2 Scope of guidance
+The guidance applies to the following types of air distribution system:
+• central air conditioning systems
+• central mechanical ventilation systems with heating, cooling or heat recovery
+• all central systems not covered by the above two types
+• zonal supply systems where the fan is remote from the zone, such as ceiling void or roof-mounted units
+• zonal extract systems where the fan is remote from the zone
+• local supply and extract ventilation units such as window, wall or roof units serving a single area (e.g. toilet extract)
+• other local ventilation units, e.g. fan coil units and fan assisted terminal variable air volume (VAV) units
+• kitchen extract, fan remote from zone with grease filter.
+Gas and oil-fired air heaters installed within the area to be heated are not within the scope of this section.
+10.3 Key terms
+Air conditioning system means a combination of components required to provide a form of air treatment in which temperature is controlled or can be lowered, possibly in combination with the control of ventilation, humidity and air cleanliness.
+Ventilation system means a combination of components required to provide air treatment in which temperature, ventilation and air cleanliness are controlled.
+Central system means a supply and extract system which serves the whole or major zones of the building. Local unit means an unducted ventilation unit serving a single area.
+Zonal system means a system which serves a group of rooms forming part of a building, i.e. a zone where ducting is required.
+Demand control is a type of control where the ventilation rate is controlled by air quality, moisture, occupancy or some other indicator of the need for ventilation.
+Specific fan power (SFP) of an air distribution system means the sum of the design circuit-watts of the system fans that supply air and exhaust it back outdoors, including losses through switchgear and controls such as inverters (i.e. the total circuit-watts for the supply and extract fans), divided by the design air flow rate through that system.
+For the purposes of this guide, the specific fan power of an air distribution system should be calculated according to the procedure set out in BS EN 13779:200742 Annex D Calculation and application of specific fan power. Calculating and checking the SFP, SFPE and SFPV.
+SFPis the specific fan power demand of the air distribution system (W/(l.s))
+Psf is the total fan power of all supply air fans at the design air flow rate, including power losses through switchgear and controls associated with powering and controlling the fans (W)
+Pef is the total fan power of all exhaust air fans at the design air flow rate including power losses through switchgear and controls associated with powering and controlling the fans (W)
+q is the design air flow rate through the system, which should be the greater of either the supply or exhaust air flow (l/s). Note that for an air handling unit, q is the largest supply or extract air flow through the unit.
+External system pressure drop means the total system pressure drop excluding the pressure drop across the air handling unit.
+10.4 Air distribution systems in new and existing buildings
+Air distribution systems in new and existing buildings should meet the following recommended minimum standards:
+a. Air handling systems should be capable of achieving a specific fan power at 25% of design flow rate no greater than that achieved at 100% design flow rate.
+b. In order to aid commissioning and to provide flexibility for future changes of use, reasonable provision would be to equip with variable speed drives those fans that are rated at more than 1100 W and which form part of the environmental control systems, including smoke control fans used for control of overheating. The provision is not applicable to smoke control fans and similar ventilation systems only used in abnormal circumstances.
+c. In order to limit air leakage, ventilation ductwork should be made and assembled so as to be reasonably airtight. Ways of meeting this requirement would be to comply with the specifications given in:
+i. B&ES DW/14443. Membership of the B&ES specialist ductwork group or the Association of Ductwork Contractors and Allied Services is one way of demonstrating suitable qualifications, or
+ii. British Standards such as BS EN 1507:200644, BS EN 12237:200345 and BS EN 13403:200346.
+d. In order to limit air leakage, air handling units should be made and assembled so as to be reasonably airtight. Ways of meeting this requirement would be to comply with Class L2 air leakage given in BS EN 1886:200747.
+e. The specific fan power of air distribution systems at the design air flow rate should be no worse than in Table 35 for new and existing buildings. Specific fan power is a function of the system resistance that the fan has to overcome to provide the required flow rate. BS EN 13779 Table A8 provides guidance on system pressure drop. To minimise specific fan power it is recommended that the ‘low range’ is used as a design target.
+f. Where the primary air and cooling is provided by central plant and by an air distribution system that includes the additional components listed in Table 36, the allowed specific fan powers may be increased by the amounts shown in Table 36 to account for the additional resistance.
+g. A minimum controls package should be provided in new and existing buildings as in Table 37.
+h. Ventilation fans driven by electric motors should comply with European Commission Regulation No 327/2011 implementing Directive 2009/125/EC with regard to ecodesign requirements for fans driven by motors with an electric input power between 125 W and 500 kW.
+****Table 35 Maximum specific fan power in air distribution systems in new and existing buildings****
+For a central mechanical ventilation system with heating and cooling, and heat recovery via a plate heat exchanger plus return filter:
+SFP 220.127.116.11 W/(l.s)
+****Table 37 Recommended minimum controls for air distribution systems in new and existing buildings from BS EN 15232:201248****
+10.5 Heat recovery in air distribution systems in new and existing buildings
+Air supply and extract ventilation systems including heating or cooling should be fitted with a heat recovery system. The application of a heat recovery system is described in 6.5 of BS EN 13053:2006+A1:201149. The methods for testing air-to-air heat recovery devices are given in BS EN 308:199750.
+The minimum dry heat recovery efficiency with reference to the mass flow ratio 1:1 should be no less than that recommended in Table 38.
+****Table 38 Recommended minimum dry heat recovery efficiency for heat exchangers in new and existing buildings****
+10.6 Calculating the specific fan power for SBEM
+SBEM assumes a value of SFP for the fan coil system, so this figure should not be added to the SFP for the fan coil units when entering the data into SBEM.
+HEPA filtration is recognised as an option in SBEM. The pressure drop can be specified or SBEM will assume a default value from the NCM activity database.

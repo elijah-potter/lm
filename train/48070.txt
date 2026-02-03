@@ -1,0 +1,106 @@
+|アィヌ・イタㇰ Aynu itak|
+|Native speakers||10 (2007)|
+|Writing system||Katakana, Latin|
+Until the twentieth century, Ainu languages were also spoken throughout the southern half of the island of Sakhalin and by small numbers of people in the Kuril Islands. Only the Hokkaidō variant survives, with the last speaker of Sakhalin Ainu having died in 1994; and Hokkaidō Ainu is moribund, though there are ongoing attempts to revive it.
+Ainu is a moribund language, and has been endangered for at least the past few decades. Most of the 25,000 – 200,000 ethnic Ainu in Japan speak only Japanese. In the town of Nibutani (part of Biratori, Hokkaidō) where many of the remaining native speakers live, there are 100 speakers, out of which only 15 used the language every day in the late 1980s.
+There is currently an active movement to revitalize the language—mainly in Hokkaidō but also elsewhere—to reverse the centuries-long decline in the number of speakers. This has led to an increasing number of second-language learners, especially in Hokkaidō, in large part due to the pioneering efforts of the late Ainu folklorist, activist and former Diet member Shigeru Kayano, himself a native speaker.
+There are five vowel sounds in Ainu:
+Plosives /p t ts k/ may be voiced [b d dz ɡ] between vowels and after nasals. Both /ti/ and /tsi/ are realized as [t͡ʃi], and /s/ becomes [ʃ] before /i/ and at the end of syllables. There is some variation among dialects; in the Sakhalin dialect, syllable-final /p, t, k, r/ lenited and merged into /x/. After an /i/, this /x/ is pronounced [ç]. A glottal stop [ʔ] is often inserted at the beginning of words, before an accented vowel, but is non-phonemic.
+There is a pitch accent system. The accentuation of specific words varies somewhat from dialect to dialect. Generally, words including affixes have a high pitch on the stem, or on the first syllable if it is closed or has a diphthong, while other words have the high pitch on the second syllable, although there are exceptions to this generalization.
+Typology and grammar 
+Ainu has a canonical word order of SOV, and it uses postpositions rather than prepositions. Nouns can cluster to modify one another; the head comes at the end. Verbs, which are inherently either transitive or intransitive, accept various derivational affixes. Ainu does not have grammatical gender. Plurals are indicated by a suffix.
+Applicatives may be used in Ainu to place nouns in the dative, instrumental, comitative, locative, allative, or ablative roles. Besides freestanding nouns, these roles may be assigned to incorporated nouns, and such use of applicatives is in fact mandatory for incorporating oblique nouns. Like incorporation, applicatives have grown less common in the modern language.
+Officially,[vague] the Ainu language is written in a modified version of the Japanese katakana syllabary. There is also a Latin-based alphabet in use. The Ainu Times publishes in both. In the Latin orthography, /ts/ is spelt c and /j/ as y; [ʔ], which only occurs initially before accented vowels, is not written. Other phonemes use the same character as the IPA transcription given above. An equals sign (=) is used to mark morpheme boundaries, such as after a prefix. Its pitch accent is denoted by acute accent in Latin script (e.g., á). This is usually not denoted in katakana.
+Rev. John Batchelor was an English missionary in Japan. He lived among the Ainu, studied them and published many works on the Ainu language.   Batchelor wrote extensively, both works about the Ainu language and works in Ainu itself. He was the first to write in Ainu and use a writing system for it.
+Special katakana for the Ainu language 
+A Unicode standard exists for a set of extended katakana (Katakana Phonetic Extensions) for transliterating the Ainu language and other languages written with katakana. These characters are used to write final consonants and sounds that cannot be expressed using conventional katakana. The extended katakana are based on regular katakana and either are smaller in size or have a handakuten. As few fonts yet support these extensions, workarounds exist for many of the characters, such as using a smaller font with the regular katakana ク ku to produce ク to represent the separate small katakana glyph ㇰ ku used as in アイヌイタㇰ (Aynu itak).
+This is a list of special katakana used in transcribing the Ainu language. Most of the characters are of the extended set of katakana, though a few have been used historically in Japanese, and thus are part of the main set of katakana. A number of previously proposed characters have not been added to Unicode as they can be represented as a sequence of two existing codepoints.
+|ㇰ||31F0||ク||Katakana Letter Small Ku||Final k|
+|ㇱ||31F1||シ||Katakana Letter Small Shi||Final s [ɕ]|
+|ㇲ||31F2||ス||Katakana Letter Small Su||Final s, used to emphasize its pronunciation as [s] rather than [ɕ]. [s] and [ʃ] are allophones in Ainu.|
+|ㇳ||31F3||ト||Katakana Letter Small To||Final t|
+|ㇴ||31F4||ヌ||Katakana Letter Small Nu||Final n|
+|ㇵ||31F5||ハ||Katakana Letter Small Ha||Final h [x], succeeding the vowel a. (e.g. アㇵ ah) Sakhalin dialect only.|
+|ㇶ||31F6||ヒ||Katakana Letter Small Hi||Final h [ç], succeeding the vowel i. (e.g. イㇶ ih) Sakhalin dialect only.|
+|ㇷ||31F7||フ||Katakana Letter Small Fu||Final h [x], succeeding the vowel u. (e.g. ウㇷ uh) Sakhalin dialect only.|
+|ㇸ||31F8||ヘ||Katakana Letter Small He||Final h [x], succeeding the vowel e. (e.g. エㇸ eh) Sakhalin dialect only.|
+|ㇹ||31F9||ホ||Katakana Letter Small Ho||Final h [x], succeeding the vowel o. (e.g. オㇹ oh) Sakhalin dialect only.|
+|ㇺ||31FA||ム||Katakana Letter Small Mu||Final m|
+|ㇻ||31FB||ラ||Katakana Letter Small Ra||Final r [ɾ], succeeding the vowel a. (e.g. アㇻ ar)|
+|ㇼ||31FC||リ||Katakana Letter Small Ri||Final r [ɾ], succeeding the vowel i. (e.g. イㇼ ir)|
+|ㇽ||31FD||ル||Katakana Letter Small Ru||Final r [ɾ], succeeding the vowel u. (e.g. ウㇽ ur)|
+|ㇾ||31FE||レ||Katakana Letter Small Re||Final r [ɾ], succeeding the vowel e. (e.g. エㇾ er)|
+|ㇿ||31FF||ロ||Katakana Letter Small Ro||Final r [ɾ], succeeding the vowel o. (e.g. オㇿ or)|
+|Characters represented using combining characters|
+|ㇷ゚||31F7 + 309A||プ||Katakana Letter Small Pu||Final p|
+|セ゚||30BB + 309A||セ゜||Katakana Letter Se With Semi-Voiced Sound Mark||ce [tse]|
+|ツ゚||30C4 + 309A||ツ゜||Katakana Letter Tu With Semi-Voiced Sound Mark||tu. ツ゚ and ト゚ are interchangeable.|
+|ト゚||30C8 + 309A||ト゜||Katakana Letter To With Semi-Voiced Sound Mark||tu. ツ゚ and ト゚ are interchangeable.|
+Basic syllables 
+[s] ~ [ʃ]
+|sa シャ/サ 2
+[sa] ~ [ʃa]
+|su シュ/ス 2
+[su̜] ~ [ʃu̜]
+|se シェ/セ 2
+[se] ~ [ʃe]
+|so ショ/ソ 2
+[so] ~ [ʃo]
+|-s ㇱ/ㇲ 2
+|tu ト゚/ツ゚ 2
+|-t ㇳ/ッ 3
+[ts] ~ [tʃ] 1
+[tsa] ~ [tʃa]
+[tsu̜] ~ [tʃu̜]
+[tse] ~ [tʃe]
+[tso] ~ [tʃo]
+|-n ㇴ/ン 4
+[-n, -m-, -ŋ-] 5
+|wi ウィ/ヰ 2
+|we ウェ/ヱ 2
+|wo ウォ/ヲ 2
+- 1: k, t, c, p are sometimes voiced [ɡ], [d], [dz] ~ [dʒ], [b], respectively. It does not change the meaning of a word, but it sounds more rough/masculine. When they are voiced, they may be written as g, d, j, dz, b, ガ, ダ, ヂャ, ヅァ, バ, etc.
+- 2: Both used according to actual pronunciations, or to writer's preferred styles.
+- 3: ッ is final t at the end of a word. (e.g. pet = ペッ = ペㇳ) In the middle of a polysyllabic word, it is a final consonant preceding the initial with a same value. (e.g. orta /otta/ = オッタ. オㇿタ is not preferred.)
+- 4: At the end of a word, n can be written either ㇴ or ン. In the middle of a polysyllabic word, it is ン. (e.g. tan-mosir = タンモシㇼ = タㇴ+モシㇼ, but not タㇴモシㇼ.)
+- 5: [m] before [p], [ŋ] before [k], [n] elsewhere. Unlike Japanese, it does not become other sounds such as nasal vowels.
+- 6: Initial h [h] and final h [x] are different phonemes. Final h exists in Sakhalin dialect only.
+Final [ɪ] is spelt y in Latin, small ィ in katakana. Final [ʊ] is spelt w in Latin, small ゥ in katakana. [ae] is spelt ae, アエ, or アェ.
+Example with initial k:
+Since the above rule is used systematically, some katakana combinations have different sounds from conventional Japanese.
+|Japanese||[wi]||[kɰi] ~ [kwi]||[si]||[ti]||[tɯ]||[ɸi]|
+Long vowels 
+Example with initial k:
+Oral literature 
+See also 
+- Bradley, D. Languages of Mainland South-East Asia (2007) In O. Miyaoka, O. Sakiyama, and M. E. Krauss (eds.), The vanishing languages of the Pacific Rim, pp. 301–336. Oxford Linguistics. Oxford: Oxford University Press.
+- Laurie Bauer, 2007, The Linguistics Student’s Handbook, Edinburgh
+- "WALS - Ainu". Wals.info. Retrieved 2012-07-29.
+- Frédéric, Louis; Translated by Käthe Roth (2005). "Ainu". Japan encyclopedia (illustrated, reprint ed.). Harvard University Press. p. 13. ISBN 0-674-01753-6.
+- Ivar Lissner (1957). The living past (4 ed.). Putnam's. p. 204. Retrieved 2012 23 April. "In 1877 a young and industrious theologian went to visit the Ainu. His name was John Batchelor, and he was a scientist and missionary. He got to know the Ainu well, studied their language and customs, won their affection, and remained their staunch friend until the end of his days. It is to Batchelor that we owe our deepest insight into the"[Original from the University of California Digitized Jan 27, 2009 Length 444 pages]
+- John Patric (1943). ...Why Japan was strong (4 ed.). Doubleday, Doran & company, inc. p. 72. Retrieved 2012 23 April. "John Batchelor set about to learn the Ainu language, which the Japanese had not troubled ever to learn. He laboriously compiled an Ainu dictionary. He singlehandedly turned this hitherto but spoken tongue into a written language, and himself wrote books in it which"[Original from the University of California Digitized Oct 16, 2007 Length 313 pages]
+- See this page at alanwood.net and this section of the Unicode specification.
+- Refsing, Kirsten (1986). The Ainu Language: The Morphology and Syntax of the Shizunai Dialect. Aarhus: Aarhus University Press. ISBN 87-7288-020-1.
+- Refsing, Kirsten (1996). Early European Writings on the Ainu Language. London: Routledge. ISBN 0-7007-0400-0.
+- Shibatani, Masayoshi (1990). The Languages of Japan. Cambridge: Cambridge University Press. ISBN 0-521-36918-5.
+- Tamura, Suzuko (2000). The Ainu Language. Tokyo: Sanseido. ISBN 4-385-35976-8.
+Further reading 
+- John Batchelor (1905). An Ainu-English-Japanese dictionary: (including A grammar of the Ainu language.) (2, reprint ed.). PRINTED AT THE TOKYO TSUKIJI TYPE FOUNDRY, TOKYO, JAPAN: Methodist publishing house; London, K. Paul, Trench, Trübner, co. p. 525. Retrieved March 1, 2012. (Published by the METHODIST PUBLISHING HOUSE, Ginza, Tokyo London KEGAN PAUL, TRENCH, TRUBNER, CO.) (the University of Michigan) (Digitized December 8, 2006)
+- Ainu grammar (Issue 1 of Memoirs of the Literature College, Imperial University of Japan). PRINTED AT THE "JAPAN MAIL" OFFICE, TOKOHAMA: Imperial University. 1887. p. 174. Retrieved March 1, 2012. (PUBLISHED BY THE IMPERIAL UNIVERSITY, TOKYO) (Harvard University) (Digitized November 30, 2007)
+- John Batchelor (1897). 聖書・新約: アイヌ. Printed for the Bible society's committee for Japan by the Yokohama bunsha. p. 706. Retrieved March 1, 2012. (Harvard University) (Digitized October 8, 2008)
+- John Batchelor (1896). 聖書・新約: アイヌ. Printed for the Bible society's committee for Japan by the Yokohama bunsha. p. 313. Retrieved March 1, 2012. (Harvard University) (Digitized October 8, 2008 )
+- British and Foreign Bible Society (1891). St. Mark, St. Luke, and St. John in Ainu. LONDON: British and Foreign Bible Society. p. 348. Retrieved March 1, 2012. (Harvard University) (Digitized June 9, 2008)
+- Kyōsuke Kindaic (1936). アイヌ語法概說. 岩波書店. p. 230. Retrieved March 1, 2012. (Compiled by Mashiho Chiri) (the University of Michigan) (Digitized August 15, 2006)
+- Kirsten Refsing (1986). The Ainu language: the morphology and syntax of the Shizunai dialect. Aarhus University Press. p. 301. ISBN 87-7288-020-1. (the University of Michigan) (Digitized May 14, 2008)
+|Ainu language test of Wikipedia at Wikimedia Incubator|
+- Literature and materials for learning Ainu
+- The Book of Common Prayer in Ainu
+- Ethnologue entry for Ainu
+- Information at the Rosetta Project
+- Institute for the Study of Languages and Cultures of Ainu in Samani, Hokkaidō
+- A Grammar of the Ainu Language by John Batchelor
+- An Ainu-English-Japanese Dictionary, including A Grammar of the Ainu Language by John Batchelor
+- "The 'Greater Austric' hypothesis" by John Bengtson (undated)
+- Ainu for Beginners by Kane Kumagai, translated by Yongdeok Cho
+- (Japanese) Radio lessons on Ainu language presented by Sapporo TV
+- (Japanese) Ainu word list (Archived 2009-10-24)

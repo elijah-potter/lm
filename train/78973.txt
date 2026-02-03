@@ -1,0 +1,13 @@
+Hyperlinks can be used in a plethora of ways, but my favorite way to use hyperlinks in Microsoft Excel spreadsheets is to create a main page that I use as a “table of contents”. This eases the pain of scrolling through worksheets and trying to find a specific page. Let me show you what I mean:
+Pretend we have a list of customers. Instead of having that data all on one worksheet, it would be much easier to have a designated worksheet for each customer. The problem is when you reach a large number of customers, scrolling through the worksheets to find a specific customer will become tedious. This is where the hyperlink shines. For this example I will use only 5 customers to demonstrate the effectiveness of hyperlinks in Microsoft Excel for Mac.
+First we must create our main page, and a designated worksheet for each customer:
+The first worksheet will be the list of customers as shown above, with the worksheets at the bottom.
+Our next step is to create the hyperlinks. Select the cell of the first customer, Customer 1 in this example. Using our Excel Skin, execute the Hyperlink shortcut found on the K key.
+Now the Insert Hyperlink dialog box will appear.
+Select the tab 'This Document'.
+Then click the arrow next to Cell Reference and select the customer this cell will hyperlink to. In this instance we want to hyperlink to Customer 1. Click Customer 1 and then OK.
+Now the cell will be underlined and blue:
+When we click Customer 1 on the customer page, it will bring us to that customer’s page.
+In this instance it is not so useful since Customer 1 is right next to the main Customers page, but when you are dealing with several hundred customers the hyperlink shortcut in Microsoft Excel on Mac becomes invaluable.
+Now try to hyperlink the other 4 customers! Let us know if you have any questions, the Excel Team is here to help!
+Comments will be approved before showing up.

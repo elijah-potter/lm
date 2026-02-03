@@ -1,0 +1,35 @@
+As stated by Dr. Michael J. Hayes:
+"The Crop Moisture Index (CMI) uses a meteorological approach to monitor week-to-week crop conditions. It was
+developed by Palmer (1968) from procedures within the calculation of the PDSI. Whereas the PDSI monitors
+long-term meteorological wet and dry spells, the CMI was designed to evaluate short-term moisture conditions
+across major crop-producing regions. It is based on the mean temperature and total precipitation for each week
+within a climate division, as well as the CMI value from the previous week. The CMI responds rapidly to
+changing conditions, and it is weighted by location and time so that maps, which commonly display the weekly
+CMI across the United States, can be used to compare moisture conditions at different locations. Weekly maps
+of the CMI are available as part of the USDA/JAWF Weekly Weather and Crop Bulletin".
+"Because it is designed to monitor short-term moisture conditions affecting a
+developing crop, the CMI is not a good long-term drought monitoring tool. The
+CMI’s rapid response to changing short-term conditions may provide misleading
+information about long-term conditions. For example, a beneficial rainfall
+during a drought may allow the CMI value to indicate adequate moisture
+conditions, while the long-term drought at that location persists. Another
+characteristic of the CMI that limits its use as a long-term drought monitoring
+tool is that the CMI typically begins and ends each growing season near zero.
+This limitation prevents the CMI from being used to monitor moisture conditions
+outside the general growing season, especially in droughts that extend over
+several years. The CMI also may not be applicable during seed germination at the
+beginning of a specific crop’s growing season."
+The Crop Moisture Index (CMI) is classified by the following scale:
+back to main page
+Keetch and Byram (1968) designed
+a drought index specifically for fire potential assessment. It is a number representing the net effect of evapotranspiration
+and precipitation in producing cumulative moisture deficiency in deep duff and upper soil layers. It is a continuous index,
+relating to the flammability of organic material in the ground.
+The KBDI attempts to measure the amount of precipitation necessary to return the soil to full field capacity. It is a
+closed system ranging from 0 to 800 units and represents a moisture regime from 0 to 8 inches of water through the soil
+layer. At 8 inches of water, the KBDI assumes saturation. Zero is the point of no moisture deficiency and 800 is the
+maximum drought that is possible. At any point along the scale, the index number indicates the amount of net rainfall
+that is required to reduce the index to zero, or saturation.
+The inputs for KBDI are weather station latitude, mean annual precipitation, maximum dry bulb temperature, and the last 24
+hours of rainfall. Reduction in drought occurs only when rainfall exceeds 0.20 inch (called net rainfall). The computational
+steps involve reducing the drought index by the net rain amount and increasing the drought index by a drought factor.

@@ -1,0 +1,22 @@
+In Software Engineering, we chant the term of validation and verification a lot between the software team members. Actually, it is used across the software project phases and I think there is a misconception in understanding the two terminologies and when to use them.
+Ruby on Rails framework has great automated testing tools for unit, integration testing and others as well. this post will not discuss these tools, you should be familiar with them already.
+I’m sharing here a task to help you prepare your test environment and run Rspec task without the need to run every command to run your test
+Black box testing is generally used when the tester has limited knowledge of the system under test or when access to source code is not available. Within the security test arena, black box testing is normally associated with activities that occur during the pre-deployment test phase (system test) or on a periodic basis after the system has been deployed.
+Black box security tests are conducted to identify and resolve potential security vulnerabilities before deployment or to periodically identify and resolve security issues within deployed systems. They can also be used as a “badness-ometer” [McGraw 04] to give an organization some idea of how bad the security of their system is. From a business perspective, organizations conduct black box security tests to conform to regulatory requirements, protect confidentially and proprietary information and protect the organization’s brand and reputation.
+Fortunately, a significant number of black box test tools focus on application security related issues. These tools concentrate on security-related issues including but not limited to:Read more
+What is white box testing?
+White box testing and analysis, by contrast with “black box” testing and analysis, that are mainly performed on the source code. Also known as glass box, structural, clear box, and open box testing.
+White box analysis and tests include:
+It is known as “code review,” static analysis analyses source code before it is compiled, to detect coding errors, insecure coding constructs, and other indicators of security vulnerabilities or weaknesses that are detectable at the source code level. Static analyses can be manual or automated. In a manual analysis, the reviewer inspects the source code without the assistance of tools.Read more
+When to perform Software security analysis and tests?
+Most of the software security practitioners would agree that the common practice of postponing security analysis and tests after the software implementation phase and even after it has been deployed (i.e., during its acceptance phase), makes it extremely difficult to address in a cost-effective, timely manner any vulnerabilities and weaknesses discovered during the analysis and testing process.Read more
+In the Software industry, Most of the clients have a main requirement which is
+“We want the system to be secured”.
+Security is a non-functional property of the system, the main goal for securing the system to make this system dependable. So, we can depend on this system and it can perform its excepted functions as required and specified.
+Therefore, it is mandatory to run the security testing procedures to ensure that we can depend on this system, but we need also to consider some functional requirements on writing requirements specifications document that help to obtain this goal.Read more
+What did they say about Software security testing?
+“Over 70 percent of security vulnerabilities exist at the application layer, not the network layer” Gartner.
+“Hacking has moved from a hobbyist pursuit with a goal of notoriety to a criminal pursuit with a goal of money” Counterpane Internet Security.
+“64 percent of developers are not confident in their ability to write secure applications” Microsoft Developer Research.
+“Losses arising from vulnerable web applications are significant and expensive – up to $60 billion annually”IDC/IBM Systems Sciences Institute.
+“If 50 percent of software vulnerabilities were removed prior to production use, enterprise configuration management and incident response costs would be reduced by 75 percent each.”Gartner.

@@ -1,0 +1,13 @@
+Learn a Programming Language Faster by Copying Unix
+Reading books is great, reading other people’s code is great but no other technique is more efficient for those trying to learn a new programming language than actually writing code.
+That said, I’m making a suggestion here: copy Unix.
+How? Gimme a hint.
+Suppose you’re learning Python, you should try to build a copy of the cat program with it or try to implement tree, for example.
+Unix programs are often small and focused on doing something unique and doing it very well (read more about the concept), which is also ideal for learning to program. Just pick up a single problem and solve it in the best way possible.
+Chris Wanstrath has an example of it from long ago.
+Reproducing these tiny programs in your language of choice has the amazing benefit of helping you learn about the classes and functions of that language.
+Have this for an example:
+#!/usr/bin/env ruby # Reproducing cat in Ruby would be as simple as this: ARGV.each do |file| puts File.read file end
+As developers we always need to learn things. I think small habits like this can make a difference.
+You can join the discussion on Hacker News.
+Rodrigo Alves Vieira is a 19 year-old hacker from Paulista, Brazil. He studies Computer Science at UFPE. Read more about him.

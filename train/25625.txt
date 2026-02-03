@@ -1,0 +1,24 @@
+Brave SailorsMath brain teasers require computations to solve.
+We are brave sailors always riding the sea
+We are less than one hundred but as tough as can be
+We sleep in three bunkers on top of each other
+Our numbers double from one bunker to another
+We dance in joy all through the night
+In groups of fives under the moonlight
+Last night twelve of us were swallowed by waves
+Leaving alive more than two third of the braves
+Still we continue the journey refusing to fail
+So tell me how many of us are left to sail?
+Answer58 sailors are left.
+1. From line 2: Total number of sailors is <100.
+2. From lines 3 & 4: Let number of sailors sleeping in bunker 1 be X, then number of sailors sleeping in bunker 2 is 2X and in bunker 3 is 4X,
+i.e. Total number of sailors = X+2X+4X = 7X and thus it is a multiple of 7.
+3. From line 6: dancing in groups of fives means the total number is a product of 5.
+4. From lines 7 & 8: 12 of the sailors drowned in the sea, leaving more than two third of the sailors alive, so the total number is > 36 (3 * 12).
+Summing up all the above given information, the total number of sailors is <100 and >36, it divides by 7 and 5, which adds up to the total number of 70 sailors.
+Since 12 of the 70 sailors died in the sea, there are 58 sailors left to continue the journey.
+See another brain teaser just like this one...
+Or, just get a random brain teaser
+If you become a registered user you can vote on this brain teaser, keep track of
+which ones you have seen, and even make your own.
+Back to Top

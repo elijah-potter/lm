@@ -1,0 +1,28 @@
+Pivot table is great tool in Excel to create reports and analyze data. Go thru the simple exercise below to understand the concept
+You can drag a control to place it on the form. If you want to place again, you need to drag it again.
+OLE is technology developed by Microsoft to make different programs interact with each other to make each program more useful and visually appealing. OLE object can be embedded into different application; they however retain original format and link to originating program.
+When you need to verify data that can go in a cell, Data validation is the function in Excel to use.
+Conditional Formatting allows changing appearance (different color, font, format etc) of cell based on certain condition. For example you can show employees with Salary Higher than 100000 USD in Red. This makes easy and visually appealing to read and interpret data.
+You can work on the multiple controls at the same time and change properties. Keep holding Ctrl key and select multiple controls (such as labels).
+Yahoo and Microsoft announced a search deal. Bing (from Microsoft) becomes search engine behind Yahoo. Yahoo gets the ad revenue share and saves money not having to build search. Microsoft gets Yahoo search traffic. With the announcement, Yahoo goes back to being a Portal Company. The deal is the biggest development in Search Arena in years.
+A data type communicates to program what kind of variable is needed in operation.
+Here is a quick list of data types.
+Bing recently replaced Live Search. Bing is much better version of Live Search and got really good response from community.
+Excel 2007 comes with the option of querying web to export table data from internet. This is a very good option if you rely on constantly updated data such as exchange rates etc.
+Form is the graphical container where other controls can be added to make user input logical and meaningful in Excel.
+Here are the key controls
+Here is a quick reference of important formulas in MS Excel. Functions are pre-defined formulas in Excel and can be interchangeably used with term Formula. The list has been prepared using Excel 2007. But most of the formulas should be applicable to other versions as well.
+Data Table is a What If Analysis Function to find out result by altering an input cell in Excel.
+Name range in Excel is a way to define a range to be used in Formula.
+If you have large number of conditions to verify, Select Case statement provides a way to check these conditions easily and in readable manner.
+There are different ways a cell can be referenced or called in Excel.
+Here is a list of If Statement for Visual Basic for Application.
+Application Object is the highest object in Excel, followed by Workbook, followed by Worksheet and followed by Column, Row and cell. You can select object by going from highest to lowest in Excel.
+Loops are used to repeat actions.
+You can use Scenarios to see what would happen to your bottom line figure if you change certain values.
+What is VBA
+Microsoft Office documents (Excel, Word etc) are shipped with extensive functionality which is more than enough for most users. But there may be a need for enhancement to these applications or automate certain tasks that standard versions of these software are not equipped with. For this purpose, Microsoft applications include a programming environment to add new functions to standard application.
+When you know the result but are not sure of the input that would bring the desired result, Goal Seek function can help. Goal Seek is one of the” What If” analysis functions in Excel.
+If you want to use values from one worksheet to another, you would need to use a reference to the worksheet.
+Microsoft introduced new format with Office 2007. Word 2007 saves file as .docx. Excel 2007 saves file as .xlsx and so on. But most of the world is still using old versions of Office. These people might have trouble accessing your files. So, for the time being it might still make sense to save files in old doc or xls format.
+Here is a look at changes introduced with MS Office 2007.

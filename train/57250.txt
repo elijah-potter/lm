@@ -1,0 +1,9 @@
+Chemistry- partial pressures
+posted by Dave .
+A sample of gas collected over water at 42 degrees C occupies a volume of one liter. The wet gas has a pressure of .986 atm. The gas is dried and the dry gas occupies 1.04 L with a pressure of 1.00 atm at 90 degrees C. Using this information, calculate the vapor pressure of water at 42 degrees C.
+I was going to approach this problem by finding the pressure of the gas when dry at 42 degrees C, and then do
+P[dry]= P[total] - P[water pressure]
+but I realized this would get me nowhere as I didn't know the total pressure. Is there a better way to do this problem?
+Calculate total mols H2O and gas @ 42o C from PV = nRT.
+Calculate mols dry gas from the second set of conditions @ 90o C.
+The difference in mols should be the mols H2O vapor and that put back into the PV=nRT at 42 should give P of water at 42.

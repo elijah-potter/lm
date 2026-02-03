@@ -1,0 +1,302 @@
+Are you a fan of the Internet?
+What about the World Wide Web?
+Did you know that these two terms are not synonymous?
+These are just a few of the many questions I hope to help answer in the next installment of Ultimate Guides. I hope you find the following information helpful and not as terrifying as I do. Know of some more great tidbits about the Internet or WWW? Let me know and I’ll add them to this Ultimate Guide and credit you! Just e-mail edudemic [at] gmail.com or tweet me @edudemic or write on the Edudemic Facebook Wall. What could be easier? Now, on with the insanity:
+What Is The Internet?
+It’s not something you put on a truck. It’s a series of tubes!
+Seriously, What Is It?!
+The Internet is a worldwide collection of computer networks, cooperating with each other to exchange data using a common software standard. Through telephone wires and satellite links, Internet users can share information in a variety of forms. The size, scope and design of the Internet allows users to:
+- connect easily through ordinary personal computers and local phone numbers;
+- exchange electronic mail (E-mail) with friends and colleagues with accounts on the Internet;
+- post information for others to access, and update it frequently;
+- access multimedia information that includes sound, photographic images and even video; and
+- access diverse perspectives from around the world.
+An additional attribute of the Internet is that it lacks a central authority—in other words, there is no “Internet, Inc.” that controls the Internet. Beyond the various governing boards that work to establish policies and standards, the Internet is bound by few rules and answers to no single organization.
+In February 1996, President Clinton signed into law the Communications Decency Act, which provides criminal penalties for those who post or transmit “indecent” material via the Internet. This law, however, has been challenged in U.S. courts by those who feel it would unfairly prohibit many legitimate uses of the Internet, and was ruled unconstitutional in July 1996. The federal government, however, is preparing an appeal. For the latest status of the CDA, go to http://www.eff.org/ or http://www.fcc.gov/telecom.html. Here’s a helpful video courtesy of CBC that describes the reason for why the Internet held such appeal when it was first getting going:
+The Internet Described In 60 Seconds
+The conceptual foundation for creation of the Internet was largely created by three individuals and a research conference, each of which changed the way we thought about technology by accurately predicting its future: (source: LivingInternet)
+- Vannevar Bush wrote the first visionary description of the potential uses for information technology with his description of the “memex” automated library system.
+- Norbert Wiener invented the field of Cybernetics, inspiring future researchers to focus on the use of technology to extend human capabilities.
+- The 1956 Dartmouth Artificial Intelligence conference crystallized the concept that technology was improving at an exponential rate, and provided the first serious consideration of the consequences.
+- Marshall McLuhan made the idea of a global village interconnected by an electronic nervous system part of our popular culture.
+In 1957, the Soviet Union launched the first satellite, Sputnik I, triggering US President Dwight Eisenhower to create the ARPA agency to regain the technological lead in the arms race. ARPA appointed J.C.R. Licklider to head the new IPTO organization with a mandate to further the research of the SAGE program and help protect the US against a space-based nuclear attack. Licklider evangelized within the IPTO about the potential benefits of a country-wide communications network, influencing his successors to hire Lawrence Roberts to implement his vision.
+Roberts led development of the network, based on the new idea of packet switching invented by Paul Baran at RAND, and a few years later by Donald Davies at the UK National Physical Laboratory. A special computer called an Interface Message Processor was developed to realize the design, and the ARPANET went live in early October, 1969. The first communications were between Leonard Kleinrock‘s research center at the University of California at Los Angeles, and Douglas Engelbart‘s center at the Stanford Research Institute.
+The first networking protocol used on the ARPANET was the Network Control Program. In 1983, it was replaced with the TCP/IP protocol invented Wby Robert Kahn, Vinton Cerf, and others, which quickly became the most widely used network protocol in the world.
+In 1990, the ARPANET was retired and transferred to the NSFNET. The NSFNET was soon connected to the CSNET, which linked Universities around North America, and then to the EUnet, which connected research facilities in Europe. Thanks in part to the NSF’s enlightened management, and fueled by the popularity of the web, the use of the Internet exploded after 1990, causing the US Government to transfer management to independent organizations starting in 1995.
+Did Al Gore invent the Internet?
+According to a CNN transcript of an interview with Wolf Blitzer, Al Gore said,”During my service in the United States Congress, I took the initiative in creating the Internet.” Al Gore was not yet in Congress in 1969 when ARPANET started or in 1974 when the term Internet first came into use. Gore was elected to Congress in 1976. In fairness, Bob Kahn and Vint Cerf acknowledge in a paper titled Al Gore and the Internet that Gore has probably done more than any other elected official to support the growth and development of the Internet from the 1970′s to the present. (Source: walthowe.com)
+The History of the Internet
+The Internet was the result of some visionary thinking by people in the early 1960s who saw great potential value in allowing computers to share information on research and development in scientific and military fields. J.C.R. Licklider of MIT, first proposed a global network of computers in 1962, and moved over to the Defense Advanced Research Projects Agency (DARPA) in late 1962 to head the work to develop it. Leonard Kleinrock of MIT and later UCLA developed the theory of packet switching, which was to form the basis of Internet connections. Lawrence Roberts of MIT connected a Massachusetts computer with a California computer in 1965 over dial-up telephone lines. It showed the feasibility of wide area networking, but also showed that the telephone line’s circuit switching was inadequate. Kleinrock’s packet switching theory was confirmed. Roberts moved over to DARPA in 1966 and developed his plan for ARPANET. These visionaries and many more left unnamed here are the real founders of the Internet.
+The Internet, then known as ARPANET, was brought online in 1969 under a contract let by the renamed Advanced Research Projects Agency (ARPA) which initially connected four major computers at universities in the southwestern US (UCLA, Stanford Research Institute, UCSB, and the University of Utah). The contract was carried out by BBN of Cambridge, MA under Bob Kahn and went online in December 1969. By June 1970, MIT, Harvard, BBN, and Systems Development Corp (SDC) in Santa Monica, Cal. were added. By January 1971, Stanford, MIT’s Lincoln Labs, Carnegie-Mellon, and Case-Western Reserve U were added. In months to come, NASA/Ames, Mitre, Burroughs, RAND, and the U of Illinois plugged in. After that, there were far too many to keep listing here.
+The Internet was designed in part to provide a communications network that would work even if some of the sites were destroyed by nuclear attack. If the most direct route was not available, routers would direct traffic around the network via alternate routes.
+The early Internet was used by computer experts, engineers, scientists, and librarians. There was nothing friendly about it. There were no home or office personal computers in those days, and anyone who used it, whether a computer professional or an engineer or scientist or librarian, had to learn to use a very complex system.
+E-mail was adapted for ARPANET by Ray Tomlinson of BBN in 1972. He picked the @ symbol from the available symbols on his teletype to link the username and address. The telnet protocol, enabling logging on to a remote computer, was published as a Request for Comments (RFC) in 1972. RFC’s are a means of sharing developmental work throughout community. The ftp protocol, enabling file transfers between Internet sites, was published as an RFC in 1973, and from then on RFC’s were available electronically to anyone who had use of the ftp protocol.
+Libraries began automating and networking their catalogs in the late 1960s independent from ARPA. The visionary Frederick G. Kilgour of the Ohio College Library Center (now OCLC, Inc.) led networking of Ohio libraries during the ’60s and ’70s. In the mid 1970s more regional consortia from New England, the Southwest states, and the Middle Atlantic states, etc., joined with Ohio to form a national, later international, network. Automated catalogs, not very user-friendly at first, became available to the world, first through telnet or the awkward IBM variant TN3270 and only many years later, through the web.
+The Internet matured in the 70′s as a result of the TCP/IP architecture first proposed by Bob Kahn at BBN and further developed by Kahn and Vint Cerf at Stanford and others throughout the 70′s. It was adopted by the Defense Department in 1980 replacing the earlier Network Control Protocol (NCP) and universally adopted by 1983.
+The Unix to Unix Copy Protocol (UUCP) was invented in 1978 at Bell Labs. Usenet was started in 1979 based on UUCP. Newsgroups, which are discussion groups focusing on a topic, followed, providing a means of exchanging information throughout the world . While Usenet is not considered as part of the Internet, since it does not share the use of TCP/IP, it linked unix systems around the world, and many Internet sites took advantage of the availability of newsgroups. It was a significant part of the community building that took place on the networks.
+Similarly, BITNET (Because It’s Time Network) connected IBM mainframes around the educational community and the world to provide mail services beginning in 1981. Listserv software was developed for this network and later others. Gateways were developed to connect BITNET with the Internet and allowed exchange of e-mail, particularly for e-mail discussion lists. These listservs and other forms of e-mail discussion lists formed another major element in the community building that was taking place.
+In 1986, the National Science Foundation funded NSFNet as a cross country 56 Kbps backbone for the Internet. They maintained their sponsorship for nearly a decade, setting rules for its non-commercial government and research uses.
+As the commands for e-mail, FTP, and telnet were standardized, it became a lot easier for non-technical people to learn to use the nets. It was not easy by today’s standards by any means, but it did open up use of the Internet to many more people in universities in particular. Other departments besides the libraries, computer, physics, and engineering departments found ways to make good use of the nets–to communicate with colleagues around the world and to share files and resources.
+While the number of sites on the Internet was small, it was fairly easy to keep track of the resources of interest that were available. But as more and more universities and organizations–and their libraries– connected, the Internet became harder and harder to track. There was more and more need for tools to index the resources that were available.
+The first effort, other than library catalogs, to index the Internet was created in 1989, as Peter Deutsch and his crew at McGill University in Montreal, created an archiver for ftp sites, which they named Archie. This software would periodically reach out to all known openly available ftp sites, list their files, and build a searchable index of the software. The commands to search Archie were unix commands, and it took some knowledge of unix to use it to its full capability. Read the full and unabridged version over at walthowe.com, it’s worth it!
+The Internet (and fashion sense) Was Confusing In The 90s
+This clip from the Today Show has caused a bit of a firestorm lately and was actually the impetus for creating this Ultimate Guide.
+The Difference Between ‘Internet’ and ‘World Wide Web’
+The Internet is the large container, and the Web is a part within the container. It is common in daily conversation to abbreviate them as the “Net” and the “Web”, and then swap the words interchangeably. But to be technically precise, the Net is the restaurant, and the Web is the most popular dish on the menu.
+Here is the detailed explanation:
+The Internet is a Big Collection of Computers and Cables.
+The Internet is named for “interconnection of computer networks”. It is a massive hardware combination of millions of personal, business, and governmental computers, all connected like roads and highways. The Internet started in the 1960′s under the original name “ARPAnet”. ARPAnet was originally an experiment in how the US military could maintain communications in case of a possible nuclear strike. With time, ARPAnet became a civilian experiment, connecting university mainframe computers for academic purposes. As personal computers became more mainstream in the 1980′s and 1990′s, the Internet grew exponentially as more users plugged their computers into the massive network. Today, the Internet has grown into a public spiderweb of millions of personal, government, and commercial computers, all connected by cables and by wireless signals.
+No single person owns the Internet. No single government has authority over its operations. Some technical rules and hardware/software standards enforce how people plug into the Internet, but for the most part, the Internet is a free and open broadcast medium of hardware networking.
+The Web Is a Big Collection of HTML Pages on the Internet.
+The World Wide Web, or “Web” for short, is that large software subset of the Internet dedicated to broadcasting HTML pages. The Web is viewed by using free software called web browsers. Born in 1989, the Web is based on hypertext transfer protocol, the language which allows you and me to “jump” (hyperlink) to any other public web page. There are over 40 billion public web pages on the Web today.
+Important Terms Everyone on the Internet Should Know
+The Web vs. the Internet
+The Internet is a vast ‘interconnection of computer networks’ that spans the globe. It is comprised of millions of computing devices that trade volumes of information. Desktop computers, mainframes, GPS units, cell phones, car alarms, video game consoles, and even soda pop machines are connected to the Net.
+The Internet started in the late 1960′s as an American military project, and has since evolved into a massive public spiderweb. No single organization owns or controls the Internet. The Net has grown into a spectacular mishmash of non-profit, private sector, government, and entrepreneurial broadcasters.
+The Internet houses many layers of information, with each layer dedicated to a different kind of documentation. These different layers are called ‘protocols‘. The most popular protocols are the World Wide Web, FTP, Telnet, Gopherspace, instant messaging, and email.
+The World Wide Web, or ‘Web’ for short, is the most popular portion of the Internet. The Web is viewed through web browser software.
+http and https
+http is a technical acronym that means ‘hypertext transfer protocol‘, the language of web pages. When a web page has this prefix, then your links, text, and pictures should work in your web browser.
+https is ‘hypertext transfer protocol SECURED’. This means that the web page has a special layer of encryption added to hide your personal information and passwords. Whenever you log into your online bank or your web email account, you should see https at the front of the page address.
+:// is the strange expression for ‘this is a computer protocol‘. We add these 3 characters in a Web address to denote which set of computer lanaguage rules affect the document you are viewing.
+A browser is a free software package that lets you view web pages, graphics, and most online content. Browser software is specifically designed to convert HTML and XML into readable documents.
+The most popular web browsers in 2010 are: Firefox, Google Chrome, Internet Explorer, and Safari.
+HTML and XML
+Hypertext Markup Language is the programmatic language that web pages are based on. HTML commands your web browser to display text and graphics in orderly fashion. HTML uses commands called ‘HTML tags’ that look like the following:
+- <a href=”www.edudemic.com”></a>
+XML is eXtensible Markup Language, a cousin to HTML. XML focuses on cataloging and databasing the text content of a web page. XML commands look like the following:
+XHTML is a combination of HTML and XML.
+URL’s, or ‘uniform resource locators’, are the web browser addresses of Internet pages and files. A URL works together with IP addresses to help us name, locate, and bookmark specific pages and files for our web browsers.
+URL’s commonly use three parts to address a page or file: the protocol (which is the portion ending in ‘//:’); the host computer (which sometimes ends in .com); and the filename/pagename itself. For example:
+Your computer’s ‘internet protocol’ address is a four-part electronic serial number. An IP address looks something like ’126.96.36.199′, complete with dot separators. Every computer, cell phone, and device that accesses the Internet is assigned at least one IP address for tracking purposes. Wherever you browse, whenever you send an email or instant message, and whenever you download a file, your IP address acts like a type of automobile licence plate to enforce accountability and traceability.
+Email (formerly spelled e-mail with a hyphen) is electronic mail. It is the sending and receiving of typewritten messages from one screen to another. Email is usually handled by a webmail service (e.g. Gmail or Yahoomail), or an installed software package (e.g. Microsoft Outlook).
+Email has many cousins: text messaging, instant messaging, live chat, videomail (v-mail), Google Waving.
+Blogs and Blogging
+A blog (‘web log’) is a modern online writer’s column. Amateur and professional writers publish their blogs on most every kind of topic: their hobby interest in paintball and tennis, their opinions on health care, their commentaries on celebrity gossip, photo blogs of favorite pictures, tech tips on using Microsoft Office. Absolutely anyone can start a blog, and some people actually make reasonable incomes by selling advertising on their blog pages.
+Web logs are usually arranged chronologically, and with less formality than a full website. Blogs vary in quality from very amateurish to very professional. It costs nothing to start your own personal blog.
+Downloading is a broad term that describes when you make a personal copy of something you find on the Internet or World Wide Web. Commonly, downloading is associated with songs, music, and software files (e.g. “I want to download a new musical ringtone for my cell phone”, “I want to download a trial copy of Microsoft Office 2010″). The larger the file you are copying, the longer the download will take to transfer to your computer. Some downloads will take 12 to 15 hours, depending on your Internet speed.
+Be warned: downloading itself is fully legal, as long as you are careful not to download pirated movies and music.
+Malware is the broad term to describe any malicious software designed by hackers. Malware includes: viruses, trojans, ratware, keyloggers, zombie programs, and any other software that seeks to do one of four things:
+- vandalize your computer in some way
+- steal your private information
+- take remote control of your computer (‘zombie’ your computer) for other ends
+- manipulate you into purchasing something
+Malware programs are the time bombs and wicked minions of dishonest programmers.
+Router (aka ‘Network Router’)
+A router, or in many cases, a router-modem combination, is the hardware device that acts as the traffic cop for network signals into your home. A router can be wired or wireless or both. Your router provides both a defense against hackers, and the redirection service of deciding which specific computer or printer should get which signals in your home. If your router or router-modem is configured correctly, your Internet speed will be fast, and hackers will be locked out. If your router is poorly configured, you will experience network sluggishness and possible hacker intrusions.
+Keywords and Tags/Labels
+Keywords are search terms used to locate documents. Keywords are anywhere from one to five words long, separated by spaces or commas: e.g. “horseback riding calgary” e.g. “ipad purchasing advice” e.g. “ebay tips selling”. Keywords are the foundation for cataloging the Web, and the primary means by which you and I will find anything on the Web.
+Tags (sometimes called ‘labels’) are recommendation keywords. Tags and labels focus on crosslinking you to related content… they are the modern evolution of ‘suggestions for further reading’.
+Texting is the short way to say ‘text messaging’, the sending of short electronic notes usually from a cell phone or handheld electronic device. Texting is popular with people who are mobile and away from their desk computers. Texting is something like the pagers of old, but has the file attachment ability of email.
+To send a text message, you will usually need a keyboard-enabled cellphone and a text message service through your cellphone provider. You address your text messages using the recipient’s phone number.
+In 2010, texting has spawned a controversial habit called ‘sexting’, which is when young people send sexual photos of themselves to other cell phone users.
+I.M. (usually spelled ‘IM’ without the periods) is instant messaging, a form of modern online chatting. IM is somewhat like texting, somewhat like email, and very much like sending notes in a classroom. IM uses specialized no-cost software that you install on your computer. That IM software in turn connects you to potentially thousands of other IM users through the Internet. You locate existing friends and make new friends by searching for their IM nicknames.
+Once the software and your friends list is in place, you can send instantaneous short messages to each other, with the option of including file attachments and links. While the recipient sees your message instantly, they can choose to reply at their leisure.
+P2P file sharing (‘peer-to-peer’) is the most voluminous Internet activity today. P2P is the cooperative trading of files amongst thousands of individual users. P2P participants install special software on their computers, and then voluntarily share their music, movies, ebooks, and software files with each other.
+Through ‘uploading’ and ‘downloading’, users trade files that are anywhere from 1 megabyte to 5 gigabytes large. This activity, while in itself a fully legal pasttime, is very controversial because thousands of copyrighted songs and movies trade hands through P2P.
+E-commerce is ‘electronic commerce’: the transacting of business selling and buying online. Every day, billions of dollars exchange hands through the Internet and World Wide Web. Sometimes, the e-commerce is your company buying office products from another company (business-to-business ‘B2B’ e-commerce). Sometimes, the e-ecommerce is when you make a private purchase as a retail customer from an online vendor (business-to-consumer ‘B2C’ e-commerce).
+E-commerce works because reasonable privacy can be assured through technical means (e.g. https secure web pages), and because modern business values the Internet as a transaction medium.
+A bookmark (aka “favorite”) is a marker that you can place on web pages and files. You would bookmark something because:
+- You want to return to the page or file later
+- You want to recommend the page or file to someone else
+Bookmarks/Favorites can be made using your right mouse click menu, or the menus/toolbars at the top of your web browser. Bookmarks/Favorites can also be made on your Mac or Windows computer files.
+Social engineering is the conman art of talking directly to people to trick them into divulging passwords and their private information. All social engineering attacks are some form of a masquerade or phishing attack, designed to convince you that the attacker is trustworthy as a friend or as a legitimate authority figure. The attacker might use an email, phone call, or even face-time interview to deceive you. Common social engineering attacks include greeting cards, bogus lottery winnings, stock investment scams, warnings from an alleged banker that you’ve been hacked, credit card companies pretending to protect you.
+Social Media and Social Bookmarking
+Social media is the broad term for any online tool that enables users to interact with thousands of other users. Instant messaging and chatting are common forms of social media, as are blogs with comments, discussion forums, video-sharing and photo-sharing websites. Facebook.com and MySpace.com are very large social media sites, as are YouTube.com and Digg.com.
+Social bookmarking is a the specific form of social media. Social bookmarking is where users interact by recommending websites to each other (‘tagging sites’).
+ISP is Internet Service Provider. That is the private company or government organization that plugs you into the vast Internet around the world. Your ISP will offer varying services for varying prices: web page access, email, hosting your own web page, hosting your own blog, and so on. ISP’s will also offer various Internet connection speeds for a monthly fee. (e.g. ultra high speed Internet vs economy Internet).
+Today, you will also hear about WISP’s, which are Wireless Internet Service Providers. They cater to laptop users who travel regularly.
+Be sure to check out the rest of the helpful jargon over at about.com!
+The Eastern Telegraph in 1901 (Closest Thing to the Internet)
+The Internet as of 2003
+Social Networks and other Maps
+This world map shows the popularity of social networking websites in different countries. Orkut sweeps Brazil and India, LiveJournal is in Russia while MySpace is all over Australia. Credit: ValleyWag
+The Internet Black Hole world map depict countries where Internet Filtering is common and freedom of online expression is a rare commodity. China, Iran, Turkey, Saudi Arabia, Cuba and other countries where Internet access is restricted are included in the Black Hole world map. Credit: RSF
+This poster of online communities shows the various social networking sites like MySpace, Facebook, Orkut, etc represented as islands and continents in the style of a “treasure map.” The relative size of the land roughly represents the size of that community on the web. Credit: xkcd
+Online, No One Knows You’re A Dog
+The above cartoon by Peter Steiner has been reproduced from page 61 of July 5, 1993 issue of The New Yorker, (Vol.69 (LXIX) no. 20)only for academic discussion, evaluation, research and complies with the copyright law of the United States as defined and stipulated under Title 17 U. S. Code. Click here to view what this cartoon would actually look like today.
+A Snapshot of the 2010 Internet
+The Periodic Table of the Internet
+What Does The Internet Look Like?
+Information moving through cyberspace travels in tiny packets that hopscotch around the world. Using data from a two-week stretch in April 2005, the Cooperative Association for Internet Data Analysis (CAIDA) traced these packets’ paths from hub to hub and country to country to capture a snapshot of the worldwide network topology.
+The Future of the Internet…And How To Stop It
+Since you’ve made it this far, it’s time to go just a bit further! There’s a terrific book out by Professor Jonathan Zittrain titled “The Future of the Internet and How To Stop It” that you should check out. You can even download it for free here. This extraordinary book explains the engine that has catapulted the Internet from backwater to ubiquity—and reveals that it is sputtering precisely because of its runaway success. With the unwitting help of its users, the generative Internet is on a path to a lockdown, ending its cycle of innovation—and facilitating unsettling new kinds of control.
+IPods, iPhones, Xboxes, and TiVos represent the first wave of Internet-centered products that can’t be easily modified by anyone except their vendors or selected partners. These “tethered appliances” have already been used in remarkable but little-known ways: car GPS systems have been reconfigured at the demand of law enforcement to eavesdrop on the occupants at all times, and digital video recorders have been ordered to self-destruct thanks to a lawsuit against the manufacturer thousands of miles away. New Web 2.0 platforms like Google mash-ups and Facebook are rightly touted—but their applications can be similarly monitored and eliminated from a central source. As tethered appliances and applications eclipse the PC, the very nature of the Internet—its “generativity,” or innovative character—is at risk.
+The Internet’s current trajectory is one of lost opportunity. Its salvation, Zittrain argues, lies in the hands of its millions of users. Drawing on generative technologies like Wikipedia that have so far survived their own successes, this book shows how to develop new technologies and social structures that allow users to work creatively and collaboratively, participate in solutions, and become true “netizens.” (source: FutureoftheInternet.org)
+The World’s First and Second Books Published on the Internet (Year 2000)
+Did you know that the first “e-book” was publshed in 2000? That’s way before iPads, Kindles, and even most companies that exist today. It’s called The Internet and is available for viewing over at livinginternet.com A bit about the book from the site: After MH & nmh, this is the second book published on the Internet, and the first book to be published for the Internet. This site was written from 1996 through 1999, posted on the web on January 7, 2000, and updated regularly. It has more than 700 pages, 2,000 intra-site links, and 2,000 external links to some of the world’s best online content about the Internet.
+The site was authored by Bill Stewart, who also maintains the FreeOpenSourceSoftware wiki and the best practices document The Fun Standard. Bill has used the Internet since 1988, and first appreciated the power of the medium during the Tiananmen Square rebellion in China in 1989, when he saw how the net kept Chinese communities around the world in touch with the events through email and newsgroups, bypassing all government censorship. Here’s a helpful table of contents that will surely answer any question you may have that was not answered on this Ultimate Guide.
+- Internet History
+- Internet History — One-Page Summary
+- Vannevar Bush and Memex
+- Norbert Wiener Invents Cybernetics
+- Semi-Automatic Ground Environment (SAGE)
+- Dartmouth Artificial Intelligence (AI) Conference
+- DARPA/ARPA — Defense / Advanced Research Project Agency
+- J.C.R. Licklider And The Universal Network
+- Marshall McLuhan Foresees The Global Village
+- Paul Baran Invents Packet Switching
+- UK National Physical Laboratory (NPL) & Donald Davies
+- IPTO — Information Processing Techniques Office
+- Leonard Kleinrock Helps Build The ARPANET
+- Lawrence Roberts Manages The ARPANET Program
+- IMP — Interface Message Processor
+- ARPANET — The First Internet
+- NCP — Network Control Program
+- Robert Kahn — TCP/IP Co-Designer
+- Vinton Cerf — TCP/IP Co-Designer
+- TCP/IP Internet Protocol
+- CSNET — Computer Science Network
+- NSFNET — National Science Foundation Network
+- EUnet — European Network
+- How The Internet Works
+- Internet Management
+- ISOC — Internet Society
+- IAB — Internet Architecture Board
+- IETF — Internet Engineering Task Force
+- IRTF — Internet Research Task Force
+- ICANN — Internet Corporation For Assigned Names And Numbers
+- IANA — Internet Assigned Numbers Authority
+- NSI — Network Solutions
+- Accredited Domain Name Registrars
+- NSF — National Science Foundation
+- Internet Architecture
+- Internet Protocol (IP) Addresses
+- Domain Name System (DNS)
+- DNS History
+- Domain Names
+- Domain Name Servers
+- Domain Name Aliases
+- More DNS Information
+- Packet Switching
+- Packet Switching History
+- How Packets Work
+- How Switching Works
+- Internet Routing
+- Internet Routers
+- Interior Gateway Protocols (IGP)
+- Routing Information Protocol (RIP)
+- Open Shortest Path First (OSPF)
+- Interior Gateway Routing Protocol (IGRP)
+- Exterior Gateway Protocols (EGP)
+- Border Gateway Protocol (BGP)
+- Exterior Gateway Protocol (EGP)
+- Unix Operating System
+- Unix History
+- C Programming Language History
+- Unix Wars
+- Linux History
+- More Unix Information
+- Ethernet Networking
+- Internet Use
+- Internet Use
+- World Wide Web Use
+- Usenet Newsgroups Use
+- Email Use
+- Mailing List Use
+- Internet Relay Chat (IRC) Use
+- Multi-User Dungeon (MUD) Use
+- Advanced Internet Use
+- RFC History
+- How To Use RFC’s
+- Internet Protocol RFC’s
+- Internet Official Protocol Standards RFC’s
+- Entertaining RFC’s
+- Interesting RFC’s
+- RFC’s By Email
+- Related RFC References
+- Netiquette (Internet Etiquette)
+- Netiquette Basics
+- Netiquette Of Sending
+- Netiquette Of Replying
+- Netiquette Of Confidentiality
+- More Netiquette Information
+- Internet Request For Comments (RFC’s)
+- Internet Tools & Resources
+- Internet Network Topology
+- WHOIS Database
+- Ping Command
+- Traceroute Command
+- NSLOOKUP Command
+- Internet Traffic Statistics
+- Text On The Internet
+- Adding Emphasis To Text
+- Emoticons & Smileys
+- Text Abbreviations
+- Text Actions
+- ASCII Art
+- Internet Legends & Myths
+- Internet Coke Machine
+- The Modem Tax
+- Internet Toaster
+- Neiman-Marcus Cookie Recipe
+- Craig Shergold’s Postcards
+- Jessica Chain Email Hoax
+- Cruise Control In The Rain
+- Internet Hackers, Crackers, Hacking
+- Richard Stallman
+- John Draper
+- Mark Abene
+- Kevin Mitnick
+- Kevin Poulsen
+- Vladimir Levin
+- Hacker Sites
+- How To Get An Internet Domain
+- The Future Of The Internet
+- Key Internet Features
+- Geographic Distribution
+- Robust Internet Architecture
+- Internet At Near Light Speed
+- Universal Internet Access
+- Internet Growth Rates
+- The Internet’s Digital Advantage
+- Internet Freedom Of Speech
+- Internet Security
+- Internet Confidentiality & Privacy
+- Internet Anonymizers
+- How Anonymizers Work
+- Anonymizer Use
+- Anonymizer Limitations
+- Anonymizer Sites & Services
+- Internet Remailers
+- Internet Encryption
+- Public Key Cryptography PKC)
+- PKC History
+- How PKC Works
+- More PKC Information
+- Pretty Good Privacy (PGP)
+- Digital Signatures
+- Key Recovery Systems
+- Internet Viruses
+- Boot & Program Viruses
+- Script & Macro Viruses
+- Internet Worms
+- Virus Protection
+- Virus Hoaxes
+- More Virus Information
+- Password Selection
+- Internet Security Resources
+- Internet Help
+- Frequently Asked Questions (FAQ’s)
+- FAQ History
+- FAQ Archives
+- Create Your Own FAQ
+- Internet Terminology
+- Starting Over
+- Internet Connection & Disconnection
+- Cancel An Operation
+- More Internet Information
+- Internet Organizations
+- Internet Web Sites
+- Internet History Sites
+- Internet Newsgroups
+- Internet Mailing Lists
+- The Jargon File
+- Internet Statistics
+- Other Internet References
+Other Reference List:
+Leaver, T. (2010) What is the Internet? [Lecture]. Retrieved from http://dbs.ilectures.curtin.edu.au/lectopia/lectopia.lasso?ut=2417
+(2010). Map of Internet Service Providers. Retrieved June 10th, 2010, from http://steeez.com/wp-content/uploads/2008/11/internet.jpg.
+And finally, this is the farthest we’ve come in terms of advancement on the Internet: LOLCats.
+Know of some more great tidbits about the Internet or WWW? Let me know and I’ll add them to this Ultimate Guide and credit you! Just e-mail edudemic [at] gmail.com or tweet me @edudemic or write on the Edudemic Facebook Wall. What could be easier?
+Without further ado, here’s the END OF THE INTERNET.

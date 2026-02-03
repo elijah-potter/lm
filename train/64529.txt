@@ -1,0 +1,29 @@
+Contributed by David Knight (email@example.com)
+Puck is essentially a combination of Poker and War for 2-4 players. Like War, the ultimate goal is to win all the cards, but using Poker-like combinations instead of pure chance. The game is divided into 'rounds'. Player hands are revealed at the end of each round, as in poker, and the winner collects all the cards in the 'pot'.
+- A standard 52-card deck (see Special Rule #2) is cut to determine starting order. 'Lowest' deals; 'highest' plays first (Player A) and determines direction of play. Puck may be played clockwise or counterclockwise, but the direction should not be changed mid-game.
+- Cards are reshuffled, dealt evenly among the players and stacked face-down on the table to form individual player draw-decks. Players draw a hand of three cards each from the top of their deck. Player's hand must contain 3 cards at all times, with only one exception (see Special Rule #1). The center of the table is left open for the discard pile, or 'pot'.
+- During each round, Player A has one chance to 'hold' his hand, or 'steal' a new hand of cards from another player's deck. There is no 'folding' option.
+- If Player A decides to 'hold' all his cards, he must announce this to the group, and then the turn passes to Player B.
+- If Player A decides to 'steal' any number of new cards, he must first discard into the 'pot' the same number of cards he intends to steal. He then announces his intention and steals the appropriate number of cards from the top of the deck of any player, or combination of players, that he chooses.
+- Player may discard one, two, or all three cards in his hand. (See Special Rules #4 & 5)
+- Player cannot steal from his own deck, nor can he steal more cards than he discards.
+- Discarded cards are placed face-down in the pot.
+- The turn then passes to Player B, and so on, until everyone has chosen to 'hold' or 'steal'.
+- All players reveal their hands. Player with the best combination wins the round, as in poker (see Possible Combinations). Winner collects all the hands, plus the discarded cards in the 'pot', and places them on the bottom of his deck.
+- Unlike poker, the cards do not need to be reshuffled and dealt after each round. Puck is a continuous game.
+- The next round begins, starting with the player who won the last.
+- Players are eliminated from the game when they completely run out of cards (see Special Rule #1). The game continues until one player has won all the cards.
+- Straight flush - three cards of same suit in sequence. AKQ is the highest possible straight flush.
+- Three of a kind - Ace always plays high, so that AAA beats KKK.
+- Flush - three cards of the same suit, such as AJ9 of hearts. Ranked by the top card, and then the next card, so that AJ9 beats AJ8.
+- Straight - three cards in sequence. The ace plays either high or low.
+- One pair - two cards of one rank accompanied by a kicker. Ranked by the pair, followed by the kicker, so that AA3 beats AA2. Ace always plays high, so that AAQ beats KKQ.
+- High card - any hand that does not qualify as one of the better hands above, such as KJ5 of mixed suits. Ranked by the top card, then the second, and so on, as for flushes. Suits are not used to break ties. (see Special Rules #1 & 3)
+- When a player's deck is depleted and he has less than three cards in his hand, he can still 'hold', or 'steal' until he completely runs out.
+- While highly unlikely, it is possible for a player with no deck left and only one card in his hand to win a round with a High Card combination, thus keeping him in the game. For example, a single Ace beats KJ4 and Q53.
+- Jokers can be used in games of 2 or 3 players. Jokers are true wild cards, and can be used to complete any combination. When played as the High Card, jokers rank as aces.
+- If there is a tie, each player reveals the top card in his deck, and the next, as necessary until the player with the highest rank wins, as in War. Any card revealed in this manner is added to the pot.
+- Players may conspire to single out an opponent and 'steal' as many of their cards as possible to quickly shut them out of the game. This is a necessary strategy of Puck, and speeds gameplay considerably.
+- Players may 'steal' from any combination of opponents provided they discard the same number of cards.
+- For example, Player A might choose to discard his entire hand and then steal one card from Player B, one from Player C, and one from Player D; or one card from Player B, and two cards from Player C; or all three cards from Player D, etc.
+© 2002 by David James Knight

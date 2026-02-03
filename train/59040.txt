@@ -1,0 +1,142 @@
+more simple heat calculations
+5 jun 1996
+dan settles wrote:
+>>how much energy does a typical water heater use just to keep the water hot
+>>until we are ready to use it vs heating the incoming cold water?
+>perhaps you could figure that out, dan. suppose the water heater has 2" of
+>fiberglass around it (~r8), and it's 6' tall and 2' diameter, containing
+>130 f water, sitting in a 70 f room, and you use 50k btu of hot water
+>per day at 110 f, heated from 60 f.
+hmmm. is there too much information here?
+>so, the water heater will have a surface area of:
+>2 x (¼ r^2) + 2¼r x h = 2 x (3.14) + 2 x 3.14 x 6 = 44 ft^2
+that's what i get...
+>in order to maintain the temperature at 130 f in a 70 f room it would take:
+>44ft^2 x (130-70f) x 24 hr /r8 = 7920 btu
+>that would be 15.8% of the total if the 50k btu figure is your total hot
+i agree. it looks like we didn't need to know that the water started out
+at 60 f, or that we mixed the 130 f water with cold water to take 110 f
+showers. the 50k btu/day was enough, assuming (reasonably) that the water
+in the heater was almost always 130 f, because it had a powerful heater.
+suppose we take a 10 minute, 110 f shower using water at 3 gallons per minute.
+that will use 30 gallons of water, and a fraction f of the shower water will
+be 130 f water from the water heater, where 110 = 130f + 60(1-f), so
+f = (110-60)/(130-60) = 0.714, so 30x0.714 = 21.4 gallons or 171 pounds of
+60 f water will flow into the water heater, which will take 171(130-60)
+= 11,970 btu of heat to reach 130 f, and a typical electric water heater
+with a 5 kw element, ie 17,065 btu/hour, will need 11,970/17065 = 0.7 hours
+or 42 minutes to heat that water, which is a fairly small fraction of the
+6'x3.14(1^2) = 18.8 ft^3 or 151 gallons of water in the heater, most of which
+will be at 130 f during that time. heating the water will take 0.7x5kw
+= 3.5 kwh, ie 35 cents for that shower at 10 cents/kwh.
+>>also, the conventional heater outside the solar closet will heat the air
+>>in the house. in the winter, this wouldn't be a problem, but this would
+>>be a liability in the summer, especially in warmer areas like the south.
+>>i'm not sure how significant these factors would be, but it would be
+>>interesting to find out.
+you found 15.8% of the heat was used to keep the water warm, vs heating it, so
+0.158x50kwh/24hr = 329 watts or 1122 btu/hr is the average power added to the
+house over a summer day, ie 27k btu, that might need to be removed from the
+house by a 5k btu/hr ac running 5 hours a day (pv-powered, of course :-) but
+the plumbing system might have a lot to do with this. if the cold water
+meanders through lots of pipe in warm parts of the house on the way to the
+water heater, it may absorb a lot of heat from the house on the way there.
+on the other hand, the shower water may cool a lot within the house on the way
+out, via the drain plumbing. charlie wing did a tv program in which he built
+a tempering tank for incoming cold water along a new england basement ceiling,
+starting with a 10 or 20' length of 4-6" pvc pipe, and adding on fittings at
+each end to connect it to 3/4" pipe...
+>>>>100 feet of 3/4 inch inner diameter polybutylene hot water pipe from home
+>>>>depot costs $60 and would have a surface area of (¼ 7/8) x >100 x 12
+>>>>= 3299 in^2 or 22.9 ft^2. how does this compare with the fin tube that you
+[stuff snipped, on solar closet air-water heat exchangers]
+>>>10' of fin-tube pipe gains about 50 btu/hr per degree of air-water
+>>>temperature difference, and your pipe with 1/8" walls (?) might have
+>>>a u-value of 10, with a water-pipe-water interface, so it might gain
+>>>229 btu/hr-f, in one pass...
+>>it looks like i'd have to increase the length of the pipe in order to
+>>get any greater increase in water temperature. so, if i put in 500 feet
+>>of tubing, the water would be in the pipe 5 times longer, and i'd have 10
+>>gallons or 80 lb of water. so i'd gain at most, 10/180 (130-60) x (229 x
+>>5) = 4452 btu. is that correct?
+>not quite, altho it goes in that direction. the first 100' of pipe gets us to
+>70 f, at most, but the water entering the second 100' of pipe is at 70 f, not
+>60 f, so the temp difference is 130-70, not 130-60, in that pipe, so it gains
+>less heat in the second 100', and so on. this is a heat exchanger problem with
+>a solution with an exponential in it, which you can find on page 3.4 of the
+>1993 american society of heating, refrigeration and air conditioning
+>engineer's handbook of fundamentals (the "ashrae hof.")
+> yes, i thought there would be a change in the rate of heat transfer,
+>but as you can tell i have not yet mastered the required formulas.
+the ashrae hof procedure in this case, with 100' of pipe sitting in 130 f
+water, might go like something like this:
+1. define the heat exchanger effectiveness as e = (tco-tci)/(thi-tci) where
+tco is the cold water outlet temp, to be determined,
+tci is the cold water inlet temp, eg 60 f, and
+thi is the hot water inlet temp, eg 130 f.
+this formula applies to the case where the cold fluid changes temperature
+a lot more than the hot fluid does, ie "cc = cmin."
+so, e = (tco-60)/(130-60), so if the "effectiveness" were 1 (for some
+reason they don't call this "efficiency"), the cold water would emerge
+at 130 f. in reality, (perhaps :-) tco = 60 + (130-60)e.
+2. find ntu, the "number of heat exchanger transfer units":
+a substep: find the "heat capacity flow rate" for the cold water.
+at 3 gpm, this would be cc= 3 gpm x 8lb/gal x 60min/hr = 1440 btu/hr-f.
+ntu = axuavg/cmin = 22.9 ft^2xu10(?)/1440 = 0.159.
+(adding more pipe raises this.)
+3. find the capacity rate ratio, z = cmin/cmax. in this case, i'd say the
+hot water has an infinite capacity rate, compared to the cold, so z = 0,
+and in that case, according to the book, e = 1-exp(-ntu) = 0.147, so the
+cold water outlet temp would be tco = 60 + (130-60)(0.147) = 70.29 f,
+almost the same as what we calculated with r-value arithmetic.
+i wonder how this changes with 500' of pipe...
+i think i did this right, although some ashrae engineer might find a mistake.
+there are other formulas in the hof for different situations, on page 3.4.
+>i guess i should try to find a good book to read more it this. have any
+a good high school or college physics book would help. one that talks about
+heatflow. "ohm's law for heatflow," aka newton's law of cooling, or "the
+fundamental law of heat conduction" is cleverly disguised with calculus
+on page 552 of halliday and resnick's _physics, part i_, 1966. an older
+high school physics book might use arithmetic. check out a used bookstore.
+some old technical books are a lot easier to read than new ones. cheaper too.
+basic heatflow physics descriptions haven't changed much in hundreds of years,
+and the physics itself hasn't changed in millions of years.
+take a look at the ashrae hof, and try to understand it in small doses :-)
+it's a fairly unbiased collection of practical heating knowedge gathered over
+many years by a dedicated non-profit group of hvac engineers without too
+many axes to grind, except to search for truth and systems that work, who
+have been doing the practical work of figuring out how much heat houses need
+in the winter, by adding up areas divided by thermal resistances of various
+wall and window and roof materials, and multiplying by temp differences. this
+r-value arithmetic really does work, altho the rules are sometimes confusing.
+the ashrae folk tend to gravitate towards active mechanical systems with lots
+of pumps and pipes and electricity, but r-values can be used to design high-
+performance solar houses. r-values work, for predicting heatflows within the
+reasonable temperature ranges where they have been measured.
+another good and less technical book is charlie wing's _from the walls in_,
+which reproduces some ashrae tables, and has lots of other good info inside
+about beam strenths, etc. it's out of print, unfortunately.
+another in-print book is _hvac contracting_, a $24.50 craftsman book by
+robert and william dries, which has 30 pages on heat load estimation, and
+lots of other practical stuff, like how to run a business.
+and you might look at duffie and beckman's _solar engineering of thermal
+processes_, 2nd ed, again in small doses, looking more at the graphs and
+arithmetic than all the complicated calculus.
+>don't forget that you have to transfer the heat into the drums that
+>contain the pipe...
+> i guess your point is that heat transfer from the air in the solar
+>closet to the water will be slower than from the air to the big fins?
+no, i just meant that if we put 500' of pipe in some of the drums, we may
+find that the more significant bottleneck for heatflow becomes the path for
+getting the heat from the hot air into the drumwater, via the limited drum
+surface surrounding the 500' of pipe. say we used 4 drums, with a surface
+of 100 ft^2 and an approximate u-value of 1.5. then we have 150 btu/hr-f,
+which is a big resistor, electrically speaking, 75 times bigger, and in series
+with our 500x22.9 btu/hr-f for the pipe... so that would be the limiting
+factor for heatflow, even if we could fit 10 miles of pipe inside the drums
+to make the water-water heat exchanger almost perfect. one nice thing is
+that the drum water has significant thermal mass, so its temperature won't
+change much during a shower, so we can calculate the heatflow into the drums
+over 24 hours, and not worry much about how that happens in the short term.
+>by the way, i received the copy of your paper last night. thanks very much.
+you're welcome. perhaps you will build a bigger sunspace and solar closet :-)

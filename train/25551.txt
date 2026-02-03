@@ -1,0 +1,36 @@
+Radio Wave Spiraling in a Microwave Oven
+Date: Winter 2012-2013
+Why do radio waves travel in a spiral pattern inside a klystron (microwave oven)?
+First of all, I should point out that microwave oven uses a magnetron,
+not a klystron. Klystrons are far larger and more powerful than
+magnetrons, and are used in (for example) large radar installations. In
+any event, in a klystron, the electrons travel in a straight line, not a
+spiral. Since magnetrons, not klystrons, are used in microwave ovens,
+most of my comments below will relate to magnetrons.
+The second point is that both magnetrons and a klystrons are devices
+that amplify and manage electron flow (not "radio waves") inside them
+at high frequency, and feed these electrons to an antenna that
+generates the actual electromagnetic waves. Even a microwave oven
+has a so-called "horn antenna" that is fed by the magnetron tube, and
+which is the actual source of the oven's electromagnetic (or "radio")
+waves inside the oven.
+A magnetron (not a klystron) does cause its electrons in its internal
+cavity to alternate back and forth at high frequency, in a circular
+pattern. The flow alternates in a circular path as a result of the
+influence of a very strong magnetic field that results from the
+magnetron's magnets (hence the name "magnetron").
+Unfortunately, the actual operating principles of a magnetron are far
+too complex to answer in this forum. I suggest having a look at the
+Wikipedia description of a magnetron here....
+Thanks for the question. The travel of waves is due to the geometry of the wave guide. The wave guide is what confines the wave and the shape of the wave guide determines what wavelengths and standing wave patterns are generated.
+I hope this helps. Please let me know if you have any more questions.
+I do not know that the Electro Magnetic (E-M) field in the microwave oven rotates.
+That does not seem reasonable to me because the mechanism required to rotate the E-M field in the oven (the antenna) is more complicated than it is to rotate the food.
+Yes, you have peaks and troughs of energy in the oven which leaves warm and cold heating spots, but most microwave ovens today solve that problem by putting the food on a rotating table which is a much simpler process than rotating a transmitting antenna, and yes, there has to be an antenna in the oven to radiate the field.
+Perhaps a manufacturer of microwave ovens can pick up on this question.
+The first thing is that commercial microwave ovens are driven by a magnetron, not a klystron, but this fact does not matter much to your question. The main issue in a microwave oven is its heating pattern. We are using the oven to heat food, and so the design of the oven focuses on heating food evenly. Unfortunately, the microwaves create a pattern in the oven that create hot spots in the food. These hot spots come from the pattern created by the electromagnetic wave bouncing around the oven. Microwave energy is a wave in space, and its wavelength is fairly large--about 5 inches. The wave acts much like a wave in a pool of water. You can see it propagate across the pool and bounce off the walls of the pool. The bouncing wave creates something called "standing waves" in which the peaks and valleys sit mostly motionless in the pool. Microwaves create standing waves in a similar manner by bouncing off the walls of the oven much like the water bounces off the walls of the pool. The peaks and valleys in this case represent "hot spots" in which higher energy exists and in which food can heat faster than at other places in the oven. Hot spots tend to leave some parts of food uncooked and burn other parts.
+Manufactures of ovens have tried several ways to eliminate hot spots and create uniform heating. The easiest is simply to rotate the food in the oven. Any hot spots them move around the food (or the food moves around the hot spots) creating an overall uniform heating effect. Another method is to put something called a "mode mixer" in the path of the microwave oven. A mode mixer resembles a rotating fan, and it is like stirring the swimming pool with a stick. Hot spots tend to move around in this case.
+While I cannot see the picture from which you saw a "spiral pattern" to the microwaves, but my suspicion is that it was directed to solve the problem of non-uniform heating.
+Kyle Bunch, PhD, PE
+Click here to return to the Engineering Archives
+Update: November 2011

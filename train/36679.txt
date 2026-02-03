@@ -1,0 +1,13 @@
+Buffer overflow vulnerabilities are one of the most common vulnerablities. For understanding buffer overflow you must have the knowledge of c or any other high level language.
+When a program is executed, a specific amount of memory is assigned for each variable. The amount of memory is determined by the type of data the variable is anticipated to hold. The memory set aside is used to store information that the program needs for its execution. The program stores the value of a variable in this memory space, then pulls the value back out of memory when it's needed.
+Buffer overflow occurs when a program allocates a block of memory of a fixed length and then tries to fill the data of more length in this memory.
+take a look at the simple c program:
+The above C program is a valid program, and every compiler can compile it without any errors. However, the program attempts to write beyond the allocated memory for the buffer, which might result in unexpected behavior.
+In tha case of buffer over flow in a software program, data runs over the memory section it was alloted. The extra data overwrites the another portion of memory address that was meant to held something else, like part of the programmer's instruction. This can allow attacker to overwrite data that controls the program and can take over control of the program to execute the attacker's code insted of program. The overflow consequence could result in the program crashing or allowing the attacker to execute their own code on the target system.
+This problem exists because C++ and some other programming language do not perform bound checking when passing data to the memory.
+The defence is to have perfect programs. Every input in every programs should do bound checks to allow only given numbers of characters.
+Make sure your systems are fully patched in order to protect yourself from exploits targeting vulnerabilities.
+Apply vendors patch or install the latest version of the software.
+No unnecessary privileges should be granted to users or applications. This is a best practice.
+All suspicious traffic should be routed at the perimeter itself.
+please comment below if this post is useful for you..

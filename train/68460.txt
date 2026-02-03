@@ -1,0 +1,5 @@
+Source Code Management
+Developer software designed to manage different versions of programming code.
+Common source code management (SCM) systems are Git, Subversion, and Team Foundation Server. An SCM system allows developers to check code in and out, save multiple versions of files, view changes made between versions of files, and create private workspaces (“branches”) of entire projects to avoid conflicting with other developers.
+Often called a “repository” or “source code repository” (and abbreviated as “repo”). This can get confusing, as the portion of a CMS itself which stores content can also be to referred as a “repository.”
+All code – both core code and templating code–will be stored in an SCM of some kind.

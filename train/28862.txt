@@ -1,0 +1,4 @@
+ActionListener interface is used to perform actions on a performed event. In this post, I will write about its importance and usage.
+ActionListener interface is part of java.awt.event package. It has only one abstract method that has to be implemented in the class implementing this interface.
+void actionPerformed(ActionEvent e)
+Consider the following scenario: you developed an GUI form for an application comprising of text fields,

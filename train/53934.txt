@@ -1,0 +1,8 @@
+Distinguish, differentiate, compare and explain what is the difference between delete and truncate.
+Difference between delete and truncate
+1. DELETE is a DML command while TRUNCATE is a DDL command.
+2. TRUNCATE is much faster than DELETE
+Explanation: When the Delete operation is performed all the data gets copied into the ROLLBACK Tablespace first and then deleted. This process takes time and so it is slower. If you want to get back the deleted data, the user can ROLLBACK Tablespace. When you perform TRUNCATE operation, it removes data directly without copying it into the Rollback Tablespace. So, it is faster.
+3. WHERE Clause cannot be used in TRUNCATE. But in DELETE user can write conditions using WHERE clause.
+4. In DML commands like DELETE , Trigger can be fired. But in TRUNCATE Trigger cannot be fired.
+5. In a nutshell, use DELETE command to remove one or more rows from a table. Only in a special situation, when it is required to reset a table to its initial state TRUNCATE statement is performed.

@@ -1,0 +1,19 @@
+Civil disturbance events within a community could lead to physical vandalism, theft, arson and potential injury. In addition to these risk exposures, municipalities may be the focus of cyberattacks on their IT infrastructure. It has been recently reported that at least one hacking group launched a denial of service (DoS) attack upon municipal police departments and law enforcement agencies in an attempt to disrupt communications and response.
+Denial of service attacks are often executed by flooding a target network with unwanted traffic. Cyberattackers do this by taking over a large number of internet connected devices to create what is known as a ‘botnet.’ The botnet is essentially a group of devices that are directed by hackers to simultaneously communicate with a targets’ server. This cyberattack can span several hours or days, can overwhelm its target, impair segments or render the entire system inoperable.
+Preventing and Mitigating the Effects of a DDoS Attack
+The Department of Homeland Security’s Cybersecurity and Infrastructure Security Agency (CISA) has issued the following tips to help prevent and mitigate the harmful effects of a distributed denial of service (DDoS) attack*:
+- Enroll in a DoS protection service that detects abnormal traffic flows and redirects traffic away from your network. The DoS traffic is filtered out, and clean traffic is passed on to your network.
+- Create a disaster recovery plan to ensure successful and efficient communication, mitigation, and recovery in the event of an attack.
+- Install and maintain antivirus software.
+- Install a firewall and configure it to restrict traffic coming into and leaving your computer.
+- Evaluate security settings and follow good security practices in order to minimalize the access other people have to your information, as well as manage unwanted traffic.
+If you suspect your system is under a DoS attack:
+- Contact your network administrator to confirm whether the service outage is due to maintenance or an in-house network issue. Network administrators can also monitor network traffic to confirm the presence of an attack, identify the source, and mitigate the situation by applying firewall rules and possibly rerouting traffic through a DoS protection service.
+- Contact your ISP to ask if there is an outage on their end or even if their network is the target of the cyberattack and you are an indirect victim. They may be able to advise you on an appropriate course of action.
+Transferring DoS Attack Risks
+Most cyber insurance policies will provide coverage for the bottom line costs due to business interruption that results from DoS attacks. To effectively transfer the risk before it happens, mitigate costs and pursue claim reimbursement:
+- Understand current policy language, including insurance coverage triggers, reporting requirements, exclusions, triggers, calculation of loss, self-insured retentions/deductibles, waiting periods, periods of restoration and requirements to use insurance carrier panel vendors.
+- Determine if the insurer have a standard proof-of-loss form that you can use as a starting point to document income loss and extra expenses.
+- The DoS attack may be used as a smoke screen for other cyberattacks which could involve data exfiltration. Work with pre-approved carrier vendors, including IT forensics firms, to confirm exactly what has occurred and that hackers are not in the network.
+- Notify your broker immediately of a cyber incident to guide you through the process of timely calculation and recording of both extra expenses and lost income. They can also assist you in with negotiations with the insurer to of the maximize recovery under the policy.
+For questions about your municipality's cyber insurance coverage, contact your Gallagher team or learn more about our cyber liability insurance coverage.

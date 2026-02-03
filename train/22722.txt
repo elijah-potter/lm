@@ -1,0 +1,26 @@
+In a November 25 press release Samsung introduced a 128GB DDR4 DIMM. This is eight times the density of the largest broadly-available DIMM and rivals the full capacity of mainstream SSDs.
+Naturally, the first question is: “How do they do that?”
+To get all the chips into the DIMM format Samsung uses TSV interconnects on the DRAMs. The module’s 36 DRAM packages each contain four 8Gb (1GB) chips, resulting in 144 DRAM chips squeezed into a standard DIMM format. Each package also includes a data buffer chip, making the stack very closely resemble either the High-Bandwidth Memory (HBM) or the Hybrid Memory Cube (HMC).
+Since these 36 packages (or worse, 144 DRAM chips) would overload the processor’s address bus, the DIMM uses an RDIMM protocol – the address and control pins are buffered on the DIMM before they reach the DRAM chips, cutting the processor bus loading by an order of magnitude or more. RDIMMs are supported by certain server platforms.
+The Memory Guy asked Samsung whether the data buffer chip within the DRAM packages replaces the external buffer on a standard RDIMM, to which the company replied that the module still requires a central register buffer for “on-DIMM” command buffering.
+What about power? I also asked Samsung about this, since the press release doesn’t say much except that the power is 50% that of 64GB LRDIMMs (by which they probably mean that one 128GB RDIMM uses half the power of two 64GB LRDIMMs). It’s reasonable to assume that all 144 DRAM chips will be fully active at all times, and with standard DDR4 DRAMs that would lead to pretty significant power dissipation. Samsung replied that the use of TSVs reduces I/O power significantly. The signals from the DRAM chips to the base logic chip go only a tiny distance and have very small capacitive loading due to their small size. The DIMM’s interconnections are driven by the logic chip at the bottom of each stack, and logic chips can drive a signal line more efficiently than can memory chips. Once again, since the logic chip is driving TSVs on the DRAM side less power is dissipated than in a more standard configuration in which buffers drove DDR4 chips on one side and DIMM signals to the external buffer on the other side.
+Another thing that was (naturally) not mentioned in the release was the price. Since this product is the first of its kind, Samsung can charge a premium. I would not be surprised to hear that these were selling for $2,000-$4,000, but an even higher price could be justified. I have heard that the TSV process increases wafer processing costs by about 35%, so part of this mark-up would stem from the cost to process the TSVs.
+This is an impressive use of stacking technology to provide a product that will doubtlessly be highly valued by an elite niche of processing applications like large in-memory databases.
+8 thoughts on “Samsung’s Colossal 128GB DIMM”
+How is a TSV, Stacked Memory *not* HMC.
+I am confused, on a high level, they seems to be the same? Apart from the bandwidth limitation from DIMMs.
+The 144 8Gb module, would that not be 144GB Memory?
+Edward, Thanks for the comment.
+There are two standards for TSV stacked memory: HMC and HBM. Samsung may be using either one, or they just might be using something that matches neither one of these standards. I should have asked.
+As for the difference between the 128GB module size and the fact that it uses 144GB of DRAM internally, the extra 16GB are used for error correction information, and are not visible to the system.
+Jim & Edward,
+It seems to be HBM, especially HBM2 based on this article (http://phys.org/news/2016-01-samsung-mass-world-fastest-dram.html).
+Thanks J Jay.
+Samsung distributed two press releases. The November 25 release announces the DIMM and the January 19 release is about the HBM.
+To me this indicates that there could be two similar but different DRAM stacks.
+I’ll ask Samsung for clarification.
+I heard back from Samsung that the HBM is a different device than that used in the 128GB DIMM, although each uses a stack of four 20nm 8Gb DRAMs connected using TSVs, with a logic chip on the bottom. There’s probably some difference that is not spelled out in the press releases.
+So are two separate packages solely used for error correction? If yes, are the same physical packages always designated for error correction or does it change over time which are?
+In systems like this the parity bits are stored in their own chips, or chip stacks.
+Although it would make sense to move the parity around, this can’t easily be done at DRAM speeds.
+Comments are closed.

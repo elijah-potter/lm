@@ -1,0 +1,16 @@
+This week's assigment: Build a creative switch using basic electric principles. So first things first: get the basic led circuit up and running using the Arduino Uno as a power source
+Next, the idea:
+What to turn on? Just a led?
+How to activate it? Just by a button?
+AN OXYTOCIN MACHINE!
+A. The homework is due on The International Peace Day, and Peace begins with a hug...or a simile.
+B. Being stressed as we are around this 4th floor, a little bit of happy brain drugs wont hurt nobody
+So the how
+What to light up? A motor that would open "The Oxytocin machine".
+Solution: A motor circuit taken from the Autodesk project library constituted by:
+Once the motor was working as planned I substituted the button for two buttons (one for each side of the hug)
+Oxytocin DOES NOT work as easy as on / off. One should maintain human contact for at least 10 seconds (and preferably with someone with whom a bond is already shared)
+But going back to the 10 second rule. How to make the motor that activates the Oxytocin machine start after 10 seconds of hugging?
+After breaking my head, and almost my RAM memory I remembered DELAY!!! The first Arduino lesson I've ever had... and so
+And hence, the motor to my future (Oxytocin) machine was born!
+Now that I have the engine I should build the machine, so this story remains

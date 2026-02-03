@@ -1,0 +1,15 @@
+Cuboid Calculator: find the volume of a cuboid (rectangular prism or box). Enter the length, width and height and find the volume and diagonal of a cuboid.
+What is a Cuboid?
+A cuboid is a 3D rectangular prism with six faces, all parallelograms. A cuboid is a polygon with three to twelve vertices. A cuboid has 8 edges and 12 corners. The length, width, and depth of a cuboid are called the dimensions of the cuboid. A cuboid has two kinds of diagonals: the minor diagonal, which runs from the lower left corner to the upper right corner, and the major diagonal, which runs from the lower left corner to the upper left corner. A cuboid is a special kind of parallelepiped. A cuboid can also be called a rectangular box.
+- Volume of a cuboid = lbh
+- Diagonal of cuboid = √(l² + b² + h²)
+- Curved/Lateral Surface Area = 2(lh + bh)
+- Total Surface Area = 2(lh + bh + lb)
+- Where l-length, b-breadth,h-height
+How to solve the cuboid question
+Example.1:- A room has 16m length, 14m breadth and 7m height then find its volume of room and surface area of the room.
+Answer => l→ 16 m, b→ 14 m, h→ 7 m
+Volume = lbh = (16 x 14 x 7) m³ = 1568m³
+Total Surface Area = 2(lh + bh + lb) = [2(16 x 14 + 14 x 7 + 16 x 7)] cm² = (2 x 434) cm² = 868 cm²
+How to use the cuboid calculator
+Enter the cuboid length, breadth and cuboid height values into the appropriate input fields and then click calculate button. All values will appear in the answer box with a formula. If you need to calculate another cuboid value simply clear all input fields with help of a clear or erase button and then re-enter all parameters for dimensions once again.

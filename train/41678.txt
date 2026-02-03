@@ -1,0 +1,11 @@
+HTML Progress Tag
+HTML <progress> tag is used to display the progress of a task. It provides an easy way for web developers to create progress bar on the website. It is mostly used to show the progress of a file uploading on the web page.
+The HTML progress tag is new in HTML5 so you must use new browsers.
+Attributes of HTML Progress Tag
+HTML <progress> tag supports the global and event attributes as well as 2 specific attributes.
+The progress tag should be used to represent progress of a task only, not for just a gauge (disk pace usage). For such purpose, <meter> element is used.
+HTML Progress Tag Example
+Let's see HTML progress example without attribute.Test it Now
+Let's see the progress example with value and max attributes.Test it Now
+Styling Progress Bar
+You can apply CSS code on progress tag.Test it Now

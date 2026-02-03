@@ -1,0 +1,15 @@
+Determine the CM of a machine part that is a uniform cone of height h and radius R, Figure.?
+- Some BodyLv 79 months agoFavorite Answer
+Since the cone is radially symmetrical, we know the center of mass is somewhere on the axis.
+If we divide the cone into disks, each with volume dV, the center of mass is at the average:
+CM = ∫ z dV / ∫ dV
+CM = ∫ z (π r² dz) / ∫ (π r² dz)
+Using similar triangles:
+r / R = z / h
+r = R/h z
+CM = ∫₀ʰ z (π (R/h z)² dz) / ∫₀ʰ (π (R/h z)² dz)
+CM = ∫₀ʰ (π R²/h² z³ dz) / ∫₀ʰ (π R²/h² z² dz)
+CM = ∫₀ʰ z³ dz / ∫₀ʰ z² dz
+CM = (¼ z⁴) |₀ʰ / (⅓ z³) |₀ʰ
+CM = (¼ h⁴) / (⅓ h³)
+CM = ¾ h

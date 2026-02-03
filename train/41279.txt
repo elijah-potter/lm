@@ -1,0 +1,25 @@
+MIT Researchers Have Taught Robots To Sense By Sight And Touch, Just Like Us Humans
+The way robots are built right now, they're usually restricted to one or a few jobs or capabilities. That has more to do with hardware restrictions than anything else.
+That's why this latest piece of technology from MIT is pretty insane, and could change that completely.
+MIT researchers at its Computer Science and Artificial Intelligence Lab (CSAIL) have developed a predictive AI that lets robot use multiple senses collaboration the way humans do. Basically, they took previous research that gave robots a sense of "touch", added it to current computer vision capabilities and they got something pretty dang close to human.
+You see, when we perceive something, it's not just with one sense. For instance, you can look at a needle and imagine what touching it will feel like. Similarly, when you're holding a ball, you can picture what it is.
+"While our sense of touch gives us a channel to feel the physical world, our eyes help us immediately understand the full picture of these tactile signals," writes Rachel Gordon, of MIT CSAIL. Robots don't have this benefit, at least they didn't until now. What the researchers did was build an AI capable of both learning to "see by touching" and "feel by seeing," linking the two senses and the learnings they bring.
+They used a KUKA robot arm equipped with a tactile sensor called GelSight, created by a different MIT team. They then recorded nearly 200 objects with a webcam, including tools, fabrics, and other regular you might come across everyday. They also had the arm touch the items more than 12,000 times, using static frames from the video clips and syncing them to the touch data. That way, they ended up with over three million data entries combining both vision and touch.
+"By looking at the scene, our model can imagine the feeling of touching a flat surface or a sharp edge," said Yunzhu Li, lead author on the paper. "By blindly touching around, our model can predict the interaction with the environment purely from tactile feelings."
+This is a huge advancement for robots, because it allows for more granular and careful movements with less programming. For instance, they'll now much more easily be able to do fine motor movements like flipping a switch, or picking up a bag by the handle. That essentially means less data is needed to train each of these bots to do these things.
+Now, the MIT team is hoping to broaden its dataset by gathering data from interactions outside a controlled environment as well. And when they do that, robot builders could much more easily train their creations to, for instance, act as nursing bots or participate in an assembly line for things like smartphones.
+- NewsNine-Year-OId Mumbai Boy Is A Genius, Mentally Solved 200 Math Sums In Just 8 Minutes205 SHARES
+Dogs Truly Are Our Best Friends, As They Understand Human Gestures By Instinct Says Study
+- NewsScientists Create Self-Healing, Reproducing Bricks That Will Change How We Build Houses114 SHARES
+- NewsSundar Pichai’s Alphabet Is Worth 1 Trillion-Dollar, Only The 4th Tech Company With This Honour1.5K SHARES
+- NewsAll New Phones Will Have Same USB Type-C Port, Saving Us A Lot Of Money And Headache705 SHARES
+- NewsMicrosoft Aims To Absorb All The CO2 It Has Emitted Since 1975 By Going Carbon Negative By 20505.5K SHARES
+- PartnerHow OPPO Reno 10X Zoom Is Incomplete Without The Magic Of ColorOS 7994 SHARES
+- NewsIIT Madras Scientists Extract Clean Hydrogen From Seawater To Run Cars, And Lower Pollution30.2K SHARES
+- NewsThis 5-Year-Old Sold Lemonade To Donate Rs 18,500 For Saving Australia, From 17,000 Km Away184 SHARES
+- NewsThis Guy's Eco-Friendly Grass Straw Can Reduce 8.3 Billion Plastic Straws Thrown Away Each Year47.5K SHARES
+- NewsPorcupine-Like Animal With Melted Thorns Shows How Tragic Australia's Bushfire Is For Animals283 SHARES
+- NewsThis Guy's A Genius: A Soldier, Doctor And Astronaut All Before His 36th Birthday29.8K SHARES
+- NewsAustralian Bushfire Smoke Has Reached Halfway Around The World, And Polluted The Stratosphere326 SHARES
+- News2019 Was The Second Hottest Year On Record And It Is Only Going To Get Worse126 SHARES
+- NewsWant To Be Immortal? Russian Firm Will Freeze Your Body & Wake You Up In Future For Rs 25 Lakh16.6K SHARES

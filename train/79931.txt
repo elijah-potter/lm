@@ -1,0 +1,11 @@
+posted by Mary .
+The maximum torque experienced by a coil in a 0.90 T magnetic field is 8.4 10-4 N·m. The coil is circular and consists of only one turn. The current in the coil is 3.9 A. What is the length of the wire from which the coil is made?
+Please tell me if I am going in the right direction.
+Torque = NIAB sin theta
+8.4x10^-4 = 1 x 3.9 x (pi r^2) x 0.9 x sin theta
+How do I find the value of sin theta to plug into the formula?
+They give you the maximum torque, and that corresponds to theta = 90 degrees
+(sin theta = 1)
+Solve for r.
+N = 1 in this case
+The length of the wre is 2 pi r

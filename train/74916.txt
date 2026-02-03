@@ -1,0 +1,51 @@
+are one of the oldest and most commonly used methods to project
+high dimensional data to 2-dimensions. In this method, N * (N
+- 1)/2 pairwise parallel projections are generated, each giving
+the viewer a general impression regarding relationships within
+the data between pairs of dimensions. The projections are
+generally arranged in a grid structure to help the user remember
+the dimensions associated with each projection. Many variations
+on the scatterplot have been developed to increase the information
+content of the image as well as provide tools to facilitate data
+exploration. Some of these include rotating the data cloud
+[TUK:88], using different symbols to distinguish classes
+of data and occurrences of overlapping points, and using color
+or shading to provide a third dimension within each projection.
+Figure 1 presents
+a seven dimensional data set using scatterplots. Note that
+plotting each dimension against itself along the diagonal provides
+distribution information on the individual dimensions. The
+data set contains statistics regarding crime in Detroit between
+1961 and 1973, and consists of 13 data points. The data set was
+obtained via anonymous ftp from unix.hensa.ac.uk in the directory
+/pub/statlib/datasets. Some dimensions of the original set have
+been eliminated to facilitate display using scatterplots. Linear
+structures within several of the projections indicate some correlation
+between the two dimensions involved in the projections. Thus,
+for example, there is a correlation between the number of full-time
+police, the number of homicides, and the number of government
+workers (with a corresponding negative correlation in the percent
+of cleared homicides).
+limitation of scatterplots is that they are most effective with
+small numbers of dimensions, as increasing the dimensionality
+results in decreasing the screen space provided for each projection.
+Strategies for addressing this limitation include using three
+dimensions per plot or providing panning or zooming mechanisms.
+Other limitations include being generally restricted to orthogonal
+views and difficulties in discovering relationships which span
+more than two dimensions. Advantages of scatterplots include
+ease of interpretation and relative insensitivity to the size
+of the data set.
+We have extended
+flat scatterplots to hierarchical scatterplots. In hierarchical
+scatterplots, clusters are displayed instead of individual data
+points. In each plot, a cluster is presented by a point and a
+colorful band around it. The point and the band indicate the mean
+and the extend of the cluster. Movie
+1 is a multiresolutional cluster display of hierarchical scatterplots.
+Tukey, J.W., Fisherkeller, M.S., Friedman, J.H.. PRIM-9,
+an interactive multidimensional data display and analysis system.
+Dynamic Graphics for Statistics (W.S. Cleveland and M.E.
+McGill, eds.), Wadsworth and Brooks, 1988.
+M. Ward. Xmdvtool: Integrating multiple methods for visualizing
+multivariate data. Proc. of Visualization '94, p.

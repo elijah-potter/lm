@@ -1,0 +1,56 @@
+Many versions of Linux have been ported to the Macintosh, but were not initially developed for the Mac. Ubuntu falls into this category. There are some PC features that do not exist on the Mac, and some Mac features that lack support under Ubuntu.
+Using a One-Button Mouse in a Three-Button World
+The biggest issue with using Ubuntu on a Mac is the lack of a three-button mouse. Under Ubuntu, the left mouse button performs actions, such as selecting icons and moving windows. The right button brings up menus, and the middle button is used for pasting from the clipboard.
+Tip: There are many different types of PC mice. Some only have two-buttons. The middle button can be emulated by clicking both the right and left buttons at the same time. Others have a scroll wheel that can be pushed in for use as the third button.
+Most Macs include a one-button mouse. If you swap the one-button mouse for a three-button model, it will work fine with Ubuntu, but if you do not want to swap hardware then how do you use the other buttons?
+By default, Ubuntu on the Mac (PowerPC platform) maps the F11 and F12 keys to the middle and right mouse buttons. This is configured in the /etc/sysctl.conf file. On the PowerPC installation, this file contains the following additional lines:
+# Emulate the middle mouse button with F11 and the right with F12.
+dev/mac_hid/mouse_button_emulation = 1
+dev/mac_hid/mouse_button2_keycode = 87
+dev/mac_hid/mouse_button3_keycode = 88
+On a Mac, keycode 87 is F11 and keycode 88 is F12. One easy way to see the keycodes is to use the X Event Tester (xev ). This tool opens a window and displays all X-Windows events. If you type in the window, it displays the keycodes.
+The xev application, showing keycodes
+Missing Keys and Functionality
+PC keyboards usually do not look like Mac keyboards. The standard 104-key PC keyboard contains many extra keys that are not found on a Mac. Some of the missing keys include:
+Under X-Windows, there are two types of keyboard values: keycodes and keysyms. Keycodes are the actual numeric representation sent by the keyboard when a key or button is pressed. Keysyms are the values assigned to the keycodes. For example, when you press the A key on the keyboard, it generates keycode 73. Keycode 73 is mapped to the keyboard symbol 0×61 (the letter a). The command xmodmap -pk prints the key table, showing the keycode to keysym mapping. For example, hereâ€™s a section of output from the key table:
+55 0xff6a (Help) 0xff6a (Help)
+56 0×0030 (0) 0×0029 (parenright)
+57 0×0031 (1) 0×0021 (exclam)
+58 0×0032 (2) 0×0040 (at)
+59 0×0033 (3) 0×0023 (numbersign)
+This key table shows that keycode 56 is mapped to the number zero, and when shifted, maps to a right parenthesis.
+It is important to realize that not every keyboard can generate every keycode, and not every keycode is mapped to a keysym. Other input devices also generate key- codes. For example, the mouse buttons are keycodes 1, 2, and 3 (for left, middle, and right). Using xmodmap , you can change the key table, swapping keyboard keys or mouse buttons. For example, the command xmodmap -e “pointer = 3 2 1″ flips the mouse buttons for a left-handed mouse.
+|Warning||Many Mac keyboards do not have an indicator light to show when NumLock is enabled, so switching between keypad navigation and numeric entry can be confusing.|
+There are also some keys that exist on the Mac but not on the PC. By default, these are not mapped to anything but can be mapped to other keys.
+|Note||Specialized keyboards may have additional keys, such as volume up/down, power, and even buttons labeled for e-mail or the Web. Each generates a distinct keycode. Use xev to see the codes. This way, you can map the keys to functions.|
+Changing Keyboard Layouts
+By default, Ubuntu configures itself for a generic 104 key PC keyboard. This is not the same layout as a Macintosh. You can change the configuration to match your keyboard by choosing System -> Preferences -> Keyboard. This brings up the keyboard configuration applet. From here, you can change the keyboard model to match your Mac keyboard . Changing the keyboard layout changes the keycode to keysym map.
+The Keyboard Preferences applet for changing keyboard models.
+Remapping the Command and Alt Keys
+One of the biggest distinctions for Mac users is the use of the Command key. Under Mac OS, this key modifier is used for most shortcuts. For example, Command+W closes the window and Command+Q quits an application. Under Ubuntu and on most PC operating systems, the Ctrl key has the same usage (for example, Ctrl+W instead of Command+W). Adding to the confusion, a PC keyboard has Alt next to the spacebar whereas a Mac has the Command keys in that location. What this means is that a Mac user running Ubuntu will need to relearn how to use the Alt key instead of the Command key, or you can just remap the keys.
+To remap the Command keys to act as Alt keys, use the xmodmap program. This program maintains a list of keycode mappings (xmodmap -pke ) and special key modifiers such as Shift and Control (xmodmap -pm ). The easiest way to remap the Command keys is to simply change the modifiers. First, remove the control and command keys, then add the Ctrl keys again.
+xmodmap -e “remove control = Control_L Control_R” # unmap control
+xmodmap -e “remove mod4 = Super_L Super_R” # unmap old Super keys
+xmodmap -e “add control = Super_L Super_R” # map Super to Ctrl
+Alternately, you could actually re-map the Command and Ctrl keys.
+xmodmap -e “remove control = Control_L Control_R” # unmap Ctrl
+xmodmap -e “remove mod4 = Super_L Super_R” # unmap super
+xmodmap -e “keycode 115 = Control_L Control_L” # map Command to Alt
+xmodmap -e “keycode 116 = Control_R Control_R” # map Command to Alt
+xmodmap -e “keycode 64 = Super_L Super_L” # map Alt to Command
+xmodmap -e “keycode 113 = Super_R Super_R” # map Alt to Command
+xmodmap -e “add control = Control_L Control_R” # map new Ctrl to Ctrl
+Mapping the keyboard using xmodmap only creates a temporary change. If you reboot the computer or restart the X-server, the changes will be lost. To make the changes permanent, you can put the changes in Ëœ/.Xmodmap or /usr/X11/xinit/Xmodmap -depending on whether you want the changes to be per user or system wide:
+remove control = Control_L Control_R
+keycode 115 = Super_L Super_L
+keycode 116 = Super_R Super_R
+remove mod4 = Super_L
+add control = Super_L Super_R
+Tip: After creating .xmodmap, you can test it using the command xmodmap .xmodmap. Be sure to correct any errors, otherwise the configuration will not load.
+Note: Under the default Dapper installation, Super_R is not defined, so you will need to map it to key- code 116 before using it. Also, Super_L is part of the mod4 modifiers. Use xmodmap -pm to display the modifier list.
+Instead of adding the mappings to the .xmodmap file, you can add the xmodmap commands to Ëœ/.xinitrc or /etc/X11/xinit/xinirrc . You might want to do this anyway since Gnome will prompt you about using a new .xmodmap file each time you log in.
+Shasâ€™t Nos Funny!
+Thereâ€™s an old practical joke where people pry the keys off a keyboard and replace them out of order. A user who is not a touch typist can get really confused when they look for the right letters. The xmodmap command can be used for an excellent alternative to this prank. For example, you can add the following commands into the victimâ€™s .bashrc file:
+xmodmap -e â€™keycode 91 = t Tâ€™
+xmodmap -e â€™keycode 92 = s Sâ€™
+This prank swaps the s and t keys on the keyboard without requiring any physical keyboard modifications. Alternately, if you can pry up and replace the keys on the keyboard, follow it up by remapping the keyboard so it actually works correctly! Your coworkers should get a big laugh out of it!

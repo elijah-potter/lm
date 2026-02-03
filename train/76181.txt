@@ -1,0 +1,79 @@
+NASA Earth System Science Remote Sensors
+Remote sensing instruments are of two primary types—passive and active. Passive sensors detect natural energy (radiation) that is emitted or reflected by the object or scene being observed. Reflected sunlight is the most common source of radiation measured by passive sensors. Active sensors, on the other hand, provide their own source of energy to illuminate the objects they observe. An active sensor emits radiation in the direction of the target to be investigated. The sensor then detects and measures the radiation that is reflected or backscattered from the target.
+Passive sensors include different types of radiometers and spectrometers. Most passive systems used in remote sensing applications operate in the visible, infrared, thermal infrared, and microwave portions of the electromagnetic spectrum. Passive remote sensors include the following:
+- Accelerometer—An instrument that measures acceleration (change in velocity per unit time). There are two general types of accelerometers. One measures translational accelerations (changes in linear motions in one or more dimensions), and the other measures angular accelerations (changes in rotation rate per unit time).
+- Radiometer—An instrument that quantitatively measures the intensity of electromagnetic radiation in some bands within the spectrum. Usually, a radiometer is further identified by the portion of the spectrum it covers; for example, visible, infrared, or microwave.
+- Imaging radiometer—A radiometer that has a scanning capability to provide a two-dimensional array of pixels from which an image may be produced. Scanning can be performed mechanically or electronically by using an array of detectors.
+- Spectrometer—A device that is designed to detect, measure, and analyze the spectral content of incident electromagnetic radiation. Conventional imaging spectrometers use gratings or prisms to disperse the radiation for spectral discrimination.
+- Spectroradiometer—A radiometer that measures the intensity of radiation in multiple wavelength bands (i.e., multispectral). Many times the bands are of high-spectral resolution, designed for remotely sensing specific geophysical parameters
+- Hyperspectral radiometer—An advanced multispectral sensor that detects hundreds of very narrow spectral bands throughout the visible, near-infrared, and mid-infrared portions of the electromagnetic spectrum. This sensor’s very high spectral resolution facilitates fine discrimination between different targets based on their spectral response in each of the narrow bands.
+- Sounder—An instrument that measures vertical distributions of atmospheric parameters such as temperature, pressure, and composition from multispectral information.
+The following table lists and describes many of the passive sensors whose data are supported by EOSDIS. Some of these sensors may overlap categories.
+|Single Channel/Total Power Radiometers and Imagers|
+|ACRIM II||Total power radiometer||UARS||LaRC ASDC||Measures total solar irradiance.|
+|ACRIM III||Total power radiometer||ACRIMSAT||LaRC ASDC||Measures total solar irradiance.|
+|TIM||Total power radiometer||SORCE||GES DISC||Measures total solar irradiance.|
+|LIS||Imager||TRMM||GHRC DAAC||Detects intracloud and cloud-to-ground lightning, day and night.|
+|WFC||Wide Field Camera||CALIPSO||LaRC ASDC||Fixed, nadir-viewing imager with a single spectral channel covering the 620-270 nm region.|
+|AMPR||Microwave radiometer||ER-2 and DC-8||GHRC DAAC||Cross-track scanning total power microwave radiometer with four channels centered at 10.7, 19.35, 37.1 and 85.5 GHz. (FIRE ACE, Teflun-B, TRMM-LBA, CAMEX-4. TCSP, TC4 projects)|
+|AMSR-E||Multichannel microwave radiometer||Aqua|
+|Measures precipitation, oceanic water vapor, cloud water, near-surface wind speed, sea and land surface temperature, soil moisture, snow cover, and sea ice. Provides spatial resolutions of 5.4 km, 12 km, 21 km, 25 km, 38 km, 56 km, and 0.25 deg resolution.|
+|ASTER||Multispectral radiometer||Terra||LP DAAC|
+|Measures surface radiance, reflectance, emissivity, and temperature. Provides spatial resolutions of 15 m, 30 m, and 90 m.|
+|AVHRR||Multispectral radiometer||NOAA/ POES||GES DISC|
+|Has four or six bands, depending on platform. Telemetried resolutions are 1.1 km (HRPT data) and 4 km (Pathfinder V5 and GAC data). 5km, 25 km spatial resolution.|
+|CERES||Broadband scanning radiometer||Aqua|
+|LaRC ASDC||Has four to six channels (shortwave, longwave, total). Measures atmospheric and surface energy fluxes. Provides 20 km resolution at nadir.|
+|IIR||Imaging Infrared Radiometer||CALIPSO||LaRC ASDC||Nadir-viewing, non-scanning imager having a 64 km swath with a pixel size of 1 km. Provides measurements at three channels in the thermal infrared window region at 8.7 mm, 10.5 mm, and 12.0 mm.|
+|MAS||Imaging spectrometer||NASA ER-2 aircraft||GES DISC|
+|Has 50 spectral bands. Provides spatial resolution of 50 m at typical flight altitudes.|
+|MISR||Imaging spectrometer||Terra||LaRC ASDC|
+|Obtains precisely calibrated images in four spectral bands, at nine different angles, to provide aerosol, cloud, and land surface data. Provides spatial resolution of 250 m to 1.1 km.|
+|Measures many environmental parameters (ocean and land surface temperatures, fire products, snow and ice cover, vegetation properties and dynamics, surface reflectance and emissivity, cloud and aerosol properties, atmospheric temperature and water vapor, ocean color and pigments, and ocean biological properties). Provides moderate spatial resolutions of 250 m (bands 1 and 2), 500 m (bands 3-7), and 1 km (bands 8-36).|
+|SSM/I||Multispectral microwave radiometer||DMSP||GHRC DAAC|
+|Has seven channels and four frequencies. Measures atmospheric, ocean and terrain microwave brightness temperatures which are used to derive ocean near-surface wind speed, atmospheric integrated water vapor and cloud/rain liquid water content sea ice extent and concentration.|
+|SMMR||Multispectral microwave radiometer||Nimbus-7||GES DISC|
+|Ten channels. Measured sea surface temperatures, ocean near-surface winds, water vapor and cloud liquid water content, sea ice extent, sea ice concentration, snow cover, snow moisture, rainfall rates, and differential of ice types.|
+|TMI||Multispectral Microwave Radiometer||TRMM||GES DISC|
+|TMI measures the intensity of radiation at five separate frequencies: 10.7, 19.4, 21.3, 37, 85.5 GHz. TMI measures microwave brightness temperatures, water vapor, cloud water, and rainfall intensity.|
+|ACC||Accelerometer||GRACE||PO.DAAC||The Onera SuperSTAR Accelerometer measures the non-gravitational forces acting on the GRACE satellites.|
+|AVIRIS||Imaging spectrometer||Aircraft||ORNL DAAC||Has 224 contiguous channels, approximately 10 nm wide. Measurements are used to derive water vapor, ocean color, vegetation classification, mineral mapping, and snow and ice cover (BOREAS Project).|
+|SOLSTICE||Spectrometer||SORCE||GES DISC||Measures the solar spectral irradiance of the total solar disk in the ultraviolet wavelengths from 115 to 430 nm.|
+|POLDER||Polarimeter||Aircraft||ORNL DAAC||Measures the polarization and the directional and spectral characteristics of the solar light reflected by aerosols, clouds, and the Earth’s surface (BOREAS Project).|
+|PSR||Microwave polarimeter||Aircraft||GHRC DAAC||Measures wind speed and direction (CAMEX-3 Project).|
+|AIRS||Sounder||Aqua||GES DISC||Measures air temperature, humidity, clouds, and surface temperature. Provides spatial resolution of ~13.5 km in the IR channels and ~2.3 km in the visible. Swath retrieval products are at 50 km resolution.|
+|AMSU||Sounder||Aqua||GES DISC |
+|Has 15 channels. Measures temperature profiles in the upper atmosphere. Has a cloud filtering capability for tropospheric temperature observations. Provides spatial resolution of 40 km at nadir.|
+|HAMSR||Sounder||DC-8||GHRC DAAC||Measures vertical profiles of temperature, water vapor, from the surface to 100mb in 2-4 km layers. (CAMEX-4, NAMMA projects)|
+|HIRDLS||Sounder||Aura||GES DISC||Measures infrared emissions at the Earth’s limb in 21 channels to obtain profiles of temperature, ozone, CFCs, various other gases affecting ozone chemistry, and aerosols at 1 km vertical resolution. In addition, HIRDLS measures the location of polar stratospheric clouds.|
+|MLS||Sounder||Aura||GES DISC||Five broad band radiometers and 28 spectrometers measure microwave thermal emission from the limb of Earth’s atmosphere to derive profiles of ozone, SO2, N2O, OH and other atmospheric gases, temperature, pressure, and cloud ice.|
+|MOPITT||Sounder||Terra||LaRC ASDC |
+|Measures carbon monoxide and methane in the troposphere. Is able to collect data under cloud-free conditions. Provides horizontal resolution of ~22 km and vertical resolution of ~4 km.|
+|OMI||Multispectral radiometer||Aura||GES DISC||Has 740 wavelength bands in visible and ultraviolet. Measures total ozone and profiles of ozone, N2O, SO2, and several other chemical species.|
+|TES||Imaging Spectrometer||Aura||LaRC ASDC||High-resolution imaging infrared Fourier-transform spectrometer that operates in both nadir and limb-sounding modes. Provides profile measurements of ozone, water vapor, carbon monoxide, methane, nitric oxide, nitrogen dioxide, nitric acid carbon dioxide, and ammonia.|
+The majority of active sensors operate in the microwave portion of the electromagnetic spectrum, which makes them able to penetrate the atmosphere under most conditions. An active technique views the target from either end of a baseline of known length. The change in apparent view direction (parallax) is related to the absolute distance between the instrument and target.
+- Radar—An active radio detection and ranging sensor that provides its own source of electromagnetic energy. An active radar sensor, whether airborne or spaceborne, emits microwave radiation in a series of pulses from an antenna. When the energy reaches the target, some of the energy is reflected back toward the sensor. This backscattered microwave radiation is detected, measured, and timed. The time required for the energy to travel to the target and return back to the sensor determines the distance or range to the target. By recording the range and magnitude of the energy reflected from all targets as the system passes by, a two-dimensional image of the surface can be produced.
+- Ranging Instrument—A device that measures the distance between the instrument and a target object. Radars and altimeters work by determining the time a transmitted pulse (microwaves or light) takes to reflect from a target and return to the instrument. Another technique employs identical microwave instruments on a pair of platforms. Signals are transmitted from each instrument to the other, with the distance between the two determined from the difference between the received signal phase and transmitted (reference) phase. These are examples of active techniques. An active technique views the target from either end of a baseline of known length. The change in apparent view direction (parallax) is related to the absolute distance between the instrument and target.
+- Scatterometer—A high-frequency microwave radar designed specifically to measure backscattered radiation. Over ocean surfaces, measurements of backscattered radiation in the microwave spectral region can be used to derive maps of surface wind speed and direction.
+- Lidar—A light detection and ranging sensor that uses a laser (light amplification by stimulated emission of radiation) radar to transmit a light pulse and a receiver with sensitive detectors to measure the backscattered or reflected light. Distance to the object is determined by recording the time between transmitted and backscattered pulses and by using the speed of light to calculate the distance traveled.
+- Laser altimeter—An instrument that uses a lidar to measure the height of the platform (spacecraft or aircraft) above the surface. The height of the platform with respect to the mean Earth’s surface is used to determine the topography of the underlying surface.
+- Sounder—An instrument that measures vertical distribution of precipitation and other atmospheric characteristics such as temperature, humidity, and cloud composition.
+The following table lists and describes many of the active sensors whose data are supported by EOSDIS. Some of these sensors may overlap categories.
+|Altimeters - Radar and Laser (Lidar)|
+|ALT-A, -B||Radar altimeter||TOPEX/ Poseidon||PO.DAAC||Dual-frequency altimeter that measures height of the satellite above the sea (satellite range), wind speed, wave height, and ionospheric correction.|
+|CALIOP||Cloud and Aerosol Lidar||CALIPSO||LaRC ASDC||Two-wavelength polarization-sensitive lidar that provides high-resolution vertical profiles of aerosols and clouds.|
+|GLAS||Laser altimeter||ICESat||NSIDC DAAC||The main objective is to measure ice sheet elevations and changes in elevation through time. Secondary objectives include measurement of cloud and aerosol height profiles, land elevation and vegetation cover, and sea ice thickness.|
+|Poseidon-1||Radar altimeter||TOPEX/Poseidon||PO.DAAC||Single-frequency altimeter that measures height of the satellite above the sea (satellite range), wind speed, and wave height.|
+|Poseidon-2||Radar altimeter||Jason-1||PO.DAAC||Measures sea level, wave height, wind speed, and ionospheric correction.|
+|NSCAT||Radar scatterometer||ADEOS-I||PO.DAAC||Dual Fan-Beam Ku Band that measures ocean vector winds at a nominal grid resolution of 25 km.|
+|SASS||Radar scatterometer||Seasat||PO.DAAC||Dual Fan-Beam Ku Band that measures ocean vector winds at a nominal grid resolution of 25 km.|
+|SeaWinds||Radar scatterometer||QuikSCAT ADEOS-II||PO.DAAC||Dual Pencil-Beam Ku Band that measures ocean vector winds at a nominal grid resolution of 25 km.|
+|SAR||Synthetic aperature radar||ERS-1|
+|Provides high-resolution surface imagery at 7 to 240 m.|
+Multiple polarizations are utilized by some SAR instruments.
+|CLS||Lidar||ER-2||LaRC ASDC||Determines vertical cloud structure. (FIRE Project).|
+|LASE||Lidar||DC-8||GHRC DAAC||Measures water vapor, aerosols, and clouds throughout the troposphere (CAMEX-4, TCSP, NAMMA projects).|
+|PR||Phased-array radar||TRMM||GES DISC|
+|Measures 3-D distribution of rain and ice. Provides horizontal resolution of 250 m and vertical resolution of 5 km.|
+|Determines vertical cloud structure (FIFE, FIRE and BOREAS Projects).|
+|KBR||Ranging Instrument||GRACE||PO.DACC||The dual-frequency KBR instrument measures the range between the GRACE satellites to extremely high precision.|

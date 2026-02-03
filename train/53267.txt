@@ -1,0 +1,16 @@
+In George Orwell's novel Animal Farm, all animals were declared to be equal. However, that was not the case. By the end of the book, some were "more equal than others." You might think that all joins are equal, but you would be wrong. Unequal joins have their applications, too.
+The equijoin is the norm in business. A customer number in a table (file) of invoices matches (equals) a customer number in a customer master table. But it is also possible to join on non-matching conditions such as not equal, greater than, less than, greater than or equal to, less than or equal to. Such a join is called a theta join.
+With one exception, theta joins are not terribly useful. I rarely use them. The one exception is joining on ranges of values.
+For instance, assume you work for a company that uses a 445 accounting system. Each quarter of a year consists of two four-week periods and one five-week period. You might have a table that looks like this:
+You may also have a table of shipments.
+To report sales by period or quarter, or for a period or quarter, requires you to join the files, but you can't do that with an equijoin. Instead, use BETWEEN.
+select per.year, per.period,
+sum(s.quantity) as Qty,
+sum(s.quantity * s.price) as Amount
+from shipments as s
+join accountingperiods as per
+on s.date between per.begindate and per.enddate
+group by per.year, per.period
+order by per.year, per.period
+The output looks like this:
+I've no doubt that there are other uses for theta joins that I've never thought of. I still have so much to learn.

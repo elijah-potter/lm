@@ -1,0 +1,8 @@
+- It is an important and elegant feature of relations that the tuples within them have not top-to-bottom ordering. This is because tuples are mathematical sets, and sets have no order. It is from relations that relational databases take their name; the tables and views within a relational database are just special cases of relations.
+- Concatenating a number and a string of characters produces a string of characters. This resulting string supports the operations valid for strings, not for numbers. If one is to sort it, one will sort it in lexicographic order and "101 Dalmatians" will always precede "3 Musketeers" in a non-decreasing sort.
+- In fact, distinguishing the "101" and the "3" within their strings violates "First Normal Form", according to which the attributes of a tuple must be atomic.
+To those not technically indoctrinated,
+- If I didn't want it in order, why would I have ordered it before I gave it to you?
+- Of course 3 is less than 101.
+- First Normal Form?
+I must also say, as the technically indoctrinated one in this particular back-and-forth, I was grateful to the other party for her independently deciding to zero-pad the numbers of items, which resolved the problem.

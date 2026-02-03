@@ -1,0 +1,11 @@
+Breaking Google Gears’ Cross-Origin Communication Model
+I cam across this interesting article at watchfire. The team there were able to exploit the Google gear infrastructure in order to perform malicious activities.
+Gears is a browser extension that allows developers to create richer and more responsive web-applications. One of its key features is the ability to create web-applications that can run both online and offline transparently.
+Some of the capabilities Gears introduces are:
+- A database, to store and access data from within the browser
+- A worker thread pool, to make web applications more responsive by performing expensive operations in the background
+- The HttpRequest API, which implements a subset of the W3C XmlHttpRequest specification
+- A Geolocation API that enables a web application to obtain a user’s geographical position
+To brief the attack, attacker needs to create a text file that contains (malicious) Google Gears commands. He can then put the text content into a target domain by say uploading it to target domain through image files. Attacker then creates a web page which has to be approved for using Google-Gears or the one that hosts user-created content and contains some Google Gears code that loads and executes the malicious code. The code now will run in the context of victim and hence will have permissions to access Google Gears client-side objects such as the DB, the local server data or web resources. This information can then be leaked back to attacker’s web page using Google Gears’ standard messaging mechanism.
+Google Team have patched this issue. The fix is based on a special Google-Gears Content-Type header value (application/x-gears-worker) that must be sent by the web-server when it serves Google-Gears worker code files without that value the loading of such worker files is denied.
+Full explanation of google gears can be found here.

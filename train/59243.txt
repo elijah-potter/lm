@@ -1,0 +1,48 @@
+The project ‘Microcontroller Based Solar Charger’ has been so popular, everyone knows about it. Here we will discuss the construction details and areas where this project is applicable.
+With excessive non-renewable energy consumption, we humans are facing plentiful difficulties. Renewable sources of energy are considered our only hope to rise from this situation. Solar energy is one of them which have spread all over for its easy availability, effective-cost and reliability. The project, ‘Microcontroller Based Solar Charger’ is the finest example to demonstrate the easy utilization of resources found around us and extract as much as benefits possible from it.
+Recent lighting systems which include solar lanterns, home lightning systems, streetlights, garden lights, water heaters and solar power packs, drive power from solar energy. If you are thinking how that natural form of energy is transformed to power these devices, then let me tell you. This transforming system comprises just four chief components: solar photovoltaic (PV) module, rechargeable battery, solar charge controller and load. Here, PV module traps the rays, rechargeable battery acts as a store house of energy and load comprises device to be powered. The solar charge controller takes into account of the fact that enough charge is stored in the battery as per the capacity of the rechargeable battery. Hence, it plays a vital role in the overall system being established as a crucial link between the solar panel, battery and load.
+The common component LCD depicts the current status of the system.
+Circuit and Working of Microcontroller Based Solar Charger
+The project ‘Microcontroller Based Solar Charger’ is fabricated around PIC16F877A (IC1) microcontroller as the chief component. Besides that, regulator 7805 (IC2) and a few discrete components are also employed in the project. The entire layout of the circuit of Microcontroller Based Solar Charger is illustrated in the figure 1.
+Talking about the central component; PIC16F877A, it provides an ideal solution for hobby and industrial development, proving itself worthy of popularity and powerful at the same time. This IC employs Harvard architecture. The charge control operation is carried out by this component through solar panel.
+The fascinating fact about the core component; 8-bit microcontroller is that it consumes low power and yet offers the best performance. Multiple features like 8kB flash, 256 bytes of EEPROM, 368 bytes of RAM, 33 input/output (I/O) pins, 10-bit 8-channel analogue-to-digital converter (ADC) and three timers make this device more appealing. To ensure reliability, it also constitutes of a watchdog timer with its own on-chip R-C oscillator which is essential in synchronous I2C interface. The number of simple instructions, this device can handle is 35. Majority of these instructions are single-cycle, branches have two-cycle instructions.
+For LCD interface with microcontroller, data pins D0-D7 of LCD module are connected with port pins RB0-RB7 of the microcontroller. In a similar way, RS (register-select), R/W (read/write) and E (enable) of the LCD are connected to port pins RD1, RD2 and RD3. For contrast control, preset VR3 is used. To perform manual reset operation, switch SW1 is included in the circuit. The basic clock frequency required to the microcontroller is provided by a combination of a 4MHz crystal along with two 33pF capacitors.
+Three particular pins of microcontroller monitor the parameter status. These port pins RA0, RA1 and RA2 collect required input to continuously check on battery voltage, charge current and solar panel voltage, respectively. And, thus on basis of the information collected, the overall process is controlled and meaningful information is displayed on the LCD module. The connection between solar panel and battery is established as soon as the port pin RA3 goes high, then transistor T1 becomes saturated and relay RL1 energizes.
+The +5 volt regulated supply for the microcontroller and LCD module is provided by the Regulator 7805. Based on the voltage, the charging process can be carried out in two distinct ways- boost and trickle. 12V is the defining parameter which determines if the battery is charged in boost mode or trickle mode. For less than 12V, charging is done in boost mode and for higher, trickle mode is activated. In trickle mode, the battery is charged at discharge rate.
+The project ‘Microcontroller Based Solar Charger’ also provides required information about the limit of energy collected by the solar panel. This information is utilized to approximate the exact amount of power that can be extracted from the sun itself.
+Construction and testing
+Fig. 2 and Fig.3 provide the precise single-side PCB layout for the PIC16F877A microcontroller-based solar charger and its complete component layout respectively. It is strongly recommended to perform the assembling process on a PCB to avoid time and assembly errors to some extent. However, one must be extra careful during assembling the components and overlooked errors must be double checked. To eradicate possible damage to the IC during assembling, IC base is used. To ensure safety before placing the IC, the supply voltage (5V) is checked at test point TP1 as shown in the fig.
+Figure 2: Solder Side PCB of Microcontroller Based Solar Charger
+Figure 3: Component Side PCB of Microcontroller Based Solar Charger
+In order to evade further complications, before implementing the circuit, the system is calibrated for battery and solar voltages. And, this is done in following ways:-
+Battery voltage. Disconnect the battery used in the project. Then apply 20V at input point of IC2 (7805) with respect to ground. At pin 2 of IC1 (PIC16F877), check on the voltage value using a multimeter. After that necessary adjustment to the circuit is done by varying the preset VR1 to get 5V. Again, voltage test at pin 4 of IC1 (PIC16F877) is done to ensure if voltage at that point is 5V. When the batteries are connected back to the system, the voltage value at pin 2 of IC1 (PIC16F877) must be approximately 3V.
+Solar voltage. Confiscate the solar panel from the circuit. A 12V battery is connected at a positive terminal of solar with respect to ground and then the voltage level at pin 4 of IC1 (PIC16F877) is monitored. Now, the preset VR2 is adjusted to get 3V. At pin 7 of IC1 (PIC16F877), we can check if the relay RL1 is enabled or not.
+After all these calibration steps, the ‘Microcontroller Based Solar Charger’ circuit is ready to be implanted. The circuit generates solar power and that value is calculated and displayed on LCD in watts per second. To get the energy in terms of watts-second, the power is integrated.
+LCD displays list of informations as per the sequence given below:
+- Battery voltage (millivolts)
+2. Battery current (milliamperes)
+3. Energy (watt-seconds)
+4. Power (watts)
+5. Solar-panel voltage (millivolts)
+6. Charger mode: boost or trickle
+The program code is written in simple; Basic language and thus is easy to understand. PIC Simulator IDE from Oshonsoft is used to compile the project code. The IDE is simple software that provides easy way to program the system using Basic like commands and then generate the corresponding hex code once it is complied. Another device called program burner or programmer is employed to burn/load thus generated hex code is into the microcontroller. The circuit ‘Microcontroller Based Solar Charger’ firstly detects the voltage on solar panel, if the voltage exceeds 12.6 volts, then next instruction on the flowchart is followed. And, if the voltage readings fall below 12.6 volts, a piece of information; “Low Solar Volts” is displayed on the LCD module and it repeats itself unless the voltage becomes greater than the defined voltage i.e. 12.6V.
+In the second stage, the battery voltage is monitored and depending on the results, the charging mode; boost or trickle mode is decided. As, stated earlier, for battery voltage exceeding 12V, trickle mode is activated and for below 12V, boost mode is triggered. At the early hours, the watt-hour reading from EEPROM is also read, which provides approximation of the power acquired from the sun.
+The project ‘Microcontroller Based Solar Charger’ includes a timer that generates an interrupt in every 65.56 ms. In ISR(Interrupt Service Routine), the 15th count refers that the power and energy of the system are calculated in every 65.56Ã—15 =983.4 ms i.e. approximately 1 second. The power absorbed is integrated every second to obtain the energy in terms of watt-seconds. These watt-hour readings are stored directly in the EEPROM of the microcontroller to avoid data loss during power failure. Again, this can lead to over-write in EEPROM. To solve this problem, write to EEPROM is done as programmed in every 30 minutes.
+PAETS LIST OF MICROCONTROLLER BASED SOLAR CHARGER
+|Resistor (all ¼-watt, ± 5% Carbon)|
+|R1 = 10 KΩ
+R2 = 5 Ω, 5W
+R3 = 1.2 KΩ
+R4 = 47 Ω
+VR1 – VR3 = 10 KΩ Preset
+|C1 = 0.1 µF
+C2, C3 = 33 pF
+|IC1 = PIC16F877A
+IC2 = 7805
+T1 = BC548
+D1, D2 = 1N4007
+|SW1 = Push-to-on Tactile Switch
+RL1 = 12V, Single-changeover Relay
+XTAL1 = 4 MHz Crystal
+LCD1 = 16-character*2-line LCD module
+BATT1 = 12V Lead-acid Battery

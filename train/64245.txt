@@ -1,0 +1,19 @@
+A corrective procedure for prediction
+This is the process by Kahneman and Teversky for the Elicitation and correction of intuitive predictions.
+Intuitive predictions do not take regression to the mean into account, and this method of correcting errors by de-biasing your predictions incorporates regression into your forecast.
+Any significant activity of forecasting involves a large component of judgment, intuition and educated guesswork.
+Step 1: selection of a reference class
+Step 2: Assessment of the distribution for the reference class
+In particular, the expert should provide an estimate of the class average, and some additional estimates that reflect the range of variability of outcomes. Sample questions are: “How many copies are sold, on the average, for books in this category?” “What proportion of the books in that class sell more than 15,000 copies?”. You are trying to determine the base rate for the reference class you selected in step 1.
+Step 3: Intuitive estimation
+This is where you provide your intuitive estimate. Your intuitive estimate is likely to be non-regressive. The objective of the next two steps of the procedure is to correct this bias and obtain a more reasonable estimate.
+Step 4: Assessment of Predictability
+You should construct a rough scale of predictability based on computed correlations between predictions and outcomes for a set of phenomena that range from highly predictable (e.g., temperature) to highly unpredictable (e.g., stock prices). you would then be in a position to locate the predictability of the target quantity on this scale, thereby providing a numerical estimate of p.
+An alternative method for assessing predictability involves questions such as “if you were to consider two novels that you are about to publish, how often would you be right in predicting which of the two will sell more copies?”An estimate of the ordinal correlation between predictions and outcomes can now be obtained as follows: If p is the estimated proportion of pairs in which the order of outcomes was correctly predicted, then T = 2p -1 provides an index of predictive accuracy, which ranges from zero when predictions are at chance level to unity when predictions are perfectly accurate. In many situations T can be used as a crude approximation for p.
+Step 5: Correction of the intuitive estimate
+To correct for non-regressiveness, the intuitive estimate should be adjusted toward the average of the reference class. If the intuitive estimate was non-regressive, then under fairly general conditions the distance between the intuitive estimate and the average of the class should be reduced by a factor of p, where p is the correlation coefficient. This procedure provides an estimate of the quantity, which is hopefully free of the non-regression error.
+For example, suppose that the expert’s intuitive prediction of the sales of a given book is 12,000 and that,on the average, books in that category sell 4,000 copies.Suppose further that the expert believes that he would correctly order pairs of manuscripts by their future sales on 80% of comparisons. In this case, T = 1.6 -1 = .6, and the regressed estimate of sales would be:
+Corrected estimate = Base rate + correlation(intuitive prediction – base rate)
+4,000 + .6(12,000 -4,000) =8,800.
+INTUITIVE PREDICTION: BIASES AND CORRECTIVE PROCEDURES
+by Daniel Kahneman and Amos Tvertsky https://apps.dtic.mil/dtic/tr/fulltext/u2/a047747.pdf

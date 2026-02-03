@@ -1,0 +1,8 @@
+- Complete Python Bootcamp: Go from zero to hero in Python
+- Complete Python Web Course: Build 8 Python Web Apps
+Sometimes we are not sure how long sometimes will take. For example, how long a car driver would be adding petrol. A program could be (pseudocode):
+while petrol_filling: increase price show price add petrol
+Python has the while keyword. Lets build an extended ‘guess the number game’:
+x = 0 while x != 5: x = int(input("Guess a number:")) if x != 5: print("Incorrect choice") print("Correct")
+This will keep asking a number until the number is guessed. This is defined in the line: while x != 5, or in English, “while x is not equal to five, execute”.
+If a condition in a while loop is never met, it could cause the program to run forever or to freeze/crash.

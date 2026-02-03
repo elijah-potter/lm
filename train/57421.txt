@@ -1,0 +1,32 @@
+Join Todd Perkins for an in-depth discussion in this video Testing a Perl application, part of Eclipse Essential Training.
+- Now let's write some code for our simple Perl application…and run it in Eclipse.…I'm going to close out hello.pl…and I'm going to right click HelloWorld…and make a copy of it.…And right click outside of the project and choose Paste…and now I'll name the project Testing,…and then click OK.…So I'll open up hello.pl in Testing…and we'll write some simple code.…
+We'll use strict and warnings…and then just print out HelloWorld.…So I'll save the file…and now we'll run it by clicking the Run button.…When I click the Run button, you'll see…the information come out in the console.…So to test an application in Perl,…you don't need to set up the run configurations…like you do in many other different languages.…You simply need to write the code out, hit the Run button.…
+- What is Eclipse?
+- Setting up a workspace
+- Adding external files to a project
+- Installing add-ons
+- Refactoring code
+- Working with tasks
+- Customizing formatting
+- Using Git for version control
+- Developing Java, PHP, C/C++, Perl, and Python apps with Eclipse
+- Setting up testing servers
+- Testing apps
+- Debugging apps
+Skill Level Beginner
+1. Introduction to Eclipse
+2. Working with Code
+3. Using Git for Version Control
+4. Using Eclipse for Java Development
+5. Using Eclipse for PHP Development
+6. Using Eclipse for C/C++ Development
+7. Using Eclipse for Perl Development
+8. Using Eclipse for Python Development
+- Mark as unwatched
+- Mark all as unwatched
+Are you sure you want to mark all the videos in this course as unwatched?
+This will not affect your course history, your reports, or your certificates of completion for this course.Cancel
+Take notes with your new membership!
+Type in the entry box, then click Enter to save your note.
+1:30Press on any video thumbnail to jump immediately to the timecode shown.
+Notes are saved with you account but can also be exported as plain text, MS Word, PDF, Google Doc, or Evernote.

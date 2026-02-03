@@ -1,0 +1,11 @@
+Estimated reading time: ( words)
+Summary: The active area of the web page is the area targeted by the keyboard or activated by mouse click, and users should be able to tell what area is active through some sort of visual cue. Onfocus indicators included in some browsers are inconsistent, so you should be sure to add it via CSS.
+When a user tabs through a web page using a keyboard, they move from active area to active area. An active area can be a hyperlink, form element, button, or any object the user has tabbed to. When a user lands on a link or object, that object has focus or is “onfocus”.
+Users should be able to tell what area of a web page is onfocus via some sort of visual indicator, often an outline box (see below).
+While many browsers automatically add an onfocus visual indicator, that functionality may be inconsistent and may not work for every page. Therefore you should use CSS ensure onfocus styling is included in your pages.
+There isn’t a clear convention of how an onfocus link or object should look like; accessibility guidelines merely dictate that the visual style should be distinct (“highly visible”) from the rest of the text.
+This CSS code example results in a light blue outline around the onfocus object:
+box-shadow: 0 0 10px #9ecaed;
+Another common form of onfocus styling for hyperlinks is to underline them (if they are not underlined already as part of the defined site styles) and add a light gray background.
+The results of the above code examples look like this:
+If you’re wondering what colors to use for your visual styling, check your college or unit’s graphic designer or the U of M brand guidelines for appropriate contrasting palette colors.

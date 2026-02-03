@@ -1,0 +1,96 @@
+- Project plans
+- Project activities
+- Legislation and standards
+- Industry context
+Last edited 19 Jan 2020
+ Definition of measurement
+It is not just about a quantity surveyor producing a bill of quantities for contractors to price during tendering. It is used in both pre- and post-contract work, helping assess the likely cost of the works, and determining what contractors and subcontractors should be paid for work that has been completed.
+During the early design stages, the quantity surveyor (or cost consultant) will measure the dimensions of the building to produce budget estimates, perhaps based on benchmarking against similar buildings. As the design develops, they will measure more detailed approximate quantities for cost planning purposes, ensuring that the design can be achieved within the budget.
+The contractor may use measurement for:
+- Preparing a construction methodology.
+- Ordering goods and materials.
+- Procuring subcontract works.
+- Calculating the effects of any variations.
+- Assessing work done against the construction programme.
+- Making payments to subcontractors.
+- Preparing or assessing valuations of work completed for interim payments.
+The quantity surveyor may undertake measurement for:
+- Cost control.
+- Estimating the cost of variations to the work.
+- Calculating the value of nominated subcontractors’ and suppliers’ work.
+- Preparing or assessing interim valuations to pay the contractor for work done.
+ Levels of detail for measured information
+The degree of detail to which construction work can be measured varies according to its use and the stage in the project. In the very early design stages, there is not much detail available, so estimates are based on general parameters, such as:
+- Functional unit: For example, cost per school pupil, cost per theatre seat, cost per hospital bed, and so on.
+- Floor area: Cost per sq. m gross floor area.
+- Itemised specification: A detailed cost plan which is broken down into a series of elements. Initially, the elemental cost plan will simply be the total construction cost for the project divided into elements on a percentage basis.
+- Approximate quantities: A first attempt to measure defined quantities from the drawings (or to take them off from a building information model (BIM)). This should be accompanied by a schedule of assumptions made.
+- Bills of quantities: The work is measured in detail, usually in accordance with a standard method of measurement.
+NB: Bills of quantities are normally only prepared on larger projects. On smaller projects, or for alteration work the contractor may be expected to measure their own quantities from drawings and schedules of work. Schedules of work are 'without quantities' instructional lists that allow the contractor to identify significant work and materials that will be needed to complete the works and calculate the quantities that will be required.
+It is important that there is a uniform basis for measuring building works in order to facilitate industry wide consistency and benchmarking, to encourage the adoption of best practice and to help avoid disputes.
+- Provides a structure for the information that should make up the descriptions.
+- Defines the unit of measurement for each item - m, m2, m3, number, tonnes, and so on.
+- Provides rules as to what is included within each item.
+- Defines the terms used to avoid disputes.
+- Allows familiarity to develop, so measurement becomes easier and quicker.
+- Provides a clear system for structuring other project information and cross-referencing specification information with bill of quantity information.
+The most commonly used standard methods of measurement for building works is NRM2, which replaced SMM7 in 2012. The New Rules of Measurement (NRM) are published by the Royal Institute of Chartered Surveyors (RICS) and prepared by the Quantity Surveying and Construction Professional Group.
+NRM2 provides a set of detailed measurement rules for the preparation of bills of quantities or schedules of rates for the purpose of obtaining a tender price. It also deals with the quantification of non-measurable work items, contractor designed works and risks. Guidance is also provided on the content, structure and format of bills of quantities, as well as the benefits and uses of bills of quantities.
+The term ‘taking off’ refers to the process of identifying elements of construction works that can be measured and priced. Those elements can be measured in number, length, area, volume, weight or time, then collated and structured to produce an unpriced bill of quantities. This process is sometimes referred to as ‘working up’.
+ Calculating girths and centre lines
+The centre line is half way between the external girth and the internal girth.
+Centre line (CL) = (Internal girth + external girth)/2
+CL = Internal girth + (No. of corners) x 2(wall width)/2
+CL = External girth - (No. of corners) x 2(wall width)/2
+ Calculating girths for irregular shaped buildings
+|EXTERNAL GIRTH||INTERNAL GIRTH|
+|Total = 10.00||Total = 8.00|
+CL = Internal girth + (No. of corners) x 2(wall width)/2
+Number of external corners = 5
+Number of internal corners = 1
+External corners - Internal corner = 4
+This occurs regardless of shape providing the walls encompass 360°.
+In the example above, the internal girth was 8.00, and the external girth was 10.00.
+Difference = 2.00 m = 4 x 2(wall width)/2
+Girth = 2(length + width) + 2(depth of inset)
+= 2(6.00 + 5.00) + 2(2.60)
+= 27.20 m
+ Important centre lines used for measuring foundations
+Increasingly, software packages are available to assist in the preparation of preparation of bills of quantities, and building information modelling systems can be used to produce bills of quantities from information already contained within the model.
+ Related articles on Designing Buildings Wiki
+- Advantages of a bill of quantities.
+- BCIS elements.
+- Bill of quantities.
+- Code of measuring practice.
+- Comparison of SMM7 with NRM2.
+- Conversion of material volumes.
+- Cost plans.
+- Cubic metre.
+- Gross external area.
+- Gross internal area.
+- How to take off construction works.
+- International Property Measurement Standards.
+- Ordnance Datum.
+- Measurement of existing buildings.
+- Metric system.
+- Net internal area.
+- New Rules of Measurement.
+- NRM 1.
+- NRM 2.
+- NRM 3.
+- Quantity surveyor.
+- Schedule of work.
+ External references
+- ‘Willis’s Elements of Quantity Surveying’ (10th ed.), LEE, S., TRENCH, W., Blackwell Publishing (2005)
+Featured articles and news
+Sweeping measures will shake-up residential sector.
+The Ryugyong Hotel, Pyongyang
+New design guide sets out requirements for a net zero future.
+Achieving zero carbon by 2050.
+Response options to party wall notices.
+The government pledges £500m to reverse rail closures.
+Learning lessons from HS2
+Types of construction organisation.
+European ports in a historic and global perspective. Book review.
+The post-war response to blitz and blight.
+Could you be our new editor?

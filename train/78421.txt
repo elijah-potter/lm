@@ -1,0 +1,24 @@
+Create a New Rectangle Symbol
+You can create rectangle symbols with OCAD.
+Choose the New command in the Symbol menu. Then, choose the Rectangle Symbol option in the New Symbol dialog to create a new rectangle symbol.
+The Rectangle Symbol dialog appears.
+Rectangle symbols are used to draw rectangular frames (around the entire map or around parts of the map). A special use for Rectangle symbols are punch boxes for orienteering maps.
+Type a symbol number between 0.001 and 999999.999 in this field.
+Enter a symbol description in this field (e.g. Punch Box).
+Choose the color for the frame. All colors from the Color Table are listed in the dropdown list.
+Enter a line width for the frame.
+If you want the frame to have round corners, enter the corner radius here (measured to the center of the line), otherwise enter 0 here.
+The Line Style option is only available, if the Corner Radius is set to 0. In this case you can choose between the three common line styles to define the appearance of corners and line ends.
+- Horizontal rectangle: Activate this option if you want to draw only horizontal rectangles.
+- Rotated rectangle: Activate this option if you want to draw rotated rectangles.
+The grid linie width is not alterable. So this option is obsolete.
+- On: Activate this field if you want to add a grid into the rectangle.
+- Cell width / Cell height: Enter the desired width and height for the cells.
+Activate this field if you want to add numbers to the grid.
+Numbered from the Bottom
+Normally, the cells are numbered starting from the top row. Check this box to start numbering from the bottom row.
+Choose the size in points for the text.
+- Number: Enter here the number of cells used as reserved fields, if you want to create punch boxes. If you want all cells numbered enter here 0.
+- Text: Enter here up to 3 characters which appear instead of the number in the reserved fields.
+Click the Icon button in the dialog to create an icon for the symbol. The Icon Editor appears. Read more about this editor in the Icon Editor article.
+Back to the Create a New Symbol page.

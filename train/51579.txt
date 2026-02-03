@@ -1,0 +1,7 @@
+I m new to the Open Source Environment... Just started learning it.
+I wanted to know how that PHP talks to Web Server and Database Server?
+I have read some general stuff... but the idea is not very clear.
+somebody please help me in understanding who talks with who using what? What are the components that carry out the conversation.
+Hope to get an understandable responce.
+Any tips for newbiees r also welcome! :D
+You webserver (apache most likely), loads a PHP module and is configured such that when a request is recieved for a page with a .php extension the webserver passes it to the PHP module to deal with. the php module parses the PHP code and "executes" it - ie carries out the instructions within. Database connectivity is done through PHP which can be compiled to include the MySQL libaries which allows it to talk to mysql. Once the page has been parsed it is passed back to the webserver which sends it back to the HTTP client.

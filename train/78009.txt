@@ -1,0 +1,30 @@
+Ch 2 and 9.1 Relationships Between 2 Variables. More than one variable can be measured on each individual. Examples: Gender and Height Size and Cost Eye color and Major We want to look at the relationship among these variables. Is there an association between these two variables?
+Overall TotalTwo-Way Tables
+Shows the percentages
+for the joint, marginal,
+and conditional distributions.
+___________AssociationRelationships between 2 numeric variables
+Response Variable (y-axis)
+Explanatory Variable (x-axis)
+AssociationRelationships between 2 numeric variables
+r = 1
+r = 0
+r = -1
+r = 0.04
+r = -0.84
+r = 0.76
+r = 0.21
+It is possible for there to be a strong relationship between two variables and still have r ≈ 0.
+where y is the point and is the predicted point.
+How much of the variation is explained
+by the least squares line of y on x? ______
+What is the correlation coefficient? ______
+Horsepower = -10.78 + 0.04*weight (Equation of the line.)
+__________: y-value or response (horsepower) when line crosses the y-axis.
+_______: increase in response for a unit increase in explanatory variable.
+So if weight increases by one pound, horsepower increases by 0.04 units (on average).
+Lurking Variable: A variable that is not among the explanatory or response variables in a study and yet may influence the interpretation of relationships among those variables.
+Simpson’s Paradox: An association or comparison that holds for all of several groups can reverse direction when the data are combined to form a single group. This reversal is called Simpson’s Paradox. This can happen when a lurking variable is present. Please see Examples 9.9 and 9.10 in the text.
+Child 18 is an outlier in the x direction. Because of its extreme position on the age scale, this point has a strong influence on the position of the regression line.
+r2 is also affected by the influential observation. With Child 18, r2 = 41%, but without Child 18, r2 = 11%. The apparent strength of the association was largely due to a single influential observation.
+The dashed line was calculated leaving out Child 18. The solid line is with Child 18.

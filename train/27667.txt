@@ -1,0 +1,8 @@
+call-with-current-continuation definition Lisp, programming
+(call/cc) A Lisp
+control function that takes a function f as its argument and calls f, passing it the current continuation
+, which is itself a function, k. k, which represents the context of the call to call/cc, takes the result of call/cc (which is the result of f) and returns the final result of the whole program. Thus if, for example, the final result is to print the value returned by call/cc then anything passed to k will also be printed.
+E.g, in Scheme
+(define (f k) (k 1) (k 2) 3)
+(display (call-with-current-continuation f))
+Will display 1.

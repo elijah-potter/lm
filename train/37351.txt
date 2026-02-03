@@ -1,0 +1,11 @@
+Why is Mobile Accessibility Important?
+Building a website or web application has become standard that those services are going to be needed and used on a mobile device. It can be challenging for people who have differing mental and physical abilities. One with visual or mobility impairment may not be able to utilize all that is offered on the go. Thus, mobile accessibility becomes significantly more imperative as mobile technology and the use of mobile devices advance every day.
+As you develop your content you need to be verfifying the usability on various different platforms. Most modern browsers have this feature built in to emulate a wide array of shapes and sizes. Of course it is also best to actually review your content on as many devices as possible as each version is going to be slightly different.
+Responsive design utilizes percentage sizes over fixed widths. A desktop is wider at 100% than a mobile device but content will still continue to wrap within the screen so a user simply scrolls vertically. Content that breaches a device width, or if the user has to scroll horizontally, is generally seen as a poor design as content can be hidden from general viewing.
+Some of the major criteria for mobile accessibility are:
+- Browser interoperability
+- Optimized navigation
+- Content size, color, and compact information
+- Mobile friendly media (smaller files sizes)
+- Usability and device limitations
+- User input via forms or other data entry points

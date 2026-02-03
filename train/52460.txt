@@ -1,0 +1,7 @@
+'Planet Finder' shows the locations of the planets, stars, moon, and sun in the sky from any location and for any date and time. Initially, it guesses the biggest city in your time zone. If this is incorrect, you can set your location either by typing in your latitude and longitude or by choosing a city from the list (which only includes those with populations greater than 3 million). In the U.S., daylight savings time lasts from 2 am on the first sunday of April until 2 am on the last sunday of October. The program handles this by default. If you are not in the U.S., you may need to set daylight savings time manually.
+released on 15 August 2001
+|License||Verified by||Verified on||Notes|
+|GPLv2||Janet Casey||25 February 2002|
+Leaders and contributors
+Resources and communication
+This entry (in part or in whole) was last reviewed on 25 February 2002.

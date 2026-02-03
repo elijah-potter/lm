@@ -1,0 +1,162 @@
+A blockchain glossary for programmers.
+Source: ISO 22739:2020 (en) Blockchain and distributed ledger technologies — Vocabulary
+- anything that has value to a stakeholder
+- structured data comprising block data (3.3) and a block header
+- block data
+- structured data comprising zero or more transaction records or references to transaction records
+- block header
+- structured data that includes a cryptographic link to the previous block unless there is no previous block
+Note 1 to entry: A block header can also contain a timestamp, a nonce, and other DLT platform specific data, including a hash value of corresponding transaction records.
+- block reward
+- reward given to miners or validators after a block is confirmed in a blockchain system
+Note 1 to entry: A reward can be in the form of a token or cryptocurrency.
+- organized in an append-only, sequential chain using cryptographic links
+Note 1 to entry: Blockchains are designed to be tamper resistant and to create final, definitive and immutable ledger records.
+- blockchain system
+- system that implements a blockchain
+Note 1 to entry: A blockchain system is a type of DLT system.
+- accepted by consensus for inclusion in a distributed ledger
+- confirmed block
+- block that has been confirmed
+- confirmed transaction
+- transaction that has been confirmed
+- agreement among DLT nodes that 1) a transaction is validated and 2) that the distributed ledger contains a consistent set and ordering of validated transactions
+Note 1 to entry: Consensus does not necessarily mean that all DLT nodes agree.
+Note 2 to entry: The details regarding consensus differ among DLT designs and this is a distinguishing characteristic between one design and another.
+- consensus mechanism
+- rules and procedures by which consensus is reached
+- digital asset implemented using cryptographic techniques
+- crypto-asset designed to work as a medium of value exchange
+Note 1 to entry: Cryptocurrency involves the use of decentralized control and cryptography to secure transactions, control the creation of additional assets, and verify the transfer of assets.
+- cryptographic hash function
+- function mapping binary strings of arbitrary length to binary strings of fixed length, such that it is computationally costly to find for a given output an input that maps to the output, it is computationally infeasible to find for a given input a second input that maps to the same output, and it is computationally infeasible to find any two distinct inputs that map to the same output
+Note 1 to entry: Computational feasibility depends on the specific security requirements and environment.
+- cryptographic link
+- reference, constructed using a cryptographic hash function technique, that points to data
+Note 1 to entry: A cryptographic link is used in the block header to reference the previous block in order to create the append-only, sequential chain that forms a blockchain.
+- discipline that embodies the principles, means, and methods for the transformation of data in order to hide their semantic content, prevent their unauthorized use, or prevent their undetected modification
+- decentralized application (DApp)
+- application that runs on a decentralized system
+- decentralized system
+- distributed system wherein control is distributed among the persons or organizations participating in the operation of the system
+Note 1 to entry: In a decentralized system, the distribution of control among persons or organizations participating in the system is determined by the system’s design.
+- digital asset
+- asset that exists only in digital form or which is the digital representation of another asset
+- digital signature
+- data which, when appended to a digital object, enable the user of the digital object to authenticate its origin and integrity
+- distributed ledger
+- ledger that is shared across a set of DLT nodes and synchronized between the DLT nodes using a consensus mechanism
+Note 1 to entry: A distributed ledger is designed to be tamper resistant, append-only and immutable containing confirmed and validated transactions.
+- distributed ledger system
+- system that implements a distributed ledger
+- distributed ledger technology (DLT)
+- technology that enables the operation and use of distributed ledgers
+- distributed ledger technology account (DLT account)
+- representation of an entity participating in a transaction
+Note 1 to entry: A smart contract, digital asset, or one or more private keys, for example, can be associated with a DLT account.
+- distributed ledger technology address (DLT address)
+- value that identifies a DLT account participating in a transaction
+- distributed ledger technology network (DLT Network)
+- network of DLT nodes which make up a DLT system
+- distributed ledger technology node
+- device or process that participates in a network and stores a complete or partial replica of the ledger records
+- distributed ledger technology oracle (DLT oracle)
+- service that updates a distributed ledger using data from outside of a DLT system
+Note 1 to entry: DLT oracles are useful for smart contracts that cannot access sources of data external to the DLT system.
+- distributed ledger technology platform (DLT platform)
+- set of processing, storage and communication entities which together provide the capabilities of the DLT system on each DLT node
+- distributed ledger technology user (DLT User)
+- entity that uses services provided by a DLT system
+- distributed system
+- system in which components located on networked computers communicate and coordinate their actions by interacting with each other
+- double spending
+- failure of a DLT platform where the control of a token or crypto-asset is incorrectly transferred more than once
+Note 1 to entry: Double-spending is most often associated with cryptocurrency.
+- item inside or outside an information and communication technology system, such as a person, an organization, a device, a subsystem, or a group of such items that has recognizably distinct existence
+- oss of ability to perform as required
+- fault tolerance
+- ability of a functional unit to continue to perform a required function in the presence of faults or errors
+- genesis block
+- first block in a blockchain
+Note 1 to entry: A genesis block has no previous block and serves to initialize the blockchain.
+- hard fork
+- change to a DLT platform in which new ledger records or blocks created by the DLT nodes using the new version of the DLT platform are not accepted as valid by DLT nodes using old versions of the DLT platform
+Note 1 to entry: If not adopted by all DLT nodes, a hard fork can result in a ledger split.
+Note 2 to entry: In some contexts, the terms "hard fork" and "fork" are sometimes used for a ledger split that results from a hard fork of a DLT platform.
+- hash value
+- string of bits which is the output of a cryptographic hash function
+- property wherein ledger records cannot be modified or removed once added to a distributed ledger
+Note 1 to entry: Where appropriate, immutability also presumes keeping intact the order of ledger records and the links between the ledger records
+- ability of two or more systems or applications to exchange information and to mutually use the information that has been exchanged
+- leaf node
+- node that has no child nodes
+- information store that keeps records of transactions that are intended to be final, definitive and immutable
+- ledger record
+- record containing transaction records, hash values of transaction records, or references to transaction records recorded on a distributed ledger
+- ledger split
+- creation of two or more different versions of a distributed ledger originating from a common starting point with a single history
+- Merkle root
+- oot node of a Merkle tree
+- Merkle tree
+- tree data structure in which every leaf node is labelled with the hash value of a data element and every non-leaf node is labelled with the hash value of the labels of its child nodes
+- DLT node which engages in mining
+- activity, in some consensus mechanisms, that creates and validates blocks or validates ledger records
+Note 1 to entry: Participation in mining is often incentivized by block rewards and transaction fees.
+- elementary component from which a data structure is built
+- number or bit string used once in a set of cryptographic operations
+Note 1 to entry: A nonce is often random or pseudo-random. It is commonly used to guard against replay attacks, where a message is captured and re-sent by a malicious actor. In some blockchain systems it is used to modulate mining during the generation of a new block and is stored in the block header
+- related to a blockchain system, but located, performed, or run outside that blockchain system
+- located, performed, or run inside a DLT system
+- relating to, using, or being a network of equal peers that share information and resources with each other directly without relying on a central entity
+- requiring authorization to perform a particular activity or activities
+- permissioned distributed ledger system (permissioned DLT system)
+- DLT system in which permissions are required
+- not requiring authorization to perform any particular activity
+- permissionless distributed ledger system (permissionless DLT system)
+- DLT system that is permissionless
+- private distributed ledger system (private DLT system)
+- DLT system that is accessible for use only to a limited group of DLT users
+Note 1 to entry: Public and private categories apply to DLT users, and permissioned and permissionless categories apply to DLT users and those entities that administer or operate the DLT system.
+- private key
+- key of an entity's asymmetric key pair that is kept secret and which should only be used by that entity
+- produce a smaller replica of a distributed ledger by removing all transaction records meeting specified criteria while ensuring that those transactions can be restored with integrity if needed
+- public distributed ledger system (public DLT system)
+- DLT system which is accessible to the public for use
+- public key
+- key of an entity's asymmetric key pair which can be made public
+- public-key cryptography
+- cryptography in which a public key and a corresponding private key are used for encryption and decryption, or are used for verifying digital signatures and digitally signing, respectively
+- information created, received and maintained as evidence and as an asset by an organization or person, in pursuit of legal obligations or in the transaction of business
+Note 1 to entry: This term applies to information in any medium, form or format.
+- reward system incentive mechanism
+- method of offering reward for some activities concerned with the operation of a DLT system
+Note 1 to entry: An example of a reward is a block reward (3.5).
+- root node
+- node that has no parent node
+- shared ledger
+- distributed ledger in which the content of ledger records is accessible by multiple entities
+- blockchain system that interoperates with a separate associated blockchain system to perform a specific function in relation to the associated blockchain system
+Note 1 to entry: By convention the original chain is normally referred to as the "main chain", while any additional blockchains which allow DLT users to transact on the main chain are referred to as "sidechains”.
+- smart contract
+- computer program stored in a DLT system wherein the outcome of any execution of the program is recorded on the distributed ledger
+Note 1 to entry: A smart contract can represent terms in a contract in law and create a legally enforceable obligation under the legislation of an applicable jurisdiction.
+- soft fork
+- change to a DLT platform that is not a hard fork and in which some records or blocks created by the DLT nodes using the old version of the DLT platform are not accepted as valid by DLT nodes using new versions of the DLT platform
+- logically separate chain that can form part of a blockchain system
+Note 1 to entry: A subchain allows for data isolation and confidentiality.
+- time variant parameter which denotes a point in time with respect to a common time reference
+- digital asset that represents a collection of entitlements
+- smallest unit of a work process, which is one or more sequences of actions required to produce an outcome that complies with governing rules
+Note 1 to entry: Where appropriate, transaction is understood more narrowly, as the smallest unit of a work process related to interactions with blockchains or distributed ledgers.
+- transaction fee
+- fee paid to miners or validators for inclusion of a transaction in a distributed ledger
+- transaction record
+- record documenting a transaction of any type
+Note 1 to entry: Transaction records can be included in, or referred to, in a ledger record.
+Note 2 to entry: Transaction records can include the result of a transaction.
+- degree to which a user or other stakeholder has confidence that a product or system will behave as expected by that user or other stakeholder
+- status of an entity when its required integrity conditions have been checked
+Note 1 to entry: For example, in a DLT system, a transaction, ledger record, or block can be validated.
+- function by which a transaction, ledger record, or block is validated
+- entity in a DLT system that participates in validation
+Note 1 to entry: In some DLT systems the DLT node that has the role of validator can digitally sign a ledger record or block.

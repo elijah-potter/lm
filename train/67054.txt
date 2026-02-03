@@ -1,0 +1,37 @@
+Integration of GIS with Remote Sensing and GPS for Disaster Mitigation
+Sikander Nawaz Khan
+University of Gujrat
+Shahbaz Pur Road, Jalal Pur Jattan, Gujrat, Pakistan
+Natural disasters like flood, earthquake, cyclone, volcanic eruption and others are causing immense losses to the property and lives every year. Current status and actual loss information on natural hazards can be determined and also prediction for next probable disasters can be made using different remote sensing and mapping technologies. Global Positioning System (GPS) calculates the exact position of damage. It can also communicate with wireless sensor nodes embedded in potentially dangerous places. GPS provides precise and accurate locations and other related information like speed, track, direction and distance of target objects to emergency responders.
+Remote Sensing facilitates to map damages without having physical contact with target area. Now with the addition of more remote sensing satellites and other advancements, early warning system is used very efficiently. Remote sensing is being used both at local and global scale. High Resolution Satellite Imagery (HRSI), airborne remote sensing and space-borne remote sensing is playing a vital role in disaster management.
+Early in Geographic Information System (GIS) was used to collect, arrange, and map the spatial information, but now it has the capability to analyze spatial data. This analytical ability of GIS is the main cause of its adoption by different emergency service providers like the police and ambulance service.
+The full potential of these so called 3S technologies cannot be used alone. Integration of GPS and other remote sensing techniques with GIS has pointed new horizons in modeling of earth science activities. Many remote sensing cases, including Asian Ocean Tsunami in 2004, Mount Mangart landslides and Pakistan-India earthquake in 2005 are described in this paper.
+-  I. Alcántara-Ayala, “Geomorphology, natural hazards, vulnerability and prevention of natural disasters in developing countries,” Geomorphology, Vol.47, No.2, pp. 107-124, 2002.
+-  S. Murai, “Monitoring of disasters using remote sensing GIS and GPS,” Proceedings of the International symposium on management System for disaster prevention, pp. 9-11, 2006.
+-  C. Ayday and E. Ayday, The Use of GIS and Handheld GPS Integration for the Preparation of Quick Plans.
+-  A. Zerger and D. I. Smith, “Impediments to using GIS for real-time disaster decision support,” Computers, Environment and Urban Systems, Vol.27, No.2, pp. 123-141, 2003.
+-  F. F. Kanji, “Applications of satellite remote sensing and other space technology for the early warning of coastal hazards,” Doctoral dissertation, Asian Institute of Technology, 2008.
+-  http://www.sensorsandsystems.com/article/features/29580-what-and-where-the-integration-of-remote-sensing-and-gis.html [accessed March, 2014]
+-  J. Gao, “Integration of GPS with remote sensing and GIS: reality and prospect,” Photogrammetric engineering and remote sensing, Vol.68, No.5, pp. 447-454, 2002.
+-  S. Koshimura and M. Takashima, “Remote sensing, GIS, and modeling technologies enhance the synergic capability to comprehend the impact of great tsunami disaster,” 3rd International Workshop on Remote Sensing for Post-Disaster Response, pp. 12-13, 2005.
+-  J. Liu, B. Priyantha, T. Hart, H. S. Ramos, A. A. Loureiro, and Q. Wang, “Energy efficient GPS sensing with cloud offloading,” Proceedings of the 10th ACM Conference on Embedded Network Sensor Systems, ACM, pp. 85-98, 2012.
+-  A. Helal, S. E. Moore, and B. Ramachandran, “Drishti: An integrated navigation system for visually impaired and disabled,” Wearable Computers, 2001, Proceedings, Fifth International Symposium on, IEEE, pp. 149-156, 2001.
+-  D. M. Tralli, R. G. Blom, V. Zlotnicki, A. Donnellan, and D. L. Evans, “Satellite remote sensing of earthquake, volcano, flood, landslide and coastal inundation hazards,’ ISPRS Journal of Photogrammetry and Remote Sensing, Vol.59, No.4, pp. 185-198, 2005.
+-  http:/gpsworld.com/first-glonass-station-outside-russia-opens-brazil [accessed March, 2014]
+-  http://mycoordinates.org/was-there-any-pre-signal-of-pakistan-earthquake/ [accessed March, 2014]
+-  J. Gao and Y. Liu, “Applications of remote sensing, GIS and GPS in glaciology: A review,” Progress in Physical Geography, Vol.25, No.4, pp. 520-540, 2001.
+-  P. Chen, S. C. Liew, and L. K. Kwoh, “Tsunami damage assessment using high resolution satellite imagery: A case study of Aceh, Indonesia,” International Geoscience and Remote Sensing Symposium, Vol.2, p. 1405, 2005.
+-  K. Ovstir, T. Veljanovski, T. Podobnikar, and Z. Stanvcivc, “Application of satellite remote sensing in natural hazard management: the Mount Mangart landslide case study,” International Journal of Remote Sensing, Vol.24, No.20, pp. 3983-4002, 2003.
+-  http://news.satimagingcorp.com/2007/07/satellite_remote_sensing_linebreak to_assess_and_monitor_floods.html
+- [accessed March, 2014]
+-  S. Asadi, P. Vuppala, and M. A. Reddy, “Remote sensing and GIS techniques for evaluation of groundwater quality in municipal corporation of Hyderabad (Zone-V), India,” International Journal of Environmental Research and Public Health, Vol.4, No.1, pp. 45-52, 2007.
+-  S. Sarkar and D. P. Kanungo, “An Integrated Approach for Landslide Susceptibility Mapping Using Remote Sensing and GIS,” Photogrammetric Engineering and Remote Sensing, Vol.70, No.5, pp. 617-626, 2004.
+-  J. Sanyal and X. X. Lu, “Application of remote sensing in flood management with special reference to monsoon Asia: A review,” Natural Hazards, Vol.33, No.2, pp. 283-301, 2004.
+-  P. A. Brivio, R. Colombo, M. Maggi, and R. Tomasoni, “Integration of remote sensing data and GIS for accurate mapping of flooded areas,” International Journal of Remote Sensing, Vol.23, No.3, pp. 429-441, 2002.
+-  S. K. Biswas, N. Ramanujam, and K. Dharanirajan, “Study of disaster mitigation for car nicobar island using remote sensing and GIS,“ 2013.
+-  H. Li, Z. Chen, L. Yong, and S. C. Kong, “Application of integrated GPS and GIS technology for reducing construction waste and improving construction efficiency,” Automation in Construction, Vol.14, No.3, pp. 323-331, 2005.
+-  J. N. Al-Karaki and A. E. Kamal, “Routing techniques in wireless sensor networks: a survey,” Wireless communications, IEEE, Vol.11, No.6, pp. 6-28, 2004.
+-  O. Pummakarnchana, N. Tripathi, and J. Dutta, “Air pollution monitoring and GIS modeling: a new use of nanotechnology based solid state gas sensors,” Science and Technology of Advanced Materials, Vol.6, No.3, pp. 251-255, 2005.
+-  M. P. Bishop, J. A. Olsenholler, J. F. Shroder, R. G. Barry, B. H. Raup, A. B. Bush, and R. Wessels, “Global land ice measurements from space (GLIMS): Remote sensing and GIS investigations of the Earth”s cryosphere,” Geocarto International, Vol.19, No.2, pp. 57-84, 2004.
+-  http://www.esri.com/services/disasters-response/japan-earthquake-tsunami-2011-map/shift-map.html [accessed March, 2014]
+This article is published under a Creative Commons Attribution-NoDerivatives 4.0 Internationa License.

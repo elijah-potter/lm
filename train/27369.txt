@@ -1,0 +1,5 @@
+Given a 2-dimensional array of MxN heights, how to transform it to a sphere? Every element of this array is just a 3D point (x,y,z) where z represents some height. One has to transform this array into a sphere, twisting it around the origin so, that only minimal distortions will happen.
+Representing it by spherical coordinates is not very good, because of the severe distortions. It's probably better if there is no direct one-to-one mapping from 2D plane to a surface of 3D sphere - many plane's points will not be involved. But what is the best possible mapping and how to transform involved points (elements of array)?
+This is for a 3D-planet terrain simulation. First, fractal landscape is produced, then, it is to be transformed to 3D sphere.
+Thanks in advance!
+SOLUTION: Map projection

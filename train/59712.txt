@@ -1,0 +1,36 @@
+An introduction to Versor: Versatile Cursors for GNUemacs
+Generally speaking, text editors maintain a current focus in the text they are holding, which may be either a point or a region of the text. For example, in Unix's command line editor ``ed'', there is a current line, and into GNUemacs, there is a current point, represented by the cursor. Navigating around the text is done by commands that move the focus. In a ``full-screen editor'' such as emacs, the basic navigation commands take the form of the four cursor keys: left, right, up, down. The commands attached to these keys move the focal point by one character or one line. As well as these basic movements, a variety of other navigation commands are available: moving by words, sentences, paragraphs, programming language expressions, pages, function definitions. Although these commands work in terms of units other than single characters, the focal point that they move is still a single character. These command are typically less accessible than the character and line based movements -- they require chording, or use of less frequently accessed parts of the keyboard.
+Editing operations also frequently work on more than a single character; specifically, they often must be applied to a unit or unit of text, of the same kind of unit that the user has been moving by -- for example, moving by words and then deleting a word. In GNUemacs, this is handled using setting a ``mark'' at one end of the region to be treated, then moving to the other end of the region.
+However, in any one short stretch of time, the user will typically use just two of these ``dimensions'' in conjunction, and we can arrange these dimensions in a few collections, each collection having an obvious hierarchy such as characters, lines, pages, or characters, words, sentences, paragraphs. Much of the time, the two dimensions which the user will use in close conjunction (that is, with commands acting in these dimensions interspersed with each other, but not with those for other dimensions) will be two adjacent dimensions in one of these ordered collections. The ``versatile cursors'' project provides easy access to such pairs of dimensions, using the two dimensions of cursor keys provided on the physical keyboard to provide flexible access to these pairs of dimensions.
+As well as changing the cursor movements to work in a variety of units, a different form of cursor is drawn, in the form of a highlighted area of text. This covers one or more unit of the current dimension of movement. Versor's editing actions work on the currently highlighted area of text, which Versor terms the ``selection cursor''. (It is distinct from the GNUemacs ``region''; it is appropriate to think of it as a different kind of cursor, rather than something that you mark the ends of.) The selection cursor changes colour to indicate the current dimension, disappears when you do a non-versor action, and reappears when you do a versor action.
+To do this flexible reassignment of the cursor keys, we have to be able to select a sequence of dimensions, and select a point within that sequence. These forms of selection are themselves a form of two-dimensional navigation! And so, for convenient and intuitive access to them we bind them to the cursor keys with a modifier (emacs' ``Meta'' key, the ``Alt'' key on a PC keyboard).
+Thus, we have the following set of bindings:
+|left||previous, in minor dimension|
+|right||next, in minor dimension|
+|down||previous, in major dimension|
+|up||next, in major dimension|
+|M-down||previous group of dimension|
+|M-up||next group of dimension|
+This ``narrow channel'' interface to a broad range of navigation
+commands has proved itself suitable for access through hardware more
+limited than a full keyboard: the author uses it very effectively
+through a set of six foot-switches. These are a commercial product,
+coming in sets of three. As factory-configured, to provide the
+Alt, but can be programmed to duplicate any keys. A
+suitable configuration for for using two pedal sets with versor is to
+keep one of them as factory configured, and sets the other one up for
+some keys which you are otherwise not using, and bind those keys to
+the versor commands. One of these (I suggest the middle one) can be
+``next, in minor dimension'', and, combined with
+``previous, in minor dimension''. Another of them (I suggest the left
+one) can do the same pair of functions in the major dimension;
+Alt on the PC keyboard) and
+Control modify these as described for the arrow keys,
+above. The third pedal of the second set can be used to initiate other
+actions, through a layer built on top of Emacs' ``Text mode menu''
+system, using the versor ``next'' and ``previous'' pedals to move
+among the choices, and the ``menu'' pedal to select a choice.
+(Text mode menus, here, may later be supplanted by flexible choosers, improving their
+interface with voice as well as potentially saving keystrokes.)
+This research was done under the B4STEP project, funded by Science Foundation Ireland.
+[Versatile cursors and editing tools]

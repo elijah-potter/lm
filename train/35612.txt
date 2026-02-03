@@ -1,0 +1,4 @@
+Ping is no doubt one of the world’s most wide-spread applications. It is even so common that most people that use it probably don’t even know that they don’t actually “ping” the remote host. What they do is to send ICMP Echo requests and wait from replies.
+Despite being great for what it does the standard GNU ping utility (or the Windows application for that matter) fails to record the time when the ping was sent and the output is in some quasi readable format that is not trivial to import into some application.
+This Perl script wraps the Linux/UNIX form of the ping utility to output the sequence number and the round trip time as comma separated values. It also prepends each line with the current date and time so that the output can be imported into a spreadsheet to create a graph of the round trip time over time.
+N.B. This perl script will not work on Windows since the output format differs from that on Linux/UNIX.

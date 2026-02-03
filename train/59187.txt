@@ -1,0 +1,6 @@
+Given a Factorial, Find the Number
+Date: 05/02/2003 at 17:02:04 From: Praveen Subject: How to find the number of a given factorial For example, the factorial of 4 is 24 (4*3*2*1), but how can we find a number if the factorial is given?
+Date: 05/02/2003 at 17:36:43 From: Doctor Ian Subject: Re: How to find the number of a given factorial Hi Praveen, Probably the easiest way is to find the prime factors of the number. For example, given 479,001,600 you could find the prime factors 10 5 2 1 1 479,001,600 = 2 3 5 7 11 Now, note that 11 appears, but 13 doesn't. So this narrows things down; it can only be 11! or 12!. That is, the largest prime in the prime factorization gives you a lower bound. The smallest missing prime gives you an upper bound. Does that make sense? - Doctor Ian, The Math Forum http://mathforum.org/dr.math/
+Search the Dr. Math Library:
+Ask Dr. MathTM
+© 1994- The Math Forum at NCTM. All rights reserved.

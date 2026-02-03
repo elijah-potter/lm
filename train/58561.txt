@@ -1,0 +1,17 @@
+What if your doors, cereal, sofa and favorite pair of jeans became touch sensors and reacted based on your movements?
+You've used touch-based smartphones, tablets and gaming consoles, but new technology designed by the Disney Corporation's research department has the potential to change any average, household item into a gesture recognition platform.
+Scientists based at Disney Research in Pittsburgh, Pennsylvania and Carnegie Mellon University are working on this concept to make it a reality, through technology labelled Touché.
+Moving beyond sensors that specify whether you are or are not touching an object, Touché is described as "a novel Swept Frequency Capacitive Sensing technique that can not only detect a touch event, but simultaneously recognize complex configurations of the human hands and body during touch interaction".
+Furthermore, "this allows us to significantly enhances touch interaction in a broad range of applications, from enhancing conventional touchscreens to designing interaction scenarios for unique use contexts and materials".
+The research paper [.pdf] describes how the new technology does more than monitor one single frequency -- which allows current sensors to detect single or multiple finger movements -- and instead performs on a multiple frequency channel. Therefore, it is able to go further and detect body position and gestures including grasps, twists and complex physical movements.
+Touché uses a single electrical conductor embedded within any object -- which then relays information to a sensor controller through a wired or wireless connection including Bluetooth technology. The wireless element can turn anything into a touch device -- including your own body.
+Electrodes attached to a pair of wrists can detect your hand gestures, which are then relayed to sensor controllers in order to manipulate paired objects. Disney predicts that in the future, smartphones or MP3 players could be manipulated purely through these kinds of movements.
+"It is not inconceivable that one day mobile devices could have no screens or buttons and rely exclusively on the body as the input surface," the Disney video below demonstrating the technology states.
+Disney says the technology could have all kinds of real-life applications. If you enter a room, your television or lights could turn on automatically, or a wave of your hand could turn up the volume on your speakers. To demonstrate this concept, researchers presented different scenarios in their paper:
+- A doorknob sensor which detected five different movements -- one and two-finger touch, a 'circle' gesture, pinching and grasping;
+- A person sitting at a table -- and whether they are using hands or elbows;
+- The third -- already found in smartphone technology -- Touché detected multiple finger movements on objects.
+Another capability of Touché is the ability to sense different gestures through liquid surfaces. In the video below, a household aquarium is fitted with an electrode at the bottom of the tank. The sensor is able to tell when the water is disturbed by a finger or hand, and detect which movement is taking place.
+For more information, view the video below.
+Image credit: Screenshot C.Osborne/Disney Research
+This post was originally published on Smartplanet.com

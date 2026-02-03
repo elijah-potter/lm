@@ -1,0 +1,46 @@
+As with any proof, inductive proofs start with the theorem. For this first proof, let's use the theorem: 2n < n!, for all n >= 4, where n is in the set of natural numbers.
+The next step is to verify the base case(s). When this step is reached, it is sometimes necessary to verify more than one base case. When only one base case is necessary, this is called weak induction. When more than one base case is necessary, it is called strong induction. A prime example of when to use strong induction is for recursive sequences with multiple base cases or terms of multiple preceding terms in the definition. The theorem 2n < n! only requires weak induction, however.
+Since n = 4 is the first number for which the inequality holds and the theorem allows for weak induction, it is only necessary to verify for n = 4:
+24 < 4!
+16 < 24, so this inequality holds for n = 4.
+The next step is to state the inductive assumption and hypothesis. The inductive assumption is the point in the proof where we assume that the inequality holds true up to some arbitrary value k. The inductive hypothesis states that if the inductive assumption holds, then the theorem can be proven true for the k+1 case.
+For our theorem, a good writeup would look like:
+I have assumed that the theorem holds true from n = 4, where n is a natural number, up to some arbitrary value k, where k is a natural number (ie., 2k < k!). I will now prove true for the k+1 case (ie., 2k+1 < (k+1)!).
+The next step is to actually prove true for the k+1 case.
+- By the inductive assumption, we know that 2k < k!
+- I will now multiply both sides by 2, to get: 2 * 2k < 2* k!
+- By the rules of exponents, we can simplify this to: 2k+1 < 2 * k!
+- Because we know that the smallest value in the truth set is k = 4, k must be greater than 2. Therefore, k+1 must also be greater than 2. So the following inequality must also be true: 2k+1 < (k+1) * k!
+- By the definition of a factorial, we can simplify: 2k+1 < (k+1)!
+Finally, the conclusion for the proof:
+We have assumed that the theorem 2n < n! holds true from n = 4 up to some arbitrary value k, and have proven true for k+1. Therefore, by the principle of math induction, the theorem holds true.
+Now let's look at a case where we would use strong induction. The theorem we will prove inductively is that the Fibonacci sequence, defined as:
+f0 = 0
+f1 = 1
+fn = fn-1 + fn-2
+is less than 2n, where n is in the set of natural numbers.
+Because we have two base cases, we will need to verify these both in our first step. Since there is a recurrence, we will verify a single case of that as well.
+n = 0:
+f0 = 0 < 20
+0 < 1, so the inequality holds.
+n = 1:
+f1 = 1 < 21
+1 < 2, so the inequality holds.
+n = 2:
+f2 = f1 + f0 < 22
+1 + 0 < 4
+1 < 4, so the inequality holds.
+I have assumed the theorem is true from n = 0, where n is a natural number, up to some arbitrary value k, where k is a natural number (ie., fk < 2k). I will now prove true for the k+1 case (ie., fk+1 < 2k+1).
+Consider for k+1:
+- By the inductive assumption, we know that fk+1 = fk + fk-1, which is less than 2k + 2k-1
+- By factoring out 2k from the right hand side of the inequality, we get: fk + fk-1 < 2k(1 + 1/2)
+- Since (1+1/2) < 2, we know that 2k(1+1/2) < 2k(2), meaning that fk + fk-1 < 2k(2) by transitivity.
+- By the rule of exponents, fk + fk-1 < 2k+1
+I have assumed that the theorem fn < 2n from n = 0, where n is a natural number, up to k, which is also a natural number, and proven true for k+1. Therefore, by the principle of math induction, the theorem holds for all natural numbers.
+I wanted to introduce Big-O in this tutorial because induction is often used as a part of Big-O proofs. This section will not introduce analyzing code snippets to determine which Big-O notation is applicable. Instead, it will focus on mathematical proof. To begin, let's examine the definition of Big-O:
+So in other words, Big-O represents the upper bounds of a function. When writing Big-O proofs, the goal is to satisfy the definition. So we need to find constants k and C so the inequality is satisfied. Solving for k is usually where the induction comes in. Let's look at an example:
+Theorem: f(n) = 2n is Big-O g(n) = n!
+To prove that 2n is O(n!), we need to show that there exist constants C and k in the set of positive integers such that |2x| <= C * |x!|, for all x >= k, where x is in the set of positive integers.
+At this point, an inductive proof will be used to find and verify the k value. We already proved this theorem above, but I will include it below in spoiler tags:
+So we have that k = 4, and we will let C = 1. So that leaves us with:
+|2x| <= 1 * |x!|, for all x >= 4, where x is a positive integer. We have proven that this inequality holds using induction. Therefore, we have satisfied the definition that f(n) is O(g(n)).

@@ -1,0 +1,27 @@
+There is much confusion about the definition of Cloud Services. From an enterprise perspective it means being able to access secure, scalable computing resources (processing, memory, storage, and applications) from a shared infrastructure, delivered over a public or private network. Importantly the enterprise does not need to have knowledge of, or responsibility for, the equipment used to deliver services.
+As such a key technology that is fundamental to the delivery of Cloud Services is Virtualisation. Hardware virtualisation refers to the creation of a virtual machine that acts like a real computer with an operating system. Software executed on these virtual machines is separated from the underlying hardware resources. The major advantage of this approach is that computing resources can be more closely aligned to the needs of the application, resulting in more efficient use of resources and ultimately reduced costs.
+The Cloud is often thought of as the public Internet, however for many enterprises Virtual Private Cloud services are more relevant as these are delivered from the closed infrastructure of a provider and delivered via a secure private network.
+What’s driving demand?
+A number of factors have been driving the shift from in-house computing and dedicated hosting to Cloud Services:
+1. Hardware is massively under-utilised
+Many businesses have built up a number of servers that are used for different applications and databases. These may also be spread around different offices and data centres. The reality today is that machines only run at 10 or 15% of total processing capacity, and these lightly loaded servers still take up valuable space and draw increasingly expensive power.
+There must be a better way to match computing capacity with load to overcome gross inefficiency. Virtualisation enables this by having a single platform that is able to seamlessly support multiple systems, raising utilisation rates and providing a simple way of supporting growth.
+2. Availability and cost of data centre space is a growing problem
+The growth in the use of IT and the Internet to support business processes has meant a vast number of servers have been put into use. These take up space and power and this has led to an on-going issue of available data centre space and power. A virtualised, cloud service removes the need to keep finding more space. The increasing cost of power is also a key factor in escalating operating costs. By reducing the number of physical servers a company can directly reduce the costs of both space and power.
+3. System administration costs continue to rise
+The greater the number of systems and the more dispersed they are across locations, the higher the staff costs are for running and maintaining them. Cloud Services reduce the number of servers and therefore directly reduce the staff costs related to administering them.
+4. Storage demands mount
+Data is becoming increasingly critical in the running of a business. Data is used in real time for key business applications and for back-up to ensure the business can continue to operate. It is also used for archiving purposes, for example for legal reasons. The demand for secure, scalable and cost effective storage is increasing. Rather than trying to build this capability in-house, storage is an ideal fit for the cloud model by providing access to large scale, economic and resilient infrastructure.
+The benefits of Cloud Services
+• Lower Total Cost of Ownership
+Studies have shown that through the computing efficiency virtualisation delivers, IT operating costs can be reduced by up to 50% (through a reduction in server, space, power, and staff costs). The need for on-going capital expenditure is removed, particularly for technology refresh, with costs transferring to more predictable operating costs.
+Cloud solutions deliver high levels of resilience, whether through resource sharing within a single virtual platform or enabling high availability services across geographically dispersed systems.
+• Flexibility and Scalability
+As a business changes it can scale the amount of computing and storage capacity required in much shorter timeframes than would be required to implement new servers.
+This flexibility is ideal for IT staff that want to develop and test new applications without having to purchase and install new hardware.
+• Predictable Pricing
+The business will benefit from a managed service with known charges, and more granular costs of scaling.
+• IT Staff can focus on Core Activities
+Rather than staff spending their time keeping the servers running, they can focus on more business critical activities such as implementing new applications.
+• Less Risk
+The scale that cloud infrastructure enables allows business applications to be run in a more secure and resilient environment than could be created in-house unless substantial investment is made.

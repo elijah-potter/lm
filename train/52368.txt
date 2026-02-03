@@ -1,0 +1,16 @@
+Molecular Dynamics Example Program
+This program computes the position and energy of atoms arranges in a matrix.
+The temperature, kinetic energy, and potential energy is calculated given
+the position of each atom. The atoms are then moved to a new location based
+on the forces exerted upon them by other atoms.
+Converted from CM Fortran
+The MD code was originally developed at the
+Pittsburgh Supercomputing Center
+as for the TMC CM-2 computer. This code iteratively calculates the positions
+of Argonne atoms by calculating the force exerted on each atom by the
+other atoms and then moving the atoms new locations based on this force.
+Uses Dome's dVector Objects
+The code was originally written in CMFortran and used Fortran90 style arrays.
+Dome provides dVector objects which are similar to Fortran90 style arrays.
+Here we demonstrate the visualization of the movement of atoms and also how
+the dVector objects are load balanced over time:

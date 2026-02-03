@@ -1,0 +1,8 @@
+BUILT-IN MATHEMATICA SYMBOL
+is a notebook option that specifies whether the window for the notebook should become selected if you click it.
+- With WindowClickSelect->True, clicking the window corresponding to a notebook makes that notebook the currently selected one.
+- WindowClickSelect affects selection of a window as a whole; Selectable affects only selection of the contents of a window.
+Create a notebook that does not become the selected notebook when clicked:
+Clicking the "text" button pastes "text" into the currently selected notebook:
+With WindowClickSelect->True, clicking the button causes its notebook to be selected:
+New in 3

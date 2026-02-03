@@ -1,0 +1,7 @@
+PLEASE HELP!!! I dont know how to do this problem. Every time i try it keeps coming out wrong. PLEASE HELP. Thank you...
+An internet service provider has three different subscription package for its customer:
+Package A: For $9.95 per month 10 hours of access are provided. Additional hours are $2.00 and hour
+Package B: For $14.95 per month 20 hours of access are provided. Additional hours arer $1.00 an hour
+Package C: For $19.99 per month unlimited access is provided.
+write a program that calculates a customer's monthly bill. The program should ask for the package the customer has purchased. It should accept on character, A, B, or C. Any other character should display a message and halt the program. If the user enter A, or B, the program should ask for the number of hours used. The program should dispplay a bill for the customer showing the package, hours and total due.
+the program must contains at least one if statement and at least one switch statement.

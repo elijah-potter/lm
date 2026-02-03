@@ -1,0 +1,89 @@
+Anti-Stiction Coatings in MEMS Devices
+[Home | Technology | Drift]
+have been many exciting predictions that the future of micromachines or
+microelectromechanical systems (MEMS) is just "around the corner",
+but this future has proven to be slow in coming. Despite the demonstration
+of numerous MEMS devices and product concepts each year, a very small
+number have actually succeeded in the market place. Two prominent examples
+are the digital mirror device (DMD) of Texas Instruments, Inc. and the
+MEMS accelerometer of Analog Devices, Inc. While these two products are
+vastly different, one can identify a common ingredient in their formula
+of success: both companies successfully developed special surface coating
+technologies [1, 2]. Indeed, the difficulty in controlling surface forces
+is a critical impediment to the fabrication and operation of many MEMS
+devices [3, 4]. This is a consequence of the scaling law: the surface-to-volume
+ratio scales with the inverse of device dimension and surface forces dominate
+at length scales < 1mm.
+A well-known problem in the fabrication of MEMS devices from surface micromachining
+is stiction, which occurs when surface adhesion forces are higher than
+the mechanical restoring force of the micro-structure. When a device is
+removed from the aqueous solution after wet etching of an underlying sacrificial
+layer, the liquid meniscus formed on hydrophilic surfaces pulls the microstructure
+towards the substrate and stiction occurs. While this release-stiction
+problem may be alleviated by dry HF etching or supercritical CO2 drying,
+a more difficult problem is in-use stiction which occurs during operation
+when microstructures come into contact (intentionally or accidentally).
+In-use stiction may be caused by capillary forces, electrostatic attraction,
+and direct chemical bonding. To circumvent the stiction problem, many
+MEMS developers are forced to switch to bulk micro-machining, which is
+less capable and versatile than surface micromachining in terms of device
+function. Even for devices from bulk-micromachining, in-use stiction is
+still of concern, perhaps to a lesser extent.
+One attractive approach to tackle the stiction problem is to provide low-energy
+surface coating in the form of an organic passivation layer on the inorganic
+surface [3, 4]. Such a coating can not only eliminate or reduce capillary
+forces and direct chemical bonding, but also reduce electro-static forces
+if the thin organic layer is directly applied to the semiconducting substrate,
+without the intervening oxide layer [3,4 ]. Texas Instruments uses a fluorinated
+fatty acid self-assembled monolayer (SAM) on the aluminum oxide surface
+in their DMD , while Analog Devices coats the surfaces of their inertia
+sensors using thermal evaporation of silicone polymeric materials at the
+packaging stage after the device is completely released. Another much
+advocated approach is the formation of siloxane self-assembled monolayers
+(SAMs) on the oxide terminated surface, but the difficulty of this chemistry
+and the poor reproducibility put significant limitations on its practical
+In view of the critical importance of anti-stiction coatings in MEMS products,
+we are developing a number of chemical processes that possess the following
+attributes: (1) the chemistry is simple and reproducible; (2) the coatings
+are of monolayer nature and are covalently bonded to the substrate; (3)
+the coating processes are compatible with dry or aqueous etching processes;
+(4) the monolayers are chemically and mechanically stable under conditions
+of processing and operation. The design principle of the coating process
+is illustrated in scheme 1. A key component in the coating chemical is
+a molecule containing two major parts, R & X. The R group is
+selected to provide low surface energy, i.e., "wax" or "Teflon"
+like, while the X group is chosen to selectively react with the solid
+surface of interest for covalent linkage. The attachment of these molecules
+to the solid surface is a specially designed process which provides kinetic
+control; the reaction self-terminates after a saturated monolayer coverage
+is reached. This is very different from self-assembled monolayers (SAMs).
+Such a selective and kinetically controlled reaction ensures that the
+coating is uniform and conformal with solid surfaces in a MEMS device.
+The thickness of the coating is chosen to be 1-2 nm.
+Scheme 1. Design of low energy surface coating for MEMS devices. R
+represents a molecular group to give low surface energy and X is a functional
+group for selective attachment to the solid surface.
+1 shows a group of poly-Si cantilever beams completed released by the
+above coating process. The cantilever beam arrays (CBAs) are fabricated
+by the SUMMiT process of Sandia National Laboratory. A cross section of
+the structure is shown schematically in the upper part of the figure.
+The poly-Si beams, with thickness of 2.25 mm, are anchored at one end.
+The sacrificial PSG layer under each beam is ~2 mm thick. The bending
+of p-Si beams on each CBA sample is characterized by interference microscopy.
+Out-of-plane bending of the beams is shown as optical fringes; each fringe
+corresponds to the bending of l/2 or 311 nm. The lower part of figure
+1 shows typical images of beam arrays (2 mm in length) with alkoxyl coating.
+All beams are completely released. The fringes reflect (downward) bending
+due to residual stress. The maximum bending is ~1.8 mm. Therefore, the
+above monolayer coating process eliminates release stiction. Electro-static
+actuation of these coated beams also reveals little in-use stiction with
+relative humidity as high as 90% .
+1. Upper: schematic illustrate of a cantilever; lower: Interference
+microscope image of cantilever beam arrays with beam length of 2
+mm. The image (composite of three frames) is obtained after the
+beams are released in an all-liquid etching-coating process.
+ L. J. Hornbeck, US Patent 5602671 (1997).
+ J. R. Martin and Y. Zhao, US Patent 694740 (1997).
+ M. P. de Boer and T. M. Mayer, MRS Bulletin, 26, 302-304
+ R. Maboudian, Surf. Sci. Rep. 30, 207-269 (1998).
+ Y. S. Jun, X.-Y. Zhu, J. Adh. Sci. Technol. (special MEMS issue) 17, 593-601 (2003)

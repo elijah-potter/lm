@@ -1,0 +1,32 @@
+Radiology transcription involves transcribing recordings of imaging studies such as computed tomography (CT), magnetic resonance imaging (MRI), nuclear medicine, X-ray exams, ultrasound and so on. It is on the basis of the imaging study that the radiologist prepares a report summarizing the findings and impressions. Apart from having the reports prepared by human transcriptionists, hospitals and other healthcare organizations also use speech recognition technology nowadays to obtain transcripts. Before going on to the question of accuracy of transcripts prepared by the software system, let us consider the content of radiology reports. The sections within a radiology report include the following, and may contain complex medical and anatomical terms.
+- Â Type of Exam: This section indicates the type of imaging exam along with the date and time.
+- Clinical History: This contains patient information such as age, gender, relevant clinical information including any health condition and symptoms, any suspected/known diagnosis, and indication/reason for the imaging study, and the clinical question being asked.
+- Comparison: This section will list the comparison of the patientâ€™s imaging study with any of his/her previous imaging studies.
+- Technique: How the imaging study was performed (will also include whether or not a contrast material was used).
+- Findings: The radiologistâ€™s observations and findings regarding the specific areas of the body examined in the imaging study â€“ whether normal, abnormal or potentially abnormal.
+- Impression: This is the most important part of the radiology report because here the radiologist provides a diagnosis combining the findings, clinical history of the patient and indication for the imaging study.
+Radiologists rely on in-house radiology transcription or outsourced radiology transcription service to get the transcripts of their audio recordings. However, as mentioned earlier, with increasing digitization in the healthcare sector, EHRs and automatic speech recognition technology are also occupying central stage now. Radiology reports need to be highly accurate to ensure appropriate medical decision making. The question is how effective and accurate is speech recognition technology compared to a human transcriptionist?
+A study published in JACR (Journal of the American College of Radiology) examined the frequency and spectrum of significant dictation errors in finalized radiology reports generated with speech recognition software. It was found that around 78% of reports contained no significant errors whereas 22% contained errors. No significant error rates were noticed between native and non-native English speakers or between reports dictated by faculty members alone and those dictated by trainees and signed by faculty members. The most common errors were nonsense phrases, missing words and wrong word substitution. The study authors conclude that more than 20% of the reports they examined contained potentially confusing errors, and most radiologists believed that report error rates were much lower than they actually were. The researchers say that knowledge of the frequency and spectrum of errors should increase awareness of this problem and facilitate methods for report improvement.
+According to The Joint Commission, speech recognition technology despite its many benefits can lead to adverse outcomes. The issues with this technology include:
+- Â Inappropriate use and expectations of the capabilities of this technology
+- No standards for style, grammar and readability; minimal certification standards, continued education or professional development of transcriptionists
+- Mismanagement of speech recognition technology with degradation of translation accuracy over time
+- Unclear roles and standards for transcription editors
+Apart from the above mentioned issues, comprehensive QA and process improvement programs for healthcare documentation are insufficient and lead to minimal regulatory oversight, lack of liability and inadequate monitoring of documentation processes.
+So what are the reasons for these errors?
+- Â Human factors such as voice accent and tone that have an impact on the translation of the speech recognition into the medical record.
+- When the physician has to edit the transcript prepared by the software, they may not always have the time to edit and proofread the transcript.
+Various steps have been suggested to ensure accuracy of medical transcripts in general, which are relevant to radiology transcription as well.
+- Â QA at every step of the voice to text process. This should include best practices in dictation, good audio quality, continuing education, and maintaining all aspects of the technology.
+- Ensure that all documentation authors and transcription staff are knowledgeable regarding policies and procedures.
+- Focus on developing critical thinking skills in the transcription team.
+- Have clear guidelines for implementing dictator style preferences, and better awareness of technology such as electronic health record.
+- Encourage using the AHDIâ€™s Book of Style for medical transcription.
+- Have guidelines to handle blanks, discrepancies and inappropriate use of verbatim transcription.
+- Create policies and procedures to monitor quality of documentation produced by clinicians either via keyboard or speech recognition.
+- Establish policies and procedures for monitoring quality of documentation produced by clinicians using free-text entry via keyboard or speech recognition.
+- Have a feedback policy for medical transcriptionists and authors that is education based. All errors should be identified in their particular context. Keep track of improvements made after intervention and identify any trends.
+- Ensure quality assessments at appropriate intervals.
+- Evaluate distinctive factors that affect the outcome of the documentation process â€“ workflow, technology and turnaround time.
+- Encourage medical transcription and medical records departments to have ongoing quality improvement programs.
+Radiologists can implement effective quality assurance measures and also ascertain that all issues associated with outsourcing medical transcription are addressed efficiently. This will help obtain accurate radiology reports and ensure the most appropriate medical decision making.

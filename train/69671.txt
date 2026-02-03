@@ -1,0 +1,41 @@
+NASA today announced it has found first solar system just like ours with EIGHT planets… boosting the chances of finding ALIEN life elsewhere in the Universe.
+With the help of artificial intelligence, scientists scouring data from NASA’s Kepler Space Telescope have discovered an eighth planet around the star known as Kepler-90.
+The find sets a new record for the most exoplanets around a single star and, for the first time, ties with our own.
+The planet Kepler-90i, described at a briefing Thursday and detailed in a paper accepted for publication in the Astronomical Journal, demonstrates that other stars can indeed host planetary systems as populous as our own solar system.
+“Kepler has already shown us that most stars have planets,” said Paul Hertz, director of NASA’s Astrophysics Division in Washington. “Today Kepler confirms that stars can have large families of planets just like our solar system.”
+The discovery also establishes an important role for neural networks and other machine-learning techniques in the hunt for planets outside our own solar neighborhood.
+Kepler-90i orbits a sun-like star located 2,545 light-years away in the constellation Draco. Like Earth, Kepler-90i is the third rock from its sun — though it sits much closer, circling its star every 14.4 days.
+Two small planets within its orbit, known as 90b and 90c, revolve around Kepler-90 every seven and nine days, respectively.
+The next three planets beyond Kepler-90i — 90d, 90e and 90f — fall into a sub-Neptune size class and complete an orbit every 60, 92 and 125 days, respectively. The two most distant planets, 90g and 90h, are Jupiter-class gas giants, and take 211 and 332 days to make a round trip.
+All of the planets except for 90i were previously known. That tied the Kepler-90 system with the seven-planet Trappist-1 system for the honor of most populous known exoplanet solar system.
+In some ways, the Kepler-90 system echoes our own solar system, with small rocky planets (Mercury, Venus, Earth, Mars) closer in to the sun and larger, more gas-rich ones (Jupiter and Saturn, Neptune and Uranus) lying farther out.
+Scientists think there’s a reason the larger planets orbit farther from their sun: It’s the cool place to be.
+“In our own solar system, this pattern is often seen as evidence that the outer planets formed in a cooler part of the solar system, where ice can stay solid and clumped together to make bigger and bigger planets,” said Andrew Vanderburg, an astronomer at the University of Texas at Austin and an author of the forthcoming study.
+The same phenomenon could be at work here around Kepler-90, scientists said.
+But the exoplanet system differs from ours in at least one major way: The orbits of all eight planets would lie well within that of Earth, which takes 365 days to circle the sun.
+Scientists said they weren’t sure why the Kepler-90 system has such a crowded field. Perhaps some of the planets formed farther out and were eventually drawn inward, they said.
+Regardless, it means that Kepler 90i, third rock though it may be, is too hot to be habitable.
+“Kepler-90i is not a place I’d like to go visit,” Vanderburg said, adding that the planet probably has an average temperature of about 800 degrees Fahrenheit.
+The Kepler Space Telescope was launched in 2009 to search for Earth-like planets around distant, sun-like stars. For four years it stared at a single patch of sky holding more than 150,000 stars, looking for the tiny, recurring dips in light caused by a planet as it repeatedly passed in front of its stellar host.
+After problems with its reaction wheels left the spacecraft hobbled in 2013, scientists and engineers focused it on new targets, renaming it the K2 mission. To date, the spacecraft has discovered 2,525 confirmed planets.
+“We’ve come a long way in our understanding of planetary systems,” said Jessie Dotson, Kepler’s project scientist at NASA’s Ames Research Center in Northern California, which manages the Kepler and K2 missions.
+Though Kepler is still searching the skies, the data it has already sent back could contain evidence of even more exoplanets.
+But finding them will be a challenge, said study coauthor Christopher Shallue, a senior software engineer with the Google AI research team. To do it, scientists have to select the strongest signals and then examine them with both human eyes and automated tests to determine which ones are real.
+So far, out of 30,000 signals, only about 2,500 have turned out to be actual planets.
+“The process is like looking for needles in a haystack,” Shallue said.
+If you want to search for planets among Kepler’s weaker signals — which are far more numerous — then that haystack gets “much, much larger,” he added.
+“There are simply too many weak signals to examine using the existing methods,” Shallue said. “But machine learning really shines in situations where there is too much data for humans to examine for themselves.”
+That’s why Shallue and Vanderburg developed a neural network, a type of machine-learning technique that can learn to identify patterns in large data sets.
+“The key idea is to let the computer learn by example instead of humans programming specific rules,” Shallue said.
+To work properly, a neural network needs lots of practice. The scientists “trained” theirs using a set of 15,000 Kepler signals that had already been studied and properly labeled by humans. Using that data, the program learned to identify the signatures of actual planets and distinguish them from false positives.
+When the scientists finally tested their neural network on signals that it had not seen before, it correctly sorted the planets from the false positives a whopping 96% of the time, Shallue said.
+Using the neural network, the scientists were able to discover new planets in old data — Kepler-90i, as well as a sixth planet in a different star system, Kepler-80g. Kepler-80g is an Earth-sized planet that is gravitationally locked in a resonant chain with four of its fellow planets, forcing them to orbit their star almost as if they were all moving to the music of a highly choreographed dance.
+“This new method found something that was extremely hard to find otherwise,” said Sara Seager, an astrophysicist at MIT who was not involved in the work.
+These discoveries are just the beginning, the scientists said. Shallue said they already had ideas for how to improve the neural network. Once those improvements are in place, they also plan to search all 150,000 or so stars in the Kepler data set to hunt for planets that are similar to Earth.
+“I’m so excited to see where this goes next,” Dotson said.
+Many scientists had hoped that Kepler’s original mission would last far longer than four years, allowing it to find a significant number of Earth-sized planets in Earth-sized orbits around sun-like stars.
+And while that search was cut short, this AI-based method could allow researchers to go back into the data and fulfill that goal, said Seager, the deputy science director for NASA’s Transiting Exoplanet Survey Satellite, set to launch next year.
+Finding some of those key planets hiding in Kepler’s data “would be incredible,” Seager said.
+As for Kepler-90, its planetary system could have more than eight planets, the scientists pointed out — they could just lie farther away from the star and not have orbited enough times for Kepler to have spotted them during its primary mission.
+“There’s a lot of unexplored real estate in the Kepler-90 system,” Vanderburg said, “and it would almost be surprising to me if there weren’t any more planets around this star.”
+As more high-population planetary systems are found, he added, our own home among the stars may start to look surprisingly ordinary.

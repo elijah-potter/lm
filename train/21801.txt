@@ -1,0 +1,70 @@
+Hacking is the practice of entering a computing system and exploring its weaknesses, including both hardware and software. This exploration is intended to either improve the system’s weaknesses or exploit them and harm the end user.
+Hacking takes a variety of forms, including:
+- Eavesdropping and intercepting Wi-Fi network sessions
+- Entering networks through unsecured hardware, such as IoT devices
+- Sending links that contain malware, which downloads onto a device once the link is clicked
+- History of hacking
+- Internet hacking techniques
+- Android hacking
+- iOS and Mac hacking
+- Ethical hacking and penetration testing
+- How to prevent hacking
+History of hacking
+Initially, the term “hack”, which originated in the 1960s, meant delving deeply into electronic systems to improve them. Tech companies still use this positive connotation for their explorative ventures today. Telephone hacking wasn’t commonly called “hacking” in the 1970s, rather “phreaking.” It constituted electronic manipulation of telephone systems to make independent calls without paying for services.
+Two movies made the concept of hacking more popular: Tron, 1982, which described breaking into a computer system as “hacking” into it, and War Games, 1983, in which a teenager navigates to a high-security computer system that manages U.S. nuclear weapons. In real life, two famous teenage hacking groups—the Inner Circle and the 414s—breached significant medical, financial, and government organizations’ computer systems during the 1980s. Companies hacked included the Los Alamos National Laboratory, the Sloan-Kettering Cancer Center, and Security Pacific Bank.
+The 1980s provided personal computers to ordinary people, not just businesses or government agencies, and few security protocols had been yet developed. That availability allowed young computer enthusiasts to find their way to unauthorized information and data.
+In 1986, Congress enacted the Computer Fraud & Abuse Act. This law attempted to emphasize the legal consequences that hackers would experience if they broke into computer systems, since criminality and punishment hadn’t been fully established yet.
+The concept of hacking continued to increase in popularity and featured in films and television programs. Hacking has also become a persistent threat to not only governments and large enterprises but also small businesses and all computer and mobile device users.
+Because so many organizations are now heavily dependent on computing, the right hacking method can significantly damage nationwide business processes. In 2014, years ago, 783 data breaches were reported. In 2020, according to Atlas VPN, 63 percent of cyberattacks were intended for financial gain, and 81 percent of those were ransomware attacks. The average ransomware attack cost businesses $4.44 million in 2020, Atlas said.
+Internet hacking techniques
+Web browser-based hacking ranges from infection by malicious download to sophisticated Internet session interception. The following examples are some of the most common methods of Internet hacking:
+- Fake WAP (wireless access point)—a Wi-Fi network created by a hacker, typically intended to impersonate a legitimate Wi-Fi source
+- Bait and switch—a tactic to purchase legitimate advertising space and then switch the good link to a malicious link once the ad space has been approved by the selling company
+- Credential reuse—theft of an Internet user’s session details (such as login credentials) to use for a later session
+- Credential stuffing—entry of many stolen credentials into an application portal until the right one works
+- SQL injection—false SQL commands made through an insecure database that’s connected to the Internet
+- Browser locking—the false indication that a user’s entire browser has been locked for alleged illegal activity by the user
+- Cookie theft—a form of session hijacking in which a hacker accesses a computer or device using the cookies installed by a web application or browser
+- IoT attacks—access to a network gained by using an IoT device, such as a smart speaker or smart home system, which are less likely to be secured than computers or phones
+- DDoS attacks—a method of temporarily disabling a web server by flooding it with an absurd number of IP requests
+- DNS spoofing (or cache poisoning)—insertion of false Domain Name System (DNS) data to reroute a computer user to a different IP address than the one initially requested
+- Browser hijacking—information, such as advertisements, placed into a user’s browser without their permission
+- Ransomware—the unwanted encryption of an individual or a company’s data, in which the victim doesn’t have the decryption key and the hacker demands a ransom to retrieve the data
+- Trojan horses—legitimate-looking malware that, once downloaded, can make its way through a computer system and influence application behavior
+- Viruses—unwanted code installed onto a user’s device, often through insecure websites or downloaded software that contains malware
+- Worms—malware that can move between computer systems independently, uncontrolled by a hacker once they are released
+- Phishing—a broad range of hacking and social engineering techniques that attempt to trick users into giving information
+The Android operating system and its code are based on open source. Because of this, it’s easier for attackers to find weaknesses in the operating system and in the mobile devices using it.
+For Android devices, security partly depends on the device manufacturers and how they design security within the hardware. Android users are able to customize their operating system better, but that same flexibility also opens the door for more threats. Androids are particularly vulnerable to malware, especially trojans. Trojans sent to Android devices through SMS contain links with malicious code.
+iOS and Mac hacking
+iOS (for Apple phones) and macOS (for Macbook computers) have heavy built-in security from Apple. Apple’s operating systems are built on proprietary, secured code; Apple has control over all updates and code. Users can only download apps that Apple permits, though that doesn’t mean that suspicious ones won’t slip through the cracks.
+It’s more difficult for attackers to hack Apple operating systems, but it’s also hard to discover when a threat has entered the system. According to Malwarebytes, Apple’s unwillingness to work with outside developers and its extremely tight and inflexible systems can make threat detection very challenging once a threat actually does infiltrate an Apple device.
+Macs have seen cyberattacks, too: in 2017, a phishing campaign emailed a Trojan horse in the form of links to European computer users. Vulnerabilities Meltdown and Spectre both affect Macs, too. Calisto, a variant of Proton malware that attacked macOS, went undetected for two years within Mac operating systems.
+Ethical hacking and penetration testing
+Ethical hacking is an exploration of computer systems to locate their vulnerabilities and then improve them using that knowledge. The organizations that hire ethical hackers delineate how they can enter and monitor a system. Often, hackers need to be certified to perform these jobs.
+Since the 1980s, when teenage hacking groups accessed government and corporate Internet servers, hackers have sometimes had an edge over those whose resources they attack. Security systems and software for computers are defensive mechanisms, intended to prevent an attack that is assumed to come. Ethical hacking is a way for businesses to take a more offensive approach to security and potentially put them ahead of cyber criminals.
+Penetration testing is a common method of ethical hacking. Penetration testing, or pen testing, can also focus on the employees of the company, since people are one of an organization’s greatest cybersecurity threats. A hired pen tester might test a company’s network, often by planting planned phishing attacks such as malicious emails, to see how employees respond.
+How to prevent hacking
+Prevention methods differ somewhat between private device users and organizations. Some of the basics that everyone should employ are:
+- Use strong account passwords and strictly limit password reuse.
+- Avoid websites that don’t have https (look for a lock at the beginning of the URL; if it says http or the browser alerts you that it’s insecure, don’t enter any personal information on that site).
+- Download only trusted PDFs and software from reliable, secured websites; make sure that the site is popular and reputable and look for software reviews if relevant.
+- Using password management software to store and safely share credentials
+- Using a firewall (this is the bare minimum; enterprises should employ stricter security controls aside from a firewall)
+- Maintaining anti-malware or antivirus software on employee computers using reliable MDM solutions
+- Performing patches and updates on software and operating systems for all company owned devices and servers within offices and data centers.
+- Requiring two-factor authentication for important company applications
+- Employing a zero trust architecture within the entire company network
+- Creating a strict bring your own device policy for all employees
+- Avoiding any open Wi-Fi networks while accessing company resources
+Other prevention methods, particularly for phones and computers, include:
+- Turning off Bluetooth capabilities
+- Clearing browser history regularly
+- Using stronger passwords and passcodes
+Security companies that offer anti-malware and anti-spyware programs include:
+- Norton Security
+Password management systems for handling passwords more securely include:
+- Sticky Password
+Also see hacker.
+This article was updated June 2021 by Jenna Phipps.
+This article includes research and content contributed by Nina Rankin.

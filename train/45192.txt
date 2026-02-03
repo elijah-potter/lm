@@ -1,0 +1,11 @@
+A series combination of resistors involves a connection in which one end of a resistor connects to another end of the resistor and there is no other connection in between them.
+Circuit Diagram of Series Resistors
+The figure below displays three resistors in series configuration:
+Formula to Solve Series Resistors
+The total or equivalent resistance of series resistance can be calculated using the following formula:
+Req = R1 + R2 + … + Rn
+In case of three resistors:
+Req = R1 + R2 + R3
+Series Resistors Solved Examples
+Find the equivalent resistance of two resistors of 5 and 10 ohms connected in series.
+Req = R1 + R2 = 5 + 10 ohms = 15 ohms

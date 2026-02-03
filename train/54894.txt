@@ -1,0 +1,15 @@
+It is assumed that the basic facts about the length of the period of a decimal fraction are known. Here is an example how such a period length can actually be computed, even with modest means.
+The example is with a prime number, p=523. In this case, it is known that the period length is a factor of p-1. For general (not necessarily prime) n the same method can be employed, but then not with n-1 but with phi(n) which in turn is n-1 if and only if n is prime. In practice, this is not recommended: in order to compute phi(n), one has to decompose n into prime factors, and if one has done that, it is easier to compute the period lengths for the factors of n separately.
+The factorisation of p-1 is: 522 = 2 * 3 * 3 * 29
+|i||10i mod 523||equals|
+|7||107 mod 523||240|
+|14||2402 mod 523||70|
+|29||(702*10) mod 523||361|
+|58||3612 mod 523||94|
+|87||(361*94) mod 523||462|
+|174||4622 mod 523||60|
+|261||(462*60) mod 523||1|
+This computation always ends with 1 because ap-1 mod p = 1 for all 0<a<p. If not, then either p is not a prime or you have made a mistake somewhere.
+The period length has to be a factor of 261 but none of the numbers in the list. The only factors that remain are 1, 2, 3, 6, 9, 18.
+(Since 18 is so small, you can take a shortcut: 109 mod 523 is neither 1 nor -1, so there is no need to compute 1018 mod 523.)
+No further i with 10i mod 523 are found. Thus the answer is 261.

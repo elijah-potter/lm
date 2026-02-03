@@ -1,0 +1,11 @@
+Welcome to the Virus Encyclopedia of Panda Security.
+It allows to carry out dangerous actions for the victims of attacks.
+It does not spread automatically using its own means.
+|First detected on:||Feb. 4, 2007|
+|Detection updated on:||Feb. 4, 2007|
+Exploit/IESlice.A is a hacking tool. These are programs designed to enable malicious users to cause or facilitate action detrimental to the target computer.
+However, under certain circumstances (for example with network administrators), they could be used to check the security status, possible attack channels (in order to minimize risks), etc.
+These tools, even though they are not by nature viruses, are considered as dangerous to victims of attacks.
+Exploit/IESlice.A uses the following propagation or distribution methods:
+- Exploiting vulnerabilities with the intervention of the user: exploiting vulnerabilities in file formats or applications. To exploit them successfully it needs the intervention of the user: opening files, viewing malicious web pages, reading emails, etc.
+- File infection: it infects different types of files, which are then distributed through any of the usual means: floppy disks, email messages with attachments, Internet download, files transferred via FTP, IRC channels, P2P file sharing networks, etc.

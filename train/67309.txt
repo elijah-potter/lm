@@ -1,0 +1,11 @@
+The cp command in the Linux command line is used frequently by the command line users to copy a file or directory from one location to another. It comes with a lot of options for the users to utilize them in different cases.
+One such option allows us to preserve the permissions and ownership of the file or directory while copying it from one location to another. In this tutorial, we will learn about managing the ownership settings while copying a file or directory.
+Preserving permissions and ownership while copying with cp command
+The -a or –archive option when used with the cp command will automatically preserve the file ownership permissions. For example :
+cp -a file1.txt Documents/
+Similarly, you can copy a directory using the -c option along with cp command like this :
+cp -a Documents/ doc123
+-a option is pretty much the same as
+-dR --preserve=all, which will preserve links, copy directories recursively, and preserve file permissions and ownership, respectively.
+You can also use it along with the other command options such -v for verbose to print out all the things that cp command is doing.
+Well, that’s about it. If you have any doubts regarding the cp command, you can ask in the comments or look at the manual page. You can also check out this guide to learn more about the practical uses of the cp command with examples.

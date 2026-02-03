@@ -1,0 +1,32 @@
+||This article may require cleanup to meet Wikipedia's quality standards. (January 2012)|
+A single-page application (SPA), also known as single-page interface (SPI), is a web application or web site that fits on a single web page with the goal of providing a more fluid user experience akin to a desktop application.
+The term single-page application was coined by Steve Yen in 2005, though the concept was discussed at least as early as 2003. and Stuart (stunix) Morris wrote the Self-Contained website at http://slashdotslash.com with the same goals and functions in 2002.
+|This section is empty. You can help by adding to it. (May 2013)|
+There are various techniques available that enable the browser to retain a single page even when the application requires server communication.
+Data transport (XML, JSON and AJAX)
+Thin server architecture
+An SPA moves logic from the server to the client. This results in the role of the web server evolving into a pure data API or web service. This architectural shift has, in some circles, been coined "Thin Server Architecture" to highlight that complexity has been moved from the server to the client, with the argument that this ultimately reduces overall complexity of the system.
+Thick server architecture
+Some SPAs may be executed from a local file using the file URI scheme. This gives users the ability to download the SPA from a server and run the file from a local storage device, without depending on server connectivity. If such an SPA wants to store and update data, it must be self-modifying.[dubious ] That is, the SPA must be capable of writing itself to disk, including a representation of the state that is to be persisted. These applications benefit from advances available with HTML5, particularly Web Storage.
+Challenges with the SPA model
+Because the SPA is an evolution away from the stateless page-redraw model that browsers were originally designed for, some new challenges have emerged. Each of these problems has an effective solution with:
+- Server side web frameworks that specialize in the SPA model.
+- The evolution of browsers and the HTML5 specification aimed at the SPA model.
+Search engine optimization
+citation needed], SEO has historically presented a problem for public facing websites wishing to adopt the SPA model.[
+Google currently crawls URLs containing hash fragments starting with #!,. This allows the use of hash fragments within the single URL of an SPA. Special behavior must be implemented by the SPA site to allow extraction of relevant metadata by the search engine's crawler. For search engines that do not support this URL hash scheme, the hashed URLs of the SPA remain invisible.
+Alternatively, applications may render the first page load on the server and subsequent page updates on the client. This is traditionally difficult, because the rendering code might need to be written in a different language or framework on the server and in the client. Using logic-less templates, cross-compiling from one language to another, or using the same language on the server and the client may help to increase the amount of code that can be shared.
+Because SEO compatibility is not trivial in SPAs, it's worth noting that SPAs are commonly not used in a context where search engine indexing is either a requirement, or desirable. Use cases include applications that surface private data hidden behind an authentication system. In the cases where these applications are consumer products, often a classic "page redraw" model is used for the applications landing page and marketing site, which provides enough meta data for the application to appear as a hit in a search engine query. Blogs, support forums, and other traditional page redraw artifacts often sit around the SPA that can seed search engines with relevant terms.
+With an SPA being, by definition, "a single page", the model breaks the browser's design for page history navigation using the Forward/Back buttons. This presents a usability impediment when a user presses the back button, expecting the previous screen state within the SPA, but instead the application's single page unloads and the previous page in the browser's history is presented.
+An SPA is fully loaded in the initial page load and then page regions are replaced or updated with new page fragments loaded from the server on demand. To avoid excessive downloading of unused features, an SPA will often progressively download more features as they become required, either small fragments of the page, or complete screen modules.
+In this way an analogy exists between "states" in an SPA and "pages" in a traditional web site. Because "state navigation" in the same page is analogous to page navigation, in theory any page based web site could be converted to single-page replacing in the same page only the changed parts result of comparing consecutive pages in a non-SPA.
+The SPA approach on the web is similar to the Single Document Interface (SDI) presentation technique popular in native desktop applications.
+- "Inner-Browsing: Extending Web Browsing the Navigation Paradigm". Retrieved 2011-02-03.
+- "Slashdotslash.com: A self contained website using DHTML". Retrieved 2012-07-06.
+- "Thin Server Architecture Working Group". Retrieved 2011-12-11.
+- "The Single Page Interface Manifesto". Retrieved 2010-11-12.
+- "Derby". Retrieved 2011-12-11.
+- "Sails.js". Retrieved 2013-02-20.
+- "nCombo". Retrieved 2013-01-31.
+- "Tutorial: Single Page Interface Web Site With ItsNat". Retrieved 2011-01-13.
+- "Making AJAX Applications Crawlable". Retrieved 2011-01-13.

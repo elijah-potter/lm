@@ -1,0 +1,24 @@
+December 26, 2017 weblog
+Introducing Neural Image Assessment for judging photos
+Surely computer software could not judge pictures the way we do? Attaching numerical scores to technical details is one thing, but don't we view with our hearts as well as our brains?
+Well, when Google researchers are involved in AI projects, never say never. A team aims to have an approach that can land in the critic's chair to assess photos.
+In a Dec. 18 posting on the Google Research Blog, Hossein Talebi, software engineer, and Peyman Milanfar, research scientist, Machine Perception, explained how their approach comes closer to guessing what humans like than previous approaches.
+Say hello to the Neural Image Assessment (NIMA) system, which can closely replicate the mean scores of humans when judging photos.
+"Recently, deep convolutional neural networks (CNNs) trained with human-labelled data have been used to address the subjective nature of image quality for specific classes of images, such as landscapes. However, these approaches can be limited in their scope, as they typically categorize images to two classes of low and high quality. Our proposed method predicts the distribution of ratings."
+Their paper, "NIMA: Neural Image Assessment," is up on arXiv. Authors are Talebi and Milanfar. The deep CNN that they introduced was trained to predict which images a typical user would rate as looking good (technically) or attractive (aesthetically)."
+The Blog called up the different factors that determine photo quality from measuring pixel-level degradations to aesthetic assessments capturing semantic-level characteristics tied up with emotions and beauty.
+Jon Fingas, Engadget, remarked: "If Google has its way, though, AI may serve as an art critic."
+After all, ratings are based on what it thinks you would like, technically and aesthetically.
+Fundamentally, the researchers are working toward a better predictor of human preferences.
+"The goal is to get a quality score that will match up to human perception, even if the image is distorted. Google has found that the scores granted by the assessment are similar to scores given by human raters," said Shannon Liao in The Verge.
+Fingas stepped readers though the process:
+"It trains on a set of images based on a histogram of ratings (such as from photo contests) that give a sense of the overall quality of a picture in different areas, not just a mean score or a simple high/low rating."
+The authors blogged that their work on NIMA suggested quality assessment models based on machine learning may be capable of useful functions.
+They may enable users to easily find the best pictures among many; or to enable improved picture-taking with real-time feedback.
+However, they said, "we know that the quest to do better in understanding what quality and aesthetics mean is an ongoing challenge—one that will involve continuing retraining and testing of our models."
+Why this matters: Their work indicates a way not only to score photos with a high correlation to human perception, but to optimize photo editing.
+Fingas: "While there's a lot of work to be done, this hints at a day when your phone could have as discerning a taste in photos as you do."
+Liao: "One day, the company hopes that AI will be able to help users sort through the best photos of many, or provide real-time feedback on photography."
+— Research paper: NIMA: Neural Image Assessment, arXiv:1709.05424 [cs.CV] arxiv.org/abs/1709.05424
+Automatically learned quality assessment for images has recently become a hot topic due to its usefulness in a wide variety of applications such as evaluating image capture pipelines, storage techniques and sharing media. Despite the subjective nature of this problem, most existing methods only predict the mean opinion score provided by datasets such as AVA  and TID2013 . Our approach differs from others in that we predict the distribution of human opinion scores using a convolutional neural network. Our architecture also has the advantage of being significantly simpler than other methods with comparable performance. Our proposed approach relies on the success (and retraining) of proven, state-of-the-art deep object recognition networks. Our resulting network can be used to not only score images reliably and with high correlation to human perception, but also to assist with adaptation and optimization of photo editing/enhancement algorithms in a photographic pipeline. All this is done without need of a "golden" reference image, consequently allowing for single-image, semantic- and perceptually-aware, no-reference quality assessment.
+© 2017 Tech Xplore

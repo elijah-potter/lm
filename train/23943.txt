@@ -1,0 +1,125 @@
+Any graphical image, including printed and electronic pages,
+and computer software displays and GUIs (graphical user interfaces)
+color theory, context, background, figure-ground relationships,
+color shift, fluting, ambient light, psychological associations
+. . .
+effective use of color to help convey a message is described in
+Color Is Information,
+but colors change depending upon the context
+in which they are used.
+When the same color is used in different contexts the perception
+of that color can change radically.
+On Color Theory
+Color is a deep subject.
+and designers spend a long time mastering color theory.
+Perhaps the world's foremost master of color is Josef Albers,
+whose paintings are essentially case studies in color,
+demonstrating how the same color can look
+radically different (or even how
+two different colors can look the same) depending upon
+We won't attempt a complete Albers color course here, but
+we can provide a few pointers about how color perception is
+contingent upon the context, including background and adjacent colors,
+ambient and reflected light, and psychological associations.
+Everything we see consists of colors, including shades of grey,
+black and white.
+As an experiment cut black or white areas from magazine photos
+and place them together. Not only will one black appear dark
+grey against a "blacker black", but you will see that most of
+what we perceive as black is in fact dark blue, purple, green,
+red and so forth. Similarly, what we perceive as white is in
+fact a very light color.
+A single color may look very different on different backgrounds.
+This effect is easiest to achieve with secondary colors placed
+on their constituent primaries: an orange will look more red
+on yellow, and more yellow on red.
+The effect can also be achieved by placing a low-saturation (greyish)
+color on background colors it is between within the color wheel.
+Consider this medium grey.
+We can change the color we perceive it to be by varying its context
+To illustrate let's experiment with two other colors we wouldn't normally
+think "go together" with grey, colors we'll call "olive" and "lavender".
+If we place this grey in the middle of an olive and a lavender field,
+it appears to be two very different colors.
+Because the colors are of similar saturation and value,
+the grey on the olive
+looks almost like the lavender, and the grey on the lavender
+looks almost like the olive. This effect becomes stronger as one stares
+at the edge between the lavender and the olive.
+If we place the grey between the olive and lavender it begins to
+"flute", that is, its right edge looks like the color on its left,
+and its left edge looks like the color on its right.
+becomes more pronounced the more one stares at one edge of the
+grey, then shifts the stare to the other edge of the grey.
+Similar effects can be used to create illusions of transparency.
+The fluting effect can be further extended if we place a darker
+olive on the left and a brighter lavender on the right.
+Notice how the original olive and lavender now also flute just
+like the original grey.
+Also notice that the effect is more pronounced on the lavender
+end of the spectrum because those colors are brighter.
+If we place these same five colors together in a narrow band
+they begin to look like one continuous airbrush effect.
+This is because the colors of each adjacent pair are very close to each other,
+making the edges between them very soft.
+This can be used to an advantage.
+For example, a painting may utilize all sorts of colors for skin tones,
+including violets and greens, that blend together at a distance to
+appear quite realistic.
+On the other hand, this would be a poor choice for figure-ground
+relationships that require high definition, such as type on a
+At the other extreme are highly contrasting colors
+that create hard edges.
+But certain contrasting colors placed together will
+create an edge that "vibrates" optically.
+Adjacent colors will vibrate if they are
+highly saturated (vivid) and roughly the same value (brightness or intensity).
+The effect is most pronounced with complementary hues
+(colors diametrically opposed to each other in the color wheel).
+While this may be effectively used for applications like op art, you
+(usually) don't want to force people to read vibrating text.
+Ambient and reflected light conditions also affect color.
+Take a close look at the shiny surface such as that of a car.
+It may actually contain a miriad of colors in the reflections,
+and change radically from day to night, yet we perceive it to
+be the same color.
+Photographers capitalize on this by "bouncing" different types
+of light onto their subjects.
+Even the color of your clothes can change the colors you perceive,
+or the complexion others perceive you to have.
+People make all sorts of associations with certain colors, and artists
+and designers use them all the time, but these associations are highly
+For example, in one context a
+may seem "happy" or "festive"; in another it may seem "fruity".
+Or consider associations with blue:
+feeling blue, a financial balance in the blue, cool blue water,
+blue suit executives, a blue corpse and blue movies
+have few connotations in common.
+Across cultures common associations with color are even more variable.
+Be careful of applying cliched meanings to colors.
+Use colors that are appropriate for the context.
+Consider how color perception changes depending upon the
+physical and psychological setting:
+Colors shift relative to their backgrounds:
+a green looks more yellow on blue, more blue on yellow.
+Similar colors next to each other will have soft edges that
+Saturated complementary colors next to each other will
+have hard edges that vibrate.
+Ambient and reflected light alters color perception.
+Psychological associations with different colors are situation specific.
+These effects can work for you or against you depending
+upon your intent.
+Interaction of Color,
+Yale University Press, New Haven, CT, 1975.
+Graphic Design for Electronic Documents and User Interfaces,
+chapter 4, Color,
+ACM Press, 1992.
+Exploring Color in Interface Design,
+Subing, Falk & Johansen,
+Interactions magazine, July/August, 1996.
+Gary Swift, 20 August 1996
+This pattern was originated by the author at INTERACTIVE
+Systems, Corp. in 1989, for the CUI interface to the
+bootstrap of INTERACTIVE UNIX which was highly constrained by
+the 16-color PC/AT palette.
+Saturday, 22-Sep-2012 18:29:33 MDT

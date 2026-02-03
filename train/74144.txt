@@ -1,0 +1,13 @@
+» Coloring Numbers Based on Specific Criteria Using Conditional Formatting
+To color numbers based on specific criteria using Conditional Formatting:
+1. Select a range of cells, and from the Format menu, select Conditional Formatting.
+2. For Condition 1, select Cell Value Is and less than from the dropdown lists,
+and in the text box, type 0.
+3. Click Format, and then select the Font tab.
+4. From Color, select red, and then click OK.
+5. Repeat steps 2 through 4 and add two more conditions for numbers less than 5000
+and for numbers equal or greater than 5000.
+For each condition, click Format, select the Font tab,
+and then select black and blue,respectively.
+6. Click OK.
+|Screenshot // Coloring Numbers Based on Specific Criteria Using Conditional Formatting|

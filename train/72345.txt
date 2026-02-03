@@ -1,0 +1,15 @@
+Web Design & Development
+- As a default, what is the underlying code structure of a layout grid?
+- What are three methods for selecting a table cell?
+- What are three attributes that a table style will save?
+- Layout grids are based on CSS, but can be easily changed to use standard HTML table code.
+- Select a table cell with any of these three methods:
+- Using the Standard Editing tool, click to insert the cursor into a cell. Then Press Ctrl+Enter. Pressing Ctrl+Enter again
+will select the table that the cell is in.
+- Choose Window > Table & Boxes. Use the Select table to activate cells, rows, and columns.
+- Using the Standard Editing tool, click to insert the cursor into a cell. Use the Document bar at the bottom of the window
+and locate the tag <td> in the source code hierarchy.
+- Table styles will save the following:
+- In the Table tab of the Table Inspector: Border, Color, Cell Pad, and Cell Space.
+- In the Row tab of the Table Inspector: Vertical Alignment, Horizontal Alignment, and Color.
+- In the Cell tab of the Table Inspector: Vertical Alignment, Horizontal Alignment, Color, Header Style, and No Text Wrap.

@@ -1,0 +1,11 @@
+Displays Ultraviolet radiation index information from ARPANSA for an Australian city to help determine what level of sun protection or avoidance is necessary.
+The Australian Radiation Protection and Nuclear Safety Agency (ARPANSA) is the Australian Government’s primary authority on radiation protection and nuclear safety.
+Interpreting the information:
+- Index is specified in units of Standard Erthermal Dose.
+- If the UV index is less than 3 you can safely stay outdoors with minimal protection.
+- If the UV index is 3 or more: wear sun protective clothing, a hat, sunglasses, sunscreen, seek shade.
+arpansagovau: enabled: true locationid: "Sydney" refreshInterval: 900 position: top: 0 left: 0 height: 1 width: 1
+||One of the ARPANSA location ids as seen on the id attribute of the location tag. e.g. “Sydney”|
+||Defines where in the grid this module’s widget will be displayed.|
+||Optional How often, in seconds, this module will update its data. Default:
+||Any positive integer.|

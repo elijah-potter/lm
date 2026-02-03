@@ -1,0 +1,18 @@
+Heartbleed bug is not a virus
+When you say virus, it a script or malicious software deployed to create certain vulnerabilities. On the other hand, Bug is something missing, miscoded or a programmer’s mistake that create vulnerabilities.
+Heartbleed is a bug in OpenSSL Library that expose weakness of cryptographic services such as (Secure Sockets Layer) SSL/TLS (Transport Layer Security) to the applications and services.
+The SSL/TLS encryption technology is intended to protect any information on the internet that is being transported from client to servers that includes email, VPN (Virtual Private Network), instant messaging and the Web as a whole. However, because of Heartbleed bug it allows any person online to sneak information of the system memory being guarded by this vulnerable OpenSSL library software. Thus, it compromises all information in the system such as; username, passwords, the content itself, credit card numbers and so on.
+Do Heartbleed Bug affects you?
+There is a big tendency that you might be affected by Heartbleed bug. If you are doing online surfing or shopping and those sites that you are visiting are using the SSL/TLS to protect its services then there is a big possibility that your private and confidential data may be disclose.
+How to prevent Heartbleed Bug?
+There is nothing you can do about it. It is the OpenSSL engineers who knows the best in handling Heartbleed bug. Nevertheless, as precautionary measures change your passwords and usernames or any confidential data that you used online .Though it’s not the best solution and there is no guarantee that this will help you against Heartbleed Bug but at least you did something.
+Sites affected by Heartbleed Bug
+Almost all web services use OpenSSL library software, no surprise if the list below includes the big names on the web.
+- Yahoo services that made up of yahoomail, search, yahoo tech, yahoo finance, flickr and more.
+- Godaddy services
+- and more
+Please take note that all the Web Services mentioned above are already doing its best to fix Hearbleed Bug vulnerability issue. So, you don’t have to worry using those Web services that I mentioned above. But, changing your password and other web related information in theses sites will double your security.
+Heartbleed Bug lesson learned
+OpenSSL is an opensource library software. It is free from cost, yes anyone can use it for free. I think it is about time to show our support to the OpenSSL developers. Though most of them are volunteers but they need financial support to continue this very helpful project.
+Imagine the web without it, most web servers relies in SSL/TLS encryption to protect our privacy with its solid security features. However, with the disclosure of Heartbleed Bug, it simply means that the OpenSSL engineers are just human that can make mistake.
+They need our support not just financial but as well as our time and skill. So, if you have the coding skill, you can join the OpenSSL community, share what you have to keep this software free from bug, not just Heartbleed bug but future bugs. If we cannot prevent bug at least it can be detected the soonest possible before the bad guys discover such vulnerabilities.

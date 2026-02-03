@@ -1,0 +1,42 @@
+The Earth accreted from a protoplanetary disc 4.5 billion years ago (Ga). Geologists break up Earth’s history into four eons: the Hadeon, Archaean, Proterozoic, and Phanerozoic eons.
+At 3.8 Ga, abiogenesis occurred, and the sea was awash with bacteria. Since then, there have been five major events in the history of life.
+- At 1.85 Ga, bacterial inbreeding (symbiogenesis) led to the advent of eukaryotes, whose organelles improved cellular flexibility
+- At 800 Ma, the advent of multicellularity: some eukaryotes discovered ways to act meaningfully in groups.
+- At 580 Ma, animal-like adaptations, such as motility and ability to consume other living matter (heterotrophy), set off the Cambrian Explosion.
+- At 380 Ma, some animals developed four limbs (tetrapods) and the ability to become terrestrial animals.
+- At 320 Ma, some terrestrial animals developed mammary glands, and saw the spark of the mammals.
+We can use the tree of life to better understand these anatomical milestones. Since all life on this planet is related (common descent), we can represent familial relations just as you would on ancestry.com. Key innovations in organism body-plans can be embedded in such graphics, as follows:
+When confronted with some biological structure, we can employ comparative anatomy to discover its origin. If an adaptation is shared across multiple species, we can infer either homology (the innovation of some common ancestor) or homoplasy (an adaptation appearing independently, a.k.a “convergent evolution”).
+For example, the spine is a homology; whereas homeothermy (warm-bloodedness) and multicellularity are homoplasies.
+Full Circuit in Vertebrates
+Last time, we discussed the basal ganglia, a brain structure that is intimately involved in motivation and behavior. Here, we use comparative anatomy to discover the evolutionary origin of the basal ganglia. By dissecting brains from eight representative species, we can infer that the basal ganglia dates back to the origin of vertebrates:
+Specifically, here are the frontal sections of the eight species. By employing sophisticated histochemistry techniques such as TH-immunostaining, we are able to directly visualize the striatal and pallidal regions of the representative basal ganglia.
+This investigation was conducted by Anton Reiner in his aptly-titled 2009 paper, You cannot have a vertebrate brain without a basal ganglia. The basal ganglia is not the “reptile brain”, contra the triune brain hypothesis. It is, in fact, much older.
+Ancient Subcortical Loops
+One of the key structures in the midbrain is the corpora quadrigemina (Latin for “four bodies”). It is composed of bilateral expressions of the superior colliculus (SC), and the inferior colliculus (IC). Anatomically, these structures are four bumps at the posterior of the midbrain; for this reason, the corpora quadrigemina is also called the tectum (Latin for “roof”).
+The SC receives inputs from the retina, via input from the LGN nucleus of the thalamus. The IC receives input from the auditory system, and projects to the MGN nucleus of the thalamus. For this reason, it is easy to describe these structures as a vision center, and audio center, respectively.
+However, there is more to the story. SC and IC represent space topographically, and densely innervate one another. They seem to participate in coordinate transformations, which integrate multimodal sensory information. The SC and IC are actually composed of distinct anatomical regions, each of which perform specialized tasks. Importantly, the SC Deep Layer functions as a control center: basically, a predecessor of the motor cortex.
+We have seen the basal ganglia processing information from the neocortex. But the neocortex is a mammalian innovation. What did the basal ganglia do before the invention of the neocortex? If you look carefully at the basal ganglia, you can actually see afferents from the GPi / SNr / VP node into the superior colliculus (SC). It turns out that the SC drives its own loop through the basal ganglia:
+The basal ganglia evolved a general-purpose reinforcement learning device, assisting behavioral computations of the superior colliculus. As motor cortex M1 began to complement and compete with the SC for motor control, it was also built on top of basal ganglia loops.
+For more details, see McHaffie et al (2005). Subcortical Loops in the Basal Ganglia
+Simplified Circuit in Arthropods
+Insects (arthropods) have been around long before vertebrates, evolving around the Cambrian epoch. We saw above that insects (arthropods) have a nerve cord: a predecessor of the spinal cord. Each segment of the body corresponds with a nerve bundle called a ganglia. The head segment of insects, called the cephalon, is particularly important insofar as its associated ganglia (cerebral ganglion) is the direct predecessor of the brain.
+Within the cerebral ganglion, we find structures called neuropiles (analogous to modern-day nuclei) which perform specific functions:
+One such structure (located in the protocerebrum), is the central complex (in above diagram, called the central body, CB). The central complex contains a fan-shaped body which strikingly resembles the mammalian striatum:
+The similarities do not stop there. The basal ganglia and central complex share homologous circuitry, and are even created by the same genetic material. In fact, we can conclude that they are the same structure, with different names.
+Recall that the basal ganglia contains two pathways: direct and indirect. The central complex does not have an indirect pathway! This suggests that the indirect pathway evolved later, as an elaboration of more primitive motivation circuitry.
+For more information, see Strausfeld & Hirth (2013). Deep Homology of Arthropod Central Complex and Vertebrate Basal Ganglia. See this response, however, for a critique.
+The Evolution of Dopamine
+Dopamine plays a key role in behavioral readiness. The basal ganglia contains ten times more dopamine receptors than any other brain area. When did dopamine evolve? Recall that, as a catecholamine, dopamine (DA) is heavily related to norepinephrine (NE) and epinephrine (EPI):
+In order for these neurotransmitters to influence the nervous system, neurons must have receptors responsive to the aforementioned chemicals. Our question becomes, when did these receptors evolve?
+By genomic analysis, we can confirm that DA transporters (DAT) came into existence with the invention of bilateral symmetry. This basal bilaterian also contained transporters for serotenin (SERT) and a highly flexible transporter for monoamines (MAT).
+In protostomes, the MAT gene was destroyed via mutation, and replaced with the octopamine transporter (OAT). Let me repeat that. Dopamine is not used by insects etc: instead, related chemicals tyramine and octopamine (bolded above) are used in its place.
+History was not much kinder for the deuterostomes, whose dopamine transporter was destroyed. However, this clade duplicated the MAT gene to resurrect dopamine receptivity in subsequence chordates (cDAT).
+The above analysis clearly demonstrates the volatility of natural selection, and how natural selection uses the resources at its disposal to construct neurotransmitter systems like dopamine. For more information, see Caveney et al (2006). Ancestry of neuronal monoamine transporters in the Metazoa.
+- Comparative anatomy dates the emergence of the basal ganglia to at least as early as the vertebrate clade.
+- The basal ganglia also supports the “control center” of the Deep Layer of the SC, which predates its support of neocortex.
+- Incredibly, the basal ganglia predate the brain, originated prior to arthropods (insects)! The central complex is the vertebrate basal ganglia.
+- The arthropod version of the basal ganglia does not include an indirect pathway. This innovation happened later.
+- Prior to the creation of the basal ganglia, dopamine assumed its role in promoting behavior near the invention of the core animal body-plan.
+We will close by condensing these discoveries into a single graphic:
+Until next time.

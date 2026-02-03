@@ -1,0 +1,15 @@
+What Is It?
+Incorrect printer calibration can lead to dimensional inaccuracies in your final 3D printed parts. An inaccurate part will not fit well with other elements and lead to issues during the final assembly of your printed design. It's not an issue with 3D-printed showpieces or aesthetic parts but will cause significant problems with complex assemblies or functional designs.
+For simplicity, we'll broadly classify these inaccuracies as positive and negative dimensional errors. If your print has a positive error, it indicates the observed measurement is more than the designed value. If your print's observed measurement is less than the design value, it indicates a negative print error.
+What to Check?
+- Extrusion settings
+- Frame assembly
+- Printer E-steps settings
+How to Fix It?
+Calibrate extrusion settings
+If your hot end extrudes more filament than what's necessary for your 3D print, your print will have a positive error, and vice versa if your hot end extrudes less filament. In either of these cases, your part will not be according to the design requirements.
+Therefore, it's crucial to calibrate your extrusion flow settings to ensure that the hot end pushes out only the required amount during the printing process. You can refer to the Teaching Tech's Filament Flow calibration guide to adjust your filament flow in the slicer's settings.
+Calibrate XYZ and E steps
+Stepper motor calibration is often overlooked and crucial in ensuring accurate print dimensions. Calibrating the XYZ and Extruder (E) steps ensures that when you command the motors to move 10 mm, they travel 10 mm in the real world, and it requires you to fix the steps/mm value of your stepper motors.
+The calibration of XYZ stepper motors is relatively straightforward as you can easily calculate the distance traveled by the hot end or print bed. But calibrating E steps can be pretty tricky for beginners.
+Nonetheless, a simple XYZ calibration cube can quickly inform you regarding any dimensional inaccuracies in your 3D prints. Teaching Tech has yet another guide for calibrating XYZ steps and a separate E-step calibration guide. You can use this to calibrate your steps/mm settings easily and achieve accurate 3D printed parts that fit well with each other.

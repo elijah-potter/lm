@@ -1,0 +1,75 @@
+If you are a person who is frequently out and about on the Internet, you have surely encountered chatbots on the websites of some companies. Perhaps you have even interacted with one. But have you ever wondered how they understand us? The answer is NLP.
+Come and find out more about NLP in chatbots, what it does, and its applications!
+Artificial Intelligence and Natural Language Processing
+A machine does not have the same level of intelligence as a human (for now).
+Nevertheless, it’s possible to make it do certain processes that the human brain and body perform. And for this, we use Artificial Intelligence.
+There are two types of AI: “Embodied” AI and Software AI.
+“Embodied” AI is so-called because it is integrated into more tangible, physical systems. That is robots, autonomous cars, drones, etc.
+On the other hand, Software AI is associated with virtual agents, search engines, facial and speech recognition systems. Systems that do not have the physical component, like the previous case. Only exist in code.
+What is NLP?
+NLP or Natural Language Processing is a technology that is part of Software AI.
+Its focus is to give machines the ability to understand written text and spoken words, just like a human being.
+This branch of computational science combines Computational Linguistics (rule models of human language) with statistical models, Machine Learning (ML), and Deep Learning.
+This combination enables machines to fully understand human language, including the intent and feeling expressed in utterances.
+Discover what the role of Machine Learning is in AI chatbots.
+Please do not confuse it with NLP (Neuro-linguistic Programming). Despite having the same acronym and the area of Linguistics in common, they are distinct concepts.
+While Natural Language Processing is associated with machines, Neuro-linguistic Programming is associated with humans.
+It’s a pseudoscience that uses communicational, perceptual, and behavioral techniques that “reprogram” the human mind and thoughts to improve certain conditions, such as phobias or anxiety disorders.
+The Differences Between NLP, NLU, and NLG
+Aside from the confusion with Neuro-linguistic Programming, the same is also true of the concepts of NLU and NLG.
+Very generally, NLU and NLG are components that belong to NLP.
+According to IBM, NLU (Natural Language Understanding) is a subset of NLP that determines the meaning of an utterance (written or spoken) from the syntactic (grammatical structure) and semantic (intent) analysis of it.
+On the other hand, NLG (Natural Language Generation), also a subset of NLP, enables the system to write. That is, it’s what enables the machine to respond in text in the human language. These texts can, through other systems, be converted into spoken speech.
+7 NLP Applications and Use Cases
+Now that you know what NLP is and how it differs from other concepts, it’s time to learn how we can apply this technology.
+As we already mentioned and as the name implies, Natural Language Processing is the machine processing of human language, like English, Portuguese, French, etc. Therefore, its applications are directly related to language.
+1) Speech Recognition
+Also known as Speech-to-Text. This is the machine’s ability to convert spoken speech into written speech.
+Every system that receives voice commands and responds in audio format uses this tech.
+2) Text Summarization
+As the name suggests, it’s the ability to summarize texts automatically.
+It’s often used in larger texts, such as scientific articles or legal documentation, by extracting the most important information.
+There are two types of Text Summarization:
+- Extraction-based Summarization – the system summarizes by extracting the most relevant sentences from the text;
+- Abstraction-based Summarization – the system paraphrases the predominant information from the text. This is the most common type and the one that works best.
+3) Keyword Extraction or NER
+As in the previous point, NLP can extract words that belong to a category type. For example, names, places, figures, etc.
+You can also know this application by the acronym NER (Named Entity Recognition). It allows the recognition and categorization of certain words.
+4) Intention Classification
+In the same way that it’s possible to make a machine recognize words of a certain category, it’s also possible to make it recognize the implicit intentions in sentences.
+For example, with the statement “If it weren’t so expensive…”, the system, with just this sentence, can understand what the user really meant: “if it weren’t so expensive, I would buy it.”
+This NLP feature can help detect potential customers through your social networks, email, or chatbot.
+Learn more about the Visor.ai email automation solution in Email Bots: How to Automate Your Email.
+5) Spell Checking
+Another very interesting NLP application is text correction.
+There are more and more of these programs that support writers or editors when writing or revising text.
+This NLP feature corrects spelling and grammatical errors and suggests the rephrasing of ungrammatical sentences.
+6) Machine Translations
+Using linguistic knowledge of several languages, a system converts one natural language into another. It retains the meaning of the input language and produces fluent speech in the output language.
+One of the best-known examples of this feature is Google Translate. Although it had some problems initially, as its knowledge base grew and the field of neural networks evolved, it had great progress.
+Machine translations are essential in the inclusive world we live in. The user is the center, and the wider the range of people we reach, the better.
+7) Sentiment Analysis
+It’s still somewhat difficult for machines to understand certain aspects, such as sarcasm or irony. Still, they can already tell whether it’s a positive or negative sentiment through certain clues or opinions.
+NLP in Chatbots
+Companies are increasingly using chatbots to streamline the work of their teams and automate Customer Services, providing a self-care service.
+Yet, to communicate fluidly and efficiently, they need Artificial Intelligence, namely NLP and ML.
+Natural Language Processing makes them understand what users are asking them and Machine Learning provides learning without human intervention.
+These two technologies enable a conversation between a bot and a human similar to what two humans would have.
+Still, some chatbots do not have these technologies associated. That is, without AI. As a result, they don’t have the ability to understand human language and communicate with users.
+Features that Improve Your AI Chatbot
+As we have already seen, NLP has numerous uses. However, in chatbots, we use features that enable greater speech fluidity.
+On a general level, the most commonly used features in virtual agents are:
+- Speech Recognition
+This tool is essential for chatbots that have a voice option. So whether it’s text or voice commands, your bot can recognize both inputs.
+NER is a great option for improving your system’s AI, as it increases the detail of your bot’s knowledge base.
+- Sentiment Analysis
+Knowing another’s state of mind is a very human characteristic that allows us to react accordingly.
+With sentiment analysis of user speech, your bot can also adapt, responding according to the attitude it receives.
+For example, if a user is rude, the chatbot will have the capacity to recognize that interaction as negative.
+- Intent Classification
+Like the previous features, intent classification allows you to increase your chatbot’s Artificial Intelligence performance.
+This feature allows your virtual agent to understand intentions that are not expressed but are implied in user says.
+Visor.ai solutions are unique because our team developed both Natural Language Processing and Machine Learning in-house.
+The decision to develop our own technologies and not use third-party solutions comes from the need to make our bots meet our expectations and our customers’ requirements.
+Every day, we update and improve Visor.ai’s automation solutions always to offer the best services.
+Do you want to learn more about our AI solutions? Don’t waste any more time and contact us!

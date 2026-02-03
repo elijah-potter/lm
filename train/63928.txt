@@ -1,0 +1,152 @@
+SCHULER Alain (mfn16)
+- a view of the temperature in the domain. It is not linear between T1 and T2, due to the convection -
+Every one has already seen the Rayleigh
+Benard instabilities phenomena more commonly called convection.
+You can easily observe it when you are drinking a cup of hot coffee or when you are warming water to cook rice. What you see is a motion in the fluid from
+the bottom to the top. In fact, the motion organize itself in rolls.
+To determine whether there will be two, three or x rolls, there size, as well as there speed and form require a complex study.
+Firstly, let's try to explain the basis mechanism of such an instability!
+Here you can see the profil of velocity with velocity vectors.
+In order to give an explanation
+for this phenomena, we will be considering one single fluid particle.
+In the fluid, this particle is involved in may mechanism. Some of them are stabilizing it, whereas some other are trying to make the particle move.
+The main mechanism in this phenomena is the well known Archimede force.
+Due to the temperature flux one one face of the domain, there a temperature drag in the fluid.
+Considering the fact that hot water is lighter than cold water, one understands that when heating the fluid at the bottom, the lighter hot water is under the
+heavier cold water. Of course it also explains that nothing happens when heating the fluid by the top of the box.
+Here is the expression given for this force
+- expression for Archimeds' s force -
+The considered particle will then locate itself in an area where the fluid among is heavier. Hence the possibility of a motion for the particle that is not in a neutral domain.
+This force chiefly exists as a consequence
+to the viscosity of the fluid and to the form of the particle. Considering
+that the particle is spherical shaped, we give a theoretical expression
+for this force
+- expression for the drag force -
+The particle is braked by this force.
+This is another stabilizing mechanism.
+As a matter of fact, it tends to shade the temperature drags, thus decreasing
+the difference of density that generate the motion. The smaller the density
+drag is, the harder it is for the particle to move.
+We give here an explanation for the characteristic time of thermal diffusion
+- theoretical expression for the characteristic delay
+for diffusion -
+So as to know whether there will be rolls or not, we need to introduce a number that take into account the competition between the stabilizing and the destabilizing phenomenum. This is the very role of the Rayleigh number.
+- Rayleigh number -
+One can see that the viscosity as
+well as the thermal diffusivity or temperature drag, as well as the gravity
+and the size of the studied box take place in this expression.
+To have instabilities patterns developping in the fluid, the Archimede's force has to be stronger than the two other ones. Experiments have shown that there is a critical Rayleigh number.
+It is set to Rac.= 1708.
+- the box -
+So as to work on those instabilities,
+we met the choice of a small rectangular box. Given that we use a bi dimensionnal
+model, the size of the box will be 1cm height and 2 cm large. With those
+dimensions, it doesn't take more than one degree Kelvin of difference between
+the top and the bottom of the box to see the instabilities.
+Of course, to launch the calculation
+and use Fluent, we need to choose a grid.
+The first one we will use is a very basic one. It is cartesian, structured, and not really precise: 40 by 20 cells. Nonethe less it seems good enough for our calculations.
+To begin with, we will use water as the working fluid. The characteristics are the usual ones.
+Thermal conductivity=cst=0,6 W/m/K
+Thermal expansion coefficient =cst=0,00018 1/K
+For the density, we use the approximation of Boussinesq, given that the Rayleigh Benard instabilities won't work with a density fixed to a constant.
+The expression used for the density is the following one (Boussinesq)
+- theoretical expression for Rho with Boussinesq hypothesis -
+Here are the profil of temperature at different times.
+Thoses calculations are done for water liquid. The Prandtl number is equal
+to 7 and we have choosen T1=300K whereas T2 is set to 301K.
+- here is a small animation to show the evolution of the temperature -
+- up to this point the profil of temperature does not evolve any more -
+In this part, we will try to find a critical Rayleigh number of some fluids with different Prandtl numbers.
+- the Prandtl number -
+We have choosen to to keep one degree
+between the top and the bottom of the box. The solution to get the Prandtl
+number at a constant rate, whereas the Rayleigh number is changing, is
+to modify the thermal conductivity a, as well as the viscosity nu of the
+Then we will get some critical Rayleigh number for different kind of fluids. The quantities a and nu won't be settled to a decided ratio, but the Prandtl number will be the one we have choosen!
+the Prandtl number is set to a fixed value (that is our hypothesis)
+so do the product of the thermal diffusivity and the viscosity, given that we the Rayleigh number we want to test
+We can then easily find the values for nu and a so as to met our will (Rayleigh
+and Prandtl number set to a known value)
+First of all, we will compare the critical Rayleigh number
+given in the litterature and the critical Rayleigh number we found according
+to the modeling of this phenomena with FLUENT.
+To that end, we won't change the properties of water liquid. We only specify in the menu define materials, that the density of the water verify the Boussinesq approximation.
+We try to find the critical Rayleigh number by changing
+the difference of temperature between the top and the bottom of our box.
+We find that the critical Rayleigh number is obtained for an estimated 0,15K to 0,18K Delta T.
+The Rayleigh number would be between 1929 and 2314, what seems very high compared to the expected 1708.
+In fact, we have to remember that up to a point, we stop
+the calculations in FLUENT. That is to say when the residuals are small
+enough for us to consider that the calculation converged. Nonetheless,
+when we decrease the parameters of this criteria, one can see that the
+We can then assume that the convergence criterium have been set too high for us to see the instability triggered.
+The time for the calculation would have been too long.
+This method is not really precise.
+Here, we use the calculations, done upper.
+We found a critical Rayleigh number Ra between 1750 and 1800.
+We can make the same assumption than previously.
+For such a Prandtl number, we find a Rayleigh located between Ra=1500 and Ra=1550.
+Here is the graphic we can draw with our three points. This may seem al ittle bit ridicoulus, but the study could be done for other Prandtl numbers. We could then try to find a relationship between the critical Rayleigh number and the Prandtl number.
+- Critical Rayleigh number evolving with the Prandtl number -
+It seems that the critical Rayleigh
+number depends on the Prandtl number even if the product of nu (viscosity)
+times a(thermal coefficient) remains constant. Yet, to find this critical
+number, we need a lot of iterations and then a lot of time...
+So this study appears us to be continued in the next years.
+Another difference between the different
+cases when the Prandtl number is changing is the following one: the shape
+of the champignons of temperature is changing. The higher the Prandtl is,
+the more the champignon of temperature is developped.
+This is normal. To explain the point, let's remember that the Prandtl number measures the diffusivity done through the viscosity compared to the thermal diffusivity. A high Prandtl number indicates that the diffusion through viscosity is stronger than the thermal diffusivity. The temperature drag is then slowly shaded. On the contrary, if the Prandtl is low, the thermal diffusivity will shade the drags very fast and the velocity of the fluid will not be high enough to generate a nice champignon of temperature.
+There are some results given when the Rayleigh number is not too high.
+First of all, we have to define the number Epsilon that is commonly used:
+Here is the expression found for the maximum x-velocity.
+Let's compare what we are expecting when regarding this expression and what is given by our simulation.
+It seems that the experimental results are very close
+to the theoretical ones. And this is true even when Epsilon is very high,
+whereas the theory pretends that it should'nt work for an Epsilon greater
+than 2 or 3.
+In the same way, we are given an expression for the maximum y-velocity.
+Here are the results
+As for this case, we can easily see that up to 2, the
+difference between theory and our calculation becomes important. Nonetheless,
+the slopes seem to be the same between 3 and 7. We are not surprised given
+that it is what was predicted.
+This variable gets also a theoretical expression.
+Our calculation compared to the theoretical values
+This case is very similar to the previous one. The results
+are very close until a critical Epsilon equal to a little bit less than
+Nevertheless, the slopes are definitely not the same here!
+The first graphic we will draw represents
+Let's remember that the patterns are rolls. To that end,
+you can take a closer look at the figure in the previews, where you will
+see the velocity vectors.
+Here, you see that at the bottom of the box, the velocity is almost equal to zero, thanks to the viscosity of the fluid. Then it increases until its maximum, to decrease until the inverse of the previous value, because the X-velocity at the bottom is the opposite to the X-velocity at the top of the box.
+Next image shows:
+Pr=70 , dT=1, Ra=2500
+because it is a case of instability with two rolls.
+Non refined mesh results :
+Refined one time mesh results
+Here is the mesh that we are going to use for the next calculations:
+Second level of adaptation :
+The new mesh :
+Last level of adaptation :
+The last mesh :
+This kind of study is very interesting,
+and it may be a good thing too, to continue it more precisely by using
+for instance others adaptation criterions. We will also
+remark that to get better results on unstructured mesh you have to pay : the time of convergence is always increasing with the number of cells.
+* Click on the Adapt
+menu and choose Gradient.
+* The following window appears :
+* Choose a Refine
+Threshold (for instance : half of the Max
+) and click on Mark.
+Fluent mark the cells it will refine if Adapt is clicked.
+* But before clicking on Adapt, click on Manage..., the following windows appears :
+* When the number of marked cells is satisfaying, click on Adapt. Fluent ask if it is OK to adapt grid. Say yes, and Iterate.
+Of course, there are many options to adapt a mesh, but this simple way described above is a first approach which can be improved in the future years...
+What we have appreciated a lot during this project, was the fact we were totally free to choose the direction that our work would follow. And it has been made easier by the quantity of information put at our disposal : whatever we choose to do, there exist results to compare with, and we never faced a difficulty alone in the dark. It reminds us a story told by G. Casalis during a DEA course...
+A more technical conclusion about Rayleigh-Benard instabilities would be to say that there are still a lot of interesting studies to do around this phenomena, for instance the Prandtl number dependency of the critical Rayleigh number.
+It also enabled us to discover a little bit more of FLUENT, such as the mesh adaptation or the unsteady solver, as well as the numerous small options needed to get a good calculation (PRESTO! solver, Body Force Weighted solver...).

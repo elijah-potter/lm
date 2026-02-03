@@ -1,0 +1,146 @@
+Cross channel square-normalize using local responses
+The cross-channel normalization operation uses local responses
+in different channels to normalize each activation. Cross-channel normalization typically
+Cross-channel normalization is also known as local response normalization.
+This function applies the cross-channel normalization operation to
+dlarray data. If
+you want to apply cross-channel normalization within a
+Layer array, use
+the following layer:
+normalizes each element of
+Y = crosschannelnorm(
+X with respect to local values in the same
+position in nearby channels. The normalized elements in
+Y are calculated
+from the elements in
+X using the following formula.
+where y is an element of
+x is the corresponding element of
+ss is the sum of the squares of the elements in the channel region
+windowSize, and α, β,
+and K are hyperparameters in the normalization.
+also specifies the dimension format
+Y = crosschannelnorm(
+X is an
+dlarray, in addition to the input arguments the previous
+syntax. The output
+Y is an unformatted dlarray with the same dimension
+specifies options using one or more name-value pair arguments in addition to the input
+arguments in previous syntaxes. For example,
+Y = crosschannelnorm(___,
+'Beta',0.8 sets the value of
+the β contrast constant to
+Normalize Data Using Values of Adjacent Channels
+crosschannelnorm to normalize each
+observation of a mini-batch using values from adjacent channels.
+Create the input data as ten observations of random values with a height and width of eight and six channels.
+height = 8; width = 8; channels = 6; observations = 10; X = rand(height,width,channels,observations); X = dlarray(X,'SSCB');
+Compute the cross-channel normalization using a channel window size of three.
+Y = crosschannelnorm(X,3);
+Each value in each observation of
+X is normalized using the
+element in the previous channel and the element in the next channel.
+Compare Normalized and Original Data
+Values at the edges of an array are normalized using contributions from fewer channels, depending on the size of the channel window.
+Create the input data as an array of ones with a height and width of two and three channels.
+height = 2; width = 2; channels = 3; X = ones(height,width,channels); dlX = dlarray(X);
+Normalize the data using a channel-window size of
+3, an of
+1, a of
+1, and a of
+1e-5. Specify a data format of
+dlY = crosschannelnorm(dlX,3,'Alpha',1,'Beta',1,'K',1e-5,'DataFormat','SSC');
+Compare the values in the original and the normalized data by reshaping the three-channel arrays into 2-D matrices.
+dlX = reshape(dlX,2,6)
+dlX = 2x6 dlarray 1 1 1 1 1 1 1 1 1 1 1 1
+dlY = reshape(dlY,2,6)
+dlY = 2x6 dlarray 1.5000 1.5000 1.0000 1.0000 1.5000 1.5000 1.5000 1.5000 1.0000 1.0000 1.5000 1.5000
+For the first and last channels, the sum of squares is calculated using only two values. For the middle channel, the sum of squares contains the values of all three channels.
+Use Cross-Channel Normalization in a Model Function
+Typically, the cross-channel normalization operation follows a ReLU operation. For example, the GoogLeNet architecture contains convolutional operations followed by ReLU and cross-channel normalization operations.
+modelFunction defined at the end of this example shows how you can use cross-channel normalization in a model. Use
+modelFunction to find the grouped convolution and ReLU activation of some input data and then normalize the result using cross-channel normalization with a window size of
+Create the input data as a single observation of random values with a height and width of ten and four channels.
+height = 10; width = 10; channels = 4; observations = 1; X = rand(height,width,channels,observations); dlX = dlarray(X,'SSCB');
+Create the parameters for the grouped convolution operation. For the weights, use a filter height and width of three, two channels per group, three filters per group, and two groups. Use a value of zero for the bias.
+filterSize = [3 3]; numChannelsPerGroup = 2; numFiltersPerGroup = 3 ; numGroups = 2; params = struct; params.conv.weights = rand(filterSize(1),filterSize(2),numChannelsPerGroup,numFiltersPerGroup,numGroups); params.conv.bias = 0;
+modelFunction to the data
+dlY = modelFunction(dlX,params);
+function dlY = modelFunction(dlX,params) dlY = dlconv(dlX,params.conv.weights,params.conv.bias); dlY = relu(dlY); dlY = crosschannelnorm(dlY,5); end
+X — Input data
+Input data, specified as a
+dlarray with or without data format.
+X is an unformatted
+dlarray, you must specify
+the data format using the
+'DataFormat',FMT name-value pair.
+You can specify up to two dimensions in
+windowSize — Size of channel window
+Size of the channel window, which controls the number of channels that are used for the normalization of each element, specified as a positive integer.
+windowSize is even, then the window is asymmetric. The
+software looks at the previous
+floor((windowSize-1)/2) channels and
+floor((windowSize)/2) channels. For example, if
+4, then the function normalizes
+each element by its neighbor in the previous channel and by its neighbors in the next
+Specify optional pairs of arguments as
+the argument name and
+Value is the corresponding value.
+Name-value arguments must appear after other arguments, but the order of the
+pairs does not matter.
+Before R2021a, use commas to separate each name and value, and enclose
+Name in quotes.
+'Alpha',2e-4,'Beta',0.8 sets the multiplicative normalization
+constant to 0.0002 and the contrast constant exponent to 0.8.
+DataFormat — Dimension order of unformatted data
+character vector | string scalar
+Dimension order of unformatted input data, specified as a character vector or string
+FMT that provides a label for each dimension of the data.
+When you specify the format of a
+dlarray object, each character provides a
+label for each dimension of the data and must be one of these options:
+"B"— Batch (for example, samples and observations)
+"T"— Time (for example, time steps of sequences)
+You can specify multiple dimensions labeled
+"U". You can use the labels
+"T" at most once.
+You must specify
+DataFormat when the input data is not a
+Alpha — Normalization constant (α)
+1e-4 (default) | numeric scalar
+Normalization constant (α) that multiplies the sum of the
+squared values, specified as the comma-separated pair consisting of
+'Alpha' and a numeric scalar. The default value is
+Beta — Contrast constant (β)
+0.75 (default) | numeric scalar greater than or equal to
+Contrast constant (β), specified as the comma-separated pair
+'Beta' and a numeric scalar greater than or equal to
+0.01. The default value is
+K — Normalization hyperparameter (K)
+2 (default) | numeric scalar greater than or equal to
+Normalization hyperparameter (K) used to avoid singularities in
+the normalization, specified as the comma-separated pair consisting of
+'K' and a numeric scalar greater than or equal to
+1e-5. The default value is
+Y — Normalized data
+Normalized data, returned as a
+dlarray. The output
+Y has the same underlying data type as the input
+If the input data
+X is a formatted
+Y has the same dimension labels as
+X. If the
+input data is an unformatted
+Y is an
+dlarray with the same dimension order as the input
+crosschannelnorm function normalizes each
+activation response based on the local responses in a specified channel window. For more
+information, see the definition of Cross Channel Normalization Layer on the
+crossChannelNormalizationLayer reference page.
+Accelerate code by running on a graphics processing unit (GPU) using Parallel Computing Toolbox™.
+Usage notes and limitations:
+When the input argument
+dlarraywith underlying data of type
+gpuArray, this function runs on the GPU.
+For more information, see Run MATLAB Functions on a GPU (Parallel Computing Toolbox).
+Introduced in R2020a

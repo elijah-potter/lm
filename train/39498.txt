@@ -1,0 +1,9 @@
+Knudsen diffusivity for diffusing species
+Knudsen diffusion is a means of diffusion that occurs when the scale length of a system is comparable to or smaller than the mean free path of the particles involved. Knudsen diffusion applies only to gases because the mean free path for molecules in the liquid state is very small, typically near the diameter of the molecule itself.
+Consider the diffusion of gas molecules through very small capillary pores. If the pore diameter is smaller than the mean free path of the diffusing gas molecules and the density of the gas is low, the gas molecules collide with the pore walls more frequently than with each other. This process is known as Knudsen flow or Knudsen diffusion. . A Knudsen number much greater than one indicates Knudsen diffusion is important.
+The Knudsen diffusivity for diffusing species A depends on species molecular weight, temperature and pore diameter.
+|DKA||The Knudsen diffusivity for diffusing species A (m2/s)|
+|dpore||The pore diameter (m)|
+|Rg||molar gas constant|
+|T||The absolute temperature (K)|
+|MA||The species molecular weigh (kg/mol)|

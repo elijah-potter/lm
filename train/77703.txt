@@ -1,0 +1,188 @@
+Unless you have taken the Discrete Mathematics course here at NYU or studied the equivalent material elsewhere, you probably would not have had an occasion to study the set-theoretic formalism that serves as a foundation for much of modern mathematics. This isn’t to claim that you know nothing about set theory. The two prerequisite courses, linear algebra and vector calculus, cover more than enough examples of sets and functions. You have an idea of what sets are; you know how to take intersections, unions, differences, and complements of them; you know the basic properties of functions. Our goal here is to round out your set-theoretic vocabulary, so that you can explore the world of modern mathematics with ease. The approach we take in this post is the so-called naïve set theory. Think of this as a math analogue to the Writing the Essay course: we are aiming for a working knowledge of the language, so we can go ahead and study the Great Works. Indeed, our focus is on the language of set theory and its usage. The study of the inner workings of the language, while interesting in its own right, is not our concern here. In particular, we shall freely take certain facts for granted, instead of deriving them from first principles.
+A set is a well-defined collection of mathematical objects, which we do not attempt to define. In other words, if we fix a set , every mathematical object should either be an element of or not. We write to denote that is an element of ; means is not an element of . We take for granted that a lot of sets exist. For example, we assume that the set of integers
+exists without getting into a discussion about what the symbol “1” means. We also assume the existence of the empty set , which is the unique set that has no element. Often, we call upon an unspecified index set , which is an arbitrary set with the desired “size”. Typically, we begin by assuming the existence of a set of sets indexed by , viz., for each , we suppose that a set with the name exists. This is a generalization of indexing by natural numbers: indeed, if , then
+Example 1.1. For each number in the set of real numbers , we let be the open interval . The collection is a set of subsets of , indexed by the real numbers.
+We write to denote that is a subset of , i.e., implies . For example, . Observe that that the two sets and are equal if and only if and . Given a set , we often use the set-builder notation to define a subset of . For example,
+is the subset of consisting precisely of the even integers. We do not attempt to discuss Russell’s paradox here. Given a set , we define the powerset of to be the set
+We assume that the power set of an arbitrary set exists. Given two sets and , we define the union
+and the set difference
+We say that and are djsoint if . We assume that , , and exist regardless of our choice of and . The union operation and the intersection operation can be generalized to multiple sets. If are sets, then we define the union
+and the intersection
+The following exercise is strongly recommended for those without much experience with logical quantifiers:
+Exercise 1.2. Show that
+Formulate a similar statement for the intersection operation and prove it. Formulate similar statements for sets and prove them.
+Even more generally, we can take an arbitrary collection of sets , labelled by an index set , and define the union
+and the intersection
+As above, we assume that unions and intersections of sets exist, regardless of our choice of sets. We say that is pairwise disjoint in case whenever .
+2. Relations and Functions
+How do we say that an element of a set and an element of another set are related by some mathematical rule? To answer this question, we take for granted the existence of ordered pairs: namely, if and are sets, and if and , then the mathematical object is well-defined and exists. The cartesian product of and is defined to be the set of all ordered pairs:
+A binary relation from to is a subset of the cartesian product .
+- is -related to * and write . For example, we let and define the less-than-or-equal-to relation
+In this case, a real number is -related to another real number if and only if with the usual ordering.
+In this case, a subset of is -related to another subset of if and only if .
+Example 2.3. Fix a positive integer . We define the mod relation on by declaring that if and only if is an integer multiple of ; in other words, in case and have the same remainder when divided by . is then a relation.
+A binary relation is said to be a function if
+- for each , there exists an such that ;
+- and imply that .
+This is the formalization of the intuitive definition that a function is a rule that assigns a unique value to each element of a set. We write to denote that is a function from to . Given a function , we write to denote that is -related to . is the domain of the function , and is the codomain. The subset
+of the codomain of is called the image of the function . Given a subset of , the set
+is said to be the image of under . Similarly, given a subset of , the set
+is said to be the preimage of under . We say that a function is
+- injective if, for all , implies that ;
+- surjective if ;
+- bijective if is injective and surjective.
+Bijective functions are invertible, in the following sense:
+Proposition 2.4. If is a bijective function, then the relation defined by declaring if and only if is a function, called an inverse function of . If and are two inverse functions of , then . In light of this uniqueness property, we write to denote the unique inverse function of .
+Proof. Let be an inverse function of . For each , the surjectivity of furnishes an such that . Moreover, if and , then , whence the injectivity of implies that . It follows that is a function. If is another inverse function of , then
+whence , as was to be shown.
+Example 2.5. The function defined by setting is neither injective nor surjective. The function defined by the same formula is injective but not surjective. The function defined by the same formula is bijective, and its inverse is given by the formula .
+Given three sets , , and and two functions and , we define the function composition of and to be the function defined by setting for each . The following exercise is recommended for those without much experience dealing with injectivity and surjectivity in the context of function compositions.
+Exercise 2.6. Let and be functions. Verify the following statements:
+(1) is a function.
+(2) If and are injective, then so is .
+(3) If and are surjective, then so is .
+(4) If and are bijective, then so is .
+(5) If is bijective, then is injective and is surjective.
+Let . The restriction of onto , denoted by , is the composition , where is the canonical injection map defined by the formula . By the above exercise, the restriction of an injective function is injective. Let Given a fixed , we can define a projection map by setting
+We now assume that . The codomain restriction of by is the composition . We note that the codomain restriction is invariant of the choice of the point , the only points of that are mapped to are outside of .
+3. Equivalence Relations and Quotient Sets
+Often, there is a need for categorization via declaring different objects to be “the same”. For example, instead of posting “Happy Birthday, Harry!” on a residence hall bulletin board on September 4, only to take it down the next day and post “Happy Birthday, Elisha!” on the same board, a resident assistant may choose to post “Happy Birthday to All September Birthday People: Harry, Elisha, Tish, and Joe!” Similarly, it is impractical to create an analog watch that records the exact amount of time passed since the time of initial operation, and so “12 hours from now”, “24 hours from now”, and “36 hours from now” are represented in the same way. The process of equating different objects is done rigorously by introducing an equivalence relation, which is a binary relation on a set that satisfies the following three properties hold:
+- reflexivity. for all ;
+- symmetry. implies that ;
+- transitivity. and imply that .
+Exercise 3.1. Check that the mod relation defined in Example 2.3 is an equivalence relation.
+The single most important property of an equivalence relation is that it determines a partition.
+Definition 3.2. A partition of a nonempty set is a set of nonempty subsets of such that
+and that implies either or .
+Proposition 3.3. Let be a nonempty set. Let is an equivalence relation on . For each , we define the equivalence class of to be the set The collection then forms a partition of
+Proof. Fix . By reflexivity, the equivalence classes and are nonempty. Suppose that there exists . Whenever and , it follows from symmetry and transitivity that , whence and . It follows that and , whence .
+The converse is also true:
+Proposition 3.4. Let be a nonempty set and an index set. Suppose that is a partition of . The relation on defined by declaring if and only if there exists an index such that is an equivalence relation.
+Proof. Fix arbitrary . Since is a partition, there exists an such that . Observe that implies ; since was arbitrary, is reflexive. If , then , and so is symmetric. Lastly, if and , then , and so is transitive.
+Why do we care about the relationship between partitions and equivalence relations? Equivalence relations are a natural way of declaring different objects to equal each other, as the next example shows.
+Example 3.5. Let us now specialize Exercise 3.1 to the case to discuss the so-called clock arithmetic. The equivalence relation , defined in Example 2.3, defines twelve equivalence classes: . By partitioning into twelve pieces, we can represent an arbitrary hour by the numbers , as we would expect from the behaviors of a typical clock.
+The collection of all equivalence classes is therefore the set of all “representatives”, after declaring the equality of elements as we desire. We give this collection a name.
+Definition 3.6. Let be a nonempty set and an equivalence relation on . The quotient set , called modulo , is the set of all equivalence classes induced by .
+Example 3.7. Let be the mod equivalence relation defined in Example 2.3. We write to denote the quotient set and call it the set of integers modulo . We observe that every element of has a representative in the quotient set .
+Proposition 3.8. Let be a nonempty set and an equivalence relation on . The canonical surjection map defined by setting is a well-defined surjective function.
+Remark. The term “well-defined” means that the relation is actually a function.
+Proof. We first note that the value of at a fixed element is unique by the definition of . Moreover, for each , the value exists as an element of . Therefore, is a well-defined function. To show that is surjective, we fix an arbitrary set . By the definition of , we can find an such that , whence . Since was arbitrary, the desired result follows.
+4. Cartesian Products
+With the notion of functions at hand, we can now generalize the concept of ordered pairs to an arbitrary number of coordinates. The key feature of ordered pairs is that there is a designated output for each coordinate. This is to say that we can think of ordered pairs as functions on the two-element set : in case of , the value corresponding to “first” is , and the value corresponding to “second” is . The cartesian product can then be thought of as the collection of all functions on such that and . We are thus led to the following notion:
+Definition 4.1. Let be a collection of sets indexed by . The cartesian product of the sets in the collection is
+By specializing this definition to one set , we obtain the
+- -fold cartesian product of *
+An * -valued -tuple* is an element of .
+Note that the usual notion of -tuples from linear algebra and vector calculus coincides with the above definition, with .
+It is not entirely clear whether the cartesian product of nonempty sets is nonempty. This issue is resolved in the affirmative if we take for granted the following intuitive statement:
+The relation that sends to is a function, whence the composition is an element of . It follows that the cartesian product of nonempty sets is nonempty. We shall study more consequences of the axiom of choice in the subsequent sections.
+Note that we have not defined ordered tuples, as we do not yet know what it means to compare the size of two elements of an index set . We shall take up this matter in Section 6.
+In real life, we count the number of objects in a collection by exhibiting a one-to-one correspondence between and a subset of the natural numbers: one, two, three, four, and so on. This motivates the following definition:
+Definition 5.1. A set is finite if, for some , there exists a bijection ; if not, is said to be infinite. is said to be /1 in case is finite or countably infinite; otherwise, is said to be uncountable.
+Example 5.2. is countably infinite. Indeed, the function
+is a bijection from to .
+Example 5.3. is countably infinite. Here’s a bijection; see Example 6.17 for a rigorous proof in a more general case:
+More generally, if and are countably infinite sets, then there exist bujections and , so that the map is a bijection from to . Since the composition of two bijective functions is bijective, we conclude that is countable. We can now show that the set of rational numbers is countably infinite. The function given by the formula is injective. Since is countably infinite, the cartesian product is countably infinite, and we have a bijective . The function is now a composition of two injective functions, whence is injective. What we have shown, intuitively, is that the size of the set is at most that of . Since is a subset of , the size of cannot exceed that of . We therefore should be able to conclude that the size of is precisely that of . A formal argument is as follows. is easily seen to be an infinite set, whence the claim that there exists a bijection from to follows from the lemma below:
+It therefore suffices to prove the lemma. To this end, we first show that every subset of has the unique minimal element. If is finite, we can verify this claim by comparing each and every element of . If is infinite, then we can fix and consider . Since every element of is larger than , a minimal element of , if it exists, must be in . Now, is finite, and so we already know how to find its minimal element. To show that the minimal element of is unique, we suppose that are two minimal elements of . By minimality, we have and , whence . Let us now construct the bijection . We declare to be the minimal element of . Then, for each , we define to be the minimal element of . If for some , then is finite, contradicting the assumption that is infinite. The inductive process therefore continues ad infinitum, and is well-defined on all of . By construction, is injective. It remains to show that is surjective. Given , the set is finite of size, say, . It then follows that for some . This completes the proof of the lemma.
+Exercise 5.5. Show that the cartesian product of countably infinite sets is countably infinite. To see this, we let be a bijection and define a function by setting
+where are distinct prime numbers. Show that is an injection, and apply Lemma 5.4 to derive the desired result.
+Example 5.6. The set of all real numbers between 0 and 1 including end points is uncountable. To see this, we suppose for a contradiction that is a bijective function. For each , is a real number between 0 and 1, it admits a decimal representation of the form . Let us make a list:
+Since is a bijection, the above list must contain every real number in . We shall now exhibit a number in that does not belong to the above list: since was an arbitrary bijection, it follows that no bijection from to can exist. To this end, we pick each so that . The resulting decimal number
+is a number in . Now, for each , we see that cannot equal , as the stipulation implies that the decimal representations of and are different. is therefore a number in that does not belong to the above list. This is the so-called diagonal argument. Similar arguments show that the open interval and the half-open intervals and are uncountable. Given fixed real numbers and such that , the function is a bijection from the closed interval to . If there exists a bijection , then the composition is bijective as well, contradicting the uncountability of . We conclude that is uncountable. Similar arguments show that the open interval and the half-open intervals and are uncountable. Finally, we observe that a set that contains as a subset is uncountable. We suppose for a contradiction that we can find a bijection , whence the restriction is injective. What this implies, intuitively, is that the size of the set is at most . Since we have already shown that is uncountable, we should be able to derive a contradiction from this. Formally, is an infinite subset of , whence the desired contradiction follows from Lemma 5.4. It now follows at once that , the set of complex numbers, and the set of quaternions are uncountable.
+The intuition that if the size of is at most that of , and if the size of is at most that of , then and must be of the same size is quite attractive; we now seek to formalize this idea.
+Definition 5.7. Let and be sets. and are said to be equinumerous if there exists a bijection . We write to denote that and are equinumerous. In case is not a bijection but only an injection, we say that the cardinality of is at most the cardinality of . and write .
+We remark that countably infinite is precisely being equinumerous with . We also observe the following:
+Proof. If there exsits an injection , then the codomain restriction of is a bijection. We now define a surjection as follows: fix and set
+Conversely, if is a surjection, then the set is a partition of . To see this, we first note that every element of must be mapped to an element of , whence . Moreover, , as a function, can have only one value at each point, whence the preimage sets must be pairwise disjoint. Now, we define a function by defining to be some element of the preimage . Since is a partition, must be injective.
+Remark. In the proof, we have tacitly appealed to the axiom of choice (Axiom 4.2). Indeed, we used the choice function to choose an element from each set in the partition . The intuitive principle that we have alluded to above is formally established below:
+Proof. We first show that if and if , then . Let be a bijection. We define three collections of sets , , and as follows:
+- Let and .
+- For each , we define .
+- For each , we define .
+- For each , we define .
+- Let .
+By definition, . Since must be a subset of , we see that . We now fix and assume inductively that for all . Since , we see that
+It follows that for all . A similar argument shows that for all . Since , we see that . Repeating this process, we conclude that for all . Here is a pictoral description of , , and :
+We now claim that for all . To see this, we fix . Pick an arbitrary . Since , we see :wat . Moreover, , and so the injectivity of implies that . It follows that . Since was arbitrary, we conclude that . To show that , we fix an arbitrary . Since , the relation implies that we can find an such that . Now, if , then , which would, in turn, imply that . This is evidently absurd, and so . We conclude that . Since was arbitrary, the desired result follows. The claim is now established. An important consequence of the claim is that . We set and define
+is precisely the restriction of the injective function , and so it is injective. Similarly, is the restriction of the identity function, and so it is injective. It follows that is injective. Moreover,
+It follows that is a bijection from onto , whence , as was to be shown. Let us now return to the general statement of the theorem. We assume that the two sets and satisfy and . This implies the existence of two injective functions and . This, in particular, implies that the composition is an injective function, and so . Now, we observe that . Since , we conclude from what we have proved above that . By injectivity of , we see that , and thus , as was to be shown.
+Many applications of the Cantor–Bernstein theorem require the axiom of choice. We study the cardinality of the -fold cartesian product in Example 6.17.
+Aside from the usual ordering relation on sets of numbers such as , , , and , the inclusion relation and the at-most-the-same-cardinality relation defined in Section 5 also compare “sizes” of two objects. Let us now abstract the key properties of these less-than-or-equal-to relations.
+Definition 6.1. Let be a nonempty set. A partial order on is a relation on that satisfies the following properties:
+(1) reflexivity. for all ;
+(2) antisymmetry.if and , then ;
+(3) transitivity. if and , then .
+A strict partial order on is a relation on that satisfies the following properties:
+(1’) irreflexivity. for all ;
+(3) transitivity. if and , then .
+A (strict) partial order is a (strict) linear order, or a (strict) total order, if satisfies the following additional property:
+(4) trichotomy. if , then one of the following three must hold: , , or .
+A (strict) linear order is a (strict) well-order if satisfies the following additional property:
+(5) well-ordering property. if is a nonempty subset of , then there exists an element such that for all .
+Example 6.2. It is easy to see that the usual ordering relations on , , , and , respectively, are linear orders. We have shown in the proof of Lemma 5.4 that is well-ordered. Since the set does not contain a minimal element, none of the other sets of numbers we have just listed is well-ordered.
+Example 6.3. The is-a-subset-of relation on the powerset of any set is a partial order. (Please carry out a proof of this fact if you do not see it immediately!) If has two or more elements, however, then is not a linear order on . To see this, we fix two distinct elements and of ; and are incomparable, in the sense that neither is a subset of the other.
+Example 6.4. The at-most-the-same-cardinality relation on the powerset of any set is a partial order. Reflexivity is a consequence of the existence of the identity function . Antisymmetry is a consequence of the Cantor–Bernstein theorem. Transitivity follows from the fact that the composition of two injective functions is injective. The last example is worth a second look. It is not entirely obvious whether the relation should be a linear order. If the two sets can be well, ordered, then, intuitively, we can match up the elements of and from the smallest to the largest until the elements of one of the sets runs out. This leads us to formulate the following result:
+Note also that the process of matching up the elements of and might require infinitely many steps. Since the usual principle of mathematical induction is a finitary method, we need an extension of the principle that applies to infinite processes as well. For this, we ought to be able to count each step of these processes, which require an infinitary generalization of the natural numbers that admits its own version of the induction principle.
+Definition 6.8. An ordinal number is a set that satisfies the following properties:
+(1) transitivity. every element of is a subset of ;
+(2) strict well-ordering. the is-an-element-of relation is a strict well-order on .
+We define the ordering relation by declaring if and only if .
+We see at once that is an ordinal number. To fit the natural numbers into the framework of ordinal numbers, we declare to be the empty set and carry out a set-theoretic construction of the natural numbers as follows:
+With this definition, we see that coincides with the usual order relation on . Moreover and for each natural number . The set of natural numbers is itself an ordinal number: transitivity is evident from the construction of the natural numbers, and strict well-ordering was already shown in the proof of Lemma 5.4. We write to denote the first infinite ordinal . Note that for all . In fact, . We therefore see that there are two kinds of ordinal numbers:
+Definition 6.9. For each ordinal number , we define the successor of to be the set . An ordinal number is a successor ordinal if there exists an ordinal number such that ; if not, then is said to be a limit ordinal.
+The natural numbers other than are successor ordinals; and are limit ordinals. Since the union of two sets always exist, the successor of an ordinal always exists. Furthermore, the union
+exists and is a limit ordinal, which we denote by . Similarly, we can construct the limit ordinal for each . The analogous union
+exists and is a limit ordinal, which we denote by . We shall assume that this process can be continued indefinitely:
+Assumption 6.10. We assume that many limit ordinals exist. Indeed, we assume that the following strictly well-ordered sequence of ordinals exists:
+Let us establish the principle of transfinite induction that was alluded to above.
+Theorem 6.11 (Principle of transfinite induction). Let be a collection of ordinal numbers. If satisfies the following properties, then contains all ordinal numbers:
+(2) if , then ;
+(3) if is a nonzero limit ordinal and for all ordinals , then .
+Remark. The collection that we have referred to in the statement above is actually a class, which, intuitively, is a collection of sets that may be too large to be a set. We will not attempt to formalize the notion of a class.
+Proof. Suppose for a contradiction that does not contain all ordinal numbers. Since the ordinals are well-ordered, we can find the least ordinal such that . If is a successor ordinal, then we can find such that . Since , the ordinal must be in , whence by (2) must be in as well. If is a limit ordinal, then (3) and the least-ordinal property of implies that must be in . Both cases reach a contradiction, and so we conclude that must contain all ordinal numbers. We are now ready to prove the well-ordering principle.
+Proof of the well-ordering principle. We use transfinite induction to label each element of the set by a unique ordinal, whence can be well-ordered by the well-ordering of the ordinal numbers. By the axiom of choice (Axiom 4.2), there exists a choice function on the set of nonempty subsets of . We set and define inductively for each ordinal by setting
+we terminate the process when is empty. We now let be the least ordinal number such that . The set consists precisely of the elments of , labelled by ordinal numbers up to . We define an order on by declaring if and only if or . It follows at once that is a well-order on .
+Recall that a usual application of the finitary induction principle takes the form of demonstrating that the construction of a desired mathematical object can be done one step at a time. If the construction cannot be completed in finitely many steps, then the principle of transfinite induction assures that the process will be completed, provided that there are no obstructions on the way—that is, the method of construction behaves well at the limit ordinal stages. We shall now capture this idea in a form that is particularly convenient to use. To this end, we need to introduce a few terms:
+Definition 6.12. Let be a nonempty set, be a partial order on , and a subset of . An upper bound of in is an element such that for all . A maximal element of is an element such that no satisfies the relation .
+Definition 6.13. Let be a nonempty set and let be a partial order on . A collection of elements of is said to be a chain if is a linear order on , viz., every pair of elements of satisfies the trichotomy principle:
+We are now ready to state and prove the ever-famous Zorn’s lemma:
+Proof. We use transfinite induction to construct a chain in that contains a maximal element of . By the axiom of choice (Axiom 4.2), there exists a choice function on the set of nonempty subsets of . We let and define inductively for each ordinal by declaring to be an element of such that for each ordinal ; we terminate the process when there is no such element . To check that this process continues until the point of termination, we must check the limit ordinal stages. But indeed, if is a limit ordinal, then is a chain in , whence by assumption we can find an upper bound . We can now find an ordinal such that no satisfies the relation . It follows that is a maximal element of .
+Here is an archetypal Zorn-type argument in the context of linear algebra; proofs of this form are humorously referred to as Zornification arguments.
+Example 6.15. We prove that every vector space has a basis. In fact, we establish a more general statement:
+Let be a vector space over a field . Every set of linearly independent vectors in is contained in a basis of .
+Fix a set of linearly independent vectors in . If is a maximal linearly-independent set, viz., every superset of is linearly dependent in , then is a basis of . Indeed, if there exists a vector such that no finite linear combination in equals , then is a linearly independent superset of , contradicting the maximality condition. We therefore assume that is non-maximal. Let be the collection of all linearly independent supersets of in , ordered by the set-inclusion relation: if and only if . If is a chain in , then is an upper bound of in . It now follows from Zorn’s lemma that there exists a maximal element of , which, by construction, is a maximal linearly-independent subset of .
+Transfinite induction arguments are often useful in comparing cardinalities of sets as well. We present two examples that makes use of the Cantor–Bernstein theorem (Theorem 5.9).
+Example 6.16. Let and be infinite sets such that . We show that equals if , and if . We assume without loss of generality that and define a collection of pairwise-disjoint collections of subsets of such that for all . We define a partial order on by declaring that if and only if and for all . Similarly as in Example 6.15, each chain in admits an upper bound, whence Zorn’s lemma furnishes a maximal collection in .
+We claim that . If not, then is nonempty. We note that must be finite. If is infinite, then , and so there exists a countably infinite subset of . Since is a pairwise-disjoint collection that contains , the maximality condition is violated. Since is finite, we see that for all . Fixing and defining
+we see that . The maximality condition is once again violated, and so we must conclude that .
+For each , we find a bijection . We can now construction a bijection by setting . That is a bijection follows from the fact that is a partition of . We now let and be the sets of even and odd natural numbers, respectively, and let and be bijections. By setting and , we obtain two bijections and .
+We now let be an injection given by the relation . We have constructed the following sequences of injections:
+We define by setting
+is well-defined since . The disjointness condition also implies that is injective, since both and are injective. It now follows that the composite function is injective, and so . The reverse relation is obvious, whence we conclude from the Cantor–Bernstein theorem that .
+Example 6.17. Let be an infinite set. We generalize Example 5.3 and show that . Let us define a collection
+This collection is nonempty. Since is an infinite set, we see that , whence there is a countably infinite subset of . We have seen in Example 5.3 that , and so is nonempty.
+Let us now define a partial order on by declaring if and only if and , viz., if is an extension of . if If is a chain in , then the ordered pair defined by setting and
+is an upper bound of the chain. Note that the extension property in the definition of guarantees that is well-defined. We now apply Zorn’s lemma to construct a maximal ordered pair in .
+It suffices to check that . We suppose for a contradiction that . If , then we can find a bijection , whence we can define an extension of by setting . As is a bijection, the maximality condition on is violated. We therefore assume that .
+Let . We must have that . Indeed, if , then, by Example 6.16, the set is equinumerous to either or , which is absurd. Let us now fix a subset of such that . Since and are disjoint, we see that , , and are pairwise disjoint. It now follows from Example 6.16 that
+is equinumerous to . Recalling that and , we conclude that . Let be a corresponding bijection.
+We now define a bijection by setting
+is well-defined, as . The disjointness condition also implies that is a bijection, as and are bijections. Since , it follows that . contradicting the maximality of . We therefore conclude that , and so .
+As an application of the equinumerosity statement, we now show that . By fixing two distinct elements , we can construct an injection by setting
+Our goal is to construct an injection in the opposite direction and apply the Cantor–Bernstein theorem. To this end, we shall show that
+To this end, we first construct a bijection by defining, for each , the value of to be the function defined by the formula
+is a bijection: given , we can recover the set by considering the preimage .
+Fix ; the function that is defined by the formula is an injection. Therefore, .
+The function that sends to the composite function is a bijection. Indeed, . Therefore, .
+Now, we construct a bijection as follows. An element of is a function that sends to a function , so that for all . It is then natural to set for each ordered pair . We note that is a bijection: given , we can recover a -valued function on by setting . It follows that .
+To prove the relation , we take the bijection that we have constructed above. The function that sends to the composite function is a bijection, as . We have thus produced the following sequence of injections:
+The composite function is an injection from to , and so . Since we have already shown that , it follows from the Cantor–Bernstein theorem that , as was to be shown. Since we have also shown that , we now know that the relation holds as well.
+Exercise 6.18. Modify the above proof to show that , provided that and .
+7. Additional Remarks and Further Results
+7.1. The approach to set theory in this post is naïve in the sense that several assumptions are made in order to bypass the technical details and to streamline the exposition. All assumptions made in this post are provable facts in the standard framework of axiomatic set theory; an excellent exposition of axiomatic set theory at the undegraduate level can be found in the textbook of Hrbacek and Jech.
+7.2. We cheated our way through the theory of ordinals by simply assuming the existence of many, many ordinals. In particular, we have completely bypassed the recursion theorem, which validates certain recursive constructions that we have tacitly made use of. See Capter 6 of Hrbacek and Jech.
+7.3. We also did not cover the theory of cardinal numbers at all. Since the equinumerosity relation is an equivalence relation, we can declare one set from each “equivalence class” to be the cardinal number representing the size of the sets in the equivalence class. Alternatively, we can define certain ordinal numbers to be cardinal numbers: see the wikipedia article on aleph numbers. An important topic in the theory of cardinal numbers is cardinal arithmetic, which we have sampled in Example 6.16 and Example 6.17. See Chapters 7 and 9 of Hrbacek and Jech.
+7.4. The diagonal argument in Example 5.6 can be generalized to prove Cantor’s theorem: for every set . This, in particular, shows that there are many, many cardinal numbers. The question of whether there is a set such that leads us to the continuum hypothesis, which is a foundational problem in the theory of set-theoretic independence. My blog post on the Kirby-Paris Hydra game provides an introduction to the independence issues in set theory; see Section 6 of the post for further references.
+7.5. The two main consequences of the axiom of choice in the post—the well-ordering principle and Zorn’s lemma—are provably equivalent to the axiom of choice. The proof that either of the two results implies the axiom of choice can be found in Chapter 8 of Hrbacek and Jech. On the other hand, it is not known whether the partition principle (Proposition 5.8) implies the axiom of choice: see the discussion on Math.SE.
+7.6. We omitted an important property of the canonical surjection map with respect to an equivalence relation . The universal property of quotient maps states that if is a function such that whenever , then there exists a unique injective function such that . Variants of this property appear in the context of groups, rings, vector spaces, fields, and other algebraic objects. My blog post on commutative diagrams contains the statement of the universal property of quotient maps in the context of group theory.
+Thanks to Colin Beeh, John Ryan, and LDH for corrections!

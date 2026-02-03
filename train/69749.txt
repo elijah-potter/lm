@@ -1,0 +1,9 @@
+A classic Daniel Dennett article considers a curious chapter in AI history, where researcher Kenneth Colby used the Turing Test to see whether psychiatrists could distinguish between delusional patients and his natural language paranoia simulator ‘PARRY‘.
+PARRY was designed by Colby, who was both a psychiatrist and computer scientist, in an attempt to simulate the psychology of paranoia. In particular, the programme was designed to replicate paranoid delusions about being persecuted by the Mafia.
+Dennett’s 1990 article, entitled “Can machines think?”, discusses whether the Turing Test is an adequate test of machine intelligence.
+Dennett notes that PARRY is the only programme known to have passed the Turing Test – psychiatrists were unable to distinguish between real patients and simulated ones.
+Ironically, PARRY was based on the ELIZA programme, which was designed as a text-only parody of a therapist.
+Colby’s programme was the first attempt to produce a computer simulation of psychosis, a project which now typically involves artificial neural network simulations of information processing models of the mind, rather than conversational interaction.
+Link to article “Can Machines Think?” (seems to have a few scanning errors).
+PDF of same article.
+Link to article “Simulating Psychosis”.

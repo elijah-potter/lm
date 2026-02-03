@@ -1,0 +1,18 @@
+In this article, we will show you how to connect to SQL Server using sqlcmd utility with practical examples. Before you start using the command prompt to connect with SQL Server, First, use the SQLCMD utility help command to see the list of available options
+Connect using sqlcmd utility Windows Authentication
+You can connect in multiple ways.
+-- Connect Default Instance using Windows Authentication SQLCMD -S SERVERNAME -E -- Connect Named Instance using Windows Authentication SQLCMD -S SERVERNAME\INSTANCE -E -- Connecting Named Instance with port using Windows Authentication SQLCMD -S SERVERNAME\INSTANCE, 1919 -E
+In this Sql Server example, we will connect with windows authentication
+SQLCMD -S PRASAD -E
+Use QUIT keyword to exit or close the connection
+If your SQL server has the localhost instance, you can use that localhost to connect with the server.
+SQLCMD -S localhost -E
+The below query will return all the databases that are available in Server.
+SELECT name FROM master.sys.databases
+Connect using sqlcmd utility and SQL Authentication
+You can connect with Server authentication in multiple ways.
+-- Connect Default Instance using SQL Authentication SQLCMD -S SERVERNAME -U Username -P password -- Connect Named Instance using user Authentication SQLCMD -S SERVERNAME\INSTANCE -U Username -P password -- Connecting Named Instance with port using SQL. Authentication SQLCMD -S SERVERNAME\INSTANCE, 1919 -U Username -P password
+Let me connect with Server authentication.
+SQLCMD -S PRASAD -U Suresh -P yourpassword
+Let me select the Column names from the Employee table.
+SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = N'Employee' GO

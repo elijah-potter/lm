@@ -1,0 +1,71 @@
+Today, fiber optic cable is the most popular choice for communication applications, compared to the traditional twisted pair cable or coaxial cable. It has higher bandwidth, lower signal loss, more considerable transmission distance, and more advanced technology development. No wonder it wins.
+As a result, there’re various types of fiber optic cable due to its more sophisticated development and vigorous competition. Thus, selecting the appropriate fiber optic cable for your cabling is not easy as it seems. Here we’ll deal with this issue, covering all essential aspects, including a general overview, workings, types in terms of application, internal construction, communication channel, fiber mode, jackets, and related connectors.
+Let’s dive in.
+A fiber optic cable comprises a fiber core, cladding, coating, strength member, and jackets, from the innermost to the outermost. Look at the picture below.
+The core typically is 8~10 micron for singlemode fiber and 50/62.5 micron for multimode fiber. A larger core can readily gather more light, allowing more patterns of light rays to transmit through within, meaning more modes, i.e., this is a multimode fiber. Conversely, singlemode fiber has an 8~10 micron core diameter, only allowing a single mode to traverse. This can reduce the mode dispersion, significantly increasing the light ray’s transmission distance. Of course, multimode and singlemode have distinct features, pros and cons, applied to different applications.
+The cladding for both modes is the same, e.g., 125 micron.
+The buffer coating provides functions such as mechanical isolation, protection from physical damage, and fiber identification. The buffer can be contained within a fiber optic cable called a “loose buffer” or “loose buffer tube.” A loose buffer may have more than one fiber and sometimes contains a lubricating gel. In contrast, a “tight buffer” consists of a polymer coating in intimate contact with the primary coating applied to the fiber during manufacture.
+The strength member protects the fiber against tension, like pulling, crushing, bending, etc.
+The outer jacket protects against environmental factors, like moisture, temperature fluctuation, etc. For instance, direct-buried cables may have a layer of metal armor to prevent damage from rodents.
+Unlike the twister pair cable or coaxial cable using electricity to transmit data, the fiber optic cable adopts light as the medium. As pure silicon glass is almost transparent, it is the ideal medium to transmit light rays. That’s why fiber optic cable usually is made of silicon glass.
+In the infrared region of the spectrum, loss in glass fibers is lowest at wavelengths around 1550 nm, so the singlemode fiber typically works at 1550 nm. However, optical fibers are not always used at the lowest loss wavelength. Many short-range systems use a wavelength of about 820 nm, as LEDs for this wavelength are less costly than those designed for longer wavelengths.
+Data signals are carried by optical fiber cables in the form of light using the principles of total internal reflection.
+Total internal reflection
+As T.L. Singal said, the below-depicted phenomenon is total internal reflection. When a light ray traverses from a medium with a higher refractive index to a medium with a lower refractive index, the total light will be reflected back to the medium of incidence. In our instance, the fiber core has a higher refractive index, whereas the cladding is made of less pure glass and has a lower refractive index.
+When a ray (or beam) of light travels from a medium with a higher refractive index (such as fiber core) to another medium with a lower refractive index (such as fiber cladding), and it happens to strike (incident) the core-cladding intersection at more than the known critical angle of incidence (at which the angle of refraction is 90°), then total light will be reflected back to the medium of incidence (i.e., the fiber core).
+Fig. 2.6 illustrates the source end of a fiber cable and a light ray propagating into and then down the fiber length, depicting the basic principle of total internal reflection.
+Types in terms of application
+Generally, people classify fiber optic cables as indoors or outdoors according to their application usage.
+The big difference between indoor fiber optic cable and outdoor fiber optic cable lies in the fire retardancy and water blocking level. That is to say, the ability to resist the impact of environmental factors effectively. Given the difference between indoors and outdoors, we can infer the characteristics of both indoor and outdoor fiber optic cables.
+Indoor fiber optic cable
+Indoor fiber optic cables are widely used in homes, offices, buildings, campuses, etc. They’re required to be fire resistant, not water resistant or harsh environment resistant. They feature a tight buffered construction. The zip cord or figure-8 fiber optic cables are used for backplane, patch cord, and desktop applications.
+Outdoor fiber optic cable
+These cables are designed for more stringent conditions, providing against moisture and other environmental elements. They usually include ribbon fiber optic cables, loose tube fiber optic cables, aerial fiber optic cables, and armored fiber optic cables. Correspondingly, according to the installation methods of outdoor fiber optic cables, the underground fiber cables, direct buried fiber cables, aerial fiber cables, and underwater fiber cables are subject to this category.
+Types in terms of internal construction
+Generally speaking, only four basic types need to consider: tight pack or distribution style, breakout or fan out, zip cord or assembly, and lastly, loose tube.
+Tight pack or distribution style
+Tight pack cable, also called distribution style cable, bundles all buffered individual fibers with strength members under a single jacket.
+Recommended for the enclosure to enclosure and conduit under grade installations.
+- Pros: Smaller OD, lighter and cheaper.
+- Cons: terminations are fragile and require protection.
+Breakout or fan out
+Breakout fiber cable, also called fan-out cable, bundles each buffered fiber in its individual jacket under an overall jacket with a central strength member.
+Recommended for device-to-device applications.
+- Pros: tough and durable for installs where there is movement and traffic
+- Cons: larger OD, heavier, and more expensive.
+Zip cord or assembly
+One or two buffered fibers in its own individual jacket, either in a single or duplex Siamese version.
+Often used for making optic patch cables and short breakout runs.
+These non-buffered fibers run in a tube with a water-repellent gel compound. Loose tube construction is a Telco standard used in telecommunications.
+Types in terms of communication channel
+There’re two communication or data transmission channels: simplex and duplex.
+The Simplex means a light signal could only go a one-way path from start to finish. It can’t turn back from the start. It features a single strand of plastic fiber and an outer jacket. It is most commonly used in automated speed and boundary sensors, digital data readouts, interstate highway sensor relays, etc.
+Correspondingly, the Duplex means a two-way channel. They have two fibers included in a zip-cord arrangement. It can be subdivided into two types: half-duplex and full-duplex. The half-duplex fiber optic cable also has a two-way channel. Only the signal is transmitted in one direction at a time.
+Types in terms of fiber mode
+There’re two modes: singlemode and multimode.
+The singlemode fiber could only admit one light mode to pass through at a time; meanwhile, the multimode fiber could transmit multiple modes simultaneously. For more information, refer to Single-mode vs. Multimode Fiber.
+Types in terms of jackets
+Basically, there’re four popular types of jackets, listed below:
+- PVC stands for Polyvinyl chloride. It is the world’s third most widely produced synthetic plastic polymer, after polyethylene and polypropylene. The jackets made of PVC are commonly used for indoor and outdoor cables. It is usually low-cost, flexible, reasonably rugged, and flame/oil-resistant.
+- PE stands for Polyethylene. It has superior resistance capacity to environmental elements. It also has excellent electrical properties over a wide temperature range. Besides, it is abrasion resistant. As a result, it is the standard jacket material for outdoor fiber optic cables.
+- LSZH is short for “Low Smoke Zero Halogen.” It is composed of thermoplastic or thermoset compounds that emit little smoke and no halogen when exposed to high heat sources.
+- OFNP stands for “Optical Fiber, Non-conductive, Plenum.” They’re made of polyvinyl difluoride, mainly used for plenum cables, and they’re suitable for use in plenum spaces, like drop ceilings or raised floors. This plenum-rated jacket produces little smoke and has better fire-retardant properties.
+Related popular fiber optic connectors
+Unless the guide covers the popular fiber optic connectors part, otherwise it is incomplete. Below, we list the four most commonly used fiber optic connectors and give a brief introduction.
+A fiber optic connector is designed to join optical fibers to route the light signal. It features a protruding ferrule to hold the fiber, enabling you to connect or disconnect the fiber cables easily.
+Invented by Lucent Technologies, the LC has been the most popular choice of fiber connectors. The LC is the acronym for Lucent Connector. Initially designed to satisfy the need for a smaller, low-loss connector, the LC features a 1.25mm ferrule, half the size of SC, FC, and ST. Therefore is also known as the “little connector.”
+The SC refers to “the subscriber connector,” also known as a square connector, featuring a snap-in coupling mechanism, a square shape, and a spring-loaded 2.5mm ferrule. Once the most popular fiber connector, the SC remains the second-best choice of fiber connector for simplex applications, duplex applications, and polarization-maintaining applications.
+The FC stands for ferrule connector. It uses a threaded connection and an aligned key that admits proper insertion, with a stainless-steel housing around the ferrule. The FC used to be one of the most popular singlemode connectors for a long time, but nowadays, it has been phasing out in favor of LC and SC. Tightened firmly by screwing using a threaded collet, it is ideally suitable for high vibration environments and applied for single-mode optic fiber and polarization-maintaining optic fiber.
+The ST is the acronym for Straight Tip. It resembles the FC and uses a long cylindrical 2.5 mm ceramic ferrule. ST is keyed and spring-loaded. It utilizes a bayonet mount to replace a threaded screw, enabling fast deployment and low cost, making it popular for the campus, buildings, enterprise, and military multimode networks.
+For more detail, refer to Fiber Optic Connector: The Ultimate Guide
+Optical fiber has many advantages over copper cable for communications, including larger bandwidth, greater distance between repeaters, lower weight and smaller size, immunity from electrical interference, and even lower cost.
+With the previously mentioned aspects in mind, choosing a suitable fiber optic cable is not difficult anymore.
+Singal, Tarsem Lal. Optical Fiber Communications: Principles and Applications, 45–46. Delhi, India: Cambridge University Press is part of the University of Cambridge, 2016.
+Top 15 Fiber Optic Cable Suppliers In Sri Lanka
+What are Passive Optical Splitters
+Top 20 China Fiber Optic Suppliers in 2022
+Top 50 Fiber Optic Cable Manufacturers In The World
+Top 20 Fiber Optic Closure Suppliers In China In 2023
+Top 20 Fiber Termination Box Suppliers In China In 2023
+Top 23 PLC Splitter Suppliers In China In 2023
+Top 18 Fiber Optic Component Suppliers In Indonesia

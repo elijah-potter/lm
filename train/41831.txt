@@ -1,0 +1,36 @@
+So, what do you use?
+int anInt = (int)aFloat;
+int anInt = static_cast<int>(aFloat); // and its brethren
+And, more importantly, why?
+First, understand that those lines are not equivalent.
+int* anInt = (int*)aFloat; // is equivalent to int* anInt = reinterpret_cast<int*>(aFloat);
+What is happening here is that the programmer is asking the compiler to do whatever it can to make the cast.
+The difference is important because using static_cast will only ask for a base type that is "safe" to convert to, where reinterpret_cast will convert to anything, possibly by just mapping the wanted memory layout over the memory of the given object.
+So, as the "filter" is not the same, using specific cast is more clear and safe than using the C cast, if you rely on the compiler (or runtime impl. if you use dynamic_cast) to tell you where you did something wrong, by avoidng C cast and reinterepret_cast.
+Now that this is more clear, there is another thing : static_cast, reinterpret_cast, const_cast and dynamic_cast are easier to search for.
+And the ultimate point : they are ugly. That's wanted. Potentially buggy code, code smells, obvious "tricks" that might generate bugs, are easier to track when it's associated with ugly look. Bad code should be ugly.
+That's "by design". And that allow the developer to know where he could have done things better (by totally avoiding casts, if not really needed) and where it's fine but it's "documented" in the code by "marking" it as ugly.
+A secondary reason for introducing the new-style cast was that C-style casts are very hard to spot in a program. For example, you can't conveniently search for casts using an ordinary editor or word processor. This near-invisibility of C-style casts is especially unfortunate because they are so potentially damaging. An ugly operation should have an ugly syntactic form. That observation was part of the reason for choosing the syntax for the new-style casts. A further reason was for the new-style casts to match the template notation, so that programmers can write their own casts, especially run-time checked casts.
+Maybe, because static_cast is so ugly and so relatively hard to type, you're more likely to think twice before using one? That would be good, because casts really are mostly avoidable in modern C++.
+Option C: a "C++-style" cast, because it is indistinguishable from a construction:
+int anInt = int(aFloat);
+That aside, other than these trivial cases with primitives, which are well understood, I prefer to use x_cast<>s over C-style casts. There are three reasons why:
+They more narrowly define the operation the programmer was trying to perform.
+They can perform actions that C-style casts cannot (especially in the case of dynamic_cast<>, which can cross-cast across branches of a multiple-inheritance chain).
+They are ugly. They loudly declare that the programmer is working against the type system. In this case, it's a good thing.
+If writing code in C use a C cast. If writing in C++ use a C++ cast.
+Whilst most casting breaks proper type-safety, the C++ ones are more restrictive, and therefore you are slightly less type-unsafe than you would be with a C cast.
+I can tolerate someone using (T*)NULL though to force an overload...
+I have a few rules about C/C++-style casts:
+const_cast. For obvious reasons. Sadly, my rule about dis-applying a const causing the keyboard to reach up and break the programmer's finger was not approved.
+reinterpret_cast. It's really the kind of cast that C doesn't have: pretend this integer's bits are actually a float's bits. This avoids unpleasantness like
+dynamic_cast", stop and re-evaluate your polymorphic class hierarchy and design. Continue re-evaluating your class hierarchy's design until you can delete those words.
+The reasoning behind #4 is simply that it doesn't matter. The circumstances that don't fit into the other rules are either obvious or really low-level. A well-understood conversion of simple types like int-to-float should not need special syntax. And if you're down in the deep, ugly guts of something, well, you're down in the deep, ugly guts of something. There's no need to draw attention to the fact that "here there be dragons," since the teeth, claws, and fire pretty much gave it away already.
+As the above posts note the C++ (static) cast is a bit safer in practice.
+It might be smart to look up some more information about the different kinds of casting and their pro's and cons.
+Just to have more of a background on why. .
+It really depends on which language I'm working with, since you know what they say: In Rome speak Roman. So if I'm programming in C, I try to use the C features to the max, but if I'm programming at C++ I go ahead and use C++ features to the max, even if some people don't like that approach because they say it makes the code "less portable", I say that I don't care, I'm in C++ and programming in C++, and I need a fully C++ compatible compiler to compile code, otherwise I would be working with something different in the first place.
+static_cast etc were invented because of problems with the C style casts when used in templates. If you're writing a template, or if you're code may later be converted to a template, it's a good idea to use C++-style casts. The reason is because the C++-style casts better express intent, so they will give the expected results in cases where C-style casts will do the wrong thing (given particular types as template parameters).
+Other than that, I say use C++-style casts if you have a specific issue that needs them - dynamic_cast is the most common, but even that's probably not an every day thing.
+Anything else, and a C style cast may be a bit less clutter and help readability, or maybe not depending on how familiar the reader is with that cast style these days. It's not really important in my view, mostly a personal preference thing, though don't be surprised if some people don't like the C style.
+Final note - if you need so many casts that this is a big deal, you're probably doing something else wrong. There are exceptions to that in some cases, but most high level code shouldn't need many (if any) casts.

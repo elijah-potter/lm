@@ -1,0 +1,21 @@
+Yes, but first let's clarify what's being claimed.
+There's a little confusion in the question (which is fair enough, it's a confusing topic). There's no doubt that ordinary CT scans and x-rays do lead to a small increase in cancer cases, it's measured, quantified, and taken into account by clinicians when making decisions, case-by-case, dose-by-dose. Many specific CT scans and x-rays are most definitely not what could be called low dose.
+What is being doubted is the assumption that:
+- The linear relationship between radiation dose and risk continues at very low doses
+- That there's no threshold below which there's zero risk
+- That it's therefore impossible to have a risk-free scan using extra-low doses of ionizing radiation. The authors argue that this is a very real possibility, while acknowledging the risks of higher dose scans.
+It's all about the doses.
+So, is there a linear relationship that continues no matter how low the dose, or could there be a threshold below which there's no risk?
+This 2015 Nature article, summarising and discussing the context of a major study published in 2015 in the Lancet, seems the best up to date summary.
+It shows that the linear relationship between dose and cancer risk does persist, even at absolutely tiny doses, with no safe threshold. It explains why there is controversy among researchers - it's very hard to measure the relationship at tiny doses, and this study only managed it by having access to very accurate data from 300,000 people.
+Basically, before this study, you could make a case that there's no strong proof of a relationship below a certain level - but this study shows that this was simply because no study had been done at a scale that could detect such tiny increases in risk.
+Researchers pin down risks of low-dose radiation
+Large study of nuclear workers shows that even tiny doses slightly boost risk of leukaemia.
+For decades, researchers have been trying to quantify the risks of very low doses of ionizing radiation — the kind that might be received from a medical scan, or... [other examples]. A landmark international study has now provided the strongest support yet for the idea that long-term exposure to low-dose radiation increases the risk of leukaemia, although the rise is only minuscule (K. Leuraud et al. Lancet Haematol. http://doi.org/5s4; 2015).
+...it scuppers the popular idea that there might be a threshold dose below which radiation is harmless...
+...it has proved extremely difficult to determine whether this relationship [between dose and cancer risk] holds at low doses, because any increase in risk is so small that to detect it requires studies of large numbers of people for whom the dose received is known. A study of more than 300,000 nuclear-industry workers in France, the United States and the United Kingdom, all of whom wore dosimeter badges, has provided exactly these data.
+...The study confirmed that the risk of leukaemia does rise proportionately with higher doses, but also showed that this linear relationship is present at extremely low levels of radiation.
+That last part is the crucial part.
+Of course, we should be clear that we're talking about utterly tiny increases in risk here. If it sounds alarming, it shouldn't. I recommend this BBC article about radiation risk and bananas, which should help put into context just how small a risk a very low dose risk is.
+And there's still a tiny amount of wriggle room for someone determined to argue that there might be some zero-risk threshold: this study was of repeat exposure to very low doses, and even these 300,000 people weren't enough to measure risk impacts of one-off exposures to very low doses.
+But such a risk would be so tiny, it'd be almost impossible to measure - and this study shows that there's no reason to think there might be something special about very low doses that could enable such an exception.

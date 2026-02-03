@@ -1,0 +1,7 @@
+a table is a construct that holds data. The data could be sensory information to be used as an input to a neural network
+, or it could be weight values
+, for example.
+Tables holding data can have a variety of formats. In Netlab's Noodle™ language, the primary format is called Netlab Values
+, or NLV
+, or Comma Separated Values, is another example of a common table format that can be used in Netlab. It is a convenient format for output data, since it can be read directly into most desktop spreadsheets programs, where it can be analyzed and graphed.
+will also (eventually) be supported. It is a more robust table format designed to carry everything from simple values to complex hierarchically organized information.

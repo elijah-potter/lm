@@ -1,0 +1,13 @@
+Modifications of an aircraft control system developed by University of Leicester engineers, have been tested by flight test engineers from the German Aerospace Center (DLR) and German Air Force test pilots.
+The Leicester modifications have effectively compensated for an inherent design limitation that has led to several disastrous crashes - most notably the JAS-29 during an air show in Stockholm and the YF-22.
+Man-machine interactions in aircraft can lead to so-called pilot involved/in-the-loop oscillations (PIOs) which can compromise aircraft performance and safety. PIOs have therefore become a major concern for the European and US aerospace industry.
+The University of Leicester Department of Engineering has been a member of the European GARTEUR (Group for Aeronautical Research and Technology in Europe) Action Group AG15 for the past three years. The group's aim is to develop techniques which allow the prediction and prevention of PIOs.
+Over the past several years Leicester has developed control design techniques ("anti-windup compensators") which can be added to existing aircraft control systems to lessen susceptibility to PIOs. Extensive mathematical development and computer simulation has matured these techniques but until summer 2006 no in-flight testing was performed.
+Recently, a team of engineers from Leicester, the German Aerospace Center (DLR) and test pilots from the German Armed Forces Flight Test Centre (WTD61) performed in-flight tests of these "PIO prevention" compensators on the DLR ATTAS (Advanced Technologies Testing Aircraft System) experimental aircraft.
+During this flight test campaign, termed SAIFE (Saturation Alleviation In-Flight Experiment), the ATTAS aircraft was deployed in scenarios which were expected to lead to PIO type events and data and pilot comments were collected both with and without the Leicester compensators engaged.
+University of Leicester engineer Dr Matthew Turner commented:
+“Pilot comments showed that with the Leicester compensators engaged, the aircraft was significantly less PIO prone than without. Moreover, the aircraft was deemed to have more predictable handling qualities overall, which was an added bonus.
+“In fact in every single manoeuvre the aircraft performed as well as or better than normal, when the Leicester compensators were engaged.”
+The results were well-received within the GARTEUR action group and further flight tests are planned - again jointly with DLR and WTD61 - in April 2007.
+Notes to Editors:
+Further information is available from Dr Matthew Turner, Department of Engineering, University of Leicester, tel 0116 252 2548, email email@example.com

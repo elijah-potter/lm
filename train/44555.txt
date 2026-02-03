@@ -1,0 +1,68 @@
+Can AI track reforestation projects using drone and satellite data?
+Satellite and drone data was used to monitor tree coverage of Justdiggit re-greening projects in Tanzania and Kenya to measure the efficiency of carbon capture! To help fight climate change by improving carbon capture efficiency, three teams of AI engineers came together to build and implement machine learning models.
+Can AI help save trees and forests? The FruitPunch AI community teamed up with Justdiggit to track the progress of re-greening projects in Tanzania and Kenya. To help fight climate change by improving carbon capture efficiency, three teams of AI engineers came together to build and implement machine learning models on drone and satellite data. Their goal was to estimate the tree count and tree cover in project areas on the African continent. For the 1 hour final presentation, have a look here!
+Let’s preserve some trees!
+What data was at our disposal?
+The team set out to create a machine learning model for automated tree detection and segmentation on drone and satellite imagery to aid JustDiggit and the Free University of Amsterdam in counting individual trees. For this, we made use of both satellite and drone data.
+Drone data included both RGB and digital surface model data (DSM). From the DSM data we created height maps that could be used to identify individual trees. Drone images are perfect for this job but can be expensive and difficult to gather frequently. Satellite data allows scaling up the analysis, but has a resolution that is roughly 100 times lower than drone imagery.
+The dataset that the team worked with existed of 41 large TIFF images. After extracting patches of 256x256 pixels we came up with a set of 7,595 train, 1,085 validation, and 2,170 test images with corresponding binary masks.
+To fulfill the tasks in this Challenge, three teams were formed with different tasks:
+Data Enrichment - Working closely together with our annotation partner Cfru.it to label more trees, do quality insurance, and build the pre-processing pipeline.
+Drone Modelling - Build a tree detection model to count individual trees and estimate biomass.
+Satellite Conversion - Augment the drone data in such a way that models could be trained that also worked for automatic tree detection on satellite images.
+The drone subteam proposed two different methods:
+Transfer learn the DeepForest model
+A U-net approach with respectively RGB-only, height-only and both data types as input.
+The satellite subteam also proposed two methods:
+Unsupervised methods (K-means) on satellite data
+Converting Drone Annotations to SHP and TIF using GDAL
+At the start of the Challenge the team soon came to the conclusion that there weren’t sufficient labels to train accurate models with. In order to create a dataset large enough to reach the goal we partnered with labelling company Cfru.it. With their help, the Data team filled in the missing annotations and ensured that all the labels were accurate.
+Transfer Learning with DeepForest
+The DeepForest approach is based on transfer learning from the RetinaNet model. The only pre-processing step required here was to transform the .tif files and the annotations files (.geojson) to match the requirements of the DeepForest package.
+DeepForest provides good documentation and tutorials on how to improve the predictions. Moreover, the package contains a function to evaluate the model on new data. The evaluation metrics used are box-precision and box-recall. By default, the two metrics are computed by considering true positives the predictions that have an intersection-over-union (IoU) score of at least 40% with a label. The F1 score was adopted as a way to combine the two metrics in a single metric that matters to make training decisions.
+DeepForest recommends tuning the patch size in order to get better predictions. The patch size is the dimension given in pixels in which to split a bigger image before performing predictions:
+The team decided to further fine-tune on new data both models with a 600 patch size and 1200 patch size and observe which one produces better results. A patch size of 600 is the last one that produces an improvement on both the recall and the precision at the same time, for bigger patch sizes the recall decreases. The 1200 patch size produces the best F1 score, but reaches a lower recall, perhaps indicating its inability to detect smaller trees. The fact that bigger patch sizes than the default ones work better is not a surprise since the Deepforest model was trained on images with a lower resolution. However, the F1 score does not reach satisfactory levels, hence further training on new data is necessary to obtain a better model.
+The loss is influenced by the patch size hence it is best to compare it only among models with a similar patch size. Overall, a learning rate of 0.001 leads to the best training runs. The batch size hasn’t got any influence on the outcome of the training. More epochs do not cause overfitting and might slightly improve the results but most of the gains happen in the first 5 epochs.
+2 models were trained for comparison, one with a patch size of 600 and the other with a patch size of 1200. To compare the two models we need to use the F1 score. However, the F1 score varies together with the score threshold, which is the minimum probability that the model must assign to a certain predicted box in order to consider it a valid prediction.
+The default score threshold in the Deepforest model is 0.1, however, you can modify it. We tried different thresholds between 0.1 and 0.9 distanced by an interval of 0.1 on both models. Even though the differences with the best 1200 model remain minimal, the best F1 score is obtained by the best 600-patch-size model with a score threshold of 0.3. Then this is the model of choice! It obtains an F1 score of 54%
+The table below illustrates the performances of the optimal DeepForest model on the validation and on the test set:
+Object-segmentation with U-net
+The U-net is a type of neural network architecture developed for image segmentation purposes at the University of Freiburg. The main idea is to perform the classic set of convolutions coupled with an activation function and max-pooling to achieve dimensionality reduction of the features (referred to as the contracting pathway), and then perform a symmetric sequence of inverse operations.
+There were essentially three paths in the U-net approach to be explored:
+Model taking RGB images initialized with pre-trained ResNet on ImageNet data
+Input model with Digital Surface Model (DSM) data
+Input model with both RGB and DSM inputs
+The RGB-only model’s prediction is the most accurate, whereas the RGB+DSM model is more conservative with labeling the pixels as representing trees.
+Despite the expectation that the RGB+DSM model would perform much better than the other models, it achieved similar results to the RGB-only model.
+The RGB-only model weights were initialized with the values from a pre-trained ResNet34 model, which constituted a much better starting point than randomly initialized weights of the RGB+DSM model.
+K-Means Unsupervised Classification
+A K-means clustering method was applied on satellite images on the pixel scale. The team used 8 clusters which allowed us to neatly detect different types of terrain and vegetation. Figure 11 shows the original (left, using only the red, green and Near InfraRed bands) and binary images (right) when merged to two sub-clusters. The results are visually comparable to human labelling.
+Degrading Drone images into Satellite images
+As stated before, drone images can become very expensive rather quickly. To reduce costs and increase land coverage the next logical step is to verge into satellite imagery. Satellite images cover the entire earth every day and are relatively cheap compared to drones.
+The only downside is that the quality of images is drastically reduced. Image quality ranges from 10-20 meters per pixel for free services (Sentinel, Landsat) to 50cm per pixel for paid services. For this Challenge, participants had the privilege to work with data from one of our partners, Planet. They deliver high-quality images and were able to provide daily coverage of our area of interest!
+Registration using keypoint detection
+The data from the drone and satellite did not align automatically due to different coordinate reference systems used for drones and satellites.
+Using automatic keypoint detection based on SIFT features on a resampled drone image (Figure X) and satellite image, we can match the key points and then distort the satellite image to align the two images. Figure X shows that labelling from drone images is well transferred to satellite images through this registration technique.
+“Bicubic downsampling to reach the target ground sample distance” (0.05 => 0.5m);
+“Blurring using a point spread function kernel calculated to match the simulated satellite aperture”.
+Obtaining the point spread function for our satellite image is rather difficult because it is of Cassegrain type. The team chose to start with a simple gaussian blurring (which is a way to approach the PSF of a circular telescope).
+We can see that the processed drone image is still very different from the satellite image. However, it is unsure that the satellite image is from the same season (it’s visible by zooming that some trees have no leaf on the drone image) and there might be additional work to adjust colors and contrast to improve the matching of those images. Besides, satellite images have a lot of postprocessing like pansharpening for instance that is hard to reproduce on the drone image.
+There is no quantitative evaluation of this work yet, all the evaluations were done qualitatively. Registration using keypoint alignment looks more promising from human eyes. Unsupervised clustering performs surprisingly well for satellite image segmentation.
+Which models and data are the best to fight deforestation?
+The DeepForest model is a great tool to do some simple transfer-learning. The package provides a good framework to pre-process and post-process the several tiles.
+Transfer learning seems to work better with a learning rate of 0.001 and less than 10 epochs are enough for good fine-tuning. The effect of different patch sizes might differ before and after the extra training but has got only a limited impact after some training. Changing the score threshold might also help to improve the model.
+Overall, the results are encouraging with an F1 score of 58% on the test set and a MAPE of 32%.
+Future research could address some shortcomings (like a struggle on dry/burnt trees or on big trees) by using google cloud data for the training of the model. Future researchers could also create two separate models one for bigger trees and one for smaller trees. At the same time, operators could maintain the drone at the same height while collecting footage or data scientists could automatically adjust the patch size based on the height at which the drone collected the images.
+The U-net models do not seem to be the right fit for the available data. However, there are a few ideas on how to improve these results in the future, like hyperparameter tuning and incorporating the NEON data into the training dataset.
+There is room for improvement both for what regards the DeepForest model and for the U-net ones. But the biggest incremental improvements over this work could be reached by data enrichment and not by focusing on improving the existing models. For instance, the normalised difference vegetation index could be used as input in one of the models. Researchers could use the NEON dataset for a pre-train of any model besides the DeepForest one (which was already pre-trained on this dataset). The pre-training on the NEON dataset should then be followed by the second phase of training /fine-tuning our own data.
+For satellite images, automatic keypoint detection seems to produce the most promising visual results. Based on the current progress, the next step is to apply segmentation models given the registered drone and satellite pairs and the labels from drone images.
+As often, most of the work seems to be in obtaining data of the proper quality. Here the goal was to find a way to use labels from a model trained on a specific image source (drone) on data from a different source. It was interesting to try out different methods to bridge the gap between the two sources. There is definitely a lot more work to do on this specific task and hopefully, FruitPunch has provided Justdiggit with an idea of what to do next!
+The AI for Trees Challenge was a unique opportunity to learn more about object segmentation, clustering and computer vision techniques, besides learning how to work with drone and satellite data and the differences between these two. It was a pleasure to work with such a diverse and dedicated team!
+Authors: Sara Nóbrega, Weiwei Zong
+Participants AI for Trees Challenge: Alexandra Smith, Lee Dudek, Melanie Arp, Tim Broadhurst, Natalia Skaczkowska-Drabczyk, Minaraj Sai, John Nshimyumukiza, Michele Sergio Pozzi, John Lister, Luis Blanche, Sri Aravind, Weiwei Zong
+Subscribe to our newsletter
+Be the first to know when a new AI for Good challenge is launched. Keep up do date with the latest AI for Good news.
+We’ve just sent you a confirmation email.
+We know, this can be annoying, but we want to make sure we don’t spam anyone. Please, check out your inbox and confirm the link in the email.
+Once confirmed, you’ll be ready to go!
+Oops! Something went wrong while submitting the form.

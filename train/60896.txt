@@ -1,0 +1,33 @@
+Officially, the keyword typedef in C is a storage class specifier, but this is only for convenience. In reality, it creates a synonym for an existing type. We can use that synonym (alias) instead of the original type name.
+If you come from other programming languages you might be used to using types like byte,uint and ulong. We can name the corresponding types in C, using the syntax from point 1 above:
+typedef unsigned char BYTE;
+typedef unsigned long ULONG;
+and then use them to create variables:
+As we said, typedef in C does not create a new type. It creates alias names to already existing types. This means that in the example above BYTE is the same as unsigned char.
+To name a pointer or an array type we use the syntax from point 2 or 3:
+typedef char *STRING;
+typedef char TOWN;
+STRING bookName = "C Programming
+printf("The name of the book is %s\n", bookName);
+printf("%s rocks!\n", town);
+Using typedef in C with enum, struct and union has the same syntax. We define our complex type and write the desired synonym after its body. This is the syntax from point 4 above.
+typedef struct PointTAG
+Now we can use the word POINT to create variables:
+startLocation.x = 0;
+startLocation.y = 0;
+Notice that we no longer need to use the keyword struct in the creation of the variables. The same applies to enums and unions.
+Some people say that this is good, but others say it is actually bad. I would rather say that it is bad. For reasons – keep reading below (section: Should I use typedef in C?)
+The syntax here is from point 5 above. This could get ugly very quickly. Here is how we define a pointer to a function normally:
+void (*pointerToFunction)(char*) = &functionName;
+"functionName" is the name of a function that returns no result(the void in the beginning) and receives exactly one argument – a char pointer. Now "pointerToFunction" is a pointer to that function.
+Alternatively, we can create an alias like this:
+typedef void (*VoidFunc_CharArr)(char*);
+VoidFunc_CharArr becomes a synonym for the “A pointer to a function. That function returns no value. It accepts exactly one argument – a char pointer.” Now, we can create our pointer variable in a simple manner:
+VoidFunc_CharArr pointerToFunction = &functionName;
+Now, try to imagine how you would create a pointer to a function that receives a function as an argument! This is one of the few places where using typedef in C is a really good practice.
+If you need to ask that question, then the answer is NO. Most beginners are tempted to create type aliases, because they can slightly reduce the code volume. In practice this causes more troubles than positives. The usage of typedef should be reduced to a minimum. The few reasonable situations to use it are limited to:
+If that is the case, chances are that you already know very well what you are doing and you should not be asking that question in the first place.
+For instance, the coding style for the Linux kernel tells us that we should never create aliases for structures. For more information on the subject look at chapter five here: Linux Kernel Coding Style
+The correct use could:
+The unnecessary usage of typedef:
+I prepared several examples. They cover the examples that we have just explained. As always, here is the zip archive, containing the source and header files: typedef-in-c.zip

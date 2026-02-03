@@ -1,0 +1,65 @@
+Instead of supervised learning (exemplars),
+we don't tell it correct "class" / action.
+Instead we give sporadic indirect feedback
+(a bit like "this classification was good/bad").
+e.g. Move your muscles to play basketball.
+I can't articulate what instructions to send to your muscles / robot motors
+and in what order.
+But a child could sit there
+and tell you when you have scored a basket.
+In fact, even a machine could detect
+and automatically reward you
+when a basket is scored.
+Observe state of the world x = (p,s)
+position and speed of car on main road
+p - 21 values
+s - 20 values
+x has 420 possible values
+Take action a = (c,n)
+c - which pedal - 2 values (accelerate, brake)
+n - how much (press pedal this hard) - 5 values
+10 possible actions a
+Observe if situation = not crossed, crossed,
+Already we see typical things:
+Much more states than actions.
+Definition of x and a is very much under our control.
+Could make it more coarse-grained / fine-grained.
+If tried out every possible action in every possible
+state, 4200 experiments to carry out.
+Build model of Physics.
+Take distance (p - junction)
+Time for car to cover distance given speed s
+Time it takes agent to cross road
+Problems / Restrictions:
+Need model in first place.
+Need a controlled world. e.g. Factory environment.
+Model must be accurate.
+e.g. Dynamics of robot arm:
+World changes / Arm friction increases
+- Have to re-program.
+But programmer is long gone.
+Look at consequences of actions.
+"Let the world be its own model"
+If action a worked, keep it.
+If not, explore other action a2.
+After many iterations, we learn the correct action patterns
+to any level of granularity.
+And we never had to understand how the world worked!
+We learn the mapping:
+x, a -> y initial state, action -> new state
+This approach will work whether we cross the road
+using wings, fins,
+or view the world through reverse glasses.
+a dog born with no front legs.
+Learned to walk on back legs like a human.
+Can adjust (re-learn) as world changes.
+More plausible that evolution could have worked this way
+(fill in the "boxes")
+rather than building physics models.
+Another reason to use
+state-space (or other) learning is simply when the task
+is tedious to program.
+Which may mean expensive to program
+- Programmers aren't free.
+Can you do exhaustive search?
+If one can do exhaustive search, you don't need RL or any complex learning.

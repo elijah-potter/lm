@@ -1,0 +1,7 @@
+A team led by researchers from Newcastle University created new dynamic DNA data structures that can store and retrieve information in an ordered manner from DNA molecules.
+The researchers used DNA polymers to deploy an in vitro stack data structure that uses chemical reactions to record combinations of two different DNA signals (0s and 1s), dispatch them into solution in reverse order, then re-record. The stack stores and recalls data as DNA signal strands (ssDNA) in a last-in first-out configuration by assembling and truncating polymers of single ssDNA strands. The work is described in "A Last-In First-Out Stack Data Structure Implemented in DNA," published in Nature Communications.
+The structure may eventually be embedded in vivo to store messenger RNAs and reverse the order of a translational response, among other applications. Newscastle's Harold Fellermann envisions such structures employed within living cells, which "might be used in environmental monitoring, bioremediation, green production, and even personalized nanomedicine."
+From Newcastle University
+View Full Article
+Abstracts Copyright © 2021 SmithBucklin, Washington, DC, USA
+No entries found

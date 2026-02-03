@@ -1,0 +1,16 @@
+Penetration testing tries to break into a system using tactics that a hacker would employ. It can be used to test the effectiveness of an organization’s current security practices and develop new procedures for dealing with potential threats. This can be considered passive testing because it has no malicious intent.
+Types of penetration tests
+The methods used for penetration testing attempt to exploit vulnerabilities and reveal potential weaknesses in the target architecture or infrastructure by utilizing highly controlled malicious actions.
+This penetration testing is performed in the most controlled manner by programmers or testers hired specifically for that purpose. They use a specially crafted input, normally via an interface such as a web form, to perform each test and therefore have full knowledge of what they can do.
+Web application testing
+A hacker will use malicious means (methods) to test an application or system by simulating real-world user interactions within their system. This will often be done in the form of a web-based application that allows for the penetration test of particular applications and services in a controlled manner. The request is usually made via some interface or web form, and the hacker tests each action as though they were executing it themselves. This is generally considered a grey box approach, although it has limitations.
+Wireless penetration testing
+This penetration testing is performed in the most controlled manner by programmers or testers who have been hired specifically for that purpose. They use a specially crafted input, normally via an interface such as a web form, to perform each test and therefore have full knowledge of what they can do.
+Build and configuration review
+In any event, this term refers to either full control or limited control over the nature and source of attempts to breach security.
+A hacker will use malicious means (methods) to test an application or system to discover local vulnerabilities. Generally, this involves a degree of “fuzzing” to find bugs and is often done using automated tools that focus on certain programming languages like PHP.
+External penetration testing
+Product testing involves penetration consultants hired to test a commercial product for potential vulnerabilities, thereby finding ways to circumvent the tested system’s security features. External researchers perform their testing as well as testing commissioned by corporations.
+Internal infrastructure penetration testing
+Internal testing is performed by the people responsible for securing a given system or network. It can be based on formal test plans and procedures, but it is only sometimes conducted in that manner. This can be considered a kind of “white-box” testing and is often termed grey-box testing if contextually it is clear that this type of test should not normally be considered a “black” box in nature. In any event, this term refers to either full control or limited control over the nature and source of attempts to breach security.
+For starters, there are a lot of myths when it comes to penetration testing. Penetration testing is a valuable process for anyone in the IT security world. Still, it cannot be easy to know what types of penetration test there are as it requires indepth knowledge and research.

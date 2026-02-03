@@ -1,0 +1,8 @@
+Let’s say you want to buy a house. You need to finance $200,000 for 30 years and your interest rate is 5% per year. Do you know how to calculate your monthly payment?
+Sure, you could go to an online calculator but it’s also good to know the formula. To make this particular calculation, you need this formula:
+Principal = $200,000
+Rate = .05 ÷ 12 or .0041667
+N = Number of payments (360)
+Now I’ll walk you through the calculation:
+I ran the calculation in Excel, and it game me a payment of $1,073.64. The one penny difference is due to rounding.
+The cool thing about this formula is that it works on any kind of loan as long as you make the proper adjustments. You would do yourself well to learn this formula or at least know how to use a financial calculator the next time you purchase a car.

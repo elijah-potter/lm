@@ -1,0 +1,117 @@
+We’re in a brave, new post open source world
+The history of open source and a glimpse at its future
+Open source changed startups, and then startups turned around and changed open source.
+Two startups, in particular: GitHub and Stack Overflow. Together, they launched a new chapter for software technology. And the decisions we make from here will determine how the next 5–10 years of software unfold.
+But to understand why, we have to start at the beginning.
+1970s-1980s: The early days of software
+In the 1970s, everybody was writing custom software and building custom computers. But in 1981, IBM launched the IBM PC, a “personal computer”, and brought hardware to a mass market.
+Software came along for the ride. Business people looked at IBM and saw an enormous market opportunity. Venture capitalists realized that software was less risky than hardware, with better potential upside.
+So Sequoia Capital funded Oracle to make database software. IBM hired Microsoft to write MS-DOS, an operating system for their PC.
+Suddenly, the idea of free software seemed insane. Software was a commodity; if you could make millions of dollars charging for it, why wouldn’t you?
+Writing free software became a political act of defiance, and a strong counterculture rose around it. If you wrote open source, you weren’t like Oracle or Microsoft. People who wrote free software believed in its potential as a platform, not a product.
+These programmers gathered on mailing lists and on IRC to write code together. They put it up on websites for free. Anybody could use and modify the code as they wished.
+But every project was different. After all, these weren’t flashy, commercial operations.
+If you wanted to contribute code to a project, you’d have to track down one of the maintainers on their preferred channel. Maybe that was IRC. Maybe that was a mailing list. Maybe it started with a private email introducing yourself. Maybe you couldn’t figure out who to contact at all.
+Not only did projects not have a standard way of communicating, but they also didn’t have standard developer tools.
+Open source projects use version control systems to keep track of changes everybody makes to the code. That way, developers avoid repeating each other’s work, or making changes that conflict with one another.
+These days, if you hear version control, many people think Git, but there are plenty of other systems out there, including SVN and CVS. Each one works a little differently, and developers have preferences on which version control systems they like to use.
+So if you wanted to contribute to a project, you had to figure out who to talk to and how to talk to them. You had to do some legwork before you could write any code at all.
+Late 1990s: Open source becomes popular
+In the late 1990s, things started to change. A bunch of organizations formed the LAMP (Linux, Apache, MySQL, PHP) stack, a full set of open source developer tools. Now anyone could build software for nearly free.
+Big companies still thought open source was a joke. Steve Ballmer called Linux a “cancer” and said “people needed to pay for [software] properly”. Bill Gates had written a letter in 1976 denouncing “hobbyists” for pirating BASIC software, reminding them they were “stealing”:
+Who can afford to do professional work for nothing? What hobbyist can put 3-man years into programming, finding all bugs, documenting his product and distribute for free?
+But startups took interest in the LAMP stack, because they realized it was 1/10th the cost of proprietary software. If they used these free tools, they wouldn’t have to raise as much money to launch their business.
+Open source had found its market.
+As more people started using open source, developers needed better tools to manage their projects. One company, VA Research, saw an opportunity. They were selling personal computers that came pre-installed with Linux, the project that formed the “L” of LAMP stack.
+VA Research figured that if more people used open source, it was good for business. So in the summer of 1999, a couple of employees decided to design a collaboration tool, called SourceForge, which they released in the fall of that year.
+SourceForge became a standard place for developers to work on open source projects. They could host code on SourceForge for free, manage their projects, and track bugs, all in one place.
+But one piece of the puzzle was still evolving: version control.
+How Git changed everything
+Linux, the open source operating system, was growing in popularity. But Linux was using a proprietary version control, called BitKeeper, to manage its code. Although Linus Torvalds, the original developer of the Linux project, liked BitKeeper (who licensed it to them for free under a “community license”), plenty of other developers were unhappy with this arrangement.
+BitKeeper, being proprietary software, had a lot of restrictions on their users. If a developer used BitKeeper on Linux, for example, they couldn’t reverse engineer BitKeeper’s code for another version control tool, like SVN or CVS.
+Finally, in 2005, the makers of BitKeeper announced they were ending free support for Linux, citing license violations, and the maintainers were forced to either accept a commercial contract or come up with a new solution.
+Linus Torvalds didn’t like any of the free version control systems out there. So he decided to make his own. In 2005, he released a new version control system, called Git.
+Of the name, Linus joked that he was an “egotistical bastard” who “named all projects after myself” — “git” being British slang for “unpleasant person”.
+It turned out that Linus wasn’t the only person who wanted a better, free version control system. Other developers liked Git, too. It was faster, and it was decentralized, able to handle workflows from multiple contributors.
+It wasn’t intuitive, though. Git was markedly different from anything else out there. SourceForge chose not to support it.
+Within a few years, however, SourceForge was facing new competition. Two new collaboration platforms launched in 2008: GitHub and Bitbucket.
+Both were good products. But there was a key difference: Bitbucket only supported Mercurial as a version control system, whereas GitHub only supported Git.
+Matt Mackall had announced Mercurial after the BitKeeper fiasco, right at the same time that Linus had announced Git. The rivalry between Mercurial and Git was fierce.
+But in the end, GitHub bet on the right horse.
+Linux and other prominent open source projects had already switched to Git. And GitHub made the non-intuitive Git much easier to understand.
+Mercurial, the version control system that BitBucket launched with, is used in just 2% of projects today.
+GitHub became the obvious choice to collaborate on code. Open source needed:
+(1) a standard way to communicate, and
+(2) a standard way to manage code
+GitHub had both of those. And it even went a step further, popularizing then-new social mechanics, like following other developers and seeing project changes in a news feed. Now developers even had:
+(3) a standard place to socialize on the web
+Finally, the picture was complete.
+Stack Overflow: The place to get help with code
+GitHub became a watering hole for people to work on code together. But what about the hours of frustration and coding between successful commits?
+Developers ask each other for advice and share knowledge all the time. Programming books are extremely popular for this reason. Sometimes, conversation happens over private emails or mailing lists. But there was no dedicated place to talk about the nitty gritty of code.
+In 1996, Experts-Exchange, piggybacking off the first dot-com boom, launched as a way for IT professionals to ask each other for help and network.
+(Why the annoying hyphen? It was originally called http://expertsexchange.com, until enough people pointed out it could be misread as “Expert Sex Change”, so they moved to http://experts-exchange.com and hyphenated their name.)
+Experts-Exchange had a premium membership model and went bankrupt in 2001, following the dot-com crash. Some blamed venture capital: JP Morgan took 51% of the company for $5.5M in financing, and made Experts-Exchange grow faster than it was meant to. The site still lives on under new ownership today.
+But the idea was good, and in 2008, Jeff Atwood and Joel Spolsky decided to launch a more open version of the original site, calling it Stack Overflow.
+Developers now had a place to ask each other questions and get help, whether about picking a language or a bug they couldn’t figure out. Stack Overflow was so successful that it eventually expanded to a whole network of Q&A sites, including mathematics, Ubuntu and cryptography. They called the network Stack Exchange.
+Now developers had all the tools they needed. In the 1980s, they had to use a scattered combination of IRC, mailing lists, forums, and version control systems.
+By 2010, they had Git for version control, GitHub to collaborate, and Stack Overflow to ask and answer questions.
+2010-today: the Golden Age of open source
+Today, it’s easier to contribute to open source projects, because everybody uses the same set of tools, and because many projects are located on one platform.
+It’s easy to figure out who the maintainers are, what other projects they’ve contributed to, which changes have been made, and which issues are open.
+Lowering the barriers to entry launched a Golden Age for open source.
+Tons of projects launched
+In 2011, there were 2 million repositories on GitHub. Today, there are over 29 million. GitHub’s Brian Doll noted that the first million repositories took nearly 4 years to create; getting from nine to ten million took just 48 days.
+Tons of projects discovered
+GitHub’s social mechanics and platform made it easier to find new projects than ever before. That meant many more developers had open source projects at their disposal.
+Open source is cool now
+Remember how companies and venture capitalists in the 1980s laughed at open source? Well, no longer:
+It’s safe to say that “open source” has entered the mainstream tech vernacular. And it’s not just pure software anymore.
+Bloomberg Beta open sourced their investment playbook, The New York Times open sourced their style guide, O’Reilly Media open sourced a book. “Open source” has come to simply mean “open information”. Some might argue it barely means anything at all.
+Open source became the default, not an alternative
+Here’s a funny story. When the free software movement began in the 1980s, they promoted a license called GPL. Over time, other open licenses joined the scene, including Apache, MIT and BSD, with various layers of permissiveness.
+When GitHub started, they didn’t promote licenses. Some speculate that GitHub thought “legalese” would dissuade developers from joining. There is no default license: by hosting a project on GitHub, you agree to allow people to fork (copy) and view your code, but otherwise everything is subjected to copyright.
+GitHub’s approach worked a little too well, because today, hardly anybody uses licenses on GitHub, despite calling their projects “open source”. An informal SFLC study found that in 2013, less than 15% of GitHub projects had a license.
+The free software generation had to think about licenses because they were taking a stance on what they were not (that is, proprietary software). The GitHub generation takes this right for granted. They don’t care about permissions. They default to open.
+Open source is so popular today that we don’t think of it as exceptional anymore. We’re so open source, that maybe we’re post open source:
+But not is all groovy in the land of post open source.
+The future: a Post Open Source world
+With the exponential rise of open source comes new challenges that are yet to be resolved. For example:
+Increased workload from drive-by contributors
+The downside of having tons of people able to discover and use your project is you now have to deal with tons of strangers who feel qualified to express an opinion about your project.
+In the Golden Olden Days, because there were fewer programmers out there, and nothing was standardized, the bar to get involved with a project was higher. Today, anybody can pop into a GitHub project, open an issue, make demands, or say not-very-nice things…then disappear as quickly as they came.
+What makes this more difficult to resolve is that GitHub is — surprise! — not open source. GitHub is closed source, meaning that only GitHub staff is able to make improvements to its platform.
+The irony of using a proprietary tool to manage open source projects, much like BitKeeper and Linux, has not been lost on everyone. Some developers refuse to put their code on GitHub to retain their independence. Linus Torvalds, the creator of Git himself, refuses to accept pull requests (code changes) from GitHub.
+There is also concern around using a centralized platform to manage millions of repositories: GitHub has faced several outages in recent years, including a DDoS attack last year and a network disruption just yesterday. A disruption in just one website — GitHub — affects many more.
+Earlier this month, a group of developers wrote an open letter to GitHub, expressing their frustration with the lack of tools to manage an ever-increasing work load, and requesting that GitHub make important changes to its product.
+Open source projects becoming productized
+The proliferation of open source projects means it’s harder — and at times, downright unrealistic — to build sustainable communities around them.
+In 2008, there were an estimated 18,000 active open source projects in the world. SourceForge was estimated to have 150,000 total projects (both active and inactive).
+Today, there are 29 million projects just on GitHub. That’s 200x what was on SourceForge in just 2008.
+But what does the supply side look like? The number of software developers in the US alone nearly doubled from 2002–2012 to over 1 million, but that pace (2x) is not commensurate with the exponential growth in projects (>200x).
+That data set ends at 2012. The U.S. Bureau of Labor Statistics expects 17% job growth for software developers over the next 10 years. That’s quite a bit, but it’s still not on pace with project growth.
+Certainly, many people have learned to code in the past 2–3 years, but it’s not realistic to expect that new programmers have the technical expertise to make substantial contributions.
+As a result, while plenty of amateur developers use open source projects, those people aren’t interested in, or capable of, seriously giving back. They might be able to contribute a minor bug or fix, but the heavy lifting is still left to the veterans.
+Experienced maintainers have felt the burden. Today, open source looks less like a two-way street, and more like free products that nobody pays for, but that still require serious hours to maintain.
+This is not so different from what happened to newspapers or music, except that nearly all the world’s software is riding on open source.
+Code is not above the law
+Here’s the followup to that licensing story: even software is not above the law. Facing concerns, GitHub started taking a stance on licensing in 2013. They now suggest a license when creating a new project, and they made a microsite, http://choosealicense.com/, to help project owners choose.
+Stack Overflow is contending with a post open source world, too.
+Since 2008, Stack Overflow has been using the Creative Commons CC-BY-SA license for all content on its site. The problem is that CC-BY-SA requires attribution when republishing content. It also requires sharing that content under a similar license. That makes it not-very-suitable for getting help on your code.
+Technically, if you use someone else’s code revision from Stack Overflow, you would have to add a comment in your code that attributes the code to them. And then that person’s code would potentially have a different license from the rest of your code.
+Your average hobbyist developer might not care about the rules, but many companies forbid employees from using Stack Overflow, partly for this reason.
+As we enter a post open source world, Stack Overflow has explored transitioning to a more permissive MIT license, but the conversation hasn’t been easy. Questions like what happens to legacy code, and dual licensing for code and non-code contributions, have generated confusion and strong reactions.
+Companies, too, are struggling to understand the legal implications of contributing to open source projects, or even releasing their own projects. Many companies now have departments dedicated to open source, including HP and Facebook.
+Software development is becoming fragmented
+Drew Hamlett wrote a cheeky post this month called “The Sad State of Web Development”, complaining that developers keep reinventing the wheel by making their own projects, instead of building a stable ecosystem together:
+No one can create a library that does anything. Every project that creeps up is even more ambitious than the next….I just don’t understand. The only thing I can think, is people are just constantly re writing Node.js apps over and over.
+While the actual open source workflow has become standardized, the output has become perversely fragmented. It’s so easy now to start new projects that everybody creates their own instead of contributing back to old ones.
+Instead of, for example, 100 large open source projects with active communities, we’ve got 10,000 tiny repos with redundant functionality.
+One of open source’s biggest advantages was resilience. A public project with many contributors was theoretically stronger than a private project locked inside a company with fewer contributors.
+Now, the widespread adoption of open source threatens to create just the opposite.
+The Road Ahead
+Standards like the LAMP Stack, GitHub and Stack Overflow did such a good job of popularizing open source that they practically made it obsolete. Just like “mobile phones” are simply becoming “phones”, “open source software” is simply becoming “software”.
+This is an incredible win for open source. But it comes with new challenges: how to actually manage demand and workflows, how to encourage contributions, and how to build antifragile ecosystems.
+We may not feel the burden yet, but winter is coming. In a post open source world, these are problems we’ll all have to contend with.
+[N.B.: I know I’ve left plenty out here. I did my best, but I am a mere scribe attempting to optimize length for page views. Please, if you think I missed a key piece of history, add to the story in the comments below!]
+Thanks to Ben Gleitzman for reviewing this draft.

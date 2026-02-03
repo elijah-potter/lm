@@ -1,0 +1,44 @@
+Raytracing: Intersection with a plane
+Follow-up to Raytracing: A (Very) Brief Introduction from Nick's blog
+Last time I mentioned that rays are cast from the eye point. This isn’t much good of course unless you can tell what the ray collides with. So here’s an idea of how to check for the intersection of a ray and a flat plane.
+Representing our objects
+Here’s the mathsy bit. If you’ve covered vectors before, then I think it should be reasonably easy to follow. Let me know if you have any questions or spot any mistakes.
+We can represent our ray with an origin, and a direction. Both of these are 3-dimensional vectors. It will come in handy later if our direction is normalised (has a length of 1).
+We can then represent the path the ray takes as a parametric equation in t.
+(P is the position, O is the origin, and D is the direction).
+Because our direction vector is normalised, t is also the distance the ray has traveled from the origin.
+Representing a plane is a little less intuitive, but we can do it using a (3D) vector to represent the normal to the plane, as well as a value to represent the distance to the origin (in the direction of the normal). Note: this is the distance to the origin at (0,0,0) rather than the origin of the ray mentioned above.
+e.g. if we look down the Z-axis from 0 in the positive direction, we could represent a wall 10 units away with a plane with a normal of (0,0,-1) and a distance of 10.
+The general equation for a plane is:
+Where a, b and c are the x, y and z components of the normal, and d is the distance to the origin. To make the later equations more concise, we’ll rewrite the plane equation in vector form as:
+(P is the position, N is the normal, and d is the distance from the origin. Also the dot is the dot product)
+As we’ve already established, t is the distance the ray has travelled from the origin. What we want to do now is find out how far the ray has travelled if/when it intersects our plane. We can do this by solving the ray and plane equations simultaneously.Starting with the plane equation:
+Substitute in the ray equation:
+The dot product is distributive, so we can do this:
+The dot product also lets us take multiplied scalar arguments outside the brackets like so:
+Now shuffle it around a bit…
+A bit more…
+Super! Now we have the distance the ray has travelled when it hits the plane. We can plug this value back into the ray equation to get the intersection point in 3D coordinates too.
+If the ray doesn’t hit the plane then both the numerator and denominator of the above equation are 0.
+If you’d implemented what I’ve said so far, you would probably have a screen with half white (for the intersection hits) and half black (for the misses). So what we need now is some colour, or a slightly more interesting primitive to draw.
+So, next time I’ll probably cover intersection with a sphere or how to colour your object with some simple lighting equations. Any preferences? I’ll probably do them both anyway.
+6 comments by 3 or more people[Skip to the latest comment]
+Nice post, Nick.
+But I have one question:
+In the equation for the plane, there isn’t anywhere a variable for the plane’s size (at least, I can’t find any). Is the plane infinite so you couldn’t build… e.g. a box with multiple planes?
+01 Feb 2008, 21:53
+Hi malu, yes you’re right, the plane is infinite, so it’s not much use for boxes. If you want to make a box you could either make a box primitive from scratch – this should have a reasonably simple intersection test. Or you could extend the above method to work for quadrilaterals by checking that the intersection point is within your 4 bounding points. (You could then make your box out of quads).
+As I said before, I think making a box primitive from scratch would probably be quite easy, so perhaps I’ll give that a go a write about it in a follow-up article.
+02 Feb 2008, 00:11
+Hi Nick, I’m another big raytracing fan and look forward to seeing what you come up with. I’ve written raytracers in the last year in C#, C++ and HLSL (for GPUs) and the simplicity with which you’re able to make impressive images is mindblowing. One of my better images is this one of just spheres and a plane, also known as Pool. I eventually got box primitives in there and so combined with reflections made this one although the shadows aren’t very ‘soft’ so look rather odd. There’s some more images, and even a 23MB version (15360×8640) of the first image. If anyone is curious what else is there, just explore the parent directories, it’s just full of random test images, some broken, some pretty, some not :).
+Roll on the 3rd post :)
+02 Feb 2008, 00:32
+Roll on intersection with a sphere :) Get the boring stuff out of the way quickly? :)
+02 Feb 2008, 10:30
+Cool to see people with an in-depth interest in rendering. I haven’t quite got as far as making my own renderer, just harvesting the fruits of other people’s hard work :)
+Adam, you may well already have looked into area lighting but there are a few guides on it
+It would be cool to see a description of Ambient Occlusion raytracing if you manage to implement that, because it’s a really nice effect. It basically revolves around calculating how much of the sky a particular point can “see”. On top of that, if you have an environment map you can average the colour of the sky that can be seen to give realistic lighting, especially if the environment is an HDR image.
+02 Feb 2008, 12:37
+You’ve given me the rendering development bug… just done a checkout from Blender’s source code repository :)
+02 Feb 2008, 16:34
+Add a commentYou are not allowed to comment on this entry as it has restricted commenting permissions.

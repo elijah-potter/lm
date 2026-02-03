@@ -1,0 +1,23 @@
+There is no government, no industrial-military complex, no economic system, no mass media that can ever reduce us to puppets and robots as thoroughly as the biological and environmnetal dictatorships have – F.M. Esfandiary (FM-2030), Upwingers
+Hello friends! In this post, i will tell you about a model that someone can possibly find an effective instrument of social interaction. And in order to get used to this model, we must first discuss some concepts related to the field of information technology.
+The computer software is:
+A program (from Greek programma, “a written public notice”) – in computer science, this is a set of instructions intended for execution by a machine. In general, we call a program some application provided with a user interface.
+A process – typically, this means a program that lacks any graphical user interface, while repeatedly accessing the physical memory and hardware resources, and performs some operations in the background mode.
+An operation system – a computer’s main program that defines the scope and the procedures for running all other programs and processes.
+Hereon, we need to consider the following two kinds of operation systems:
+A proprietary system (from Medieval Latin proprietarius, “owner of property”) – this is a system developed and distributed by a specific proprietor (e.g., Apple or Microsoft). The source code of a proprietary system is sealed and inaccessible to anyone, except for the proprietor itself.
+An open-source system – it is available for public access, does not belong to anyone, has all its source code accessible and open to change.
+It is also worth mentioning that there are two levels in an operation system:
+The user level – this includes a conventional desktop, end-user applications, the input and output of data via the graphical interface. A user is allowed to install, run and restrict the access to resources for programs to which he or she has access.
+The core, kernel (heart) level – this level is unavailable to a user, it typically lacks any visual representation and hosts a multitude of system processes. In proprietary systems, only the owner has access to the core level, while in open-source systems this may be a special user granted with extended authority, named Root. We have almost finished explaining the terminology by now…
+So, in proprietary systems, background processes that consume the processor resources and physical memory are called “Services”:
+Meanwhile, in the proprietary systems users do not have access to the core services. A user cannot reduce the consumption of resources, release the memory or disable a system service; only the proprietor can gain the access to core services.
+Now, in the open-source systems, the background processes that consume the processor resources and the physical memory are called “Daemons”:
+If a user of an open-source system knows the Root password (of a super-user), he or she becomes enabled to kill/freeze any daemon, limit its consumption of resources and memory, and even reassemble the core with applying to it the necessary custom settings.
+And finally, let’s take a look at an effective model:
+Replace the “computer software” at the beginning of this post with “bio-computer software” and read the article anew. Next, try to answer the following questions:
+- are you authorized to command the core of your biocomputer?
+- is the source-code of your system open, or is it locked by a proprietor behind seven seals?
+- how many services/daemons must be attended by your biological hardware every day? Do their actions cost you memory and resources?
+- who is the specific proprietor of your services: parents, professors, priests, officers, mates, or somebody else?
+- would you like to obtain the Root password enabling you to personally exercise control over your own heart daemons, or would you rather like to continue relying upon the proprietor services?

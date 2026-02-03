@@ -1,0 +1,76 @@
+Pressure is the next most important parameter
+after Temperature. In Hydraulics and Pneumatics,
+the measurement, indication, control and
+logging-charting of pressure is indispensable.
+Popular Pressure Sensors are based on either
+Piezoresistive or Strain-Gauge Technologies.
+Strain-Gauge types can be Metal Foil or
+The Analog Strip Chart Recorder is used in
+Simple Systems where a Record or Report has to
+be generated. Data Loggers and PC based Data
+Acquisition Systems expand this capability by
+making the Data Electronically Accessible for
+Charting-Analysis and Reporting using database
+Advanced Sensor Technology
+The Liquid-Fluid Level in containers of uniform
+cross-section can be computed by measuring the
+pressure of the fluid head. In cases where
+levels of semi-volatile fluids are measured,
+sensors with Micro-watts of power usage or data
+transmission is required to protect from
+sparking related accidents. Even Zener Barriers
+can help reduce risks due to wrong connections
+or cross connection due to cable damages.
+In the field, due to various constrains many
+safety practices can be overlooked or
+circumvented. The Sensors and System design must
+be over-engineered in some cases to safeguard
+Ensure Flow Sensor Output 4-20mA is properly
+connected to the Flow Controller polarity reversal
+will show reducing reading in the Display as Flow
+rises. The Motor / Drive used and Power selected
+must be able to bring the Flow more than the
+maximum required Flow rate directly without
+control (open loop).So when in doubt connect
+motor/drive and run at max power and observe
+maximum flow rate e. g. if max. flow obtained with
+Motor at 100% Power (direct) is 300 lph the
+STC1000PFC can control flow rates upto 260 lph.
+Keep PB in middle position and power on system
+e.g. set Flow rate to 200 lph. Now Observe
+maximum overshoot. and adjust proportional band as
+in table. (PB Control is a 300 lph Single Turn
+Control with Ends.) SP 200 lph, PV (Process
+After each change turn on system again to see
+response till 2 % or less variation or overshoot
+or oscillations are obtained.
+If proportional band setting is maximum, fully
+clockwise turn till end (single turn pot) the
+motor will slowly ramp up to full flow speed and
+ramp down slowly to reduce flow.
+If proportional band is at the minimum, the motor
+will go full speed till it comes close to the set
+flow rate and turn off abruptly almost like an on
+/ off controller the motor may pulsate on &
+off near setpoint.
+There is an additional control called Reset or
+Error Cal EC ( Integral) which is factory set for
+SP=PV 50% Power Output i.e. Output Control = 12mA.
+In certain cases after stable reading is obtained
+after adjusting or tuning PB the Flow may
+stabilize say at 195 lph for a set point of 200
+lph the process is stable but a ten lphrees
+process error is present. this can be Corrected
+with EC or RESET POT at the rear panel (this is a
+endless 10 Turn Pot).
+Adjust Error Cal provided in the back panel to
+increase Flow rate to 200 lph from 190 lph. when
+this is done give some time for system to respond
+after every 1/2 a turn 180 lph of the RESET (EC)
+control pot .
+The RESET control is a Ten turn potentiometer
+like the SP potentiometer after 10 turns the
+direction of turning must change. Clockwise
+Increases Flow rate Anticlockwise decreases Flow
+rate. (at min. PB setting EC pot sets the On / Off
+or Operating Point).

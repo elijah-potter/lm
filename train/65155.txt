@@ -1,0 +1,110 @@
+<title>Next Reaction Method</title>
+<h1>Next Reaction Method</h1>
+Gibson and Bruck's next reaction method is an adaptation of the first
+reaction method [<a href="Bibliography.htm#gibson2000">Gibson 2000</a>].
+Instead of computing the time to each reaction, one deals with the
+time at which a reaction will occur. These times are not computed
+anew at each time step, but re-used. The reaction times are stored in
+an indexed priority queue (<em>indexed</em> because the reaction
+indices are stored with the reaction times). Also, propensities are
+computed only when they have changed. Below is the algorithm for a
+<li> Get the reaction index μ and the reaction time τ by
+removing the minimum element from the priority queue.
+<li> <em>t = τ</em>
+<li> <em>X = X + V<sub>μ</sub></em>
+<li> For each propensity <em>m</em> (except μ) that is affected by
+reaction μ: <!--CONTINUE != -->
+<li> α = updated propensity.
+<li> <em>τ<sub>m</sub> = (a<sub>m</sub> / α)
+(τ<sub>m</sub> - t) + t</em>
+<li> <em>a<sub>m</sub> = α</em>
+<li> Update the priority queue with the new value of
+<li> Generate an exponential random variable <em>r</em> with mean
+<li> <em>τ<sub>m</sub> = t + r</em>
+<li> Push <em>τ<sub>m</sub></em> into the priority queue.
+Consider the computational complexity of the next reaction method. We
+assume that the reactions are loosely coupled and hence computing a
+propensity <em>a<sub>m</sub></em> is O(1). Let <em>D</em> be an upper
+bound on the number of propensities that are affected by firing a
+single reaction. Then the cost of updating the propensities and the
+reaction times is O(<em>D</em>). Since the cost of inserting or
+changing a value in the priority queue is O(log <em>M</em>), the cost
+of updating the priority queue is O(<em>D</em> log <em>M</em>).
+Therefore the computational complexity of a step with the next
+reaction method is O(<em>D</em> log <em>M</em>).
+One can reformulate the next reaction method to obtain a more efficient
+algorithm. The most expensive parts of the algorithm are maintaining
+the binary heap, updating the state, and generating exponential deviates.
+Improving the generation of exponential deviates is a minimally invasive
+procedure. Instead of using the inversion method, one can use the
+ziggurat method [<a href="Bibliography.htm#marsaglia2000">Marsaglia 2000</a>]
+or the acceptance complement method
+[<a href="Bibliography.htm#rubin2006">Rubin 2006</a>].
+Reducing the cost of the binary heap operations is
+a more complicated affair. We present several approaches below.
+<b>Indexed Priority Queues</b><br>
+The term <em>priority queue</em> has almost become synonymous with
+<em>binary heap</em>. For most applications, a binary heap is an
+efficient way of implementing a priority queue. For a heap with <em>M</em>
+elements, one can access the minimum element in constant time. The
+cost to insert or extract an element or to change the value of an
+element is O(log <em>M</em>). Also, the storage requirements are
+linear in the number of elements. While a binary heap is rarely the
+most efficient data structure for a particular application, it is
+usually efficient enough. If performance is important and the heap
+operations constitute a significant portion of the computational cost
+in an application, then it may be profitable to consider other data
+The simplest method of implementing a priority queue is to store the
+elements in an array and use a linear search to find the minimum
+element. The computational complexity of finding the minimum element
+is O(<em>M</em>). Inserting, deleting, and modifying elements can be
+done in constant time. For the next reaction method, linear search is
+the most efficient algorithm when the number of reactions is small.
+For larger problem sizes, one can utilize the under-appreciated method
+of partitioning. One stores the elements in an array, but classifies the
+elements into two categories: <em>lower</em> and <em>upper</em>. One uses a splitting
+value to discriminate; the elements in the lower partition are less than
+the splitting value. Then one can determine the minimum value in the queue
+with a linear search on the elements in the lower partition. Inserting,
+erasing, and modifying values can all be done in constant time. However,
+there is the overhead of determining in which partition an element belongs.
+When the lower partition becomes empty, one must choose a new splitting
+value and re-partition the elements (at cost O(<em>M</em>)).
+By choosing the splitting value so that there are O(<em>M<sup>1/2</sup></em>)
+elements in the lower partition, one can attain an average cost of
+O(<em>M<sup>1/2</sup></em>) for determining the minimum element.
+This choice balances the costs of searching and re-partitioning.
+The cost of a search, O(<em>M<sup>1/2</sup></em>), times the number
+of searches before one needs to re-partition, O(<em>M<sup>1/2</sup></em>),
+has the same complexity as the cost of re-partitioning. There are
+several strategies for choosing the splitting value and partitioning
+the elements. Partitioning with a linear search is an efficient method
+for problems of moderate size.
+When using indexed binary heaps, there are a few implementation details
+that have a significant impact on performance. See the documentation
+of the source code for details.
+Binary heaps have decent performance for a wide range of problem sizes.
+Because the algorithms are fairly simple, they perform well for small
+problems. Because of the logarithmic complexity, they are suitable for
+fairly large problems.
+There is a data structure that can perform each of the operations
+(finding the minimum element, inserting, removing, and modifying)
+in constant time. This is accomplished with hashing. (One could also
+refer to the method as bucketing.) The reaction times are stored in
+a hash table [<a href="Bibliography.htm#cormen2001">Cormen 2001</a>].
+The hashing function is a linear function of the reaction
+time (with a truncation to convert from a floating point value to an
+The constant in the linear function is chosen to give the desired load.
+For hashing with chaining, if the load is O(1), then all
+operations can be done in constant time. As with binary heaps, the
+implementation is important.
+The following options are available with the next reaction method.
+<tt>Hashing.</tt> O(1). Uses a hash table to store the reaction times.
+This is typically the fastest method for medium and large problems.
+<tt>Binary Search.</tt> O(log <em>M</em>). Uses a indexed binary heap
+to store the reaction times. This version has good performance for most
+<tt>Partition.</tt> O(<em>M<sup>1/2</sup></em>). Partitions the reactions
+according to which will fire soon. This option has good performance for
+small to medium sized problems.
+<tt>Linear Search.</tt> O(<em>M</em>). Stores the reaction times in an
+array. This method offers good performance only for fairly small problems.

@@ -1,0 +1,56 @@
+Ruby is a one of the most popular languages used on the web. We’ve started a new Session here on Nettuts+ that will introduce you to Ruby, as well as the great frameworks and tools that go along with Ruby development. Today, we’ll look at the awesome packaging system that Ruby provides for distributing programs and libraries: Gems.
+Press the HD button for a clearer picture.
+Subscribe to our YouTube page to watch all of the video tutorials!
+Step 1: What are Gems?
+It’s pretty simple, really. You can think of a Ruby Gem as a library or plug-in. It’s some functionality that you’ll install to fill a specific need. If that sounds vague, here are some practical problems that gems solve:
+- Need to interface with Amazon S3?
+- Want a quick-n-easy REST framework?
+- Need to send emails?
+- Want to set up a web server?
+- Need a testing framework (or three)?
+- Want to convert Markdown to HTML?
+That’s just a few of the things you can do with gems.
+In short, there’s a gem for that.
+Span 2: Installing the RubyGems Library
+Before we can install and use gems we need to install the RubyGems library. Of course, you’ll need Ruby installed first, but you should have that by now.
+If you’re on Ruby 1.9.* (what we’re using in this series), then you don’t have to worry about installing RubyGems; it’s built in. If you’ve decided to stick with Ruby 1.8.*, it’s not too hard to install. Just head over to the RubyGems download page, download the TAR or ZIP, open it up, and run
+ruby setup.rb in the terminal from that folder You might need admin privileges to do this (
+sudo on unix systems, start the command line with “Run as Administrator” on Windows). That’ll get you up and running.
+If you think you might already have RubyGems installed, run
+gem -v to get the version number. The latest version is 1.6.2. If you’d like to upgrade, run
+gem update --system. Again, you might need admin privileges. I should mention that if you’re on Windows and installed Ruby via the RubyInstaller, you do have RubyGems installed.
+Step 3: Installing a Gem
+So, now that you’ve got the RubyGems library installed, you can use it to install whatever gems you please. How do you do this? Again, it’s pretty simple. The hard part is finding the gem you’d like to use; often, you can just google for whatever functionality you’re looking for. Once you find the gem, install it like this:
+gem install GEM_NAME
+It’s important to pay attention to the documentation for the gem, though. There may be some arguments you should add to that command; however, in most cases, that should get you through.
+One more note about installing gems: you might notice that a gem’s documentation tells you to use
+sudo when installing it. If you’re on a Mac and using RVM (as you should be :) ), just leave
+sudo off. Using it will install the gem for all users on the computer, and it can cause problems with the multiple Ruby environments you might have with RVM.
+As we go on in this series, we’ll use several Ruby gems, so you’ll get to see how they’ll work in a “real” project. If you want to try installing a few now, try the Markdown (maruku) gem or the Amazon S3 (aws-s3) gem.
+gem install maruku gem install aws-s3
+Step 4: Using Gems
+So, you’ve got your gems installed; what now? Well, use them, of course! There are two ways you can use gems. Some are stand-alone ruby programs that you’ll run (most often from the command line) to do something. The Rails gem is a great example of this. You run
+rails new PROJECT_NAME from the command line to generate a new rails project; then, you’ll use it at other times to generate models, controllers, etc. Then, there are gems that you’ll only use from inside projects of your own, like the Amazon S3 gem. It’s not much good on it’s own, but it’s pretty useful in conjunction with your code. If you want to use a gem from within your code, you’ll have to require it first. This is usually done at the top of the file.
+require 'rubygems' # only necessary on Ruby 1.8 require 'aws/s3' # the S3 gem
+I don’t believe we’ve discussed
+require before; Ruby doesn’t load everything by default, so you can use
+require to load extra libraries you want to use. We’ll see more of this as we go on.
+Finally, some gems do both. The maruku gem will convert Markdown to HTML. I use it from the command line all the time:
+It will convert the Markdown document to HTML. However, you can also use it from your code:
+require 'maruku' str = "#This is a title\n\n* some\n* list\n* items" md = Maruku.new(str) md.to_html_document
+Step 5: Using Bundler
+Once you build a project, you might want to share it, or use it on another computer. However, anyone else who runs it will need to have all the right gems installed. Now, you can make the process of installing them easy with a project called Bundler. There’s a lot Bundler can do, but we’ll just scrape the surface right now.
+First of all, Bundler is a gem itself; you can install it by running
+gem install bundler.
+Then, in the root of your project, create a file named
+Gemfile. This will declare what gems you need for this project.
+The first line(s) of your Gemfile will tell Bundler where to get your gems. Gems live in online repositories, so it will need to know where to get them. Most of the time, just using rubygems.org as your source will be sufficient, but you can have multiple sources if you want.
+Then, just list your gems like this:
+gem "rails", "3.0.1" gem "maruku" gem "aws-s3", :require => "aws/s3"
+Note that we can say what version of a gem we need if we do need a specific version. Also, notice the hash (we’ve left off the brackets because we can in this case) on the third gem. This tells Bundler how we need to
+require the gem. This is only necessary if two things are true: 1) a gem is required with a different name than the name it’s installed with, and 2) we are using Bundler to require the gems.
+If you’ve got a lot of gems, you can use Bundler to require them all in your code. Just do this:
+require 'bundler/setup' Bundler.require(:default)
+This will load up all those gems. Of course, this is much more useful when you’re using some of Bundler’s advanced configurations.
+Conclusion: Coming Soon …
+Last time, I asked you readers / watchers what you want to see next. You clearly said “Web stuff!” Next lesson, we’re going to move on to using the simple framework Sinatra to build a website. Until then!

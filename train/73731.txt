@@ -1,0 +1,25 @@
+Semantic Web terminology
+From Semantic Web Standards
+Semantic Web Terminology, informally explained
+Informal explanations for the non-expert.
+This generally refers to the rules for usage of an element that translate roughly to: required, optional, minimum number allowed, maximum number allowed. If your data rules state that your description can include one and only one title for the resource, that is expressing cardinality.
+From the OWL documentation: "Classes provide an abstraction mechanism for grouping resources with similar characteristics." Think of classes as a grouping, a set, or even something like a genus in biology. Things in the same class have something(s) in common. OWL uses this concept of classes heavily, and in that way OWL-based metadata encourages a kind of classified view of information -- although there isn't a single classification but many of them, since each metadata ontology can define its own view using classes.
+Linked Data is the data format that supports the Semantic Web. The basic rules for Linked Data are defined as:
+- Use URIs to identify things.
+- Use HTTP URIs so that these things can be referred to and looked up ("dereferenced") by people and user agents.
+- Provide useful information about the thing when its URI is dereferenced, using standard formats such as RDF/XML
+- Include links to other, related URIs in the exposed data to improve discovery of other related information on the Web.
+lower case semantic web
+Namespaces are based on the domain name system of the Internet. Your namespace is an identity space on the Internet that you control. For example: Library of Congress owns the namespace "loc.gov"; OCLC has "oclc.org"; the University of Michigan has "umich.edu." When Library of Congress creates an identifier for the subject heading "Guide dogs" it creates an identifier in its namespace: http://id.loc.gov/authorities/subjects/sh85057714. This guarantees that the identifier will be unique on the web since no one else can use "loc.gov".
+Ontology in computer science and the semantic web is a formal representation of knowledge. For those involved in metadata development, when you have defined all of your data elements, your controlled vocabularies, how they fit together, and anything else that is needed to make your metadata work, then you have an ontology for your metadata domain.
+"Web Ontology Language." (Yes, it should be "WOL.") The semantic web standard that is used to defined ontologies (metadata sets) so that they can be used and understood in that environment.
+The property in RDF plays a role similar to the data element in other data models. In RDF the triple is made up of a subject (the thing you are describing with your metadata), a predicate (what you are going to say about it) and the object (the actual "saying"). The predicate is usually referred to as the property. So in a statement like "Moby Dick / has author / Herman Melville" the property is "has author."
+Resource Description Framework. The basic standard for the semantic web. RDF defines the building blocks of the semantic web such as classes and properties and how they interact to create meaning.
+In the humanities, the term "semantic" relates to meaning, such as the meaning of a word. When used in the context of the semantic web, however, the term refers to formally defined meaning that can be used in computation. In this sense, formal languages like programming languages have a semantic component that determines the meaning of the symbols and terms. For example, "x += y" has a defined meaning in programming languages like C and Perl.
+Semantic Reasoning Engine
+Semantic Web Stack
+"Simple Knowledge Organization System." A standard way to describe thesauri and other sets of terms for the semantic web. It includes concepts like broader and narrower and related terms, and allows the definition of preferred display terms and alternate display terms.
+A single piece of metadata consisting of a subject, a predicate and an object. "Moby Dick / has author / Herman Melville" is a statement. Metadata in the semantic web is made up of related statements. There are no records in this view, but a group of related statements can express the same full description that a record does in other metadata systems.
+A triple is a set of three elements: a subject, a predicate, and an object. When the term triple is used, the discussion is often focusing on the underlying technology of the semantic web; statement tends to be used when talking about the human view of metadata creation.
+Essentially a database make up of triples; as opposed to, for example, a relational database made up of tables of data.
+Uniform Resource Identifier, a standard format for identifiers on the Internet. The string beginning with "http://" is a valid URI, and on the Semantic Web identifiers are formatted as "http" URIs.

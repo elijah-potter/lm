@@ -1,0 +1,33 @@
+How to Install RAM
+Most of the time, installing RAM is a very simple and straightforward procedure. The key is to do your research. Here's what you need to know:
+- How much RAM you have
+- How much RAM you wish to add
+- Form factor
+- RAM type
+- Tools needed
+- Where it goes
+RAM is usually sold in multiples of 16 megabytes: 16, 32, 64, 128, 256, 512, 1024 (which is the same as 1GB). This means that if you currently have a system with 64 MB RAM and you want at least 100 MB RAM total, then you will probably need to add another 64 MB module.
+Once you know how much RAM you want, check to see what form factor(card type) you need to buy. You can find this in the manual that came with your computer, or you can contact the manufacturer. An important thing to realize is that your options will depend on the design of your computer. Most computers sold today for normal home/office use have DIMM slots. High-end systems are moving to RIMM technology, which will eventually take over in standard desktop computers as well. Since DIMM and RIMM slots look a lot alike, be very careful to make sure you know which type your computer uses. Putting the wrong type of card in a slot can cause damage to your system and ruin the card.
+You will also need to know what type of RAM is required. Some computers require very specific types of RAM to operate. For example, your computer may only work with 60ns-70ns parity EDO RAM. Most computers are not quite that restrictive, but they do have limitations. For optimal performance, the RAM you add to your computer must also match the existing RAM in speed, parity and type. The most common type available today is SDRAM.
+Additionally, some computers support Dual Channel RAM configuration either as an option or as a requirement. Dual Channel means that RAM modules are installed in matched pairs, so if there is a 512MB RAM card installed, there is another 512 MB card installed next to it. When Dual Channel is an optional configuration, installing RAM in matched pairs speeds up the performance of certain applications. When it's a requirement, as in computers with the Mac G5 chip(s), the computer will not function properly without matched pairs of RAM chips.
+For complete guidelines on setting up Dual Channel configuration on Intel Pentium 4-based systems, check out this guide.
+Before you open your computer, check to make sure you won't be voiding the warranty. Some manufacturers seal the case and request that the customer have an authorized technician install RAM. If you're set to open the case, turn off and unplug the computer. Ground yourself by using an anti-static pad or wrist strap to discharge any static electricity. Depending on your computer, you may need a screwdriver or nut-driver to open the case. Many systems sold today come in tool-less cases that use thumbscrews or a simple latch.
+The actual installation of the memory module does not normally require any tools. RAM is installed in a series of slots on the motherboard known as the memory bank. The memory module is notched at one end so you won't be able to insert it in the wrong direction. For SIMMs and some DIMMs, you install the module by placing it in the slot at approximately a 45-degree angle. Then push it forward until it is perpendicular to the motherboard and the small metal clips at each end snap into place. If the clips do not catch properly, check to make sure the notch is at the right end and the card is firmly seated. Many DIMMs do not have metal clips; they rely on friction to hold them in place. Again, just make sure the module is firmly seated in the slot.
+Once the module is installed, close the case, plug the computer back in and power it up. When the computer starts the POST, it should automatically recognize the memory. That's all there is to it!
+For more information on RAM, other types of computer memory and related topics, check out the links below.
+- RAM Quiz
+- How to Add RAM to Your Desktop
+- How to Add RAM to Your Laptop
+- How Computer Memory Works
+- How Virtual Memory Works
+- How ROM Works
+- How Flash Memory Works
+- How BIOS Works
+- How Hard Disks Work
+- How Removable Storage Works
+- How Bits and Bytes Work
+- How Microprocessors Work
+- How Operating Systems Work
+- How Electronic Gates Work
+- What is the difference between static and dynamic RAM?
+- Does adding more RAM to your computer make it faster?

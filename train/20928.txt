@@ -1,0 +1,5 @@
+ImageView is used to display image resources like BitMap or Drawables. ImageView class or android.widget.ImageView inherits the android.view.View class which is the subclass of Kotlin.any_class. Application of ImageView is also in applying tints to an image in order to reuse a drawable resource and create overlays on background images. Moreover, ImageView is also used to control the size and movement of an image. To know more about ImageView, refer to ImageView in Android with Example.
+Step by Step Implementation
+To keep the Aspect Ratio of the image, use the following steps to Scale the image:
+Next, go to the activity_main.xml file, which represents the UI of the project. Below is the code for the activity_main.xml file. Comments are added inside the code to understand the code in more detail. Import any logo to display in app:srcCompat=”@drawable/<your_image>”.
+Please Login to comment...

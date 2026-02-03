@@ -1,0 +1,13 @@
+Amateur radio is a non-profit, non-commercial activity enjoyed by hobbyists world-wide. Radio amateurs are licensed by government authorities to use portions of the radio spectrum allocated to them for non-commercial, non-profit activities including personal communication, public service, and technical experimentation. Packet Radio is a particular digital mode of communication that makes use of networking protocols to provide computer to computer communication.
+This document was originally an appendix to the HAM-HOWTO, but grew too large to be reasonably managed in that fashion. This document describes how to install and configure the native AX.25, NET/ROM and ROSE support for Linux. A few typical configurations are described that could be used as models to work from.
+The Linux implementation of the amateur radio protocols is very flexible. To people relatively unfamiliar with the Linux operating system the configuration process may look daunting and complicated. It will take you a little time to come to understand how the whole thing fits together. You will find configuration very difficult if you have not properly prepared yourself by learning about Linux in general. You cannot expect to switch from some other environment to Linux without learning about Linux itself.
+Document has a new maintainer.
+Converted to DocBook SGML format. Converted most tabular information to use tables.
+Released under GNU FDL license.
+Added information on new drivers for Baycom, YAM, 6PACK, and user mode soundmodem.
+Added APRS section.
+Many miscellaneous updates to reflect changes since document was last updated in 1997. There are likely still many errors or outdated information.
+The best place to obtain the latest version of this document is from a Linux Documentation Project archive. The Linux Documentation Project runs a web server and this document appears there as the AX25-HOWTO. This document is also available in various formats from the Linux Documentation Project.
+You can always contact me, but I pass new versions of the document directly to the LDP HOWTO coordinator, so if it isn't there then chances are I haven't finished it.
+There is a lot of related documentation. There are many documents that relate to Linux networking in more general ways and I strongly recommend you also read these as they will assist you in your efforts and provide you with deeper insight into other possible configurations. They are:
+You may come across references to a Linux HAM HOWTO. This document is obsolete and has been replaced by the Hamsoft Linux Ham Radio Applications and Utilities Database web site. More general Linux information may be found by referencing other Linux HOWTO documents.

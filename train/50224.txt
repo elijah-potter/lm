@@ -1,0 +1,16 @@
+The latest news about biotechnologies, biomechanics
+synthetic biology, genomics, biomediacl engineering...
+Posted: Mar 13th, 2013
+Predictability: The brass ring for synthetic biology
+(Nanowerk News) Predictability is often used synonymously with “boring,” as in that story or that outcome was soooo predictable. For practioners of synthetic biology seeking to engineer valuable new microbes, however, predictability is the brass ring that must be captured. Researchers with the multi-institutional partnership known as BIOFAB have become the first to grab at least a portion of this ring by unveiling a package of public domain DNA sequences and statistical models that greatly increase the reliability and precision by which biological systems can be engineered.
+The DNA sequences produced by BIOFAB provide precise control of gene expression in Escherichia coli, the rod-shaped bacterium that is one of the principal model organisms for genetic engineering. While these DNA sequences serve as standardized parts specific to E. coli, they also provide a set of rules for how the sequences fit together that should apply to other microbes as well. Controlling the expression of genes is essential for engineering a microbe to produce a specific product or carry out a specific function.
+As BIOFAB co-director Adam Arkin, a computational biologist and director of Berkeley Lab’s Physical Biosciences Division, has noted, “Fulfilling the great promise of synthetic biology hinges on making the design and construction of biological systems as predictable as the assembly of computer hardware.”
+Yet even with a microbe as well-characterized and understood as E. coli, the introduction of new genes has in the past been met with as much failure as success.
+“You would think after a generation of genetic engineering, expressing genes with precision in an organism as well utilized as E. coli would be pretty straightforward but it’s not,” says BIOFAB’s other co-director Drew Endy, a synthetic biologist at Stanford University.
+BIOFAB researchers have produced high quality standardized public domain DNA sequences for genetic engineering.
+Arkin and Endy are the corresponding authors of a pair of research papers published simultaneously in the journal Nature Methods, and a third to be published in Nucleic Acids Research, that collectively describe this major BIOFAB breakthrough.
+BIOFAB’s success is based on two major achievements – the design of independent DNA promoter and ribosome binding site sequences for specific E. coli genes, and the development of mathematical models that provide rules for engineering gene expression that should be applicable to nearly all organisms. This work establishes a much-needed technological foundation for the field of synthetic biology, which in turn should facilitate more precise and predictable genetic engineering in the future.
+BIOFAB was established in December, 2009 under a grant from the National Science Foundation as “the world’s first biological design-build facility.” Led by the University of California Berkeley and Stanford University, BIOFAB is operated in partnership with Berkeley Lab, the BioBricks Foundation and the Synthetic Biology Engineering Research Center.
+Source: Berkeley Lab
+Translate this article:
+Check out these other trending stories on Nanowerk:

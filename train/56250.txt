@@ -1,0 +1,42 @@
+There are many things that trip one up in using the shell – normally a Bourne shell, POSIX shell, or Korn shell. These tips can help you understand more of what happens during the usage of the shell, and will help you understand why things might go wrong.
+One thing to realize is that the shell can be anything you want; it is a personal choice (unless it is the root shell). While commonly used shells include the Bourne Again Shell (bash), the Korn Shell, or the C shell, there are a lot more than just these. Consider these two alternatives for instance:
+Now – assuming a Bourne-style shell – consider these two possible commands:
+$ mybinary a b c
+$ mybinary a* b* c* < f
+The first command does not require the shell; any program that executes a command line (such as scripting languages) can execute a command line like that one without using the shell.
+The second command requires a shell be started. Why? Because of the use of shell meta-characters like filename wildcards, redirection, and pipes. All of these require parsing by a shell before executing.
+When using wildcards and other shell metacharacters, remember that the shell manipulates them first. The executable command in the first example gets three arguments: “a”; “b”; and “c”. The program running in the second command may see: “able”; “baker”; “charlie”; and who knows how many others – the command will not see “a*”, “b*”, or “c*” – unless the wildcard cannot expand to any files at all; in that case, the argument is passed directly into the command as is.
+This can cause problems if you don’t watch out for it:
+If you are trying to edit
+Makefile and you’ve no files that start with m in that directory, then you start editing the file named
+This tidbit also comes in handy if you ever find that the command
+ls is bad or doesn’t work:
+echo works just as well as
+$ echo a*
+This will cause the shell to expand the file wildcard, then
+echo prints the results.
+This “pre-scanning” done by the shell also explains why a command like this fails when run in a directory that a user has no access to:
+$ sudo echo foobar > restricted.file
+The shell sets up redirection before
+sudo runs – so it is the shell that attempts to write to the file
+restricted.file – and as the original user, too.
+To make this work, you have to find a way to defer the opening of the file (for writes) until after you have root access; a classic way is like this:
+$ sudo ksh -c "echo foobar > restricted.file"
+Thus, it is not the running shell that opens
+restricted.file but the executed
+ksh, which interprets the
+-c option as a command to run. The quotes prevent the active shell from interpreting the shell characters, leaving them for
+This shell interpretation also explains why the first command may fail with a Too many arguments error, while the second will almost certainly work:
+$ ls *
+In the first case, the shell expands the wild card to include all the files in the current directory; if there are too many files, this becomes too many arguments. In the second case, there are no arguments: it is up to the program itself to handle all the files (which
+ls does well).
+Understanding how the shell scans its input is critical and allows you to understand how things should work. Consider a fragment like this one:
+$ echo $AB
+$ echo "$AB"
+$ echo '$AB'
+The output from this will be something like the following:
+$ echo $AB
+able baker charlie
+$ echo "$AB"
+$ echo '$AB'
+Update: Fixed error in filename wildcard expansion – thanks to Brett for catching the error.

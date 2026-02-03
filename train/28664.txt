@@ -1,0 +1,22 @@
+Microsoft Office Development and Consultancy
+|Word > AutoCorrect > AutoCorrect Options Smart Tag||< Previous | Next >|
+Check your Options
+Check your (Tools > AutoCorrect Options)(AutoCorrect Tab).
+Correct Two Initial Capitals
+If you type two consecutive uppercase letters at the beginning of a word, the second uppercase letter is automatically changed to a lowercase letter.
+For example "CApitals" will be changed to "Capitals". Any words containing capital letters in the middle of words are ignored.
+This entry can get automatically added to your exceptions meaning that this word is not
+Capitalize first letter of sentences
+This will mean that the first letter of every sentence will be automatically changed to a capital letter if it is entered in lowercase.
+Capitalize first letter of table cells
+Capitalize names of days
+The first letter of the days of the week is automatically changed to uppercase, Monday, Tuesday, Wednesday, etc.
+Correct accidential usage of caps lock
+This will automatically change your text if you have accidentally left the caps lock on.
+If Word notices that you are capitalising everything backwards it assumes you must have pressed the Caps Lock accidentally and changing the letters accordingly.
+No smart tag appears.
+In addition to inserting symbols manually you can use the AutoCorrect feature to do this for you.
+Whenever you enter a sequence of symbols the AutoCorrect facility will automatically replace this with the corresponding entry.
+There is a large number of entries included in the built-in list.
+Things to Remember
+|© Better Solutions Limited 15-May-2013||< Previous | Top | Next >|

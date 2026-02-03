@@ -1,0 +1,16 @@
+Remove Attribute Range (RapidMiner Studio Core)
+SynopsisThis operator removes a range of attributes from the given ExampleSet.
+The Remove Attribute Range operator removes the attributes within the specified range. The first and last attribute of the range are specified by the first attribute and last attribute parameters. All attributes in this range (including first and last attribute) will be removed from the ExampleSet. It is important to note that the attribute range starts from 1. This is a little different from the way attributes are counted in the Table Index where counting starts from 0. So, first and last attributes should be specified carefully.
+Select AttributesProvides a lot of options for selecting desired attributes e.g. on the basis of type, block, numerical value even regular expressions.
+Remove Correlated AttributesSelects attributes on the basis of correlations of the attributes.
+Remove Useless AttributesSelects attributes on the basis of usefulness. Different usefulness measures are available e.g. numerical attributes with minimum deviation etc.
+- example set input (Data Table)
+This input port expects an ExampleSet. It is the output of the Retrieve operator in the attached Example Process. The output of other operators can also be used as input.
+- example set output (Data Table)
+The ExampleSet with selected attributes removed from the original ExampleSet is output of this port.
+- original (Data Table)
+The ExampleSet that was given as input is passed without changing to the output through this port. This is usually used to reuse the same ExampleSet in further operators or to view the ExampleSet in the Results Workspace.
+- first_attributeThe first attribute of the attribute range which should be removed is specified through this parameter. The counting of attributes starts from 1. Range: integer
+- last_attributeThe last attribute of the attribute range which should be removed is specified through this parameter. The counting of attributes starts from 1. Range: integer
+Removing the first two attributes of the Golf data set
+The 'Golf' data set is loaded using the Retrieve operator. A breakpoint is inserted here so that you can have a look at the ExampleSet. You can see that the Table Index of the Outlook attribute is 0. The Table Index column can be seen if the Show column 'Table Index' option is selected in the Meta Data View tab. The Table Index of the Temperature attribute is 1. The Remove Attribute Range operator is applied on the 'Golf' data set to remove the first two attributes. The first attribute and second attribute parameters are set to 1 and 2 respectively to remove the first two attributes. The first attribute and second attribute parameters were not set to 0 and 1 respectively because here attribute counting starts from 1 (instead of 0). The resultant ExampleSet can be seen in the Results Workspace. You can see that the Outlook and Temperature attributes have been removed from the ExampleSet.

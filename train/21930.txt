@@ -1,0 +1,9 @@
+Installing and Using a Terminal Emulator
+This guide will show the process of installing and configuring a terminal emulator. For Windows, this tutorial will be using Tera Term which is an open-source, free, software-implemented, terminal emulator. For Linux, the tutorial will use PuTTY, which is a free and open-source terminal emulator, serial console, and network file transfer application. Digilent uses these terminal emulators in our demos for communicating through the USB UART and Ethernet on Digilent FPGAs.
+Note: For Linux, Digilent uses Ubuntu 16.4, as it is the only distribution supported by Vivado. This and other tutorials may or may not be applicable to other Linux distros.
+- Windows: 13.3 MB of free hard-drive space for Tera Term.
+- Linux: 611.3 kB of free hard-drive space for PuTTY
+1. Installing a Terminal Emulator
+The Windows and Linux links below are a step by step tutorial on installing a Terminal Emulator.
+2. Using a Terminal Emulator
+The Windows and Linux links below are a tutorial on using a Terminal Emulator.

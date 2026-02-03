@@ -1,0 +1,12 @@
+It is a quite common scenerio in scientific documentations (report, paper, etc) to draw certain plots based on replicated experiments, where the mean values of different groups are drawn. In this case, error bars should be also illustrated to reflect the variance of different groups.
+Usually, the lengths of the error bars (at each direction of plus/minus, namely half of the whole length due to symmetry) are determined by the standard error of mean (SEM), or named standard error, which together with standard variance describe the uncertainty of the measurements.
+It is quite common to take plus/minus 1 SEM as the length of error bars, though other scaling can also be used with clear explaination. For example, if we assume the underlying population of the sample follows normal distribution, then we could use 95% confidene level (+/- 1.96 * SEM) to depict the bars, though in this case it is neccessary to indicate the meaning of the bars explicitly.
+To calculate standard error, the following equation is used:
+where s is the sample standard deviation and n is the size (number of items) of the sample.
+A question still troubles me: in evaluating the confidence interval, can we use t-distribution instead of normal distribution assumption? Cause in the further case the upper limit would be
+mean(x) + qt(0.975, df = length(x)) * sd(x) / sqrt(length(x))
+, in the later case it is
+mean(x) + qnorm(0.975) * sd(x) / sqrt(length(x))
+, where qnorm(0.975) = 1.96. Which is correct?
+Well this confusion does not influence how we draw the error bars commonly. A quite nice tutorial to do this in Excel can be found at the website of NCSU. For more backgrounds please refer to wiki item of standard error of mean and error bar.
+(p.s. the commands above is written in R language, a statistical and computation environment. The picture of equation comes from Wiki and is used under GPL license.)

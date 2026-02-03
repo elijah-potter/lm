@@ -1,0 +1,12 @@
+Unless you have the most basic system providing a low voltage DC power source, an inverter will be necessary to provide an alternating current at a higher voltage.
+An inverter uses a DC (direct current) power supply and creates an AC (Alternating Current) supply, usually at a voltage similar to that of your normal mains supply. In other words, it enables you to run household appliances from a low voltage DC supply such as a car battery or a more sophisticated solar power system.
+How does an inverter work
+An inverter will use transistors to continually switch the direction of the voltage or in an oscillator to produce a sinewave.
+This switching or oscillation will happen 50 or 60 times a second, according the frequency required.
+We have more detailed information on the workings of inverters here:How Inverters Work
+Some smaller and cheaper inverters are described as producing a modified sinewave and will have a waveform somewhere between the two shown. My experience is that they produce something much nearer to a square wave.
+The sinewave is the waveform produced by the power stations that produce the mains power, and this is the ideal.
+The inverter circuitry is likely to produce this waveform, at the voltage of the DC supply (your battery) but at a low current. This will then be amplified by further transistors to make a much higher current available.
+All that needs to be done now is to increase the voltage to that required (usually the same as your normal mains supply).
+This part is relatively simple as a transformer can be used. The transformer will consist of two coils of wire (named primary and secondary), wound together round an iron former. If the secondary coil has double the number of turns as the primary, an AC voltage applied to the primary coil will cause double the voltage to be produced in the secondary.
+Transformers only work with alternating currents.

@@ -1,0 +1,5 @@
+The model uses a simple scoring system which recognises the benefits of a balanced nutritional diet, such as:
+It also identifies foods with ingredients which children should reduce in their diet, such as:
+- saturated fats
+The model penalises foods with ingredients that children should eat less of including saturated fats, salt and sugar.
+Public Health England will publish a review of the nutrient profile model in 2018 on behalf of the Department of Health.

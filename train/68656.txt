@@ -1,0 +1,47 @@
+Have you tried to construct data science projects, but you have been intimidated by the vastness of the concepts used and code? In this article I have collected for you the top 20 Kaggle data science projects and the links to their source code.
+Heart disease prediction project mainly involves training a machine learning model that will be able to predict if someone is suffering from a heart disease, and it has an accuracy level of 87%. Since it predicts in advance, it will provide insights to the doctors, and they will adapt the right diagnosis and treatment depending on the patient basis.
+2. House Prices Advanced Regression Techniques
+It involves a process where a home buyer provides a description of their dream apartment/house. You will utilize 79 explanatory variables that will be describing each aspect of the residential homes around that area. You are supposed to predict the final prices of the houses/ residential homes given. You require python with the libraries (NumPy, matplotlib, seaborn, scikit-learn and XGboost), and machine learning to carry out the data collection.
+3. Prediction of Airbnb new user booking
+In the 21st century people have developed a traveling culture which has given rise to in the demand for travelling house booking. The solution to this problem is coming with a platform where travelers are able to book empty rooms in host houses. The platform is meant to predict which city or country that the travelers would like to choose for their 1st booking by machine learning methods. This project utilizes algorithms such as logistic regression, tree, SVM and XGBoost which develop models that help in identification of user’s behavior patterns.
+4. Pneumonia Diagnosis using X-rays 96 Percent
+This project is meant to diagnose X-ray images of the lungs of a human being utilizing self-laid convolutional neural network and pass on leaning through inception V3. You need to lay a neural network that is repeatedly tuned for the best hyperparameters and utilized a variety of utility function of Kera like callbacks for check pointing and learning the rate decrease
+5. Plant Seedlings Classification
+This project is meant to effectively differentiate a crop seedling from a weed. You will need to have a database with a collection of different images of plants and when it’s shown a plant its able to tell the species and also tell whether it is a weed or a plant seedling
+6. Ml workflow automation
+This project has a Python-based machine learning which its main aim is to show the archetypal ML workflow around a Jupyter notebook it also proves ideas on key steps automation and also utilization of the titanic binary classification dataset that is hosted on Kaggle. The ML work flow entails data visualization and exploration, model section and training.
+7. 3D object detection for autonomous vehicles
+The world of technology is rapidly evolving, and the automotive industry needs to keep up with the changing trends. Self-driving cars have gained a lot of popularity, and it is very hyped though, most of the vehicles are branded autopilot and can’t drive without human assistance. This project is meant to solve a bigger problem which is 3D object detection over semantic maps.
+8. MNIST Kaggle Competition The Winning Solution.
+This project gives you a step-by-step guide on how to solve and win MNIST competition on Kaggle. It utilizes the following techniques that will help you get a step-by-step increment on the test set accuracy.
+- Random forest algorithm
+- A convolutional neural network
+- CNN with Data argumentation
+- An assembly of CNN’s
+- CNN’s ensemble that has learning rate anneal er and batch normalization.
+- Multiple DL and ML algorithms.
+9. Global Wheat Detection
+This project showcases how deep learning is utilized in detection of wheat heads form different crops. It detects wheat heads from different outdoor photos of wheat plants with inclusion of different data sets around the world. You will be able to come up with the size and number of what heads around the world.
+10. Bio Response
+This project main objective is to come up with a good model so that you can, as optimally as this data allows, relate molecular information to an actual biological response. In each row of this data set it represents a molecule while the first column is a representation of experimental data that describes actual biological response.
+11. Kaggle predict future sales
+In this project, you are given historical sales data on a daily basis. The problem you are supposed to solve is predicting the cumulative number of products that are sold in every shop for the test set. The list of the products sold and shops keeps on changing every month this project model is supposed to determine the expected sales.
+12. State Farm Distracted Driver Detection
+There are increased road accidents because some drive while texting, captured by social media or in a lively hand-held conversation on their phones. This project is supposed to do a classification of driver’s behavior i.e. driving attentively, wearing a seat belt or taking a selfie with friends on the back seat all this is based on a dataset of 2D dashboard camera images.
+13. COVID-19 classification
+COVID-19 has become a pandemic. It is being diagnosed by the use of reverse transcription polymerase chain reaction. Xray machines provide a variety of chest images for early diagnosis of COVID-19 This project should be able to go through the images and determine which has COVID-19 and distinguish from normal and those with pneumonia.
+14. Emotion classification
+This project entails a rooted learning face detector and an emotion classification DNN to group seven/six normal human emotion. Emotion classification is a very challenging task to carry out utilizing computer vision. It utilizes SSD object detection algorithm to extract face from an image.
+15. Ultra sound nerve segmentation
+This project utilizes a rooted convolutional network that is adapted for segmentation in a way that image levels features can be easily learned for classification of each pixel. Because images have less or more spatial structure (nerves mostly in the same region) locally connected layers are utilized in parallel to convolutional ones from 10 x 14 resolution.
+16. Football Dataset Analysis
+This project main objective is to study football dataset Analyze, extract information from it and make forecasts based on that data. I.e to identify strengths’ and weaknesses of a team and provide ways to measure and help improve its performance.
+17. Kaggle Rainfall Prediction
+This machine learning projected main aim is to learn and predict rain behavior based on 14 weather features. It applies KNN model, Random Forest model and clustering model to get its values.
+18. Lung cancer detection
+This project consists of a computer aided diagnosing system that autodetects lung cancer. It first detects the lung region using image processing techniques like dilation, outlining, median filter, and flood fill algorithms to the CT scan photos.
+19. Volume control using hand gestures recognition
+In this project the computer camera studies human body motions i.e. gestures hence the word gesture recognition which makes the PC understand human language hence building a better link between machines and you rather than just use of GUIs.
+20. Cat human face classification
+In this project, you create a model that can classify human and cat faces. You will utilize cat and human face data and use it to train the model then test it using your laptop’s camera using a cat’s face, and it will differentiate.
+The source code of the above projects can be easily found on GitHub, all you need to do is follow up the link. Get started and construct a project in data science start with one project and once done proceed to others it will be quite easier.

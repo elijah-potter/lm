@@ -1,0 +1,45 @@
+You stumble, you fall, you keep getting up until you can walk.
+Failure is an integral part of the learning process. Every interaction we have with the world gives us feedback that allows us to fine-tune our responses and behaviors and optimize our processes. This article examines how the design of software applications can be optimized to prevent excessive user errors and how to handle the implementation of error messages.
+Learning to play a musical instrument is a great example of how our errors help us refine our processes until eventually we succeed (or choose to fail). Every time a pianist plays off-key, he is immediately notified of his discordant error and tries again, refining his method until he succeeds or gives up. This reaction is the foundation of many human–computer information models:
+The user makes an error. The user recognizes the error. The user adjusts so he doesn't make the error again.
+Musical instruments and human–computer information models train their users using similar methods, but there's an important difference: the piano doesn't care if I actually learn to use it or not, whereas the designers of computer systems need to be concerned with this. If the fledgling pianist isn’t entirely committed to learning how to play, he’ll be easily dismayed by his frequent errors and possibly give up trying. Similarly, people who encounter frequent errors in computer systems will simply choose not to use the system or replace it with a better one. Applying principles of good design in a system from the beginning allows you to retain users. When users do encounter errors (which they inevitably will), make sure the error handling isn't as painfully delivered as an ill-placed sharp note from a novice piano player.
+The 3-Part System
+According to Donald Norman, there are three parts to a system:
+- The designer's mental model of the system
+- The user's mental model of the system
+- The system image (the system itself)
+Often, user errors occur when the designer has failed to render his idea of the system correctly to the user. There are three ways you can help users navigate within a system:
+- Understand users and show them the path of least resistance
+- Provide nets for users who fall outside of the main use case
+- Gracefully degrade for user errors
+Let’s dive more deeply into each of these to learn helpful ways to lead users through a system, provide safety nets, and recover from errors.
+1. Understanding Users and Showing Them the Path of Least Resistance
+Designers can never fully grasp all the ways in which their application might be used. Launch days for products are almost always met with a flurry of feature requests and bug reports resulting from unexpected use cases that weren’t exposed until users began to actually use the application.
+Gerhard Fischer, professor of computer science at the University of Colorado and fellow at the Institute of Cognitive Science, explained this in his research paper, User Modeling in Human-Computer Interaction:
+A consequence of any smart behavior of systems is that agents (humans or computers) can guess wrong and perform hidden changes that users do not like. Current systems often lack the possibility, or at least the transparency, for users to turn off these “smart” features, which can get more in the way than help… [S]ystems, even smart ones, are aware of only a fraction of the total problem-solving process their human partners undergo, and they cannot share an understanding of the situation or state of problem-solving of a human.
+You can't plan for every possible use case. Instead, determine what the main use case will be for the majority of users and optimize your design for it. This is part of what Fischer, in a later paper calls "context-aware systems." Understanding users, their backgrounds, and their objectives allows you to create a system better optimized system for their needs.
+Defining a main use case helps send a clear message about how you want users to interact with the application. Be sure to limit the secondary features that may distract from that main use case. Your main use case should something you can convey in a simple sentence. For example, a main use case might be: "The user orders specialty donuts.”
+Now the goal is to get users flowing through the application in a way that is optimal for the main use case. Start by designing the minimum functionality needed for users to order donuts that will be delivered to their house. You might start with:
+- A display page of the available donuts
+- Functionality to click on a donut and add it to cart
+- A cart view page with a checkout button
+- A payment processing page
+- A payment confirmation and thank you page
+2. Provide Safety Nets For Edge Cases
+We have established the main use case: the user orders specialty donuts. But what happens if the user just wants to order icing or sprinkles? Or what if 22% of users want to dip the donuts in gold and wear them as necklaces? You don't want your field of view to be so narrow that you miss out on golden business opportunities.
+Users might want to interact with your service in unexpected ways—ways you couldn't even dream of designing for. Therefore, your application needs to be able to accommodate for the unexpected user's demands; but how do you this while still designing only for the primary use case? By building in safety nets.
+Many of your users who don't associate themselves with the main use case will still be able to see themselves benefiting from your system in other ways. Provide a net to catch them, and if appropriate, send them into a use case that is right for them. Employ intelligent metrics to gain data on your users' behavior and to identify places where you're losing users. Google Analytics provides fantastic tools for tracking user errors; a Smashing Magazine article from 2011 offers a tutorial on how to take advantage of those tools.
+3. Gracefully Degrade User Errors
+Designing an application from the start to be context-aware and putting safety nets in place to help adjust the system to meet your users' expectations in the future are very important steps. But even if your system is optimized for a main use case and the nets are place, users will still encounter errors. It is inevitable.
+In the process of Error -> Recognition -> Adjustment, we must do two things:
+- Provide helpful error responses throughout the application
+- Make errors seem less like failures on the user's end and more like cues for adjustment.
+Error messages are often overlooked by designers or are added at the last minute without any thoughtful styling, presentation, or wording. Error messages are your last tool to get users to stay in your application. Vague 404 page or failed form submissions that don’t clearly explain what caused the failure are both types of oversights that will confuse and frustrate users.
+Use error messages to your advantage. Make them noticeable and make sure any part of your system where user action is required is equipped with proper error handling notices. Twitter Bootstrap is a helpful UI Kit that will make this process easier; it offers beautifully designed alerts that you can easily drop into an application. It provides simple, elegant error message styling:
+It’s also important to remember to reward users for actions they complete successfully. After all, the human brain responds better to success than to failure!
+You can use Twitter Bootstrap for stylized success messages too:
+Well-designed and carefully explained error messages not only help teach users how to use the system as you intended, but they also prevent users from feeling ignorant.
+The usability of a system depends on how well the designer does his job. The extent to which you understand the user base, the methods you use to measure their actions, and the way you help them recover from errors directly affect the usability of the system.
+Remember to start with a clear use case and design the system to support that single use case, and to implement error handling. Then imagine other common ways users might want to use the application and determine if you want to provide functionality for those use cases, being careful not to add too much at once. Implement error handling for any additional functionality you added. Put systems in place to monitor the paths users take through the system and continually improve it to more closely match user expectations.
+We all want to use beautiful, intuitive software; now you can do your part to make that possible.
+Skier image provided by Shutterstock

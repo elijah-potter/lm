@@ -1,0 +1,92 @@
+What does it mean? A quick overview
+This particular theorem was created in honour of Quentin Cooper, who interviewed us for the BBC Radio 4 science magazine programme Material World on 15th April 2010. The certificate above is different from the one originally presented to Quentin. We have updated it into the format of the certificates we currently issue to customers. In particular, we have now standardised the way we name the various mathematical expressions.
+Following the name of the theorem, Quentin's Theorem,the certificate contains, in turn: the definition of a new kind of mathematical object, T; the definition of a new mathematical function, fα; and the statement of the theorem.
+One way to envisage T is as four copies of the non-negative whole numbers 0, 1, 2, 3, ..., each copy in a different colour, say red, blue, green and yellow: 0, 1, 2, 3, ..., 0, 1, 2, 3, ..., etc. So each member of T has both a numerical value and a colour. fα is then a kind of addition on these numbers. Its inputs are two coloured numbers and its output is a third coloured number, whose numerical value is the sum of those of the inputs and whose colour is that of the second input.
+Note that, unlike regular addition, fα is not commutative, that is its output depends on the order of its inputs. For instance, fα(1, 2)= 3 but fα(2, 1)=3. Notice that the numerical values of the outputs are the same, but the colours are different, as they depend on the colour of the second input.
+However, if we add three coloured numbers together, then the order of the first two is immaterial. This is because the colour of the output will be that of the third input, so will not depend on the colours of the first two inputs. For instance, fα(1, fα(2,3)) = fα(2, fα(1,3)) since both sides equal 6. The generalisation of this equality is Quentin's Theorem, i.e., it is a restricted variant of commutativity.
+We now give a more technical explanation of the certificate. The technical terms used in this explanation are also defined in the glossary at the end.
+A bluffer's guide to recursion
+Both T and fα are defined byrecursion. This is a form of definition in which the body of the definition contains the thing being defined. This sounds circular, but it need not be. Consider, the following recursive definition of the, so called, natural numbers, i.e., the non-negative whole numbers 0, 1, 2, 3, ....
+N = 0 | s(N)
+where s is called the successor function. This definitiongenerates a representation of the natural numbers of the form 0, s(0),s(s(0)), s(s(s(0))), ..., where each application of s increases the number by 1. This representation is due to the mathematician Giuseppe Peano (1858-1932). The recursive definition consists of two cases: a base case 0 and a step case s(N). Any particular natural number corresponds to one of these cases. Note that the step case contains N, which is the thing being defined. Think of this, not as a circle, but as a spiral. 0 is at the centre of the spiral; each application of s winds the spiral out by a complete circuit. 0 and s are called constructor functions, because they are used to construct new types of mathematical objects, such as our four-coloured numbers. Note that constructor functions are deliberately not defined. They are taken as primitive mathematical objects and are used in the definitions of other mathematical objects and defined functions, such as +. Definitions have to stop unfolding at some point, and that point is with the constructor functions.
+The boolean truth values, true and false, can be defined by a degenerate form of recursion, in which there are two base cases and no step cases: B = true | false.
+We will use B and N as the basis for defining new sets of recursively defined mathematical objects, such as T in our example certificate above.
+The function + can also be defined recursively. It takes two members of N as inputs and returns one as output. It also has a base case and a step case.
+Type: + : N × N → N
+Base case: 0+y = y
+Step case: s(x)+y = s(x+y)
+The type line says that + takes two natural numbers as inputs and outputs one natural number. The base case and step case lines constitute the recursive definition of +. The recursion is on x, the first input of +. Note that, in the step case, the body of the definition also contains +, the function being defined. This is also not a circular definition, but a spiral one. This time the recursion spirals inwards. Starting with some particular value of x, say s(s(o)), the step case is applied to rewrite s(s(0))+y first to s(s(0)+y) and then to s(s(0+y)). Now the base case of the definition can be used to rewrite this as s(s(y)) and the calculation is finished. Notice how the step case is organised so that + is applied to a smaller occurrence of x in the body of the definition than in the head. N has been defined to be well founded, which means that a sequence of its members cannot keepgetting smaller forever: sooner or later it will reach 0. This means that any calculation carried out using + will eventually stop. We can only apply the step case a finite number of times. Eventually, only the base case will be applicable and, after the base case, nothing will be applicable. To contrast functions such as + with the constructor functions, such as 0 and s, + is called a defined function.
+Defining four-coloured numbers
+Our certificate introduces a new type of mathematical object called T, our four-coloured numbers. T is defined recursively as:
+T = Ca(B,B) | Cb(T)
+where Ca and Cb are new constructor functions. Ca is a base constructor, since it does not have T among its inputs. It is analogous to the 0 constructor function of N, except that it has two inputs. These inputs are both members of B, i.e., they are one of two truth values: true and false. There are, therefore, four ways to instantiate Ca: Ca(true,true), Ca(true,false), Ca(false,true) and Ca(false,false), i.e., there are four versions of 0. Above we envisaged these four versions of 0 as four differently coloured 0s, e.g., Ca(true,true) could be envisaged as 0 and Ca(true,false) as 0.
+Cb is a step constructor, since it does have T among its inputs. It is analogous to the s constructor function of N. The main difference to s is that Cb can be applied to four different kinds of base constructor. We can envisage these Cb applications as colour preserving. For instance, since Cb(Cb(Ca(true,true))) has a 0 at its heart, we can envisage it as 2.
+Note that, just as with 0, s, true and false, the new constructor functions, Ca and Cb are undefined primitives.
+Defining four-coloured addition
+fα is a recursively defined function, whose definition is:
+Type: fα : T × T → T
+Base case: fα(Ca(x,y),z) = z
+Step case: fα(Cb(x),y) = Cb(fα(x,y))
+Compare this definition to that of + above. It's essentially the same. fα is just a version of addition.
+To see why each output of fα has the same colour as its second input, consider first the base case. The first input of fα is one of the coloured 0s, Ca(x,y), but regardless of its colour, the output is its second input, z, so it necessarily has the same colour as this second input.
+Now consider the step case of the definition of fα. Assume that we have already inferred that the output of fα(x,y) has the same colour as its second input y. Since Cb is colour preserving, then fα(Cb(x),y) also has the same colour as y, which is its second input. In this way, starting from the situation when fα has first input Ca(x,y), we can incrementally spiral out showing that the argument holds for each application of Cb and, therefore, for every member of T. This is called an inductive proof. It is the same kind of reasoning that TheoryMine uses to prove all the theorems that it generates.
+Proving Quentin's Theorem
+On the certificate, Quentin's Theorem is said to be proved by "induction on y". What does this mean?
+Induction is closely related to recursion. Theorems composed of recursively defined functions applied to recursively defined objects, such as Quentin's theorem, are usually proved by induction. Firstly, an induction variable is chosen. In this case it is y - although, as Quentin's Theorem is symmetric with respect to x and y, it could equally well have been x. The induction variable will range over some recursively defined mathematical object. In our case, y ranges over objects of type T.
+Just like a recursive definition, an inductive proof is divided into base and step cases.
+- In the base cases, the theorem is proved with the induction variable being instantiated to the base case of the mathematical objects it ranges over. In our case, there is only one base case, in which y is instantiated to Ca(u,v). So, we have to prove the special case of the theorem:
+- The base case: fα(Ca(u,v),fα(x,z)) = fα(x,fα(Ca(u,v),z)) .
+- In the step cases, the theorem is assumed to hold for the induction variable. This is called the induction hypothesis. The theorem is then proved with the induction variable being instantiated to the step case of the mathematical objects it ranges over. This is called the induction conclusion. During the proof of the induction conclusion, we are allowed to use the induction hypothesis. In our case, there is only one step case. In its induction conclusion, y is instantiated to Cb(y). So, we assume:
+- The induction hypothesis: fα(y,fα(x,z)) = fα(x,fα(y,z))
+- and then have to prove:
+- The induction conclusion: fα(Cb(y),fα(x,z)) = fα(x,fα(Cb(y),z)) .
+At first sight, inductive proofs look circular. During the proof of the step case, we assume the theorem already holds. But, once again, the inductive proof is really spiral. We start by proving that the theorem holds for the centre of the spiral (the base case), then the step case can be used to prove that it holds for one circuit of the spiral, then for two circuits, then three, and so on for any number of circuits.
+The base case can be proved by two applications of the base case of the recursive definition of fα, namely fα(Ca(u,v),w) = w , where I have renamed the variables to avoid confusion with those in the theorem. These can be used to rewrite the base case in two stages, as follows:
+fα(Ca(u,v),fα(x,z)) = fα(x,fα(Ca(u,v),z)) .
+fα(x,z) = fα(x,fα(Ca(u,v),z))
+fα(x,z) = fα(x,z)
+At this point, the equation is between two identical expressions, so the base case is proved.
+In the step case, the induction conclusion can be proved by:
+- two applications of the step case of the recursive definition of fα, namely fα(Cb(y),v) = Cb(fα(y,v)) ;
+- one application of a variant of this equation, namely fα(u,Cb(v)) = Cb(fα(u,v)) , which must be first proved as an intermediate lemma; and
+- an application of the induction hypothesis.
+The induction conclusion is rewritten in three stages, as follows:
+fα(Cb(y),fα(x,z)) = fα(x,fα(Cb(y),z)) .
+Cb(fα(y,fα(x,z))) = fα(x,fα(Cb(y),z)) .
+Cb(fα(y,fα(x,z))) = fα(x,Cb(fα(y,z))) .
+Cb(fα(y,fα(x,z))) = Cb(fα(x,fα(y,z))) .
+The induction hypothesis can now be used to rewrite the left hand side to:
+Cb(fα(x,fα(y,z))) = Cb(fα(x,fα(y,z))) .
+At which point, the equation is again between two identical expressions, so the step case is proved. The lemma was previously proved by TheoryMine and is called The Richard Scott Russell Theorem . Its proof is also by induction and is left as an exercise for the reader.
+Variations on a theme
+The four-coloured numbers described above are just one among infinitely many possible new mathematical objects. Different kinds of objects are generated by the choice of base and step constructors and by the inputs that we give them. For instance, suppose we had chosen to give Ca only one boolean input.
+T = Ca(B) | Cb(T)
+Then there would only be two 0s, so the numbers would have only two colours.
+Alternatively, we could have had two base case constructors.
+T = Ca(B,B) | Ca'(B,B) | Cb(T)
+Now there would be eight 0s, so the numbers would have eight colours.
+Or we could have given the base constructor a natural number as its input.
+T = Ca(N) | Cb(T)
+Now there would be an infinite number of 0s and so infinitely many colours of numbers.
+It gets more interesting if we give the step constructor additional arguments.
+T = Ca(B,B) | Cb(T,N)
+Now there are infinitely many different kinds of successor function. Another way to think of this is as defining a sequence of natural numbers, i.e., the numbers associated with each of the successor functions used in a number. So, Cb(Cb(Cb(Ca(true,true),1),3),2) would be the sequence 1,3,2, for instance.
+Nor do we have to stick to B and N as inputs to these constructor functions. Having defined T, for instance, we could use it as an input to a constructor function for some new objects T',
+T' = Ca | Cb(T',T)
+which would allow us to have sequences of differently coloured numbers: 1, 3, 2.
+We have collected together the definitions of some of the technical terms used in this explanation. These terms have alternative names in mathematics and computer science. We also give some of their synonyms.
+- Axioms: are the formulae that are assumed to be true in a theory and are used in proofs to derive new theorems from old. The only axioms used by TheoryMine are the recursive definitions of functions.
+- Booleans: are the set of truth values: true and false.
+- Constructor functions: are functions used to define mathematical objects recursively.
+- Defined functions: transform one or more inputs into an output. In computer science, they are also known as programs, procedures or sub-routines. In particular, the kind of recursively defined functions we use are functional programs.
+- Induction: is a form of proof in which earlier instances of the theorem are used as assumptions when proving later instances of the theorem, where earlier and later are defined by a well-founded recursive order. This type of induction is also called mathematical induction, which is a form of deduction with no element of uncertainty or probability. It is not to be confused with enumerative induction, in which a general rule is conjectured from a finite set of its instances. Enumerative induction, unlike mathematical induction, is uncertain and fallible.
+- Induction Conclusion: is the later instance of the theorem that is proved in an inductive proof.
+- Induction Hypothesis: is the earlier instance of the theorem that is assumed in an inductive proof.
+- Inputs: are the values given to a defined or constructor function. They are also known as arguments and parameters.
+- Outputs: are the values returned by a defined or constructor function. They are also known as results.
+- Mathematical objects: are the set of values that can be input to or output by a defined or constructor function. In computer science, they are also known as data-structures, data-types or sometimes just types.
+- Natural numbers: are the set of non-negative integers (whole numbers): 0, 1, 2, 3, ....
+- Proofs: are the sequences of inference steps used to prove a theorem. Each inference step is either an axiom or follows from earlier theorems in the sequence by some rule of logic.
+- Recursion: is a form of definition in which a function or mathematical object is defined in terms of itself.
+- Theorems are formulae that can be proved. A theorem used to help prove another theorem is called a lemma. A theorem that follows immediately from another one is called a corollary. Theorems are sometimes also called propositions.
+- Theories are collections of mathematical objects and defined functions. These implicitly define a set of theorems, so 'theories' is also sometimes used to refer to this set of theorems.

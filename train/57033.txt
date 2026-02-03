@@ -1,0 +1,10 @@
+Float charging is often called and referred to as a maintenance charge. It is used when the battery is at or near a full charge. In multistage charges for example, it is the last stage in the charging process.
+Float charging is accomplished using electronic sense circuits and a very precise voltage. The more advanced float charges will also include temperature compensation.
+Fundamentally the float charger will:
+- Sense that the battery is less than fully charged.
+- Apply a very controlled charge voltage/current that charges the battery without causing damage
+- Sense that the battery is charged
+- Turn off the charge voltage/current
+The float charge voltage is typically between 13.5 and 13.8 volts. The economical float chargers will generally set a fixed voltage in this range. The more advanced chargers will compensate for temperature and set their voltage accordingly.
+Generally speaking, the advanced float charged will have a lower limit on a hot day and a higher limit on a cold day.
+For example, the float charger may limit to 13.5 volts on a day above 100 degrees F, while at the same time provide 14.1 volts when its near freezing.

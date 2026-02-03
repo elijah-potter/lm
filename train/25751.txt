@@ -1,0 +1,37 @@
+Section: Linux Programmer's Manual (3) Updated: 2010-09-20 Local index
+lrint, lrintf, lrintl, llrint, llrintf, llrintl - round to nearest integer
+math.h> long int lrint(double x );
+long int lrintf(float x );
+long int lrintl(long double x );
+long long int llrint(double x );
+long long int llrintf(float x );
+long long int llrintl(long double x );
+Feature Test Macro Requirements for glibc (see
+All functions shown above:
+_XOPEN_SOURCE >= 600 || _ISOC99_SOURCE ||
+_POSIX_C_SOURCE >= 200112L;
+These functions round their argument to the nearest integer value,
+using the current rounding direction (see
+Note that unlike
+etc., the return type of these functions differs from
+that of their arguments.
+These functions return the rounded integer value.
+is a NaN or an infinity,
+or the rounded value is too large to be stored in a
+( long long
+in the case of the
+then a domain error occurs, and the return value is unspecified.
+for information on how to determine whether an error has occurred
+when calling these functions.
+The following errors can occur:
+Domain error: x is a NaN or infinite, or the rounded value is too large
+An invalid floating-point exception
+These functions do not set
+These functions first appeared in glibc in version 2.1.
+This page is part of release 3.27 of the Linux
+A description of the project,
+and information about reporting bugs,
+can be found at
+This document was created by
+using the manual pages.
+Time: 21:49:45 GMT, April 16, 2011

@@ -1,0 +1,61 @@
+Tutorial 1 - Getting started with the CDS Toolbox¶
+Introducing the CDS Toolbox¶
+The Climate Data Store (CDS) toolbox enables you to create interactive web pages based on publicly available climate data. You can analyse past data, monitor ongoing climate conditions and predict future trends.
+The CDS Toolbox connects the CDS raw data to a powerful computing infrastructure. You can write scripts in the Python programming language which define a series of steps to retrieve and process climate data. You will then run these workflows using the computing power of the CDS. Any graph, map or output you produce with the Toolbox is an application that can be shared with other Toolbox users. The Toolbox also provides a range of input and output widgets for developing more sophisticated and interactive applications.
+In other words, the CDS provides the data, the tools and the computing power, while you provide the steps needed to answer the questions you have. You can then visualise and download the resulting data, graphs, charts or maps.
+A series of steps that define how you want to process data
+A Python code file that tells the CDS Toolbox how to execute your workflow
+An interactive web page produced in the CDS Toolbox from your Python code
+- Input Widget
+A user interface element in an application which allows you to interact with or control the application. Examples include a drop-down menu to select from a range of variables, a text box for entering a given year, or a button to select a temperature unit
+- Output Widget
+A user interface element in an application which allows you to display an output. Examples include clickable download links, graphs visualising time series, or static maps showing temperature distribution.
+The Glossary includes many useful terms relating to the Toolbox, Python programming and climate science.
+Exploring the CDS Toolbox Interface¶
+To access the CDS Toolbox, first create an account and log-in. Next, click on the “Toolbox” button in the top navigation bar.
+This will bring you to the Toolbox Editor page. The first time you load the page, an introductory tour will play, which you can choose to skip if you wish. If you want to play or replay the tour later, click on the grey info circle next to the “Toolbox Editor” label.
+Now, let us learn more about each of these sections.
+The Applications section is where you can access and manage applications you have developed, together with data and reference information for your work in the CDS Toolbox.
+Now, let us look at each tab in turn.
+Under “your workspace”, you can access applications that you have previously written and saved. If you are new to the Toolbox, there will be nothing saved there at the moment.
+Exercise 1: Create and run your first application
+1. To add a new application to your workspace, locate the “+” button to the far right of the “your workspace” label. When you hover over this button, a pop-up appears which says “Add a new application”
+2. Click on the “+” button and type in the name of your new application in the text box which appears. When you have finished, press “Enter” on your keyboard or click on the “confirm name” icon beside your new application in “your workspace”
+3. Even though you have created a new application, it already includes some sample code. Click on the green “run” button. The application will run and a download link will appear in the Preview section
+Click on the link to download the data.
+You will see a pencil icon and a bin icon beside the new application in “your workspace”. You can click on the pencil to change the name of the application or click on the bin to delete it. Do not forget to save your application if you have changed something in the code. The “Save” button is greyed out until you edit the code.
+Once you have a few applications saved, you can choose to sort them either alphabetically or by date. Click on the “AZ” or “09” icon beside “your workspace” to change the sorting method.
+The Data tab is where you can search the CDS for available datasets. Click on the “Data” tab, and then on the red button that reads “Open the catalogue”. A new page will open which allows you to type in keywords to find datasets of interest. In addition, you can filter by a number of attributes, such as product type, variable domain, spatial coverage and temporal coverage.
+See “Next steps” at the end of this tutorial for more information on data sets, and you can learn more about loading and retrieving data in this how-to guide.
+The Documentation tab in the Applications section gives you information on the various tools available.
+Learn more about how to read and interpret documentation descriptions in this how-to guide.
+The Editor section is where you can develop applications to process data and do calculations in the CDS Toolbox. You can load and edit an example application or work on a new application you have created from scratch.
+The fastest way to get started is to use an example application as a starting point. You can click on any example application in the Applications section (such as “00 Hello World”) to open a pop-up preview of the corresponding script. You can then click on the green “Load” button to load it into the Editor section.
+The script you saw in the pop-up will then be visible in the Editor section and will run automatically. The results of the script will also be displayed in the Preview section.
+If you have a script loaded, the Editor tab will display the name of the corresponding application. In this case, the first tab now shows “00 Hello World”.
+Let us try loading and running a different example application.
+Exercise 2: Make a copy of an example application
+Under “examples” in “your workspace”, you will see a list of example applications that have been provided by the Climate Data Store.
+1. Click on the application entitled “11 Calculate time mean and standard deviation”. A pop-up with the script will appear
+2. Click on the green “Load” button at the bottom-right of the pop-up. The script will now appear in your Editor section
+3. Click on the red “Copy” button at the top-right of the Editor section. You will then see a copy of the script appear in the Applications tab of the Applications section, under “your workspace”
+4. Next, click on “Run” to run the script. Previous results are stored in the Toolbox cache memory so they can be quickly displayed in your browser
+5. Click on the save icon to download and save a copy of the script as a Python file on your computer. This will enable you to have a local backup of the script.
+The Console tab is where you see any error messages that may result when you run the script. These error messages are useful for locating problems or bugs, so you can fix them before running the script again.
+The History tab allows you to view previously saved versions of your application together with a tag name, unique Revision ID, the Author’s User ID, and when that version was saved.
+Learn more about tagging revisions and restoring an old version of the application in this how-to guide.
+When you run the script, a task is created for computing the results in the CDS Toolbox. The Your Queue tab shows the status of your active and pending tasks. This tab is particularly useful if you run several applications in parallel or have launched several requests with the same application.
+An active task is one which is currently being computed and processed in the Toolbox. A pending task is one which has not been computed yet, but is queued for processing later.
+Some larger tasks may take a while to process and display the results.
+If some time has passed and you wish to check the current status of your tasks, click on the green “refresh” button
+If a task did not complete successfully, you can click on the Console tab to see if any errors have occurred
+Tasks are removed from the queue when they stop running. To see all your previous tasks, click on the “Your requests” link.
+If you are running multiple applications at once, make sure you run each application in its own separate browser tab.
+If you wish to stop an active task from running, tick the box beside the task you wish to delete. Then click on the red “Delete selected” button.
+You can also delete pending tasks in the same way.
+Finally, let us turn our attention to the Preview section of the Toolbox Editor.
+Once you have clicked on “Run” for one of your scripts, the corresponding application will appear in the Preview section. The application displayed in Preview includes all the input and output widgets you have defined in your script. Any modifications you make will be reflected in the application preview the next time you press “Run”.
+To open the application in a new tab, click on the curved black arrow in the top-right corner of the Preview section.
+Congratulations on finishing the first tutorial. You should now feel confident about finding your way around the CDS Toolbox and have a better idea about what the Toolbox can do.
+As a general point, it is a good idea when you start creating your own applications to use the example applications provided as a template.
+To learn about the standard structure and building blocks of a Toolbox workflow, take a look at the next tutorial.

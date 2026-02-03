@@ -1,0 +1,6 @@
+Software Protection Dongle
+Definition - What does Software Protection Dongle mean?
+A software protection dongle is a tiny hardware device connected to a computer I/O port to authenticate commercial software. It ensures the software’s protection by rendering the software inoperable when a required hardware device is not connected. Software without a dongle will either not run completely or will operate in restricted mode. This term is also known as Hardware Token, Security Device, Steinberg Key and Hardware Key. These are proprietary names used by various manufacturers.
+Techopedia explains Software Protection Dongle
+Software equipped with a dongle sends an inquiry request to the I/O port for authentication, first at start-up and then at planned intervals. If the request does not meet the anticipated validation code, the program automatically terminates.
+Although software dongles do not provide a complete security solution for protecting media contents, they have been widely used for restricting piracy and enforcing digital rights management. It is difficult to make an illegal copy of a dongle.

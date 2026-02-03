@@ -1,0 +1,7 @@
+Factory Method pattern Governs the object instantiation process that hides the complex logic involved in the object creation from the clients. It advocate for Robust, Expandable, Maintainable and Reusable code. Also forms a basis for most java component development.Key learning of the session:
+- Drill down the Factory Method pattern.
+- Understand how different patterns work together in real life component development.
+- Developing Robust, Expandable, Maintainable and Reusable code.
+- Study different variations in Factory Method to fit different situations.
+- Discuss Features, Pros and Cons of variations in Factory Method pattern.
+- Code demonstration for Real-life programming situation.

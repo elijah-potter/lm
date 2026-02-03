@@ -1,0 +1,6 @@
+Acquire ownership of a file, without blocking
+#include <stdio.h> int ftrylockfile( FILE* file );
+- A pointer to the FILE object for the file you want to lock.
+Use the -l c option to qcc to link against this library. This library is usually included automatically.
+The ftrylockfile() function is used by a thread to acquire ownership of a FILE if the object is available; ftrylockfile() is a nonblocking version of flockfile() . To unlock the file, call funlockfile() .
+- The lock can't be acquired.

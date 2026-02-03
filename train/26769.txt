@@ -1,0 +1,20 @@
+Inverse Kinematics (IK) Poses and Animation in Flash CS5
+A significant feature of Adobe Flash Creative Suite 5 for designers and animators is the Flash CS5 support for Inverse Kinematics (IK), a principle relied on in 3D and computer animation and modeling. Inverse Kinematics determines how jointed or connected objects position themselves relative to one another when moved.
+For example, when animating a human arm, if the forearm changes position, it ultimately affects the position of the connected hand and upper arm. These principles help create life-like animation and interaction.
+Flash features two tools, Bone and Bind, that you use to connect objects and edit those connections. Connected objects can be posed, and changes between those poses can ultimately be animated. You can create IK relationships between symbol instances or shapes.
+To create and connect IK container objects, follow these steps:
+Create a new Flash document and place two symbol instances on a new layer.
+They can be instances of the same symbol or of two different symbols.
+Select the Bone tool from the Tools panel, move the pointer over the first object until a plus sign appears, drag until the cursor is over the second object, and release the mouse button.
+This step draws a virtual bone between the two shapes, connecting them.
+You’ve now converted the two symbol instances to IK container objects, and the layer has been converted to an Armature layer.
+Choose the Selection tool and drag either of the connected symbols to see how the connected objects will behave.
+The second symbol changes its position based on the position of the first.
+You can add more objects to the chain. Although you can’t add objects randomly to an Armature layer, you can connect existing IK container objects to artwork on other layers to add them to the chain.
+Follow these steps to add objects to an existing armature layer:
+Create a new layer on the Timeline and drag a symbol instance to it from the Library panel.
+Position the symbol where you want it relative to the existing IK container objects on the stage.
+Choose the Selection tool and select in the existing Armature layer the object you want to connect the new symbol to.
+Choose the Bone tool, locate the joint (or connection point) on the selected IK container object, and click and drag from that point to the new symbol.
+A new bone is drawn to connect the two objects, and the symbol is removed from its original layer and added to the Armature layer.
+Choose the Selection tool and drag the new symbol around to see how its motion affects the other objects in the chain.

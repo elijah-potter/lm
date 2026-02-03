@@ -1,0 +1,12 @@
+Alright. I'm new to these forums, and to programming in Java as well, so don't laugh . Anyway, I got an assignment from my class that says:
+Implement a combination lock class. A combination lock has a dial with 26 positions labeled A Z. The dial needs to be set three times. If it is set to the correct combination, the lock can be opened. When the lock is closed again, the combination can be entered again. If a user sets the dial more than three times, the last three settings determine whether the lock can be opened. You must use a class CombinationLock with a constructor that takes one three-letter String as its only parameter, a modifier setPosition() that takes a one-letter String as its only parameter, a modifier unlock() that opens the lock if the combination is correct, a predicate isOpen() to check the status of the lock, and a modifier lock() that closes the lock.
+This is my code so far, and it doesn't work, and I really don't know why.
+To me, the theory all looks fine. Maybe you can figure it out? [ January 21, 2007: Message edited by: Christian Somody ]
+Joined: Jan 17, 2006
+...it doesn't work, and I really don't know why.
+What do you mean by "it doesn't work?" Are you getting any compiler errors, runtime exceptions, or is there a problem with the program logic. Please describe in detail what's happening, including the full text of any compiler or runtime error messages you are getting.
+Some problems are so complex that you have to be highly intelligent and well informed just to be undecided about them. - Laurence J. Peter
+Joined: Jun 09, 2003
+are you still stuck, or has the problem been resolved from the replies here
+The problem was that it always said "Wrong combination!" but then was open if the combination was right (even though it said it was wrong). I forgot to use braces and I had two lines in the else statements. It was:
+I fixed it now though. Thanks for the help . [ January 21, 2007: Message edited by: Christian Somody ]

@@ -1,0 +1,15 @@
+1. Java: Enum parameter in method stackoverflow.com
+I have a method lets say:
+and as you can notice, I have a parameter called align. Inside ...
+2. Java: `enum` vs `String` as Parameters stackoverflow.com
+I've been reading through the details of the
+3. Passing an enum as a parameter in a method? stackoverflow.com
+Hey, I have an abstract class Medium, where one of the datamembers is an enum.
+4. Using a supertype parameter of specific enum classes stackoverflow.com
+I have two parser classes, and I want to throw an exception when parsing fails. I want to use the same exception, ParserException, which I'd like could accept the field name which ...
+5. Should i pass an enum as a parameter or pass its literal value stackoverflow.com
+i was thinking along the line when design some interfaces and classes whether i should be passing enum as a parameter or its literal value. At this juncture, i am all ...
+6. enum parameter in method declaration coderanch.com
+7. Enum type parameter to a method forums.oracle.com
+8. Help passing enum as method parameter forums.oracle.com
+Glad I could help. Enums are about my favorite language addition to Java 5 because they make dealing with sets of constants so much clearer. If you use enums like that a few times, it'll stick with you. Another feature of enums is that the enum class can be declared abstract, and each enum constant can then implement the abstract methods ...

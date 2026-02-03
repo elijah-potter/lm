@@ -1,0 +1,20 @@
+The NASM manual includes the following on the $ token in section 3.5:
+$ evaluates to the assembly position at the beginning of the line containing the expression
+NASM uses backslash (\) as the line continuation character; if a line ends with backslash, the next line is considered to be a part of the backslash-ended line.
+buf: ; define 20-byte buffer
+db 'Hello, world!' ; declare string constant
+times 19-$+buf db '_' ; declare byte with value '_' after string and up to index 19 in buffer
+db 0xa ; declare byte with newline character 0xa (10) at end of buffer
+len equ $-buf ; define len to be size of buf
+error: non-constant argument supplied to TIMES
+You're missing the fact that there's a
+- ahead of the
+$ in the original.
+buf-$ + 19
+It's still an address difference, not sum.
+bufrefers to the beginning of the data labelled "buf"
+Yes, but your terminology is sloppy.
+buf is the address of the position where you put the
+buf label. It's just a position which you can use to access bytes at known offsets from it. There's no clear way to tell which bytes "are labelled
+buf". In this case, probably the whole 20-byte buffer (including the newline after the line that pads with
+_) is accessed through

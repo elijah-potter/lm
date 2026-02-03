@@ -1,0 +1,34 @@
+Hexapode (Walking Robot)
+There are many wheels, but few feet, in the field of non-living transportation modes. Feet or legs
+have the undeniable advantage of being able to produce movement in any direction where a next step can be
+taken. In contrast, the mechanical field uses wheels to move from one area to another.
+There is no biological equivalent here and wheels allow great distances to be covered at a low energy cost.
+However, there are several situations where a wheel cannot adequately adapt to overcome an obstacle and
+these situations have motivated the development of the
+Biomimetics is an approach which attempts to solve problems by adopting solutions which are found in nature.
+Insects are among the lifeforms which are best adapted to their environment: they are found in all temperate regions
+of the globe. Despite their small size, their possibilities are
+enormous. The ant has served as a model for the walking robot under development here. The ant has an excellent
+morphology: small, agile and strong, which is well-suited to address the criteria of
+Fig. 1: The morphology of the ant has served as a model for the Hexapode Robot.
+Hexapod is a walking robot with six feet. The development of this robot has enabled the
+theoretical study and experimental design of concepts leading to a stable and efficient means of walking.
+The Hexapod project is a mechatronics endeavour, i.e. an engineering example of combining notions of
+mechanics, electronics and computer science.
+Fig. 2: CAD Model and image of the Hexapod Robot.
+More specifically, the definition of a support and feedback polygon enables a suitable management of
+stability. The static equilibrium of the robot was achieved so as to reduce energy consumption.
+Hierachical programming was used in the controler and Hexapode and this programming manages movements,
+operational sequences and decision-making to allow the robot to react appropriately to the
+environment in which it evolves.
+Space applications can be envisioned for Hexapod, such as the exploration of Mars or the Moon or the
+construction of planetary bases. Terrestrial applications are also possible. For example, Hexapode could
+acquire data or collect biological samples deep in the forest or search sites of catastrophies to locate
+survivors without exposing rescue workers to dangerous situations. This robot could also be used
+domestically as its appearance is somewhat user-friendly.
+A poster was prepared in 2004 on our hexapode robot, and
+can be downloaded with the PDF file below.
+Hexapode : un robot marcheur (0.4 Mb)
+A video clip of the Hexapode Robot is available below.
+Sequence illustrating different types of steps taken by the Hexapode Robot.
+Format: mov Length: 1:37 Size: 164.3 Mb

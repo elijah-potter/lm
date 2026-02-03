@@ -1,0 +1,33 @@
+It was the day before the test on Polygons, and so I thought that writing a proof and then giving feedback on another team’s proof might be helpful.
+Students worked alone for a few minutes, thinking about what was given and what could be implied. Then they worked with their team to talk about their ideas and to begin to plan a proof.
+Some were off to a good start.
+Some were obviously practicing look for and make use of structure.
+Some were stuck.
+I talked to several groups, listening to their plan, asking a few questions to get them unstuck.
+And then I got out colored paper on which to write the team proof.
+The clock was ticking, but I thought that surely they would be able to trade proofs with another team for feedback within a few minutes.
+I talked to another group. They were reflecting ∆ABC about line AC.
+What will be the image of ∆ABC about line AC?
+The answer? ∆ACD.
+Of course that is wrong. It seems so obvious that ∆ABC is not congruent to ∆ACD. And I’m also wondering how that helps us prove that AC=BD, since BD isn’t in either of those triangles. But that’s where this team of students is. I now have the opportunity to support their productive struggle, or I can stop productive struggle in its tracks by giving them my explanation.
+My choice? Scissors. And Paper. And more time.
+What happens if you reflect ∆ABD about line AC?
+Oh! The triangles aren’t congruent.
+So are there triangles that are congruent that can get us to the diagonals?
+∆ABC is congruent to ∆BAD.
+How do you know?
+So what is significant about the line that the pencil is making?
+It’s a line of symmetry for the trapezoid.
+It goes through the midpoints.
+(One of the team members was using dynamic geometry software to reflect ∆ABC in the midst of our conversation, but I don’t have pictures of her work.)
+So the plan was for team to write their proofs on the colored paper and then trade with other teams for feedback. Great idea, right? So how do you proceed with 15 minutes left? Proceed as planned and let them give feedback with no whole class discussion? Or have a whole class discussion to connect student work? Because as it turned out, no two teams proved the diagonals congruent the same way. I chose the latter.
+I asked the first team to share their work.
+Their proof needs work. But they have a good idea.
+They proved ∆AMD≅∆BMC, which makes the corresponding sides congruent, so with substitution and Segment Addition Postulate, we can show that the diagonals are congruent.
+Next I asked the team to share who proved ∆ABC≅∆BAD using a reflection about the line that contains the midpoints of the bases. Their written proof needs work, too. But they had a good idea.
+Another team proved ∆ACD≅∆BDC.
+Another team constructed the perpendicular bisectors of the bases. Since the bases are parallel, a line perpendicular to one will be perpendicular to the other. I’m not sure they got to a reason that the perpendicular bisectors have to be concurrent. They could have used ∆AZD≅∆BZC to show that. Instead, they used a point Z on both of the perpendicular bisectors (they know that any point on the perpendicular bisector of a segment is equidistant from the endpoints of the segment) to reason that ∆AZB and ∆DZC are isosceles & then used Segment Addition Postulate and substitution to show that the diagonals are congruent. Not perfect. But a good start.
+NCTM’s Principles to Actions discussion on support productive struggle in learning mathematics says, “Teachers sometimes perceive student frustration or lack of immediate success as indicators that they have somehow failed their students. As a result, they jump in to ‘rescue’ students by breaking down the task and guiding students step by step through the difficulties. Although well intentioned, such ‘rescuing’ undermines the efforts of students, lowers the cognitive demand of the task, and deprives students of opportunities to engage fully in making sense of the mathematics.”
+So while I didn’t rescue my students, we also never made it to an exemplary proof that the diagonals of an isosceles trapezoid are congruent. Did they learn something about make sense of problems and persevere in solve them? Sure. Is that enough?
+Would it be helpful to lead off next year’s lesson with this student work? Or does that take away the productive struggle?
+Is it just that we have to find a balance of productive struggle and what exemplary work looks like, which is easier in some lessons than others? If so, I failed at that balance during this lesson. Even so, the journey continues …

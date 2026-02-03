@@ -1,0 +1,9 @@
+This is a macro for Microsoft Excel to export data as a text file. It will export the current selection as a plain text file, with spaces or other delimiter between numbers. It handles cases when more than 256 columns are needed, such as for phylogenetic data, and allows data to be transposed during export.
+Download from here: ExportText.xls
+If copied to the XLStart directory, the macro will be always available. Copy the file to this location:
+To use this macro, select the data range to be exported, and then from the Tools menu select Export Matrix as Text. If you have more than 256 columns, you can have data in more than one worksheet. If so, select the range in all open worksheets, then use the Concatenate checkbox, and all will be exported into one large file.
+Check the transpose box if you wish to export in a transposed (flipped diagonally) manner.
+The format string is as is used by Excel. For example, to export with one decimal place use the format string 0.0 This item may normally be left blank if you have integer or text values.
+Separator text is normally a single space, or a comma. To use a tab character, enter a single capital T, or to put every number on a new line, use a single capital P. If this box is left completely empty, there is no separation between values.
+To use a special character for missing data, for example a 9 or a star or a period, enter this in the box provided. Otherwise if left blank, blank cells will remain blank.
+If concatenating all open workbooks and worksheets, the number of selected rows must match for all open workbooks and worksheets (or column count nust match if transposing).

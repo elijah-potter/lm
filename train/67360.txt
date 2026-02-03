@@ -1,0 +1,8 @@
+A fully qualified domain name (FQDN), sometimes also referred to as an absolute domain name, is a domain name that specifies its exact location in the tree hierarchy of the Domain Name System (DNS) after registering a domain. It specifies all domain levels, including the top-level domain and the root zone. A fully qualified domain name is distinguished by its lack of ambiguity: it can only be interpreted one way.
+incorrectly configured FQDN can cause mail server malfunction and many other problems.
+1.you need to edit /etc/hostname
+1. you need to edit /etc/sysconfig/network
+2. you need to use 'hostname -F' to setup the hostname
+-F, --file read host name or NIS domain name from given file hostname -F /etc/hostname
+3. edit /etc/hosts to setup FQDN
+127.0.0.1 localhost.localdomain localhost wan_ip server1.anydomain.com server1

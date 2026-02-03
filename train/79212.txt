@@ -1,0 +1,8 @@
+When working with encryption in Linux, it's common to see the terms PGP and GPG used interchangeably. Here we will clarify the difference, and why for all intents and purposes, it makes no difference from a user's perspective.
+PGP (Pretty Good Privacy)
+PGP stands for Pretty Good Privacy, and was developed by Phil Zimmermann. It's been turned into a proprietary program that was acquired by Symantec. However, the command line version is not owned, and not for sale.
+The formats for keys, encrypted messages and message signatures defined by PGP were formalised as the OpenPGP standard, which is where GPG comes in.
+GPG (GNU Privacy Guard)
+The GPG software is an independently written program that adheres to the OpenPGP standards. Many consider this an "upgrade". It uses the AES algorithm instead of the IDEA algorithm that PGP uses. AES is not patented and royalty free, unlike the IDEA algorithm. It is also considered more secure. GPG is more compatible than the original PGP with OpenPGP.
+You can use GPG to exchange encrypted messages with anyone using other OpenPGP implementations, including Symantec's PGP.
+If you're using Linux, then you are probably using GPG and not PGP since PGP is proprietary and GPG is not. GPG and PGP systems can be used interchangeably for encryption, so don't worry about the difference.

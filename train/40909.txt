@@ -1,0 +1,25 @@
+Last updated on October 14th, 2016
+Clean Boot means to start Windows with the minimal set of services and programs in order to troubleshoot computer problems and find out which program or service causes your computer to run into problems, slow performance or crashes.
+In a Clean Boot state, Windows only load the required system services and programs when starting up and don't load all the other programs or services which usually run on the background during a Normal boot, like the programs which were installed by the user (e.g. antivirus, Dropbox, Skype, etc.) or by a malware application without the user's knowledge.
+In this tutorial I 'll show you how to start Windows with the minimal set of drivers and programs in order to troubleshoot Windows problems.
+How to perform a Clean Boot (Startup) to Troubleshoot Windows 10, 8, 7 or Vista problems.
+2. Type msconfig and press Enter to open System Configuration utility.
+3. At Services tab, click to check the Hide all Microsoft services checkbox.
+3a. Press the Disable all button.
+4. Then select the Startup tab.
+4a. If you use Windows 7 or Vista:
+1. Press the Disable All button.
+2. Press OK and restart your computer.
+4b. If you use Windows 10 or Windows 8.
+1. Click to Open Task Manager.
+2. Select one by one all startup items and click Disable.
+3. Close Task Manager.
+4. Press OK at System Configuration utility and restart your computer.
+5. After the restart, check if your computer works smoothly.
+– If your computer works properly while in clean boot, then follow again the above procedure, but now re-enable one by one each disabled service or program and restart your computer until you find out which of them causes the problem.
+How To Exit from Clean Boot state.
+1. Run msconfig command again.
+2. At Boot tab, select Normal startup.
+3. Then select the Startup tab, and enable the disabled items.
+4. Press OK and Restart your computer.
+That's it! Let me know if this guide has helped you by leaving your comment about your experience. Please like and share this guide to help others.

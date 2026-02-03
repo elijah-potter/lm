@@ -1,0 +1,3 @@
+The genus Dorotheanthus occurs in the Western and Northern Cape Provinces of South Africa. Dorotheanthus are small herbaceous annuals with extremely attractive flowers. Seed sown in mid-winter will produce flowering plants by early spring and will blossom. They will not last the summer in oppressive heat. Though short-lived, their showy flowers make them beautiful horticultural subjects. Dorotheanthus are easily propagated by seed.
+Warning: mysql_connect() [function.mysql-connect]: Host 'gator193.hostgator.com' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts' in /home/daiv/public_html/succulentguide/php/cacti.db.connect.php on line 17
+Error: Could not connect to database.

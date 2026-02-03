@@ -1,0 +1,25 @@
+This example shows how to customise the allocation of memory associated with asynchronous operations.
+This example demonstrates how to create reference counted buffers that can be used with socket read and write operations.
+This example implements a chat server and client. The programs use a custom protocol with a fixed length message header and variable length message body.
+The following POSIX-specific chat client demonstrates how to use the posix::stream_descriptor class to perform console input and output.
+A collection of simple clients and servers, showing the use of both synchronous and asynchronous operations.
+These POSIX-specific examples show how to use Asio in conjunction with the
+system call. The first example illustrates the steps required to start a daemon
+The second example demonstrates how it is possible to fork a process from within a completion handler.
+This example illustrates the use of asio in a simple single-threaded server implementation of HTTP 1.0. It demonstrates how to perform a clean shutdown by cancelling all outstanding asynchronous operations.
+An HTTP server using an io_service-per-CPU design.
+An HTTP server using a single io_service and a thread pool calling
+A single-threaded HTTP server implemented using stackless coroutines.
+This example shows how to use raw sockets with ICMP to ping a remote host.
+This example shows how to customise handler invocation. Completion handlers are added to a priority queue rather than executed immediately.
+Two examples showing how to use ip::tcp::iostream.
+An example showing the use of multicast to transmit packets to a group of subscribers.
+This example shows how Boost.Serialization can be used with asio to encode and decode structures for transmission over a socket.
+Example client program implementing the SOCKS 4 protocol for communication via a proxy.
+Example client and server programs showing the use of the ssl::stream<> template with asynchronous operations.
+A collection of examples showing how to cancel long running asynchronous operations after a period of time.
+Examples showing how to customise deadline_timer using different time types.
+Example illustrating mixed synchronous and asynchronous operations, and how to use Boost.Lambda with Asio.
+Example demonstrating reactor-style operations for integrating a third-party library that wants to perform the I/O operations itself.
+Examples showing how to use UNIX domain (local) sockets.
+An example showing how to use the Windows-specific function

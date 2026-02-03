@@ -1,0 +1,9 @@
+How To Access Router
+If you majored in networking in college, then you probably don’t need to know how to access router. In your case however, it may not be so obvious for you to know how exactly you can access your router. Accessing a router doesn’t take much technical knowledge, however, which makes it easy for almost anybody to do it.
+To access your router, you will need:
+- A router
+- A computer
+- Start by opening up your preferred web browser. Routers don’t normally use any type of software for use of controlling or accessing them. This must all be done from your internet browser.
+- Type “192.168.1.1” into the address bar and press Enter. Routers can have different internal IP addresses, but 192.168.1.1 is the typical address for most routers. Some routers may differ, however, and they may be 192.168.0.1 or 192.168.2.1. Check your router manual for more information.
+- If you entered the right IP address, you should be prompted for a username and password.Chances are, this information is still set to default and the username might be “admin” and the password field can be left blank. If you initially set a username and password for your router, type this information in and hit enter. If you never set a username and password, try using “admin” for the username and leave the password field blank. Other routers may use “admin” as the username and “password” as the password. Your manual can provide more information on this.
+- Hit enter once you’ve entered your information, and you’ll be taken to your router firmware if you’ve entered the correct username and password. Congratulations, you’ve accessed your router. From this page on, you can make various changes to your router such as setting up wireless security, restricting access to the device at certain times, port forwarding, and so on!

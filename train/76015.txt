@@ -1,0 +1,34 @@
+|Creating a Stereo Mixdown in Pro Tools
+Written by Frank D. Cook - © 2006, Cengage Learning. Reprinted with Permission.
+This article is an excerpt from the following book: Pro Tools 101 Official Courseware.
+Mixing down is the process of recording the output from multiple tracks to a stereo or multi-channel format. This process is also often referred to as bouncing, which traditionally has been done to combine several tracks together to free up resources or reduce track count. Mixdown is often the last phase of music production, but in
+Pro Tools mixdown can be done any time you want to bounce tracks or create a completed mix for use outside of your session.
+The most common mixdown technique in Pro Tools is to mix down to a stereo file (or left and right mono files). You can record your mix to audio tracks within your session or create an external recording using the Bounce to Disk command. Once you have created a stereo mix, you can play back the results outside of Pro Tools and share your composition with others by burning the file onto a CD.
+Considerations for Bouncing Audio
+Most digital audio workstations provide functions for mixing down or bouncing tracks; however, not all systems approach the process the same way. For example, some non–Pro Tools systems include only internal hard disk tracks when bouncing to disk and do not include any live or virtual tracks being brought into the system. Likewise, some systems will not capture automation when bouncing to disk. Pro Tools, however, performs real-time bounces, capturing all audible information in your mix just as you hear it during playback.
+Here are some specific details about how Pro Tools processes a bounce. These principles apply both when bouncing to tracks and when bouncing to disk, unless otherwise noted.
+· Pro Tools bounces all audible tracks in real time. When you play back your session, all tracks that you hear are included in the bounce. Any tracks that are muted will not appear in the bounce. If you have soloed any tracks or regions, only those soloed elements will appear in the bounce.
+· Pro Tools bounces tracks based on the output path. All source tracks for the bounce must be assigned to the same output path. Any audio not assigned to that common output path will not appear in the bounce file.
+· Pro Tools does not require extra voices to bounce to disk. You can use all available voices in your system when using the Bounce to Disk command, without requiring extra voiced tracks for recording the bounced file.
+· The bounced file will be a "flattened" version of your session. Inserts, sends, and external effects are applied permanently to the bounced tracks, so make sure that you set levels carefully before bouncing tracks. Listen closely to ensure that everything sounds as it should. Pay close attention to levels, being sure to avoid clipping.
+· Pro Tools bounces tracks based on timeline selections. If you have made a selection on the timeline (or on a track with edit and timeline selections linked), Pro Tools will bounce all audible tracks for the length of the selection only. If there is no selection in any track, Pro Tools will bounce the audible tracks in your session from the start of the session or from the playback cursor position to the end of the longest track in the session.
+· Bounced material is automatically time-stamped. You can drag a bounced file into a track and place it at the same location as the original material using Spot mode.
+Bouncing to Tracks
+To create a stereo mixdown (or submix) within Pro Tools, you can record any or all of your session tracks to an available stereo audio track. This technique lets you add live input to the mix, adjusting volume, pan, mute, and other controls in real time during the mixdown process. Recording to tracks requires that you have an available voiced track for each channel that you will be recording. For a stereo mix using Pro Tools M-Powered 7 or Pro Tools LE 7, this simply means that you will need a stereo audio track or two mono audio tracks available.
+TIP: Bouncing tracks in a large session using Pro Tools HD might require that you consider voice allocation. Voicing considerations are covered in advanced courses.
+The typical process for creating a stereo mixdown within a session is to combine the audio output of selected tracks using an internal bus and to record the resulting mix onto a separate stereo audio track.
+To create a stereo mixdown using this method, do the following:
+1. Create a stereo mix from the source tracks as described in Chapter 9, using appropriate settings for volume, panning, inserts, sends, plug-ins, and automation.
+2. Set the output for each track you want to include to the same unused stereo bus. These tracks will be the source playback tracks for the bus bounce.
+3. Create a stereo Audio track and record-enable the track. This track will be the destination track for the bus bounce.
+4. Set the inputs for the stereo track to correspond to the stereo output bus you selected in step 2, and set the output for the track to your main output path (typically Analog 1-2).
+5. Do one of the following:
+· Make a selection (to manually set the start and end times for the bounce).
+· Place the playback cursor at the beginning of the session or at the desired start point.
+6. In the Transport window, click the RECORD button followed by the PLAY button to begin recording the bounce.
+7. During recording, perform any desired "live" mixing, such as Volume Fader adjustments and panning changes.
+8. Allow recording to continue until playback stops automatically (if recording from a selection) or until you reach the desired end point. To stop the recording manually, click the S-rop button in the Transport window or press the SPACEBAR.
+TIP: After the recording is complete, you should see the waveform for your combined source tracks on the destinations tracks. If no waveform is present, check the settings for your source outputs and record inputs and verify that the faders are set to an audible level.
+9. Disarm the record-enabled track and rename the recorded region if desired.
+Once you have combined multiple tracks into a single stereo track, you can continue with more recording or editing, using the stereo track in place of any original tracks to free up resources. You can also use the stereo track as part of a Bounce to Disk operation to create a completed audio mix. For more information, see Pro Tools 101 Official Courseware.
+To stay informed about new articles, be sure to click here to sign up for the DigiFreq Music Technology Newsletter. It's free!

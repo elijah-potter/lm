@@ -1,0 +1,154 @@
+Parrot Virtual Machine/Parrot Intermediate Representation< Parrot Virtual Machine
+Parrot Intermediate RepresentationEdit
+The Parrot Intermediate Representation (PIR) is similar in many respects to the C programming language: It's higher-level than assembly language but it is still very close to the underlying machine. The benefit to using PIR is that it's easier to program in than PASM, but at the same time it exposes all of the low-level functionality of Parrot.
+PIR has two purposes in the world of Parrot. The first is to be used as a target for automatic code generators from high-level languages. Compilers for high-level languages emit PIR code, which can then be interpreted and executed. The second purpose is to be a low-level human-readable programming language in which basic components and Parrot libraries can be written. In practice, PASM exists only as a human-readable direct translation of Parrot's bytecode, and is rarely used to program by humans directly. PIR is used almost exclusively to write low-level software for Parrot.
+PIR syntax is similar in many respects to older programming languages such as C or BASIC. In addition to PASM-like operations, there are control structures and arithmetic operations which simplify the syntax for human readers. All PASM is legal PIR code, PIR is almost little more then an overlay of fancy syntax over the raw PASM instructions. When available, you should always use PIR's syntax instead of PASM's for ease.
+Even though PIR has more features and better syntax then PASM, it is not itself a high-level language. PIR is still very low-level and is not really intended for use building large systems. There are many other tools available to language and application designers on Parrot that PIR only really needs to be used in a small subset of areas. Eventually, enough tools might be created that PIR is never needed to be used directly.
+PIR and High-Level LanguagesEdit
+PIR is designed to help implement higher-level languages such as Perl, TCL, Python, Ruby, and PHP. As we've discussed before, high-level languages (HLL) are related to PIR in two possible ways:
+- We write a compiler for the HLL using the language NQP and the Parrot Compiler Tools (PCT). This compiler is then converted to PIR, and then to Parrot bytecode.
+- We write code in the HLL and compile it. The compiler converts the code into a tree-like intermediate representation called PAST, to another representation called POST, and finally to PIR code. From here, the PIR can be interpreted directly, or else it can be further compiled to Parrot bytecode.
+PIR, therefore, has features that help to enable writing compilers, and it also has features that support the HLLs that are written using those compilers.
+Similarly to Perl, PIR uses the "
+#" symbol to start comments. Comments run from the
+# until the end of the current line. PIR also allows the use of POD documentation in files. We'll talk about POD in more detail later.
+Subroutines start with the
+.sub directive, and end with the
+.end directive. We can return values from a subroutine using the
+.return directive. Here is a short example of a function that takes no parameters and returns an approximation of π:
+.sub 'GetPi' $N0 = 3.14159 .return($N0) .end
+Notice that the subroutine name is written in single quotes. This isn't a requirement, but it's very helpful and should be done whenever possible. We'll discuss the reasons for this below.
+There are two methods to call a subroutine: Direct and Indirect. In a direct call, we call a specific subroutine by name:
+$N1 = 'GetPi'()
+In an indirect call, however, we call a subroutine using a string that contains the name of that subroutine:
+$S0 = 'GetPi' $N1 = $S0()
+The problem arises when we start to use named variables (which we will discuss in more detail below). Consider the following snippet where we have a local variable called "GetPi":
+GetPi = 'MyOtherFunction' $N0 = GetPi()
+In this snippet here, do we call the function "GetPi" (since we made the call
+GetPi()) or do we call the function "MyOtherFunction" (since the variable GetPi contains the value 'MyOtherFunction')? The short answer is that we would call the function "MyOtherFunction" because local variable names take precidence over function names in these situations. However, this is a little confusing, isn't it? To avoid this confusion, there are some standards that people use to make this easier:
+$N0 = GetPi()
+|Used only for indirect calls|
+$N0 = 'GetPi'()
+|Used for all direct calls|
+By sticking with this convention, we avoid all possible confusions later on.
+Parameters to a subroutine can be declared using the
+.param directive. Here are some examples:
+.sub 'MySub' .param int myint .param string mystring .param num mynum .param pmc mypmc
+In a parameter declaration, the
+.param directives must be at the top of the function. You may not put comments or other code between the
+.param directives. Here is the same example above:
+.sub 'MySub' # These are my params: .param int myint .param string mystring .param num mynum .param pmc mypmc
+||This issue may be changed in the future to allow comments to be interleaved with the parameter list.|
+Parameters that are passed in a strict order like we've seen above are called positional arguments. Positional arguments are differentiated from one another by their position in the function call. Putting positional arguments in a different order will produce different effects, or may cause errors. Parrot supports a second type of parameter, a named parameter. Instead of passing parameters by their position in the string, parameters are passed by name and can be in any order. Here's an example:
+.sub 'MySub' .param int yrs :named("age") .param string call :named("name") $S0 = "Hello " . call $S1 = "You are " . yrs $S1 = $S1 . " years old print $S0 print $S1 .end .sub main :main 'MySub'("age" => 42, "name" => "Bob") .end
+In the example above, we could have easily reversed the order too:
+.sub main :main 'MySub'("name" => "Bob", "age" => 42) # Same! .end
+Named arguments can be a big help because you don't have to worry about the exact order of variables, especially as argument lists get very long.
+Functions may declare optional parameters, which the caller may or may not specify. To do this, we use the
+.sub 'Foo' .param int bar :optional .param int has_bar :opt_flag
+In this example, the parameter
+has_bar will be set to 1 if
+bar was supplied by the caller, and will be 0 otherwise. Here is some example code that takes two numbers and adds them together. If the second argument is not supplied, the first number is doubled:
+.sub 'AddTogether' .param num x .param num y :optional .param int has_y :opt_flag if has_y goto ive_got_y y = x ive_got_y: $N0 = x + y .return($N0) .end
+And we will call this function with
+'AddTogether'(1.0, 1.5) #returns 2.5 'AddTogether'(3.0) #returns 6.0
+||Notice that the type of an
+A subroutine can take any number of arguments, which can be loaded into an array. Parameters which can accept a variable number of input arguments are called
+:slurpy parameters. Slurpy arguments are loaded into an array PMC, and you can loop over them inside your function if you wish. Here is a short example:
+.sub 'PrintList' .param list :slurpy print list .end .sub 'PrintOne' .param item print item .end .sub main :main PrintList(1, 2, 3) # Prints "1 2 3" PrintOne(1, 2, 3) # Prints "1" .end
+Slurpy parameters absorb the remainder of all function arguments. Therefore, slurpy parameters should only be the last argument to a function. Any parameters after a slurpy parameter will never take any values, because all arguments passed for them will get absorbed by the slurpy parameter instead.
+Flat Argument ArraysEdit
+If you have an array PMC that contains data for a function, you can pass in the array PMC. The array itself will become a single parameter which will be loaded into a single array PMC in the function. However, if you use the
+:flat keyword when calling a function with an array, till will pass each element of the array into a different parameter. Here is an example function:
+.sub 'ExampleFunction' .param pmc a .param pmc b .param pmc c .param pmc d :slurpy
+We have an array called x that contains three Integer PMCs: [1, 2, 3]. Here are two examples:
+'ExampleFunction'(x, 4, 5)
+'ExampleFunction'(x :flat, 4, 5)
+Local variables can be defined using the
+.local directive, using a similar syntax as is used with parameters:
+.local int myint .local string mystring .local num mynum .local pmc mypmc
+In addition to local variables, in PIR you can use the registers for data storage as well.
+Namespaces are constructs that allow the reuse of function and variable names without causing conflicts with previous incarnations. Namespaces are also used to keep the methods of a class together, without causing naming conflicts with functions of the same names in other namespaces. They are a valuable tool in promoting code reuse and decreasing naming pollution.
+In PIR, namespaces are specified with the
+.namespace directive. Namespaces may be nested using a key structure:
+.namespace ["Foo"] .namespace ["Foo";"Bar"] .namespace ["Foo";"Bar";"Baz"]
+The root namespace can be specified with an empty pair of brackets:
+.namespace  #Right! Enters the root namespace .namespace #WRONG! Brackets are required!
+Strings are a fundamental datatype in PIR, and are incredibly flexible. Strings can be specified as quoted literals, or as "Heredoc" literals in the code.
+Heredoc string literals have become a common tool in modern programming languages to specify very long multi-line string literals. Perl programmers will be familiar with them, but so will most shell programmers and even modern .NET programmers too. Here is how a Heredoc works in PIR:
+$S0 = << "TAG"
+This is part of the Heredoc string. Everything between the '<< "TAG"' is treated as a literal string constant. This string ends when the parser finds the end marker.
+Heredocs allow long multi-line strings to be entered without having to use lots of messy quotes and concatenation operations.
+Encodings and CharsetsEdit
+Quoted string literals can be specified to be encoded in a specific characterset or encoding
+You can include an external PIR file into your current file using the
+.include directive. For example, if we wanted to include the file "MyLibrary.pir" into our current file, we would write:
+Notice that the
+.include directive is a raw text-substitution function. A file of PIR code is not self contained the way you might expect from some other languages. For instance, one problem that occurs relatively commonly among new users is the concept of namespace overflow. Consider two files, A.pir and B.pir:
+.namespace ["namespace 2"]
+.namespace ["namespace 1"] #here, we are in "namespace 1" .include "A.pir" #here we are in "namespace 2"
+.namespace directive from file A overflows into file B, which is counter intuitive for most programmers.
+Classes and MethodsEdit
+We'll devote a lot of time talking about classes and object-oriented programming later on in this book. However, since we've already talked about namespaces and subroutines a little bit, we can lay some ground work for those later discussions.
+A class in PIR consists of a namespace for that class, an initializer, a constructor, and a series of methods. A "method" is exactly the same as an ordinary subroutine except for three differences:
+- It has the
+- It is called using "dot notation":
+- The object that is used to call the method (on the left side of the dot) is stored in the "self" variable in the method.
+To create a class, we first need to create a namespace for that class. In the most simple classes, we create the methods. We will talk about initializers and constructors later, but for now we'll stick to a simple class that uses neither of these:
+.namespace ["MathConstants"] .sub 'GetPi' :method $N0 = 3.14159 .return($N0) .end .sub 'GetE' :method $N0 = 2.71828 .return($N0) .end
+With this class (which we probably store in "MathConstants.pir" and include into our main file), we can write the following things:
+.local pmc mathconst mathconst = new 'MathConstants' $N0 = mathconst.'GetPi'() #$N0 contains the value 3.14159 $N1 = mathconst.'GetE'() #$N1 contains the value 2.71828
+We'll explain more of the messy details later, but this should be enough to get you started.
+PIR is a low-level language and so it doesn't support any of the high-level control structures that programmers may be used to. PIR supports two types of control structures: conditional and unconditional branches.
+Unconditional Branches are handled by the goto instruction.
+Conditional Branches use the goto command also, but accompany it with an if or unless statement. The jump is only taken if the if-condition is true or the unless-condition is false.
+Each HLL compiler has a namespace that is the same as the name of that HLL. For instance, if we were programming a compiler for Perl, we would create the namespace
+.namespace ["Perl"]. If we are not writing a compiler, but instead writing a program in pure PIR, we would be in the default namespace
+.namespace ["Parrot"]. To create a new HLL compiler, we would use the
+.HLL directive to create the current default HLL namespace:
+.HLL "mylanguage", "mylanguage_group"
+Everything that is in the HLL namespace is visible to programs written in that HLL. For example, if we have a PIR function "Foo" that is in the "PHP" namespace, a program written in PHP can call the Foo function as if it were a regular PHP function. This may sound a little bit complicated. Here is a short example:
+|PIR Code||Perl 6 code|
+.namespace ["perl6"] .sub 'AddTwo' .param int a .param int b $I0 = a + b .return($I0) .end
+$x = AddTwo(4 + 5);
+To simplify, we can write simply
+.namespace (without the brackets) to return to the current HLL namespace.
+Multimethods are groups of subroutines which share the same name. For instance, the subroutine "Add" might have different behavior depending on whether it is passed a Perl 5 Floating point value, a Parrot BigNum PMC, or a Lisp Ratio. Multiple dispatch subroutines are declared like any other subroutine in PIR, except they also have the
+:multi flag. When a Multi is invoked, Parrot loads the MultiSub PMC object with the same name, and starts to compare parameters. Whichever subroutine has the best match to the accepted parameter list gets invoked. The "best match" routine is relatively advanced. Parrot uses a Manhattan distance to order subroutines by their closeness to the given list, and then invokes the subroutine at the top of the list.
+When sorting, Parrot takes into account roles and multiple inheritance. This makes it incredibly powerful and versatile.
+MultiMethods, MultiSubs, and other key wordsEdit
+The vocabulary on this page might start to get a little bit complicated. Here, we will list a few terms which are used to describe things in Parrot.
+- A basic block of code with a name and a parameter list.
+- A basic block of code which belongs to a particular class and can be called on an object of that class. Methods are just subroutines with an extra implicit
+- Multi Dispatch
+- Where multiple subroutines have the same name, and Parrot selects the best one to invoke.
+- Single Dispatch
+- Where there is only one subroutine with the given name, and Parrot does not need to do any fancy sorting or selecting.
+- a PMC type that stores a collection of subroutines which can be invoked by name and sorted/searched by Parrot.
+- Same as a MultiSub, except it is called as a method instead of a subroutine.
+PIR Macros and ConstantsEdit
+PIR allows a text-replacement macro functionality, similar in concept (but not in implementation) to those used by C's preprocessor. PIR does not have preprocessor directives that support conditional compilation.
+Constant values can be defined with the
+.macro_const keyword. Here is an example:
+.macro_const PI 3.14 .sub main :main print .PI #Prints "3.14" .end
+.macro_const can be an integer constant, a floating point constant, a string literal, or a register name. Here's another example:
+.macro_const MyReg S0 .macro_const HelloMessage "hello world!" .sub main :main .MyReg = .HelloMessage print .MyReg .end
+This allows you to give names to common constants, strings, or registers.
+Basic text-substitution macros can be created using the
+.endm keywords to mark the start and end of the macro respectively. Here is a quick example:
+.macro SayHello print "Hello!" .endm .sub main :main .SayHello .SayHello .SayHello .end
+This example, as should be obvious, prints out the word "Hello!" three times. We can also give our macros parameters, to be included in the text substitution:
+.macro CircleCircumference(r) $N0 = r * 3.1.4 $N0 = $N0 * 2 print $N0 .endm .sub main :main .CircleCircumference(5) .CircleCircumference(10) .end
+Macro Local VariablesEdit
+What if we want to define a temporary variable inside the macro? Here's an idea:
+.macro PrintSomething .local string something something = "This is a message" print something .endm .sub main :main .PrintSomething .PrintSomething .end
+After we do the text substitution, we get this:
+.sub main :main .local string something something = "This is a message" print something .local string something something = "This is a message" print something .end
+After the substitution, we've declared the variable
+something twice! Instead of that, we can use the
+.macro_local declaration to create a variable with a unique name that is local to the macro:
+.macro PrintSomething .macro_local something something = "This is a message" print something
+Now, the same function translates to this after the text substitution:
+.sub main :main .local string main_PrintSomething_something_1 main_PrintSomething_something_1 = "This is a message" print main_PrintSomething_something_1 .local string main_PrintSomething_something_2 main_PrintSomething_something_2 = "This is a message" print main_PrintSomething_something_2 .end
+||The exact scheme for creating the unique names for
+Notice how the local variable declarations now are unique? They depend on the name of the parameter, the name of the macro, and other information from the file? This is a reusable approach that doesn't cause any problems.

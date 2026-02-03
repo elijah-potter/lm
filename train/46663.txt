@@ -1,0 +1,19 @@
+Why do the Hebrew Alphabetic Presentation Forms Exist
+jr at qsm.co.il
+Thu Jun 4 02:02:36 CDT 2020
+In modern Hebrew it is not possible, in general, to determine by means of a simple rule whether to use the final form or the non-final form. For example, in the word טלסקופ the non-final פ is used at the final position of the word, or in the Hebrew transliteration of Arabic words, such as מובארכ. In Arabic, on the other hand, according to the Arab representatives to the ISO committees, the choice of the form is strictly dependent on its position in the word and on the surrounding letters.
+Anecdotally, the first draft of Windows 1255 did use the same algorithm as for 1256, and it failed miserably on first demonstration as the name of the Microsoft Israel manager was סקופ.
+From: Unicode [mailto:unicode-bounces at unicode.org] On Behalf Of James Kass via Unicode
+Sent: Thursday, June 4, 2020 9:31 AM
+To: unicode at unicode.org
+Subject: Re: Why do the Hebrew Alphabetic Presentation Forms Exist
+On 2020-06-04 6:26 AM, James Kass wrote:
+> On 2020-06-04 3:26 AM, abrahamgross--- via Unicode wrote:
+>> Why do the final forms of the hebrew letters (םןץףך) exist as
+>> separate codepoints from their regular counterparts (מנצפכ), when
+>> arabic - which has up to 4 forms for each letter - only got a single
+>> codepoint per letter?
+> Because they were in a legacy character set. Windows 1255:
+P.S. - The Arabic positional variants from legacy character sets were
+encoded as presentation forms.
+More information about the Unicode

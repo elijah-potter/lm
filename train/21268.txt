@@ -1,0 +1,4 @@
+A website backend is part of the website that users can’t see
+Also known as the server-side, a backend is the behind-the-scene of web development that ensures everything on the client-side (frontend) works properly.
+Frontend and backend work with each other by sending and receiving information to be displayed on a web page for users. For example, when you do any interaction on a website, such as purchasing or loading a web address, your browser sends a request to the server. The server will then process the request and then send back information in the form of frontend code to the browser to be interpreted and displayed.
+Some other examples of backend processes are encrypting and decrypting data, running a script for HTML, accessing data, file uploads, and storing records in a database.

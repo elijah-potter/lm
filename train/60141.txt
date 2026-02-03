@@ -1,0 +1,9 @@
+Sometimes, your Excel files may contain sensitive and confidential information/data and you would like to restrict most people from being able to see the contents of the Excel file. In cases like this, you can set a password, which a user must enter correctly, before they can open and see the contents of the Excel file. If a correct password is not entered, the workbook will not open.
+Note: do not confuse this step with the Alter workbook protection instruction which prevents future users from adding, deleting, moving, renaming, hiding sheets or unhiding hidden sheets, unless the correct password is supplied.
+However, with the Alter workbook security instruction (the subject of this article), you can prevent future users from seeing the contents of the file itself.
+Creating the step
+Firstly, create an action step to manipulate data and select "Alter workbook security" with the "Excel" icon.
+You will then be presented with the following form.
+First, a workbook needs to be linked (the workbook whose workbook security is to be altered).
+If you'd like to unprotect a workbook, that is, to get access inside a password-protected workbook, simply enter the correct password in the textbox.
+If however, you'd like to change or add a new password to a workbook, select "Protect" and then enter the relevant password(s).

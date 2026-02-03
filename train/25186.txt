@@ -1,0 +1,13 @@
+Occurs when an application attempts to delete a record and an exception is raised.
+type TDataSetErrorEvent = procedure(DataSet: TDataSet;
+var Action: TDataAction) of object;
+property OnDeleteError: TDataSetErrorEvent;
+Write an OnDeleteError event handler to handle exceptions that occur when an attempt to delete a
+DataSet is the dataset that failed to delete a record. E is a pointer to the database error
+object that contains the exception error message so that an application can display an error message.
+Action indicates how the dataset should respond to the error.
+When OnDeleteError is first invoked, Action is always set to daFail. If the error
+handler can correct the error condition that caused the handler to be invoked, set Action to
+daRetry before exiting the handler. When Action is daRetry, the delete operation is
+tried again. If the error condition cannot be corrected, the display of the error message can be
+suppressed, if desired, by setting Action to daAbort instead of daFail.

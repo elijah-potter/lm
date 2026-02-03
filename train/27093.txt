@@ -1,0 +1,8 @@
+GenePattern provides access to a broad array of computational methods used to analyze genomic data. Its extendable architecture makes it easy for computational biologists to add analysis and visualization modules, which ensures that GenePattern users have access to new computational methods on a regular basis.
+If you are new to GenePattern, begin with the basics:
+Concepts provides a brief introduction to GenePattern and its primary objects (modules, pipelines, suites). All other GenePattern documentation assumes that you are familiar with these concepts.
+Quick Start provides a brief hands-on introduction to GenePattern.
+This guide assumes that you are a programmer and familiar with GenePattern. As a programmer, you generally work with GenePattern in one of two ways:
+Creating GenePattern modules. Each GenePattern module invokes a program that executes a desired function. You can use any language to write a program that can then be invoked as a GenePattern module. For more information, see the following sections of this guide:
+Writing Modules provides tips for writing code that will be invoked as a GenePattern module.
+Accessing GenePattern from Java, MATLAB, or R. GenePattern libraries for these three programming environments make it easy for your applications to run GenePattern modules and retrieve analysis results. Each library supports arbitrary scripting, access to GenePattern modules via function calls, and development of new methodologies that combine modules in arbitrarily complex combinations. For more information, see the following sections of this guide:

@@ -1,0 +1,12 @@
+A. Design effects are used to evaluate the precision of statistics for different sample design.
+Is the design effect of a clustered element sample likely to be larger or smaller than one?
+Is the design effect of a stratified element sample likely to be larger or smaller than one?
+In a single stage clustered sample, if within a cluster a variable has nearly the same value for all elements within the cluster, what value will the intraclass correlation be close to?
+For a single-stage clustered sample, the intraclass correlation for a key variable is 0.016 and the cluster size is 10. Calculate the design effect for the mean of that key variable.
+What does the design effect in part 4 mean?
+B. A medical practice has record for N=900 patients. A simple random sample of n=300 was selected, and 210 of the sample patients had private health insurance.
+1. Estimate the percentage of patients with private health insurance and the standard error of this estimate.
+2. Calculate a 95% confidence interval for the population percentage.
+3. The study is to be repeated in another medical practice that has N=1000 patients. A standard error of 2.5 percentage points for the sample percentage of patients with private health insurance is required. What sample size is needed for a simple random sample to achieve this level of precision? For planning purposes, assume that the population percentage is 50%.
+C. A two-stage cluster sample of n=1200 in a=60 clusters is selected from a large population with S^2=500. In a published report, v(y ̅)=9 is reported. A colleague says there is no error in the calculation of the variance of the mean. Do you agree? Show a numeric justification for your answer. (Hint: What is the value of roh implied by this reported variance?)
+The solution gives detailed steps on answering 3 questions for clustered and stratified sampling including calculating intraclass correlation, analyzing design effect and so on.

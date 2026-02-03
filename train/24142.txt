@@ -1,0 +1,19 @@
+How to Add Hyperlinks to Your iWeb Site in iLife '11
+3 of 8 in Series: The Essentials of Customizing an iWeb Site in iLife '11
+A hyperlink is a piece of text or an object that links to another Web page in the same site or another site. In iLife, iWeb gives you a few ways to add hyperlinks, and they're all easy.
+makes it easy to add a hyperlink by dragging one directly from your browser, typing it directly into a text block, or using the Link Inspector. You can also drag the title of a different page in your site from the Sidebar to the page in the Canvas to create a hyperlink to the other page.
+To drag a link from your browser, follow these steps:
+Open Safari and browse to a Web page you want to link to.
+Drag the URL from the address bar at the top of the Safari page to a text block or image in the Canvas (or to any open place on the page).
+To add the link within existing text, drag the URL to the point in the text where you want the link to appear. iWeb automatically creates the hyperlink using the page's title. You can edit the text hyperlink directly on the page by clicking inside it and retyping (or using the Delete key).
+If you drag the URL to an image or another object, the object takes on the hyperlink so that visitors can click it like any other hyperlink.Add a text hyperlink directly to a page by dragging its URL from Safari.
+You can also type a URL directly into a text block on a page. iWeb recognizes the URL and turns it into a hyperlink.
+To turn a piece of text into a hyperlink, or to add a hyperlink to an object, follow these steps:
+Select the text or object on the page and click Inspector on the Toolbar at the bottom of the iWeb window (or choose View→Show Inspector).
+Click the Link Inspector button (the curled arrow) in the upper-right corner of the Inspector window.
+Click the Hyperlink tab at the top (if it isn't already selected).
+Select the Enable as a Hyperlink option in the Link Inspector, and then choose the type of link from the Link pop-up menu:
+One of My Pages: A page in the same site (created by iWeb). After selecting One of My Pages, you can choose the page you want to link to from the Page pop-up menu that appears.
+An External Page: A page on another Web site. After selecting this option, type or paste the URL into the URL text box.Use the Link Inspector to assign a hyperlink to text or an object.
+A File: A file on your site or hard drive. When a visitor clicks this link, the file downloads to the visitor's computer. After selecting A File, you can browse the same directory or a subdirectory to select the file you want to link to. When you publish the site, linked files in the same directory or subdirectory are copied to the site, too.
+An Email Message: After selecting this option, you fill in the email address in the To field and an email subject heading in the Subject field.

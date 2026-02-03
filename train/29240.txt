@@ -1,0 +1,13 @@
+Optical depth, or optical thickness, is a measure of transparency. Optical depth is defined as the negative natural logarithm of the fraction of radiation (e.g., light) that is not scattered or absorbed on a path. Hence optical depth is dimensionless, and in particular is not a length, though it is a monotonically increasing function of path length, and approaches zero as the path length approaches zero.
+The optical depth expresses the quantity of light removed from a beam by scattering or absorption during its path through a medium. If is the intensity of radiation at the source and is the observed intensity after a given path, then optical depth is defined by the following equation:
+Calculation from fundamental principles 
+In atomic physics, the optical depth of a cloud of atoms can be calculated from the quantum mechanical properties of the atoms. It is given by
+Atmospheric science 
+In atmospheric sciences, one often refers to the optical depth of the atmosphere as corresponding to the vertical path from Earth's surface to outer space; at other times the optical path is from the observer's altitude to outer space. Since τ refers to a vertical path, the optical depth for a slant path is τ′ = m τ, where m is called the relative airmass, and for a plane-parallel atmosphere it is determined as m = sec θ, where θ is the zenith angle corresponding to the given path. Therefore
+The optical depth of the atmosphere can be divided into several components, ascribed to Rayleigh scattering, aerosols, and gaseous absorption. The optical depth of the atmosphere can be measured with a sun photometer.
+Stellar physics 
+Another example occurs in astronomy where the photosphere of a star is defined as the surface where its optical depth is 2/3. This means that each photon emitted at the photosphere suffers an average of less than one scattering before it reaches the observer. At the temperature at optical depth 2/3, the energy emitted by the star (the original derivation is for the sun) matches the observed total energy emitted.
+Note that the optical depth of a given medium will be different for different colors (wavelengths) of light.
+For planetary rings, the optical depth is the proportion of light blocked by the ring when it lies between the source and the observer. This is usually obtained by observation of stellar occultations.
+See also 
+- Kitchin, Christopher Robert (1987). Stars, Nebulae and the Interstellar Medium: Observational Physics and Astrophysics. CRC Press.

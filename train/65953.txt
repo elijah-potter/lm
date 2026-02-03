@@ -1,0 +1,21 @@
+The GeoNet project began in 2001. The purpose of the project was to build and operate a modern geological hazard monitoring system in New Zealand. GeoNet is the result of a partnership between:
+- The Earthquake Commission (EQC)
+- GNS Science
+- Land Information New Zealand (LINZ).
+GeoNet is a network made up of:
+- Instruments to measure the location and intensity of events such as earthquakes
+- automated software applications to record and share this information
+- skilled staff to detect, analyse and respond to events
+GeoNet detects and analyses:
+- volcanic activity
+- large landslides
+- and the slow deformation that precedes large earthquakes.
+GeoNet relies on accurately identifying the location of specific events in real time.
+Locating the Epicentre
+Two types of seismic waves are created by earthquakes, P and S waves. They travel at different speeds so if the time between their arrival at a certain place is known then the distance of that place from the epicentre can be calculated. If the distance of the epicentre from at least three different places is known then by triangulation the epicentre can be found.
+How GeoNet works
+Sensitive monitoring devices called seismometers are used to measure the magnitude and location of earthquakes. The New Zealand Seismometer Network is made up of over 50 main stations spread throughout the country. Sensing equipment is used alongside computer programmes which can record and analyse data.
+Seismometers are also used for monitoring volcanoes. There are over 250 strong-motion recorders that can monitor how structures like buildings and bridges cope in earthquakes, and 19 tsunami gauges that complete the network.
+GeoNet also monitors slow ground movement known as deformation. The majority of this data is collected continuously using GNSS (often just called GPS) receivers and antennas. GNSS stands for the Global Navigation Satellite System.
+GNSS receivers determine very precisely positions on the surface of the earth. GeoNet records a daily position for each of their stations so they can track deformation. This system is used to monitor the really slow movement of tectonic plates over time to try to find out where strain is building up and if the direction of movement in certain areas is changing. All this information will help scientists to better understand earthquakes. This information is also used to make corrections to maps over time as the land continues to move.
+GeoNet shares all the information it collects and you can visit the GeoNet website or download the app to get up to date information on earthquakes, volcanoes, landslides and tsunami.

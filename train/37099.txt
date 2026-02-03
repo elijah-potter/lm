@@ -1,0 +1,29 @@
+Cyberattacks are increasingly getting frequent with every passing year. These cyberattacks are usually carried out through spreading worms, viruses, rootkits, and especially malwares.
+The term malware is used for a malicious tool that breaks into a system (computer or any smart device) to infect it. The reasons behind a malware attack could be many such as identity theft, device inaccessibility, IT infrastructure damage, or monetary theft as seen in malware bank attacks cases.
+However, the most troublesome aspect of a malware isn’t its intensity or scale of attack, although those aspects are significant on their part. In fact, it is the hidden nature of the attack that makes a malware more threatening. As a result, you can never know when a malware hits you, infects your system and fulfills the purpose for which it was developed.
+The rate at which the malwares are growing on a global scale is threatening in itself. According to a leading IT security solutions provider, Panda Labs, around 18 million new types of malware were detected by the company in the third-quarter of 2016, which makes 200,000 malware attacks per day.
+Malware Hit Australian Banking Apps
+In the 1st quarter of 2016, a malware was detected in up to 20 different Australian banking apps by a leading IT security firm, ESET.
+According to ESET, the android malware in banking apps was so potent that it could target millions of bank customers when they sign in to the infected app. Customers from even popular banks such as ANZ Bank, NAB and Commonwealth Bank were exposed to a serious risk of security breach.
+The malicious tool would stay idle in the infected device until the banking app is accessed. The app would then imitate as a banking app and show a fake login screen to the user for stealing their username and password. The malware could even bypass the 2-factor authentication set by users. The malware can intercept the feature thereby sending the text code to the hackers, allowing them to access the victims’ account and transfer funds.
+Senior Research Fellow at ESET, Nick FitzGerald, said following the attack “While 20 banking apps have been targeted so far, there’s a high possibility the e-criminals involved will further develop this malware to attack more banking apps in the future.”
+Global Malware Bank Attacks
+The malware bank attack carried out in Australia isn’t the first of its kind. There have been a good number of attacks transpiring around the globe.
+Take for instance the 2016 malware attack on a Philippine bank, carried out by the same group of hackers who tried to steal $1million from a Vietnam bank and also $81 million from a Bangladeshi bank.
+Likewise, in the fall of 2016 a malware was detected by a Polish bank which was later found to be connected to an attack that infected more than 100 organizations in many different countries.
+Malware attacks aren’t limited to banking sectors alone. These attacking attempts have been made on even healthcare and industrial sectors.
+In fact, two cyber security firms detected a malware in 2017 that has reportedly been connected to a power outage incident in Ukraine in 2016.
+The cases of malware bank attacks and other security breaches are many, and it is highly likely that they would be gaining more rage in the coming years.
+How to Identify an Android Malware
+- An abnormal battery drainage of your Android smartphone may signal a malware attack
+- Just like the draining of your battery, the lack of performance may also be the result of a malicious tool
+- Some malicious tools often cause frequent advertisement pop ups that can ruin the whole experience of any app you are using
+- Another sign of an infected android device is the sudden spike in phone bill or data package
+How to Remove an Android Malware
+- If you believe that you have an Android malware in your banking app or any other app, you may start with uninstalling the app. To do that go to the Settings and Apps or Application Manager to locate the app. Tap the app which will then open an App Info screen from where you can first Clear Cache, Clear Data and then Uninstall the app.
+- You can also remove the malware by using a malware removal tool that will first scan your device to detect the malware and remove it
+Malware Prevention Tips
+- Malware prevention steps start with installing security patches to remove the common gateways to cyberattacks and breaches.
+- Always go through the apps permission before accepting them to make sure you don’t agree to any suspicious permission.
+- Use anti-malware tools to keep malware from breaking into your device.
+- Avoid installing apps from third-party stores other than the Google AppStore because most pirated apps come with malicious codes.

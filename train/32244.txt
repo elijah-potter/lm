@@ -1,0 +1,5 @@
+Tables mostly make sense. Below is a fun test case: is the div in the first cell 50px or 100px? Table row heights are the max of the minimum and specified height, but that says nothing of what the percent of the contents are calculated from ('available height'): I would think the true height, but it might be the specified height (which improves complexity, I believe). Anyways, ponder (and see how different browsers interpret it differently):
+<table style="width: 200px">
+<td style="height: 50px; background-color: red"><div style="background-color: blue; height: 100%"></div></td>
+<td style="height: 100px; background-color: red"><div style="background-color: green; height: 50px"></div></td>
+Testing, parallelization of table layout, and some sort of sociolinguistics scheming tomorrow. Should be good..

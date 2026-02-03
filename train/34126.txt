@@ -1,0 +1,9 @@
+1) Greenbelt Elementary School has 300 students. The Principal of the School thinks that the average IQ (Intelligence Quotient) at her school is at least 110. To prove her point, she administers an IQ Test to 20 randomly selected students. Among the sampled students the average or mean IQ is 108 with a standard deviation of 10. Based on these results, should the Principal Accept or Reject her original Hypothesis. Conduct the Hypothesis test at the .01 significance level.
+State Null and Alternate Hypothesis:
+a) Is this one-tailed or two-tailed Test?
+c) Compute the Test statistic.
+d) What is your decision regarding the HO. In other words, do you Accept or Reject the Principal's Null Hypothesis? Be specific as to why you decided to accept or to reject the Null Hypothesis.
+H0: Mean IQ Score for Greenbelt Elementary School students<=110
+H1: Mean IQ Score for Greenbelt Elementary School students>110
+a) This is a one tail test as we are interested in whether the mean IQ score is higher or not.
+Null and alternate hypothesis/research and evaluation is examined in the solution.

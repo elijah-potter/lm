@@ -1,0 +1,15 @@
+Figure 2-2 shows a slightly more complex circuit, one that has a voltage source and two resistors. There are several points to illustrate with such a circuit. The first is that resistors in series have a total resistance equal to the sum of the individual resistances.
+What would the current be in the circuit shown in Figure 2-2 be? Since the two resistors could be substituted by a single resistor with a value equal to the sum of the two, Ohm’s Law states
+I = V/(R1 + R2)
+The other important point is to realize the there will be a voltage across each component in the circuit. If you put a voltmeter across the power source you would read Vs. Measuring across R1, you would measure voltage V1. Voltage V2 would appear across R2.
+Note the polarity of the voltages with reference to the arrow indicating current. The ones across the resistors are opposite polarity of the voltage source. This is because the net voltage around the loop must be zero. Mathematically, the voltages follow this equation:
+Vs = V1 + V2
+So, what are the voltages V1 and V2? That depends on the ratio of the values of R1 and R2. The voltage across a resistor will be proportional to the value of that resistor compared to the total. The following equations apply:
+V1 = Vs* R1/(R1+R2) V2 = Vs* R2/(R1+ R2)
+If we had three resistors in the circuit, the following would apply
+V1 = Vs* R1/(R1+R2+R3)
+Suppose Vs = 12V, R1 = 1200Ω and R2 = 2400Ω. What is the voltage across each resistor?
+V1 = Vs* R1/(R1+R2) = 12* 1200/(1200 +2400) = 4 V
+To calculate the voltage across R2 we could use the equation for V2 or we could apply the knowledge that the total voltage across the loop must equal 0V.
+Vs = V1 + V2 --> V2 = Vs - V1 = 12- 4 = 8V
+Designing interface circuits to microcontrollers requires some simple mathematics. Understanding Ohm’s Law and voltage dividers will cover a large percentage of the situations for simple circuits.

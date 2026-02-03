@@ -1,0 +1,80 @@
+This tutorial will show you how to use Photoshop's 3D tools and settings to create a trippy, lenticular text effect pretty easily. Let's get started!
+The following assets were used during the production of this tutorial:
+- Built Titling font
+- Abstract formed by color dissolving in water by onlyyouqj
+- Dark rhombus background by ydlabs
+- 30 Simple Patterns by mslooten
+- Ink stain in purple and blue tones by onlyyouqj
+- Scattered Particles (13 Brushes) by falonyates
+1. How to Create a Background
+Create a new 1000 x 1000 px document, click the Create new fill or adjustment layer icon at the bottom of the Layers panel, choose Solid Color, and set the Fill Color to
+Place the Abstract formed by color dissolving in water image on top of the Background layer without resizing it, rename its layer to BG Texture 01, change its Blend Mode to Overlay, and move it around to get a result you like.
+Place the Dark rhombus background image on top of the BG Texture 01 layer, and resize it to fit within the document.
+Change the layer's name to BG Texture 02, its Blend Mode to Color Dodge, and its Opacity to 50%.
+2. How to Create an Editable 3D Text Layer
+Create the text using the font Built Titling SemiBold, and change the Size to 250 pt.
+Go to 3D > New 3D Extrusion from Selected Layer.
+If needed, you can show/hide the 3D ground plane by going to View > Show > 3D Ground Plane.
+3. How to Work With the 3D Scene
+To access the 3D mesh settings and properties, you’ll need to open two panels: the 3D panel and the Properties panel (both found under the Window menu).
+The 3D panel has all the components of the 3D scene, and when you click the name of any of those, you’ll be able to access its settings in the Properties panel. So make sure to always select the tab of the element you want to modify in the 3D panel before you change its settings in the Properties panel.
+Select the Move Tool to access its 3D Modes to the right of the Options bar.
+After you choose one of those, you can click-drag to perform changes (on the selected element in the 3D panel).
+Use the 3D Modes to change the Current View into an angle you like.
+4. How to Adjust the 3D Mesh and Cap Settings
+Select the 3D mesh tab in the 3D panel, and change its Extrusion Depth in the Properties panel to 125.
+Click the Cap icon at the top of the Properties panel, and change the Bevel Width to 100%.
+5. How to Create a Simple Diffuse Texture
+Select the Front Bevel Inflation Material tab, click the Diffuse folder icon, and choose New Texture.
+Set the Width and Height values to 1000 px and the Background Contents to
+When the texture file opens, duplicate the Background layer.
+Double-click the duplicated layer to apply a Pattern Overlay effect by changing the Pattern to 10px diagonal stripes from the 30 Simple Patterns pack.
+Change the styled layer's Opacity value to 50%, and save and close the file.
+6. How to Adjust a 3D Material's Settings
+Click the Diffuse texture icon and choose Edit UV Properties.
+Set both Tile values to 1, and both Offset values to 0.
+Select the Extrusion Material tab and use these material settings (the color values used are in RGB):
+- Diffuse: 42, 30, 116
+- Specular: 0, 0, 0
+- Illumination: 37, 13, 74
+- Shine: 20%
+7. How to Duplicate 3D Meshes
+Select the 3D mesh tab, click the 3D panel menu icon, and choose Duplicate Object.
+Rename the duplicated mesh to the word you want to create next, and click the Edit Source button in the Properties panel.
+Once the text file opens, change the text to the word you want to add, and save and close the file.
+8. How to Move 3D Meshes
+Pick the Move Tool, select the mesh tab of the word you want to move, and use the 3D Axis to move and rotate it as you like.
+The arrows at the ends of the axis move the mesh, the part below them is used for rotation, and the cubes are used for scaling. The cube in the center is used to scale the object uniformly. All you need to do is click and drag the part you want to use.
+Select all the mesh tabs you have, click the 3D panel menu icon, and choose Move Object to Ground Plane.
+9. How to Adjust a 3D Scene's Settings
+Select the Infinite Light 1 tab, change its Intensity to 70%, and uncheck its Shadow box.
+Click the Scene tab, change the Surface Style to Flat, and check the Linearize Colors box as well as both the Remove Hidden boxes.
+Select the Current View tab, and choose a final view you like.
+Then, check the Stereo box, change the Type to Lenticular, the Lens Direction to Vertical, the Lenses Per Inch (LPI) to 60, the Distance to 6.5, and the Depth to 4.5.
+You can try other values to get different results if you like.
+Go to 3D > Render 3D Layer to render the scene, which should take a few moments.
+Once the rendering is done, rename the 3D layer to Text, and right-click it to choose Convert to Smart Object.
+10. How to Adjust a 3D Rendered Scene
+Add a Levels layer and clip it to the Text layer, and change the Shadows value to 16, the Gamma to 0.86, and the Highlights to 237.
+Add a Color Lookup adjustment layer, choose FoggyNight.3DL from the 3DLUT File menu, and change the layer's Opacity value to 10%.
+11. How to Add Background Particles
+Place the Ink stain in purple and blue tones image on top of the BG Texture 02 layer, rename its layer to Particles, and resize it to fill the area behind the text.
+Press-hold the Option key, and click the Add layer mask icon at the bottom of the Layers panel.
+Set the Foreground Color to
+White, pick the Brush Tool, and make sure that the layer mask is selected.
+Pick any of the Scattered Particles (13 Brushes) Powder and Dot tips, downsize it a bit, and click behind the text and show particles of the texture.
+You can try different tips and sizes to get a result you like.
+12. How to Add Global Adjustments
+Add a new layer on top of all the layers, name it High Pass, press the Option-Command-Shift-E keys to create a stamp, convert the layer to a Smart Object, and change its Blend Mode to Soft Light.
+Go to Filter > Other > High Pass, and change the Radius to 1.
+Create another new layer, name it Noise, and go to Edit > Fill.
+Change the Contents to 50% Gray and click OK.
+Convert the Noise layer to a Smart Object, and change its Blend Mode to Soft Light.
+Go to Filter > Noise > Add Noise, change the Amount to 5 and the Distribution to Uniform, and check the Monochromatic box.
+Congratulations! You're Done
+In this tutorial, we created a background using a solid color fill and a couple of textures.
+Then, we created a 3D text mesh and adjusted its settings, as well as creating its materials.
+After that, we adjusted a couple of lighting, scene, and camera settings to create the lenticular effect and render the scene.
+Finally, we added background particles and global adjustments to finalize the effect.
+Please feel free to leave your comments, suggestions, and outcomes below.
+Envato Tuts+ tutorials are translated into other languages by our community members—you can be involved too!Translate this post

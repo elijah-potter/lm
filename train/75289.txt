@@ -1,0 +1,82 @@
+Basics of PHP Language
+Basics of PHP Language
+PHP is one of the most popular languages used on the internet. By mastering the PHP basics you can open up a whole world of possibilities for your website. Learning PHP can be very rewarding. PHP is a server side scripting language, which means that it is executed on the server, and the results are sent back to the browser as HTML.
+PHP is HTML-embedded:
+A PHP page can be simply an HTML page with a little PHP scripts used here and there. The PHP bits are translated by the server. They will be mainly used to produce more HTML code. The HTML code on the page is sent directly to the browser.
+PHP has similarities with other programming languages:
+C and Perl are two of them. In my case, learning a bit of Perl really helped me get started and understand what PHP could do for me – and how it worked.
+Variables in PHP are represented by a dollar sign followed by the name of the variable. The variable name is case-sensitive.
+Variable names follow the same rules as other labels in PHP. A valid variable name starts with a letter or underscore, followed by any number of letters, numbers, or underscores
+PHP also offers another way to assign values to variables: assign by reference. This means that the new variable simply references (in other words, “becomes an alias for” or “points to”) the original variable. Changes to the new variable affect the original, and vice versa.
+It is not necessary to initialize variables in PHP however it is a very good practice. Uninitialized variables have a default value of their type depending on the context in which they are used – booleans default to FALSE, integers and floats default to zero, strings (e.g. used in echo) are set as an empty string and arrays become to an empty array.
+Tags and Syntax:
+PHP commands are embedded into HTML by one of several ways. The preferred method is include the code using the special tags. A second way is to include the code within a Each PHP statement should end with a semicolon. Many statements can be contained in a single block and a single statement can span several blocks.
+Some basic PHP statements include:
+Echo: Output one or more strings.
+Print: Also output one or more strings.
+The assignment statement: Assigns a value to a variable.
+Include: Include and evaluate the specified file.
+Require: Same as include except it produces a fatal error on failure instead of a warning.
+Strings can be specified in 3 ways: single quotes, double quotes, or here doc. Strings in single quotes do not expand variables or escape sequences except for single quotes.
+Arrays in PHP are actually ordered maps, almost like hash tables. They map values to keys that can be either integers or strings.
+* Defining with array (): An array can be defined defined by the keyword array array ([key =>] values)
+* If no key is specified, then 1 + the maximum integer key is taken for the new key. The first element defaults to 0 if no key is given.
+* Defining with : You can also define an array or add values to it using the  notation.
+* Deleting values with unset(): The function unset() allows you to delete elements from an array.
+* Multi-dimensional arrays: Because PHP arrays are actually ordered maps, you are allowed to have jagged arrays.
+Any PHP code, including other function and class definitions, may appear inside a function. Functions may also be defined within a conditional, but in that case the function’s definition must be processed prior to its being called. PHP does not support function overloading but does support variable numbers of arguments as well as default arguments. Return types are not specified by function.
+Classes and OOP
+PHP supports OOP and classes. A class is a collection of variables and functions working with these variables.
+PHP allows for reading/writing to files on the server that have correct permissions.
+Loops are great for executing sections of code over and over again to do the same thing.
+Recent Interview Tips Articles
+- Career as Veterinarian
+- Tips to Set Up a Pinterest Business Page
+- Career of Aircraft Auto Mechanic
+- How to Research the Current Job Market
+- Inventory Planning Manager Job Description
+- Skills Required for Hospitality Management Career
+- Facebook tells its users to ignore rumors spreading on the social network
+- How to get started with a career in Journalism
+- How to build Professional Photographer career
+- Architecture Of .NET and Its Tools
+- Dot Net Benefits and its Career
+- Tips to Develop Android Applications
+- Tips to find Right career Path
+- Tips for getting Interview Offers
+- Tips To Have Effective Presentation Skills
+- SEO Books
+- WebSphere Portal Admin Training Institutes
+- WebSphere Process Server Training Institutes
+- Unix – Sun Solaris Admin Training Institutes
+- SAP SD Training Institutes
+- WebSphere ID Training Institutes
+- SAP Basis Training Institutes
+- Oracle WebLogic Server Training Institutes
+- Oracle 10g & D2K Training Institutes
+- SAP IS Retail Training Institutes
+- TIBCO EMS Training Institutes
+- Loadrunner and Performance Testing Training Institutes
+- Linux Admin Training Institutes
+- SAP ABAP Training Institutes
+- TIBCO Training Institutes
+- C with DS Training Institutes
+- Salesforce Training Institutes
+- SQL Server DBA Training Institutes
+- Selenium Training Institutes
+- WebSphere Training Institutes
+- SAP BO Training Institutes
+- SAS Training Institutes
+- Oracle Training Institutes
+- OBIA Training Institutes
+- LoadRunner Training Institutes
+- Joomla Training Institutes
+- Informatica Training Institutes
+- ETL Testing Training Institutes
+- Drupal Training Institutes
+- Dot Net Training Institutes
+- Android Training Institutes
+- Web Designing training Institutes
+- WebLogic Training Institutes
+- Software Testing Tools Training Institutes
+- SAP Training Institutes

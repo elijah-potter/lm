@@ -1,0 +1,7 @@
+WHAT IS MINING?
+On the bitcoin network, transactions are being made every second - people send BTC to other people. Transactions in the blockchain each take their unique place one after another. But for the transaction to really be fixed in its position in the blockchain, it must obtain a special key.
+Imagine that you have a doorlock and have to try 1000 trillion keys before you find the right one that opens the door. It is a pretty accurate depiction of what happens.
+Finding the key is not an easy task and a person who commits a transaction is willing to pay miners some fee for finding the right key. Plus, there is also a separate reward from the bitcoin network itself.
+All the computing equipment in the world has to spend an average of 10 minutes to find the right key. For efficiency, the key is used not for each transaction separately, but for a block of about 2000 transactions (hence `block`chain, not `transaction`chain).
+The miner who finds the key for the block - gets all the glory and some bitcoins as a reward!
+This process is called mining.

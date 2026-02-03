@@ -1,0 +1,6 @@
+This section illustrates you how to split String data (separated by "," or "and/or"). These words are shown in a new line without the word or characters which is used for separation the word of the sentences through the given regular expression of the following program.
+This program takes a complete string or text with the many separation of words and detects every comma, and|or separation from the given sentences. It besides all word or the collection of words from where the comma or and|or separation is used. The complete separate word is shown in a new line.
+String str = string.split("[, ]+(and|or)*[
+Above code splits the value of String type variable string with the ","(comma), " ", "and" or "or" separators and store it into a String array str which value is shown by the following program one-by-one.
+Here is the code of the program:
+Ask your questions, our development team will try to give answers to your questions.

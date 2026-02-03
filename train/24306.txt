@@ -1,0 +1,22 @@
+Molecule: Si(C3(COOH)2)4(H2O)7 Molecule:and in the graphics window, the syntactical structure of the formula appears:
+class Ruta: atom="( )" num=1 next=None down=NoneThe funktion
+readgroupcreates an empty box by
+rutan = Ruta()and then calls
+readnumto set the correct values for
+num. For a group in parentheses, the call from
+readmolshould return a submolecule that is attached underneath
+readgroup is finished, it returns the box object to
+the statement calling it, which probably looks like
+mol=readgroup()and is the first statement in
+readmol. What to do with
+mol.nextis something you must figure out yourself. Finally
+readmolreturns the complete structure to
+readformel, which returns it to the original call
+mol = readformel()in the main program, where
+molis a pointer to the upper left node in the syntax tree.
+showand by calling
+show(mol)display the picture of the molecule in a graphics window. The structure being recursive, naturally the drawing algorithm implements a recursive idea and you are required to formulate this idea. If you cannot invent it by yourself, feel free to look at the molgrafik code.
+If the program terminates directly, the graphics will only show for a fraction of a second, so make sure you have a loop for inputting new formulas!
+The molecular weight may be computed recursively by a single
+First, formulate a very recursive idea for the weight, then program it!
+molgrafik.py such that the weight is displayed in the

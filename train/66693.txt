@@ -1,0 +1,16 @@
+add a temporary entry to the cache table
+AddTemporary( cache, key, value )
+cache table or procedure: the object in which to insert the entry
+list: the key to add
+anything: the value to associate with key
+The AddTemporary command creates a temporary entry associating key with value in a cache table. The cache table can be given directly as cache, or cache can refer to a procedure that has, or can have, a cache remember table. If such a procedure is given and it has a cache remember table, the temporary entry is inserted into that table. Otherwise, a new cache table is created, installed as cache's remember table and the temporary entry is inserted into that table.
+To handle an expression sequence as a key, key must be given in a list. The actual key used for the entry is op(key).
+If more than one argument is passed after key, then an expression sequence containing those arguments is used as value.
+Assigning directly into a cache table, using the cache[key] := value notation, creates a temporary entry. As well, a function with option cache creates a temporary entry when the function is called. Calling AddPermanent is the only way to create a permanent entry into a cache table.
+To remove a temporary entry from a cache table use RemoveTemporary.
+Creating a temporary entry for a key that already has a permanent entry is not an error. In this case, the temporary entry is used.
+For more information on cache tables, see Cache Package.
+p := proc(x,y) option cache; x+y; end proc;
+p ≔ procx,yoptioncache;x+yend proc
+Download Help Document
+What kind of issue would you like to report? (Optional)

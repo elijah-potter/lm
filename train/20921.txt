@@ -1,0 +1,23 @@
+My colleague Kingsley introduced the concepts of a multi-dimensional Web (compared to the multi-dimensional universe). He described the first four dimensions as:
+Dimension 1 = Interactive Web (Visual Web of HTML based Sites aka Web 1.0)
+Dimension 2 = Services Web (Presence based Web of Services; a usage pattern commonly referred to as Web 2.0)
+Dimension 3 = Data Web (Presence and Open Data Access based Web of Databases aka Semantic Web layer 1)
+Dimension 4 = Ontology Web (Intelligent Agent palatable Web aka Semantic Web layer 2)
+So, the Web as we know it today would have three dimensions:
+Personally I would define them as (without talking about Web 1.0 or Web 2.0 or Web X.0):
+The Interactive-Web dimension is the Web of humans: document formatted for humans understanding (HTML, DOC, PDF etc.).
+The Services-Web dimension is the Web of functionalities: how humans and machines can play with functionalities of a system.
+The Data-Web dimension is the Web of data presence: availability of open and meaningful data. How machines can play with the data of a system.
+The Interactive-Web is the Web of humans: a Web where all documents (HTML, PDF, DOC, etc.) are formatted at the intention of the humans with visual markers (headers, footers, bold characters, bigger fonts etc.) to help them scanning and quickly finding the right information.
+But the problem with the Interactive-Web is that it is only intended to humans, so machines (software agents for example) have real difficulty to analyze and interpret this type of documents.
+The Services-Web also exists in the current landscape of the Web: a Web where protocols exist to let people and machines (web services, software, etc) playing with the functionalities of a system.
+With this Web, one can manipulate the information within a system (web service) without using the primary user interface developed for this purpose. That way, the power is gave back to the users letting them manipulating (in most cases) their data using the user interface they like.
+The Services-Web dimension already exists and is extensively used to publish information on the Web. Fewer web services will use the Services-Web to let people adding, modifying and deleting data (their own) in the system.
+The Data-Web dimension also exist in the current Web, but it is much more marginal than the two firsts dimensions. This dimension belongs to the idea of the Semantic Web: developing standards to let machines (software) communicating together in a meaningful way. The idea here is to publish structured data at the intention of machines (and not human) to help them communicate (and the communication is assured by the use of standards).
+A switch from Services-Web to the Data-Web
+What I think that will happen is that the Services-Web dimension will not be used to publish information from a system to another as it is today. In fact, the Services-Web will only let users trigger functionalities of a system to add, modify and delete data in the system, and the Data-Web will publish (the communication of the data will be assured by the use of standards such as the one of the Semantic Web) data in a meaningful way from a system to another system.
+So the way we use the Services-Web today is not the way we will use it tomorrow.
+Yesterday I started to write a series of articles to explain the creation of ZitGist and to explain how Talk Digger and Ping the Semantic Web will evolve in the next months and years.
+This article is the foundation of my explanation. This is the basic framework I’ll use to explain how Talk Digger and Ping the Semantic Web work and how they interact together and with the Web.
+In the next few articles, I’ll explain how these two systems fit in this framework.
+Technorati: Zitgist | talkdigger | pingthesemanticweb | semantic | web | dimensions | services | data | interaction | human | machine |

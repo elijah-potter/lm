@@ -1,0 +1,18 @@
+MIPS Mini Assembler is a single instruction assembler for the MIPS (PS2 Emotion Engine) architecture.
+How to use it
+Enter a line of assembly code into the upper text box and press the Enter key or click 'Assemble' to assemble an instruction.
+Output will appear in the lower text box and is automatically copied to the clipboard.
+The input format is the same as that used by ps2dis.
+Note: Constants are written as hexadecimal preceded by '$' with the exception of shift instructions (no '$' is required).
+Instructions are output in their hexadecimal representation (Big Endian format).
+The 'Mask' button is used to create search patterns usable with ELF Search Tool.
+This can aid in finding all instances of a given instruction within a program.
+Input only the instruction name and click 'Mask' to generate a search pattern:
+Note: Elf Search Tool must be set to 'Big Endian' mode.
+Instruction definitions are stored in the included plaintext file mips.conf which must be in the same directory as mini_mips_asm.exe.
+mips.conf defines the following 73 standard instructions:
+- sll, srl, sra, sllv, srlv, srav, jr, jalr, syscall, break, mfhi, mthi, mflo, mtlo, mult, multu, div, divu, add, addu, sub, subu, and, or, xor, nor, slt, sltu, bltz, bgez, bltzal, bgezal, beq, bne, blez, bgtz, addi, addiu, slti, sltiu, andi, ori, xori, lui, lb, lh, lw, lbu, lhu, sb, sh, sw, lwc1, swc1, ld, sd, j, jal, add.s, cvt.s.w, cvt.w.s, div.s, neg.s, mfc1, mov.s, mtc1, mul.s, sub.s, c.eq.s, c.lt.s, c.le.s, bc1t, bc1f
+2 Emotion Engine specific instructions:
+- lq, sq
+As well as 7 mnemonic instructions:
+- bal, b, move, li, nop, not, clear

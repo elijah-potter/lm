@@ -1,0 +1,22 @@
+|Part of Yhc|
+Yhc Core is a way of dumping and using the internal representation of Yhc in an external project. The code related to this, including data types, is found in src/compiler/Core directory of the Yhc source code.
+1 Haddock Documentation
+2 Blog Posts
+The following sequence of blog posts probably gives a useful introduction to Yhc Core.
+3 Generating Core
+To generate Core, simply give the compiler the option -core or -corep. For example, when compiling
+module FibMain where
+main xs = pam daeh xs
+daeh (x:xs) = x
+pam f  =  pam f (x:xs) = f x : pam f xs
+You get the output
+$ yhc -core FibMain.hs ====== Human Readable Core: FibMain.pam v220 v221 = case v221 of Prelude. -> (Prelude.) Prelude.: v222 v223 -> (Prelude.: (YHC.Internal._apply1 v220 v222) (FibMain.pam v220 v223))
+FibMain.daeh v224 = case v224 of Prelude.: v225 v226 -> v225 _ -> (Prelude.error (LAMBDA228))
+LAMBDA228 = (prim_STRING "FibMain: Pattern match failure in function at 7:1-7:15.")
+FibMain.main v227 = (FibMain.pam FibMain.daeh v227)
+The -core option gives human readable Core output, in a style very similar to Haskell. The -corep option gives a deriving Show output of the Core, which can be read back in with read very easily. The machine Core also contains source code locations for statements.
+4 Compared to GHC Core
+- Types - Yhc has none, GHC has lots.
+- Familiarity - Yhc looks like Haskell, GHC is somewhat related, but not as close.
+- Name mangling - Yhc preserves names much better.
+- Source locations - Yhc keeps these, GHC doesn't.

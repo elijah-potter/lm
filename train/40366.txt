@@ -1,0 +1,6 @@
+Definition of Kernel Mode in Network Encyclopedia.
+What is Kernel Mode?
+Kernel Mode is a privileged mode of operation in which processes can execute within the Microsoft Windows NT and Windows 2000 operating systems. Processes running in kernel mode can access system memory and hardware. Kernel mode processes include components of the operating system that directly manage resources on the computer, such as the following:
+- Windows NT executive, which contains operating system modules that manage objects, processes, security, memory, and devices
+- The kernel, which manages core operating system services
+- The hardware abstraction layer (HAL), which isolates operating system code from hardware differences

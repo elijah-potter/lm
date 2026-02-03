@@ -1,0 +1,6 @@
+Statistical Analysis System
+A Statistical Analysis System is an analysis system that can solve a Statistical Analysis Task (by using a statistical analysis algorithm which makes use of one or more statistical model).
+- a Data Mining System, which can also support association rule mining.
+- a Predictive Modeling System, which is focused only on predictive modeling.
+- a Reporting System.
+- See: Numerical Analysis System, Statistical Model.

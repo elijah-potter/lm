@@ -1,0 +1,8 @@
+ELECTRICITY FROM STOVES - CHP (Combined Heat and Power)
+There has long been interest in devising a solid fuel heater which can also produce electricity. Possible technologies being investigated include:
+Convector Generator The natural rise of hot fluids in a flue or duct due to the Chimney Effect can be used to move a vane. This method was known as far back as the 15th Century 'Smoke Jack' device, when it was used to turn a cooking spit.
+Stirling Engine This ingenious type of engine (http://en.wikipedia.org/wiki/Stirling_engine) can sit on top of a stove and generate movement from the heat alone. Demonstration versions are widely available commercially, or you might like to try building your own from old cans: http://astro.sfasu.edu/courses/egr112/StirlingEngine/stirling.html
+Free-Piston Stirling Engine This device uses the Stirling principle, but avoids the energy lost in cranks and other mechanical parts, to simply move a piston up and down a tube. If, for instance, the piston carries a magnet, it can induce a current in an adjacent coil.
+Resonance Engine (or thermo-acoustic engine, lag engine) These devices convert heat into a sound wave (often by using a Rijke tube), the vibrations from which can be used to generate movement in a small reciprocating engine, or even in a loudspeaker, the coil in which will then generate a current. (Wikipedia Page)
+Thermopile If the joint between two dissimilar metals is heated, a tiny current is induced. An array of such 'thermocouples' into a 'thermopile' can produce a useful amount of electricity. The 'Peltier' devices used in electronics to provide a cooling effect will produce current when heated. (http://en.wikipedia.org/wiki/Thermopile)
+TO ADVERTISE HERE

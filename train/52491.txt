@@ -1,0 +1,24 @@
+How and When to Take Advantage of Symmetry and Antisymmetry.
+When creating a model for finite element analysis, natural lines of symmetry and antisymmetry can allow you to analyze a structure or system by modeling only a portion of it. This technique can reduce the size of the model (the total number of nodes and elements), which can reduce the analysis run time as well as the demands on computer resources.
+Symmetry means a model is identical on either side of a dividing line or plane (see Figures 1-3). Along the line or plane of symmetry, boundary conditions must be applied to represent the symmetrical part as follows:
+- Out-of-plane displacement = 0
+- The two in-plane rotations = 0
+Figure 1: Model with a Line of Symmetry
+Figure 2: Model with a Plane of Symmetry
+Figure 3: Example of Symmetry for Plate Elements
+Antisymmetry means the loading of a model is oppositely balanced on either side of a dividing line or plane (see Figures 4-5). Boundary conditions must be applied along the line of symmetry as follows:
+- Out-of-plane rotation = 0
+- The two in-plane displacements = 0
+Figure 4: Antisymmetrical Model
+Figure 5: Example of Antisymmetry for Plate Elements
+Figure 6 shows an example of how to specify an antisymmetrical boundary condition in Autodesk Simulation software.
+Figure 6: Defining an Antisymmetrical Boundary Condition
+To take advantage of the symmetrical modeling technique, the following conditions for symmetry (or antisymmetry) must exist:
+- the geometry, material properties and boundary conditions are symmetric; and
+- the loading is symmetric or antisymmetric.
+Then, you can build a model of the symmetrical portion (half, quarter, eighth, etc.) and apply the appropriate boundary conditions.
+Advantages of a symmetrical/antisymmetrical model include the following:
+- Analyzing a symmetrical portion of a structure means faster processing than if you modeled the whole structure.
+- You can often increase the mesh density of the symmetrical model for greater accuracy and still have fewer elements than if you modeled the whole structure.
+- You can compare the results of a symmetrical model to those of a full model to confirm the validity.
+For more information about Symmetry boundary conditions, see the Autodesk Simulation In-Product Help or Wiki Help.

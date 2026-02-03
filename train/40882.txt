@@ -1,0 +1,14 @@
+Design of Experiments - DOE
+Fine Tune Your Production Process to Achieve Six Sigma using DOE
+Many manufacturing processes and some service processes can benefit from using Design of Experiments (DOE) to optimize their results. Without DOE, you're stuck with the world's slowest method for success-trial and error. With Design of Experiments, you just have to test at the high (+) and low (-) values for any particular "design factor" (e.g., pressure, temperature, time, etc.) from your QFD House of Quality, not every increment in between. And you can test more than one factor at a time.
+You can make Design of Experiments wildly complex or straightforward and simple. In my first Design of Experiments class we spent an inordinate amount of time understanding "orthogonal arrays" and all of the other "behind the scenes" mathematics, but you don't need to know all of that to conduct a Design of Experiments study.
+Please keep in mind that the QI Macros does not plan on offering a Three-Level DOE tool in the future. You can, however, perform said experiment w/ our ANOVA Two-Factor.
+How to Perform a Design of Experiments in Excel
+In Design of Experiments, they talk about "confounding" which simply means that one factor affects another. You'd expect a higher temperature to result in a shorter cooking time, and vice versa, but does a square pan take longer than a round one? Using the results, Design of Experiments software will draw the interactions between each of the factors as a line graph.
+If the two lines are parallel, there's no interaction. Is one end higher than the other? If so, you can immediately tell which value (high/low) gives you the best result.
+If the two lines cross, there is an interaction (confounding). And, by looking at where the two lines intersect on the graph, you can determine the optimum settings (e.g., time and temperature) to get the best cake.
+To do this using trial-and-error would take hundreds, maybe even thousands of trials, not just 16.
+Sample charts created by the QI Macros DOE Software
+Design of Experiments can help you shorten the time and effort required to discover the optimal conditions to produce Six Sigma quality in your delivered product or service. Don't let the +/- arrays baffle you. Just pick 2, 3, or 4 factors, pick sensible high/low values, and design a set of experiments to determine which factors and settings give the best results.
+Start with a 2-factor and work your way up. Have fun! It's just not that hard, especially with the right software.
+PLEASE NOTE: We have been asked about the addition of a Response Surface DOE to QI Macros - we currently do not have plans on adding this tool at the moment.

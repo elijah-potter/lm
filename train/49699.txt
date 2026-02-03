@@ -1,0 +1,11 @@
+The machine, named “Iridis-Pi” after the University’s Iridis supercomputer, runs off a single 13 Amp mains socket and uses MPI (Message Passing Interface) to communicate between nodes using Ethernet. The 64 units have 24 GFLOPs for a theoretical peak of 1.5 TeraFLOPs.
+The racking was built using Lego with a design developed by Simon and James, who has also been testing the Raspberry Pi by programming it using free computer programming software Python and Scratch over the summer. The machine, named “Iridis-Pi” after the University’s Iridis supercomputer, runs off a single 13 Amp mains socket and uses MPI (Message Passing Interface) to communicate between nodes using Ethernet. The whole system cost under £2,500 (excluding switches) and has a total of 64 processors and 1Tb of memory (16Gb SD cards for each Raspberry Pi). Professor Cox uses the free plug-in ‘Python Tools for Visual Studio’ to develop code for the Raspberry Pi.
+Professor Cox adds: “The first test we ran – well obviously we calculated Pi on the Raspberry Pi using MPI, which is a well-known first test for any new supercomputer.”
+The steps to make the computer are here
+The machine uses linux and Python.
+The Raspberry Pi is a credit-card sized computer that plugs into your TV and a keyboard.
+The Raspberry Pi measures 85.60mm x 53.98mm x 17mm, with a little overlap for the SD card and connectors which project over the edges. It weighs 45g.
+The GPU provides Open GL ES 2.0, hardware-accelerated OpenVG, and 1080p30 H.264 high-profile decode.
+The GPU is capable of 1Gpixel/s, 1.5Gtexel/s or 24 GFLOPs of general purpose compute and features a bunch of texture filtering and DMA infrastructure.
+That is, graphics capabilities are roughly equivalent to Xbox 1 level of performance. Overall real world performance is something like a 300MHz Pentium 2, only with much, much swankier graphics.
+If you liked this article, please give it a quick review on ycombinator or StumbleUpon. Thanks

@@ -1,0 +1,14 @@
+The diagram below illustrates the main relationships between the different metadata resources described in Part B of the Common Metadata Framework.
+The diagram is also available in PDF format. In the PDF version, you can click on the box representing a resource, and you will be taken to the description of that resource.
+1. The domain is closed. The relationships between the resources described in Part B and external resources (XML, etc.) are not included.
+2. Two higher-level resources (groups of resources) are shown for completeness, even though they are not described in Part B: i) SDMX Content-oriented guidelines; ii) SDMX initiative.
+3. The relationships shown in the diagram are defined as follows:
+classifies - A set of discrete, exhaustive and mutually exclusive observations, which can be assigned to one or more variables to be measured in the collation and/or presentation of data (Metadata Common Vocabulary).
+compliesWith - Resource A compliesWith resource B if it is possible to map elements of resource A to elements of resource B. Compliance is not as strict as conformance.
+conformsTo - An established standard to which the described resource conforms (Dublin Core).
+contains - The described resource includes models for another resource (e.g. "Neuchâtel model" contains a model for "statistical units").
+generalises - Applies the characteristics of a resource to a larger domain, other domains or includes other functionalities.
+isPartOf - A related resource in which the described resource is physically or logically included (Dublin Core).
+isSimilarTo - Resources are not identical (otherwise the relationship would be sameAs) but they show some similarity, for example, they have similar functionalities, or the same objectives (e.g. the exchange of data and metadata).
+measures - Reading, calculating or recording a numerical value (Metadata Common Vocabulary).
+seeAlso - Used to indicate a resource that might provide additional information about the described resource (rdfs:seeAlso).

@@ -1,0 +1,21 @@
+Problem 796. Removing rows from a matrix is easy - but what about inserting rows?
+Many of the test cases are wrong.
+A = (1:2:10)';
+IND = 1:5;
+b = (2:2:10)';
+y_correct = (1:10)';
+y_correct should be [2:2:10,1:2:10]'
+The zeros one has zeros that are the wrong size etc.
+I corrected one error regarding isequal with NaNs, but all the other test cases are correct.
+A = [1 3 5 7 9]; IND = [1 2 3 4 5]; b = [2 4 6 8 10]; definitely should result in [1 2 3 4 5 6 7 8 9 10]! You have to insert b(1) after A(1), b(2) after A(2) and so on.
+Nice problem, but the specification could be improved: from the description, you'd think the entire matrix b is supposed to be inserted after each row in IND; it's only the first example that makes it clear that this is not the case.
+This works under the presumption that IND is already sorted (as is the case in the test suite).
+Nice trick! But it breaks when IND contains 0s (inserting rows at the top of the matrix).
+Problem Recent Solvers161
+Find relatively common elements in matrix rows
+Duplicate each element of a vector.
+Piecewise linear interpolation
+Create a Multiplication table matrix...
+More from this Author1
+Community Treasure Hunt
+Find the treasures in MATLAB Central and discover how the community can help you!Start Hunting!

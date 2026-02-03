@@ -1,0 +1,6 @@
+Modeling Acoustically-Induced Inkjets
+There are numerous ways to force ink out of the nozzle of a print head. Examples include mechanical pistons, vibrating diaphragms and the generation of vapor bubbles. In all cases, however, the goal is not just to force ink out of the nozzle, but also to limit the amount of ink so that it will deform into a droplet of a specified amount and moving at the desired velocity towards the surface to be printed. These requirements impose strict limitations on the driving pulses. An alternative method to help in the pinch off of ejected ink is to change the surface tension of the ink in a non-uniform way. In the example shown here, FLOW-3D was used to simulate what happens when the ink’s surface tension is changed by localized heating at the exit of a nozzle. The images to the right show the simulated droplet and an experimentally observed droplet.
+Acoustically-induced jet animation
+The animation on the left shows a pressure-induced jet, which is unable to break off due to high surface tension forces
+and the same situation with heat added. The modified surface tension in the heated jet breaks off a droplet.
+Read more in our Microfluidic Tech Papers

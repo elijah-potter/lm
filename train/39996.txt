@@ -1,0 +1,7 @@
+- Published: Monday, 24 July 2017 10:29
+- Written by Riccardo Gallazzi
+How to protect IoT devices connected to the Internet and keep them secure
+IoT is the acronym of Internet of Things, and this term defines a network where devices, sensors, objects, people and animals are equipped with a univocal ID and are capable of exchanging data through the Internet without needing a direct man-machine interaction. The idea was born from the convergence of wireless technologies and the availability of sensors and tools that are more and more small, evoluted and cheap.
+This is what we wrote about IoT in our “Word of the Day” column.
+On a practical side, IoT is made up by all devices connected to the Internet, and the list is very extended, as we can infer from a quick search on Shodan, the research engine for IoT devices.
+A consequence of being connected to the Network is the chance of being hacked, which is not remote at all: the risk is about devices being infected and added to a botnet used for illegal stuff, like DDoS attacks, malware distribution, spam campaigns and things like these.

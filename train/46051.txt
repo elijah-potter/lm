@@ -1,0 +1,9 @@
+Collection: Plant Breeding
+The process of plant breeding is a demanding and intricate task that requires substantial resources. However, certain aspects of field trials and data acquisition operations can now be automated using the Amiga general-purpose robotic platform. This platform can be configured for performing tasks like precision seeding, crop sample collection, and automated data collection on traits such as growth rate, yield, and disease resistance.
+The Amiga robotic platform is a ground mobile platform that can be equipped with sensors, actuators, and tools for performing specific tasks. It is lightweight and fully electric, making it easy and clean to transport from one test field to another, and to operate outdoors or in greenhouses.
+1. Automate with the Intelligence Kit
+The Amiga platform can be extended with the Intelligence Kit, which is a package of hardware components and software algorithms. Intelligence Kit enables 3D image capture and video collection.
+2. Add More Sensors
+The platform can accommodate third-party sensors such as Lidar, hyperspectral cameras, and infrared cameras to acquire data for plant phenotyping. These sensors can be connected over the robot network to gather time-synchronized data using built-in applications provided along with the robot operating system.
+3. Program Custom Applications
+Plant breeders can program their own proprietary applications directly on the Amiga robot's Brain using Python or C++ with the Amiga Development Kit (ADK). This enables them to implement any aspect of a plant breeding pipeline and run hardware-accelerated machine learning and AI applications. Additionally, a community of developers and third-party open-source software can be leveraged for further support.

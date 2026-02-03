@@ -1,0 +1,6 @@
+"This behaviour is the expected result of certain hardware and software factors.
+Various devices in a typical computer require memory-mapped access. This is known as memory-mapped I/O (MMIO). For the MMIO space to be available to 32-bit operating systems, the MMIO space must reside within the first 4 GB of address space.
+For example, if you have a video card that has 256 MB of onboard memory, that memory must be mapped within the first 4 GB of address space. If 4 GB of system memory is already installed, part of that address space must be reserved by the graphics memory mapping. Graphics memory mapping overwrites a part of the system memory. These conditions reduce the total amount of system memory that is available to the operating system.
+The reduction in available system memory depends on the devices that are installed in the computer. However, to avoid potential driver compatibility issues, the 32-bit versions of Windows Vista limit the total available memory to 3.12 GB."
+The above is is an extract from a Microsoft web site. If you want to read more, click on the link..
+Sun, Jan 13 2008 16:15

@@ -1,0 +1,19 @@
+Events are signals that occur when you’re interacting with a page in a browser.
+For example, when you click on a content or a link on a page, you’re throwing the `click` event.
+Or when we scroll on a page, the `scroll` event is thrown.
+Or when we set the focus to a specific element on a page (for example the username text-box in a page to put some input) that element will send a focus event.
+For example, you might want to turn the background of a text-box to light-blue whenever that box got the user’s focus! This means we want to listen to the target text-box `focus` event and run a set of instructions the moment it sends the focus signal.
+One of the tools that we can use in situations like this is addEventListener() method.
+The process of handling or listening to events and invoking a set of instructions to be executed whenever an event occurred is called event handling and the tools (methods/properties) we use to handle those events are called event handlers.
+For example, one of these event handlers is addEventListener() method.
+document.addEventListener(event, function, useCapture)
+The method takes three arguments:
+- The first argument which is required is the name of the event that we want to listen to and invoke a call to a function whenever that event is thrown for the target element in a document.
+- The second argument is a reference to a function that should be invoked whenever the target event is thrown. This reference function is basically the handler method where we put the handling instructions.
+- The last argument is of type boolean and indicates whether the target event should be executed in the bubbling or capturing phase.
+The value true means the event handler should be executed in capturing phase.
+And the value false means the handler should be executed in the bubbling phase. (This is the default value)
+The method does not return a value.
+In this example, we’ve used the addEventListener() method to add an event to the username box of the page and listened for the click event on this element.
+So if we click on this username box, this event will be thrown and the handler (the second argument of the method) will invoke. Inside this handler, we’ve declared a set of instructions that will change the background color of the username box to blue.
+Note: as the argument of the handler method, there’s an object that will be passed to it and this object contains information about the event that was thrown. You’ll learn about this object in the event section.

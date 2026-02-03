@@ -1,0 +1,14 @@
+Vector images are stored in a completely different way to bitmap images. Rather than storing the image as a list of pixels, it is stored as a description of the shapes and colours present in the image.
+Here is a bitmap image. This image is 400 pixels by 300 pixels, which is about 350KB of raw data (although it compresses very well, the PNG file is only 3.6KB):
+Here is a similar vector image:
+Here is what the image looks like in SVG format:
+<svg> <circle style="fill:#ff0000" cx="300" cy="950" r="90" /> <rect style="fill:#008000" width="235" height="220" x="25" y="765" /> </svg>
+The image file just contains two object descriptions - a circle and a rectangle, with the fill colour and size/position of each shape.
+A big advantage of vector images is that they are resolution independent - you can zoom in to any amount and the image still looks perfect. Here is the pixel image, zoomed in by 5. The pixels are starting to become visible:
+Here is the vector image, which is still sharp:
+Vector images have another advantage, that they can be edited easily. You can change the colour, size of position of the shapes easily, just by changing the text file. You can even move the circle in front of the rectangle, simply by swapping the circle and rect elements in the file.
+These things are almost impossible to do with a bitmap image.
+Vector images usually need to be converted to bitmaps to be displayed on screen, or printed out. But they have the advantage that they can be converted to the exact resolution needed for the device. So our image could be converted to a small bitmap for a low resolution phone screen, a higher resolution for a big monitor, or a really high resolution for a large format printer - even at poster size, the circle will be perfect.
+Vector formats are mainly suitable for diagrams, charts, infographics and similar sorts of images, because they are made up of geometric shapes and text, which can be easily described as vector objects. However, vectors can be used to create very complex diagrams, there is nothing to say that vector graphics can only show simple graphics.
+Vector formats are not generally suitable for photographs, it is better to store them as bitmap images.
+Copyright (c) Axlesoft Ltd 2021

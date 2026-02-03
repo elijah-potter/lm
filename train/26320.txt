@@ -1,0 +1,18 @@
+1. Glass Identification: From USA Forensic Science Service; 6 types of glass; defined in terms of their oxide content (i.e. Na, Fe, K, etc)
+2. Solar Flare: Each class attribute counts the number of solar flares of a certain class that occur in a 24 hour period
+3. Cloud: Little Documentation
+4. MAGIC Gamma Telescope: Data are MC generated to simulate registration of high energy gamma particles in an atmospheric Cherenkov telescope
+5. Wine: Using chemical analysis determine the origin of wines
+6. Forest Fires: This is a difficult regression task, where the aim is to predict the burned area of forest fires, in the northeast region of Portugal, by using meteorological and other data (see details at: http://www.dsi.uminho.pt/~pcortez/forestfires).
+7. Coil 1999 Competition Data: This data set is from the 1999 Computational Intelligence and Learning (COIL) competition. The data contains measurements of river chemical concentrations and algae densities.
+8. Waveform Database Generator (Version 1): CART book's waveform domains
+9. Vicon Physical Action Data Set: The Physical Action Data Set includes 10 normal and 10 aggressive physical actions that measure the human activity. The data have been collected by 10 subjects using the Vicon 3D tracker.
+10. Ionosphere: Classification of radar returns from the ionosphere
+11. Statlog (Landsat Satellite): Multi-spectral values of pixels in 3x3 neighbourhoods in a satellite image, and the classification associated with the central pixel in each neighbourhood
+12. Annealing: Steel annealing data
+13. Water Treatment Plant: Multiple classes predict plant state
+14. Cylinder Bands: Used in decision tree induction for mitigating process delays known as "cylinder bands" in rotogravure printing
+15. Waveform Database Generator (Version 2): CART book's waveform domains
+16. MiniBooNE particle identification: This dataset is taken from the MiniBooNE experiment and is used to distinguish electron neutrinos (signal) from muon neutrinos (background).
+17. Connectionist Bench (Sonar, Mines vs. Rocks): The task is to train a network to discriminate between sonar signals bounced off a metal cylinder and those bounced off a roughly cylindrical rock.
+18. Ozone Level Detection: Two ground ozone level data sets are included in this collection. One is the eight hour peak set (eighthr.data), the other is the one hour peak set (onehr.data). Those data were collected from 1998 to 2004 at the Houston, Galveston and Brazoria area.

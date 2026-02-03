@@ -1,0 +1,3 @@
+Traps (such as SIGILL, SIGFPE, SIGSEGV) result from something a thread does to itself, such as dividing by zero or explicitly sending itself a signal. A trap is handled only by the thread that caused it. Several threads in a process can generate and handle the same type of trap simultaneously.
+Extending the idea of signals to individual threads is easy for synchronous signals--the signal is dealt with by the thread that caused the problem.
+Because such a synchronous signal usually means that something is seriously wrong with the whole process, and not just with a thread, terminating the process is often a good choice.

@@ -1,0 +1,39 @@
+We all have a bunch of passwords, logins, account, …, whether we want it or not. Most of the time, it’s used to secure access to your personal data or accounts. Passwords can also be used to encrypt data or secure communication between multiple parties.
+In reality, nobody likes passwords, because they are hard to remember, easy to make mistakes, have to comply with strange (unintuitive) validation rules. For example your password needs to include at least 1 number and at least one capital character. This makes is hard for you to remember and manage our collections of hundreds of passwords.
+Since we’re not able to store this much unique passwords and we’re somewhat lazy (and call is efficient), we usually take our resourt to one password, we use on all accounts. Or we make up a system to help remember the passwords. For example your pets name and your house number combined. The problem is, these ‘systems’ are fairly easy to guess, especially when some research is being done on your social media accounts.
+Can you guess the most frequently used passwords? As long as passwords exist, there are data breaches by malicious parties to access your accounts. Based on data from these breaches, we know the most used passwords are:
+- 1234567890 (or a short form)
+We’re all lazy, when it comes to passwords
+Using these easy to guess passwords, makes it easy for hackers to access your accounts and steal your data. When they automate the login attempts to guess passwords, it’s easy for them to automatically guess your passwords, using your email address and a database of known passwords. To block this “attack vector”, iOS blocks entering a pincode for some time when too many failed attempts were made. Another example is the 3 login attempts for bank cards.
+Why we’re still using passwords? Simple: there is no good alternative. With “good”, I’m talking about a safe solution, one that’s user-friendly and is wide-spread. There are alternatives to passwords, that are more secure but are so not user-friendly, it will be hard to get a high adoption rate.
+So, for now, we’ll stick to using passwords. Below, I describe best practices and tools for your passwords.
+This one is easy to remember and to implement!
+Whenever you set a password, make sure it’s unique. When a password is unique, it’s harder to guess. Once you re-use a password for different logins and one of the accounts is breached, a common attack is to use known passwords from a previous breach on other accounts with the same email address. There is an awesome service by Troy Hunt called “’;–have i been pwned?” Where you can enter your email address and discover where one of your accounts has been breached.
+I totally understand why re-using passwords is easy for yourself, but it makes you vulnerable too. When creating a new account, you have to think of a new password (and be able to repeat that 😮 ). You can use an online password generator, like the one on Random.
+When you register a new account on a service, most likely, you’re being asked to enter a password. In many cases, your password needs to match some criteria for it to be considered strong. In many cases, it needs capitals, numbers and a certain length. The longer a password is, the harder to guess to break in to your account. For example a password of 1 lower-case character from the alphabet can be guessed in maximal 26 tries. When we double the passwords length, a maximum of 676 tries is needed.
+This table illustrates the maximum number of tries needed to guess a password, when only lower-case alphabetic characters are used. When you add capitals, digits, punctuation and symbols, you get a collection of roughly 100 characters to choose from. To guess this kind of password, there is a maximum of 1e20 possible combinations. This sounds impressive, but it all depends on the infrastructure available to brute force your password. In general, the longer your password, the stronger. It all depends on the maximal length your allowed to set.
+|5||11 881 376|
+|6||308 915 776|
+|7||8 031 810 176|
+|8||208 827 064 576|
+|9||5 429 503 678 976|
+|10||141 167 095 653 376|
+The strength of a password can be quantified and is measured in “entropy bits“, which is based on the number of tries required to guess the password. If you want to quickly test the strength of your password, you can use the basic-looking zxcvbn test-page.
+Generally speaking, your password needs a minimal of 12 characters before it is considered strong.
+Passwords vs Passphrase
+In this paragraph, it might look like I contradict myself compared to what I wrote about strong passwords. Well, I’m not. The passwords you set in accounts don’t have to be complex, but just longer. We’ve been trained (forced?) to use complex combinations of characters to set as passwords. These passwords are hard for us to remember and it’s not guaranteed they are harder to guess for computers.
+Passphrase to the rescue! They can be hard to guess for computers and if chosen wisely, are easy to remember. A passphrase is a group of random words, used as your password. This group of words have no relationship to each other, for example it’s best the words are not a sentence. Otherwise it’s too easy to guess.
+How to do this?
+Diceware: Pick random words
+So now we know it’s important to pick some (≥4) different words as password and the password needs to be unique. To quickly generate a new password, you can use the Diceware Passphrase generator. This online tool picks random words from a Diceware wordlist.
+- Throw 5 dices Example:
+- Concatenate those 5 numbers
+- Lookup which word the Diceware Wordlist
+Example: 32424 = haunt
+Example: haunt revel rena since
+Doing this manually for every account you have is a tedious job and takes a while! Therefor, you better use a password generator.
+To get the gist and understand what’s going on, throwing dices is perfect. To repeat this manual process for every password, even with a generator, is impossible. Generating new passwords is easy, but to remember every unique password, you have to be extraordinary.
+Password managers are tools (services), specialised in securely storing your passwords. The best password managers integrate nicely with your browser or other apps to help you login fluently.
+Some of the most well-known password are Lastpass, Keepass and 1Password. There are many websites where you can compare features, so in the next blogpost, I highlight some feature that make 1Password an essential tool for me and I’ll layout the steps to implement 1Password.
+Passwords are never easy
+To keep your accounts as safe as possible, you have to think of so many things, it’s almost impossible to do this without a tool, taking care of most of the administration. Since discovering Password Managers, it’s a lot easier to go for strong, uniques passwords or pass-phrases.

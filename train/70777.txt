@@ -1,0 +1,8 @@
+Well suited topology for broadband LNA design. Schematic of the LNA with resistive termination is shown in Figure 1(a). The resistive termination() at the input provides broadband impedance matching over a wide frequency band.
+The equivalent circuit of resistive termination LNA is shown in Figure 1c.
+Gain of LNA,
+Noise Factor of LNA is given by
+noise power at the input of LNA due to the source
+noise power added by the LNA referred to the output
+where, . When , then noise factor is
+Therefore the noise figure of Resistive terminated LNA is > 3dB.

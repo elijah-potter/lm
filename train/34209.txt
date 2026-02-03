@@ -1,0 +1,4 @@
+Onboard diagnostic systems (OBDs) are found in almost every car these days, providing a very rich set of information about parameters like coolant temperature, RPM, and the like.
+The information about all these parameters lets us define the state of the vehicle by diagnosing each and every aspect. Here's a guide to getting started with OBD development using your chosen MCU.
+First, a quick overview. OBD-II is the protocol that works in most of our cars that date back from a decade ago until now. It's particularly widespread in cars made in Asia, where almost all makers support the protocol, but it is a global protocol and used in cars worldwide. You can find more on OBD here.
+Click here to read the rest of this article on Microcontroller Central.

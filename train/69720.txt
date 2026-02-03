@@ -1,0 +1,46 @@
+For Leonhard Euler (1748) and most mathematicians up to the end of the nineteenth century, a function was an expression formed using the arithmetical operations and transcendental operations such as log. The modern infor matician would take a similar view, but would be more precise about the method of formation (algorithm). Two such functions are equal if this can be shown from the laws they are known to obey.
+However, during the twentieth century mathematics students have been taught that a function is a set of input-output pairs. The only condition is that for each input value there exists, somehow, an output value, which is unique. This is the graph of the function: plotting output values in the y-direction against arguments along the x-axis, forgetting the algorithm. Now two functions are equal if they have the same output value for each input. (This definition was proposed by Peter Lejeune Dirichlet in 1829, but until 1870 it was thought to be far too general to be useful.)
+These definitions capture the intension and the effect ( extension) of a function. Evaluation takes us from the first to the second, but it doesn't say what non-terminating programs do during their execution, and can't distinguish between algorithms for the same function. But each view is both pragmatic and entrenched, so how can this basic philosophical clash ever be resolved? Chapter IV begins the construction of semantic models which recapture the intension extensionally, as part of our reconciliation of Formalism and Platonism.
+Such a relation is called
+Functional relations are more familiarly called f instead of R, and in this case we write ``f(a) = b'' for f:a® b or b = iy.a R® y. The notation of function-application, like the definite article, implicitly means that the result is uniquely determined and (usually) that it exists.
+A relation which satisfies the existence but not necessarily uniqueness axiom for a function is said to be entire. Nothing really remains of the functional idea, but the axiom of choice (Definition 1.8.8) says that such a relation, considered as a set of pairs, contains a function.
+On the other hand, single-valuedness alone is important. It is neither possible nor desirable to require all programs to terminate, but those of mathematical interest can typically be calculated in some manifestly deterministic way. For term-rewriting systems (including l-calculi) , confluence is a commoner property than normalisation. So partial functions are the norm, and will be considered in Sections 3.3, 5.3, 6.3 and 6.4.
+REMARK 1.3.2 When equality has to be weakened to interchangeability, the functional property becomes that x ~ x¢Þ f(x) ~ f(x¢) or
+Arity, source and target In this book we shall take the view that
+for each operation or predicate,
+some things may meaningfully be its subject,
+but applying it to anything else yields nonsense.
+Although this seems like common sense, it surprises me how readily this principle is dropped when people try to reason about language.
+In Chapter II we shall provide ways of forming new types, such as P(X), XxY, YX and List(X), but for the time being they are fixed in advance; in this case we often say ``sort'' instead of (base) type.
+NOTATION 1.3.3 We write x:X and c:X to express the syntactic information that the variable x or constant c is declared to have type X. For each operation-symbol r we must specify not only the type of its result but also those of each argument. We sum up this information as
+we may only form the expression r(\termu1,\termu2,¼)
+if \termu1:\typeX1, \termu2:\typeX2, ...
+and then, by definition, r(\termu1,\termu2,¼):Y.
+The list [(X)\vec] of input types is called the arity of r. Types, like predicates (Definition 1.2.12), must be invariant under subject reduction:
+if u:X and u\leadsto v (or u ~ v) then v:X.
+Type information can be presented in a graphically immediate way by means of ``commutative'' diagrams, which we introduce in Section 4.2.
+The symbol Î is often used instead of the colon, but this can lead to confusion with the axiom of comprehension (Definition 2.2.3), ie that the value x satisfies the predicate defining a subset X (Exercise 1.12).
+NOTATION 1.3.5 The types of the variables in Definition 1.3.1 are called the source x:X and target y:Y. We regard them as an inseparable part of the definition, and indicate them by arrows:
+The words domain and codomain are more usual in category theory, but we shall avoid them because of confusion with Section 3.4. We also avoid the word range because usage is ambiguous as to whether it means Y or the set of outputs which actually arise from some input,
+REMARK 1.3.6 Besides notation and discipline, types also internalise values, which need not have names. For example there are (in a classical understanding) far more irrational numbers than we can name in finitely many symbols, but a function ``on R'' is meant to be defined for all numbers, not just those with names. Even for the natural numbers, where each value does have a name, the symbol N brings the completed infinity of numbers into the discussion.
+Theorem 1.2.9 relates terms to total functional relations:
+LEMMA 1.3.7 Let t be a term of type Y with a free variable x of type X. Then
+PROOF: The notation is deceptively simple, so we must first clarify its meaning. The term ``t'' belongs to the intensional syntax and as such may involve the variable x, which is also understood syntactically. The other graphical symbols belong to the extensional semantics. Therefore to interpret the formula ``y = t'' we must convert t from the syntax to the semantics, by substituting a term representing the value x for the variable x wherever it occurs in t, and then evaluating the result.
+We may regard the types as the sets of values, where the values may be equivalence classes of terms, or normal forms. If y1 and y2 are two values which are both equal to the value of t then they must be equal to each other (it is the confluence property that allows us to use normal forms here instead of equivalence classes), so R is functional. It is total because the value of t itself witnesses $y.R:x® y, although we may choose to say instead that only those equivalence classes which have normal forms are to be treated as ``defined'' values. 
+Substitution of another term for a variable in a term is given by
+DEFINITION 1.3.8 Let R:X\leftharpoondown \rightharpoonup Y and S:Y\leftharpoondown\rightharpoonup Z. Then the relational composition is given by
+x R;S® zorx So R® z if $y.xR® yÙyS® z.
+We use these two notations synonymously. The semicolon was used in this sense, for left-to-right composition, by Ernst Schröder in 1895. Today it is used for sequential composition in imperative programming languages (Definition 4.3.1). The identity relation \idX is the same as equality on X. It is also called the diagonal relation (D) because when its values are written out in a square table the entries on the diagonal are true and the others false (Exercise 1.18).
+LEMMA 1.3.9 If R and S are the (total functional) relations which correspond to terms v:Y and w:Z, each having one free variable x:X and y:Y respectively, then So R corresponds to w[y: = v]. Also, the diagonal relation corresponds to the variable x:X considered as a term.
+PROOF: t = w[y: = v] iff $y.t = wÙy = v. 
+Composition preserves functionality and totality, but we postpone the proof to Lemma 1.6.6 for reasons of exposition.
+Relational calculus The definition of a (total) functional relation is not symmetrical in X and Y, so we can ask what happens if we interchange the roles of the variables in the conditions. Of course what we are then considering is
+DEFINITION 1.3.10 The converse relation has yRop® x Û x R® y. Its source is now Y and its target X.
+DEFINITION 1.3.11 A function or functional relation R is
+These properties are examined further in Exercises 1.14-1.16.
+Bijectivity can be characterised purely in terms of composition:
+LEMMA 1.3.12 The following are equivalent for a function f:X® Y:
+Moreover in the last case g, which we call the inverse, f-1, is unique and is given by fop. When f has an inverse we call it an isomorphism and write f:X º Y. (An isomorphism whose source and target are the same type is called an automorphism of that type.) Beware that, when there is other structure, a bijection is not necessarily an isomorphism (Example 3.1.6(e)). 
+There is a common situation in which just one of these laws holds:
+DEFINITION 1.3.13 An endofunction e:X® X is called idempotent if eoe = e. In this case, x is in the image of e iff it is fixed by e.
+Chapter II will begin the study of types, concentrating on functions in Section 2.3. Composition is the basis of category theory, beginning in Chapter IV; in particular Remark 4.4.7 considers isomorphisms. The relational calculus will be discussed further in Sections 3.8 , 5.8 and 6.4. We shall now turn to the symbols Þ , Ù, " and $ which we have just started using.

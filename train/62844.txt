@@ -1,0 +1,10 @@
+What happens if you use a scalar
+variable before you give it a value? Nothing serious, and definitely nothing fatal. Variables have the
+value before they are first assigned. This value looks like a zero when used as a number, or the zero-length empty string when used as a string. You will get a warning under Perl's
+switch, though, which is a good way to catch programming errors.
+when the arguments are out of range or don't make sense. If you don't do anything special, you'll get a zero or a null string without major consequences. In practice, this is hardly a problem.
+One operation we've seen that returns
+under certain circumstances is
+. Normally, this returns the next line that was read; however, if there are no more lines to read (such as when you type CTRL-D at the terminal, or when a file has no more data),
+as a value. In
+, we'll see how to test for this and take special action when there is no more data available to read.

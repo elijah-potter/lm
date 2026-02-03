@@ -1,0 +1,17 @@
+SQL Statements :
+The following SQL statement chooses all of the records in the “Consumers” table:
+Some repository techniques need a semicolon at the conclusion of each SQL statement.
+Semicolon is the typical way to split up each SQL statement in repository techniques that enable multiple SQL statement to be executed in exactly the same contact to the server.
+In that guide, we will use semicolon at the conclusion of each SQL statement.
+Some of The Most Important SQL Commands :
+- SELECT – extracts information from a repository.
+- UPDATE – revisions information in a repository.
+- DELETE – deletes information from a repository.
+- INSERT INTO – positions new information right into a repository.
+- CREATE DATABASE – creates a new repository.
+- ALTER DATABASE – modifies a repository.
+- CREATE TABLE – creates a new dining table.
+- ALTER TABLE – modifies a desk.
+- DROP TABLE – deletes a desk.
+- CREATE INDEX – creates an list (search key).
+- DROP INDEX – deletes an list.

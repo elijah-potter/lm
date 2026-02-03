@@ -1,0 +1,6 @@
+No elements appear in the drawing (the drawing pane is blank) when the model is opened, or after importing data through ModelBuilder.
+After using zoom extents, go to Edit > Select All (or press CTRL+A with the drawing pane active) and see if something highlights in the drawing pane.The default highlight color is red; look for a small red dot. If you see something, try changing your drawing style from CAD (which is the default) to GIS style, which will help you see the elements (and then you can zoom into them). This is done from the icon on the element symbology manager. If you do a search for "drawing style" in the help documentation there are step by step instructions for how to do this. You can also check the below article under See Also.
+If there are elements far off in the distance causing Zoom Extents to zoom too far out, this could be a problem with the spatial reference of the data that was imported (or a units issue) or possibly a color coding legend inserted far off in the distance. Try right clicking on any color coding definitions in Element Symbology and choose the "remove legend" option if present.
+Building a model with Modelbuilder
+Importing dxf as background
+Updating video drivers and troubleshooting video hardware issues

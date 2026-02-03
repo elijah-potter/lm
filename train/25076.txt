@@ -1,0 +1,8 @@
+Implies[p, q] represents the logical implication .
+Implies[p, q] is equivalent to !p || q.
+Implies[p, q] can be input in StandardForm and InputForm as p q. The character can be entered as => or \[Implies].
+See The Mathematica Book: Section 3.4.10.
+See also: LogicalExpand, If.
+THIS IS DOCUMENTATION FOR AN OBSOLETE PRODUCT.
+SEE THE DOCUMENTATION CENTER
+FOR THE LATEST INFORMATION.

@@ -1,0 +1,30 @@
+In this quick article, we'll see how we can shuffle a collection in Java. Java has a built-in method for shuffling List objects — we'll utilize it for other collections as well.
+2. Shuffling a List
+We'll use the method java.util.Collections.shuffle, which takes as input a List and shuffles it in-place. By in-place, we mean that it shuffles the same list as passed in input instead of creating a new one with shuffled elements.
+Let's look at a quick example showing how to shuffle a List:
+List<String> students = Arrays.asList("Foo", "Bar", "Baz", "Qux");
+There's a second version of java.util.Collections.shuffle that also accepts as input a custom source of randomness. This can be used to make shuffling a deterministic process if we have such a requirement for our application.
+Let's use this second variant to achieve the same shuffling on two lists:
+List<String> students_1 = Arrays.asList("Foo", "Bar", "Baz", "Qux");
+List<String> students_2 = Arrays.asList("Foo", "Bar", "Baz", "Qux");
+int seedValue = 10;
+Collections.shuffle(students_1, new Random(seedValue));
+Collections.shuffle(students_2, new Random(seedValue));
+When using identical sources of randomness (initialized from same seed value), the generated random number sequence will be the same for both shuffles. Thus, after shuffling, both lists will contain elements in the exact same order.
+3. Shuffling Elements of Unordered Collections
+We may want to shuffle other collections as well such as Set, Map, or Queue, for example, but all these collections are unordered — they don't maintain any specific order.
+Some implementations, such as LinkedHashMap, or a Set with a Comparator – do maintain a fixed order, thus we cannot shuffle them either.
+However, we can still access their elements randomly by converting them first into a List, then shuffling this List.
+Let's see a quick example of shuffling elements of a Map:
+Map<Integer, String> studentsById = new HashMap<>();
+List<Map.Entry<Integer, String>> shuffledStudentEntries
+= new ArrayList<>(studentsById.entrySet());
+List<String> shuffledStudents = shuffledStudentEntries.stream()
+Similarly, we can shuffle elements of a Set:
+Set<String> students = new HashSet<>(
+Arrays.asList("Foo", "Bar", "Baz", "Qux"));
+List<String> studentList = new ArrayList<>(students);
+In this quick tutorial, we saw how to use java.util.Collections.shuffle to shuffle various collections in Java.
+This naturally works directly with a List, and we can utilize it indirectly to randomize the order of elements in other collections as well. We can also control the shuffling process by providing a custom source of randomness and make it deterministic.
+As usual, all code demonstrated in this article is available over on GitHub.
+res – REST with Spring (eBook) (everywhere)

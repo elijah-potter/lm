@@ -1,0 +1,34 @@
+Wireless Network or Wi-Fi is an easy option to use the Internet on Our computer, Mobile, Tablets & other devices from anywhere without the clutter of cables. The only benefit With wired networks is no one can steal our bandwidth but with wireless signals, the problem is that other can access the Internet using our broadband connection while they are in a neighbouring building.
+The three reasons why this practice also known as piggybacking is bad-
+1. Your internet bill will be high as someone uses data from your connection when you have to pay per byte of data.
+2. Your Internet access speed will be decreasing since you are now sharing the same internet connection with other users.
+3. The bad guys could send hate emails or commit any cyber crime using your emails account which they hacked through your unsecured Wi- Fi networks they also can hack your computers and access your personal files.
+But it is not so hard to secure your wireless Network. It can prevent stealing your internet and also prevent the hacker from taking control of your computers through your own wireless network. Just flowing the Instruction given below you can secure wireless network
+How To Secure Your Wireless Network
+Step 1. Open your router setting page
+Before doing this you should check your router’s user manual because you need to know everything about how to access your wireless router’s setting Usually you can do this by typing in “192.168.1.1” into your web browser, and then enter the correct username and password for the router.
+You can also use Google to find the manuals for most routers online in case you lost the printed manual that came with your router purchase
+Step 2. Create a unique password on your router
+After logging in to your router, change the default password of your router for to some more security. This will prevent others from accessing the router and you can easily maintain the security settings that you want. You can change the password from the Administration settings on your router’s settings page. The default values are generally admin/password.
+Step 3. Change your Network’s SSID name
+The SSID or Wireless Network Name of your Wireless Router is already defined as ” default ” or is set as the brand name of the router. This setting is usually under the basic wireless settings in your router’s settings page. Changing the SSID name of your network will make it more obvious for other to know which networks they are connecting to. Once it set you will always be sure that you are connecting to the correct network even if there multiple wireless networks in your area.
+[ Don’t use your name, home address or other personal information in the SSID name ]
+Step 4. Enable Network Encryption
+You need to encrypt your wireless signals in order to prevent other computers in the area from using your internet connection.
+There are several encryption methods for a wireless setting like WEP, WPA ( WPA- Personal ), and WPA2 ( Wi- Fi Protection Access Version 2 ). WEP is basic encryption and it can’t give the total security. It can be easily cracked, but is compatible with a wide range of devices including older hardware, whereas WPA2 is the most secure but is only compatible with hardware manufactured since 2006.
+To enable encryption on your Wireless network, go to the wireless network security setting on your router’s configuration page then select which security method you wish to choose.
+[ if you have older devices WEP, otherwise go WPA2 ]
+Step 5. Filter MAC addresses
+First of all this MAC address nothing to do with an Apple Mac. Your laptop or wi- fi enabled mobile phone, all wireless devices have a unique MAC address. Just like every computer connected to the internet has a unique IP address. You can add the MAC address of your devices to your wireless router’s setting so that only the specified devices can connect to your Wi-Fi network.
+To enable MAC address to your router find all MAC addresses of the devices which you want to add to your router. And add them to the MAC address filtering in your router’s administrative settings.
+You can find the MAC address for your computers by opening Command Prompt and typing in “ipconfig /all”, which will show your MAC address beside the name “Physical Address”. You can find the MAC addresses of Wireless mobile phones and other portable devices under their network settings, though this will vary for each device.
+MAC address is hard- coded into your networking equipment, so one address will let that one device on the network. But it is possible to spoof a MAC address.
+If somebody knows your MAC address they can change the MAC address if his own computer and easily connect to your network and your network will let them allow to connect as they have the specific MAC address.
+Step 6. Decreasing the Rang of the Wireless Signal
+If you think your route has a high range, you can easily reduce* the signal by either changing the mode of your router to 802.11g of use a different channel
+*Apply the Anti- wi- fi pain- Researchers have developed a special Wi-Fi blocking paint that can help you stop neighbours from accessing your home network without you having to set up encryption at the router level. The paint contains chemicals that block radio signals by absorbing them. “By coating an entire room, Wi-Fi signals can’t get in and, crucially, can’t get out.”
+Connect to your Secure Wireless Network
+To conclude, MAC Address filtering with WPA2 (AES) encryption (and a really complex passphrase) is probably the best way to secure your wireless network.
+Once you have enabled the various security settings in your wireless router, you need to add the new settings to your computers and other wireless devices so that they all can connect to the Wi-Fi network. You can select to have your computer automatically connect to this network so you won’t have to enter the SSID, passphrase and other information every time you connect to the Internet.
+Who is Connected to your Wireless Network
+If you are worried that an outsider may be connecting to the Internet using your Wireless network, try AirSnare – it’s a free utility that will look for unexpected MAC addresses on your Wireless network as well as to DHCP requests. Another option is that you open your router’s administration page (using the 192.168.* address) and look for the DHCP Clients Table (it’s under Status > Local Network on Linksys routers). Here you will see a list of all computers and wireless devices that are connected to your home network.

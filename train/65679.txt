@@ -1,0 +1,36 @@
+By Steven Krohn · August 2, 2019
+Risk assessments aren’t just a HIPAA requirement. They are essential processes for ensuring the secure and proper operation of the business.
+Maintaining the security and integrity of Patient Health Information (PHI) and electronic PHI (ePHI) is one of a healthcare practice’s key roles. Risk assessments help you achieve this.
+Nobody wants to be the next target of a major health data breach. A good place to start assessing the security of PHI is to run an analysis on every location PHI is stored.
+It can be on databases, mobile devices such as phones and tablets and cloud storage. It’s also important not just to look at where the data is stored, but where it gets transferred to as well.
+How is that data secured in those locations? Are all of the devices encrypted to an acceptable level? Password protected? How many employees have access and who are they?
+Performing the required risk assessment and regular risk analysis will help healthcare organizations of all sizes safeguard this valuable information.
+Risk analysis is part of the administrative safeguard requirement under HIPAA regulations. It’s the responsibility of all covered entities to
+The HHS website states that there must be “Risk analysis conducted on an ongoing process, in which a covered entity regularly reviews its records to track access to e-PHI and detect security incidents, periodically evaluates the effectiveness of security measures put in place, and regularly reevaluates potential risks to e-PHI.”
+There are four factors that HHS use to determine the likelihood PHI was improperly used or disclosed in a potential breach. Understanding these criteria will help organizations better review the possible risk areas.
+• What is the nature of the information involved?
+• Who is the authorized person responsible?
+• Was PHI actually acquired or viewed?
+• To what extent has the risk to PHI been mitigated?
+There are tools available to assist in the risk assessment process. While these tools aren’t required under HIPAA regulations, they’re useful for creating a structure around the process and helping to identify spots you might otherwise miss.
+Perhaps the biggest mistake healthcare organizations make when it comes to their risk assessment responsibilities is not updating their risk assessment process over time.
+The risk management process itself must be regularly reviewed and updated. New tools and technology are constantly being developed; places for e-PHI to be stored and transferred are appearing all the time. If these aren’t taken into consideration, the risk assessment is going to leave enormous holes in security.
+Telemedicine is a growing industry which involves a lot of new hardware, software, and communication channels. If a provider integrates a telemedicine service, this could present a number of areas where ePHI is being created, stored and transferred.
+If this new ecosystem isn’t on your risk assessment process, your risk assessment process is useless. There’s no point in regularly running the process if it’s got major holes in it.
+This oversight has led to some hefty fines over the years. In December 2015, the University of Washington Medicine (UWM) paid a $750,000 fine due to a breach from a 2013 “incident.”
+It was found that UWM “did not ensure that all of its affiliated entities were properly conducting risk assessments and appropriately responding to the potential risks and vulnerabilities in their respective environments.”
+Only focusing on one system lead to breaches in other affiliate systems, which came back to bite UWM.
+Similarly, Catholic Health Care Services of the Archdiocese of Philadelphia (CHCS) paid a $650,000 fine in 2016. In this situation, the healthcare provider was just a business associate.
+OCR found that from the HIPAA Security Rule compliance date to the present, CHCS had not conducted “an accurate and thorough assessment of the potential risks and vulnerabilities to the confidentiality integrity, and availability of e-PHI held by CHCS.”
+Risk assessment must review physical, technical and administrative safeguards. Changes must be made when potential risks are discovered to adequately cover these vulnerabilities.
+Physical safeguards can include things like improved workstation and mobile device security. Nurse stations or other computers with valuable data might be easily visible to people in the facility for example.
+Potential solutions to minimize risk include timed log-off or screen shutdown, or even relocating the stations to a more secure location.
+Technical safeguards can include things like ensuring access controls can be precisely set. That means granting access to one worker for one department does not necessarily grant them access to all departments.
+An employee in billing, for example, doesn’t need to see a patients’ medical records.
+Their security access should not grant them permission to view these files. The idea is that each employee is only granted access to the minimum necessary to perform their job.
+Administrative safeguards include things like better workforce training or management. Proper training for access and handling of PHI is a major oversight of many security plans.
+It’s also important to check all technology that data passes through. Today, that includes many things which are easy to forget or neglect.
+Copy and print machines, for example, can now store and access data for printing purposes. They need to be included in both your processes and security protocol.
+It’s essential to conduct a risk assessment annually. You should perform one every time a new EHR is adopted.
+We can help you with peace of mind with a simple annual audit of your website that will provide you a comprehensive report outlining the issues and recommended fixes for your web development team to ensure that you are doing everything to protect the data and maintain compliance.
+We provide a deep dive review for one low price.

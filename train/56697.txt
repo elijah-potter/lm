@@ -1,0 +1,51 @@
+Tutors: Panos Mavros, Nikitas Gkavogiannis, Zafeira Kampouri
+contact email: mavros.panos[at]gmail[dot]com
+How embedded technologies transform the space itself into an interface?
+The project explores how distributed digital technologies can be implemented to physical space (object, room, building, the city) to add layers of information, supporting the interaction between the user and the environment and transforming the surrounding space into a dynamic medium. Physical world always hosted a plethora of information. However, we are now seeking new ways to trigger, control and interact with the flow of information, whether it would be visual, sonic, haptic or other, within a spatial framework.
+The computer is no longer reserved to the limits of a particular configuration (the screen – keyboard – mouse continuum). Since the emerging realization of ubiquitous computing, digital technologies of all kinds are being increasingly embedded in the physical world; the real space is transformed by the overlaying with dynamic flows of data. At the same time, the real world becomes a source of information itself, through sensing. Thus, we arrive in a new condition (in which terms such as ‘responsive’ or ‘interactive environments’ are often used to describe spaces that bring computation into the real world) that challenges the polarity between the notion of real space and virtual worlds. New thresholds emerge, constructing richer corporeal and phenomenological experiences, as technology is now easier to use and closer to people’s bodies and senses.
+This projects aims at the remediation of physical space and its physical attributes (sound, shape, form, texture, location) with layers of information, asking about the relation among them. The user becomes an active participant to a diverse and multidimensional novel experience of contemporary space.
+Aims and objectives
+The aim of this project is to create a site-specific work in physical space (whether outdoors or indoors, urban or rural) using the physical properties of a real object/space as part of it. You will decide the final location, the nature, the concept of the project and arrange all the practicalities of performing in location (permissions, power etc.). This is one of the unique challenges of this project and it encourages you to work as professionals and deal with all the stakes of producing delivering a real project and performing in public.
+- To find a suitable space to experiment with digital technology.
+- To explore the boundaries between physical & virtual space
+- To gain creative and technical skills & understanding of digital technologies.
+- To develop a concept for the integration of technology & environment, and the interaction of space & users.
+- To combine an array of different technologies (media, software) in order to create an interactive physical installation.
+- To create a participatory, site-specific installation that is controlled by disparate sources; the user, the participants, sensors, real-time sources of information. GPS, mobile media.
+- To enhance spatial experience through the generation of a multi-sensory engagement.
+- Collaborating with a large team of different backgrounds
+- How to create, organize and stage an artistic installation
+- Understand of the role of interfaces in mediating information and experience.
+- Understand the challenges of creating a participatory experience
+Submission suggestions and presentation ideas
+The project encourages the creation of a physical interactive installation, such as a projection mapping, an immersive/physical computing installation, or any combination of the above. However, these examples are meant as urges, rather than prescriptions. The participants are free to explore the limits of current practices and embark in their own creative research.
+The first submission should document the progress that has been made until the week 5. This could include a demonstration of the concept, a documentation and analysis of the location, the structure of the final installation (using 3D visualisation – animation, story-board or samples of sound design).
+The second submission will be the site-specific installation itself. It is also worth considering how you will engage the audience, using your skills as Digital designers — social media, print invitations, posters or whatever applies in the nature, concept and location of the project.
+As a final note for all the submissions (group and individual), using illustrations, diagrams and photos, together with your texts, is not only a good way to explain your project, but it will prove important much later when you will have to build a portfolio of works or when you will have to explain your work to people outside DMSP for personal or professional reasons.
+The DMSP Project Brief, chapter 4, has further information about submissions.
+- Creative Applications – www.creativeapplications.net
+- Raphael Lozano Hemmer – www.lozano-hemmer.com
+- 1024_Architecture – www.1024architecture.net/
+- Pachube – pachube.com
+- Usman Haque – www.haque.co.uk
+- Troika – troika.uk.com/
+- AntiVJ – www.antivj.com/
+- UrbanScreen – www.urbanscreen.com/
+- Situated Technologies – www.situatedtechnologies.net/
+This project will offer opportunities to learn and apply a variety of digital tools. It is important to engage with the tools offered here critically, research their limits and decide on the ones that are most adequate for the purposes of the project.
+- Blender, offers an environment to model and visualize the physical space in detail in order to study its elements and attributes, as well as an output environment – a creative tool to create and design 2D or 3D visuals. In some occasions, it can also be sed in real-time with python and the game-engine to control responsive visuals.
+- MaxMSP / Jitter; VVVV and PureData, are three established platforms to design, control and operate multimedia installations.
+- Processing is a Java-based scripting language, that can be used from the control of arduino or sensors, to data visualization or generative art.
+- VideoProjectionTool (VPT) & MadMapper, are two interfaces used for real-time projection mapping.
+- Arduino is a prototyping platform to create interactive electronic objects (interfacing input/ output with the computer) and can be controlled and programmed with processing, or controlled in real-time with MaxMSP (maxuino).
+- Java and OpenFrameworks (C++) are other programming options that are used in the creation of multimedia. However, their learning curve is steeper.
+This brief list is in a state of progress (will be maintained and updated during the course), and it is intended as a starting point, for a theoretical research on the intersection of media, space and perception.
+- Bolter, J-D. and Grusin, R. (2000) Remediation: understanding new media,Cambridge: MIT Press.
+- Fox, M. and Kemp, M. (2009). Interactive Architecture. New York: Princetion Architectural Press.
+- Bullivant, L. (2006) Responsive Environments, Architecture, Art and Design, London:V&A Publications
+- Coyne, R. (2010) The Tuning Place. Cambridge, Mass.: The MIT Press.
+Foucault, M. (1986) Of Other Spaces (trans. Jay Miskowiec), Diacritics 16(1), pp.22-27
+- Grau, O. (2003). Visual Art: From illusion to immersion, Cambridge: MIT Press.
+- Μanovich, L. (2002 ) The Language of New Media, Cambridge: MIT Press
+- Manovich, L. (2006) The poetics of augmented space, Visual Communication 5(2),pp. 219-240
+- Pallasmaa, J. (2005) The Eyes of the Skin, Architecture and the Senses. John Wiley: New York.

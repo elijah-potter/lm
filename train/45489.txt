@@ -1,0 +1,5 @@
+When the 28BYJ stepper is first powered up, its position is unknown. In addition, the motor does not rotate a specific angle per step; rather a full turn is often an unequal number of step pulses (e.g. it might take 2037.5 pulses per 360 degrees). Plus the motor gearbox can have indeterminate backlash.
+This positioning sensor / encoder enables:
+- The setting of an initial position when first powered up
+- The control of the motor’s position during operation
+- Greater accuracy of positioning

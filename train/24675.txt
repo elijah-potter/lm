@@ -1,0 +1,77 @@
+Steerable Parachute Research
+As many people who have chased balloons have discovered, finding
+exactly where a payload comes back to the earth is not a simple task.
+GPS telemetry has certainly revolutionized tracking and recovery, but
+it is still a pain if your payload ends up in the middle of a forest,
+lake, swamp, or other difficult-to-access area. Directing the descent
+of a payload to a predesignated landing area would greatly simplify
+The use of steerable parachutes on both manned and unmanned payloads
+is nothing new. However, commercial systems that accomplish spot
+landings of payloads are rather expensive, and also much heavier than
+our balloons can lift (they are usually designed to land heavy cargo
+dropped from aircraft). We therefore decided to research the idea of
+using a small steerable parachute system for directing our payloads'
+A wide number of design considerations must be made for whatever
+system is chosen. For the first testing prototype, I decided that
+rather than use the ram-air square parachute design favored by
+sky divers and most automated designs, I would try a hexagonal
+'parasheet' similar to what is used in model rocketry.
+I chose the parasheet design because of its simplicity and low cost
+to build. Also, with fewer shroud lines, the theory is that there
+is less probability of entanglement during deployment. The ability
+to flare the 'chute and a long glide path are benefits in sky diving,
+but are not needed in our balloon work (and in fact they may cause problems
+with drift during a long descent). The 'sheet I built for this test was
+about 40" in diameter, cut from a plastic garbage bag and attached to
+the gondola with lengths of 20 pound monofiliment fishing line.
+the parasheet a prefered direction of flight, I lengthened two of
+the shroud lines by about 2" as compared to the others. The
+length of these two longer lines were adjustable via a radio controlled
+servo in the test gondola. Thus, by varying the lengths of the
+two lines in flight from a radio transmitter, I should be able to
+steer the 'sheet during descent.
+On March 21, we conducted drop tests of the first prototype from a
+three story metal tower next to the parking lot at the UND Aerospace
+complex. This tower used to have a radar antenna mounted on it,
+and was very useful for the tests.
+Here are two shots of the payload during construction. The frame is a
+1" diamater pine dowel about 8" long. Screweyes at each end of the
+dowel serve as attach points for the fixed shroud lines and guides for
+the two adjustable ones. On the near side of the dowel at the middle
+are glued the radio receiver and power switch. The servo is glued
+on the far side opposite the receiver. The lever attached to the
+servo wheel is made from several layers of corregated cardboard. The
+eyelet on the end of the lever is a bent paperclip. All attachements
+were made with hotglue. The battery pack (4 AA cells, made in two groups
+of 2 cells) had not been added when these photos were taken.
+The completed gondola, mounted in its protective styrofoam cradle, is
+ready for drop testing.
+Here the test rig is being hung out over the edge of the tower with the aid of
+the "drop stick". The drop stick is a length of 1"x2" pine with a clothespin
+glued to one end. A length of string runs from the clothespin down the stick
+via screweyes. This allowed the test rig to be hung out away from the tower
+and dropped without anyone having to risk their safety by leaning over the
+railing. Since we only had about three stories to test the droped rig, we
+wanted to have the 'sheet deployed at the moment of drop (rather than
+rolling it up and throwing the rig off the tower).
+We conducted several drops during the first test. Due to payload weight and
+parasheet size, we only had about 3 seconds of flight time per drop to test
+the system. No fancy maneuvers were possible during these brief flights,
+but the parasheet did respond by turning the direction we expected it to
+when the appropriate shroud line was shortened by the servo. Pulling the
+right rear line made the rig spin right, the left line to the left, and
+keeping the controls centered the rig went fairly straight.
+These first positive results are encouraging. More testing needs to be
+done by dropping the system from a higher altitude (we plan to use a
+tethered balloon and a radio controlled release). The relativly small
+parasheet will be replaced with a larger one for future tests as well.
+We also need to determine what control inputs are needed to steer the
+system without having it spin wildly.
+The end goal will be to have the flight computer on a payload determine
+headding and direction via GPS and compass readings, and tell a servo to
+adjust the direction of descent by controlling the parachute. A designated
+landing site will be programmed into the computer before the flight, and
+the system will try to land the gondola on that site. If the system can
+be made to work, it will simplify recovery operations considerably.
+More updates to follow
+Return to the UND HABP webpage.

@@ -1,0 +1,25 @@
+The task of building mathematical models that represent real-world problems and using existing tools for solving such models is an ubiquitous task in computer science. Knowledge about such tools and algorithms allows one to weigh up the balance between how precisely we formalize the problem and how tractable the resulting model is.
+With an special emphasis on their application to concrete computer science problems, this course will review some of these mathematical models and algorithms. First of all, we will review the basics of (integer) linear and non-linear programming. Then, metaheuristic algorithms will be presented as an alternative to the previous methods for combinatorial optimization problems. Other mathematical elements with strong impact in computer science, such as graphs or computation and use of eigenvalues/vectors, will also be covered throughout the course.
+Person in charge
+Albert Oliveras Llunell (
+Marc Ruiz Ramírez (
+Technical Competences of each Specialization
+Computer networks and distributed systems
+CEE2.1 - Capability to understand models, problems and algorithms related to distributed systems, and to design and evaluate algorithms and systems that process the distribution problems and provide distributed services.
+CEE3.2 - Capability to use a wide and varied spectrum of algorithmic resources to solve high difficulty algorithmic problems.
+Generic Technical Competences
+CG1 - Capability to apply the scientific method to study and analyse of phenomena and systems in any area of Computer Science, and in the conception, design and implementation of innovative and original solutions.
+CG3 - Capacity for mathematical modeling, calculation and experimental designing in technology and companies engineering centers, particularly in research and innovation in all areas of Computer Science.
+CTR3 - Capacity of being able to work as a team member, either as a regular member or performing directive activities, in order to help the development of projects in a pragmatic manner and with sense of responsibility; capability to take into account the available resources.
+CTR6 - Capacity for critical, logical and mathematical reasoning. Capability to solve problems in their area of study. Capacity for abstraction: the capability to create and use models that reflect real situations. Capability to design and implement simple experiments, and analyze and interpret their results. Capacity for analysis, synthesis and evaluation.
+Modelling in various mathematical formalisms the problems arising in different computer science disciplines
+Becoming familiar with state-of-the-art tools used to solve various mathematical models
+Understanding the basics of the algorithms used for solving various mathematical models
+Eigenvalues and eigenvectors
+Basics on linear algebra. Eigenvalues, eigenvectors and their interpretation. Applications to computer science (clustering, graph layout, principal component analysis, page rank,...)
+(Integer) Linear Programming
+Basics on linear programming. Modelling examples. The simplex algorithm. Duality. Integer programming: branch-and-bound, cuts and branch-and-cut.
+Since the goal of the course is to provide the students with the necessary expertise to use different formalisms and tools to solve concrete problems, the teaching methodology will take that into account. Theory classes will always use motivating examples coming from computer science applications, with special emphasis given to practical issues. In these sessions, students will solve simple exercises that will be key ingredients of more complicated algorithms.
+In the laboratory sessions the students will become familiar with the systems that will then be used in their course project. In the development of the project the students will be supervised by the instructors.
+The final grade of the course will take into account:
+A) Practical work: the students, in small groups, will develop a course project. A variety of projects will be suggested by the instructors so that all specializations are represented. The project will amount to solve a concrete problem by using both (non)linear programming techniques and metaheuristics. Grading will be as follows:

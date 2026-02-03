@@ -1,0 +1,7 @@
+Hi every one, I am just a bigener in the field of java and having a problem that I am trying to solve the following: 1.Check if the first word starts with 'a' 2.Check if the first word starts with a vowel 3.Find the number of words in the String(given in question) starting with a vowel 4.After finding the number of words which starts with a vowel, retrive the found words and store them in an array and print The first three I have successfully solved which show in the following code but the fourth one I tried my best but failed I would request to please explain me to how to solve this
+[This message has been edited by Cindy Glass (edited October 25, 2001).]
+The code you posted got slightly mangled because the less than, and or greater than, sign in the for loops is read as html. You need to put a space before and after those symbols to not have them interpreted (I think). For the fourth problem - in the for loop for the third problem you will want to store the words, that have a vowel, in an array or vector. Then go back through that array or vector to print the words out. (Or you can print them out as you find them.)
+Please ignore post, I have no idea what I am talking about.
+Joined: Sep 29, 2000
+We started this conversation here Please register if you want to ask a question in this forum.
+"JavaRanch, where the deer and the Certified play" - David O'Meara

@@ -1,0 +1,44 @@
+Checkbox, linear scale, drop-down menu or data
+Insert formula into a document
+It is possible to insert your own calculations in a document so that it is generated automatically in the document. Here are the steps to configure your automatic calculations.
+1. When you add a number or data field, you can click on the pencil next to “Formulas”.
+❗Note that you can transform the data format.
+By default, they will have the format “Number”, but you can change them to:
+2. You can then configure a specific condition for your calculation, such as:
+Calculation for a specific sex;
+Based on the age;
+Without any particular condition.
+3. You can create your calculation in the same way as in Excel, using the following symbols: * / + -
+4. You can insert other fields contained in your document in this calculation. To do this:
+Enter the symbol “!” Followed by the name of your field.
+The software will automatically offer you the corresponding options.
+Once selected, the software will change what you entered to a unique key.
+Most common formulas
+Add checkboxes: COUNT([checkbox1],[Checkbox2],etc.)
+Round off: ROUND([element1]....)
+Enter only the largest number: MAX([element1],[element2],etc.)
+Enter only the smallest number: MIN([element1],[element2],etc.)
+zeroIfEmpty: Allows calculation, even if a box is not filled
+Insert client's age automatically: [A]
+If you want to total the checkboxes completed, add them up
+Checkbox checked = 1
+Checkbox not checked = 0).
+You can calculate the value of slider. (add, subtract, multiply or divide).
+Example of addition:
+Example of subtraction:
+Drop down menu
+You can calculate the value from drop-down menus. (add, subtract, multiply or divide).
+Example of multiplication:
+Example of division:
+Example of an Average:
+Check the document once created
+Go to a client's file (Test/Dummy).
+Create a “Document” type intervention.
+Verify that your formula behaves as desired.
+If this is not the case, you can return to edit the document in the administration.
+Do not hesitate to contact a Hexpert via the chat bubble for support.
+The most common reason for error messages is the inclusion of a special character that is not supported by the software. You can simply remove it in order to correct the error.
+Sometimes a negative measurement (which should be positive) creates an error message.
+If you want to create a custom data to do your calculation, click here to find out more.
+To learn more about creating custom documents, click here.
+To access the tutorial in our Academy, click here.

@@ -1,0 +1,10 @@
+A simulated experiment
+Basics of the so called time-focussing technique
+- Three intense neutron beams are extracted from a neutron guide by an assembly of three monochromators and are focused horizontally onto the sample. Each monochromator delivers a beam of distinct energy and, thus, of distinct velocity due to different Bragg-scattering conditions.
+- The neutron beams are pulsed by a Fermi chopper which allows the slowest (red) neutrons to pass through first and the fastest (blue) neutrons to pass through last. As a consequence, pulses of fast neutrons catch up with pulses of slower neutrons after the chopper.
+- The chopper speed can be adjusted in such a way that all three pulses of different energy arrive at the same time in the detectors.
+- Its merit is the increase of intensity by a factor of three which corresponds to the number of monochromators.
+Principle of time-of-flight spectroscopy
+- The interaction of neutrons with a sample changes potentially the velocity of the neutrons. Therefore, if neutrons are scattered by a sample, the time-focussing condition can not be accomplished in general.
+- Only neutrons of distinct final energies, for example neutrons which are elastically scattered and do not change their velocity, still meet the conditions of time-focussing determined by the corresponding chopper speed.
+- The energy which is exchanged between the neutron and the sample can be calculated from the difference in arrival time with respect to elastically scattered neutrons at the detector position. This is the principle of time-of-flight spectroscopy.

@@ -1,0 +1,74 @@
+While working in Excel, you might need to obtain the age of people from their ID cards. Keeping this in mind, this tutorial aims to explain 4 quick methods on how to calculate age in Excel from ID number.
+Download Practice Workbook
+4 Methods to Calculate Age in Excel from ID Number
+Admittedly, Microsoft Excel does not offer any built-in functions to calculate age however, we can combine a few functions to convert the date of birth to age.
+Let’s consider the following dataset (in B4:C14) with the Name of people and their ID Numbers. Generally speaking, the first 6 digits in ID Numbers represent the date of birth of that person in the format yy-mm-dd.
+Fortunately, we can extract the date of birth from the ID Numbers to convert them to Age in years. So, let’s explore these methods one by one.
+1. Calculate Age from ID (Step-By-Step Method)
+The first method combines various Excel functions to calculate age from ID numbers in an easy and step-by-step process.
+1.1 Calculate Age from ID with MID Function
+As the title suggests, Excel’s MID, TODAY, and INT functions are used in this method.
+- Firstly, add a Date of Birth column and insert this formula.
+Here, the C5 cell represents the ID Number (text argument), and the next two numbers represent the start_num and num_chars arguments respectively. In this formula, the MID function extracts the first 6 digits from the ID Number text.
+- Secondly, insert a Current Date column and type in the TODAY function which returns the present date.
+- Thirdly, calculate the Age in years by calculating the difference between the two dates and dividing by 365 days.
+- Additionally, the INT function rounds the Age to the nearest whole number.
+1.2 Using DATE Function to Extract Age from ID
+This method is similar to the previous, applying Excel’s DATE, LEFT, and INT functions.
+- Firstly, add a Date of Birth column and insert this formula.
+Here, the C5 cell represents the ID Number (text argument).
+- Then, add a Current Date column and apply the TODAY function which returns the present date.
+- Next, calculate the Age in years by calculating the difference between the two dates and dividing by 365 days.
+Read More: Excel formula to Calculate Age on a Specific Date
+2. Compute the Age from the ID Number Directly
+If the first method is too much work then our next calculates the age directly without the need for extra columns. Let’s see it in action.
+2.1 Calculate Age Using DATEDIF and IF Functions
+Computing the age directly blends the DATEDIF, LEFT, and the IF functions respectively, in this example, the C5 cell refers to the ID Number (text argument).
+- In this formula, the MID function obtains the first 6 numbers from the ID Number in the C5 cell.
+- Next, the IF function checks whether the year is less than or greater than the current year.
+- Lastly, the DATEDIF function subtracts the birth year from the present year and returns the Age.
+2.2 Calculate Age with DATEDIF and DATE Functions
+Our next method simplifies the expression even more with help of the DATE function, while, directly determining the age of the person.
+In this expression, the C5 cell represents the ID Number (text argument), while, the two following numbers refer to the start_num and num_chars arguments respectively.
+- Initially, the DATE function takes in 3 arguments (year, month, day) which are provided by the MID function.
+- Finally, the DATEDIF function returns the Age.
+3. Convert ID Number to Age with Data Tools
+Are you worried about writing complex expressions and combining functions? Then our third method is the answer to your prayer!
+Step 01: Navigate to the Data Ribbon
+- Firstly, add a column (D5:D14) titled Date of Birth and copy & paste all ID Numbers in that column.
+- Next, select all the cells in the column and click the Text to Columns button.
+Step 02: Extract the Date of Birth from the ID Number
+- Secondly, a Convert Text to Columns Wizard appears.
+- Now, in step 1, select the Fixed width button as all ID Numbers have the same number of digits.
+- Then, click to drop the cursor just after the 6th digit from the left side, as depicted in the image below.
+- Eventually, select the Date format from the drop-down and press Finish to close the dialog box.
+Step 03: Calculate the Age
+- Thirdly, add a column named Current Date (E5:E14) and enter the TODAY function to get the present date.
+- In the last step, make another column for Age (F5:F14) and compute the difference between the two dates, and divide by 365 days to get the Age in years.
+Read More: How to Calculate Age from Birthday in Excel (8 Easy Methods)
+4. Using VBA Code
+If you’re wondering, is there a way to define a custom function to compute Age from ID Number? Then VBA has you covered. Before we start, add a Date of Birth column and insert this formula.
+Step 01: Open the VBA Editor
+- To begin, go to the Developer tab and then to Visual Basic.
+Step 02: Insert the VBA Code
+- Secondly, insert a Module where you’ll paste the VBA code.
+- For your ease of reference, you can copy the code from here and paste it into the window as shown below.
+Public Function calculate_age(birth_date As Date, Optional result_index As Integer = 0) As Variant today_day = Day(Date) today_month = Month(Date) today_year = Year(Date) birth_date_day = Day(birth_date) birth_date_month = Month(birth_date) birth_date_year = Year(birth_date) If birth_date_month < today_month Then age = today_year - birth_date_year ElseIf birth_date_month = today_month Then If birth_date_day <= today_day Then age = today_year - birth_date_year Else age = today_year - birth_date_year - 1 End If Else age = today_year - birth_date_year - 1 End If Dim output_array(25) As Variant output_array(0) = age output_array(1) = Date output_array(2) = today_day output_array(3) = today_month output_array(4) = today_year output_array(5) = birth_date_day output_array(6) = birth_date_month output_array(7) = birth_date_year calculate_age = output_array(result_index) End Function
+Step 03: Use the Function
+- Thirdly, close the VBA window and return to your worksheet.
+- Finally, type an Equal sign followed by the calculate_age function, and enter a cell reference (D5) containing the date of birth to get the age.
+Read More: Excel VBA: Calculate Age from Date of Birth:
+I hope these useful methods mentioned above will answer your queries on how to calculate age in Excel from ID number. If you have any questions or feedback, please let me know in the comment section. Or you can check out our other articles on the Exceldemy website.
+HI. WHAT IF THE ID NUMBER IS STARTED WITH 00 OR 01, PERSO THAT BORN AFTER YEAR 2000?
+Thank you for your question. The Exceldemy team has created an Excel file with the solution to your question. Please provide your email address here, we will send it to you in no time.
+Otherwise, you can just follow the steps below.
+Suppose we want to use the MID Function as shown in Method 1. Now, we want to determine the age of a person whose ID Number starts with 00 (which refers to the Year 2000) but that person was born after the Year 2000.
+• Firstly, let’s consider Mary with the ID Number to be ‘0005255800012.
+• As a note, Excel removes any leading zeros from numbers so we have inserted an apostrophe comma to store the ID Number as text.
+• Secondly, let’s assume Mary was born in the Year 2003.
+• Now, on the Date of Birth column insert the formula given below.
+• You should see the result as 25/05/03.
+• Next, AutoFill the Current Date and Age columns.
+• The value of Age should be 19 years.
+Similarly, we have also included a second example for Julian with the ID Number ‘0108295800012 but he was born in the Year 2006.
+Please feel free to provide any further feedback.

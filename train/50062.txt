@@ -1,0 +1,10 @@
+Normally, pressing the power button once initiates a shut-down in Windows 7.
+If any programs are still running that will not quit (e.g. waiting for a dialogue response), Windows overlays the screen with a dialogue allowing the user to cancel the shut-down.
+I've just noticed that on two different systems here, using this cancel option disables the shut-down via power button. The power button can still be used to kill the system by holding it for a few seconds, using the Start menu button to shut the PC down still works as well.
+Steps to reproduce:
+- Open Notepad, type a few characters. Do not save.
+- Press the computer's power button.
+- Wait until the dark screen appears.
+- Press cancel.
+- Press the power button again. Notice how nothing happens.
+What is the reason for this behaviour, and can it be disabled to always try and shut down the PC when the power button is pressed?

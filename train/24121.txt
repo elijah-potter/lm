@@ -1,0 +1,18 @@
+Video: Slime Mold Engineers the Motorways of Spain
+For an example of sophisticated behavior in seemingly simple creatures — or, conversely, to put human engineering in a new perspective — witness the lowly slime mold.
+Set on an agar plate shaped like the Iberian peninsula, with piles of oat flakes representing cities, the growth patterns of these social amoebae successfully reconstructed the road systems of Spain and Portugal.
+The experiment, currently in Biosystems, is the latest in a series of slime-mold studies by University of West England computer scientist Andrew Adamatzky, who is fascinated by how Physarum polycephalum‘s foraging abilities can be represented in high-powered computational terms.
+“Physarum is renowned for building optimal transport networks, which minimize distance of cytoplasmic transfer but also span as much sources of nutrients as possible,” said Adamatzky. “Ideally, human-built roads should fulfill the same criteria.”
+Adamatzky’s road-building experiments are steps toward refining Physarum as a problem-solving tool, cheaper than computers and even other alternatives to silicon, such as computational systems of chemical diffusion and gas discharge. Among the arcane mathematical challenges solved in Physarum protoplasm are plane tessellations, hierarchical planar proximity graphs, logical computing, process algebra and shortest-path problems.
+In earlier studies, Adamatzky put Physarum on maps of the Netherlands and United Kingdom. (The latter study bore the inimitable title “Road planning with slime mould: If Physarum built motorways it would route M6/M74 through Newcastle.”) Other slime-mold researchers have mapped Tokyo.
+Each region, however, is different, with alternative networks of cities roads shaped by varying social and geographical features. The Iberian Peninsula was especially interesting to Adamatzky because, unlike the Netherlands and Britain, its largest city is in its center rather than on the coast.
+In the latest study, co-authored with Polytechnic University of Madrid computer scientist Ramon Alonso-Sanz, Physarum started out in Spain’s capital of Madrid. From there, it traveled counterclockwise around the peninsula — an unexpected path, as the researchers had expected it to simply branch out from the center.
+In the end, the slime mold formed networks similar to Spain and Portugal’s roadways, but with a notable difference. Madrid and Valladolid, a city in north-central Spain, were kept in separate networks; putting them together made nutrient transport less efficient. The real-world transportation linkage of those cities is “rather an artificial, or man-made feature, than an intrinsically biological phenomenon,” wrote the researchers.
+Adamatzky and Alonso-Sanz then compared their Physarum network to that built 2,000 years ago by the Romans. Of 11 major Roman roads, slime mold followed seven.
+On large scales, at the level of crowds and populations, “there is not too much difference between people and slime mold,” said Adamatzky.
+Video: Slime mold on a map of the Iberian Peninsula (Andrew Adamatzky and Ramon Alonso-Sans).
+- Searching for Network Laws in Slime
+- Complexity Theory in Icky Action: Meet the Slime Mold
+- Slime Molds Are Earth's Smallest, Oldest Farmers
+- Slime Mold Grows Network Just Like Tokyo Rail System
+Citation: “Rebuilding Iberian motorways with slime mould.” Andrew Adamatzky and Ramon Alonso-Sanz. Biosystems, in press.

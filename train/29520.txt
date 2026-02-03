@@ -1,0 +1,24 @@
+At boot time, the X terminal retrieves files (including its X server software) from a remote host on the network. After the terminal boots, the X server software will control input, display, local clients and X protocol communication. The X server software is executed on the X terminal and therefore does not have to be software compatible with the host on which it resides.
+Together, tftp (trivial file transfer protocol) and BootP (boot protocol server) are used on the remote host to allow the X terminal to retrieve its X server software and configuration files over the network. Both services are typically started by inetd (Internet Daemon).
+After the X terminal is powered up, if it is configured to boot from the network, it will send out a broadcast message using BootP (TCP/IP bootstrap protocol). This boot message will contain the X terminal's hardware (Ethernet) address which is used by the boot host to respond to the boot request.
+When a boot request is received by the remote host, inetd (listening on a port designated in /etc/services) starts the BootP daemon specified in /etc/inetd.conf.
+In file inetd.conf, create or uncomment lines that refer to TFTP and BootP. The final argument of the tftpd entry in the example below is the path of the directory containing the files required by the X terminal. Although directory names are not mandatory, for security reasons they should always be present as tftp access will then be restricted to files in specified directories.
+From a sample file /etc/inetd.conf:
+# tftp service is provided primarily for booting. Most sites # run this only on machines acting as "boot servers". tftp dgram udp wait root /usr/sbin/tcpd /usr/sbin/in.tftpd /usr/X11/lib/X11/ncd/ bootps dgram udp wait root /usr/sbin/tcpd /usr/sbin/in.bootpd
+Upon activation, the BootP server daemon on the host will then read its database file /etc/bootptab. An entry for the X terminal must be placed in this file. Each entry contains a set of tags separated with ':' characters. The host name must be the very first tag in an entry.
+Useful bootptab tags:
+Bootfile home directory (eg /usr/X11/lib/X11/ncd/).
+Address of the X terminal (eg 10.0.0.1).
+Subnet mask (eg 255.0.0.0). To understand the use of the subnet mask and other IP networking principles, consult the Linux NET-3 (networking) HOWTO document.
+IP Address of gateway (eg 10.0.0.1).
+Hardware type - Ethernet in this example.
+Hardware address of X terminal (6 byte Ethernet address)
+According to the bootptab UNIX man page, the 'ha' tag must be preceded by the 'ht' tag. The X terminal's Ethernet address is displayed when the terminal is first powered on. The address appears as a series of 6 double digit hex numbers separated by colons (e.g. 00:00:A7:12:26:19).
+Table continuation or label of another entry in the BootP database. See the example below.
+IP address of domain name server (eg 10.0.0.3). Not required if DNS is not used for hostname resolution.
+Name of X terminal boot file (Usually the terminal model is used as the X server file name eg Xncd19r).
+The following is an example of the Boot protocol server database file, /etc/bootptab. The character '\' is used to escape the end-of-line character.
+# This is an entry (here given the name default) # with information common to all BootP clients default:hd=/usr/X11/lib/X11/ncd/:\ ds=10.0.0.3:\ sm=255.0.0.0:\ gw=10.0.0.1: # X terminal entry with hostname myxterm # Notice the tc tag reference to the entry default myxterm:ht=ethernet:\ ha=0x0000a7122619:\ ip=10.0.0.2:\ tc=default:\ bf=Xncd19r:
+When a matching entry for the hardware address in the boot request is found in the bootptab file, a response is sent by bootpd with the corresponding IP address from the matching entry. File transfer can then take place over IP using TFTP.
+A hostname can be assigned to the X terminal by creating an entry on the boot host in the file /etc/hosts. This file is used to map hostnames to IP addresses. In the this example, the X terminal (address 10.0.0.2) has been assigned the hostname 'myxterm'.
+10.0.0.1 linuxhost # The boot host 10.0.0.2 myxterm # X terminal

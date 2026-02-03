@@ -1,0 +1,30 @@
+Audio Amplifier Chips Information
+Audio amplifier chips are used in circuits used to process audio signals.
+Class A devices feature a design in which the output stage passes current at all times, even when the input stage is idle.
+Class B devices do not pass current when the output device is idle.
+Class AB audio amplifier chips combine Class A and Class B operation.
+Class C designs are used for radio frequency (RF) transmission.
+Class D designs have output devices that are switched on and off at least twice per cycle.
+Class E, Class F, Class G, and Class H audio amplifier chips are also commonly available.
+Single in-line package (SIP)
+Dual in-line package (DIP)
+Ceramic DIP (CDIP)
+Plastic DIP (PDIP)
+Small outline IC (SOIC)
+Shrink small outline package (SSOP)
+Small outline package (SOP)
+Chip scale or chip size package (DSP)
+Mini small outline plastic package (MSOP)
+Small outline transistor (SOT)
+Power small outline package (PSOP)
+Thin shrink small outline L-leaded package (TSSOP)
+Quarter size outline package (QSOP)
+Plastic leaded chip carrier (PLCC)
+Audio amplifiers carry performance specifications such as operating temperature, output power, supply voltage, and supply current.
+Total harmonic distortion (THD) is also an important consideration. With audio amplifier chips, TDH is a measure of the purity of a signal. This value is defined as the ratio of the sum of the powers of harmonic components to the power of the fundamental.
+Bandwidth, another important consideration, refers to the ability of an audio amplifier chip to provide a maximum output voltage swing with increasing frequency.
+Features are an important consideration when selecting audio amplifier chips. Some products have an embedded reference voltage or on-chip protection against electrostatic discharge (ESD). Others feature rail-to-rail output or rail-to-rail input.
+Single supply devices can operate with only one power supply. Audio amplifier chips with an embedded control circuit shut down the device when the temperature exceeds a predefined limit. Audio amplifier chips with embedded current limiters are also commonly available.
+In Europe, ICs must meet the requirements of the Restriction of Hazardous Substances (RoHS) directive.
+CEA-490 - This standard defines test conditions and test measurement procedures for determining various performance characteristics of single-channel and multi-channel power amplifiers, pre-amplifiers, integrated amplifiers, receivers, and tuner/pre-amplifiers that use AC mains power.
+Read user Insights about Audio Amplifier Chips

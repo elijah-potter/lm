@@ -1,0 +1,182 @@
+VB Migration Partner
+VB6 vs VB.NET language
+VB6 vs VB.NET controls
+VB6 Bulk Analyzer
+Overview of the .NET Framework
+An overview of the main components and features of the .NET Framework.
+Introduction to the .NET Framework Class Library
+An introduction to the many types provided by the .NET Framework, with examples on how they can help you access system functionality and expedite the development process.
+Object-Oriented Programming in Visual Basic
+See how easy it is to create your own objects from the classes you define, and to use objects to simplify coding and increase object reuse.
+Links to articles that describe how to use Exception Handling in VB.NET.
+Multithreading in Visual Basic .NET
+Links to articles that describe how to use multithreading.
+Covers some of the issues associated with creating and using COM objects with VB.NET.
+Using early binding and late binding in Automation
+An article that explains the types of binding available to Automation clients, and weighs both sides of each method. Automation is the basis for most cross-component communication used in languages such as Visual Basic or Visual Basic for Applications, and has become a normal part of most programs.
+A checklist of guidelines and best practices
+by Francesco Balena
+A 30-page Word document with a summary of 700+ best practices you can use to create bullet-proof .NET applications. (Registration required)
+Improving String Handling Performance in .NET Framework Applications
+by James Musson
+A comparison of using standard string concatenation and one of the classes provided by the .NET Framework specifically for this task, System.Text.StringBuilder.
+Object-Oriented Programming in VB .NET Learning Guide
+A guide to articles, tips, book excerpts, and tutorials that focus on general object-oriented programming best practices and on the four main characteristics of OOP: abstraction, encapsulation, polymorphism and inheritance.
+VB.NET official newsgroup
+The place where you can ask questions about VB.NET.
+Visual Basic .NET Enhancements Compared to Visual Basic 6.
+This e-book by
+David Ross Goben
+focuses on many differences between VB6 and VB.NET and in many cases it goes much deeper than the other articles mentioned in this page. It’s not the best place to start from when learning VB.NET, but it’s surely a must-read for the serious developer facing a complex migration project. (148 pages).
+Product Family Life-Cycle Guidelines for Visual Basic 6.0
+Information regarding the availability of support for the Visual Basic 6.0 family of products. A must-read to assist customers and partners with product planning and IT decisions.
+Support Statement for Visual Basic 6.0 on Windows® Vista™
+Support page dedicated to developers who need to deploy and support VB6 applications on Windows Vista.
+Upgrade Resources for Visual Basic 6.0 Developers
+Resources on how to upgrade from Visual Basic 6.0 to Visual Basic .NET and Visual Basic 2005, including best practices and procedures.
+What's in Visual Basic 2005 for the Visual Basic 6.0 Developer
+by Scott Swigart
+Review new changes in version 2.0 of the Microsoft Visual Basic .NET framework that make the switch for Visual Basic 6.0 developers an easy and functional move. Article containing tips and demonstrative videos.
+Free Book - Upgrading Microsoft Visual Basic 6.0 to Microsoft Visual Basic .NET
+A free book from Microsoft about upgrading Visual Basic 6 applications to Visual Basic .NET, covering all upgrade topics from APIs to ZOrders.
+Upgrading Visual Basic 6.0 Applications to Visual Basic .NET and Visual Basic 2005
+An overview of the ‘Upgrading Visual Basic 6.0 to Visual Basic .NET and Visual Basic 2005’ guide. This article provides proven patterns and practices to reach functional equivalence with a minimal amount of effort and cost and guidance for common advancements after the application is running on the .NET framework.
+Preparing Your Visual Basic 6.0 Applications for the Upgrade to Visual Basic .NET
+Recommendations for Microsoft Visual Basic developers planning to upgrade their applications to Visual Basic .NET. It includes information on the Visual Basic .NET Upgrade Tool and discusses architectural guidelines for enabling a smooth upgrade from Visual Basic 6 to Visual Basic .NET.
+VB6 Migration Strategies
+by Nick Page
+A PowerPoint presentation which includes issues to consider before you move your applications to .NET and some common question about migration process.
+Microsoft Win32 to Microsoft .NET Framework API Map
+Quickly find which .NET Framework type or method provides functionality similar to a given Windows API call. (Note: If you use VB Migration Partner you don’t need to browse this list, because our tool automatically generates a warning for each Declare statement that has a .NET Framework class or method counterpart and, in some cases, it performs the replacement automatically.)
+VB Fusion - Extend Your Visual Basic 6.0 Applications
+A series of resources that can be useful for developers who wish to take advantage of Visual Basic .NET from Visual Basic 6.0.
+Best Practices to Use Visual Basic 6 and Visual Basic .NET Together
+by Scott Swigart
+An article about using .NET class libraries from Visual Basic 6 through an interoperability layer, known as a Client Callable Wrapper (CCW).
+Extending Visual Basic 6 ActiveX EXEs with Visual Basic 2005 and the Interop Forms Toolkit
+by Ed Robinson
+An article about techniques for modernizing and upgrading Visual Basic 6 ActiveX EXEs with Visual Basic 2005 using the Interop Forms Toolkit.
+Visual Basic 6 Asynchronous File I/O Using the .NET Framework
+by Scott Swigart
+Learn how to pass information to a background thread from an existing Visual Basic 6 application and how the results of the background work can then return from the background thread to the Visual Basic 6 application.
+Converting a Data-Oriented Application from Visual Basic 6 to Visual Basic 2005
+by Ken Getz
+A series of articles that shows you how to migrate your data-oriented application from Visual Basic 6.0 to Visual Basic 2005.
+Sharing ADO Recordsets Between Visual Basic 6 and Visual Basic 2005
+by Ed Robinson
+Learn how to pass an ADO recordset from a Visual Basic 6 Windows application to a Visual Basic 2005 Windows application, update the recordset in Visual Basic 2005 and return the updated recordset to the original Visual Basic 6 application.
+Automatically Updating Visual Basic 6 Applications
+by Scott Swigart
+This article shows how you can add automatic updating functionality to your existing Visual Basic 6.0 applications, using features now available with the .NET Framework 2.0.
+Can I Interest You in 5000 Classes?
+by Scott Swigart
+Learn how to use everything included in the .NET Framework from Visual Basic 6 by creating simple wrapper classes.
+Deploying Contemporary Applications with ClickOnce
+by Bill Sempf
+An article that looks at ClickOnce deployment from the perspective of a Visual Basic 6.0 developer, and compares it to Visual Basic 6.0 deployment methods.
+Should You Migrate VB6 Apps to .NET?
+by Patrick Meader
+An interview to Federico Zoufaly, executive vice president at ArtinSoft, the company that provided the VB migration wizard in Visual Studio .NET, who discusses the challenges facing VB6 developers who want to migrate to .NET.
+Find out the future of black-belt VB .NET
+by Francesco Balena
+Discover the benefits of migrating your apps to VB .NET, in an interview with Francesco Balena.
+12 Considerations for .NET App Migration
+by Jonathan Goodyear
+An overview of the issues to consider before you move your applications to .NET.
+Refactor Your Way to Migration Success
+by Danijel Arsenovski
+Top ten refactorings for VB6-.NET migration to create easier-to-read and far more robust .NET applications through refactoring.
+Overview of Changes from VB6 to VB.NET
+by Bipin Joshi
+This article discusses the important language changes from VB6/VBScript to VB.NET.
+Vista Versus VB
+by Karl E. Peterson
+Microsoft pledges to support the VB 6.0 runtime via Vista. Is it really true? Discover it in this article.
+Evaluate Your .NET Migration Risks
+by Mark Driver
+Know your risk tolerance and plan the right timeframe for your move to the .NET Framework and Visual Studio .NET applications.
+The Hidden Costs of .NET
+by Joe Wilcox, CNET News
+A commentary of a Gartner study, according to which converting legacy applications to .NET could cost as much as half of the original development cost. (Well, this was before VB Migration Partner was released…)
+Visual Basic .NET migration costs more than expected, Gartner says
+by George Lawton
+Another commentary of a Gartner study. A sentence from this article: “Migrating from Visual Basic 6 to Visual Basic .NET could cost companies on the order of $43,000 per developer, research from the Gartner Group indicates”.
+CBCR Ports Critical App to .NET
+by Lee Thé
+A case study of Central Bank of Costa Rica (CBCR), which embarked on migrating its existing n-tier in-house app to .NET.
+Converting VB6 to VB.NET
+by Dennis Hayes
+A three-part article with a thorough discussion of what the Upgrade Wizard can do, how you can prepare your VB6 code for a smooth migration to VB 2005, and several interesting techniques that can help you solve recurring migration problems. The sections on databases and ASP-to-ASP.NET are especially interesting.
+VB.NET Migration: First Steps - Expert Webcast
+by Keith Pleas
+Keith Pleas shows strategies and tactics to achieve a successful .NET migration (Registration required).
+VB6 to VB.NET Migration: A Conversation with Jay Roxe
+by Scott Swigart
+Scott Swigart talks with Jay Roxe, Microsoft Product Manager for Visual Basic, about VB6 to VB.NET migration.
+Why would a VB 6.0'er consider VB.NET?
+by Paul Vick
+A video interview with Paul Vick, technical lead on the Visual Basic team. Paul talks about the trials and tribulations of learning VB.NET from the VB6'er point of view.
+Quiz: What do you know about VB 6 migration?
+See it by yourself, by answering the questions in this quiz.
+SSW Rules to Better VB6 Migration to .NET
+by Peter Ahn
+A series of best practices for all developers involved in migration projects.
+Migration Tips from VB 6 to VB.NET
+An article that illustrates some tips to consider when converting VB6 applications to VB.NET.
+Migrating VB6 to VB.NET Safely
+by Philip Munce
+A bunch of practical suggestions to consider when migrating to VB.NET.
+Visual Basic 6 to Visual Basic 2005 migration: Tips for getting started
+by Brian Eastwood and Jack Vaughan
+A clear view on the challenges you face when switching to the .NET Framework.
+by Mark E. Juras
+This article describes how to manage changes in runtime components and architecture during a migration.
+Navigating your way through Visual Basic 6.0 to Visual Basic.NET Application Upgrades
+This 62-page e-book by
+David Ross Goben
+is one of the best collection of problems & solutions you can find on the Internet, with tons of detailed examples and code samples. It is obviously based on first-hand experience of the author with Microsoft Upgrade Wizard, and the solutions he proposes are valid and functional. Interestingly, though,
+the problems David found in his migration projects are automatically fixed by VB Migration Partner.
+Artinsoft’s migration guide
+A comprehensive FAQ for the Upgrading Visual Basic 6.0 to Visual Basic .NET and Visual Basic 2005.
+Visual Basic Upgrade Companion vs. Code Advisor
+A comparison of two free migration tools.
+Abandoning the Fantasy of VB Migration Wizardry
+by Lori Piquet
+This article examines the pros and the cons of automatic migration tools and why a few developers have been disappointed by the Upgrade Wizard included in Microsoft Visual Studio.
+(It would be interesting to check Lori’s opinion after we release VB Migration Partner…)
+Realities Of Upgrading Large Real World Applications
+Article which answers to some of the most common questions about upgrading.
+Upgrading a Visual Basic® Application to .NET: The e-volutionVisualizer Example
+A migration case study using Artinsoft’s Visual Studio Upgrade Wizard.
+Migrating Away From Compliance Quicksand
+by Juan Antonio Pastor
+This white paper illustrates the Sarbanes-Oxley Act (SOX) compliance and explains how organizations can ensure ongoing certification by migrating their legacy finance applications to a modern IT platform.
+Automatically Translate your .NET resource files with Google Translate
+By B. Satishkumar.
+This article shows how to build an application to translate .NET resource files to other locales using Google Translate.
+Francesco Balena on VB6 migration’s group on
+Microsoft Corp’s official case study
+of a VB6 conversion using VB Migration Partner.
+Code Architects and its partners offers remote and onsite
+Subscribe to our free newsletter for useful VB6 migration tips and techniques.
+To learn more about your VB6 applications, run
+on your source code and
+the generated text file. You will receive a detailed report about your VB6 applications and how VB Migration Partner can help you to quickly and effectively migrate it to .NET.
+Get free advice
+A fully-working, time-limited Trial Edition of VB Migration Partner allows you to test it against your actual code
+Get the Trial
+The price of VB Migration Partner depends on the size of the VB6 application, the type of license, and other factors
+Request a quote
+Migrating a VB6 application in
+10 easy steps
+VB Migration Partner with Upgrade Wizard
+Feature Comparison Table
+Feedback from Apogeo, Italy
+VB Migration Partner will support Visual Studio 2012
+[EVENT] Forthcoming webcast on VB6 migration to VB.NET and C#
+[NEW RELEASE] VB Migration Partner 1.50 Public Beta with C# support is available!
+Happy New Migration Year
+New KB articles about version 1.34
+All Francesco Balena’s posts
+Code Architects S.r.l.
+© 2013 - all rights reserved

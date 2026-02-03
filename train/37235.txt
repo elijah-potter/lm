@@ -1,0 +1,54 @@
+PostgreSQL Delete All Rows Tutorial
+Introduction to the PostgreSQL delete all rows tutorial
+When you’re managing data in PostgreSQL, there are times when it’s better to delete the contents of a table rather than using the
+DROP TABLE command. If you want to retain the column schema for the table for future use, it’s preferable to delete all the rows in the table and truncate the table. In this article, we’ll explain how to connect to PostgreSQL and delete all rows in a specific table.
+Prerequisites to using PostgreSQL and Node.JS
+Before we attempt to use PostgreSQL to delete all rows in a table, it’s important to review the prerequisites for this task:
+You’ll need to have PostgreSQL installed on your machine. You can check if the status is
+activeusing the command
+service postgresql status.
+You’ll also need to have
+psqlinstalled on your machine. To confirm that this command-line interface for Postgres is installed and running, use the command
+Accessing the PostgreSQL using the ‘psql’ command-line interface
+We’ll be using following command to access a PostgreSQL database on the localhost server using
+You will be prompted to enter a password. After you enter it, type the following command to access your specific database:
+Again, you’ll be prompted for the user’s password. Enter it and press RETURN.
+Backing up the PostgreSQL table records
+Keep in mind that the
+psql commands we’ll be executing in this article cannot be undone. It’s important to check your records carefully before you delete them. You may even want to back up your table and its records before proceeding with this tutorial.
+You can use the following SQL statement to copy the table you’d like to delete:
+The response will include the
+SELECT SQL keyword with an integer value representing the number of records copied over from the old table that we’ll be using in our
+TRUNCATE TABLE examples.
+Postgres ‘TRUNCATE TABLE’ keywords
+The easiest way to delete all rows in a table is to use the
+TRUNCATE TABLE command.
+In the following example, we see how to truncate a table to remove its records while retaining the column schema:
+When you execute the above SQL statement, you’ll receive a response of
+TRUNCATE TABLE. If you then try to execute a
+SELECT statement to return all of the rows, it will only return the column schema for the table:
+id | str | INT | bool
+The ‘DELETE’ statement in PostgreSQL
+TRUNCATE is generally faster and easier, the
+DELETE statement in PostgreSQL is preferable for removing only records that match certain conditions. You can use the SQL
+WHERE clause to specify the exact criteria that will be used to identify records that will be deleted.
+The following syntax is used to perform a
+DELETE with a
+WHERE clause to remove targeted records from a table:
+In the example shown below, we delete specific records from an example table called “
+students” where the record’s ID is less than or equal to the integer value
+If no records meet our conditions, then psql will return the following:
+Delete all of the Postgres table records by a matching condition
+Since our hypothetical “students” table contains only student IDs with a value greater than zero, we could execute the following SQL statement to delete all of the table’s records:
+This statement should return a result that looks like this:
+If you try to use the
+SELECT statement after deleting all the records, the output will look like this:
+WARNING: Remember that the
+TRUNCATE SQL statements shown in this tutorial are irreversible. Only test these SQL statements on table data that you’re absolutely sure you won’t miss.
+Conclusion on the PostgreSQL delete all rows tutorial
+When you’re done using a table in PostgreSQL, you may not always want to
+DROP the entire table. If you’d prefer to delete the contents of a table while retaining its column schema, you can use the
+DELETE FROM and
+TRUNCATE TABLE commands to accomplish the task. In this article, we looked at a few examples where we connected to PostgreSQL and deleted all rows in a table. Using these examples, you’ll be able to remove records from your own PostgreSQL tables without destroying the table schema.
+Pilot the ObjectRocket Platform Free!
+Try Fully-Managed CockroachDB, Elasticsearch, MongoDB, PostgreSQL (Beta) or Redis.Get Started

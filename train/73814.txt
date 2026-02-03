@@ -1,0 +1,8 @@
+How to Write Code in New HTML5
+There's more than just new semantic elements in HTML5, which you can use to design websites to be displayed on iPhone and iPad as well as computer monitors. HTML5 merges HTML 4 and XHTML. HTML5 has two main versions: HTML5 and XHTML5. XHTML5, as you might expect, follows the rules of XML.
+HTML5 adds many new tags to the web designer’s toolkit, including the new video and audio tags. These new multimedia tags make it possible to add a video stream or an audio stream directly to a web page without requiring that your users have a plug-in.
+Before you start creating your site structure in HTML5, knowing which web design tools support this emerging standard is helpful:
+Text editors: You can write HTML code manually in any text editor, including NotePad, SimpleText, or WordPad. Though this method isn’t the easiest, it enables you to create the code exactly as you like.
+HTML editors: If you use an HTML editor, such as BBEdit or Adobe Dreamweaver, as shown in the figure, you find many features that make it faster and easier to write and test your code.
+Most HTML editors haven’t quite caught up with HTML5 yet, though, so your HTML editor of choice may not offer all the tags covered in this chapter and you may see error messages if the HTML editor you’re using doesn’t support these tags yet.
+Dreamweaver version CS5.5 and later includes special features for designing and previewing HTML5. If you use Dreamweaver version CS3, CS4, or CS5, download extensions that add HTML5 functionality from the Adobe exchange server.

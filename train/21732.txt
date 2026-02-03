@@ -1,0 +1,21 @@
+How do you prevent a hyphenated line break?
+Use the WORD JOINER Unicode character on either side of your hyphen, or em dash, or any character. So, like so: — This will join the symbol on both ends to its neighbors (without adding a space) and prevent line breaking.
+Where does the hyphen go in a line break?
+If you must hyphenate at the end of the line, you should break hyphenated words on the hyphen point and compund words between the two componant words (Thus “Twenty- /n* one” and “Fire- /n* truck”). But again, computers have rendered this mostly dead.
+How do I keep a hyphenated word together in word?
+You need a “soft hyphen” a.k.a. “nonbreaking hyphen.” To put one of those babies in, just delete the hyphen you already have and, with your cursor still in place between the words you want hyphenated, press CTRL-SHIFT-HYPHEN (yes, that’s all at the same time, so you’ll need a little coordination to pull this off).
+Why is my text moving to next line in word?
+If text moves to the next line when you press Tab, it usually means that too much text has been typed, so that it misses the tab stop and moves to the next default tab stop (which might be on the next line of text). For more on all this, see http://word.mvps.org/faqs/formatting/SettingTabs.htm.
+Why are my words cut off in word?
+Case 1. The line spacing of your text may be set to an exact height. When you set the line spacing to Exactly and select a measurement that is equal to or less than the height of the font, underscore characters may not be displayed and characters that have an ascender, descender, or an umlaut may be cut off.
+What is it called when a word is split between two lines?
+Hyphenation (properly called word division) is breaking long words between lines. The purpose of hyphenation is to reduce the white space between words.
+Why are my words running off the page in word?
+Typically, this might happen if paragraphs are set with a negative indent which exceeds the page margin. If you have done this with local formatting, you can resolve it by selecting that content and pressing Ctrl-Q. If you have done it with style formatting, you can modify the relevant style definition.
+How do you use a hyphen in a sentence break?
+Use a Pair of Em-dashes to Mark Off an Abrupt Break in a Sentence or One to Emphasize the Text at the End. Depending on the context, an em-dash—so named because its width matches a typesetter’s capital M—can take the place of a comma, parenthesis, or a colon in a sentence.
+What is the proper way to use a hyphen?
+- Use a hyphen at the end of a line to divide a word where there is not enough space for the whole word.
+- Use a hyphen to indicate a word spelled out letter by letter.
+- Use a hyphen to join two or more words to form compound adjectives that precede a noun.
+- Use a hyphen to avoid awkward doubling of vowels.

@@ -1,0 +1,29 @@
+In his Design Principles presentation at An Event Apart in Washington DC 2011 Jeremy Keith outlined the design principles behind the World Wide Web and how they continue to shape its future. Here are my notes from his talk:
+Principles, Goals, and Patterns
+- Design principles are the tenets for a project. They answer the “how “–how are we going to solve this problem? Design principles are especially useful when people might debate or disagree. They help a group determine how to solve problems.
+- Before you can have design principles, you need design goals to figure what you are doing. Design goals answer the “why” –why are we doing this? Design principles are how you reach that goal.
+- Design patterns define “what” are we going to do in order to achieve our goals? They evolve out of our work. Design patterns are individual atomic units that determine how we solve problems.
+- Design principles sit in the middle. They are the most important part because they answer how things will get done.
+- Pretty much any endeavor in human history has had this pattern of design goals, principles, and patterns. For example, the US constitution is a design goal, the declaration of independence is a set of design principles, and design patterns are how the US government is organized.
+- Everything we do is political. Everything created by human beings inevitably carries the biases and philosophies of the people that created it. This is true with software as well.
+The Web & Design Principles
+- There are emergent design principles of the Web like “rough consensus and running code”. This is a repeating principle of the Web. It has continued to win over time.
+- The Web is agreement. We all agree we’ll use Web standards and Web browsers agree to support them. The Web does not have strict top-down rules. Instead it is a bottom-up effort that runs the Web.
+- Why is CSS the way it is? Selector, property, value is a core pattern of CSS. It is a unit that does not change and is incredibly powerful. If you use a selector or a property that a user agent does not understand –it just ignores it and carries on. This has allowed us to evolve CSS over time without fear of errors.
+- Fault tolerant behavior (like the one in CSS) is another principle of the Web. Be conservative in what you send but be liberal in what you accept. This is Postel's Law.
+HTML5 & Design Principles
+- There are also design principles that serve as common ground between the two groups working on the HTML5 specification. It’s important to publish principles to put things on the wall and create agreement.
+- A design principle of HTML5 is “solve real problems”: base the design of HTML5 mark-up on actual real-world needs. In HTML5 you can wrap a link around a headline and paragraph. This is documenting existing behavior. Browsers support this but the code does not validate. Making it valid addresses real-world problems.
+- Degrade gracefully. When we talk about HTML5 we mostly discuss how new browsers support added features. But how do older browsers deal with new input types? They default to plain text. You can start using these input types now because they will degrade gracefully. You can also use attributes that browsers don’t understand as they will degrade.
+- Progressive enhancement is another resilient HTML principle. If you use the principle of progressive enhancement you get graceful degradation as a result.
+- We often get excited about new things we can use in modern growers but a lot of time & effort go into thinking about how things will work in older browsers.
+- In HTML5 you can use a datalist, which is a bastard love-child of a select list and a input field. Older browsers will just display this as text box. But if you specify a select list inside the datalist –it goes back to select menu and an input field.
+- HTML5 video vs. the Flash plug-in for video viewing is another example. You don’t have to choose one or the other. You can simply degrade gracefully. A browser that supports the video tag ignores the content within the video tag so you can put a Flash movie inside a video tag. You can even have multiple levels of fallbacks in video. In fact, you can have Flash be the default and HTML video be the fallback depending on how you order your mark-up.
+- The value of a network is proportional to the square of the number of connected users of the system. = Metcalf’s Law. This is another principle of the Web.
+- Principles can be informed by goals that are malicious. You can develop designs that are likewise malicious. For some companies (like Ryanair) complex interaction designs make sense.
+Big Picture Principles
+- Goals lead down to principles. Principles lead down to patterns.
+- The fewer design principles you can get to the better. When you have less principles, you will alienate some people but you will be more focused on what you are doing.
+- Pareto Principle = Design for the 80%. Instead of solving everything, aim for the bigger group (messier, larger) vs. structured, complete.
+- Jeremy’s macro-goal is universal access so he favors principles (like progressive enhancement and One Web) that bring that to life Web sites that work across all devices.
+- The Web is about sharing information and connecting people regardless of capabilities of their devices.

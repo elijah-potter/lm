@@ -1,0 +1,8 @@
+Super Duper Tic-Tac-Toe
+In this larger game, each player tries to get three, four, or five marks in a row. You do not win with just one line — try to make as many as you can. Each X or O can be counted more than once if it is included in a different line.
+When all the spaces are filled, each player adds up their score:
+— 1 point for three marks in a row
+— 3 points for four marks in a row
+— 5 points for five marks in a row
+High score wins!
+If you want to play some more, make your own boards on the blank pages at the end of this book.

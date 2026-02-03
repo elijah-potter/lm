@@ -1,0 +1,23 @@
+Graphic Liquid Crystal Display (Part 1)
+This series of posts will explore GLCD (Graphic Liquid Crystal Display). For demonstration purpose, I will use a standard GLCD 128×64, driven by Samsung KS KS0108B controllers:
+And here is its pinout
+Pin Diagram Symbol Level Function Vss 0V Ground Vdd +5V Power supply for logic Vo - Operating voltage for LCD (contrast adjusting) RS H/L Register selection H: Display data L: Instruction code R/W H/L Read/Write selection H: Read operation, L: Write Operation E H,H->L Enable Signal.Read data when E is high,Write data at the falling edge of E DB0 H/L Data bit 0 DB1 H/L Data bit 1 DB2 H/L Data bit 2 DB3 H/L Data bit 3 DB4 H/L Data bit 4 DB5 H/L Data bit 5 DB6 H/L Data bit 6 DB7 H/L Data bit 7 CS1 H Select the right half of display if CS1 = H CS2 H Select the left half of display if CS2 = H /RST L Reset signal, active low Vout -10V Output voltage for LCD driving LEDA +5V Power supply for LED back light LEDB 0V GND for LED back light
+The 128×64 graphic lcd is divided into two 64X64 pixel display area. Each KS0108B driver controls a 64 column by 64 row array of pixels. The 64×64 pixel arrays are further split into 8 pages. Each page is made of 64 lines of 1 byte. Each byte is made of 8 bits, with the least significant bit at the top and the most significant bit bit is at the bottom column position.
+Four types of data read/write are available. Read or write display data (in other words pixel related data), read of GLCD status (e.g. Busy) or write an instruction (e.g. addresses of pages, lines, columns).
+Before getting into more details, let’s investigate the principle of operations through pseudo code examples.
+Write an instruction
+SELECT_CHIP SET_READ-WRITE_PIN LOW SET_DATA-INSTRUCTION_PIN LOW SET_DATA_BITS HIGH/LOW SET_ENABLE_PIN HIGH SET_ENABLE_PIN LOW
+Really so easy? Not really. A straight translation of this pseudo code in real code would not work… at all. The reason being that each step requires some time to execute. And these timing questions lead to the trickiest programming issues. Yoy will have to carefully read the specification from your vendor’s specification in order to set appropriate delays. These delays are pretty short but mandatory. Here is the same code as above complemented with the appropriate timing:
+SELECT_CHIP SET_READ-WRITE_PIN LOW SET_DATA-INSTRUCTION_PIN LOW SET_DATA_BITS HIGH/LOW Timer(Address_Setup) SET_ENABLE_PIN HIGH Timer(High_Level_Width) SET_ENABLE_PIN LOW Timer(Data_Hold)
+In the same way, reading an instruction could be written this way
+SELECT_CHIP SET_READ-WRITE_PIN HIGH SET_DATA-INSTRUCTION_PIN LOW SET_ENABLE_PIN HIGH GET_DATA_BITS SET_ENABLE_PIN LOW
+Adding the timing events leads to
+SELECT_CHIP SET_READ-WRITE_PIN HIGH SET_DATA-INSTRUCTION_PIN LOW Timer(Address_Setup) SET_ENABLE_PIN HIGH Timer(Data_Delay) GET_DATA_BITS SET_ENABLE_PIN LOW
+Writing data does not require much difference. Just replace
+There is a major difference in the read data procedure compared to the read instruction procedure. KS0108 passes data out through a pipe operation which requires TWO read cycle to get access to the data! (Again, not applicable to reading instructions). The dummy read may be included in the data read routine in order to optimize its execution time.
+SELECT_CHIP SET_READ-WRITE_PIN HIGH SET_DATA-INSTRUCTION_PIN LOW SET_ENABLE_PIN HIGH SET_ENABLE_PIN LOW SET_ENABLE_PIN HIGH GET_DATA_BITS SET_ENABLE_PIN LOW
+Once again appropriate timing should be applied as well as conditional execution of the dummy ENABLE_PIN strobe.
+The nice thing about KS0108 drivers is that setting parameters is quite easy. Next is the table which will allow you to read or write every thing from/to your GLCD
+One of the simplest example of use is the programming of the WAIT_WHILE_NOT_READY function. When the KS0108 is busy doing something and thus not ready to respond to external requests, it raises a busy flag that can be read at any time.
+SELECT_CHIP SET_READ-WRITE_PIN HIGH SET_DATA-INSTRUCTION_PIN LOW SET_ENABLE_PIN HIGH DO DATA = GET_DATA_BITS WHILE (BUSY_BIT HIGH IN DATA) SET_ENABLE_PIN LOW
+To be continued…

@@ -1,0 +1,25 @@
+Identifiers: Identifiers are nothing but the names which is given to the members of any class like a variable, method name, class name, array name etc. Certain rules to be followed while declaring Identifiers:
+- Identifier name can start with both upper-case as well as lower case letter but can’t start with numbers.
+- Only _ and $ symbols can be used for giving name to Identifiers, apart from these symbols, no other special symbol can be used.
+- Keywords are different from Identifiers.
+- Identifier are case sensitive and doesn’t contain spaces.
+Examples of Valid and Invalid Identifiers:
+Keywords: Keywords are words which are responsible to perform some specific task or the words which represent some specific functionality. The following table lists some keywords:
+Comments: Comments are a way to improve the readability of a program. While coding we use comments for a better understanding of code for other users. While execution of the code, compiler ignore the comments and compile the rest of the code. There are two ways to use comments :
+- Single-line comments ( // )
+- Multi-line comments (/* */)
+- TypeScript Accessor
+- TypeScript String
+- TypeScript Union
+- Hello World in TypeScript
+- Classes in TypeScript
+- TypeScript Arrays
+- TypeScript Tuples
+- Variables in TypeScript
+- TypeScript class
+- Data types in TypeScript
+- TypeScript Ambients Declaration
+- Vue.js | Introduction & Installation
+- Difference between Search Engine and Web Browser
+If you like GeeksforGeeks and would like to contribute, you can also write an article using contribute.geeksforgeeks.org or mail your article to firstname.lastname@example.org. See your article appearing on the GeeksforGeeks main page and help other Geeks.
+Please Improve this article if you find anything incorrect by clicking on the "Improve Article" button below.

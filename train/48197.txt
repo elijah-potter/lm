@@ -1,0 +1,77 @@
+Many ethical issues involving persuasive technologies fall into one of three categories: intentions, methods, and outcomes. By examining the intentions of the people or the organization that created the persuasive technology, the methods used to persuade, and the outcomes of using the technology, it is possible to assess the ethical implications.
+One reasonable approach to assessing the ethics of a persuasive technology product is to examine what its designers hoped to accomplish. Some forms of intentions are almost always good, such as intending to promote health, safety, or education. Technologies designed to persuade in these areas can be highly ethical.
+Other intentions may be less clearly ethical. One common
+The designer’s intent, methods of persuasion, and outcomes help to determine the ethics of persuasive technology.
+To assess intent, you can examine a persuasive product and make an informed guess. According to its
+Identifying intent is a key step in making evaluations about ethics. If the designer’s intention is unethical, the interactive product is likely to be unethical as well.
+Examining the methods an interactive technology uses to persuade is another means of establishing intent and assessing ethics. Some methods are clearly unethical, with the most questionable strategies falling outside a strict definition of persuasion. These strategies include making threats, providing skewed information, and backing people into a corner. In contrast, other influence strategies, such as highlighting cause-and-effect relationships, can be ethically sound if they are factual and
+How can you determine if a computer’s influence methods are ethical? The first step is to take technology out of the picture to get a clearer view. Simply ask yourself, “If a human were using this strategy to persuade me, would it be ethical?”
+Recall CodeWarriorU.com, a Web site discussed in Chapter 1. While the goals of the online learning site include customer acquisition and retention, the influence methods include offering testimonials, repeatedly asking potential students to sign up,
+Now consider another example: a Web banner ad promises information, but after clicking on it you are swept away to someplace completely unexpected. A similar bait-and-switch tactic in the
+Making the technology disappear is a good first step in examining the ethics of persuasion strategies. However, it doesn’t reveal one ethical gray area that is unique to human-computer interactions: the expression of emotions.
+The ethical nature of Barney has been the subject of debate.
+The social dynamics leveraged by ActiMates
+My own view is that the use of emotions in persuasive technology is unethical or ethically questionable only when its intent is to exploit users or when it preys on people’s naturally strong
+Figure 9.3: A TreeLoot.com character expresses negative emotions to motivate users.
+Because the TreeLoot site is so simple and the ruse is so apparent, you may think this use of emotion is hardly cause for concern. And it’s probably not. But what if the TreeLoot system were much more sophisticated, to the point where users couldn’t tell if the message came from a human or a computer, as in the case of a sophisticated chat bot? Or what if the users believed the computer system that expressed anger had the power to punish them? The ethics of that approach would be more questionable.
+The point is that the use of emotions to persuade has unique ethical implications when computers rather than humans are
+Whether used by a person or a computer system, some methods for changing attitudes and behaviors are almost always unethical. Although they do not fall into the category of persuasion per se, two methods deserve mention here because they are easy to
+Web ads are perhaps the most common example of computer-based deception. Some banner ads (Figure 9.4) seem to do whatever it takes to get you to click on them. They may offer money, sound false alarms about computer problems, or, as noted earlier, promise information that never gets delivered. The unethical nature of these ads is clear. If the Web were not so new, it’s
+Figure 9.4: This banner ad claims it’s checking qualifications—a deception (when you click on the ad, you are simply sent to a gambling site).
+Besides deception, computers can use coercion to change people’s behaviors. Software installation programs provide one example. Some installation programs require you to install additional software you may not need but that is bundled as part of the overall product. In other situations, the new software may change your default settings to preferences that benefit the manufacturer rather than the
+While it’s clear that deception and coercion are unethical in technology products, two behavior change strategies that fit into a broad definition of persuasion—
+Operant conditioning, described in Chapter 3, consists
+For instance, a company could create a Web browser that uses operant conditioning to change people’s Web surfing behavior without their awareness. If the browser were programmed to give faster page downloads to certain Web sites—say, those
+Less commonly, operant conditioning uses punishment to reduce the instances of a behavior. As I noted in Chapter 3, I believe this approach is
+Having said that, operant conditioning that incorporates punishment could be ethical, if the user is informed and the punishment is innocuous. For instance, after a trial period, some downloaded software is designed to take progressively longer to launch. If users do not register the software, they are informed that they will have to wait longer and longer for the program to become functional. This innocuous form of punishment (or negative reinforcement, depending on your perspective) is ethical, as long as the user is informed. Another form of
+Now, suppose a system were created with a stronger form of punishment for failure to register: crashing the computer on the
+In general, operant conditioning can be an ethical strategy when incorporated into a persuasive technology if it is overt and harmless. If it
+Another area of concern is when technologies use punishment—or threats of punishment—to shape behaviors. Technically speaking, punishment is a negative consequence that leads people to perform a behavior less often. A typical example is spanking a child. Punishment is an effective way to change outward behaviors in the short
+Surveillance is another method of persuasion that can raise a red flag. Think back to Hygiene Guard, the surveillance system to monitor
+So is Hygiene Guard ethical or unethical? In my view, it depends on how it is used. As the system
+The Hygiene Guard example
+Whether or not a surveillance technology is ethical also depends on the context in which it is applied. Think back to AutoWatch, the system described in Chapter 3 that enables parents to track how their teenagers are driving.  This surveillance may be a “no confidence” vote in a teenager, but it’s not unethical, since parents are ultimately responsible for their teens’ driving, and the product helps them to fulfill this responsibility.
+The same could be said for
+Figure 9.5: The ethical nature of a persuasive technology can hinge on whether or not the outcome was intended.
+In addition to examining intentions and methods, you can also investigate the outcomes of persuasive technology systems to assess the ethics of a given system, as shown in Figure 9.5. (This line of thinking originated with two of my former students: Eric Neuenschwander and Daniel Berdichevsky.)
+If the intended outcome of a persuasive technology is
+The intended outcomes of other technologies may raise ethical concerns. Think back to Banana-Rama, the high-tech slot machine described in Chapter 5. This device uses onscreen characters, an ape and a
+Some people would find this product ethically
+Hewlett-Packard’s MOPy (Multiple Original Printouts) is a digital pet screen saver that rewards users for printing on an HP printer (Figure 9.6). The point of the MOPy system is to motivate people to print out multiple
+Figure 9.6: The MOPy screen saver (no longer promoted by Hewlett-Packard) motivates people to make original prints, consuming disposable ink cartridges.
+Some might argue that MOPy is unethical because its intended outcome is one that results in higher printing costs and environmental degradation. (To HP’s credit, the company no longer promotes MOPy.)  Others could argue that there is no cause for ethical alarm because the personal or environmental impact of using the product is insignificant.
+But suppose that Banana-Rama and MOPy were highly successful in achieving their intended outcomes: increasing gambling and the consumption of ink cartridges. If these products produced significant negative impacts—social, personal, and environmental—where would the ethical fault reside? Who should shoulder the blame?
+In my view, three parties could be at fault when the outcome of a persuasive technology is ethically unsound: those who create, distribute, or use the product. I believe the balance of culpability shifts on a case-by-case basis.
+The creators have responsibility because, in the case of MOPy, their work benefited a private company at the expense of individuals and the global environment. Likewise,
+Finally, users of ethically questionable persuasive technologies must bear at least some responsibility. In the cases of Banana-Rama and MOPy, despite the persuasive strategies in these products, individual users are typically voluntarily choosing to use the products, thus contributing to the outcomes that may be ethically questionable.
+Persuasive technologies can produce unintended outcomes. Although captology focuses on intended outcomes, creators of persuasive technology must take responsibility for unintended unethical outcomes that can reasonably be foreseen.
+To act ethically, the creators should
+Designed to reduce speeding, the Speed Monitoring Awareness Radar Trailer, discussed in Chapter 3, seems to have unintended outcomes that may not have been easy to predict. Often when I discuss this technology with groups of college students, at least one male student will say that for him the SMART trailer has the
+As far as I can tell, law enforcement agencies have not addressed the possibility that people might actually speed up rather than slow down when these
+Unfortunately, Mortal Kombat and other violent video games not only motivate people to keep playing, they also may have a negative effect on players’ attitudes and behaviors in the real world. Social learning theory
+suggests that practicing violent acts in a virtual world can lead to performing violent acts in the real world.
+The effect of video game violence has been much debated for over a
+When the choice and action
+componentsof video games . . . is coupledwith the games’ reinforcingproperties, a strong learning experience results. In a sense, violent video games provide a complete learning environment for aggression, with simultaneous exposure to modeling, reinforcement, and rehearsal of behaviors. This combination of learning strategies has been shown to be more powerful than any of these methods used singly. 
+Although violent real-world behavior is not the intended outcome of the creators of video games such as Mortal Kombat, it is a reasonably predictable outcome of
+See “Do they need a “trick” to make us click?,” a pilot study that examines a new technique used to boost click-through, by David R. Thompson, Ph.D.,
+Columbia Daily Tribune,
+and Birgit Wassmuth, Ph.D., University of Missouri. Study
+At the 1999 ACM SIGCHI Conference, I organized and
+You can find a newspaper story of the event at http://www.postgazette.com/businessnews/19990521barney1.asp.
+ E. Strommen and K. Alexander, Emotional interfaces for interactive aardvarks: Designing affect into social interfaces for children, Proceeding of the CHI 99 Conference on Human Factors in Computing Systems, 528–535 (1999).
+ In an article reviewing various studies on self-affirmation, Claude Steele discusses his research that showed higher compliance rates from people who were insulted than from people who were flattered. In both cases, the compliance rates were high, but the people receiving the negative assessments about themselves before the request for compliance had significantly higher rates of compliance. See C. M. Steele, The psychology of self affirmation: Sustaining the integrity of the self, in L. Berkowitz (ed.), Advances in Experimental Social Psychology, 21: 261–302 (1988).
+For a more recent exploration of compliance after threat, see Amy Kaplan and Joachim Krueger, Compliance after threat: Self-affirmation or self-presentation? Current Research in Social Psychology, 2:15–22 (1999). http://www.uiowa.edu/~grpproc. (This is an online journal. The article is available at http://www.uiowa.edu/~grpproc/crisp/crisp.4.7.htm.)
+Also, Pamela Shoemaker makes a compelling argument that humans are naturally geared to pay more attention to negative, threatening information than positive, affirming information. See Pamela Shoemaker, Hardwired for news: Using biological and cultural evolution to explain the surveillance function, Journal of Communication, 46(2), Spring (1996).
+ For a statement about the “Wild West” nature of the Web in 1998, see R. Kilgore, Publishers must set rules to preserve credibility, Advertising Age, 69 (48): 31 (1998).
+ For book-length and readable discussions about how discipline works (or doesn’t work) with children in changing behavior, see
+a. I. Hyman, The Case Against Spanking: How to Discipline Your Child without Hitting (San Francisco: Jossey-Bass Psychology Series, 1997).
+b. J. Maag, Parenting without Punishment: Making Problem Behavior Work for You ( Philadelphia, PA: The Charles Press, 1996).
+To read about the suggested rationale for AutoWatch, see the archived version at
+ While Hewlett-Packard no longer supports MOPy, you can still find information online at the following sites:
+ Others suggest that all parties involved are equally at fault. For example, see K. Andersen, Persuasion Theory and Practice (Boston: Allyn and Bacon, 1971).
+ A. Bandura, Self-Efficacy: The Exercise of Control (New York: Freeman, 1997).
+C. A. Anderson and K. E. Dill, Video games and
+ Other related writings on video games and violence include the following:
+D. Grossman, On Killing (New York: Little Brown and Company, 1996). (Summarized at http://www.mediaandthefamily.org/research/vgrc/1998-2.shtml. )
+Steven J. Kirsh, Seeing the world through “Mortal Kombat” colored glasses: Violent video games and

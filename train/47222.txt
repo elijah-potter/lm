@@ -1,0 +1,8 @@
+From Oracle FAQ
+ACID refers to the basic properties of a database transaction: Atomicity, Consistency, Isolation, and Durability.
+All Oracle database, Oracle RDB and InnoDB transactions comply with these properties. However, Oracle's Berkeley DB database is not ACID-compliant.
+The entire sequence of actions must be either completed or aborted. The transaction cannot be partially successful.
+The transaction takes the resources from one consistent state to another.
+A transaction's effect is not visible to other transactions until the transaction is committed.
+Changes made by the committed transaction are permanent and must survive system failure.
+|Glossary of Terms|

@@ -1,0 +1,60 @@
+Many so often during my lectures an courses I provide to – what I would call – main stream developers I realize that delegates, anonymous methods and lambda expressions are concepts either completely unknown or not really fully understood. This is a pity! In this post I want to provide a step-by-step introduction to the usage of delegates and lambda expressions. The concepts are demonstrated at a real world example.
+Calling methods directly
+Let’s start with a basic sample. You might have implemented a simple sorting algorithm. In this case it is the well known bubble sort algorithm
+This algorithm is very simple. It goes through an array of items and compares neighboring items and swaps them if needed. This is repeated as long as there are items to swap. The decision whether two neighboring items have to be swapped or not is made in the helper method Compare(…). Note that the method Sort directly calls the helper method Compare. That’s fine as long as we want to use our sort algorithm only and exclusively to sort arrays whose elements are of type Item and where the comparison is made on their property Name.
+Enable Callbacks by implementing Interfaces
+The above solution works but has some drawbacks. It is not a generic solution that can be reused for different scenarios. Wouldn’t it be great to be able to reuse the sorting algorithm with different kinds of scenarios without having to change the code? (By the way, this is a good sample how to adhere to the Open Close Principle.)
+We can extend the functionality or reach of the algorithm without modifying the underlying code. To achieve this we can implement the IComparable<T> interface in the Item class
+and modify the sort method as follows
+The sort algorithm is now generic and accepts any list of items where the item implements the interface IComparable<T>. So this algorithm cannot only be used with the Item class shown above but with any class. The only requirement is that the class implements the IComparable<T> interface. Let me give an example where we want to sort a list of products by their respective unit price. First we have the implementation of the Product class
+and now a unit test that verifies that the algorithm can indeed be used with an array of products and that it is working as expected.
+In the above unit test I first create an array of 4 products with different unit prices. Then I use the BubbleSorter to sort the array and finally I verify that the products have indeed been sorted by unit price (starting with the lowest unit price).
+Using a Delegate to define the Callback method
+That’s all fine so far. But what happens, if we want to sort an array of pre-existing items that do not implement the interface IComparable<T> and which we cannot change (that is we cannot implement the interface IComparable<T>). As an example let’s assume we have an array of Person items, where the Person class is defined as follows (and as said before cannot be changed)
+Wouldn’t it be nice if we were capable of defining a compare method that does the comparison of two items and just pass a “pointer” to this method to the sort method of the Bubble sorter. The compare method could be something like this
+This method compares the combination of last and first name (e.g. compare “Schenker, Gabriel” to “Doe, John”).
+Well relax, the .NET framework just offers us this possibility in the form of delegates. A delegate can be described as a type safe function pointer. Of course this is a “quick and dirty” description but it explains the essence of what we want to know.
+A delegate that can point to a function having the exact same signature as the ComparePersons method is defined as follows
+we can even make this delegate generic and thus much more reusable
+No we can change our sort algorithm and make it use a delegate
+The Sort method now expects a second parameter which is a delegate. This delegate is then used in the method to make callbacks to the method to which the delegate points (in our case the ComparePersons method described above).
+How can this code now be used? Please have a look at the following unit test which first prepares a list of persons. The a delegate pointing to the method ComparePersons is defined. Now the array of persons is sorted. Finally the unit test asserts that the items of the array have indeed been sorted in the expected way.
+Defining the callback method anonymously
+The introduction of delegates has opened us a whole new world of possibilities! We can now sort any type of arrays by just defining an appropriate compare method and passing a delegate to this method to the sort algorithm.
+But wait a second. Do we really have to explicitly write such a compare method. Isn’t there a way to reduce the amount of code needed?
+Hurray, yes there is such a possibility! It’s called anonymous methods. Anonymous methods are code snippets that are defined in place where a delegate is expected. As a consequence we do not have to explicitly write a method any more.
+the interesting part of the above unit test is this one
+here we have defined in-place the code that shall be executed whenever the sort algorithm makes a callback. No need to explicitly define a method. The code is defined anonymously. That makes the whole thing much more concise and increases the comprehensibility compared to the case where you define a method and then point a delegate to that method.
+To further illustrate how flexible our design has become I want to show how I have to change the code to be able to sort the list of products by product name. Just change the call like this
+Just change the anonymous code snippet. That’s it!
+Introducing Lambda Expressions
+Hey, I fully understand you if you are shouting at me “that’s not a very transparent way of declaring intent. The syntax is too complex. Can’t it be easier?”
+You are right, it can be easier! The (C#-) compiler is smart enough to be able to help us to remove redundant information which is only “noise” and decreases the understandability of the code. From the definition of the Sort method it is clear what the type of the two input parameters of the callback function has to be. Thus we can simplify the syntax. Instead of writing
+we could as well write (pseudo code!):
+or use the Lambda Expression syntax introduced in C# 3.0
+Please note the introduction of the so called lambda operator ‘=>’. On the left side of the operator we have a list of parameters (here lhs and rhs) whose type can be inferred by the compiler. On the right side of the operator we have the code snippet which is executed when the Sort method calls back (or in other words: when the Sort method uses the delegate [to call back]).
+In our special case where the code snippet is only a single line of code returning a value we can further reduce the code. We can remove the curly braces as well as the return statement. We finally have this very concise piece of code
+This is neat, isn’t it? (Remember though that the last step is only possible if the code consist of one single instruction.)
+Once again I present the above unit test but this time I use the lambda expression syntax
+In my humble opinion this is now very readable once you get used to the special lambda expression syntax. The piece of interest in the above code is:
+Using pre-defined Delegates
+In the Sort method of our bubble sort example we have defined our own delegate. Here it is it’s definition again
+we could have as well used one of the pre-defined delegates of the .NET framework. It is even suggested to use the pre-defined delegates wherever possible and only define your own delegate if you absolutely need so. Looking carefully at our delegate we realize that it describes the signature of a function with a return value (of type int) and two parameters (of generic type T). The predefined delegate we can use at it’s place is
+We can then change the signature of the Sort method as follows
+Note that the code of the Sort method remains unchanged.
+Where to go from here: Introducing Expression Trees
+Hey, when we have introduced Lambda Expressions we can now go way further. Let’s dive into deep waters then. Let’s have a look at a method signature
+This is a function returning a result of type string and having a single parameter which is a delegate. The type of the delegate is Func<Person,string>. Inside the code of the DoSomething method we can use the delegate to make callbacks to the method (or code snippet in the case of an anonymous method) represented by the delegate.
+The client code to use the above method would be similar to this
+Although this is a very powerful concept as we have seen previously in this post, we cannot do anything else with this delegate. We can just use it to execute callbacks.
+Now, if we change the signature of the DoSomething method to use Expression<…> instead of a delegate
+Now the second parameter is an expression of a delegate. No, no, don’t run away! It looks more complex than it is. The client code remains exactly the same but we get much more value in the called function (DoSomething). We now receive an expression (-tree) and not just a delegate to the callback function. The expression tree represents the fully parsed (lambda-) expression of the client code. We can now use this expression tree and get loads of interesting (meta-) information about the (passed) lambda expression.
+But wait a moment! How do I get to the compiled lambda expression such as that I can make a callback? Very easy, just compile the expression and use the result the same way you used the delegate previously. That is
+But before I compile the expression I want to use some of the (meta-) information to be found in the expression tree. Have a look at the following sample.
+In the above sample I want to dynamically construct a HTML snippet containing information extracted from the passed parameters. I expect the expression parameter to be of (sub-) type MemberExpression. I then use this member expression to extract the name of the member (the property name in our case) and the name of the containing type. These two names combined are used as the name of the HTML text box. This type of extracting meta information is also called static reflection.
+I then compile the expression and use the result to determine the value of the expression. The following unit test shows how to use the above method
+As one can see the attribute name contains the correct value ‘ItemName’ which is composed of the class name and the property name (deduced from the lambda expression i => i.Name). And also the value of the value attribute reflects the expected value.
+This article is discussing in detail the long way from directly calling a helper method from a piece of code to making (service or infrastructure) code more generic and thus reusable by introducing the concept of callback methods. The article shows what are the different possibilities to provide callback methods to the called code. Possibilities discussed are using interfaces, delegates and lambda expressions.
+Delegates and lambda expressions are concepts not fully transparent to most of the developers. Most of the developers have just some nebulous idea about what a delegate is or how one can use lambda expressions. This article tries to bring light into these concepts and explaining them step by step on a real world example.
+Finally the article makes an excursion into the more advanced field of expression trees and tries to explain how the meta information available in lambda expressions can be leveraged by the developer.
+Post Footer automatically generated by Add Post Footer Plugin for wordpress.

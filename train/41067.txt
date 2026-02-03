@@ -1,0 +1,14 @@
+Package geom defines a two-dimensional coordinate system.
+The coordinate system is based on an left-handed Cartesian plane. That is, X increases to the right and Y increases down. For (x,y),
+(0,0) → (1,0) ↓ ↘ (0,1) (1,1)
+The display window places the origin (0, 0) in the upper-left corner of the screen. Positions on the plane are measured in typographic points, 1/72 of an inch, which is represented by the Pt type.
+Any interface that draws to the screen using types from the geom package scales the number of pixels to maintain a Pt as 1/72 of an inch.
+Point is a point in a two-dimensional plane.
+String returns a string representation of p like "(1.2,3.4)".
+Pt is a length.
+The unit Pt is a typographical point, 1/72 of an inch (0.3527 mm).
+It can be be converted to a length in current device pixels by multiplying with PixelsPerPt after app initialization is complete.
+Px converts the length to current device pixels.
+String returns a string representation of p like "3.2pt".
+A Rectangle is region of points. The top-left point is Min, and the bottom-right point is Max.
+String returns a string representation of r like "(3,4)-(6,5)".

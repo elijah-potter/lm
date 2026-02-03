@@ -1,0 +1,56 @@
+Animal fighting behaviour can be introduced using the simple models discussed here; one of these is the ‘Hawk/Dove’ model by Maynard Smith. From this model, we can construct payoff matrixes which can then be used to determine evolutionarily stable strategies (defined below).
+Evolutionarily stable strategy – An evolutionary stable strategy or ESS is a strategy which, if adopted by most members of the population, cannot be invaded by a mutant strategy which is initially rare.
+Maynard Smith’s Model
+The evolution of ritualised behaviour has evolved for the benefit of individuals. Simply, we can imagine that a ritualised behaviour has evolved to allow an animal to avoid participating in conflict, when it is aware that the opposition is more capable. By avoiding conflict, the animal does not have to pay a ‘cost’ of injury. This is looked at in the Maynard Smith Hawk/Dove model.
+There are many examples, such as the domestic dog will roll on to its back making itself vulnerable to the opposition, signifying that it does not want to participate in the conflict and the opposition may take the resource for which the conflict arose
+Another example is the roaring behaviour of the Red Deer. Typically a roaring contest (another type of ritualised behaviour) will mark the start of a conflict; this allows each Red Deer to gauge the prowess of one another, from which they can decide whether or not to elevate the aggression.
+The payoff of conflict is frequency dependent i.e. if there are very few dominant aggressive males, they will obtain a large majority of the resources as the other males are highly likely to show submissive behaviour and flee.
+The payoff of conflict can be broken down into two simple values:
+- V – The value of the resource (This could be food, females etc.)
+- C – The cost of the conflict (Injury), however if the animal retreats, no cost is therefore paid
+From this we can build the Hawk/Dove Model.
+Building the Hawk/Dove Model
+The hawk/dove model is a simplistic model concerning the possibilities and outcomes of conflict. By simplifying the animal’s behaviour, we can break down their responses to conflict into 3 choices, either:
+- The animal displays ritualised behaviour (E.g. the roaring contest of the Red Deer)
+- The animal retreats
+- Or the animal elevates the conflict and engages in a fight
+Using these three possible outcomes, 2 strategies are built, the Hawk strategy and the Dove strategy. Animals can be related to either the dove strategy or the hawk strategy.
+The Hawk strategy consists of the following behaviour:
+- The hawk will engage in conflict immediately and only retreat if it becomes injured
+The Dove strategy consists of the following behaviour:
+- The dove will display immediately and only retreat should its opponent escalate the conflict
+By winning in a conflict, the animal will gain the resource V, by losing the animal will have to pay the cost C. Some possible scenarios are listed below (Hawk – H, Dove – D)
+- H vs. H – Both will escalate the conflict meaning one gets injured and retreats. This means there is a 50% chance of winning resource V and a 50% chance of paying cost C. (This is assuming both individuals are equally matched and of the same fitness – see assumptions section below). In mathematical terms, E (the energy gain from the conflict, or payoff) of the conflict between two hawks is E(H,H). We can equate this to the value and cost, so:
+- E(H,H) = (V-C)/2
+- H vs. D – The hawk immediately escalates the fight and so the dove retreats. This means the hawk always gets the resource V and the dove always gets nothing – but does not pay a cost as it retreats. So:
+- E(H,D) = V, E(D,H) = 0
+- D vs. D – Both immediately display but as both are of equal fitness (see assumptions below) they must either share the resource or one randomly wins the resource, either way they receive the equivalent of half the resource. So:
+- E(D,D) = V/2
+The Hawk/Dove model retains its simplicity due to some assumptions, these are:
+- All individuals are of the same Darwinian fitness, making them evenly matched.
+- The V gained and C paid are the same for all individuals e.g. the cost of an injury costs the same amount of energy in all ‘dove’ individuals.
+- All interactions are completely at random.
+Payoff matrixes are grids which determine whether an ESS is in place, by inputting the values of V and C we can see whether or not hawks, doves or a mixture of both give an ESS.
+From previous knowledge (above) we know the following information:
+To determine which strategy is an ESS depends on whether or not V<C or V>C, which would depend on the situation. Each has been equated below:
+If V>C e.g. V=4, C=2, we would get the following information (by substituting the values into the table above):
+What this shows us is that, because in column 1, H vs. H = 1 and D vs. H = 0, Doves are unable to invade a hawk population – This means that the Hawk Strategy when V>C is an ESS. We back this up by looking at column 2 and seeing D vs. D = 2 and H vs. D = 4. This means Hawks are able to invade doves, so doves therefore cannot be an ESS.
+If V<C e.g. V=2, C=4, is there a difference when compared to V>C? Again by substituting the values into the table above, the following information is obtained:
+Column 1 – D vs. H = 0, H vs. H = -1. This means that Doves are able to invade hawks, does this mean hawk is not an ESS?
+Column 2 – D vs. D = 1, H vs. D = 2. This means that Hawks can invade doves.
+As both strategies are able to invade one another, when V<C, a mixed ESS arises.
+Determining Proportions in a Mixes ESS
+In a mixed ESS, we are able to determine the proportion of each strategy by using a simple equation, p=V/C. The equation is derived initially from a more complex equation however:
+W=Fitness, W(H) = Fitness of hawks, W(D) = Fitness of doves, W0 = basic fitness p = proportion
+We assume that W(H) = W(D)
+- W(H) = W0 + p[(V-C)/2] + pV
+- Where p[(V-C)/2] is the proportion of occasions that we see H vs. H
+- Where pV is the proportion of occasions we see H vs. D
+- W(D) = W0 + p0 + p[V/2]
+- Where p0 is the proportion of occasions we see D vs. H
+- Where p[V/2] is the proportion of occasions we see D vs. D
+Because we assume that W(H)=W(D) we can equate these equations to one another, therefore:
+- W0 + p[(V-C)/2] + pV = W0 + p0 + p[V/2]
+- p[(V-C)/2] + pV = p[V/2]
+So when simplified we get p = V/C which means the proportion of a strategy in the mixed ESS depends entirely on the value of the resource and cost of injury. Using the values we saw in the V<C example above (V=2, C=4) we get p(H)=2/4. This equates to 0.5 or 50%, therefore the proportion of hawks in this mixed ESS is 50%.
+What we can conclude from this is that behavioural variation in a population is suited to evolve that way, especially when V<C. Also that it is frequency dependent. Also as the cost of injury increases, more contests for resources within the species will be settled by ritualised displays.

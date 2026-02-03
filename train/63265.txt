@@ -1,0 +1,11 @@
+Last modified: 28 Jun 2018 10:27
+The course looks at how typical engineering problems that cannot be described mathematically (or are difficult to do so) can be solved so that the optimal solution is found. The course contains a range of examples to show how the techniques are applied to real world problems in the different engineering disciplines
+|Session||First Sub Session||Credit Points||15 credits (7.5 ECTS credits)|
+The course gives an overview of how to convert a mathematical algorithm into a computer programme, and gives a revision of the Matlab computing environment which is used throughout the course. The course is then structured such that the material taught in lectures is then implemented in Matlab in that week’s computer practical session, which shows how the mathematical algorithm is implemented and allows a deeper understanding of the general techniques to be made.
+An overview of the methods taught throughout the course:
+1. General techniques of mathematical optimisation and minimisation: Methods for one variable: Newton's method; Fibonacci search: Golden-section search; Curve fitting approaches using Quadratic interpolation, Cubic interpolation; Brent's method. Methods for many variables: Direct search methods using Hooke and Jeeves' method, Downhill simplex (Nelder and Mead's) method: Gradient methods using the method of steepest descent, Quadratic functions, Newton-Raphson method, Conjugate directions, Fletcher-Reeves method, Davidson-Fletcher-Powell method. Constrained Optimisation: Equality constraints, Inequality constraints, Convexity and Concavity.
+2. Discipline specific applications: Modelling data using Non-linear least squares, Levenberg-Marquardt algorthm. Local and global optimisation using Simulated annealing, Genetic algorithms; Inverse problems; Regularisation: Applications of Local and global optimisation: simulated annealing and genetic algorithms in engineering problem solving procedures. Other Applications specific to engineering disciplines.
+2 one-hour lectures, 1 one-hour tutorial and 1 two-hour computer application session per week.
+Information on contact teaching time is available from the course guide.
+1st Attempt: 1 three-hour written examination paper (100%).
+There are no assessments for this course.

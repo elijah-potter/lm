@@ -1,0 +1,18 @@
+3.1 How to start data cleaning? A few steps to follow
+28-Feb-2022 2 mins
+In summary, the process of data cleaning can be simplified into 3 primary tasks, specifically: 1) checking logical coherence; 2) checking reliability; and 3) correcting errors.
+However, implementation of these 3 components first requires a range of specific steps, that we will detail in the following sections:
+- First thing first: Prior to any edits, export your data and create a backup copy of the original data in a separate workbook. Refer to section 3.2.1. Get your data. This is necessary in case you need to recover data at any point, and also to ensure any changes can be reviewed and replicated.
+- Format your data into a readable database, which usually means adapting the data to a tabular format with clear columns names with 1 line per entry and no merged cells! Refer to sections 3.2.2. Put your data into a table format and 3.2.3. Format your dataset.
+Spot errors and inconsistencies by screening the dataset (duplicates, errors, outliers, missing data, etc.). Refer to section 3.3 Dealing with duplicates, errors, outliers, and missing data
+- The most effective way to start is through visualizing your data. Visualizing data and filtering data can clearly show you if there are duplicates, misspellings, etc.
+- Check logical coherence and reliability
+- Analyze the data with Excel functions, visualizations (graphs), or pivot tables.
+- Data should be triangulated with other sources, i.e. compare the results to other related data (places/surveys, etc.). Are there any findings that appear completely unrealistic? Of course, these may be valid findings, but the data and/or questionnaire should be reviewed if triangulation provides very unexpected results.
+Take action (correction, deletion, or leaving data unchanged)
+- First, adapt the errors that don’t require column manipulation, such as getting rid of the extra spaces.
+- Next, carry out tasks that require column manipulation (ex. Modifying data types, adding verification columns).
+- Recode or group some variables to make analysis easier. Refer to section 3.4 Recoding variables.
+- Before, during and after each of these steps, you should review the data to confirm that you did not implement unexpected changes (visually or by using filters, etc.)!
+- Ensure all changes to your dataset (or database) were documented in a ‘change log’.
+Go through the following section to learn more on each step.

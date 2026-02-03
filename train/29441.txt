@@ -1,0 +1,8 @@
+A teacher has to show various stationary items to her students so as to make them learn the names of the items. She has 6 pens, 4 pencils, 3 erasers, 2 sharpeners, and 5 rulers in a bag.
+If she randomly picks an item from the bag, then what is the probability that the students get to learn about an item used for writing?
+P = chance of getting something for writing/total
+Pens and pencils are used for writing
+The options are 9/11, 10/17, 5/17, 10/19. I can not calculate the answer, could you please help more? Thank you very much for your reply.
+Originally Posted by e^(i*pi)
+None of those options are correct. The answer is (6+4)/(6 + 4 + 3 + 2 + 5) = ....
+Originally Posted by sureshrju

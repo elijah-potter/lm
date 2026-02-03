@@ -1,0 +1,25 @@
+Connect and control Raspberry Pi motion detector PIR
+Due to its design, the PIR motion sensor module is very easy to use because it already has the components installed. Raspberry Pi motion detectors in home automation and/or outdoor applications (as a classic outdoor motion detector) are easier than ever to implement. I will show the commissioning in this tutorial.
+This Arduino/Raspberry Pi motion sensor responds and moves, with the “strength” of movement controlled by an adjustable resistor (potentiometer). So you can set the motion sensor very sensitive, or try to avoid “noise”. As soon as something moves, a signal is sent that can be received and responded by the Raspberry Pi.
+Required Hardware Parts
+The setup is very simple since only one pin has to be activated during movement. The pins on the PIR are labelled:
+- VCC to pin 2 (5V)
+- OUT to pin 16 (GPIO 23)
+- GND an pin 6 (ground)
+Software for controlling the Raspberry Pi motion detector
+To execute the code, we will create a new file
+sudo nano pir.py
+with the following content:
+import RPi.GPIO as GPIO
+SENSOR_PIN = 23
+# Here, alternatively, an application / command etc. can be started.
+print('There was a movement!')
+GPIO.add_event_detect(SENSOR_PIN , GPIO.RISING, callback=my_callback)
+Here, a function is set via
+GPIO.add_event_detect, which is called as soon as electricity flows. The exact functionality can be read here. Otherwise, you could also declare an infinite loop, where the status of the GPIO pin is queried with each call.
+After saving and exiting (CTRL + O, CTRL + X) the file can be executed:
+sudo python pir.py
+If you want to stop the script, you can do so with CTRL + C.
+I had to turn a little bit on the potentiometers and test which setting works best.
+Many applications or commands are now available which are started or executed as soon as the Raspberry Pi motion detector detects an activity. Examples of this are alarm systems or, in conjunction with the official touch screen module, an automatic switching on of the display as soon as someone hets near to it.
+One way to start the script via autostart, I have shown here.

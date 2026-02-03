@@ -1,0 +1,10 @@
+|Temperature measurement method
+||Temperature monitoring equipment|
+Electrical resistance changes non-linearly (falls exponentially) with temperature.
+|Used in PA catheter (allows continuous measurement) and oesophageal stethoscope. May exist as a small bead which can be placed in body cavities.|
+||Detector receives infrared radiation from tympanic membrane. Signal is converted to electrical signal.
+||Tympanic thermometer. Correlates most closely with hypothalamic temperature.|
+||Two strips of dissimilar metals of different specific heats and in contact at both ends. Metals expand and contract with change in temperature, producing an electrical potential. This is compared to a reference temperature. The voltage produced is known as the Seebeck effect.
+||Thermocouple junction may exist as a needle.|
+[i] The practical use of thermocouples for temperature measurement in clinical hyperthermia.
+Carnochan P, Dickinson RJ, Joiner MC. Int J Hyperthermia. 1986 Jan-Mar;2(1):1-19.

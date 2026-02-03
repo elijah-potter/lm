@@ -1,0 +1,11 @@
+A javax.swing.ImageIcon, where the supplied image details are loaded into the icon.
+The value argument can be a String, URL, java.awt.Image, or byte. There is no attribute equivilent to the byte value argument.
+If the value argument is a String it can be treated in multiple ways. If the value resolved to a File resolved without any context, then the value argument is treated as though it was passed in as a file: attribute. If the file does not exist, it is treated as though it were passed in as a resource: attribute.
+the value argument, file :, url:, image:, and resource: are mutually exclusive.
+- file <String> The name of a file where the ImageIcon can be loaded from
+- image <java.awt.Image> The image to be used for the icon
+- resource <String> The name of a resource to be resolved against the class loader
+- class <Object or Class> The class (or instance of a Class) that the resource is to be resolved against. Relative resources will be resolved relative to the package of the Class in the classes ClassLoader. If this attribute is not passed in then the ClassLoader of the SwingBuilder ImageIconFactory will be used to resolve the resource
+- url <URL> A URL to an image to load
+//TODO we should accept strings to file: and url:, in the future.
+imageIcon() is a leaf node, no child content is allowed.

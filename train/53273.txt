@@ -1,0 +1,4 @@
+Household energy consumption by end-use in the EU-27
+Extrapolated from 16 EU countries (11 main EU-15 countries + Poland, Czech Rep, Estonia, Hungary and Romania)
+The energy consumption for all these countries is aggregated by fuel and end-uses and a share is applied to the total consumption by fuel from Eurostat. This method guarantees the coherence between the aggregate and disaggregated energy consumption.
+For instance, for space heating, the consumption of gas is calculated as the total consumption of gas as published by Eurostat for the EU-27 multiplied by the share of space heating in the gas consumption in the sample of 16 countries. The space heating consumption for the EU-27 is then calculated as the sum of the consumption for space heating for each fuel.

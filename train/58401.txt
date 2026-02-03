@@ -1,0 +1,55 @@
+4.2 A Digression--Truth Values
+We have mentioned truth and "true and false" a few times now; however,
+we have yet to give a clear definition of what truth values are in Perl.
+Every expression in Perl has a truth value. Usually, we ignore the
+truth value of the expressions we use. In fact, we have been ignoring
+them so far! However, now that we are going to begin studying various
+control structures that rely on the truth value of a given expression,
+we should look at true and false values in Perl a bit more closely.
+The basic rule that most Perl programmers remember is that
+empty string and
+undef are false, and everything else is true.
+However, it turns out that this rule is not actually completely
+The actual rule is as follows:
+Everything in Perl is true, except:
+- the strings
+"" (the empty string) and
+string containing only the character, 0), or any string expression that
+evaluates to either
+"" (the empty string) or
+- any numeric expression that evaluates to a numeric
+- any value that is not defined (i.e., equivalent to
+If that rule is not completely clear, the following table gives some
+example Perl expressions and states whether they are true or not:
+|Expression || String/Number? || Boolean value
+|0 || number || false
+|0.0 || number || false
+|0.0000 || number || false
+|"" || string || false
+|"0" || string || false
+|"0.0" || string || true
+|undef || N/A || false
+|42 - (6 * 7) || number || false
+|"0.0" + 0.0 || number || false
+|"foo" || string || true
+There are two expressions above that easily confuse new Perl
+programmers. First of all, the expression
+"0.0" is true. This
+is true because it is a string that is not
+"0". The only string
+that is not empty that can be false is
+must be true.
+"0.0" + 0.0. After what was just stated, one
+might assume that this expression is true. However, this expression is
+false. It is false because
++ is a numeric operator,
+and as such,
+"0.0" must be turned into its numeric equivalent.
+Since the numeric equivalent to
+0.0, we get the
+0.0 + 0.0, which evaluates to
+0.0, which is the
+0, which is false.
+Finally, it should be noted that all references are true. The topic of
+Perl references is beyond the scope of this book. However, if we did
+not mention it, we would not be giving you the whole truth story.

@@ -1,0 +1,10 @@
+Think of a number. Is it 12? Probably not. Guessing things at random is hard, which is why passwords work.
+But if someone had access to data about your brainwaves, it might be a different story. Researchers from the University of Alabama at Birmingham have found that wearing a standard consumer-grade EEG headset makes it possible for someone with access to the data to pretty reliably guess your password.
+“These emerging devices open immense opportunities for everyday users,” Saxena said.
+“However, they could also raise significant security and privacy threats as companies work to develop even more advanced brain-computer interface technology.”
+Nitesh Saxena, Ajaya Neupane and Md Lutfor Rahman asked a group of 12 people to type a series of randomly generated PIN numbers and passwords into a text box, as if they were logging into an online account, while wearing an EEG headset.
+They found that after a user had entered 200 characters, algorithms were able to make educated guesses about new characters using just the brainwave data. That shortened the odds of guessing a four-digit PIN from 1/10,000 to 1/20 and a six letter password from 1/500,000 to 1/500.
+In response, the researchers propose that EEG headset manufacturers be forced to create technical protections for their users. For example, a headset could automatically generate digital noise in the signal whenever a password is being entered.
+“Given the growing popularity of EEG headsets and the variety of ways in which they could be used, it is inevitable that they will become part of our daily lives, including while using other devices,” Saxena said.
+“It is important to analyze the potential security and privacy risks associated with this emerging technology to raise users’ awareness of the risks and develop viable solutions to malicious attacks.”
+The team’s research was presented at the 21st Financial Cryptography and Data Security 2017 conference in Malta.

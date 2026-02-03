@@ -1,0 +1,33 @@
+How to protect your files and folders with highly secure encryption software
+Inside This Article
+How to use a file container (volume file) with TrueCrypt
+In last tutorial, an empty TrueCrypt volume file was created and is ready to be used to securely store your files and/or folders. In this tutorial, we are going to see how to use the volume file to save files.
+Steps to use the password protected volume file TrueCrypt can mount a volume to any available drive letter on your computer. Once the volume is mounted, it can be accessed as a disk drive in Windows Explorer. You are free to move files and folder into and out of it and TrueCrypt can automatically encrypt all the data (e.g., file names, folder names, contents of every file, free space, meta data, etc) on the fly, which means that data are automatically encrypted or decrypted right before they are loaded or saved, without any user intervention.
+Step #1: Open TrueCrypt and select a drive letter.
+Below is the TrueCrypt main window. It displays all available drive letters. Click a drive letter so that your volume can be loaded into this drive in Windows Explorer. In screenshot below, drive M is selected.
+Click the button Select File after you have selected a drive letter.
+Step #2: Select the volume file.
+Now you will select the volume file you created in last tutorial. In my example, I selected container.html which is the volume file I created on my USB thumb drive. Click Open after you have selected your volume file.
+After clicking on Open button, you are taken back to TrueCrypt's main window where the volume file name is displayed. Click button Mount to continue.
+Step #3: Enter password and/or keyfile(s).
+Now you are prompted to enter the volume's password. Enter the password.
+If you have used keyfile(s) as extra security when you creating the volume, click the checkbox Use keyfiles and then click button Keyfiles.
+The keyfiles window is opened as below. Click button Open File to select the keyfile(s).
+After you have selected all the keyfiles, click OK. Screenshot below shows that I selected two keyfiles.
+Now you are taken back to the entering password window, click OK to let TrueCrypt verify the password and keyfiles.
+Step #4: Open the mounted drive.
+If everything is verified, the volume will be mounted to the drive letter you have specified in Step #1. You will see the volume file path and name displayed along with other information about the volume such as size, the type of volume, and encryption algorithm used.
+To open the volume, right click anywhere in the drive letter row and select Open in the pop-up menu. It will open the drive in Windows Explorer just like you are opening any normal windows folder.
+Alternatively, you can double anywhere in the drive letter row to open the file container.
+Step #5: Move or copy & paste some files and/or folders into this new disk drive.
+You have now opened the volume as a windows drive. You can move some files and or folders into the drive. As you do this, in the background, TrueCrypt will automatically encrypt all the data, including file names, folder names, contents of every file, free space, meta data, etc., on the fly and save them to the container. You can work with this disk drive any way you want.
+Step #6: Dismount the disk drive.
+After you have finished working with the disk drive, you can dismount it, which means you remove the association between the disk drive and the volume.
+To dismount a disk drive, go back to the TrueCrypt's main window, select the drive you want to dismount and then click Dismount button. TrueCrypt will also automatically close any Windows Explorer windows that are still open for this drive.
+Now the disk has been dismounted and can't be accessed anymore. All files and folders are saved and encrypted into
+a single volume file. Only the one who knows the password and/or keyfile(s) can open it (Even when your
+computer is hacked, the volume file is still secure). Having said that, I recommend a read
+on this article series Free Password Manager KeePass - a feature rich, free, very secure, and easy-to-use.
+Copyright © 2013 GeeksEngine.com. All Rights Reserved.
+This website is hosted by LunarPages.
+No portion may be reproduced without my written permission. Software and hardware names mentioned on this site are registered trademarks of their respective companies. Should any right be infringed, it is totally unintentional. Drop me an email and I will promptly and gladly rectify it.

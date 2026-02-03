@@ -1,0 +1,10 @@
+Let me share you some tips for that I got from my bunch of files. I cannot link to the main source since I don’t have it . All I can say based on the documents I have this is a reprint from PCWorld.
+One common type of spreadsheet is a fill-in-the-blanks template. Typically, such a sheet will have a number of input cells, and a number of formula cells. You enter your data in the input cells, and the formula cells kick into action and use those values to display some type of (usually) useful result.
+For example, you may have a worksheet set up to calculate a loan amortization table. Input cells would include items such as loan amount, interest rate, loan term, and so on. Formulas in other cells use this information to display the
+At some point, you may want to clear the slate and delete all the values in the input cells. Rather than scroll around and look for the non-formula cells, you can take advantage of an often-overlooked Excel feature that lets you select cells in a “special” way:
+- Select Edit, Go To (or press Ctrl-G or F5)to bring up the Go To dialog box.
+- Click the Special button to show the Go To Special dialog box.
+- Choose the Constants option, then clear all of the check boxes except Numbers (if some of the input cells in the spreadsheet accept text, leave the check mark next to Text).
+- Click OK, and Excel will select all of the non-formula cells that contain a value.
+- Press the Delete key, and those numbers are history but the formulas remain intact.
+This is a good exercise if your work is repetitive in a table full of formulas.

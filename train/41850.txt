@@ -1,0 +1,27 @@
+Bitcoin is a topic that evokes a sort of whodunit to many people. Created by an international man of mystery named Satoshi Nakamoto, it leads many to think this is a protocol that lends itself to a John Grisham novel. Many even think Bitcoin is a government conspiracy. But none of that could be further from the truth.
+As in introduction, Bitcoin is a digital currency and payment system created by a person named Satoshi Nakamoto. It was sent out as a proof of concept in 2008 and the open source code was released the following year. It uses a peer-to-peer system for transactions without the need any intermediate servers. The force behind Bitcoin is its ledger system, which is done via a blockchain. More about that later.
+In Bitcoin and Cryptocurrency Technologies: A Comprehensive Introduction (Princeton University Press ISBN 0691171696), authors and noted Bitcoin experts Arvind Narayanan, Joseph Bonneau, Edward Felten, Andrew Miller and Steven Goldfeder have written a highly technical resource that is perhaps the best Bitcoin reference in print to date.
+Bitcoin is gaining serious momentum, but it is still not at a point where it is a ubiquitous payment system. Case in point that the book is available on eBay, Walmart, Amazon, the publisher’s web site and more. But you can't buy it with Bitcoin from any of them.
+In the following chapters, the authors cover every core aspect of Bitcoin:
+Intro: Introduction to Cryptography and Cryptocurrencies
+- How Bitcoin Achieves Decentralization
+- Mechanics of Bitcoin
+- How to Store and Use Bitcoins
+- Bitcoin Mining
+- Bitcoin and Anonymity
+- Community, Politics, and Regulation
+- Alternative Mining Puzzles
+- Bitcoin as a Platform
+- Altcoins and the Cryptocurrency Ecosystem
+- Decentralized Institutions: The Future of Bitcoin?
+The authors explain in technical detail how the underlying Bitcoin protocol and technology operates. Bitcoin also has a number of technical and security limitations which are also discussed.
+One of the more significant limitations—that may turn out to be problematic—is that the cryptographic algorithms in Bitcoin are hardcoded and fixed within in the protocol. There are only a few hash algorithms available and only one signature algorithm that can be used. Given that, there is concern (albeit limited), that the underlying cryptography in Bitcoin could be one day broken. While the logical solution may be to just change the protocols, the authors go into a detailed technical overview of why this ostensibly simple idea is not feasible.
+Truth be told, the same crypto security concern exist for the RSA cryptosystem which is based in part on the difficulty of factoring large numbers.
+Common wisdom says that Bitcoin is a fully anonymizing protocol. The authors address that topic at length. The reality is that Bitcoin is for the most part anonymous, but not fully anonymous. A skilled adversary could use various tactics to determine who made a specific transactions.
+The notion that Bitcoin is anonymous annoyed someone so much that they created a web site with a long list of references and quotes Bitcoin's anonymity and privacy.
+The authors detail how Ross Ulbricht, who created the Silk Road black market website, was ultimately caught. It was due, in part, to his inability to keep his public and private identifies separate. That enabled the FBI to connect them, which led to his arrest. The Ulbricht case demonstrated that it’s quite hard to stay anonymous for a long time while being active and engaging in a course of coordinated conducts working with other people over time.
+Ulbricht thought that by using Tor, Bitcoin and other pseudo-anonymous systems, that he would be invisible to law enforcement. That should be a cautionary tale to others.
+Bitcoin could have been but another in a long line of cryptocurrencies and electronic cash. Its key differentiator is it decentralization and the use of blockchains. The Bitcoin blockchain is a public ledger of all transactions that occur on the Bitcoin network. The openness of the blockchain means any user can connect and send new transactions to it or verify a transaction.
+The blockchain lends itself to possible attack and the book details the ways in which it is secured.
+The companion website for the book has a number of videos and programming assignments. The programming assignments are quite helpful and explore the depth of designing and building a basic cryptocurrency.
+For those looking to get a highly detailed Bitcoin technical overview, this book is a must read. They provide both technical and real-world examples, included implementation methods of lessons learned from technical failures. The authors have created a highly readable comprehensive overview of the topic that will be of value to anyone looking to explore the most significant cryptocurrency of our times.

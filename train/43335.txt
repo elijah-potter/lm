@@ -1,0 +1,45 @@
+Crypto – Where to Start?
+Comedian John Oliver famously stated:
+“Cryptocurrency is everything you don’t understand about money combined with everything you don’t understand about computers.”
+It can be difficult knowing where to start on your cryptocurrency learning journey, and whether you should approach if from a technical, economic, political or even philosophical point of view.
+If you decide to start from a technical viewpoint, then I recommend reading the original white papers of Bitcoin and Ethereum which paved the way for all subsequent blockchain/crypto technology (see also links at the bottom of this article).
+If you’re not particularly knowledgable when it comes to computer science, reading these papers can be daunting as you are soon faced with unfamiliar technical concepts and jargon.
+It would be difficult to explain all these concepts in one short article, but we can start with the most pervasive piece of technology used which is the hash function.
+The hash function is the glue that holds blocks together and ensures that the forgery of coins or balances is just about impossible.
+If you search for the definition of a hash function on the web you will probably end up with something like:
+“A hash function is any function that can be used to map data of arbitrary size to fixed-size values.”
+This in itself is probably not particularly helpful so I will walk you through a working example using your browser so you can see this in action.
+There are various online hash calculators. https://xorbin.com/tools/sha256-hash-calculator – this one calculates an SHA-256 hash which is commonly used in Bitcoin and Ethereum:
+If you put some data in the ‘input’ box above and hit the calculate button then you get a hash:
+If we add some more data we get a different hash:
+In both examples above the same input data will always produce the same hash. If you use the online tool and type in the data above exactly as it is (i.e with capitalisation and spaces) then you will get the same result.
+If I ‘tamper’ with the data, then I will get a different hash:
+The original hash was:
+The hash of the tampered data is:
+If I sent you this data along with the hash of it, you would be able to calculate the same hash from the data and verify that I hadn’t messed with it. What we can’t do is easily convert the hash back to the data, as the hash function only operates in one direction.
+In the past, hash functions were used to encrypt passwords – the hash of a password was stored in the database instead of the password itself. However, this is no longer secure as today’s powerful computers can reverse engineer the data from the hash by brute force (i.e by repeatedly attempting to guess the input data that produces the hash) in a much shorter amount of time.
+Time is a factor in any secure environment. Most methods of security involve some degree of time before you can access secure data.
+A good example of this is the 4-digit combination lock I had on my bike when I was younger. If someone wanted to steal my bike, they would have to spend time guessing one of the 9,999 code combinations that it could possibly be (the bike thieves tended to prefer other forms of brute force).
+In the Proof of Work (PoW) mining algorithm used by the Bitcoin blockchain, the concept of time is used to create transaction blocks. The Bitcoin protocol states that each block should take around ten minutes to create.
+In order to forge a transaction in a previously mined Bitcoin block, you would have to recalculate the block and all of the subsequent blocks, which is virtually impossible.
+Using our online hash calculator we can simulate how this works, but first, we need to introduce another computer science term: the nonce.
+Nonce in computer science simply means ’number used once’.
+Each Bitcoin block has a nonce which has to be guessed.
+In our simplified example, let’s introduce a nonce into the data:
+Introducing the nonce changes the hash, but according to Bitcoin protocol, this hash would not be acceptable because it does not begin with one or more leading zeros.
+Using the online tool see if you can change the nonce so that the hash that is produced is as follows:
+As a clue, the nonce is less than 20.
+You may get this with your first attempt or it may take you several goes.
+If I now say that the Bitcoin protocol requires a hash with two preceding zeros, it will take you considerably longer to guess the nonce – I have increased the difficulty of guessing the correct hash value. These leading zeros are known as the ‘hash target’ and at the time of writing, it is around 18 zeroes.
+The number of guesses to find a hash that meets the hash target is known as the level of difficulty – see how this has varied over time.
+A more technical explanation of how mining and the hash target work can be found here.
+To summarise, we’ve introduced a few new bits of terminology that will help us navigate the blockchain white papers from a technical viewpoint.
+- Hash: a one-way function that converts a set of data into a fixed-length string.
+- Hash Target: a hash that has a number of preceding zeros.
+- Nonce: a number used once.
+- Mining: the process of guessing a nonce to ensure that the block hash meets the hash target.
+After reading this, I hope you feel slightly more comfortable with these terms and more confident with some of the material in the white papers.
+The white papers can be found here – dive in!
+(Note: it is currently removed from Bitcoin.org due to a copywriter dispute with Craig Wright)
+BCB Group comprises BCB Prime Services Ltd (UK), BCB Payments Ltd (UK), BCB Digital Ltd (UK) and BCB Prime Services (Switzerland) LLC. BCB Payments Ltd is regulated by the Financial Conduct Authority, no. 807377, under the Payment Services Regulations 2017 as an Authorised Payment Institution. BCB Prime Services (Switzerland) LLC, a company incorporated under the laws of the Swiss Confederation in the canton of Neuchâtel with business identification number CHE-415.135.958, is an SRO member of VQF, an officially recognized self-regulatory organization (SRO) according to the Swiss Anti-Money Laundering Act. This update: 14 Oct 2020.
+The information contained in this document should not be relied upon by investors or any other persons to make financial decisions. It is gathered from various sources and should not be construed as guidance. The information contained herein is for informational purposes only and should not be construed as an offer, solicitation of an offer, or an inducement to buy or sell digital assets or any equivalents or any security or investment product of any kind either generally or in any jurisdiction where the offer or sale is not permitted. The views expressed in this document about the markets, market participants and/or digital assets accurately reflect the views of BCB Group. While opinions stated are honestly held, they are not guarantees, should not be relied on and are subject to change. The information or opinions provided should not be taken as specific advice on the merits of any investment decision. This document may contain statements about expected or anticipated future events and financial results that are forward-looking in nature and, as a result, are subject to certain risks and uncertainties, such as general economic, market and business conditions, new legislation and regulatory actions, competitive and general economic factors and conditions and the occurrence of unexpected events. Past performance of the digital asset markets or markets in their derivative instruments is not a viable indication of future performance with actual results possibly differing materially from those stated herein. We will not be responsible for any losses incurred by a client as a result of decisions made based on any information provided.

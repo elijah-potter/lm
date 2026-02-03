@@ -1,0 +1,32 @@
+Learners who have grown up in the era of mobile devices and cloud computing expect to be able to access learning materials from a variety of devices and platforms. To accommodate their needs for accessibility in a variety of contexts, content should be created in such a way that it supports not just current platforms and assistive technologies but future ones as well.
+The following techniques will help you make your content robust.
+- Provide descriptive metadata
+- Perform an accessibility check
+- Test your content on a variety of platforms
+Access for all people, including people with disabilities, to web environments.View in glossary
+Equipment or system where principal function is creation, conversion, duplication, control, display, interchange, transmission, reception, or broadcast of data.View in glossary
+The techniques are also summarized in a table with the corresponding Web Content Accessibility Guidelines for your reference.
+|Technique||Benefits Learners Who Are||Relevant WCAG Guidelines|
+|Provide descriptive metadata||Makes content easier to find and use||2.4.2 Page Titled (A)|
+|Perform an accessibility check||Helps prioritize accessibility issues for remediation||Multiple|
+|Test your content on a variety of platforms||Makes your content usable in more places and devices||Multiple|
+One or more pieces of descriptive information about data.View in glossary
+Provide descriptive metadata
+Metadata is data or information about other data. The author of a work is an example of metadata, as is its title. Descriptive metadata will not only make your content easier to index on search engines, it may also improve its usability for assistive technology users. An example is the document title. A descriptive title will help a screen reader user quickly determine if they are on the desired document.
+Perform an accessibility check
+Even the best accessibility checking tools have their limitations due to the subjective nature of many accessibility techniques. For example, an automated check may reveal that an image has alternative text, but it will not indicate whether the alternative text accurately describes the content of the image. Despite these limitations, an accessibility check can be helpful for catching some of the most common accessibility problems. Some authoring tools now include a basic accessibility checker:
+- Microsoft Office Products (Texas Governor's Committee on People with Disabilities )
+- Adobe Acrobat (Adobe)
+Grackle Docs is a checker for documents created in the Google Suite (Docs and Sheets). The free WAVE Web Accessibility Tool from WebAIM is a good starting place for evaluating the accessibility of websites and blogs.
+Test your content on a variety of platforms
+Services such as Google’s Mobile Friendly Test can give you an idea of how your content will work when accessed on a mobile device. However, for the best results you should try to access your content on one of the devices your learners are likely to own and use for learning. This will help you identify problems with both the rendering of the content as well as its overall usability. Content that may have worked well on a computer when it is accessed with a mouse and keyboard may not be as easy to use when accessed on a tablet with only touch gestures. For even better results, see if you can get one of your learners who uses assistive technology to review your content and report back on any accessibility problems. This will be good test of how well your content works for learners with disabilities.
+Along the same lines, it is strongly recommended that you communicate to your learners that you expect them to notify you if at any time they experience less than full participation in learning and assessment activities. This includes reporting any accessibility barriers they encounter as soon as possible. Explain that this information is necessary for you to effectively support their independence, participation, and progress. You can communicate this information on the first day of class as well as include it in the course syllabus and website as reminders.
+Accessibility is a shared responsibility. In addition to feedback from students, you can learn how to use some of the accessibility features of popular devices to perform your own basic accessibility testing. You can also share this information with other staff at your school or institution (including instructional designers, information technology staff and other educators). This will increase the number of people who know about accessibility and promote change beyond just your own content.
+These basic tests are only meant to help you identify some of the most common accessibility issues so that you can prioritize them for remediation. A more detailed audit would be needed to make compliance claims about your learning materials.
+- Using NVDA for web accessibility testing on Windows (WebAIM)
+- Using VoiceOver for web accessibility testing on the Mac (WebAIM)
+- Mobile Accessiblity Testing Guide for Android and iOS (Paciello Group)
+Alt Tag (alternative text)
+Brief description of a single image designed to be read by a screenreader as an alternative to the image.View in glossary
+Individuals with Disabilities Education Act (IDEA)
+Federal law governing rights of children with disabilities to receive free and appropriate public education in least restrictive environment.View in glossary

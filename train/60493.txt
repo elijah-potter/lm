@@ -1,0 +1,25 @@
+Blogger: Summer scientist* Espen Verpe
+Freezing is one of the main technologies for food preservation and a significant number of products in a supermarket are sold in frozen state. Freezing is quite energy demanding since a refrigeration system must exchange and remove all the energy necessary to transform the water in the product to ice. In fact, 15% of the global electricity consumption is related to chilling and freezing.
+System efficiency is not high
+Conventional refrigeration systems are normally operated at temperatures around -30°C, because of the thermal limitations of the refrigerant. A special characteristic of the refrigerant R744, which is carbon dioxide, is that it could be used at temperatures down to -50°C, however the system efficiency is not high.
+On the other hand, the freezing process will be faster at such low temperatures, since the temperature gradient between product and refrigerant is much higher.
+The question to be answered is: What is more efficient? Freezing fast with low refrigeration efficiency or freezing slow with high refrigeration efficiency.
+I was looking into this question during my stay at SINTEF Energy Research. My results clearly indicates that the freezing time reduction and the decrease in refrigeration efficiency are equal.
+For a given plate freezing system this means that is possible to freeze more product with only a small increase in energy consumption for a given amount of product. The estimated capacity increase can be as much as 54 %, depending on what product is frozen, when comparing to freezing with a temperature of -30°C.
+Two-dimensional freezing model
+In order to gain this result, it was necessary to develop a two-dimensional freezing model that could estimate the freezing time at different refrigeration temperatures. The simulation results than had to be implemented into a heat pump model, comparing conventional refrigeration systems, using ammonia, with carbon dioxide refrigeration.
+The promising results will be investigated further and it is planned to investigate and document the estimated capacity increase through field tests.
+This work was a part of the Research Centre “HighEFF: Centre for an Energy Efficient and Competitive Industry for theFuture” one of Norway’s Centres for Environment-friendly Energy Research (FME) co-funded by the Research Council of Norway and Industry. The host institution is SINTEF Energy Research.
+HighEFF will help ensure that Norway has the world’s greenest industries.
+- 20% to 30% reduction in energy consumption
+- 10% reduction of greenhouse gas emissions
+- Increased value creation in Norway
+- Energy efficient processes and components
+- Competitive Norwegian industry
+*Summerscientists at SINTEF Energy Research
+For the 11th year in a row, SINTEF Energy Research has offered summer jobs to a number of students. This year we had as many as 32 students, all of whom were given the opportunity to be a research scientist for a summer. We like to call them “summer researchers”. In 2017 we received about 250 applications for jobs as summer researchers, so there was tough competition this year too.
+- Summer jobs involve carrying out specific research tasks that are integral to our projects. Students are under the continual supervision of experienced SINTEF researchers.
+- Summer researchers are integrated into the research teams.
+- They give a joint presentation at a closing seminar in front of relevant SINTEF research scientists.
+- They have the opportunity to carry out project-related and Master’s degree assignments as extensions of their summer job (this applies only to those jobs where this option is specified).
+- Summer researchers must be proficient in Norwegian and English, both written and spoken.

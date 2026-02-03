@@ -1,0 +1,4 @@
+This is a nice problem that I would like to share.
+Problem: In a public garden, there a statue consisting of a spherical stone and a stone cup. The ball is 1 meter in diameter and weighs at least a ton. The cup is an upside-down hemispherical shell, and the ball sits in this shell and fits it almost exactly. Water is pumped into the bottom of shell so that a thin film exists between shell and the ball. The result is a ball that is free to rotate with negligible friction.
+You only have access to the ball near the top, so while you can push it to make it turn around any horizontal axis, you can't get enough of a grip to make it turn around the vertical axis. Can you impart a net angular momentum around the vertical axis anyway, so that the balls spins around the vertical axis?
+Source: Vector Calculus, Linear Algebra, and Differential Forms by Hubbard and Hubbard.

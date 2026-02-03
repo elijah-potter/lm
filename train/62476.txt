@@ -1,0 +1,4 @@
+The magnetic field inside a cylindrical solenoid of area 4 cm^2 is 0.15 T along the axis of the solenoid. What is the magnetic flux through a disk of radius 3 cm placed perpendicular to the solenoid axis?
+[tex]\phi = \zeta B * dA [/tex]
+The Attempt at a Solution
+Well the area is 4 cm^2 and B is 0.15, so 6E-5 Wb is the answer, but I'm a little confused here. I thought flux for a closed surface was always 0 (gauss' law for magnetism)? What's going on here?

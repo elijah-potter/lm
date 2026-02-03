@@ -1,0 +1,36 @@
+In Activity Monitor there is a cryptic menu option to Send Signal to Process. Have you ever wondered what it was? If you select it, you’ll see obscure terms like SIGINT and SIGHUP, which doesn’t exactly clear things up. So what exactly are these signals?
+Those signals are a result of the Unix foundation at the heart of macOS. Terminal has some of these signals built-in: when you hit Ctrl + C to stop a running command, you are sending the process SIGINT to interrupt and stop the currently running command. They were one of the first ways apps could communicate with each other and are part of old “Portable Operating System Interface” (POSIX) standards.
+While it’s nice to understand the basics of how your system works, you can also use these signals to capture information about misbehaving apps.
+What Is POSIX?
+POSIX is the foundation standard for Unix and Unix-Like operating systems. Among these compliant systems is macOS, which was made to be Unix compatible. At its core is Darwin, a Unix core with roots that date back to NeXTSTEP. That itself was a fork of BSD, one of the original Unix variants.
+POSIX ensures all of these operating systems handle code in expected ways, allowing for developers to know their code is truly portable. When they send one of these signals on another machine to a process, the data they get back is in a format they can anticipate and process. This is a gross simplification of about 40 years of computing history, but you get the general idea.
+When communicating with the most basic daemons that make up the Unix base of macOS, these signals are the best. Daemons are the background processes that run the essentials of your computer — or in common macOS parlance, services. The infamous discoveryd is an example. This was the OS X Yosemite 10.10 replacement for mDNSResponder, another service blamed for the network problems in that update.
+Depending on the way that an app is designed to receive signals, you can send a signal to quit an app to create what’s called a core dump. Core dumps contain all of the current data about a running program. These are essential for troubleshooting apps that constantly crash. On the Mac, these dump in the Mach-O file format, which you can read in the macOS development environment called Xcode. Most users probably won’t do much with these, but if you are frustrated by an app problem they can be helpful to send to a developer for support.
+There is another little bit of classic computing showing its roots here. The Mach-O file format shares its name with the Mach microkernel. Along with BSD, this is part of the roots of macOS, and the two are part of the foundational kernel, XNU. Mach is not as storied as BSD, so it doesn’t get a lot of the press but is part of what set Apple’s operating system apart from other Unix variants.
+So How Can I Use Them?
+We’ve all been there before: you get an update to an app, or download a new app, and it hangs every time you open it. You open Force Quit from the Apple Menu and see the Application is showing up as Not Responding. Worse yet, it is some background process dragging your system down.
+Open Activity Monitor and click on the process that is not responding. Then go to the View menu and select Send signal to process. A menu will pop up and allow you to choose which signal to send to the process select your signal and press Send.
+If you prefer the Terminal, you will use a command you are already familiar with. The
+kill command is used to stop a process. If you add
+-s you can add a number to send a signal to the process you are killing. Here is a list of the number of common commands list in the
+kill man page:
+- 1 — HUP (hang up)
+- 2 — INT (interrupt)
+- 3 — QUIT (quit)
+- 6 — ABRT (abort)
+- 9 — KILL (non-catchable, non-ignorable kill)
+- 15 — TERM (software termination signal)
+There are some other signals you can send as well, these are just the most common. There is a comprehensive list of codes available here.
+When Do I Use Them?
+Now that you know what to do with the POSIX signals, you can use them to stop your hung processes cleanly. To be fair, you are not going to use these codes every day. When working with a developer on an odd app crash, or helping your sysadmin beta test your company’s in-house apps, these codes can help get the information they need.
+If the app is coded to create these dumps you are going to find them in the directory
+/cores making this an easy directory to look to when getting data for a crashing or hung application. You can check here and see what dumps are in the directory using the
+ls -a command. This will show you all the files in that directory you can then copy them to a more accessible directory music the command
+mv filename destination.
+In Terminal use the
+command cd /cores to switch to the directory, then
+ls -a to list the contents. To move a file to your Documents folder simply use
+mv filename /Users/username/Documents (replacing filename and username).
+If you are a long-time Unix user that moved to the Mac, what other little-known features are out there? If you’re interested in checking out a project that only uses the open source foundation of macOS check out PureDarwin. Let us know how that worked out in the comments. We’d also like to hear when POSIX signals solved a stubborn problem with your Mac.
+Have you used POSIX signals for troubleshooting before?
+Image Credits: Dean Drobot/Shutterstock

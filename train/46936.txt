@@ -1,0 +1,69 @@
+Voiced by Amazon Polly
+Azure Machine Learning is a cloud service for managing the lifecycle of machine learning projects. Also, we can create models in Azure ML or use a built-in model from an open-source platform like TensorFlow and Pytorch, etc.
+The primary goal of ML is to enable computers to learn automatically by themselves without human intervention which means computers can recognize, analyze and deliver proper information without the involvement of humans.
+Machine Learning is the process of using mathematical solution models to guide a computer to learn without human involvement. ML is a subset of Artificial Intelligence (AI). ML uses some algorithms to identify patterns from the huge data and then those patterns will be used to create a data model which will make predictions.
+Machine Learning Lifecycle
+- Process of Preparing Data
+Data Labeling – Label training data and manage labeling projects.
+Data Preparation – Uses analytics engines for data preparation.
+Datasets – Access data and create and share datasets.
+- Tools for building and training models
+Notebooks – Use Jupyter Notebooks with attached compute.
+Automated Machine Learning – It automatically trains accurate models.
+CLI and Python SDK – Accelerate the model training process.
+Visual Studio Code and GitHub – It switches easily from local to cloud training.
+Compute Instance – Secure environment with cloud CPUs, GPUs, and supercomputing clusters.
+Open-Source Libraries and frameworks – PyTorch, TensorFlow, Keras.
+- Validate and Deploy
+Managed Endpoints – Deploy models for batch and real time data.
+Pipelines and CI/CD – Automate machine learning workflows.
+Prebuilt Images – Access container images with frameworks and libraries.
+Model Repository – Share and track models and data.
+Hybrid and Multicloud – Train and deploy models on-premises and across multi-cloud environments.
+- Manage and Monitor
+Monitoring and Analysis – Track, log and analyze data, models, and resources.
+Data Drift – Detect drift and maintain model accuracy.
+Error Analysis – Debug models and optimize model accuracy.
+Auditing – Trace machine learning artifacts for compliance.
+Policies – Use built-in and custom policies for compliance management.
+Security – Enjoy continuous monitoring with Azure Security Center.
+Azure Machine Learning Workspace
+The ML workspace is the top most level resource for Azure Machine Learning which provides a centralized place to work with all the artifacts that you create when you use ML.
+The workspace keeps the history of all training runs including logs, metrics, output, and snapshots of your scripts. This information will be used to determine which training run produces the best model.
+Tools for Interacting with Workspace
+- Azure Machine Learning Studio
+- Azure Machine Learning Designer
+- Azure Machine Learning SDK for Python
+- Azure Machine Learning CLI Extension
+- Azure Machine Learning VS Code Extension
+Sub Resources of a Workspace
+The following sub resources are the main resources that will be made in the process of creating the Azure Machine Learning Workspace.
+VM – It provides computing power for your Azure Machine Learning Workspace and is also an integral part while deploying and training models.
+Load Balancer – It’s a network load balancer that will be created for each compute instance to manage traffic even if the compute instance is stopped.
+Virtual Network – It helps resources to communicate one with another and other on-premises networks.
+Bandwidth – This encapsulates all outbound data that transfers across the region.
+Storage Account – It will be used as the default datastore for the workspace and also it stores the Jupyter Notebooks that are used with your Azure ML compute instances.
+Container Registry – Which registers docker containers that are used for the Azure ML environments, AutoML, and Data Profiling.
+Application Insights – It stores monitoring and diagnostic information.
+Key Vault – It stores secrets that are used by compute targets and other sensitive information which is needed by the workspace.
+- ML Service can handle a large amount of data and scale up and down as its requirement.
+- It mainly manages the infrastructure of both software and hardware.
+- It supports various ML frameworks like PyTorch and Tensorflow etc.
+- It is very expensive for large scale projects.
+- It is the exact type of other machine learning platforms which may limit its capabilities for other use cases.
+- It’s not supported in all the regions.
+From this article, we can learn the Azure Machine Learning service details as described in the introduction, its lifecycle, workspace, and workspace sub-resources which are main the components of a workspace while it’s going to be created.
+Get your new hires billable within 1-60 days. Experience our Capability Development Framework today.
+- Cloud Training
+- Customized Training
+- Experiential Learning
+CloudThat is also the official AWS (Amazon Web Services) Advanced Consulting Partner and Training partner and Microsoft gold partner, helping people develop knowledge of the cloud and help their businesses aim for higher goals using best in industry cloud computing practices and expertise. We are on a mission to build a robust cloud computing ecosystem by disseminating knowledge on technological intricacies within the cloud space. Our blogs, webinars, case studies, and white papers enable all the stakeholders in the cloud computing sphere.
+Drop a query if you have any questions regarding Azure ML Service and I will get back to you quickly.
+To get started, go through our Consultancy page and Managed Services Package that is CloudThat’s offerings.
+1. Can we manage ML projects with the use of a workspace?
+ANS: – Yes, we can manage by using the workspace resource only.
+2. Can we create a workspace using Studio?
+ANS: – We can create the workspace using all tools as shown above diagram.
+WRITTEN BY Sridhar Andavarapu
+Sridhar works as a Research Associate at CloudThat. He is highly skilled in both frontend and backend with good practical knowledge of various skills like Python, Azure Services, AWS Services, and ReactJS. Sridhar is interested in sharing his knowledge with others for improving their skills too.
+Click to Comment

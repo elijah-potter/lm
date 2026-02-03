@@ -1,0 +1,15 @@
+While translating on the XLIFF Editor, you might encounter tags. Tags are elements that confer certain properties on a piece of text. Usually used in html, programming, etc. Tags can make text bold/colored, etc. when the text is rendered in final format.
+In our work, we need to keep the tags in their appropriate positions while translating. This document shows how to use tags in XLIFF Editor.
+I open a file in XLIFF Editor. This is a segment that has tags (see image below):
+The tags are the red text. They cannot be translated, only inserted in appropriate positions in the translation.
+You can see the tags are numbered (the blue superscript at the end of the tag is the tag number).
+Some tags are standalone tags (e.g. tag 4 in our sample segment), while some are tag pairs – they have opening and matching closing parts (e.g. tag 1, tag 2, tag 3 in our sample segment).
+You can also see tag 1 surrounds the first text “Your Content” and tag 2 surrounds the second text “Your Content” Tag 4 is also surrounded by tag 3.
+Inserting Tags: To insert a tag in an XLIFF Editor target segment, click on the Tags menu item, and select one of the Insert options (see them in image below underlined red):
+Insert All Tags: This copies all the tags in the source directly into the target. If you do this, then you can try to fit the text translations into the appropriate positions in the tags
+Insert Tag by Id…: Clicking this brings up a pop-up where you can put in the tag ID you want to insert, which is the tag number, so you can place your cursor at the desired position in target, and then insert the required tag
+Insert Tag: Clicking this brings up a set of numbers 1 to 10 which can be clicked on to insert the corresponding tag number. Clicking 1 inserts tag 1, 2 inserts tag 2 and so on.
+Note that to insert tag pairs which surround text, select the text (not click inside – select the whole text that the tag should surround), then using one of the insert options, insert the required tag number, it will insert around the text since the whole text is selected.
+One other way to handle tags is to copy the whole source to the target. You can use the Copy Source option in the Translation menu, Alt+ Insert, or the copy source to target icon (circled red in image below). If you copy the source to the target, then you can overwrite the source text with the translation, leaving the tags in their places.
+Sometimes you might need to delete tags in translation segment, maybe you want to change the position, etc. By default, they would not delete. To enable deleting of tags, you need to “unprotect the tags”. Do this by unchecking “Protect Tabs” option in the “Tags” menu. Click it so the check mark goes away. After that, you can delete tags.
+Translation Workspace XLIFF Editor is a really powerful tool and we will continue our series exploring this tool. For any questions you might have concerning the XLIFF Editor, or for any translation and localization related services, we will be happy to speak with you. Contact us here

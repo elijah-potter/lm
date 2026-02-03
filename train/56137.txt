@@ -1,0 +1,15 @@
+In this tutorial you will learn cool and simple trick to Create an undeletable and unrenamable Folders In Windows operating system. Most of the Peoples are not aware that it is possible to create Undeletable, Unrenamable folder in windows without any software. To Test this concept just follow simple steps given below.
+Try to make a new folder in windows & give it name con,aux, lpt1, lpt2, lpt3 up to lpt9. you won't be allowed to create folder with above mentioned names, Because they are reserved words in windows.
+- Go to Start and then Click on Run
+- Type cmd & hit enter (To open Command Prompt ).
+- Remember you cannot create Undeletable & unrenamable folder in your root directory (i.e. where the windows is installed) That means you can't make this kind of folder in C: drive if you installed windows on C:
+- Type D: or E: and hit enter
+- Type md con\ and hit enter (md - make directory)
+- You may use other words such as aux, lpt1, lpt2, lpt3 up to lpt9 instead of con in above step.
+- Open that directory, you will see the folder created of name con.
+- Try to delete that folder or rename that folder windows will show the error message.
+How to delete that folder ?It is not possible to delete that folder manually but you can delete this folder by another way mentioned below.
+- Open Command Prompt
+- Type D: ( if u created this type of folder in D: drive) & hit enter
+- Type rd con\ (rd - remove directory)
+- Open that directory and the folder will not appear because it is removed.

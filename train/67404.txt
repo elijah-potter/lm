@@ -1,0 +1,41 @@
+Have you ever wondered How Artificial Neuron mimics neurons in human brain? We will see the Architecture of Artificial Neurons and its components in detail in this article.
+It all started when the neurons in brain of Warren McCulloch and Walter Pitts received a stimulus to research about our human neurons.
+In 1943, A neurophysiologist Warren McCulloch and a young mathematician Walter Pitts published a paper “A logical calculus of the ideas immanent in nervous activity”.
+From this paper, they provided the research on the neuron of human brain and their understanding on making an artificial neuron.
+How human neuron works?
+In Physiology, a stimulus (Example: touch, sound, light etc) is a thing or event that evokes a specific functional reaction in an organ or tissue. Neurons in brain takes a major role in this process.
+- When we see an object or touch a thing, (for example: we touch fire) a stimulus is received, the impulse is conducted to the neurons in brain via its Dentrites.
+- Neurons in brain works with respect to “all-or-none” law. If the stimulus is strong enough (i.e. above a certain threshold value), then the neuron fires otherwise it does not fire.
+- If the neuron fires the signal, then either it communicates signals to other neurons or to muscles or glands via Axons.
+McCulloch and Pitts replicated this action in Artificial neuron.
+How Artificial Neuron works?
+An artificial neuron model consists of 4 components. Below is the architecture of an Artificial Neuron.
+Architecture of Artificial Neuron:
+An input layer takes one or more inputs as digits where each input is assigned with a random weight.
+An artificial neuron is a mathematical function processes the input data, and supplies it to a non-linear activation function.
+A neuron finds the sum of product of input and its weights + bias.
+A human neuron will work with the principle of “all-or-none”. But the output of the artificial neuron can be any value as it is a sum of product of weights and inputs. The result need not to be 0 or 1.
+To make this value binary to match it with “all-or-none” law, we need to process this result before passing it as an output of the model such that it will be binary.
+Activation Function converts the linear output of the neuron to non-linear.
+There are various types of activation functions which provides results with slight difference.
+Rectified Linear Activation Function (ReLU):
+Keeps any value greater than 0 as it is.
+Converts any value <0 as 0.
+ReLU works as max (0, x)
+If the value is > 1 then converts it as 1.
+If the value is < -1 then converts it as -1.
+Tanh works as tanh(x)
+If the value is > 0.5 then it will be converted to 1, if the value is < 0.5 then it will be 0.
+Exponential Linear Unit (ELU):
+As same as ReLU, ELU keeps any value > 0 as it is.
+If the values are negative, ELU will accept the negative value for certain range.
+In an Artificial single Neuron model, the output value will be a value which is based on the input and the activation function which is chosen for the Network.
+What is a Perceptron?
+A neural Network with an input layer and a single hidden layer is called a Perceptron.
+Aren’t you excited about know the reason for why we react to a thing we see or touch?
+Yes, Human brain is a fabulous organ in our entire body which controls all functions of the body.
+We will learn more about Neural Network and Deep Learning in next articles.
+Thank you for reading our article and hope you enjoyed it.
+Like to support? Just click the like button ❤️.
+Good explanation Asha! Thanks for posting
+Thank you Srikanth!

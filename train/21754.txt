@@ -1,0 +1,49 @@
+Arrays are one of the most popular data structures in the whole programming language world but sadly Python does not support arrays as pre-installed data management sequences, unlike other languages.
+However, you can import the module named “array” to use them.
+An array is an ordered collection of elements that are of a similar type, this type of collection is called a Homogenous collection in Programming. Like a List, an array is also mutable which means that the items in it can be changed or updated.
+One of the good features of arrays is that we can decide the type of elements that are going to be stored in them. Let us have a look at how an array can be created!
+To use arrays, we will have to import the module “array” like this:
+import array as arr
+This array module has a function named “array” which we will use to create an array. This function two arguments i.e., the data type of the elements that are going to be stored in the array and the array itself in large parenthesis ‘[ ]’.
+After importing the module, an array can be created like this –
+You cannot store a string in an array in Python. You can, however, change the data type of elements to float by specifying in the function.
+Common data types that can be specified are written below:
+|Letter||Character Type||Python Type||Byte Size (Minimum)|
+|q||Signed long long||int||8|
+|Q||Unsigned long long||int||8|
+We mainly use the float (d) and signed int (i) but some programming problems might require other data types too.
+Lists vs Arrays
+Many programmers call Python Lists as arrays but that is quite not true. Lists can be treated like arrays, but there are some differences that you should know while picking up what to use while programming:
+- Unlike an array, you cannot specify the data type of elements in the list.
+- Also, lists do not need to be declared as they are a part of the Python programming language, on the other hand, an array needs to be declared.
+- Arrays can store data efficiently, therefore, when storing a large amount of data you should consider using arrays instead of lists.
+Lists might use more data in the memory, this is due to the fact that the memory while creating an array is fixed but a list is dynamic which means that it can grow depending upon the size of data and it makes a list more data-hungry than an array.
+Elements in Python arrays can be accessed using indices of the elements.
+A slice is a smaller part of a sequence and the process of accessing a smaller part of the sequence is called Slicing.
+A slice of an array in Python can be accessed using the slicing operator ( : ), you can access a range of elements only if the range remains valid in the array otherwise you will get an error.
+Here you can see that Python prints element on the first index that is passed to the indexing operator until the n-1 index where n is the second index number passed to the indexing operator.
+Let’s say you do not know how many elements are there in the array and you want to access the last element of it.
+Well, it can be done with the help of negative indexing. For example, -1 is the last element, -2 is the second last element, and so on. Let us have some examples to understand it better.
+Reversing an Array
+With the help of negative indexing, an array can be reversed without the help of any function. This can be done like this: –
+Make a habit of assigning slices to a variable so that you can use them again.
+Updating an Array
+Elements in an array can be changed, removed, or added similar to Lists, and this property of the sequences in Python is called mutability.
+Changing Element Values
+To change an element, we just have to assign the index of that element to a different value.
+There are multiple ways to add elements in a list. If you want to add a single element in an array, Python allows you to use the append() method or add multiple elements using the extend() method.
+The methods append() and extend() always add elements to the end of the list, if you want to add elements at a specific index of a list, you will have to use the insert() method. Let us understand it better using an example:
+Two arrays can also be joined using the ‘+’ operator. This property of sequence to join each other is called concatenation in Programming.
+Let us have an example: –
+This was an another way to add elements in an array.
+You can also remove elements from an array in Python using the del keyword. With the help of this keyword, whole array can be deleted from the memory.
+If you want to delete the elements, you will have to do that element-wise.
+Length of an Array
+You can use the len() method to get the length of an array. Length is the number of elements the array has.
+There are many uses of the length of a list, a few are shown below.
+Looping through an Array
+Similar to a list, you can print an array element-wise using the for in loop. An array, similar to a list is a type of storage for elements, it makes sense to loop through each of the elements in it. It can be done in this way.
+In the example below, there are two ways to print all of the elements of a list.
+Finding an Element
+To find an element in an array, you can use the built-in Python function index().
+This function will return the index of the element in the sequence.

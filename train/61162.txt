@@ -1,0 +1,35 @@
+Following are the key points described later in this article:
+- What is MEAN Web/Mobile App?
+- A Web Application Stack in General
+- Sample Web App using JEE (Spring/Hibernate) Framework
+- A MEAN Stack Web/Mobile App
+What is MEAN Web/Mobile App?
+A MEAN Stack based web/mobile app makes use of following technologies:
+A Web Application Stack in General
+A web application framework is required to fulfil some of the following key objectives:
+- One or more user interfaces for end users to interact
+- One or more web servers to handle user request/response
+- A Web framework to process user request/response
+- One or more databases to store the data
+Following are key components of any web application framework in general:
+- Web Server
+- Web application framework
+Sample Web App using JEE (Spring/Hibernate) Framework
+In Java web application, following are key components and related technologies:
+- UI: This is taken care using HTML/CSS with JSP embedded tags to render dynamic data.
+- Web/Application Server: The web server handles user requests and sends back the response after being processed using one or more services/components. Example of such app server is Tomcat server.
+- Web Framework: There is required a web framework to process the user requests/response. This is where framework such as Spring, Struts and other popular Java web frameworks fit in.
+- Database: There are different databases that one could use. For example, MySQL, Oracle, SQL Server etc.
+Following diagram represents a JEE based web app.
+A MEAN Stack Web/Mobile App
+A MEAN Web/Mobile app looks like following:
+- UI: This is taken care using AngularJS.
+- Web Server: This is based on NodeJS.
+- Web Framework: This is based on ExpressJS. Mongoose is used to connect to MongoDB database.
+- Database: The database is MongoDB.
+Following diagram represents MEAN Stack App:
+He has also authored the book, Building Web Apps with Spring 5 and Angular.
+Latest posts by Ajitesh Kumar (see all)
+- Difference between True Error & Sample Error - December 26, 2019
+- Python – How to Create Dataframe using Numpy Array - December 15, 2019
+- Hypergeometric Distribution Explained with 10+ Examples - December 14, 2019

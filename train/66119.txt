@@ -1,0 +1,17 @@
+What is the difference between .text, .value, and .value2?
+.Text gives you a string representing what is displayed on the screen for the cell. Using .Text is usually a bad idea because you could get ####
+.Value2 gives you the underlying value of the cell (could be empty, string, error, number (double) or boolean)
+.Value gives you the same as .Value2 except if the cell was formatted as currency or date it gives you a VBA currency (which may truncate decimal places) or VBA date.
+Using .Value or .Text is usually a bad idea because you may not get the real value from the cell, and they are slower than .Value2
+For a more extensive discussion see my Text vs Value vs Value2
+target.Value will give you a
+target.Value2 will give you a
+Variant type as well but a
+Date is coerced to a
+target.Text attempts to coerce to a
+String and will fail if the underlying
+Variant is not coercable to a
+The safest thing to do is something like
+Dim v As Variantv = target.Value 'but if you don't want to handle date types use Value2
+And check the type of the variant using
+VBA.VarType(v) before you attempt an explicit coercion.

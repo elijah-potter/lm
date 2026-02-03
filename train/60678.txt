@@ -1,0 +1,71 @@
+How sensors communicate with the internet is a key aspect when conceiving of a connected project. There are a number of ways to connect your sensors to the internet dependent upon the needs and limitations of a particular project.
+Key aspects when considering network connectivity:
+- Range - are you deploying to a single office floor or an entire city?
+- Data Rate - how much bandwidth do you require? How often does your data change?
+- Power - is your sensor running on mains or battery?
+- Frequency - have you considered channel blocking and signal interference?
+- Security - will your sensors be supporting mission-critical applications?
+Here is a matrix of common communication technologies that you can choose from including their tradeoffs.
+Low Power Wide Area Networks
+LoRaWAN or Long Range Wide Area Network, is based on Semtech?s LoRaTM PHY chip, specifically designed and optimised to provide low-power WANs with features to support low-cost mobile secure two-way communication in IoT. LoRaWANs use of sub-GHz ISM bands also means the network can penetrate the core of large structures and subsurface deployments within a range of 2km. LoRaWAN is quickly gaining traction with IoT businesses due to its low cost with a number of initiatives and hardware companies adopting it.
+- building penetration and urban range 2-5km, 15km suburban, 45km rural range
+- adaptive low data rate, 0.3 - 50kbps
+- ultra low power usage, estimated 10 years end-node operation with two AAA batteries
+- 109MHz, 433 MHz, 866MHz, 915MHz sub-GHz ISM bands
+- supports private & public networks
+- integrated security & embedded identification and authentication
+- A wide ecosystem of hardware manufacturer adoption due to the open specification.
+Similar to Sigfox, NWave is a proprietary technology that also forms the basis of the Weightless protocols below. NWave have multiple virtualised hubs allowing for multiple public and private streams. NWave is described as a VPN within public traffic using the Weightless-N standard.
+- 10km range
+- data rate 100bps
+- low power, est. 10-year end-node battery life
+- no integrated security
+Sigfox uses a technology called Ultra Narrow Band (UNB) and is only designed to handle low data-transfer speeds. An early contender technology, Sigfox already has a large network covering tens of thousands of devices and is currently rolling out across Europe and North America.
+- building penetration and urban range (est.) 3-10km, rural 30-50km
+- data rate of 10 - 1000bps
+- ultra low power
+- 900MHz / frequency independent
+- limited interference resistance
+WeightlessTM -N / Weightless -P
+Based on a simpler implementation of the NWave technology, -N uses utilises the UNB spectrum, however, is unidirectional, uplink only. Weightless -P is an improvement upon -N featuring bidirectional capability.
+- 5km -N/ 2km -P
+- 30 - 100kbps -N/ adaptive up to 100kbps -P
+- low power
+- Sub-GHz frequencies
+Projects requiring long-distance operation can take advantage of GSM/3G/4G+ networks. GSM is ideal for low bandwidth projects that send small messages over the internet, however high power consumption and cost can be problematic for long-term remote deployments. Cell networks are a key competitor to low-power WANs.
+- 35km (GSM); 200km for HSPA
+- variable data rates, GPRS 35 - 170kbps to LTE 3 - 10Mbps
+- medium power use
+- security backed by major telecoms
+Short Range Networks
+Wireless RF Wireless radio enabled sensors and actuators are cheap and simple to deploy ultra-low power, medium range plug and play solutions. There are a number of radio modules and manufacturers to choose from such as Wireless Things and Ciseco.
+- Up to 100m line of sight, extending to over 500m with larger external antennas
+- 10 - 115.2kbps
+- ultra-low power
+- Supports 128bit AES encryption
+Bluetooth Low Energy (BLE)
+With near ubiquity on mobile platforms, BLE is a well supported and reliable technology for short-range communications. Bluetooth is designed for transmission of small chunks of data at low energy and is widely used by fire and forget deployments looking to cheaply overlay physical context to digital applications such as Estimote iBeacons.
+- 30 - 80m context-dependent
+- <1Mbps data rate
+- low power use
+- 2.4GHz (ISM)
+- low security
+WiFi is an obvious choice due to its near-universal adoption. As a result, there is an expansive existing infrastructure supporting fast data transfer and high quantities of data. However, WiFi requires considerable power.
+- limited range - 50m
+- high power usage
+- high data rate
+- 2.4GHz - 5GHz bands
+Realised as a complement to WiFi, in that whilst WiFi has ubiquity, it has clear limitations for use in home automation with regards to security and power usage. Existing IEEE802.15.4 enabled devices can easily upgrade to Thread. Thread provides banking-class security in addition to robust mesh networking designed specifically for home automation.
+- operates on 2.4GHz range
+- high security
+Like Bluetooth, ZigBee has a number of active deployments albeit in more traditional industrial settings. ZigBee is based on IEEE802.15, an industry standard wireless networking protocol targeting applications requiring infrequent low data-rate exchanges between node and base-station. ZigBee has a number of advantages over BLE, in that is more robust, has a rugged security offering with a high scalability potential due to high node counts.
+- 10 - 100m range
+- 250kbs data rate
+- low power
+- 2.4GHz (ISM)
+- high security
+Operating in the sub-GHz band, Z-Wave is impervious to interference from WiFi and other wireless technologies in the 2.4GHz range such as BLE or ZigBee. It supports mesh networks without the need for a coordinator node and is scalable up to 232 devices on one base. Z-Wave?s protocol is simpler than others, which can enable quicker, simpler development, but is not often used as a comparator to other IoT protocols.
+- 30m range
+- 9.6 - 100kbps data rate
+- low power
+- 900MHz (ISM)

@@ -1,0 +1,21 @@
+||An allele is defined (in the TCP world) as a genetic
+mutation to a particular gene or chromosome. A mouseline can
+have one or multiple alleles (such as in the case of
+multi-transgenics) and thus alleles can be shared between lines.
+Alleles are characterized by MGI and are often found on the MGI
+||refers to the ability of more than the
+creator of the allele to be able to see a mouseline on LIMS.
+Alleles that are published and are listed on MGI are
+automatically not confidential and are searchable by anyone with
+LIMS access. This promotes sharing of mice within the facility.
+If you generate a novel allele then you have the option of
+keeping it confidential for the purposes of your experiments. If
+you combine this novel allele with ones not confidential you can
+maintain confidentiality by keeping the box checked.
+||A mouseline is a strain of mouse with alleles
+associated with it (or not, in the case of WTs). Thus the ROSA
+rtTA allele can be on both a B6 and CD-1 background, thus
+creating two distinct mouselines.
+||is essentially an identity card for
+the mouseline. It lists the alleles, the background, and the
+contact information of a particular line.

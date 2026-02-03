@@ -1,0 +1,38 @@
+The motor system's coordination of the many degrees of freedom (DOFs) associated with performing a task has been termed an ill-posed problem because of the biomechanical and neuromuscular redundancies in the anatomical structure (Bernstein 1967
+). It has been suggested that the central nervous system (CNS) coordinates musculature to build complex motor patterns based upon dimensionally reduced sets of fundamental control modules. These control modules, when combined sequentially or in parallel, produce a wide range of observable patterns of movement (Mussa-Ivaldi and Solla 2004
+). This concept has been formally articulated in the neuromotor synergy hypothesis, which states that `… low-level, neurally based patterns significantly constrain intentional actions' (Lee 1984
+). Indeed, this idea is not new and has been postulated since the turn of the 20th century (Bernstein 1967
+, Sherrington 1906
+)—only the nomenclature and proposed physiological manifestations of these patterns have changed. Most recent is the idea of fundamental muscle coordination patterns, termed muscle synergies (Bernstein 1971
+, Tresch et al 1999
+). These researchers defined a muscle synergy to be a set of muscles whose relative activation levels are neurally predetermined. A single muscle can simultaneously belong to multiple synergy sets, and it is the weighted combinations (i.e. activation levels) of these synergy sets that determine global muscle activation patterns. Muscle synergies are an attractive idea because empirical evidence suggests that muscle patterns are potentially encoded in the distributed activities of neurons in the M1 motor cortex (Holdefer and Miller 2002
+, Kakei et al 1999
+). Furthermore, muscle synergies have been shown to form the basis of complex muscle coordination patterns involved in activities such as kicking, swimming, jumping of frogs (Bizzi et al 2002
+, Cheung and Tresch 2005
+, d'Avella and Bizzi 2005
+, d'Avella et al 2003
+, Saltiel et al 2001
+, Tresch et al 1999
+), postural standing and muscle responses to postural perturbations (Ting and Macpherson 2005
+, Torres-Oviedo et al 2006
+) and human arm movements (d'Avella et al 2006
+, Soechting and Lacquaniti 1989
+Regarding hand control, several studies have presented evidence that the coordination of intrinsic joint positions associated with a wide variety of hand postures could be described by a dimensionally reduced kinematic synergy framework. Studies in typing (Soechting and Flanders 1997
+), hand shaping for tool use (Santello et al 1998
+), dynamic posture formation (Mason et al 2001
+) and miming of the American Sign Language (ASL) alphabet (Jerde et al 2003
+) have reported that the high-dimensional kinematics of the hand can be described by a lower dimensional set of basis postures, which are combined to produce the more complex joint positions. Recent studies have been focused on examining similar synergistic-based dimensionality reduction paradigms with regard to the EMG activities associated with hand postures (Breteler et al 2007
+, Ishida et al 2007
+, Weiss and Flanders 2004
+, Overduin et al 2008
+). One study of note aimed to describe the hand postures associated with the ASL alphabet and with grasping of everyday objects with a low-dimensional set of muscle synergies, and to align these muscle synergies with kinematic synergies of the hand (Weiss and Flanders 2004
+). The investigators reported that the six-dimensional EMG patterns associated with the hand postures for grasping everyday objects could be described at a rate of 80–90% by a three- or four-dimensional set of muscle synergies. A similar study from the same laboratory expanded the synergy framework from that of static synergies to that of time-varying synergies to explore the timing of muscle activations during finger spelling (Breteler et al 2007
+). These time-varying synergies, initially explored in the locomotion of frogs (d'Avella et al 2003
+), are essentially pre-stereotyped patterns of EMG bursts in a given muscle group. This study reported that four time-varying synergies, reduced from essentially a six-muscle set, could account for 80% of the temporal EMG patterns observed during hand coordination during finger spelling.
+One shortcoming of many of the studies reported in the muscle synergy literature is that though a basis set of synergies is found to describe the observed data sets, there is little compelling evidence to suggest that the extracted muscle synergies have real physiological significance and hence could be used as more than a description of the observed data. These studies show that muscle synergies form a descriptive
+framework for the EMG patterns observed during a set of tasks, but they do not explore if these synergies can form a predictive
+framework for a brand new set of tasks. Demonstrating a predictive framework is a more powerful assertion, and would more strongly suggest that muscle synergies are a reasonable governing paradigm of neural control by the central nervous system. The investigation of whether or not muscle synergies form a predictive framework for a wide variety of hand postures would suggest that the synergies are robust and general, rather than specific to the investigated tasks. Robustness and generality have been articulated by other investigators as a necessary testable hypothesis for validation of the muscle synergy concept (Lee 1984
+). Therefore, the aim of this work was to investigate if muscle synergies form a robust lower dimensional framework for the prediction of the EMG patterns of new untrained static hand postures. It was hypothesized that a reduced set of muscle synergies describing a small set of static hand postures could predict the EMG patterns from a wide variety of new static hand postures with comparable accuracy. Consequently, the number of synergies necessary to adequately predict the EMG patterns of new hand postures would not exponentially grow with an increase in the size of the predicted set. Within this hypothesis, the following questions were specifically examined.
+- How many synergies are needed to completely describe this lower dimensional predictive framework, and how robust are these synergies between postures and persons?
+- How many hand postures are needed to define the muscle synergy set of this framework?
+- What is the predictive power of the established framework?

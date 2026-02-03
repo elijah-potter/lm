@@ -1,0 +1,4 @@
+The \linebreak command tells LaTeX to break the current line at the point of the command. With the optional argument, number, you can convert the \linebreak command from a demand to a request. The number must be a number from 0 to 4. The higher the number, the more insistent the request is.
+The \linebreak command causes LaTeX to stretch the line so it extends to the right margin.
+See also Line and Page Breaking
+Go to LaTeX Table of Contents

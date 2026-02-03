@@ -1,0 +1,6 @@
+|AWARE [SYSTEMS]||Imaging expertise for the Delphi developer|
+|GPS TIFF Tag GPSDestLatitude|
+TIFF Tag Reference
+TIFF Tag GPSDestLatitude
+Indicates the latitude of the destination point.
+The latitude is expressed as three RATIONAL values giving the degrees, minutes, and seconds, respectively. If latitude is expressed as degrees, minutes and seconds, a typical format would be dd/1,mm/1,ss/1. When degrees and minutes are used and, for example, fractions of minutes are given up to two decimal places, the format would be dd/1,mmmm/100,0/1.

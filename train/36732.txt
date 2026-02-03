@@ -1,0 +1,27 @@
+Install OpenCV 4 on Raspberry Pi for C++ and Python development
+Posted on September 17, 2019 by Paul
+In this article, I will show you how to install OpenCV 4 with Python and C++ support on Raspberry Pi. I assume that you have the latest Raspbian installed on your Raspberry Pi, which at the time of this writing is based on Debian 10 Buster.
+Unfortunately, there is no official binary of OpenCV 4 for Raspberry Pi, so I had to built OpenCV with Python 2 and 3 support for Raspberry Pi Zero and up from sources. If you want to do the build yourself check my previous articles:
+In this article I’ll will show you how to install the already built binaries.
+There is also a video version of this tutorial:
+Let’s start by downloading the already built OpenCV 4 from https://github.com/sol-prog/raspberry-pi-opencv/releases/. As you can see, there are four binaries: two for RPi Zero with and without GUI support and two for RPi 2 and up with and without GUI support. Pick the proper version for your RPi.
+In the remaining of this article, I will assume that you want to install the full GUI version on a RPi 2 and up. If you are using RPi Zero just change the name of the files accordingly.
+Open a Terminal and download the desired version of OpenCV:
+Next, extract the archive:
+Once the archive was extracted, move the resulting opencv-4.1.0 folder to /opt:
+Optionally, you can remove the archive:
+Next, we are going to install a couple of libraries required by OpenCV:
+The next two libraries are only required if you are using the GUI version of OpenCV, you can safely ignore these if you are using the headless version:
+Next, we’ll add OpenCV to the system library path, you’ll need to run these commands from your home folder:
+Restart your Terminal or log in and log out if you are connected to your RPi through SSH.
+Next, let’s create some symbolic links that will allow Python to load the newly created libraries:
+Install git if necessary:
+We’ll clone a simple config file useful if you want to be able to use OpenCV from C++:
+At this point, you should be able to use the OpenCV library from C++ or Python.
+On the repository for this article you can find a few C++ and Python test programs. You can download the code on your Pi with:
+There are two headless tests that you can use even if you don’t have a display connected to your RPi: cli_cpp_test.cpp and cli_python_test.py. I’ve also included two graphical tests that require a display: gui_cpp_test.cpp and gui_python_test.py.
+You can build and run the C++ tests like this:
+or, if you have a display connected to your RPi:
+Here is a screenshoot of the C++ GUI test running on my Pi:
+For the Python tests, use:
+If you want to learn more about programming on the Raspberry Pi, a very good book is Exploring Raspberry Pi by Derek Molloy:

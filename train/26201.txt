@@ -1,0 +1,18 @@
+Product Quick Links
+Strain Gage-Based Transducer and Amplifier Selection and Calibration
+Download this application note.
+When choosing a strain gage-based transducer/amplifier combination to acquire data such as force, load, pressure or torque, there are a several important considerations to keep in mind. In addition to measurement range you must consider the sensitivity of the transducer and amplifier as well as the required excitation (supply) voltage.
+Once you've chosen an appropriate transducer/amplifier combination and have your DATAQ Instruments data acquisition system up and running, you'll want to display and acquire meaningful units (lbs, psi, etc.). This is accomplished using the calibration features built into WinDaq data acquisition software.
+The goal of this application note is to provide you with the knowledge necessary to choose a suitable strain gage-based transducer/amplifier combination and to acquire accurate, meaningful data.
+Sensitivity (Gage Factor)
+Sensitivity, sometimes referred to as gage factor, is used to determine the output voltage of a transducer with a specified supply (excitation) voltage connected and a physical quantity applied. Multiplying the excitation voltage by the sensitivity yields the full scale output of the transducer (Figure 1).
+The instantaneous output voltage is directly proportional to the physical quantity applied. Take for example a 0-100 psi pressure transducer that requires 10V of excitation and has a sensitivity of 2mV/V. With 100 psi applied, the transducer will output 20mV (the full scale output), with 50 psi applied the transducer will output 10mV (half the full scale output).
+Like strain gage-based transducers, amplifiers also have a sensitivity specification. Ideally the transducer and amplifier will share the same sensitivity allowing you to utilize the full measurement range of your transducer (Figure 2).
+In cases where the transducer has a higher sensitivity than the amplifier the transducer will be underutilized and the sensitivity ratio will be > 1 (Figure 3).
+It's also important to remember that while a manufacturer may list the sensitivity of a transducer as 2mV/V in a catalog, the actual sensitivity will be listed in the spec. sheet as something like 2.09mv/V or 2.14mV/V. In order to ensure the most accurate measurements these slight offsets must be taken into account during calibration (see Table 1 below). To ensure that the transducer/amplifier combination will accommodate the full range of data that you're attempting to acquire it may be necessary to oversize the transducer (if you're measuring 0-120 psi for example, choose a transducer with a 0-150 psi full scale measurement range).
+As you've seen above, it is important that you pay close attention to sensitivity when choosing a non-amplified strain gage-based transducer. Strain gage-based transducers with 2mV/V or 3mV/V sensitivity are ideally suited for DATAQ Instruments strain gage amplifiers (DI-8B38-05, DI-8B38-02).
+Use the three easy steps outlined in Table 1 to calculate full scale and baseline values to enter into WinDaq.
+Once you've calculated full scale and baseline values, use the 'EU Settings' features built into WinDaq data acquisition software to display meaningful engineering units.
+Using Application Example 1 (Table 1):
+WinDaq is now scaled to display engineering units (psi).
+To display and acquire accurate, meaningful data using a strain gage-based transducer/amplifier combination it essential that you pay close attention to the sensitivity of both the transducer and amplifier as well as the required supply (excitation) voltage.

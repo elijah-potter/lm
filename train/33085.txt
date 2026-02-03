@@ -1,0 +1,21 @@
+|natural = scrub|
+|Uncultivated land covered with bushes or stunted trees.|
+|Used on these elements|
+|Status: De facto|
+|Tools for this tag|
+Scrub (shrubland, scrubland, brush) is a plant community characterized by vegetation dominated by shrubs (bush), often also including grasses, herbs, and geophytes. It may be the mature vegetation type in a particular region and remain stable over time, or a transitional community that occurs temporarily as the result of a disturbance, such as fire.
+Seeon Wikipedia and on Wikipedia
+natural=scrub applies to nodes and areas.
+- name=* - name of the site
+- leaf_type=broadleaved/needleleaved/mixed - describes the type of leaves.
+- leaf_cycle=deciduous/evergreen/mixed - describes the phenology of leaves.
+wood=coniferous/deciduous/mixed- type of wood. This key is deprecated!
+The widely-used Anderson (1976) classification system has detailed descriptions of scrub. Particular attention should be paid to these classifications:
+- 3 Rangeland
+- 31 Herbaceous Rangeland
+- 32 Shrub and Brush Rangeland
+- 33 Mixed Rangeland
+- 5 Shrubland
+- 51 Dwarf Scrub - (Alaska only) areas dominated by shrubs less than 20 centimeters tall with shrub canopy typically greater than 20% of total vegetation. This type is often co-associated with grasses, sedges, herbs, and non-vascular vegetation.
+- 52 Shrub/Scrub - areas dominated by shrubs; less than 5 meters tall with shrub canopy typically greater than 20% of total vegetation. This class includes true shrubs, young trees in an early successional stage or trees stunted from environmental conditions.
+Herbaceous, sedge, lichen, moss and wetlands (woody or herbaceous) are better tagged as features other than 'scrub'.

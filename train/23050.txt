@@ -1,0 +1,19 @@
+The spatial data infrastructure (SDI) consists of spatial data products available in an online service environment, metadata supporting the finding and taking into use of such products and services to forward spatial data to various applications utilising the SDI.
+Key principles of SDI are the distribution of data maintenance and the use of data directly from the information pools of the organisation maintaining the system, the extensive utilisation of data through agreed standards and the integration and reuse of data. The core of SDI consist of spatial data contents that are clearly defined, of known quality, current and complete, and that are based on mutually agreed coordinate reference systems.
+As SDI advances, more advanced processing services, sensor networks for environmental monitoring and advanced services for data visualisation are incorporated into it. The increasing use of mobile equipment in the utilisation of SDI causes new demands on, for example, the development of multi-channel enabled visualisations. Spatial data analysis within an online service environment offers new opportunities for the development of new kinds of applications. Ontology-based methods are being developed to manage the semantics of spatial data contents.
+Central themes of this core competency are, for example:
+- Updating spatial data
+- Mobile mapping
+- Spatial data systems and services to support decision-making
+- SDI as a part of the spatial data ecosystem
+- Web-based processing services
+- Spatial data ontologies
+- Spatial data harmonisation and integration
+- Cloud computing
+- Big Data
+- Participation of the public and crowdsourcing
+- Privacy protection and spatial data security
+- Reliable navigation and positioning
+- Use of dynamic coordinate reference systems
+- Machine learning and artificial intelligence in spatial data applications
+- Cadastral system of the future

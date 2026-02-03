@@ -1,0 +1,27 @@
+Slope is the measure of how much a line moves up or down related to how much it moves left to right.
+In this image, the slope of the line is .
+Parallel lines are those that have the same slope and do not touch. Examples include latitude lines.
+Slope is the change in the vertical distance of a line on a coordinate plane over the change in horizontal difference. In other words, it is the “rise” over the “run” or the steepness of a line. Slope is usually represented by the symbol like in the equation , m the coefficient of x represents the slope of the line.
+Slope is computed by measuring the change in vertical distance divided by the change in horizontal difference, i.e.:
+The Greek uppercase letter represents change, in this case change in the y-coordinates divided by the change in x-coordinates.
+Positive Slope/ Negative Slope
+If a line goes up from left to right, then the slope has to be positive. For example, a slope of ¾ would have a “rise” of 3, or go up 3; and a “run” of 4, or go right 4. Both numbers in the slope are either negative or positive in order to have a positive slope.
+If a line goes down from left to right, then the slope has to be negative. For example, a slope of -3/4 would have a “rise” of -3, or go down 3; and a “run” of 4, or go right 4. Only one number in the slope can be negative for a line to have a negative slope.
+Other Types of Slope
+There are two special circumstances, no slope and slope of zero. A horizontal line has a slope of 0 and a vertical line has an undefined slope.
+Horizontal lines have the form: ; where a is a constant, i.e.
+Vertical lines have the form: ; where as is a constant, i.e.
+To determine the slope you need some information. This can include two (or more) coordinates, a parallel slope and a coordinate, a perpendicular slope and a coordinate, or the y-intercept and slope.
+For completely horizontal lines, the difference in y coordinates between any two points is 0, so the slope m = 0, indicating no steepness in the line at all. If the line extends between right-upper (+,+) and left-lower ( -, -) directions, then the slope is positive. As the slope increases, the line becomes steeper until the line is almost vertical when the slope is very large. When the slope m = 1, the line is diagonal with an angle halfway between the x and y axes. If the line extends between left-upper (-,+) and right-lower (+, -) directions, then the slope is negative. As the slope changes from 0 to very negative numbers, the steepness in the opposite direction increases. Compare the slope ( m ) values in the following graph of functions y = 1 (where
+m = 0), y = (1/2) x + 1, y = x + 1, y = 2 x, y = -(1/2) x + 1, y = -x + 1, and y = -2 x + 1. For all two-variable linear equations that can be converted to linear functions, the same calculation applies to slopes for those lines.
+For the most part finding slope when given information is a simple matter. Simply take the slope equation y=mx+b and replace the variable with whatever information you know, and solve.
+To find the slope with two coordinates, you must first find the slope. Use the standard equation . Put that into the equation as m, and replace x and y with x and y from one of the coordinates. Solve for b. Put that into the equation and your done.
+Example: (1,4) (4,8)
+Plug that right in.
+Put that in the equation and you're done.
+If you have to find the slope of a line(Let's say AB) which is parallel to line(Let's say XY) then using the coordinates of line XY you can find the coordinates of slope of line AB As, Slope of line of a line parallel to another line is equal,i.e. Slope of AB = Slope of XY
+AB and XY are PARALLEL Lines.Find the slope of AB.
+Let line XY have the coordinates:-
+Slope of XY
+Slope of AB = Slope of XY
+⇒Slope of AB = 2

@@ -1,0 +1,30 @@
+Producing mathematics for the Web
+[23 Jul 2006]
+I recently got an enquiry from a mathematics teacher who likes my Interactive Mathematics site. He asked:
+May I know what webpage software are you using?
+A technical history of “Interactive Mathematics”
+I first started to create Interactive Mathematics soon after I arrived in Singapore in 1997. I wanted it to be interactive so that students would be able to experiment with formulas and graphs. I had felt for a long time that technology could (and should) be used to help mathematics come alive. As soon as I saw LiveMath, I knew this was the product for me.
+Word and Frontpage
+I initially made extensive use of Microsoft Frontpage to convert several hundred existing Word documents into HTML form. In those days, Frontpage produced simple, clean HTML code and did a nice job of converting all the images. But there was a problem – the images did not line up nicely. I learned a lot about the concept of “baseline” in HTML while trying to align images.
+Once the HTML page was tidied up, I would add a LiveMath document wherever it seemed appropriate. [See Livemath Highlights in Interactive Mathematics.]
+My concept throughout was to use the site during my lectures – it was not much more than a glorified OHP presentation. My students were encouraged to make use of the site outside class time and if they did, fine – and if they didn’t feel the need, that was also fine. It was invaluable, of course, for those students who missed class because of sickness or whatever. It made it easy for them to catch up.
+The site grew as I taught more topics.
+Then I developed some Flash skills. I enjoy working with Flash and I think it has a lot of potential for enhancing learning in mathematics. I would like to produce a lot more Flash interactives, but I don’t have the time these days. [See Flash highlights.]
+By the late 1990s, we were using Scientific Notebook for an online tutorial system and we were encouraging lecturers to use it for all communication of mathematics (like communicating with students, writing class materials and examinations, etc.). By around 2000, Scientific Notebook was doing a reasonable job of converting its output into HTML format. Also by then, Frontpage had become a horrible bloated software that produced horrible, bloated HTML code, so it was abandoned. (Word could convert to HTML by then, but it was also horrible and bloated. So I abandoned MS products altogether for producing my site).
+So the more advanced topics in Interactive Mathematics (like Fourier Series and Laplace Transformation) were done in Scientific Notebook and converted to HTML. Users can access either the Scientific Notebook TEX files or the HTML conversion.
+Scientific Notebook (and other math software like MatLAB and Maple) have huge potential to change mathematics teaching and learning, but alas, this potential is not being fulfilled.
+A few years back, my institution announced they were going to shut down the Unix server where my site was hosted. I saw this as an opportunity to make it a more dynamic site. I chose to host it on a PHP/mySQL server and this allowed automation of the navigation system and simplification of the hundreds of Answer files.
+I now use a combination of tools to manipulate the site:
+- PSPad, a nice open source text editor that handles HTML, PHP, CSS and a myriad other languages
+- Dreamweaver, since it allows use of PHP on the local machine, saving the need to upload everything before seeing how it looks
+- Flash, Scientific Notebook and LiveMath
+- Various image editing software, like PaintShop Pro, Fireworks and a quirky screen grabbing favourite, Hypersnap
+- Heaps of browsers for testing: IE6, IE5, Opera, Netscape, and my favourite, Firefox
+- Apache and PHP on my local PC for development and testing
+What I would do differently
+If I was starting the exercise now, I would do the following:
+- Make it much more problem-based, rather than “content-based” as it is now.
+- Build it around a forum so users can freely contribute and ask questions (I will be adding such a feature to Interactive Mathematics sometime soon)
+- Use MathML, rather than images for math output (I have been wanting to use MathML ever since I started the site, but it has not enjoyed general browser support). This would make it a lot more dynamic and has a lot of potential
+- Use LiveMath more effectively, by building it into online activities, rather than designing it for use in a lecture
+I hope that answers the question

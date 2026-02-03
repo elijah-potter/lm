@@ -1,0 +1,54 @@
+Ever since people set out to sea in ships, the issues of buoyancy and stability have been of importance. In spite of this, the treatment it receives in textbooks is often lacking. Following is an overview of the subject; basic understanding of the principles is essential in performing the experiment and interpreting the results.
+Buoyancy is ultimately what makes things float, such as the buoy in Figure 1. This is true whether the material the boat is made of is lighter than water (like the balsa wood rafts Thor Heyerdahl and his crew crossed the Pacific with in 1947) or heavier than water. The latter would include objects from the buoy shown to the ships of the U.S. Navy.
+The basic concept is very simple: for anything placed in a fluid medium, the upward force the medium exerts on the body is equal to the weight of the fluid the body displaces. This is not only true of bodies placed in water; it is also true of those in air. The difference is that, for those in air, the weight of the air displaced is usually not enough to “float” the aircraft. A notable exception are dirigibles such as the “Goodyear blimp,” which is filled with helium, a gas lighter than air. Another lighter-than-air gas used is hydrogen. This is very combustible, as everyone was reminded of when the Hindenburg caught fire in New Jersey in 1938.
+Most buoyancy applications are marine ones, and it is those we will concentrate on in this experiment. We will also concentrate on rectangular forms and flat-bottomed vessels, which simplifies the math somewhat. However, these principles can be extended to just about any floating craft.
+Using a flat-bottomed craft also makes it easier to understand why displacing a fluid works. Consider first the following: how the force of the fluid on the flat hull of a craft varies with depth1:
+For a fluid at rest, the hydrostatic pressure increases linearly with depth, thus
+where p is the hydrostatic pressure, γ is the unit weight of the water, and D is the depth from the water’s surface to the bottommost point of the vessel, usually called the draught. This distance from the water line to the top of the rectangle (the gunwale) is called the freeboard; the results of inadequate freeboard can be seen in Figure 3.
+In any case, for a vessel of beam (width) W and a length L the volume it displaces is given by the equation
+Combining and rearranging these two equations,
+For the boat to float, it has to be in static equilibrium, and so the downward force of the weight of the boat Wboat must equal the upward force Fbuoyant. Therefore,
+So we’ve established a relationship between the weight of the boat and the volume of water it displaces. The “far right” hand side only applies to boats with a flat bottom and straight sides.
+What this means is that there are three ways we can weigh an existing boat:
+We can simply weigh it on a scale. For small boats this isn’t too difficult; larger ones can be tricky. We can then estimate how far it will sink into the water.
+We can measure the freeboard, then obtain D and, knowing L, W and the unit weight of water, we can compute the weight of the boat. This works easily for rectangular boats; for real boats, you have to determine the relationship between the actual waterline and the displacement, then see where the actual waterline ends up.
+- We can use an overflow method, which is okay for small experiments (like Archimedes used) but not so hot on a larger scale. But this illustrates our concept.
+Procedure for determining volume of water displacement2:
+Buoyancy is a fairly straightforward concept, although it may be a little hard to grasp up front. Stability—the ability of the ship to resist overturning—is a little more difficult, although it’s obviously important, as the following diagram of a ship with waves coming at the beam shows3.
+Let’s define (or recall) a couple of terms.
+Centre of Gravity: this is easy, mathematically this is the centroid of the mass or weight of the ship. An illustration of this is below.
+Centre of Buoyancy: this is a little trickier, this is the centroid of the cross-sectional area of the ship under the water line, as shown below.
+As you can see, for a box-shaped vessel which is not listing (i.e., leaning at an angle) or has no squat (i.e., not angled along the length of the boat) the centre of buoyancy is located halfway down the draught of the vessel, halfway across the beam, and dead amidships.
+The centre of gravity and the centre of buoyancy are not necessarily at the same place; in fact, they are usually different. That difference determines both the stability of the ship and, literally, how it rolls.
+We know that motor vehicles with high centres of gravity (such as off-road vehicles) are more prone to turn over in use than those with lower centres of gravity. Ships are the same; we need to have a way to decide how stable a ship is and whether there is a point that a ship becomes unconditionally stable or unconditionally unstable.
+As long as a ship is upright, and both the centre of gravity and the centre of buoyancy are in the centre of the ship in all respects, it is theoretically possible for a ship never to turn over. As a practical matter this is impossible; even very large ships like cruise ships, which use their size to resist roll in most wave situations, are going to roll some. Below is a diagram which shows the centre of gravity and the centre of buoyancy for a ship which is upright and which is inclined 14º.
+We need to look at this carefully and note the following:
+The point G is the centre of gravity of the ship.
+The point B or B’ is the centre of buoyancy of the ship. In the course of inclination the centre of buoyancy will change because the shape of the cross-section under the waterline changes; this is fairly simple to calculate for rectangular ships and more complicated for curved hull shapes.
+The point M is the metastatic point of the ship. The distance GM is called the metastatic height of the ship.
+If point G is below point B or B’, the ship is unconditionally stable; it will not turn over unless G and B’ is changed by taking on water, shifting cargo in the ship, etc.
+If point G is below point M, the ship is conditionally stable, and if point G is above point M, the ship is unconditionally unstable.
+The reason for this last point is simple: the ship above is rolling in a clockwise direction. The resisting moment of the buoyancy, calculated by (GZ)(Wbuoyant) is counter-clockwise, as the buoyant force is upward. This is true as long as G is below M. If G moves upward above M, then the now driving moment (GZ)(Wbuoyant) turns clockwise, the same direction as the rolling of the ship, and the ship will generally turn over4.
+Thus the location of M, abstract as it may seem, becomes a critical part of the design of a ship. But how is it done? There are two methods we will discuss here of determining the metastatic height of a ship.
+Determining Metastatic Height
+This method uses the following formula to determine the location of the metacentre:
+For a rectangular vessel, the moment of inertia is the same as we used in mechanics of materials, i.e., LW3/12, and is applied as follows:
+The displacement volume was given earlier. We then compute the distance between the metacentre M and the centre of buoyancy B as follows:
+Note carefully that this is NOT the metacentric height GM; it is then necessary to subtract the distance from the centre of buoyancy to the centre of gravity from this result to obtain GM. This is done as follows:
+It’s worth noting here that the location of point M is independent of the centre of gravity and dependent upon the geometry of the ship and its volume under the water line (or total weight.)
+Timing the Roll
+This method is sort of an “old salt’s” rule of thumb method. First, let’s define the roll time. The roll time is the time it takes for a ship to start from rest at an angle of roll (port or starboard,) roll to the opposite side, and return to the original orientation. This can be approximated by the equation5
+- tr = roll time of ship, seconds
+- GM = metastatic height of ship, meters or feet
+- W = beam of ship, meters or feet
+- C = constant based on units of GM and B
+= 0.44 for units of feet
+= 0.80 for units of meters
+Solving for metastatic height,
+This is significant for another reason: another rule of thumb used in yacht design is that the roll time is seconds should be between 1 and 1.1 times the beam W of the boat in meters6. Yachts with shorter roll times tend to “check” or quickly come back to centre when in rough seas; this can be a hard experience for passengers and make a complete mess of stowed cargo. Yachts with longer roll times will come over like they’re about to capsize, and then slowly roll back around. The usual result of this is seasickness and a miserable ride.
+1Walton, T. (1899) Know Your Own Ship. Charles Griffin and Company, London, England. Much of the material that follows on buoyancy and stability comes from this work.
+2Keep in mind that the unit weight of sea water is greater than fresh. Why is this so?
+3Seamanship pointer: if you’re in a boat and are facing high waves, wake, etc., best way to take them is to point the blow into the direction the waves are coming from, not take the waves on the beam.
+4Whether it actually does gets into issues of freeboard, rate of roll, etc., which are beyond this presentation or experiment.
+5Nudelman, N. (1992) Yacht Design Course. Lesson 6: Stability. Westlawn Institute of Marine Technology, Stamford, CT.
+6Gerr, D. (1992) The Nature of Boats. International Marine Publishing, Camden, ME. Much of the material on this method of determining GM is taken from this source.

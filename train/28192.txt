@@ -1,0 +1,12 @@
+The direction property defines the direction the text will display.
+direction in CSS Versions:
+direction: ltr | rtl | inherit
+Left to right.
+Right to left.
+The element should have the same direction setting as the parent.
+direction Initial Value:
+direction Applies To:
+This property is inherited.
+direction Browser Support:
+change the direction of the element
+<p style="direction: rtl;"> This paragraph should display right to left. </p>

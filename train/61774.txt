@@ -1,0 +1,20 @@
+01․ What is used to access 16-bit data in 8086?
+Memory banking is done to access 16-bit data which is stored in two consecutive locations. Hence, memory is divided into two banks: Even Bank and Odd Bank.
+02․ What is the size (in bytes) of Prefetch queue in 8086?
+The size of Prefetch queue is 6 bytes as this is the maximum size of an instruction.
+03․ The address bus width of a microprocessor which is capable of addressing 64 Kbytes of the memory is
+64 Kbytes = 26 × 210 bytes = 216 bytes Hence 16 address buses are required to address 64 Kbytes of memory.
+04․ An 8-bit microprocessor can have ………….. address lines.
+8-bit microprocessor gives the information that it requires 8 data bus but we cannot predict the number of address buses until and unless memory size is provided.
+05․ A number of 1-bit registers used in microprocessors to indicate certain conditions are usually referred to as
+Flags indicates certain conditions in microprocessor as a result of arithmetic and logic operations.
+06․ The word size of 8085 microprocessor is
+A word size of an 8085 microprocessor is 8-bit.
+07․ How many 16-bit special purpose registers are present in 8085 microprocessor?
+There are two 16-bit special purpose registers are present in the 8085 microprocessor i.e. program counter and stack pointer.
+08․ The stack pointer register in a microprocessor
+Stack pointer points out the address of the top of the stack memory.
+09․ The number of status flags present in 8085 microprocessor are
+The total numbers of status flags present in 8085 microprocessor are 5. They are S, Z, AC, P and CY.
+10․ The number of hardware interrupts present in 8085 microprocessor are
+There are five hardware interrupts are present in 8085 microprocessors i.e. TRAP, RST 7.5, RST 6.5, RST 5.5 and INTR .

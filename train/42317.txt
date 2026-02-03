@@ -1,0 +1,46 @@
+What is nslookup quizlet
+The nslookup command queries DNS and returns the host names IP address.
+How do you nslookup an IP address
+How To Find IP Address Of a Domain Using NSLookup Command In Windows
+- Type cmd into the search box after clicking the Start button.
+- The Windows command window will appear.
+- You will see the IP address for Yahoo FTP.
+- If you want to look up a websites IP address, enter nslookup in the command prompt.
+What protocol does nslookup use
+Nslookup.exe is a command-line administrative tool that is installed with the TCP/IP protocol through Control Panel and is used to test and troubleshoot DNS servers.
+How do I use a DNS lookup
+Enter the command nslookup (name server lookup), followed by the domain name or IP address you want to trace, at your command prompt to ask the Name Service for details about the specified IP address or domain name.
+How can I get hostname from nslookup
+Find the line labeled Name underneath the line with the IP address you entered and note the value next to Name as the hostname of the computer. Type nslookup%ipaddress% in the black box that appears on the screen, substituting%ipaddress% with the IP address for which you want to find the hostname.
+Why does nslookup show server unknown
+The reverse lookup zone is frequently the problem if nslookup returns “Server: Unknown” in the query. In this situation, a “non-authoritative answer” notification is given because the local DNS server was unable to answer the query itself and had to contact one or more other name servers.
+What is the DNS lookup command in cmd
+Alternatively, click Start > Run > type cmd or command to launch the command prompt. Type nslookup and press Enter to display information about your local DNS server, including its IP address.
+What is ipconfig used for
+When used without any additional parameters, ipconfig shows all adapters IPv4 and IPv6 addresses, subnet masks, and default gateway.
+What does nslookup stand for
+nslookup is an acronym for name server lookup and allows you to query your DNS service. The tool is typically used to get a domain name via your command line interface (CLI), get information about IP address mapping, and lookup DNS records.
+What does the nslookup command do
+The program known as nslookup enables any computer user or Internet server administrator to enter a host name (such as “whatis.com”) and discover the corresponding IP address or domain name system (DNS) record.
+What is the function of the DNS protocol quizlet
+You just studied 3 terms: IP addresses, domain names, and DNS. IP addresses uniquely identify each computer on a network and enable communication between them using the Internet Protocol (IP).
+What does ipconfig release do
+Ipconfig /renew is used to request a new IP address after ipconfig /release is used to force the client to immediately terminate its lease by sending the server a DHCP release notification that updates the servers status information and marks the old clients IP address as “available.”
+What is the function of Internet Control Message Protocol ICMP quizlet
+The Internet Control Message Protocol (ICMP) was designed as a safe way to report errors and respond to straightforward requests.
+How do you release an IP address
+To get a new IP address on your Android device, you must physically make it “forget” the Wi-Fi network it is currently connected to. Once it does, it will release its connection (and IP address), and the next time you connect, it will get a new one.
+Which term refers to the process of positively identifying a party as a user computer or service
+What term best describes the process of firmly establishing a partys identity as a user, computer, or service? authentication
+Which of the following are considered passive online attacks
+Passive attacks, such as network analysis, eavesdropping, and traffic analysis, are examples of internet security threats/vulnerabilities that fall under this category.
+Which steps in the information gathering process does footprinting cover
+- collection of data.
+- figuring out the networks range.
+- recognizing running machines
+- locating accessible ports and points.
+- OS identification.
+- obtaining fingerprints.
+- creating a network map.
+Which standard combines the best of both 802.11 a and 802.11 b
+WLAN products that supported the 802.11g standard, which aims to combine the best features of 802.11a and 802.11b, first appeared on the market in 2002 and 2003. 802.11g supports bandwidth up to 54 Mbps and uses the 2.4 GHz frequency for longer range.

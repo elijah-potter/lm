@@ -1,0 +1,26 @@
+Index1. Swift Coding
+3 min 8 sec read 2. Variables in Swift
+2 min 12 sec read 3. Swift Optionals
+3 min 11 sec read 4. Swift Constants
+2 min 19 sec read 5. Guard in Swift
+1 min 6 sec read 6. Swift if, if...else Statement
+2 mins 51 sec read 7. Swift Array
+6 min 2 sec read 8. Swift Dictionary
+3 min 16 sec read
+Variables in Swift
+Like human memory, Computer memory has millions of cells where it can store data or information. Now to retrieve information from those cells, each cell should be given one name called " variable name" These variables are most useful and can be of different types like integer, float, double, char, and strings.
+Declare Variables in Swift
+To declare variables in Swift "var" keyword is used. Semicolons are not compulsory in Swift Language. But remember if you add two statements in a single line you have to use ";" as the delimiter to separate them. Otherwise, it shows a syntax error.
+var variablename = Constant Value
+var name = "Manish"
+Let's create a sample playground, Goto File > New > Playground > Next.
+import UIKit var a = 20 print(a)
+Run the program in the playground.
+You can declare multiple variables on a single line, separated by commas:
+var x = 0.0, y = 0.0, z = 0.0
+Annotations are used to specify the type to variables. With the help of Type Annotations, it will be clear what kind of value that specific variable can store. And this can be done by placing a colon after the constant or variable name, followed by a space, followed by the name of the type to use.
+var variableName: =
+var name: String name = "Manish" var varA,varB,varC: Float
+How to use print statements in Swift?
+//Playground - noun: a place where people can play import UIKit var name = "Manish" var age = 23 print("(name) age is = (age)")
+Manish age is = 23Previous Next

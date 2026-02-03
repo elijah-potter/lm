@@ -1,0 +1,46 @@
+In this CentOS 7 or Red Hat Enterprise 7 Linux tutorial we take a look at firewalld, which is the new way of configuring a basic firewall. We will take a look at firewalld and firewall-cmd.
+The Linux kernel has some powerful subsystems onboard, that allows kernel modules to interact with the rest of the system. One of those subsystems is the network filtering subsystem called netfilter. This netfilter subsystem is the main component to build a firewall on a CentOS 7 or Red Hat Enterprise 7 Linux system. The netfilter subsystem allows kernel modules to interact with every single network packet that the system receives or send.
+Firewalld system daemon is the new way of communicating with netfilter/iptables. This system daemon is used to configure and monitor the firewall rules on the system. All network traffic is cut into zones by firewalld and based on rules traffic is send to such zone. An example of such rule is for instance the source IP address of a packet.
+There are a number of ways to interact with firewalld:
+- The command-line tool firewall-cmd
+- The graphical tool called firewall-config
+- Or by editing the configuration files under /etc/firewalld
+Note: you need to restart or reload the firewalld daemon to make changes active.
+Order of Checking
+A packet will be first checked for its source address and if this source address is configured to a specific zone, the rules of that zone are used. If there is no match found on the source address then the incoming interface will be checked if for a configured zone. The rules of that zone will then be used. If there are no zones configured then the default zone will be used which by default is the public zone. Of course the default zone can be changed to other zones if needed. More information about zones can be found in the manual using: man 5 firewalld.zone
+# man 5 firewalld.zone
+As said before the tool firewall-cmd can be used to interact with firewalld from the command-line. You should note that unless you give the option – -permanent you are changing the running configuration of firewalld only! Below you’ll find some commonly used firewall-cmd examples and there output:
+// Show the help # firewall-cmd --help
+Print predefined zones:
+# firewall-cmd --get-zones block dmz drop external home internal public trusted work #
+List everything added for or enabled in all zones
+# firewall-cmd —list-all-zones (The output is to long, try it yourself!)
+Print currently active zones
+# firewall-cmd --get-active-zones public interfaces: enp0s25 #
+Apply the configuration file and drop the runtime configuration
+# firewall-cmd --reload success #
+Add a service for a zone. The default zone is used unless you use –zone
+// firewall-cmd --add-service= # firewall-cmd --add-service=http success #
+Remove a service from a zone. The default zone is used unless you use –zone
+# firewall-cmd --remove-service=http success #
+Bind[/] to a zone. The default zone is used unless you use –zone
+// firewall-cmd --add-source= # firewall-cmd --add-source=127.0.0.1 success #
+And remove a source
+# firewall-cmd --remove-source=127.0.0.1 success #
+Bind the to a zone. The default zone is used unless you use –zone
+// firewall-cmd --add-interface= # firewall-cmd --add-interface=enp0s25 Warning: ZONE_ALREADY_SET #
+Note: in this case we get warning because there is only one NIC on the system, so it is already set.
+Change the default zone in this case dmz
+# firewall-cmd --set-default-zone=dmz success // And back to public # firewall-cmd --set-default-zone=public success #
+Take a look at the help of the firewall-cmd for the many other options you can use.
+Configuration /etc/firewalld/ Directory
+In the /etc/firewalld/ directory you’ll find the firewalld configuration files. The main configuration file is called: firewalld.conf.
+Below you’ll find a ls -l of /etc/firewalld directory:
+-rw-------. 1 root root 1026 Aug 4 19:52 firewalld.conf drwxr-x---. 2 root root 6 Jun 10 09:19 icmptypes -rw-r-----. 1 root root 267 Jun 10 09:19 lockdown-whitelist.xml drwxr-x---. 2 root root 6 Jun 10 09:19 services drwxr-x---. 2 root root 23 Jul 24 21:32 zones
+As you can see there are also some other directories under this directory. With iptables everything is configured using /etc/sysconfig/iptables file, but firewalld also uses some xml files. For instance in the zones directory you’ll find a file public.xml which has the following content:
+<?xml version="1.0" encoding="utf-8"?> <zone> <short>Public</short> <description>For use in public areas. You do not trust the other computers on networks to not harm your computer. Only selected incoming connections are accepted.</description> <service name="dhcpv6-client"/> <service name="ssh"/> </zone>
+Now if you add a service for instance http this will be added to this file. (Note: you need to add of course the option –permanent to see it in the file).
+# firewall-cmd --add-service=http --permanent success # cat ./zones/public.xml <?xml version="1.0" encoding="utf-8"?> <zone> <short>Public</short> <description>For use in public areas. You do not trust the other computers on networks to not harm your computer. Only selected incoming connections are accepted. </description> <service name="dhcpv6-client"/> <service name="http"/> <service name="ssh"/> </zone>
+To remove the service:
+# firewall-cmd --remove-service=http --permanent success #
+That’s all for this tutorial. By now you should know the basics of the new firewalld and firewall-cmd. Try to make some changes yourself and see what happens (also in the config files).

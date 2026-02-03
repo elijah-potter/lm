@@ -1,0 +1,42 @@
+What does a random place on Earth look like?
+Is it pristine and beautiful like this one?
+…or polluted and gloomy like this one?
+Let’s find out. Let’s find photos of 5 random places around the world.
+The first challenge is to select 5 random places. This is not as straightforward as one might think. Selecting random latitude and longitude points would disproportionally select places in the polar regions and under represent areas around the equator in very much the same way as the common Mercator projection does.
+For a proper mathematical explanation and several different methods to randomly selecting points on a sphere (mathematically the Earth is almost a sphere) see this article. Fortunately I did not have to write the code to actually do this as the good people at Geomidpoint had already done so. I decided to use their tool to select my five points. Here we go:
+So far so good. But how will we know what these places look like?
+Photos of random places
+One way to do this would be to use geotagged images on sites such as Flickr, using their map interface to navigate to the randomly selected points and pick the nearest photo. The downside to this is that this would not be truly random. Most images are taken in or near people’s homes, typically in urban areas, or in places that are in some way of special interest like a lakeshore, a mountaintop or other noticeable geographical feature. This would not give me the result I was looking for.
+In the early days of the internet, I learned about the Degree Confluence Project. This is a site with a simple concept: Participants from all over the world gather descriptions and images of every confluence point on the world’s lat-long grid.
+As the reference points and grid size of the lat-long grid are assigned somewhat arbitrarily to begin with, these points should not be biased towards any attractions, as the photos on a photo site would be. As the sample we’re aiming for is not big, using the confluence point nearest to each of my randomly selected places will do fine. So, here’s my list, snapped to the nearest confluence points:
+Here’s a map on Geomidpoint, showing these 5 points:
+…and the information about these from the Confluence project web site:
+|Point #1:||-12||-147||279 km from land|
+|Point #2:||36||15||42 km from land|
+|Point #3:||-16||-15||889 km from land|
+|Point #4:||-7||131||43 km from land|
+|Point #5:||21||142||382 km from land|
+All 5 points are in the ocean. Actually that’s bad luck, but it does hammer in the fact that of the surface area of planet Earth, most of it is ocean. In fact, only 29.2% of the planet’s surface is land, so I should have expected only 1 or 2 of my 5 points to be on land. Point #2 came close, but it managed to hit the Mediterranean, just outside of Malta.
+So, point taken. A random place on Earth is at sea. But that’s not what I was going for. Let’s try this until we have 5 points that are on land. I selected another 20 points at random and snapped them to the nearest confluence point. Here we go:
+We’ve already struck gold! This point is in a field in France, not far from the small town of Saint-Flovier:
+Points #7 and #8 are also in the ocean, but at #9 we strike again. This one is in a remote forest in the Kamchatka peninsula, Russia:
+Point #10 is also on land, but now we hit another problem. This confluence point has never been visited by any of the Confluence project-nerds. A satellite image explains why. It is in the middle of the Sahara, belonging to Niger, not far from the border with Libya:
+The next place on land is #14. This turns out to be some guy’s shed in rural Minnesota:
+#15 is at sea, but #16 is another confluence point on land that has not been visited. This time in a lake area far up in Canada’s Northwest Territories:
+So, 16 random places got us to 5 ones on land. But even with 5 randomly picked places ON land, two of them are so remote that not a single nerd participating in the Confluence project has visited them. Let’s keep going until we have images of 5 random places…
+The next point on land is #19. It’s a a patch of ponderosa pine and juniper in a rocky ranch-land in the mountains of New Mexico:
+Yet another unvisited confluence point. This one is in the SE part of Iran, not far from the border with Pakistan:
+Once again, an unvisited confluence point. This one is in Brazil, in the Amazon, a few hundred kilometers from the mouth of the Amazon river itself:
+One to go…
+Ok, of 25 randomly chosen places on Earth, we’ve still only found 4 that are on land and urban enough to have been visited by the good people of the Confluence project! Let’s keep going until we find the fifth one:
+Lat: -83; Lon -5.
+No luck here! This one is in Antarctica, not visited by a Confluence visitor. In fact it is so remote that Google doesn’t even have a satellite image of this place:
+Lat: -20; Lon: -138. Ocean.
+Lat: -1; Lon: 134.
+Got it! The fifth and final place that meets the (evolving) criteria is in a forest in New Guinea and you can’t really get there without a machete! The confluence visitors settled for this mud road about 80 meters from the point:
+It took 28 randomly selected places to find images of 5 random places. Another 5 places were on land, but in remote areas that are not frequently visited – at least not by people that are likely to participate in things like the Confluence project.
+This is by no means a scientific experiment, but it shows us that a random place on planet Earth is … most likely in the ocean. 😉
+This exercise reminds us that Earth is after all a fairly big place. When flying across continents in a jet or communicating with people on the other side of the world, we may feel that it’s small, but on the ground level it is as big as ever. Enormous in fact.
+A random place is neither of stunning beauty nor suffering badly from the doings of mankind. It is most likely to be remote, wild, and relatively green, often with little signs of human activities.
+So, I present to you:
+|Five random places on Earth|

@@ -1,0 +1,51 @@
+- Electromagnetics I
+- Ch 9: Plane Waves in Loseless Media
+- Loc 9.2
+- Electromagnetics I
+- Ch 9
+- Loc 9.2
+Wave Equations for Source-Free and Lossless Regions
+Electromagnetic waves are solutions to a set of coupled differential simultaneous equations – namely, Maxwell’s Equations. The general solution to these equations includes constants whose values are determined by the applicable electromagnetic boundary conditions. However, this direct approach can be difficult and is often not necessary. In unbounded homogeneous regions that are “source free” (containing no charges or currents), a simpler approach is possible. In this section, we reduce Maxwell’s Equations to wave equations that apply to the electric and magnetic fields in this simpler category of scenarios. Before reading further, the reader should consider a review of Section 1.3 (noting in particular Equation 1.3.1) and Section 3.6 (wave equations for voltage and current on a transmission line). This section seeks to develop the analogous equations for electric and magnetic waves.
+We can get the job done using the differential “point” phasor form of Maxwell’s Equations, developed in Section 9.1. Here they are:
+In a source-free region, there is no net charge and no current, hence
+in the present analysis. The above equations become
+Next, we recall that
+is a real-valued constant for a medium that is homogeneous, isotropic, and linear (Section 2.8). Similarly,
+is a real-valued constant. Thus, under these conditions, it is sufficient to consider either
+. The choice is arbitrary, but in engineering applications it is customary to use
+. Eliminating the now-redundant quantities
+, the above equations become
+It is important to note that requiring the region of interest to be source-free precludes the possibility of loss in the medium. To see this, let’s first be clear about what we mean by “loss.” For an electromagnetic wave, loss is observed as a reduction in the magnitude of the electric and magnetic field with increasing distance. This reduction is due to the dissipation of power in the medium. This occurs when the conductivity
+is greater than zero because Ohm’s Law for Electromagnetics (
+to be zero above, we precluded this possibility; that is, we implicitly specified
+. The fact that the constitutive parameters
+appear in Equations 9.2.9-9.2.12, but
+does not, is further evidence of this.
+Equations 9.2.9-9.2.12 are Maxwell’s Equations for a region comprised of isotropic, homogeneous, and source-free material. Because there can be no conduction current in a source-free region, these equations apply only to material that is lossless (i.e., having negligible
+Before moving on, one additional disclosure is appropriate. It turns out that there actually is a way to use Equations 9.2.9-9.2.12 for regions in which loss is significant. This requires a redefinition of
+as a complex-valued quantity. We shall not consider this technique in this section. We mention this simply because one should be aware that if permittivity appears as a complex-valued quantity, then the imaginary part represents loss.
+To derive the wave equations we begin with the MFE, Equation 9.2.10. Taking the curl of both sides of the equation we obtain
+On the right we can eliminate
+using Equation 9.2.12:
+On the left side of Equation 9.2.14, we apply the vector identity
+which in this case is
+We may eliminate the first term on the right using Equation 9.2.9, yielding
+Substituting these results back into Equation 9.2.13 and rearranging terms we have
+This is the wave equation for
+. Note that it is a homogeneous (in the mathematical sense of the word) differential equation, which is expected since we have derived it for a source-free region.
+It is common to make the following definition
+so that Equation 9.2.18 may be written
+Why go the the trouble of defining
+? One reason is that
+conveniently captures the contribution of the frequency, permittivity, and permeability all in one constant. Another reason is to emphasize the connection to the parameter
+appearing in transmission line theory (see Section 3.8 for a reminder). It should be clear that
+is a phase propagation constant, having units of 1/m (or rad/m, if you prefer), and indicates the rate at which the phase of the propagating wave progresses with distance.
+The wave equation for
+is obtained using essentially the same procedure, which is left as an exercise for the reader. It should be clear from the duality apparent in Equations 9.2.9-9.2.12 that the result will be very similar. One finds:
+Looking ahead, note that
+are solutions to the same homogeneous differential equation. Consequently,
+cannot be different by more than a constant factor and a direction. In fact, we can also determine something about the factor simply by examining the units involved: Since
+has units of V/m and
+has units of A/m, this factor will be expressible in units of the ratio of V/m to A/m, which is
+. This indicates that the factor will be an impedance. This factor is known as the wave impedance and will be addressed in Section 9.5. This impedance is analogous the characteristic impedance of a transmission line (Section 3.7).
+Get the latest tools and tutorials, fresh from the toaster.

@@ -1,0 +1,52 @@
+3. I2C protocol
+4. Advantages and Disadvantages
+5. Typical I2C connections
+8. Take a look at the SPARTANS Range
+The I2C bus is of interest because, similar to what happened with the SPI bus, a large number of devices have an I2C connection, such as accelerometers, compasses, displays, etc.
+In the sketch example, we have used an M-Duino 21+, but all of the industrial Arduino PLCs range of Industrial Shields can also be used to perform the same example:
+- WiFi & Bluetooth Controller Family
+- GPRS / GSM Controller Family
+On the I2C bus, each device has an address, which is used to access the devices individually. This address can be set by hardware (in which case, frequently, the last 3 bits can be modified by jumpers or switches) or entirely by software.
+In general, each device connected to the bus must have a unique address. If we have several similar devices we will have to change the address or, if it's not possible, implement a secondary bus.
+The I2C bus has a master-slave architecture. The master device initiates communication with the slaves and can send or receive data from the slaves. Slaves cannot initiate communication (the master has to ask them), nor speak to each other directly.
+The I2C bus is synchronous. The master provides a clock signal, which keeps all devices on the bus synchronized. This eliminates the necessity for each device to have its own clock, to have to agree on a transmission speed and mechanisms to keep the transmission synchronized (as in UART).
+To be able to communicate with one only one data cable, the I2C bus uses a broad frame. The communication consists in:
+- 7 bits to the address of the slave device with which we want to communicate.
+- A remaining bit indicates if we want to send or receive information.
+- A validation bit.
+- One or more bytes are the data sent or received from the slave.
+- A validation bit.
+The I2C protocol provides for Pull-up resistors of the Vcc lines.
+Using soft resistors means that the rising edges of the signal will be less fast, which means that we can use lower speeds and lower communication distances. If we want to use higher speeds or transmission distances, we must physically put pull-up resistors between 1k and 4K7.
+Here you can find I2C resistors with DIN Rail adapter.
+Advantages and Disadvantages
+It requires a few cables.
+It has mechanisms to verify that the signal has arrived correctly.
+Its speed is medium-low.
+It is not full duplex.
+There is no verification system that tells us that the content of the message is correct.
+Typical I2C connections
+As we can see in this picture, the way to make the connection is just putting each SDA and SCL pins from the devices to the general lines of the master. Here you can check our I2C Pull-Up Resistor with DIN Rail adapter.
+Every Industrial Shields programmable logic controller has the SCL and SDA pins. Check the User Manual of your industrial PLC controller version to see where this pins are located. Here you have the M-Duino 21+ controller Arduino example:
+To use the Wire port on Arduino the IDE Standard provides the library "Wire.h" that contains the functions needed to control the integrated I2C hardware.
+Wire.begin(); // Starts the I2C bus as master or slave
+To request bytes from a slave device, used by the master.
+Wire.requestFrom(); // If true, sends a stop message after the request, releasing the I2C bus.
+// If true, sends a restart message after the request, the bus won't be released, which prevents another master device from requesting between messages. This allows one master device to send multiple request while in control. The default value is true.
+It begins transmission to the I2C slave device with the given address.
+Wire.beginTransmission(); // The 7-bit address of the device to transmit.
+Wire.endTransmission(); // If true, endTransmission() sends a stop message after transmission, releasing the I2C bus.
+// If false, endTransmission() sends a restart message after transmission. The bus won't be released, which
+prevents another master device from transmitting between messages. This allows one master device to send
+multiple transmissions while in control.
+Wire.write(); // Will return the number of bytes written, though reading that number is optional.
+It returns the number of bytes available for retrieval with read(). This should be called on a master device after a call to requestFrom() or on a slave inside the onReceive() handler.
+Wire.available(); // Will return the number of bytes available for reading.
+Wire.read(); // Will return the next byte received.
+Wire.setClock(); // ClockFrequency: the value of desired communication clock.
+Accepted values are 100000(std mode) and 400000(fast mode).
+Also some processors support 10000(low speed mode),1000000(fast mode plus) and 3400000(high speed mode).
+Wire.onReceive(handler); // handler: the function to be called when the slave receives data; this should take as parameter the number
+of bytes read from the master and returns nothing.
+Wire.onRequest(handler); // handler: the function to be called, takes no parameters and returns nothing
+handler: the function to be called, takes no parameters and returns nothing.

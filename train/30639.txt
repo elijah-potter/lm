@@ -1,0 +1,31 @@
+Secure Sockets Layer (SSL) has two important functions associated with site security and integrity:
+• When your SSL certificate is digitally signed by a trusted third party certificate authority, it helps to verify that your site is identifying itself correctly
+• SSL encrypts all communications between the user and your site, making it difficult for somebody to extract anything useful even if they are able to intercept the communication
+Every site that is owned by a business, non-profit organization, or government agency should have an SSL certificate. The only exception is where your site does not collect or disseminate any sensitive information.
+When you have an SSL certificate, users can connect to your site via the HTTPS protocol. The “S” in HTTPS stands for “secure”. Although we use the term “SSL”, which is the one most people are familiar with, the standard has actually been superseded by something called TLS (Transport Layer Security). But you don’t need to worry about this because TLS is going to be enabled by default on any modern web server.
+Even though the technology is enabled by default, sites that have an SSL certificate still need to set the HTTPS version of their site as the default protocol for inbound connections. A 2014 survey by Moz showed that less than 18% of respondents were already using HTTPS, and as recently as 2015, it was found that less than 2% of the top 1,000,000 sites had HTTPS set as the default protocol.
+As a user, you can ensure that HTTPS is used whenever possible regardless of a site’s default settings by installing the HTTPS Everywhere plug-in.
+Using SSL may give your site a boost in Google rankings. In August 2014, Google announced that it would take SSL into account as a ranking factor.
+It also must be considered that HTTPS does slightly lower the speed of a site, so if your site is already slow (which it shouldn’t be – fix it!), you could see your rank actually slip as a result of adding HTTPS. It will really come down to the differential between the benefit from HTTPS and the benefit from having a fast site.
+Google wants sites to use HTTPS because it makes it easier to verify the integrity of a site, but that doesn’t automatically mean you need to do it. Most sites will benefit from having HTTPS, but because SSL certificates aren’t free, you might choose not to have one if the cost can’t be justified.
+Risk vs. reward: the privacy and security advantages of SSL
+You have to think about the financial cost of purchasing and renewing your SSL certificate. If there’s nothing on your site that needs to be confidential, you may not need to go to the trouble.
+But if your site collects personal information from the user, has password authenticated log-ins, or engages in any sort of e-Commerce, you absolutely must have SSL if you want to avoid problems and retain the full confidence and trust of your users.
+How to get an SSL certificate
+Buying an SSL certificate is not like a regular purchase, because there are a few tests and checks that have to be done before a certificate can be issued. This is for the protection of everyone, including you. Usually the easiest way is to get your Hosting company or SEO manager to obtain the certificate for you, because this will simplify the process greatly.
+If you’d prefer to do it entirely on your own, your first step is to generate a Certificate Signing Request (CSR) on your server. This is a block of encrypted text that looks similar to a PGP signature. What you need to type to generate the request depends on what server software your web host is running.
+Most websites are hosted on Apache servers, and Apache uses a service called OpenSSL to generate a CSR. Here’s an example of how to generate a CSR for a company called Widgets-R-Us Inc, with domain widgets.com, based in Los Angeles:
+openssl req -new -newkey rsa:2048 -nodes -out widgets_com.csr -keyout widgets_com.key -subj “C/=US/ST=California/L=Los Angeles/O=Widgets R Us Inc./CN=widgets.com”
+The section that’s relevant about the company is the -subj section. This contains a string value with specific values, as follows:
+• C is a 2 digit country code, for example: US, UK, IE, FR, DE, BE, and so on.
+• ST is the state or province
+• L is the city
+• O is the organization name
+• CN is the “common name”, which is a fully qualified domain name (FQDN).
+There’s an optional value called OU that can appear between O and CN, but it is rarely used, and can cause problems. Currently (at the time of writing) the SSL certificate of Australia’s Department of Foreign Affairs and Trade is affected, for example. OU stands for “organizational unit” and means a department within the organisation.
+After generating the CSR, it would look something like:
+—–BEGIN CERTIFICATE REQUEST—– MIIHVjCCBj6gAwIBAgIQVXENtd02KRwAAAAAUNuvdTANBgkqhkiG9w0BAQsFADCB ujELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUVudHJ1c3QsIEluYy4xKDAmBgNVBAsT H1NlZSB3d3cuZW50cnVzdC5uZXQvbGVnYWwtdGVybXMxOTA3BgNVBAsTMChjKSAy MDEyIEVudHJ1c3QsIEluYy4gLSBmb3IgYXV0aG9yaXplZCB1c2Ugb25seTEuMCwG A1UEAxMlRW50cnVzdCBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eSAtIEwxSzAeFw0x NzAzMDIyMjA5MzNaFw0xODAzMDIyMjM5MzFaMIGNMQswCQYDVQQGEwJBVTElMCMG
+—–END CERTIFICATE REQUEST—–
+In this case it is contained in the generated file “widgets_com.csr”. You need to open that file in a text editor, then cut and paste all the text (including the begin and end instructions) into the online form of the SSL certificate authority you are ordering from. Do not confuse the csr file with the key file.
+Once the certificate authority has validated your domain and company, it will email you a copy of your SSL certificate, which you then need to install on your server.
+Due to the complexity involved, most people prefer to have professional assistance rather than opting to do it themselves.

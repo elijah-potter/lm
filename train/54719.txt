@@ -1,0 +1,31 @@
+Since information on the operating system and BASIC interpreter used by the TI-99 is scarce, "TI Disassembler" will come in handy if you want to try your hand at programming in TI-9900 machine language.
+A disassembler converts the jumble of numbers that actually constitute a machine language program into a more readily understandable form. For each machine language instruction (called an opcode), TI has established a one- to four-letter representation called a mnemonic. This disassembler decodes the contents of memory into standard TI mnemonics, making ML programs less difficult to understand. However, this program will not teach you machine language programming. To use this program, you must have at least an elementary understanding of TI machine language and a familiarity with TIís standard format for ML assemblers. Refer to any of the several books on this subject for further information.
+This Disassembler is written in Extended BASIC. However, it can be easily translated for the Mini Memory or Editor/Assembler cartridges. All that is necessary is to unstack the lines so that there is only one statement on a line. All the commands can be found in console BASIC except the PEEK command which is in Extended BASIC, and also available when the Mini Memory or Editor/Assembler cartridge is installed.
+Depending upon your printer setup, you may have to modify line 110 or the subroutine starting on line 860, which prints to the screen. It might be wiser to leave that routine as is and just add the extra lines necessary to output to your printer.
+Notice that all computations and input are in decimal. If you want hexadecimal numbers, you can modify the program to add conversions. Be warned, however, that this will slow down the program. When you are disassembling 16K blocks, that can be something to think about.
+The Disassembler does an excellent job on machine language programs; however, it has one weakness. It cannot tell if the area of memory you ask it to disassemble contains data, text, or jump tables. It will attempt to disassemble these as if they were legitimate opcodes. To tell if this is happening, watch for the BYT output, which indicates that the area you are disassembling contains something other than machine language.
+Where You Can't PEEK
+The Disassembler can only look into the CPU address space. This is a fault of the architecture of the computer itself. Since the 16K RAM area used by console BASIC is not connected to the CPU, but rather to the VDP (Video Display Processor), the Disassembler cannot access it. Also unreadable are the GROMs which contain the GPL. If you have expansion memory, it is accessible, as are the command modules. Both the Mini Memory and the Editor/Assembler cartridges provide PEEK and POKE commands which can access these areas.
+In order to be consistent with TI machine language conventions, the Disassembler uses the same field symbols and addressing mode symbols used in the TI Editor/Assembler package. In case you don't have that package, Tables 1 and 2 show the symbols.
+Explanation Of Program
+30–110 Initialization and input. 120 Start of main loop. 140 PEEK locations. 150–260 Determines the format of the opcode and sends program to appropriate line number for decoding. 270–370 Decodes Format VIII opcodes. 380–420 Decodes Format VI opcodes. 430–450 Decodes Format V opcodes. 460–530 Decodes Format II opcodes. 540–590 Decodes Format IV opcodes. 600–680 Decodes Format III and IX opcodes. 690–780 Decodes Format I opcodes. 790–810 Decodes Format VII opcodes. 820 If not one of the above, byte is not a valid opcode. 840 Optional sound signal and hold when no opcode found. 860 Print to screen routine. 900 Subroutine to READ DATA and pick out mnemonic. 930 Subroutine to decode the Ts address mode. 1000- DATA statements which contain mnemonics listed according to their Format.
+|A1||Temporary variable to cover quirk of PEEK statement|
+|H||High byte of PEEK address|
+|I||Temporary loop variable|
+|J||Base to which value K is added|
+|K||Displacement variable for loop|
+|L||Low byte of PEEK address|
+|N||Computed total of H and L|
+|02||}next bytes in order after L|
+|PR||Printout variable (0 = no, 1 = y)|
+|Q$||Temporary storage for txfr to A$|
+|Z||Number of opcodes in format type|
+Table 1: TI Opcode Field Symbols
+|Td||Specific address mode of destination operand|
+|Ts||Specific address mode of source operand|
+Table 2: TI Addressing Mode Symbols
+|*||means Indirect address mode|
+|(R)||means Indexed address mode|
+|+||after * means Auto Increment address mode|
+|#||means Workspace Register address mode|
+|@||means Direct address mode|

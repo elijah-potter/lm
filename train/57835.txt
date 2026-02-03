@@ -1,0 +1,18 @@
+|San José State University|
+& Tornado Alley
+There are shell structures of protons and neutrons in nuclei. These shells are manifested in terms of the stability of the nuclides. There are nuclides which are more stable such that when a shell is filled. The shell structure is also manifested in terms of the incremental binding energies as additional nucleons are added. For example consider the incremental binding energies for the isotopes of tin (Sn):
+The breakpoints come at certain numbers, called magic numbers, that represent filled shells. The sawtooth patterns comes from the formation of neutron pairs. Protons also form pairs. The declining slope of the incremental binding energy pattern indicates that the binding energy is a quadratic function of the number of nucleons.
+The slopes and curvature of the relationships differ for different shells. Instead of trying to allow for such differences in a statistical analysis of all 2931 nuclides this analysis looks at the cases in which the number of protons is between 15 and 28 and the number of neutrons is also between 15 and 28. The neutron and proton shells have capacity of 14 nucleons each.
+There 170 nuclides satisfying those conditions. These nuclides have an average binding energy of 357.9 MeV.
+The explanatory variables for the binding energies are the numbers of protons p and the number of neutrons n in the shell. In order to capture the effect of the pairing of nucleons the numbers of the nucleons are expressed as the number of pairs of each of the nucleons and whether there are singleton (unpaired) nucleons. The number of pairs of protons and neutrons is denoted as #pp and #nn, respectively. From these variables three additonal explanatory variables are created (#pp)², (#pp)*(#nn) and (#nn)². Additionally there are the variables, sp and sn, which are equal to 1 if a singleton proton or singleton neutron is present in a nuclide.
+The results of the regression are
+[69.9] [21.5] [39.7]
+[-27.5] [44.6] [-17.9]
+R² = 0.99651
+Standard error = 3.78889 MeV
+Coefficient of Variation = (3.78889 MeV)/(357.9 MeV)
+The numbers in the square brackets below the coefficients are the t-ratios for the coefficients. For the regression coefficient to be statistically signficant at the 95 percent level of confidence its t-ratio must be roughly 2.0 or larger.
+The binding energy of the nuclide with 14 protons and 14 neutrons (Silicon) is 236.537 MeV, not significantly different from the regression constant of 482.38875 MeV.
+There was a possibility that if a singleton proton and a singleton neutron were present in a nuclide they would form a pair which would enhance the binding energy. When such a variable was included in the regression its coefficient was not statisically significant. (The t-ratio was 0.5.)
+The numbers of protons and neutrons in the nuclides having 15 to 28 of each explain all but 0.35 of 1 percent in the variation in binding energies of these nuclides. The regression equation gives estimates of binding energies that are accurate to roughly ± 0.35 of 1 percent.
+HOME PAGE OF Thayer Watkins

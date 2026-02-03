@@ -1,0 +1,16 @@
+Microsoft PowerPoint allows you to add many different types of objects, such as pictures, charts and tables to your slides. If you copy and paste these objects into Microsoft Word, they retain their original format. This gives you the ability to edit the objects in Word after pasting them, but it doesn’t allow you to treat the objects as images unless that was the object’s original format. If you want a non-picture PowerPoint object, such as a chart, to appear in Word as an image, you must copy the image from the PowerPoint screen with a screen capture utility.
+Converting PowerPoint Picture Objects
+1. Open the PowerPoint presentation that contains the image you want to copy to Word as a picture.
+2. Right-click the picture object and select “Copy” from the pop-up menu. This type of object copies as an image automatically.
+3. Open the Word document where you want to place the PowerPoint object as a picture.
+4. Right-click the Word document and select “Paste” from the pop-up menu.
+Converting Other PowerPoint Objects
+1. Open the PowerPoint presentation that contains the non-picture object you want to copy to Word as a picture.
+2. Open Windows' Snipping Tool utility. This program is located in the Accessories folder under the Start menu.
+3. Click and drag a selection outline around the PowerPoint object you want to copy into Word. When you release the mouse button, the screen capture appears in a separate window.
+4. Right-click on the image in the Snipping Tool window and select “Copy” from the pop-up menu.
+5. Open the Word document where you want to place the PowerPoint object as a picture.
+6. Right-click the Word document and select “Paste” from the pop-up menu. The PowerPoint object is now in the Word document and will act as a picture object.
+- If you aren’t sure if a PowerPoint Object is a picture, right-click the object on the slide. If it is a picture, you will see the command “Format Picture” in the pop-up menu.
+- To save a picture in Word as an individual graphic file, right-click the picture and select “Save as Picture.” In the Save As dialog box, select the image format. PNG is the default format, but JPG, GIF, TIFF and BMP are also available.
+- IT Stock/Polka Dot/Getty Images

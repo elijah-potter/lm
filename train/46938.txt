@@ -1,0 +1,54 @@
+Secure your Wireless Network
+- Always use the strongest wireless encryption your modem or router has!
+- Always use the strongest possible network password / network key!
+- Choose (or choose not!) to broadcast your SSID (network name)!
+- Change your modem password! Now!
+- Remote modem administration
+- MAC address filtering
+- How strong does your wireless signal need to be?
+- Enable your firewall and security features!
+- How up to date is your modem?
+Always use the strongest wireless encryption your modem or router has!
+Wireless networks can employ various methods of encryption to protect data being sent over the network. WPA (Wi-Fi Protected Access) or the newer WPA2 is the best wireless encryption standard currently available to most users of wireless networks. Many devices include WPA2 as the default encryption level (since 2006) but WPA/WPA2 encryption should be enabled if possible on EVERY home wireless network.
+If your modem/router does not provide WPA or WPA2 encryption it is strongly recommended that a new device be purchased.
+WEP (Wired Equivalency Privacy) is an older, weaker form of encryption and should not be used if WPA or WPA2 is available. WEP is vulnerable to hacking and though some gaming consoles will only allow WEP security, it is still superior to having no encryption at all.
+Always use the strongest possible network password / network key!
+Computer hackers are able to use various methods to compromise weak passwords. As a general rule, the longer and more complicated the password, the more difficult they are to compromise. As a MINIMUM an eight character password should be used to allow access to your wireless network. The more characters in your password, the more resilient it will be to compromise.
+Your password (sometimes known as a network key for wireless devices) should include a mixture of capital letters, lower case letters, numbers and symbols (if your device accepts them) to ensure their strength. Using random letters instead of words or phrases may be difficult to remember, but will help protect against attacks known as “dictionary” attacks (attempts to use common words as the password).
+A password comprising random letters in lower and upper case, numbers and symbols with a length of eight characters or more will provide a strong password that will defeat most attempts to guess (or brute force) it.
+Never use the same password to control or access more than one system or program and NEVER use your wireless network name as your password! Doing so makes things too easy for hackers!
+Choose (or choose not!) to broadcast your SSID (network name)!
+Most wi-fi modems and routers automatically (and continually) broadcast the wireless network name (or SSID – Service Set IDentifier).
+This setting can usually be changed as desired and YOU can decide whether or not you wish to broadcast your wireless network’s name openly. Turning off this broadcast is possible with most modems and routers and will make your network name invisible to most people, but will still allow anyone who knows the name of the network to connect to it.
+Dedicated “sniffer” devices will still be able to detect your network (because a radio signal is still being broadcast) but will normally show the SSID as hidden thus affording an additional layer of security.
+Change your modem password! Now!
+Your wireless network should now be secured with WPA/WPA2 encryption, a strong password / network key and perhaps a hidden network name (SSID), but what about the modem itself? How secure is YOURS?
+Most modems have a variety of configuration settings that can be adjusted or modified to suit the user. Most modern modems can also be accessed remotely (away from the actual modem itself) to adjust these settings as desired. Can YOURS?
+Most modems are designed to use a default password such as “admin”, “password” or the manufacturer’s name. These settings are easily accessible to a user when the modem and network is being set up, however because they are easily accessible and often use weak passwords will unless changed, remain potentially accessible to anyone who wishes to gain access.
+Default passwords for modems and routers are easily available on the internet and generally well known to computer hackers. Changing your modem or router’s default password offers a simple but effective security measure against unauthorised remote access.
+Remote modem administration.
+Most modern modems or routers can be remotely administered over the internet. If yours can, then someone besides you can potentially locate your modem’s IP (Internet Protocol) address and potentially compromise (hack) your modem.
+A simple fix to this vulnerability is to disable remote administration for your modem or router. If you absolutely require remote access then you can try limiting access to a particular IP address or limited range of addresses, to reduce the chance of unauthorised users gaining access to your modem’s configuration settings.
+As a general rule for home networks, remote access is not necessary and the safest thing is to disable remote access to your modem / router.
+MAC address filtering.
+What devices are connected to YOUR wireless network? How can YOU tell or control which devices access YOUR network?
+Encryption including WPA2 and strong passwords are the best methods to control who accesses your network, however most modems and routers offer further methods to control your network.
+Every device that can access a wireless network has a unique identifying number known as a MAC (Media Access Control) address. Most modern modems also offer the capability to restrict access to a wireless network to known devices (known MAC addresses).
+This method is not as strong as it may seem. It is possible for some people to “spoof” MAC addresses and make another device impersonate a “known” device on a network, but this method offers an additional layer of security that may help secure your network.
+Please note that if you set MAC filtering incorrectly your devices may be prevented from connecting to your network.
+How strong does your wireless signal need to be?
+How strong does your wireless signal have to be? How far away from your office or living room do you need to be able to access your network?
+In most homes, a range of 20-30 metres (in a straight line) exceeds what most people need, so why transmit the signal beyond this?
+Not all modems and routers allow this capability but some do and by fine tuning the signal strength you can reduce how far outside your premises the signal reaches, further reducing the opportunity for others to access your network.
+A related option is the physical location of your modem or router. Positioning your modem or router as centrally as possible within your home can help reduce the range the signal will reach.
+Enable your firewall and security features!
+Most modern modems and routers come standard with a built in firewall. A firewall can prevent unauthorised people accessing your network, can control which programs inside the network access the internet and should be enabled by default.
+Some modems and routers offer the option to disable the firewall. For most people, your modem’s firewall MUST be enabled to help secure your network.
+Many modems and routers also feature security programs known generally as intrusion detection systems (IDS). Such systems are capable of detecting attempts at unauthorised access to the system they are protecting and block many forms of attack.
+If your modem or router is equipped with IDS, this feature should be enabled to further help secure your network.
+For additional security, all computers connected to your network should also have a software firewall system installed, or the manufacturer provided operating system firewall enabled.
+How up to date is your modem?
+Modems and similar devices rely on a type of software known as “firmware” in order to operate correctly. This firmware, like other software programs requires updating to ensure it is operating at peak efficiency and to maximise its ability to prevent hacking.
+Many modems are sourced when people sign up to an Internet Service Provider’s (ISP) internet package. Many of these packages offer automatic updating of the modem firmware. Does YOURS? Check with your ISP if you are unsure.
+If not, firmware updates can usually be obtained free of charge from the manufacturer of your modem’s website. Ensure you obtain this software from your modem manufacturer’s LEGITIMATE website as installing compromised software and firmware is a frequent method by which hackers seek to gain control of systems and networks.
+If you have any further questions regarding wireless network security please contact your modem’s manufacturer or refer to the documentation provided with your modem.

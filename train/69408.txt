@@ -1,0 +1,48 @@
+By François Cochard & Christian Buil
+The Sol’Ex project (later followed by Star’Ex) offers a new way of “entering Astronomy”: it is an approach that is affordable, simple, fun and fascinating. Here is what it is in a nutshell.
+Sol’Ex, to start
+Sol’Ex is a project designed, organized and led by Christian Buil. Christian loves doing extraordinary things with modest equipment, a little out of challenge, and a lot to make astronomy accessible to as many people as possible; with Sol’Ex and Star’Ex, it pushes this approach very far.
+The primary goal is to produce images of the Sun in a precise wavelength (Hɑ for example). It’s like using an extremely narrow filter; much narrower than anything else on the market, and at a much lower cost. In addition, you can select the wavelength of your choice in the entire visible range.
+These images are not only beautiful, but they also make it possible to study sunspots, turbulence on the surface of the Sun, prominences… and to follow their evolution over time.
+Picture 1. Example of a sunspot obtained with a Sol’ex
+(Click on the image for the HR version)
+It is an instrument, the Sol’Ex – for “Solar Explorer” – to be made yourself, installed behind a small telescope, and used with an electronic camera (for example a small CMOS camera). To be complete, one must add a device to reduce the flux (there is a lot of energy in the Sun!); this can be a filter placed in front of the telescope or a Herschel prism (in this case, at the back of the telescope).
+Picture 2. Example of a Sol’Ex once manufactured
+The Sol’Ex is made up of 3D printed parts and a kit of optical elements available from Shelyak Instruments. You are responsible for the assembly and adjustment of the Sol’Ex, based on the extensive documentation on the Sol’Ex website. All these elements are custom-made and optimised for maximum optical performance. For 3D printing, you can make the parts yourself from the .STL files available on the Sol’Ex project website, or you can also obtain a complete set of parts from specialist companies. (par exemple Azur3DPrint en France).
+The whole thing is very light: about 650 grams with the camera. All you need is a small frame to wear the telescop + Sol’Ex.
+Picture 3. Example of a Sol’Ex mounted on an astronomical telescope
+Assembling and adjusting the instrument yourself gives you a good understanding of its optical functioning; it is simple and very educational. So much so that Sol’Ex has its place in a school or university environment, as well as in all astronomy or science popularisation associations.
+The images are obtained by “scanning” the Sun, i.e. by letting it pass in front of the slit at the entrance to the Sol Ex. Scrolling can be done either by stopping the movement of the mount while the Sun is scrolling naturally (this takes less than 3 minutes), or by slowly rotating the mount in the opposite direction to go faster (a full “scan” then takes less than 20 seconds). During the whole scroll, rapid acquisitions are made, thus obtaining a video sequence.
+These data are then processed automatically by the INTI software, which is free of charge and was developed jointly by Christian Buil and Valérie Desnoux.
+It should be pointed out at this stage that Sol’Ex is in fact a small spectroscope with very high resolution; it is thanks to this resolution that a very narrow spectral range can be isolated, narrower than any commercial filter. We even have such a high resolution that we can measure the motions on the surface of the Sun by the Doppler effect – this is called a Dopplerogram – in particular the rotational motion of the Sun, and the motion in turbulence.
+Picture 4.Example of a solar Dopplergram obtained with a Sol’Ex
+(Click on the image for the HR version)
+The instrument is so powerful that the magnetic field at the surface of the Sun can even be measured (Zeeman effect). All this with an instrument you make yourself!
+Star’Ex, to go further
+So with Sol’Ex we have a small but powerful spectroscope… it is then quickly tempting to point the instrument towards other stars to discover the Universe… welcome to Star’Ex (for Star Explorer, obviously).
+There are three main differences between observing the Sun and a star:
+- With the Sun, the energy available is enormous, and the exposure times are very short. Starlight is much weaker and requires longer exposure times: from several seconds to several minutes.
+- It’s easy to point at the Sun (using the telescope’s shadow, for example)… it’s much more difficult to point at a star.
+- The Sun shows a large area, while the stars are just a dot, whatever telescope is used. There is no longer any need to “scan” the stars as we do with the Sun. All you need is a long exposure on the star.
+So what needs to be added to Sol’Ex to observe star spectra? Mainly a guiding module, which allows the entrance to the spectroscope (a narrow slit) to be observed with a second camera. This allows the star to be precisely selected and held at the Star’Ex input for the duration of the acquisition, which can take several minutes.
+To make the instrument brighter, it is also proposed to replace the objective lens with one of shorter focal length. And it is relevant to use a cooled camera, to allow longer
+poses. With few additional elements, Sol’Ex can be used on stars and turned into a Star’Ex. And open a new window on fabulous observations.
+By keeping the basic Sol’Ex equipment (small telescope, small CMOS camera), it will be possible to make very high resolution spectra, i.e. to see minute details in the profile of an absorption or emission line. These details are the signature of fine movements of the star, or even within the star.
+Picture 5. Examples of spectra obtained with a High Resolution Star’Ex
+Star’Ex Low Resolution, for objects with low light intensity
+But there is still time to explore! Using a small telescope and a high-resolution spectroscope has one important effect: it limits us to very bright objects; let’s say we have to settle for the brightest stars in the sky.
+To observe fainter objects – potentially tens of thousands of stars, nebulae, galaxies, etc. – a few things can be changed:
+- Use an instrument with a larger diameter; the entrance slit of the spectroscope must also be changed, to collect all the photons coming from the star.
+- Change the diffraction grating, to offer a lower resolution; we will see less detail in the spectra (the “magnifying glass” effect of the high resolution), but we will observe a much wider spectral range (potentially the entire visible range).
+Star’Ex Low Resolution is therefore a more ambitious instrument, but one that will offer virtually limitless possibilities.
+Picture 6. Example of a spectrum obtained with a low resolution Star’Ex
+From Sol’Ex to Star’Ex, one approach, several instruments, different
+infinite observations, and still much to invent!
+Some obvious types of observations have been mentioned: the Sun, stars, galaxies, nebulae: Sol’Ex & Star’Ex will allow you to quickly discover these objects. But Sol’Ex & Star’Ex is really an EXploration project.
+For example, in recent months we have seen new observations using polarimetry (to study the magnetism of stars, among other things), a campaign to observe the Sun is starting up with a professional team – amateur astronomers have a large place in it – we can work on interstellar matter, on the movements of galaxies, on light pollution; there is still a lot, a lot to invent! So Sol’Ex & Star’Ex is also a community that grows every day – because together we are much stronger.
+To accompany you in these different variants of the Sol’Ex / Star’Ex project, Shelyak offers you several optical kits, which correspond to the different configurations of Sol’Ex and Star’Ex, and to different uses. We are at your disposal to help you in the choice of your configuration, and we work to obtain the best prices with our network of suppliers. Our motivation is simple: through our daily action, we want as many observers as possible, all over the world, to embark on this incredible adventure. In a few words, here is the range of Sol’Ex & Star’Ex kits:
+- The basic kit: pure Sol’Ex, the most economical way to enter the Sol’Ex universe
+- The add-on kit for upgrading to Star Ex (high resolution)
+- The complete Sol’Ex & Star’Ex kit (high resolution). This is a combination of the two previous kits, but at a particularly attractive price (because we want to encourage you to explore the stars too!)
+- The Star’Ex Low Resolution Kit
+- … and also a complementary kit for using Star Ex Low Resolution in the near infrared (IR)

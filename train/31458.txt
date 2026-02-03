@@ -1,0 +1,32 @@
+Electric motors in aircraft are not readily scalable so many aircraft employ many propellers each with their own motor. For example the EADS Cri Cri pure electric stunt plane has four motors with propellers, two push and two pull. American unmanned electric aircraft going into the upper atmosphere for surveillance often employ a large number of electric motors, each with a propeller along, the fixed wing. This also provides useful redundancy. Now the Germans have applied this principle to helicopters following the French in the form of Pascal Cretien and his SYNPER helicopter making the world's first manned pure electric helicopter flight.
+After over a year of work on the development of the volocopter VC1, the e-volo team achieved their goal on the 21st October 2011: The first manned flight world-wide with a purely electrically powered, vertical take-off and landing (VTOL) aircraft succeeded. For the development of the Volocopter, the e-volo partner network received 2 Million Euros of federal funds. Together with a network of notable partners from the fields of research and industry, e-volo will press ahead with the development of the technology for the volocopter during the coming years. The aim of the collaboration is now a two-seater volocopter which complies with regulations, and is based on the concept study of the VC Evolution 2P. and is based on the concept study of the VC Evolution 2P with the following aircraft performance:
+- speed of over 54 kn (100 km/h)
+- minimum flight altitude of 6500 ft
+- take-off weight of 450 kg
+- more than one hour flight time
+For the development phase a two-year flight testing programme in collaboration with the LBA (German Federal Aviation Office) and the DULV (German Ultralight Aircraft Association) for an own aeronautical classification "Volocopter" is in the pipeline. Among other things, autonomous test flights over uninhabited areas for days on end are planned in order to test and demonstrate the reliability of the electronic steering and the diverse safety concepts in an uninterrupted flight.
+Project Management is by Syntern GmbH of Karlsruhe, Germany and e-volo are the inventors of the volocopter and carry out project coordination, technical project management, architecture of the steering software, test flights, prototype certification, marketing and sales. See www.e-volo.com .
+The e-volo volocopter is a completely novel, vertical take-off and landing (VTOL) manned aircraft, which cannot be classified in any known category. The fact that it was conceived of as a purely electrically powered aircraft sets it apart from conventional aircraft.
+Through the use of its many propellers, the volocopter can take off and land vertically like a helicopter. A considerable advantage, apart from the simple construction without complex mechanics, is the redundancy of drives. This enables the safe landing of the volocopter even if some drives fail.
+The controls work according to the fly-by-wire principle very easily by means of a joystick. As opposed to any other aircraft, the operation is child's play. It takes off and lands vertically and the pilot pays little or no attention to the flight path angle, minimum speed, stall, mixture control, pitch adjustment and many other things which make conventional aviation so demanding.
+The propellers generate the entire ascending force, and by means of a selective change in rotary speed they simultaneously take care of the steering. Furthermore, as opposed to helicopters, no mechanical pitch control of the propellers is necessary whatsoever.
+The automatic position control and the directional control take place by means of several independent and mutually monitoring airborne computers which control the rotation speed of each drive separately.
+An optional, additional pusher propeller enables an even faster flight.
+IAF - Institute of Applied Research, University of Applied Sciences Karlsruhe, Germany
+Development of an automatic and interactive steering system
+NAVKA - Navigation Algorithms and Platforms Karlsruhe, Germany
+Development of a multiply redundant multi-sensor system optimized for configuration in order to calculate the navigation status
+FZI - Research Center for Information Technology, Intelligent Systems and Product Engineering - Karlsruhe, Germany
+Development of steering and sensor technology for automation
+IAG - Institute of Aerodynamics and Gas Dynamics, Department Helicopters - University of Stuttgart, Germany
+Aerodynamic blade design, aerodynamics of the multi-rotor alignment, assessment of aircraft performance and controllability, optimization of the configuration, emergency scenarios in the case of rotor failure
+DG Flugzeugbau GmbH- Bruchsal, Germany
+Development of the passenger cabin and the mechanical assembly of the lightweight fuselage construction
+Smoto GmbH - Augsburg, Germany
+Development of the e-drive unit including the battery management system
+Helix Carbon GmbH - Würselen, Germany
+Development of rotors for ascending force and propulsion
+ATB Blank GmbH / Blank Sky-Control - Roggenburg, Germany
+Development of cockpit electronics and steering hardware
+mach:idee, Engineering Company - Karlsruhe, Germany
+3D visualization, animation, simulation and real-time presentation

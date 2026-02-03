@@ -1,0 +1,14 @@
+RJSON converts any JSON data collection into more compact recursive form. Compressed data is still JSON and can be parsed with
+JSON.parse. RJSON can compress not only homogeneous collections, but also any data sets with free structure.
+RJSON is single-pass stream compressor, it extracts data schemes from document, assign each schema unique number and use this number instead of repeating same property names again and again.
+Bellow you can see same document in both formats.
+When RJSON founds new object schema (unique combination of names of properties) it outputs the object as is and assign it a new index starting from 1 (0 is reserved for numeric arrays). Next objects with same schema are encoded as arrays (in beginning — schema's index, then — values of properties). Several consecutive objects with same schema are merged into same array, so shema index is stored only once for them. Schemes itself aren't stored in the document, unpacker will index new schemes in exactly same way like packer does and we will have implicit in-memory index identical for both packing and unpacking.
+RJSON allows to:
+- reduce JSON data size and network traffic when gzip isn't available. For example, in-browser 3D-modeling tools like Mydeco 3D-planner may process and send to server megabytes of JSON-data;
+- analyze large collections of JSON-data without unpacking of whole dataset. RJSON-data is still JSON-data, so it can be traversed and analyzed after parsing and fully unpacked only if a document meets some conditions.
+The above JSON vs RJSON example is based on the data structure from the JSON DB: a compressed JSON format. JSONDB concept is implemented in JSONH - JSON Homogeneous Collections Compressor. RJSON provides similar level of data compression like JSONH does, but RJSON isn't limited to homogeneous collections only.
+Recently I also found CJSON, it uses similar approach like RJSON does, but uses explicit schemes and wraps compressed objects into other objects with empty keys. RJSON instead tries to preserve original structure of the document, uses implicit index of data schemes, encode compressed objects into arrays and merge homogeneous sequences of objects into single array.
+In my opinion RJSON combines best features from JSONH and CJSON and introduces beautiful implicit index of data schemes.
+The idea of this algorithm come to my mind near five or six years ago when I worked on J2ME XHTML-rendering engine for mobile phone browsers where each extra Kb matters. When I realized that XML is like violence I started to like JSON and adapted original idea to JSON format.
+The code is available under Simplified BSD License. Fell free to compress the world.
+Comments are closed.

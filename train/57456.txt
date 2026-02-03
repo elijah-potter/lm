@@ -1,0 +1,287 @@
+Chapters 3 and 4 : The fourth
+Ludwig Schläfli talks to us about objects in the
+fourth dimension and shows us a procession of regular polyhedra in
+dimension 4, strange objects with 24, 120 and even 600 faces!
+1. Ludwig Schläfli and the others
+We hesitated for quite some time
+before choosing the presenter of this chapter. The idea of the
+fourth dimension does not come from just one person and many
+creative spirits were needed before it was definitively
+established and assimilated into mathematics. Among the precursors, one
+can cite the great Riemann who will present the final chapter and
+who had, without doubt, a very clear idea of the fourth dimension
+as of the middle of the nineteenth century.
+But we called on Ludwig
+(1814-1895), mainly because this original mind is almost
+forgotten today, even amongst mathematicians. He
+is one of the first to have grasped the idea that even if our
+space seems to be of dimension 3, there is nothing to stop
+us imagining a space of dimension 4, or even proving geometrical
+theorems about 4 dimensional mathematical objects. For him, the
+fourth dimension was a pure abstraction, but after years of work, he
+must have felt more at ease
+dimensions than in three ! His major work is the "Theorie der
+Kontinuität", published in 1852. It must be said that few at
+time realised the importance of this treatise. It was not
+until the beginning of the twentieth century
+understood the point of this monumental work. For more information
+on Schläfli, see here or here.
+Even within the mathematical community, the fourth
+dimension maintained an aspect of mystery and impossibility
+many years. To the general public, the fourth dimension often suggests
+science fiction full of paranormal phenomena, or sometimes,
+Einstein's theory of relativity: "the fourth dimension is
+isn't it?" However, this is confusing mathematical questions
+those of physics. We will return to this briefly later. Let
+first try to grasp the fourth dimension as Schläfli
+did, as a pure creation of the mind!
+2. The idea of dimension
+Schläfli uses the blackboard to remind us
+of some of the things we have seen in the preceding chapters.
+line is of dimension 1
+because to locate a point on it, one needs only one number. This is
+the abscissa, or x-coordinate, of the point, negative on the
+of the origin, and positive on the right.
+The plane of the blackboard is
+of dimension 2
+to locate a point in this plane, one can plot two perpendicular
+straight lines on the blackboard and describe the position of points
+with respect to these two axes: they are the abscissa
+and the ordinate
+coordinates). For the space in which we live, one can
+supplement the two axes of the blackboard by tracing a third axis,
+perpendicular to the blackboard. Of course, it is rather
+have chalk that plots straight lines which leave the blackboard, but
+as we are ready to go off into the fourth dimension, we shall need
+Any point in space can then be described by three
+traditionally x, y and z, and that's
+why we say that space has three
+dimensions. One would of course like to be able to continue, but it is
+not possible to trace a fourth axis perpendicular to the previous
+three; this is not a surprise, because the physical space in
+live is of dimension 3 and we shouldn't look for the fourth
+dimension here, but rather in our
+Schläfli suggests several ways in which
+we can get
+an idea of the fourth dimension. There is not just one single method,
+there are several ways to explain the third dimension to flat
+lizards. It's the combination of different methods which allows us to
+look into the fourth dimension.
+method is the most pragmatic. We can simply decree that a point
+in 4 dimensional space is nothing more than the set
+consisting of four numbers: x,
+y, z, t.
+The disadvantage of this approach it is that it is hard to visualise
+anything. But it is completely logical and the majority of
+mathematicians are happy with it. One can then try to copy the usual
+definitions in dimension 2 and 3 and try to define objects in the
+fourth dimension. For example, one can call (hyper-)plane the
+collection of points (x, y, z, t) satisfying a
+linear equation of the form ax+by+cz+dt
+= e, copying
+the similar definition of a plane in space. With this kind of
+definition, one can develop a consistent geometry, prove theorems and
+so on. In fact, this is the only way in which to treat spaces of higher
+dimension seriously. But the aim of this film is
+not to be
+"too serious" but rather to "show" the fourth dimension
+and to explain the intuition that certain mathematicians have
+Schläfli then gives us an explanation
+analogy". The idea is to carefully observe dimensions 1, 2 and
+to notice certain phenomena, and then to suppose that these phenomena
+continue to exist in the fourth dimension. It is a difficult game and
+does not work all of the time. A lizard which leaves its world and
+enters the third dimension must expect some surprises and needs time to
+adapt. The same is true for the mathematician who climbs
+into the fourth dimension "by analogy "…
+takes the example of the sequence "line segment, equilateral
+regular tetrahedron". One senses that there is an analogy between these
+there is no doubt that the tetrahedron in some way
+generalizes the equilateral triangle to dimension 3.
+What then is the object that generalizes
+the tetrahedron to the fourth dimension?
+The segment has two vertices and it lies in
+The triangle has three vertices and it lies in dimension 2. The
+tetrahedron has four vertices and it lies in dimension 3. It is
+tempting to think that the sequence continues and that there is an
+object in 4 dimensional space that has five
+vertices and that continues the sequence. We can see that in
+triangle and in the tetrahedron, there is an edge joining each pair of
+vertices. If one tries to join five vertices to each other in
+pairs, without thinking too hard about the space in
+one makes the drawing, one sees that ten edges are needed. Then, it is
+very natural to try to place triangular faces on each triplet of
+vertices. Again, one finds ten of them. And then, one continues by
+placing a tetrahedron on each quadruplet of edges. The object which we
+have just built does not yet have a very clear
+status… we know the vertices, the edges, the faces
+3 dimensional faces, but we do not yet see it very clearly. The
+mathematician speaks about combinatorics
+to describe what we know: we know which edges connect which vertices,
+but we still don't have a geometrical view of the
+This object, whose existence we have just guessed, and that
+the sequence segment, triangle, tetrahedron, is called a simplex!
+on the image for a film.
+3. Schläfli's polyhedra
+Polygons are drawn in the plane and polyhedra in
+ordinary 3 dimensional space. Similar objects in dimension 4
+(or more!) are generally called polytopes
+though they are often simply called polyhedra.
+Whereas Plato discussed the regular polyhedra in
+ordinary 3 dimensional space, Schäfli described the regular
+polyhedrons in dimension 4. Some are amazingly rich and the film
+proposes to show them to 3 dimensional spectators
+(you and me!) in the same way that the film showed the polyhedra of
+Plato to the lizards, rather than a pot of flowers or a book
+(admittedly, it would be very hard for the authors of the film to show
+you flowers in dimension 4, which is a pity!).
+Here we have one of Schläfli's most beautiful
+complete and precise description of the six regular polyhedra in
+dimension 4. As they lie in dimension 4, they
+have vertices, edges, faces of dimension 2 and faces of dimension 3.
+Here is a
+table with the names of these polyhedra, the numbers of edges, of faces
+This will be useful to help appreciate
+visualisations. For more information about polyhedra in dimension 4,
+see here or here,
+or also here.
+4. "Seeing" in 4 dimensions
+How does one "see" in 4 dimensions? Unfortunately
+we can't give you 4D glasses, but there are other ways.
+The method of sections
+We begin as we did with the lizards. We are in our 3
+space and we imagine that an obect moves through 4 dimensional space
+and progressively cuts our 3 dimension space.
+The section is now in our space and instead of
+polygon which is deformed, it is now a polyhedron which is deformed. We
+can get an intuition of the shape of the 4 dimensional polyhedron by
+observing the sections as they slowly deform, ending up by
+disappearing. Recognising the object in this way is not easy, and even
+harder than for the lizards.
+In the film, we get to know three of
+these polyhedra : the hypercube and those called the
+120 and the 600.
+You see them cut through our space and show their sections which are 3
+polyhedra which deform. Impressive ! But not easy to understand.
+The image on the right shows the 600 going through
+our 3 dimensional space.
+|Click on the image for a film.
+As the fourth dimension is not easy to understand,
+it is not a bad idea to use several complementary methods.
+The method of shadows
+The other method we give in this chapter is almost
+evident than the sections method. We could also have used it with the
+lizards. It is the technique of a painter who wishes to represent a
+landscape containing 3 dimensional objects on a 2 dimensional canvas.
+He projects the image onto the canvas. For instance, he can place a
+light source behind the object and observe the shadow of the object on
+the canvas. The shadow of the object only gives partial information,
+but if one turns the object in front of the light and if one observes
+the way in which the shadow changes, one can often get a very precise
+idea of the object. All this is the art of perspective.
+Here it's the same thing : think of the 4
+object that we want to represent as lying in 4 dimensional
+and that a lamp projects its shadow onto a canvas which is now our 3
+dimensional space. If the object turns in 4 dimensional space, the
+shadow is modified, and we get an idea of the object even if we don't
+First we see the hypercube, much more clearly than we did with
+|Click on the image to start a film
+Then the 24, the object of
+which we think
+Schläfli was the proudest ! The reason is that this new
+really new ; it does not generalise any 3 dimensional polyhedron, as is
+the case for the other polyhedra. Moreover it has the wonderful
+property of being self-dual :
+for example, it has as many 2 dimensional faces as 1 dimensional faces
+(edges), and as many 3 dimensional faces as 0 dimensional faces
+Finally we see the polyhedra 120 and 600 whose
+we have already examined. This new point of view shows us other aspects
+of these 4 dimensional polyhedra, which are indeed complicated. These
+two methods, sections and shadows, have advantages, but it has to be
+admitted that they do not do justice to all of the symmetries of these
+In the next chapter, we shall use another method,
+stereographic projection ! Maybe that will help us to see more clearly
+5. "Seeing" in 4 dimensions :
+Chapter 4 : the fourth dimension, continued)
+Schläfli gives us one last
+method to represent polyhedra in 4 dimensions.
+It consists of using quite simply stereographic projection. But of
+course this is not the same projection that Hipparchus showed us in
+chapter 1 !
+Consider a sphere in 4 dimensional
+define such a sphere, we use the usual definition : it consists of the
+set of points in this space which are all at the same distance from a
+point called the centre. We have seen that the sphere in 3 dimensional
+space is 2 dimensional, as its points are described by a longitude and
+a latitude. In some sense, the sphere in 3 dimensional space is only 2
+dimensional because "it is missing a dimension" : the height above the
+sphere. In the same way, the sphere in 4 dimensional space is 3
+dimensional, and it also is "missing" a dimension which is again the
+height above the sphere.
+What is the sphere in the plane, i.e. in 2
+space ? It's the set of all points at the same distance from a centre,
+otherwise known as a circle. A circle is thus a sphere in 2 dimensional
+space ! And it is clearly 1 dimensional as one number suffices
+describe a position on a circle.
+More surprising : what is a sphere in 1
+space, that is, on a line ? The set of points at the same distance from
+a given point on a line. There are only two, one on the left and the
+other on the right ... The sphere in 1 dimension then
+contains only two points... Hardly surprising that we say that
+is of dimension 0.
+To sum up : in n dimensional
+space, the sphere is of dimension n-1 and it's for
+this reason that mathematicians use the symbol Sn-1.
+The beginning of the chapter explains what the
+sphere S3 is,
+but of course not even Schläfli can show it to us.
+The best he can do is to show you a sphere S2
+and encourage you to proceed as if you were in 4 dimensions and imagine
+the sphere S3
+... Stereographic projection as presented by Hipparchus projects the
+onto its tangent plane at the south pole. One can proceed in exactly
+the same way with S3.
+One takes the tangent plane at the south pole of the sphere S3
+which is a 3 dimensional space and one can then project any point of S3
+(except the north pole) onto this space. It suffices to
+the straight line from the north pole passing throught the point until
+it meets the tangent space to the south pole... Even if this takes
+place in 4 dimensions, the figure is analogous to what we have already
+Suppose then that Schläfli wants to show
+us one of
+these 4 dimensional polyhedra. He does what we have already done with
+the reptiles. He inflates the polyhedron until it is traced out on the
+Then he can project
+stereographically onto the tangent plane at the south pole, which is
+our 3 dimensional space, and we can observe this projection.
+We can also roll the sphere S3
+on its tangent plane and then project so that we can watch the
+polyhedron dance. Notice that when the rotation of the sphere takes a
+face of the polyhedron through the projection pole, the corresponding
+face has an infinite projection and we get the impression that the face
+explodes on the screen. We had the same impression in chapter 1 when
+polyhedra were projected on the plane.
+This is the display proposed in chapter 4 :
+projecting Schläfli polyhedra stereographically
+and turning them at the same time.
+|Click on the image for a film.
+The geometry of 4 dimensional spaces is just the
+beginning, as there are also spaces of dimension 5, 6... and inifinite
+dimensional spaces ! Initially thought of as pure abstractions, modern
+physics makes great use of them. Einstein's theory of relativity
+uses a 4 dimensional space-time. A
+point of this space-time is described by three numbers describing a
+position and by a fourth describing an instant in time.
+But the force of the theory of relativity lies
+in mixing these four coordinates in some way without trying to
+time or space, and these thus lose their individual specifics.
+shall not explain this theory here
+because Schläfli didn't know it ! Einstein's theory
+dates from 1905, well after the birth of the mathematical idea of 4
+dimensions. This is not the first, nor the last, time that physics and
+mathematics interact fruitfully, each contributing its methods, with
+differing goals and motivations, yet so close...
+Besides, doesn't today's physics postulate the
+of spaces of dimension 10 or more, and doesn't quantum physics work
+with infinite dimensional spaces ? There will be a bit of a wait before
+we produce a film on spaces of dimension 10....

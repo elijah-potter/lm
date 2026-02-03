@@ -1,0 +1,14 @@
+NCCR-MICS Smart Buildings
+Two use cases: (i) Automation and control of future buildings (economically motiveted) and (ii) diagnosis of "sick" buidlings (technologically motivated).
+Smart Buildings - Scenario
+Fixed infrastructure, semi-mobile (installed for longer periods of time) and mobile sensors and actors.
+- Is an ad-hoc network required or can we go with infrastructure?
+- How many sensors in which location?
+- Callibration and validation
+Environmental Sensors for Building Applications
+Temperature, humidity, light, barometric pressure are uncritical, many solutions exist today and are available as low power devices.
+O2 - High concentration, difficult to measure
+CO2 - Killer app for HVAC, paradigm change in todays HVAC systems: not just moving all air with general vents all the time, but removing at distinct spots at distinct times (exchange on demand) - energy/cost - if pipes can be made smaller, you can build 9 floors in the space of 8 etc.
+C02 is typically hard to sense since it is not a reactive gas. There are different sensors based on electrochemical, NdIR or photoacoustic principles available.
+Accuracy: ppm are measured, but fluctuations due to occupancy (people) is rather high.
+to be defined.

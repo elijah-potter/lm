@@ -1,0 +1,30 @@
+______________________________________________________________ Solid State Power Supplies
+4-132. When load current is below 600 milliamperes, the base-to-emitter voltage on Q2 is
+not high enough to allow Q2 to conduct. With Q2 cut off, the circuit acts like a series
+regulator. When the load current increases above 600 milliamperes, the voltage drop across
+R4 increases to more than 0.6 volts. This causes Q2 to conduct through resistor R2, thereby
+decreasing the voltage on the base of pass transistor Q1. This action causes Q1 to conduct
+less. Therefore, the current cannot increase above 600 to 700 milliamperes.
+4-133. By increasing the value of R4, you can limit the current to almost any value. For
+example, a 100-ohm resistor develops a voltage drop of 0.6 volts at 6 milliamperes of
+current. You may encounter current-limiting circuits that are more sophisticated, but the
+theory of operation is always the same. So, if you understand this circuit, you should have
+no problems with the others.
+Figure 4-50. Series Regulator With Current Limiting
+TROUBLESHOOTING POWER SUPPLIES
+4-134. There are safety precautions that are very important to remember whenever you are
+working with electricity. In the front of all ETMs, you will find a section on safety
+precautions. There should also be a sign posted on each piece of equipment listing the
+specific precautions for that equipment. One area that is sometimes overlooked and is a
+hazard is the method in which equipment is grounded. By grounding the return side of the
+power transformer to the metal chassis, the load being supplied by the power supply can be
+wired directly to the metal chassis. Therefore, the necessity of wiring directly to the return
+side of the transformer is eliminated. This method saves wire and reduces the cost of
+building the equipment. While it solves one of the problems of the manufacturer, it also
+creates a problem for you. Observe the following precautions before starting to work on
+any electronic or electrical equipment.
+Always ensure that the equipment and any test equipment you are using are
+Inspect the rubber mat you will be standing on to ensure it is in good condition.
+As long as you follow these precautions, you should be able to avoid the possibility of
+becoming an electrical conductor.
+23 June 2005

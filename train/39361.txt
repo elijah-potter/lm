@@ -1,0 +1,4 @@
+A records (address records) define the mapping between a fully qualified hostname and its IP address. This mapping allows users to type in sensible names for your servers such as www.yourdomain.com, rather than having to remember a more complex IP address assigned to that server.
+For example, you may wish to add an A-record for the hostname ‘www’ and IP address 22.214.171.124, so that www.yourdomain.com resolves to the IP address 126.96.36.199 where your website is hosted.
+To add an A record, you must log into your control panel and select your domain name under “Hosting” on the left hand side.
+Following this, within the main control panel select the “Domains” tab and click on the domain you wish to add the A record to. Then select the “Add A record” tab so that you can add the details of the A record.

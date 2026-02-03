@@ -1,0 +1,9 @@
+Drafting IEC publications
+Representations of numbers
+(The full requirements are described in the ISO/IEC Directives Part 2:2011, 6.6.8.)
+The decimal sign shall be a comma on the line in all language versions. If a value less than 1 is written in decimal form, the decimal sign shall be preceded by a zero.
+Each group of three digits reading to the left and to the right of a decimal sign shall be separated by a small space from preceding digits or following digits respectively, except for four-digit numbers designating years.
+Example: 23 456 / 2 345 / 2,345 / 2,345 6 / 2,345 67 but the year 2011
+For clarity, the symbol × rather than a half-high dot (·) or asterisk (*) is used to indicate the multiplication of numbers and numerical values.
+Example: 1,8 × 10-3 (not 1,8 . 10-3 or 1,8 · 10-3 or 1,8 * 10-3 )
+To express values of physical quantities, Arabic numerals followed by the international symbol for the unit (see ISO 31, ISO 1000 and IEC 60027) shall be used.

@@ -1,0 +1,26 @@
+A fractal is a shape made up of progressively smaller versions of the same shape. A simple tree, for example, can be drawn by connecting progressively smaller “Y” shapes to each other, like so:
+Real life trees, however, are rarely so regular. To make a more realistic tree, we need to vary the width and length of the branches. And the angles between the branches, as well. It also helps if we color the lines representing the trunk and branches brown, and the smaller lines that represent the leaves in greenish hues. Here are some Plain English sentences that do the job:
+To draw a forest tree given a size:
+If the size is less than 1/32 inch, exit.
+Put the size divided by 1/4 inch into the pen size.
+If the size is less than 1/4 inch, pick a greenish color.
+Remember where we are.
+Pick a number between 1 and 3.
+Draw a line using the size divided by the number for the length.
+Pick a ratio between 1/32 and 1/24.
+Turn left the ratio. Draw another forest tree given the size times 2/3. Turn right the ratio.
+Turn right the ratio. Draw a third forest tree given the size times 2/3. Turn left the ratio.
+Go back to where we were.
+When we run the above routine, we get something along these lines (pun intended):
+And if we add a little housekeeping and a loop, like this…
+Draw a fractal forest.
+Wait for the escape key.
+To draw a fractal forest:
+Erase the screen using the tan color.
+Start within 3 inches of the screen’s bottom line.
+Pick a size between 3 and 6 inches.
+Pick a brownish color.
+Draw a forest tree with the size.
+Add 1 to a count. If the count is 32, break.
+Refresh the screen.
+…we can draw a whole forest, like this one:

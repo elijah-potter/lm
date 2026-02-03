@@ -1,0 +1,28 @@
+Hacker groups have become highly trained organizations with access to very sophisticated and easily accessible tools and techniques. Cyberattacks have become professionalized and their economic profitability has been demonstrated countless times, turning it into a billion-dollar industry in recent years.
+Economic profit and jeopardizing the confidential data of global corporations are the main objectives of these threats. WannaCry is the latest ransomware to have global repercussions.
+What is the Origin of WannaCry?
+At the start of the business day on Friday, May 12, Panda Security’s advanced protection solutions, Adaptive Defense and Adaptive Defense360, began to successfully detect and block a large number of attacks that took advantage of the vulnerability of EternalBlue and made use of the WannaCry ransomware. The extent of the attacks reached virtually every corner of the globe.
+The ransomware attack affected certain vulnerable Microsoft Windows systems, encrypting all their files and those of the network drives to which they are connected, and infecting other vulnerable Windows systems on the same network. The process ends with a ransom demand for its decryption, specifically the payment of $300 in BitCoin for each computer decrypted.
+What Makes WannaCry Different From Other Attacks We’ve Seen So Far?
+The considerable potency of this campaign can be chalked up to the exploitation of a vulnerability. In other words, it does not necessarily require human intervention, such as opening an email or downloading something from the internet, to gain entry to a system.
+This method made the following possible:
+- The attack took place practically simultaneously on the whole planet and without the intervention of users. It is therefore a massive attack without human barriers.
+- The infection will affect all connected Windows devices on the same network that are not properly updated. Infection of a single computer can end up compromising the entire corporate network.
+Traditional protection solutions aimed at stopping malicious files are not able to block attacks that take advantage of this or other vulnerabilities to enter the computer and the network. The consequence has been that the cyberattack has already spread to 150 countries and has affected 200,000 users (mainly companies and public institutions).
+Take a look at our infographic detailing the evolution of the #WannaCry attack.
+How Can I Protect Myself?
+In this context, the solution has to take a structurally different approach to traditional security products. If the attacker takes advantage of the fact that the antivirus is unfamiliar with the malware being used, a model that focuses precisely on controlling what is unknown becomes necessary.
+In recent cases investigated by PandaLabs we have seen new variants of attacks, such as those that do not use malware as such, but rather rely on scripts and the use of OS tools to avoid being detected — a clear example of the confidence and professionalism cybercriminals have been acquiring in recent months.
+WannaSaveU, the Cybersecurity Counterattack
+Institutions such as the Spanish National Cryptological Center rely on the new model of protection, monitoring and visibility offered by the Panda Security solution to make its official report on the harmful code WannaCry.
+It is very possible that new attacks will emerge with variants that take advantage of the vulnerability exploited in EternalBlue, but using other malicious applications. For this reason, from Panda Security we strongly advise:
+- Update computers with the latest security patches published by the manufacturer.
+- Use adequate protection tools such as next-generation anti-virus / anti-malware solutions against advanced attacks and firewalls.
+- Do not open files, attachments, or links from untrusted emails, or respond to this type of email.
+- Take caution when following links in emails, instant messaging, and social networks, even if they come from known contacts.
+- Make periodic backups of your data, especially on the most sensitive or important of your devices.
+And to deal with possible replicas of the attack, we recommend taking the following steps:
+- All clients need to be updated with the Microsoft patch for this SMB vulnerability. This vulnerability is an open door to hackers.
+- We must be attentive. In Panda Security we observe and investigate what we see on our clients’ devices to anticipate any kind of mutation of the worm or any other variant that could have already been delivered on the network due to the lack of vulnerable patches.
+Thanks to the visibility that Adaptive Defense gives us and the capabilities of prevention, detection, and execution of the necessary measures to respond immediately, our clients were protected from the very first minutes of the attack explosion.
+The advanced protection of Adaptive Defense, through the new protection model that uses continuous monitoring and classification, has shown, once again in this attack, to be the only weapon against this reality.

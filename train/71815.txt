@@ -1,0 +1,41 @@
+The initial design of MIDAS was made on a DEC/VMS system in the early 80's. However, in the late 80's with the acceptance of UNIX as a standard operating system and the introduction of workstations, the system was largely redesigned and now runs on a wide variety of computers.
+- Modular Design, which makes it easy to adapt to different environments;
+- Portability, to ensure MIDAS can run on different, and migrate to different computers;
+- Use of Standards, like the programming languages Fortran and C, and the X Window system. Use of standard programming languages enables the use of CASE tools, and makes the shift to object oriented coding easier;
+- Easy to Program, by providing simple interface routines to access the data, and by implementing a flexible control language;
+- Open Design, which allows easy addition of contributed software from other institutes.
+MonitorThe MIDAS monitor includes user interface, and routines for administration of tasks and local variables. MIDAS is command driven. All the user interaction and the scheduling of processes to execute the commands is done via the monitor. In concrete, the monitor has the following functions:
+- display on-line help with different levels of detail;
+- keep a log of all operations during a session;
+- serve as a command interpreter;
+- preprocess input strings to translate user defined symbols and to facilitate command abbreviation, command numbering and buffering, etc.;
+- execute applications in a subprocess.
+MIDAS is a multiprocess system. The monitor executes in the context of the process active when starting up the session and the applications run in either of two subprocesses, the foreground or the background subprocess. A third option is to submit applications as a job to a queue.
+ApplicationsApplications perform the actual operations on the data. They may be written in standard Fortran77, C, or the MIDAS control language. All communication must go through the monitor and is done via keywords and frame descriptors. The functions of the applications in MIDAS are split in several levels of importance, the top level being the primary or core applications without which image processing is hardly possible. The core applications take care of:
+- Image Display - is comprised of all the usual functions expected from a mature image processing system, such as displaying and retrieving data in full or split screen mode, zoom and scroll, getting cursor values, modifying lookup tables, blinking, etc. The kernel of this package is the Image Display Interfaces library (IDI);
+- Graphics Display - provides the functionality needed for data presentation in graphical form, as well as interactive data reduction. The graphics package is device independent, and based of the Astronet Graphic Library (AGL);
+- General Image Processing - which include typical arithmetic operations like filtering, resampling, interpolation, rotation, extraction/insertion, FFT, etc;
+- Table File System - provides a complete set of functions to process tabular data. These include reading, writing, editing, searching, sorting, regression, etc;
+- Fitting Package - that offers necessary tools to fit non-linear functions, and to model data distributions both in table and image format;
+- Data I/O - to transfer the data from and to tape or disk.
+InterfacesThe interfaces bind the applications to the monitor, and define the possible interaction with application tasks and monitor. An additional level is used to interface the MIDAS system itself to the host operating system. This lowest interface level must not be used be application programs.
+MIDAS is based on three sets of general interfaces which allow easy integration of application programs into MIDAS, namely: a) the ``Standard Interfaces'' for general I/O and image access; b) the ``Table Interfaces'' for access to table structures; c) the Graphics Interfaces for easy inclusion of graphical representation of the MIDAS data structures. To provide a portable system a layer of OS-routines have been used to shield MIDAS from the local operating system. These routines may only be used at lowest levels and are not available for normal applications.
+In general, MCL provides the following basic features of a programming language like definition of parameters, looping, conditional statements and branching, global/local variables, procedure calls (also recurrent) with parameters, and built-in functions.
+MCL is an interpreted language which means that the definition of local variables may be done anywhere in a procedure and no compilation and linking steps are required before executing a MCL procedure. To identify syntax and other obvious errors in long and complicated procedures the MIDAS Command Language Debugger is provided. It enables debugging of procedures as well as application code (F77 and C).
+- Frames - data sets which have a uniform sampling, e.g. images or spectra. Up to 16 dimensions can be supported; however, most applications are limited to 2;
+- Tables - collections of heterogeneous data organised in columns and rows;
+- Descriptors - variables related to the general database, e.g. frames and tables. They are used to describe the data in detail;
+- Keywords - variables relating to processes or sessions. They are similar to descriptors and mainly used to transfer information between tasks, and the control of them;
+- Catalogues - contain lists of either images, tables, or fit files for the purpose of grouping data together.
+old binary FormatSince the 08SEP release of Midas the old Zformat of descriptors is not supported anymore (i.e. Midas .bdf, .tbl files with VERS_010 in the header). The Zformat for descriptors was discarded in 2001.
+Unfortunately, there are still binary data files, created in Midas before December 2001, floating around and haunting unsuspecting users, since processing such files with a current version of Midas fails. Thus, it's impossible to convert such files to FITS with Midas, now.
+Reinstalling the 07SEPpl1.1 version from ESO's ftp server may pose a problem on some architectures, due to the many changes in compilers and system libraries since 2007.
+Therefore, we've updated the code related to the Midas monitor of the 07SEP branch of Midas on ESO's ftp server. to yield a 07SEPpl2.0 release which also installs on any recent Linux distribution. Also the shell script "baseconfig" was added in that directory on the ftp server. This script is installing a basic (core) version of Midas 07SEP which should be then used to convert all "old" Midas data files to FITS via e.g. the Midas command "outdisk/fits". Finally, there's also a README.baseconfig available.
+This problem with a binary data format underlines again the importance of saving data always in FITS format, finally.
+- Banse, K., Crane, Ph., Ounnas, Ch., Ponz, D.: 1983, ``MIDAS'' in Proc. of DECUS, Zurich, p. 87
+- Banse, K., Grosbol, P.J., Baade, D.: 1991, ``MIDAS as a Development Environment'', in Astronomical Data Analysis Software and Systems I , PASP Conf. Series, Vol. 25, p. 120.
+- Banse, K., Grosbol, P., Ponz, D., Ounnas, C., Warmels, R., `The MIDAS Image Processing System in Instrumentation for Ground Based Astronomy: Present and Future, L.B. Robinson, ed., New York: Springer Verlag, p. 431.
+- Grosbol P., Banse, K., Guirao, C, Ponz, J.D., Warmels, R.H.: 1988, ``MIDAS Benchmarks of Workstations'' in ESO Messenger, ESO, Garching, 54 , 59
+- Grosbol, P.J., Ponz, J.D.: 1985, Mem. S.A.It., 56, 429
+- Grosbol, P.J., Ponz, J.D.: 1990, ``The MIDAS System'' in Acquisition, Processing and Archiving of Astronomical Images,, G. Longo and G. Sedmak (eds.), OAC and FORMEZ, 1990, p.109
+- Warmels, R.H.: 1991, ``The ESO-MIDAS System'', in Astronomical Data Analysis Software and Systems I , PASP Conf. Series, Vol. 25, p. 115.

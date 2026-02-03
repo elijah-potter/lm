@@ -1,0 +1,20 @@
+8 Reasons Why You Should Use Java for Embedded Apps
+Welcome to the age of the Internet of Things! Now you have devices that are connected to the Internet and you can wirelessly control them to do their intended functions. Needless to say, these devices need apps in order to work and be extremely useful.
+In that regard, we suggest that you use Java for your embedded apps. Why? Here are some reasons that you should know:
+1. Make use of an extensive library of standard APIs.
+Java Standard Edition 7 has close to 4,000 standard APIs that you could use for anything from networking to concurrency to just about everything. What all of this means is that you already have almost everything you need already written and you would only need minimal rewrites to make your apps work.
+2. Java allows you to avoid segmentation fault.
+Java is one very robust application programming language. Unlike in C or C++, Java uses implicit pointers for all object references and this helps you avoid buffer overruns, memory access violations and other potential problems that could cause the application to hang or stop. If you encounter this on your embedded app, it will be very difficult to trace the source of the error because no error messages are displayed. In effect, Java can help you avoid a whole lot of headaches!
+3. Become platform-independent.
+Java allows you to write once and run your applications on any other app. That means that you can use it on desktop machines and embedded systems without having to worry about devices or platforms where it is going to be run. What’s more, even if you port your app to a later version of Java, all you have to do is recompile your code.Click here to read more about this article
+4. Forget the small things.
+You can use Java Virtual Machine to automatically deal with memory management, so that you no longer have to keep track of object references and manually reallocate memory. Ultimately, you get to avoid memory leaks. JVM can also handle concurrency support.
+5. Java is low maintenance.
+You can run Java with only 64 MB of RAM on a machine that runs Windows XP. Embedded machines have better specifications than this, which means that Java apps can efficiently run on these systems. In fact, Oracle’s Java ME Embedded runs on systems with only 130 KB of RAM, and 350 KB of ROM. Yes, that’s kilobytes!
+6. Be more productive with Java.
+When you work with Java, you can have the best tools in the market. You can use Netbeans or Eclipse to make code writing not only easier but faster. You can have your code automatically completed and your syntax can be instinctively checked even before you finish typing it out. Without having to rely on text editors, you can drastically cut development time!
+7. Deploy your apps anywhere, easily!
+Embedded systems are not like desktop computers because they typically do not have displays or screens. Java allows you to use a laptop or desktop computer to develop your app and then deploy this somewhere else. You can compile your code anywhere without having to write complex cross-compilation codes. You can even use remote debugging to work out errors in your deployed apps.
+8. Java is everywhere.
+Lastly, you can use Java anywhere – from device to your data center. Your embedded system would need to be networked to other embedded systems and a data center where the data it gathers could be analyzed, compiled and searched. The good news is that enterprise level apps are also written using Java.
+Looking to get a head start in developing apps using Java? Call Four Cornerstone today! We will show you how.

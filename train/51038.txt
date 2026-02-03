@@ -1,0 +1,16 @@
+by Ilene Strizver
+Setting professional-looking typography is all about attention to detail. Hyphenation is one of these critical details: what and where to hyphenate, and, in some cases, what not to hyphenate. There are times you don’t want text to break at the end of a line, such as a proper name, a phone number or a URL. But if you leave the choice up to auto-hyphenation, it can happen without your consent. This is when the nonbreaking hyphen comes in handy.
+A nonbreaking hyphen is not really a hyphen; rather, it is a command not to hyphenate. When placed in front of a word or a group of characters acting as a word, such as a phone number, web address or email address, that word will not be hyphenated. This is helpful not only in text, but also in headlines that you don’t want breaking onto two lines.
+Here’s how it works: place the cursor in front of the word you want to remain unhyphenated, then insert the nonbreaking hyphen, which can be accessed in the following manner, depending on which application you are using:
+1. Command (Mac) or control (PC) + shift + hyphen, or
+2. From main menu, go to Type > Insert Special Characters > Hyphens and Dashes > Nonbreaking Hyphen, or
+3. You can also prevent a word or a series of words from breaking by selecting it, then going to the fly-out menu off of the Character panel and selecting No Break.
+1. Command (Mac) or control (PC) + hyphen, or
+2. From main menu, go to Utilities > Insert Character > Special Characters (breaking) > Discretionary Hyphen.
+NOTE: The discretionary hyphen becomes a nonbreaking hyphen when it is placed in front of a word.
+1. Command (Mac) or control (PC) + Shift + hyphen, or
+2. From main menu, go to Insert > Symbol > Special Characters > Nonbreaking Hyphen.
+Although Pages does not have a nonbreaking hyphen per se, there is a way to turn hyphenation on or off for a word:
+1. Click the word while holding down the Control key.
+2. Then choose Never Hyphenate or Allow Hyphenation from the shortcut menu.
+- Editor’s Note: Ilene Strizver, founder of The Type Studio, is a typographic consultant, designer and writer specializing in all aspects of typographic communication. She conducts Gourmet Typography workshops internationally. Read more about typography in her latest literary effort, Type Rules! The designer's guide to professional typography, 3rd edition, published by Wiley & Sons, Inc. This article was commissioned and approved by Monotype Imaging Inc.

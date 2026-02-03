@@ -1,0 +1,7 @@
+|Slideshow ^ |< << Slide 11 of 27 >> >||
+= First headline level with =-character = == Second == === Third === ==== Fourth ==== ... (up to "Sixth")
+First headline level with =-character
+... (up to "Sixth")
+If a headline isn't displayed correctly, it is usually because:
+- there are invisible spaces after the concluding =-character.
+- the number of =-characters at the front and at the back doesn't match.

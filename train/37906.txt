@@ -1,0 +1,18 @@
+AirNow’s current air quality (NowCast AQI) data update hourly using readings from thousands of monitors across the country.
+By definition, the AQI is calculated using data from a 24-hour period. That’s because the science we have about air pollution exposure and health is based on 24 hours and therefore EPA’s air quality standards are based on 24 hours. It is not valid to use shorter-term (e.g. hourly) data to calculate an AQI value. However, we want to report shorter-term data to caution people in time for them to reduce their 24-hour exposure. The NowCast is EPA’s method for relating hourly data to the AQI.
+The NowCast is designed to be responsive to rapidly changing air quality conditions, such as during a wildfire. The NowCast calculation uses longer averages during periods of stable air quality and shorter averages when air quality is changing rapidly. The NowCast allows AirNow’s current conditions to align more closely with what people are actually seeing or experiencing. This gives people information they can use to protect their health when air quality is poor – and help them get outdoors and get exercise when air quality is good.
+Calculating the NowCast for PM
+Use the past 12 hours of PM measurements in micrograms per cubic meter (μg/m³):
+- Select the minimum and maximum PM measurements.
+- Subtract the minimum measurement from the maximum measurement to get the range.
+- Divide the range by the maximum measurement in the 12 hour period to get the scaled rate of change.
+- Subtract the scaled rate of change from 1 to get the weight factor. The weight factor must be between .5 and 1. The minimum limit approximates a 3-hour average.
+- If the weight factor is less than 0.5, then set it equal to 0.5.
+- Multiply each hourly measurement by the weight factor raised to the power of the number of hours ago the value was measured (for the current hour, the factor is raised to the zero power).
+- Compute the NowCast by summing the products from Step 6 and dividing by the sum of the weight factor raised to the power of the number of hours ago each value was measured.
+- Convert this value to an AQI. A concentration to AQI converter is available at https://airnow.gov/aqi/aqi-calculator-concentration
+A NowCast calculator for PM2.5 is available at https://www3.epa.gov/airnow/aqicalctest/nowcast.htm
+Missing data: 2 of the last 3 hours of data must be valid for a NowCast calculation.
+Calculating the NowCast for ozone
+The NowCast method for predicting ozone levels uses the relationship between 1-hour and 8-hour ozone averages during the prior two weeks to predict an 8-hour ozone average that is centered on the current hour.
+For a technical paper describing this method and more information about the code and example files, please visit https://github.com/USEPA/O3-Nowcast/tree/master.

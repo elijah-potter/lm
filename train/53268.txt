@@ -1,0 +1,40 @@
+Self-ionization of water
+|Acids and bases|
+The self-ionization of water (also autoionization of water, and autodissociation of water) is an ionization reaction in pure water or an aqueous solution, in which a water molecule, H2O, loses the nucleus of one of its hydrogen atoms to become a hydroxide ion, OH−. The hydrogen nucleus, H+, immediately protonates another water molecule to form hydronium, H3O+. It is an example of autoprotolysis, and exemplifies the amphoteric nature of water.
+Equilibrium constant 
+Chemically pure water has an electrical conductivity of 0.055 µS∙cm−1. According to the theories of Svante Arrhenius, this must be due to the presence of ions. The ions are produced by the self-ionization reaction
+- H2O + H2O H3O+ + OH−
+This equilibrium applies to pure water and any aqueous solution.
+Expressed with activities, a, instead of concentrations, the thermodynamic equilibrium constant for the water ionization reaction is:
+which is numerically equal to the more traditional thermodynamic equilibrium constant written as:
+under the assumption that the sum of the chemical potentials of H+ and H3O+ is formally equal to twice the chemical potential of H2O at the same temperature and pressure.
+In infinitely dilute aqueous solution, the activity of water solvent is unity.
+The ionization constant, dissociation constant, self-ionization constant, or ionic product of water, symbolized by Kw may be given by:
+The ionic product of water can be also expressed on activity basis as:
+At 25 °C Kw is equal to 1.0×10−14.
+Dependence on temperature, pressure and ionic strength 
+The dependence of the water ionization on temperature and pressure has been investigated thoroughly. The value of pKw decreases as temperature increases from the melting point of ice to a minimum at ca. 250 °C, after which it increases up to the critical point of ca. 374 °C. It decreases with increasing pressure.
+With electrolyte solutions, the value of pKw is dependent on ionic strength of the electrolyte. Values for sodium chloride are typical for a 1:1 electrolyte. With 1:2 electrolytes, MX2, pKw decreases with increasing ionic strength.
+pKw values for superheated steam and supercritical water. T/°C 350 400 450 500 600 800 0.1 MPa (abs) 11.920 (liquid at saturation pressure) 47.961 47.873 47.638 46.384 40.785 25 MPa (abs) 11.551 (liquid) 16.566 18.135 18.758 19.425 20.113 100 MPa (abs) 10.600 (liquid) 10.744 11.005 11.381 12.296 13.544 1000 MPa (abs) 8.311 (liquid) 8.178 8.084 8.019 7.952 7.957
+Isotope effects 
+Heavy water, D2O, self-ionizes less than normal water, H2O; oxygen forms a slightly stronger bond to deuterium because the larger mass of deuterium difference results in a lower zero-point energy, a quantum mechanical effect. The following table compares the values of pKw for H2O and D2O.
+pKw values for pure water T/°C 10 20 25 30 40 50 H2O 14.535 14.167 13.997 13.830 13.535 13.262 D2O 15.439 15.049 14.869 14.699 14.385 14.103
+The rate of reaction for the dissociation
+- H2O → H+ + OH−
+where k is the Boltzmann constant. Thus some dissociation can occur because sufficient thermal energy is available. The following sequence of events has been proposed on the basis of electric field fluctuations in liquid water. Random fluctuations in molecular motions occasionally (about once every 10 hours per water molecule) produce an electric field strong enough to break an oxygen–hydrogen bond, resulting in a hydroxide (OH−) and hydronium ion (H3O+); the hydrogen nucleus of the hydronium ion travels along water molecules by the Grotthuss mechanism and a change in the hydrogen bond network in the solvent isolates the two ions, which are stabilized by solvation. Within 1 picosecond, however, a second reorganization of the hydrogen bond network allows rapid proton transfer down the electric potential difference and subsequent recombination of the ions. This timescale is consistent with the time it takes for hydrogen bonds to reorientate themselves in water.
+Relationship with the neutral point of water 
+Water molecules dissociate into equal amounts of H3O+ and OH−, so their concentrations are equal to 1.00 × 10−7 mol∙dm−3 at 25 °C. A solution in which the H3O+ and OH− concentrations equal each other is considered a neutral solution. In general, the pH of the neutral point is numerically equal to pKw/2.
+Pure water is neutral, but most water samples contain impurities. If an impurity is an acid or base this will affect the concentrations of hydronium ion and hydoxide ion. Water samples which are exposed to air will absorb the acid carbon dioxide and the concentration of H3O+ will increase. The concentration of OH− will decrease in such a way that the product [H3O+][OH−] remains constant for fixed temperature and pressure.
+See also 
+- McMurry, John. (2004) Organic Chemistry, p. 44
+- "Release on the Ionization Constant of H2O", The International Association for the Properties of Water and Steam, Lucerne, Switzerland, August 2007.
+- IUPAC. Compendium of Chemical Terminology, 2nd ed. (the "Gold Book"). Compiled by A. D. McNaught and A. Wilkinson. Blackwell Scientific Publications, Oxford (1997). XML on-line corrected version: http://goldbook.iupac.org (2006-) created by M. Nic, J. Jirat, B. Kosata; updates compiled by A. Jenkins. ISBN 0-9678550-9-8. doi:10.1351/goldbook. Entry: autoprotolysis constant.
+- International Association for the Properties of Water and Steam (IAPWS)
+- Harned, H.S.; Owen,, B.B. (1958). The Physical Chemistry of Electrolytic Solutions (£rd. ed.). New York: Reinhold Publishing Corp.,. pp. 634–649, 752–754.
+- Lide, D. R. (Ed.) (1990). CRC Handbook of Chemistry and Physics (70th Edn.). Boca Raton (FL):CRC Press.
+- Geissler, P. L.; Dellago, C.; Chandler, D.; Hutter, J.; Parrinello, M. (2001). "Autoionization in liquid water". Science 291 (5511): 2121–2124. Bibcode:2001Sci...291.2121G. doi:10.1126/science.1056991. PMID 11251111.
+- Eigen, M.; de Maeyer, L. (1955). "Untersuchungen über die Kinetik der Neutralisation I". Z. Elektrochem. 59: 986.
+- Stillinger, F. H. (1975). "Theory and Molecular Models for Water". Adv. Chem. Phys. 31: 1. doi:10.1002/9780470143834.ch1.
+- Rapaport, D. C. (1983). "Hydrogen bonds in water". Mol. Phys. 50 (5): 1151. Bibcode:1983MolPh..50.1151R. doi:10.1080/00268978300102931.
+- Chen, S.-H. & Teixeira, J. (1986). "Structure and Dynamics of Low-Temperature Water as Studied by Scattering Techniques". Adv. Chem. Phys 64: 1. doi:10.1002/9780470142882.ch1.
+- General Chemistry – Autoionization of Water

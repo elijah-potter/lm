@@ -1,0 +1,4 @@
+Unformatted text preview: The %angle between all adjacent curves must be equal and the rotation should %be performed around the origin in the xy plane (2-D rotation). The %scale used on the x and y axes should be equal to each other. All your %curves should be blue and solid. This function has no outputs, it only %produces a plot (and possibly some mild enjoyment). %usage: rotLineCircle(u,v,num); hold on; for x = 1:num...
+View Full Document
+This note was uploaded on 10/21/2010 for the course CS 1371 taught by Professor Stallworth during the Spring '08 term at Georgia Tech.
+- Spring '08

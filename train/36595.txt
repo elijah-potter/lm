@@ -1,0 +1,64 @@
+Are you gaussian? Are you normal?
+My second post about the path integral will cover functional calculus, and some basic definitions, properties and formulae.
+What is a functional? It is a gadget that produces a number! Numbers are cool! Functions are cool! Functionals mix both worlds.
+Let me consider a space of functions, not necessarily a normed or metric space. For instance, you can take the space of continuous functions, the space of derivable (differentiable) functions, the space of integrable functions, more complex spaces like (the space of squared integrable functions, and so on!
+Definition 1. (Functional). A functional I is a map or correspondence between some (subset of) space and numbers. It is a “machine” that allows you to pick a number when some function is selected in some way. That is:
+A functional I(f) can be consider a function with an infinite number of variables, the infinite set of values of the functions at every point. That is, a functional is some kind of vector! Usually, nD vectors have only a finite number of components, i.e., they are nD arrays:
+Functionals are functions over objects/arrays!
+Example: a single indefinite integral IS a functional. That is,
+This (quite general) definition bring us some issues. Usually we can NOT identify a space of functions with a countable (even infinite) set. For instance, through the existence of a countable basis as in a separable Hilbert space. However, usually practical advances can be done if we put suitable restrictions in the space of functions, which tame the potentially dangerous infinities. These restrictions can be:
+1st. Fourier bounds and Fourier transformations, asking for periodicity in momentum space.
+2nd. Fourier coefficients definiteness. That is, we require functions to be periodic to some extent.
+3rd. Analytical functions. Taylor or Laurent coefficients. Asking a function to be analytic solves many ill-posed problems.
+Most of the functionals of interest in Physics can be expanded in the following way:
+where are normal functions of an increasing, finite, number of variables. This decomposition is “cluster-like” and it can be found in Quantum Field Theory (QFT) lots of times!
+Exercise (for eager readers). Give additional examples of functionals. Post them here! 🙂
+Other main concept we need to discuss is the notion of functional derivative. Mathematicians are weird people. They define and clasify derivatives! LOL Beyond the usual notions of derivatives (classical calculus), you find Gateaux derivatives, Fréchet derivatives, fractional derivatives, and many others. Here, I will not be focused on the features these specific derivatives have, and I am going to be deliberately ambiguous. In general, a derivative is ANY operation (operator) which satisfies the so-called Leibniz rule of product derivation. That is:
+Intuitively, the generic definition for the derivative of any map can be written at formal level as a ratio:
+whenever . However, the definition of an (useful) distance in a general space of functions is a non-trivial task in general.
+Definition 2. Directional derivative. The directional derivative of the function I(f) along some function is defined as:
+The directional derivative in a product of functions, applying the previous formula becomes
+and similarly you can get formulae for the products of n functions. The functional derivative of I(f) is a special case of the directional derivative above: the functional derivative in the direction of the delta function . Please, note that this is “delicate” and “intricate” since delta functions are NOT proper functions but “distributions”. They only are meaningful when they are integrated out, just as functionals theirselves!
+Definition 3. Functional derivative. The functional derivative of the functional I(f) with respect to f(y) is defined by the formal expression
+Exercise (for eager readers). What are the differences between Gateaux derivatives, Fréchet derivatives and the above functional derivative? Remark: axioms are important here.
+Similarly, functional derivatives of higher order can be defined in a straightforward fashion. If the functional is given by an expression
+then its functional derivative reads
+A list of simple examples about functional derivatives:
+1) If , then
+, if .
+, if .
+2) If , then
+3) If , with a fixed function, then
+4) If , then
+Some extra properties:
+A) Chain rule: if , where I, F are functionals, then
+B) Taylor expansion in functional spaces. We can prove and write, in terms of functional derivatives, that
+Definition 4. Gaussian functionals. Given a linear operator A, strictly positive (or hermitic with inverse operator), and f(x) a real function (complex functions are also possible as “numbers”), a Gaussian functional is a functional with the following form
+For any gaussian functional, we define the “two point” correlation function as follows
+Exercise (for eager minds). For a given gaussian functional , compute the 2-point correlation function above in terms of A.
+Gaussian integrals with a finite number of variables are relatively common and simple to calculate multiple integrals:
+and where A is a complex, symmetric matrix with eigenvalues , such as are real with and . The integral can be performed by usual procedures, and it provides
+The multivariate gaussian distribution of zero mean, P(x), is defined to be
+The mean value with respect to the gaussian distribution of any function is defined as
+We define the generating function of any multivariate distribution F as the function
+where is any arbitrary constant vector. For the multivariate Gaussian distribution, we have, using its definition,
+Note we take the normalization to be:
+The moments of (any) distribution are defined as the mean values
+and, in general, the mean values .
+From the generating function of the distribution, we can get the moments of the distribution. We can write the following formulae
+In particular, we have
+The last expressions are very important. The covariance of the gaussian distribution is given by the elements of the inverse matrix .
+Theorem 1. Wick’s theorem. All the moments of higher order of a gaussian distribution are fully determined by the moments of order 1 and 2 (i.e., by the mean and the covariance!).
+A) The moments of odd order are all zero.
+B) For the moments of even order:
+For example, as application of the theorem, for a gaussian distribution (with zero average/mean) we have:
+The value of the gaussian integral was written to be
+In the limit of “infinite variables” (dimensions), we have
+We can consider the following ratios in order to get a finite result (remember that an infinite result has NO physical meaning!):
+A common feature of every “regularization” above is that they do NOT depend explicitly on the dimension “n”.They can be useful considering “limits” of expressions when .
+Exercise (1). Define the determinant of an operator in formal way. Hint: consider it as an infinite matrix. The determinant of a matrix is the product of its eigenvalues.
+Exercise (2). Define the inverse operator of A. Hint: from the inverse of a (infinite) matrix with , take and solve it for G.
+Exercise (3). Compute the action S of classical mechanics as a functional of the path for a free particle and for a particle interacting with a potential V(x,t).
+Exercise (4). Compute the action functional for the free particle, the harmonic oscillator potential and the Kepler/Newton-like potential.
+See you in my next Path Integral TSOR post!!!!
+Current average ratings.

@@ -1,0 +1,8 @@
+If your form has multiple columns, you no longer make individual fields smart, instead you make entire rows smart.
+- Smart fields are hidden when we already know the visitors information.
+- Therefore, the form would look very different to each visitor if just individual fields were smart rather than entire rows.
+- For example:
+- A form has three fields in a row, First Name, Last Name, and Email.
+- If the Last Name field is smart and the visitor already has a value for Last Name, this field would be hidden and Email would shift over to the left.
+- This would result in an empty space in the row.
+- Instead, you must now make an entire row smart, therefore the integrity of the form is maintained and the row is only hidden if we know all the values for each field.

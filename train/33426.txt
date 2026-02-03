@@ -1,0 +1,6 @@
+A little trick for square roots (mental math)
+Someone sent me this little mental math trick for square roots. I liked it, didn't know it before, so here goes:
+She is referring to my article about the square root algorithm. However, I've never meant that kids would need to learn that long algorithm in school work. In the article, I'm actually advocating the method of finding the approximate square root by "guess and check".I read your suggestion for calculating square root without a calculator. I teach Math for Elementary Teachers and developmental math courses (algebra) to adults. I feel that the focus should be on understanding the number rather than an exercise in following a memorized algorithm. I suggest you have the student determine the pair of perfect squares the number falls between. For example, if finding the sqrt of 645, it falls between the sqrt of 625 which equals 25 and the sqrt of 676 which equals 26. So the sqrt of 645 has to be between 25 and 26. Where does it fall between? There are 50 numbers between 676 and 625. 645 is 20 numbers beyond 625, so 20/50 = 0.4
+So the sqrt of 645 is very close to 25.4
+This method provides the student with a process that improves their understanding of numbers without expecting them to memorize an algorithm, and it provides an answer to the nearest tenth.
+Andrea S. Levy, Ed.D.

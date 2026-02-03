@@ -1,0 +1,16 @@
+~ (Bitwise NOT)
+Performs a bitwise logical NOT operation for one given integer value as translated to binary expressions within Transact-SQL statements.
+Is any valid Microsoft® SQL Server™ expression of any of the data types of the integer data type category, or of the binary or varbinary data type. expression is an integer that is treated and transformed into a binary number for the bitwise operation.
+Returns an int if the input values are int, a smallint if the input values are smallint, a tinyint if the input values are tinyint, or a bit if the input values are bit.
+The bitwise ~ operator performs a bitwise logical NOT for the expression, taking each corresponding bit. The bits in the result are set to 1 if one bit (for the current bit being resolved) in expression has a value of 0; otherwise, the bit in the result is cleared to a value of 1.
+The ~ bitwise operator can be used only on columns of the integer data type category.
+Important When performing any kind of bitwise operation, the storage length of the expression used in the bitwise operation is important. It is recommended that you use the same number of bytes when storing values. For example, storing the decimal value of 5 as a tinyint, smallint, or int produces a value stored with different numbers of bytes. tinyint stores data using 1 byte, smallint stores data using 2 bytes, and int stores data using 4 bytes. Therefore, performing a bitwise operation on an int decimal value can produce different results as compared to a direct binary or hexidecimal translation, especially when the ~ (bitwise NOT) operator is used. The bitwise NOT operation may occur on a variable of a shorter length that, when converted to a longer data type variable, may not have the bits in the upper 8 bits set to the expected value. It is recommended that you convert the smaller data type variable to the larger data type, and then perform the NOT operation on the result.
+This example creates a table with int data types to show the values, and puts the table into one row.
+USE master GO IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'bitwise') DROP TABLE bitwise GO CREATE TABLE bitwise ( a_int_value tinyint NOT NULL, b_int_value tinyint NOT NULL ) GO INSERT bitwise VALUES (170, 75) GO
+This query performs the bitwise NOT on the a_int_value and b_int_value columns.
+USE master GO SELECT ~ a_int_value, ~ b_int_value FROM bitwise
+Here is the result set:
+--- --- 85 180 (1 row(s) affected)
+The binary representation of 170 (a_int_value or A, below) is 0000 0000 1010 1010. Performing the bitwise NOT operation on this value produces the binary result 0000 0000 0101 0101, which is decimal 85.
+(~A) 0000 0000 1010 1010 ------------------- 0000 0000 0101 0101
+Operators (Bitwise Operators)

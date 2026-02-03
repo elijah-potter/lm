@@ -1,0 +1,22 @@
+Using Data Types
+Objects that contain data have an associated data type that defines the kind of data (character, integer, binary, and so on) the object can contain. The following objects have data types:
+- Columns in tables and views.
+- Parameters in stored procedures.
+- Transact-SQL functions that return one or more data values of a specific data type.
+- Stored procedures that have a return code, which always has an integer data type.
+Assigning a data type to an object defines four attributes of the object:
+- The kind of data contained by the object. For example, character, integer or binary.
+- The length of the stored value, or its size.
+The length of an image, binary, and varbinary data type is defined in bytes. The length of any of the numeric data types is the number of bytes required to hold the number of digits allowed for that data type. The length of the character string and Unicode data types is defined in characters.
+- The precision of the number (numeric data types only).
+The precision is the number of digits the number can contain. For example, a smallint object can hold a maximum of 5 digits; it has a precision of 5.
+- The scale of the number (numeric data types only).
+The scale is the number of digits that can be stored to the right of the decimal point. For example, an int object cannot accept a decimal point and has a scale of 0. A money object can have a maximum of 4 digits to the right of the decimal point and has a scale of 4.
+If an object is defined as money, it can contain a maximum of 19 digits, 4 of which can be to the right of the decimal. The object uses 8 bytes to store the data. The money data type therefore has a precision of 19, a scale of 4, and a length of 8.
+Transact-SQL has these base data types.
+All data stored in Microsoft® SQL Server™ must be compatible with one of these base data types. The cursor data type is the only base data type that cannot be assigned to a table column. It can be used only for variables and stored procedure parameters.
+Several base data types have synonyms (for example, rowversion is a synonym for timestamp, and national character varying is a synonym for nvarchar). For more information about the behavior of synonyms, see Data Type Synonyms.
+User-defined data types can also be created, for example:
+-- Create a birthday datetype that allows nulls. EXEC sp_addtype birthday, datetime, 'NULL' GO -- Create a table using the new data type. CREATE TABLE employee
+User-defined data types are always defined in terms of a base data type. They provide a mechanism for applying a name to a data type that is more descriptive of the types of values to be held in the object. This can make it easier for a programmer or database administrator to understand the intended use of any object defined with the data type.
+Instances of SQL Server include a user-defined data type named sysname. sysname is used for table columns, variables, and stored procedure parameters that store object names. The exact definition of sysname is related to the rules for identifiers; therefore, it can vary between instances of SQL Server. sysname is functionally equivalent to nvarchar(128). SQL Server version 6.5 or earlier only supports only smaller identifiers; thus, in earlier versions, sysname is defined as varchar(30).

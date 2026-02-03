@@ -1,0 +1,26 @@
+The Money Game 2008 Objective: Use the calculators below (Cash Flow & Sci-Math) to answer upcoming questions.
+Cash Flow Calculator (see examples)
+Future Value of $1 paid now = (1+x)^n
+SPPV Present Value of $1 paid in future = 1/(1+x)^n
+USFV Future Value of uniform future payments of $1 = ((1+x)^n)-1)/x
+SFFV Payment required each period to achieve Future Value of $1 = x/((1+x)^n)-1)
+CRPV Payment required each period to achieve Present Value of $1 = (x*(1+x)^n)/((1+x)^n)-1)
+USPV Present Value of uniform future payments of $1 = ((1+x)^n)-1)/(x*(1+x)^n)
+Definitions: n=number of periods, x=interest rate for a period.
+Time note: if periods are in months and interest rate is per year, then x = [interest rate yearly/12].
+SPFV example: (Future value of $100 in 7 years at 10% interest = $194.87)
+SPPV example: (Present value of $500 received six years from now at 8% interest = $315)
+USFV example: (Future value of $1,000 each year for 7 years at 9% interest = $9,200)
+SFFV example: (Deposit required each month for 10 years at 15% interest to accumulate $200,000 = $603)
+CRPV example: (Monthly payment on $300,000 mortgage for 20 years at 6% interest = $2,149)
+USPV example: (Present value of $50,000 per year for 20 years at 7% interest = $529,700)
+Example Problem: At 8.2%
+interest, what is the present value of
+this cash flow? [$Y] = Uniform payments of $1500 each year for 5 years but the
+payments start 3 years from now. Also, [$Z] a final payment of $25000 will be
+made in the tenth year.
+Solutions to problems may be subjective
+based on the assumptions used. Interest rate must be
+established by the evaluator. Risk and taxes are other considerations. 'What ifs' and 'trial and error' calculations may be required.
+Send your suggestions to:
+Please Subscribe Now

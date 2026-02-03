@@ -1,0 +1,50 @@
+What wipe word means?
+“Wipe” word means
+deleting file so they could never be undeleted or recovered. Note:
+simple Windows deletion doesn’t wipe your file (even if you press
+shift + del).
+What is better, QuickWiper or Shred Agent?
+Both programs are
+different in functionality. Let me explain: Shred Agent - it's a
+program that running automatically when Windows starts (you can find
+it in your system tray) and makes deletion secure and prevents
+information leakages in real time. So it's not required for you to
+monitor each file that you delete - Shred Agent doing it in
+QuickWiper - it is a program that help you to wipe and make
+impossible to recover already deleted files and protect your privacy
+by clearing in one click Internet Explorer's cookies, history, cache
+records and typed URLs, temporary and recent files.
+Both programs have such feature as "wipe free disk space". It means
+that free space on your hard disk drive will be wiped and it makes
+impossible to recover any previously deleted file it's not depend if
+it was deleted yesterday or months ago. Also, I can say that Shred
+Agent uses a more reliable wipe free space algorithm, than
+I can un-delete wiped file?
+it's impossible. So please, be careful when wiping files.
+is wipe free space option?
+function overwrites all previously deleted files.
+should use it for two reasons:
+wipe previous deleted files. You had been deleting files before
+you have started using QuickWiper;
+wipe temporary files. Some programs (such as MS Office) create
+temporary files, which contain your sensitive information. The program
+deletes such a files and you cannot point QuickWiper to delete it.
+- Use wipe free space.
+Files are still recoverable after wipe free
+space, what the problem might be?
+There might be two
+reasons of the problem:
+1) You have some file protected utility running (for instance,
+Norton Recycle Protection);
+2) Close all programs that might access hard disk while wiping;
+Make sure you are not running any file recovery service while wiping
+process. For instance, if you have Norton recycle protection
+installed the you will not be able to wipe files or free space
+When QuickWiper wipes free space it creates large temporary file
+that places it's information on free space occupied by deleted
+wipe free space function can do any harm?
+as it overwrites only previously deleted files and use safe way to do
+If I lost my registration code for QuickWiper
+There is a key code
+recovery form available at our
+You will need to enter your email address to recover key code.

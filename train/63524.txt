@@ -1,0 +1,29 @@
+Over a year ago the GDPR (General Data Protection Regulation of April 27th 2016) was approved and will become mandatory to the European Union members starting May 25, 2018.
+That leaves a little less than a year to become compliant with the regulation, so I wanted to take the opportunity to write an overview about what this regulation is and what its main objectives are.
+Let’s start by having a look at how this regulation defines personal data. “Personal data is any information relating to an individual, whether it relates to his or her private, professional or public life. It can be anything from a name, a home address, a photo, an email address, bank details, posts on social networking websites, medical information, or a computer’s IP address,” according to the European Commission.
+Here are the main principles the regulation lays out, for collecting data:
+- Processed lawfully, fairly and in a transparent manner in relation to the data subject
+- Collected for specified, explicit and legitimate purposes
+- Adequate, relevant and limited to what is necessary in relation to the purposes for which they are processed
+- Accurate and kept up to date
+- Kept in a form that permits identification of data subjects for no longer than is necessary
+- Processed in a manner that ensures appropriate security including protection against unauthorized or unlawful processing and against accidental loss, destruction or damage
+Let’s have a look at the scope of the regulation, which organizations are obliged to adhere to. The regulation defines two figures around the data protection:
+- The data controller (the organization that is collecting data from EU residents)
+- The processor (the organization that processes data on behalf of data controller).
+The regulation applies if either the controller or the processor are based in the EU or if they collect or process personal data of EU residents.
+Let’s review now some of the main changes that the GDPR will effect:
+- It expands the notice requirements to include the retention time and the contact information for the data protection officer
+- Valid consent must be explicit for the data collected and the purposes of said data. Data controllers must be able to prove “consent” (opt-in) and consent may be withdrawn
+- People will have the right to question and fight decisions affecting them that have been made automatically by using algorithms
+- Implementing measures must be designed into the development of business processes for product and services which meet the principles of data protection by design and data protection by default
+- Will be the responsibility of the data controller to implement and demonstrate the compliance even when the processing is carried out by a third party
+The new regulation also obliges organizations to appoint a Data Protection Officer for all public authorities or when the core activities of the data controller or processor consist of operations that require regular and systematic monitoring of data subjects on a large scale, as well as when they need to process personal data on a large scale.
+Another significant aspect of the new regulation is the notification of a personal data breach to the data subject when the breach is likely to result in a high risk to their rights and freedoms. The notification will need to describe in clear and plain language the nature of the breach and the likely consequences of the breach as well as the measures taken or proposed to address it.
+This notification can be avoided if the controller has implemented appropriate technical and organizational protection measures, in particular those that render the personal data unintelligible to any person who is not authorized to access it, such as encryption.
+Finally, let’s have a look at administrative fines, since it’s also a major change. It’s important to know that infringements of the regulation can be subject to administrative fines up to 20 million Euros or up to 4% of the total worldwide annual turnover of the preceding financial year, whichever is higher. In order to determine the quantity, the nature, gravity and duration of the infringement will be taken into account. Regulators will also take into account the nature, scope and purpose of the situations as well as the number of data subjects affected and the level of damage suffered by them.
+Also, the intentional or negligent character of the infringement, the technical and organizational measures implemented, as well as any action taken by the controller or processor to mitigate the damage suffered by data subjects is considered. Also considered are previous infringements, the degree of cooperation in order to remedy it and mitigate the possible adverse effects. These instances will become known to the supervisory authority.
+In any case, 20 million Euros or up to 4% of the total turnover is a really respectable amount that I’m sure will be good motivation for those companies that manage sensitive personal data to invest on being compliant with the GDPR and implement the needed technical and organizational controls to decrease the risk of having a personal data breach.
+What about your company? Is it already working on implementing those controls and moving forward to get compliant with the GDPR?
+After working in variety of different roles such as Security Consultant, Security Engineer, Security presales, Team Leader and Security Officer Omar moved to Switzerland to join Kudelski Security as Global MSS Architect.
+Omar's most relevant certifications in the field include CISA, CISM, CISSP, GCIH and PMP. He also has extensive experience in conducting PCI DSS Assessments as a certified QSA.

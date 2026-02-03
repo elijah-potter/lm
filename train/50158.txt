@@ -1,0 +1,44 @@
+What is the best method to forecast the future global mean temperatures? You may construct complicated climate models based on your currently believed set of important physical mechanisms and train these models. You should still make sure that their behavior agrees with the previously measured temperatures.
+An alternative route is phenomenological. Just construct the best model that predicts the future temperatures, based on the previous temperatures. Ideally, you want to imagine that the global climate is a Markov process. OK, you may be impatient and want to know how the monthly UAH global mean temperature anomalies will look like between now and 2109.
+If you have a crystal ball or Mathematica 7.0.1, that's a very simple question.
+By the way, see Stephen Wolfram's most recent talk about the philosophy, history, and near future of Mathematica!And here is the answer:
+Shift-click to zoom in. (This one has replaced a similar graph with a somewhat buggy x-axis label labeling shifted by 50 months.)
+Note that you recognize the 1998 El Nino of the century on the graph. You can't recognize the climate variations after 2009 right now - because of the arrow of time - but you may recognize them later, when they arrive, including the big chill in 2016, among other things. ;-)
+You see that 2109 will be cooler than 2009, according to this projection.
+How I did it
+Well, it was a simple yet canonical procedure. I took the monthly UAH temperatures since December 1978, added 288 degrees to make the numbers large (you may understand the shifted figures as season-corrected temperatures in Kelvins: the virtue of this shift is that I don't have to care about the absolute terms) and created the best linear model that predicts the temperature in month "M" as a linear combination of the temperatures in the previous 50 months: fifty was my choice.
+If you want to know, the previous month contributes +62% to the present month, the month before contributes +26%, the month before that +2%, the month before that -12% (negative!), the month before that +13%, and so on. These numbers were calculated from a pseudoinverse matrix constructed from the "old" data since December 1978, multiplied by a vector of the "new" monthly data that they old data should predict. If someone really wants to know, I can explain her the linear algebra.
+At any rate, it is included in the Mathematica notebook:
+PDF preview (via Google docs) of the notebookThis predictive model, when used to extrapolate the temperatures, will quickly converge to a linearly increasing function (global warming). The anomaly in 2109 would be just 0.95 °C which is roughly 0.6 °C higher than today (per century). The warming per century would be close to the negligible warming we have seen in the 20th century.
+The notebook (nb)
+However, I didn't want the noise to disappear. Instead, I wanted the size, character, and color of all the temperature variations - as perceived at arbitrary frequencies - to coincide with the interval 1978-2009. The fix is easy: add a random number for each month whose mean value is zero and whose standard deviation is 0.104 °C.
+I checked that this is the right number that makes pretty much all the average jumps, calculated over arbitrary time scales, in the future to be indistinguishable from those that were seen between 1978 and 2009. Great. Now I have a phenomenological model that I can seriously trust.
+As you may have noticed, a random generator was used in the program, so the result of the program is never the same. In fact, the graph above - where 2109 was cooler than 2009 - was obtained after a few runs. However, you also get many projections where the future is warmer than today.
+Here is one of these warm runs:
+Shift-click to zoom in. (This graph has replaced an older similar graph with a small bug: x-axis shifted by 50 months.)
+At any rate, if you use this algorithm of mine, you won't be able to "optically" see anything that would be awkward, unbelievable, artificial, or unexpected about my projections. By design, they're the most realistic, quasi-Markovian, semi-stochastic extrapolations that you can create out of the UAH data and their statistical patterns.
+Even if you believe that the carbon dioxide is important, it's OK because it's likely that the carbon emissions won't differ "dramatically" from those after 1978, and even if they will increase a bit, it's OK because the effect of each CO2 molecule decreases as the concentration goes up (recall the logarithmic law).
+Uncertainty of the temperatures in 2109
+This robust statistical model can be used to determine the uncertainty of the temperatures in 2109, too. If I run the model thousands of times and look at the "final" temperature in Fall 2109, the UAH temperature anomalies for October 2109 follow a normal distribution.
+Its mean value is approximately those 0.97 °C which is approximately 0.6 °C warmer than October 2009. The standard deviation of the normal distribution is 0.67 °C (sorry, there was a numerical error in a previous version of this blog article, caused by a 1-character typo in my Mathematica notebook).
+The "Quantile" function may be easily used to determine that the probability that the UAH temperature anomaly in October 2109 ["it"] will do something is
+* 0.01% that it will exceed 3.46 °C
+* 1% that it will exceed 2.53 °C
+* 10% that it will exceed 1.83 °C
+* 25% that it will exceed 1.42 °C
+* 50% that it will exceed 0.97 °C
+* 75% that it will exceed 0.52 °C
+* 90% that it will exceed 0.11 °C
+* 99% that it will exceed -0.59 °C
+* 99.99% that it will exceed -1.52 °C
+Summary of the probabilistic projections to 2109
+You see that the probability that the 2009-2109 warming will exceed 2 °C is equal to one percent or so. The odds for much higher warming decreases faster than exponentially: it's a Gaussian distribution. This is a necessary feature of any empirically rooted prediction because the trend, as seen from the observations, has a Gaussian distribution, so expectations that it will vastly exceed 1 °C per century (which is more than the trend that we have seen since 1978) are unrealistic.
+The probability that October 2109 will actually be cooler than September 2009 is 25% - a genuinely substantial probability. And the likelihood that the UAH temperature anomaly will be negative (!) in October 2109 is something like 7%. With probability close to 1%, the 21st century cooling will exceed the 20th century warming.
+When I replaced "50 recent months" by "30 recent months" to predict, the distribution was relocated to the mean value of the October 2109 anomaly of 0.82 °C with the standard deviation of 0.94 °C. So the detailed numerical predictions are not terribly robust and independent of details of my algorithm.
+Nevertheless, you should notice that it is extremely unlikely that the warming trend will be much higher than we have seen so far - "surely" not more than 2.5 °C. And there is a substantial probability - something comparable to 25% - of cooling between Fall 2009 and Fall 2109. For an observationally rooted projection, it's simply impossible to obtain a really small probability of cooling because the normal distribution goes in both directions. ;-)
+Imagine that after a century of trillion-dollar investments, the people will see that they have actually helped to increase the cooling: 25%.
+And a substantial cooling, by a greater difference than the 20th century warming, is actually as likely as a warming by more than 2 °C. The probability is comparable to 1% that the people will say that they helped to spark a new little ice age. ;-)
+Also, it's a pretty robust statement that we will not be able to predict the temperature in 2109 with a better accuracy than the standard deviation I indicated - something between 0.6 and 1.0 °C. Think about it, the analysis above has pretty much shown that the internal wiggles are unpredictable in practice, and they can go in either direction.
+Finally, let me say that inside the normal distribution predicted for 2109, we really don't know which temperature is "optimal" for us or our great grandsons: all of them sound pretty sensible. So we should let Nature (and Her reactions to our existence) decide where the UAH temperature anomaly for October 2109 will land.
+And that's the memo.
+P.S.: By the way, the October 2009 UAH data have been released. I expected the global temperature at 0.29 or 0.30 °C, based on preliminary daily data. The final figure is 0.28 °C, about 0.14 °C cooler than September. My algorithm clearly works pretty well. I will use it later to announce the monthly figures in advance.

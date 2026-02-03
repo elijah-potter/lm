@@ -1,0 +1,13 @@
+Some Mission-specific notes for MAKI
+General Euler Angle Notes
+Definition of Spacecraft and Sky AxesSun limits are maximum deviation of sun and spacecraft Y axis.
+Sun Angle minimum and maximum are the range of sun angles for the Z axis.
+For calculating rolls, we use Euler angles. We convert RA and Dec to Euler Phi and Theta, then calculate rolls.
+For Euler angles and Sun angles, the Y-axis is perpendicular to the solar panels, the X-axis relates to the roll angle, and the Z-axis defines the boresight.
+Roll AnglesFor all missions, the roll angle is defined in X-ray sky images ("look-up" direction); increasing roll angle corresponds to a counterclockwise rotation of the FOV.
+The detectors are mapped out in terms of the Spacecraft +X and +Y axes within the code, then projected onto the world coordinate system.
+Adding a new mission or new FOVTo add an FOV to WASABI, simply email the WASABI user's list at firstname.lastname@example.org and provide the detector layout in units of decimal degree FOV, where +x is the spacecraft +X axis and +y is the spacecraft +Y axis. Include also what the nominal center pointing (on-axis pointing) reference coordinate is. This center is where placed FOVs will (of course) be centered, and will also serve as the rotation point when investigating roll.
+Specific Mission Details
+Astro-EFor Astro-E, the long side of the XRS array is set to align with declination, so that the roll angle corresponds to the ISAS "jcoord" software.
+ASCAFor ASCA, we use the additional definition that roll=0 corresponds to the spacecraft Y axis physically pointing west. Note, however, that the X-ray telescopes used for these missions invert the images, hence the X-ray image will have the Y axis pointing east for roll=0.
+Sandy Antunes Dr. Lawrence Brown Last modified: Wed Jul 7 11:40:12 EDT 1999

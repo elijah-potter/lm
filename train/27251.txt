@@ -1,0 +1,20 @@
+We've all been plagued by unsolicited commercial email -- also known as spam. In fact, the Washington Post reported that spam may soon account for half of all U.S. email traffic.
+Every company is looking for a way to fight
+Although those solutions help reduce the amount of spam received, they are still reactive approaches. To reduce spam, we need to understand how spammers collect email addresses and stop them from stealing them.
+One way spammers gather email addresses is by scouring through Web sites. They use automated programs called spiders or spambots, which crawl through Web sites and collect everything that looks like an email address.
+Although there is no guaranteed way to tell which technique a spammer uses, there are statistics that show that email addresses stolen from Web sites get more spam. During one research study, they found out that after the email address was removed from the site, the amount of spam reduced considerably. That suggests that email addresses on Web sites get more spam because they are for the most part active accounts.
+The ideal situation is to remove your email address from the Web site. However, we want to give visitors a way to communicate with us and email is the easiest way. That means we need to figure out how we can display our email address to users but hide it from the spambots.
+Let's take a look at a few ways to obfuscate an email address.
+- Use a Web form that internally sends an email. Essentially you ask the user to enter his name, email address and other details, which upon submitting, gets mailed from the server. If you have more then one email address, make it a drop-down list that people can choose from. That may open you to other problems, but at least it won't give your email address to spammers.
+- If you want to be able to display the email address, you can create an image instead of text and display it on the Web site.
+var email_name = "anurag.agarwal";
+var hostname = "yahoo.com";
+var email_address = "mailto:" + email_name + "@" + hostname;
+document.getElementById("email_link").href = email_address;
+- You can take the above approach a step further by encoding the email address so that it appears jumbled. This is very stealth, but it's also very confusing and complicated. Example:
+- You can use Ajax to protect your email address from spambots. You can store the email address in a text file on the server and dynamically call it using Ajax when the user clicks on a link. If there are multiple email addresses on your Web site, such as feedback, career, support and sales, then you can use Ajax to call a function on the server that can return the appropriate email address requested for.
+Here's a demonstration of how it works.
+If you're interested in the source code, you can download it here.
+About the author: Anurag Agarwal, CISSP, works for a leading software solutions provider where he addresses different aspects of application security. You may e-mail him at email@example.com.
+Reader Feedback: Share your comments on this article
+This was first published in October 2006

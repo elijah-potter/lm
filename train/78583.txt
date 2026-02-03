@@ -1,0 +1,19 @@
+A thermometer graph shows progress toward a goal. You'll often see this type of visual representation in fund raising and other goal-oriented ventures. Below, you see a simple thermometer graph, which visually represents the data in column A of the sheet just below it. The large medium blue series reflects the goal for Smith. The smaller column inside represents the Smith's sales figures for the four regions. You can quickly see that Smith failed to reach the $70 million goal.
+The first step to creating this effective chart is to create a stacked bar chart, as follows:
+- Generate a stacked bar chart (2-D Stacked Column) from your data (A4:B8). The chart will contain five data series, North, South, East, West, and Goal. (Don't include the Totals value in A9.)
+- To combine the series into a single column, select the chart and click Switch Row/Column in the Data group on the contextual Design tab. At this point, all five data points are stacked.
+This stacked bar chart, as is, isn't particularly helpful. You'll see data presented this way, but it's difficult to read unless you add data labels. Even then, it could be better. To create the more effective thermometer graph, move the individual data points (North, South, East, and West) from the primary axis to the secondary axis, as follows:
+- Right-click the chart to display the floating toolbar (circled below) and choose each data series, North, South, East, and West, from the Chart Elements dropdown, one at a time. Or, you can click the contextual Layout tab and use the Chart Elements dropdown in the Current Selection group.
+- Then, right-click the actual element and choose Format Data Series. Specifically, right-click one of the selection handles or your right-click might not select the intended element.
+- In the resulting dialog, click the Secondary Axis option in the Plot Series On section. If the Secondary Axis is already selected, try again - your right-click grabbed the wrong element.
+- Click Close.
+- Repeat 1 through 4 for each data series.
+The first element you move will comprise the entire secondary axis. You won't see the others until you add them. For instance, the figure above shows just the north and south series on the secondary axis and you can't see the primary axis at all. It'll look a bit strange, but stick with it.
+This next figure shows all four data series on the secondary axis. You can see just a hint of the goal series at the top. You've separated the goal and the stacked set of data values between the two axes. Consequently, there are labels for both axes, so you might want to delete the secondary labels to the right. Just select it and press Delete. Doing so will redistribute the values.
+The goal data series is a bit misleading; as is, readers might assume that the goal was a little less than $20 million. That's where the thermometer effect comes in:
+- Using either selection method, select the goal series.
+- Right-click the selected series and choose Format Data Series. If the Primary Axis is selected, you know you have the right element. (All the other data series are on the secondary axis.)
+- Decrease the gap width between the two axes.
+- Click Close.
+You may have to repeat the last step a few times to get the right balance between the two axes. The primary axis, the goal, now accurately represents the full $70 million. Once the graph elements are aligned correctly, you can add data labels, data points, change colors - whatever you like to enhance the effect.
+Susan Sales Harkins is an IT consultant, specializing in desktop solutions. Previously, she was editor in chief for The Cobb Group, the world's largest publisher of technical journals.

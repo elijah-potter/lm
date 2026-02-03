@@ -1,0 +1,16 @@
+Optimize the System Cache Size (Windows NT/2000/XP) Popular
+This setting controls whether the system cache is optimized for a Desktop computer or network server. Network servers usually require more memory dedicated to file caching, while desktop computers require more memory for running software applications.
+Manage File System Caching Memory (Windows NT/2000) Popular
+Windows will normally limit the amount of RAM that can be locked for file system operations. This setting allows you to modify the automatic value.
+Change the Cache Write Delay (Windows 98/Me)
+During the shutdown process the contents of the virtual cache are written to the hard drives. This setting specifies the timeout to wait for the cache to be written to the drive.
+Double Buffering Hard Disk Support (Windows 95/98)
+Windows 98 includes double buffering support, some systems may have an incompatibility between the computer's BIOS and the Dblbuff.sys file.
+Use Asynchronous or Synchronous Buffer Commits (Windows 95/98/Me)
+This setting changes function calls to the File-Commit API to return immediately back without checking the data has been correctly written to the disk drive. By default Windows uses synchronous buffer commits, this setting allows you to enable asynchronous as an alternative for applications that may need this functionality.
+Optimize Swap File Performance (Windows 98/Me) Popular
+On systems with larger amounts of memory, more than 128Mb, the hard disk based swap file is not needed as much. This tweak optimizes the use of the swap file on such systems.
+Change the Size of the Virtual Disk Cache (Windows 95/98/Me) Popular
+This tweak allows you control the minimum and maximum amount of memory being allocated as disk cache. It can be used to speed up your system and possibly avoid some memory problems.
+Control Write Behind Caching (Windows 95/98/Me)
+For increased performance write behind caching is used to write data to the fixed disks, this means that in the event of a system failure there is a possibility that data would not be completely written to the disk. If you have a system critical application you can disable this functionality to be sure that data is written directly to the disk bypassing the cache.

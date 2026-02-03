@@ -1,0 +1,13 @@
+Now that you have a solid handle on the basics of relational database design and query writing, we're ready to dive into spatial database technology. Over the next two lessons, we'll experiment with the open-source RDBMS PostgreSQL (pronounced pōst-grɛs kyü'-ɛl ) and its spatial extension PostGIS (pronounced pōst-jis). This software combination is quite popular for those looking for an alternative to vendor solutions that are often more costly than their organization can afford.
+Unlike MS-Access, which is intended for relatively small projects, Postgres is a full-fledged enterprise RDBMS more akin to the leading vendor products (e.g., Oracle and SQL Server). Though there are certainly differences between Postgres and Access, you should find that the concepts you learned earlier in the course will transfer over to this new environment.
+After orienting you to working with Postgres, we'll get into the spatial functionality provided by PostGIS.
+At the successful completion of this lesson, students should be able to:
+- create a new database schema in Postgres;
+- use the Postgres shapefile loader plugin to import data in Esri's shapefile format;
+- write and execute queries in Postgres;
+- describe the spatial data types built into PostGIS;
+- translate features in textual format into PostGIS geometries;
+- imagine scenarios for storing multiple geometry columns or multiple geometry types in the same PostGIS table;
+- view PostGIS tables as layers in QGIS;
+- use QGIS to conduct basic GIS operations (such as creating a simple map).
+If you have any questions now or at any point during this week, please feel free to post them to the Lesson 3 Discussion Forum.

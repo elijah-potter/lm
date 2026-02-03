@@ -1,0 +1,96 @@
+Hat tip to one of the greatest Presidents evah, John F. Kennedy.
+That one small addition to these immortal words is the thrust behind this humble diary.
+Previously, we discussed the Lunar Transfer Vehicle (LTV) and the OTV Lunar Lander. These vehicles get us into Lunar Polar Orbit, and then onto the Lunar Surface. The Crew Module has been used on the LTV and the OTV Lander, following our motto of reuse and commonality. Payload can be dropped down to the lunar surface, and the lander refueled and reused.
+All we need now is a place to call home.
+Of course, the Lunar Surface Station (LSS) needs to have the following vehicles and specifications:
+Lunar Roving Vehicle (LRV)
+- Remotely Piloted
+- Battery Powered
+- Tow-Vehicle Variant
+- Utility Variant (includes Crane, Backhoe, and Bulldozer Blade)
+- Crew Module Variant
+Lunar Payload Carrier (LPC)
+- Able to Carry a Standard Skylon Payload (14,742 kg)
+- Unpowered, with Four (4) Wheels
+- Towed by Tow-Vehicle LRV Variant
+Horizontally-Oriented Habitation Modules
+- Resembles Standard Space Station Habitat Module
+- Grated Floors Cover the Bottom EC/LSS Unit
+- Connected Together Using Standard Skylon Docking Ports
+- Modified Solar Panel Modules
+- Solar Panels Near 90 Degree Orientation
+- Solar Panels Supported on the Ground Using Specially-Designed Holders
+With these vehicles and the founding of a robust city on the Moon, we will finally be transformed into true citizens of space.
+But before we begin, the astute reader will notice something missing from the list above: a space station in Lunar POLAR ORBIT.
+There is no need for such a city in the lunar sky. The reason is because of the nature of polar orbits. If we placed a station in polar orbit, then our launch window from the Earth to the lunar station would only open every 27.5 days (one lunar day), which is almost once a month as measured on Earth.
+This is unacceptable, since we hope to be operating in the lunar environment at least once every 6.875 days (one-fourth of 27.5 days), which is just about once a week.
+We will therefore meet all incoming LTVs in whichever polar orbit orientation it may find itself in, since it will not be difficult to launch and land in any direction from the South Pole. This means that LTVs can leave Earth at a time of its own choosing, i.e., with no launch window deadlines.
+Of course, it is far easier to stay in the same 33 degree inclination that the LTV enters lunar orbit in; so why go there? The answer is because the South Pole is where the fuel is (water-ice). This ice can be harvested and converted (fairly) easily to Liquid Hydrogen (LH2) and Liquid Oxygen (LO2), i.e., rocket fuel (this process will be discussed in the next diary).
+For billions of years (as the theory goes), comets, which have a lot of water-ice, have been bombarding the lunar surface. Most of the ice simply disappears due to sublimation when encountering the very hot lunar surface.
+But there exists a crater at the South Pole whose floor has been in perpetual shadow for billions of years. The ice from comets that have landed inside this cold sink are trapped, having literally been frozen in time.
+Which means that even on the desert that is the Moon, there is water. The Universe truly does work in mysterious ways.
+Consequently, we intend to set up our LSS at this location, known as Shackleton Crater. Specifically, we will operate inside the crater, instead of near the South Pole like NASA had envisioned. The crater floor is in perpetual shadow and so offers better protection against the Sun's incessant deadly rays. Also, since the rocket fuel is processed on the crater floor, we would rather go to the source instead of hauling the volatile LH2 and LO2 fuel from the crater floor to the crater top. We also decided against hauling the raw material up the crater and processing it at the NASA location; it just needlessly complicates the entire process.
+JPL created a great video that shows the crater remaining in shadow as the sun progresses about the crater. The Sun makes the shadows in the video appear to be going counter-clockwise (watch the video here).
+In addition, the Earth sometimes dips below the horizon when viewed from Shackleton, so a relay station will need to be set up at a place where the Earth is in full view 24-7. This will be accomplished by placing a communications relay device onto an OTV Lander and have it land one-way at the remote 24-7 location. A similar setup will be constructed at the rim of Shackleton Crater.
+We now have constant communication with the Earth.
+Solar Power Station (SPS)
+As a consequence of the crater floor remaining in darkness, the crater rim remains in daylight. As the video above shows, 100% of the rim is not illuminated 100% of the time; however it does show that some of the rim is illuminated some of the time (sorta like people, huh?).
+This provides us with an excellent opportunity to generate electrical power very easily.
+Modified Solar Power Modules similar to the ones used on the LEOS will be set up on one side or the other of the crater rim to provide electric power to the LSS. Several locations seem ideal for power stations. We have identified four (4) possible locations around the crater rim so far, since more than one location is needed to ensure constant daylight.
+Each module is capable of generating 60kW of electric power. Unlike the LEOS, there is no need to dispense 25kW at a time any more. Instead, the the Solar Panel Module will be attached to another module that will dispence the full 60kW of electricity continuously.
+Each Module will have its Solar Panels extended to the full 9 m x 40 m (30 ft x 131 ft) length. Special Holders will then be laid down to keep the solar panels rigidly in place. This means that the solar panels will not be moving around to follow the sun, thus effecting performance. We decided that this compromise was the best way to ensure low maintenance costs, since there are now very few moving parts.
+We will need to lay power cables down, connecting the SPSs with the LSS. The cables will be on a spool that can be unrolled as it is carried along. If the cable is no more than 0.15 m (6 in) in diameter, then a 4.27 m by 12.19 m (14 ft by 40 ft) roll should have about a 14 km cable length. This should be sufficient to cover the distance from any SPS to the LSS.
+The power loss due to transmission along this cable should be no more than 10kW. Therefore, each SPS should be able to deliver 50kW of continuos power to the LSS, as long as the unit is in daylight, and the Sun's angle to the solar panels is sufficient. Because the LSS will require no more than 150 kW of power, three (3) SPSs will be needed in each of the four locations around the crater rim, for a total of twelve (12) SPS units.
+Using basic trigonometry, the above image shows that the crater has not much more than an 18 degree slope, and it is about 6.3 km to the crater floor. On the Moon, an 18 degree slope is not as treacherous as it is on Earth, due to the one-sixth gee environment. Our Lunar Roving Vehicle will need to negotiate this 18 degree lunar slope in order to lay the power cables down.
+Lunar Roving Vehicle (LRV)
+The LRV is nothing more than a huge battery on wheels that can be remote piloted, with a total weight of around 7,371 kg (half a standard Skylon payload), and a duration of about 30 days between recharges (100 recharges max).
+The LRV will be stowed inside the Skylon payload bay for the journey into space. The wheels will be folded along the long axis so that it can fit in the payload bay. It will then ride on the LTV to lunar polar orbit, where an OTV Lander will bring it down to the surface of the Moon.
+Another LRV will then offload the LRV from the OTV Lander.
+(So how does the first LRV get offloaded, you may ask? What an intelligent audience! The answer lies inside a future diary. Stay tuned!)
+Once the LRV is offloaded, the wheels will automatically deploy and lock into place before being allowed to settle to the ground. Once on the lunar surface, the LRV can be remotely operated almost immediately.
+The LRV will come in three flavors, depending on what gets attached to it. Each attachment weighs at the most another 7,371 kg, bringing the total weight to a maximum of 14,742 kg, or a full standard Skylon payload.
+A second battery doubles the power of the LRV. A 2-battery LRV has the capacity for either long duration missions or missions requiring high electrical usage.
+Once the Battery LRV is offloaded, it can be remotely operated almost immediately. It will be used to tow the power cable spool up and down the sloped crater wall.
+The Utility Module is the workhorse of the LRV, containing a crane, a backhoe, and a bulldozer blade. These tools will be used to build the foundation of the LSS.
+All the tools will be stowed to fit inside the Skylon payload bay. Once on the lunar surface, the tools can then be extracted and used almost immediately.
+A Crew Module (CM) can easily be attached to the LRV, creating a useful and robust surface transportation system for lunar explorers and LSS construction crews.
+The CM will be attached to the LRV rotated 90 degrees so that it can fit inside the Skylon payload bay, and then flipped back upright while on the lunar surface using a Utility LRV crane.
+EVAs can be conducted using the airlock located inside the CM. Geologists can make extended trips into the lunar wilderness. Astronomers can take sorties to the far side of the Moon. Tourists can go on sightseeing trips. We are confident that many uses for this versatile machine exist.
+We now need one more item to complete our lunar surface system: something to carry the payload around.
+Lunar Payload Carrier (LPC)
+The LPC is simply a relatively light-weight frame with 4 wheels. It can be folded up so that many LPCs can be delivered to the Lunar Surface at one time.
+Payload is placed on the LPC in exactly the same way it was placed in the Skylon. The Utility LRV crane lifts the payload off the OTV Lander and places it on the LPC.
+Once the payload has been loaded, a Battery Variant LRV can tow it to any location desired.
+All the pieces are now in place to create the LSS.
+Lunar Surface Station (LSS)
+Given the seemingly rough terrain found on the crater floor, we will have to determine the exact location of the LSS at a future date. We hope to be as close to the South Pole as possible. Once the location has been determined, Utility LRVs will clear out and level an area to place the Habitat Modules.
+The following is a list of LSS components. It includes the quantity, weight, dimensions, power requirements, and a description of each module:
+- (4) - 14,742 kg - 4.0 m x 8.8 m - 5 kW - Logistics Module
+- (8) - 14,742 kg - 4.0 m x 8.8 m - 3 kW - Berthing Module
+- (8) - 14,742 kg - 4.0 m x 8.8 m - 4 kW - Galley/Lavatory Module
+- (4) - 11,000 kg - 4.0 m x 8.8 m - 4 kW - Commons Area Module
+- (2) - 14,742 kg - 4.0 m x 8.8 m - 6 kW - Spacecraft Control Module Module
+- (1) - 14,742 kg - 4.0 m x 8.8 m - 6 kW - Bridge/Engineering Module
+- (1) - 14,742 kg - 4.0 m x 8.8 m - 6 kW - Sickbay Module
+- (1) - 14,742 kg - 4.0 m x 8.8 m - 6 kW - EVA Module
+- (5) - 5,000 kg - 4.0 m x 8.8 m - 1 kW - Airlock Module
+- (1) - 14,742 kg - 4.0 m x 8.8 m - 6 kW - Passenger Terminal Module
+- (2) - 14,742 kg - 4.0 m x 8.8 m - 7 kW - LTV Battery Recharging Module
+- (12) - 14,742 kg - 4.0 m x 8.8 m - 0 kW - Solar Panel Module
+- (12) - 14,742 kg - 4.0 m x 8.8 m - 0 kW - Power Module
+Total LSS Power Requirements: 147 kW
+Total LSS Pressurized Volume: 693.6 cubic meters (24,494 cubic feet)
+Habitat Modules will be permanently attached to the LPC, providing the foundation of the Lunar Surface Station.
+Assembling the LSS now becomes almost as easy assembling the LEOS in micro gravity. Logistics Modules will be attached and used in this way, providing an ease to resupply operations, just like the LEOS.
+To avoid having to perform an EVA to get from the OTV Lander to the LSS, a Utility LRV crane will offload the Crew Module (CM) and place it on an empty LRV. The pilot on the CM then simply drives the now-CM LRV to the LSS!
+Once at the LSS, the CM LRV parks alongside an airlock with a flexible docking collar. The flexible collar berths with the side hatch, creating an airtight seal, and allowing the crew and passengers to exit comfortably.
+All the modules will be horizontal except for one, which will (obviously) be vertical. The Bridge enjoys a 360 degree view of the LSS using this configuration.
+We can now visualize what the LSS looks like from above.
+From top to bottom, they are the 2 logistics modules, then 2 Berthing and 2 Galley/Lav modules on either side of the connecting airlock. A Commons Area Module is then attached to the airlock. A duplicate of this is located at the bottom of the image. The middle row, from left to right, consists of the Passenger Terminal Airlock, a Passenger Terminal Module, 2 Commons Area Modules, and the Bridge/Engineering Module (Mounted Vertically). Continuing rightward is the Sickbay Module, 2 Spacecraft Control Modules, the Pressure Chamber Airlock, the EVA Module, and the EVA Airlock and porch.
+(The porch is where lunar dust will be brushed off before reentering the EVA Airlock. In the near future, we hope to be using EVA Suits where they remain outside the module, and the astronaut ingresses and egresses through the backpack which is attached to the side of the module.)
+Note the similarity to the design of the LEOS. This is (as is always the case) in keeping with our philosophy of reuse and commonality.
+The crew compliment will look exactly like the LEOS: 72 people, with 52 crew and 20 tourists. The same colored flight suits and command structure will be used here as well.
+We can now rightfully claim the title of "Space Fairing Civilization" with pride. We have regularly scheduled flights going into and out of space, and going to and coming back from the Moon and the lunar surface.
+Rocket fuel is constantly being brought up by the Skylon, feeding the thirsty LTVs on their way to the moon. However, we cannot maintain our tenuous hold in space if we cannot find another source of rocket fuel other than the Earth.
+But as we've learned, rocket fuel does exists at our new home on the lunar surface. All we need to do is figure out how to get at it.
+Of course, that's a story for another day.

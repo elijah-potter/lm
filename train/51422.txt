@@ -1,0 +1,7 @@
+Word Document (DOCX)
+DOCX is the file format for Microsoft Office 2007 and later.
+DOCX should not be confused with DOC, the format used by earlier versions of Microsoft Office
+DOCX consists of a ZIP file containing XML and binaries. Content can be analysed without modification by unzipping the file (Eg, in WinZIP) and analysing the contents of the archive.
+Relationship to OOXML
+For most purposes OOXML may be considered a subset of DOCX (DOCX contains additional features, like OLE serialization).
+Documentation on OOXML may provide a guide to analysing a DOCX file.

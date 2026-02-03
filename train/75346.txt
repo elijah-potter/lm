@@ -1,0 +1,23 @@
+|P is for Practical|
+perlman:lib:Oby root (Scribe)
+|on Dec 23, 1999 at 00:49 UTC||Need Help??|
+See the current Perl documentation for lib:O.
+Here is our local, out-dated (pre-5.6) version:
+O - Generic interface to Perl Compiler backends
+perl -MO=Backend[,OPTIONS] foo.pl
+This is the module that is used as a frontend to the Perl Compiler.
+Most compiler backends use the following conventions:
+OPTIONS consists of a comma-separated list of words
+(no white-space). The
+This section is only necessary for those who want to write a compiler backend module that can be used via this module.
+The command-line mentioned in the SYNOPSIS section corresponds to the Perl code
+use O ("Backend", OPTIONS);
+The import function which that calls loads in the appropriate
+In summary, a compiler backend module should be called ``B::Foo'' for some
+foo and live in the appropriate directory for that name. It should define a
+perl -MO=Foo,OPTIONS foo.pl
+that function is called and is passed those
+OPTIONS (split on commas). It should return a sub ref
+to the main compilation function. After the user's program is loaded and
+parsed, that returned sub ref is invoked which can then go ahead and do the
+compilation, usually by making use of the

@@ -1,0 +1,27 @@
+Just Ask Antoine!
+Atoms & ions
+Energy & change
+The quantum theory
+Electrons in atoms
+The periodic table
+Acids & bases
+History of chemistry
+How can ppm be converted to µg/m3?
+- I have two datasets of SO2 concentrations. One is in ppm while the other is in µg/m3. Is there a way to convert one to the other?
+It's easy to convert parts per million into other concentrations if you know what sort of "parts" you have.
+"1 ppm SO2 in air" could mean any of the following:
+The three are not equivalent.
+Parts per million by volume is most convenient for gaseous concentrations, so that's what I'll assume you have.
+- 1 gram of SO2 for every million grams of air (parts per million by mass);
+- 1 mL of SO2 for every million mL of air (parts per million by volume);
+- 1 gram of SO2 for every million mL of air (parts per million by mass per volume).
+- Write "ppm" in terms of cubic meters.
+There are a million cubic centimeters in a cubic meter (1 cm3 = (10-2)3 m3 = 10-6 m3) so one part per million of SO2 by volume in air is actually 1 cm3 SO2/ 1 m3 of air.
+- Convert cm3 of SO2 gas to µg SO2.
+You'll need the density of the gas at the appropriate temperature and pressure. If you don't have the density you can estimate it using the ideal gas law:
+PV = nRT
+where P is the pressure, V is the volume, n is moles of gas, R is the ideal gas law constant (82.06 atm cm3/mol K) and T is the temperature in kelvins. Since density is mass per unit volume and the mass of the gas is moles of gas times molecular weight M,
+d = g/V = M (n/V) = MP/RT
+For example, at 25°C and 1.00 atm, the density of SO2 gas is approximately MP/RT = (64 g/mol)(1 atm)/(82.06 atm cm3/mol K)(298 K) = 0.00262 g/cm3 = 2620 µg/cm3.
+Multiplying parts per million SO2 by volume by the density of SO2 in µg/cm3 gives you µg/m3.
+Author: Fred Senese firstname.lastname@example.org

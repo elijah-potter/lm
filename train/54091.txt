@@ -1,0 +1,43 @@
+How To Run Particular Commands Without Sudo Password In Linux
+Howdy! In this brief guide, I will teach how to run particular commands without sudo password in Unix-like operating systems. You might wonder why you want to do this. Read on. You will know.
+Look at the following examples.
+sudo mkdir sk [sudo] password for sk:
+sudo chmod 755 ostechnix/ [sudo] password for sk:
+What do you see? It asks you to enter the sudo password, isn’t it? of course, it is. Whenever you try to execute a command with sudo, you will have to enter the password. We all know it. But, wait. I don’t want to enter passwords for some specific commands, even if I run them with sudo.
+Is it possible? Yes, certainly! That’s what we are going to see here.
+For any reasons, if you want to allow a user to run a particular command without giving the sudo password, you need to add that command in sudoers file.
+I want the user called sk to execute commands mkdir and chmod without giving the sudo password. Let us see how to do it.
+Switch to ‘root’ user using any one of the below commands:
+Then, edit sudoers file:
+Add the following line at the end of file.
+sk server=NOPASSWD: /bin/mkdir, /bin/chmod
+Here, server is my name of my local system.
+Save and close the file. Reboot your system. Now, log in as normal user ‘sk’.
+Try those commands with sudo and see what happens.
+sudo mkdir sk sudo chmod 755 ostechnix/
+Did it ask you to enter the sudo password? Nope. The user sk need not to enter the sudo password while running either mkdir or chmod commands. As you see in the above screenshot? It didn’t ask me to enter ‘sudo’ password even if I used it in the command.
+Except the commands mkdir and chmod, all commands will ask you the password if you use run them with sudo. Let us run another command with sudo.
+sudo yum update
+Look, this command prompts me to enter the sudo password.
+I don’t don’t want to give sudo password every time I run this command.
+To do so, switch to the root user:
+And then run:
+Add the following line in visudo file.
+sk server=NOPASSWD: /bin/mkdir, /bin/chmod, /bin/yum
+Save and close your file. Reboot your system. Now, check if you can run the command with sudo prefix without using the password.
+Now, run the yum command:
+sudo yum update
+See? It didn’t ask me the sudo password. Similarly, you can add all the commands. These commands will run without giving the sudo password.
+Can I re-authenticate to a particular command in the above case? Of course, yes! Look at the following example.
+Switch to the root user and add/modify the following line as shown below.
+sk server=NOPASSWD: /bin/mkdir, /bin/chmod, /bin/yum, PASSWD:/bin/rmx
+In this case, the user sk can run mkdir, chmod, and yum commands without giving sudo password. However, he still have to re-authenticate to run ‘rm’ command.
+Disclaimer: You should be very careful while applying this. This method might be both productive, and destructive. Say for example, if allow users to execute rm command without sudo password, they could accidentally or intentionally delete important stuffs. Also, limit the users to use commands without sudo password in the local system itself. Don’t allow s/he to use this trick on all systems.
+And, that’s all for now. We will be posting useful stuffs related to Linux, open source everyday! Keep visiting! If you find our guides useful, please share them on your social and professional networks, so that other users can also benefit from them.
+Thanks for stopping by!
+Help us to help you:
+- Subscribe to our Email Newsletter : Sign Up Now
+- Support OSTechNix : Donate Via PayPal
+- Download free E-Books and Videos : OSTechNix on TradePub
+- Connect with us: Facebook | Twitter | Google Plus | LinkedIn | RSS feeds
+Have a Good day!!

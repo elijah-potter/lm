@@ -1,0 +1,38 @@
+Web service and WCF are very important in WWW. Both tow are almost same, but have some difference. This article describes a comparison between web service and WCF . Summery of the article:
+- What is Web Service?
+- What is Windows Communication Foundation (WCF)?
+- Web Service VS WCF
+What is Web Service?
+Web service is a method of communication between 2 electric devices over World Wide Web. It is a software system to design communicates 2 devices through network.
+Example of Web Service
+At present lot of free and commercial web services are present. We can use them in our applications or project easily. Some famous and commonly used web services are: Weather service, Currency converter, Stock market reports updates, etc.
+We can creates our customize Web service also. A sample Web service developed in C# is given bellow:
+public class TestWebService : System.Web.Services.WebService
+public string Test(string msg)
+The above sample web service “TestWebService” has only one method “Test” which will return string type message.
+What is Windows Communication Foundation(WCF)?
+Windows Communication Foundation or WCF is a framework for building service oriented applications. By using WCF we can transfer data as asynchronous message.
+Example of WCF
+By using different programming language we can also creates customize WCF service. A sample C# WCF service is given bellow:
+public interface ITest
+String showmessage(string msg);
+The above WCF service has only one single method which will return string type message.
+Web Service VS WCF
+The difference between web service and WCF is given bellow:
+- It use HTTP
+- It is only used in web application
+- Unhandled exceptions are return to client as SOAP fault
+- It use XmlSerializer
+- Accessed through HTTP
+- It can be hosted in IIS
+- [WebService] attribute has to be added to the class
+- [WebMethod] attribute represents the method to client
+- It use HTTP, TCP IP
+- It can be used in web, desktop, Console, Mobile applications
+- Unhandled exceptions are not return as SOAP fault. Configuration setting is provided
+- It use DataContractSerializer which is better in Performance as compared to XmlSerializer
+- Accessed through HTTP, TCP, MSMQ, P2P
+- It can be hosted in IIS, windows activation service, Self-hosting, Windows service
+- [ServiceContract] attribute has to be added to the class
+- [OperationContract] attribute represents the method to client
+That’s all about WCF vs web service.

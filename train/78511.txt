@@ -1,0 +1,9 @@
+Believe me it's not hard. Right now, on your browser window right click and open "VIEW" then scroll down to "SOURCE"or open Page source to view and click. You see 'NOTEPAD' is already the default handler for all your code view. This is the behind the scenes look at what's really going on. HTML is just another language adopted years ago so computers everywhere could have a "common" language and communicate with each other.
+However with the advent of XML, PHP, Perl, ASP and all the rest, we may be looking at a dinosaur. Seriously. Programmers are always looking to advance the language and the possibilities. So just when you think you got it going on, everything changes.
+Now back to the code you view through your browser. You can only view this code, you cannot write to it. What you CAN do is save it and paste it into your own web page. That's how I learned.
+Basics of HTML
+There are plenty of great sites to become informed through, and I would recommend them to anyone who desires to learn more. One of the best is Microsoft.com. In fact, that is my standby reference on anything to do with coding. To be brief, and skip all the 'nonsense' programming techie stuff, you MUST know this: Each HTML "tag" begins with -- < and ends with </>
+Make sure you always "tag". It will almost always be the problem when you go to copy any of these scripts into your pages.
+Furthermore, you must know that each web page is composed of two MAIN parts: the head
+AND the body
+Simply put, we could compare the two to a human being. The "head" thinks for us, and the "body" carries out the actions. Same in HTML.

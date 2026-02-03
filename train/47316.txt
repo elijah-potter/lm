@@ -1,0 +1,17 @@
+What does vo mean in physics?
+The symbol vo is correctly written as V0 or v0. We write the zero sign as a subscript to v. In any physics formula, v0 represents an object’s initial or original speed in a specific direction. When the speed of an object is in a specific direction, we call it velocity.
+The velocity of an object is defined as the displacement over time. We can write the definition of displacement in a mathematical form as
+v = s / t
+Where v = velocity
+s = displacement [Note: Displacement is the measure of separation between two points in a specified direction. It’s different from a distance]
+t = time taken
+Formulae Where v0 is Involved
+a = (v – v0) / t [a = acceleration, t = time, v = final velocity, and v0 = initial velocity]
+v = v0t + at
+s = v0t + (1/2)at2
+v2 = v02 + 2as
+The zero sign is to help you differentiate between two similar velocities, where one is the velocity of the object when it starts moving (v0). While the other is the final velocity of the object when it stops moving (v).
+You can change it to v1 (initial velocity for v0) and v2 (final velocity for v) as long as it will help you understand the problem you are trying to solve. In some books, you will see u instead of v0 as the initial velocity of an object.
+Therefore, the correct answer to the question “what does vo mean in physics?” is an object’s initial or original speed (velocity) in a specific direction
+You may also like to read:
+A Projectile is Launched at an Angle of 30

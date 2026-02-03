@@ -1,0 +1,49 @@
+Organizing your home directory or even system can be particularly hard if you have the habit of downloading all kinds of stuff from the internet.
+Often you may find you have downloaded the same mp3, pdf, epub (and all kind of other file extensions) and copied it to different directories. This may cause your directories to become cluttered with all kinds of useless duplicated stuff.
+Rdfind – Finds Duplicate Files in Linux
+Rdfind comes from redundant data find. It is a free tool used to find duplicate files across or within multiple directories. It uses a checksum and finds duplicates based on file contains not only names.
+Rdfind uses an algorithm to classify the files and detects which of the duplicates is the original file and considers the rest as duplicates. The rules of ranking are:
+- If A was found while scanning an input argument earlier than B, A is higher ranked.
+- If A was found at a depth lower than B, A is higher ranked.
+- If A was found earlier than B, A is higher ranked.
+The last rule is used particularly when two files are found in the same directory.
+To install rdfind in Linux, use the following command as per your Linux distribution.
+$ sudo apt-get install rdfind [On Debian/Ubuntu] $ sudo yum install epel-release && $ sudo yum install rdfind [On CentOS/RHEL] $ sudo dnf install rdfind [On Fedora 22+]
+To run rdfind on a directory simply type rdfind and the target directory. Here is an example:
+$ rdfind /home/user
+Another thing you can do is to use the -dryrun option that will provide a list of duplicates without taking any actions:
+$ rdfind -dryrun true /home/user
+When you find the duplicates, you can choose to replace them with hardlinks.
+$ rdfind -makehardlinks true /home/user
+And if you wish to delete the duplicates you can run.
+$ rdfind -deleteduplicates true /home/user
+To check other useful options of rdfind you can use the rdfind manual with.
+$ man rdfind
+Fdupes – Scan for Duplicate Files in Linux
+Fdupes is another program that allows you to identify duplicate files on your system. It is free and open source and written in C. It uses the following methods to determine duplicate files:
+- Comparing partial md5sum signatures
+- Comparing full md5sum signatures
+- Byte-by-byte comparison verification
+Just like rdfind, it has similar options:
+- Search recursively
+- Exclude empty files
+- Shows size of duplicate files
+- Delete duplicates immediately
+- Exclude files with a different owner
+Fdupes syntax is similar to rdfind. Simply type the command followed by the directory you wish to scan.
+$ fdupes <dir>
+To search files recursively, you will have to specify the -r option like this.
+$ fdupes -r <dir>
+You can also specify multiple directories and specify a dir to be searched recursively.
+$ fdupes <dir1> -r <dir2>
+To have fdupes calculate the size of the duplicate files using the -S option.
+$ fdupes -S <dir>
+To gather summarized information about the found files use the -m option.
+$ fdupes -m <dir>
+Finally, if you want to delete all duplicates use the -d option like this.
+$ fdupes -d <dir>
+Fdupes will ask which of the found files to delete. You will need to enter the file number.
+A solution that is definitely not recommended is to use the -N option which will result in preserving the first file only.
+$ fdupes -dN <dir>
+To get a list of available options to use with fdupes review the help page by running.
+$ fdupes -help

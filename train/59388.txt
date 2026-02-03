@@ -1,0 +1,35 @@
+TLS (née SSL) is a big part of the modern computer landscape, but there are no up-to-date reference materials. The few books written 10 years ago are woefully out of date.
+Someone needs to write a new book or books. Some big areas to focus on are:
+- updated history
+- cryptographic algorithms
+- best practices for security
+- working at scale
+I think that interviewing all of the actors in the TLS world would be an awesome step.
+More importantly, should the overall name be SSL, or TLS? Probably SSL, since that’s very widespread at this point.
+Wikipedia - Transport Layer Security
+Stack Overflow - How does an SSL certificate chain bundle works?
+stackoverflow - OpenSSL Ignore Self-signed certificate error. Notes on how to verify certifications in OpenSSL
+Wikipedia - Intermediate certificate authorities
+github/zakjan - Cert chain resolver
+chain.com - How We Keep the Chain API Secure
+WikiHow - How to Be Your Own Certificate Authority
+Superuser - How do SSL chains work?
+Public Key Pinning
+- HPKP - Public Key Pinning Extension for HTTP
+- HSTS - Force use of HTTPS
+- TACK - Public Key Pinning Extension
+- CRL - Certificate Revocation List
+- OCSP - Online Certificate Status Protocol
+Mozilla - Public Key Pinning
+RFC7469 - Public Key Pinning Extension for HTTP
+Mozilla - HTTP Strict Transport Security
+RFC6797 - HTTP Strict Transport Security (HSTS)
+Wikipedia - HTTP Strict Transport Security
+ImperialVioet - IPublic key pinning (04 May 2011) - Chrome adding public key pinning. Use public key hashes, not certificate hashes.
+Wikipedia - Online Certificate Status Protocol
+TACK, for pinning - Moxie Marlinspike
+Attack on Google detected via pinning
+security.stackexchange - What is certificate pinning?
+Websockets and SSL
+Wikipedia - TLS-SRP
+Wikipedia - Secure Remote Password protocol

@@ -1,0 +1,38 @@
+We’ve mentioned CloudFlare’s 184.108.40.206 DNS Service before, and the possible effects of its use on gateways. One of its features is the ability to use DNS over TLS, also called “DNS Privacy” by the people at DNSPrivacy.org.
+DNS over TLS, defined in IETF RFC 7858, is a standard developed to provide secure communication of DNS queries and responses between a DNS client and a DNS server. As more end devices and service providers seek to make use of it to benefit their end users, it has become an important feature to test on home and business network devices.
+Why use DNS over TLS?
+Let’s look at a quick diagram of the systems involved in DNS resolution in a broadband access scenario.
+The life of a query usually follows the following pattern:
+- A client (often a web browser) makes a DNS query, to a known DNS server IP address.
+- Alternatively, a DNS proxy handles the interaction with the server on behalf of the client. This is common in many home gateway devices.
+- The server tries to find an authoritative answer. It may have cached information to make this faster.
+- An authoritative server sends back an answer to the queried DNS server, which sends the answer back to the client.
+DNS operates as a network of clients and servers trying to find an answer to a DNS query. DNS over TLS allows the client and server(s) to set up an encrypted connection before passing DNS queries and DNS responses.
+What about DNSSEC?
+While DNSSEC exists to help prevent DNS hijacking, it only validates the identity of DNS servers, guaranteeing that particular server is who it claims to be. However, client queries and responses are still sent in clear text on the wire, a clear privacy concern possibly running up against new regulations.
+In RFC 7858, this use case is specifically called out to secure connections between the DNS client and the recursive resolver (server):
+This document focuses on securing stub-to-recursive traffic, as per the charter of the DPRIVE Working Group. It does not prevent future applications of the protocol to recursive-to-authoritative traffic.
+What problems might arise?
+Any of the tests that one would normally run against the DNS features of a network device are applicable to DNS. Compound upon that the issues that arise when using TLS and public key encryption, and you have a lot of possible vectors to cover when ensuring your device can handle DNS over TLS.
+DNS proxy support
+DNS over TLS has two usage profiles defined in RFC 8310. These include both the “strict” (must use an encrypted connection) and “opportunistic” (use an encrypted connection if you can, but if not, still resolve DNS) profiles. From RFC 8310, the profiles described are:
+- A Strict Privacy profile, which requires an encrypted connection and successful authentication of the DNS server; this mitigates both passive eavesdropping and client redirection (at the expense of providing no DNS service if an encrypted, authenticated connection is not available).
+- An Opportunistic Privacy profile, which will attempt, but does not require, encryption and successful authentication; it therefore provides limited or no mitigation for such attacks but maximizes the chance of DNS service.
+When a device under test is operating as a DNS proxy, it must respect the profile that is used by the system. For example, it must make sure that if the profile is strict, it does not send DNS responses in plaintext to LAN side endpoints that wish to use DNS over TLS.
+Additionally, some DNS proxies may only support DNS over TLS on its DNS client (that is, the link between the proxy and the DNS server). If this is the case, it may reject client attempts to use the proxy when the client tries to initiate DNS over TLS - without DNS over TLS support on the proxy’s own server, it won’t understand the request.
+TLS and certificate issues
+Though setting up secure communication over TLS using certificates is effective, it’s not always considered simple to implement. There are a number of issues that can arise at this layer that are common to its use for any application, including DNS. Some implementations will erroneously accept certificates that are not valid. Some reasons for this include:
+- The correct intermediate and root CAs are not installed - meaning there is no way to validate the certificate of the DNS server using the public key infrastructure.
+- The certificate’s subjectAltName does not match the authentication domain name of the DNS server configured on the client
+- The certificate is expired
+Other DNS privacy protocols
+The IETF officially released RFC 8484 in 2018. This defines DNS over HTTPS which, in addition to providing privacy protection, may have some efficiency gains for DNS as well.
+Testing DNS over TLS in CDRouter
+CDRouter’s dns-tls.tcl test module contains tests specific to this issues outlined above. In addition, most CDRouter’s comprehensive DNS test cases are applicable to DNS over TLS testing, over both IPv4 and IPv6. For more information, you can read how to configure CDRouter for DNS over TLS here.
+DNS over TLS passthrough
+Here’s an annotated capture of a DNS over TLS session that passes through the gateway (in particular, test dns_tls_70). You can see the initial TLS negotiation over port 853 (the default port for both TCP and UDP for DNS over TLS). This occurs directly between the LAN client and the DNS server, though the gateway is using Network Address Translation.
+After the TLS negotiation completes, you’ll see two packets that contain encrypted “application data”. Since the data is encrypted, we don’t see the contents, but we can guess that the packet from the DUT to CDRouter’s DNS server is a DNS query, and the packet from the server to the client is the DNS response.
+DNS over TLS with DNS proxy (IPv4 to IPv6)
+In this capture of a CDRouter DNS test the gateway is acting as a DNS proxy. The LAN is operating with IPv4, while the WAN is operating over IPv6.
+In our test, we send a DNS query to the proxy from the LAN client without using DNS over TLS. One caveat to some DUTs is that while they may support DNS over TLS as a DNS client, they might not support it as a DNS server! This means that requests from the LAN client to use DNS over TLS won’t be understood by the DUT and will fail.
+Without using DNS over TLS from the LAN client to the proxy, you can see the gateway receive the DNS query and initiate a DNS over TLS session with the DNS server over IPv6. After the handshake is complete, we see the exchange of encrypted application data. That information is then proxied back to the LAN client, again over IPv4 and an unencrypted channel.

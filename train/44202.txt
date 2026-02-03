@@ -1,0 +1,19 @@
+Your Uninterruptible Power Supply (UPS) system is the heart of your backup power. A single bad battery within a UPS battery string creates a risk of downtime for data center operations. Battery failures account for more than half of all UPS failures. No matter if the battery system is Valve-Regulated Lead Acid (VRLA), Vented Lead Acid (VLA), or Nickel-Cadmium (NiCad), it is by far the most vulnerable and most failure-prone part of your UPS. This is why regular maintenance of these batteries is critical to ensure backup power is ready when needed.
+The primary concern for a battery system is the environmental conditions of your UPS system. Unfavorable environments may significantly reduce the available service life. Batteries that are too hot or too cold negatively affect the batteries ability to conduct and store energy. It is estimated that each 8-10°C increase in temperature reduces the battery life in half. Refer to the battery manufacturer’s specifications for the recommended operating temperature range of the battery.
+Additionally, it is also important to ensure that the batteries are charging correctly. The battery manufacturer’s specifications will include a specification for the float voltage. This value may be listed for either the full voltage of the battery block itself, or a volts-per-cell level. It is important to ensure that the battery float is adjusted as measured at the input to the battery string to accommodate for line-losses between the UPS and the battery strings. The float voltage should be adjusted such that there is enough potential to charge each of the batteries within the string to a value within the battery manufacturer’s published range. Undercharging the batteries may reduce the service life of the battery system and over charging batteries may create a hazard to your facility or personnel.
+At least once per year, it is advised to perform a visual inspection on your batteries. Any swelling or corrosion may indicate an adverse condition that may cause premature failure. When visually inspecting the battery blocks, it is also important to look at the battery cabinet or rack itself. Any leaking electrolyte may be flowing towards the battery rack/cabinet itself. This could result in corrosion or short circuit to the battery rack/cabinet and create a hazard to your critical power and/or personnel.
+The general recommendation for maintenance is as follows:
+- Conduct a visual inspection. Look for wear and deterioration of the batteries, battery rack/cabinet, interconnecting cables, connectors, and electrolyte level (if VLA/NiCad).
+- Measure the ambient temperature and humidity.
+- Measure the battery float charging current.
+- Make sure the UPS environment is clean and free of dust, debris, and electrolyte.
+- If a battery monitoring system is in place, review the results of the continuous monitoring.
+In addition to the monthly checks:
+- Measure the voltage of each cell or battery block.
+- Measure the ambient temperature and negative-post temperature of at least 10% of the cells or battery blocks. It is recommended, but not required, to check all of the cells if possible.
+- Conductance testing with a Franklin Electric handheld tester or battery monitoring system.
+In addition to the monthly and quarterly checks:
+- Measure and check the torque of all connections.
+- AC ripple current imposed on the battery.
+- Interconnecting cable resistance testing.
+Regular maintenance will ensure that maximum service life is attained for the UPS battery system. Due to concerns for safety, only trained personnel should attempt any battery service or maintenance.

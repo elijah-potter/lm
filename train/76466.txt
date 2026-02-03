@@ -1,0 +1,33 @@
+UltraLight Project: Moving Huge Amounts of Data
+In spring 2008, the largest particle accelerator in the world will be completed
+August 24, 2007
+In the spring of 2008, scientists and engineers will complete the largest particle accelerator in the world, the Large Hadron Collider (LHC), an underground ring 27 kilometers around located at the European Centre for Nuclear Research (CERN) in Geneva, Switzerland.
+Straddling both sides of the Swiss-French border, the LHC sends subatomic particles careening into each other at near-light speeds, creating high-energy collisions similar to those that arose soon after the Big Bang.
+The first collisions are expected in July of 2008, and the data streams will be enormous: as many as 10 petabytes of data (1 petabyte = 10^15) for some experiments, far surpassing almost anything that has come before.
+Shawn McKee of the University of Michigan is a research scientist working on one of CERN's four main experiments, the ATLAS (A Torroidal LHC ApparatuS) project. Over the last several years, he has faced the vexing problem of building a network to share the massive amounts of data between 1,850 physicists participating in the experiment from more than 150 universities and laboratories in 35 countries.
+The ATLAS experiment is critical, as it will try to determine whether the Standard Model of high energy physics is correct, specifically hunting for the Higgs boson, named after theorist Peter Higgs. While physicists have theories about the existence of the Higgs boson, it has never been observed in an experiment.
+In 2001, McKee formed a High-Energy/Nuclear Physics (HENP) Internet2 working group, along with physicists Harvey Newman of Caltech and Rob Gardner of the University of Chicago, to investigate next-generation networking and how it might aid physics experiments on the scale of the LHC.
+From this group emerged the UltraLight project, a collaboration led by experimental physicists and network engineers motivated to develop the information technology that would let scientists across the globe analyze the petabytes of data. McKee is now co-principal investigator of UltraLight, along with Harvey Newman and Julian Bunn of Caltech, Paul Avery of the University of Florida, and Alan Whitney of MIT.
+Now entering its third year, the UltraLight infrastructure enables incredibly fast networks to efficiently move data from place to place.
+During the initial installation of UltraLight, McKee and his team shipped five data transmission computers, one large storage server with a 10 gigabit network card for connecting to the UltraLight network, a gigabit switch to interconnect the computers, and a remote keyboard-video-mouse system to allow McKee and his colleagues in Michigan to have remote access and control. McKee then flew to CERN to install the equipment.
+"Working at CERN can be challenging because of the distance involved," says McKee. "It takes about 13 hours to get there from Ann Arbor. Since we typically purchase our equipment in the United States, we have to ship it over there for installation. As you can imagine, it is problematic if something fails or needs repair."
+Along with Caltech network engineers Dan Nae and Sylvain Ravot, McKee installed and configured the systems at CERN, doing everything from finding pallet jacks for moving the heavy equipment to finding and borrowing necessary tools, building equipment shelves and finding the right router interfaces.
+Once everything was in place and connected, McKee spent hours labeling and documenting the configuration and installing a remote power strip, a device that allows the team to power-cycle equipment from Michigan nearly 4,350 miles (7,000 kilometers) away.
+Test and Deploy
+For the last year-and-a-half, the equipment has been in use both for tests of UltraLight and tests to determine how well it can move ATLAS data, in addition to demonstrations during the 2005 and 2006 SuperComputing conferences. It is an international effort, with active partners in South America, Europe and Asia. "It is exciting to be able to test and deploy services on a global scale," McKee says.
+As UltraLight network manager, McKee has to monitor and manage on a daily basis the UltraLight infrastructure from Michigan, ensuring that UltraLight-related machines and equipment are functional, and watch for problems such as bad performance or loss of connectivity.
+Although UltraLight primarily focuses on high energy physics, McKee says that the project could be used in other areas.
+"UltraLight has applications in a variety of other fields where a lot of information needs to be disseminated quickly," says McKee, "such as medicine, engineering, astronomy, bioinformatics and weather forecasting." Hospitals are interested in UltraLight, McKee says, because patients' MRI scans or other large image data could be sent via UltraLight technology to other doctors in real time.
+Over the next few years, McKee envisions huge changes in technology and the impact of technology. "Network capability for the past twenty years has shown that bandwidth doubles every nine months; this trend still holds true," he says.
+Over the next twenty years, huge amounts of data will be routinely accessed very quickly, leading to on-demand access to information. "Data such as movies--now bogged down in slow downloading speeds--will soon be available almost instantaneously," says McKee. "Movies are one simple example
+. . . imagine the possibilities that will be enabled in such a world."
+-- Christina LaRose, University of Michigan email@example.com
+This Behind the Scenes article was provided to LiveScience in partnership with the National Science Foundation.
+European Centre for Nuclear Research (CERN)
+California Institute of Technology
+Massachusetts Institute of Technology
+University of Florida
+University of Michigan
+#0427110 ITR: ASE: INT: DMC: UltraLight: An Ultrascale Information System for Data Intensive Research
+LiveScience.com: Behind the Scenes: UltraLight Project: Moving Huge Amounts of Data: /news/longurl.cfm?id=86
+Videos of ATLAS: http://atlasexperiment.org/multimedia/index.html

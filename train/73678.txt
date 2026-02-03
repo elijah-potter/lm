@@ -1,0 +1,71 @@
+How To Assemble A Desktop PC/Silencing
+In contrast to overclocking, you may prefer to silence your computer. Some high-performance PCs are very loud indeed, and it is possible to reduce the noise dramatically. The main sources of noise are: Fans (CPU, case, power supply, motherboard, Graphics card), and Hard disks. While total silence in a PC is possible, it is far cheaper and easier to aim for something 'virtually inaudible'.
+Note that quieter computers sometimes run slightly hotter, especially in small form factor (SFF) systems, so you need to monitor carefully what you do. Usually you can't overclock and silence at the same time (although it is possible with the right CPU and cooling techniques). Sometimes CPUs (and even GPUs) are underclocked and/or undervolted to achieve greater silence at the expense of performance.
+Designing a powerful and quiet machine requires careful consideration in selecting components, but need not be much more expensive than a normal, loud PC. If you are looking to quiet an existing PC, find the offending component that produces the loudest or most irritating noise and replace it first, then work down from there.
+In general, large diameter (120 mm), high quality fans are much quieter than small diameter ones, because they can move the same amount of air as smaller (80mm or 92mm) fans, but at slower speeds. Temperature-regulated fans are also much quieter, as they will automatically spin at a reduced speed when you computer is not in heavy use. Wire mesh grills (or no grill at all) allow better airflow than the drilled holes used in many cases.
+- Modern CPUs can generate a lot of heat in a very small area: sometimes as much as 100-watt lightbulb! For the vast majority of processors, a dedicated fan will be a necessity. There are some, like VIA processors, that require only a heat sink, but you will not find passively cooled CPUs at nearly the same speeds allowed by active cooling. However, for modern computers, CPUs are not the limiting component for speed in daily tasks, so unless you do demanding 3D gaming or video editing, then a passively cooled processor may be just for you. They would also be very attractive in media-center PCs, or other specialized applications where computer noise would be more noticeable.
+- The noisiest fan is usually the CPU fan: the Intel-supplied fan-heatsinks are particularly loud, although they do provide good cooling. Some BIOSs allow you to slow the CPU fan down automatically when it is not too hot - if this option is available, turn it on. Also, you can get 3rd party coolers, which are designed to be less noisy: for example, those made by Zalman.
+- Power Supply (PSU)
+- Noisy power-supplies simply have to be replaced with quieter ones.
+- Case Fans
+- Case fans can be slowed down by using fan-speed controllers, or resistors (but beware of insufficient cooling). Also, they can be replaced with higher quality (ball bearing) or (sometimes) larger fans, both of which will make less noise.
+- Video Card and Motherboard Chipset
+- A graphics card with active fan-cooling is very common in gamer PCs. Since 2004, most of these cards have a built in fan-speed controller, so the fan will slow down if 3D acceleration is not needed. As you will lose warranty coverage if you change the fan, you should check (through reviews) if the card is a noisy one. If you insist on exchanging the cooling device, be sure the card is compatible with the new fan. Motherboard and lower-end video card fans can often be replaced with a passive heatsink.
+Many systems only have fan-speed controllers for the CPU and for the graphics card. Some people make the other fans quieter by undervolting them: running the 12 V fan on 9 V or 7 V or 5 V, or adding a series resistor to the fan cable.
+Dust and debris can accumulate on fan blades in a short period of time. Dust on PC components acts as an insulator, trapping in heat and forcing your fans to spin at higher speeds to keep everything cool. Keep your PC clean to reduce noise and increase efficiency.
+An efficient, if expensive way to eliminate the need for most fans in ones computer system is the implementation of water cooling devices. Water cooling kits are available for beginners, and additional components or "water blocks" can be added to the system, allowing virtually any system needing cooling to be put "on water".
+Most water cooling systems are not fanless as the radiator component still needs to spread the heat. There are fanless solutions but they need to be placed exterior of the PC case making the computer less transportable. 
+Other cooling fluids are possible in a sealed system, although plain water is generally preferred because it has higher heat capacity and thermal conductivity than oil, and it is easier to clean up if a leak ever occurs: turn off the computer, shake off most of the water, and use a hair dryer to evaporate the rest of the water.
+Keep in mind, however, that water and electronics don't mix, and that leaks could cause components to short out, seriously damaging them. Be sure you're willing to risk this and thoroughly check for leaks before providing power to the system components. If possible, activate the water pump(s) for 10-15 minutes and check potential trouble spots.
+Transformer oil has been used to cool electrical equipment for decades.
+Some people are experimenting with oil cooling personal computers. Since oil is non-conductive, the motherboard and graphics card and power supply (but not the hard drives or optical drives!) will continue to run submerged in a "fishtank" filled with oil. Some people prefer colorless transparent "mineral oil" or cooking oil, but Frank Völkel recommends motor oil.
+Oil cooling is lower cost than water cooling, because it doesn't require water-tight "blocks" or hoses. Some people leave the fans running on the motherboard and power supply to "stir" the oil. Other people remove all the fans and add a (submerged) pump to "blow" a stream of oil onto the CPU hot spot. Some CPUs, if given a big enough metal heat sink, can be adequately cooled by passive convection currents in the oil (and the large surface area of the oil-to-case and case-to-air), without any fans or pumps.
+If any cable (the hard drive ribbon cable, the power cable, the monitor cable, etc.) exits the case below the oil line, it must have an oil-tight exit seal -- consider making all cables exit the top of the case instead.
+Liquid nitrogen cooling
+Immersion in other cooling fluids has been attempted, such as fluorinert or liquid nitrogen, however they are generally not used because of the costs involved in the equipment and the liquid nitrogen. 
+A 'resting' hard disk is generally quite quiet compared with any fan, but increases dramatically when it starts 'churning', as when you open or save a file or perform a virus scan. As most hard drive manufacturers place capacity and performance ahead of noise, it is recommended that you look for a hard drive with good acoustics to start with. SilentPCreview.com does comprehensive testing, so picking any of their recommended drives will serve you well. There will usually be a compromise between performance and sound, so opting for a slower RPM or smaller capacity single-platter HDD may be necessary to reach very quiet levels. Also, 2.5" notebook drives can be much quieter than any 3.5" desktop drive, but are more expensive and come in smaller capacities.
+After selecting a quiet drive, or if you want to reduce the noise coming from a loud drive, look into mounting options. Hard drives are usually mounted with four screws attaching them directly to the case, providing very stable support, some heat dissipation and a lot of direct transmission of HDD vibrations to the case. Reducing this transmission to almost nothing is possible, though it is not always easy.
+But do ensure sufficient cooling of the hard drive: running a hard drive moderately hot can reduce its lifespan to under a year! Some mounts are designed to provide both extra cooling and silencing, such as the heat-pipe coolers. Spinning the HDD down when not in use will also reduce noise, but it can reduce the life of the drive by increasing the number of landings and take-offs performed by the read/write heads.
+The best noise reductions come from suspending the hard drive with elastic, providing no direct route for sound transmission to the case. You can make your own from elastic in a fabric store, or buy kits that provide materials and instructions. (Rubber bands are not recommended, as they will become weak from the HDD heat and oxidation and snap.)
+Foam can be used to dampen vibrations, but may trap more heat than is safe. Resting the hard drive on the floor of your case on a bed of foam can be very effective at reducing noise.
+Using silicone or rubber screws instead of metal mounting screws will give you marginal sound reduction, but is easiest and cheapest to implement. You also won't have to worry about shifting of the HDD if you move your computer.
+A software tool created by Maxtor exists which can adjust a hard disk's noise/performance ratio to what your system requires. The technique is called acoustic management. However, only certain drives currently support this feature. You can read more from the "Definitive Maxtor Silent Store Guide" and get the tool from Maxtor.
+Completely silent computers will need to use solid state memory like flash drives or eeprom (also called SSD), which have no moving parts and make no noise. This is more expensive and has less capacity than a normal hard drive, so it can't be considered a mainstream storage solution, yet could suffice for a web-browsing PC. At the moment, hard drives are the only practical storage solution except in very specialised circumstances, though this will likely soon change with the rapidly dropping price of flash memory.
+- Steel cases are quieter than aluminum ones, because the denser material vibrates less easily.
+- Quiet cases are available, containing noise-damping acoustic foam. There are 3rd-party acoustic foams you may decide to add as well.
+- Experiment with rubber or foam washers when mounting drives and fans. These will dampen any vibration these devices cause.
+- Keep cables tied up and neat. Not only will this keep them clear of fans (which could quickly cause dangerous heat build-up), but the reduced impedence of airflow throughout your case will make things cooler. Flat, ribbon-shaped cables can safely be folded up to a fraction of their original width.
+- Make sure your case has rubber or foam feet if it rests on a hard surface. Placing it on carpeting will also reduce vibrations.
+- Underclocking will reduce system performance, but you can also then reduce the CPU voltage, and power consumption as a whole. Noisy fans may then also be operated at reduced speed or eliminated altogether, as the computer will produce less heat. The converse of the diminishing-returns law for overclocking is that underclocking can prove surprisingly effective.
+- The really obvious, but surprisingly effective: keep the computer under your desk or even in a closed cupboard, rather than under or beside your monitor.
+NOTE: No matter what technique you use to quiet the machine, be sure to keep a steady supply of fresh air over all components. Don't put your machine in a closed cupboard unless you are sure heat will not be an issue. If you use acoustic foams, be sure they aren't acting as insulators, too - and keeping components hot.
+- Casey Labine. "How to Adjust a Graphics Card Fan Speed"
+- "How to: Silence My Fans By Undervolting?"
+- Silent PC Review: "Stock Fan Measurements"
+- Gabriel Torres. "How to Create a Three-Speed Fan Control without Spending a Dime".
+- Igor Wallossek. Tom's Hardware: "Case Fans: Speed Control"
+- "Silent Convective Water Cooled PC"
+- "Design and Performance Evaluation of a Compact Thermosyphon" by Aniruddha Pal, Yogendra Joshi, Monem H. Beitelmal, Chandrakant D. Patel, Todd Wenger, 2002
+- Tom's Hardware: 5 GHz project
+- Server help: Liquid Nitrogen Project and Hard forum: Liquid Nitrogen Project
+- Wikipedia: computer cooling#Liquid nitrogen
+- Mike Chin. Silent PC Review: "Case Basics & Recommendations"
+- Silent PC review
+- Microchip AN771: Suppressing Acoustic Noise in PWM Fan Speed Control Systems
+- "The Buzz on Quieter Computers" article by Daniel Greenberg in The Washington Post, September 3, 2006.
+- Technorati "silent PC" blog posts
+- "A Plea for Silence" by Loyd Case (ExtremeTech)
+- "How to Quiet Your PC" by Jason Cross (ExtremeTech)
+- "a diskless, fanless, completely silent PC"
+- fit-PC: a fanless PC that runs Linux or WindowsXP
+- Koolu: a fanless PC that runs Linux; Koolu wiki
+- "Building a Silent PC: My Quest for Quiet" by Terry Gray
+- the oil-cooled computer wiki (in German) and oil-cooled computer discussion forum (in English)
+- "Quiet PCs… shhh" by Thomas Ricker (oil-cooled computer)
+- "Aquarium Full of Oil For PC Cooling" on slashdot
+- "Want a Cool and Quiet PC? Dunk it in Oil" on slashdot
+- "Xoxide Resource Center: Building a Quiet Computer
+- fit-PC, a tiny quiet PC
+- "Project: Passive" by Ville 'Willek' Kyrö, a PC that uses no fans, only completely passive cooling.
+- "Tiny, sub-$100 PC runs Puppy Linux": a PC with no moving parts.
+- "0 dBA ion cooled computer": a PC with no moving parts; blows air using "ion wind".

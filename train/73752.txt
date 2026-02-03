@@ -1,0 +1,57 @@
+Designers defined some address types and left a lot of scope for future definitions as currently unknown requirements arise. RFC 4291 / IP Version 6 Addressing Architecture defines the current addressing scheme.
+Now lets take a look at the different types of prefixes (and therefore address types):
+These are special addresses which will only be valid on a link of an interface. Using this address as destination the packet would never pass through a router. It's used for link communications such as:
+anyone else here on this link?
+anyone here with a special address (e.g. looking for a router)?
+They begin with ( where "x" is any hex character, normally "0")
+fe8x: <- currently the only one in use. fe9x: feax: febx:
+An address with this prefix is found on each IPv6-enabled interface after stateless auto-configuration (which is normally always the case).
+These are addresses similar to the RFC 1918 / Address Allocation for Private Internets in IPv4 today, with the added advantage that everyone who use this address type has the capability to use the given 16 bits for a maximum number of 65536 subnets. Comparable with the 10.0.0.0/8 in IPv4 today.
+Another advantage: because it's possible to assign more than one address to an interface with IPv6, you can also assign such a site local address in addition to a global one.
+It begins with:
+fecx: <- most commonly used fedx: feex: fefx:
+(where "x" is any hex character, normally "0")
+This address type is now deprecated RFC 3879 / Deprecating Site Local Addresses, but for a test in a lab, such addresses are still a good choice in my humble opinion.
+Because the original defined site local addresses are not unique, this can lead to major problems, if two former independend networks would be connected later (overlapping of subnets). This and other issues lead to a new address type named RFC 4193 / Unique Local IPv6 Unicast Addresses.
+It begins with:
+A part of the prefix (40 bits) are generated using a pseudo-random algorithm and its improbably, that two generated ones are equal.
+Example for a prefix (generated using a web-based tool: Goebel Consult / createLULA):
+Today, there is one global address type defined (the first design, called "provider based," was thrown away some years ago RFC 1884 / IP Version 6 Addressing Architecture [obsolete], you will find some remains in older Linux kernel sources).
+It begins with (x are hex characters)
+Note: the prefix "aggregatable" is thrown away in current drafts. There are some further subtypes defined, see below:
+These were the first global addresses which were defined and in use. They all start with
+A special 6bone test address which will be never be globally unique begins with
+and is mostly shown in older examples, because if real addresses are shown, it's possible for someone to do a copy & paste to their configuration files. Thus inadvertently causing duplicates on a globally unique address. This would cause serious problems for the original host (e.g. getting answer packets for request that were never sent). Because IPv6 is now in production, this prefix is no longer be delegated and removed from routing after 6.6.2006 (see RFC 3701 / 6bone Phaseout for more).
+These addresses, designed for a special tunneling mechanism [RFC 3056 / Connection of IPv6 Domains via IPv4 Clouds and RFC 2893 / Transition Mechanisms for IPv6 Hosts and Routers], encode a given IPv4 address and a possible subnet and begin with
+For example, representing 192.168.1.1/5:
+A small shell command line can help you generating such address out of a given IPv4 one:
+ipv4="126.96.36.199"; sla="5"; printf "2002:%02x%02x:%02x%02x:%04x::1" `echo $ipv4 ¬ | tr "." " "` $sla
+These addresses are delegated to Internet service providers (ISP) and begin currently with
+Prefixes to major (backbone owning) ISPs (also known as LIRs) are delegated by local registries and currently they got a prefix with length 32 assigned.
+Any ISP customer can get a prefix with length 48.
+Currently, two address ranges are reserved for examples and documentation RFC 3849 / IPv6 Address Prefix Reserved for Documentation:
+3fff:ffff::/32 2001:0DB8::/32 EXAMPLENET-WF
+These address ranges should be filtered based on source addresses and should NOT be routed on border routers to the internet, if possible.
+Multicast addresses are used for related services.
+They alway start with (xx is the scope value)
+They are split into scopes and types:
+Multicast scope is a parameter to specify the maximum distance a multicast packet can travel from the sending entity.
+Currently, the following regions (scopes) are defined:
+ffx1: node-local, packets never leave the node.
+ffx2: link-local, packets are never forwarded by routers, so they never leave the specified link.
+ffx5: site-local, packets never leave the site.
+ffx8: organization-local, packets never leave the organization (not so easy to implement, must be covered by routing protocol).
+ffxe: global scope.
+others are reserved
+There are many types already defined/reserved (see RFC 4291 / IP Version 6 Addressing Architecture for details). Some examples are:
+All Nodes Address: ID = 1h, addresses all hosts on the local node (ff01:0:0:0:0:0:0:1) or the connected link (ff02:0:0:0:0:0:0:1).
+All Routers Address: ID = 2h, addresses all routers on the local node (ff01:0:0:0:0:0:0:2), on the connected link (ff02:0:0:0:0:0:0:2), or on the local site (ff05:0:0:0:0:0:0:2)
+Special multicast address used as destination address in neighborhood discovery, because unlike in IPv4, ARP no longer exists in IPv6.
+An example of this address looks like
+Used prefix shows that this is a link-local multicast address. The suffix is generated from the destination address. In this example, a packet should be sent to address "fe80::1234", but the network stack doesn't know the current layer 2 MAC address. It replaces the upper 104 bits with "ff02:0:0:0:0:1:ff00::/104" and leaves the lower 24 bits untouched. This address is now used `on-link' to find the corresponding node which has to send a reply containing its layer 2 MAC address.
+Anycast addresses are special addresses and are used to cover things like nearest DNS server, nearest DHCP server, or similar dynamic groups. Addresses are taken out of the unicast address space (aggregatable global or site-local at the moment). The anycast mechanism (client view) will be handled by dynamic routing protocols.
+Note: Anycast addresses cannot be used as source addresses, they are only used as destination addresses.
+A simple example for an anycast address is the subnet-router anycast address. Assuming that a node has the following global assigned IPv6 address:
+2001:db8:100:f101:210:a4ff:fee3:9566/64 <- Node's address
+The subnet-router anycast address will be created blanking the suffix (least significant 64 bits) completely:
+2001:db8:100:f101::/64 <- subnet-router anycast address

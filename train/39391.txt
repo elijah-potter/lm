@@ -1,0 +1,37 @@
+In this post, let’s list the challenges associated with any container cluster management tool and understand how Kubernetes architecture addresses them. Would recommend reading my earlier post on what is Kubernetes and its features to get started.
+At an Infrastructure level
+- Container provisioning (Scheduling container on appropriate node with required resources)
+- Handle dynamic scaling, failure and degradation of containers.
+- Provision a virtual network for container-to-container communications within and across the nodes.
+- Detect node failures, degradations and restart them.
+- Redistribute containers on node failures.
+As a platform
+- Provide a conceptual deployment model for correlated processes.
+- Enable the application to scale horizontal.
+- Route requests to appropriate container running in the infrastructure.
+Load balancing traffic
+- Load balance requests across multiple container of the same type running across nodes.
+- Monitor containers, handle failures and control replication.
+Let’s understand how Kubernetes addresses these challenges in its architecture.
+Kubernetes follows the master-slave architecture.
+Master is the main controlling unit of the Kubernetes cluster. It is the main management contact point for administrator.
+Node/ Worker/ Minion
+In Kubernetes the server which actually perform work is the worker node. This is where containers are deployed.
+**Before we dig into the architecture, let’s familiarize with some frequently used terms.
+Pods are the basic deployment unit in Kubernetes. Kubernetes defines a pod as a group of “closely related containers” i.e pod can have multiple containers. This association results in scheduling these containers onto a single host. From a network point of view, a pod has an IP address. Multiple containers that run in a pod share a common network namespace and are managed as a single application.
+A service is group of pods that provide same function. Service is aware of all the backed pods associated to it and can be accessed over a virtual IP, which then forward the traffic to appropriate backed pod (internally containers). Consumers only need to know about a single access point which is fixed during the service lifetime. Concept of service enables discoverability which simplifies the design and it also acts as a basic load balancer for backend pods, distributing traffic among them in round robin fashion.
+Kubernetes uses labels to mark items as being part of a group. A label is a tag assigned to an object. An object can be a service, pod etc.. For example, Service discovers pods that provide same function by association of the same label.
+Master is the main controlling unit of the Kubernetes cluster. It runs multiple components to manage cluster wide workload and directs communication across system.
+Etcd is a data store. It is deployed as a cluster to avoid single point of failure and ensure high availability. Configuration representing the overall state of the cluster at any point of time is stored in etcd.
+The API server implements a RESTful interface and is used by user to configure workloads and containers across nodes. The APIs enable integration with different tools and libraries.
+Scheduler binds a pod to a node based on resource availability score on that node. Scheduler tracks resource utilization on each node and makes sure that workload is not scheduled in excess of the available resources.
+Replication controller is an enhanced version of a pod. Replication controller is the means through which pods can scale horizontally across the cluster. Replication controller maintains desired number of replicas at any point of time.
+It is recommended to manage pods through replication controller even if the pod requires only one instance with no replicas. If the pod/ node goes down for some reason, a new pod is deployed on an appropriate node by the replication controller automatically.
+Kubernetes Minions/ Nodes
+In Kubernetes the server where containers (workloads) are deployed is called the worker node. Minions run components that are required to communicate with the master and configure networking for containers.
+Kubelet is responsible for what’s running on an individual node. It can be thought of as a process watcher like supervisord, but focused on running containers. It has one job, given a set of containers to run, make sure they are all running. Kubelet monitors the state of pod and if it does not match with the desired state then it re deploys the pod again on the same node.
+Kubelet posts the node status as heartbeat message every few seconds to the master. If the master doesn’t receive the heartbeat message for a given period of time, the node is marked as failed. Replication controller observes this state change and launches pods(running on failed node) on a healthy node to achieve the desired healthy state.
+Kube proxy lives on each and every node of Kubernetes. Kube proxy routes destined traffic from the service IP and port to the appropriate backend container. Kubernetes has a built-in load balancer which it refers to as a service. The proxy service assigns a random port for a newly created service and creates a load balancer that listens on that port.
+cAdvisor is an agent that monitors and gathers information on container resources usage and performance. It collects container stats such as CPU, memory, file system and network usage. It also provides an overall machine usage and performance statistics by analyzing the top level node.
+In the upcoming post we will get into details of the architectural components. In the meanwhile, please provide your valuable suggestions in the comments section.
+Street smart, enjoys blogging and reaching out to people. While not hacking his way around the code and getting things done, he is out enjoying food or playing games.

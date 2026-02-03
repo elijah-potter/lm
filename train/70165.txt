@@ -1,0 +1,13 @@
+How to get first n characters of a string in Ruby
+In this tutorial, we are going to learn about how to get the first n characters of a string in Ruby.
+Consider, we have the following string:
+month = "august"
+Now, we want to get the first 3 characters
+aug from the above string.
+Getting the first n characters
+To access the first n characters of a string in ruby, we can use the square brackets syntax
+ by passing the start index and length.
+Here is an example, that gets the first 3 characters from the
+month = "august" firstThree = month[0, 3] puts firstThree
+In the example above, we have passed the [0, 3] to it. so it starts the extraction at index position
+0, and extracts before the position

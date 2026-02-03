@@ -1,0 +1,40 @@
+Introduction: LEGO EGGBOT
+What better way to decorate your eggs than with an EGGBOT!
+What is an eggbot? Well an eggbot is basically a machine that can draw on eggs. It is a double axis robot so you can make a vast variety of designs on your egg. I wanted to make one for easter, since i was bit lazy to manually decorate the eggs I decided that it was time to make an eggbot. In this instructables I made the eggbot out of lego, you can use the same concept and mechanisms and make it out of your preferable material.
+For the instructables I made a step by step manual so that building it becomes easy. Lots of effort has gone into it and I hope you like it, let's get started!
+Teachers! Did you use this instructable in your classroom?
+Add a Teacher Note to share how you incorporated it into your lesson.
+Step 1: Parts Needed...
+- Lego Mindstorms (31313 EV3)
+- An egg
+- And a neat and tidy work-space will surely help
+yup that's all!
+Step 2: THE PIECES
+Start by collecting all the lego pieces, so that once you start making the bot you don't have to keep looking for the pieces. Layout the pieces and be well organised. This will making the building process much more efficient.
+I will be breaking down the robot into four sections to make it is easier to build and follow...
+Step 3: MAKING THE EGG HOLDER (section 1)
+The wheel gives a rubbery effect, perfect for the delicate egg.This is the spinning section of the ''egg holder'' so the shaft will be attached to the motor (later on).
+Step 4: MAKING THE EGG HOLDER (section 2)
+Follow the images attentively because the step 2 is little tricky.This section of the ''egg holder'' is adjustable, so you can put a whole range of sizes of eggs.
+Step 5: MAKING THE PEN HOLDER
+The pen holder uses a pretty cool mechanism :
+1) you can adjust those two white pieces according to the size of the pen.
+2) you can easily fit in and take out the pen with the rubber band (later on), the rubber band also holds the pen tightly.
+Step 6: MAKING THE BASE FOR THE MOTORS
+Now moving on to the base of the ''bot''. There are a lot of steps, so make sure that you put the parts in the right places (hopefully everything is clear).
+Step 7: JOINING THE PARTS INTO ONE UNIT
+This is the final step of the hardware part. Fix each smaller part to the main unit, once done you have completed your eggbot. Time for the programming...
+Step 8: The Program and the Connections...
+The motors should be wired as follows:
+Port A : Large motor that rotates the egg (25 cm)
+Port B : Arm raising and lowering medium motor (25 cm)
+Port C : Large motors that moves the arm from side to side (50 cm)
+Make sure to keep the pen 5 cm above the egg's surface
+Here is the program for a couple of very simple designs. Open the file with the lego ev3 software and download it onto your lego brick. (in case you don't have the lego software the link to download it can be found at the bottom) Open the program from the brick, once running use the side buttons to scroll through different designs when u found the one u want use the center button to start it. You can experiment and tweak the program to make more creative and complex designs!
+The link to download the lego programming software :
+Here are the programs:
+Step 9: COMPLETE!
+There you have it, a robot that decorates your eggs! These are just simple designs but be creative make them more complicated and be free to put up your creations in the comment section below!
+Hope you enjoyed.
+Participated in the
+Egg Contest 2016

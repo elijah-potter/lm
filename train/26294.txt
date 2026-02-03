@@ -1,0 +1,126 @@
+There are two main schools of thought when it comes to filesystem layout: One group says it's best to segregate as much as possible, putting everything on its own filesystem; the other group says that one should have only one or two filesystems, putting everything together on communal filesystems.
+The goal of this article is to convince you to fall somewhere in the middle. Increasing or reducing the number of filesystems on a server is often a good idea, but should only be done for legitimate reasons.
+Having a small number of filesystems is usually a good idea for a number of reasons. Somewhat trivially, it means fewer filesystems to monitor for free space. It also provides more leeway for sizing mistakes, because if everything is broken out into separate filesystems and you were incorrect in your forecast of how much space each filesystem would need, you might find yourself in the unhappy circumstance of having a nearly full filesystem on a server which also has a several nearly empty ones.
+Speaking of filesystems filling up, this is one of the reasons for
+increasing the number of filesystems: Some forms of Unix behave
+very badly when certain filesystems, such as
+/ fill up.
+Separating these filesystems from directories which tend to grow, such as
+/var, can save you a lot of headaches. Aside from the operating system, when filesystem gets full, it generally means something will stop working
+correctly because an app is locked waiting to write data, or logs or other
+data cannot be written and thus are lost.
+In laying out both your operating system and your application filesystems, there are a couple of factors you should always keep in mind. Probably the most important of these is backups. It is unlikely that you are designing a server that doesn't need some kind of backup, and proper filesystem design can greatly simplify the process. Some backup software can only backup entire partitions, which makes your granularity on backup rules relatively large. If you need a tighter granularity for backups, the only way to achieve that might be to break your data into separate filesystems.
+It isn't immediately obvious, but filesystem layout can also have a significant impact on system performance. The first cylinders of a disk -- the cylinders at the outer edge -- are spinning the fastest and thus provide the best performance, but you also need to keep in mind the parts of the disk where the disk head will spend the most time.
+If your system uses a lot of swap, which is usually the second partition, and you have a filesystem that does a lot of reads and/or writes in the last partition on the disk, then your disk head will constantly be shuttling back and forth across your disk, ignoring all of the data in the middle, but working madly at the edges. This will seriously degrade your server performance and should be avoided at all costs.
+There are five main system filesystems, which we can cover relatively
+easily because the guidelines on how to partition them don't change
+much from system to system. These are
+It is easiest to discuss
+/tmp, because it is most often a virtual
+filesystem stored in unused
+swap and contains only transient files. As such, you are not losing
+any real disk space, and data integrity isn't so important.
+However, because most systems set
+/tmp to be as large as the entire
+swap allotment, filling
+/tmp generally means running out of swap space,
+and this is a very bad thing. At least some systems, such as Solaris,
+/tmp to be restricted to a size smaller than swap, which can
+save you from application outages and server reboots.
+It is also relatively easy to lay out
+/var, because it will always
+grow and thus should be placed at least somewhat apart. Including
+/var on another partition, such as
+/, can have disastrous consequences when an app has serious problems or there is a hardware failure,
+because gigabytes of logs can be generated very quickly. Filling
+/var just means you can't log anymore, but filling
+/ can mean service
+The most difficult aspect of
+/var is sizing, because it is often difficult to forecast how much log space you will need. In these heady days of
+9-GB disks being considered small, you should start with a 1-GB
+/var partition and go up from there. For a web or email server with a lot of logging,
+you probably want significantly more. In fact, if you find yourself
+with extra space after partitioning a system, it is probably a good
+idea to throw that space into
+/var. Space on
+/var can also be saved by using a network logging server to store your logs.
+In this case,
+/usr may or may not include
+/usr/local. Most open-source Linux systems depend heavily on
+/usr/local, but many commercial Unix variants use it sparingly or not at all. What makes
+/usr unique is that
+it is composed entirely of extremely important files that will only
+be modified during an upgrade or a patch application. If your use of
+fits this bill, then include it with
+/usr, otherwise consider
+In general, the only good reasons for separating
+/usr are either that
+/ partition has all of your apps on it or, my favorite reason,
+you want to mount it read-only for security reasons -- after all, most
+of the files modified by a root kit reside in
+/usr. If this does not
+suit your needs, then either include it on
+/ or with
+depending on the characteristics of your installation. One benefit
+/usr from everything else is that you can size it very
+closely, leaving only about 15 percent for upgrade/patching room because
+it is very unlikely to grow.
+Although it is tempting to think of
+/ as the catch-all filesystem
+and make it large enough to handle that duty, you might find it
+more appropriate to make it small. Application
+filesystems will be discussed later, but without
+/ is now relatively small. In fact, one of your goals when sizing
+the root partition should be to keep it as small as possible,
+hopefully under 100 MB. Because the major components of
+/dev, the kernel, and some statically linked
+binaries, this should be relatively easy to accomplish.
+/ partition usually must be mounted read/write, because it is where system configuration information, device filesystems, and
+/proc filesystem -- if it exists on your system -- reside. For some systems, it is possible to get
+/ to the point where it does not
+need to be written to, but you have to know your system very well to
+do this, and it is probably not a good idea even then.
+Linux Network Administrator's Guide, 2nd Edition
+/usr, though, good filesystem layout means you can
+/ partition very closely; on Solaris it is relatively
+easy to get a
+/ parition of only around 50 MB of data, so a 75-MB
+partition will easily last the life of the server.
+/home counts as part of the operating system or part of the
+application depends on what the server is being used for. If you have
+a web server that will only have administrators logging into
+/home can safely be included on
+/ because it should be small
+and should not change much.
+But if the server will be a file server for the LAN, then
+becomes part of the application. You can even remove
+and replace it with NFS-mounted home directories, which may or
+may not be appropriate depending on your application and network
+and how closely up-time is linked to the existence
+/home adds another point of failure).
+Servers are most often provisioned for a single application or service, and it is definitely preferable to do so. As such, it is usually easy and often makes sense to put that application on a separate partition. Also, many servers put the operating system on internal disks and all application data on an array of some kind, which clearly eliminates the possibility of collocating that data on the same disk as your operating system.
+Applications are where filesystem layout becomes most difficult, though -- whether you have one or many, either on local disk or an array. In some cases, such as high-end databases like Oracle, the application vendor will have specific requirements as to filesystem layout, which leaves where to physically locate each partition on disk as your only decision -- that's another topic entirely. Most other applications provide much more leeway in filesystem layout, meaning your decisions are more difficult. Generally speaking, it is best to put your application on a separate filesystem from your operating system. But this is not always possible with limited disk space or many different applications, and with services such as NIS+ that use essentially no disk space there is no point in doing this.
+If your application requires a lot of space,
+then put that space in a separate filesystem, especially if there
+will be a lot of non-logging disk access. If the application will
+be doing significant amounts of logging, place the logs in
+/var if at
+all possible, especially if that is the only real I/O the
+If you are planning on running many applications on a single server, plan to segregate them but only up to a point: If you have 50 very similar services and none of them require much space or I/O, then collocate them, but if you have 5 very different services with disparate space and I/O needs, then it makes sense to give them their own filesystems.
+Some applications turn what would otherwise be operating system
+filesystems into application directories, such as when an application
+/usr/local or when a mail server spools into
+applications prefer to be in
+/opt, and some
+commercial Unix variants prefer to place both operating system and application
+/opt -- this is especially true with HP-UX. In these cases, it is best to
+break the application portion out onto a separate filesystem, such
+/var/spool. If you cannot do that, treat the entire filesystem like an application filesystem
+rather than an operating system filesystem. This will simplify
+your backup rules and make data loss and service interruption easier
+Sometimes makes sense to separate an application from its data. Web server configuration files and binaries don't change very often, but the data that goes with them is usually quite dynamic. Databases also often separate the application from the data. For this type of decision, you can treat the separate pieces as though they were separate applications: If they have very disparate I/O and space needs, they should be separated; but if they behave similarly, then it makes sense to keep them together.
+Hopefully this has helped provide some basic guidelines for how to partition your all-important data. Because of the large disks most servers ship with these days, we usually don't have the space constraints that traditionally plagued system administrators, but improperly setting up a server can still come back to haunt you. More and more operating systems are also providing comprehensive volume management, which allows a system administrator to recover from poor disk-space forecasting. However, no one wants to try to resize volumes and reallocate data on a live server, and it often can only provide stop-gap solutions because of how the filesystems are laid out on disk. The absolute best aid in figuring out how to partition a system is a historical analysis of the application for which you are provisioning space, but such analyses are depressingly rare.
+In the absence of a historial analysis of the system, just follow these guidelines, always pay attention to how your various filesystems will be used, and never forget that underlying it all is actual hardware -- if you ignore the hardware itself, whether in sizing, purchasing, or how you spread the partitions across it, the best filesystem layout in the world won't keep your server running smoothly.
+Luke A. Kanies is an independent consultant and researcher specializing in Unix automation and configuration management.
+Return to the Linux DevCenter.
+Copyright © 2009 O'Reilly Media, Inc.

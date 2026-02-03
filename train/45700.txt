@@ -1,0 +1,15 @@
+File History is a very useful feature of Windows 10. It allows you to create a backup of the important data stored in your Documents, Pictures, Music, Videos and Desktop folders. You can specify the drive where you plan to store your backup. It will prevent data loss in case something goes wrong. In this article, we will see how to reset File History in Windows 10.
+Windows 10 comes with a built-in backup system called "File History". It allows the user to create a backup copy of files stored on your PC. There are a number of use cases for this feature. For example, it can help you to transfer your files from an old PC to a new one. Or you can use it to backup your files to an external removable drive. The File History feature was first introduced in Windows 8, and has been improved in Windows 10. It allows browsing and restoring different versions of files.
+File History requires using the NTFS file system. File History relies on the journal feature of NTFS to track file changes. If the journal contains records about changes, File History includes the updated files in the archive automatically. This operation is very fast.
+Resetting this feature to default will not remove your files stored on a drive configured for File History. They will remain stored in the FileHistory folder in the root folder of the drive.
+To reset File History in Windows 10, do the following.
+- Open the classic Control Panel app.
+- Go to Control Panel\System and Security\File History. It looks as follows (the screenshot below is from Windows 10 build 16251):
+- If you have enabled File History, click Turn off.
+Close the File History window.
+- Open This PC in File Explorer.
+- Go to the folder %UserProfile%\AppData\Local\Microsoft\Windows\FileHistory. You can copy and paste this path to the address bar of File Explorer.
+- Delete all files and folders you see.
+You are done! The File History configuration will be removed.
+Winaero greatly relies on your support. You can help the site keep bringing you interesting and useful content and software by using these options:
+Thank you very much for the problem that doomed my 300 GB space.

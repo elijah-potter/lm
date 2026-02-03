@@ -1,0 +1,21 @@
+Is everyone here familiar with palindromes? If not, check em out on wikipedia. One of my favorite palindromes is, "Madam, I'm Adam." Madam I'm Adam, when looking at only the characters, is a palindrome. It is the same set of chars forward and backwards when we ignore punctuation and formatting (madamimadam).
+So here's my challenge. Write a program than can correctly recognize wordwise and characterwise palindromes and be able to correctly report what we're looking at. I will not reveal which specific palindromes I'll be using for the test until all entries have been submitted. Your program should return a tuple with 2 values. The first value will be whether it's a characterwise palindrome, and the second will be if it's a wordwise palindrome. For example:
+isPalindrome("i HAS A kitty!") should return (False, False)
+isPalindrome("Madam, I'm Adam") should return (True,False)
+isPalindrome("Fall leaves after leaves fall") should return (False, True)
+isPalindrome("Level, madam, level!") should return (True, True)
+The deadline is January 10th.
+I'll update soon to show you the specific function I'll use for testing! Good luck!
+Please post your code in your post.
+I'm sure you'll want an easy way to test your functions. Here's a sample function you can use to test your palindrome function. To keep things fair, this will NOT be the one I use for the final test. It's just something you can use to test yours.
+import time import palindrome #your palindrome.py file. def main(palFunction, sampleSize=10000): def testPalindrome(): sampleData = [["Madam, I'm Adam.", (True,False)], ["level madam, level!", (True, True)], ["i HAS A kitty :)/>", (False,False)], ["Fall leaves after leaves fall",(False,True)]] for eachEntry in sampleData: results = palFunction(eachEntry) if not results==eachEntry: return (eachEntry,eachEntry,results) return None results = testPalindrome() if results: print("This entry failed to correctly identify:\n\"%s\" as: %s" % (results,results)) print("Function returns: %s" % (results,)) else: start = time.time() for i in range(sampleSize): testPalindrome() elapsed = time.time() - start print("Elapsed time: %f\nAverage time: %f\n" % (elapsed, elapsed/sampleSize)) if __name__=="__main__": main(palindrome.isPalindrome)
+Don't worry about linewise palindromes, like:
+I met a man, but hurried by.
+His face was ghastly, grimly pale.
+He had a gun. I wondered why.
+He had, A gun? I wondered... why,
+His face was ghastly! grimly pale,
+I met a man but hurried by,
+As I was passing near the jail.
+This post has been edited by atraub: 23 December 2010 - 10:26 PM
+Reason for edit:: code cleanup

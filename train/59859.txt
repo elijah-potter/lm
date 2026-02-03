@@ -1,0 +1,17 @@
+Recombinant plasmid construction is most commonly verified by colony PCR, restriction digestion, and/or Sanger sequencing. Each of these analysis methods provides a specific type of information about the newly-made plasmid constructs ranging from the presence or absence of an insert to the complete sequence data of the insert DNA.
+Colony PCR is a quick, high-throughput method for screening multiple colonies simultaneously for the presence and orientation of an insert without purification of plasmid DNA. Primers targeting either vector DNA flanking the insert gene, the gene of interest, or a combination of both are used to amplify a portion of the plasmid DNA. The PCR reaction is subsequently resolved on an agarose gel with size standards to detect the presence or absence of the insert and size of PCR amplicons.
+Restriction digestion of recombinant plasmids provides a fast diagnostic tool for simultaneous analysis of multiple plasmids, based on the number and position of restriction sites along the DNA. Digestion patterns of recombinant plasmids cut with selected restriction enzymes are compared with predicted patterns to confirm insert sequence, orientation, and can provide information about the diversity of complex clone libraries.
+Sanger sequencing of plasmid constructs is used to analyze the DNA sequence of the insert and the junctions between vector and insert. For downstream applications, such as of protein expression, gene expression, and/or functional analysis, that require proper translation of an open reading frame within the insert, it is essential to confirm that the insert gene has been ligated at the precise planned base position within the vector backbone. If necessary, the entire insert can be analyzed by Sanger sequencing using both vector specific and insert specific primers.
+The choice of which method of analysis to use is dependent upon the amount of information needed, and these methods can often be used in conjunction with one another. For example, individual colonies can first be screened by colony PCR to identify those that contain an insert and warrant additional analysis by Sanger sequencing. Restriction digestion provides indirect sequence data for the recombinant plasmid, without the wait time associated with Sanger sequencing.
+- Molecular Cloning Technical Guide
+- Reagents & Tools for Molecular Cloning brochure
+- DNA Markers & Ladders Selection Chart
+- Troubleshooting Guide for Cloning
+- Choosing RNA Input Amounts for NEB T2010
+- General Guidelines for Successful RNA Purification Using the Monarch Total RNA Miniprep Kit
+- Guidelines for PCR Optimization with OneTaq® and OneTaq® Hot Start DNA Polymerases
+- Guidelines for PCR Optimization with Taq DNA Polymerase
+- Traditional Cloning Quick Guide
+While NEB develops and validates its products for various applications, the use of this product may require the buyer to obtain additional third party intellectual property rights for certain applications.
+For more information about commercial rights, please contact NEB's Global Business Development team at [email protected].
+This product is intended for research purposes only. This product is not intended to be used for therapeutic or diagnostic purposes in humans or animals.

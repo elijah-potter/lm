@@ -1,0 +1,63 @@
+Or to be more precise, site engineers don’t necessarily need AutoCAD skills
+I decided to write this blog because I’ve come across so many misconceptions around this topic recently, and I have realised that the commonly held belief that site engineers must have AutoCAD skills is holding back some excellent engineers from applying for jobs that they would be ideally suited to.
+There three myths I want to dispel in this article:
+- Myth #1 – All site engineers need CAD skills
+- Myth #2 – AutoCAD is the best/only software at site engineers’ disposal
+- Myth #3 – Having CAD skills automatically makes you a better setting out engineer
+Myth #1 – All setting out engineers need CAD skills.
+Many setting out engineers do not have or need CAD (Computer Aided Design) skills for the projects they are working on. Tasks such as setting out reinforced concrete slabs and structures, steel- framed buildings, drainage, houses or small roads do not require it. It’s only in the last 20 years that CAD has become commonplace on construction sites. Prior to that, all setting out was done from paper drawings and the rest of the world managed to get built ok! On many projects today, paper drawings are still the primary or only means of communicating setting out information.
+Myth #2 – AutoCAD is the best/only software at site engineers’ disposal
+AutoCAD (including Civil 3D) is a multi-purpose design tool which is not specifically designed for setting out and surveying purposes. Although AutoCAD can be used for a range of tasks including preparing setting out information and converting survey data into a drawing or 3D model, there are specialist survey software packages which are much more intuitive, quicker and much more flexible, not to mention cheaper to run.
+Myth # 3 – Having CAD skills makes you a better setting out engineer
+To engineers who aren’t conversant with CAD, it can seem like engineers who do have CAD skills are in a different league. Engineers, supervisors and recruiters may wrongly assume that engineers with CAD skills are better at setting out. This isn’t necessarily the case as there is no direct relationship between possessing CAD skills and using good practice in the field.
+When used properly and to its full potential, CAD can help engineers to be more productive, enable them to carry out a wider range of tasks, reduce the risk of error and much more. It’s worth noting, however, that it there are some potential downsides. CAD can be used to cover up an engineer’s shortcomings. It can allow an engineer to ‘get by’ without knowing the first principles and maths involved, whilst giving a false impression that they have a full understanding. This means that they are less likely to pick up on any errors or mistakes before it is too late.
+Why do some job adverts specify AutoCAD when they mean CAD?
+AutoCAD is a product name that has become synonymous with CAD. A bit like Hoover is to vacuum cleaner. If you were a cleaner considering applying for a job which required ‘hoovering skills’ you wouldn’t think ‘Oh, well that rules me out then, I’ve only ever used a Dyson’.
+A job advert may specify AutoCAD skills for a couple of reasons. One is that the only software used on the job is AutoCAD, and therefore it is indeed necessary for the engineer to be conversant with it. Another possible reason, however, is that the person who wrote the job advert hasn’t fully appreciated the difference between the brand name of AutoCAD and the generic term. If you are familiar with a survey software but not with AutoCAD, it is probably worth picking up the phone and checking if the skills you have would meet their requirements. For example, if you are a freelance engineer with your own laptop and survey software, in most cases it would make no difference to the client what software you are using if you are coming up with the right results and providing information in a format that other parties can work with.
+Why learn CAD skills?
+Although it is possible to work as a setting out engineer even if you don’t have CAD skills, there is no doubt that having these skills can open up a whole new world of opportunities. Skilled site engineers are in high demand at the moment. By equipping yourself with CAD skills, you can get more done in less time, store and process your data more effectively, create drawings and 3d models and put yourself forward for a much wider range of projects. You can carry out tasks that would be extremely time-consuming to do manually, such as accurate volume calculations for large irregular shapes, sections and elevations or visual comparisons of as-built versus design levels.
+Not only can CAD make your own life easier and allow you to take on bigger and more challenging projects, it can make you much more valuable to your employer.
+What software is the best to learn on?
+Don’t get too bogged down with which survey software you use to develop your skills in the first place. Just choose one and get started. CAD is similar to the practical side of setting out, in that it doesn’t matter which type of instrument you learn to set out with; once you have learnt first principles and know the capabilities, you can apply those skills to any instrument. Obviously, the workflow and user interface will be different, so it may take a bit of time to work your way around a new software, but you won’t be learning from scratch. When you know the outcome you want, you can work out how to achieve it on the particular software you have. Many engineers and surveyors have a few different software packages and use different ones for different tasks, even within the same job. It can come down to a matter of personal preference, just like which type of smartphone you use.
+There are many different options including n4CE, NRG, LISCAD, STAR*NET, TBC (Trimble Business Centre) and MAGNET (Topcon’s own software). The question of which one is best is a subject in itself. In brief, however, we recommend n4CE because it widely used by most major contractors, compatible with any type of total station, GNSS or scanner, works with all file formats, it is extremely user-friendly, is reasonably priced (£600 per year), comes with example files you can use for practising, training videos and in our experience exceptional customer service and technical support.
+If you’re thinking of setting yourself up with n4CE, a 30-day free trial is available so you can get a feel for whether it is right for you without any initial outlay.
+What are the benefits to employers of training their engineers in CAD?
+If you are an employer considering the potential ROI involved in training your engineers in CAD, it’s worth thinking about not just how it will help your engineers to perform better on the jobs they are already doing, but how it can increase their flexibility to transfer to other projects. For smaller companies, adding these skills to your workforce could even allow you to bid for bigger and more challenging projects and expand into new areas.
+What are CAD skills?
+‘CAD skills’ can mean anything from being able to export survey data from the total station into a simple drawing file, to carrying out advanced modelling and data manipulation exercises.
+Here are some useful skills for site engineers:
+- Import data from the total station
+- Tabulate data
+- Use raw data to create a 3D model
+- Check the accuracy of the instrument set-up and control points based on your measured data
+- Retrospectively attribute codes to points or recode points
+- Annotate levels on a drawing by reverse engineering 2D data to get the levels back when they have been lost by format changes
+- Set up code tables
+- Transform local coordinates into OS and vice versa
+- Create annotated sections
+- Import images
+- Select points from an electronic file and export them to a setting out schedule
+- Create a contoured plan
+- Compare volumes between subsequent surveys (e.g to determine how much a stockpile has reduced by)
+- Retrospectively insert or edit break lines
+- Carry out visual checks on 3D models
+- Render slab levels and create a ‘heat map’ of as-built Vs design levels
+- Select different layers to isolate the information you are interested in
+- Check and convert units
+- Import data into the total station including strings, polylines and design surfaces
+- Create drawings and deliverables and present them correctly.
+If you do not already have these skills and would like to learn them in a structured way so that you feel confident, you could attend the 2-day course, CAD for Site Engineers.
+What are some common errors when working with CAD?
+Getting structured training means you can use the tools available to you to their full potential. It also means you can be more methodical and thorough, meaning you are much more likely to spot errors.
+There is virtually no limit to the time and cost this can save. Here are some common sources of error to watch out for:
+- Wrong units – using or assuming the wrong units (e.g. metres instead of millimetres)
+- Layer overload – the design consultants sometimes have hundreds of layers which need to be pruned to eliminate unnecessary data
+- Lost coordinate system – the coordinate system is destroyed/rotated to fit nicely on a sheet of paper and needs to be restored
+- Mismatch between drawings and labels – the dimensions on the plans do not actually match what has been drawn. This can happen when the dimensions are manually labelled rather than generated using the correct tool.
+- Different versions of information within the same drawing – multiple copies of the same data in the same drawing, but at different stages of revision.
+- Using wrong coordinate system – when an arbitrary user coordinate system (UCS) has been set up to make the numbers of the coordinate system more human-friendly.
+- Extracting data from CAD without written agreement – in many contracts, paper copy controlled drawings are the only contractually binding design information. When hard copy drawings or PDFs are used, if there is any question over any of the information, written confirmation should be sought from the designer via the appropriate procedural mechanism, usually a technical query (TQ). When electronic data is provided, the Contractor should have written agreement to extract data from the CAD model otherwise the Contractor could be liable even if the information within the model is incorrect. It is the Contractor’s responsibility to check that the electronic information and the controlled drawings match and raise a TQ if they do not.
+- Just a few levels are dotted over the design – the Setting out Engineer is then liable for any incorrect interpretation of these levels elsewhere in the design. See the previous point regarding the contractually binding source of information.
+How can engineers learn and develop CAD skills?
+Although some CAD skills are taught in college and university, the quality of the teaching and the relevance of the content can vary dramatically. As with the practical side of surveying and setting out, some graduates may feel well prepared when they start working, and others may not feel they have the confidence they need.
+Whether you are new to the role of site engineer or have been working in the role for many years, there are a range of ways to learn CAD skills. You can learn from other people on the job you are working on, teach yourself by trial and error or attend a training course such as CAD for Site Engineers. The next course is 19-20 September 2018 in Northampton.

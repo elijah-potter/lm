@@ -1,0 +1,24 @@
+Yesterday while standing in a long line with Maggie, I came up with a word game to pass the time. It turned out to be pretty fun, and I played a few rounds with Kathy later on as well. Here’s how it works:
+- Player one selects a starting word.
+- Play then alternates between player two and player one, each trying to create a new word by adding, subtracting, or changing a single letter.
+- Once a word has been used once, it’s off-limits — you can’t use it again in that session.
+- The player who is unable to come up with a valid move loses the round.
+- Valid moves are limited to words in the dictionary. No proper nouns may be used.
+- Special starting rule: if player two can’t think of a valid move from the starting word, then player one must be able to make a valid move from that word, or she loses the round. (This prevents player one from starting with “antidisestablishmentarianism”, for example.)
+Example play session:
+- P1: CAT
+- P2: COAT
+- P1: COATS
+- P2: COTS
+- P1: CODS
+- P2: CODA
+- P1: CODE
+- P2: CODED
+- P1: CODES
+- P2: MODES
+- P1: MODEL
+- P2: MODELS
+- P1: YODELS
+- P2: YODEL
+- P1: can’t think of anything, so P2 wins the round
+Try it out, and let me know what you think!

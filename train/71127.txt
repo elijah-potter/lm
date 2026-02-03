@@ -1,0 +1,62 @@
+Till now, we have learned about the basic structure of a webpage and the bricks of an HTML page.,i.e., Tags, Elements, and Attributes. In this article, we are going to discuss the various HTML elements. Elements are responsible for adding meaning to the whole structure of an HTML document.
+The fact that every HTML element has a different display and structure associated with it by default, we have the following diversions. So HTML Elements can be of three types:
+- Block Elements
+- Inline Block Elements
+- Empty Elements
+Block HTML Elements
+Block Elements in HTML displays an element that takes up the whole of the width available. They always start on a new line. They also have a top and a bottom margin, which appears as if a line break is used before and after the element.
+Following is the list of commonly used block-level elements:
+- Contains additional information that can be hidden.
+- Divides the document or a section of it.
+- Contains the page footer.
+- To make a HTML form with user inputs.
+- <h1>, <h2>, <h3>, <h4>, <h5>, and <h6>
+- HTML has 6 headings with <h1> being the largest with 2em size, and <h6> being the smallest with 0.67 em.
+- Contains the additional meta information about the document.
+- To add a horizontal line break in the document.
+- To add list items into a list.
+- To define a paragraph in the HTML document.
+- To create an HTML table in the document.
+<!DOCTYPE html> <html> <body> <h1>H1 Heading</h1> <hr/> <p>A paragraph.</p> </body> </html>
+Other block-level elements:
+Inline HTML Elements
+Inline elements are the ones that take the only width in which they are surrounded. They can be used within a block-level element and need not start on a new line.
+One can not use block elements inside an inline tag whereas an inline element is primarily used inside a block element.
+Following is the list of most commonly used inline html elements:
+- Anchor tag which along with its attribute “href” is used to create hyperlink.
+- To add a line break in text.
+- To add a clickable button in the document.
+- <em> or <i>
+- To make the text italic.
+- To embed another HTML page into the document.
+- To insert an image into the document. It is used with its “src” attribute.
+- Provides an input field where user can enter data in a form.
+- It represents a visible caption for an item in a user interface.
+- Highlights the text.
+- It is like a div, which is used to add a small container for the text to style it differently.
+- <del> or <s> or <strike>
+- To add strikethrough on some text.
+- <strong> or <b>
+- Used to make text bold.
+- To add subscript text to an HTML document.
+- To add superscript text to an HTML document.
+- It adds rows and columns to provide the space for text from user input within a form.
+- Underlines the text.
+<!DOCTYPE html> <html> <body> <h1><a href="www.techbit.in">H1 Heading</a></h1> <hr/> <p><em>A paragraph.</em></p> <p>A <span style="color:red;">paragraph.</span></p> </body> </html>
+Other inline elements:
+Empty HTML elements are the ones that are not enclosed by a closing/end tag. They are also known as self-closing tags.
+Hello!<br> I am good.
+However, it is a good practice to use an ending tag with these too. I have already covered more on empty elements here.
+Hello!<br/> I am good.
+So that was all about HTML Elements and all its types. I’ll continue the series of articles to make you learn everything about HTML. Please do share your feedback on how these articles are helping you. Comment down your query if any.
+Other articles worth your time:
+- How To Create Bootable USB? The Best Free Tools
+- Python 01: How To Easily Convert Text To Handwritten Notes using Pywhatkit?
+- Easy Script to Make Your Own Youtube Video Downloader with Python
+- TypeScript Tutorial 01: A simple way to get started
+- How to Easily Automate WhatsApp Messages? Python Project 02
+Aradhya · July 30, 2021 at 11:01 am
+Vaishali_Rastogi · July 30, 2021 at 11:02 am
+Thank you 🙂
+Abhishek · July 30, 2021 at 1:05 pm
+Vaishali_Rastogi · August 3, 2021 at 5:32 am

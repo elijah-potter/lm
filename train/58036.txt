@@ -1,0 +1,21 @@
+Generator Set Radiator Design Considerations
+Radiator cooling is the most common method of cooling gen set engines. Simple and practical, they fit most applications' needs. All CAT gen sets can be equipped with various sizes of radiators mounted on the front of the unit. However, remote radiators can be used when adequate airflow through the gen set enclosure is not possible.
+Most radiators are made up of tubes surrounded by fins (the core) that extract heat from water pumped through the system from the engine. Designed for 120 F ambient temperatures, they work best when correctly matched to engine power, ambient temperature and adequate airflow.
+Radiators should be sized about 10 percent greater than the engine's heat rejection.
+Altitude, air temperature and velocity greatly affect cooling ability and performance. Following are some rules of thumb that may be used in general gen set cooling system sizing exercises:
+* For every 304.0m (1,000 feet) above sea level, deduct 1.38C (2 F) from the observed ambient temperature for a better indication of the air's cooling ability.
+* In enclosed areas with an engine mounted radiator, expect ambient temperature to increase as the air passes over the generator, engine and through the radiator. Table 1 lists the estimated air to core temperatures rises in different types of installations.
+* Cooling ability drops 1 C (1.8F) for every 10 percent increase in glycol, up to 50 percent concentration.
+* Noise transmits for air inlet and outlets, so position them away from noise sensitive areas.
+* Watch prevailing winds that could cause exhaust fumes and heat or warmed outlet air to recirculate to the inlet as shown in Figure 1.
+* Position radiators away from prevailing winds so winds do not act against the fan, or install a windbreak several feet in front of the outlet.
+* Use large radius turns and turning vanes to minimize turbulence and air flow restriction on inlet bends.
+|Engine only, outside or in a large engine room||3âˆžC (5.4âˆžF)|
+|Engine/generator outside or in a large engine room||4âˆžC (7.2âˆžF)|
+|Engine/generator, in enclosure with external muffler||7âˆžC (12.6âˆžF)|
+|Engine/generator, in enclosure with internal muffler||9âˆžC (16.2âˆžF)|
+Engine-mounted radiators offer the simplest cooling system. Factory-matched for the engine and application, designers and installers need to only worry about providing adequate ventilation.
+In enclosures, radiator ducting should be larger than the radiator core, with inlet air ducts 1.5 times larger tan outlet air ducts. Although louvers minimize exposure to the elements and vandalism, vent size must be increased 25 percent because they inhibit air movement, even when fully open. These should mechanically, electrically or pneumatically controlled to fully open when the engine starts. However, if units are ex-exercised at no load, louvers should automatically adjust to maintain air temperature allowing the engine to warm to normal operating temperature.
+Though remote radiators allow units to be placed well within a building, the heat from engine operation must be dissipated elsewhere. However, system design grows in complexity. Additional piping and fittings add to initial cost and system maintenance. In cases of long pipe runs, oversized piping may be needed to meet flow requirements.
+Several installation points are unique to remote radiators. A remote radiator should not be located more than 17.5m (57 feet) above the engine water pump. Otherwise, excessive head pressure will likely cause the water pump seal to leak.
+For installations where the radiator is mounted below the engine, an expansion tank is needed. If the expansion tank is mounted on the engine, the radiator core must withstand full pump pressure. This system usually requires a round tube radiator. If the radiator has a vertical core, reverse water flow through the radiator to eliminate any trapped air in the inlet tank. EPG Designer can help you identify the best components for your installations.

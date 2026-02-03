@@ -1,0 +1,23 @@
+print("Enter the number of elements\n");
+$n = <>;
+printf("Enter %d numbers\n",$n);
+push @a, scalar(<>);
+print("The even numbers are\n");
+printf("The odd numbers are\n");
+Not that this was the best (or even just a particularly good) way to write this, but it's the minimal change. Huge difference from the C code, right?
+Enoch was right!
+Enjoy the last years of Rome.
+Posts are HTML formatted. Put <p> </p> tags around your paragraphs. Put <code> </code> tags around your code and data!
+Titles consisting of a single word are discouraged, and in most cases are disallowed outright.
+Read Where should I post X? if you're not absolutely sure you're posting in the right place.
+Please read these before you post! —
+Posts may use any of the Perl Monks Approved HTML tags:
+You may need to use entities for some characters, as follows. (Exception: Within code tags, you can put the characters literally.)
+- a, abbr, b, big, blockquote, br, caption, center, col, colgroup, dd, del, div, dl, dt, em, font, h1, h2, h3, h4, h5, h6, hr, i, ins, li, ol, p, pre, readmore, small, span, spoiler, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, u, ul, wbr
+Link using PerlMonks shortcuts! What shortcuts can I use for linking?
+See Writeup Formatting Tips and other pages linked from there for more info.
+| & || & |
+| < || < |
+| > || > |
+| [ || [ |
+| ] || ] ||

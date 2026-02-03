@@ -1,0 +1,39 @@
+SolidWorks Tutorials for Beginners – View Manipulation
+Hello everyone. Welcome back to our SolidWorks tutorials for beginners series. I hope you enjoyed the opening ceremonies of the Olympics today. These are the two weeks of each two years that I’m totally inspired to get in shape. Alas whilst I have cross-country skiing in Sochi on one monitor I’m busy writing SolidWorks tutorials on the other.
+In this tutorial we’ll talk about view manipulation in SolidWorks. View manipulation refers to how you can reorient your models on screen. This is really important for beginners to figure out, to help make SolidWorks easier for you to use. SolidWorks gives you lots of tools for view manipulation. They are located on the Hang-Up toolbar, right under the command manager (that’s the ribbon of commands at the top of your screen).
+Figure 01 – The HangUp Toolbar under the SolidWorks command manager. Here’s where the commands that let you adjust your view are located.
+Before we can manipulate our model, let’s create a model! Right-click on the Top Plane in the Design Tree, and select Sketch:
+Figure 02 – To build a model, we start with a sketch, of course.
+I’ll activate the Rectangle Tool and place the geometry in the graphic area:
+Figure 03 – The Rectangle Tool on the Sketch Tab.
+I’ll click to place the first corner, then place the second corner when the feedback displays dimensions that are about 50mm x 50mm, as shown below:
+Figure 04 – A rectangle about 50mm x 50mm.
+When I release the mouse, SolidWorks’ intelligence thinks I want to create a square and automatically applies Equal relations to the sides. Thanks, SolidWorks! Let’s click Accept in the confirmation corner to save our work and exit Sketch mode.
+Figure 05 – SolidWorks applies an equal relationship to all sides automatically. Confirmation corner is in the top right of the window.
+When we accept the sketch, we land on the Features tab. We are now in part-modeling mode. Let’s activate the Extruded Boss/Base command so we can create a simple solid:
+Figure 06 – Here’s the Extruded Boss/Base Property Manager. Click the up-arrow to increase the depth by 10mm increments. (You can change the default increment number in Options).
+The first tool on the hang-up toolbar is the Pan tool. This is how you can drag your model around the screen, left and right, as well as up and down. It doesn’t rotate your model (3D movement); it only moves it on one plane (2D movement). Notice how when the Pan Tool is active, the cursor icon displays the pan symbol, as shown below.
+Figure 07 – The Pan Tool is active, since the cursor now displays the Pan symbol.
+Some Mouse & KeyBoard ShortCuts for View Manipulation
+You don’t have to hold down the left mouse button to pan; once you left click on the tool, it’s active until you left-click on it again to deactivate it. The cursor icon will change, so you’ll know that the tool is no longer active.
+There are numerous mouse short-cuts that let you activate the view manipulation tools like this, without actually clicking on the hang-up toolbar. So, this is just another shortcut provided by Dassault to help you speed up your work, reduce your mouse movements and overall increase your productivity.
+When you hold down the CTRL key and the scroll wheel / middle mouse button at the same time, you activate the Pan tool without having to click on the hang-up toolbar’s Pan tool.
+You can use your middle mouse button, or your scroll wheel, for zooming in and out at any time, without activating the Zoom tool in the SolidWorks interface. When you’re zooming this way, keep your cursor on your model, otherwise you’ll zoom in on empty space in the graphic area.
+When you select an edge with the middle-mouse button or scroll-wheel, you activate the rotate tool. The cursor icon changes to the rotate symbol, as shown below. This is how you can rotate a model around the selected edge:
+Figure 08 – Rotate your model around an edge by selecting it with your middle-mouse button or the scroll wheel.
+If you select a vertex with the middle mouse button or scroll-wheel, then you can do the same thing, and rotate your model around the vertex that you’ve selected:
+Figure 09 – The rotate icon appears at the vertex you’ve selected with your middle mouse button or scroll wheel.
+So, once you’ve selected the vertex, move your mouse left, right, up and down to rotate the model around the vertex. When you select a face with the middle mouse button or scroll-wheel, same thing; you can rotate the model around that face.
+Figure 10 – Select a face with the middle mouse button or scroll wheel and you can then rotate your model around that face.
+Let’s return to the hang-up toolbar. Beside the pan tool is the Zoom to Fit tool. When you click this tool, your model will zoom to fit the full size of your graphic window. It’s a quick way to see the whole model zoomed to fit in the size of your current graphic area’s space.
+Figure 11 – The Zoom to Fit tool on the hang-up toolbar. Click this to fit your model in the graphic area.
+Here’s what the model looks like when Zoom to Fit has been applied:
+Figure 12- Here’s our model Zoomed to Fit. So, it takes up as much space in the graphic area as it can.
+The next tool on the hang-up toolbar is the Zoom to Extents tool, shown below:
+Figure 13 – the Zoom to Extents tool.
+When you use this tool, the zoom area is set by a window whose size and position you determine. Once the Zoom to Extents tool is activated, the cursor icon changes to display its symbol, as shown below:
+Figure 14 – the cursor symbol for the Zoom to Extents tool.
+With the tool active, left click to set the first corner of the zoom rectangle, and again to select the fourth corner. The graphic area then fills with the extent of your window selection. This is how you can easily, quickly and precisely zoom in to any area of your model.
+The next icon, which looks like a telescope, is the Previous View tool:
+Figure 15 – The Previous View tool
+This takes you quickly to and through your previous zoom levels. This concludes our first tutorial about view manipulation in SolidWorks. We’ll pick up right from here in our next tutorial. Thanks for viewing this series of SolidWorks tutorials. For more SolidWorks tutorials, please visit www.video-tutorials.net.

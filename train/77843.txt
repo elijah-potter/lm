@@ -1,0 +1,8 @@
+posted by ronny .
+if 5/6th of a radioactive sample decay in 70 years and 1/6th remain. how can you find the half life without knowing the decay constant can you help?
+The fraction (1/6) that remains after 70 years satisfies the relation:
+1/6 = 2^(-t/T),
+where T is the half life and t = 70 years.
+Take logs of both sides to solve for T. I'll use logs to base e but it doesn't matter
+-1.7918 = -70/T ln 2 = -48.52/T
+T = 27.1 years

@@ -1,0 +1,8 @@
+Packages are UML constructs that enable you to organize model elements into groups, making your UML diagrams simpler and easier to understand. Packages are depicted as file folders and can be used on any of the UML diagrams, although they are most common on use-case diagrams and class diagrams because these models have a tendency to grow.
+Packages and Dependencies
+A package diagram shows packages and their dependencies. If you have packages for presentation and domain, you have a dependency
+from the presentation package to the domain package if any class in the presentation package has a dependency to any class in the domain package. In this way, interpackage dependencies summarize the dependencies between their contents.
+The UML has many varieties of dependency, each with particular semantics and stereotype. I find it easier to begin with the unstereotyped dependency and use the more particular dependencies only if I need to, which I hardly ever do.
+In a medium to large system, plotting a package diagram can be one of the most valuable things you can do to control the large-scale structure of the system. Ideally, this diagram should be generated from the code base itself, so that you can see what is really there in the system. A good package structure has a clear flow to the dependencies, a concept that is difficult to define
+but often easier to recognize. Figure 4-3 shows a sample package diagram for an enterprise
+application, one that is well-structured and has a clear flow.

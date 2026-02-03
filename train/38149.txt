@@ -1,0 +1,27 @@
+Last Updated on
+Thanks for swinging by for another installment of the Hello World in Every Language series. Today, we’re looking to tackle Hello World in Haskell, a general-purpose functional programming language.
+Table of Contents
+With sixteen of these tutorials already out of the way, it will probably come as no surprise that I took to Wikipedia to learn more about Haskell.
+As stated already, Haskell is a general-purpose functional programming language that first appeared in 1990. Despite its relatively old age, Haskell is still maintained. In fact, the latest standard was developed back in 2010. By 2020, a new update should be available.
+In terms of features, Haskell supports strong, static typing, pattern matching, lazy evaluation, and even list comprehensions. To be honest, this is the first time I’m hearing about lazy evaluation, so I figured I’d dig into that a bit.
+As it turns out, lazy evaluation is a technique which defers computation of a functions input until the value is needed. In other words, expressions are only evaluated when they are needed. If my explanation is bad, take a look at the article I linked above. It covers the concept in great depth.
+At any rate, I think that’s plenty of background for now.
+Hello World in Haskell
+As usual, let’s get right to our implementation of Hello World in Haskell:
+module Main where main = putStrLn "Hello, World!"
+And, that’s it!
+First thing we will probably notice is that Haskell syntax is very different from Lisp and Scheme. Despite all three of those languages being functional, Haskell seems to have ditched the parentheses. In fact, even function calls lack parentheses in Haskell. That’s a new one for me.
+After the syntax, the next thing we should probably look at is that first line. As usual, we have a module declaration which basically declares this file as the main file. In other words, execution begins with this module. We saw something similar in our Hello World in Go article.
+Finally, we have our main function. For someone who has never played with anything like Haskell, this syntax is a bit bizarre. In fact, the main function doesn’t look like a function definition at all. At least, it doesn’t look like what we’ve come to expect from this series.
+That said, the main function does make a lot of sense if we think about it in terms of mathematics. After all, math functions follow the exact same form:
+f(x) = x
+At any rate, let’s get back to the code. In this final line, we have the main keyword which indicates the entry point to the program. From there, we compute the expression on the other side of the equals sign. In this case, we have a print function and our string, and that’s it. Pretty simple!
+How to Run the Solution
+If we want to run the snippets above, we can use an online Haskell compiler. All we have to do is drop the code into the editor and hit run.
+Assuming Haskell is now in the path, we can compile and run our solution using the following commands:
+ghc hello-world.hs hello-world.exe # Windows ./hello-world # Unix/Linux/Mac
+And, that’s it! The “Hello, World!” string should print straight to the console.
+Sample Programs in Every Language
+Well, once again, we’ve implemented Hello World but this time in Haskell. I have to admit that this one was another challenging one for me. After all, I have no background in functional programming. That said, I’m having a lot fun.
+Up next, we’re going to take a look at Perl. After that, I’m looking to take on Scala and Elixir. Then, I’ll be doing my first user-requested language, Pascal. If you have a language you want to see, let me know in the comments below.
+As usual, if you liked what you saw today, considered giving it a share. This helps the series reach new people who would probably benefit from exploring it. Thanks in advance!

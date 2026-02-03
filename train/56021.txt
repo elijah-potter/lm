@@ -1,0 +1,15 @@
+The Yin Yang symbol is a popular, universally recognized character from the traditional Chinese Taoist philosophy meaning balanced opposites. With light, there is darkness, with good there is evil. Yin Yang is not an English character but can be added to a document like Microsoft Word or a webpage by using the English keyboard and various other ways.
+Create a Yin Yang Symbol Using Microsoft Office
+To add this symbol to your Microsoft Office document, (Word, Power Point, etc.) position your cursor where you want your symbol to appear in the document. Change the font to Wingdings. Do not choose Wingdings2 or Wingdings3.
+Insert the symbol in one of two ways:
+- Hold down the Alt key while pressing the 0-9-1 keys on your numeric keypad. Release the Alt key. As you enter the numbers, nothing will happen, but when you release the Alt key, your symbol will display.
+- Alternatively, insert the symbol into your Word document by clicking the Insert Tab. Under the Symbol section, click Symbol and click more symbols. Click the Yin Yang symbol to highlight it and click Insert.
+Create a Yin Yang Symbol Using ASCII Art
+Normand Veilleux offers a template on how to create a larger version of the Yin Yang symbol with your keyboard using ASCII Art.
+Create a Yin Yang Symbol by Copying and Pasting
+You can also copy the Yin Yang symbol from your favorite website and paste it into the document you would like to add it to. fsymbols.com makes this easy and offers other tips.
+To copy, right click on the Yin Yang image and choose Copy. To paste, click where you would like to paste the symbol. Left click in the same spot and choose Paste. Alternatively, Ctrl-C on your keyboard copies and Ctrl-V pastes.
+Create a Yin Yang Symbol Outside of Microsoft Office
+- You can create the Yin Yang symbol as you are building websites or writing applications. To code the symbol in HTML you would type ☯ for decimal and ☯ for hex. There is no major difference in coding in hex or decimal. In the past, browsers would only support decimal or hex and programmers were locked into what the browsers would allow. The latest version browsers support either.
+- You can code the symbol in UTF-8 by typing 0xE2 0x98 0xAF (e298af) for hex and 11100010:10011000:10101111 for binary.
+- If you need the symbol for a C, C++ or Java application, you would type "\u262F" and for Python you would type u"\u262F" (including the parentheses).

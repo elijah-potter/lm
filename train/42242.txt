@@ -1,0 +1,13 @@
+Website Terminology Glossary
+CSS (Cascading Style Sheets)
+CSS (Cascading Style Sheets) is a style sheet language used to describe the presentation of a document written in HTML or XML (including XML dialects like SVG or XHTML). CSS describes how HTML elements should be displayed on screen, paper, or in other media.
+CSS has many advantages, including:
+Separation of presentation and content
+CSS allows the separation of the presentation of a document from its content, which makes it easier to maintain and update the design of a website without having to change the underlying HTML code.
+CSS allows for the creation of consistent styles across multiple pages and a whole website, which helps in maintaining brand identity.
+Flexibility and control
+CSS provides a wide range of styling options and allows designers to have fine-grained control over the appearance of their website. This includes options for layout, typography, colors, and animations.
+Faster page loading
+With CSS, the formatting of a webpage can be stored in a separate file, which allows the browser to cache the file and load it more quickly for subsequent page visits.
+CSS can improve website accessibility by providing options for making web pages more readable and easily navigable for users with disabilities.
+CSS is a powerful tool for web designers and developers, providing flexibility, control, and consistency in the presentation of websites, and improving the user experience for visitors.

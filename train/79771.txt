@@ -1,0 +1,6 @@
+Given an attribute and a value, this algorithm dichotomizes the network based on that value. This is done by iterating over all edges. If that attribute's value on that edge passes using the chosen comparator, the edge is retained in the returned graph. In all other cases, the edge is removed.
+- Attribute determines the attribute to dichotomize based on.
+- Comparator is either > or >=, and determines the comparison to make, such as Attribute > Cutoff .
+- Cutoff is the value to compare the attribute to.
+It is often desirable to cull edges from a network because the observed value does not meet the criteria for the effect being observed. This provides a simple way to do it based on magnitude.
+This does not eliminate parallel edges. It is based on a node-link view of networks. It will work as expected on networks that have no parallel edges, of course. Be warned, though, that giving it a comparator and a value to compare to where zero will be within the accepted range will not create edges between nodes that do not currently have edges on them, unlike if applied to a matrix.

@@ -1,0 +1,33 @@
+People fear robots are becoming too human, but, in reality, robots are becoming a little more bug-like every day.
+A team of Harvard University researchers proved this axiom when they found the solution to extending tiny robot flight is by mimicking the way small bugs alight on walls and ceilings.
+The applications for such a robot are wide-ranging, from small spying devices that can conduct surveillance missions while suspended from a ceiling to research drones that can allow scientists to take measurements where no other sensors can physically go.
+For the typical drone, hovering can take just as much energy as flying. As long as the robot is in the air, it’s expending energy and running down its small battery capacity.
+What researchers discovered, as reported in a new study published Thursday in the journal Science, is that tiny robots could save considerable energy if they simply landed and perched between jaunts, the way a bee or butterfly might land on the ceiling before taking off again.
+While the scientists toyed with a number of different surface adhesion possibilities, the team finally settled on a unique combination of electrostatic material and foam to create a new kind of built-in robot landing pad.
+A bee-inspired robot
+The team built a bee-inspired micro aerial vehicle (MAV) robot and attached an electrostatic patch consisting of a carbon-fiber base, copper electrodes and a polyamide coating. It sits on a small foam cylinder.
+When charged, the electrostatic plate can attach itself to almost any surface (wood, glass, organic material) that responds to static electricity (yes, the same stuff you build up when you rub a balloon on a wall or your feet on the carpet).
+We felt that perching on an overhang is more challenging since you have to have an adhesive force to overcome gravity
+The chosen technology would work equally well on the ground or ceiling, said Robert Wood, a co-author of the new study, in an email to Mashable.
+“But we felt that perching on an overhang is more challenging since you have to have an adhesive force to overcome gravity.”
+The foam is there to help cushion the landing. Without it, the tiny robot — it has just a 3-centimeter wingspan — might just bounce off the surface.
+By using electrostatic energy, the researchers significantly broadened the kinds of materials and situations in which the robot can land and then take off again.
+During testing, the robot was tethered to a power source at all times, allowing researchers to remotely power the electro-static plate, and to circuitry that provided some pre-programmed flight control behaviors (hover, approach target, detach and hover).
+To design their robot landings, researchers took a cue from how bees perch, observing how they control their own velocity and slow down and hover before landing softly.
+Perching and flying again
+The resulting perch solution allows the robot to slow down until it’s hovering right underneath the landing spot — perhaps a leaf — and to rise up slowly until it's touching the surface.
+Then the researchers powered up the electrostatic patch, which creates a bind strong enough to hold the robot in place, even after it powers down its flight motor.
+The robot can remain perched for as long as the patch is powered up. However, “it’s worth noting that the power for adhesion is several orders of magnitude lower than the power required for flight... highlighting one of the benefits of this approach,” Wood said.
+However, the use of static electricity to hold the robot in place produces some significant weight constraints. According to Wood, a Harvard professor who founded the school's microrobotics laboratory, the amount of weight the patch can support is proportional to the area of the patch.
+The power for adhesion is several orders of magnitude lower than the power required for flight
+“But as size is reduced, surface area (thus adhesion) increases faster than volume (thus weight)," Wood said. "What this means is that this sort of adhesive mechanism is quite appropriate for small-scale systems."
+Electrostatic adhesion is not new to robotics.
+Study co-author Moritz Alexander Graule said it's a frequent target for climbing robot research, but it proved especially attractive for this project because the adhesion can be turned on and off without the need for moving parts. It also meant the robot-bee could land, perch and take off without applying any force to the landing surface.
+Why build a robot that can fly, land and take off like a bug? Because it can do things people can’t do, and could become a critical component in search and rescue operations.
+According to Wood, it could be useful in “basically any situation where you want to have low cost and distributed sensing [that] would be too difficult or too dangerous for a human."
+It might also have some pretty handy surveillance applications.
+A robot bug that can land when no one is around and then stay quietly attached to the ceiling, without the need for audible motors, and that can wait to take off until no one is around, could be quite a boon for would-be spies.
+Obviously, this is still a research project with numerous challenges ahead of it, most notably the need to remove the tether wires and integrate power and flight control-technology on the tiny robot.
+This work alone could take a few years, and even then these robot bugs won’t be ready to swarm. Wood said that in five-to-10 years “they could be ready for more widespread development and use.”
+That’s kind of a buzzkill.
+Have something to add to this story? Share it in the comments.

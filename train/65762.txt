@@ -1,0 +1,41 @@
+Add text here for Visual Editor test (Click "Edit" tab, add text, save): 1/6/2020- Eric
+Translation extension check
+Check that the following page displays correctly:
+There will be a language bar at the top and text in the relevant language in the body of the text.
+Given a continuous function x(t) of a single variable t, its Fourier transform is defined by the integral
+where ω is the Fourier dual of the variable t. If t signifies time, then ω is angular frequency. The temporal frequency f is related to the angular frequency ω by ω = 2πf.
+The Fourier transform is reversible; that is, given X(ω), the corresponding time function is
+Throughout this book, the following sign convention is used for the Fourier transform. For the forward transform, the sign of the argument in the exponent is negative if the variable is time and positive if the variable is space. Of course, the inverse transform has the opposite sign used in the respective forward transform. For convenience, the scale factor 2π in equations (13) and (14) are omitted.
+Generally, X(ω) is a complex function. By using the properties of the complex functions, X(ω) is expressed as two other functions of frequency
+where A(ω) and ϕ(ω) are the amplitude and phase spectra, respectively. They are computed by the following equations:
+where Xr(ω) and Xi(ω) are the real and imaginary parts of the Fourier transform X(ω). When X(ω) is expressed in terms of its real and imaginary components
+and is compared with equation (15), note that
+Below is a picture of a neural network similar to the one we're building:
+|Operation||Time Domain||Frequency Domain|
+|(1) Shifting||x(t − τ)||exp(−iωτ)X(ω)|
+|(4) Addition||f(t) + x(t)||F(ω) + X(ω)|
+|(5) Multiplication||f(t) x(t)||F(ω) * X(ω)|
+|(6) Convolution||f(t) * x(t)||F(ω) X(ω)|
+|(7) Autocorrelation||x(t) * x(−t)|
+|(8) Parseval’s theorem|
+|* denotes convolution.|
+Figure 3.1-1 The NMO geometry for a single horizontal reflector. The traveltime is described by a hyperbola represented by equation (1).
+Figure 3.1-3 NMO correction (equation 2a) involves mapping nonzero-offset traveltime t onto zero-offset traveltime t0. (a) Before and (b) after NMO correction.
+We are now ready to implement the neural network itself. Neural networks consist of three or more layers: an input layer, one or more hidden layers, and an output layer.
+Let's implement a network with one hidden layer. The layers are as follows:
+where is the i-th sample of the input data , and are the weight matrices and bias vectors for layers 1 and 2, respectively; and is our nonlinear function. Applying the nonlinearity to in layer 1 results in the activation . The output layer yields , the i-th estimate of the desired output. We're not going to apply the nonlinearity to the output, but people often do. The weights are randomly initialized, and the biases start at zero. During training they will be iteratively updated to encourage the network to converge on an optimal approximation to the expected output.
+We'll start by defining the forward pass, using NumPy's @ operator for matrix multiplication:
+def forward(xi, W1, b1, W2, b2): z1 = W1 @ xi + b1 a1 = sigma(z1) z2 = W2 @ a1 + b2 return z2, a1
+Here is the back-propagation algorithm we'll employ:
+For each training example:
+For each layer:
+- Calculate the error.
+- Calculate weight gradient.
+- Update weights.
+- Calculate the bias gradient.
+- Update biases.
+This is straightforward for the output layer. However, to calculate the gradient at the hidden layer, we need to compute the gradient of the error with respect to the weights and biases of the hidden layer. That's why we needed the derivative in the
+Let's implement the inner loop as a Python function:
+def backward(xi, yi, a1, z2, params, learning_rate): err_output = z2 - yi grad_W2 = err_output * a1 params['W2'] -= learning_rate * grad_W2 grad_b2 = err_output params['b2'] -= learning_rate * grad_b2 derivative = sigma(a1, forward=False) err_hidden = err_output * derivative * params['W2'] grad_W1 = err_hidden[:, None] @ xi[None, :] params['W1'] -= learning_rate * grad_W1 grad_b1 = err_hidden params['b1'] -= learning_rate * grad_b1 return params
+To demonstrate this back-propagation workflow, and thus that our system can learn, let's try to get the above neural network to learn the Zoeppritz equation. We're going to need some data.
+- Bracewell, R. N., 1965, The Fourier transform and its applications: McGraw-Hill Book Co.

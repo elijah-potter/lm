@@ -1,0 +1,6 @@
+A “control” is the term we use to describe things you put into your screen - buttons, grids, drop downs, etc. In the below image, everything you see is a control. Even the containers holding controls.
+he Properties panel on the right has three tabs and the first tab allows you to insert these controls.
+Since there a lot of controls to choose from, Method separates the controls into three unique types. Each type is in its own collapsible section as shown below.
+- Containers: Containers separate controls into different groups on the screen, sort of like windows. At the moment, there is only one type of container, the Section.
+- Objects: You can think of the term “object” as sort of a catch-all term for anything you can drag onto your screen, from buttons to pictures, drop downs to calendars. You can check out a full list of objects in our Controls: Overview article.
+- Fields: When you create a screen, you need to select a Base table. All the fields available in that base table are available to drag on to the screen, and those fields have a direct connection to that table.

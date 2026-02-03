@@ -1,0 +1,25 @@
+Библиотека сайта rus-linux.net
+Example options include:
+kill $(pgrep mozilla)
+If you are unfamiliar with the $( ) part of this command, please refer to the Section called Performing more than one command in Chapter 6.
+To list processes id's and names type:
+pgrep -l process_name
+killall and pkill - kill a process by name: pkill and killall can be a lot easier to use than kill. pkill allows you to type part of the name of a process to kill it, while killall requires the full process name. See below for more information.
+Kill a process by it's name, uses names instead of process id's (pid's). Use -v to have killall report whether the kill was successful or not and -i for interactive mode (will prompt you before attempting to kill).
+pkill - a little like a killall with regular expressions: pkill is another command that allows processes to be killed but does so using regular expressions. See below for more information.
+killall -iv mozilla
+Would kill anything named “mozilla” and prompt you before each kill and report whether the kill was successful or not. Unfortunately you need to get the name exactly right for killall to work, you would need to use “mozilla-bin” to kill the mozilla browser. If you want something where you don't need to know the exact name try pkill (below).
+pkill is used to kill processes according to an extended regular expression. Use the -u option to kill using a user name(s) and process name (for example to only kill a process of a certain user). pkill can also send specific signals to processes.
+Note that the “process_name” doesn't have to be an exact match...
+Or to kill the “process_name” of only the users “fred” and “anon” type:
+pkill -u fred anon process_name
+This would tell that all processes may continue as before. Note that this would only work if you are root. Also note you can list more than one user name with the command so it will apply to multiple users.
+Backgrounds a process. To start a program in the background (so it doesn't take over the terminal) use an “&” (ampersand) sign at the end of the command. You usually use CTRL-Z to suspend something you are currently using. You can simply use bg to resume in the background the last job suspended...
+Sets the priority for a process. nice -20 is the maximum priority (only administrative users can assign negative priorities), nice 20 is the minimum priority. You must be root to give a process a higher priority, but you can always lower the priority of your own processes...
+nice -20 make
+Changes the priority of an existing command. You may use the options -u to change the priorities of all processes for a particular user name and -g to change priorities for all processes of a particular group. The default is to change via the process id number.
+renice +20 2222
+-c --- command name (this is the same as killall)
+-t --- tty number
+snice -10 -u root
+Только зарегистрированные пользователи могут оценивать и комментировать статьи.

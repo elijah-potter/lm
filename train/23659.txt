@@ -1,0 +1,12 @@
+By: Phil Kirkham
+Definition of SKILL
+- the ability to use one’s knowledge effectively and readily in execution or performance
+- dexterity or coordination especially in the execution of learned physical tasks
+- a learned power of doing something competently: a developed aptitude or ability
+Now, armed with a definition, how can this be used to define skills that a tester should have? Is it possible to come up with a list of skills?
+At a recent GR Testers Meetup this was the main topic of the evening. There were some people new to testing at the meeting so it was interesting to ask them what they thought the skills were.
+One of the first things to be brought up was “attention to detail” and this does seem to be a common one. So we drilled down into this – what exactly does this mean? Is it a skill or a trait? Can you work on improving your attention to detail? Does it really mean that you have good observational skills or is it shorthand for “will do the same repetitive tasks again and again?”
+Do coding skills stop at coding? What about knowing algorithms so you can know about the performance implications of using linked lists versus hash tables versus binary trees? A tester might have the technical chops to test for XSS and SQL injection but what about having the creative thinking skills to think of social attacks?
+Instead of focusing on specific skills, what about more general skills? Ilari Henrick Aegerter of Ebay recently posted about the skills a world class tester should have which included observational skills, willingness to learn, investigative curiosity and humour – has anyone ever seen a tester job posting with “humor” as a desired skill? Ilari isn’t the first one to put it on a list though, doing some research for this article I pulled out some of my old testing books and there in Systematic Software Testing was a list of skills – with humor included.
+What Ilari’s list shows – as did the GR Testers discussion – is that the range of skills that a great tester should have (and be working on) is wide ranging. Some of them – e.g. critical thinking – are harder to teach and measure, is this a possible reason for focusing on technical skills?
+Quick learner, thinking skills, soft skills – aren’t these “classic” tester skills more important than being able to code in the language de jour?

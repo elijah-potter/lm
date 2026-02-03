@@ -1,0 +1,10 @@
+Definition of point-to-point in Network Encyclopedia.
+What is point-to-point?
+Point-to-Point is a form of communication that provides a direct path from one fixed point to another.
+How It Works
+A point-to-point wide area network (WAN) consists of two end nodes connected by a leased line. In a typical configuration, a router on the network is connected using a serial transmission interface such as V.35 to a Channel Service Unit (CSU) at the local customer premises. The CSU provides the interface between the router and the telco’s leased line. An identical setup is configured at the remote customer premises. Because there are only two end nodes in a point-to-point WAN link, addressing need not be provided for the end nodes at the data-link layer.
+Point-to-point WAN connections typically use High-level Data Link Control (HDLC), Point-to-Point Protocol (PPP), or one of their derivatives – such as Point-to-Point Tunneling Protocol (PPTP) – as the layer 2, or data-link layer, protocol for encapsulating local network traffic into frames for transmission over the WAN link.
+Uses of Point-to-Point term
+The term “point-to-point” is also used more generally. For example, the configuration of a terminal connected to a minicomputer using two short-haul asynchronous modems is referred to as a point-to-point connection.
+Point-to-Point used in heterogeneous environments
+PPP is usually used in heterogeneous networking environments in which the routing and access equipment come from different vendors, while HDLC tends to be used in homogeneous networking environments in which the routers and access equipment run only Cisco’s Internetwork Operating System (IOS) software.

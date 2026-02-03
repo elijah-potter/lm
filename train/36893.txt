@@ -1,0 +1,8 @@
+Gate Control Theory of Pain
+To explain why thoughts and emotions influence pain perception, Ronald Melzack and Patrick Wall proposed that a gating mechanism exists within the dorsal horn of the spinal cord. Small nerve fibers (pain receptors) and large nerve fibers ("normal" receptors) synapse on projection cells (P), which go up the spinothalamic tract to the brain, and inhibitory interneurons (I) within the dorsal horn.
+The interplay among these connections determines when painful stimuli go to the brain:
+- When no input comes in, the inhibitory neuron prevents the projection neuron from sending signals to the brain (gate is closed).
+- Normal somatosensory input happens when there is more large-fiber stimulation (or only large-fiber stimulation). Both the inhibitory neuron and the projection neuron are stimulated, but the inhibitory neuron prevents the projection neuron from sending signals to the brain (gate is closed).
+- Nociception (pain reception) happens when there is more small-fiber stimulation or only small-fiber stimulation. This inactivates the inhibitory neuron, and the projection neuron sends signals to the brain informing it of pain (gate is open).
+Descending pathways from the brain close the gate by inhibiting the projector neurons and diminishing pain perception.
+This theory doesn't tell us everything about pain perception, but it does explain some things. If you rub or shake your hand after you bang your finger, you stimulate normal somatosensory input to the projector neurons. This closes the gate and reduces the perception of pain.

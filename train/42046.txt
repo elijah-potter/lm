@@ -1,0 +1,11 @@
+In the Hackers group, people worked on two different projects, making a Joule Thief and controlling motors.
+A Joule Thief is a small circuit that can boost the voltage from a small power source. Typically, it is used to power a 3-volt LED from a 1.5 volt battery. Because of how it works, it can continue to light the LED even when the battery would usually be considered to be “out of power”, when its voltage drops below 1v.
+Here is a Wikipedia article. https://en.wikipedia.org/wiki/Joule_thief
+people in the group found various tutorials online, such as this one from Make Magazine: https://makezine.com/projects/joule-thief-battery-charger/
+Motor Control with an Arduino
+Continuing our work on Project SABRE, we were figuring out how to control motors.
+A simple way to control the speed of a motor is to regulate its input voltage. In Arduino code, you set the output voltage of pins. However, you CANNOT just hook them up to the motor, as it will draw too much current and damage the Arduino.
+The solution is to use a transistor: power from a 9V battery or the 5V USB power supply from an Arduino powers the motor with current flowing through the transistor, and we regulate the current flow by applying an appropriate voltage to the middle leg of the transistor.
+Two more components are needed: a resistor for the middle leg of the transistor, and a diode to get rid of any voltage spikes that come from the motor acting as a generator if it us spun by hand, or when it is spinning down after current to it is cut.
+More details here: https://learn.adafruit.com/adafruit-arduino-lesson-13-dc-motors/arduino-code
+We also looked into stepper motors, and controlling speed by reading a value from a potentiometer, instead of just typing in a speed: https://www.arduino.cc/en/Tutorial/StepperSpeedControl

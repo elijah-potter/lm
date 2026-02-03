@@ -1,0 +1,81 @@
+The following list indicates some of the ways that the mysqld server uses memory. Where applicable, the name of the system variable relevant to the memory use is given:
+The key buffer (variable
+is shared by all threads; other buffers used by the server
+are allocated as needed. See
+Sección 7.5.2, “Afinar parámetros del servidor”.
+Each connection uses some thread-specific space:
+A stack (default 64KB, variable
+A connection buffer (variable
+A result buffer (variable
+The connection buffer and result buffer are dynamically
+enlarged up to
+needed. While a query is running, a copy of the current
+query string is also allocated.
+All threads share the same base memory.
+MyISAM tables are memory
+mapped. This is because the 32-bit memory space of 4GB is
+not large enough for most big tables. When systems with a
+64-bit address space become more common, we may add general
+support for memory mapping.
+Each request that performs a sequential scan of a table
+allocates a read buffer (variable
+When reading rows in an arbitrary sequence (for example,
+following a sort), a random-read
+read_rnd_buffer_size) may be allocated in
+order to avoid disk seeks.
+All joins are executed in a single pass, and most joins can
+be done without even using a temporary table. Most temporary
+tables are memory-based (
+Temporary tables with a large record length (calculated as
+the sum of all column lengths) or that contain
+BLOB columns are stored on disk.
+If an internal heap table exceeds the size of
+tmp_table_size, MySQL 5.0 handles this
+automatically by changing the in-memory heap table to a
+MyISAM table as necessary. You
+can also increase the temporary table size by setting the
+tmp_table_size option to
+mysqld, or by setting the SQL option
+SQL_BIG_TABLES in the client program. See
+Sección 13.5.3, “Sintaxis de
+Most requests that perform a sort allocate a sort buffer and zero to two temporary files depending on the result set size. See Sección A.4.4, “Dónde almacena MySQL los archivos temporales”.
+Almost all parsing and calculating is done in a local memory
+store. No memory overhead is needed for small items, so the
+normal slow memory allocation and freeing is avoided. Memory
+is allocated only for unexpectedly large strings; this is
+MyISAM table that is opened, the
+index file is opened once; the data file is opened once for
+each concurrently running thread. For each concurrent
+thread, a table structure, column structures for each
+column, and a buffer of size
+are allocated (where
+N is the maximum row length, not
+BLOB columns). A
+BLOB column requires five to eight bytes
+plus the length of the
+BLOB data. The
+MyISAM storage engine maintains one extra
+row buffer for internal use.
+For each table having
+BLOB columns, a
+buffer is enlarged dynamically to read in larger
+BLOB values. If you scan a table, a
+buffer as large as the largest
+Handler structures for all in-use tables are saved in a cache and managed as a FIFO. By default, the cache has 64 entries. If a table has been used by two running threads at the same time, the cache contains two entries for the table. See Sección 7.4.8, “Cómo abre y cierra tablas MySQL”.
+FLUSH TABLES statement or
+mysqladmin flush-tables command closes
+all tables that are not in use at once and marks all in-use
+tables to be closed when the currently executing thread
+finishes. This effectively frees most in-use memory.
+FLUSH TABLES does not return until all
+tables have been closed.
+ps and other system status programs may
+report that mysqld uses a lot of memory. This
+may be caused by thread stacks on different memory addresses.
+For example, the Solaris version of ps counts
+the unused memory between stacks as used memory. You can verify
+this by checking available swap with
+We test mysqld with several memory-leakage
+detectors (both commercial and open source), so there should be
+no memory leaks.
+Ésta es una traducción del manual de referencia de MySQL, que puede encontrarse en dev.mysql.com. El manual de referencia original de MySQL está escrito en inglés, y esta traducción no necesariamente está tan actualizada como la versión original. Para cualquier sugerencia sobre la traducción y para señalar errores de cualquier tipo, no dude en dirigirse a email@example.com.

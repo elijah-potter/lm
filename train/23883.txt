@@ -1,0 +1,27 @@
+These operators act on raw, logical and number-like vectors.
+! x x & y x && y x | y x || y xor(x, y) isTRUE(x)
+! indicates logical negation (NOT).
+&& indicate logical AND and
+|| indicate logical OR. The shorter form performs elementwise comparisons in much the same way as arithmetic operators. The longer form evaluates left to right examining only the first element of each vector. Evaluation proceeds only until the result is determined. The longer form is appropriate for programming control-flow and typically preferred in
+xor indicates elementwise exclusive OR.
+Numeric and complex vectors will be coerced to logical values, with zero being false and all non-zero values being true. Raw vectors are handled without any coercion for
+xor, with these operators being applied bitwise (so
+! is the 1s-complement).
+NA is a valid logical object. Where a component of
+NA, the result will be
+NA if the outcome is ambiguous. In other words
+NA & TRUE evaluates to
+NA & FALSE evaluates to
+FALSE. See the examples below.
+See Syntax for the precedence of these operators: unlike many other languages (including S) the AND and OR operators do not have the same precedence (the AND operators are higher than the OR operators).
+!, a logical or raw vector of the same length as
+x: names, dims and dimnames are copied from
+xor a logical or raw vector. The elements of shorter vectors are recycled as necessary (with a
+warning when they are recycled only fractionally). The rules for determining the attributes of the result are rather complicated. Most attributes are taken from the longer argument, the first if they are of the same length. Names will be copied from the first if it is the same length as the answer, otherwise from the second if that is. For time series, these operations are allowed only if the series are compatible, when the class and
+tsp attribute of whichever is a time series (the same, if both are) are used. For arrays (and an array result) the dimensions and dimnames are taken from first argument if it is an array, otherwise the second.
+isTRUE, a length-one logical vector.
+| are S4 generics, the latter two part of the
+Logic group generic (and hence methods need argument names
+Becker, R. A., Chambers, J. M. and Wilks, A. R. (1988) The New S Language. Wadsworth & Brooks/Cole.
+Syntax for operator precedence.
+Documentation reproduced from R 2.15.3. License: GPL-2.

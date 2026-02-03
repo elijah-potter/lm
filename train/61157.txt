@@ -1,0 +1,27 @@
+Kanban can be well defined as ‘demand scheduling.’ In processes which are controlled by kanban’s, the manufacturers manufacture products based on the actual usage instead of the estimated usage. The kanban system replaces the usual daily or weekly production schedule. This schedule is substituted with predetermined decision instructions and visual signals which enable the producers to schedule the line. The kanban system gets rid of;
+- The day to day scheduling actions needed to operate the manufacturing process.
+- The need for the supervisors and the production planner to continually observe the status of the schedule in order to determine which item to run next or the time to change over.
+The kanban system helps free up the schedulers, supervisors and material planners thus, improving the manufacturing process. Also, it puts control at the value added and authorizes the production operators to manage the line.
+Two Card Kanban System
+A two card kanban system (dual card kanban) is usually used for enormous items where flow racks aren’t used. It is a system of the kanban card racks and the kanban board combined together. The two card kanban system makes use of manufacture and withdrawal kanban’s to apply both the material handling and the station blocking by part type.
+This is how the two card kanban works;
+- Whenever an item is produced or received from a seller, two cards are pulled and filled out from a kanban card rack; one of the kanban cards goes with the item and the other is put in a special FIFO (First- in, First- out)
+- Whenever one of the items is needed, the material handler pulls out the bottom card from the FIFO box.
+- The material handler now goes to the position written on the kanban card to get the particular item for the manufacture operation.
+- The material handler now places the two cards in the kanban card racks. This is the schedule signal for record or production.
+The two card kanban system allows large items to flow while also managing the product rotation. It works very well, most especially when utilized for items stacked on the floor.
+Principles for Two Card Kanban System Implementation
+The Preparation Stage
+- Review the total workflow. The end to end process has to be reviewed from the initial concept through to the release. Make analysis for all the excessive time pockets and also remember to review the handoff times.
+- Make sure to address all bottlenecks. If bottlenecks are identified, including upstream in the engineering phase, do everything possible to break down these bottlenecks and convey their value in small additions.
+- Change from repetitions to service level agreement (SLA). Decide on the SLA time-box for every feature. The clock begins whenever the active scheduling on each of the feature begins and stops whenever it is released.
+- Create classification by the cost of delay. Classify every feature according to its type. Then, have every of the stakeholders in a gathering and use this classification to assist in prioritizing a limited queue which the team can use. Make updates to this queue as frequent as you want.
+- Set the WIP (Work in Progress) limits. The WIP limit for every workflow phases which you want to limit should be decided by both the managers and the team. The WIP limit is the limit of features which can be active at a time. A new feature can only be pulled whenever a slot opens at the end of a feature.
+- Make the work evident. You can place a task board where the whole team can view it. The board should display the workflow phases as well as the agreed WIP limits.
+- The team should occasionally scope the features which are in the limited queue to see if all will fit in the Service Level Agreement time box. If they do not fit, the stakeholders have to break them down further.
+Implementation of the Two Card Kanban System
+- The per-feature service level agreement clock begins now.
+- Pull the subsequent work item. When there’s availability of capacity, the team picks which feature to pull. The resource considerations in addition to the cost of delay will be considered when trying to choose which feature to pull.
+- The team divides the feature into stories when pulled.
+- Everybody should obey the WIP limit. Also, beware of bottlenecks. Change the elements or limits as much as needed until a smooth delivery flow is achieved.
+- Inspect and adjust. Have periodic demos, retrospectives and daily stand-ups.

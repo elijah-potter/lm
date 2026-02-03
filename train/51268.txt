@@ -1,0 +1,13 @@
+PLL Loop Filter
+- an overview of the loop filter used in a phase locked loop, PLL. This gives an overview of the requirements, and design.
+PLL, Phase Locked Loop tutorial includes:
+The design of the PLL, loop filter is crucial to the operation of the whole phase locked loop. The choice of the circuit values here is usually a very carefully balanced compromise between a number of conflicting requirements.
+The PLL filter is needed to remove any unwanted high frequency components which might pass out of the phase detector and appear in the VCO tune line. They would then appear on the output of the Voltage Controlled Oscillator, VCO, as spurious signals. To show how this happens take the case when a mixer is used as a phase detector. When the loop is in lock the mixer will produce two signals: the sum and difference frequencies. As the two signals entering the phase detector have the same frequency the difference frequency is zero and a DC voltage is produced proportional to the phase difference as expected. The sum frequency is also produced and this will fall at a point equal to twice the frequency of the reference. If this signal is not attenuated it will reach the control voltage input to the VCO and give rise to spurious signals.
+When other types of phase detector are used similar spurious signals can be produced and the filter is needed to remove them.
+The filter also affects the ability of the loop to change frequencies quickly. If the filter has a very low cut-off frequency then the changes in tune voltage will only take place slowly, and the VCO will not be able to change its frequency as fast. This is because a filter with a low cut-off frequency will only let low frequencies through and these correspond to slow changes in voltage level.
+Conversely a filter with a higher cut-off frequency will enable the changes to happen faster. However when using filters with high cut-off frequencies, care must be taken to ensure that unwanted frequencies are not passed along the tune line with the result that spurious signals are generated.
+The loop filter also governs the stability of the loop. If the filter is not designed correctly then oscillations can build up around the loop, and large signals will appear on the tune line. This will result in the VCO being forced to sweep over wide bands of frequencies. The proper design of the filter will ensure that this cannot happen under any circumstances.
+By Ian Poole
+Read more popular synthesizer and PLL tutorials . . . . .
+|• PLL basics||• Synthesizer types||• PLL synth basics||• DDS|
+|• Synth phase noise|

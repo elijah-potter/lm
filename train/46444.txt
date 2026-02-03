@@ -1,0 +1,8 @@
+In estimating spatial means of environmental variables of a region from data collected by convenience or purposive sampling, validity of the results can be ensured by collecting additional data through probability sampling. The precision of the pi estimator that uses the probability sample can be increased by interpolating the values at the non-probability sample points to the probability sample points, and using these interpolated values as an auxiliary variable in the difference or regression estimator. These estimators are (approximately) unbiased, even when the nonprobability sample is severely biased such as in preferential samples. The gain in precision compared to the pi estimator in combination with simple random sampling is controlled by the correlation between the target variable and interpolated variable. This correlation is determined by the size (density) and spatial coverage of the nonprobability sample, and the spatial continuity of the target variable. In a case study the average ratio of the variances of the simple regression estimator and pi estimator was 0.68 for preferential samples of size 150 with moderate spatial clustering, and 0.80 for preferential samples of similar size with strong spatial clustering. In the latter case the simple regression estimator was substantially more precise than the simple difference estimator.
+|Journal||Environmental Monitoring and Assessment|
+|Publication status||Published - 2003|
+- Difference estimator
+- Found data
+- Preferential sampling
+- Regression estimator
+- Spatial mean

@@ -1,0 +1,20 @@
+|Welcome to the|
+|Australian Airborne Cal/val Experiment for SMOS|
+Google Earth (KML file)
+AVNIR-2 PLMR data
+Thermal Infrared data
+Multi-Spectral data Monitoring stations
+Soil moisture sampling
+Vegetation sampling Campaign shapefiles
+Soil water capacity
+Soil texture analysis AACES homepage
+Landsat-5Source: http://www.nasa.gov, access on 28th, Apr. 2010
+Landsat-7Source: http://science.hq.nasa.gov, access on 28th, Apr. 2010
+Landsat satellites collect data in the visible (30m), panchromatic (15m), mid-infrared (30m) and thermal infrared (60 to 120m) regions of the electromagnetic spectrum. These data have an approximately 16 day repeat cycle with a 10:00am equator crossing time. This data is particularly valuable for land cover and vegetation parameter mapping. Due to an instrument malfunction onboard Landsat 7 in May 2003, the Enhanced Thematic Mapper Plus (ETM+) is now only able to provide useful image data within the central ~20km of the swath. As Landsat 5 Thematic Mapper is still in operation, it is being increasingly relied upon. The approximate scene size is 170 × 183km. The Landsat coverage for the Murrumbidgee Catchment is summarised below. While there is no budget allocation for purchasing Landsat data, it is useful to keep these overpasses in mind for future reference. Landsat data can be downloaded from NASA.
+Landsat-5 overpass time
+Landsat-5 coverage for the Murrumbidgee Catchment during the AACES-2 campaign has been calculated by a Fortran program based on NORAD data for 29th, Aug. 2010, and is summarized in the table below. Date and time are in UTC. Aircraft flights were assumed to be conducted at 7:45 for descending overpass and 20:35 for ascending overpass.
+Landsat-7 overpass time
+Landsat-7 coverage for the Murrumbidgee Catchment during the first AACES campaign have been determined from a Fortran program based on NORAD data for 29th, Aug. 2010, and are summarized in the table below. The date and time are UTC time. Aircraft flights were assumed to be conducted at 7:45 for descending overpass and 20:35 for ascending overpass.
+Created: September 2010|
+Last Modified: September 2010
+Maintainer: YE Nan, Ye.Nan@monash.edu

@@ -1,0 +1,7 @@
+As a part of our project we want to publish instructions of how to develop on the Beagle Board with Android. Our guide consits of three essential parts.
+- Platform Porting, in here we explain what customisations we made to the Android source to run it on the Beagle Board.
+Kernel, Android adjustments, etc.
+- Developing on an Embedded System, in here we discuss how to set up the cross-compiling toolchain and give instructions of how to speed up the development process of applications.
+Folder structure, NFS for Root File System, etc.
+- Programm for Android the native way, this section contains information about how to build native applications as well as how to compile and run shared / static C-Libraries.
+Libusb, lsusb, etc.

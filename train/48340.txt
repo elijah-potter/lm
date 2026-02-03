@@ -1,0 +1,17 @@
+A tiling of regular hexagons can be laid out on a rectangular grid:
+Via the Pythagorean Theorem, the relationship between horizontal and vertical grid line spacing is:
+How should coordinates be assigned to the hexagons in the grid? The first thing many people think of is to try to approximate the rows and columns of a rectangular grid:
+Transforming the isomorphic triangle grid to rectangular form shows the problem with this, though:
+Because the diagonals between adjacent hexes run in different directions on alternate rows, working with the hex grid is more complicated. For instance, a pathfinding routine needs to know the coordinates of each hex's neighbors. With this layout it is necessary to see if the hex is on an even row or an odd row, and generate a different set of neighbor coordinates for each.
+A better way to number hexes is to keep both horizontal and “vertical” axes straight:
+Now, the transformation between the hexagonal layout and the square layout preserves all straight lines, and each hex looks like every other:
+It's fairly easy to convert back and forth between the two coordinate systems if the first one is desired from an interface standpoint.
+Converting from plane coordinates to hex coordinates
+How can a position in the continuous Cartesian plane be converted into hex grid coordinates? Examine this affine transformation:
+Four of each hex's edges now line up with the unit grid, and the two remaining diagonal edges are between hexes with the same X coordinate. Thus, every point within a square on the unit grid corresponds to the same X coordinate in the hex grid. After transforming the input point, round each component down (the floor() function in C) to get the integer coordinates of a unit grid square. From these unit grid square coordinates compute the hex X coordinate by summing the grid square X and Y, adding 2 (or whatever offset is necessary given your hex layout), and integer-dividing by 3, since the band of squares that correspond to the same hex X coordinate is 3 grid squares wide. In equation form:
+Again, determine integer grid square coordinates by rounding down the transformed point's coordinates, then sum them, add 2, and integer-divide by 3 to yield the hex's Y coordinate.
+To build a transformation matrix, think about what you want to come out when you put in (1, 0) and (0, 1). (1, 0) becomes (A, C) with our equations, while (0, 1) becomes (B, D).
+Given the signed offset of a hex in x and y (in integer grid coordinates), it's easy to compute the number of steps needed to move to it. The formula is slightly different depending on which direction the grid's diagonals go.
+If (1, 0) and (0, 1) are adjacent in the hex grid:
+If (0, 0) and (1, 1) are adjacent in the hex grid:
+Amit Patel has an excellent site covering lots of game-related topics, including a section on hex grids.

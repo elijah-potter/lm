@@ -1,0 +1,75 @@
+Common Misconceptions About Machine Learning
+Common Misconceptions About Machine Learning, what is the relationship between machine learning and statistics?
+Are they distinct fields in their own right?
+What role do statistics play in machine learning?
+Is the meteoric ascent of machine learning in recent decades indicative of some flaws in statistical theory’s basics when applied to real-world problems?
+While the subject is broad, we will highlight five common misconceptions regarding machine learning using statistics in this article.
+Analysis of Variance in R: 3 Steps »
+Here are some of the common misunderstandings:
+- Misconception 1: “Statistical models are not the same as machine learning models.”
+- Misconception 2: “Machine learning is training a model with a large population dataset, whereas statistics entails generating statistical conclusions about the population using sample data.”
+- Misconception 3: “Data scientists don’t need a deep understanding of statistics.”
+- Misconception 4: “In comparison to statistical models, machine learning models learn over time.”
+- Misconception 4: “Is there a difference between statistical and machine learning models?”.
+The truth is that they aren’t all that dissimilar, at least when it comes to frequently used statistical models.
+Consider linear regression and classification techniques. Are these machine learning models based on a distinct methodology than statistics tools like SAS, SPSS, and others?
+NO is the answer. Machine learning models use the same statistical models and make the same assumptions as traditional models.
+For example, the scikit-learn library’s simple linear regression uses the same least-squares optimization strategy as statistical packages, based on the same underlying assumptions as statistical packages, such as feature independence.
+However, it’s worth noting that numerical approaches that work well with large datasets, such as Stochastic Gradient Descent algorithms, are also included in machine learning models.
+This is a significant distinction from standard statistical software. If you want to perform linear regression using the stochastic gradient descent approach, use the SGDRegressor or SGDClassifier classes from the scikit-learn Python library.
+Clustering Example Step-by-Step Methods in R »
+Apart from that, it is a mistake to believe that machine learning models require a large dataset, and thus they must be utilizing a different type of solver than statistical models, which only require a sample dataset.
+In fact, the astonishing truth is that machine learning models such as linear regression will operate perfectly well with only a small sample set of data!!
+Try utilizing a training set of only 30% of your data from any publicly available dataset. The accuracy gained with 80 percent training data will be in the region of +/2 percent.
+You might wonder, if machine learning models can perform well with a short dataset, what about the assumptions that are required for linear regression in statistical models.
+Linearity, multivariate normality, no multi-collinearity, no auto-correlation, and homoscedasticity are all assumptions required by statistical models.
+Are these assumptions not essential for regression machine learning algorithms?
+The truth is that if you feed both models a dataset while ignoring the assumptions, they will produce some results. However, the accuracy of the outcomes is determined by the assumptions made in the algorithms or statistical models.
+If we apply the same methods to solve linear equations, and if the assumptions aren’t valid or essential for machine learning, then statistical models aren’t either!
+Instead of sampling in statistical models, how about employing ‘training and testing datasets in machine learning?
+Any of the models involved do not need that segregate data into training and test datasets. If the model works in a statistical package like SPSS with a small sample, it should also work in Python’s machine learning library! As long as the solvers in SPSS or other statistical packages and the machine learning exercise are the same, the accuracy will be the same.
+ML entails using a large dataset to train a model.
+What is the purpose of this training?
+Is it not training if we utilize a sample size of 30? It’s only a matter of terminology. It only applies to some artificial intelligence machine learning methods where the larger the dataset, the higher the accuracy.
+This is not the case with traditional problems such as linear regression. The accuracy of these does not improve with a larger dataset.
+We can’t be confident of the true features of the population because statistical models use a tiny number of samples.
+As a result, we use the central limit theorem to deduce population-based sample statistics. We essentially assess the ‘statistical validity of a model built with sample data.
+Isn’t it necessary to assess the statistical validity of the machine learning model results?
+Assume we’re looking at the link between two variables using linear regression and machine learning.
+Finally, we have some coefficients and an intercept for the output. We use the test dataset to test the model and receive the same results as we did with the training dataset.
+However, how important are these values?
+Just because we use the full population doesn’t mean we can’t draw any conclusions about the model’s validity.
+The validity of the model is determined by statistics such as the coefficient of determination, p-value, and others, which do not change with the size of the training dataset because they are dependent on the nature of variables, their probability distribution, and interdependence, among other things.
+Regardless of the size of the training dataset, these features stay the same.
+Bootstrap Confidence Interval R »
+Let’s look at another scenario. Let’s say we’re working with a dataset with a lot of features and we see there’s a lot of potential for multicollinearity between the independent variables.
+If there is multicollinearity, the regression model will fail even if you use the complete dataset. In other words, using the complete population dataset in machine learning against sample data in statistical packages does not solve multicollinearity concerns in any way.
+We might use principal component analysis to reduce dimensionality. We’ll need to see if PCA can be employed and, if so, how many components should be chosen.
+This necessitates familiarity with Bartlett’s sphericity test. For the chi-square test, we can extract the p-value using Python, but how do we evaluate this figure?
+If the test says PCA can be used, we’ll need a scree plot, Kaiser’s rule, and other linear algebra concepts like SVD (a condition index derived from SVD can indicate the need for PCA) and eigenvectors, which necessitates not only a knowledge of statistical inference methods but also a knowledge of linear algebra concepts like SVD (a condition index derived from SVD can suggest the need for PCA) and eigen
+As a result, data scientists must also have a strong understanding of statistics.
+A true data scientist should be knowledgeable in all of the following areas:
+1. Information about statistics
+2: Linear Algebra
+3. Calculus and advanced mathematics
+4. Libraries for Machine Learning
+5. Python or a similar programming language
+6. Understanding of SQL, ETL tools, and cloud-based ML pipelines
+Models of machine learning gain knowledge over time.
+It is true just for certain of the algorithms dealing with a cognitive domain such as images, speech, audio, visuals, and so on, as many in the data science field are well aware.
+When it comes to quantitative models like regression, the results are received once the model is established. The model will remain the same unless we retrain it.
+However, because the model is supposed to be constructed using the population dataset, any additional data should only be expected to imitate the training dataset (i.e. test dataset (and production data) and should have the same properties as the training dataset).
+As a result, we won’t be able to alter the model based on the production data. As a result, the machine learning model does not evolve, and there is no learning involved.
+Machine learning methods do not allow machines to learn over time, which is a misnomer.
+However, in the case of AI-related techniques, where the model’s performance grows with the quantity of the training dataset, this assertion holds true.
+K Nearest Neighbor Algorithm in Machine Learning »
+Machine Learning vs Statistical Packages: What Are the Benefits?
+There are several big and major advantages of machine learning. It has expanded enormously as a separate field throughout the years to aid in real-world problem solving and decision making.
+The main advantage of machine learning libraries over statistics packages is the application of such models to real-world situations for those problems where the algorithms or approaches in both the machine learning and statistical models are the same.
+Statistical packages were previously primarily utilized for historical transaction data predictive analytics and business intelligence.
+Machine learning models, on the other hand, now make it easier to use these models in a real-time production setting to solve real-world problems.
+Rather than just acquiring some analytical insights, apps can be constructed utilizing machine learning libraries that can be connected with other business applications to make real-time and autonomous decision-making rather than just getting some statistical insights.
+Count Observations by Group in R – Data Science Tutorials
+Machine learning libraries written in programming languages such as Python may handle a wide range of data, including unstructured quantitative data as well as data such as photographs, photos, and sounds, whereas statistical analytical packages deal with historical and organized transactional data.
+Some commonly held beliefs and ideas about machine learning do not apply equally to all types of machine learning models.
+For example, certain machine learning models perform better with larger datasets and provide more accuracy, while others (which are often used in statistical packages) can perform well even with tiny datasets.

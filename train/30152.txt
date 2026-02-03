@@ -1,0 +1,14 @@
+The orbital velocity of the earth makes a dramatic difference in the kinetic energy of comet impacts. For a comet falling from infinity toward the sun at earth’s orbit, the ratio of kinetic energy between comets hitting earth head-on in its orbit around the sun and those catching up with earth is a factor of 19, but most fall somewhere in between. (This calculation factors in earth’s gravity.)
+Earth escape velocity: 11.2 km/s
+Earth, orbital velocity: 29.8 km/s
+Body falling from infinity towards the sun to a distance of 1 AU: 42.2 km/s (calculated from gravitational potential energy and checked by comparing velocity falling from infinity to the diameter of the sun with the escape velocity of the sun)
+Running into the earth head on in its orbit:
+42.2 km/s + 29.78 km/s = 71.98 km/s
+71.98 * 71.98 + 11.19 * 11.19 = 5181.12 + 125.21 = 5306.33 km^2/s^2 (specific energy)
+Catching up with earth in its orbit:
+42.2 km/s – 29.78 km/s = 12.42 km/s
+12.42 * 12.42 + 11.19 * 11.19 = 154.26 + 125.21 = 279.47 km^2/s^2 (specific energy)
+Specific kinetic energy ratio between hitting the earth head-on and catching up with earth in its orbit:
+5306.33 / 279.47 = 18.99
+Dwarf comets having fallen through Proxima’s 3:1 ‘resonant nursery’ resonance will orbit CCW in the Oort cloud like the planets. If the solar-system barycenter (SS-barycenter) acts as an aphelia attractor that pins Oort cloud orbits in its vicinity to the SS-barycenter, then the 73.6 Myr orbit of the Sun around the SS-barycenter will align these pinned orbits with the Galactic core twice per orbit, causing the tidal effect of the Galactic core to gradually reduce their perihelia by extracting angular momentum from the orbits until they dip into the planetary realm of the inner solar system. And the dwarf planets most likely to collide with Earth will have perihelia on the order of 1 AU. These objects would catch up with Earth in its CCW orbit and impact at almost the lowest possible speed.
+Finally, comet ice may undergo endothermic chemical reactions (ECRs) in comet impacts, mostly clamping the impact shock-wave pressure below the melting point of rock.

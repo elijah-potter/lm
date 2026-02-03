@@ -1,0 +1,17 @@
+in which A is the liquid-phase reactant, G is the dissolving gas, P is the product, and BP the byproduct (19). This could be a generic network corresponding to a hydrogenation and overhydrogenation.
+A typical result of our study is shown in Figure 3, which plots the selectivity Y
+toward the reaction as a function of the bubble Reynolds number. The initial decrease of Y
+coincides with the onset of recirculation. Recirculation leads to a significantly increased residence time of the product
+P in the wake and reduces the concentration of the reactant A in the wake. Effectively, the recirculating pattern in the wake acts as a barrier for reactant A, which cannot enter the wake. Thus, because the concentration of A is low, a larger fraction of the gas G reacts with P to form the secondary product BP, leading to a decrease of the selectivity. At Reynolds numbers greater than 52, vortex shedding
+occurs, which causes a sudden increase of selectivity (see Figure 3). Once vortex shedding occurs, patches of the dissolved
+gas G (and product P) are quickly convected away from the bubble into regions rich in A, thus leading to significantly higher selectivities toward P. In effect, the transition from a closed wake to an open wake qualitatively changes the mixing behavior, which can lead to
+a large change in the reaction selectivity.
+This study involves a similar reaction network to prove our computational results experimentally. For safety reasons, however,
+a liquid–liquid system was chosen in favor of a gas–liquid reaction.
+Reaction and chemicals. To verify the computationally predicted effects previously published (19–22), an extensive series of experiments was performed.
+The iodination of l-tyrosine to form 3-iodo-l-tyrosine and 3,5-diiodo-l-tyrosine was studied in a liquid–liquid system. This is a competitive-consecutive second-order reaction, previously studied
+in a single liquid phase by Paul and Treybal (11), that occurs naturally within the human body. The compound l-tyrosine aids in the production of thyroid hormones by acting as a carrier and allowing iodine to enter the thyroid cells.
+Figure 4 shows the reaction system.
+We purchased 98% pure l-tyrosine from Sigma Aldrich (St. Louis, MO). Samples of 3-iodo-l-tyrosine and 3,5-diiodo-l-tyrosine were also purchased from Sigma Aldrich for use as standards for high-performance liquid chromatography (HPLC). All
+other chemicals (sodium hydroxide, potassium iodide, iodine, sodium phosphate dibasic, sodium phosphate tribasic dodecahydrate,
+methylene chloride, and glycerin) were purchased from either Fisher Scientific or Sigma Aldrich and were a minimum of 98%

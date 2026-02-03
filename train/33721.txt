@@ -1,0 +1,30 @@
+Here is the quick facts and comparison of Ext3 and Ext4 File systems: Hope this helps..!
+Ext3 stands for third extended file system.
+Ext4 stands for fourth extended file system.
+It was introduced in 2001.
+It was introduced in 2008.
+Supports from Linux Kernel 2.4.15
+Supports from Linux Kernel 2.6.19
+Maximum individual file size supported
+Maximum individual file size can be from 16 GB to 2 TB
+Maximum individual file size can be from 16 GB to 16 TB
+Maximum file system size supported
+Overall ext3 file system size can be from 2 TB to 32 TB
+Overall maximum ext4 file system size is 1 EB (exabyte).
+1 EB = 1024 PB (petabyte).
+1 PB = 1024 TB (terabyte).
+Maximum sub directories
+Directory can contain a maximum of 32,000 subdirectories
+Directory can contain a maximum of 64,000 subdirectories
+The main benefit of ext3 is that it allows journaling.
+Journaling has a dedicated area in the file system, where all the changes are tracked. When the system crashes, the possibility of file system corruption is less because of journaling.
+There are three types of journaling available in ext3 file system.
+Journal – Metadata and content are saved in the journal.
+Ordered – Only metadata is saved in the journal. Metadata are journaled only after writing the content to disk. This is the default.
+Writeback – Only metadata is saved in the journal. Metadata might be journaled either before or after the content is written to the disk.
+In ext4, it supports journaling and also has the option of turning the journaling feature “off”.
+Several other new features are introduced in ext4: multi block allocation, delayed allocation, Journal checksum, fast fsck and etc.
+All you need to know is that these new features have improved the performance and reliability of the file system when compared to ext3.
+Supports huge individual file size and overall file system size.
+You convert ext2 to ext3 without having any data loss
+You can also mount an existing ext3 fs as ext4 fs (without having to upgrade it).

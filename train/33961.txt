@@ -1,0 +1,11 @@
+One of the most common circuits in the market is water level indicator. But most of these circuit have a fault like being corrosion of metal electrodes due to electrolytic reaction. This fault can be minimized effectively by using alternating current instead of direct current supply. Here we design and verify a circuit called electrolysis proof water level indicator using a COMOS IC which has profitably exploited the normally unused property of CMOS devices.
+Description of Electrolysis Proof Water Water Level Indicator Circuit:
+The water level indicator circuit is build around a hex inverter buffer CMOS IC. The water level indicator circuit has six level indications because it contains six independent inverter units. When the water levels with the sensor element in output goes high making the respective LED ‘ON’. On further rise in the water level more LEDs will get switched ‘ON’ in ascending order.
+The value of resistance R in the water level indicator circuit is found to be around 12MΩ in the case of tube of 1.2 meter depth and equally spaced discs as shown in circuit diagram of water level indicator. Its value may be changed considerably, depending on the minerals and other chemical contents of water, the spacing between the sensors, position of the sensors and their surface area. The value of R can be selected to give the water level indicator circuit any desired sensitivity up to a maximum of about 20 MΩ.
+Sensor elements can be inserted in screw capped glass tube of 2cm diameter and length equal to the depth of the water tank which is open at the base end. Sensitivity of water level indicator circuit is relatively independent of the lead length. All the seven leads have to be insulated properly to avoid possible short-circuit.
+PARTS LIST OF WATER LEVEL INDICATOR CIRCUIT
+|Resistor (all ¼-watt, ± 5% Carbon)|
+|R1 = 200 KΩ, ½ WR2 = 100 Ω, 1WR3 – R8 = 220 Ω, ½ or ¼ WR9 – R14 = See text|
+|C1 – C6 = 1 µF/25V electrolytic capacitors|
+|IC1 = CD4049ZD1 – ZD2 = 1Z5.1 or equivalent (5.1V, 1W) zener diodeD1 – D6 = DR25 or DR50 diodesD7 = 1N4001 or equivalent diodeLED1 = LED6 = RED LEDs|
+|X1 = 230V to 9V mains transformer, with 200mA secondarySW1 = 250V AC SPDT SwitchNEON LampSensor Elements|

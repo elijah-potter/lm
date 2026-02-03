@@ -1,0 +1,67 @@
+“Currently, cyber attacks on connected medical devices are increasing, and compared with hacking attacks on medical systems, such attacks are even more severe. As the “Harvard Business Review” (HBR) pointed out: “Although hackers attacking medical systems are scary, hackers attacking medical devices may be even worse.” In addition, Wired magazine wrote: “Medical devices are the next security Nightmare.”
+Currently, cyber attacks on connected medical devices are increasing, and compared with hacking attacks on medical systems, such attacks are even more severe. As the “Harvard Business Review” (HBR) pointed out: “Although hackers attacking medical systems are scary, hackers attacking medical devices may be even worse.” In addition, Wired magazine wrote: “Medical devices are the next security Nightmare.”
+In order to ensure that the safety of medical equipment is foolproof, it must meet the requirements of the Food and Drug Administration (FDA) and other safety standards. But when it comes to designing medical wearables and Internet of Things (IoT) devices, it’s much harder to do than it sounds.
+The safety of medical wearable devices may be more challenging
+The security challenges of fixed-position endpoint devices are very difficult. However, the security challenge of wearable devices is more difficult. The following are the main reasons:
+The device may not be the correct device
+The wearer can walk around and be anywhere
+The device can also be used by the wrong person
+However, we can take security measures to determine whether the device is authorized to send data. Take Apple Watch as an example. In addition to the fall detection function, the Apple Watch API requires it to perform the following operations:
+・ Let users know that they need to grant this permission on the iPhone
+・ Display the health authorization dialog to the user on the iPhone
+・ Make a call after completing the authorization on the iPhone
+・ Process iPhone authorization results on Apple Watch
+In addition to knowing whether the device is authorized to send data, it is also necessary to determine whether the device is spoofed, whether other devices are sending data, and whether the device is sending correct data. Also check to see whether the device is sending data accurately and whether the time to obtain the data is correct.
+Medical device safety regulations
+To meet FDA and other safety requirements, the first step is to know these requirements. To avoid embarrassing and costly security breaches, the following digital health requirements need to be met:
+FDA Recommendation C In the 2018 draft guidance, the FDA classified cybersecurity risks into level 1 (higher cybersecurity risks) and level 2 (standard cybersecurity risks). Level 1 has two conditions: (i) the device is connected to other products or networks (wired or wireless), and (ii) network security incidents may directly cause harm to multiple patients. The guidelines recommend the following security measures: authentication, encryption, identification, authorization, and correction. Although the guidelines are not mandatory, they need to be taken seriously. As of mid-2020, the guideline is still a draft, but may be officially adopted at any time. It is recommended to use this guide for new equipment. It is similar to the 2014 guidelines that appeared earlier and is still valid, but in more detail.
+NIST Cyber Security Framework C FDA recommendations are based on the NIST Cyber Security Framework. The level 1 recommendations are as follows:
+Level 1 design also recommends implementation of flexible measures, such as encryption verification and authentication, security configuration, and network security BOM (CBOM).
+The level 2 recommendations are the same, but if some items are not appropriate for risk reasons, they can be ignored.
+Only trusted users and devices can gain access, and security-critical commands must be authenticated and authorized to prevent unauthorized use.
+Maintain the integrity of code, data, and execution to ensure that the content is credible.
+Maintain data confidentiality.
+When designing a device, it can detect network security threats in a timely manner.
+Design equipment to respond to potential cybersecurity incidents and control their impact.
+The equipment is designed so that it can restore functions or services that have been damaged due to network security incidents.
+HIPAA (Patient Data Privacy) C The Health Insurance Portability and Accountability Act (HIPAA) is independent of security. However, to meet HIPAA, security measures must be in place. The requirements are as follows:
+Ensure that safety design is user-centric
+Realize end-to-end security from the device to the database and physical access control of the database
+If the transmitted data does not have a patient ID, no privacy issues are involved. Match the code to the patient’s name in the database.
+CE safety requirements C CE requirements are not as specific as FDA guidelines, but have similarities: equipment must be safe and effective. One important point is about data protection (see GDPR), which is stricter than the US patient data requirements.
+Applicable documents include Annex I of the Medical Device Regulations (MDR), EN62304 on software, and EN14971 on hazard analysis. The required specifications are as follows:
+Specification 1: Safety management
+Specification 2: Safety requirements specification
+Specification 3: Safety design
+Specification 4: Security Implementation
+Specification 5: Safety Verification and Confirmation Test
+Specification 6: Management of safety-related issues
+Specification 7: Security Update Management
+Specification 8: Safety Guidelines-Documentation
+For the work environment involving IT network characteristics and IT security measures that cannot be achieved through product design, the manufacturer is responsible for determining the corresponding minimum requirements. This means that even if the manufacturer does not provide the network, it is also responsible for providing relevant information and guiding users to operate the equipment in a secure network.
+Adopt safe design methods
+Medical device safety standards are critical to the design of medical IoT and wearable devices, but meeting these requirements is not easy. To meet safety requirements, the only way is to adopt safety design methods. This method has many advantages, including the following:
+Eliminate security vulnerabilities effectively and early
+Built-in rather than added security
+Reduce liability risks
+More flexible system
+lower the cost
+How to achieve a safe design
+First, understand the regulatory requirements. Determine product requirements before starting product design. Incorporate safety into product design and conduct tests to ensure that all requirements are met.
+Understanding and determining regulatory requirements is only half the battle
+When designing medical equipment, the following elements should also be considered:
+・Technical choice. Is the equipment built on proven technology?
+Technical weakness. Are there any known vulnerabilities in the technology platform?
+· system design. Where are the risks in the system? The vulnerability of static data is different from the vulnerability of dynamic data.
+· Risk assessment. The overall risk should be broken down into specific projects, and each project should contain the risks and the required response methods.
+・ Password technology. What level of password is required? If the level is too high, more power consumption and time will be required.
+・ Encryption. Encryption is more than just protecting data with encryption algorithms. The management of security keys is more important.
+Threat detection. How to detect threats before they cause damage?
+Penetration testing. Hire civilized hackers to try to attack the system.
+· Developer. Are they involved in threat modeling? Do they understand the safety design specifications of the design organization?
+Maintainability. Are there requirements for maintainability and its measurement tools?
+・ Privacy design. Does the design method include privacy considerations (HIPAA and GDPR)?
+・ Further improvement. How to achieve continuous improvement and equipment development? In the product life cycle, security will become more and more challenging.
+In order to successfully implement all these measures, in-house IoT engineers or reliable third-party consultants must be hired. For example, Voler was commissioned to develop XEEDA wallet-the world’s first cryptocurrency hardware wallet for smartphones. Voler has implemented a security design at every step of product development, and uses multi-factor authentication, built-in biometric security features and other key security measures to achieve a very high level of security (EAL level 5). Voler completed this challenging design on time and within budget.
+With the increasing number of network security and privacy issues in the healthcare field, security should become the top priority of design. The design must meet FDA, CE, and other safety requirements to ensure that the equipment is foolproof and avoid the costly and embarrassing consequences of safety breaches.
+The Links: LTM170E8-L01 EP1C12Q240C8N

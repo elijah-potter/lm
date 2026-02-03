@@ -1,0 +1,25 @@
+INSERT command is used to append or add a record to a database. A new record will be added at the end of the table every time INSERT command is used. We have to specify what are the fields to be filled while inserting the record, we can add records even without specifying the field names but we have to maintain the order of the field existed in the table and the the order of the data we are inserting. We have to take care of proper formatting of the data we are inserting to the table. We can't insert a string to a numeric field. So we have to format the data and apply the insert command. Here is one example of insert command.
+INSERT INTO table_name(field1,field2,field3,field4) values('value1','value2','value3','value4')
+Here the order of the fields need not be same as order in our MySQL table but the order we are specifying by saying the field names, that order we must maintain for values. We have to take care of the fields where we have given NOT NULL or any other such requirements. Any violation of the field structure will generate an error message.
+Note that it is always a good practice to use field name and value pairs while inserting records. If we specify only the value by maintaining the order of the fields there will be problem in future once a new field is added or removed from the table. So always write the query specifying field names and its values.
+Here are some sql commands that will create a table and then add three records to it by using insert command.
+CREATE TABLE t1 (id int(11) NOT NULL default '0',name1 varchar(10) NOT NULL default '') TYPE=MyISAM;
+I want 2 insert record in excelsheet thru oledb jet4.0 bt condiotion is no duplicate records
+Regalla Naresh Reddy
+I have 2 tables named as PMOCreationTable and FinanceTable.
+PMOCreationTable has one column named as InstanceID which is unique.
+I have the same column in the FinanceTable.
+FinanceTable also have some additional columns.
+So i want to copy the data of InstanceID column from PMOCreationTable to FinanceTable at the same time i want insert some values in to the FinanceTable.
+Means at the same time i need to get the one column data from other table and insert some values in to the table along with it.
+Can you provide me a solution for this. Its very important for me.
+You can update 2nd table but I don't thik you can use another insert command in one go.
+i need help..i want to populate my date table according to the days based on 2006 year calendar. i will start from 1 until 365 days and 1 jan 2006 falls on Sunday. How to insert all the days starts from Sunday (1 jan 2006) to Saturday ( 7 jan 2006) and after that the day will start over again with sunday (8 jan 2006)? this should occur until the last day of 2006 which is 31/12/2006. thanks
+First you populate one column with incremental date for all 365 days. Then use the dayofweek function to update/add another field with weekdays. There can be a better way of doing this also.
+how to insert values in table multiple times using a single insert command
+hello sir ..
+i want to perform a opertion like this
+when i click show button all records are to be showd and same update ,insert in etc.... in php mysql
+How to insert records into 2 or more tables using only one query?
+i want to perform operation like this
+i want to view GROUP BY date and VIEW all under that date

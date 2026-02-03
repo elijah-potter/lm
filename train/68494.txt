@@ -1,0 +1,22 @@
+Specifies that an object of the type can be constructed into uninitialized storage from an rvalue of that type by a given allocator.
+MoveInsertable into the container
+value_type is identical to
+T if, given.
+| ||an allocator type|
+| || an lvalue of type
+| || the pointer of type
+| || rvalue expression of type
+X::allocator_type is identical to
+the following expression is well-formed:
+std::allocator_traits<A>::construct(m, p, rv);
+And after evaluation, the value of
+*p is equivalent to the value formerly held by
+rv remains valid, but is in an unspecified state.).
+X is not allocator-aware, the term is defined as if
+std::allocator<T>, except that no allocator object needs to be created, and user-defined specializations of
+std::allocator are not instantiated.
+std::allocator<T>, then this will call placement-new, as by
+std::allocator<T> or a similar allocator is used, a class does not have to implement a move constructor to satisfy this type requirement: a copy constructor that takes a
+const T& argument can bind rvalue expressions. If a MoveInsertable class implements a move constructor, it may also implement move semantics to take advantage of the fact that the value of
+rv after construction is unspecified.
+Licensed under the Creative Commons Attribution-ShareAlike Unported License v3.0.

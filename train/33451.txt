@@ -1,0 +1,24 @@
+Table Of Content
+Brush Up Basics
+Let a + ib be a complex number whose logarithm is to be found.
+Step 1: Convert the given complex number, into polar form.
+Where, Amplitude is
+and argument is
+Step 2: Use Euler’s Theorem to rewrite complex number in polar form to exponential form.
+There r (cos θ + i sin θ) is written as reiθ. This means that
+a+ ib = reiθ
+Step 3: Take logarithm of both sides we get.
+The above results can be expressed in terms of modulus and argument of z.
+Examples to clear it all
+Find the logarithm of 1 + i?
+Step 1: Convert 1 + i into polar form
+Step 2: Use Euler’s Theorem to rewrite complex number
+Step 3: Take logarithm of both sides
+Find the logarithm of iota, i
+Step 1: Convert i into polar form
+Step 2: Rewrite iota into exponential form
+Step 3: Take logarithm of both sides.
+Observations to give you insight
+Why should we convert a complex number to its exponential form? The answer is simple: Exponentials are also known as anti-logarithms. It requires no brilliance that taking log of anti-log gives us the log of that number.
+The logarithm of a complex number can be a real number only if
+Argument of a complex number can only be zero if its imaginary part, b is zero.

@@ -1,0 +1,7 @@
+Doppler cooling limit
+|This article does not cite any references or sources. (December 2009)|
+When a photon is absorbed by an atom moving in the opposite direction, its velocity is decreased according to the laws of momentum conservation. Accordingly, when a photon is emitted by this excited atom, there is an extra momentum added to the atom. But since emission is non-directional, this effect "averages" out, and on a time average, there is just a little increase in the atom's momentum due to emission. As the transitions used for Doppler cooling have broad natural linewidths , this sets the lower limit to the temperature of the atoms after cooling to be:
+where is the Boltzmann's constant and is Planck's constant. This is usually much higher than the recoil temperature, which is the temperature associated with the momentum gain from the spontaneous emission of a photon.
+The term Doppler arises from the fact that the Doppler effect, which provides a velocity dependence of the absorption rate and thus the light force, is an essential ingredient of the Doppler cooling mechanism.
+Temperatures well below the Doppler limit have been achieved with various laser cooling methods, including Sisyphus cooling, which allows to approach the lower so-called recoil limit.
+|This thermodynamics-related article is a stub. You can help Wikipedia by expanding it.|

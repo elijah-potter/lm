@@ -1,0 +1,18 @@
+Intro to C programming language
+532 students 12 messages
+Course updated 30 December 2022
+Included in the course
+8 lessons (video or text)
+Assistance in Discussions on the website
+Brian Kernighan, one of the authors of a classic textbook wrote: «C is a razor sharp tool, with which one can create an elegant and efficient program or a bloody mess.» This introductory course is for absolute beginners in programming. It will help you understand the main concepts of the popular programming language.
+First program in CWrite, compile and run our first program.
+Variables and loops in CTo learn about variables and loops in C and to write a somewhat more useful program.
+Float in CTo improve our temperature conversion program by using float insted of int.
+For loop in CTo learn about another type of loops in C and rewrite the temperature conversion program so that it uses for instead of while.
+Functions in CTo learn about functions, create our own function and call it.
+if/else conditionLearn about conditions and complete a classical exercise called Fizz-Buzz.
+Switch instead of if/elseTo learn to use another method of checking conditions: switch.
+Arrays in CExplore the data type called "array".
+Additional resourcesSome materials the Hexlet team have picked up. This will give you a more in-depth understanding of the topic
+Robert Kuznetsov 06 February 2021
+Many thanks for this course!!!

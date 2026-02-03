@@ -1,0 +1,7 @@
+SISD - SIMD - MISD - MIMD
+Posted on 2004-09-02
+reading a book (Introduction to Parallel Processing Algorithms and Architectures) I came across some words (SISD - SIMD - MISD - MIMD - GMMP - GMSV - DMSV - DMMP) which are partially explained,but I don't entirely understand it.
+What is ment by:
+* SINGLE/MULTIPLE INSTRUCTION -> what is the "instruction", how can I imagine me an "instruction" ??
+* SINGLE/MULTIPLE DATA -> same question but with the word "data" (I know of course what the "classical" meaning of "data" is , but I don't think you can use that meaning here.).
+Thanks in advance

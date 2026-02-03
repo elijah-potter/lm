@@ -1,0 +1,84 @@
+Blender 3D: Noob to Pro/Advanced Tutorials/Python Scripting/Export scripts
+|Applicable Blender version: 2.4x.|
+This page is an update of a great tutorial originally built for blender 2.44.
+Blender is not just useful to create complete animations, but it's also a great modeller. You can build your complete 3D scene in Blender, and then export it to a useful format. In fact, you can use it for much more, for example I was using it as a level editor for a freeware 2D game someone else made. There was a short deadline for the game to be finished, and 2 weeks before that deadline, there still was no level editor for it. It had a custom ASCII level format, consisting of lists of materials, vertices, triangles and objects. So, remembering the Blender Python exporters, I volunteered to write an export script for Blender, so it could be used as level editor. And it worked out very well, Blender can be completely used as level editor for that game now.
+In this tutorial we'll learn how to write a simple Python export script for Blender. Without requiring previous Python knowledge, it will explain how to query the objects in your scene, and how to write them to a file. It will also demonstrate the usefulness of export scripts, by showing how you can process the data while exporting, so you can achieve things that would not work by using any other existing format.
+So, open Blender, make sure the default scene is loaded, and let's begin..
+Finding out about things in a scene
+Before we can export something, we must know what to export. One way to get this information is the Outliner window (SHIFT-F9). It will list all the things currently known to Blender. Now, we want the same information from a script. Click the editor selection button and from the popup menu choose Python Console.
+Now, you are ready for the big moment, you are about to execute the first Blender scripting command. Type this and hit RETURN (or you could type into the scripts window import Blender on the topmost line, then these lines below it, precede all the 'dir(x)' lines with print and choose file->Execute):
+As a result, you should see this:
+[bpy.data.objects["Camera"], bpy.data.objects["Cube"], bpy.data.objects["Lamp"]]
+Now, what just happened? The variable given to "list" in "list(bpy.data.objects)" consists of three words, separated by two dots. The dots separate different things. The first, bpy, means to use a function from the bpy module. data is a sub-module of Blender. And finally objects is an iterator of bpy.data. The list() function is used to loop through all data in bpy.data.objects and return that as a list of all available objects. In our case, this is a Camera, a Cube, and a Lamp.
+To get more information about an object, you can use the object name as a key in bpy.data.objects, and assign it to a variable, like this:
+camera = bpy.data.objects["Camera"] cube = bpy.data.objects["Cube"] lamp = bpy.data.objects["Lamp"]
+We just assigned the three objects to three variables, camera, cube and lamp. To see the contents of a variable, type just its name:
+Sometimes it's useful to use Python's dir() function to get more information about an object. For example
+will write the names of all functions and properties of the object. Quite a lot. But don't worry, soon you will know how to use all of them. You also may want to find out the type of something, which you can do like this:
+In this case, just typing "cube" already displays the type, but from within an actual script, you would use type(). Something else which can be useful is viewing the documentation of Python objects. To do so, use the help() function on a variable or object.
+This will print the documentation of the bpy.data.objects function we used. Of course, an easier way to view the documentation is the online HTML help. Click on Help->Python API Reference. Hopefully now your browser opens and displays the online documentation of the Blender Python API. If not, you should find it also here:
+In the documentation, click on bpy, then on data and you can see more examples. Using the documentation will get absolutely vital whenever you need to do something in a script not covered in a tutorial. And you will need to do so, else you wouldn't want to learn scripting at all.
+Another resource you will need, depending on how far you will go with scripting, is the Python reference:
+For this tutorial, maybe read the "Tutorial" section in the python docs, but you will understand everything without doing so.
+Now, let's try to find out more about our cube. Type:
+It will tell us that the cube really is a Mesh object in Blender. Look up "type" in the online docs. Since the variable cube holds an Object, and "type" is an attribute of that Object, click on Object. There you find its "type".
+Now that we know that the cube is a mesh, let's find out more about the mesh.
+cubedata = bpy.data["Cube"]
+'Note: in Blender 2.6.0 the script command actually looks like this, but the above is still valid: (Chronus001)
+'Note: in Blender 2.6.5 above is not valid any more
+cubedata = bpy.data.meshes['Cube']
+Every Blender object has data assigned to it, depending on the type. In the case of a mesh, the data are of type Mesh. In the documentation, go to the top again, and look for the Mesh module. It will contain documentation for the Mesh type. You can also try
+to get an idea about the available functions and properties. Try these:
+The first line will list the 8 vertices of the cube's mesh. The second line will list its 6 faces.
+To get a member out of a list, you specify the index in square brackets, starting with 0. So:
+v = cubedata.vertices
+This will assign the first vertex of the cube to the variable v. By now, you already know how to use dir() to get a list of possibly interesting things in v, find out about its type with type(), and where to look for the API documentation. It is in the module Blender/Mesh, when you click one "MVert" under "Classes".
+This will display the 3D coordinates of the first vertex. Now, what if we want to know the coordinates of all vertices? We could of course assign them all to a variable, but the real way to do this is using a looping constructs. There are numerous ways to do this, but one simple way looks like this:
+for v in cubedata.vertices: print(v.co)
+The for variable in list: construct assigns each element of the list to the variable in turn, and then executes the commands after the colon with the variable having the value of one particular list element. In a real script, you will have much more than a single command after the colon - so you would write them in the following lines.
+By now, you should know enough to try yourself at a real script in the next section.
+Creating a script
+You can write scripts either in an external text editor, or in Blender's built in text editor. Move to a panel you wish to change to be the text editor, click the editor select button and choose "text editor" (shortcut) SHIFT+F11. Click the + New button at the bottom. If you want, you can enable line numbers and syntax coloring with the buttons at the bottom. Create a new script with File → New, paste the code below into it, and save it. Or alternatively, paste the code below into a file, and open that file with File → Open in Blender. As name choose something with the extension .py, for example wikibooks.py. Put it into Blender's user scripts path.
+For different operating systems this is:
+- Linux: ~/.blender/scripts
+- Windows XP: C:\Program Files\Blender Foundation\Blender\.blender\scripts
+- Windows XP (alt): C:\Documents and Settings\USERNAME\Application Data\Blender Foundation\Blender\.blender\scripts
+- Windows Vista: C:\Users\USERNAME\AppData\Roaming\Blender Foundation\Blender\.blender\scripts
+- Mac OS X:
+- Under Mac OSX the path is actually hidden in the blender.app so to know the path you would have to know that the script folder is actually hidden in the blender.app itself. Assuming that Blender is in the applications directory the path would be "/Applications/blender/blender.app/Contents/MacOS/.blender/scripts" If you try to open the .app contents from the finder you will notice that .blender section of the path is not visible, while blender will still be able to navigate to this folder.
+- Right-click (or ctrl-click) the file "blender", and select "Show Package Contents" in the popup-menu. It will display all the hidden files under blender's folder, and select "scripts" folder inside it.
+- To see this folder from the OSX terminal use the ls -a command (lists all folders/files even hidden) in the MacOS folder of the listed path. It is probably a good idea to create an alias to the scripts folder in the "/Applications/blender-2.37a-OSX-10.3-powerpc" folder so that scripts can be easily manipulated through the finder. I know that its confusing that Blender should have its script folder buried inside the app but it is necessary to keep the app portable and not require an install.
+- A safer approach than the one above consists in keeping your scripts somewhere in your home folder: with this scheme, there is no risk of deleting your scripts when you upgrade your blender application, as they are not contained within its folder. A method that follows this principle is as follows: create a folder that will contain your scripts (or some of them) inside your own home directory; then, instead of putting your files directly in the .../.blender/scripts/ folder discussed above, simply add a link to your script directory in the .../.blender/scripts/ folder (for instance with the "ln -s" Unix command, or by doing "open /Applications/blender-2.37a-OSX-10.3-powerpc/blender.app/Contents/MacOS/.blender/scripts/" [adapted to your version of blender] and then creating a link through the Finder, with File->Make Alias). Blender will now find all the scripts that you put in your home directory: it will follow the link you created in its .../.blender/scripts/ folder and go to the corresponding folder in your own directory, and find all the python scripts you put there.
+#!BPY """ Name: 'Wikibooks' Blender: 259 Group: 'Export' Tooltip: 'Wikibooks sample exporter' """ import Blender import bpy def write(filename): out = open(filename, "w") sce= bpy.data.scenes.active for ob in sce.objects: out.write(ob.type + ": " + ob.name + "\n") out.close() Blender.Window.FileSelector(write, "Export")
+Now, go back into the scripts window, and in its menu, click Scripts → Update Menus. If you saved it into the right path, from now on there should be an entry "Wikibooks" in the File → Export menu. Try exporting any scene with it. It should open the file chooser dialog, and after you select a file and press the "Export" button, write a list of all objects in the scene into it. There will be one object per line, with the type, followed by a colon and the name.
+How does it work? If you look at the script, you probably already know. But just in case, let's look at the script line by line. The first line contains this:
+It tells Blender that this is a Blender script, and therefore it will consider it when scanning for scripts. Next simply follows a string, enclosed in triple quotation marks, so it can span multiple lines.
+""" Name: 'Wikibooks' Blender: 259 Group: 'Export' Tooltip: 'Wikibooks sample exporter' """
+It contains four items, which Blender uses to place the script into its menus. The name, group (submenu name), and tooltip, all enclosed in single quotes. And the Blender version this is for. Note the group name must be one of those predefined by Blender (check the submenus in its Scripts menu to see the valid names); if Blender doesn’t recognize the group name, the script will be put into the “Misc” submenu.
+import Blender import bpy
+Remember how we said all functions from the bpy module start with "Blender."? In the interactive shell, we could simply use them, but in a python script, all used modules must be declared with an import statement (if you want to directly use functions from the Blender module in a script, you can simply replace the import statement above with "from Blender import *": no "Blender." prefix is necessary any more; however, this slows down the loading of your script). So the above simply allows us to use the functions from the Blender module in our script.
+the bpy module is new and will replace Blender for data access.
+This defines a function in Python. The syntax is def name(parameters):. In our case, the name is "write", and we have one parameter, called "filename".
+out = open(filename, "w")
+Here we open a file for writing (the "w"), with the name passed to the function (filename). The python function "open" will open the file, and return a reference to it, which we store in the variable "out".
+sce= bpy.data.scenes.active for ob in sce.objects: out.write(ob.type + ": " + ob.name + "\n")
+These three lines are our real export script. You already know what the first line does - first we get the current scene, then get a list of all objects in that scene, the for loop is assigning each one in turn to the variable "ob". The second line writes to the file - first the type of the object, then the string ": ", then the name of the object, and finally a newline.
+This is where execution of the script starts. It is simply a call of a Blender function (look it up in the API docs), which opens the file selector. It will display an "Export" button, and when the user clicks it, our function "write" from above gets called and is passed the selected filename.
+This script isn't really very useful yet, but it shows the basics. You should now be able to e.g. also list all the materials in the scene. (Hint: They are just like objects, try to find them in the API docs.)
+In the next section, we will learn how to export additional information about objects to our text file.
+Exporting a Mesh
+Our export script lists the type and name of every object, but that's not very useful yet. If we want to load the exported data in another application, we need more. Let's try to export a mesh object in the OBJ format.
+The example below is a cube in the OBJ file format.
+v 1.000000 1.000000 -1.000000 v 1.000000 -1.000000 -1.000000 v -1.000000 -1.000000 -1.000000 v -1.000000 1.000000 -1.000000 v 1.000001 1.000000 1.000000 v 0.999999 -1.000000 1.000000 v -1.000000 -1.000000 1.000000 v -1.000000 1.000000 1.000000 f 1 2 3 4 f 5 8 7 6 f 1 5 6 2 f 2 6 7 3 f 3 7 8 4 f 5 1 4 8
+Here is a simple obj export script that exports a selected mesh object, used to export the OBJ file above.
+import Blender import bpy def write_obj(filepath): out = file(filepath, 'w') sce = bpy.data.scenes.active ob = sce.objects.active mesh = ob.getData(mesh=1) for vert in mesh.verts: out.write( 'v %f %f %f\n' % (vert.co.x, vert.co.y, vert.co.z) ) for face in mesh.faces: out.write('f') for vert in face.v: out.write( ' %i' % (vert.index + 1) ) out.write('\n') out.close() Blender.Window.FileSelector(write_obj, "Export")
+This script will export an OBJ file that can be read by many applications. Let's look at what's going on.
+sce = bpy.data.scenes.active ob = sce.objects.active
+Here we are getting the object you last selected in the current scene. This will raise an error if there are no selected objects, but its an easy way to test a new exporter.
+mesh = ob.getData(mesh=1)
+This gets the objects linked datablock. At the moment we don't know its a mesh, another case where error checking would need to be added.
+for vert in mesh.verts: out.write( 'v %f %f %f\n' % (vert.co.x, vert.co.y, vert.co.z) )
+Here we write a line for every vertex, using string formatting to replace the "%f" on the left, with the 3 values on the right.
+for face in mesh.faces: out.write('f') for vert in face.v: out.write( ' %i' % (vert.index + 1) ) out.write('\n')
+In the OBJ format each face references a number of vertex indices. For every face we have a line starting with "f", then loop through the vertices in the face. Just as mesh.verts are a list of all the vertices in a mesh, face.v is a list of verts in the face limited to 4 vertices maximum. (where mesh and face are arbitrary variable names assigned to Mesh and MFace objects) Every vertex writes its index on that same line with 1 added. This is because with the OBJ file format the first vertex is indexed at 1, whereas with Python and Blender the first item in a list is 0.
+A new line is written so the next face will start on a new line. - in python '\n' represents a new line when written to a file.

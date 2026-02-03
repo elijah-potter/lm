@@ -1,0 +1,17 @@
+The Objective : My goal was to formulate different algorithms so I can create an autonomous car. My first phase consisted of mainly constructing the actual car, and create the speed and steering control algorithms.
+I took a remote controlled car, removed the transmitter that had the remote capability and connected an array of infra-red sensors to a Phidgets interface kit.
+The servo and ESC were connected to a Phidgets advance servo controller. All the hardware was connected to a Tablet PC, running XP Pro, via USB cable.
+The algorithms that I formulated were written on Microsoft Visual Studios 2008.
+C# was chosen for the need of a high level programming language.
+The two main algorithms that I used were Speed Control and Path Prediction. I modified the standard Pure Pursuit algorithm to create a novel approach for my Path Prediction algorithm .
+These algorithms were used to control and test the car around a series of turns and curves in a customized track.
+A HP Laptop was used to track and remote control of the car.
+The laptop was connected to the car with Microsoft Remote Control, thru a wireless connection. In case of wireless failure or car erroneous behaviors, a E-Stop system was implemented to stop the vehicle immediately.
+The long and short distance sensors overlapped with each other so I had to install an opto-relay switching system, depending how far the car was from the wall.
+I began to test the capabilities of my autonomous car by initiating with straight paths followed by low degree left and right turns and increasing the degree of difficulty until I reached a sharp 180 degree turn.
+As the degree of difficulty increased, I adjusted my algorithms to accomplish a superior performance.
+The curvature and proximity of the wall had an effect on how the car will find its way around the track, but the steering needed to be proactive, adjusting the direction of the car before it arrived to the curve. Subsequent to adding a safe zone and distance calculation algorithms, my car was able to travel seamlessly around the track. After 2,000 lines of programming and, hours and hours of trial and error, I was continually successful at making the car go around the track autonomously.
+This project is to design of different algorithms to create an autonomous robotic vehicle.
+Science Fair Project done By Jessica A. Richeri
+<<Back To Topics Page...................................................................................>>Next Topic
+Related Projects : Choice Based on Past Knowledge ,Computational Analysis of the Topological Property ,Global Shock ,Honey Cluster Computing ,Image Compression ,Improving Elevator Scheduling Efficiency, Is the C or Assembly Programming Language Better ,Autonomous Robotic Vehicle ,Biometrics ,Biophysical Studies of Cytotoxic Effect

@@ -1,0 +1,5 @@
+Reverse Polish Notation
+reverse polish syntax
+(Or "Reverse Polish Notation", RPN) One of the possible orderings of functions and operands: in postfix notation the functions are preceded by all their operands. For example, what may normally be written as "1+2" becomes "1 2 +". Postfix notation is well suited for stack based architectures but modern compilers reduced this advantage considerably.
+The best-known language with postfix syntax is FORTH. Some Hewlett-Packard calculators use it, e.g. HP-25, HP-29C, HP-41C, HP-23SII.
+Compare: infix notation, prefix notation.

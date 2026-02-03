@@ -1,0 +1,8 @@
+The Volume Analysis operation computes analytic properties of the volumes, such as the gradient and curvature. This is done in the local space of the volume. These are a function of more than one voxel so are more difficult to compute inside a Volume VOP.
+Where possible, these operations occur in place and preserve the name. If new
+volumes have to be created, it is attempted to ensure they gain the
+.z style suffixes in their name attribute.
+The length is calculated by measuring the slope of increasing values. For example, if temperature rises faster over a shorter distance, it will create a bigger gradient. If temperature is a height field, then gradient length is how steep the hill is.
+This node currently only works with standard Houdini volumes. It does not work with VDBs.
+The volume primitives to be analyzed.
+The types of analysis that will be performed.

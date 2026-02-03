@@ -1,0 +1,5 @@
+Universal Disk Format
+(UDF) A CD-ROM file system standard that is required for DVD ROMs. UDF is the OSTA's replacement for the ISO 9660 file system used on CD-ROMs, but will be mostly used on DVD. DVD multimedia disks use UDF to contain MPEG audio and video streams.To read DVDs you need a DVD drive, the kernel driver for the drive, MPEG video support, and a UDF driver. DVDs containing both UDF filesystems and ISO 9660 filesystems can be read without UDF support. UDF can also be used by CD-R and CD-RW recorders in packet writing mode.
+Last updated: 1999-09-01
+Universal Description, Discovery, and Integration ♦ Universal Disk Format ♦ Universal Naming Convention
+Try this search on Wikipedia, Wiktionary, Google, OneLook.

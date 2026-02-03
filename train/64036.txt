@@ -1,0 +1,22 @@
+What is JDBC?
+- JDBC stands for Java DataBase Connectivity.
+- JDBC provides a database-neutral set of classes and interfaces that can be used by your Java class.
+- The database-specific code is included in a driver library that is developed by the database vendor.
+- You can use the same JDBC API to talk to many different databases.
+- You will find the JDBC API in the java.sql.* packages and files and the javax.sql.* packages and files, which all is part of the standard Java.
+Here is a high-level diagram for the JDBC connection to a database.
+- In short, a client application connects to a Database using JDBC API (Application Programming Interface) and uses the database vendor specific driver and protocol to access the database.
+Connecting to a Database using the JDBC API.
+To retrieve a resource reference to create a JDBC connection can be done in two ways:
+Register and load a database vendor specific JDBC driver and then fetch a DriverManager resource reference OR
+- Retrieving a DataSource reference that is registered as a connection pool (web server resources registered with the database vendor specific JDBC driver, username, password, DB-location etc.).
+- Register and load a database vendor specific JDBC driver and then fetch a DriverManager resource reference OR
+- Use the resource reference to create a JDBC Connection to the SQL database.
+- With the JDBC connection create a type of Statement object. Use this Statement object to transfer a SQL (Structured Query Language) statement to the database.
+- Retrieve the returning result, which will depend on the SQL statement that was send to the database. The result can be either a status for any SQL update, SQL delete or SQL insert or a ResultSet with database table data for a SQL select.
+© 2010 by Finnesand Data. All rights reserved.
+This site aims to provide FREE programming training and technics.
+Finnesand Data as site owner gives no warranty for the
+correctness in the pages or source codes.
+The risk of using this web-site pages or any program
+codes from this website is entirely at the individual user.

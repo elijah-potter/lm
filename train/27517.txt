@@ -1,0 +1,33 @@
+Installing “Intel Parallel Studio” today.. Lets see what the weather brings with it. First I needed to refresh Parallel Computing to get a hand on this weekend project. There is a classification of sequential and parallel computing, known as Flynn’s Taxonomy:
+- SISD – Single Instruction Stream, Single Data Stream( sequential processors )
+- SIMD – Single Instruction Stream, Multiple Lockstep Data Stream( Pipeline processor )
+- SPMD – Single Process Stream, Multiple data stream (Symmetric Multiprocessing)
+- MISD – Multiple Instruction Stream, Single Data Stream( associative array & orthogonal processor )
+- MIMD – Multiple Instruction Stream, Multiple Data Stream(multiprocessor & multicomputer systems)
+A multiprocessor is defined as a computer containing two or more processor units on a common memory under integrated control. If these processors have approximately equal capabilities then it is referred to as a symmetric multiprocessor otherwise as an asymmetric multiprocessor system. The main memory must be accessible and usable by all processors and only small local memories should exist in each processor.
+If the processors have large local memories, the multiprocessor is considered to be a multicomputer system be it centralized or distributed.
+There are a handful types of parallelisms:
+- Bit Level Parallelism
+- Instruction Parallelism
+- Data Parallelism
+- Task Parallelism
+Creating ParallelismNow I could:
+Restructure the algorithm
+Split the problem into parallel subproblems
+Recursively divide the problem into equal number of subproblems
+Work out the bounds for efficient vectorization or
+Make an asynchronous implementation of a synchronous algorithm.
+Parallelization TechniquesThere are a few parallelization techniques, I have to decide on:
+- automatic or manual parallelisation
+- macro-parallelisation or micro-parallelisation
+- local or global parallelisation
+- structural parallelisation or special parallelisation
+- static or dynamic parallelisation
+- maximal parallelisation vs optimal parallelisation
+- implicit parallelisation or explicit parallelisation
+Some properties of programs have to be analysed to proceed further.
+Equivalence: two programs computing to same result or diverging
+Emptiness: program diverges had no result
+Halting: program stop after finding some result
+Determinacy: program arrives at predictable result
+A parallel equivalent of a sequential program cannot differ in the above properties.

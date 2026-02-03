@@ -1,0 +1,42 @@
+New operating systems for iPhone are released one after another. The tenth iOS version was launched on September 13 and there’s nothing to suggest that the updating process is going to stop any time soon. The iOS developer community is always looking for new blood, but there is a problem: every beginner has to learn on their own. Time is the most valuable resource for a developer, and I had to spend a lot of hours searching for and reading the right books and articles. To make your entry into iOS development easier than mine, I’ve put up a list of the most important sources of useful knowledge, published guides and requirements.
+Required skills, qualifications and things to know
+English (reading comprehension level at least)
+OOP principles, e.g.
+Programming patterns with actual iOS examples. We often use MVC, Singleton, Delegates, Categories and so on. More
+Objective-C or Swift programming languages.
+Xcode as the primary IDE and its components (iOS Simulator, Interface Builder, Source Control). Alternatively, AppCode
+Git version control system
+Knowledge of MVC architecture and a general idea of other architectures like MVVM, MVP, VIPER. More
+Knowing how to design screens using only code without Interface Builder
+Using list tools: UITableView and UICollectionView. Read more here
+- Autolayout. More
+Knowing how to properly comment your code. More
+- Commercial development programs from Apple:
+These programs will help if you need to release or distribute an app within an enterprise. Even if you don’t, registering a developer allows you to release on devices starting from 9 sdk.
+Other desirable qualifications:
+- Swift knowledge (if you use Objective-C) and Objective-C (if you are skilled in Swift)
+- Unit testing knowledge and skills
+- knowledge of Continuous Integration and its use in iOS development
+- basic grasp of SOLID
+- A Mac or a Hackintosh
+- an iPhone/iPad device or an iPod with iOS no older than iOS 7;
+- Xcode version no lower than 6.1 (you need to install it on your Mac from App Store, it’s free)
+- a registered account based on your Apple ID. Read more in the Apple Developer Program section on the developer portal.
+Objective-C or Swift?
+We recommend starting with Swift right away. In the majority of IT companies there are multiple Objective-C projects that have to be maintained and there are tons of guides written for this language, so you are bound to learn at least some Objective-C. While Objective-C is a must, it’s still better to start with Swift. In any case, decide for yourself whether you want to go the old school imperialist way and learn a C-like language developed way back in the early 80’s (!) or start with Swift, one of the most modern development tools available.
+Information for starters:
+- Getting Started with Swift from Apple: Start Developing iOS Apps with Swift
+- Yearly iOS development video course in iTunes U by Stanford University
+After you go through the Apple starters’ course and watch the videos by Stanford you’ll need to put your new knowledge to use:
+- Remember that mobile apps are supposed to solve human problems and tasks. Find a similar task for yourself. Try to be creative but realistic; the task has to be manageable, so don’t go overboard with your ideas
+- Now employ everything you’ve learned thus far about iOS development to find a solution. If you are writing anything more complex and original than a calculator (and you are, right?), it is unlikely that you’ll get your solution right away. Streamline your work, split your task into subtasks and don’t hesitate to ask more experienced developers for advice.
+- Surf the Internet for answers. There aren’t many problems left that haven’t been described in books, articles or video tutorials.
+When your task is completed and you start to fancy yourself a hotshot iOS developer, I recommend you read a good book that’ll improve your new-found skills, for example: Beginning iPhone Development with Swift: Exploring the iOS SDK, by David Mark, Jack Nutting and others.
+Trends, blogs and sources to follow closely
+It’s highly recommended to follow the latest trends in Android development, so be sure to take a look at the following list of big companies and even bigger people and subscribe to their Twitters, blogs and so on.
+- raywenderlich.com. An inexhaustible source of free guides, suitable for both starters and pros who need to quickly learn the ropes of a new framework
+- NSHipster. Blog of the Heroku cloud service’s designer and developer that is now maintained by a few other developers as well. Frameworks, framework objects, Objective-C, Swift, Xcode, important open source projects, you name it
+- Natasha The Robot. An excellent blog from the iOS developer Natasha Murashev. A must read for anyone who is delving into Swift and other things
+- Blog of the iOS developer Mike Ash from Plausible Labs studio. Requires somewhat advanced knowledge to comprehend
+- Little Bites of Cocoa. A blog with all kinds of useful guides. Both beginners and experienced developers are going to love it for its brief posts and variety of topics
+- iOS Dev Weekly. An e-mail subscription for a selection of best news from the iOS development world. Published every Friday and curated by Dave Verwer.

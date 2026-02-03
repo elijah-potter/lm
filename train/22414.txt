@@ -1,0 +1,11 @@
+What is the least horizontal dimension?
+The least horizontal dimension (LHD) is defined as the shortest possible distance that can be taken between two parallel lines that fully encompass the building.
+Why is it important?
+Note: This value only needs to be provided if an aerial trace-over or 2D abstract installation area is used. In cases where a 3D model is imported, the tool automatically determines the LHD based on the building's footprint.
+Inputting the correct LHD will allow the app the accurately calculate the size of the wind zones, and thus an accurate array layout with the correct amount of anchor points. Learn more about how the LHD factors into the wind zone calculations here.
+How do I find it?
+To find the LHD for your project, you will need to use the measuring tool in Google Maps. Navigate to the property, then right-click and select "measure distance."
+Note: We're working on a feature that will allow this to be calculated by the app, however that will not be ready for a while.
+Measure out the length of the LHD.
+Next, click on the "Least Horizontal Dimension" link below the aerial image in the "site" portion of the project. If you are using a 2D abstract installation area, click "Specify Building's Least Horizontal Dimension."
+Then enter the LHD and click "save."

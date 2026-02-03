@@ -1,0 +1,80 @@
+Mathematics of Madoka Magica
+The cast of Mahou Shoujo Madoka Magica are students of Mitakihara Middle School. Even though it is merely a middle school, coursework in Mitakihara can be quite challenging. The following are Math problems that have appeared thus far in the show, and their solutions:
+ Episode 1
+ Question 1
+Any integer divided by 14 will have a remainder between 0 and 13. Given that a has a remainder of 6 and b has a remainder of 1 when divided by 14, what is the remainder of x when divided by 14, given x is an integer solution to x2 − 2ax + b = 0?
+This problem can be solved simply with modular arithmetic:
+- is equivalent to
+- (because )
+- (because 14 is square-free)
+- (because ).
+Homura used in Episode 1 a basic approach with usual integer arithmetic.
+Substitute into to get after some calculations
+14 divides 14c and 0, hence it also divides (r + 1)2. This implies that r + 1 is divisible by 14.
+The question asks for a remainder r between 0 and 13, so we obtain r = 13.
+ Question 2
+Assuming that p is a prime number and n is an arbitrary natural number, prove that is divisible by p.
+By Fermat's Little Theorem, for any prime p and integer a,
+is equivalent to
+is equivalent to
+So the overall expression is divisible by p.
+The problem can be solved with the binomial theorem:
+For a, b not equal to 0 and nonnegative integer p it holds that:
+It holds that . Since p is a prime number, the factor p in is not divisible by k, k-1,...,2 for 2 ≤ k ≤ p-1. Therefore, p divides for 1 ≤ k ≤ p-1.
+Since each summand on the right side is divisible by p, the whole sum, i.e. the left side is also divisible by p.
+ Question 3
+Find the integer solutions (a,b) with
+a, b are integers, therefore the factors a - 1 and are integers too. Since the product is -1, one of the factors must be equal to -1, the other to 1.
+If a − 1 = − 1 then a = 0 and from we obtain b = 1.
+If a − 1 = 1 then a = 2 and implies that b = 11.
+There are two integer solutions: or .
+ Question 4
+find the sum of .
+Simplying the fraction:
+Notice that for any variables a & b:
+Let and .
+Multiply by 1 or which is equal to . The denominator becomes:
+The numerator becomes:
+Note that when ;
+Taking the sum over for between 1 and 60, observe that the majority of the terms in and cancel out, leaving:
+Thus, sum of for between 1 and 60 is 665. The solution can be generalized as equal to . Where and are interpreted as functions of .
+ Episode 8
+Homura triangulated the likely location of Walpurgis Night to be the clock tower using Statistics, a branch of Mathematics that determines the probability of a future event by analysis of data from past events of similar nature.
+ Episode 9
+A number sequence that can be defined as , (where ) is called the Fibonacci sequence and its general solution is given by,
+Answer the following questions by using this fact if needed:
+Define a sequence of natural numbers (where n is any natural number), in which each digit is either 0 or 1, set by the following rules:
+(ii) We define as a natural number, which can be obtained by replacing the digits of with 1 if the digit is 0, and with 10 if the digit is 1.
+(1) Find , defined as the number of digits of .
+(2) Find , defined as the numbers of times '01' appears in ? For example,
+ Part 1
+Let equal to the number of digits in X(n), which consists solely of 1s and 0s. Let's suppose is the number of 0s in at the n-th iteration (poor choice of variable by the student). Let's suppose is the number of 1s in in the n-th iteration, then . Since
+- Every time a 0 appears, it is replaced with 1 at the next iteration, contributing to a single 1 in .
+- Every time a 1 appears, it is replaced with 10 at t he next iteration, contributing to a single 1 and a single 0 in X(n + 1).
+it follows that the number of 0s in the next iteration is equal to the number of 1s previously:
+and the number of 1s in the next iteration is equal to the number of 0s AND the numbers of 1s previously:
+Next, prove that x(n) is a Fibonacci sequence, since we know that:
+by substition we can show,
+Thus fits the definition of a Fibonacci sequence. Since is a Fibonacci sequence, it follows that is also a Fibonacci sequence (given that ). Therefore, since it has already been shown that:
+It follows that .
+Recall that , therefore
+It follows that
+Recall by definition of the Fibonacci sequence: . Therefore , or
+ Part 2
+Let B(n) be the number of times '01' appears in X(n). Any two digits in X(n) may be 00, 01, 10, 11, and the corresponding digits in the next iteration X(n+1) will be
+- 00 -> 11
+- 01 -> 110
+- 10 -> 101
+- 11 -> 1010
+Thus, any two digit sequence in X(n) that begins with 1* will contribute to a 01 sequence in the next iteration. In other words, B(n+1) equals y(n), except when unit digit of X(n) is 1, or:
+B(n+1) = y(n) - odd(X(n))
+- odd(n) = 1 if n is odd (unit digit is 1)
+- odd(n) = 0 if n is even (unit digit is 0)
+It can be seen that odd(n) = odd(X(n)) for all n. To prove this inductively: observe that odd(X(1)) = odd(1). Now let odd(X(n)) = odd(n), then if n is even, X(n) is even, thus X(n) ends with 0, which gets mapped to 1, making X(n+1) odd and so odd(X(n+1)) = odd(n+1). And if n is odd, then X(n) is odd, thus X(n) ends with 1, which gets mapped to 10, making X(n+1) even, and so odd(X(n+1)) = odd(n+1).
+y(n) is a fibonacci sequence with starting values: y(1) = 1, y(2) = 1, y(3) = 2 thus y(n) = F(n)
+B(n+1) = F(n) - odd(n)
+B(n) = F(n-1) - odd(n-1), or
+ Episode 10
+Same as Episode 1.
+ Episode 11
+Pieces of papers floats by Homura as she faces Walpurgis Night. On it are calculations done by hand by Homura. Most likely, these are wikipedia:ballistic of the big guns. Two pairs of Xs and Ys on each of the four pieces of paper, making it 8 shots in all.

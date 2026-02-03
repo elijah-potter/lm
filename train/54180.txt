@@ -1,0 +1,218 @@
+Dwight Byrd and Thomas Kugelstadt, Texas Instruments -October 06, 2011
+ESD (electrostatic discharge)—the sudden and
+momentary electric current that flows between
+two objects at different electrical potentials—causes equipment failure and network downtime,
+thus causing production losses of multiple billions
+of dollars annually. From portable consumer electronics
+to industrial-automation, process-control systems, and
+military and aerospace applications, every electronics manufacturer
+must consider ESD during equipment design. Myriad
+testing standards exist for addressing the range of technical
+requirements of the various industrial segments.
+To help you select the correct testing standard for a design,
+you need to understand the main ESD standards and the
+differences between device- and system-level testing. ESD
+protection includes a range of protection schemes, the most
+common of which are steering-diode arrays, TVS (transient-voltage-suppressor) diodes, and zener diodes. No matter
+which protection scheme you select, you must perform a
+final EMI (electromagnetic-interference) test and a test of
+the protection circuit itself.HBM testing
+The HBM (human-body-model) device-level test is the most
+common model for ESD testing. It is used to characterize the
+susceptibility of an electronic component to ESD damage.
+The test simulates an electrical discharge of a human onto
+an electronic component, which could occur if a human has
+built up residual charge—for example, by dragging his feet, in
+socks, across a carpet and then touching an electronic device.
+The failure modes for the HBM testing of ICs typically comprise
+junction damage, metal penetration, melting of metal
+layers, contact spiking, and damage to the gate oxides.
+You set up the test procedure by applying a high-voltage
+supply in series with a 1-MΩ resistor and a 100-pF capacitor.
+After the capacitor is fully charged, a switch is used to remove
+it from the high-voltage supply and series resistor and to apply
+it in series with a 1.5-kΩ resistor and the DUT (device under
+test). The voltage thus fully dissipates through the resistor
+and the DUT (Figure 1
+). Values for the high-voltage supply
+range, according to the test level, from 0.5 to 15 kV.
+Figure 2MM testing
+shows a typical oscilloscope readout with an initial
+current spike as large as 1.4 to 1.5A when the capacitor
+starts discharging and the ramp-down until it asymptotically approaches 0A at approximately 500 nsec. The DUT can
+experience a maximum power of 22.5 kW at a single discharge
+event on a traditional HBM. Keep in mind that power equals
+the current times the voltage.
+The MM (machine-model) device-level test, which emerged
+in the 1990s, is now less common than the HBM test.
+Industrial-automation-manufacturing sites became increasingly
+popular in the ’90s to increase output. These machines become electrically charged after turn-on and discharge into
+an electronic component after making contact. Thus, MM
+tests became a model for testing this type of ESD event.
+Failure modes in MM testing are similar to those in HBM
+testing. These failure modes include junction damage, melting
+metal layers, and gate-oxide damage.
+You set up the test procedure for MM testing with a high-voltage
+supply in series with a resistor and a 200-pF capacitor.
+After the capacitor fully charges, a switch is used to remove
+it from the high-voltage supply and series resistor and then
+apply it in series to a 0.5-μH inductor and the DUT. The
+inductor with the capacitor voltage dissipates through the
+DUT (Figure 3
+). Traditional values for the high-voltage
+supply can vary, but the most common range is 50 to 400V.
+When looking at an oscilloscope measurement of current
+over time, you can see that the RLC (resistance/inductance/
+capacitance) circuit creates an alternating current (Figure 4
+The current reaches approximately ±3A, which is about four times higher than the HBM’s peak-to-peak current amplitude.
+Furthermore, the dissipation is much longer for the MM test
+because it is still asymptotically approaching 0A at 900 nsec
+). The DUT experiences a maximum power dissipation
+of approximately 1.2 kW during an MM discharge event.
+MM testing requires that you test each pin on the DUT
+to its standard. The electronic chip is mounted on a specially
+designed load board that interfaces with an automated ESD
+tester. You ground the other pins on the board and then
+individually test each pin. You continue this procedure until
+all pins have been tested.CDM testing
+The CDM (charged-device-model) device-level testing procedure
+is a simulation for situations that often happen in
+automated-manufacturing environments in which machines
+often remain on indefinitely, causing the electronic ICs to
+electrically charge over time. When the part comes into
+contact with a grounded conductor, the built-up residual
+capacitance discharges. For the CDM test, the DUT is placed
+on its back facing upward on a testing board.
+Separate the metal field plate and the DUT with an
+insulating material, which acts as a capacitor between the
+two objects. You then connect the metal field plate to a high-voltage
+supply and increase its voltage to the required CDM-test-voltage level.
+A probe then approaches the pin under test
+where an ESD event occurs. Monitoring the ground connection
+of the pin under test verifies this action. Repeat this test
+on each pin of the DUT for three positive and three negative
+pulses. The result is six total discharges per pin (Figure 5
+Figure 6 indicates that the CDM discharge takes place
+over 2 nsec at most, which makes it difficult to test and to
+model. This test results in a current of 5 to 6A discharging in
+less than 1 nsec. The current dissipates within 5 nsec, making
+this part of the test succinct but volatile. Due to this fast
+transient, the failure modes typically seen in CDM tests are
+gate-oxide damage, charge trapping, and junction damage.
+Figure 6 shows the current waveform during a CDM test.
+The HBM, MM, and CDM are the most common ESD
+device-level testing procedures for electronic components.
+summarizes their similarities and differences.ESD immunity
+The system-level ESD-immunity test simulates the ESD
+of a human onto an electronic component (Figure 7a).
+Electrostatic charge on a human can develop in low relative
+humidity, on low-conductivity carpets, and on vinyl garments.
+To simulate a discharge event, an ESD generator applies ESD pulses to the EUT (equipment under test) in two ways. The first
+is through contact discharge, or direct contact with the EUT,
+in which something makes physical contact with the EUT. The
+second is through air-gap discharge, or indirect contact with
+the EUT, in which the discharge occurs through the air. The
+IEC (International Electrotechnical Commission) defines this
+test in the IEC61000-4-2 ESD-immunity-test specification.
+Characteristics for this test are a rise time of less than 10
+nsec and a pulse width of approximately 100 nsec, indicating
+a low-energy, static pulse.
+The ESD-immunity test requires
+that you administer at least 10 discharges of both positive
+and negative polarity at 1-sec intervals. Thus, you test the
+EUT at least 20 times for the ESD-immunity system-level
+specification (Figure 7b
+Figure 8 shows the differences between device- and system-level testing standards. The IEC ESD test, which many
+consider the gold standard for component testing, typically
+has an eight-times-higher testing voltage than CDM and
+20-times-higher peak-current testing than HBM.EFT immunity
+The system-level-testing standard of IEC61000-4-4 is the EFT
+(electrical-fast-transient) immunity-testing model (Figure 9a
+The EFT-, or burst-, immunity test simulates transients that
+can happen in everyday environments due to switching off
+inductive loads, relay-contact bounce, and the operation of dc
+or universal motors. This test is performed on all power, signal,
+and earth wires. A burst is the sequence of pulses with a finite
+duration. In the EFT-immunity test, a burst generator produces
+a sequence of test pulses that attenuate to 50% of their peak
+values in less than 100 nsec. The next adjacent pulse typically
+occurs 1 μsec later. A burst typically lasts for 15 msec, and the
+burst period, the time from one burst’s start to the next burst’s
+start, is 300 msec.
+This cycle repeats for 10 sec, after which
+there is no testing for 10 seconds. This scenario represents one
+test cycle. The test cycle must repeat six times, taking 110 sec.
+The significance of the EFT-immunity test is its short pulse rise
+times, high repetition rates, and low energy content.
+Although the fast rise time and the low energy content
+of an EFT are somewhat similar to those of an ESD pulse,
+the number of pulses per test cycle is not. Assuming a 1-μsec
+interval between one pulse front and the next, a 15-msec EFT
+burst contains at least 15,000 pulses. Multiplying the number
+of bursts within a 10-sec window yields 10 sec/300 msec=33.3
+bursts and 500,000 pulses per 10-sec window. Thus, the
+application of six 10-sec windows with a 10-sec pause interval
+results in 3 million pulses within 110 sec.
+Because EFT testing involves no direct contact of conductors
+but instead the indirect application through a capacitive
+clamp, proper, industrial-grade cabling with internal shielding
+can produce great results to the DUT by drastically attenuating
+the coupling of EFT energy into the conductors (Figure 9b
+The surge-immunity, or lightning, test, IEC61000-4-5, represents
+the most severe transient-immunity test in current and
+duration (Figure 10a
+). However, testers often employ it on signal
+and power lines longer than 30m. The surge-immunity test
+simulates switching transients due to direct lightning strikes;
+induced voltages and currents due to indirect strikes; or switching
+the power systems, including load changes and short circuits.
+The test specifies the surge generator’s output waveforms
+for open- and short-circuit conditions. The ratio of the open
+circuit’s peak voltage to the short circuit’s peak current is
+the generator’s output impedance. High current due to low
+generator impedance and pulse duration approximately 1000
+times longer than the ESD- and EFT-immunity tests characterize
+this test, indicating a high-energy pulse.
+This test requires five positive- and five negative-surge
+pulses with a time interval between successive pulses of one
+minute or less. A common procedure is to shorten the pause
+intervals to 12 sec, thus reducing total test time to less than
+two minutes. Although this approach intensifies the surge
+impact due to the protection circuits’ reduced recovery time
+between pulses, it contributes to a significant reduction in
+test cost (Figure 10b).System-level testing
+The IEC compiles the system-level-testing standards according
+to IEC61000-4. This family of standards includes approximately
+25 system-level-testing specifications
+for transient-immunity testing:
+IEC61000-4-2 for ESD, IEC61000-4-4
+for EFT, and IEC61000-4-5 for lightning.
+compares these tests.
+Today’s rising demands for system-level
+testing renders inadequate device-level
+testing at the low voltage/current
+levels of HBM, MM, and CDM. A
+strong distinction exists between system
+ESD and burst/surge-level testing
+between consumer products and industrial
+equipment and systems, however. In
+consumer designs, ESD testing assumes a
+high priority due to the increased probability
+of human contact with electronic
+components through cable connectors.
+In strong contrast, industrial designers
+rate the burst- and surge-immunity
+tests higher than ESD testing. In this
+case, the daily bombardment of electrical
+transients due to electric motors
+and other inductive switching loads
+poses far greater risks to the system
+than ESD, whereas human contact
+occurs only during system installation
+and maintenance and even then
+only when the operator is wearing
+ESD-protection gear. For more information
+about ESD and testing, visit
+This article originally appeared on EDN
+sister site, Planet Analog
+Dwight Byrd is a product-marketing engineer in the precision-analog group at Texas Instruments, where he is responsible for ADCs. Byrd was previously part of TI’s interface group, where he was responsible for ESD/EMI products, I2C peripheral devices, signal switches, and voltage-level translators. He received a bachelor’s degree in electrical engineering from Texas A&M University (College Station, TX). Thomas Kugelstadt is an application manager at Texas Instruments, where he is responsible for defining new, high-performance analog products and developing complete systems that detect and condition low-level analog signals in industrial systems. During his 22 years with TI, he has worked in various international application positions in Europe, Asia, and the United States. Kugelstadt is a graduate engineer from the Frankfurt University of Applied Science (Frankfurt, Germany)

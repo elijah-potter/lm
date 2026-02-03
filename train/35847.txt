@@ -1,0 +1,7 @@
+The DOUBLE data type is used to store double-precision floating-point numbers.
+DOUBLE [ PRECISION ]
+The DOUBLE data type holds a double-precision floating point number. An approximate numeric data type, it is subject to rounding errors after arithmetic operations. The approximate nature of DOUBLE values means that queries using equalities should generally be avoided when comparing DOUBLE values.
+DOUBLE values require 8 bytes of storage.
+The range of values is -1.79769313486231e+308 to 1.79769313486231e+308, with numbers close to zero as small as 2.22507385850721e-308. Values held as DOUBLE are accurate to 15 significant digits, but may be subject to round-off error beyond the fifteenth digit.
+SQL/2003 Compatible with SQL/2003.
+|Send feedback about this page via email or DocCommentXchange||Copyright © 2008, iAnywhere Solutions, Inc. - SQL Anywhere 11.0.0|

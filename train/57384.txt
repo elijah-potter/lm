@@ -1,0 +1,14 @@
+How we program
+I’ve always wondered how we do programming. Code can be so clean and straight-faced, but when you step back and try to think about how you write it, a darkness descends. It’s tempting to think that your brain is working like a computer program, transforming a symbolic problem into a textual answer as sourcecode. But I don’t think that’s what is going on at all — if problems came specified in formal language, then programming would be a very different experience. We instead start with a mess, and try to find all the problems in it through the process of designing and writing code.
+There’s a lovely paper called Mental imagery in program design and visual programming by Marian Petre and Alan F. Blackwell, with many great quotes from programmers trying to introspect on their work. Here’s some tasters:
+“ … it moves in my head … like dancing symbols … I can see the strings [of symbols] assemble and transform, like luminous characters suspended behind my eyelids … ”
+Programming is a dance of symbols behind the eyelids. Write that into a QA standard.
+“It buzzes … there are things I know by the sounds, by the textures of sound or the loudness … it’s like I hear the glitches, or I hear the bits that aren’t worked out yet … ”
+This programmer is describing re-purposing their sense of hearing to produce computer software. Quick, strap them into an fMRI machine!
+“values as graphs in the head … flip into a different domain … transform into a combined graph … (value against time; amplitude against frequency; amplitude against time) … ”
+Hmm programming as relationships within abstract spaces, and relating those spaces to one another. A nice model for thought in general, perhaps?
+“It’s like describing all the dimensions of a problem in 2D, and in the third dimension you’re putting closeness to a solution.”
+Another, rather different spatial approach, where goodness of solution is somehow represented by something like height.
+“ … oh, that happens over there … it’s on the horizon, so I can keep an eye on it,but I don’t really need to know … ”
+Exasperating, and sums things up nicely. This kind of introspection is just too hard, so much of these thought processes are entirely sub-conscious. For example you try for hours to solve a tricky problem, give up, then the answer pops into your head while you’re cycling home, otherwise thinking about dinner.
+That said, while the above evidence is purely anecdotal, it gives some hints about what might be going on. I like to think that programmers tap into a general human ability to organise a messy world into far tidier problem spaces, and find their way around such spaces in much the same way as they do when bumping around in a pitch black room…

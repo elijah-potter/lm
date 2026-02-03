@@ -1,0 +1,14 @@
+Greenhouses extend growing seasons in upper latitudes to provide fresh, healthy food. Costs associated with carbon-emission-intensive natural gas heating, however, limit greenhouse applications and scaling. One approach to reducing greenhouse heating costs is electrification by using waste heat from cryptocurrency miners. To probe this potential, a new quasi-steady state thermal model is developed to simulate the thermal interaction between a greenhouse and the environment, thereby estimating the heating and cooling demands of the greenhouse. A cryptocurrency mining system was experimentally evaluated for heating potential. Using these experimental values, the new thermal model was applied to the waste heat of the three cryptocurrency mining systems (1, 50, and 408 miners) for optimally sized greenhouses in six locations in Canada and the U.S.: Alberta, Ontario, Quebec, California, Texas, and New York. A comprehensive parametric study was then used to analyze the effect of various parameters (air exchange rate, planting area, lighting allowance factor, and photoperiod) on the thermal demands and optimal sizing of greenhouses. Using waste heat from cryptocurrency mining was found to be economically profitable to offset natural gas heating depending on the utility rates and Bitcoin value in a wide range of scenarios.
+- Asgari, N.; McDonald, M.T.; Pearce, J.M. Energy Modeling and Techno-Economic Feasibility Analysis of Greenhouses for Tomato Cultivation Utilizing the Waste Heat of Cryptocurrency Miners. Energies 2023, 16, 1331. https://doi.org/10.3390/en16031331 academia OA
+- Full data https://osf.io/exnj7/
+See also[edit | edit source]
+- Coal with Carbon Capture and Sequestration is not as Land Use Efficient as Solar Photovoltaic Technology for Climate Neutral Electricity Production
+- Dual use of land for PV farms and agriculture literature review
+- Israeli white plastic reflectors
+- A Farmer's Guide to Going Solar (NREL)
+- German guidelines: https://www.ise.fraunhofer.de/content/dam/ise/en/documents/publications/studies/APV-Guideline.pdf
+- 2021 review
+- Miskin, C.K., Li, Y., Perna, A., Ellis, R.G., Grubbs, E.K., Bermel, P. and Agrawal, R., 2019. Sustainable co-production of food and solar power to relax land-use constraints. Nature Sustainability, 2(10), pp.972-980.
+- Retrofitting solar parks for agrivoltaics
+- Shading PV
+- Alexis' talk at American Solar Grazing Association2021

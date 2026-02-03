@@ -1,0 +1,59 @@
+What is Discounted Cash Flow?
+Created on 10 Oct 2019
+Wraps up in 4 Min
+Read by 4.9k people
+Updated on 03 Aug 2022
+“A bird in hand is worth two in the bush”, thus goes the saying. If you were to extend the same logic to money, a rupee at hand today is worth more than the same rupee tomorrow. That’s the premise behind Time Value of Money.
+This is something around which most of the cash transactions and investment concepts revolve. DCF or discounted cash flow is yet another concept which takes this rule as its base.
+Investing ultimately aims in fulfilling our future goals. Hence, every method and tools aim to calculate towards the future. However, DCF or discounted cash flow is a method through which an investor does the backward calculation of future cash flows, and arrives at the required solution.
+So how does that work and what benefit it will fetch are certain questions this article aims at addressing.
+Discounted Cash Flow (DCF) method
+DCF is a method through which an investor who is intending to make an investment will estimate the actual value of the business or asset by calculating the future cash flows of the same. As mentioned earlier, it relies on Time Value of money and translates that anything that you have today is worth more than the same in future. And formula to calculate the same is as follows:
+DCF = CF / (1 +r)t
+where CF is the cash flow in t periods, r is the appropriate discount rate taken into account the risk involved in the investment and t is the time period of or the life of asset.
+Hence using the DCF methodology, one can estimate if he or she is making an apt investment or not. Say there is a business XYZ whose cash flows are P, Q, R, S. Using the Discounted Cash flow method one can tell if investing into XYZ will fetch me the required returns, say 5 or 7 years from now or not. One can utilize the formula to find the worst case worst scenario and then decide whether he or she is willing to take up that investment or not.
+The method can be used not only in businesses but also in real estate, stocks, bonds, long-term assets and in case of equipment also.
+Advantages of DCF
+Now let’s find out some of the crucial factors that have helped investors pick DCF over others when arriving at a solution. Here we go:
+The Discounted Cash flow method allows you to use the cost of borrowed money and helps you to draw a comparison between two different aspects.
+It recognises the risk and time factors involved in any investment.
+It leaves ample space for you to include assumptions and include a number of varying variables.
+It enables one to calculate both the IRR or internal rate of return of an investment and sensitivity analysis (judging the impact on results in different scenarios of inputs).
+One is given the liberty to compare companies belonging to different fields. Say I can compare an investment into bonds of a theme park and stocks of a construction company.
+Disadvantages of DCF
+Though we can list a great lot of points in its favour, it is not free from disadvantages. And they are as follows:
+The DCF methodology can sometimes lead to faulty outputs. This is mainly because of the inability to correctly determine the future cash flows, etc.
+Appropriate rate selection as the value of discount is also difficult.
+Though it is a useful approach there are a lot of calculations involved causing troubles in arriving at the final output. In case of any small mistake, the entire calculation becomes futile.
+It looks at the value of the investment alone. In other words, it does not take into account factors such as sudden change in management, unprecedented pandemic or crisis into account.
+It involves a lot of assumptions and thus becomes highly challenging to acquire a clear picture.
+How to calculate DCF?
+Learning how to calculate DCF will equip you with another tool towards which you can run for help, if the situation demands so. So, anyone can calculate the Discounted cash flow using their excel sheet. And the steps are as follows:
+Step 1: Enter the discounted rate of the cash flows or the WACC. WACC is the weighted average cost of capital, or how much the company is expected to pay to all its stakeholders to finance its assets. This can be calculated using the formula:
+WACC = (E/V*Re) + (D/V *Rd *(1-Tc))
+where E is the equity value of the business, D is the debt of the business, Re is the cost of the equity, V is the total market value of the business, Rd is the cost of debt and Tc is the rate of corporate tax. WACC will be the discount rates you’ll use for further calculations.
+Step 2: Once you have entered the discount rate move to another column and enter cash flows of the investment which you anticipate.
+Step 3: Now using the formula NPV = (discount rate, value1, value 2, value3…), you can calculate the discounted cash flow of the investment.
+For example, assume a person is considering investment into an asset and he is offered the following details. Now he wants to run a DCF analysis in order to calculate the favorability of the investment in the portfolio he holds. The details are as follows:
+Future cash flows
+10, 40, 60, 20, 50
+Period of investment
+The investor uses the methods specified above in a spreadsheet (eg.: MS-Excel) to calculate the DCF and the result of the same looks as below:
+The Bottom Line
+Though the method suffers from a few drawbacks; on the whole, it is extremely useful. It helps you in acquiring some idea of your investment’s present value. Utilising multiple approaches as these will only hone your decisions and reduce the fault in it.
+So, the next time you plan to invest in a company, try mapping out a DCF model and reaching at some kind of a present value. It’ll only strengthen your intuition, trust us.
+How was this article?
+Like, comment or share.
+Share your thoughts
+We showed you ours, now you show us yours (opinions 😉)
+Why not start a conversation?
+Looks like nobody has said anything yet. Would you take this as an opportunity to start a discussion or a chat fight may be.
+More titbits on the go
+The Enterprise Value for an investor
+03 Sep 2019
+What are Moats and Floats?
+14 Aug 2019
+Difference between market value and book value
+06 Aug 2019
+Analysing REC Ltd. with Sonam Shrivastava
+21 Feb 2023

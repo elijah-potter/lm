@@ -1,0 +1,12 @@
+While we all have our personal preferences in how we want to do things, we all share a distaste for manually performing repetitive tasks that are time-consuming and result in basically the same widget. The process of creating, naming, and laying out multiples of identical objects in an application is no exception.
+Imagine if you needed to create four or five panels like the app shown below, and populate each panel with the data and images. To populate the data, the code would be five times what it is now to account for all of the individual fields that would have to be created; or using the new Cloning Child Controls at Run Time feature in RFgen 5.1, you can create one panel of prompts, script arrays of child prompts through the Append VBA Language Extension function, and presto! All your panels containing prompts will be cloned at run time.
+Cloning is adapted from the vbaPromptArray language extensions which allows you to access the following from the Prompt.Children property:
+To clone a prompt and all its children, you simply call the Append function on the vbaPromptArray object:
+This takes a single parameter which is the control that you wish to clone. In the Cloning App below, the pnlChild control is cloned and will be appended to the end of the child controls of pChildren. The new controls will have the same parent that the pChildren control came from.
+Figure 3. Example of a Child Panel Nested Within a Parent Panel
+After code execution, these three control sets will be cloned into the parent panel.
+Figure 4. Example Code and Child Controls (Panels) Cloned At Run Time
+Once the application is executed and the child panels cloned, you might want to access the contents of the objects in each child panel to accommodate your workflow. Let’s say you would like to access the data entered by your user. To access the text to a specific panel, you could use this snippet of code, where “i” represents the index ID of the cloned control:
+Using our example above, this would be:
+At run time, a series of nested arrays are created for each prompt/control starting with the parent and ending with each child. Each array creates an index ID for each prompt. To access an object, you reference it by its Index ID.
+Figure 5. Explanation of Code Snippets (Left) and Illustration of Indexed Objects in Nested Arrays (Right)

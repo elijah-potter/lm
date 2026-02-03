@@ -1,0 +1,6 @@
+Methods | Statistics | Clinical | Educational | Industrial | Professional items | World psychology |
+The Friedman test is a non-parametric statistical test developed by the U.S. economist Milton Friedman. The procedure involves ranking each row (or block) together, then considering the values of ranks by columns.
+- Given data , that is, a tableau with rows (the blocks), columns (the treatments) and a single observation at the intersection of each block and treatment, calculate the ranks within each block. Replace the data with a new tableau where the entry is the rank of within block .
+- Find the values:
+- The test statistic is given by .
+- Finally, the p-value is given by .

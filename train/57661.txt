@@ -1,0 +1,7 @@
+Pls give me sb. a hint. I do this following exercise but I struggle with reading another lines of txt. Here is the text:
+Exercise 9.1 Write a program that reads words.txt and prints only the words with more than 20
+characters (not counting whitespace).
+here is my version for the first line but I struggle to get through the all lines fullfiling the condition (20 char without whitespace)
+def test(): fin = open('words.txt') count = 0 word = fin.readline() x = len(word) for i in word: if i == ' ': count = count + 1 y = x - count if y >= 20: print word return word else: print 'words have only', y, 'char' test()
+pls can anybody help?
+Edited by vegaseat: added code tags

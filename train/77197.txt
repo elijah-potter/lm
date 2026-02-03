@@ -1,0 +1,53 @@
+January 03, 2013, by Bill Whitlock
+After teaching seminars for more than 15 years now, it still amazes me how many otherwise competent professionals don’t understand the importance of proper equipment safety grounding.
+Even more shocking (pun intended), many routinely and casually disconnect safety grounds to solve noise problems!
+Generally speaking, the purpose of grounding is to electrically interconnect conductive objects, such as equipment, in order to minimize voltage differences between them.
+National Electric Code (NEC) requires that 120-volt AC power distribution in homes and other buildings must be a three-wire system.
+Figure 1 shows how AC power is typically delivered from the utility company to the load at an outlet. For simplicity, only two of the three main utility connections are shown in the drawing.
+Figure 1: A look at how AC power is typically delivered.
+One of these incoming utility wires, which is often un-insulated, is the grounded or “neutral” conductor.
+Note that both neutral (white) and line (black) wires are part of the normal load current circuit shown by the arrows.
+Code requires that the neutral (white) and safety ground (green) wires of each branch circuit be tied or “bonded” to each other and to an earth ground rod at the service entrance.
+Any AC line powered device with exposed conductive parts (that includes signal connectors) can become a shock or electrocution hazard if it develops certain internal defects.
+Insulation is used in power transformers, switches, motors and other internal parts to keep electricity where it belongs.
+However, for various reasons, the insulation can fail - effectively connecting “live” power to exposed metal as shown in Figure 2. Such a defect is called a fault.
+Figure 2: Watch out for faults… They can be mighty unpleasant!
+For example, if the motor in a washing machine overheated and its insulation failed, the full line voltage could energize the housing of the machine!
+Anyone who accidentally touched the machine and anything grounded, such as a water faucet, at the same time could be seriously shocked or electrocuted.
+Remember: current will always return to its source, whether the path is intentional or accidental. Electrons don’t care - they can’t read schematics!
+Trip The Breaker
+To return this fault current directly to its source, many devices have a third wire connecting exposed metal to the safety ground pin of their plugs.
+The outlet safety ground is routed, either via the green wire or metallic conduit, to the neutral conductor at the main breaker panel.
+This low-impedance connection to neutral causes a high fault current to flow, quickly tripping the circuit breaker that removes power from the circuit. To function properly, the safety ground must return to neutral. (Note that the EARTH connection had nothing to do with this process!)
+Never, ever use devices such as three- to two-prong AC plug adapters, a.k.a. “ground lifters,” to solve a noise problem! (Figure 3) Such an adapter is intended to provide a safety ground (see the fine print) in cases where three-prong plugs must be connected to two-prong receptacles.
+Figure 3: The GFCI (above) has a retractable ground pin that allows it to be used with a two-prong outlet. Below - it’s tempting, but don’t use “ground lifters” to eliminate system noise.
+If a proper safety ground isn’t available, always use a ground-fault circuit interrupter (GFCI). A GFCI works by sensing the difference in current between the line and neutral conductors.
+This difference represents current in the live conductor that is not returning in the neutral - the assumption is that the missing current is flowing through a person.
+If the difference reaches about 5 mA (milliamps), an internal circuit breaker is tripped, removing power from the circuit. The GFCI shown in Figure 3 is unusual because it has a retractable ground pin that allows it to be used with a two-prong outlet.
+Also consider two devices connected by a signal cable, each device having a three-prong AC plug. One device has a ground “lifter” on its AC plug and the other doesn’t.
+If a fault occurs in the “lifted” device, the fault current flows through the signal cable to get to the grounded device. It’s very likely that the cable will melt and burn. Defeating safety grounding not only is both dangerous and illegal, it also makes you legally liable!
+In a typical recent year in the U.S., consumer audio and video equipment electrocuted nine people and started 1,900 residential fires that caused 20 deaths, 110 civilian injuries, and over $30 million in property damage.
+Current determines the severity of electric shock. At 1 mA or less, it’s simply an unpleasant tingle. But at about 10 mA, involuntary muscle contractions can result in a “death grip” or suffocation if the current flows through the chest.
+Currents of 50 mA to 100 mA through the chest usually induce ventricular fibrillation that leads to death.
+The resistance of dry human skin is high enough to safely allow lightly touching a live 120-volt conductor, but normal skin moisture allows more current to flow as does increased contact area and pressure.
+Lightning & Dirt
+The earth itself is the return path for the current in a stroke of lightning. To protect people and equipment from lightning, we must make a connection to actual soil.
+Overhead power lines are frequent targets of lightning. As a result, virtually all electric power distribution lines have one conductor connected to earth ground periodically along its length.
+Before this was done, power lines effectively guided lightning inside buildings, starting fires and killing people.
+The (NEC) code-required earth ground at the service entry panel serves to direct lightning to earth ground before it enters the building. For the same reason, the code requires telephone, CATV, and satellite TV cables to “arrest” lightning before it enters a building.
+Because soil has resistance just like any other conductor, earth ground connections are not at zero volts with respect to each other or any other mystical or “absolute” reference point. Code allows the resistance of this earth connection to be as high as 25 Ω.
+Since this is far too high to trip the circuit breaker under fault conditions, an earth ground should never be confused with a safety ground.
+Figure 4: All ground rods must be bonded to the main utility power-grounding electrode.
+Safety ground must be connected to neutral at the main service entry panel. If more than one ground rod is used, Code requires that all must be bonded to the main utility power-grounding electrode. (Figure 4)
+Facts Of Life
+Most sound (or video) systems consist of at least two devices, which operate on utility AC power. Although hum and other problems are often blamed on “improper grounding,” in most cases there is actually nothing improper at all.
+Any properly installed, fully code-compliant AC power distribution system will develop small, entirely safe voltage differences between the safety grounds of all outlets.
+In general, the lowest voltage differences (a few millivolts) will exist between physically close outlets on the same branch circuit and the highest (up to several volts) will exist between physically distant outlets on different branch circuits.
+These normally insignificant voltages cause problems only when they occur at a vulnerable signal interface - more unfortunate than improper.
+What’s all of this have to do with hum and buzz? People have a strong tendency to blame “dirty” AC power for audio-video system noises.
+But in fact, AC power is a utility much like a public highway - used by huge trucks as well as sports cars.
+Eliminating noise problems by “purifying” the AC power is much like re-paving the highways to fix a car’s rough ride. A much more cost-effective and practical approach is to eliminate the problem that allows the power line to enter the signal path in the first place.
+This is analogous to replacing bad shock absorbers in a car to isolate it from rough roads. Finding and eliminating these coupling points will be topics of upcoming columns.
+Always make electrical safety your top priority!
+Additional installments of “Clear Path” by Bill Whitlock are available here.
+Bill Whitlock has served as president of Jensen Transformers for 20 years and is recognized as one of the foremost technical writers in professional audio.

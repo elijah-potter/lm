@@ -1,0 +1,21 @@
+A circular pizza is made of triangular-like slices with toppings like pepperoni, peppers, and everyone's favorite fried green tomatoes. In this section, we will use our knowledge the areas and deliciousness of triangles to build the areas of circles.
+When we found the areas of triangles, we used the similar triangle trick. Back in the dark ages of our mathematical youth, we derived the Pythagorean Theorem using triangles. For circles, we are going to use the Pythagorean Theorem as a trick for finding the areas of circles.
+Write an integral expression for the area of half a circular pepperoni pizza.
+There are (at least) two ways to do this. We could find the area of a quarter-circle slice and then multiply by 2, or we could take horizontal slices. We're going to take horizontal slices, because it's better to have more slices to share with friends.
+We have another choice to make: how to measure the position of the slice. We could measure the depth of the slice below the top of the circle, or the height of the slice from the center of the circle. We'll measure its position from the center of the circle, using y for the height of the slice. Since the distance from the center of this circle to any point on its edge is 4, a beautiful right triangle shows up.
+Looking at our right triangle, we see the length of the slice at height y is 2x, where x2 + y2 = 42.
+Rearranging this equation, thank you Pythagorus, we get
+The thickness of the slice is Δ y since y is the variable of integration, which means the area of the slice at height y is
+Since y moves from 0 at the bottom of the half-circle to 4 at the top of the half-circle. The area of the half-circle is
+If you evaluate this integral on your calculator, you'll get approximately
+which is the area of a circle of radius 4, divided by 2.
+If that example seemed harder than getting three people to agree on topping choices for a pizza, no worries. There's another way to slice up a circle to find its area.
+One of our favorites is slicing it into concentric rings like a target. When we do this, we use the letter r for the variable of integration. The variable r tells how far a ring is from the center of the circle:
+If we had a circle of radius 6, the innermost ring would be at r = 0 and the outermost ring would be at r = 6:
+To find the area using rings, we have look at one ring at a time. If we snip the ring open and straighten it out, we get something that's more or less a very, very, very skinny rectangle. The ring is like a piece of very thin spaghetti-pizza. We can take a this spaghetti-pizza slice, lay it down in a circle with the ends just barely touching, and straighten it out again. Whether we lay the string down in a circle or lay it down straight, the length of the string stays the same. The circle has radius r, and we know the circumference of the circle is 2π r. This means the length of the spaghetti-pizza is just 2π r.
+The spaghetti-pizza ring isn't very thick, but it does have a thickness of Δ r. When we straighten it out, it still has a thickness of Δ r. So the area of the string, or ring, is 2π r Δ r.
+Let's go back to our circle of radius 6.
+To find the area of this circle, we need to add up the areas of all the ring-slices. As we let the number of rings approach ∞, we get an integral. The variable r goes from 0 to 6, so these are our limits of integration. This means the area of the circle is
+We can evaluate this integral to get
+Notice that along the way, we derived the formula for the area of a circle, or a pizza...or a pie! If the circle had radius R instead of 6, we would have ended up with
+Write an integral expression for the area of the half-circle, slicing as shown and using h as the variable of integration.

@@ -1,0 +1,43 @@
+Technical indicators are essential tools that help traders predict future price of financial assets. These indicators are created using complex statistical formulas.
+In the past few weeks, we have focused on sharing our knowledge on some of the common technical indicators like the Relative Strength Index (RSI) and Bollinger Bands. We have also focused on some relatively unknown indicators like the Keltner Channel and the Donchian Channel.
+In this report, we will look at the essentials you need to know about the William Alligator Indicator in Day Trading
+What is the Alligator Indicator?
+The Alligator indicator is one of the several indicators that were developed by Bill Williams. Other indicators he has created are accelerator oscillator, fractals, gator oscillator, and the market facilitation index.
+He developed the alligator in 1995 when he wrote his book, Trading chaos: Applying Expert Techniques to Maximize Your Profits. Bill Williams’ indicators are built-in in most trading platforms like the MetaTrader.
+When applied, the Alligator indicator has three lines. In default, the three lines are in red, blue, and green. The red line is known as the teeth while the blue line is the jaws. The green line is known as the lips. The chart below shows the Williams Alligator applied in a Microsoft chart.
+But..what exactly do these terms mean?
+The jaw is the 13-period smoothed moving average that is moved into the future by 8 bars. The teeth is the 8-smoothed moving average that is moved five days into the future while the lips is the 5-period smoothed moving average that is moved by 3 bars into the future.
+The smoothed moving average is a type of MA that uses a longer period to compute. When it is calculated, it does not refer to a fixed period but takes all available data into account. You calculate this by subtracting the previous SMA from today’s price.
+Other types of moving averages are simple, exponential, and weighted.
+Read the Alligator Data
+Look for Trends
+Using the alligator indicator is relatively easy. First, you need to look at a chart that is either trending upwards or moving downwards. It is wrong to use it when the price of an asset is consolidating.
+The next step is to look at the numbers that are in the indicator. The default periods for the jaw, teeth, and lips periods are 13, 8, and 5. The other important numbers to look at are the shifts. The default shifts in the jaws, teeth, and lips are 8, 5, and 3.
+In simple, these shifts are the periods are moved into.
+After this, there is the method. The default method is usually smoothed. You can change this to simple, linear weighted, and exponential.
+Finally, you need to check where you want to apply these numbers. This can be either the close, open, high, low, median, weighted close, and typical close. We recommend that you use the default figures as shown below.
+How do you trade an Alligator Indicator?
+As mentioned above, the alligator indicator has three lines. As with all indicators with such lines, the most important things to watch are the crossovers. Crossovers are good signs of reversals.
+As shown below, the EUR/USD pair reversed its descent when the three periods reversed. A buy signal usually comes when three lines reverses and the jaw remains on the right sides. As the price rises, you should watch as it moves below the green (lips) line.
+Alligator in trend-following
+Another simple strategy of using the Williams Alligator is in trend following. For starters, this is a simple strategy that aims to buy a financial asset that is rising and short one that is falling.
+As such, in this case, the Williams Alligator will help you identify exit areas. When a financial asset’s price is rising, the bullish trend will remain intact so long as it is on the left side of the indicator.
+Similarly, a bearish trend will remain if it is on the right side of the chart. As such, you should start exiting when the price moves towards the lips of the indicator.
+This is a similar idea to when you are using the moving average in trend following. An example of this is shown in the chart below.
+Alligator and MACD
+Another way you can use the alligator indicator is to use it together with the MACD indicator. By combining the indicator with the MACD, you reduce the chances of a false breakout.
+In this case, a buy signal emerges when the signal line of the MACD moves to the right side of the histograms as shown below.
+Wait for a breakout
+Another strategy for using the alligator indicator is to wait for a major breakout. In a period of low volatility, when the three lines are close together, it is usually a sign that the price will make a major move.
+A common analogy is that of using a real alligator. When it sleeps for so long, the hungrier it becomes, and is ready to hunt for bulls and bears. A good example of this is shown in the chart below.
+Advantages of Using the Alligator
+There are several benefits of using the Alligator indicator.
+You don’t need to do the calculations yourself.
+The indicator is derived from the moving average, which is one of the best-used indicators in the market.
+The tool easily integrates with other indicators.
+It is easy to identify areas of divergencies or reversals.
+The alligator is one of the most popular indicators by Bill Williams. It has colourful names like the jaw, lips, and teeth. As a trader, you should spend time learning about the indicator.
+You should also practice and tweak in a demo account the periods to tailor it to your trading strategy.
+External Useful Resources
+- How do you Trade Alligator Indicator in Forex? - Admiralmarkets
+- Alligator Indicator versus the Triple EMA - Tradingsim

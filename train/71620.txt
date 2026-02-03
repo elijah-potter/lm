@@ -1,0 +1,13 @@
+It took a crew 80 min to row 3 km upstream and back again. If the rate of flow of the stream was 3 km/h, what was the rowing rate of the crew?
+The answer is : 6 km/h
+Split the trip into two parts. Once upstream, one downstream.
+Let rowing rate be v.
+Total speed of the boat is (v - 3) km/h because for every hour, the crew rows vkm/h x 1h = v km. But in that same hour, the stream drags them back 3km/h x 1h = 3km. Total distance travelled in this hour is thus v-3, giving the velocity of (v-3)km/h.
+This time, the crew rows v km in one hour and the stream carries them an extra 3km in that hour. So velocity going downstream is (v+3) km/h
+Now the total distance travelled is 3km upstream and 3km downstream
+Since time = distance/speed, we can write
+T1 = time spend rowing upstream = 3/(v-3) hours
+T2 =time spend rowing downstream =3/(v+3) hours
+This was accomplished in 80 minutes total, which is 1.333... hours
+So Ttotal = T1 + T2 = 3/(v-3) + 3/(v+3) = 1.333...
+The solution to this is v = 6km/h

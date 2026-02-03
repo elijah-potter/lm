@@ -1,0 +1,18 @@
+Layout Flags Enum
+[System.Flags] public enum AbsoluteLayoutFlags
+type AbsoluteLayoutFlags =
+Interpret all dimensions proportionally.
+Interpret height property as proportional to layout height.
+Disable all flags.
+Equivalent to both XProportional | YProportional.
+Equivalent to both WidthProportional | HeightProportional.
+Interpret width property as proportional to layout width.
+Interpret x property as proportional to the remaining space after width is accounted for.
+Interpret y property as proportional to the remaining space after height is accounted for.
+The AbsoluteLayout class can lay its child elements out in proportional units, device units, or a combination of both. Application developers should remember the following points when specifying a Rectangle structure that will define the layout bounds of a child element:
+- For elements whose height and width fit on the screen, proportional position dimensions in the range [0,1] represent elements that are completely on the screen, regardless of whether the height, width, or both are specified in device or proportional units.
+- The above point means that, to specify an element in the lower right hand corner of the screen and that is half as wide and half as all as the screen, with a AbsoluteLayoutFlags value of
+All, the application developer would specify "0.1, 0.1, 0.5, 0.5".
+- The app developer can inadvertently cause child elements for which one or both size dimensions were specified proportionally to be displayed partially off the screen, or hidden altogether, by specifying device-unit positions that do not leave enough room for the calculated size of the child.
+- Each part of the bounding Rectangle structure is interpreted according to the AbsoluteLayoutFlags value that controls it. A given rectangle might, for example, have an X-coordinate that is in device units, a Y-coordinate that is in proportional units, a height that is in proportional units, and a width that is in device units, or any other combination of device and proportional units.
+- Rectangles that, when interpreted by using the current AbsoluteLayoutFlags set on the child, represent bounding boxes that are partially or wholly off-screen—for example, by having a width that is larger than the screen width—may give unexpected results.

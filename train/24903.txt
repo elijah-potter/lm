@@ -1,0 +1,53 @@
+Figure descriptions will appear here.
+Figure 1: An image of the Lagoon Nebula. The cursor (arrow) points at a star with a large halo. Such halos are usually the result of internal reflections very close to the chip. If the chip has a cover slip, this is the most common source of bright internal reflections close to bright stars. Such reflections have a slightly stronger vertical component due to the physical structure of the surface of the chip. The surface isn't flat; it has electronic components that cause the reflections to be stronger in the vertical direction.
+Figure 2: Enlarge the image to show the problem star more clearly.
+Figure 3: Select the Polygonal Lasso tool.
+Figure 4: Draw a selection around the bright portion of the star. Stay just outside the area you want to clean up, as shown here. (Tip: to complete the selection, double-click the last point and Photoshop will close the selection boundary.
+Figure 5: The completed selection.
+Figure 6: Save the selection for later use.
+Figure 7: I used the name 'Original selection'
+Figure 8: Feather the selection.
+Figure 9: I used a feather of 4 because this is a relatively medium-size star with a halo. For very large halos, the selection will be larger and a larger feather will be required.
+Figure 10: The result of feathering.
+Figure 11: Save the feathered selection for later use.
+Figure 12: I used the name 'feathered selection'
+Figure 13: Copy the selected portion of the image to the clipboard.
+Figure 14: Paste from the clipboard to create a new layer.
+Figure 15: Duplicate the new layer to make a second copy.
+Figure 16: Select a small portion of the background with the Rectangle selection tool.
+Figure 17: Use the Edit | Define Pattern menu item to save the selected area as a pattern.
+Figure 18: Give the pattern a name. I used the default.
+Figure 19: Load one of the saved selections.
+Figure 20: Choose the Original selection.
+Figure 21: Click OK to load the selection.
+Figure 22: [not used]
+Figure 23: Use the Edit | Fill menu item.
+Figure 24: In the 'Contents' section, choose "Pattern'. Click the down arrow in the Custom Pattern box to reveal with available patterns. Click to highlight the pattern you just created.
+Figure 25: Click OK to fill with the pattern. Note: Make sure that "Preserve transparency" is NOT checked.
+Figure 26: The result of the fill.
+Figure 27: Set the blend mode of the fill to 'Difference'
+Figure 28: The result. Yes, it looks pretty awful. But that will change!
+Figure 29: Click where shown to link the two layers.
+Figure 30: Merge the linked layers.
+Figure 31: The result after the merge. Still pretty weird, but do not worry!
+Figure 32: Set the blend mode of the merged layer to 'Difference'
+Figure 33: Better, but definitely not finished yet.
+Figure 34: Make black the active color for painting. The easiest way to do this is to click the 'Default foreground and background colors' icon.
+Figure 35: Make the Brush tool the active tool.
+Figure 36: Set the brush width to about half the width of the original star. You can temporarily hide the top layer to measure the width of the underlying star.
+Figure 37: Position the cursor over the underlying star. This is normally the center of the selection, but if you need to peek you can temporarily hide the top layer, and add a vertical and horizontal rule to mark the center of the underlying star.
+Figure 38: Click 1-3 times to place black at the location of the underlying star. If you don't see the star showing through, verify that the "Layer 1 copy" (top layer) is the active layer. Why do we see the star when painting with black? The Difference blend mode subtracts the top image from the bottom one. If we are painting with black, it has a value of zero, and so nothing is subtracted, leaving the full brightness of the underlying star showing through.
+Figure 39: Choose the rectangular marquee tool.
+Figure 40: Make a large rectangular selection that is larger than the earlier selections.
+Figure 41: Load one of the previous selections.
+Figure 42: Choose the feathered selection.
+Figure 43: Set the Operation to 'Subtract from selection'
+Figure 44: The result is a selection that includes just the edge of the difference layer.
+Figure 45: Clear everything in the selected area.
+Figure 46: This cleans up the edge of the selection, but in this example a small dark rim remains.
+Figure 47: Make the Eraser tool the active tool.
+Figure 48: Set the brush size to about half of the width you used for the Brush tool.
+Figure 49: Position the eraser over the dark area. Make sure the opacity is set to 50% or less.
+Figure 50: You are erasing some of the contents of the difference layer, and allowing the underlying image to show through. This evens up the brightness levels, and provides a better match in color. Be very careful doing this step; it's easy to remove too much and that will bring back the halo you wanted to remove (or at least the outer portions of the halo).
+Figure 51: The dark area has been cleaned up. If you don't like the result, use the History palette to undo your work and try again. If the result was too aggressive, try a smaller brush or a lower opacity.
+Figure 52: The result of fixing up the star. Compare to figure 1.

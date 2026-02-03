@@ -1,0 +1,44 @@
+An investigation into a quadratic expression used to represent a parabolic edge in designing a flower garden utilizing calculus to determine the maximum area of the lawn
+Purpose of the Project
+Mr. Jack is an avid gardener and he is considering a new design for his garden. He has a rectangular lawn measuring 5 metres by 3 metres and wants to dig up part of it to include a flower bed. He desires to have a parabolic edge for the flower bed as shown below in Figure 1.
+Objectives of Project
+To find an expression that would best represent the parabolic edge. To use Integration to find an expression for the area of the lawn. To Differentiate the expression for the area to determine the maximum area of the lawn. To investigate possible lawn design options with the area found in objective
+1) Finding an expression to represent the parabolic edge of the flower bed which is also the parabolic edge of the lawn. Let y= a(x-h)2 +p be the equation of the parabola where p is the maximum value of y…. (FIGURE 2) Since (q,0) lies on the curve (i.e is a true root
+(where q is the positive root of the curve)
+Which represents the parabolic edge.
+2) Finding an expression for the area of the lawn.
+Area under the curve =
+Area = = [ + ]
+= [( =
+Therefore Area of lawn A=
+3) Finding an expression for the maximum area of the lawn. Maximum area occurs when =0 A=
+= = 0
+= —-=- = –
+For the maximum area of the lawn
+4) Alternative designs to be considered for the flowerbed while maintaining the maximum area of the lawn.
+Other designs can include different shapes such as rectangles , triangles and circles. Area of rectangle =
+Area of Triangle =
+Area of Circle =
+From the expression for the parabolic edge is
+And from The area of the lawn is
+From The maximum area of the lawn occurs when
+Since the plot is 5m long and 3m wide the maximum area for the lawn would occur when and we will try different values for which will be 2.5 ,3 and 4
+y-intercept (substituting ) in
+The plan for the flowerbed and lawn is shown in below,
+If then if then if
+Are of the whole plot = =
+If the maximum area of the lawn =
+Then the area of the flower bed should be
+Area of bed
+Area of flower bed
+Area of flower bed
+For this project there were four main aims which we were trying to accomplish To find an expression for the parabolic edge an assumption was made that that the equation of the parabola was in the completing the square form where p is the maximum point of the curve. It was observed that the point () laid on the x axis and from this the equation was found putting this into our first equation the expression for the parabolic edge was found
+To find an expression for the area of the lawn the expression for the expression for the parabolic edge was integrated to get the expression A=
+To find an expression for the maximum area of the lawn differentiation was used, the expression that was found for the area of the lawn A= was differentiated using the quotient rule to get = .Algebra was then used to find that that the max area of the lawn occurs when .
+The forth objective was to investigate other possible designs for the flowerbed while maintaining the maximum area of the lawn. For this different values were substituted into the expression for maximum area and area of the lawn to find different possible values for the lawn, then different shapes (a triangle, a rectangle and a rhombus) were created with dimensions that would fit within the area of the plot and would have the same maximum area as the values found when substituting numbers into the expression
+At the end of this project it was determined that some possible applications of the methods used for the project would be:
+1) In stadiums- In certain cases in stadiums where there is lawn in the middle of a circular race track. These methods may be applicable in this situation 2) For roundabouts – Traffic roundabouts may take several shapes such as circles, triangles with curved edges or even irregular shapes, but all these shapes involve some type of curved edge for the lawn within the roundabout. Methods similar to those used within this project may also be employed here in the planning of roundabouts
+Application of Solution
+This type of lawn design could be applied in places such as stadiums, curved or circular lawn edges will be applied in stadiums where there is a running track with lawn within it. Similar methods to the ones used in this project may be used for planning this. Another application of this type of lawn design would be for roundabouts on roads, all roundabouts feature some type of curve so similar methods to the ones used in this project may employed in the planning for a roundabout.
+All objectives of the project were successfully completed. It was found that the expression which would best represent the parabolic edge was The expression for the parabola was integrated to find the expression for the area of the lawn which was A= That maximum area of the lawn was found to occur when
+Three other possible lawn designs were shown in which the lawn took the shapes of a triangle, a rectangle and a rhombus.

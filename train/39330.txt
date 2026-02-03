@@ -1,0 +1,13 @@
+What is AES Encryption?
+AES stands for Advanced Encryption Standard. Advanced Encryption Standard (AES), also known as Rijndael, is a block cipher adopted as an encryption standard by the U.S. government.
+AES is a symmetric key encryption technique which will replace the commonly used Data Encryption Standard (DES).
+AES Encryption algorithm
+It was the result of a worldwide call for submissions of encryption algorithms issued by the US Government’s National Institute of Standards and Technology (NIST) in 1997 and completed in 2000. Five algorithms were selected into the second round, from which Rijndael was selected to be the final standard. When considered together, Rijndael’s combination of security, performance, efficiency, ease of implementation and flexibility make it an appropriate selection for the AES.
+Rijndael performs very well in hardware and software across a wide range of environments in all possible modes. It has excellent key setup time and has low memory requirements, in addition its operations are easy to defend against power and timing attacks.
+The winning algorithm, Rijndael, was developed by two Belgian cryptologists, Vincent Rijmen and Joan Daemen, and submitted to the AES selection process under the name “Rijndael”. AES provides strong encryption and was selected by NIST as a Federal Information Processing Standard in November 2001 (FIPS-197), and in June 2003 the U.S. Government (NSA) announced that AES is secure enough to protect sensitive, unclassified information.
+AES is an iterative, symmetric key block cipher that can use keys of 128, 192, and 256 bits, and encrypts and decrypts data in blocks of 128 bits (16 bytes). Unlike public key ciphers, which use a pair of keys, symmetric key ciphers use the same key to encrypt and decrypt data.
+The AES algorithm uses three key sizes: a 128-, 192-, or 256-bit encryption key. Each encryption key size causes the algorithm to behave slightly differently, so the increasing key sizes not only offer a larger number of bits with which you can scramble the data, but also increase the complexity of the cipher algorithm.
+AES is the successor to the older Data Encryption Standard (DES). DES was approved as a Federal standard in 1977 and remained viable until 1998 when a combination of advances in hardware, software, and cryptanalysis theory allowed a DES-encrypted message to be decrypted in 56 hours.
+Complete AES-related information is available on the http://www.nist.gov/aes/.
+AES Encryption software
+AES encryption software for personal and professional security that helps you protect the privacy of your email messages, documents and sensitive files. Availbale in a portable version.

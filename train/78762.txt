@@ -1,0 +1,22 @@
+Parse::ErrorString::Perl::ErrorItem - a Perl error item object
+Each object contains the following accessors (only
+line are guaranteed to be present for every error):
+Normally returns a single letter identifying the type of the error. The possbile options are
+A. Sometimes an error can be of either of two types, in which case a string such as "
+S|F" is returned in scalar context and a list of the two letters is returned in list context. If
+typeis empty, you can assume that the error was not emitted by perl itself, but by the user or by a third-party module.
+A description of the error type. The possible options are:
+W => warning D => deprecation S => severe warning F => fatal error P => internal error X => very fatal error A => alien error message
+If the error can be of either or two types, the two types are concactenated with "
+or". Note that this description is always returned in English, regardless of the
+The error message.
+The path to the file in which the error occurred, possibly truncated. If the error occurred in a script, the parser will attempt to return only the filename; if the error occurred in a module, the parser will attempt to return the path to the module relative to the directory in @INC in which it resides.
+Absolute path to the file in which the error occurred.
+The file path as displayed in which the error message.
+Line in which the error occurred.
+Text near which the error occurred (note that this often contains newline characters).
+Additional information about where the error occurred (e.g. "
+Detailed explanation of the error (from perldiag). If the
+langoption is specified when constructing the parser, an attempt will be made to return the diagnostics message in the appropriate language. If an explanation is not found in the localized perldiag, the default perldiag will also be searched. Returned as raw pod, so you may need to use a pod parser to render into the format you need.
+Callstack for the error. Returns a list of Parse::ErrorString::Perl::StackItem objects.
+# Copyright 2008-2013 The Padre development team as listed in Padre.pm. # LICENSE # This program is free software; you can redistribute it and/or # modify it under the same terms as Perl 5 itself.

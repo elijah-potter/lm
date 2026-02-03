@@ -1,0 +1,23 @@
+- A monitor is a programming language construct that guarantees an appropriate access to critical section. Thus, a monitor is a software synchronization tool.
+- It is a facility provided by language system, and it is not a service provide by operating system.
+- Many programming languages like concurrent Pascal, Modula-2, Modula-3 and Java provide monitors.
+- A monitor is a software module consisting of one or more procedures, local data and an initialization sequence.
+The major characteristics of a monitor are the following :
+- The local data variables of monitor are accessible only by the monitor’s procedures and not by any external procedure.
+- Processes cannot directly access the monitor’s internal data but they can call procedures in a monitor. Thus, a process enters the monitor by invoking one of its procedures.
+- Only one process can be active at a time in monitor i.e. only one process may E executing in the monitor at a time.
+- When a process calls a monitor procedure and any other process is active in monitor then the calling process is suspended. Such a suspended process waits until the monitor becomes available. In this way a monitor fulfills mutual. exclusion requirement.
+- Semaphore is a synchronization tool denied by Dijkstra in 1965 for managing concurrent process by using the value of simple variable.
+- Semaphores are the main synchronization primitive used in UNIX.
+- A Semaphore S is a simple integer variable which can take non-negative values.
+- Two different operations can be performed on semaphore : wait and signal. Wait operation is also called P and signal operation is called V because in Dijkstra’s original paper the letter P is used for wait and the letter V for signal. These are the initials of the Dutch words for ‘to test’ (proberen) and ‘to increment’ (Verhogen).
+- Entry to critical region of active processes is controlled by the wait operation and exit from a critical region is signaled by the signal operation.
+- Wait Operation : It decrements the semaphore value. If the value becomes negative, then the process executing the wait is blocked.
+- Signal Operation : It increments the semaphore value. If the value is not positive, then process blocked by a wait operation is unblocked.
+There are two variety of semaphore:
+- Binary Semaphore : When the integer value (S) can have only 0 or 1 value, it is known as binary semaphore.
+- Counting Semaphore : When the integer value (S) can be any non-negative value, it is known as counting Semaphore. Counting semaphore is also known as general semaphore.
+Differences between Monitor & Semaphore
+A condition variable of monitor is like a semaphore, with two differences only :
+- A wait on a condition variables always blocks the calling process. Thus instead of busy waiting (as in case of semaphore), process will be blocked automatically.
+- The signal operation resumes exactly one suspended process. If no process is suspended, then the signal operation has no effect, thus, the state of condition variable is as though the operation was never executed. Whereas in case of semaphores, signal operation always affects the state of semaphore (by incrementing its value by 1).

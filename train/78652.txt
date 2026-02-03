@@ -1,0 +1,8 @@
+Bytes::Random - Perl extension to generate random bytes.
+use Bytes::Random; my $bytes = random_bytes( $number_of_bytes );
+Bytes::Random provides the
+random_bytes($num) function. It can be used anytime you need to generate a string of random bytes of a specific length.
+Returns a string containing as many random bytes as was requested.
+John Drago, <email@example.com>
+Copyright (C) 2009 John Drago - All Rights Reserved.
+This library is free software; you can redistribute it and/or modify it under the same terms as Perl itself, either Perl version 5.10.0 or, at your option, any later version of Perl 5 you may have available.

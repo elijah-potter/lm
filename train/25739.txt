@@ -1,0 +1,2 @@
+If I know that 10,000+ gallons of water were going to be dropped at a single point how could I model where it would flow. I would prefer something that worked in ArcGIS and could create a layer.
+ESRI has a good support section on hydrologic analysis. Also, there is a pretty good video tutorial here on how to create drainage networks in ArcMap. The attached image from ESRI shows a stream network created using ArcMap's hydrologic tools and a digital elevation model (DEM) available from USGS Earth Explorer.

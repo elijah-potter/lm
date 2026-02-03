@@ -1,0 +1,3 @@
+Science Operations Configuration
+During the primary science phase, the orbiter's job is to point its science instruments at Mars to collect images and other data from targets on the surface of Mars, while ensuring that the high-gain antenna and solar arrays are continuously tracking the Earth and the Sun, respectively.
+The orbiter typically keeps its science instruments pointed to nadir (looking straight down at the surface). A few times per day, for about fifteen minutes each time, the orbiter points side-to-side to capture high-priority science targets that don't fall directly beneath the spacecraft. The spacecraft can point off-nadir up to 30 degrees.

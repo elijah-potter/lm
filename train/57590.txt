@@ -1,0 +1,12 @@
+|시간 제한||메모리 제한||제출||정답||맞은 사람||정답 비율|
+|2 초||128 MB||14||7||4||57.143%|
+N grasshoppers are waiting in line to see a show. Waiting is boring, so they waste doing one of the following two moves:
+The grashoppers aren't all of the same height. When jumping, a grashopper must be careful not to hit another grasshopper with its leg. More precisely, it needs to jump as high as the height of the tallest grasshopper it is jumping over.
+Given the sequence of jumps, output the height of each jump.
+The first line contains two integers N and J (2 ≤ N ≤ 100 000, 1 ≤ J ≤ 100 000), the number of grasshoppers in line and the number of jumps.
+The second line contains N integers less than 100 000, the heights of grasshoppers in the initial ordering. The first grasshopper is initially in position 1, the second in position 2 etc.
+Each of the following S lines describes one jump. Every line contains an integer A (1 ≤ A ≤ N), the position of the jumping grashopper, a the direction in which it jumps ('L' for left, 'D' for right), and an integer B (1 ≤ B ≤ N), the number of grasshoppers it jumps over. Each jump will be valid (the number B will be less than or equal to the number of grasshoppers on the corresponding side of the grasshopper in position A).
+The jumps are given in the order in which the grasshoppers do them.
+Output J lines, containing the heights of the jumps, in order in which they are performed.
+9 3 5 3 8 4 9 3 7 4 2 2 D 3 8 L 2 5 D 2
+9 7 4

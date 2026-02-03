@@ -1,0 +1,56 @@
+Below are some very basic answers to some commonly asked questions regarding tungsten carbide properties and metallurgy. Please contact us if you require more detailed information or if the information you require is not listed below.
+What does Coercivity tell us?
+Coercivity is determined by fully magnetizing a sample in a strong magnetic field created by an electrical force running in a coil. An opposite electrical force applied through the same coil then demagnetizes the sample; the force necessary to demagnetize the sample is measured in oersteds and is given as the Coercivity.
+Coercivity is a measure of the residual magnetism of a cemented carbide sample. The measurement is independent of sample size or weight. The sample must meet the criteria of the coils maximum dimensions and position within the test coil. Pure cobalt in cemented carbides has normal magnetic properties. During sintering some of the cobalt in the cemented carbides will alloy with either carbon or tungsten carbide. Therefore the carbon imbalance of the sample will affect the Coercivity. For Coercivity it is important to know the metallurgical condition of the sample in terms of free carbon, normal or Eta-phase, as these will affect the Coercivity measurement.
+During sintering all the individual cobalt powder agglomerates melt and fuse together forming a solid matrix of WC grains (non-magnetic) and cobalt (magnetic); The finer the matrix the higher the Coercivity. A fine cobalt matrix will have a lot more residual magnetism, as it will require more force to neutralize all the magnetic nodes (cobalt pockets) in the matrix. The size of the cobalt pockets is a direct measurement of the size of the WC grains, i.e. if the WC grains are small the cobalt pockets are small. Therefore, in carbon-balanced samples, Coercivity is a measure of the grain size of the sintered samples; The higher the Coercivity the finer the grain size. Since grain size is a direct measure of proper sintering, Coercivity is a measure of how well cemented carbides have been sintered. The following table shows the relationship.
+Coercivity of a 10% cobalt cemented carbide grade as grain size varies.
+Condition of cobalt Resulting Coercivity. Oe Cobalt alloyed with carbon behaves like a ferrite and will be more conductive than normal. 240 or less Free carbon C02-C08 240-245 Pre-carbon Cobalt alloyed with normal tungsten carbide, WC, will form a phase at the WC grain boundary that is non magnetic. 240-245 Pre-carbon 245-300 300- NORMAL 330 Pre-Eta Cobalt alloyed with bi-tungsten carbide, W2C (Eta), will form the phase we normally refer to as Eta-phase, a non-magnetic alloy. 300-330 Pre-Eta 330-340 Medium Eta 340 or greater Coarse Eta
+What does Magsat (Magnetic Saturation) tell us?
+Magsat is determined by fully magnetizing a sample in a strong magnetic field created by a large permanent magnet. The sample is then removed from the magnetic field through a test wire coil; the resulting emu (electro motive unit) is measured and divided by the sample weight to determine the magnetic saturation of the sample.
+Magsat is a measure of the lump sum magnetism of pure cobalt. Pure cobalt in cemented carbides has normal magnetic properties. During sintering some of the cobalt in the cemented carbides will alloy with either carbon or tungsten carbide. The maximum Magsat of pure cobalt is 160 emu/g. A 10% cobalt carbide grade can have a maximum Magsat of 10% X 160 = 16.0 emu/g. The following table summarizes the significance of Magsat.
+Magsat in a 10% cobalt cemented carbide grade.
+Condition of cobalt Resulting Magsat for a 10% cobalt grade with a maximum Magsat of 16.0. % Magsat Cobalt alloyed with carbon behaves like a ferrite and will be more magnetic than normal. 97-100+% >15.5 Free carbon C02-C08 95-97% >15.2-15.5 Pre-carbon 95% >15.2 13.6 Pre-carbon 85% 12.0 NORMAL 75% Pre-Eta 77-75% 12.3-12.0 Pre-Eta 75-65% 12.0-10.4 Medium Eta 65 or less 10.4 Coarse Eta
+Similar calculations may be made of any known cobalt content straight (WC & Co – only) grade. Steel cutting (WC, Co & cubic carbides TaC, Tic, etc) grades have a larger amounts of cobalt alloyed in the cubic carbide (gamma-phase) solutions.
+Note: alpha = WC, beta=Co (binder), and gamma= alloys of various carbide, particularly the cubic crystal from carbide TaC, TiC, etc.
+What is “Excess Carbon,” “Free Carbon,” “Carbon Porosity” or “C porosity”?
+If are present in the material the carbon will collect into microscopic pockets during the sintering process. These pockets disrupt the Tungsten Carbide/Cobalt matrix and can affect the properties of the material.
+Because the pockets like A and B type porosity C type porosity is rated by the ASTM at different levels. C-00 (carbon porosity free) up to C-08, but these rating do not correspond to total pore volume like A and B type porosity.
+What is Porosity and how is it rated in Tungsten Carbide?
+The term “porosity” simply refers to the presence of microscopic pores in the Tungsten carbide/Cobalt matrix. If the total porosity or if the volume of the largest pores present exceed a critical value, then the properties of the material can be affected.
+Typical porosity is rated in three different types.
+A-type refers to pores less the 10mirons in diameter
+B-type refers to pores between 10microns and 40microns
+C-type is based on excess carbon content and is addressed below
+And at different levels according to the estimated total volume of porosity in the sample.
+For example, a sample rated at A-02 B-00 C-00 porosity has pores less then 10microns in diameter with a total pore volume of .02% of the sample. A rating of A-04 B-02 C-00 indicates a total pore volume of .06% for pores less then 10microns across, .02% for pores between 10microns and 40microns and an overall pore volume of .08%.
+What is “Eta-Phase” or “Eta”?
+Eta phase is a carbon deficient form of tungsten carbide that results in a harder, more brittle cemented carbide part. Insufficient carbon levels are generally the result of improper formulation of the carbide powder, long-term exposure of green parts to the atmosphere, or poor control of sintering conditions.
+What is “Sintering or Sinter-HIPing”?
+Sintering is the process in which the tungsten carbide grains are fused into the cobalt matrix by heating the green material (carbide that has not been sintered is called green) to a high temperature.
+There are variations of the sinter process:
+- Hydrogen sinter, an early form of the sinter process where green carbide is heated in a form of hydrogen gas atmosphere, i.e. pure hydrogen, hydrogen/nitrogen gas mixture or dissociated ammonia.
+- Vacuum sinter, in this process the green carbide is heated in a vacuum furnace either at vacuum or in a partial argon environment.
+- Sinter-HIP, vacuum sinter with a post HIP operation, (Hot Isostatic Pressure). In this process the carbide is first vacuum sinter; at the end of the vacuum sinter process the vacuum is replaced by pressurized argon gas of many atmospheres. The vacuum sinter process creates a sealed envelope of molten binder metals around the carbide.
+Sinter-HIP should not be confused with a process sometimes called “post-HIP” or autoclave. In the Sinter-HIP process, sintering and HIPing are combined into a singe process step. In post-HIP the material is sintered then placed in a separate furnace to be re-heated and have pressure applied. Sinter-HIP takes place at much higher temperatures and lower pressure then post-HIP and is widely considered to produce a superior product.
+What is Hardness?
+It is the relative ability of one material to wear, abrade, deform or indent another material. Hardness is measured on some relative scale such as Moh’s, Rockwell, Vickers scales. The diamond is the hardest material known to man at this writing; all other materials have their hardness expressed in terms of it.
+Note: Carbide Technologies measures hardness by the Vickers method for accuracy then converts the results to the Rockwell A Scale which is more easily recognized in the US.
+Vickers Hardness Scale
+The Vickers Hardness test is applied to different materials across a wide range of hardnesses. The Vickers test uses a square-base pyramid shape diamond penetrator. The load many be varied: 5, 10, 20, 30, 50 or 120 kgf. The load is applied via the penetrator against the polished surface of the test specimen for 30 seconds. The resulting hardness reading depends on the load and the area of the pyramid penetrator’s impression, in accordance with the formula: Relative hardness valves Symbol Value Scale Range HV 1560 Vickers 20~2400 HRA 92.0 Rockwell A-Scale 59-95 HM 8.0 Mohs 1-10 HRC NA Rockwell C-Scale 19-69
+Rockwell Hardness Scales
+The Rockwell Hardness test presses a steel or diamond penetrator against a test specimen and measures the resulting indentation depth as a gage of the specimen hardness. The harder the material, the higher the HR reading. The letter suffix is used to show the test scale, as in HRA for Rockwell A scale.
+In the test, a minor load (10 kgf) is first applied, and the test dial is reset to zero. Then a major load (60, 100, or 150 kgf) is applied to create the indentation. The major load is reduced back to the minor load, and the indentation depth determines the hardness.
+The penetrator shape and load determine the Rockwell scale. Some commonly used scales are shown here.
+Scale Condition Application A Brale indenter 60 kgf load Hard materials, such as tungsten carbide. B 1/16 in diamond ball
+100 kgf load
+Medium to low hard materials, such as annealed carbon steels. C Brale indenter
+150 kgf load
+Materials harder than HRB 100, tool steels. D Brale indenter
+100 kgf load
+Rockwell Hardness Scales
+Is the ability of a material to absorb energy of deformation, such as impact or load, without breaking or fracturing. High toughness requires both high strength and high ductility.
+The most commonly used indicator of toughness in Tungsten Carbide is Transverse Rupture Strength. Transverse rupture strength is determined by breaking a carbide specimen of size .250in by .200in by .750in in the center of a 9/16in span at a rate of loading of 6800psi/sec.
+What is Tungsten Carbide?
+Tungsten carbide is a homogenous mixture of tungsten carbide grains in a tough cobalt binder matrix. The tungsten carbide grains are fused into a solid matrix of cobalt metals. The term cemented carbides comes saying that the metal carbide’s grains are “cemented” in the binder metal’s matrix. The fusion process is called liquid phase sintering, or sinter for short.
+While there are many different grades of Tungsten Carbide available containing various additives for a variety of applications, on the most basic level the primary properties of any given grade (Hardness and Toughness) are determined by the ratio of Tungsten Carbide to Cobalt. In general, more a lower percentage of Cobalt will produce a harder but less tough material and a higher percentage will produce a tougher but softer material.
+Hardness and Toughness Vs Composition

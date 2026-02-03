@@ -1,0 +1,15 @@
+In the rush to comply with various standards, such as addressing the OWASP Top 10 API, companies are looking at API security with renewed interest. Some organizations have begun using Web Application Firewalls (WAFs) to protect their APIs, but this isn’t a true solution to API security.
+An application programming interface (API) allows various computer programs to work together by sharing data. An API specification details what data the original program will share and how the recipient program will receive it. This has allowed mobile apps to be lightweight, sending input data to the cloud or a server, while surfacing the results on a lightweight application on your mobile device.
+APIs are used internally as well, allowing servers in an enterprise to rapidly share important data. APIs, along with microservices, are increasingly important to productivity and the economic survivability of enterprises today.
+The sensitive data shared via APIs makes API security vital. It would be a shame if the API were non-performative, or worse if the API actually leaked data.
+Unfortunately, that’s already happened.
+In May 2021, Peloton, the exercise company, found that its API was not authenticating users properly. The resulting Peloton data breach allowed anyone to go to that API and get the name, address, birth date, and health statistics for any of Peloton’s customers. It was an embarrassing data breach, one that was fixed immediately, but goes to show how important API security is today.
+To address issues such as authentication misconfigurations, organizations have been quick to adopt Web Application Firewalls (WAFs). WAFs are designed to filter the ingress and egress of data. Much like a desktop firewall, WAFs can filter data traffic from the application to known bad actors.
+This works from a defensive posture—you recognize there’s a threat and you need to stop it.
+And it’s simple—you don’t have to interrupt your development lifecycle to fix your API.
+But, really, isn’t this just a digital band-aid on the problem itself? WAFs don’t allow you to actually test your APIs, so you aren’t able to fix the underlying problems.
+Mayhem for API was designed from the ground up to test your APIs for performance, reliability, and security. It’s a lightweight SaaS solution that fuzzes your APIs to identify what’s really causing those 400s and 500s. It saves you time by showing you the stack trace of where the problem is. It integrates fully into your software development lifecycle, automating the test runs with each merge request.
+And the OWASP API Top 10? Mayhem has you covered there, too, by integrating the OWASP Zed Attack Proxy (ZAP) open source tool, so you can be sure your organization complies with each item. Better, Mayhem prioritizes the ZAP results, ranking them by severity and filtering out duplicates, so that you can focus your development time on what matters most.
+Why put a band-aid on it when you can address and heal the problems at their source? Sign up today for a free version of Mayhem for API.
+Get started with Mayhem today for fast, comprehensive, API security.
+Thank you for subscribing!

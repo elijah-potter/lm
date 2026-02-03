@@ -1,0 +1,19 @@
+다운로드 수: 1.7K
+업데이트 날짜: 2007/3/2
+Many of the iterative methods in Matlab are designed to work with either a function handle to provide A*x, or a matrix A directly. Developing code for each paradigm is a pain. The matrixop class yields the flexibility of Matlab syntax using function handles or anonymous functions.
+n = 100;
+A = spdiags([e -2*e e], -1:1, n, n);
+Afun = @(x) [-2*x(1) + x(2); x(1:n-2) - 2*x(2:n-1) + x(3:n); x(n-1)-2*x(n)];
+op = matrixop(A);
+x = linspace(-1,1,n)';
+b = op*x; % calls Afun(x)
+xminres = minres(op,b,,200); % runs minres on op where op*x = Afun(x)
+xgmres = gmres(op,b,, ,200);
+The advantage of the matrixop class is that you can write a single code that works for either a Matlab matrix or a function handle/linear operator representation. This simplifies the code and eliminates syntactic juggling that can cause bugs.
+The zip file includes numerous examples of how to use the matrixop class along with a sample showing the performance implications. See the demo directory.
+David Gleich (2023). matrixop (https://www.mathworks.com/matlabcentral/fileexchange/14137-matrixop), MATLAB Central File Exchange. 검색됨 .
+MATLAB 릴리스 호환 정보
+플랫폼 호환성Windows macOS Linux
+- MATLAB > Mathematics > Sparse Matrices >
+Community Treasure Hunt
+Find the treasures in MATLAB Central and discover how the community can help you!Start Hunting!

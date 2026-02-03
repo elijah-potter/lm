@@ -1,0 +1,10 @@
+How to Call a C function in Python
+Have you ever came across the situation where you have to call C function using python? This article is going to help you on a very basic level and if you have not come across any situation like this, you enjoy knowing how it is possible.
+First, let’s write one simple function using C and generate a shared library of the file. Let’s say file name is function.c.
+Compile this :
+cc -fPIC -shared -o libfun.so function.c
+Using ctypes(foreign function interface) library to call C function from Python
+The above statement will generate a shared library with the name libfun.so. Now, let’s see how to make use of it in python. In python, we have one library called ctypes. Using this library we can use C function in python.
+Let’s say file name is function.py.
+My Personal Notes arrow_drop_up
+Please Login to comment...

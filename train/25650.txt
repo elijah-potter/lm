@@ -1,0 +1,11 @@
+Section: A collection of standard strin (3stap)
+Updated: March 2013
+Return to Main Contents
+function::substr - Returns a substring
+the string to take a substring from
+starting position of the extracted string (first character is 0)
+length of string to return
+Returns the substring of the given string at the given start position with the given length (or smaller if the length of the original string is less than start + length, or length is bigger than MAXSTRINGLEN).
+This document was created by
+using the manual pages.
+Time: 09:58:16 GMT, March 20, 2013

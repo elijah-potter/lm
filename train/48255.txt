@@ -1,0 +1,19 @@
+A citation is the acknowledgment of the original author of a mail message in the body of the reply. There are two basic citation styles which Supercite supports. The first, called nested citations is an anonymous form of citation; in other words, an indication is made that the cited line was written by someone other that the current message author (i.e., other than you, the person composing the reply), but no reference is made as to the identity of the original author. This style should look familiar since its use on the net is widespread. Here's an example of what a message buffer would look like using nested citations after multiple replies:
+>> John originally wrote this >> and this as well > Jane said that John didn't know > what he was talking about And that's what I think too.
+Note that multiple inclusions of the original messages result in a
+nesting of the ‘
+>’ characters. This can sometimes be quite
+confusing when many levels of citations are included since it may be
+difficult or impossible to figure out who actually participated in the
+thread, and multiple nesting of ‘
+>’ characters can sometimes
+make the message very difficult for the eye to scan.
+In non-nested citations, each cited line begins with an informative string attributing that line to the original author. Only the first level of attribution will be shown; subsequent citations don't nest the citation strings. The above dialog might look like this when non-nested citations are used:
+John> John originally wrote this John> and this as well Jane> Jane said that John didn't know Jane> what he was talking about And that's what I think too.
+Notice here that my inclusion of Jane's inclusion of John's original message did not result in a line cited with ‘Jane>John>’.
+Supercite supports both styles of citation, and the variable
+sc-nested-citation-p controls which style it will use when citing
+previously uncited text. When this variable is
+nil (the default),
+non-nested citations are used. When non-
+nil, nested citations

@@ -1,0 +1,9 @@
+In an embedded environment, when an application shuts down, it should first shut down Derby.
+If the application that started the embedded Derby quits but leaves the JVM running, Derby continues to run and is available for database connections.
+In an embedded system, the application shuts down the Derby system by issuing the following JDBC call:
+Shutdown commands always raise SQLExceptions.
+When a Derby system shuts down, a message goes to the error log:
+Sat Jan 10 14:31:54 PDT 2005: Shutting down instance 80000001-00d0-8bdf-d115-000a0a0b2d00
+Typically, an application using an embedded Derby engine shuts down Derby just before shutting itself down. However, an application can shut down Derby and later restart it in the same JVM session. To restart Derby successfully, the JVM needs to unload org.apache.derby.jdbc.EmbeddedDriver, so that it can reload it when it restarts Derby. (Loading the local driver starts Derby.)
+You cannot explicitly request that the JVM unload a class, but you can ensure that the EmbeddedDriver class is unloaded by using a System.gc() to force it to garbage collect classes that are no longer needed. Running with -nogc or -noclassgc definitely prevents the class from being unloaded and makes you unable to restart Derby in the same JVM.
+It is also possible to shut down a single database instead of the entire Derby system. See Shutting down Derby or an individual database. You can reboot a database in the same Derby session after shutting it down.

@@ -1,0 +1,3 @@
+Skip to Main Content
+In natural language, it is very common that one word has several different meanings. The well solution of word sense disambiguation (WSD) problem is the basis of natural language processing. In this paper, based on the certainty of word sense in certain language context, a new method is put forward based on ontology to solve the problem of WSD. And also, a prototype is developed to solve the WSD of "FT" in Chinese. Ontology is used to describe the knowledge of word and sense, and Jena reasoning rules are used to reason the mean of one ambiguous word. This method can be of great help to solve WSD.
+Date of Conference: 11-13 Dec. 2009

@@ -1,0 +1,15 @@
+What is direct or icon machine translation method?
+Direct or icon method of machine translation is based on establishing a direct relationship between the source and target dictionary entries
+2. What is transfer-based machine translation method?
+According to the transfer-based method of translation grammars of the source and target languages are matched in the process of translation by a set of rules called transfer.
+3. What is pivot-language based machine translation method?
+A pivot language is a formal description of morphological, syntactic and semantic characteristics of a language unit in the form of one-to-one relationship. Each language unit is related to a specific invariable atom in the pivot language structure and vice versa, each atom of the pivot language structure is invariably connected with the units of various languages.
+Pivot language-based machine translation basic method. In a way it is similar to the transfer-based; however, there are several critical differences.
+pivot language representation involves all available linguistic information.
+pivot language-based systems claim to be universal, i.e. applicable to any language.
+4. What are artificial intelligence and statistical machine translation methods?
+The main component of the AI translation model is its so-called «knowledge base». According to an AI-based translation model the results of linguistic analyses at all language levels are verified against extral-linguistic information contained in the knowledge base.
+In AI-based translation models disambiguation procedures are radically different and based first and most of all on the analysis of situation and background information (knowledge base), whereas purely linguistic context analysis methods serve only as secondary back-up tools.
+5. What is computer-aided translation? How is it used in human translation?
+computer-aided translation is a tool to assist human translation. a translator is using a machine translation system (usually a direct translation variety) for the search of equivalents both for individual words and small text fragments.
+Date: 2014-12-29; view: 304

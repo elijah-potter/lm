@@ -1,0 +1,46 @@
+The Fuzzy Grouping Transformation in SSIS is used to replace the wrongly typed words with the correct words. For example, if 98 people typed the country name as India and two people typed as Indi, then SSIS Fuzzy Grouping Transformation will replace Indi with India.
+Before we start configuring the SSIS Fuzzy Grouping Transformation, let us see some important properties of this:
+- This Fuzzy Grouping transformation uses the Grouping technique to replace the wrong word in source data with the correct word.
+- This transformation allows us to use only DT_WSTR and DT_STR Data type columns for Fuzzy Matching, and Exact matching can apply to any data type except DT_TEXT, DT_NTEXT, and DT_IMAGE.
+- It creates temporary tables and indexes in the SQL Server database at runtime.
+- This transformation will only use the OLE DB Connection Manager to establish a connection to store the temporary tables and indexes.
+- To configure the transformation, you must select the Match Type (Fuzzy or Exact) for input columns.
+TIP: Fuzzy Grouping Transformation in SSIS has one input and one output. It does not support an error output.
+This transformation is the same as the Fuzzy Lookup Transformation. However, Fuzzy Grouping Transformation does not require any reference table to correct the data. It will use the grouping technique to check for wrongly typed words (type mistakes) and correct them.
+Fuzzy Grouping Transformation in SSIS Example
+In this example, we are going to show you how to configure Fuzzy Grouping Transformation to correct the wrongly typed words (Typo mistakes)
+The data we are going to use for this Fuzzy Grouping Transformation is:
+STEP 1: Open BIDS and Drag, drop the data flow task from the toolbox to control flow, and rename it Fuzzy Grouping Transformation in SSIS.
+Double-click on it, and SSIS will open the data flow tab.
+STEP 2: Drag and drop OLE DB Source, Fuzzy Grouping transformation from the toolbox to the data flow region
+STEP 3: Double click on the OLE DB source in the data flow region will open the connection manager settings and provides an option to select a Table or space to write our statement.
+Here we selected the Employees database as our source database and [Fuzzy Source] as the table.
+STEP 4: Click on the columns tab to verify the columns. In this tab, we can uncheck the unwanted columns.
+STEP 5: Right-click on the SSIS Fuzzy Grouping Transformation will open the Editor window to configure it.
+We have to configure the OLE DB connection Manager setting within the Connection Manager tab. Fuzzy Grouping Transformation will create a temporary table and indexes within this source to perform the operation.
+STEP 6: Within the Columns Tab, We have to configure the match Type. You will need to select the columns that you want to group as Fuzzy Match Type and other columns as Exact match. For this SSIS Fuzzy Grouping Transformation example, the Country name is a string, and we want to find the wrong values in this column. So, change the match type to Fuzzy, and Cid is the Int value, so the match type is Exact.
+Two parameters are important when you are Configuring a fuzzy grouping Transformation. They are Numerals and Comparison Flags.
+From the below screenshot, you can see the available options in this.
+- Ignore case: Fuzzy Grouping will ignore the case if we check mark this option. Both XYZ and xyz will be the same.
+- Ignore kana type: This option of SSIS Fuzzy Grouping ignores the difference between the Japanese hiragana and katakana.
+- Ignore non spacing characters: If we check mark this option, then Fuzzy Grouping will ignore the difference between the diacritics and character.
+- Ignore character width: If we checkmark this option, Fuzzy Grouping ignores the difference between single-byte characters and double-byte characters.
+- Ignore symbols: Fuzzy Grouping will ignore the difference between the letters and symbols (white spaces, punctuations, currency symbols, and mathematical symbols). For example, *xy is treated the same as xy.
+- Sort punctuation as symbols: Fuzzy Grouping will have all the punctuation symbols (except apostrophes and hyphens) written before the letters. For example, .xyz will sort before the xyz.
+In this option, We have to specify the significance of starting and ending numerals while comparing the column data. For example, if leading numerals are significant, “93 New lands Street” will not be grouped with “99 New lands Street”.
+|Neither||Numerals at the starting and ending positions were ignored while grouping.|
+|Leading||Numerals at the starting position will ignore while grouping.|
+|Trailing||Numerals at the ending positions were ignored while grouping.|
+|LeadingAndTrailing||Numerals at the starting and ending positions will not ignore while grouping.|
+STEP 7: Within the Advanced Tab, we have to configure the Similarity Threshold. The similarity threshold ranges between 0 and 1, where 1 is an exact match. The SSIS Fuzzy Grouping Transformation Editor provides a slider to adjust the similarity between 0 and 1. If the similarity threshold is closer to 1, the source column should match more accurately to reference data.
+In this example, We are doing Fuzzy Grouping on Country names and finding the fuzzy match. If we give a Similarity threshold of 0.76, the string column values should match more than 76%. Only then will it treat as a valid record.
+The SSIS Fuzzy Grouping Transformation produces additional columns along with existing columns, and they are:
+- Input key column name: Provide the Unique name for Input Key Column. key_inis the default name.
+- Output key column name: Provide the Unique name for the Output Key Column. key_Outis the default name.
+- Similarity score column name: Provide the Unique name for the similarity score column. _score is a value between 0 and 1. It will indicate the similarity of the input row to the canonical row.
+For the time being, we left them to default values and Clicked ok to finish configuring the Fuzzy Grouping Transformation. Now drag and drop the OLE DB destination into the data flow region.
+STEP 8: Now, we have to provide the Server, database, and table details of the destination. So double-click on the OLE DB Destination and provide the required information.
+Here we selected the database from SQL Server as our destination database and the [Fuzzy Grouping Transformation Output] table as our destination table.
+STEP 9: Click on the Mappings tab to check whether the source columns are exactly mapped to the destination columns.
+STEP 10: Click ok to finish designing the SSIS Fuzzy Grouping Transformation package. Let us run the package.
+Comments are closed.

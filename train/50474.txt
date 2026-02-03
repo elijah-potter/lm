@@ -1,0 +1,48 @@
+Updated July 19,
+here to go to our main page on microwave semiconductor technologies
+here to go to our page on antimonide-based compound semiconductors
+here to go to our page on gallium arsenide semiconductors
+here to go to our page on gallium nitride semiconductors
+here to go to our page on silicon semiconductors for microwaves
+New for August 2009! We've
+split our page on microwave
+semiconductor technologies page into multiple pages.
+is like the weird uncle of gallium arsenide. It has some quirks,
+including being very brittle, and it costs more than GaAs. But
+some of the highest frequencies of operation reported are on
+InP, so it will always serve a niche as systems move toward
+terahertz. GaAs MHEMT can be tailored to behave almost like
+InP, which provides a path toward cheaper production.
+This page so far has two topics:
+phosphide (InP) HEMT
+Indium phosphide HEMT has broken
+all of the upper frequency records, on the way to terahertz devices.
+However, there are serious drawbacks to this technology, not the
+least of which is its high cost. For this reason, InP is more regarded
+as a lab curiosity rather than a production process.
+The actual semiconductor that
+is doing the work in so-called InP is actually InGaAs. Indium phosphide
+is merely the substrate that it is grown onto. The reason for this
+is that InGaAs shares the same lattice constant with InP, 5.87 angstroms.
+substrates are small (3" typical, 4" are available
+but remember bigger is not always better when something is brittle).
+ER=12.4, close to that of GaAs. A huge drawback of indium phosphide
+technology is that InP wafers are extremely brittle compared to
+other semiconductors. Try shipping an InP wafer sometime. Silicon
+is the least brittle (think Frisbee!), and GaAs is somewhere in
+- Extremely low noise
+- Useful through W-band
+- More expensive than
+GaAs due to starting material costs, small size of wafers.
+- Extremely fragile.
+- Low breakdown voltage
+(power is low)
+phosphide (InP) HBT
+Some people think that InP will
+have a second chance to become the most ubiquitous power amplifier
+technology for cell phones when new higher power density/lower voltage
+lithium ion batteries become available, as suggested in this December
+Frequency Electronics article by Michael Gaynor. Here the author
+claims that InP has superior low voltage power/efficiency performance
+compared to GaAs HBT.
+us out with some content on this page!

@@ -1,0 +1,14 @@
+Explanation of how canopies can save open wheel drivers UPDATE This ESPN article talks about how hydroplane racing thought closed cockpits could not be done but they have saved countless lives and they are glad they implemented them.
+10/19/11 A reader asks, Dear AR1.com, I know that your President Mark Cipolloni is an engineer. Can you have him explain how a canopy over a driver's head could save them from death when a 1,500 pound IndyCar hits a steel catch fence post. Don Block
+Dear Don, Let me try to explain using simple physics.
+Force = ma = mass x acceleration = m x delta v/delta t, where delta = change in, v = velocity and t = time.
+Force is also defined as the change in momentum (mass * velocity) of the object with respect to time. That is:
+F = mv/t
+When the car crashes into a wall head-on then the time it takes for the velocity to change is very small. So F = mv/ 0.0001 seconds is a large force. But going back to the first equation, Force is also a function in the change in velocity.
+With a glancing blow the car does not change velocity as fast as a head-on collision - the velocity change is almost zero, it just changes direction and keeps going. Hence the numerator (delta v or change in velocity) is small resulting in a small force exerted.
+That is what the canopy must do - cause the vehicle to change direction (deflect) without collapsing in on the driver. The F16 Fighter Jet Canopies are made of Polycarbonate, a very strong material. It must deflect not only wheels and other car parts that might be flying through the air (such as what almost killed Felipe Massa and did kill an F2 driver recently), but also deflect the car just enough when it hits a steel catch fence pole.
+Click Image to enlarge
+Below is an example.
+The force of collision between an airliner and a duck can be diminished greatly if the duck glances off. A duck you say? Yes a duck hitting an aircraft at 650 mph for commercial jets and 1,800 mph for fighter jets, i.e. a huge velocity. The impact force is given by:
+The impact force is reduced by the fact that the change in velocity is much less for the glancing blow. The vector addition which gives the final velocity shows that for a small angle deflection, the velocity change is small. The change in velocity may be calculated using the law of cosines. In the elastic case where initial and final speeds are equal, the half-angle formula may be used to obtain a simplified expression.
+In an accident a human body can withstand short spikes in G force of 100Gs which they may experience momentarily in a glancing blow accident. However, if you apply as little as 20Gs for seconds it could be lethal. I hope this answers your question. Also see test video below - watch all of it. If I am a driver I certainly would welcome the protection that a canopy offers. Mark C.

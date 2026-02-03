@@ -1,0 +1,23 @@
+Falling Leaves in Flash
+MULTI-LAYER FLASH ANIMATION YOU WILL PRODUCE:
+- You will create Graphic Symbol “leaf1” and use it on three different layers — each showing the way the wind is blowing.
+- You will also create Graphic Symbol “leaf 2” and use it on three other layers.
+- You will use Flash to design a background layer. This can be static.
+- You will create Graphic Symbol “flower” and place it on the top layer. This will be animated with a Motion Guide.
+HOW TO DO IT…
+- Start a new file in Flash. Save it as 5lastnameleaf. Set the stroke color to dark green and the fill color to a lighter green.
+- Insert a New Layer. Name it “wind1.”
+- Use the Pen Tool to make a series of dots that form the shape of a simple leaf.
+- Use the Sub-selection Tool to make the shape rounded (and look as much as possible) like a leaf. Use the Paint Bucket to fill the inside of the leaf. Then use the Line Tool to make veins in the leaf. Use Sub-selection to make those veins curved.
+- When the leaf is finished, Group it (Cntrl-g), and drag it into the Library. Save it as a Graphic Symbol named “leaf1.”
+- Start “leaf1” Off-Stage to the upper left of the Stage.
+- On layer “wind1” Convert to Keyframe on Frame 45. Move the Symbol “leaf1” to the right side of the Stage. Convert to Keyframe on Frame 90. Move the Symbol “leaf1” Off-Stage to the left side of the Stage.
+- Apply Motion Tween to all of Layer “wind1.” Test Movie.
+NOW, LET’S MAKE IT MOVE MORE LIKE A LEAF…
+- On Layer “wind1” go to instance of “leaf1” on Frame 45. Use Transform Tool to make the leaf larger and distorted (you can even turn it inside out). Now go to instance on Frame 90. Use Transform Tool to make the leaf much smaller and discort (in opposite direction).
+- Select Frame 1 on layer “wind1.” On Properties Palette under Motion Tween there is Rotate Option. Set to Rotate Clockwise 1 Time. Select Frame 45 on layer “wind1” and set Rotate Counter-Clockwise 1 Time.
+- Now Test Movie. It moves more like a leaf this time.
+- Create a new layer and name it “toplayer” – make sure it’s at the top of the other layers.
+- Create a new Graphic Symbol called “flower.”
+- Instructor will demonstrate how to draw and use a Motion Guide. The Motion Guide Layer needs to be linked to layer “toplayer.” Only draw the guideline on Motion Guide layer. But the Symbol needs to be on “toplayer.”
+- The Center Point of the Symbol needs to be at one end of the Motion Guide on the first Keyframe of animation. That Center Point needs to be at the other end of Motion Guide on the last Keyframe. You can add Keyframes, but the Symbol always needs to be on the guideline.

@@ -1,0 +1,5 @@
+An introduction to form validation methods
+As most of you already know, forms are a great way to gather information from your visitors and allow them to submit information to your web server(s) for processing to your website. Typically this includes a database connection to serve, process, and create records to store the information. Forms also allow your customers to interact with your website, for example, by searching for specific information, or by submitting comments to a specified department or email address. Frequently there are times when you will want to ensure that customers don’t leave specific form fields blank, or you will want to limit a field to a certain type of input such as characters, numbers, email address, zip code, phone number, or a list of pre-set options from a pull down menu.
+This article is part one of a multiple part series on exploring different form validation usage methods, error messages, feedback techniques, and approaches for website form validation implementations. (Read more…)
+- Free or inexpensive file transfer apps and web-hosting providers
+- Quick list: Ten CSS resources

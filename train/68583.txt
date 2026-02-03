@@ -1,0 +1,29 @@
+The Android Open Source Project (AOSP) maintains a complete software stack to be ported by OEMs and other device implementors and run on their own hardware. To maintain the quality of Android, Google has contributed full-time engineers, product managers, user interface designers, quality assurance testers, and all the other roles required to bring modern devices to market.
+Accordingly, we maintain a number of codelines to clearly separate the current stable version of Android from unstable experimental work. We roll the open source administration and maintenance of the Android codelines into the larger product development cycle.
+AOSP code management
+The chart below depicts the concepts behind AOSP code management and releases.
+- At any given moment, there is a current latest release of the Android platform. This typically takes the form of a branch in the tree.
+- Device builders and contributors work with the current latest release, fixing bugs, launching new devices, experimenting with new features, and so on.
+- In parallel, Google works internally on the next version of the Android platform and framework according to the product's needs and goals. We develop the next version of Android by working with a device partner on a flagship device whose specifications are chosen to push Android in the direction we believe it should go.
+- When the n+1th version is ready, it's published to the public source tree and becomes the new latest release.
+Terms and caveats
+A release corresponds to a formal version of the Android platform,
+such as 1.5 or 8.1. A release of the platform corresponds to the
+version in the
+AndroidManifest.xmlfiles and defined within
+frameworks/base/apiin the source tree.
+- An upstream project is an open source project from which the Android stack pulls code. In addition to projects such as the Linux kernel and WebKit, we continue to migrate some semi-autonomous Android projects such as ART, the Android SDK tools, and Bionic to work as upstream projects. Generally, these projects are developed entirely in the public tree. For some upstream projects, developers contribute directly to the upstream project. For details, see Upstream projects. In both cases, snapshots are periodically pulled into releases.
+- At all times, a release codeline (which may consist of more than one branch in git) is considered the sole canonical source code for a given Android platform version. OEMs and other groups building devices should pull only from a release branch.
+- Experimental codelines are established to capture changes from the community so that they can be iterated on with an eye toward stability.
+- Changes that prove stable are eventually pulled into a release branch. This applies only to bug fixes, application improvements, and other changes that don't affect the APIs of the platform.
+- Changes are pulled into release branches from upstream projects (including the Android upstream projects) as necessary.
+- The n+1th version (the next major version of the framework and platform APIs) is developed by Google internally. For details, see Private codelines.
+- Changes are pulled from upstream, release, and experimental branches into Google's private branch as necessary.
+When the platform APIs for the next version are stabilized and fully
+tested, Google cuts a release of the next platform version (specifically, a
+SdkVersion). This corresponds to the internal codeline being made a public release branch and the new current platform codeline.
+- When a new platform version is cut, a corresponding experimental codeline is created at the same time.
+The source management strategy above includes a codeline that Google keeps private to focus attention on the current public version of Android.
+OEMs and other device builders naturally want to ship devices with the latest version of Android. Similarly, application developers don't want to deal with more platform versions than necessary. Meanwhile, Google retains responsibility for the strategic direction of Android as a platform and a product. Our approach focuses on a small number of flagship devices to drive features while securing protections of Android-related intellectual property.
+As a result, Google frequently has possession of confidential information from third parties and must refrain from revealing sensitive features until securing the appropriate protections. In addition, there are real risks to the platform if too many platform versions are extant at one time. For these reasons, we have structured the open source project (including third-party contributions) to focus on the currently public stable version of Android. Deep development on the next version of the platform occurs in private until it's ready to become an official release.
+We recognize that many contributors disagree with this approach and we respect their points of view. However, this is the approach we feel is best and the one we've chosen to implement for Android.

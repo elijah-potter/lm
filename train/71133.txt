@@ -1,0 +1,15 @@
+Before diving in any further, we suggest checking out the Byzantine Generals Problem video. If you haven’t done so – go check out that video and then return to this module.
+How The Blockchain Works – A Simple Example
+As depicted in the BGP video; let’s imagine four generals who share a common goal of conquering a castle. Here’s the catch, the generals have never met, so they do not trust each other – much like any community of users in the real world. Each general has a special battle journal where they receive and log their commands. Their commands are ATTACK or RETREAT! They can only act simultaneously, meaning they must agree on commands before they can act.
+This journal represents the blockchain itself.
+The blockchain stores a public record of every single transaction ever made on it going back to the beginning of time, and there are thousands and thousands of identical copies of the blockchain held by users around the world. All these copies are kept in sync by the system that runs the blockchain.
+Let’s say one general relays a command to another general. Now each of the four generals must log the command in their journal.
+Next – they must compare journals to make sure they are all accurate.
+When digital money is sent, the transaction is recorded on EVERY one of the countless copies of the blockchain around the world. Each copy is an identical record of all transactions. Just as how the generals compare their battle journals, the blockchain is comparing its copies to ensure all transactions match.
+If all generals have the same command in their journal – they can proceed with the attack or the retreat. If one journal is different from the other three, then there is an issue.
+This would mean that one general is lying about the command.
+But here is the cool thing!
+Becuase the other generals would have the same command listed in their journal – we could instantly know which general is the liar. As a result, the three other generals can simply ignore the notebook that doesn’t match and can resist the message and wait for the next command. The would mean the transaction is not approved – it failed.
+This exact mechanism is what prevents fraud. It’s virtually impossible for a scam artist to manipulate the system since their blockchain copy wouldn’t match what everyone else agrees on. Just as it’s impossible for one general to lie about the command.
+Each blockchain user has an identical copy of the blockchain “battle journal” which publicly records all transactions. All journals get constantly compared to make sure they match – this is the work of the blockchain.
+Simply stated -a blockchain knows where all digital property recorded at all times. Once digital property changes hands (like a Bitcoin transaction) that transaction becomes an official blockchain entry. The entry is automatically and permanently recorded, so the money can’t be spent twice.

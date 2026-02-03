@@ -1,0 +1,17 @@
+Both OpenGL and Direct3D use pixel's center as a sample point during rasterization (without antialiasing).
+For example here is the quote from D3D11 rasterization rules:
+Any pixel center which falls inside a triangle is drawn
+I tried to find out what is the reason to use
+(0.5, 0.5) instead of, say,
+(0.0, 0.0) or whatever else in range of
+0.0 - 1.0f for both x and y.
+The result might be translated a little, but does it really matter? Does it produce some visible artifacts? May be, it makes some algorithms harder to implement? Or it's just a convention?
+Again, I don't talk about multisampling here.
+So what is the reason?
+Best How To :
+This answer mainly focuses on the OP's comment on Cagkan Toptas answer:
+Thanx for the answer, but my question is: why does it give better results? Does it at all? If yes, what is the explanation?"
+It depends on how you define "better" results. From an image qualioty perspective, it does not change much, as long as the primitves are not specifically aligned (after the projection). Using just one sample at (0,0) instead (0.5, 0.5) will just shift the scene by half a pixel (in both axis, of course). In the general case of aribitrary placed primitves, the average error should be the same.
+However, if you want "pixel-exact" drawing (i.e. for text, and UI, and also full-screen post-processing effects), you just would have to take the convention of the underlying implementation into account, and both conventions would work.
+One advantage of the "center at half integers" rule is that you can get the integer pixel coordinates (with respect to the sample locations) of the nearest pixel by a simple
+floor(floating_point_coords) operation, which is simpler than rounding to the nearest integer.

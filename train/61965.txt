@@ -1,0 +1,26 @@
+by Richard Russell, November 2007
+A resource leak is the term used when a program uses some finite system resource but doesn't free it again when it has finished with it. For example a program might allocate some memory, and never free it (commonly called a memory leak) or it might create a system 'object' but fail to destroy it later.
+Resource leaks are insidious, especially in programs which may be left running for a long time (Windows generally, but not always, frees resources on program termination). They can result in the program running perfectly for hours, days, weeks or longer and then failing catastrophically for no apparent reason. If this was not bad enough, resource leaks can affect programs other than the one with the problem, and can even cause Windows itself to crash.
+There are two principal kinds of resource leak which can affect BBC BASIC for Windows programs. The first concerns the allocation of memory from BASIC's heap using the DIM statement. This is a convenient way of allocating memory (for example in which to store the contents of a file, or a data structure, or a 'fixed string') but the memory isn't freed until the program ends or a CLEAR statement is executed (unlike DIM LOCAL which does free the memory on exit from the function or procedure in which it was allocated). Therefore it must be done just once at the start of the program rather than repeatedly. Consider this example program:
+DIM ltime% 15, stime% 9 REPEAT SYS "GetLocalTime", ltime% SYS "GetTimeFormat", 0, 0, ltime%, "HH:mm:ss", stime%, 9 PRINT $$stime% WAIT 10 UNTIL FALSE
+This program displays the current time, ten times a second, until interrupted by the user. It is a perfectly good program and should run indefinitely without problems.
+Compare it with this slightly different example:
+REPEAT DIM ltime% 15, stime% 9 SYS "GetLocalTime", ltime% SYS "GetTimeFormat", 0, 0, ltime%, "HH:mm:ss", stime%, 9 PRINT $$stime% WAIT 10 UNTIL FALSE
+The only difference is that the DIM statement is now inside the loop. This means that every time the loop is executed (approximately ten times per second) another 26 bytes of heap are allocated, and that memory is never freed. This program will appear to run correctly, and indeed it will run for quite some time without problems - approximately one hour with the default setting of HIMEM. But once that time has elapsed the program will fail catastrophically with a No room error when all the heap space is exhausted.
+The second kind of resource leak which can affect BBC BASIC for Windows programs is concerned with calling Windows API functions. Many Windows API functions must be used in pairs: typically the first of the pair allocates some resource or creates an object, whilst the second of the pair frees the resource or destroys the object. If you call the first API function but fail to call the second a resource leak will occur. Here are some examples of API functions which must be used in pairs:
+| GlobalAlloc|| GlobalFree
+| CreateCompatibleDC|| DeleteDC
+| CreateCompatibleBitmap|| DeleteObject
+| CreateMenu|| DestroyMenu
+| GdipLoadImageFromFile|| GdipDisposeImage
+| InitializeCriticalSection|| DeleteCriticalSection
+There are many more!
+Sometimes the sequence in which you make the calls is important. For example suppose you create a bitmap and select it into a Device Context thus:
+SYS "CreateCompatibleDC", @memhdc% TO hdc% SYS "CreateCompatibleBitmap", @memhdc%, width%, height% TO hbm% SYS "SelectObject", hdc%, hbm% TO oldhbm%
+When you've finished with the objects you must free them in the correct order:
+SYS "SelectObject", hdc%, oldhbm% TO hbm% SYS "DeleteObject", hbm% SYS "DeleteDC", hdc%
+If instead you were to do the following, you would cause a resource leak:
+SYS "DeleteDC", hdc% SYS "SelectObject", hdc%, oldhbm% TO hbm% SYS "DeleteObject", hbm%
+The first kind of resource leak described above (caused by misuse of the DIM statement) can be detected using the Memory usage monitor described in this article or the functionally equivalent Memory Usage Monitor Utility.
+The second kind of resource leak (caused by misuse of Windows API functions) can be detected using Windows Task Manager. To do that, run Task Manager, select the Processes tab, ensure the columns headed VM Size, Handles and GDI Objects are visible (if necessary enable them in the View… Select columns menu) and watch the figures in the row corresponding to your program. Some fluctuation is to be expected, but any figure which is rising inexorably indicates a resource leak in your program:
+Try running your program multiple times: the displayed values may increase on the first couple of runs but they should then stabilise. If they continue to increase on each run this is again indicative of a resource leak.

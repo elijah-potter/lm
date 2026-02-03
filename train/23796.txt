@@ -1,0 +1,24 @@
+SiderealAirMass is a little app for (naked-eye) visual variable star observers. It calculates air mass and brightness correction for stars at a given zenith angle.
+To calculate air mass and brightness correction terms from zenith angle for a variable star and it's A and B reference stars tap Menu → Observation. Enter zenith angle values between 0° and 90° to get air mass and brightness correction terms.
+Tap on Brightness Correction to get more details on the calculation.
+To calculate air mass and brightness correction terms for a single variable star from zenith angle tap Menu → Calculator. Enter a zenith angle value between 0° and 90° to get air mass and brightness correction terms.
+Be aware that precision of air mass calculation is limited by the underlying algorithm, it is not recommended to use the air mass and brightness correction values for large zenith angles (= near the horizon). In such a case those values are preceded with an ">".
+Check out coordinate system to see how zenith angle is actually defined here.
+Switch Night/Day Vision
+To toggle between day and night vision tap Menu → Night Vision or Menu → Day Vision. In night vision mode the iPhone status bar is hidden.
+Air Mass Model
+To set air mass model tap Menu → Settings → Air Mass / Model.
+Actually implemented air mass models are: Hardie (1962), Pickering (2002), Young and Irvine (1967), and Young (1994).
+Zenith Angle Limit
+To set the zenith angle limit for the actual air mass model tap Menu → Settings → Air Mass / Zenith Angle Limit. The input is trimmed to a value between 0° and 90°.
+The default zenith angle limits are calculated so that total brightness correction error is below 0.01 mag. Air mass and brightness correction values for zenith angles above the limit are calculated for the limit and preceded with an ">" to indicate a problematic value.
+The default values are air mass model depend:
+Brightness Correction Model
+To calculate brightness correction terms fixed extiction coefficients are used:
+Altitude Angle (short: altitude) is the angle measured from horizon to a star. It's the complement of the zenith angle.
+Azimuth is the angle from South(!) to a star along the horizon.
+Zenith Angle is the angle measured from Zenith to a star. It's the complement of the altitude angle.
+Hardie, R. H. 1962. In Astronomical Techniques. Hiltner, W. A., ed. Chicago: University of Chicago Press, 184–. LCCN 62009113. Bibcode 1962aste.book.....H.
+Pickering, K. A. 2002. The Southern Limits of the Ancient Star Catalog. DIO. 12 (1): 20–39.
+Young, A. T. 1994. Air mass and refraction. Applied Optics. 33:1108–1110. doi: 10.1364/AO.33.001108. Bibcode 1994ApOpt..33.1108Y
+Young, A. T., and W. M. Irvine. 1967. Multicolor photoelectric photometry of the brighter planets. I. Program and procedure. Astronomical Journal 72:945–950. doi: 10.1086/110366. Bibcode 1967AJ.....72..945Y

@@ -1,0 +1,48 @@
+Adapted from my 2010-2012 CNRS Activity Report. Updated March 2013
+THEORY OF IRREVERSIBLE EFFECTS IN OPEN QUANTUM SYSTEMS
+As physicists, we have two views of the world which are often difficult to reconcile. We work with equations of motion which are symmetric under time-reversal (Newton's laws, Schrodinger's equation or relativistic equations). However we experience irreversible processes every day, which we typically model statistically. My work explores the boundary between these two world views at the quantum level.
+A quantum system can only evolve irreversibly if it is open, and thereby exchange energy or particles (or both) with a large environment. However, all quantum systems are coupled (at least weakly) to their environment, making this an extremely common situation. One of the principle irreversible effects in open quantum systems is decoherence (the loss of phase information and hence interference effects). There is no analogue irreversible process in classical mechanics; although decoherence makes the quantum system behave more like a classical system.
+(I) Quantum system exchanging energy with large environment
+In the last 2-3 years, I have finished a number of works in this context. Perhaps the most significant results relate to
+environment-induced modification of the system Hamilitonian. It has been known for more than 60 years that the coupling
+to an environment can shift a system's energy levels (the Lamb shift), in addition to inducing irreversible effects (decoherence,
+thermalization, etc). However the importance of such Lamb shifts in systems with time-dependent Hamiltonians has been
+overlooked. I present two examples of the importance of these Lamb-shifts. We show how they
+can be used to generate Berry phases , and enhance coherent-oscillations
+at a Landau-Zener transition , even though one would expect that an environment to induce decoherence which
+suppresses such phases and oscillations.
+A recent departure has been to apply similar methods to the relaxation of spin-polarized 3He (used extensively for polarizing
+neutrons at facilities like the Institut Laue Langevin, Grenoble). This led to the results showing that the boundary effects of
+random walks (3He diffusing in a container with depolarization effects occurring at the walls) do not decay with increasing system
+size, and so can dominate the physics even in large containers .
+(II) Thermoelectric effects in open quantum systems
+The transport properties of nanostructures (such as electrical conductance) are some of the best-studied irreversible effects in quantum systems. To see that such properties are irreversible, one just need to note that when one applies a force (the voltage bias), the system changes state (there is a current flow of charged particles). However when one turns off the force the system does not return to its initial state (the charges do not flow back to their original position). Work is done to change the system state, but one cannot get that work back (it is lost as heat).
+After many years working on charge-transport in nanostructures, in the last three years I have been studying thermoelectric and thermal transport in such systems. Initially, we showed the importance of interference effects in the thermoelectric properties of mesoscopic nanostructures. We addressed for the first time, mesoscopic fluctuations in the thermopower (analogue to unviersal conductance flcutuations), and show that they can be the origin of the thermoelectric response observed in experimental systems that earlier theories predicted should be absent .
+More recently, we provided a detailed analysis of the Onsager relations in a broad class of
+different thermoelectric systems, based purely on the symmetry class of those system's Hamiltonians
+I found that the thermoelectric refrigeration of certain nanostructures "far from equilibrium" (made of point contacts) can be very much better than the textbook linear response arguments would predict. This improvement in cooling due to a discontinuity in the response of the point-contact — a catastrophe in mathematical language .
+I have since been working on quantum thermodynamics in such "far from equilibrium"
+thermoelectric quantum systems.
+I have proved that irreversible energy-flow and entropy-production are constrained by the first and second law of thermodynamics, and are also subject to another constraint of purely quantum origin
+Suppression of non-adiabatic phases by a non-Markovian environment:
+easier observation of Berry phases
+Robert S Whitney, Phys. Rev. A, 81, 032108 (2010) or
+Temperature can enhance coherent oscillations at a Landau-Zener transition
+Robert S Whitney, Maxime Clusel,Timothy Ziman
+Phys. Rev. Lett. 107, 210402 (2011) or arXiv:1104.0169
+Size-independence of statistics for boundary collisions of random walks
+and its implications for spin-polarized gases
+Dominique J Bicout, Efim Kats, Alexander K Petukhov, Robert S Whitney
+Phys. Rev. Lett. 110, 010602 (2013) or
+Coherent Thermoelectric Effects in Mesoscopic Andreev Interferometers
+Philippe Jacquod and Robert S. Whitney
+EPL, 91, 67009 (2010)
+Onsager relations in coupled electric, thermoelectric and spin transport:
+the ten-fold way
+Philippe Jacquod, Robert S. Whitney, Jonathan Meair, Markus Büttiker
+Phys. Rev. B 86, 155118 (2012)
+Nonlinear thermoelectricity in point-contacts at pinch-off: a catastrophe aids cooling
+Robert S. Whitney. Preprint
+Thermodynamic and quantum bounds on nonlinear DC thermoelectric transport
+Robert S. Whitney
+Phys. Rev. B 87, 115404 (2013) or

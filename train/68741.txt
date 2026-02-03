@@ -1,0 +1,15 @@
+Sections are the building blocks of your user interface. You can populate a section with UI elements, such as fields and controls, to create a functional chunk of user interface that can be reused in different contexts for improved consistency and efficient development.
+Sections are instances of the Rule-HTML-Section class and define how an area of a user interface looks. You can display a section in a harness, another section, or a paragraph rule.
+Sections use templates that organize content into separate regions. Each region can contain properties, labels, controls, and other sections. You can create a custom template specifically for your application, or choose from several out-of-the-box templates that cover most UI scenarios.
+For example, your application may need to display user data as a list of ID cards. To create a section that is the basis of a card, you can apply the list item template to the section, and populate it with references to properties that store user data. You can then include the section in a repeating layout, and the application uses it as a model for all user ID cards in that layout. Because the system sources all cards from the same section, they share the visual design and the type of data that they display. However, the content of each card is different because the data is independent of the user interface design.
+Consider the following best practices for sections:
+- Keep the size of your sections balanced. Do not create too big or too small
+The size of your sections should support granular but functional reuse. For example, a section that captures user address information contains data that fits into a reusable category. Instead of nesting multiple sections for every piece of data, the section consolidates multiple layouts. In this way, you can optimize maintenance and processing speed.
+- When the contents of one section affect the contents of another section, use action
+sets to refresh specific layouts instead of refreshing entire sections.
+For example, when you add a product to a shopping cart (section A), use action sets to refresh the contents of the shopping cart (section B).
+- Creating sections
+Use sections to build a modular user interface that promotes reusability and design consistency. By populating your sections with content, you can create a functional chunk of interface that has a specific purpose, and can be used in many contexts.
+- Unit testing a section
+After you create a section rule, you can run the rule to test it in the context of the application you are developing. Specify a test page for the rule to use, provide sample data as the input, run the rule, and examine the results.
+Previous topic Configuration options for layouts Next topic Creating sections

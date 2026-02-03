@@ -1,0 +1,10 @@
+GaW’s construction and organization
+GaW is a database of relationships consisting of approximately 80 variables, of which slightly more than half are descriptions of the contents of source texts (that is, information of interest to historical scholarship ). The remaining variables describe the locations from which the source texts were collected.
+The database’s basic unit is case. A case consists of a source text—that is, an extract from a source—as well as a set of variables and relationships, of which certain describe the contents of the source text and others are notes about the source material from which the text is drawn.
+Information from the source text concerning what someone has done, who has done it, when and where it was done, as well as in what context, has been extracted from the source text. This information has then been stored in linked tables so that the researcher is able to structure, compile, and search in the material in a number of different ways.
+Because the source texts are drawn from a variety of sources, the database also includes comprehensive information about from where a case was collected, when and where the original source text was produced, the archive in which the original source can be found (including detailed archive references), as well as whether we have used any sort of source publication (printed or digital) for digitization. In many cases the database also includes pictures photos of the original source material.
+The GaW database was developed from 2008-2013, primarily financed by infrastructure funding from the Swedish Research Council (Vetenskapsrådet). The database itself was built on behalf of Uppsala University by system developerssystems analysts at the Demographic Data Base (Demografiska databasen) at Umeå University.
+- Database software: IBM DB2
+- Web interface: Java Script
+- Application server: Glassfish
+- Web server: Apache

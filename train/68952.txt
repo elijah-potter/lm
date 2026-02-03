@@ -1,0 +1,18 @@
+Petrersons Notch Sensitivity Calculation.xls
+Purpose of calculation
+Calculate notch sensitivity factor for steel and aluminium.
+Peterson's Stress Concentration Factors.
+Formulae checked graphically and using the XLC addin.
+Any Consistent Calculation Units
+Two tensile test samples same net area over the critical section. One has a groove (notch) the other does not. The load at failure for the notched specimen is less than the un-notched specimen. Curve 1 shows stress distribution when loads are low. The maximum stress to nominal stress is the theoretical elastic stress concentration factor Kt.
+Brittle materials behave like curve 2 and less brittle like curve 3.
+The maximum stress to nominal stress is the theoretical elastic stress concentration factor Ke = Kt. At failure the maximum stress is tensile stress of the material. Notch sensitivity factor is close to 1.
+Ductile materials behave like curve 3 and very ductile like curve 4.
+The actual maximum stress to nominal stress is the effective stress concentration factor Ke =P/P'. At failure the maximum stress is just a little higher than yield. Notch sensitivity factor is small.
+Peterson's Stress Concentration Factors
+Fundamentals of Fatigue
+20 Jul 2011
+Full download access to any calculation is available to users with a paid or awarded subscription (XLC Pro).
+Subscriptions are free to contributors to the site, alternatively they can be purchased.
+Click here for information on subscriptions.
+Be the first to comment! Please sign in or register.

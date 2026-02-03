@@ -1,0 +1,82 @@
+Ship Stability – Buoyancy
+The Laws Of Buoyancy
+Floating objects possess the property of buoyancy.
+A floating body displaces a volume of water equal in weight to the weight of the body.
+A body immersed (or floating) in water is buoyed up by a force equal to the weight of the water displaced.
+Centre of buoyancy
+C of B can be defined as the geometrical centre of the underwater volume and the point through which the total force of buoyancy may be considered to act vertically upwards with a force equal to the weight of the water displaced by the body.
+For the purposes of freeboard computation, ships are divided into type “A” and type “B”.
+Type “A” ships
+A type “A” ship is one which:
+Is designed to carry only liquid cargoes in bulk;
+Has a high integrity of the exposed deck with only small access openings to cargo compartments, closed by watertight gasketed covers of steel or equivalent material; and
+Has low permeability of loaded cargo compartments.
+Type “B” ships
+All ships, which do not come within the provisions regarding type “A” ships in above paragraphs, are considered as type “B” ships.
+Type “B” ships, which have hatchways fitted with hatch covers, are assigned freeboards based upon the values given in the rules.
+Conditions of equilibrium
+The condition of equilibrium after flooding shall be regarded as satisfactory provided:
+The final waterline after flooding, taking into account sinkage, heel and trim, is below the lower edge of any opening through which progressive down flooding may take place.
+Such openings shall include air pipes, ventilators and openings which are closed by means of weather tight doors or hatch covers, and may exclude those openings closed by means of manhole covers and flush scuttles, cargo hatch covers, remotely operated sliding watertight doors, and sidescuttles of the non-opening type.
+However, in the case of doors separating a main machinery space from a steering gear compartment, watertight doors may be of a hinged, quick-acting type kept closed at sea, whilst not in use, provided also that the lower sill of such doors is above the summer load waterline.
+If pipes, ducts or tunnels are situated within the assumed extent of damage penetration, arrangements shall be made so that progressive flooding cannot thereby extend to compartments other than those assumed to be floodable in the calculation for each case of damage.
+The angle of heel due to unsymmetrical flooding does not exceed 15deg. If no part of the deck is immersed, an angle of heel of up to 17deg. may be accepted.
+The metacentric height in the flooded condition is positive.
+When any part of the deck outside the compartment assumed flooded in a particular case of damage is immersed, or in any case where the margin of stability in the flooded condition may be considered doubtful, the residual stability is to be investigated.
+It may be regarded as sufficient if the righting lever curve has a minimum range of 20deg. beyond the position of equilibrium with a maximum righting lever of at least 0.1 m within this range. The area under the righting lever curve within this range shall be not less than 0.0175 m. rad.
+The Administration shall give consideration to the potential hazard presented by protected or unprotected openings, which may become temporarily immersed within the range of residual stability.
+The Administration is satisfied that the stability is sufficient during intermediate stages of flooding.
+EXAMPLE OF GRAVITY -VS- BUOYANCY
+1 ton of steel 1 ton of steel
+If the cube of steel is placed in water it sinks. There is not enough displaced volume for the forces of buoyancy to act upon. If the ship’s hull is placed in the water it will float. The larger volume of the ship’s hull allows the forces of buoyancy to support the hull’s weight.
+The ship’s hull will sink to a draft where the forces of buoyancy and the forces of gravity are equal.
+The weight of the volume of water that is displaced by the underwater portion of the hull is equal to the weight of the ship. This is known as a ship’s displacement.
+The unit of measurement for displacement is the Metric Tonne.
+The force of gravity acts vertically downward through the ship’s center of gravity. The magnitude of the force depends on the ship’s total weight.
+Units Of Measure
+Force: A push or pull that tends to produce motion or a change in motion. Units: Newton, etc.
+Parallel forces may be mathematically summed to produce one “Net Force” considered to act through one point.
+Weight: The force of gravity acting on a body. This force acts towards the center of the earth. Units: kilograms, etc.
+Moment: The tendency of a force to produce a rotation about a pivot point. This works like a torque wrench acting on a bolt. Units: Newton meters, etc.
+Moment = Weight x Lever Arm
+Volume = Length x Breadth x Height
+Volume: The number of cubic units in an object.
+Units: cubic metres (cbm), etc. The volume of any compartment onboard a ship can be found using the equation:
+Salt Water = 1.025 gms/cc
+Fresh Water = 1.00 gms/cc
+Diesel Fuel = 0.92 gms/cc
+Calculating The Weight Of Flooding Water
+A compartment has the following dimensions:
+Length = 20 M
+Breadth = 20 M
+Height = 8 M
+The compartment is now flooded with salt water to a depth of 6 M
+1. First, calculate the volume of water that has been added to the compartment.
+Volume = Length x Breadth x Depth of Flooding Water
+= 20 M x 20 M x 6 M
+= 2400 cbm
+2. Second, multiply the volume of water by its specific gravity.
+Weight (added) = 2400 x 1.025 = 2460 MT
+Stability Reference Points
+M – Metacentre
+G – Center of Gravity
+B – Center of Buoyancy
+K – Keel
+K – Keel: The base line reference point from which all other reference point measurements are compared.
+B – Center of Buoyancy: The geometric center of the ship’s underwater hull body. It is the point at which all the forces of buoyancy may be considered to act in a vertically upward direction.
+The Center of Buoyancy will move as the shape of the underwater portion of the hull body changes. When the ship rolls to starboard, “B” moves to starboard, and when the ship rolls to port, “B” moves to port.
+When the ship’s hull is made heavier, the drafts increase as the ship sits deeper in the water. “B” will move up.
+When the ship’s hull is lightened, the drafts decrease as the ship sits shallower in the water. “B” will move down.
+The Center of Buoyancy moves in the same direction as the ship’s waterline.
+G – Center of Gravity: The point at which all forces of gravity acting on the ship can be considered to act. “G” is the center of mass of the vessel. The position of “G” is dependent upon the distribution of weights within the ship. As the distribution of weights is altered, the position of “G” will react as follows:
+1. “G” moves towards a weight addition
+2. “G” moves away from a weight removal
+3. “G” moves in the same direction as a weight shift
+M – Metacenter: As the ship is inclined through small angles of heel, the lines of buoyant force intersect at a point called the metacenter.
+As the ship is inclined, the center of buoyancy moves in an arc as it continues to seek the geometric center of the underwater hull body. This arc describes the metacentric radius.
+As the ship continues to heel in excess of 7-10 degrees, the metacenter will move as shown.
+The position of the metacenter is a function of the position of the center of buoyancy, thus a function of the displacement of the ship.
+The position of “M” moves as follows:
+As the Center of Buoyancy moves up, the Metacenter moves down.
+As the Center of Buoyancy moves down, the Metacenter moves up.
+Written by Capt. Jayant Roy

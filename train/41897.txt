@@ -1,0 +1,1211 @@
+This data communications glossary is designed to provide the reader with definitions to the numerous technical terms often found in the data communications and networking environment.
+Each entry is alphabetically indexed with several hyperlinks to web resources.It is intended that this reference be useful for data communications students, users, and systems professionals alike As always, the author welcomes any feedback that may improve the content of this online reference.
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+A/B Signaling - A procedure used in T1 transmission facilities . One bit, from each of 24 sub channels in every sixth frame, is used for carrying dial and control information.
+Abbreviated Dialing - A feature of some telephone switches which permits users to establish calls by entering fewer digits than the full telephone number.
+Access, Access Code - The prefix digits that a telephone user dials to be connected to an outgoing line or trunk.
+Access Line - The existing connection between a voice or data customers equipment and a public communications network. That portion of a leased telephone line that permanently connects the user with the Central Office.
+Access Method - Two definitions for "access methods" are currently in use:
+1) A CPU resident program built to control the flow of data between central storage and the peripheral devices of a host system. The more common access methods of this type would be IBM 's VTAM, TCAM and BTAM.
+2) A method for local area network ( LAN) terminals to access the transmission medium. Several types of LAN access methods currently exist: Shared Access, explicit access, contended access and discreet access.
+Access Node - Local-Exchange-Carrier owned, Broadband ISDN remote switch which performs grooming, concentration and switching.
+Accunet - An AT&T product offering high speed digital service including packet switched, T1 and DDS customer service. Specifically, Accunet offers the services at the following speeds:
+1) Accunet T1.5, terrestrial wideband at 1.544 mbps;
+2) Accunet Reserved T1.5, satellite -based channels at 1.544 m bps used primarily for video teleconferencing purposes;
+3) Accunet Packet Services, packet-switching services;
+4) Accunet Dataphone digital service (DDS), private line digital circuits at 2400, 4800, 9600 and 56 kbps.
+ACD (Automatic Call Distributor) - A switching system which automatically distributes incoming calls in the sequences they are received to a centralized group of receivers without human interface. If no receivers are available, the calls will be held until one becomes free.
+ACK - This is a control character found in bisync protocol. When combined with NAK, the ACK character would indicate that the previously transmit ted data block was correctly received (acknowledge) or incorrectly received (NAK-Negative Acknowledge).
+Acoustic Coupler - A kind of modem that uses a standard telephone handset to transmit data over the telephone network. Acoustic couplers are best used in transmitting data at lower speeds (300 Baud) due to the environmental noises present in many office environments, and the acoustic couplers inability to block out the resulting interference.
+AC Signaling - A signaling method that relies on alternating current tones or signals to transmit information or control signals.
+ACS - An AT&T product (Advanced Communication Service) to provide packet switched Service.
+ADCCP (Advanced Data Communications Control Procedures) - USAFS (United States of America Federal Standard) communications protocol, endorsed by the American National Standards Institute.
+Address - There are two definitions depending on the usage.
+Adjacent - Computer Programs or network devices directly connected by a data link.
+ADPCM (Adaptive Differential Pulse Code Modulation) - A CCITT standard defining an encoding technique. ADPCM provides for analog voice transmission.
+Aliasing - A condition the occurs when a transmission error fragments a message and the fragments appear as a "good message " at the receiver. Protocols have been developed to prevent aliasing, such as HDLC.
+Alphanumeric - A naming convention or character set that could include alphabetic, numeric and punctuation characters.
+Alternate Delivery - A process whereby messages to a particular keyboard device/display or output terminal would be re-routed via an alternate path due to out of service or busy conditions. Also known as alternate routing.
+American National Standards Institute - (Please refer to ANSI )
+Amplitude - A term used to describe the relative height of a sine wave .
+Amplitude Modulation - One of three methods to add information to a sine wave carrier signal. By varying the voltage level, the magnitude is modified in accordance with the information to be transmit ted. Contrast with phase modulation and frequency modulation.
+Amplifier - A unidirectional, electronic device used to boost (amplify) signals, with the resulting performance measured in decibels.
+Ambient noise - Any form of telecommunications interference present in a communications line at all times.
+AN - (See Access Node )
+Analog, Analog data - Any data in the form of continuously variable physical qualities, which are "analogous" to the data source. Continuously variable as opposed to discretely variable. Contrast with digital data.
+Analog loopback - A diagnostic test that forms the loop at the modem 's telco line interface to isolate faults to the analog signal.
+ANSI (American National Standards Institute) - A voluntary organization that represents the USA in the ISO, and is responsible for defining ASCII. Members include manufacturers, common carriers, and other standards organizations such as the IEEE.
+Answer back - A transmission from a receiving device to the sending device acknowledging a "message received" or "ready to receive" status.
+Application Layer - In referring to the OSI model, this is the "top" or seventh layer containing all user or application programs. See OSI layers diagram in Section B.
+Application Program - Two definitions exist is computer terminology:
+1) (In general) A program written for or by a user that applies to his own work. A program which performs a user function. Contrast with system program.
+2) (In data communications) A program that usually resides in DCE used to communicate with DTE that performs a set of specified activities for terminal users.
+ARPA - The Advanced Research Projects Agency, credited with designing ARPANET, the first widely used packet-switched network .
+ARQ (Automatic Request for Retransmission) - A method of error control where a receiving device notifies a transmit ting device, advising which data blocks were received successfully. Any blocks not successfully received would be re transmit ted by the transmit ting device.
+ASCII (American Standard Code for Information Interchange) - Usually pronounced "ask'-ee", this seven-bit-plus parity code set was established by ANSI to provide compatibility between data systems and services.
+ASCII terminal - A terminal using ASCII; usually synonymous with asynchronous terminal and with dumb terminal.
+ASR (Automatic Send and Receive) - Any one of several devices designed to transmit and receive data unattended, in contrast with RO, "receive only" devices.
+Asynchronous, Asynchronous Transmission - Also known a "start/stop", asynchronous refers to having a variable or random time interval between successive characters, operations, or events. Each character, word, or small block is individually synchronized by the use of start and stop bits. Contrast this concept with synchronous.
+ATM Forum - An international non-profit organization formed with the objective of accelerating the use of ATM (Asynchronous Transfer Mode) products and services through a rapid convergence of interoperability specifications. In addition, the Forum promotes industry cooperation and awareness. Click here to reach the ATM Forum web site.
+AT&T (American Telephone and Telegraph Company) - The USA's major common carrier for long distance telephone lines.
+Attenuate, Attenuation - A decrease in power over distance of a signal. Typically, attenuation increases (and the signal level decreases) with both frequency and cable length. Attenuation is measured in terms of levels called decibels. Contrast this concept with gain.
+ATTIS (AT&T Information Systems) - A division of AT&T Technologies that supplies and manufactures customer premises equipment (CPE).
+Audio frequencies - Frequencies that can be heard by the human ear, usually between 30 Hz and 20,000 Hz.
+Auto-answer - A modem that automatically sends an answering tone in response to an incoming call.
+Autobaud, Automatic Baud Rate Detection (ABR) - A process that enables a receiving device to accept data from a variety of transmit ting devices, operating at different speeds, stop bits and code levels. ABR usually relies on a sign-on character to provide the information needed by the receiving device to make the necessary transition.
+Auto-dial - A modem that automatically originates calls, that is, dials the desired number.
+Autodin (Automatic Digital Network) - A digital data communications network that is a part of the U.S. Department of Defense.
+Automatic Calling Unit (ACU) - Any one of several type of devices designed to place a telephone call automatically upon receipt of information from a DTE.
+Automatic Dialing Unit (ADU) - A device capable of automatically generating dialing digits. Also known as an Auto-Dialer.
+Automatic Identification of Outward Dialing (AIOD) - A PBX service feature that identifies the calling extension, permitting cost allocation.
+Automatic Route Selection - A PBX feature that permits automatic selection of the lowest cost routing of a call in a network .
+Automatic Teller Machines (ATM) - One of several types of remote terminals used by banks to allow customers to perform numerous banking transactions.
+Availability - The percentage measurement of computer equipment, system, or network performance that satisfactory data communication service is available. The term satisfactory implies that teleprocessing channels are in working order. The percentage is generally expressed as the ratio of operating time to the sum of operating time plus down time, where MTBF = Mean Time Between Failures and MTTR = Mean Time To Repair.
+AWG (American Wire Gauge) -The standard used to define wire size in communications line media.
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+Backup - The hardware and software resources available to recover after a degradation or failure of one or more system components.
+Backbone - The major transmission path or facility for a PDN.
+Backward Channel - See reverse channel.
+Balanced, Balanced Circuit - A network terminated circuit having balanced impedances (between telephone line and network) resulting in a low rate of return loses. Contrast with unbalanced-to-ground.
+Band Splitter - A multiplexor (either FDM or TDM) designed to divide a wide bandwidth into several independent, narrower band width channels, for data transmission at a fraction of the total data rate.
+Bandwidth - The information-carrying capability of a communications channel or line, expressed in cycles per second ( Hz) between the highest and lowest frequencies of a band.
+Baseband, Baseband Transmission - Direct transmission method whereby the transmission medium carries only one signal at a time usually for distances under ten miles.
+Baseband Modem - A DCE device also known as a line driver or local dataset.
+Base Group - Twelve communication VF paths. A unit of frequency division multiplexing FDM) systems bandwidth allocation.
+Baud - A unit of signaling speed or rate, taken from the name of French telegrapher, Emile Baudot. Baud is usually defined as the number of signal level changes per second, regardless of information content of those signals. If each signal event represents only one bit condition, baud is the same as bits per second when each signal event represents other than one bit.
+Baudot Code - A five-bit code set designed for asynchronous transmission of data used primarily for teleprinter systems adding one start bit and 1.5 stop bits . Contrast with ASCII and EBCDIC.
+BASIC (Beginners All-purpose Symbolic Instruction Code) - A high- level (many "English-like" terms) programming language.
+Batch Processing - A data processing technique where related transactions are grouped together and transmit ted for processing. Contrast with interactive processing.
+BCC (Block Check Character) - A control character added to a block in character oriented protocols (such as Bisync) used for determining if the block was received in error -- such as CRC and LRC.
+BCD (Binary Coded Decimal) - A digital system that uses six- bit binary codes to represent decimal digits, providing 64 possible combinations. This was the standard code used on the early IBM 1401 computers.
+Bell 103 - An AT&T modem providing asynchronous originate/answer transmission at speeds from 0-300 bps. Often used to describe any Bell 103 or compatible modem.
+Bell 113 - An AT&T modem providing asynchronous transmission with either originate or answer capability (but not both) at speeds from 0-300 bps. Often used to describe any Bell 113 or compatible modem.
+Bell 201 - An AT&T modem providing synchronous transmission at speeds of 2400 BPS . Often used to describe any Bell 201 or compatible modem.
+Bell 202 - An AT&T modem providing asynchronous transmission at 1800 bps and requiring a four-wire circuit for full-duplex operation. Also an AT&T 1200 bps modem providing asynchronous transmission over two-wire, full-duplex, leased line or public telephone networks. Often used to describe any Bell 202 or compatible modem.
+Bell 208 - An AT&T modem providing synchronous transmission at 4800 bps. Often used to describe any Bell 208 or compatible modem.
+Bell 209 - An AT&T modem providing synchronous transmission over four-wire leased lines at 9600 bps.
+Bell 212,212A - An AT&T modem providing asynchronous, full-duplex transmission. Often used to describe any Bell 212 or compatible modem .
+Bell 43401 - Bell publication defining the requirements for data transmission over limited distance DC-continuous private metallic circuits supplied by the regional telephone company.
+BERT (Bit Error Rate Testing) - A method of data communications line testing, where a bit pattern is compared before and after the transmission to detect errors . BERT tester - used to describe any device designed to perform the above-mentioned function.
+Binary - A digital system with two states, 1 and 0. Contrast with octal (8 states), decimal (10 states), and hexadecimal (16 states).
+Binary Synchronous Protocol (Bisync, BSC) - An IBM line control procedure which has become an industry standard for data communications. It can express several data codes such as 8- bit EBCDIC, 7-bit ASCII or 6- bit transcode and uses a defined set of control characters and sequences for synchronized transmission of data between stations.
+Bipolar Transmission - See polar transmission.
+Bit - A contraction of the words: binary digit, representing the smallest unit of information and the basic unit in data communications. A bit can have a zero or a one value (or a mark or space value in data communications.
+Bit Oriented - A communications protocol (such as IBM 's SDLC) where control information is encoded in one or more bits. Contrast with byte or character oriented.
+Bit Rate - The speed at which binary digits (bits) would be transmit ted over a communications path and usually expressed in "bits per second" ( bps). Bit rate should not be confused with Baud which defines the rate of signal state changes.
+Bit Stream - The continuous series of transmit ted bits through a transmission link.
+Bit Stripping - When referring to statistical multiplexors, bit stripping involves the removal of the start/stop bits on each async character and transmit ting the data using synchronous techniques.
+Bit Stuffing - Also known as zero insertion, bit stuffing is a process used in bit - oriented protocols (such as IBM's SDLC) where a string of "1" bits is broken by an inserted "0" bit to avoid confusing data and SYN characters. Once received, the inserted 0 is removed.
+Blank(s) - Used to define a condition of no information in data recording medium and usually indicated by the presence of all zeros or all spaces.
+BLERT (Block Error Rate Testing) - A method of data line testing using groups of information transmission blocks to detect errors.
+Block - A group or quantity of information composed of any quantity of contiguous bits and/or bytes.
+Blocking - A "busy signal" or denial condition occurring in switching systems when circuits or paths become unavailable for call completion. Normally a "busy tone" is transmit ted to the calling party.
+Block Multiplexer Channel - An IBM term used to describe a computer peripheral multiplexor channel that interleaves blocks of data. Contrast with byte multiplexor channel and selector channel.
+BNC (Bayonet-Neill-Concelman) - A connector used for miniature coaxial cable employing a bayonet locking mechanism. See C connector and N connector. Contrast with TNC.
+BOC (Bell Operating Company) - Any one of the 22 local telephone companies spun off from AT&T, effective January 1, 1984, as a result of divestiture and became organized into seven regional Bell holding companies. Subsequent mergers have reduced that number to 4.
+Boundary Node - In IBM SNA terminology, a subarea node that can provide certain protocol support for adjacent subarea nodes.
+BPS (Bits Per Second) - The rate of information bits transmit ted. The basic unit of data communications rate, very often combined with metric prefixes, such as kbps for thousands of bits per second and mbps for millions of bits per second.
+BREAK - A spacing condition that exists longer than 110 milliseconds used as a signal to "break-in" when the opposite party or unit is sending. This is a feature of teletype systems operating in half duplex.
+Breakout Box (BOB) - Also known as an EIA monitor, a breakout box serves to monitor the status of signals of the pins of an RS-232C connector or cable and allows signals to be broken, patched, or cross-connected.
+Bridge - The interconnecting equipment and techniques used to match circuits to each other ensuring minimum transmission impairment. Bridges function at the data link layer of the OSI model. Contrast with gateway.
+Broadband - Two definitions exist in normal usage:
+1) As data transmission channel which has a bandwidth greater than voice grade (VG) channels of 3000 Hz and potentially capable of much higher rates. Also known as wideband.
+2) In local area networks (LAN), whereby broadband facilities can carry many voices or data channels simultaneously and can also be used for high speed digital data communications at speeds of up to 1.544 mbps, usually via coaxial cable using radio-frequency modems.
+Broadcast,Terminal Broadcast - Two definitions apply to broadcast:
+1) As a terminal transmission of a message intended for all points on a circuit simultaneously, rather than for a specific station.
+2) In LAN technology as a transmission procedure used in a bus topology network sending all messages to all stations despite specific terminal addressing.
+BSC (Binary Synchronous) - See Binary Synchronous Protocol .
+BTAM (Basic Telecommunications Access Method) - An IBM software routine that functions as the basic access method for 3270 data communications terminals and main storage. BTAM provides the applications program with macro instructions for using the capabilities of the devices supported. BTAM supports start/stop ( asynchronous) as well as synchronous communication.
+Buffer - A temporary storage device for blocks of data used to compensate for the difference in either the rate of data flow or the time of occurrence of the events in transmissions between devices.
+Buffering - The storing of data in a memory device, allowing the devices to change data rates, perform error checking and error retransmission.
+Burst - A group of events occurring simultaneously in time.
+Bus, Buss - Two definitions exist in normal usage:
+1) A typically electrical data path or channel, with one or more conductors, where all devices receive transmissions simultaneously, such as the input/output bus in a computer.
+2) In a LAN environment, such as Ethernet, where all network nodes "listen" to all transmissions. Contrast with ring and star. See also CSMA/CD.
+Busy Hour, Prime Time - The period of a day in which the largest number of user transactions occur. Also known as Peak Hour or Peak Period.
+Byte - Some set of contiguous bits operated upon as a single unit, usually six or eight bits long. Most character sets use one byte per character, with storage device capacity usually spoken of in K bytes (K = 1024 bytes) and M bytes (M = mega, or million bytes).
+Byte Multiplexer Channel - A mainframe input/output channel that provides multiplexing or interleaving of data in bytes. Contrast with Block Multiplexer channel.
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+Cabinet - A physical stand or enclosure designed to rack-mount data equipment and provide easy access to both front and rear panels of the devices contained within. Standard cabinets have 1 3/4" vertical spacing between mounting holes and 19" wide horizontal spacing between mounting rails.
+Cable - The combined assembly of one or more conductors within a protective sheath and constructed to permit the use of conductors separately or in groups.
+Cable-Based LAN - A local area network (LAN) that uses a coaxial or twisted pair cable as its transmission medium.
+Cache Memory - A high-speed computer memory which contains the next most likely instruction or sequence of instructions to be executed upon completion of the present instruction.
+Call - A request to connect, or the connection that results from the request, either voice or data. Contrast with minicall and virtual call.
+Call Accounting - The recording of data pertaining to start/end times, number of segments, NUI, NTN etc., in packet-switched networks.
+Call Detail Recording (CDR) - A PBX feature where each phone call is logged by time and charges.
+Called Channel - A channel that can receive but not originate calls. A calling channel can call, but not receive calls, while a called/calling channel can both originate and receive calls. These examples are found in both LAN and packet-switched networks.
+Call Forwarding - A telephone service feature that can be programmed to automatically forward calls to another number.
+Calling rate - The average number of calls per telephone, determined by dividing the number of busy-hour calls by the number of telephones.
+Call setup time - The length of time it takes to establish a switched call between two pieces of DTE.
+Call Waiting, Camp-on - Two definitions exist in normal usage:
+1) A telephone service allowing a call to a busy telephone to be held while a tone notifies the busy telephone that a call is waiting.
+2) In LAN environments; a facility to allow users to wait in a queue if the requested resource is busy. Users are then connected on a first come first serve basis once the resource becomes available.
+Capacitance - The ability of an electrical device to hold, store or accommodate electricity.
+Card Module, Circuit Card - A printed-circuit board (PC board) designed to plug into a slot in an equipment chassis.
+Carrier - A continuous frequency, that can be impressed or modulated with a second information carrying signal.
+Carrier Detect - An RS-232 interface modem signal (transmitted on pin 8) that indicates that the local modem is receiving a signal from the remote modem. Also called Data Carrier Detect (DCD) and Received Line Signal Detector (RLSD).
+Carrier System - The method of transmitting a number of channels over a single path by modulating each channel on a different carrier frequency at the originating end, then demodulating at the receiving end to return the signals to their original form.
+Carrier Wave - The wave upon which a signal is superimposed.
+Carterphone Decision - The 1968 FCC decision which held that existing telephone company tariffs containing blanket prohibition against the attachment of customer provided terminal equipment to the telecommunications network were unreasonable, discriminatory and unlawful. The FCC declared the telephone companies could set up reasonable standards for interconnection to insure the technical integrity of the network . Following the Carterphone Decision, the telephone companies filed tariffs for protective connecting arrangements to facilitate the interconnection of customer provided terminal equipment (CPE).
+CATV (Community Antenna Television) - Also known as "cable television", CATV is one of the most common data communication facilities found on broadband networks based on radio frequency (RF) transmission and generally using 75-ohm coaxial cable.
+C Band - The portion of the electromagnetic spectrum used for satellite and microwave transmission with frequencies of approximately 6/4 GHz (giga hertz).
+CCITT (The Consultative Committee International Telegraph and Telephone) - The international advisory committee, established under the United Nations that sets international recommendations which oftentimes are accepted as standards. Membership includes PTT 's, scientific and trade associations and private companies. CCITT operates within the International Telecommunications Union (UTI), a United Nations treaty organization in Geneva, to recommend worldwide standards. Note: The CCITT has been known since 1993 as the ITU-T (International Telecommunications Union - Telecommunications Standards Section. Click here to access the ITU web site.
+C Connector - A type of connector used for coaxial cables using a bayonet lock. C is named after Carl Concelman. Contrast with TNC and BNC.
+CCS - Hundred-call seconds.
+CCTV (Closed Circuit Television) - Two definitions for CCTV:
+1) A localized video network limited to specific locations in a building or campus.
+2) A LAN environment service often found on broadband networks.
+CCU (Communications Control Unit) - A communications computer designed to "off-load" the host processor from tasks involving message handling, protocol control, code conversion, error control and application functions. Very often a minicomputer will serve as a CCU.
+CD - See Carrier Detect.
+Cells - A subdivision of a mobile telephone service area; containing a low powered radio communications system connected to the local telephone service.
+Central Office (CO) - The place or building where communications common carriers terminate customer circuits and locate the switching equipment which interconnects those lines. The CO may also be referred to as an exchange, local central office, end office or central exchange .
+Central Processing Unit (CPU) - A device designed to execute programmed instructions, perform the logical and arithmetic functions on data and controls input/output functions.
+Centralized - Processing with one CPU, which may support remote terminals/job entry stations.
+Centrex - A type of PBX service where incoming calls may be dialed or "switched" direct to extensions without operator assistance.
+Centronics, Centronics Interface - The 36-pin, byte wide parallel interface designed by the Centronics Co., that set the de facto standard for connecting printers.
+CERT (Character Error Rate Testing) - A method of data line testing using test characters to determine error performance.
+Chain - A series of linked processing centers where information must pass through on a "store and forward" basis to get to final destination.
+Channel - A method for one way transmission, with several definitions of common usage:
+1) In and IBM system, a high speed data link that serves to connect the CPU with its peripheral devices. See Block Multiplexor and Byte Multiplexor channels.
+2) In State and Federal tariffs, a path for electrical transmission between two or more points without common carrier provided terminal equipment such as a local connection to DTE . Also called a circuit, path or facility.
+Channel Interface - See Channel and Interface.
+Channel loopback - A diagnostic test that forms the loop at the multiplexer's channel interface . See loopback definition and the related chart in Section B.
+Channel, primary - The higher speed of two channels used for transmitting. Also known as Forward or Main channel. Contrast with reverse channel.
+Channel, reverse - The slower speed of two channels used for slow- speed data such as error-detection. Contrast with primary channel .
+Channel Service Unit (CSU) - A device required by AT&T in order to connect a DTE to a digital transmission line for DDS . The CSU may be integrated into a Data Service Unit ( DSU).
+Channel, Voice grade - A channel suitable for the transmission of speech, digital or analog data, or facsimile, typically with a frequency range of about 300 to 3300 Hz.
+Character - Any letter, number, punctuation mark or other sign contained in a message, including characters for control functions and for special symbols. See also Control character.
+Character Oriented - Used to describe a communications protocol that carries control information encoded in one or more bytes ( octets). Also known as byte oriented. Contrast with Bit oriented.
+Character Parity - A method of adding an overhead bit to a character code to provide error-checking capability.
+Characteristic Distortion - A distortion in transmission resulting from transients as a result of modulation. The levels of characteristic distortion depend upon the transmission channel and its qualities.
+Character Set - A code, such as ASCII or EBCDIC used to represent data in a computer system. A collection of characters including special symbols and functions.
+Check Bit - Also known as a parity bit, one non-information bit that is added to a transmitted character to enable a terminal to check each character it processes.
+Checksum - The sum of a group of data provided with the group, for checking purposes.
+Circuit - In data communications, a circuit is a communications path between two points. In electronic design, a circuit is defined as one or more components that act together to perform one or more functions.
+Circuit Switching - A method of communications in which physical circuits are transferred or switched to complete connections for exclusive use until the connection is released. Contrast with packet-switched networks.
+Clock, Clocking - A master timing device used to provide the basic sequencing pulses for the operation of any synchronous transmission.
+Clear Channel - Any transmission path where the full bandwidth is available to the user.
+Closed Architecture - A computer system so designed, that it is only compatible with software and hardware from one particular vendor. Contrast with open architecture.
+Cluster - A group of user terminals located near each other and connected to a single controller. Terminals may consist of printers, keyboard devices, microfiche printers, etc.
+Cluster Control Unit - A processor designed to control the communications to form a group or cluster of terminal devices. Also known as " terminal control units", they usually provide polling, control, formatting and error handling functions.
+Coaxial Cable (Coax) - A two-conductor wire transmission medium known for its wide bandwidth and negligible susceptibility to crosstalk and distortion, since signals are transmitted in a fully enclosed environment.
+Coaxial Converter - A device used in IBM systems to convert the 3270 synchronous protocol to asynchronous protocol for asynchronous devices. Also known as a "protocol converter".
+Code - A system of unambiguous rules and symbols for use in representing data, such as ASCII and EBCDIC .
+CODEC - A device that codes and de codes analog voice signals into and from digital signals. A neologism of "COder" and "DECoder".
+Code Level - The number of bits defined in a code set to represent one character.
+Collision - Simultaneous use by two stations of a shared transmission medium in a LAN environment. The result of both DTE's attempting to transmit data simultaneously in a half-duplex environment.
+Combined Station - Also known as a balanced station, in High-Level Data Link Control (HDLC) protocol, a station capable of assuming the role of either a primary or secondary station.
+Command Port - Also known as the master console, used to control and monitor a network or system.
+Common Battery - A DC power source in the central office that supplies power to switching equipment and to subscribers.
+Common Carrier - Two definitions exist:
+1) In general usage, a common carrier is any supplier in an industry that undertakes to "carry" goods, services or people from one point to another for the public in general or for specified classes of the public.
+2) In telecommunications, telephone companies "carry" voice and data services over the telecommunications network . Often PTT 's provide these services to the general public. In the United States, a common carrier company that offers communications to the public is subject to state and federal regulation by the FCC, and the PSC / PUC .
+Common Carrier Principle - The regulatory concept that limits the number of companies providing needed services in a particular geographic area.
+Communications Act of 1934 - The Congressional Act, passed in 1934 setting a goal of universally available, quality telephone service for a reasonable cost. The Act also established the FCC and transferred all foreign and interstate radio and wire transmission to this Commission. It stipulates that prices and regulations for transmission and equipment service be just, reasonable and not unreasonably discriminatory.
+Communications Line Control - A computer hardware device, with related software designed to accept data information and perform the necessary control functions for a data communications line.
+Communications Satellite - A microwave repeater, orbiting in a typically geosynchronous orbit, 22,300 miles above the earth, designed to relay signals between communications stations.
+Communications Monitor - Mainframe software providing a shared interface between applications programs and communications devices, including communications access methods. See IBM 's CICS.
+Compandor - A contraction of the words "COMPressor"and" expANDOR", this device serves to reduce the volume range of signals thereby improving the ratio of signal to interference entering the path between the compressor and expandor. It provides the function of a compressor at one point and an expandor at the receiving point.
+Composite - The side of a concentrator or multiplexer that includes all of the multiplexed data.
+Composite Link - A link, circuit or line that connects a pair of concentrators or multiplexers. Also, any circuit carrying multiplexed data.
+Compression - Two forms of compression are typically available:
+1) Analog compression, where the bandwidth for analog transmission is reduced. Also known as compaction .
+2) Data compression where the number of bits required to transmit data is reduced. This is performed in a variety of ways, often using a unique code to represent groups of repeated bytes or simply using fewer bits to represent the more frequent characters in the data.
+Compressor - A device used to perform analog compression . Contrast with compandor.
+Computerized Branch Exchange (CBX) - A PBX using a computer with an electronic switching network.
+Concentrator - A device which connects a number of circuits which are not all used at once to a smaller group of circuits for cost effective transmission. The data channel is split into two or more channels of average lower speed while the concentrator dynamically allocates space according to the demand in order to allow the greatest possible throughput. Also known as a statistical multiplexer, ATDM or TDM.
+Concurrent - The occurrence of two or more events or activities within the same specified interval of time.
+Conditioning - Improving the quality of a leased voice-grade (VG) line so that it meets the standards of data transmission, by adding additional equipment to the network .
+Connecting Block - A wire or cable terminating block that provides access to a circuit.
+Connection - The physical attachment of a path, or the data transmission path itself. Establishing a transmission path.
+Connector - An electrical device for making one or more connections such as RJ11C or EIA RS-232 C, typically with male and female components.
+Connect Time, Holding Time - The amount of time a switched circuit is in use.
+Contended Access - Contrasted with explicit access, contended access is a shared access method found in Local Area Networks (LAN's) which allows first come, first served access by the stations in the network.
+Contention - A first come, first served method of line control in which terminals request to transmit. Transmission proceeds if the channel is free, otherwise the terminal must wait.
+Control Character - A non-printing character used to initiate, modify, or stop a control function. LF (line feed) is an example of a control character.
+Control Program - A program containing many software routines that would normally have to be put into each individual application program, routines such as console interruptions, error handling and interruptions from a communications terminal.
+Control Signal - Any signal that is used for synchronization, remote testing or status. An example would be a control character such as CD ( carrier detect) which is an RS-232 control signal announcing the presence of a carrier.
+Control Unit - A hardware device designed to coordinate the sequence of input/output operations of a peripheral device and the CPU, interpreting code d instructions and initiating commands to execute instructions.
+Conversational Mode - The online interaction between the user and the computer, with a dialog taking place.
+Core - Two definitions exist for this term:
+1 - In general, the main storage portion of a mainframe computer system, also referred to as CPU storage. Archaic term.
+2 - In data communications, the portion of a fiber optic waveguide through which light is transmit ted, usually 8 to 12 microns in diameter ( single-mode fiber) and from 50 to 200 microns (multimode fiber).
+CPE (Customer Provided Equipment) - Any form of telephone equipment including telephone instruments, answering machines, modems, etc. provided solely by the customer but attached to the telephone company lines.
+CPI (Computer PABX Interface) - A LAN environment term used to describe a Digital Equipment Corp. technology using T1 transmission involving 56 k bps channels. This is a voice/ data standard representing a move toward an open architecture network.
+CPS (Characters Per Second) - A data flow measuring unit where circuits carry bits forming a data character.
+CPU -See Central Processing Unit.
+CR (Carriage Return) - A control character in either the EBCDIC or ASCII character sets used to position the cursor at the left margin on a CRT terminal or position the printing mechanism at the left margin on a printer.
+CRC (Cyclic Redundancy Check) - An error checking control method in which the block check character (BCC) is the remainder after dividing all the serialized bits in a transmitted block by a prespecified binary number.
+Crossbar Switch - A switch having numerous vertical and horizontal paths and electromagnetically operated by a mechanical method of interconnecting any one of the vertical paths with any one of the horizontal paths. (Obsolete)
+Cross Connect - A hardware device that is used to inter connect multiplexers with line terminating equipment and other multiplexers.
+Crosstalk - Any undesirable transfer of energy form one circuit, called the disturbing circuit, to another, called the disturbed circuit.
+CRT (Cathode Ray Tube) - A television type screen in some computer terminals used for the visual display of input/output information. CRT is commonly used as a synonym for CRT terminal.
+CSMA (Carrier Sense Multiple Access) - A contention-based LAN access method where terminal stations listen prior to transmitting, send a packet of data, then free the line for other stations to transmit . While stations do not transmit until the line is clear, transmission collisions still occur.
+CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance) - A CSMA protocol using a slotted TDM to minimize a collision reoccurrence. For optimum results, CSMA/CA will work best if the time slot is short as compared to the length of the packet.
+CSMA/CD (Carrier Sense Multiple Access with Collision Detection) - A LAN access method where all stations attached to the network listen for transmissions before attempting to transmit. If two or more devices begin transmit ting at the same time, each stops for a random period of time before attempting to re transmit. See also IEEE 802.3 and Ethernet.
+CSU (Channel Service Unit) -A digital DCE unit located on the user site to provide a DDS channel for use with the logic and timing recovery circuitry. See DSU.
+CTS (Clear To Send) - An RS-232 modem interface control line indicating the attached terminal device ( DTE) may transmit. The CTS signal is sent in reply to the DTE's RTS on pin 5.
+CUG (Closed User Group) - A predefined set of terminal users that accept connection requests ( calls) from only user in their group. Often this applies to the sending of messages as well.
+Current Loop - A method of connecting and transmit ting signals to Teletype data terminals, where a mark is represented by the presence of current and a space is represented by the absence of current (USA). In other countries, a mark is represented by current in one direction, while a space is represented by current in the other.
+Cursor - A rectangular block of light or underline, occasionally blinking, that serves as a character position marker to locate positions on a screen and moved manually by the keyboard.
+CPE (Customer Provided Equipment) - Telecommunications or data processing equipment that is provided by the customer and connected to the telephone company facilities.
+CVSD (Continuous Variable Slope Delta modulation) - A method of digit ally encoding speech using a one- bit sample to encode the difference between two successive signal levels, usually 32,000 times a second.
+CXR Carrier - A data communications signal, similar to CD ( carrier detect) that is used to indicate the intention to transmit data.
+Cycle - One iteration or a loop through a set of logical steps.
+Cyclic Redundancy Check - See CRC.
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+DAA (Data Access Agreement) - Any DCE approved by a common carrier that allows privately owned terminals to be connected to the common carrier 's network. Modems manufactured today for the public network have built-in DAA's.
+DACS (Digital Access and Cross-connect System) - AT&T central office switching equipment which allows T1 carrier or any of the 64 k bps sub channels to be switched or cross connected to another T1 carrier.
+Data - The representation of facts, instructions or concepts in a structured manner suitable for communication.
+Data Acquisition - A method of recording and measuring data from physical devices.
+Database - An organized collection of information.
+Data Channel - The data transmission path between two or more stations.
+Data Circuit - A telecommunications medium for the transmission of information in analog or digital form.
+Data Collection - A procedure where data arriving from several sources, is combined at one location in a file or queue, prior to processing.
+Data Communication - The processes, facilities and equipment used to transport encode d information from one point to another.
+Data Dictionary - A listing of all the data names and elements in a system.
+Data Encryption Standard (DES) - A cryptographic algorithm endorsed by the National Bureau of Standards (NBS) to encrypt data using a 56 bit key.
+Data Entry - The inputting of data into a computer system for processing.
+Datagram - A capability in a packet-switched network where a complete message may be contained in the data field of a packet, not usually implemented on today's packet data networks (PDN). See minicall .
+Data Integrity - The performance of a data communications system, ideally indicating an absence of undetected errors.
+Data Link - The physical connection that includes all necessary equipment for two devices to communicate.
+Data Link Control -The management of transmitted data over communications circuits using appropriate hardware and related software.
+Data Link Layer - The second layer in the OSI model that establishes, maintains and released data link connections between the network layer and physical layer. While the data link layer is not responsible for error correction, it is responsible for error detection, transmission and reception of datagrams, packet reception and local addressing.
+Data Mode - The status of a DSU or modem transmitter where the Request To Send and Data Set Ready circuits are prepared to send data.
+Data Network - A telecommunications system consisting of a number of terminals able to access each other via communication lines and switching methods.
+Data-Over-Voice (DOV) - A technique used in FDM allowing the combination of voice and data on the same line. DOV usually employs twisted pair cables assigning some of the unused bandwidth for data transmission.
+Data PBX - A digital transmission circuit switch allowing users to select from a number of circuit paths. Contrast with PBX .
+Dataphone - An AT&T trademark identifying the communications equipment furnished by AT&T for data communication service.
+Dataphone Digital Service (DDS) -An AT&T private line service for transmit ting data over a digital system. The digital technique allows for more efficient use of the transmission facilities, since no modems are required, resulting in lower error rates and costs than with analog systems. AT&T filed for DDS with the FCC in 1974.
+Data Service Unit (DSU) - A device used in conjunction with a digital network, replacing the modem in the sense that the DSU provides remote and local testing, loop equalization and the logic and timing needed to provide a standard EIA or CCITT interface. DSU's usually have an integrated Channel Service Unit (CSU).
+Data Set - An AT&T trademark synonymous for modem. See modem.
+Dataspeed - An AT&T marketing term used to describe a variety of data communications devices.
+Data Stream - The transmission of characters and data bits through a channel.
+Data Switch - A device used to connect data processing equipment to network lines, offering flexibility in line /device selection.
+Data Terminal Equipment (DTE) - A term used to describe numerous data processing equipment such as computers, terminals, controllers and printers.
+Data Transfer Rate, Data Rate - The measure of the speed of data transmission, usually expressed in bits per second. Synonymous with speed, the data rate is often incorrectly expressed in baud .
+dB (deciBel) - A unit of measuring the relative strength of a signal parameter such as power, voltage, etc., equal to 1/10 Bel. The number of deciBels is 10X the logarithm of the ratio of the measured quantity of the reference level.
+D bit (Delivery Confirmation Bit) - A bit used in CCITT X.25 packet-switched networks to request end-to-end acknowledgement.
+dBm - The absolute measure of signal power where 0 dBm is equal to one milliwatt at 1000 Hz terminated by 600 ohms impedance. A level of power measurement in the telephone industry based on 600 ohms impedance and 100 Hz frequency.
+DCD (Data Carrier Detect) - See CD.
+DCE (Data Communications Equipment) -The device installed on premises to provide the functions needed to establish, maintain and terminate a connection as well as the signal conversion required for communications between the DTE and the telephone line or data circuit . Typically, DCE is a modem.
+D-Conditioning - A common carrier service designed to control the harmonic distortion and improve the signal-to-noise ratio. D-conditioning is currently being offered in 9600 bps service with complex modems on voice grade private lines.
+DDCMP (Digital Data Communications Message Protocol) - A DEC data communications line protocol.
+DDD (Direct Distance Dial) - The North American telephone dial system enabling users to call subscribers outside of their local area without operator assistance. In the United Kingdom and other countries, the service is known as STD (Subscriber Trunk Dialing).
+DDS (Dataphone Digital Service) - A digital service offered on private lines and eliminating modems. DDS is offered inter-LATA by AT&T (as an ACCUNET offering) and intra-LATA by BOC's.
+DEC (Digital Equipment Corporation) - A major manufacturer of minicomputers and related hardware and software.
+Decimal - A digital system that has ten possible states, 0 through 9.
+DECnet - A network approach developed by DEC that permits inter connection of DEC computers using DDCMP.
+Decentralized - A processing method where intelligence is located at several remote locations of the same processing system.
+DeciBel - See dB.
+Dedicated Line - Any telecommunications line that is reserved for the exclusive use of a customer and is not dialed. A dedicated line may be either point-to-point or multi point. Also known as a leased line or a private line.
+Delay Distortion - Sometimes referred to as "envelope delay", this form of distortion results from different propagation speeds of signals at different frequencies. Within any form of transmission medium, certain frequencies will travel slower than others. The delay distortion is measured in microseconds of delay relative to the delay at 1700 Hz, and can potentially wreck havoc on data transmission.
+Delay Equalizer - A device designed to perform corrective action over delay distortion by making the delay substantially constant over a desired frequency range.
+Delivery Time - A measurement of time beginning with the start of transmission at the transmit ting terminal to the reception at the receiving terminal.
+Demodulation - The opposite of modulation, the process of retrieving data from a carrier signal.
+Demodulator - The internal portion of a modem designed to convert the received analog line signals back to digital form.
+Demultiplexing - The opposite of multiplexing where a composite signal is broken into is component channels.
+Destination - A field in a data message that contains the address of the terminal to which a data message is directed.
+Diagnostics, Diagnostic Programs - Programs or procedures used to check equipment, communications links or networks and pinpoint faulty components. Diagnostics may be used by the computer engineer or may be called in by the supervisory programs automatically.
+Dial Line - Also known as dial-up line or dial-in line, any communications line that must be dialed. Contrast with Dedicated line .
+Dial Network - A term synonymous with public telephone network . See also dial line.
+Dibit - A grouping of two bits so that in combination there are four possible values: 00, 01, 10, 11. Each possible value of a dibit is encode d as a unique carrier phase shift (called four- phase modulation).
+Differential Phase Shift Keying (DPSK) -The modulation technique used in the Bell 201 modem. Also, see dibit .
+Digit, Digital - A discretely variable signal as compared with analog, which is continuously variable. Data signals are coded in discrete and separate pulses.
+Digital Data - Any information represented by digital code .
+Digital Error - Digital transmission where a 0 signal is mistakenly understood to be a 1 signal.
+Digital Loopback - A diagnostic technique for testing the digital circuitry of a communications device, usually a modem . The loop is formed at the modem 's DTE interface, either initiated locally or remotely via communications circuits.
+Digital Service Unit (DSU) - See Data Service Unit.
+Digital Switching - A process whereby a connection is established and maintained through program control. Digital information is routed between input and output.
+Digital Transmission - The direct transmission of discrete pulses as opposed to analog transmission.
+DIP (Dual In-line Pins or Dual In-line Package) - an electronic component package or IC (integrated circuit chip) characterized by two rows of connecting pins.
+DIP Switch - A switch possessing the physical characteristics of dual in-line packages (DIP).
+Direct Current (DC) - Electrical current that travels in only one direction in a circuit, from + to -.
+Direct Current Loop (Current Loop) - A method of interfacing teleprinters whereby a digital signal is transmit ted, usually at 20 milliamperes DC .
+Direct Distance Dialing - See DDD.
+Direct Inward Dialing (DID) - A PBX feature where an external caller is able to call an extension without an operators assistance.
+Direct Outward Dialing (DOD) - A PBX feature where an internal caller at an extension is able to call an external number without an operators assistance.
+Disconnect Signal - The signal that is transmit ted from one end of a subscriber line or trunk to indicate at the other end that the established connection should be disconnected.
+Discrete Access - An access method found in LAN environments using a star topology, wherein each station has its own separate connection to maximize the LAN's switching capabilities.
+Distortion - The unwanted changes in signal or signal shape from its true form occurring during transmission between two points, e.g. amplitude distortion, delay distortion.
+Distributed Architecture - A LAN using a shared communications medium.
+Distribution Frame - A structure designed for terminating wires of a telephone central office, PBX, or private exchange and for allowing easy change of connections via cross-connecting wires.
+Distributed Processing - A method of data processing where intelligence is located at several remote sites of the same processing system and connected via a data communications network.
+Divestiture - The breakup of AT&T by the federal court based on an antitrust agreement reached between AT&T and the U.S. Department of Justice, effective January 1, 1984.
+DMA (Direct Memory Access) - The accessing of computer memory from input/output and peripheral controllers without going through the arithmetic processing unit.
+DLC (Data Link Control) - A telecommunications protocol designed to control, set up, perform error checking and terminate the transfer of information between two stations on a data link . Compare with HDLC and SDLC .
+DMI (Digital Multiplexed Interface) - An AT&T voice/ data PABX standard designed for using T1 transmission in LAN environments. DMI uses 64 k bps channels which represents moving toward an open architecture environment using ISDN. Compare with CPI.
+DNIC (Data Network Identification Code) - A 4-digit PDN code used for identification in a packet-switched network.
+DOD (Department of Defense) - One portion of the USA executive government responsible for military concerns, including data communications and also responsible for some LAN related protocols and standards. TCP/IP and some FIPS are under the jurisdiction of the DOD.
+Domain - A term used often in IBM SNA to describe a host-based systems services control point (SSCP) and the physical units (PU's), logical units (LU's). links and related resources.
+DOS (Disk Operating System) - An operating system designed for microcomputers to instruct a disk-based system to schedule or supervise work, manage resources, and operate and control attached peripherals.
+Down-Link - A geosynchronous/geostationary satellite and the signal used to transmit information to an earth station. Contrast with Up-link.
+Down Loading, Downline Loading - The process of sending software or related data from a central source to an individual station or personal computer.
+Downtime - The period of time when all or part of a computer system or data network is not available to the user community because of a failure. Time required for preventive maintenance is not typically included. See also availability.
+DPSK - See differential phase key shifting.
+DQM (Data Quality Monitor) - A device used to measure the data bias level above or below a threshold.
+Driver - A software module (short for "line driver") under the control of the processor used to control an input/output port to an external device.
+Drop Cable, Drop - In LAN environments, the cable that serves to connect a branch to the main, or bus cable, and attaches DTE.
+Drop, Subscriber's; Customer's Drop - The line from a telephone cable to a subscriber's building.
+DSR (Data Set Ready) - An RS-232 modem interface control signal which indicates to the attached terminal the modem is connected, powered-on, and ready.
+DS-0 (Digital Signal level 0) - A standard digital signal or channel operating at 64 kbps.
+DS-1 (Digital Signal level 1) - A standard digital signal or channel operating at 1.544 mbps carried on a T1 facility.
+DS-1C (Digital Signal level 1C) - A digital signal operating at 3.152 mbps.
+DS-2 (Digital Signal level 2) - A digital signal operating at 6.312 mbps carried on a T2 facility.
+DSU - See data service unit.
+DSX-1 (Digital Signal Cross-Connect level 1) - The set of parameters used where DS-1 digital signals (T-1) are cross-connected.
+DTE - See: Data Terminal Equipment.
+DTR - An EIA RS-232 interface control singal sent from the Data Terminal on pin 20,indicating to the modem that the terminal is ready for transmission
+DTMF (Dual Tone Multi-Frequency) - A term used to describe the audio signaling frequencies where each key generates two audio tones. Contrast with pulse dialing.
+Dumb Terminal - Any terminal unable to perform error detection or use a communications protocol, such as a Teletype or Teletype compatible terminal. Usually an asynchronous, ASCII device operating at 9600 bps or higher. Contrast with intelligent terminal.
+Duplex - Any communications facility providing transmission in both directions simultaneously, often referred to as "full duplex". Contrast with "half-duplex".
+Duplex Transmission - The simultaneous, independent, 2-way transmission of data in both directions. Contrast with "half- duplex transmission".
+Duplexing - A process using redundancy, whereby duplicate processors, files or circuitry would be available to enable the system to carry on its work. Providing an alternate system in this way is also called "Tandem".
+DUV (Data Under Voice) - The normally unused spectrum at the lower end of a radio channel used to provide a T1 (1.544 m bps) channel for digital services.
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+Earth Station - The transmitter and related antenna located on earth for communication with a satellite.
+EBCDIC (Extended Binary Coded Decimal Interchange Code) - An 8- bit character code, standard for many IBM systems offering 256 possible combinations of characters.
+Echo - The reflection or return of transmitted data.
+Echo Canceler - A device to suppress echo's (similar to an echo suppressor) without speech clipping and able to operate during two-way transmissions.
+Echo Check - A method of checking for data transmission errors by returning the received data to the sending end for comparison with the original data.
+Echo Distortion - An impairment in telephone lines caused by electrical reflections located at distant points where line impedances are dissimilar.
+Echoplex - One method of checking data integrity by returning characters to the sending station for verification. This process requires simulated full duplex operation.
+Echo Suppressor - A device used by telephone companies to block the receive side of the line during the time that the transmit side is in use.
+ECMA (European Computer Manufacturers Association) - A trade organization and member of the ISO issuing data communications standards. Its membership includes western European computer manufacturers and suppliers.
+EEPROM (Electrically Erasable Programmable Read-Only Memory) - A PROM that can be cleared or erased using electrical signals rather than the ultraviolet light required for EPROM.
+EFS (Echo Free Seconds) - The measurement, in seconds, of the percentage of time data is transmit ted error free.
+EIA (Electronic Industries Association) - A trade association recommending data communication standards, with RS-232 the best known. EIA is comprised of American electronics manufacturing corporations and also contributes to ANSI. See ANSI.
+EIA Interface - Data transmission signal characteristics designed with universal standardization for data communication including duration, current and voltage for hardware devices. See also EIA.
+Electronic Mail - The delivery of mail or messages, either all or in part via a public or private data communications system.
+Electronic Switching System (ESS) - A computerized, digital telephone switching system, manufactured by AT&T, utilizing a stored program to control the switching function. With ESS, custom calling features such as Call Waiting, Call Forwarding and Three-Way calling are available to the subscriber.
+EM (End of Medium) - Also known as End of File, the EM character is sometimes used to indicate the physical end of data recorded on a medium .
+EMI (Electromagnetic Interference) - A level of undesirable radiation or interference, oftentimes reduced through the use of shielded cables. The FCC has defined acceptance levels for EMI.
+Empty Slot Ring - A LAN environment practice whereby an empty packet would circulate through each station in a LAN ring. A single bit within the header of the packet indicates if messages are present and, if so destination and source addresses are also contained within.
+Emulation - Designing a device or program to perform or imitate something else, i.e.; IBM 37XX emulation or IBM 3270 emulation.
+Encoding, Decoding - Formatting data into a pattern suitable for data communication.
+Encryption - A method of data protection whereby a bit stream would be changed to include additional bits, or appear as a random sequence of bits to an unauthorized observer.
+End Office - The first central office that a subscribers telephone line is connected to over the access line. Also, the end switching office for a dialed connection.
+ENQ (Enquiry) - A control character used in the ASCII code set to request identification status.
+EPROM (Erasable Programmable Read Only Memory) - A form of computer memory that is non-volatile but may also be erased via the use of ultraviolet light for reuse. See EEPROM and PROM.
+Equalizer - A capacitor or coil like device used by modems to compensate for distortions caused by telephone line conditions.
+Equalizer, Adaptive - An equalizer able to change dynamically to compensate for distortion caused by telephone line conditions.
+Erlang - A data communications measurement standard for rating traffic and usage.
+Error - A term used to describe a deviation from the expected, especially if data integrity is jeopardized.
+Error Correction - A method to insure data integrity in received data, performed by retransmission requests to the sending station (source), or by manipulating the received data. See ARQ and FEC.
+Error Rate - The measure of data integrity given as the blocks, bits or characters incorrectly received, versus the number transmit ted. Error rate is sometimes seen as a rate of one error every one million bits.
+ESS - See electronic switching system.
+Essential Facilities - A term used in packet switched environments to define the standard facilities found on all networks . Compare with additional facilities.
+Ethernet - The de facto standard LAN of the Xerox corporation and later sponsored also by DEC and Intel Corp. Characterized by 10 m bps baseband transmission using CSMA/CD, Ethernet uses coaxial cable and is similar to the standard LAN recommended by IEEE 802.3.
+ETX (End of Text) - A control character preceding a BCC, indicating a message conclusion.
+Exchange - One or more central offices and equipment belonging to the telephone company designed to administer communication service to a particular area.
+Exchange, Private Automatic (PAX) - A privately operated dial telephone exchange designed to prohibit calls to or from the public telephone network.
+Exchange, Private Automatic Branch (PABX) - A user owned (private) automatic telephone exchange that may be a data PABX, voice PABX or voice/data PABX.
+Expandor - A transducer-like device with the capability to expand the input voltages for a given range of amplitude.
+Explicit Access - Contrasted with contended access, explicit access is a method of shared access found in LAN environments, allowing stations to make use of the network individually for a certain time period. Each station receives a turn, but must also wait for its turn.
+Extended Addressing - A facility found in bit-oriented protocols allowing larger addresses to be used. IBM SNA adds two high- order bits to the basic address.
+Extended Area Service (EAS) - A common carrier telephone service providing calls to a designated area extending beyond the local exchange .
+External Modem - A modem designed to be physically located externally from the terminal device instead of internally as in an integrated modem.
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+Facility - Two definitions exist in networking technology:
+1) The computer system capabilities due either to software or hardware.
+2) The data communications lines and equipment required to build a circuits and transmission networks.
+Fading - Interference from radio transmission signals or microwave communication causing a received signal to deflect from the target.
+Far-End Crosstalk - Crosstalk interference occurring in the same direction as the signal. Contrast with near-end crosstalk.
+Fast Select - A packet-switched transmission method whereby the user is able to transmit small amounts of data (approx. 128 characters) with the call request packet, instead of transmit ting the data information in packets following the call request packet. This method allows a user to have small amounts of information arrive at the destination quickly.
+FAX (Facsimile Terminal) - An image transmission system designed to reproduce the communicated image (such as documents or photographs) on a paper forms.
+FCC (Federal Communications Commission) - A board of seven presidential appointees empowered to regulate all USA interstate communications systems as well as all overseas communications originating or terminating in the USA. The FCC was created by the Communications Act of 1934.
+FCS (Frame Check Sequence) - A method for error detection in bit-oriented protocols, normally consisting of a 16-bit fields.
+FDM (Frequency Division Multiplexing) - A method of multiplexing where a data lines bandwidth is divided into channels and assigning a specific range of frequencies to each channel.
+FDX (Full Duplex) - Transmitting data in both directions simultaneously. FDX can occur on either two or four wire circuits.
+FE (Format Effecters) - The control characters used to control information displayed on a monitor or printer.
+FEC (Forward Error Correction) - The inclusion of additional data contained in a transmit ted block, to be used by the receiver in case of errors.
+FEP (Front-End Processor) - A data communications device designed to offload the host processor from the task of message routing between application programs and user terminals, error correction and other communications processing functions.
+FEX, FX (Foreign Exchange Service) - A service designed to connect the subscriber's telephone to a remote exchange, providing what appears to be local telephone service. May be a virtual service.
+FF (Form Feed) - A control character found in both ASCII and EBCDIC code sets requesting a printer to advance to the top of the next page or form.
+Fiber Loss - The weakening of light signal strength in fiber optic transmission.
+Fiber Optics, Fiber Optic Cable - A transmission medium using plastic or glass fibers to carry light rays containing information. See optical fibers.
+Field - A reserved area of a display monitor for a specific type of information. Also, a component of a data base record.
+Figures Shift (FIGS) - A control character used in the Baudot Code to enable the printing of symbols and numbers by actually allowing a physical shift of the carriage. See also Letters Shift.
+File - A collection of related data records directed toward some purpose and sequenced in a particular manner.
+File Server, File Server protocol - A LAN station or protocol designed to allow application programs to share and store data files.
+Filter - The electronic device or devices used to attenuate undesirable signals within frequencies in the transmission circuits and pass through, unchanged, desirable signals within frequencies.
+FIPS (Federal Information Processing Standard) - A US government approved standard for computer processing and data communications.
+Firmware - The software designed within hardware devices, usually permanently stored in a ROM or PROM chip. Firmware may also be temporarily stored within an EEPROM or EPROM chip, as well.
+Fixed Loss Loop (FLL) - An FCC classification requirement limiting the output of a modem to 4 db if the modem is programmable. See permissive device (modem).
+Flag - A field used in bit-oriented protocols where a character or bit field would be used to separate the data on either side of the flag.
+Flat Rate Service - A telephone service available in certain geographic areas, entitling the subscriber to an unlimited number of calls within a predefined area for a fixed rate.
+Flow Control - A method of preventing the loss of data whereby the transfer of messages or characters to a receiving device would be controlled via the use of a control character (s) such as X-ON (transmit on) or X-OFF (transmit off), allowing the receiving devices buffer to drain before accepting more data.
+FM (Frequency Modulation) - One of three different methods of transmit ting digital information on an analog line. FM changes the carrier frequency to different values. Also see AM and PM.
+Foreign Attachment - Any equipment not owned or provided by the telephone company, but attached to the telephone companies lines. See also CPE.
+Foreign Exchange Service - See FEX.
+Format - A method for structuring transmitted data whereby the positioning of information and related control data would insure identification at the receiving device.
+FORTRAN - A high-level programming language (named for its purpose as a FORmula TRANslator), commonly used to create mathematical and scientific programs.
+Forward Error Correction - See FEC.
+Four-Wire Circuit, Four-Wire Line - A data communications circuit or line using 2-pairs of conductors, one pair for the transmitting channel and the other pair for the receiving channel.
+Four-Wire Equivalent Circuit, Four Wire Equivalent Line - Accomplishing the same method of transmission as described above but using only one pair of conductors. Transmitting and receiving channels are "isolated" on the circuit by using different carrier frequencies for the two channels.
+Fox Message - A test pattern or message often repeated continuously during diagnostic testing for problem isolation. Example: "THE QUICK BROWN FOX JUMPED OVER THE LAZY DOGS 1234567890".
+Frame - Several definitions appear in common data usage:
+1 - The overhead control characters used to surround the data in an information or text frame.
+2 - On a T-1 circuit, a frame refers to the 24 bytes plus one framing bit (a total of 193 bits).
+3 - The sequence of bits and bytes in a transmitted block.
+Frame Check Sequence - See FCS and CRC.
+Framing - A control method used with TDM digital channels using control bits to identify channels such as the formatted version of T1.
+Frequency - The number of times that a sine wave would repeat, or cycle in one second.
+Frequency Range - The lowest to the highest frequency that could be transmit ted over a band.
+FSK (Frequency Shift Keying) - A method of frequency modulation (FM) where one frequency would represent a mark (one) and another frequency would represent a space (zero).
+Full Duplex - See FDX.
+Foreign Exchange - See FEX.
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+Gain - A deciBel (dB) measurement of amplitude. The gain is amplified whenever the signal passes through a repeater, antenna or amplifier.
+Gain Hits - Any form of undesirable signal surge resulting in the possibility of corrupted data. AT&T standards suggest a maximum permissible threshold of less than eight gain hits within a fifteen minute period.
+Garbage - A slang term often used to describe corrupted data .
+Gateway - A network station designed to interconnect two otherwise incompatible devices or networks. Occasionally, a gateway may perform protocol conversion and packet assembly/disassembly ( PAD) functions. Gateways operate at the fourth through seventh layers of the OSI model. Contrast with bridge .
+Gaussian Noise - A line noise whose amplitude is characterized by the Gaussian distribution such as white noise, ambient noise or hiss.
+General Switched Telephone Network (GSTN) - Same as public telephone network (PTN).
+Geosynchronous, Geostationary - The path of an orbiting communications satellite at the correct speed and distance over the earth so as to appear stationary as the earth rotates.
+GFI (Group Format Identifier) - The first 4 bits in a packet header ( X.25 packet-switched networks) containing the D bit, Q bit and modulus value.
+gHz (Gigahertz) - A measurement of frequency equal to 10 to 9th power.
+Grade of Service - A percentage measurement of incomplete, delayed or blocked calls.
+Ground - The electrical common conductor.
+Ground Start - A method of signaling designed to detect that a circuit is grounded at the far end.
+Ground Station - Also known as an earth station, a ground station is designed to send (transmit) and receive signals to and from a communications satellite.
+Group Addressing - Any address that is shared by two or more devices or stations.
+Group Channel - An organization on telephone carrier systems, whereby a full group is a channel equivalent to 12 voice grade channels at 4000 Hz for a total of 48 kHz . A half-group has the equivalent bandwidth of six voice grade channels (24 kHz). By not subdividing into voice grade facilities, group channels can be used for high-speed data communication . See also wideband.
+Guard Band, Guard Frequency - Two definitions are commonly found in data communications:
+1 - The unused frequencies between sub channels in FDM systems used to separate channels, thereby preventing crosstalk.
+2 - A single carrier tone used to indicate that a communications line is prepared to transmit data.
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+Half-Duplex Transmission (HDX) - The common use definition is a circuit designed for transmission in either direction but not both directions simultaneously. Contrast with FDX, full-duplex transmission.
+Hamming Code - A method of forward error correction (FEC) named for its inventor and designed to detect and correct a single bit received in error.
+Handset - The part of a telephone that contains both receiver and mouthpiece.
+Handshaking, Handshake - Communications line interplay used to establish a data path via the exchange of predetermined signals, usually performed by communications protocol or modems.
+Hardcopy - The printed output of a computer, in readable form.
+Harmonic - The frequencies that combine as multiples of some basic or fundamental frequency.
+Harmonic Distortion - An impairment of a transmission line caused by erroneous frequency generations along the line.
+Hardware - The physical equipment that comprise a computer system, including mechanical, or electromechanical devices, as opposed to the computer program. Contrast with software .
+Hardware Interface - Physical hardware used in the inter connection of computer/data terminal devices and modems.
+Hardwired - The permanent connection of data communications links, lines or cables and related devices.
+Hardwired FEP - A non-programmable front-end processor ( FEP).
+HASP (Houston Automatic Spooling Priority) - Also known as Job Entry Subsystem (JES), HASP is a control program adopted by IBM for the transmission of jobs to computers and the control of devices and data lines.
+HDLC (High-level Data Link Control) - A bit protocol developed by the ISO to be the international standard communications protocol, similar to IBM 's SDLC.
+Head-End Unit - A LAN environment hardware device found on a broadband network that uses separate frequencies for multiple services.
+Header - The control block or blocks of data added prior to the actual message, either a packet or a transmission block .
+Hertz (Hz) - The same as cycles per second, used as a measurement of bandwidth or frequency.
+Hexadecimal - A base 16 numbering system representing the states as 0 through 9 followed by A through F. Any eight-bit byte can be represented by two hexadecimal digits.
+Hierarchical Network Structure - A network plan whereby all functions are categorized into specific areas or layers, each having a specific role.
+Hierarchical Switching - Used to describe a switching methodology used in LAN 's where the switching is done in stages. In a star topology, this is called star switching.
+High Frequency (HF) - Any frequency level that falls in between 3 and 30 mHz.
+High Pass - A predetermined filter frequency level, above which all frequencies may pass. Contrast with low pass .
+High Performance Option (HPO) - An alternate means of conditioning a communication circuit, similar to D1 conditioning.
+Hit, Line Hits - A slang term or expression to describe line noise or other forms of interference causing data communications line failure or corrupted data.
+Holding Time - The time it takes to establish a telephone connection. Factors include telephone equipment, busy periods, etc.
+Horizontal Redundancy Checking (HRC) - A method for data error checking whereby redundant information would be included in the data to be checked. Contrast with LRC ( Longitudinal Redundancy Checking).
+Host, Host Computer - The central or controlling computer in a data communications network, usually providing database access, programming languages, etc.
+Hub - A DDS office designed to multiplex T1 data streams from a number of local offices into signals suitable for transmission.
+Hybrid - Any combination of two or more technologies. For example, DDCMP is a hybrid character/bit data communications protocol.
+Hyper Group - See also jumbo group.
+Hz - See Hertz.
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+IBM (International Business Machines Corp.) - One of the leading computer hardware and software manufacturing companies in the world, having many de facto standards such as the IBM PC and 3270 terminals.
+IC (Integrated Circuit) - Also known as a microchip, and as a semiconductor device, an IC performs numerous functions in data processing such as processing, data storage and program storage. See also PROM, EEPROM, EPROM, ROM and RAM.
+IDF (Intermediate Distribution Frame) - A connecting frame or such device used to connect data communications equipment by the use of connecting blocks.
+Idle Character - Similar to SYN character and NUL character.
+IEC (Interexchange Carrier) - An FCC licensed common carrier permitted to carry subscribers transmissions inter- LATA, or if approved by a PUC or PSC, intrastate.
+IEEE (Institute of Electrical and Electronic Engineers) - An international institute that issues its own standards and is a member of ANSI and ISO, perhaps best known for its development of IEEE Project 802. Click here to visit the IEEE web site.
+IEEE Project 802 - The IEEE development team credited with the creation of the 802 series of local area network (LAN) standards.
+IEEE 802.2 - A LAN standard for the data link layer used with other Project 802 standards such as IEEE 802.3, IEEE 802.4, IEEE 802.5. See also: ISO.
+IEEE 802.3 - A LAN standard for the physical layer using the CSMA/CD access method, similar to Ethernet, within a bus topology. See also: ISO.
+IEEE 802.4 - A LAN standard for the physical layer, using a token- passing access method within a bus topology and functioning similarly to MAP. See also: ISO.
+IEEE 802.5 - A LAN standard for the physical layer, using the token ring or token passing access method on a ring topology.
+IEEE 488 - An IEEE standard parallel interface, oftentimes used to connect data communications equipment using connecting blocks.
+Impedance - The signal effects due to a varying current, resistance capacitance and inductance. Line impedance (ac resistance), if increased via inductance will allow a greater amount of power to be transmit ted with less current, but at a higher voltage.
+Impulse Noise - A communications line interference caused by electrical action, lightning, on/off movement of switching equipment, etc., and appearing as high amplitude and short duration.
+Impulse Hits - Also known commonly as "spikes", impulse hits are errors of impulse noise adversely affecting data communication. AT&T recommends no greater than 15 impulse hits per 15 minute period.
+IMS/VS (Information Management System/Virtual Storage) - An IBM software product designed for both batch processing and data communications-based transaction processing.
+Induction, Inductance - A method of loading a circuit or line to help reduce attenuation at voice frequencies (VF).
+Information - Raw data that has been organized into a meaningful context for a computer user.
+Infrared - A method of data transmission using infrared light to transmit data on fiber optic medium or open-air transmission over short distances.
+Information Bit - A data bit, having value as a component of a message or text, as opposed to an overhead bit used for addressing or error control.
+Input/Output (I/O) - Moving data between a peripheral device and the CPU, or simply a term used to describe a type of peripheral device.
+Insertion Loss -The loss of signal power due to the connection of communications units possessing different impedance values.
+Integrated Circuits - A complex electronic circuit providing all the capability of circuits containing resistors, diodes, capacitors, etc., and remaining functionally equivalent without these components.
+Integrated Services Digital Network (ISDN) - A CCITT standard for digital communication systems designed to transmit voice, data, video and other digital communication having major effects on the design of multiplexers and other communication equipment.
+Intel - A microchip manufacturer and one of the sponsors along with Xerox Corp., of Ethernet.
+Intelligent, Intelligence - A term used to describe a microprocessor controlled device able to perform sophisticated tasks relying on software, and therefore programmable.
+Intelligent Port Selector - See data PBX.
+Intelligent TDM - See concentrator.
+Intelligent Terminal - A microprocessor controlled terminal able to perform sophisticated tasks relying on software, and therefore programmable.
+Interchange Circuit - A circuit with an associated interface connector having designated connector pins for data, timing or control functions.
+Interconnect Company - A company that provides communications terminal equipment to be connected to telephone lines.
+Interconnect Industry - The industry involved in the design, sales and service of equipment designed to connect to telephone lines.
+Interface - Two related definitions exist in common computer usage:
+1) A common boundary or connection defined by identical signal and physical inter connection characteristics and their meanings.
+2) The necessary equipment needed to provide a shared boundary connection.
+Interface Processor - A specialized communications device used for the purpose of interfacing computers and terminals to a network.
+Interference - The undesirable noise or disturbance that occurs on a communications channel, caused by natural or man-made signals.
+Intermodulation Distortion - A form of distortion created by two analog frequencies whose amplitude causes a third erroneous frequency, which corrupts the data signal representation.
+International Access Code - The prefix digits required for placing an overseas telephone call.
+International Record Carrier (IRC) - A common carrier providing international telephone channels for voice or data.
+International Telecommunications Union (ITU) - The United Nations agency organized to establish standardized telecommunications procedures, regarding frequency allocation and radio regulations world-wide.
+Internetwork Router - A Local Area Network (LAN) device used for communications between sub networks, transmit ting only the messages for the correct sub network. Inter network routers function within the network layer of the OSI model.
+Interoffice Trunk - The telephone channel between two local central offices.
+Interrupt - A device generated signal notifying the CPU that it needs its assistance. Such a signal may arise from either software or hardware and is usually task oriented.
+Interrupting Equipment -The devices used to break the ringing generator's output into ringing and silent periods and creating the busy and ringback tone pulses, etc.
+Intertoll Trunk - The telephone channel between toll offices in a different telephone exchange.
+Intra-office Trunk - The trunk or path connection within the same central office.
+ISDN - See Integrated Services Digital Network.
+ISO (International Standards Organization) - The International, voluntary standards organization, closely aligned with the CCITT perhaps best noted for its OSI model and OSI communications protocol. Membership includes other international organizations issuing standards, with ANSI being the American representative. Click here to access the ISO web site.
+Isochronous - A form of data transmission in which the transmitter would use a synchronous clock to send messages, while the receiving device does not, and detects messages by framing with start/stop bits, similar to asynchronous transmission.
+ISU (Integrated Service Unit) - One device designed to combine the functions of both a DSU and a CSU.
+ITDM (Intelligent Time Division Multiplexer) - A device, also known as a statistical multiplexer designed to assign time slots on demand, rather than on a fixed sub channel basis.
+ITI (Interactive Terminal Interface) - A term used in packet- switched networks used to define a PAD supporting network access by asynchronous terminals.
+IVDT (Integrated Voice and Data Terminal) - A dual function device incorporating both a terminal keyboard/display and voice telephone.
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+Jabber, Jabbering - The flow of continuously sent garbage from a failed terminal, resulting in a lockup of a LAN for other users.
+Jack - Either a three-conductor or a "mini-plug", RJ11 type receptacle designed to accept the corresponding plug for an electrical connection.
+Jamming - The disturbance or interference of open-air radio transmission to deliberately prevent communication.
+JES (Job Entry Subsystem) - The control program and procedure for directing host processing of a job or series of jobs and related tasks in an IBM host environment.
+Jitter - One form of line distortion caused when a transmit ted signal deviates from its reference timing position, causing errors, especially in high speed transmission.
+Job - A set of data, including programs, files and instructions to a computer known as Job Control Language (JCL, in the IBM realm).
+Jumbo Group - The highest frequency division multiplexing (FDM) carrier system multiplexing level that contains 3600 voice frequency (VF) or telephone channels in six master groups and also known as hyper group.
+Jumper, Jumper wire - The wire/wires used to cross-connect circuits for testing or diagnostic purposes.
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+Ka Band - The frequencies used for satellite communications, approximately in the 30/15 gHz range.
+kbps (Kilo Bits Per Second) - Thousands of bits per second (BPS) equal to 10 to the third power. See also BPS.
+Keying - A method of encoding data by modulating the carrier either by phase or frequency.
+kHz (kilo Hertz) - Abbreviation for 1000 Hertz (cycles per second). See also Hertz.
+KSR (Keyboard Send and Receive) - A teleprinter transmitter and receiver that can only transmit from the keyboard. Contrast with RO and ASR devices.
+Ku Band - The frequencies used for satellite communications, approximately in the 14/12 gHz range.
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+LAD (Local Area Data) Channel - See Bell 43401.
+LADT (Local Area Data Transport) - A common-carrier offered communication service that transmits both voice and 4800 bps data simultaneously over the same telephone line.
+LAN (Local Area Network) - The data communications facilities used to provide communications within a limited geographical area, normally up to 6 miles, using medium to high data rates between 9600 bps to 100 mbps. LAN 's may have bridges or gateways to other networks but are usually confined to a building or cluster or buildings, frequently referred to as a "campus".
+LAP (Line Access Procedure) - A term used in packet-switched networks to define the data-link layer level protocol specified in the CCITT X.25 interface standard, superseded by LAPB.
+LAPB (Line Access Procedure, Balanced) - A term used in packet- switched networks to define a link initialization procedure designed to establish and maintain communications between the DTE and DCE. All PDN's currently support LAPB, which involves the T1 timer and N2 count parameters.
+LASER (Light Amplification by Simulated Emission of Radiation) - A fiber optic method of data transmission using very high frequency beams of light with great information carrying capacity.
+LATA (Local Access and Transport Area) - A divestiture related subdivision that resulted in approximately 184 local telephone serving areas in the United States. The areas of LATA 's are designated primarily by demographics, and are distinguished separately from long-distance service.
+Latency - The waiting time, or delay between a stations request to a transmission channel, and completion.
+Layer - A term used to define one level of a hierarchy of functions, as specified by the OSI reference model. Divisions of other protocols, such as IBM 's SNA, sometimes will correspond to one or more OSI layers.
+L Band - The microwave transmission frequencies approximately in the 1 gHz range.
+Leased Line, Private Line, Dedicated Line - A point-to-point or multipoint communications line for voice/data leased from a common-carrier, usually on a monthly basis.
+LED (Light Emitting Diode) - An electrical component, offering greater reliability than an ordinary bulb, used to indicate status information. LED's are also used as a fiber optic transmission source.
+Letters Shift - A control character used in the Baudot Code to enable the printing of alphabetic characters. See also figures shift.
+Light Wave - Fiber optic transmission using very high frequency light beams.
+Line - A multipoint or point-to-point communications medium .
+Line Discipline - An archaic term for line protocol.
+Line Driver, Local Dataset - A DCE device that functions as a signal converter, "driving" the digital signal directly across a communications path. Oftentimes, line drivers are used to ensure reliable transmission beyond the 50-foot RS-232 limit. Also known as short-haul modems.
+Line Hit - An occurrence of noise and other forms of electrical interference on a transmission circuit causing data to become corrupted.
+Line Printer - An output device designed to print an entire line of data as a unit. Contrast with character printer.
+Line Protocol - A communications program designed to perform data transmission functions over a network.
+Line Speed -The maximum, reliable, rate of transmission, dependent upon the capability of a modem, expressed in bps.
+Line Switching - Switching, whereby a circuit is established between sending and receiving lines. Contrast with message switching.
+Line Turnaround -The reversal of direction in a half-duplex communications circuit (HDX).
+Link, Data Link - A point-to-point circuit, functioning as one component of a network.
+Link Layer - See data link layer.
+Loading - The practice of adding loading coils to add inductance to a communications circuit to reduce amplitude distortion.
+Loading Coil - Also known as an induction coil, a loading coil is normally used to compensate for wire capacitance and serves to boost the level on voice-grade frequencies for circuits exceeding approximately 18,000 feet.
+Local Analog Loopback - Performing an analog loopback at the line side of the local modem, in order to test the local modems analog output circuitry. See analog loopback.
+Local Attachment - Connecting a control unit or peripheral device directly to an IBM host channel.
+Local Central Office, Local Exchange - See End Office.
+Local Channel Loopback - Performing a channel loopback at the input or channel side to the local concentrator/multiplexer for diagnostic testing. See channel loopback.
+Local Composite Loopback - Performing a composite loopback at the output or composite end of the local concentrator/multiplexer for diagnostic testing. See composite loopback.
+Local Area Dataset - A device designed to condition an RS-232 signal over a dc continuous metallic circuit without interfering with the adjacent pairs in the same telephone cable. Local datasets normally conform with Bell 43401 standards. See also line driver.
+Local Digital Loopback - Performing a digital loopback at the DTE side of the local modem. See digital loopback.
+Logical Channel, Logical Connection - See virtual circuit.
+Logical Channel Number - A number assigned in packet-switched networks whenever a virtual call is placed. Up to 4095 separate logical channels may exist on a single link.
+Logical Group, Logical Group Number - The process of dividing logical channels in packet-switched networks into one of 16 logical groups.
+Longitudinal Currents - Current flowing in the same direction in the two conductors of a cable pair or pair of wires.
+Loop, Local Loop - The closed loop circuit formed by the users device/devices and the cable pair and other conductors that connect it to the central office switching equipment.
+Loopback Test, Loopback - One of several diagnostic tests used to evaluate and compare the signal transmit ted with the returned signal for use in determining the operational status of the equipment and related transmission paths.
+Loop Start - A method to indicate an off-hook condition between an analog telephone set and a switch. By picking up the receiver, the loop will close and will allow dc current to flow.
+Loss - A reduction in a signals level as expressed in deciBels. See also attenuation.
+Low Frequency (LF) - Frequencies occurring approximately in the 30 to 300 kHz range.
+Low Pass - A filtering device designed to allow frequencies below a predetermined level to pass. Contrast with high pass .
+LRC (Longitudinal Redundancy Check) - A method for error detection, often called horizontal parity checking, whereby the BCC consists of bits based on either odd or even parity for all the characters in the transmission block.
+LTRS (Letters Shift) - A code character used to command a Teletype - like device to perform a physical shift for alphabetic characters . See also figures shift.
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+MAC (Media Access Control) - An access control protocol defined under IEEE 802 which includes variations for the token ring, token bus and CSMA/CD.
+Magnetic Medium - Any medium designed for data storage using magnetic pulses to record information, such as magnetic tape, diskettes or disks.
+Mainframe - A large-scale computer, capable of processing large amounts of data with very fast processing, including control units and peripheral devices supplied by one vendor, examples of which would include IBM, Unisys, Control Data, and others. Often, mainframe systems will have a closed architecture.
+Main Network Address - A term used in IBM 's SNA to define the logical unit (LU), network address, within VTAM .
+Manchester Code, Manchester Encoding - A binary signaling mechanism in which each bit period is divided into two complementary halves, combining data and clock pulses.
+MAP (Manufacturing Automation Protocol) - A General Motors Corp. token-passing bus designed for factory environments that appears very similar to IEEE 802.4.
+Marginal Relay - A relay designed to operate only on a specified current flow which is greater than the current normally flowing in the circuit.
+Mark - Three definitions exist in normal usage:
+1) In telegraph communications, a mark indicates the closed, current -flow condition.
+2) When used in data communication, a mark indicates a no-traffic state for asynchronous transmission, a binary 1.
+3) A mark may also indicate the idle condition, contrast with space. See mark-hold.
+Mark-Hold - Transmitting a steady mark to indicate the normal no- traffic line condition.
+Mark-to-Space Transmission - Switching from a marking impulse to a spacing impulse.
+MASER (Microwave Amplification by Simulated Emission of Radiation) - A device designed to generate a microwave signal with low-noise properties.
+Master Clock - The timing signal or signal mechanism used by all stations in a network for synchronization.
+Master Group (MG) - A term used in Frequency Division Multiplexing ( FDM) whereby an assembly of 10 supergroups (600 voice frequency channel s) would occupy adjacent bands in the transmission spectrum to provide simultaneous modulation and demodulation.
+Master Station - Three definitions exist normal usage:
+1) A monitor station, used in LAN token-passing ring environments allowing recovery from error conditions, such a busy, duplicate or lost tokens.
+2) The main unit that controls and polls the nodes in a multipoint circuit.
+3) The unit that controls the slave station in a point-to-point circuit.
+Matrix - Two common definitions exist in normal usage:
+1) A rectangular array of elements, each of which will generally be a real or complex number, and used within the scientific calculations performed on a computer.
+2) In switch technology, the juncture of input and output leads.
+M Bit - An X.25 bit that notifies the receiver that all data from the sender has been transmitted.
+Mbps - Millions of bits per second ( bps).
+Mean Time To Failure (MTTF) - The average duration of periods for which the system, or a related component, functions without fault.
+Mean Time Between Failures (MTBF) - See mean time to failure.
+Mean Time To Repair - The average length of time required to fix the equipment or system. See mean time to failure and availability.
+Medium - The material used to record or transmit data.
+Message - Two definitions exist in normal usage:
+1) A communication containing some information.
+2) Several packets that comprise a complete transmission.
+Message Routing - Selecting a path or channel for message transmission.
+Message Switch, Switching - A device and the related process for receiving, storing and, upon the availability of a line or receiver, retransmitting the message. See also store-and-forward.
+Message Telephone Service (MTS) - The official designation for tariffed toll telephone service.
+MHz (MegaHertz) - A unit equal to one million cycles per second (Hz).
+Microcomputer - A small desktop or lap-top computer often called a personal computer.
+Microprocessor - The processing unit of a microcomputer, sometimes called a "computer-on-a-chip".
+Microprogramming - The practice of building a program into ROM to carry out functions otherwise contained on a storage device and processed at a substantially slower speed.
+Microsecond - One millionth of a second.
+Microwave, Microwave Transmission - Transmitting voice or data via any electromagnetic wave in the radio-frequency spectrum above 890 mHz, in a line-of-sight fashion, with repeaters every 20-30 miles.
+Millisecond - One thousandth of one second.
+Milliwatt - One thousandth of one watt.
+Minicall - See Datagram .
+Minicomputer - A complete small to medium scale computer, usually with and open architecture and dumb terminals, such as those made by Data General, DEC, Hewlett-Packard and IBM. Contrast with mainframe and microcomputer.
+MIPS (Millions of Instructions Per Second) - One of several measures of processing power.
+MJU (Multipoint Junction Unit) - A device used to provide multipoint Digital Service.
+ML-188C - A shielded, military standard interface functioning as the equivalent to RS-232 between a modem and line controller.
+Modem - A device named from the contraction of the words "modulator - demodulator" and used to convert serial digital data from a transmitting terminal to a signal suitable for transmission over a telephone line. The term may be used when the modulator and demodulator are physically in the same signal-conversion equipment, since the device must also reconvert the signal to serial digital data for the receiving terminal.See also data set.
+Modem Eliminator - A device designed to connect two DTE devices. Modem eliminators perform the necessary signal conversions and may occasionally provide clocking. Modified cables called "crossover cables" or connector "adapters" could also provide this function.See null modem.
+Modem, High Speed - A modems operating in excess of 4800 bps on voice-grade lines.
+Modem, Multiport - A modem / multiplexer combination that allows two or more DTE's to be connected to the same line, also known as split-stream modem.
+Modem, Quick Turnaround - A modem designed with minimal turnaround time for use in half-duplex operation. Also known as QP (quick poll) and FP (fast poll).
+Modem, Short Haul (SHM) - See line driver.
+Modem, Split Stream - See Modem, Multiport.
+Modem, Wide Band - A modem designed to achieve bit speeds greater than the high speed modem, speeds of 19.2 kbps or 56 kbps. Wide band modems require wide band circuits and will not operate over a voice grade circuit.
+Modulator, Modulation - The function or process by which a carrier is varied to represent an information-carrying signal. This is the technique used in modems to allow computer signals compatibility with communications facilities.
+Module - Two definitions exist in normal usage:
+1) A program portion, unit or subdivision written to perform one or more functions.
+2) A circuit card for a hardware device. See card module.
+Modulo - A term used to describe the maximum number of counter states, usually in describing packet-switched parameters such as packet number.
+Monitor - A program or device used to observe an operation without interfering with the operation.
+Monitor Station - A device used in a LAN environment on ring networks to remove damaged packets and ensuring the ring is intact.
+MPL (Multi-schedule Private Line) - An AT&T tariff for a leased voice-grade line.
+MSU (Multipoint Signaling Unit) - A device used with digital data test equipment to isolate and test portions of a digital service (DDS) multipoint circuit.
+Multicast Bit - A bit in the LAN environment, Ethernet addressing scheme indicating a broadcast message.
+Multidomain Network - An IBM SNA mainframe based network consisting of two or more host system services control points.
+Multidrop, Multipoint - A line or circuit interconnecting several stations with a central point. Also known as a star, in a LAN environment.
+Multimode - A type of fiber optic light guide capable of propagating light signals of two or more wavelengths, as opposed to single-mode fiber.
+Multiplexing, Multiplexer(or) (Mux) - To divide or have a device that divides a composite signal between several channels. Devices such as FDM's, TDM's, concentrators, etc. are different types of multiplexors.
+MVS (Multiple Virtual Storage) - An IBM host operating system.
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+NAK (Negative Acknowledgment) - Two primary uses are encountered for this control character :
+1) In the BSC protocol, NAK indicates and error in the previous transmission block and that the receiver is ready to accept retransmission. Contrast with ACK.
+2) NAK represents the "not ready" reply to a poll on a multipoint system.
+Nanosecond - One billionth of a second.
+National Facilities - A packet-switched environment nonstandard facility selected for a given nations network, and may or may not be found on other networks.
+NBS/ICST (National Bureau of Standards/Institute for Computer Sciences and Technology) - The Gaithersburg, Maryland bureau assigned to develop data communications and computer processing FIPS (Federal Information Processing Standards). Membership includes other USA government agencies and network users.
+NCC (Network Control Center) - An office or station assigned the task of data network diagnosis.
+Near-End Crosstalk (NEXT) - Crosstalk occurring at the source of the transmit ted signal.
+Network - Generally, a network can be said to be any inter-connection of computer systems facilities (including control units, modems, terminals, etc.) although three network categories exist in common usage:
+1) Switched networks, in which the telephone network is the telephone lines normally used for dialed telephone calls for voice or data.
+2) Any series of points connected by communications channels.
+3) Dedicated, Leased or Private networks, reserved for the use of one user or customer.
+Network Addressable Unit (NAU) - A host based physical unit (PU), logical unit (LU), or system services control point (SSCP) in the IBM SNA environment.
+Network Architecture - The hardware and software plan of configuration for a computer network by a particular manufacturer or vendor.
+Network Communications Control Facility (NCCF) - A host based IBM program allowing users the ability to monitor and control network operation.
+Network Control Program (NCP) - A FEP -resident program designed to handle communications control and function as an interface between the data communications network and host processor.
+Network Facilities - A term used in the packet-switched environment used to describe two forms of standard facilities :
+1) The "essential" facilities found on all networks.
+2) "Additional" facilities which may be present on one network, but omitted on another.
+Network Interface Machine (NIM) - A form of protocol converter used to adapt an X.25 packet network with non- packet mode terminals.
+Network Layer - The third entity in the OSI model that is responsible for addressing and routing between sub networks and servicing the transport layer.
+Network Problem Determination Application (NPDA) - An IBM host- based program designed to aid in the isolation and diagnosis of network problems.
+Network Services - The service within the NAU's of an IBM SNA environment controlling network operations through sessions to and from the host SSCP.
+Network Terminal Option (NTO) - An IBM SNA environment program that allows non-SNA asynchronous and BSC devices access to the network via the communications control unit (3705/3725/3745).
+Network Topology - Outlining all network nodes and their physical/logical relationship, such as ring, bus, star, etc. See topology definition.
+Network Virtual Terminal - The usage of numerous data terminals having different protocols, formats, data rates and codes on the same network.
+Neutral Current Loop - See current loop.
+Nibble - The last or first four bits of an eight bit byte.
+Node - An inter-connection point to a data communications network, however, examining further, the following definitions also apply:
+1) In a packet-switched environment, one of the switches that forms the networks backbone.
+2) Any unit that is polled on a multipoint network.
+3) A LAN station or any unit on a ring topology.
+Noise - The random electrical signals, a communications line impairment which can either be inherent in the line design or induced by natural disturbances and therefore corrupting transmitted data.
+Noise Suppressor - A device designed to minimize or eliminate noise in a data communications circuit by means of signal processing or filtering. See filter.
+Non-Blocking - The permanent connection of a device through a switching mechanism where, regardless of the switch setting, a continuous path exists to that device.
+Non-Erasable - Computer memory or storage that is not erasable. See ROM.
+Non-Impact Printer - A printing device using either heat (thermal), light (laser), or other means (such as electrostatic), to produce printed output rather than a mechanical striking action.
+Non-Interactive System - A computing system where the computer functions independently of the user during program execution.
+Non-Linear Distortion - A form of line distortion, sometimes referred to as "clipping" caused by signal level attenuation.
+Non-Persistent - A term used in a LAN environment to define a CSMA method where, in the event of a collision, the stations do not attempt an immediate retransmit, even if the communications network is quiet. Compare with persistent.
+Non-Transparent Mode - A mode of bisync protocol where control characters and sequences are recognized through the examination of all transmit ted data. Contrast with transparent mode.
+Non-Volatile - Computer memory or storage that would not be lost once the power is turned off to the memory or storage device. See ROM .
+Normally Closed/Released Contacts -The closed or open contacts on a unoperated relay.
+NRZ (Non-Return to Zero) - A transmission encoding scheme where the "zeros" and "ones" are represented by alternating and opposite high and low voltages. Two basic forms of NRZ coding exist:
+1) In a Unipolar NRZ code the voltages would vary between 0v and +5V. This code works well for the shielded and short travel paths within a machine, but is not suited for long distances due to the residual dc shifts of the "zero" level.
+2) In a Polar NRZ code, less power would theoretically be required to transmit the signal (one half) since polar shifts the signal reference level to the midpoint of the signal amplitude, say for example, +2.5V and -2.5V. The disadvantage is that most of the energy in the signal is concentrated around zero frequency.
+NRZI (Non-Return to Zero Inverted) - Also known as "invert-on-zero" coding, NRZI is an SDLC encoding technique where a change in state represents a binary 0 and no change in state represents a binary 1.
+NTN (Network Terminal Number) - An identifying number that can be up to 10 digits in length, used by a DTE device identifying the logical location, and in some cases, a sub-address used only by the DTE and not the communications network.
+NTSC (National Television System Committee) - The de-facto standard that determines television transmission formats.
+N2 Count - The count for the allowable number of re transmissions in a X.25 packet switched network.
+NUI (Network User Identification) -The replacement for the NTN in newer X.25 packet-switched networks, the NUI combines the network users address as well as corresponding password.
+Null Character, Characters - A "filler" or "idle" character that is inserted into a data stream to allow time for a printer or other devices mechanical actions (form feed, carriage return, etc.) so that the device will be ready to print the next data character. A null character has all bits set to mark.
+Null Modem - See modem eliminator.
+Nyquist Theory - A communications theory recommending a two-sample per cycle process to characterize an analog signal limited by bandwidth. The rate of sampling must be twice the highest frequency component of the signal, so for example, a 4000 Hz analog signal would be sampled 8000 times.
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+Object Code - An executable machine code, the result of the output of a translating program such as an assembler or a compiler. Contrast with source code.
+Octal - An eight state (0-7) digital system.
+Octet - A grouping of 8 bits, similar but not identical to a byte, found in packet-switched environments.
+Off-Hook - An activated telephone set or a modem automatically answering a call. Contrast with on-hook.
+Office Automation - A term used to describe the wide use of mechanized systems in the office environment, typically including LAN 's, wordprocessing/desk-top publishing, electronic mail, shared databases, etc.
+Off-Line, Offline - Any equipment or devices not accessible to the CPU . Also, any terminal equipment not connected to a transmission line. Contrast with online.
+Off Loading, Off Loaded - A process whereby a device is relieved of certain processing tasks, so that another (possibly less expensive) device can fill in those duties. Example: a FEP offloads a host processor or a terminal may off load a concentrator.
+Off-Net - A term used to define any location that is beyond the primary serving area of a DDS. Contrast with on-net.
+1-Persistent - A term used in a LAN environment. See persistent.
+On-Hook - A deactivated telephone set or a modem that is not in use. Contrast with off-hook.
+On-line, Online - Any computer equipment or devices that are accessible to the CPU. In the case of an online system, input data can enter the computer directly from their point of origin, or output data can be transmitted directly to where they are to be used.
+On-Net - A term used to define any location that is beyond the primary serving area of a DDS. Contrast with off-net.
+Open-Air Transmission - A data communications technique relying on radio frequency (RF) signaling, including infrared, microwave and FM radio.
+Open Wire - The description used to define a transmission conductor(s) supported separately above the grounds surface, such as a telephone cable supported on insulators by a telephone pole.
+Operand, Operands - The entity on which operations are performed.
+Operating System (OS) - The fundamental control program of a computer consisting of tasks or processes used in various supervisory and control functions to perform:
+1) Hardware device allocation
+2) Access to software resources-e.g., file editors, compilers, assemblers, subroutine libraries and utility programs.
+3) Protection functions, that is, access control and security for information.
+4) A means of communicating messages or signals among tasks.
+Operation Code, Op Code - The part of a computer instruction which specifies what operation has to be performed on the operands.
+Optical Fiber - The thin filaments of glass, glass strands or glass-like material, each of which is an independent circuit for transmission of very wide frequency ranges. Optical fiber is contained in a shielded fiber optic cable for communications use.
+OSI Model (Open Systems Interconnection Model) - The 7-layer reference model recommended by the ISO to provide a logical structure for network operations protocol.
+Other Common Carrier - A term used to include domestic and international record carriers (IRC's), specialized common carriers (SCC's), and domestic satellite carriers, authorized to provide leased line services competitively with established telephone common carriers.
+Overhead - The transmitted information used in addressing control, routing and error detection that is sent in addition to a users transmit ted data.
+Overhead Bit - A bit used for data communications overhead . Contrast with information bit.
+Overrun - The data loss resulting from a receiving device that is unable to accept data at the speed of the transmit ting device.
+Oversampling - A method used in TDM whereby each bit from each channel is sampled more than once.
+Overspeed - A situation whereby transmitting devices, such as modems and PABX's would operate at a slightly faster speed than the data sent for transmission. Typically, modems and PABX's have overspeeds of 0.1% and 0.5% respectively.
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+PABX (Private Automatic Branch Exchange) - See exchange, private automatic branch.
+Pacing Group - A term used in an IBM SNA environment to define the number of data units that can be sent before a response.
+Packet - A group of information and overhead bits sometimes referred to as a message, that is transmitted as a package on a packet-switched network, and is usually smaller than a transmission block.
+Packet Assembly Unit - A device or facility attached to a packet system to allow non packet-mode terminals to transmit and receive data with packet-mode terminals.
+Packet Header - A term used in a packet-switched environment to describe the first three octets of an X.25 packet.
+Packet Switching, Packet-Switched Network - The sending of addressed packets containing data over a data communications network via a channel occupied for the duration of the packet transmission. Packets from different sources would be interleaved over channels (called virtual circuits).
+Packet Terminal - Any DTE device able to transmit and receive packets.
+PAD (Packet Assembler/Disassembler) - A device used in an X.25 packet-switched environment to interface non-X.25 devices to an X.25 network . A PAD would assemble/disassemble packets and may be synchronous or asynchronous with single or multiple channels.
+PAD Character - A character normally sent at the beginning/end of a synchronous transmission to provide timing and bit synchronization.
+Paper Tape - An archaic input/output medium on which data would be recorded as a pattern of five or eight channel punched holes.
+Parallel Interface, Parallel Transmission - The interface or process designed to send each bit simultaneously over a separate line or wire, and usually used to send data one byte at a time to a high-speed printer or local peripheral. Contrast with serial interface, serial transmission.
+Parallel Processing - True parallel processing involves the processing of more than one task on a computer system, within the same processor.
+Parity, Parity Check - Parity is a term synonymous with equality. Parity checking is an extensively used error-checking facility provided to insure correct recording of data, its input into a computer system, and its transfer within the system, including networks and data communication. A parity check consists of adding up the bits in a unit of data, calculating the parity bit required, and checking the calculated parity bit with that transferred with the data item. This form of check will normally be performed by a hardware device.
+Parity Bit - An error-checking bit whose binary value (0 or 1) depends on whether the sum of bits with the value 1 in the unit of data being checked is odd or even. If the total number of bits with value 1, including the parity bit (or bits), is even, the unit of data is said to have even parity; if it is odd, it has odd parity. Error checking methods use either even or odd parity. The data communication system or network will use the same parity principle, even or odd throughout. Any error caused by incorrect parity detected as a result of a parity check is called a "parity error". The unit of data to which a parity check is applied may be a character, a byte, a word, etc., the character parity check being the one most often used. The smaller the unit of data to which the check is applied, the higher the probability that compensating errors will not occur.
+Parity Check, Horizontal - A method for performing a parity check, also known as LRC (longitudinal redundancy check) where a parity check is applied to a group of particular bits from each character in a block.
+Parity Check, Vertical - A method for performing a parity check also known as VRC (vertical redundancy check) where a parity check is applied to a group which is all bits in one character.
+Parity Error - A data error where an extra or missing bit is detected.
+Part 68 - That portion of the FCC regulations permitting the registration of voice/data communications equipment provided they meet federal requirements designed to ensure no harm to the telephone network.
+Partitioned Emulation Programming Extension (PEP) - IBM software used with the Network Control Program (NCP) to permit a communications controller to operate in partitioned mode, controlling an SNA network while managing a number of non-SNA communications lines.
+Pass Band Filters - A filter used to allow only certain frequencies within the communications channel to pass while rejecting all frequencies outside the pass band. Such filters may be internal to the modem or a separate device.
+Patching Jacks - A series-access hardware device or cable, used to patch or bypass faulty equipment by using any available spare units.
+Path Control Layer - The network processing layer, in an IBM SNA environment, handling the routing of data units through the communications network and also managing shared link resources.
+PAX (Private Automatic Exchange) - See Exchange, Private Automatic.
+PBX (Private Branch Exchange) - See Exchange, Private Branch.
+PCM (Plug Compatible Machine) - A device capable of being substituted for an original manufacturer's device, with the new device often an improvement over the original device at a lower cost.
+PDN (Packet Data Network) - See packet-switched network. See entry below for acronym similarity.
+PDN (Public Data Network) - Any network designed for the purpose of providing voice/ data communications services (such as packet- switching or digital DDS service) to the public. PDN's may be operated by common carriers, a PTT or private operating companies.
+Perforator - (Archaic) A device used to manually prepare paper tape.
+Peripheral, Peripheral Device - Hardware connected to a computer to function as an input/output device, such as a tape or disk unit, printer, etc.
+Persistent - A LAN environment term describing a CSMA LAN where collision involved stations attempt immediate retransmission.
+Personal Computer (PC) - A microcomputer used by data processing professionals and non-professionals to perform a variety of functions by means of an end-user application program.
+Phase - The time position of a sine wave, the point at which the cycle advances.
+Phase/Delay Equalizer - A corrected network where the phase delay has been made to be substantially constant.
+Phase Hit - The unwanted shifting in phase of an analog signal, specifically, any situation where the phase of a 1,004 Hz test signal shifts more than 20 degrees.
+Phase Jitter - A tendency toward a lack of synchronization or other impairment caused by the mechanical or electrical changes in communications equipment.
+Phase Modulation - One of three basic ways of modifying a sine wave signal to make it transmit information, whereby the phase of the sine wave, or carrier, is modified in accordance with the information to be transmitted.
+Physical Layer - The lowest or bottom layer of the OSI model concerned with the mechanical (physical connectors) and electrical (voltages, timing, etc.) and other related items, and interfacing with the layer above, the link layer.
+Physical Record - A block of data, often containing several logical records, that would be transmit ted between a peripheral device and main memory via channels.
+Physical Unit - Two definitions exist in normal usage:
+1) An input/output device and its associated recording medium such as tape units, disks, drums, card readers and printers are all examples of physical units.
+2) In the IBM SNA environment, a physical unit is a component designed to manage and monitor the resources of a node.
+Picosecond - One trillionth of a second.
+PL/1 (Programming Language 1) - One of the widely used high-level programming languages oriented toward both business and mathematical programs. PL/1 has capabilities derived from Fortran, Cobol and Algol, but has not yet succeeded in one of its implicit objectives, which was to replace these languages.
+Plasma Display - A type of flat, visual display used instead of cathode-ray tubes (CRT's) for terminal devices.
+Plotter - A type of computer peripheral non-impact printer, often used to "draw" graphic designs.
+PM - See phase modulation.
+Point Of Presence (POP) - The physical location or the junction between an inter-LATA common carrier and the intra-LATA common carrier.
+Point-to-Point - A data communications circuit or path connecting two points.
+Point-of-Sale - A type of data transaction terminal used in retail sales.
+Polar Transmission - A method of sending binary signals in which the marking signal is represented by direct current flowing in one direction while the spacing signal is shown as an equal current flowing in the opposite direction. Polar transmission, also known as bipolar transmission is used in digital transmission facilities such as DDS and T1 networks.
+Poll, Polling - A means of controlling data terminals on a multipoint line, where each terminal is "asked" by a controlling computer if there is any data to be sent. When a terminal does have a message, the polling sequence is interrupted while that terminal is being serviced. If there is no data to be sent, the next terminal in sequence is offered the opportunity to send data, etc.
+Polling Delay - The predetermined time interval at which a device is polled by the master.
+Polling List - A program-contained listing designed to provide the sequence in which the terminals are to be polled by the master.
+Port, Ports - A computer interface capable of attaching to a modem for communicating with a remote terminal or to a multiplexer or FEP.
+Port Concentrator - A device that allows several terminals to share a single computer port.
+Port Selector - An electronic switch designed to furnish connectivity between computer devices, such as for selecting ports at the RS 232 level.
+Port Sharing Device - A digital device physically located at the FEP end of the line, that helps to extend the circuit capacity of a FEP by treating several point-to-point lines as if they were a single multipoint line.
+POTS (Plain Old Telephone Service) - The basic telephone service provided by telephone companies, not including network enhancements such as conditioning and added facilities.
+Power Line Carrier - A technique using a radio frequency carrier transmit ted over the AC circuit in a building.
+PPM (Pulse Position Modulation) - Pulse modulation, achieved by varying the timing of the pulses, while maintaining their duration. See pulse modulation.
+Presentation Layer - The sixth layer in the OSI model that is responsible for format and code conversion.
+Printer Converter - A device used to allow an asynchronous printer to emulate an IBM 3287 synchronous printer, also known as a coaxial converter.
+Private Automatic Branch Exchange - See exchange, private automatic branch.
+Private Automatic Exchange - See exchange, private automatic.
+Private Line, Private Wire - See leased line .
+Private Line Service (PLS) - A telecommunications service used by customers with high volume or special requirements. PLS falls under FCC regulation, and in most cases, would involve lines connected directly or indirectly (via a PBX) to the public switched telephone network.
+Private Network - A user maintained voice/data network generally characterized by a mixture of different vendor's equipment.
+Profile - A term used in packet-switched environments to describe a set of parameters or values defining a hardware device (printer, terminal) that would be stored and later recalled as a group for later use.
+Program - The specific sequence of computational steps in a programming language. A set of instructions for a computer to perform.
+Programmable Terminal - A computer terminal that contains memory and has processor capability, also known as an intelligent terminal.
+Programmer, Application - The individual responsible for writing or maintaining application programs.
+Programmer, Systems - The individual responsible for writing or maintaining operating systems or programs that have to do with translation, loading, supervision, maintenance, control and running of computers and computer programs. On small, special-purpose or limited-purpose computers the distinction between application programmer and system programmer is not always obvious, and often they may be the same individual.
+PROM (Programmable Read Only Memory) - A microchip (semi-conductor) stored permanent memory device. PROM chips are non-volatile and will retain a program regardless of the presence of power. See EEPROM, EPROM, RAM and ROM.
+Propagation Delay - The time for transit of a signal from one point on a circuit, link, network, or system to the other point.
+Protocol - The method of "line discipline" used to control the orderly exchange of information between the stations on a data link or on a data communications network or system.
+Protocol Converter - A device used to convert or translate from one communications protocol to another. Typical protocol converters would be installed between the DTE and DCE devices at one end of the data link and convert, for example, ASCII to HDLC.
+PSK (Phase Shift Keying) - A method of performing phase modulation whereby the signaling elements would be represented by phase shifts. See also FSK.
+PTT (Post, Telephone and Telegraph authority) - The governmental authority that serves as the communications administrator and common carrier in many areas of the world.
+Public - For the customers use; a common carrier provided service.
+Public Service Commission (PSC) - One agency responsible for the regulation of telecommunications services. Also known as the Public Utilities Commission (PUC) in many areas.
+Public (Switched) Telephone Network - A switched network providing circuit switching to many customers, any one of which may establish communications with any other user by either dialing or using pushbutton telephones, including DDD service. In the United Kingdom and other nations, the network is known as the PSTN (Public Switched Telephone Network).
+Pulse Amplitude Modulation (PAM) - A technique of analog transmission that modulates the amplitude of each pulse.
+Pulse Code Modulation (PCM) - The process of sampling and coding of a modulating signal, transforming each element of information into various kinds or numbers of pulses and spaces.
+Pulse Width Modulation (PWM) - A form of carrier modulation where the pulse width is varied.
+Pulse Duration Modulation (PDM) - A form of carrier modulation where the pulse duration is varied.
+Pulse Length Modulation (PLM) - A form of carrier modulation where the pulse length is varied.
+Push Button Dialing - A method of generating a sequence of digits to establish a circuit connection using a number pad rather than a rotary dial. Also known as "Touch-Tone" dialing.
+PVC (Permanent Virtual Circuit) - The PDN equivalent of a private line. A fixed virtual circuit used in a packet-switched environment between two users, requiring no call establishment. Contrast with SVC.
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+QTAM (Queued Telecommunications Access Method) - An IBM data communications access method designed to provide the capability of BTAM plus the added feature of message queuing on direct access storage devices (DASD). QTAM is used for data collection, message switching and many other data communications uses.
+Quad - A cable containing two twisted pairs of conductors.
+QAM (Quadrature Amplitude Modulation) - The process of combining both amplitude modulation and phase modulation techniques to provide more bits per baud.
+Quadrature Distortion - The distortion of an analog signal often occurring in phase modulation.
+Queue - A "waiting line" of items or units, such as messages, waiting to be serviced.
+Queuing, Queuing Theory - A process allowing transactions to be serviced and specifies each of the following elements:
+1) Source- The electronic signals of a data communications system.
+2) Input Process- The statistical pattern by which the data arrives at the service facility, also called "random arrivals".
+3) Queue Structure- The actual "waiting line", which may consist of one queue or several queues. The line(s)" may be conceptual rather than physical, such as the case of remote terminals waiting to be polled by a computer.
+4) Service Facility- One or more service channels in parallel, attached to one or more servers in series.
+5) Service Process- The time required to completely service a unit waiting in a queue. The time is determined by probability formulas.
+6) Service Discipline- The rules by which units are selected and serviced. Service may be FIFO (first in, first out), random, or according to some priority procedure.
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+Rack - See cabinet.
+Rack Mount - A term used to describe devices designed to fit a data cabinet, sometimes in a "modular" fashion.
+RAM (Random Access Memory) - A storage device into which data may be entered and read, usually (but not always) a volatile semiconductor memory.
+Rate Center - A defined geographic point used by telephone companies for distance measurements for inter- LATA mileage rates.
+RBT (Remote Batch Terminal) - An input/output terminal designed to operate in a RJE location for transmit ting and receiving data from a remote processor in batch processing form.
+RD (Received Data) - An RS-232 data signal, received by a DTE device from a DCE device on pin 3.
+Reactance - A frequency sensitive data communications line impairment causing phase shifting and a loss in power.
+Real Time, Real-Time System - A real-time system responds immediately at the time a transaction occurs, unlike a batch processing system which would produce journals, reports, and other outputs according to prescheduled batch processing cycles. Real-time systems in which there is rapid and frequent interaction between human and machine are sometimes said to operate in a "conversational" mode.
+Reasonableness Checks - A testing method designed to ensure that data reaching a real-time computer or being transmitted from it is within a specified range. This process, also known as a "limit check" is a means of protecting a system from data transmission errors.
+Receive, Receiver - The process or device assigned to receive messages in a data communications network, usually, but not always, at a DTE device.
+Received Line Signal Detector (RLSD) - See carrier detect.
+Receive Only (RO) - A device capable of receiving data transmissions, but unable to transmit, such as a printer.
+Record Separator (RS) - A control character.
+Recovery - The procedure or process required to be performed to restore a computer system to a predetermined level of operation or availability after a failure.
+Redundancy - A design procedure that uses more system elements than are absolutely necessary to realize all of the systems functions. In data communications, the application of error-detection and correction codes, (software), as well as duplicate FEP 's, communication control units (CCU's), and data channels (hardware) have resulted in an increased percentage of application availability.
+Redundancy Check - An error detection process based on the systematic insertion of correction components or characters.
+Redundant Code - A code that uses more signal units than needed to represent transmit ted information.
+Reference Noise - A noise level equivalent to 1 picowatt of power at 1,000 Hz (1 picowatt = -90 dBm).
+Reference Pilot - Used in carrier systems to allow the adjustment of carrier transmission signals.
+Refresh Rate - The rate at which a CRT image is renewed (usually approx. 60 times per second) for a consistent appearance.
+Regional Center - A class 1 central office connecting portions of the telephone system together, with each pair of regional centers having a direct circuit group running from one center to the other.
+Reliability - From a quantitative standpoint, reliability is the probability that the system or data communications network will perform its intended function over the stated duration of time in the specified environment for its usage. From a qualitative sense, reliability is closely connected with maintainability, availability, and system security from unauthorized access.
+Remote, Remote Access - Accessing a computer system from a location of at least several hundred feet, and sometimes very many miles distant. See remote job entry.
+Remote Analog Loopback - A diagnostic test that forms the loop at the analog output of the remote modem's telco line interface to isolate faults.
+Remote Batch - A method of submitting jobs to a computer through a remote terminal.
+Remote Channel Loopback - A diagnostic test that forms the loop at the channel side of the remote multiplexor.
+Remote Composite Loopback - A diagnostic test that forms the "loop" at the composite or output side of the remote multiplexor.
+Remote Digital Loopback - A diagnostic test that forms the "loop" at the DTE side of the remote modem.
+Remote Job Entry - The submission of jobs to a central computer from a distant location when the length limits of cable connections between input/output devices are exceeded, in which case the telephone or another common carrier link must be used to bridge the gap.
+Remote Processing - Relocating a portion of the host computers processing to an off-site location. The remote computer may be a minicomputer under supervision of the host, and connected via telephone links.
+Remote Station - A device attached by a telephone link to a controlling unit.
+Repeater - Two definitions exist in normal usage:
+1) A device used for signal shape and level restoration, for signals that have been distorted due to attenuation .
+2) A device used to repeat signals from one circuit onto another circuit (s) usually in a reshaped / amplified form.
+Repeater, Telegraph - The device used to accept a telegraph signal, and repeat the same signal for further distant transmission.
+Residual Error Rate - A ratio of the number of bits, blocks, characters, etc. incorrectly receive d and undetected/uncorrected to the total number of transmitted bits, blocks, characters, etc.
+Resource Class - A term used in a LAN environment to identify a group of computer or computer ports offering similar facilities such as an application program, and identified by a symbolic name.
+Response Time - Response time is essentially the elapsed time between an event, and the computer systems response to the event, or, from the final character of a message at the terminal until the receipt of the first character of the reply.
+Retransmissive Start - A component used in fiber optic transmission that permits the light signal on input fiber to be retransmitted on multiple output fibers.
+Retry - Re transmitting a block, field, or other unit of data a predefined number of times.
+Return To Zero (RZ) - The opposite of NRZ, whereby the voltage levels return to zero after each encoded bit. Contrast with NRZ.
+Reverse Channel - A method of modem design, also known as "backward channel" whereby a two-wire channel would be used to provide simultaneous communication between the receiver and transmitter. Reverse channel would be used for error control, diagnostics, circuit assurance and circuit breaking.
+Reverse Interrupt (RV) - A receiver generated control character sent to request termination of an in-progress transmission.
+Ring Indicate, Ring Indicator (RI) - An interface signal defined in RS-232 sent from the modem to the DTE on pin 22 indicating the presence of an incoming call.
+Ring, Ring Network - A term used in a LAN environment to describe a network topology that is essentially a closed loop. Contrast with bus and star.
+Ringing Current - 20 Hz AC at a voltage of 75 to 105 supplied by the central office to ring the subscriber's telephone bell.
+RJ11C - The modular jack and plug interface used with a standard, single line telephone.
+RJ36X - The modular jack and plug interface used with a standard, single line telephone when used for alternate voice and data use. An RJ16X modular jack would be used to connect with the modem .
+RJ41S - A "universal" data jack designed so that modems designated either as "programmable" or as "fixed-loss loop" devices may be connected.
+RJ45S - A modular jack for data transmission purposes, programmed by inserting a proper value resistor, used with "programmable device" type modems.
+ROM (Read Only Memory) - A non-volatile memory storage device manufactured with predefined contents. Contrast with EPROM, EEPROM, PROM and RAM.
+Routing - The communications path assigned to a telephone call to reach the calls destination.
+Routing, Alternate - The backup, or secondary path to a calls destination, used in the event of link failure or component breakdown.
+Routing Code - The code prefix of telephone numbers used for international calling or long distance domestic calls (area codes, for example).
+Routing Indicator - The destination address of a computer device, found in a messages header, to which the message must be delivered.
+RS-232, RS-232C - An EIA recommended interface standard between data terminal equipment ( DTE) and data communications equipment ( DCE) employing serial binary data interchange, and specifying a 25-pin connector (the DB-25 is almost always used) and essentially identical to the CCITT standards V.24 and V.28. See standards list following CCITT .
+RS-422 - An EIA recommended interface standard between DTE and DCE normally used when exceeding RS-232 's 50 foot maximum limitation and usually implemented of the unused pins of a DB-25 connector. RS-422 is essentially identical to the CCITT V.11 standard. See the standards list following CCITT.
+RS-423 - A companion standard issued along with RS-422, RS-423 is not widely used. Nevertheless, is electrically compatible with CCITT standard V.10. See the standards list following CCITT.
+RS-449 - A companion standard to RS-422 and RS-423 specifying two connectors, a 37-pin and a 9-pin connector. RS-449 is not widely used.
+RTS (Request To Send) - An RS-232 modem interface signal sent from the DTE to the modem on pin 4 indicating that the DTE has data to transmit.
+RVI (Reverse Interrupt) - A communications control character that is transmitted by a receiving terminal requesting a cancellation of the current transmission, so that it may send a message of its own that is of higher priority.
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+Satellite - See communications satellite.
+Satellite Microwave Radio - A communications satellite oriented microwave or beam radio system.
+SBS (Satellite Business Systems) - A domestic (U.S.A.) satellite carrier.
+Scattering - The signal loss occurring in fiber optic transmission due to light diffusion from variations in the fiber medium.
+SDLC (Synchronous Data Link Control) - A communications protocol used in the IBM SNA environment to control, check, initiate and terminate information sessions on transmission lines.
+Sectional Center - A class 2 telephone central office in the DDD network. Compare with regional center.
+Security - Any method or technique designed to prevent unauthorized physical access to information. Wiretapping or electromagnetic eavesdropping is a security threat whenever data travels through the air or over wires that are not in a secure area. Most data communication networks use common carrier facilities, and this presents problems. Sensitive data that is to be transmit ted from one location to another should be encrypted to make it private. Privacy transformations involving static methods of coding require a certain amount of work to break, but can usually be decoded after some effort. The best coding techniques involve keys that are as long as the data to be encrypted. By using different starting values, and different related sequences of random numbers, it becomes very difficult to determine the generating algorithm from eavesdropping, so the required work to break the code is very extensive.
+Selection - The process of addressing a terminal or printer on a selective calling circuit.
+Selective Calling - The process of a master terminal or station selectively choosing the terminal or printer, etc. that would be the recipient of a message.
+Selector Channel - A data channel designed to operate with only one input/output peripheral device at a time, at a rate of only one byte at a time, until the complete record is transferred. Contrast with block multiplexor channel and multiplexor channel.
+Selector Lightpen, Lightpen - An input device in the form of a "pen" attached to the display station (CRT) as an extra feature. The lightpen may be pointed at an item on the screen and then activated, thereby selecting the item for subsequent processing.
+Self-Checking Numbers - Any numbers containing redundant information to enable error detection.
+Serial Transmission - A "normal" mode of information transfer in data communications in which the bits comprising a character are sent in sequence, one at a time. Contrast with parallel transmission, normally used between a computer and its peripherals.
+Serving Area - A telephone companies geographic service area, usually the same as a LATA.
+Session - A term used in IBM SNA environment to define the logical link-up between two stations allowing them to communicate.
+Session Layer - The fifth layer of the OSI model that addresses establishing, managing, and terminating connections for individual application programs, and interfacing with the transport layer.
+Shannon's Law - A formula devised by communications pioneer, Claude E. Shannon. According to Shannon, the maximum amount of information that can be transmitted is twice the frequency of the transmitted signal.
+Shared Access - A term used in a LAN environment to describe an access method that allows many terminals to share a transmission medium, as opposed to discrete access . Examples of shared access methods would be explicit access and contended access.
+Shielding - The protective coating or shield used on data communications medium, such as coaxial cable.
+Shift - See figures shift and letters shift.
+Short-Haul - Transmission distances, usually under 50 miles. Short-Haul Modem (SHM). See line driver.
+Sideband - A mode of analog modulation that uses a frequency band on either the upper or lower side of the carrier frequency.
+Signal Converter - A device designed to accept input signals in one form and transmit output signals in a different form. See modem.
+Signal-To-Noise Ratio (S/N) - The ratio of the relative power levels of a voice/data communications signal and the noise on a line, expressed in decibels (dB).
+Sign-On Character - The first character transmit ted on an autobaud circuit to ascertain the data rate.
+Simplex, Simplex Circuit - Two definitions exist in normal usage:
+1) The transmission of signals in one direction only.
+2) A circuit allowing transmission of signals in either direction, but not both directions simultaneously, according to the CCITT.
+Simplex Mode - Data communications in only one direction, with no capability for reversing transmission.
+Simulation - The employment of the computation process to implement a model of some dynamic system or phenomenon. A number of digital simulation programming languages are available for both mainframe and personal computers alike.
+Sine Wave - A continuously variable and repeating signal, discovered by a man named Fourier. A sine wave signal is often used as the carrier in an analog modulation process, as well as being able to represent data via frequency and phase modulation. Sine waves can be generated by electronic oscillators and electromechanical generators.
+Single-Mode - A process of using only one "ray" or mode on a fiber optic medium having a core diameter only a few times the wavelength of the transmitted light. The advantage of single mode propagation is to avoid the destructive interference between rays propagated under a different process known as multimode fiber.
+Single-Sideband Transmission (SSB) - A mode of analog modulation using the lower side of the carrier frequency to transmit all information, and suppressing the upper side.
+Sink - The receiver of a message sent from the source or sender/ transmitter. Contrast with source.
+Skewing - The time delay between two data signals.
+Skynet - An AT&T communications product offering digital transmission service featuring on-site earth station facilities for wideband satellite transmission using Accunet Reserved 1.5 circuits.
+Slave Station - A terminal or other data unit controlled by the master station/ terminal in a point-to-point circuit .
+Slicing Level - The voltage threshold determining where a one or a zero bit signal can be distinguished.
+Slot - A time unit used in a TDM frame where a sub-channel character or bit is carried to the other end of the circuit and extracted by the sink TDM unit.
+Slow-Release Relay - An electromechanical relay with a copper sleeve over one end of its core, causing it to be slow in releasing.
+Smart Terminal - A data terminal having both communications capabilities as well as local processing capabilities.
+SMRT (Single Message-unit Rate Timing) - A message unit system tariff used by telephone companies to measure and time calls in increments of 5 minutes or less, applying a single message unit charge to each increment.
+S/N - See signal-to-noise ratio.
+SNA (Systems Network Architecture) - An IBM system product offering the computer user a total data processing and data communications system for IBM software and hardware devices. End users are unaffected and independent of the specific data communications system services. SNA 's system functions are separated into three discrete areas: application layer, functional management layer, and transmission subsystem layer.
+Soft Copy - A term used to describe a video display image or CRT display offering no provision for a permanent record, such as a printed hardcopy of the display.
+Software - A very general term used to describe the non- hardware components of the computer, in particular the programs needed to make a computer perform tasks. This includes many areas discussed elsewhere in this glossary, the most significant being the operating systems, application programs, and programming languages. Contrast with hardware.
+SOH (Start Of Header) - A control character that is used to indicate the start of a header that precedes the messages text.
+Source - The originator or transmitter of information in a data communications network or link.
+Source Code - A computer program written is a language one or more steps removed from the "machine language" of a particular computer. Machine language consists of the very explicit set of instructions and operation codes capable of direct execution by the computers hardware.The problem is, however, that it is extremely tedious and error producing to use, since it requires instructions be spelled out in almost microscopic detail, specifying all data and program references in terms of actual register addresses within the computer memory. Because of this concern, other languages have been developed to make it easier for a programmer to express his/her desires, and these programs are known as source programs or source code. See program.
+Space - A space signal is equivalent to a binary 0 or an open- circuit (no current flowing) condition, although "space" could also signify a control character causing a printer to leave a space between printed symbols.
+Space-Division Switching - A switching method that uses a separate physical path through the switch for each connection supported.
+Space-Hold - The transmission of a steady space signal to indicate a line condition with no traffic.
+Space-To-Mark Transition - The switching from a spacing signal to a marking signal.
+Spectrum, Frequency Spectrum - The continuous range of frequencies beginning with audible sounds in the 20 Hz range to cosmic rays occurring above 1000 gHz . Voice grade telephone channel frequency spectrum exists between 300 and 3300 Hz.
+Speed Calling, Speed Dialing - A telephone feature that allows the subscriber to use short sequences of digits to represent frequently called numbers.
+Speed Conversion - The process of changing transmission speeds so that two devices having different transmission speeds would be able to communicate.
+Spot Beam - A term used in the satellite transmission environment to describe a narrow and focused down-link to an earth station.
+SRC (Spiral Redundancy Checking) - An error checking (block parity) method for transmitted data blocks whereby the receiving terminal would accumulate redundant error checking information in a spiral bit position fashion.
+SRDM (Sub-Rate Data Multiplexer) - A multiplexer that would combine several data streams below a basic rate into a single, higher rate TDM signal.
+SSI (Small Scale Integration) - A term used to describe a silicon chip containing 10 electronic circuits or less.
+Star, Star Network - A term used in a LAN environment to describe a topology configured like a "star" in which the center of the star would be the control point linked individually to all stations.
+Start Bit, Start Element - A term used in asynchronous transmission to describe the first bit used to indicate the beginning of a character. Usually, a space condition would be used to alert a receiving devices of the reception of a character as in Baudot teletypewriter operation.
+Start-Stop System - A system that uses both a start bit as well as a stop bit. See asynchronous.
+Start Of Text (STX) - A control character that is used to indicate the beginning of a message and is placed immediately behind the header in a transmit ted block.
+Station - One of many types of input/output or DCE devices on a communications system or network.
+Station Controller - A device with processing capabilities, designed to control data communications between terminals and host systems, usually providing error handling functions.
+STC (Service Test Center) - A term used to describe a DDS test location that maintains and controls circuit layout records.
+Step Index - A fiber optic type preferred for long-distance, single-mode operation.
+Stop Bit, Stop Element - A term used in asynchronous data transmission (start-stop transmission) to describe the bit that indicates the end of a character (usually a mark condition), and prepare the receive r for the next character, or to return the line to its idle state. Teletypewriters use 1.42 mark bits.
+Storage - A device to enter, hold and retrieve information such as data and programs. Several types of computer storage exist. Typically, storage can be categorized as "main" (primary) storage, usually consisting of semi-conductor circuits or "secondary" (auxiliary) storage, and so on. Main storage, known as RAM and sometimes as ROM in personal computers, is implemented using fast but relatively expensive components, while secondary storage as a rule is slower and less expensive. A typical system will have more secondary storage than main storage. Also, main storage is also known as main memory or just "memory".
+Store-And-Forward - A method of data communications that allows transactional information to be collected and stored (usually by a minicomputer) until a predetermined time arrives when the information is forwarded to the recipient.
+Streaming - A modems characteristic when it is sending a carrier signal on a multipoint line when it has not been polled.
+Sub-Area - A term used in IBM SNA environment to describe a part of a network containing a sub-area node.
+Sub-Rate - A term used in the DDS environment to describe a transmission speed that is either 2400 bps, 4800 bps or 9600 bps.
+Sub-Voice-Grade Channel - A channel having a narrower bandwidth than a voice-grade channel. See channel, voice grade.
+Supergroup - The combining of five-12 channel groups that occupy adjacent bands in the frequency spectrum to provide simultaneous modulation and demodulation. The assembly may also be used as 60 voice grade channels or five wideband channels or combinations of both.
+Suppressed Carrier Transmission - A method of data communication whereby the carrier frequency is suppressed in order to transmit on one or both of the sidebands.
+Switch, Switching - Several definitions exist in normal usage:
+1) In central office facilities, switching refers to the process of transferring calls from one device to another via circuit connection.
+2) A data switcher, or data PBX may sometimes be informally referred to as a "switch". See data PBX, data switcher.
+3) In a packet-switched environment, the "switch" is installed on the packet networks backbone, at one of the nodes and serves to direct packets, also known as a switching processor.
+Switched Line - A data communications connection or link whereby the physical route will differ with each call, such as in a switched public network environment.
+Switched Matrix - A term used in the LAN environment to describe the electronic counterpart to a crossbar switch.
+Switched Network, Switched Public Network - The telecommunication components, including lines, central offices and related switching equipment, trunk facilities and other integrated network components designed to provide voice/ data communication.
+Switched Network Backup - The practice of using a switched line as an alternate link to a leased line facility.
+Switching Processor - See definition #3 for switch.
+Symbolic Name - A method of identification for computer devices such as terminal stations, computer or FEP ports, etc.
+SYN, Sync, Synchronous Idle - A control character used to maintain timing or synchronize timing in a TDM environment. By sequencing two SYN characters in succession, synchronization is maintained following each line turnaround.
+Synchronous, Synchronous Transmission - Using a constant time interval between bits or characters to insure that all data communications equipment is in step with each other. The opposite of asynchronous transmission, synchronous transmission, does not use start-stop bits surrounding each byte, but relies on the transmitter and receiver to be functioning at a fixed rate of transmission, thereby being a more efficient method of data communication. Contrast with asynchronous transmission.
+Synchronous Data Link Control - See SDLC.
+Synchronous Modem - A type of modem designed to provide a clocking signal to perform bit synchronization.
+System Service Control Point (SSCP) - A term used in IBM SNA environment to define the network entity that manages the configuration of the data communication network.
+Systems Network Architecture - See SNA.
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+Table Driven - A data communications process that uses table lookup to route messages in a network, operate a modem or provide data security access.
+Tail Circuit - A term used to describe a circuit type (usually a dedicated line) that feeds data to a network node.
+Tandem Data Circuit - A data circuit designed to connect two DCE devices in series.
+Tap - A term used in a LAN environment to describe the connection to the main transmission medium.
+Tariff - Basically, a contract between the customer (subscriber)and common carrier, through which regulating agencies approve or disapprove such facilities or services. A tariff is very specific regarding service rates, types of services provided, facilities, etc.
+TASI (Time Assignment Speech Interpolation) - A method of activating data communication channels via speech. Other application signals may be multiplexed on the same circuit when speech is not present, thereby achieving line efficiency.
+TC (Transmission Control) - A control character grouping, also known as "telecommunications control" or "technical control".
+TCAM (Telecommunications Access Method) - An IBM data communications software routine designed to facilitate and control the transfer of messages between the application program and the remote 3270 terminals.
+TCP/IP (Transmission Control Protocol/Internet Protocol) - A communications protocol, functioning within the third and fourth OSI layers, used in a LAN environment for internetwork routing and reliable message delivery. TCP/IP is found in ARPANET and is endorsed by the DOD.
+TCU (Transmission Control Unit) - A controller whose functions are dependent upon a stored program of instructions from the host computing system. A TCU (IBM 2703, for example) is therefore unlike a communications control unit which has the ability to execute its own stored program.
+TD (Transmit Data) - The RS 232 data signal sent on pin 2 from a DTE device to a DCE device.
+TDM (Time Division Multiplexer) - A multiplexer designed to apportion its composite link time between its available channels, interleaving data at a higher speed on the main or multiplexed channel . The data signals are then separated to restore the data to the individual input channels.
+TDMA (Time Division Multiple Access) - A mode of operation used in both satellite communication as well as LAN environments. TDMA utilizes a high speed, burst mode of operation to interconnect LAN 's, while it is also used to allow several earth stations to "timeshare" satellite transponder bandwidths.
+Telco - A term used to represent "telephone company", in the United States.
+Telecommunications - The transmission (and reception) of signals producing sounds, images or information using a variety of media such as fiber optic, copper wire, infrared or radio frequency.
+Telecommunications Access Method - See TCAM.
+Teleconferencing - Engaging in a conference between remote stations linked by a telecommunications medium.
+Telecopier - A facsimile device designed to transmit documents to a remote location via a data communications line.
+Telegraphy - A method of data communications using 75 bps as a transmission speed.
+Telemetry - The process of transmitting and collecting coded, analog data, often realtime parameters, from a remote environment.
+Telenet - A proprietary term for a VAN service provided by the GTE Telenet Corporation.
+Telephony - A term initially used to describe voice telecommunications, but now used to describe voice/data/video communications.
+Teleprinter - A term used to describe various types of terminals consisting of both keyboard and printer but no CRT.
+Teleprocessing - A term that is synonymous with data communications, indicating any data processing system that uses communications facilities. The word "teleprocessing" once was an IBM trademark.
+Teletype, Teletype Corporation - A trademark (and manufacturer) for a series of different types of teleprinter equipment designed for data communications systems.
+Teletypewriter Exchange Service (TWX) - A data communications service provided by the AT&T Corporation using teletypewriter stations connected to phone lines, for access to other TWX stations. TWX supports both ASCII and Baudot coded machines.
+Telex Service - A data communications service using dial-up lines and Baudot code, allowing customers to communicate temporarily and directly between themselves, using asynchronous apparatus and the circuits of the public telegraph network, world wide. Computers may be connected to the Telex network.
+Terminal - A device designed to allow users of a data processing system to gain access to information in a more conventional manner than through the input/output devices local to that system. Often, computer terminals are located away from the host, at locations convenient to the users.
+Terminal Control Unit, Terminal Controller - See cluster control unit.
+Terminal Node - A term used in IBM SNA environment to describe a non user-programmable peripheral node.
+Terminal Polling - See polling.
+Terminal Server - A device used in an Ethernet LAN environment allowing one or more devices to be connected to the Ethernet network.
+Test Center - A designated installation used to diagnose problems with data communications lines and equipment. Test centers are often combined with installations performing network control.
+Test Mode - A modem or DSU status that disables both transmitter and receiver in order to perform a test in progress of the line.
+TEX - See Telex service .
+Text Editor - A program designed to produce documents from a users computer terminal, and offering capabilities including:
+1) "Cut and Paste" capabilities via paragraph and column field manipulations.
+2) Renumbering and indexing of text items.
+3) Multiple terminal support/timesharing monitor to supervise the sharing of programs among users while guaranteeing file integrity.
+Thermal Noise - A form of electromagnetic noise, sometimes referred to as Gaussian noise, that occurs in an electronic circuit and is proportional to ambient temperature.
+Thin Ethernet - Sometimes known as "Cheapernet", thin Ethernet is a phrase used in LAN environments to describe a cost saving measure whereby PC's would be linked together using a narrower diameter coaxial cable, operating at the same frequency as Ethernet, but at shorter distances.
+Thrashing - The collapse of processing efficiency when overcommitment of main memory is attempted, thereby allowing no useful work to be accomplished. Typically, thrashing can be caused by:
+1) The total working sets of active tasks exceeding available memory.
+2) Space is acquired for some active tasks by taking space allocated to the working sets of others.
+Thrashing is primarily a problem in a system where the ratio of the access time between auxiliary memory and main memory is large, upsetting task sequence.
+Throughput - The average rate at which jobs are completed by the system in an interval of time or the rate at which information is communicated during a specified time period. Throughput is frequently used as a figure of merit for a system, so that the higher the throughput, the more highly regarded the system is, but some factors must also be considered or throughput will be deceptive. The capacity of the system, the time interval over which the throughput is measured, the load on the system the scheduling method, and the job mix all act as factors that have an affect on system/ data communications throughput.
+Throughput Delay - The amount of time needed to accept data input and transmit is as output.
+Tie Line - A service of telephone common carriers offering a private line that connects two or more points together.
+Time Division Multiplexing - See TDM
+Timed Release Circuit - A type of circuit designed to automatically release other connected circuits after a preset interval.
+Timing - The setting and observing of the elapsed time of an action or data communications process, often the function of a modem .
+Timeout - A method used to improve and minimize user response times by allocating a terminal or other computer device for a predefined time period, after which if no activity is present on the terminal session or connection is terminated.
+Timesharing, Time Sharing - A method of operating a computer so that two or more users are simultaneously able to present problems to the machine and retrieve information from it usually by doing some computation of processing for one user, putting it aside, then doing some computation for a different user. A clocking mechanism would send the CPU interrupts at a predefined interval to provide a timesharing environment for connected terminals.
+Time Slot - A term used in a LAN environment to describe a sequence position or assigned time period.
+TNC (Threaded-Neill-Concelman) - A type of miniature coaxial cable connector using a threaded connector instead of a bayonet lock connector.
+Token, Token Passing - A term used in a LAN environment to describe the special "message" called a token, that allows a station to control the transmission medium. The token is transmit ted from node to node. When the receiving station is in possession of the token, it may transmit messages before passing the token on to the next node. See token bus, token ring.
+Token Bus - A LAN environment bus topology using a token for explicit access and all stations attached to the bus listen for the token. A station must first receive the token before transmitting. Contrast with token ring.
+Token Ring - A LAN environment topology that uses a token for explicit access. Unlike token bus, the token is passed from station to station, in sequential order, so that the next logical station that receives the token will also be the next physical location.
+Toll Center - A Class 4 central office which terminates message circuits and channels.
+T-1 Timer - A term used in packet-switched network environments to measure the interval of timeouts during data exchanges and link initialization.
+Topology - The arrangement of stations and the links connecting the stations of a data communications network. See network topology.
+Touch-Tone - An AT&T proprietary trademark for push-button, DTMF dialing method.
+Traffic - The quantity and movement of messages through a data communications system.
+Traffic Engineering - The science of communications facility design and optimization to provide for maximum user/ application availability.
+Trailer Block, Trace Block - Control information used for timing, error correction and recovery, etc., that follows the message text
+Training - The process whereby a receiving modem achieves equalization with the transmitting modem.
+Training Pattern - A training signal sequence.
+Training Time - Also referred to as "learning time", training time refers to the time it takes a modems equalizer to achieve equalization.
+Transaction, Transaction Processing - The processing of individual items of data or tasks, known as transactions, in a real time environment without any sorting or editing. In a batch processing or remote job entry environment, the transaction is also known as a job or job step.
+Transceiver - A device that can function as both a transmitter and a receiver.
+Transients - Signal impairments characterized by short-duration and intermittent occurrence.
+Translator -Several forms of translators exist in data processing:
+1) For data communication and telephony, a translator converts the digits dialed to information required for call routing.
+2) A hardware device to convert information from one system of representation to another system of representation, without destroying the intended message or content.
+3) Any form of computer software to perform information conversion from one system of representation into equivalent information in another system.
+Transmission - The sending of information over a data communications medium.
+Transmission Block - A grouping of data characters, bytes, flowing through the transmission channel, over which a synchronization coding pattern has been applied for timing purposes or for error control.
+Transmission Speed - A measure of how quickly data is being transmit ted, usually expressed in bps, although commonly, but incorrectly, expressed in baud.
+Transmit - To send out a signal over data communications media such as optical fiber, copper wire, or via radio waves through the atmosphere, from one station to another.
+Transparent Mode - A method of suppressing the recognition of control characters in binary synchronous (bisync) transmission, also, transparent mode refers to an out-of-band signaling process. See clear channel.
+Transport Layer - The fourth layer in the OSI model responsible in conjunction with the network, data link, and physical layers for error-free, end-to-end message delivery.
+Transponder - A component used in a satellite communication environment, responsible for receiving an up-link signal, converting that signal to a higher frequency, and transmitting as a down-link signal to an earth station.
+Tree - Several definitions exist in computer usage:
+1 - As a data structure, a tree is a special form of directed graph with the following properties: (A) - It has no vertices or has a distinguished vertex called the "root vertex," which has no predecessors, and (B) - every vertex other than the root vertex has a unique predecessor.
+2) In data communications, a tree is a form of network topology having only one path between any two network nodes, so that the network resembles a branching tree, similar to CATV networks.
+Trunk - A telephone circuit or channel between two central offices or switching devices.
+Trunk Exchange - An exchange with the function of controlling the switching of trunk traffic, also known as a toll office.
+Trunk Group - Multiple trunks between two points, both of which are switching centers or individual message distribution points using the same multiplex terminal equipment.
+T-Span - The telephone circuit through which a T- carrier operates.
+TTY, TTY Transmission - A form of data communications, usually asynchronous ASCII, that uses AT&T teletypewriter devices.
+Turn-Around, Turn-Around Time - A factor considered in half-duplex communications representing the time required for a modem to reverse transmission direction.
+Turn Key - A term used to describe a vendor provided "ready-to-run" and self-contained, data system requiring little or no user setup, and essentially usable by untrained personnel.
+Twinaxial Cable - A type of shielded, coaxial cable using two center conducting leads.
+Twisted Pair - The most common type of bounded medium for data transmission, consisting of copper wire pairs twisted together and made up into cables of from 4 to 3000 pairs. The size of the wire used varies from 16 AWG to 26 AWG, and is protected with a polyethylene or a polyvinyl chloride jacket.
+Two Wire Circuit - A voice/data channel carrying signals either half-duplex, full duplex or simplex mode over a single pair of wires, depending on modem or line driver type.
+TWX - See Teletypewriter exchange service.
+TYMNET - A VAN, X.25 PDN service provided by the common carrier Tymnet Corporation.
+Type A Coax - A data communications protocol operating at 2.35 mbps used in an IBM 3270 terminal environment to provide data transfer between a 3274 Control Unit and attached terminals and printers.
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+UART (Universal Asynchronous Receiver/Transmitter) - A microchip device performing asynchronous communication functions by converting parallel digital output from a DTE device into bit serial transmission (and bit serial into parallel).
+UHF (Ultra High Frequency) - The range of frequencies, spanning between 300 mHz and 3 gHz, used for cellular radio frequencies (RF) and for UHF television channels 14 through 83).
+ULSI (Ultra Large Scale Integration) - A term describing an ultra- high density microchip containing over 10,000 circuits.
+Unattended Mode, Unattended Operations - A term used to describe an automatically operating communications device, such as an auto- answer modem.
+Unbalanced, Unbalanced To Ground - A term used to describe the condition present in a two wire circuit when the impedance-to- ground on one wire is different from that of the other. Contrast with balanced, balanced-to-ground.
+Unbundling - A term used to describe the itemization of common carrier or vendor provided communications services.
+Uncontrolled Terminal - A computer terminal containing no polling or control logic and is always online to the CPU.
+Uninet - A data communications common carrier offering an X.25 PDN.
+Unix - An AT&T proprietary operating system designed for multi- user, multi-tasking data communications operating systems .
+UPC (Universal Product Code) - The "bar code" used to identify consumer and industrial products in mechanized inventory systems.
+Up-Link - A term used in satellite communications to describe the earth station and the transmit ted signal to a communications satellite . Contrast with down-link.
+Uptime - The period of time that a computer application or data communications link would be available to the user community on an undegraded, and uninterrupted basis. Contrast with downtime.
+Upward Compatible - An application program having the characteristics of compatibility with an enhanced mode or operation (such as a newer release or version operating system).
+USART (Universal Synchronous/Asynchronous Receiver/Transmitter) - A semiconductor device performing synchronous/asynchronous conversion from a communications processor to the correct format for data transmission.
+USASCII (United States of America Standard Code for Information Interchange) - See ASCII.
+USRT (Universal Synchronous Receiver/Transmitter) - A semiconductor device that formats data for communications over a synchronous data circuit.
+Utility, Utility Program - A computer program designed to perform a task required by many or most of the computing systems users, the most common of which are those that copy information from one medium to another and those used to streamline an operation.
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+Validity, Validity Checking - The practice and techniques of error checking after data has reached its destination.
+Value Added Carrier - A common carrier or communications vendor that provides an enhanced service to a data communications circuit.
+VAN (Value Added Network) - A leased network provided by a common carrier or vendor that has been enhanced with extra computer equipment to provide more services. Many PDN's also are VAN's.
+VDT (Video Display Terminal) - See CRT.
+VDU (Video Display Unit) - See CRT.
+Vertical Parity, Character Parity - One of many different forms of error detection using a vertical parity count within the bits of each character transmitted. If any error is found, the character or block of characters would be re transmit ted, with the amount of re transmission dependent upon the computing system.
+Vertical Redundancy Check (VRC) - A method of error detection using an extra bit, called a parity bit, in each character for checking purposes. The receiving station detects whether there is an odd number of 1's or even (depending on whether the system uses even or odd parity). Noise or distortion on the line may have caused a bit to be lost or added. The error is either noted or the receiving station may instigate a re transmission .
+VF (Voice Frequency) - Sometimes referred to as "voice grade frequency", VF represents the 4.2 kHz bandwidth telephone circuit used for voice transmission.
+VHF (Very High Frequency) - A term used to describe a radio carrier frequency band ranging from 30 mHz to 300 mHz.
+Video Conferencing - A method of audio/video communications, usually employing satellite transmission over a wideband range spanning between 56 kbps to 1.544 mbps (T1 circuit speed).
+Video Display Terminal - See VDT .
+Virtual - At least two applications of the term "virtual" are commonly used in data communications:
+1) A term generally used to describe the main memory of a virtual (simulated) computer. Using virtual memory, via address space, memory space and address translation/mapping, greater memory capacity is possible and faster processing can occur because only that portion of a program needed at the moment is drawn into memory. The programmer can be confident of highly efficient operation of the program.
+2) From a data communications standpoint, the term virtual has a similar connotation, implying infinite capacity of data channels and circuits.
+Virtual Circuit - A data circuit that exists only for the duration of a call, but is sharing a data channel with other calls on virtual circuits.
+VLF (Very Low Frequency) - A term used to describe a radio carrier frequency band ranging from 3 kHz to 30 kHz.
+VLSI (Very Large Scale Integration) - A term used to describe a very high density microchip containing up to 10,000 circuits.
+Voiceband - A voice grade bandwidth typically spanning between 300 and 3300 Hz.
+Voice/Data PABX - A user owned, automatic telephone exchange combining the functions of a voice PABX and a data PABX, sometimes used for DOV services.
+Voice Digitizing - The process of converting an analog voice signal into digital signals for transmission.
+Voice Grade Channel - See channel, voice grade.
+Volatile - A memory device type that loses its stored contents upon electrical power fluctuation or failure.
+VRC - See vertical redundancy check and parity check.
+VTAM (Virtual Telecommunications Access Method) - An IBM software routine providing users of 3270 type remote terminal systems access to applications programs while using the data communications network cost effectively.
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+WACK/WAK (Wait Acknowledge) - A signal sent to a transmit ting station indicating the receiving station is temporarily unable to receive data.
+WAN (Wide Area Network) - A term used to describe a data communications network using common carrier circuits to connect stations and processors. Contrast with LAN.
+WATS (Wide Area Telephone Service) - A type of long distance telephone service characterized by calls measured on a bulk rate basis. WATS uses a zone system whereby a customer may make outgoing calls or receive incoming calls (INWATS) and be charged based on the specific zones involved.
+Waveguide - A term used in a microwave communications environment to describe a hollow metallic media used for data transmission.
+Wavelength - Refers to the distance between the successive peaks of a sine wave.
+WESTAR - The Western Union Co.'s data communications satellites . White Noise -See Gaussian noise.
+Wide Band - See broadband.
+Window - A term used to describe the amount of data ( packets, messages, etc.) that may be transmit ted to a receiver before a reversal of transmission direction.
+Wiring Closet - A point of termination for telephone equipment, usually located at a customers premises, providing access for telephone repair personnel.
+Wire Center - A centralized location of wires from subscribing stations, located to provide efficient and economical distribution of wires and cables. The central office is usually located at the wire center of the subscribing telephones in order to efficiently use the exchange outside the plant.
+Wire Pairs - A method of transmission using a circuit composed of two (normally copper) wires.
+Word - The sequence of either bits or characters capable of being stored and processed as a unit.
+Word Length - The number of bits in a word, usually based on the internal operation of a computer, such as 8, 16, 24 and 32 bit CPU 's.
+Workstation - The terminal or other device, at which a computer operator works, capable of sending and receiving data needed to perform a specific task. An Input/Output terminal .
+WPM (Words Per Minute) - A term used in the telegraph environment to measure transmission speed.
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+XON-XOFF - See flow control.
+Xerox - The corporation credited as the originator of Ethernet .
+XMODEM - A communications protocol devised by Ward Christiansen to perform simple error checking between microcomputers . XMODEM is a half-duplex protocol, used on full-duplex circuits transmitting 128 characters per block. After information is sent, the sender waits for a reply before transmitting the next message.
+XNS/ITP (Xerox Network Systems'/Internet Transport Protocol) - A communications protocol used in a LAN environment between networks, functioning similar to the TCP/IP.
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+YMODEM - A communications protocol very similar to XMODEM designed to perform simple error checking between microcomputers . YMODEM is a half-duplex protocol, used on full-duplex circuits transmitting a 1 kilobyte (1,024) characters per block. After information is sent, the sender waits for a reply before transmitting the next message.
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+Zero Code Suppression - The practice of suppressing the transmission of eight of more consecutive binary "0" bits by inserting a binary "1" bit. Zero code suppression is used with digital T1 and related communications facilities.
+Zero Insertion - A practice used in an SDLC environment that includes a binary "0" in a stream of transmitted data to avoid confusing SYN characters with data characters. The receiving end removes the inserted zeros.
+Zero Transmission Level Point - A point of reference (0 TLP) used to measure signal power gain/loss of a data circuit.
+Copyright ©1997 - 2011 Ara Research & Development.
+All Rights Reserved. AR&D liability, trademark and document use rules apply. Your interactions with this site are in accordance with our privacy statement.

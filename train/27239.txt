@@ -1,0 +1,6 @@
+The right most box has only one input, the lowest bit of thenumber,
+and two outputs, the sum and a carry out. Theremaining boxes
+have two inputs, a bit of the number and carry in,and two outputs,
+the sum and carry out.
+Write a truth table for the rightmost box. Draw a gatediagram
+to implement the rightmost box using And, OR, NOT, NAND, orNOR

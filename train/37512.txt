@@ -1,0 +1,74 @@
+1) Explain what is SQLite?
+SQLite is a mostly ACID compliant relational database management system contained in a relatively small C programming library.
+2) List out the standard SQLite commands?
+The standard SQLite commands interact with relational databases are similar to SQL. They are
+Based on their operational nature these commands can be classified.
+3) Explain what is SQLite transactions?
+The transaction is referred as a unit of work that is performed against a database. It is the propagation of one or more changes to the database. Properties of transactions are determined by ACID.
+- Atomicity: It ensures that all work unit are successfully completed
+- Consistency: It ensures that the database changes states upon a successfully committed transaction
+- Isolation: It enables transactions to operate independently of and transparent to each other
+- Durability: It ensures that the result or effect of a committed transaction persists in case of a system failure
+4) List out the areas where SQLite works well?
+SQLite works well with
+- Embedded devices and the internet of things
+- Application file format
+- Data Analysis
+- Cache for enterprise data
+- Server side database
+- File archives
+- Internal or temporary databases
+- Replacement for ad hoc disk files
+- Experimental SQL language extensions
+- Stand-in for an enterprise database during demos or testing
+5) What is the difference between SQL and SQLite?
+- It does not require separate server processor system to operate
+- No setup or administration required SQlite comes with zero-configuration
+- An SQLite database can be stored in a single cross-platform disk file
+- SQLite is very compact less than 400 KiB
+- SQLite is self-contained, which means no external dependencies
+- It supports almost all types of O.S
+- It is written in ANSI-C and provides easy to use API
+7) Mention what are the SQLite storage classes?
+SQLite storage classes include
+- Null: The value is a NULL value
+- Integer: The value is a signed integer (1,2,3, etc.)
+- Real: The value is a floating point value, stored as an 8 byte IEEE floating point number
+- Text: The value is a text string, stored using the database encoding ( UTF-8, UTF-16BE)
+- BLOB (Binary Large Object): The value is a blob of data, exactly stored as it was input
+8) Explain how Boolean values in SQLite are stored?
+Boolean values in SQLite are stored as integers 0 (false) and 1 (true). SQLite does not have a separate Boolean storage class.
+9) Explain what is the use of SQLITE group by clause?
+The SQLITE group by clause is used in collaboration with the SELECT statement to arrange identical data into groups.
+10) Mention what is the command used to create a database in SQLite?
+To create a database in SQLite- command “sqlite3” is used. The basic syntax to create a database is $sqlite3 DatabaseName.db .
+11) Mention what is .dump command is used for?
+The .dump command is used to make an SQLite database dump, remember once you use the dump command all your data will be dumped forever and cannot be retrieved.
+12) Explain how can you delete or add columns from an existing table in SQLite?
+There is a very limited support for alter ( add or delete ) table. In case if you want to delete or add columns from an existing table in SQLite you have to first save the existing data to a temporary table, drop the old table or column, create the new table and then copy the data back in from the temporary table.
+13) Mention what is the maximum size of a VARCHAR in SQLite?
+SQLite does not have any specific length for VARCHAR. For instance, you can declare a VARCHAR (10) and SQLite will store a 500 million character string there. It will keep all 500 characters intact.
+14) Mention when to use SQLite and when not to use SQLite?
+SQLite can be used in following conditions
+- Embedded applications: Does not require expansion like mobile applications or games
+- Disk assess replacement: Application that require to write or read files to disk directly
+- Testing: When testing business application logic
+When not to use SQLite
+- Multi-user applications: Where multiple client needs to access and use same database
+- Applications requiring high write volumes: It enables you to use only one single write operation to take place at any given time
+15) Explain how to recover deleted data from my SQLite database?
+To recover the information you can use your backup copy of your database file, but if you do not have a backup copy, then recovery is impossible. SQLite uses SQLITE SECURE DELETE option which overwrites all deleted content with zeroes.
+16) When can you get an SQLITE_SCHEMA error?
+The SQLITE_SCHEMA error is returned when a prepared SQL statement is not valid and cannot be executed. Such type occurs only when using the sqlite3 prepare() and sqlite3 step() interfaces to run SQL.
+17) Mention what is the Export Control Classification Number (EECN) for SQLite?
+The core public domain SQLite source code is not described by any ECCN. Hence, the ECCN should be reported as EAR99. But if you are adding new code or linking SQLite with the application, then it might change the EECN number.
+18) Explain what is view in SQLite?
+In SQLite, a view is actually a composition of a table in the form of pre-defined SQLite Query. A view can consist of all rows of a table or selected rows from one or more tables.
+19) Explain what are SQLite Indexes?
+SQLite indexes are special lookup tables that the database search engine use to speed up data retrieval. In simple words, it is a pointer to data in a table.
+20) When Indexes should be avoided?
+Indexes should be avoided when
+- Tables are small
+- Tables that changes frequently
+- Columns that are frequently manipulated or having a high number of NULL values
+Refer our SQLite Tutorials for an extra edge in your interview.

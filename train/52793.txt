@@ -1,0 +1,28 @@
+Linear trees with Git rebase
+Making branches in Git is easy and fast, but they should eventually go back in the master. Rebasing is both an alternative and a companion to merge.
+Pulling vs. branching
+Let's start with a simple observation. When you clone a repo and work on your own copy of the code, you have forked it. Even if there is no fork with your name on github: it's natural and it was also done with Subversion or CVS.
+Pull and push are really disguised merges: your master is different from the master on origin: they are actually two different branches. You can try executing git checkout origin/master to see how Git conceptually distinguish between remote and local branches with the same name.
+So rebase can be used for pulling/pushing, but also in general for reconciling two branches, being it one remote and one local, or two locals.
+How Git works in a minute
+You can think of git commits as photographs taken when you issue the command; they also have one or more parent commits, which in the linear case is the last commit made on a working copy before the new git commit execution.
+Branches are just labels, put on particular commits; the label changes as new commits are made, keeping up with the last commit. When you branch, in the majority of cases you maintain a common ancestor with the original branch:
+Each commit in a branch points its parent, forming a chain. When you merge, the parents for the new commit are exceptionally two:
+So what' the difference?
+During a merge, a new single commit is made, with two parents: the branch you are merging from and the current one.
+During a rebase, the commits on your current branch are applied sequentially to the branch you're rebasing to; the parent of your branch becomes the current HEAD of the target. This explains the name: instead of basing your branch on when you forked it off, you're basing it on the HEAD of master (assuming you branched off from master).
+In both cases, only the label for the current branch is updated.
+The metaphor of merge is that the two trees are tied together in a point: they can diverge with other branches, but your development will continue by having as parents both of them.
+The metaphor of rebase is that you cut away your branch, and reattach it at the top of the tree with some Acme glue. It's hard to see a real tree surviving this treatment, but since after rebasing you usually merge the branch back in master, the result is that the tree is always linear:
+A possible workflow that makes use of rebase is the following:
+git checkout -b mybranch # fork from master
+...do some work and some commits...
+...meanwhile master goes on with his life and several new commits are made...
+git rebase master # your branch is cut out and applied to the more recent version of master
+...resolve possible conflicts created by master... # run unit tests for example)
+git checkout master && git merge mybranch # immedita, should be a fast-forward)
+In the origin vs. local version, you substitute git rebase master with git pull --rebase.
+This rebase plus merge technique end result is just like if you performed a pull, all your N commits in just two seconds, and then updated the master.
+However the original metadata of the commits are preserved. This means that you may see them out of temporal order in the logs: the ones on master will be down on the list, superceeded by chronologically older commits that you have made on your branch.
+In merge, you would see only one auto-generated commit in git log; with rebase plus merge, you will see all the different commits as the second operation, merge, becomes a fast-forward (pulling up the HEAD label of master up without any further commit):
+The end result is that the history of your master (or of any other branch where you rebase to and merge in) is always linear. You will be able to use git-bisect as cleverly suggested here, and continue using git log instead of visualizing a complex tree of code.

@@ -1,0 +1,11 @@
+In this section we will learn Spring IoC with the help of many articles and ready to test example code. In this section we are exploring IOC container of the Spring 3 framework. The IOC container is the main component of the Spring framework. It provides the main IoC container and AOP framework. The core container of the Spring Framework provides important functionality including dependency injection and bean lifecycle management.
+The core container is responsible for providing essential functionality to the Spring framework. The BeanFactory is the primary component of the core container. The BeanFactory is an implementation of the Factory pattern. The core container of the Spring Framework provides Dependency Injection and Inversion of Control (IOC) functionalities.
+Modules of Core Container:
+Following are the modules of the Spring Core Container:
+The IoC or Inversion of Control is the core features of the Spring Framework. Developers uses the IoC container to manage the beans and its dependency in the application. Thus simplifies the implementation of business logic in the application. The IoC is very important and it's very necessary to fully understand.
+What is IoC?
+The Inversion of Control is the process by which application defines the dependency and these dependencies are then satisfied in runtime by the Spring Framework. The IoC is also known as Dependency Injection(DI).
+I the application dependencies are satisfied through:
+In this section we will be presenting the examples of Spring Core module.Spring Bean Example, Spring Bean Creation
+If you are facing any programming issue, such as compilation errors or not able to find the code you are looking for.
+Ask your questions, our development team will try to give answers to your questions.

@@ -1,0 +1,46 @@
+An hardware error detected by hardware and reported to software.
+Machine Check Architecture (MCA)
+x86 machine check architecture is a hardware programming
+interface to allow software to report and handle both corrected and uncorrected hardware errors. This is an architectural interface with some
+abstraction and allows forwards and backwards compatible operating systems.
+Details are described in the Intel Architecture
+Software Developer Manual
+Volume 3 chapter 15.
+Machine Check Exception (MCE)
+The x86 CPU raises an int 18 exception to signify
+an uncorrected hardware error. The operating system has a special
+handler to process the information contained in the
+Error Correcting Code. A specific code that can detect and correct
+errors. Typical ECC codes can detect two bit of errors and correct one
+bit (there are some advanced encodings that can handle more errors).
+entry. On servers the memory subsystem generally supports ECC.
+An hardware error that was corrected by the hardware
+(e.g. using a single bit data corruption that was correctible using
+). These errors do not require
+immediate software actions, but are still reported for accounting
+and predictive failure analysis
+An uncorrected hardware error detected by the hardware. Data corruption
+has occurred. These errors require software reaction.
+Predictive Failure Analysis (PFA)
+Using trends in (primarily) corrected errors to predict future failure of
+hardware components and automatically taking steps to avoid outages.
+mcelog implements automatic offlining for memory
+. Additional user-specified
+can be also configured.
+Used for reporting uncorrected errors on PCI Express links on newer Xeon systems.
+Supported by mcelog, see IO errors
+PCI-Express Advanced Error reporting. Used for error reporting on PCI Express links.
+Not supported by mcelog, but logged to the normal kernel log. For more details
+one the implementation see the OLS paper
+See also IO-MCA
+Reliability, Availability, Serviceability.
+DMI (or SMBIOS)
+This is a standardized way for a BIOS to report the current hardware
+configuration to the operating system. The DMI information can be
+dumped with the dmidecode
+program. mcelog uses this information
+when available to map DIMM numbers to silk screen labels.
+An interface defined the ACPI
+that allows a BIOS to report errors to an operating system. Formerly
+known as WHEA
+An alternative memory error reporting framework. See the

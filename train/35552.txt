@@ -1,0 +1,30 @@
+Security Certificate with SSL encryption is Now a MUST
+With recent changes to all internet browsers; Chrome, Firefox, and Explorer have all implemented mandatory and automatic security scans of all web pages when accessed by browser. The browsers scan for pages that take public information, logins and issue a variety of warnings when the site is not secure and not encrypted. A standard web address of http://www.example.com is never encrypted.
+Visual examples below of insecure web addresses as may be displayed on your Webpage
+(What's displayed on your Website may be different. Checking is the responsibility of the Website owner to verify.)
+The only way to safeguard this from occurring is to install whats know as a "SSL Security Certificate" and Encryption on the website using SSL "Secure Socket Layer"
+By doing this it changes the web address to
+vs the former insecure
+Whys is this being done?
+The internet users are asking that websites be encrypted to prevent unwanted viewing of information between the website and the intended viewer is not a new concern. This is just now being enforced world wide in an attempt to make the internet safer for all users and stop the theft of personal, sensitive and confidential information by those less scrupulous internet users.
+This change is bound to have an positive impact by reducing the amount of stealing of confidential information such as Passwords and Credit Card information that is an active problem currently worldwide. Those same less scrupulous users though will now be able to easily identify vulnerable websites unless you take action to encrypt and safeguard your website NOW and prevent those fraudulent incidents. .
+When one installs an SSL Security Certificate with Encryption, all information is encrypted and cannot be read but by the intended recipient without the proper "key" to decipher and view it. Your web address will change from http:example.com to https://example.com (Notice the "s" in https ) and the browser will then display as "secure" for your address in the address bar and now viewers know its safe and secure.
+(example of site with Certificate installed and encryption below.)
+The use and installation of a security certificate requires a few things to be done on your website and the server it resides on to work. They do tend to be technical in nature but are not excessively complicated but if done incorrectly can take your whole website offline.
+Generation of a CSR "certificate signing Request
+Done on the server to sign your certificate request with the correct details to as the owner of the domain.
+Requesting the Certificate from a Third Party Signing Authority such as: Geotrust, Comodo
+the request must be in the correct format with the CSR and the appropriate Keys and server information
+Setup the SSL layer on the server for the certificate
+Receive and install the certificate in the correct sequence as to not take the website offline
+Test the now newly encrypted site to insure all pages are now secure
+Note: An incorrectly programmed website can have the links not correctly formatted and including the use of "http" in the call to other pages. This alone breaks the website security, correctly coded web pages do not call pages in this fashion.
+"correcting this is outside the scope of a certificate installation and does require additional coding in the website to correct and additional cost although minimal"
+We'reDigital Hosting highly recommends you to install a certificate and encryption on all websites NOW.
+TO assist we currently have savings on certificates and installation using Geotrust certificates which is the the top third party certificate issuer worldwide.
+Our Price is currently as follows:
+Basic Geotrust SSL Certificate (Encrypts website only) $79* CDN + $49.95** CDN Instillation
+Advanced Geotrust Wildcard SSL Certificate (Encrypts website and Email) $189* CDN + $49.95** CDN instillation
+*The cost of a Certificate is an annual cost. Instillation is a one time only cost.
+Call us now for more details
+Toll Free: 1-877-291-3269

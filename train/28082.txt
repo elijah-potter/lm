@@ -1,0 +1,11 @@
+I'm having some trouble with this assignment:
+Suppose the rate at which the volume in a tank decreases is proportional to the square root of the volume present. The tank initially contains 25 gallons, but has 20.25 gallons after 3 minutes.
+1. Write a differential equation that models this situation, Let V represent the volume (in gallongs) in the tank and t represent the time (in minutes).
+2. Solve for the general solution (do not solve for V).
+-I WAS going to solve for V, but it says not to. So I thought maybe it's meaning to find the integral? Which is :
+(2*k*v^(3/2)/3) = t
+3. Use the inital condition to find the constant of integration, then write the particular solution (do not solve for V).
+4. Use the second condition to find the constant of proportion.
+5. Find the volume at t=5 minutes. Round your answer to two decimal places.
+I think I might be able to do this if I knew number 2. What does it mean by "do not solve for V"? Does it mean don't evaluate the equation?
+If it's okay, could you help me on 2 first? I want to know the correct answer before I solve the other ones based on it.

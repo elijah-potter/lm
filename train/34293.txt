@@ -1,0 +1,16 @@
+PV = Pmt x (1 - 1 / (1 + i)n) / i
+PV = Present Value
+Pmt = Periodic payment
+i = Discount rate
+n = Number of periods
+The present value of annuity formula shows the value today of series of regular payments. The payments are made at the end of each period for n periods, and a discount rate i is applied.
+The annuity calculation formula discounts the value of each payment back to its value at the start of period 1 (present value).
+The Excel PV function can be used instead of the present value of annuity formula, and has the syntax shown below.
+PV(i, n, pmt, FV, type)
+*The FV and type arguments are not used when using the Excel present value of an annuity function.
+Present Value of Annuity Formula Example
+If a payment of 5,000 is received at the end of each period for 10 periods, and the discount rate is 4%, then the value of the payments today is given by the present value of annuity formula as follows:
+PV = Pmt x (1 - 1 / (1 + i)n) / i PV = 5,000 x (1 - 1 / (1 + 4%)10) / 4% PV = 40,554.48
+The same answer can be obtained using the Excel PV function as follows:
+PV = PV(i, n, pmt) PV = PV(4%,10,-5000) PV = 40,554.48
+The present value of annuity formula is one of many annuity formulas used in time value of money calculations, discover another at the link below.

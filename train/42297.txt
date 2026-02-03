@@ -1,0 +1,7 @@
+Last Update: 9/7/2020
+If you copy a space-separated string from one Origin worksheet cell to another, the entire string is pasted to the destination cell without breaking across columns. However, if you paste strings that were copied to the Clipboard, you'll likely see that the string is broken up and pasted across multiple columns (one word or token per column/cell).
+This FAQ will show you how to prevent that.
+Origin 2021 and Later
+If you have previously set LabTalk system variable @PST = 1, the Paste (keep spaces) menu item will be hidden. In this case, a simple Paste should work.
+Origin 2020b and Earlier
+Keywords:copy-paste, cell, text, Clipboard, token, tab-separated, separation, combine, Paste (keep spaces), @PST

@@ -1,0 +1,42 @@
+If you assign to an uninitialized
+the effect is to bind (for the first time) to the object. Clearly, there is
+no other choice.
+int x = 1 ; int& rx = x ; optional<int&> ora ; optional<int&> orb(x) ; ora = orb ; // now 'ora' is bound to 'x' through 'rx' *ora = 2 ; // Changes value of 'x' through 'ora' assert(x==2);
+If you assign to a bare C++ reference, the assignment is forwarded to the referenced object; it's value changes but the reference is never rebound.
+int a = 1 ; int& ra = a ; int b = 2 ; int& rb = b ; ra = rb ; // Changes the value of 'a' to 'b' assert(a==b); b = 3 ; assert(ra!=b); // 'ra' is not rebound to 'b'
+Now, if you assign to an initialized
+the effect is to rebind to the new object
+instead of assigning the referee. This is unlike bare C++ references.
+int a = 1 ; int b = 2 ; int& ra = a ; int& rb = b ; optional<int&> ora(ra) ; optional<int&> orb(rb) ; ora = orb ; // 'ora' is rebound to 'b' *ora = 3 ; // Changes value of 'b' (not 'a') assert(a==1); assert(b==3);
+Rebinding semantics for the assignment of initialized
+optional references has been
+chosen to provide consistency among initialization states
+even at the expense of lack of consistency with the semantics of bare C++ references.
+It is true that
+to behave as much as possible as
+does whenever it is initialized; but in the case when
+doing so would result in inconsistent behavior w.r.t to the lvalue initialization
+forwarding assignment to the referenced object (thus changing the referenced
+object value but not rebinding), and consider the following code:
+optional<int&> a = get(); int x = 1 ; int& rx = x ; optional<int&> b(rx); a = b ;
+What does the assignment do?
+a is uninitialized,
+the answer is clear: it binds to
+(we now have another reference to
+But what if
+a is already initialized?
+it would change the value of the referenced object (whatever that is); which
+is inconsistent with the other possible case.
+would assign just like
+does, you would never be able to use Optional's assignment without explicitly
+handling the previous initialization state unless your code is capable of functioning
+whether after the assignment,
+aliases the same object as
+That is, you would have to discriminate in order to be consistency.
+If in your code rebinding to another object is not an option, then is very
+likely that binding for the fist time isn't either. In such case, assignment
+to an uninitialized
+shall be prohibited. It is quite possible that in such scenario the precondition
+that the lvalue must be already initialized exist. If it doesn't, then binding
+for the first time is OK while rebinding is not which is IMO very unlikely.
+In such scenario, you can assign the value itself directly, as in:

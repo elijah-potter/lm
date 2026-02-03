@@ -1,0 +1,7 @@
+Imagine you have a dataset of people who have cancer.
+You have information about their age, physique, diagnosis, treatments, and results.
+Using this data, you want to prescribe a set of treatments for a new patient, P.
+Obviously, if there is someone in the dataset that has very similar traits as P and had a positive result with their treatments, you could prescribe the same set of treatments. However, this is incredibly unlikely and becomes more infeasible as more information about P is observed (e.g. Has brown hair and hates pasta).
+A better option is to cluster the dataset into groups that have positive outcomes for treatment results. For example, perhaps patients with lung cancer who smoke and are given treatment A do better than patients with lung cancer who didn't smoke and are given the same treatment A. These patients should then be divided based on this outcome.
+Once these different clusters are found, patient P can be evaluated against each of the clusters and a set of treatments can be prescribed (e.g. Most of the treatments from cluster A, but 1 treatment from cluster B).
+Unsupervised learning is the method of finding these clusters, which helps find structure to the data to better answer questions.

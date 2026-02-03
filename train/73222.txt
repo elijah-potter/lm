@@ -1,0 +1,5 @@
+Hi, all. I'm writing because there's something I don't understand in K&R's book. In Section 1.9 (character arrays), an example code is given in which the main function calls a function named getline. When getline is called for the first time, two arguments are (supposedly) passed to it, a character array named line and an integer named maxline.
+Right at this point I get confused. Up to this point in the code, the line array has only been declared but it has not been assigned any value. So, if line has not been assigned any value before calling getline, how does any character array get passed to this last function?
+In Section 1.7 (functions), a function named power is called by main. But this time, two previously defined arguments are passed to power. This example I can understand, but the inner working of the example in Section 1.9 is uncomprehensible for me at my current level in C programming.
+So, if anyone knows how to give a clear explanation about this subject, I'd love to hear it.
+Thanks in advance to those who take the time to read this post.

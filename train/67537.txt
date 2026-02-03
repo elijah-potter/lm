@@ -1,0 +1,28 @@
+How Does Data Science Endure Everyday Business Problems?
+Last Updated on January 5, 2022 by Editorial Team
+Author(s): Saniya Parveez
+Originally published on Towards AI, the World’s Leading AI and Technology News and Media Company. If you are building an AI-related product or service, we invite you to consider becoming an AI sponsor. At Towards AI, we help scale AI and technology startups. Let us help you unleash your technology to the masses.
+For the last 20 years, industries have been spending expansive investments on developing business infrastructures. Now, industries have massively interconnected infrastructures that are being operated for several pursuits. These pursuits are directed to generate and collect data throughout the business as well. Nowadays, all industries like operations, manufacturing, supply chain, marketing, etc., are aligned and focused on generating and collecting data.
+This all-around availability of data has augmented the nosiness to apprehend the business requirement, tribulations or tie-up, yields, benefits, etc. So, today is the realm of data science. Data science has eased the tasks of statisticians, modelers, and analysts. Nowadays most of the applications are based on the data-driven approach (DDD).
+Business Problems that Data Science Solves
+There are a set of standard business situations that data science is very instantaneous and precise to solve in everyday technique. Below are some common problems:
+Classification and Prediction
+Classification is very momentous to understand in business to categorize the type of population. For example, “Among all the consumers of XYZ Corp., which are probable to react to a given offer?” So, consumers can be classified into two classes called “Will React” and “Will not React”.
+Regression is also called value estimation. It tries to gauge and predict for each individual. It is based on the numerical value of some variables called features and target variables. It estimates the value of the given variables. For example, “How much will the consumer use the service?” Here target variable is services usage by the consumer.
+Regression is very close to classification, but there is a subtle difference:
+- Classification predicts whether something will transpire, but regression predicts how much something will transpire.
+It tries to recognize matching individuals based on data learned about them. It finds similar entries in the dataset. For example, Red Hat tries to find those similar companies that can have the requirement of OpenShift type of orchestrator applications.
+Many eCommerce companies are using this approach to do product recommendations for their customers.
+It groups individuals in a population together by their similarity. This technique is very handy in the decision-making process and gives answers to many questions like what product shall we offer to specific types of customers, how should our development team be structured, etc. Basically, it creates segments.
+This technique is used to find relationships between entities based on transactions entangling them. Its example can be “What products are subscribed together, what other tools are purchased if Ansible is purchased, etc.” In a supermarket, if fish or meat is purchased by a customer then it can give the answer of co-occurrence products items name like spices, chilies, turmeric, etc.
+In an online clothing portal, if a customer buys T-shirt then the portal recommends matching trousers, shoes, watches too.
+It characterizes the behavior of a customer, group, or population. Profiling is very important to handle many critical cases like fraud detection, mobile roaming charges, etc. Several examples can be seen as below:
+- Bank decides to set up an ATM for the withdrawal of cash based on the location or crime rate behavior of that location’s people.
+- Ecommerce delivers its product in the term of cash on delivery mode based on the profiling of a location.
+- Credit card charges can be decided based on the purchase trend of customers.
+This type of feature is very common in social networking websites like Facebook, Twitter, Instagram, etc. It predicts and recommends links based on the users’ interest and followee and followers circles.
+It filters the important required information from the last set of data. It generally reduces the data, so it is involved in the loss of data. It just focuses on the important stuff. For example, online food delivery portals only focus on the taste of the food of customers so that they will be able to make the taste of food better.
+The all-around availability of data has guided growing curiosity in strategies for extracting useful information and understanding from data. With extensive quantities of data currently available, businesses in nearly every industry are concentrating on manipulating data for a competitive edge. Data science plays a vital role in the analysis, prediction, visualization of such massive data.
+How does Data Science Endure Everyday Business Problems? was originally published in Towards AI on Medium, where people are continuing the conversation by highlighting and responding to this story.
+Join thousands of data leaders on the AI newsletter. It’s free, we don’t spam, and we never share your email address. Keep up to date with the latest work in AI. From research to projects and ideas. If you are building an AI startup, an AI-related product, or a service, we invite you to consider becoming a sponsor.
+Published via Towards AI

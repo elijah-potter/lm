@@ -1,0 +1,9 @@
+Science Fair Project Encyclopedia
+The word modulo is the Latin ablative of modulus. It was introduced into mathematics in the book Disquisitiones Arithmeticae by Carl Friedrich Gauss in 1801. His definition is the first in the list below. Ever since however, "modulo" has gained many meanings, some exact and some imprecise.
+- Given the integers a, b and n, the expression (pronounced "a is congruent to b modulo n") means that a and b have same remainder when divided by n, or equivalently, that a−b is a multiple of n. For more details, see modular arithmetic.
+- In computing, given two integers, a and n, a mod n is the remainder of integer division of a by n. See modulo operation.
+- Two members of a ring or an algebra are congruent modulo an ideal if the difference between them is in the ideal.
+- Two members a and b of a group are congruent modulo a normal subgroup iff ab−1 is a member of the normal subgroup. See quotient group and isomorphism theorem.
+- Two subsets of an infinite set are equal modulo finite sets precisely if their symmetric difference is finite, that is, you can take a finite piece from the first infinite set, then add a finite piece to it, and get as result the second infinite set.
+- In the mathematical community, the word modulo is also used informally, in many imprecise ways. Generally, to say "A is the same as B modulo C" means, more-or-less, "A and B are the same except for differences accounted for or explained by C". See modulo (jargon).
+The contents of this article is licensed from www.wikipedia.org under the GNU Free Documentation License. Click here to see the transparent copy and copyright details

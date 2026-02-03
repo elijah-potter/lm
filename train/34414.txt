@@ -1,0 +1,18 @@
+- Basic objects
+- Object constructors
+- Getters and Setters
+If we want to create multiple instances of an object, we can use object constructors to define a template. By convention, constructors are named with a capital letter.
+The new keyword
+As you can see, the object constructor is just a normal function. However, the important part is the new keyword, used when creating a new object instance of the constructor, which then returns the instance. Without it, you’ll have a normal function, which returns nothing (actually, undefined), and sets the constructor properties on the window object (overwriting any window property of the same name).
+If you haven’t included
+'use strict' in your file, you won’t even get an error about this.
+A property on an object is more than just a name and a value. You can see those by using the property descriptor method.
+writable you can set whether it’s possible to change the initial value or not. You can define this with the define property method.
+If you use
+'use strict'; in your file, you’ll get a
+TypeError: Cannot assign to read only property 'name' of object error on trying to change the name, otherwise silence.
+enumerable set to
+false you can choose to hide the property from the object, which can be useful if you fx don’t want to include it in a loop.
+configurable you can set whether it’s possible to redefine the property configuration or delete the property.
+Getters and Setters
+set attributes on an object lets you specify a return value of a property using a function, while also giving access to set the property - just like any other property.

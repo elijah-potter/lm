@@ -1,0 +1,6 @@
+What Does Integration Architecture Mean?
+Integration architecture is a software architecture that facilitates the integration of multiple IT components. This architecture changes with the advances in cross-platform utility and other development paradigms for new kinds of digital operations.
+Techopedia Explains Integration Architecture
+In some senses, integration is about "breaking down silos" and helping different software programs to communicate. Embedding an application in a greater context can require specialized tools, such as application programming interfaces (APIs), made specifically for the purpose of allowing this kind of integration. Cloud-based architectures and other kinds of new options are becoming popular for use in integration architectures.
+Using tools like APIs, middleware and other resources, engineers cobble together workable architectures that successfully integrate their many parts. When applied to business, this is often called enterprise application integration, and is done to support key business goals.
+Another way to think about integration architecture is as the "skeleton" of an IT system or, as some experts call it, the "plumbing" of a system. There are different methods, like point-to-point integration, and different "topologies" for integration that make a difference in design.

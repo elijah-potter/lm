@@ -1,0 +1,9 @@
+Data presentation is an art to which many scientists give too little attention. It's good that you are trying to do it well.
+Check out the ideas at http://www.sciencebuddies.org/science-fair-projects/project_data_analysis.shtml
+and other pages turned up by a search of the Science Buddies Project Guide.
+As I understand your question, you are not planning to plot a chart spit out by the chromatograph, but you want to plot the numerical data derived from the chromatograph output. If I understand, you will have four dimensions in your data: sample id, trial number, retention time, and peak value.
+Well, 4D graphs don't work well in our 3D world, much less on 2D displays, so some data compression is required. More importantly, I don't think all the dimensions are of equal importance, and even if you could make a 4D graph, it would be very confusing.
+I think that while the sample number dimension is very important, it maybe should be dealt with before moving on to the rest of the analysis. Do your samples all give very nearly the same result? If yes, then you might just give the average values and spread of retention time and peak value to indicate the uncertainty, and then plot the averages in the rest of the analysis. If the spread from sample to sample is large, then you have to explain it in more detail. That handles one dimension.
+You could plot the remaining three dimensions on a 2D graph by plotting retention time on one axis, peak value on the other axis, and represent sample id with differently colored or shaped symbols. Another option would be to use multiple graphs of peak value vs. retention time, one for each sample id.
+My suggestions are more or less the common ideas that come to mind. You may think of much more novel ways. Whatever you decide to use, test it on your friends before you commit to it, and use it only if your test subjects find it easily understandable.
+Good luck, WW

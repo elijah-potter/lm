@@ -1,0 +1,19 @@
+Social Network For Security Executives: Help Make Right Cyber Security Decisions
+Today we will show how SAP Afaria, an MDM solution from a world-famous software vendor, works and how cybercriminals can attack it in different ways.
+In a nutshell, MDM is a set of services that help an administrator of a large company to control the mobile devices (smartphones, tablets, phablets and so on and so forth) of employees, thus establishing the security measures of corporate data stored and processed on those devices. A special application called MDM client is installed on a device and allows administrators to implement settings.
+Afaria is used by companies around the world. We have found about 140 Afaria servers available via the Internet.
+As you can see from the graph, the largest number of Afaria services is implemented in the US and China.
+We would like to describe a very interesting Afaria vulnerability here.
+The administrative part of SAP Afaria performs the basic functionality and is available via browser. Web administrative console is where a system administrator can view a list of all connected devices, create new mobile device configurations, download applications, control devices, etc.
+So, the XSS vulnerability in the administrative console is likely to be critical for the entire system and for the administrator in particular. A common Afaria user, of course, can’t obtain access to these functionalities. However, an injection of user data is still possible. So, let's examine what will happen if we try to connect a new device to the server without the proper rights (and the user account).
+That’s what we get: the server, of course, does not allow us to connect this device. However, the list of devices in the administrative console (it is the administrator’s main workspace) shows the information about the device marked as “Not approved”. It means that an attacker can inject some data into the administrative console anonymously. Guess in which field a JS injection is possible. The server does not filter the information before displaying the device IMEI.
+Let’s assume the attackers want to inject the following JS code:
+<script>alert('Hello Afaria! U so secure!');</script>
+To do so, they have to send a request to the server with the following values in the IMEI field:
+*/a04=" U so";/*
+As you may notice, there are special characters /**/ in every query. They are used to mark comments in JS. This way, unnecessary parts of HTML markup that prevent getting the final result are deleted.
+What’s the final result? The web server will build an HTML page in the admin panel in which all the little pieces will be brought together into one JS script to be executed during the administrator’s session. It allows the attacker to gain data from the Afaria admin panel, and thus to control all devices connected to the server.
+The screenshot below shows the administrative console’s source code with JS injected into the device IMEI field:
+The XSS vulnerability was closed by SAP. Install SAP Note 2152669 to fix this issue.
+Please keep in mind that this issue is very critical because it can be remotely exploited without authentication, and there are at least 140 servers available on the Internet. An attacker can get full control over all mobile devices of organization, such as remotely wipe data, lock all smartphones, or even force to upload malicious backdoor which will control user’s data, send critical documents to C&C server, spy on employees, read messages, and record video from cameras.
+We will keep posting more blogs on SAP Security here.

@@ -1,0 +1,37 @@
+A next generation RAM memory that remembers data even when the power is turned off is nearing production. Unlike most RAM, ReRAM is non-volatile memory, meaning that it retains data without power.
+Current types of non-volatile memory, such as flash memory, are used in everything from USB sticks to solid state drives.
+But while flash memory is faster than hard disk storage, it is still significantly slower than RAM, particularly when it comes to writing data. This makes it less suitable for the many processes involved in running programs.
+That means most computers use forms of memory which require power to constantly "refresh" their contents to prevent it being lost.
+In laptop and desktop computers, this is usually Dynamic Random Access Memory (DRAM).
+"When the power disappears, the content of the memory is forgotten," says Dr Richard Boardman from the University of Southampton's school of engineering sciences.
+"This process does not take long - within a few seconds it is practically unreadable, even with sophisticated tools. Secondly, because the DRAM must always remain powered, this increases standby consumption for devices, along with the risk that the content will vanish if the power does."
+ReRAM - or resistance memory - solves this problem by using materials that change resistance in response to voltage. They then "remember" that level, even when the power is turned off.
+Recently, the Japanese memory manufacturer Elpida announced it had produced a prototype ReRAM memory with speeds comparable to DRAM.
+"Its most attractive feature is that it can read/write data at high speeds using little voltage," Elpida said in a press release.
+"It has a write speed of 10 nanoseconds, about the same as DRAM."
+It is not just in speed that DRAM has an advantage over flash - it is also longer lasting.
+Continue reading the main story
+They've made a significant advance, but others are hot on their heels”
+Prof Alan Woodward University of Surrey
+Memory manufacturers talk about the "endurance" of memory, in other words how often it can be used before it becomes unreliable.
+"Flash can only write data tens or hundreds of thousands of times to the same spot before the risk of device failure becomes high," says Dr Boardman.
+"This might sound like a lot, but without technologies in place to spread the data writes around, this limit can be reached very quickly."
+At present, the endurance of DRAM is effectively a lifetime of usage.
+Elpida said that its new prototype had a write endurance of more than a million times.
+"It is good progress but they are not at DRAM levels of endurance. There is still a long way to go," says Professor Daping Chu of the University of Cambridge's engineering department.
+Elpida has said it will work with Sharp to develop ReRAM chips. Others too are using the technology to develop products.
+Last year, Panasonic announced they had plans to go into production with ReRAM, and Hewlett Packard and Hynix Semiconductor have also joined forces to launch products within the next couple of years.
+But the innovation will have to compete with a number of rival developments - some of which are already in production.
+Everspin makes a type called MRAM (magnetoresistive random access memory), which uses magnetic properties to store data.
+Dell already uses the product in some of its servers to ensure its data is protected against power failure. Its downside is that, after decades of research, it remains expensive.
+Meanwhile, Micron recently demonstrated its alternative PCM (phase-change memory) format; Samsung is working on STT-RAM (spin transfer torque RAM); Unity Semiconductor is developing CMOx (complementary metal oxide); start-up Adesto says it is close to bringing CBRAM (conductive bridging RAM) to market; and Intel has dubbed its magnetic memory solution "Racetrack".
+Professor Chu says that several of these rival next-generation formats match ReRAM's performance.
+"Other approaches have proven reliability and similar speeds and the same or higher densities," he says.
+However, Dr Will Branford of Imperial College thinks ReRAM still has a chance to come out on top.
+"The next generation of RAM will combine the speed of power-hungry DRAM with the non-volatility of flash.
+"MRAM, the current leader in this field, is already a commercial product. [But] Elpida's work shows that ReRAM is a viable competitor for this market."
+The level of interest in new kinds of RAM memory reflects the commercial potential of any successful product that can compete with both flash and DRAM.
+The ultimate ambition, according to Professor Alan Woodward of the University of Surrey, is to produce a type of universal memory "that you can take from one computing device to another".
+Of the Elpida prototype he says: "Clearly they've made a significant advance, but others are hot on their heels".
+If ReRAM achieves dominance it promises faster running, more energy efficient, quicker-to-reboot PCs, tablets and handsets. It would also make its patent holders rich.
+But if manufacturers opt for a rival candidate, it may just become yet another acronym to fall victim to the format wars. (Source: BBC NEWS)

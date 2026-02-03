@@ -1,0 +1,31 @@
+Obstructions along a road are indicated by the symbol OB at the end of the
+formula. Details of the obstructions are shown in Section III on the DA Form 1248 and on
+the accompanying overlay. Obstructions to be reported include the following:
+Overhead obstructions (such as bridges, tunnels, underpasses, overhead
+wires, and overhanging buildings) with an overhead clearance of less than
+Reduction in traveled-way widths that are below standard minimums
+prescribed for the type of traffic flow (Table 2-1, page 2-5) (such as bridges,
+tunnels, craters, lanes through mined areas, and projecting buildings or
+Gradients (slopes) of 7 percent or greater.
+Curves with a radius of curvature of 25 meters and less (STANAG 2253).
+Regular, recurrent, and serious blockage from the effects of snow or flooding are
+represented in the road classification formula. The symbol T (for snow blockage) and/or the
+symbol W (for flooding) follows the road classification formula. In the case where the
+conditions for snow and flooding both exist, a T and a W follows the route classification
+Usage and proper sequence of presentation are shown in the following examples
+of the road classification formula:
+A 5.0/6.2 k. This formula describes a road with no limiting characteristics or
+obstructions, a minimum traveled-way width of 5 meters, a combined
+traveled-way and shoulder width of 6.2 meters, and a concrete surface.
+B g s 4/5 l (OB). This formula describes a road with limiting characteristics
+of steep gradients and a rough surface, a minimum traveled-way width of
+4 meters, a combined traveled-way and shoulder width of 5 meters, a gravel
+or lightly metalled surface, and with an obstruction.
+B c (f?) 3.2/4.8 p (4.3 km) (OB) (T). This formula describes a road with
+limiting characteristics of sharp curves and unknown foundation, a
+minimum traveled-way width of 3.2 meters, a combined traveled-way and
+shoulder width of 4.8 meters, a paving brick or stone surface, a route length
+of 4.3 kilometers, with an obstruction, and subject to snow blockage.
+A 7 + 7/20 k. This formula describes a dual road. Each traveled way is
+7-meters wide, and the overall width is 20 meters (including the shoulders).
+It has a concrete surface and no limiting factors.

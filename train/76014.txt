@@ -1,0 +1,22 @@
+Foreign Language Word Processing in the Language Learning
+Modern Languages Department, SUNY Cortland
+The US-International keyboard uses the ', `, ~, ^, " as dead keys (highlighted in blue below), and uses Right-ALT plus !, ?, and a number of other keys to produce characters not normally available. The accents are intuitive, and they work with the standard US keyboard so students do not need to learn any special codes or non-standard letter positions.
+Tap the accent dead key, then tap the vowel for which you want the accent. The ' dead key also works for the cedilla:
++ e = é
+` + e = è
+~ + n = ñ
++ e = ê
+" + e = ë
+' + c = ç
+Hitting the spacebar or a non-accented letter after a dead key produces the key's normal value, i.e. ', `, ~, ^, or ". Caveat: If you type fast, it is easy to get an accent when you actually meant to type a real apostrophe before a vowel.
+Other special characters can be entered by using the Right-Alt key in combination with other keys (esp. useful for ¿, ¡ «, » ß). For Spanish, it might be easier to use the Right-Alt key for accents too:
+= ¿ Alt-! = ¡ Alt-s = ß
+Alt-n = ñ Alt-N = Ñ Alt-, = ç
+Alt-a = á Alt-e = é Alt-i = í Alt-o = ó Alt-u = ú
+|To select a different base keyboard in the lab, click on the symbol on the taskbar (or Alt-Shift) to choose from a variety of foreign keyboards.
+To select the US-International keyboard in the Modern Language Department lab, click on the symbol for a choice between the US and US-International keyboards.
+Spelling and grammar proofing in MS Word:
+Spell check, grammar, and thesaurus software for French and Spanish is available for MS Word. The correct dictionary will be used automatically for any part of a document, and the language for text can also be set manually (see Review menu).
+Keyboards outside the Language Learning Lab:
+In other computer labs, you may need to use Word's built-in shortcut keys for typing accents.
+For your own Windows computer, we recommend installing your additional keyboard under a separate language. For instance, go to your Region & Language settings in Control Panel; then on the Keyboards and Languages tab click Change keyboards; add your new language (in this case French), but under the keyboard for French, check US-International. This will let you use the keyboard hot-key left-Alt + Shift to switch between the US keyboard and the US-International and see which keyboard you are using by looking at the taskbar. On the Advanced Key Settings tab, you could even change the hotkeys for switching between your keyboards.

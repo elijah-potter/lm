@@ -1,0 +1,4 @@
+what is jre????? why java is robust in nature??????? why it is platform independent???????
+JRE: Java Runtime Environment or JRE is the run time for executing the Java applications. Read more about JRE at http://www.roseindia.net/java/java-virtual-machine.shtml
+Java is very robust: Java is very reliable software to write applications of any complexity. Java checks the program to find out the possible problems, later dynamic (runtime) checking, and eliminating situations that are error prone.
+Java is Platform independent: You can write and compile the Java program and then run on any platform ( windows, linux, unix etc).

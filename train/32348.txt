@@ -1,0 +1,38 @@
+Almost all mobile phones come with a camera function these days. This has made it very easy and convenient to snap photographs of everyday moments, and to also capture violations as they happen. It's important to note that the ability for a mobile phone to be mobile means it can automatically pinpoint our location. Generally, mobile phones can also stamp information about our location on the photographs that we capture. This is called "geotagging", in other words, tagging the geographical location onto a type of content like photographs, text and others. Many digital cameras do this too.
+Location-based applications that build on this function have been instrumental in enabling a range of activities and interaction for mobile phone and the internet users. For example, the Take Back the Tech! map to document experiences of violence against women in different parts of the world is made possible through an open map that can capture location information.
+Sometimes we choose to share our location openly on social networking sites like Twitter and Facebook to exchange tips, announce events, mobilise action, recommend special sites and help us find public services right where we are - even connect with friends passing by. Women's rights activists use location-based services to document abuses, map unsafe sections of town, shame street harassers or to help other women in trouble find a shelter or police station quickly.
+It's important to be aware however, that every time we geotag or share our location online, it can be seen by many more people than those that we have purposefully chosen to share it with. Content we create contains metadata, which provides contextual information about each piece of data we make. Metadata about a document might have information about when it was first created, the computer name where it was created, length, etc. Photo metadata can give information about the type of camera used, the time when the photograph was taken, and also the very specific longitude and latitude you were in when you took the shot. Smart phones usually do this by default. When you input that data into a map, you might even get a street address.
+This type of data is not visibly stamped on our photos, unlike dates which sometimes are. So even if you are careful about not revealing any personal details on what you post, the photos you put online may make it easy to locate your favourite places to go and where you live. Women who have been cyberstalked report being unsettled by unknown stalkers' ability to pinpoint their location. They find themselves looking over their shoulders when in reality, the stalkers may be across the world looking at photos the women uploaded via Twitpik and Twitter. An informational site, Icanstalku.com, was created precisely to alert people when their photos share too much information. It also provides tips on how you can change the settings on your smart phones so that you only share pictures and not your location.
+Sharing photographs can be very empowering and important to us at many levels, from personal to political. We just need to be aware and take control of information that we didn't realise we were sharing. Find out, understand, and decide when to delete your location footprints. Take Back the Tech!
+- Find out what metadata is embedded in your photographs by looking for the EXIF data.
+- EXIF stands for Exchangeable Image File, and stores data like type of camera, date, time etc in JPEG, TIFF or RAW image file formats.
+- If you haven't disabled geolocation on your mobile phone settings, then photographs that you've taken with your mobile phone will probably also contain location information in the EXIF data.
+- To find the EXIF data:
+- On Windows, go to explorer, right click on the image and choose "Properties", then "Summary", and you will be able to see EXIF as one of the tabs.
+- On Linux, if you're using GNOME, right click on the file and choose "Properties", then "Image" to view the EXIF data. If you're using KDE, right click on the file, select "Properties", then "Meta info".
+- On Mac, right click on the file and select "Get info", expand the "More info" section to display the information.
+- If you use something like Flickr to store and share photographs, you can see the EXIF data by clicking on "Actions", then "view EXIF info"
+- Find out what location information is shared on photographs posted online.
+- As a learning experiment, go to Icanstalku.com. As mentioned, the site aims to raise awareness around location data that we unknowingly share by collating these into one space and providing more information on changing this practice.
+- Click on one of the Twitter accounts listed.
+- Select one of their Twitpic links to find a photo. Check that it is a full-sized version of the photograph.
+- Copy and paste the link of the picture into this website tool http://exif-viewer.com. The website will examine the photo's EXIF data.
+- Sometimes photos will not have EXIF data, other times, you will see a long list of terms each telling you different things about how, when and where the image was taken.
+- Look for GPS latitude and longtitude.
+GPSLatitude 1/1,17/1,17/1 GPSLatitudeRef N GPSLongitude 103/1,49/1,6/1 GPSLongitudeRef E
+- Transform the EXIF data into map coordinates. In the above example, the coordinates are in the format of degrees, minutes and seconds, like this:
+- 1 degree 17 minutes 17 seconds N, 103 degrees 49 minutes 6 seconds E. Convert them to map coordinates so that they look like this:
+- 1° 17′ 17″ N 103° 49′ 6″ E
+- Go to maps.google.com and paste this information to get a location – sometimes even a street address.
+- Keeping geotags on your photos can be very useful, especially as we look back on our favourite shots over time and try to place where we are. For photographers, it is important to share what type of camera and lens took a shot.
+- Reflect on who you take photos of.
+- Does your photo put someone else at risk with geotagging information? Note that even if you are taking photos of scenery or a plate of food, metadata can reveal your location.
+4) Clean up your location footprints
+- Protect your privacy by taking control of when to activate, and when to de-activate geotagging.
+- Icanstalku.com provides detailed instructions on how to deactivate geotagging in your specific mobile phone camera model.
+- It´s very easy to turn off any location-based applications in your phones, or just geotagging for your cameras.
+- When you share a photograph online, save the file into a smaller format. This automatically removes most of the EXIF data to reduce the file size.
+- If you crop your photo, rename it, to ensure that you are not uploading the original photo's thumbnail in the EXIF info.
+- If you use an image editor like Photoshop or GIMP, choose save for web, and the programme will eliminate EXIF data for you.
+- If sharing a full size photograph is important for particular reasons, there are also many free software programmes available for removing EXIF data
+Take control of the information you post online. Find out, reflect and exercise your right to decide what you'd like to share. And have fun doing it! :)

@@ -1,0 +1,6 @@
+12. User Input
+This chapter covers capturing user input for use in Sir Lamorak’s Quest. For any game to work, there needs to be some kind of input from the player. This could be simply moving a game piece on a board game, selecting options, or moving a player around a 3D environment.
+Until the arrival of the iPhone, most handheld consoles had one or more joypad controls built into the device, along with a number of buttons. Input from these would be processed by the game to identify what the player wants to do. There were some devices that also had basic touch capability using a stylus of some type, but this was not normally the primary input device for the player.
+The iPhone introduced two unique methods for interacting with the device: multitouch ...
+Get Learning iOS Game Programming now with the O’Reilly learning platform.
+O’Reilly members experience books, live events, courses curated by job role, and more from O’Reilly and nearly 200 top publishers.

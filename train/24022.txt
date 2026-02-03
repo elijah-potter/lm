@@ -1,0 +1,31 @@
+SecurID is a mechanism developed by RSA Security for authenticating a user to a network resource.
+The SecurID authentication mechanism consists of a "token" -- a piece of hardware assigned to a user that generates an authentication code every sixty seconds using a built-in clock and the card's factory-encoded random key (known as the "seed"). The seed is different for each token, and is loaded into the corresponding SecurID server (the "ACE Server") as the tokens are purchased.
+The token hardware is designed to be tamper resistant to deter reverse engineering of the token.
+A user authenticating to a network resource -- say, a dial-in server or a firewall -- needs to enter both a PIN (something you know) and the number being displayed at that moment in time on her SecurID token (something you have). The server, which also has a real-time clock and a database of valid cards with the associated seed records, computes what number the token is supposed to be showing at that moment in time, checks it against what the user entered, and makes the decision to allow or deny access.
+While the SecurID system can add a layer of security to a network, difficulty can occur if the authentication server's clock becomes out of synch with the clock built in to the authentication tokens. However, typically the ACE Server automatically corrects for this without affecting the user. It is also possible to manually re-sync a token in the ACE server. Also, providing authentication tokens to everyone who might need to access a network resource can be expensive, particularly as the tokens are programmed to "expire" at a fixed time, usually three years, requiring purchase of a new token.
+[ wikipedia ]
+i watched the STS-114 Discovery Space Shuttle launch live on NASA TV on July 27th. NASA TV was also showing a live feed into the Control Rooms when the Mars Pathfinder landed on Mars and recently when Deep Impact smashed into Comet Tempel 1. watching these missions and the first pictures and images that are beamed back from millions of miles away is such an exhilirating experience. I hope space travel becomes affordable for normal passengers within my lifetime. i would absoluetly go up in space if i had the chance to. the revolution has already started with the successful completion of the Ansari X Prize and the upcoming Virgin Galactic. Trump should throw in his support and announce a Trump Tower on the Moon!!
+Tonight on the way home from work I spontaneously decided to stop at the convenient store so I could pick up a delicious six pack of Sam AdamÃ¢â‚¬â„¢s summer ale. ItÃ¢â‚¬â„¢s a nice wheat brew thatÃ¢â‚¬â„¢s a bit like a hefeweizen.Ã‚Â I dropped my prize on the counter and the man behind it instantly said Ã¢â‚¬Å“ID.Ã¢â‚¬Â
+Not Ã¢â‚¬Å“ID, pleaseÃ¢â‚¬Â or Ã¢â‚¬Å“May I see your IDÃ¢â‚¬Â but a pretty matter-of-fact Ã¢â‚¬Å“ID.Ã¢â‚¬Â
+I already had my wallet in my hand, though, so it wasnÃ¢â‚¬â„¢t much trouble to open it and slide my driverÃ¢â‚¬â„¢s license out and place it into his hands.
+Ã¢â‚¬Å“This driverÃ¢â‚¬â„¢s license is expiredÃ¢â‚¬Â he says to me.
+IÃ¢â‚¬â„¢m not going to deny it Ã¢â‚¬â€œ my driverÃ¢â‚¬â„¢s license is expired by almost a month now. However, the driverÃ¢â‚¬â„¢s license explicitly states that I was born in 1978 so its expiration shouldnÃ¢â‚¬â„¢t be much of an issue.
+Ã¢â‚¬Å“Yeah, itÃ¢â‚¬â„¢s expired,Ã¢â‚¬Â I said. Ã¢â‚¬Å“But that shouldnÃ¢â‚¬â„¢t really matter. It still shows the year I was born and IÃ¢â‚¬â„¢m obviously way over the age limit required to buy beer soÃ¢â‚¬Â¦Ã¢â‚¬Â
+Ã¢â‚¬Å“But itÃ¢â‚¬â„¢s expired.Ã¢â‚¬Â He looked at me with a very serious business expression.
+Ã¢â‚¬Å“I realize itÃ¢â‚¬â„¢s expired, sir, but it still shows the year I was born, regardless.Ã¢â‚¬Â
+He then gave me what I swear to God is one of the blankest, most confused and dumbfounded looks I have ever received in my life. He just sort of stared at me as if what I had been saying was some sort of voodoo science that made no sense. Then comprehension slowly dawned on his face.
+Ã¢â‚¬Å“Six fifty-three.Ã¢â‚¬Â He said, again very matter of factly.
+I had exactly two hundred dollars in my wallet in the form of two one hundred dollar bills. I handed him one.
+Ã¢â‚¬Å“Oh, no, I donÃ¢â‚¬â„¢t have change for this.Ã¢â‚¬Â He said, disappointingly.
+Keep in mind that by this time there were at least four or five people behind me in line shuffling their feet. I was already embarrassed, regardless of whether it was my fault or not that we were having this delay, so I was ready to just leave and accept the fact that I wouldnÃ¢â‚¬â„¢t have any golden ale tonight whenÃ¢â‚¬Â¦
+Ã¢â‚¬Å“HereÃ¢â‚¬Â the guy said from behind me, slipping me five twenty dollar bills. I handed him my hundred. I guess there are still good people in the world.
+Ã¢â‚¬Å“Oh, thanks.Ã¢â‚¬Â I said. Problem solved.
+I handed a twenty dollar bill to the cashier. He plinked open the register as if none of this were odd and gave me my change. Thank God that ordeal was over.
+I moved my stuff off to the side and started stuffing change into my wallet so the next guy could buy his stuff. I didnÃ¢â‚¬â„¢t want to hold anybody up anymore. I heard the cashier give him his total which was just a couple of dollars. Then I heard, Ã¢â‚¬Å“I donÃ¢â‚¬â„¢t have change for that.Ã¢â‚¬Â
+I turned my head and saw the guy who just helped me holding what was moments ago my hundred dollar bill.
+Ã¢â‚¬Å“But this is all I haveÃ¢â‚¬Â, he said.
+At this point IÃ¢â‚¬â„¢m fucking dumbfounded. This guy just gave me five twenties knowing that I needed them because the cashier couldnÃ¢â‚¬â„¢t give me change for a hundred. Then he immediately tried to use the same bill to buy his pastry and energy drink.
+The guy looked at me. I looked at him. The cashier looked at us both like we were the biggest idiots he had ever come across in his life. Four people in line stared incredulously at my new friend and I.
+I handed the cashier a ten dollar bill and said, Ã¢â‚¬Å“here, use thisÃ¢â‚¬Â and without question he did. The guy buying the pastry and energy drink mumbled a weak Ã¢â‚¬Å“thanksÃ¢â‚¬Â and hurried out before I could even get my change.
+I donÃ¢â‚¬â„¢t have a clever way to end this story because IÃ¢â‚¬â„¢m still pissed off I paid for some assholeÃ¢â‚¬â„¢s pastry. The end.
+[ shack ]

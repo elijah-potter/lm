@@ -1,0 +1,6 @@
+TDD and FDD are two methods of achieving a two way path (duplex) between two communications nodes (i.e. transceivers). They are mainly of interest for cell phones and digital data devices (e.g. WiFi). A Google search of "TDD FDD" will lead to several informative explanations.
+FDD is Frequency Division Duplex. In this case the two nodes select different frequencies (e.g. one for the cell phone, one for the base station) and they can both transmit continuously. In this case pin 6 of the LNA is configured for always on operation.
+TDD is Time Division Duplex. In this case both nodes transmit and receive on the same frequency. They achieve duplex operation by careful timing of the times each sends a packet of data to the other. Pin 6 determines when the node is receiving. This would not work too well for analog transmissions.
+With SSB or FM modes on 2m, neither quite applies to you. The connection to pin 6 via R1 and R2 determines whether the chip can be powered down with a logic signal.
+Which arrangement is useful to you depends on the nature of the system you are using. For typical preamp use, you would likely just have it on all the time and use a relay or PIN diodes for antenna switching.
+How well that chip would work for you, I have no idea.

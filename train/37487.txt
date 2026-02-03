@@ -1,0 +1,4 @@
+A logic puzzle created by studiogiochi, improving and rationalizing existing games.
+Each space represents a room with doors in each side. Reconstruct the map of the “castle” closing (that is, blakening) some door; note that:
+• the numbers show how many other spaces you can “see” (diagonally, horizontally and vertically) from the space in which the number is placed; for example a 2 means that from that spaces you can see other 2 spaces in total.
+• from each room you can reach any other room, that is, there are not isolated rooms or groups of rooms.

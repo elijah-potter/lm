@@ -1,0 +1,6 @@
+‘Helpers are methods in modules that you keep mostly hidden out of the way. The idea is to keep as much Ruby code out of the views, so helpers are mainly for use in that context. Helpers are the only methods you can access, other than instance methods for an instance you have access to.’ except from
+Declare a controller method as a helper. For example, the following makes the current_user controller method available to the view. You
+1 2 3 4 5 6 7 8 9 10 11
+In a view:
+Parameters method[, method] - A name or names of a method on the controller to be made available on the view.
+A solid beginner’s break-down (it’s a little old though) is here.

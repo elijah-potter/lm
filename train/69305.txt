@@ -1,0 +1,29 @@
+Flow Simulation (CFD) and Shape Optimization of an Airfoil Design and Compare with Wind Tunnel Experiment Result
+The Aerospace industry is increasingly relying on advanced numerical flow simulation tools for analyzing all the components of aircraft. The main part which helps in producing lift is wings. So, the shape of the aerofoil should be designed in such a manner so that maximum lift can be achieved. In this project, you are going to work on a standard NACA airfoil and analyze it using finite element volume tool AcuSolve. Then you have to validate your numerical result with the wind tunnel experiment result.
+Looking to build project on Computational Fluid Dynamics?:
+Skyfi Labs gives you the easiest way to learn and build this project.
+- Computational Fluid Dynamics Kit will be shipped to you (anywhere in the world!)
+- Use high quality videos to understand concepts and build the project
+- Get 1 to 1 expert assistance from Skyfi Labs engineers while doing the project
+- Earn a smart certificate on finishing the project
+You can start for free and pay only if you like it!
+To implement this project, you need to have knowledge of CFD and Acusolve. A symmetrical airfoil better suits for frequent inverted flight as in an aerobatic aircraft .so, you need to choose a standard NACA 4-digit series symmetrical airfoil for this project. At 1st you have to apply the basic physical laws of engineering and science to understand the principles of flight. Make a scaled model prototype of standard NACA airfoil for both wind tunnel analysis and CFD simulation purpose. Perform Wind tunnel analysis to get experiment result data regarding lift, drag and stall with respect to the various angle of attack at various airspeed. Then perform CFD simulation using Acusolve to find out a numerical solution. Compare both the result to validate your CFD result.
+- Airfoil: An airfoil is a body of such a shape that when it is placed in an airstream, it produces an aerodynamic force. This can be seen in the cross-section of wings, propeller blades, windmill blades, compressor, and turbine blades in a jet engine.
+- NACA Airfoil: The NACA airfoils are airfoil shapes for aircraft wings developed by the National Advisory Committee for Aeronautics (NACA). The shape of the NACA airfoils is described using a series of digits following the word "NACA”. You can use NACA 0012 for your project.
+- CFD: Computational Fluid Dynamics (CFD) is the science of predicting fluid flow, heat and mass transfer, chemical reactions, and related phenomena using numerical methods. It produces a fairly accurate result with ease and convenience.
+Did you know
+Skyfi Labs helps students learn practical skills by building real-world projects.
+You can enrol with friends and receive kits at your doorstep
+You can learn from experts, build working projects, showcase skills to the world and grab the best jobs.
+Get started today!
+- Perform wind tunnel analysis and record pressure head at different points by varying angle of attack and wind velocity in succession. Then from that calculate lift force, drag force and lift coefficient. Plot all the data vs Angle of attack.
+- Then perform CFD simulation using the Acusolve software. Do proper meshing in the boundary layer for a better result. With the help of Aerodynamic characteristic of the airfoil such as static and dynamic pressure, skin friction coefficient, wall shear stress, turbulence intensity in the transonic regime you need to analyze and predict the performance parameters of the airfoil such as lift coefficient, drag coefficient at a various angle of attack and wind speed.
+- By plotting various graphs such as Lift coefficient vs angle of attack, Drag coefficient vs angle of attack compares your CFD result with the experimental result for validating your numerical solution.
+Project Brief: Doing this project you can observe that lift force on an Airfoil increases up to a certain angle of attack after which it reduces giving rise to stall.
+- Acusolve: You will be needing Acusolve software to perform CFD simulation and visualization of the result.
+- Miniplot: Also, you need plotting software such as Miniplot or Uniplot to plot the result data and compare the results.
+Latest projects on ANSYS
+Want to develop practical skills on ANSYS? Checkout our latest projects and start learning for free
+Kit required to develop Flow Simulation (CFD) and Shape Optimization of an Airfoil Design and Compare with Wind Tunnel Experiment Result:
+Technologies you will learn by working on Flow Simulation (CFD) and Shape Optimization of an Airfoil Design and Compare with Wind Tunnel Experiment Result:
+Flow Simulation (CFD) and Shape Optimization of an Airfoil Design

@@ -1,0 +1,10 @@
+Artificial Intelligence (AI) was first defined by John McCarthy as “the science and engineering of making intelligent machines, especially intelligent computer programs” . The early researchers in AI set the target very high: they aimed to recreate the human intelligence.
+In the 1950s and 1960s this promise failed to materialise. Perhaps because the target was not only high, but moving: the moment the machine learned to do something as well as, or better than, humans, people stopped referring to it as “AI”.
+AI became unfashionable for quite some time, until it resurfaced in the 2000s as Machine Learning (ML). ML focussed more on algorithms (recipes given to a machine to do some useful work) than on philosophy and “blue sky” science. ML is more concerned with the particular configuration of the neural net that you are applying to a specific task than with, say, the philosophical implications of the Turing test.
+Recent advances in algorithmics (e.g. backpropagation) and computing hardware have led to the possibility of calibrating and using large (deep) neural networks — Deep Learning (DL), and a resurgence of interest
+in ML. As soon as ML became reasonably successful, it was rebranded back to AI.
+Artificial neural networks (ANN) or connectionist systems are computing systems that are inspired by biological neural networks that constitute human brains. Such systems “learn” to perform tasks by considering examples,
+generally without being programmed with task-specific rules.
+Advances in algorithmics (e.g. backpropagation) and hardware (e.g. availability of GPUs) have led to widespread and successful use of large (deep) neural networks (Deep Learning) across numerous application domains.
+At Thalesians Ltd, we employ neural networks we employ neural networks and deep learning to classify and forecast time series coming from many diverse fields.
+ John McCarthy. “What is Artificial Intelligence?” Computer Science Department, Stanford University, 2007.

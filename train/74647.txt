@@ -1,0 +1,11 @@
+I want to implement slow motion in a game, based on opengl.
+What I mean is when ball is about to touch the cylinder then it should be displayed in slow motion. I am using opengl es first time. So please help me.
+Thank You in advance.
+It's difficult to tell what is being asked here. This question is ambiguous, vague, incomplete, overly broad, or rhetorical and cannot be reasonably answered in its current form. For help clarifying this question so that it can be reopened, see the FAQ.
+All your game logic should be dependant of the frametime (deltatime) which can be seen the ammount of time for each frame. By making this deltatime larger or shorter you can make things go faster or slower.
+For example, moving a point using velocity should be thought this way:
+position += velocity*deltatime;
+you can change deltatime at will which can produce easily the effect you are looking for.
+I just did
+in my code and when i am increasing the value of variable slow_motion then it is showing me slow motion effect.
+Thank You very much.

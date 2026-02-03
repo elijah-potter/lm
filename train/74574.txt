@@ -1,0 +1,18 @@
+Search This Document
+Turn on encryption
+Depending on the amount of storage space available for storing files on your device, you might not be able to encrypt files on your device.
+Before you begin: To encrypt data on your BlackBerry® device, you must have set a password for your device.
+- On the Home screen or in a folder, click the Options icon.
+- Click Security > Encryption.
+- To encrypt data on your device, in the Device Memory section, select the Encrypt check box.
+To encrypt files that are stored on a media card and on your
+device, in the
+Media Card section, select the
+Encrypt check box and do one of the
+- To encrypt files using an encryption key that your device generates, change the Mode field to Device Key.
+- To encrypt files using your device password, change the Mode field to Device Password.
+- To encrypt files using an encryption key and your device password, change the Mode field to Device Password & Device Key.
+- To also encrypt media files such as pictures, songs, and videos, select the Include Media Files check box.
+- Press the key > Save.
+Next topic: Picture folders
+Previous topic: About file encryption

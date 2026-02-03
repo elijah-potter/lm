@@ -1,0 +1,23 @@
+LATEST VERSION 1.1 (07.01.2014)
+USentiWordNet is a URBI module implementing SentiWordNet with word search functionality. SentiWordNet is a lexical resource for opinion mining. SentiWordNet assigns to each synset of WordNet three sentiment scores: positivity, negativity, objectivity. It can be used for evaluating a word or a set of words in terms of feelings it is associated with by a computer.
+SentiWordNet is described in details in the following papers:
+SentiWordNet: A Publicly Available Lexical Resource for Opinion Mining [PDF]
+SentiWordNet 3.0: An Enhanced Lexical Resource for Sentiment Analysis and Opinion Mining [PDF]
+You can find more information here LINK
+bool = USentiWordNet.new("base.txt") - initialization of the USentiWordNet; loads dictionary from file,
+USentiWordNet.debug - debug flag used to display additional information, set 1 to display, default value is 0,
+["word1", "word2",...] = USentiWordNet.ClearText("word1 word2") - processes the given input text by extracting words which consist of at least minLettersCount letters and saves them in the returned vector container.
+USentiWordNet.minLettersCount - used in ClearText("input text") method, defines the minimal amount of letters for the words from input text to be included in the returned vector container, default value: 3.
+bool = USentiWordNet.SetWord("word") - attempts to find "word" in the database, returns true if found otherwise false,
+USentiWordNet.word - contains the most recent word looked up in the databaseset,
+USentiWordNet.description - context, definition, example, usage of the word,
+USentiWordNet.partOfSpeech - part of speech that the given word belongs to,
+USentiWordNet.numberExample - number of example in SentiWordNet file,
+USentiWordNet.positive - positive score evaluated for the word, 0..1,
+USentiWordNet.negative - negative score evaluated for the word, 0..1,
+USentiWordNet.objective - neutral score evaluated for the word, 0..1 = 1 - (positive + negative).
+loadModule("USentiWordNet"); var Global.Senti= USentiWordNet.new("SentiWordNet_base.txt"); //run init function and create dictionary Senti.SetWord("jesus");
+// INFO ON ASSIGNED SLOTS Senti.word; Senti.partOfSpeech; Senti.description; Senti.positive; Senti.negative; Senti.objective;
+// SPLIT STRING TO SINGLE WORDS var wek = Senti.ClearText("The United States Navy is the naval warfare service branch of the United States Armed Forces"); Senti.SetWord(wek); Senti.word; Senti.partOfSpeech; Senti.description; Senti.positive; Senti.negative; Senti.objective;
+// NO WORD IN DICTIONARY Senti.SetWord("diffeomorphism"); Senti.word; Senti.partOfSpeech; Senti.description; Senti.positive; Senti.negative; Senti.objective;
+// CHANGE THRESHOLD OF LENGTH OF STRINGS Senti.minLettersCount; //default value is 2 Senti.minLettersCount = 6; //change it on 6 wek = Senti.ClearText("The United States Navy is the naval warfare service branch of the United States Armed Forces");

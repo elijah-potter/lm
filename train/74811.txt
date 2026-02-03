@@ -1,0 +1,19 @@
+The .HTML file extension
+Every file ending in
+.html will be opened by a web browser after you click, or double-click, on it. If placed on a web server, it will be a page on the world wide web. Alternatively, you can save your web pages with the three letter extension
+.HTML or .HTM?
+For most purposes, both file extensions are identical. In some cases, you web hosting provider may have set up restrictions as to which extension should be used.
+An example: simple HTML document
+Place the following code in a text editor and save it as a
+.html file. Note that some editors will attempt to force an extention after the file name, such as
+.txt; if this is the case, select "Any file" as the file type from the drop-down menu, place
+.html after the name of your file, and try again.
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+<title>My first HTML page</title>
+This should display the line "Hello world" in a browser.
+Also, note that every declaration has an opening tag (
+<html>) and a closing tag (
+</html>). The same format applies for most of the tags in HTML.
+Viewing HTML files
+Every file with the .html is usually opened by default with a web browser. If you are placing the file on a server that is visible from the WWW, type the name of the file after the address of the server.
+Example.com is a special server that is reserved for use in documentation and is not available for registration.

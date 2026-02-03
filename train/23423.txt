@@ -1,0 +1,10 @@
+The radiologists were further tricked by the altered scans even after being told about them. They were given 20 more scans, half of which were changed.
+In the cases of fake nodules, the radiologists were tricked 60 percent of the time. In the cases of nodules deleted, they were tricked 87 percent of the time.
+RELATED: TECH COMPANIES COULD FACE UP TO $7 MILLION IN FINES UNDER NEW AUSTRALIAN CYBER SECURITY LAW
+Although the study focused on lung cancer scans, the malware could work for all kinds of conditions and for all kinds of purposes.
+"An attacker may perform this act in order to stop a political candidate, sabotage research, commit insurance fraud, perform an act of terrorism, or even commit murder," warn the researchers in their paper.
+Indeed there are countless nefarious applications of the malware ranging from sabotaging medical trials to stopping patients from receiving critical care that could lead to their death.
+Weaknesses in PACS
+The vulnerabilities that allow the malware to operate lie in the networks, hospitals use to transmit and store scans called picture archiving and communication system (PACS). Currently, hospitals don’t digitally sign the scans and don’t use encryption on their PACS networks.
+Even getting the malware onto a PACS network is a rather simple task. An attacker could do it remotely from the Internet without even having physical access to the network. This is because many PACS are directly connected to the Internet or accessible through devices that are connected to the Internet.
+The research is a shocking insight into how our hospitals work, and highlights the need for advanced cybersecurity measures.

@@ -1,0 +1,296 @@
+Your message has been sent.
+This article has been saved to your account.
+Go to my account
+This article has been emailed to your Kindle.
+Send this article
+Monkey is a new programming language that allows you to create apps on multiple platforms very easily. In this article by Michael Hartlef,author of Monkey Game Development Beginner's Guide we will work together through some Monkey game development basics and cover the following topics:
+- How to load a script
+- About projects and how we can create one
+- The basic structure of a simple game
+- How to draw circles and rectangles
+- How to read keyboard input
+- How to print messages to the browser window
+- How to export your game to HTML5 and run it inside a browser
+At first, we will experiment with Monk a little bit, by creating a project. Then, you will write your first lines of Monkey code, a typical Hello World app. And of course how to save your code and reopen it at a later point.
+Of course, you will have to create your first little game, PONGO—a very simple one, but a game in all its glory. You want be a game developer, right? So you've got to do what a game developer has to do. Together, we will recreate one of the first video games in history, Pong. Never heard about it? As always, look at this Wikipedia page to get an idea about Pong: http://en.wikipedia.org/wiki/Pong
+As a game developer, you have to start small, and this game is the perfect ground to build up your development skills with Monkey. After we are finished with the development of the little game, you can call yourself a Monkey programmer! You don't think so? Yes you are! You learned to walk, and now we will learn how to run. And as they say, practice makes perfect . The best way to learn is by creating some nice little games. So let's get down to business, shall we?
+Call the Monk and start praying—the Monkey IDE
+We are just kidding here; there are no religious activities planned in this article. Even though sometimes you will find yourself praying that a new piece of code you have created works like it should.If you haven't installed Monkey already, then it is time to do that now.The software can be downloaded from the site http://www.monkeycoder.co.nz/. Some prebuilt scripts are available as the support code files for the book Monkey Game Development Beginner's Guide.
+Why learn about Monk?
+Monk is the code editor/IDE that ships with Monkey. It is the first place that you will fire up when you start using Monkey. So, it is important to know your first main tool, if you want to develop games with Monkey.
+Starting up Monk
+It's time now to start Monk. You will do this by double-clicking on the Monk.app icon on OSX or start Monk.exe in Windows.
+Monk's user interface
+Monk's user interface is divided into three sections:
+- The toolbar
+- The code editor area
+- The info box
+All functions of Monk can be called through keyboard shortcuts and through the main menu. Some functions are also reachable through the toolbar.
+The code editor area
+The code editor in Monk supports syntax highlighting and automatic casing of the basic commands in the Monkey programming language. Sadly, it doesn't highlight and auto-case the commands from the modules, which is something that could help tremendously. But, the usual suspects are all there—copy, cut, paste, search and replace, Block in and out denting, goto line, and Find in Files will get you a long way before you ask for more
+The info box
+The info box is your navigation system, when it comes to Monkey coding. You can open your code files, and also the files included with Monkey, from the Nav tree view:
+In the bananas section of the Nav tree view, you will find all the sample scripts that ship with Monkey. Shortly, we will go there and start a sample script from there. The next tab header is the Code tree view. It contains all function and method headers of the included classes in the currently visible code file
+The last Debug tab is a relic from Monk's origins, being the native editor for BlitzMax. There, it has a built-in debugger, something that Monkey lacks at the moment. So, please just ignore that tab. Ok, now let's do something. How about opening one of the sample scripts?
+Time for action – opening a sample script
+Opening an existing script can be done through several methods. One is through the toolbar. Follow the given steps:
+- Click on the Open icon in the toolbar:
+- Navigate, within the dialog, into the bananas folder of Monkey's main directory. There, you have subfolders from some authors of sample scripts.
+- Head to the mak folder, and from within that, to the firepaint folder. Inside, you will find the firepaint.Monkey file.
+- Select it and click on the Open button in the File dialog. Voila! Monk just opened the selected script:
+- Of course, there are other ways to open a script. For example, you can double-click on a filename inside the Nav tree view
+Next, you will see a file dialog where you can select a .Monkey file to be opened.
+What just happened?
+You have opened your first Monkey script. Good job! Please note how the GUI has changed. In the top of Monk, you see the file path of your currently visible script. Also, for each script you open or create, Monk creates a new tab inside the code area. In our example, this tab is named firepaint.Monkey. If you have several scripts open at once, you can switch between them by clicking on the tab header or press Ctrl + the left/right key on Windows or cmd + the left/right key on OSX.
+Where is my navi?
+Games are not usually coded with just 10-20 lines. We talk here about at least a few hundred lines of code. And to help you navigate through your code more easily, Monk supports the Code tab in the info box on the right. To practice navigation in a script file a little, here is the next task.
+Time for action - navigating to the main() function
+Every Monkey game needs a Main() function. To find it, select the Code tab in the info box. There you find two parent nodes. Try to find Main() in one of them. Found it? Good. Click on it. You will see that the code area changed and the cursor jumped to the top line of the definition of the Main() function:
+What just happened?
+Navigating through a script is very easy. Search for the item you want to jump to inside the Code tab of the info box and click on it. The content of the code tab always reflects the changes inside the code area!
+Save... save... save!
+One of the first and most important rules of software development is save your code, save it a lot. Remember this and live by it. There is nothing worse than a hard drive failure or a power outage after an hour of coding.
+Time for action - saving a script
+To save a script, here are some things you have to do
+- Open an empty script by pressing Ctrl + N in Windows or cmd + N on OSX. Monkey will open a fresh and empty code area for you.
+- Next, type anything inside it, just anything.
+- Now, save your script. For this, you should use your mouse and the menu. Click on File | Save as. A dialog opens where you can set the filename and location to save your script to.
+- Do this and click on Save.
+What just happened?
+You have saved your first script. Most likely, it isn't even close to a run-worthy script, but you have learned how to save your creation. Did you notice how the caption of the tab for the code area changed? And also the title bar of Monk's window? They now reflect the name you gave your script when you saved it.
+Projects—bringing in some organization
+When you look at the Nav tab of the info box, it's nice that you can browse through the folders of Monkey and open scripts from there. Good news is near; you can do this with your own code too. That is why Monk supports projects. They become new entries under the initial tree view inside the Nav tab.
+Time for action - creating a project
+Let's assume that we want to turn the FirePaint example into a project. For this, you have to create a new project first. Follow the ensuing steps:
+- Click on File | Project Manager, in the menu. A new dialog will open:
+- There, you will first see the Monkey project. To create a new one, click on Add Project.
+- In the following dialog, you need to give your project a name. For now, My firepaint project should be fine. Also select the folder where the previous sample script was loaded from. After you do this, the top of the dialog should look a little like this:
+The bottom of the dialog with fields including sub-version controls is not functional and is probably a relic from Monk's origins of being the BlitzMAX IDE.
+- Now, click on OK to create your project.
+What just happened?
+In the first dialog, there is now a new line with the project title. If you select this line, you could either change the properties of your project or remove it completely. You can close this dialog for now. Another thing you will notice is that, in the info box on the Nav tab, there is now a new project entry with the name you have given before. Browse through this entry and open the scripts from there by double-clicking on the script name. Convenient, isn't it? Yes, it is. And the cool thing is that this now stays there, even if you close Monk. At the next start of Monk, your new project entry is still there.
+The Monkey programming language
+To create games with Monkey, you should know a little bit about its programming language and its features. We won't cover the whole manual here, but will go through some of the most important parts of it. But first, you should write your first script. Without any practice, you say? Right, just like that!
+Time for action - Monkey's Hello World
+Here is a version of the famous Hello World script, done in Monkey. You have to start somewhere. You will learn what the starting point of every Monkey app looks like, the Main() function, and how to print some text to the browser. Ok, let's go!
+- Start with a single line comment that describes the app:
+- Next is the function header for the Main() function, the piece of code that will be called at the start of the app. Every function starts with the keyword Function, then its name, followed by opening and closing parentheses:
+- Now, it's time to print the famous text Hello World. For this, Monkey provides the Print command. And don't forget to indent the code through the menu or just by pressing the Tab key once:
+- Every function needs to be closed. In Monkey, we do this with the End command:
+- Now, save your script. The name and folder are not important.
+- Build and run the script by clicking on the tilted rocket in the toolbar.
+'Monkeys Hello World
+Print ("Hello World")
+What just happened?
+Drum roll please.... tadaaaa! You have coded your first Monkey script and just ran it inside the browser. If everything is correct, you will have seen a plain (white) background and then the text Hello World printed on it.
+Running your first script in a browser
+To start this script, press Ctrl + R for Windows or cmd + R for OSX, to build and run the script. For this, select HTML5 as the target platform. You should see something like this:
+Cool, isn't it? And you did this all yourself.
+eBook Price: $29.99
+Book Price: $49.99
+Our first little game... PONGO
+It's time that you develop your first little game. A small game, but a game for sure. Do you remember a game called PONG? If not, here again is a Wikipedia link that describes PONG: http://en.wikipedia.org/wiki/Pong
+Your game PONGO will be a single-player game. The opponent will be controlled by the computer. As it is pretty brainless, it will actually have two paddles to work with. Unfair, but who said life is fair?
+The paddle for the player will be controlled by pressing the up and down keys on the keyboard. The goal of the game is to reach 10 points. You get a point once the opponent is not able to play the ball back. So what features does the game have?
+- You need to read the keyboard to control the paddle
+- You need to draw a circle for the ball
+- You need to draw rectangles for the paddles
+- You need to check if the ball collides with the paddles and react to it
+- You need to print some messages on the screen to inform the player about the state of the game
+Time for action - the basic structure of your game
+We will now build the basic structure for every game. Follow the given steps:
+- Your first command in Pongo, and in every game, should be the Strict command, so that Monkey will keep us on track regarding giving identifiers the right type:
+- Next should be some comments that describe the script somehow:
+- Because we want to use the Monkey built-in framework mojo, we have to import it:
+- Now, we need to create the pongo class that extends from mojo's app class. We will include empty OnCreate, OnUpdate, and OnRender methods that we will fill later on:
+- The last thing a basic Monkey script needs is the Main function. It is the starting point of every Monkey script.
+- Save the script now, under a name of your choice.
+- To use a pre-build file for the next steps, you can load up the file S2038_02_02.Monkey and let it run by pressing Ctrl + R on Windows or cmd + R on OSX. After you have selected the HTML5 platform target and Trans has created a HTML5 project, it should start your HTML5-compatible browser and display a blank canvas, most likely in white.
+#rem Script: Pongo.Monkey Description: Sample script from chapter #2 of the book "Monkey Game Development Beginners guide" by PacktPub Author: Michael Hartlef #end
+Class pongo Extends App Method OnCreate:Int() Return True End Method OnUpdate:Int() SetUpdateRate(60) 'Set to 60 frames per second Return True End Method OnRender:Int() Return True End
+Function Main:Int() New pongo 'This creates a new running instance from our class Return True End
+This basic structure can be reused with every game you start. Only the class name should be changed from pongo to something that fits your game.
+Pongo's data structure
+Each game needs to store data. We have talked about variables and stuff like that. For this, we will include some field variables in our pongo class:
+Time for action - adding some data fields
+- One of the elements of Pongo is the paddle, so we need to add fields to store its X and Y position at the beginning of the class definition. To add data fields we need to extend the pongo class:
+- Next will be the data fields for the ball. X/Y position and its X/Y speed:
+- For both paddles, we need to add their data fields for the X/Y positions and the Y speed. We will use 1-dimension arrays for this:
+- The last thing to add are some fields to store—the game score, the mode the game is in, and a helper field for printing some text info:
+- It's time to save your script again and test it, to see if you made any mistakes. For going further with a pre-built script, you can use the Pongo_02.Monkey file.
+- Now that we have all the data fields in place, we can see that we will create the methods of our class, which will render the actual game.
+Field pX:Float = 630.0 'X pos on the right side of the canvas Field pY:Float = 240.0 'Y pos in the middle of the canvas
+Field pX:Float = 240.0 'Y pos in the middle of the canvas Field bX:Float = 320.0 'X pos of the ball in the middle of canvas Field bY:Float = 240.0 'Y pos in the middle of the canvas Field bdX:Float = 3.5 'X speed of the ball Field bdY:Float = 1.5 'Y speed of the ball
+Field bdY_Float = 1.5 'Y speed of the ball Field eX:Float = [5.0, 55.0] 'X pos of both paddles Field eY:Float = [240.0, 240.0] 'Y pos of both paddles Field edY:Float = [-10.0, 5.0] 'Y speed of both paddles
+Field edY:Float = [-10.0, 5.0] 'Y speed of both paddles Field pPoints:Int = 0 'Player points Field ePoints:Int = 0 'Enemy points Field gameMode:Int = 0 'Gamemode 0=Start game, 1=Game, 2=GameOver Field modeMessage:Int = 0 '0=Message can be printed Method OnCreate:Int()
+Time for action - rendering the game field
+Which elements will be rendered in the game?
+- The player paddle
+- Enemy paddle #1
+- Enemy paddle #2
+- The ball
+- A wall at the top
+- A wall at the bottom
+- A middle line
+The last three elements can be grouped together as a background. So let us do just that:
+- Now, insert the drawing routines for the background graphics. Between the OnUpdate method and the OnRender method , create a new method called DrawPlayField:
+- We need to modify the OnRender method now, so that the new DrawPlayField method can be called:
+- Like before, save your script and test it, to see if it runs fine.You should now see a screen that looks as follows:
+Method OnUpdate:Int() Return True End Method DrawPlayField:Int() 'Draw the top wall with a rectangle DrawRect(0,0,640,5) 'Botton wall DrawRect(0,475,640,5) 'Middle line, 13 pieces, each 10 pixel long For Local i:= 5 To 465 Step 20 DrawRect(318,i,4,10) Next Return True End Method OnRender:Int()
+Method OnRender:Int() Cls 'Clear the canvas each frame DrawPlayField() 'this call draws the background Return True End
+Time for action – drawing the ball and the paddles
+The next thing we want to draw is the ball and the paddles. Follow the ensuing steps:
+- For this, we will add a single DrawCircle command and some DrawRect commands to the OnRender method
+- Better "save" than sorry. So, you should save this script under a name of your choice
+- For the rest of the process, you can use the pre-built script Pongo_04.Monkey. Does your game look like this now?
+Method OnRender:Int() Cls 'Clear the canvas each frame DrawPlayField() 'Draw the play field DrawRect(pX, pY-30, 5, 60) 'Draw the player paddle DrawRect(eX, eY-30, 5, 60) 'Draw the enemy paddle #1 DrawRect(eX, eY-30, 5, 60) 'Draw the enemy paddle #2 DrawCircle(bX, bY, 5) 'Draw the ball with a radius of 5 Return True
+Visually, we are 99 percent done. What's missing is the printing of the game score and a message about the game state. We will get to this soon.
+The next thing we will add is the movement of the paddles and the ball.
+Time for action – player paddle movement
+First, we will create a new method called ControlPlayer.
+- This method will check for keyboard input and move the player paddle according to it. Add this method to the pongo class:
+- When the player presses the up arrow key, we are moving the player paddle by 5 pixels, upwards.
+- As the paddle should stop at the top, we check if its Y position is less than 25 pixels away (paddle height is equal to 50 pixel) and set its Y position back to 25 pixels:
+- Now, close the method:
+- To actually be able to control the paddle, we need to call up the ControlPlayer method. You need to do this during the OnUpdate event . We could call it from there, but we need to implement the game mode logic, soon. So, we will create an UpdateGame method that will be called by itself from the OnUpdate> method.
+- Create the UpdateGame method that calls the ControlPlayer method:
+- Next, call UpdateGame from within the OnUpdate event:
+- This is a good time to save again. For further progress, you can load up the pre-made script called Pongo_05.Monkey.
+If KeyDown(KEY_UP) Then 'check if UP key is pressed pY -= 5.0 'subtract 5 pixel from Y position
+If pY < 25.0 Then pY = 25.0 'Check against top wall Endif: Now we check if the DOWN key is pressed and move the paddle accordingly. Again, we check if it reaches the bottom wall. If KeyDown(KEY_DOWN) Then 'Check if DOWN key is pressed pY += 5.0 'Add 5 pixels to Y position If pY > 455.0 Then pY = 455.0 'Check against bottom wall Endif
+Return True End
+Method UpdateGame:Int() ControllPlayer() 'Control the player up an down Return True End
+Method OnUpdate:Int() UpdateGame() Return True
+Slowly, we are getting some animation into the game. Next will be the enemy paddles.
+Time for action – moving the enemy paddles
+Computer-controlled movements, or the so-called Artificial Intelligence ( AI ), are sometimes very hard to create. But for a start, we will keep it very simple. And simple will be the key here. Our computer-controlled movement will look like this. One paddle will move with a speed of 10 pixels up and down, the other with a speed of 5 pixels in the opposite direction.
+- For this, you need to create a new method, called ControlEnemies:
+- Next, we update the paddles' Y positions. As we have two paddles to control, we will use a FOR loop for this, so we don't have to repeat the code. Remember that arrays in Monkey are zero-based:
+- Next, we will check if a paddle reaches the top wall:
+- Now, we will check if a paddle reaches the bottom wall:
+- Close the FOR loop and the method:
+- To actually get the enemy paddles moving, we need to call our new method from within the UpdateGame method :
+- Again, and like always, it is a good time to save your changes. For further progress, you can load up the file Pongo_06.Monkey.
+For Local ep:Int = 0 to 1 eY[ep] += edY[ep] 'Update the paddles Y position
+If eY[ep] < 25.0 Then 'Check if paddles reaches top wall eY[ep] = 25.0 edY[ep] *= -1 'Revers its Y speed Endif
+If eY[ep] > 455.0 Then 'Check if paddles reaches bottom wall eY[ep] = 455.0 edY[ep] *= -1 'Revers its Y speed Endif
+Next Return True End
+ControlPlayer() ControlEnemies() 'Control the enemy Return True
+Cool! All paddles are moving. Now only the ball is missing. Let's get rollin'!
+Time for action – moving the ball
+Moving the ball is as simple as moving the paddles, as you will see.
+- For updating the ball's position, you need to create a new method called UpdateBall. At first, we will update the ball's X and Y position:
+Method UpdateBall:Int() bX += bdX 'Add the X speed of the ball to its X position bY += bdY 'Add the Y speed of the ball to its Y position
+We could end here, but then the ball would not bounce of the walls and would just disappear in nowhere land.
+- Add a check if the ball hits the top wall and reacts to it:
+- Next, check if the ball hits the bottom wall and, again, reacts to it:
+- Now, check against the left wall. If it hits it, add a point to the player's points:
+- As a score was made, check if the victory conditions of 10 points are reached. If yes, set gameMode to GameOver . After that, close the If statement:
+- The last thing in this method will be the check against the right wall. Again, if it hits, add a point to the enemy's points:
+- The enemy made a score, so check if the victory conditions of 10 points have been reached. If yes, set gameMode to GameOver . After that, close the If statement. And close the method:
+- This was one of our biggest methods so far. All we need to do now is to add a call to UpdateBall into the UpdateGame method:
+- Phew! We are getting there. Save your game now and test it. The ball should bounce off the walls now, and if it hits the left or right wall, you should see a message with the current score printed:
+If you need a pre-made source file for the next steps, Pongo_07.Monkey can help you there.
+If bY < 10.0 then bY = 10.0 'Set the Y position back to 10.0 bdY *= -1 'Inverse the balls Y speed Endif
+If bY > 470.0 then bY = 470.0 'Set the Y position back to 470.0 bdY *= -1 'Inverse the balls Y speed Endif
+If bX < 5.0 then bX = 5.0 'Set the X position back to 5.0 bdX *= -1 'Inverse the balls X speed pPoints += 1 'Add 1 to the player's points
+If pPoints >= 10 then gameMode = 2 Print (ePoints + ":" + pPoints) Endif
+If bX > 635.0 then bX = 635.0 'Set the X position back to 635.0 bdX *= -1 'Inverse the balls X speed ePoints += 1 'Add 1 to the enemies points
+If ePoints >= 10 then gameMode = 2 Print (ePoints + ":" + pPoints) Endif End
+ControlEnemies() 'Control the enemy UpdateBall() 'Update the ball's position Return True
+Time for action – controlling the ball with the player's paddle
+It's nice to see the ball bounce off the walls, but in a game of Pongo, you need to be able to control the ball with your paddle. So we will implement this now. Follow the given steps:
+- Let's start with the player paddle. We need a new method that checks the collision of the ball with the player's paddle. Create a new method called CheckPaddleCollP. Please note the return type is Boolean:
+- Next, we want to check if the ball is close to the paddle regarding its X position.
+- The next check will be if the ball's Y position is between minus 25 pixels and plus 25 pixels from the paddel's Y position. If yes, then return True from this method:
+- Now, close off the first If check, return False, because the ball didn't hit the paddle, and then close the method:
+- Ok, now we need to call CheckPaddleCollP from somewhere. We implement it inside the UpdateGame method. We make an If check against CheckPaddleCollP, if it is True and also if the ball's X speed is positive. That means it goes from left to right:
+- If the paddle got hit, then first we inverse its X speed and bounce it back:
+- Next, we want to check where it hit the paddle exactly. In the top area, the ball should bounce upwards. In the lower area, it should bounce downwards. And in the middle, it should bounce back straight. At the end, we will close the former If check:
+If ((bY - pY) > 7) Then bdY = 1.5 If ((bY - pY) < -7) Then bdY = -1.5 If ((bY - pY) <= 7) And ((bY - pY) >= -7 Then bdY = 0 Endif
+Ok, save here and test the code again. You are able to play back the ball. For the next step, you can load up the file Pongo_08.Monkey, if you need to.
+If bX > 625.0 Then
+If ((bY >= pY-25.0) and (bY <= pY+25.0)) Then Return True Endif
+Endif Return False End
+UpdateBall() 'Update the ball's position If CheckPaddleCollP() = True And bdX > 0 Then
+BdX *= -1
+Time for action – letting the enemy paddles fight back
+It isn't fair that only the player can push the ball back. The enemy needs this ability too. For sure, you can imagine it already; we will build a method first that will check and report back a collision of the ball with the enemy paddles:
+- Create a new method with the name CheckPaddleCollE, but this time with the return type of an integer:
+- Again, we first want to check if the ball is close to the paddles. As there are two of them, we will do this inside a FOR loop and set the index for the paddle arrays:
+- Next, we check again if the ball's Y position is within +25/-25 pixels of the paddle's Y position. If it is, then return the index of the paddle:
+- Now, close off the first If check and the FOR loop. Then, return -1, so we can see that no paddle was hit if the check was negative. Then close the method:
+- Again, we will modify the UpdateGame method to check and react to the enemy paddles and a possible collision with the ball:
+- If there was a collision, ep contains the enemy paddle index now. So we check if ep is greater than -1 and also if the ball moves from right to left:
+- We know now that a collision happened. We will determine where the ball hit the enemy paddle and change its Y speed accordingly. Of course, we will inverse its X speed first:
+- All we need to do now is close off the IF check:
+For Local ep:Int = 0 To 1 If (bX > (eX[ep]-5)) And (bX < (eX[ep]+5)) Then
+If ((bY >= eY[ep]-25.0) And (bY <= eY[ep]+25.0)) Then Return ep Endif
+Endif Next Return -1 End
+If ((bY -pY) <= 7) And ((bY -pY) >= -7 Then bdY = 0 Endif 'Next assign the possible index Local ep:Int = CheckPaddleCollE()
+If ep >=0 And bdX < 0 Then
+If ((bY - eY[ep]) > 7) Then bdY = 1.5 If ((bY - eY[ep]) < -7) Then bdY = -1.5 If ((bY - eY[ep]) <= 7) And ((bY - eY[ep])>= -7 Then bdY= 0
+Cool, we now have enemy paddles that play the ball back. If they hit the ball. Save again, under a name that you choose, and test your code. For the next step, you might load up Pongo_09.Monkey, which reflects all the coding we have done so far.
+Time for action – acting on the different game modes
+The last thing to add is the need to act to the game modes. We have three modes:
+- 0=Start of game
+We want to direct and inform the player about what mode the game is in and how they can start it. Then if the victory conditions are achieved, we want to give a visual response.
+- The first mode is bound to a new method that we will create now. Create a new method called StartGame:
+- We want to print a message only once; that is why we need the field modeMessage. If it is 0, then we can print this message. If we don't use such an approach, the message will be printed every time we call this method:
+- Now set messageMode to 1 and print a message:
+- In this method, we will also check if the P key was hit and set messageMode and gameMode accordingly:
+- Close off the method now:
+Return True End
+The method for gameMode = 1 exists already; it's the UpdateGame method we have created and modified before. For gameMode = 2, we will need another method that informs the player about the end of the game and who the winner is.
+- Create a new method called GameOver :
+- Again, we will print some messages now, and we want to do this only once. Remember this method will be called at each frame as long we are in this game mode. So we check against modeMessage = 0 now:
+- Now, set modeMessage to 1 and print an info message that the game has ended:
+- Depending on who has more points, we will inform the player who won the game. For this, we will check if ePoints is equal to or greater than 10:
+- We want to inform the player now about what they can do next and close off this IF check:
+- As the player has the ability to restart the game, we will check now whether the P key was hit. Then, we will set the gameMode variable accordingly and also some position variables:
+- Close off this method now:
+- Not much is left to building our game. We have built the last two methods for the missing game modes and now call them when we need to. For this, we need to replace the OnUpdate method:
+- To check which mode the game is in, we will use a Select statement this time and call the different methods according to the value of the field gameMode :
+- Close off our new OnUpdate method, now:
+- Save the game one last time and test it. For sure, the enemy paddles are not very competitive, but it will be a good practice for you to enhance this. If you want to compare your code to a final version, load up Pongo_final.Monkey.
+If modeMEssage = 0 Then
+modeMessage = 1 Print ("Press P to start the game") Endif
+If KeyHit(KEY_P) Then modeMessage = 0 gameMode = 1 'mode = Game playing Endif
+If modeMessage = 0 Then
+modeMessage = 1 Print ("G A M E O V E R")
+If ePoint >= 10 Then Print ("Don't cry, the computer won! Next time try harder.") Else Print ("Congratulations, you won! It must be your lucky day.") Endif
+Print ("Press P to restart the game") Endif
+If KeyHit(KEY_P) Then ePoints = 0 pPoints = 0 Print (ePoints + ":" + pPoints) pY = 240.0 'player paddle Y pos bX = 320.0 'ball Y pos bY = 240.0 'ball Y pos bdX = 3.5 'ball X speed bdY = 1.5 'ball Y speed eY = 240.0 'enemy paddle 1 Y pos eY = 240.0 'enemy paddle 2 Y pos modeMessage = 0 gameMode = 1 Endif
+Return True End
+Select gameMode Case 0 StartGame() Case 1 UpdateGame() Case 2 GameOver() End
+Return True End
+What just happened?
+Yeah, you can be proud of yourself. You have coded your first little game. It has everything a good game needs—good data structure, separate render and update methods, even collision detection, and a very simple computer AI.
+Have a go hero – enhancing the computer AI
+It will be good practice for you if you try to make the enemy paddles react more intelligently. Try to do this, perhaps as follows:
+- Maybe they should react on the Y speed of the ball somehow
+- Make the start of the ball more random
+- Give it a try and don't be afraid to change this. Just remember... save your code!
+Exporting your game as an HTML5 website
+One more thing... comment on your code!
+Well, we are not at a presentation show of the next big thing from a fruity computer company, but this is very important! As you might have noticed already, we have commented the code in Pongo a lot. Some will say that you only need to add comments to your code when you show it to other people. Other people say that it will also help you to understand your own code, later on. Imagine finishing a piece of code, and then after several months, having to look at it again and make important changes or fix a nasty bug. Without comments, it could become very difficult to do, even for yourself on your own code. A well-commented source code is much easier to understand.
+And remember the two different methods to comment code in Monkey:
+- Single-line comments, such as:
+'This is a single line comment
+#rem This is a multi line comment!
+So, make it a habit to comment your code. One day you will thank yourself for it!
+eBook Price: $29.99
+Book Price: $49.99
+We covered quite a few Monkey basics here and also programmed our first little game, Pongo. So what did we learn about exactly in this article?
+- We opened Monk, the code editor, and learned how to create a project. This is something you will use very often, later on
+- While we created our first script, we learned how to print messages into the browser during the development of our first game, Pongo
+- We learned how to read input from the keyboard and draw basic shapes, such as circles and rectangles
+- In Pongo, we created a very simple computer AI and used a simple algorithm to check for collisions
+Now you know quite a few things about Monkey. But do yourself a favour; also study the documentation of Monkey, and study the sample scripts in the bananas folder. They are a fountain of information.
+- Getting Started with GameSalad [Article]
+- Making Your iAd [Article]
+- Hours 1-12: Your Quest Begins! [Article]
+About the Author :
+Being into game development for a long long time, Michael Hartlef started in 1984 at the early age of 18 with this great hobby called developing computer games on the Commodore C64. Following this machine, he worked on most well know computers like the Amiga 1000 and 500, the Atari 1024 STFm and of course various PC's. These days it is mostly his IMac that he uses.
+Over the years, he developed a great knowledge about general and specific concepts for developing games and worked with a various range of game development tools/programming languages like thinBasic, Delphi, 3D GameStudio, Blitz3D, BlitzMax, DarkBasic Pro, App Game Kit (AGK), Corona ® SDK and of course Monkey! Besides working on games, Michael has developed various add ons for these tools like command library extensions and programming editors.
+At day Michael works for an utility company where he maintains the billing system (SAP IS-U). Michael is also the founder of an independent game developer startup called Whitesky Games (http://www.whiteskygames.com). There he spends a lot of his spare time working on game development tools (IndeED), addons and games for friends, clients and his own projects.

@@ -1,0 +1,13 @@
+2.2 Classification of Enzymes: Types of enzymatic reactions
+When looking at enzyme names such as 'transketolase' or ‘phosphorylase’, you will note that these names don’t tell you exactly what reactions the enzymes may catalyze. A complete description should mention the coenzymes required, the substrates and the particular bonds in the substrates that are being severed or created. A nomenclature that meets these criteria has been developed by the Enzyme Commission of the IUBMB (International Union of Biochemistry and Molecular Biology). In the IUBMB nomenclature, the enzyme transketolase bears the formidable name:
+Sedoheptulose - 7 - phosphate: D-glyceraldehyde - 3 - phosphate glycolaldehydetransferase
+Such names, of course, are rather lengthy, and their use is not very widespread. To make the tasks of tracking and bookkeeping more manageable, these names are supplemented with numeric codes. In the IUBMB scheme, enzymes are put into one out of six classes according to the reactions they catalyze. These classes are:
+- Oxidoreductases. These catalyze redox reactions, frequently involving one of the coenzymes NAD+, NADP+, or FAD.
+- Transferases. These bring about the transfer of functional groups – e.g., phosphate groups from ATP to another metabolite, which activates the latter and sets it up for subsequent reaction steps.
+- Hydrolases. These catalyze hydrolysis reactions – e.g., such as those involved in digestion of foodstuffs.
+- Lyases – these effect elimination reactions that result in the formation of double bonds.
+- Isomerases. These facilitate the interconversion of isomers. We will meet two examples as soon as we get into glycolysis.
+- Ligases, which form new covalent bonds at the expense of ATP hydrolysis.
+Of course, within each of these main classes, there are subclasses and sub-sub classes that correspond to details of substrates and mechanisms of the enzyme reactions. Each individual enzyme activity is assigned an individual number within a sub-sub class, so that we wind up with a four-figure designation, which is preceded by the letters ‘EC’ (Enzyme Commission). The website
+gives a list of all the enzyme activities recorded by the IUBMB classification.
+One good thing about this classification is that it is rarely used – the ‘recommended names’, which most of the time happen to be the traditional ones, are used instead. The other good thing is that it has a sound appreciation of priorities. EC 126.96.36.199 is the single most important enzyme in student lifestyle – namely, alcohol dehydrogenase (or, as IUBMB puts it, alcohol:NAD oxidoreductase). This beneficial enzyme, residing in the liver, degrades ethanol, and without it you would be drunk all the time!

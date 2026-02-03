@@ -1,0 +1,10 @@
+In this tutorial we want to describe you a code that helps you in understanding Get Session Id .In this example we import a package javax.servlet.http.HttpSession,this provide an object such that servlet can track, store and retrieve the information of the user. The servlet include the class Get Session Id,Inside this class, process request method include -
+1)Request.getsession(true) - This method returns you the current session linked with the user making the request. In this case true is a Boolean specify that if the user has no current valid session, this method creates one or returns null if create is false.
+2)session.getId ( ) - This method return you the current session Id.
+3)response.setContentType ( "text/html") - This is response object send to the browser rendered the output content or MIME type in text or HTML Page.
+4)response.getwriter ( ) - The get Writer ( )method is a response object returns you a print writer that is used to write data sent to the client.
+The try block include the print writer object that print a HTML page
+5)out.close ( ) - This method is used to close the print writer ,that causes the data written to the stream to be returned to the client.
+The session id transmitted back to the response object so that whenever the client makes any request then it should also attach the session id with the request object.
+The service method do get, do post method is used in servlet class that provides a service to a client. The do get, do post process the response to the client based on client request information.
+Recommend the tutorial

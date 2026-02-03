@@ -1,0 +1,34 @@
+- What is .htaccess file?
+- When to use .htaccess file?
+- Disadvantage of using .htaccess file
+- Authentication using .htaccess file
+- Custom Error Document
+- Allow/Disallow Directory Listings
+What is .htaccess file?
+.htaccess file is used on Apache Web Server to make configuration changes on per-directory basis. This file contains the configuration directives and are applied to the directory and all its sub directories. The configuration directives in .htaccess files may overwrite the directives in any .htaccess file found higher up in the directory tree and even the main server configuration.
+To enable use of .htaccess file the AllowOverride Directive has to be set in the Apache Server configuration.
+When to use .htaccess file?
+.htaccess file should be used when the main server configuration file cannot be accessed or modified. It is always best to use the server configuration files over .htaccess files.
+.htaccess files are used when some configurations are to be made on per-directory basis. Also, it can be used to redirect users from old site to new site or old pages to new pages.
+Disadvantages of using .htaccess files
+- Performance: Every time a document is requested apache has to look for the .htaccess files in the directory and each directory higher up in the document tree till the root directory. All these files may or may not exists, but the server still has to try to fetch them and apply all the directives to the file being fetched.
+- Security: Mis-configuration of directives in the .htaccess files can cause issues for the document inside the directory and all sub-directories.
+Authentication using .htaccess file
+.htaccess file can be used to password protect a directory on the server. To password protect the directory first we will need to create a .htpasswd file. This file can be generated using any .htpasswd file generator or use the htpasswd command in Apache. e.g. to create a .htpasswd file for user “testuser” with password “testpassword” use the following command
+htpasswd -c /usr/local/var/www/html/.htpasses testuser
+This will ask you for the password 2 times.
+Note: The above command will work only if the Apache bin folder is in your PATH, else you will have to cd into that directory and then execute the above command.
+This command would be executed as
+#htpasswd -c /usr/local/var/www/html/.htpasses testuser New password: testpassword Re-type new password: testpassword Adding password for user testuser
+After creating the htpasswd file we will add the following to the .htaccess file
+AuthType Basic AuthName "restricted area" AuthUserFile /usr/local/var/www/html/.htpasses require valid-user
+Custom Error Document
+You might want to show users a custom error page instead of the default Apache error page. It is always a good idea to have custom error page rather than the standard Apache errors. The following code can be used to show the custom error page.
+# custom error documents ErrorDocument 401 /401.php #Unauthorized ErrorDocument 403 /403.php #Forbidden ErrorDocument 404 /404.php #Not Found ErrorDocument 500 /500.php #Internal Server Error
+Note: The path to the error documents are relative paths from the web directory
+Allow/Disallow Directory Listings
+The files in a directory can be listed in browser if the directory does not contains the index file (typically index.html or index.php). To allow or disallow directory listings .htaccess file can be used.
+Allow directory listings: Use the following directives
+Disallow directory listings: Use any of the following directives
+Disallow certain file types from directory listings: Use the following directives to display all files except files with extension .jpg and .gif
+IndexIgnore *.jpg *.gif

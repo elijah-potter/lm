@@ -1,0 +1,23 @@
+September 14, 2016 -
+A team of scientists at the University of Texas at Austin and Cornell Tech have trained software to read or see what’s meant to be hidden in images, enabling it to read blurred or pixelated images of human faces, according to a report by Wired.
+The researchers said that they didn’t need to develop extensive new image uncloaking methodologies to perform these procedures.
+Instead, they discovered they could use mainstream machine learning methods in which they trained a computer with a set of example data rather than programming it.
+“The techniques we’re using in this paper are very standard in image recognition, which is a disturbing thought,” said Vitaly Shmatikov, one of the authors from Cornell Tech.
+The machine learning methods the team used in their research are widely known, with multiple tutorials and training manuals available online.
+As a result, anyone with a basic technical knowledge could use these methods to dupe facial recognition systems, Shmatikov said.
+There are also greater object and facial recognition techniques available that could potentially be used to combat methods of visual redaction.
+The team was able to defeat three privacy protection technologies, including YouTube’s proprietary blur tool, which allows uploaders to select objects or figures that they want to blur. The researchers used the attack to identify obscured faces in videos.
+Second, the researchers attacked pixelation (aka mosaicing) to generate different levels of pixelation, which it found in Photoshop and other commons programs.
+Third, they attacked a tool called Privacy Preserving Photo Sharing (P3), which encrypts identifying data in JPEG photos to prevent humans from viewing the overall image. Meanwhile, other data components can be clearly viewed so computers are still able to perform functions such as compression.
+In order to execute the attacks, the researchers trained neural networks to perform image recognition by providing them with data from four large and well-known image sets for analysis.
+This ensured that the more words, faces, or objects a neural network “sees,” the more effectively it is able to detect those targets.
+Once the neural networks were able to identity relevant objects in training sets with an accuracy of 90 percent or higher, the team obscure the images using the three privacy tools and then further trained the neural networks to interpret blurred and pixelated images based on what i knew about the originals.
+Lastly, they used obscured test images that the neural networks had not been previously given in any form to test whether the image recognition could identify faces, objects, and handwritten numbers.
+For a few data sets and masking techniques, the neural network achieved success rates of more than 80 percent and 90 percent.
+When using the mosaic tool, the neutral network would achieve a lower success rate the more pixelated the images became. Despite this, the de-obscuring machine learning software often achieved success rates in the 50 percent to 75 percent range.
+Meanwhile, the lowest success rate was 17 percent on a data set of celebrity faces obscured with the P3 redaction system.
+The research represents a significant blow to pixelation and blurring as a privacy tool, said Lawrence Saul, a machine learning researcher at University of California, San Diego.
+“For the purposes of defeating privacy, you don’t really need to show that 99.9 percent of the time you can reconstruct” an image or string of text,” Saul said. “If 40 or 50 percent of the time you can guess the face or figure out what the text is then that’s enough to render that privacy method as something that should be obsolete.”
+The researchers are working towards a larger goal of warning the privacy and security communities that they need to be aware of the advancement of machine learning as a tool for identification and data collection, as well as how to defend themselves against these types of attacks.
+Saul recommends using black boxes that completely cover human faces or objects instead of image distortions that leave portions of the content in tact.
+He also suggests that they cut out any random image of a face and use it to cover the target face before blurring. This would ensure the even if the obscuration is duped, the identity of the person underneath still isn’t revealed.

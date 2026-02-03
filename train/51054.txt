@@ -1,0 +1,23 @@
+Global Tab Changes
+Since we are talking about styles and making global changes, remember that how you make the change is important. To make global changes, display the Tabs dialog via the Modify Style dialog.
+The first decision you have to make is about Alignment.
+- Left: The normal left tab stop that you've used for as long as you've typed.
+- Center: Text is centered to the right and left of the tab stop.
+- Right: Text feeds to the left of the right tab stop as you type.
+- Decimal: Text fees to the left until you type a period, and then text starts feeding to the right.
+- Bar: Never used it...don't know. If you have a suggestion, please add a comment.
+When you consider a large document--for example, a family history, for the most part, you'll be using pre-defined styles that already have tab stops defined. I rarely have occassion to use this dialog but that's me. I feel a need to explain it to you so that you know where the info is because you may be producing different kinds of documents.
+The one place where I do use tab stops (left, center, and right) is in headers and footers. When you use mirrored margins with running headers and footers, the text elements (like page numbers) need to be set up with margins that feed text in the right directions so that the page numbers stay with the margins.
+Another place where tab stops are used is in the table of contents (TOC). When you generate a TOC, you make many of the layout including tab stops and leader dots on the dialog you use to generate the TOC. However, you should know the source dialog.
+Leader dots are used in TOCs. They are the dots that appear between the end of the section title in the TOC and the page number. The dots give your eye something to follow so that you can pick the correct page number.
+Using the Dialog
+In the Tab stop postion field, you enter a tab stop position in inches, select an alignment and leader dots (if necessary), and then click Set.
+When you want to remove one tab stop, highlight the tab stop in the list below Tab stop possition, and then click Clear.
+If you want to remove all tab stops, click Clear All.
+Changing the Default Tab Stop
+Every Word document has default tab settings defined for you. If you open a blank document and start pressing the tab, you'll find that the tab stops are .25 or .5 inches across the page. In later versions of Word, you can change this default for the style you are modifying.
+Local Tab Changes
+You can display the Paragraph dialog to make local tab changes in a number of ways. We've already discussted one...using the ruler.
+In addition, you can select text, right-click, pick Paragraph from the pop-up menu, display the Paragraph and then the Tabs dialogs, and set tabs. Again, because of the way you are making the change, you are making a local change that applies only to selected text.
+Or, you can select Paragraph from a menu (Word 2003: Format, Paragraph) (Word 2007/2010: Home tab, Paragraph group; click the arrow in the lower right of the group box), and then select the Tabs button.
+Again, I'm not convinced that in long historical documents that you are going to find a lot of use for tab stops. However, because you are going to need to construct mirrored headers and footers, you should know your options for making the changes.

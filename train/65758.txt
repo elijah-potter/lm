@@ -1,0 +1,20 @@
+What is transliteration?
+Which languages are supported by Microsoft ILIT?
+How can I add more languages to Microsoft ILIT?
+Do I have to learn a transliteration scheme to use Microsoft ILIT?
+I am familiar with a transliteration scheme that uses capital letters. How should I use Microsoft ILIT?
+Which letters can I capitalize to give hints to Microsoft ILIT?
+Can I use small letters (lower case) to give hints to Microsoft ILIT?
+What about capital letters at the beginning of a word?
+What about abbreviations that are usually typed in all capitals, such as ATM?
+What about numbers?
+Transliteration is a system which uses words written in a source language script and converts to a target language script. This doesn’t relates to the translation but in transliteration the words viz. “bachpan” get converted to “बचपन” not to “childhood”.
+There are six languages supported by Microsoft ILIT as: Bengali, Hindi, Kannada, Malayalam, Tamil and Telugu.
+To add more languages visit: Download Microsoft ILIT.
+No, not at all. Microsoft ILIT is easy and quickly usable tool to write in other language text. It supports free form transliteration wher we don’t have to use any scheme for the process like to enter “रामायण”, you do not have to type “raamaayanna” or “rAmAyaNa”. You can just type “ramayan”.
+Microsoft ILIT offers support for capitalization based hinting to disambiguate sounds that are spelt with the same English letter. For example, some users may prefer to type “bhArat” for “भारत”, to disambiguate it from “भारत”, which is also spelt “bharat”. In this case, Microsoft ILIT will regard the capital letter as a hint and only return “भारत”.
+Only some capital letters are used as hints. Comprehensive list for Hindi is given below: Vowels A आ I ई U ऊ Consonants T ट Th ठ D ड,ड़ Dh ढ,ढ़ N ण Sh ष
+No. Only capital letters are used as hints.
+In that case Microsoft ILIT ignores as it can’t differentiate a hint from a capital letter used for a proper noun or the first word of a sentence.
+When whole input word is in capital then Microsoft ILIT spell out the individual letters. For instance, if you type “ATM”, the first result will be “एटीएम” and all other phonetic transliterations will follow. None of the capital letters in the word will be treated as hints.
+Microsoft ILIT returns the international numerals as the first option and the HIndi numerals as the second because of rare use ot Hindi numerals in Hindi text. For example, typing “2009” gives “2009” followed by “२००९”.

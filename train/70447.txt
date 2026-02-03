@@ -1,0 +1,15 @@
+To get experience making UML diagrams.
+There are several tools that can be used to make UML diagrams. Two choices that you can use are:
+Dia is an application that can be installed on your computer. It is available for Linux, Windows and Mac computers. When you start Dia, it will be set up to draw general diagrams. On the left is a menu which says "Assorted". If you click on this, you can select "UML" instead. Then the preset shapes will be UML elements:
+There are lots of UML elements to choose, but the only one we need now is the first, the UML class. Add a class to your diagram, then right-click and select "Properties...". You will then be able to edit the class's instance variables, and methods in a dialog window:
+You can change the class name in the "Class" tab. In the "Attributes" tab, you can add instance variables to the class. The "Operations" tab is for adding methods to the class. You can set these up in this window and then they will be inserted into the image.
+Dia saves its files as ".dia" diagrams, but can also export to lots of other formats.
+draw.io is a web-based tool for creating diagrams. It can save diagrams to web-storage like Google drive or your own computer. When you create a new diagram with it, it will also be set up for general diagrams. Like Dia, you can choose to use UML tools with it:
+Like Dia, we can add a class element (the third one in the top row). Unlike Dia, there is no dialog window for editing the class details — we do it right in the image.
+Draw.io lets you save the diagram to either your computer, by downloading it, or to web storage options. Like Dia, it saves in a custom format, but also lets you export as a regular image file.
+If you want to use another tool, that's OK too!
+For this lab, you will make a UML class diagram for our Student class. You can use the version in Student.java.
+Remember that static fields should be underlined in the UML diagram.
+When you are done, please submit the diagram you created under this lab on Canvas.
+If you are using Dia, you can submit either a .dia file, or a .png image. If you are using something else, please use a .png
+Copyright © 2023 Ian Finlayson | Licensed under a Attribution-NonCommercial 4.0 International License.

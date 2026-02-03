@@ -1,0 +1,6 @@
+This is primarily done to prevent low-frequency common impedance coupling (ground loops) and provide increased capacitive decoupling at higher frequencies.
+This reduces common impedance coupling and prevents the equipment and subsystem boxes and cable shields from acting like antennas.
+For every routed signal, we have to ensure that we have a proper return path that is located where we want it and that we don't obstruct already created paths, because signals sharing a part of the return path have common impedance coupling (energy coupled from one signal to the other).
+We need to establish where the path is and that it is not shared for two sensitive signals to avoid common impedance coupling between them.
+The LFM solid copper slug has significantly lower ground return inductance that reduces the common impedance coupling
+within the module.

@@ -1,0 +1,27 @@
+Newly discovered Bluetooth vulnerability in implemented firmware and operating system software drivers allows remote attackers could obtain the encryption key used by the vulnerable devices.
+This vulnerability occurs due to Bluetooth devices are not sufficiently validated elliptic curve parameters when it used to generate public keys during a Diffie-Hellman key exchange
+Encryption communication between two Bluetooth devices established by utilizes a device pairing mechanism based on elliptic-curve Diffie-Hellman (ECDH) key exchange.
+Last year Critical BlueBorne Vulnerability Puts More Than 5 Billion Bluetooth Enabled Devices Under Attack.
+This serious flaw leads an attacker to perform a Man-in-the-Middle attack to obtains the cryptographic keys used by the devices.
+This Bluetooth Vulnerability affected the vendors such as Apple, Broadcom, Intel, Qualcomm, and possibly other hardware vendors.
+How does This Bluetooth Vulnerability Works
+ECDH key pair basically contains private and a public key that will be shared on both side to generate a shared Pair key and the device also should agree to use the elliptic curve parameters.
+But in Some cryptographic algorithm implementation, the elliptic curve parameters are not all validated.
+This leads to provide a high probability for attackers to inject the invalid public key to determine the session key.
+Also once the obtain the session key, then an attacker can then passively intercept and decrypt all device messages or alter the message that is being transferred.
+In other words, Bluetooth released a Statement,The researchers identified that the Bluetooth specification recommends, but does not require, that a device supporting the Secure Simple Pairing or LE Secure Connections features validate the public key received over the air when pairing with a new device. It is possible that some vendors may have developed Bluetooth products that support those features but do not perform public key validation during the pairing procedure. In such cases, connections between those devices could be vulnerable to a man-in-the-middle attack that would allow for the monitoring or manipulation of traffic.
+To perform a successful attack, both pairing devices should be within wireless range of two vulnerable Bluetooth devices.
+Later attacker device will intercept both pairing devices by blocking the transmission and ending an acknowledgment to the sending device, and then be injecting the malicious packet to the receiving device.
+Important Note is that the attack will not be successful If only one device had the vulnerability.
+Bluetooth Vulnerability Affected Vendor Information
+This Bluetooth Vulnerability (CVE-2018-5383) has been notified to all the above-affected vendors. you can see here all the vendors security updates for this Bluetooth vulnerability.
+|Vendor||Status||Date Notified||Date Updated|
+|Apple||Affected||18 Jan 2018||23 Jul 2018|
+|Broadcom||Affected||18 Jan 2018||19 Jun 2018|
+|Intel||Affected||18 Jan 2018||23 Jul 2018|
+|QUALCOMM Incorporated||Affected||18 Jan 2018||06 Feb 2018|
+|Microsoft||Not Affected||06 Feb 2018||20 Jul 2018|
+|Android Open Source Project||Unknown||18 Jan 2018||18 Jan 2018|
+|Bluetooth SIG||Unknown||06 Feb 2018||06 Feb 2018|
+|Unknown||19 Mar 2018||19 Mar 2018|
+|Linux Kernel||Unknown||05 Mar 2018||05 Mar 2018|

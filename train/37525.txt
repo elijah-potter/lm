@@ -1,0 +1,6 @@
+There are two method in scraping technology, protocol and browser method. Comparing the execution method, protocol method is much better, and this is the Finger’s providing method.
+|class||Protocol method||Browser method||Assessment|
+|Performance||In the communication protocol, transmitting data is directly scraping with HTTP communication module||In the communication protocol, for the data communication activate the browser and scraping the data displaying by browser||Protocol excellent|
+|Resource utilize||Besides HTTP communication, no additional resource cost. Saving more than 80% of resource form browser method.||Per each HTTP communication, activate one browser. According browser activation, cost for resource is high and when multi-processing, it will be more problem.||Protocol excellent|
+|Client environment’s dependence||Independent from browse’s version or browser setting.||Dependent with client’s browser version or browser setting.||Protocol excellent|
+|Easy of maintaenece(separativeness)||Scraping development and maintenance divided from UI, it can be done without changes in application.||Scraping method connected with UI and engine, when frequent script maintenance, application should be changed together.||Protocol excellent|

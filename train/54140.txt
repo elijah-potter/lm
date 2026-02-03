@@ -1,0 +1,33 @@
+Diagrams and illustrations
+Diagrams and illustrations are a great way to give readers a big picture layout of devices, parts, and components. The more visuals you include, the fewer words you have to use. They are also especially good at breaking down hard-to-see or hidden elements, like the wiring schematic of a car.
+Here’s an example diagram from a Mackie Onyx Analog Mixer, an extremely complex machine with lots of hookups, plugs, and doodads. This great diagram clearly shows what those plugs do:
+Mackie diagrams are amazing. But in our experience, bad diagrams outnumber the good ones. Most of the time, diagrams fall short because they are not descriptive enough. Others are poorly rendered, too cluttered, or not augmented with enough written explanations. Imagine trying to put something together when the diagram looks like this:
+Or, how about this?
+When you’re in the midst of a complicated repair or installation job, bad diagrams won’t be helpful.
+The only thing people love more than a picture is a moving picture. If you are publishing digitally, you can embed videos directly into your manuals. Pretty fancy, huh?
+People are drawn to instructional videos. They mimic that one-on-one, expert/apprentice relationship that we all crave when learning something for the first time. Video instructions are so popular that YouTube has now become the internet’s default how-to authority for everything from computer repair to equipment setup to physics. A search for “how to” on YouTube’s video archives returns over 19 million hits. A single YouTube tutorial on how to fold a t-shirt in under 2 seconds has been viewed millions of times.
+Videos can make learning easy, but—big warning—they are also easy to overuse or mess up. If your reader is looking for specific information, videos can be frustrating. No one wants to watch a 20-minute video when they’re only interested in locating a screw.
+Weigh your options before you make video instructions your primary source of documentation. Most of the time, a single photograph or an amazing diagram will be more functional at identifying connectors, parts, and processes. And, unlike videos, photographs can do it at a single glance. Only use video when other visuals won’t cut it.
+Use videos when…
+- Demonstrating rotation procedures, like how to turn an out-of-the-way valve.
+- Demonstrating involved actions, like threading a sewing machine, picking a lock, or tying a knot.
+- Demonstrating states that do not translate via photography or text, like testing if the custard you’re making is “jiggly” enough, identifying which clanking sound an engine is making, or determining if the concrete you’re mixing is thick enough.
+- Demonstrating how much force to use, like how hard you have to pull on an iMac cover before it actually pops off.
+If you’ve decided that video guides are the way to go, then apply the rules of writing to the editing room. Video guides should be concise, demonstrative, and clear.
+We’ve filmed a lot video guides that can stand alone, but we’ve found that the most effective way to use videos is to embed them directly into online, step-by-step guides. Short video clips work very well alongside diagrams, photographs, and text to augment procedural instructions.
+Frequent problems with video instructions…
+- Problem: Translating audio requires an additional workflow while localizing manuals.
+- Solution: Video without verbal instructions.
+- Problem: Updating videos for new manual revisions is more inconvenient and expensive than updating photos and text.
+- Solution: Use videos judiciously, avoid faces that may not be available for future videos, and keep the original video project files in your version control system.
+- Problem: Scanning videos for specific information is slower than scanning text and photos.
+- Solution: Keep videos short and the information specific and targeted.
+- Problem: You can’t search for information inside videos.
+- Solution: Subtitle videos and make the text searchable, or replicate the information in the text.
+- Problem: Manuals sometimes need to be printed. Photos degrade gracefully even when you’re printing in black & white, but video information is lost altogether.
+- Solution: Use other visuals unless videos are strictly necessary. Choose a useful poster (thumbnail) image.
+Here’s our rule of thumb: in-manual videos should be no longer than 30 seconds per step. Sometimes just 3 seconds of video is enough to get the job done. The shorter the video, the better.
+Icons and symbols
+The first rule of any profession is to do no harm (especially since doing harm opens a company up to litigation, as we discuss in Chapter 9). So, make your best effort not to set people on fire or expose them to electrical shock.
+Where harm is possible, say so. But here’s the rub: since most readers skim, you need more than bold lettering to grab a reader’s attention. That’s where icons and symbols come in handy.
+Some manuals, like the For Dummies series, include 12 different icons that readers need to remember. No one will ever hold that many symbols in their head. Don’t use a dozen symbols when just a handful will do. We recommend, at the very least, using “Note,” “Caution,” and “Warning” as safety designations. Not all icons translate. So, be sure to use universally accepted icons, like a splat symbol, or those published by ISO or ANSI.

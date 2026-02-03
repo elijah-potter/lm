@@ -1,0 +1,49 @@
+A rational function is a function that can be written in the form of a polynomial divided by a polynomial,
+Examples: Because rational functions are expressed in the form of a fraction, the denominator of a rational function cannot be zero, since division by zero is not defined.
+The domain of a rational function is the set of all real numbers, except the x-values that make the denominator zero.
+The domain is the set of all real numbers except 0, 2, & -5.
+Graphing Rational Functions Step 1: Identify zeros (x-intercepts) of the function. The zeros of this function are found by setting y to 0 and solving for x: We see that when we do this, we find that the numerator determines our zeros. In this case, our zero is found by solving x −1=0, so x = 1 is our zero. Step 2: Identify our vertical asymptotes. We know that this function is undefined when the denominator is 0. So, let us find for which x-values the denominator is equal to zero. Our graph will contain vertical asymptotes at these x-values. We want to solve the equation 2 x 2 +7x+3=0.
+So, our graph contains two vertical asymptotes, which represent values of x that our function does not contain in its domain. Our graph will tend towards these x-values, but will never pass through them.
+Step 3: Identify our horizontal asymptote.
+By definition, a horizontal asymptote is a y-value that a graph tends toward as the x values approach their extremes (∞ and - ∞) . (Note that this doesn’t mean a graph can’t cross its horizontal asymptote for relatively small x-values.)
+We identify our horizontal asymptote by considering what y-value our graph approaches as x -> ∞ and x -> −∞ . We will do this by dividing every term in the function by the highest degree term in the denominator :
+Notice that when x -> ∞ , each term that contains an x in the denominator after our last step approaches 0, since we’re dividing constants by more and more. So, as x -> ∞ , . Similarly, as x -> −∞ , y -> 0 . So, our horizontal asymptote is y = 0 . Notice that the degree of the numerator is less than that of the denominator. If this is the case, the horizontal asymptote is y = 0 .
+Since we can cross horizontal asymptotes for relatively small values of x, we will check whether we do so in this example. To cross our horizontal asymptote would mean that y = 0 for some value(s) of x. So, we want to solve the equation .
+We found in Step 1 that x = 1 is the solution to this equation, so our graph does cross our horizontal asymptote when x = 1.
+Step 5: Find y-intercept. We find our y-intercept by setting x to be 0 and solving for y. So, since our y-intercept is .
+Step 6: Graph lies above or below x-axis.
+Our graph is split up into three sections, since we have two vertical asymptotes. One
+section is all x-values less than -3, the next section is x-values between -3 and , and the third section is all x-values greater than . The third section has two sections in itself, since we have a zero in that interval. We want to determine where our graph lies in relation to the x-axis in each of these four sections. We will pick a value of x in each of these sections to determine the sign of the function in each of these sections:
+Section Test Point Value of function Above or below the x-axis x < -3 x = -4 y < 0 Below -3 < x < x = -1 y = 1 Above < x < 1 x = 0 y = < 0 Below x > 1 x = 2 y = 0.04 Above
+Step 7: Graphing our function.
+We put all of the elements we just found in the previous 6 steps together and obtain the following graph:
+Let’s look at another one…
+Graph the rational function:
+Identify the horizontal asymptote
+Since the numerator and the denominator are both the
+same degree (2), you find the horizontal asymptote by
+dividing the leading coefficients .
+y= 1/1 = 1
+Let y = 0 to find the possible x intercepts
+To find the vertical asymptotes, set the denominator equal to
+zero and solve
+Notice that the -2 showed up as a asymptote AND an
+intercept. That means that something is going on around -2.
+Look at this….
+If you factor the numerator and the denominator, you
+are able to reduce…
+When you can reduce, this creates a hole. Think of asymptotes like walls and holes like puddles…you can’t walk through a walk, but you can jump over a puddle. When you see duplicate values, that means there is a hole and not really an asymptote. You can even look for holes first!
+Find the y intercept by letting x = 0
+Start putting it together When we put the asymptotes, intercepts, and hole on the graph it’s easy to see where the graph goes…
+Draw in the graph…
+**Rational f(x)’s “flip-flop” over the asymptotes**
+Using the TI
+You can use the calculator to graph these, just make sure
+you enter the function correctly! The numerator and the
+denominator need there own parenthesis!
+You will need to enter: (x^2 -4) / (x^2 – x -6)
+You will be able to see the vertical asymptotes ONLY!
+They will appear as a line on the graph.
+The rest is up to you
+Graph the function . Find all asymptotes and x- & y-intercepts.
+x-intercept: x = 2 y-intercept: y = Vertical asymptotes: x = -3 & x = 4 Horizontal asymptote: y = 0

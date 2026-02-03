@@ -1,0 +1,20 @@
+Both needs can be satisfied using the Lua string.match(string,pattern) function. Since Lua is an object orieneted language, this function can also be used as stringvar:match(pattern).
+Let's see an example. We need to do something with with the UPDATE statements to the employees table.
+The regular expression used in this example will capture the first two words in the query. ("%w" is any character in a word. "%w+" means many word characters), and then uses the string.lower() function to check if the captured word is the one we are looking for.
+function read_query( packet )
+if packet:byte() ~= proxy.COM_QUERY then
+local query = packet:sub(2)
+local cmd, table_name = query:match('^(%w+)%s+(%w+)')
+if cmd and cmd:lower() == 'update' then
+print( 'updating table ' .. table_name)
+if table_name == 'employees' then
+print ('doing something to employees')
+Notice the idiom
+if cmd and cmd:lower().
+If the regular expression fails, i.e. if there is no word to catch, the cmd variable will be nil, and the comparison will fail. This is necessary, because if we use
+if cmd:lower()when cmd is nil, we get an error message.
+In this case, we get a word, and we compare it with a fixed string. If the fixed string is 'update', then we proceed, and compare the table name. If all matches, we can do what we wanted to.
+For further pattern matching, see this regular expression patterns tutorial.
+The above double check (first isolating a word and then comparing its contents) is necessary because Lua does not support the case insensitive pattern matching (some price to pay for its small footprint). There are some tricks to avoid this, and they will be explained during the tutorial mentioned below.
+This post is part of a set of recipes that will eventually become a long article.
+Want to hear more? Attend MySQL Proxy - The complete tutorial at the MySQL Users Conference 2008.

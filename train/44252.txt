@@ -1,0 +1,66 @@
+There is a lot of stuff on the internet that deals with understanding bonds…many of them are either too technical OR too simple. How do I know this? I know because reading just one leads to a lot of unanswered questions and doubts. So, I decided to see if I can simplify them to a level where one can understand with just a single read. This level of over simplification will put me on top of the murder list for most financial experts, but please bear with me and let me know if I am egregiously wrong in any of the simplifications and I will correct them.
+That said, it is time to learn some bond terminologies.
+Let us discuss a few of the terms you will find in almost all articles on bonds in the internet.
+Types of bonds (lowest risk and hence lowest reward first)
+- Treasury bills or T-bills
+- Government bonds
+- Corporate bonds
+- High Yield bonds
+- Emerging market bonds
+- Purchase price
+- Price paid to buy the bond 🙂
+- Coupon or Interest
+- The periodic (yearly, half yearly, etc) interest payments paid to the bond holder
+- A fancy term used to describe the return provided by a fixed income investment like a bond
+- Yield = Coupon(Interest) / Purchase price of the bond
+- After what time period will the bond principal be returned back to the investor (me).
+- When I buy a bond, I am loaning the bond purchase price amount to somebody (us govt, municipality, company)
+- For the duration of the maturity period (say 10 year bond), I get periodic coupon/interest payments.
+- At the maturity date, I get money I loaned out back.
+- Lets say that purchase price of bond X is $1000.
+- The guaranteed Coupon or Interest is say $60 per year
+- The yield will then be $60/$1000 = 6%
+- Bond X has a yield of 6% earning $60 interest/coupon per year.
+We talked about Bond X in the previous example. We said that the guaranteed coupon/interest is $20 per year. The only exception to the guarantee is if the bond issuer defaults on the payment. For example, some bond issuers in Detroit have defaulted on the bond interest payments and declared bankruptcy. To gauge the credit worthiness of a bond, there are some rating agencies (big ones are Standard and Poor’s, Moody’s, Fitch ratings) that classify different bonds into the following rating bands:
+- AAA: Prime
+- AA : High Grade
+- A : Upper medium Grade
+- BAA: Lower medium Grade
+- BA : Non-investment grade speculative
+- B : Highly speculative
+- CAA: Substantial risks/Extremely speculative
+- CA : Default imminent with little prospect of recovery
+- C : In Default
+- D : In Default
+Obviously, AAA is the best and D is the worst in the scale above.
+Interest rates increases and effects on Bonds
+Many many articles on the net talk about this statement “Interest rates and bond prices have an inverse relationship. When interest rates fall, bond prices usually rise and when interest rates rise, bond prices usually fall.”. What the hell does this mean? Let us take some examples and see what it means to a non-financial person.
+Let us take the story of two bonds: Bond X and Bond Y.
+- AAA rated, 6% yield, purchase price=$1000, 10 yr maturity
+- yield = coupon/purchase price => coupon/interest = yield * purchase price = 6% * 1000 => $60
+- AAA rated, 7% yield (interest rates increased by 1%), purchase price is still $1000, 10 yr maturity
+- coupon = 7% * 1000 => $70.
+So, we have two bonds, with the same rating and purchase price, offering different yields. Bond Y will pay $70 dollars every year for 10 yrs but Bond X will pay $10 less for the same 10 years. So, why would anybody buy Bond X? This is the reason why Bond X’s value will fall when interest rates rise as there is a newer bond that offers more interest/coupon money for the same purchase price.
+Let us take this one step further.
+- The total return for Bond Y is: 10 years * $70 per year => $700
+- The total return for Bond X is 10 years * $60 per year => $600
+- For Bond X to compete with Bond Y, Bond X should also somehow lead to an equal return for the purchaser i.e. the $100 difference has to be made up somehow.
+- But, the coupon/interest for Bond X is fixed at $60 per year…so, the only other way to make up the $100 difference is to reduce the purchase price from $1000 to $900.
+- So, Bond X is now sold like below:
+- AAA rated, purchase price=$900, 10 yr maturity
+- yield = coupon/purchase price = 60/900 = 6.66% yield (up from 6%)
+- A rising yield is hence bad news for any bond as it usually means that the bond price has been lowered forcefully.
+- I.e. if I had bought Bond X for $1000 and I am forced to sell it for some reason when the interest rate has risen by 1%, I am going to lose $100 for each bond that I bought at $1000.
+Interest rates decreases and effects on Bonds
+The opposite happens when interest rate decreases….the older bonds provide higher interest rates than the newer bonds and hence they become more valuable i.e. their yield increases.
+Let us take this one step further.
+- The total return for Bond A (older) is: 10 years * $70 per year => $700
+- The total return for Bond B (newer, 1% lower interest rate now) is 10 years * $60 per year => $600
+- Bond A offers a better deal than Bond B by about $100. So, when all we can get today (with a 1% reduced interest rate) is Bond B, Bond A will command a premium i.e. the purchase price for Bond A becomes $1100 instead of $1000.
+- So, Bond A is now sold like below:
+- AAA rated, purchase price=$1100, 10 yr maturity
+- yield = coupon/purchase price = 70/1100 = 6.36% yield (down from 7%)
+- A falling yield is hence good news for any bond as it usually means that the bond price has been increased by falling interest rates.
+- I.e. if I had bought Bond A for $1000 and I am forced to sell it for some reason when the interest rate has dropped by 1%, I am going to gain $100 for each bond that I bought at $1000.
+Whether interest rates are falling OR raising, when it comes to individual bonds, the bond purchase price (i.e. the principal) is guaranteed to be returned to the bond purchaser if the bond is not sold until the maturity date.
+If we have understood the above basics, the next challenge is to understand what happens to Bond Funds w.r.t. interest rate changes. Note that the impact on Bond funds are different than just Bonds.

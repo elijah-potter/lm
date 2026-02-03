@@ -1,0 +1,25 @@
+What is the Difference Between Async And Defer?
+What are the differences between
+async and a
+defer script tag in HTML? In HTML, you can define a script tag in three different ways:
+<script></script> <!-- HTML parsing is paused during fetch and execution --> <script async></script> <!-- HTML parsing is paused during execution --> <script defer></script> <!-- Script execution is done after parsing is finished -->
+Maybe you are already familiar with the first one, but what do the other two do?
+How HTML Parsing Works
+You often hear people say to place script tags at the bottom of the document. This is because, by default, script tags are defined inside the
+head. But if you place them at the bottom of the document, just before the closing of the
+body tag, you can delay their download. This allows your document to load in the dom first, show it to the user, and then request the scripts.
+This works like this because the browser interprets your document from top to bottom, line by line. When it gets to the
+head and comes across a script tag, it starts a request to the server to get the file. If it's a huge one, it will keep loading and the user will only see a blank page because it is still loading the head.
+By moving it to the bottom, all the content of the body will get loaded in, before you start loading the content of the script tag. In return, you can trick your users into believing that your page is loading faster than it actually is. This is what we call perceived performance.
+Async vs Defer
+You can also add a
+defer tag to your script tags to make sure the HTML gets loaded first.
+If you use
+async instead of
+defer, where script execution only happens after the HTML has been parsed.
+To get a good grasp of what is the difference between a regular, an
+async and a
+defer script tag, take a look at the following visualization:
+If you want to learn more about what happens behind the scenes when the resources are fetched, make sure to check out my tutorial on the critical rendering path:
+Tired of looking for tutorials?
+You are not alone. Webtips has more than 400 tutorials which would take roughly 75 hours to read.

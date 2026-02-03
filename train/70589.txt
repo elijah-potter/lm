@@ -1,0 +1,4 @@
+Two CITRIS People and Robots researchers are making great strides in teaching robots to walk and move in record time.
+Sergey Levine and his team employed reinforcement learning (RL) to demonstrate a robot without previous training from models or simulations learning to walk. When placed in an uncontrolled setting, the robot adapted from its interactions with its environment and mastered walking movements within 20 minutes.
+Pieter Abbeel and his team utilized an RL algorithm called Dreamer that uses a learned-world model constructed with data from the robot’s interactions with its external environment, which the researchers describe as “training in imagination.”
+The approaches from Levine’s and Abbeel’s teams allow the robots to learn from and subsequently adapt to their real-world experiences.

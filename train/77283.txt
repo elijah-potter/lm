@@ -1,0 +1,9 @@
+This is just a fun little game to see what you can represent in a standard 32-bit integer. As most (all?) languages allow for bitwise operations I don't care what language you program it in (or even if you program up your example). The rules are very simple: You have 32-bits of space to use. Make good use of them.
+What I would like to see from you:
+What you would store in the bits, what they represent, and how this is useful.
+Storing a date string in an 4 bytes.
+20130104 or YYYYMMDD (8 bytes in total) can be compressed down to, at most, take up 4 bytes. Here's how:
+You cannot accomplish standard huffman encoding of the characters as the data required to rebuild the huffman tree would be larger than 4 bytes, however if you create a standard huffman tree that will be used by everyone, then you don't need to store tree-construction information in the data you are sending back and forth. By running a frequency count of the numbers 1 through 31 (days of the month) all concatenated together in a string (no spaces) you can construct the huffman tree like so:
+/ \ / \ / \ /\ /\ /\ / \ 1 2 3 0 4 6 /\ /\ 7 8 9 5
+Where left is a 0, and right is a 1 (bit value). At that point you have 4-bits to get to 7, 8, 9, and 5, and 3-bits for 1, 2, 3, 4, 6, and 0. If you have the date 9999 88 77 (not a valid date, I know) that would be: 1110 1110 1110 1110 1101 1101 1100 1100, which is 32 bits in total. This date format is also good until the year 10,000 for an added bonus.
+So, what can you do with 32-bits?

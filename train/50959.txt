@@ -1,0 +1,30 @@
+External Memory Interface (EMIF)
+The asynchronous External Memory Interface (EMIF) is a TI IC bus used in their Digital Signal Processors (DSP) and Digital Media System-on-Chip (DMSoC).
+For example; used on the TMS320DM646x by TI.
+The EMIF bus provides a means to connect to a variety of external devices including: NAND Flash, Asynchronous devices including Flash and SRAM, Host processor interfaces such as the host port interface (HPI) on a Texas Instruments Digital Signal Processor (DSP).
+The most common use for the EMIF is to interface with both flash devices and SRAM devices.
+EMIF supporting interfaces:
+24 addressable chip select spaces of up to 32MB each
+8-bit and 16-bit data bus widths
+Programmable cycle timings such as setup, strobe, and hold times as well as turnaround time
+Select strobe mode
+Extended Wait mode
+NAND Flash ECC generation
+Connecting as a host to a TI DSP HPI interface
+Data bus parking
+The EMIF easily interfaces to a variety of asynchronous devices including Flash and ASRAM. The EMIF can be operated in three major modes:
+Select Strobe (SS) mode
+NAND Flash mode
+The behavior of the EM_CS signal is the single difference between Normal mode and Select Strobe mode. In Normal mode, the EM_CS signal becomes active at the beginning of the setup period and remains active for the duration of the transfer. In Select Strobe mode, the EM_CS signal functions as a strobe signal, active only during the strobe period of an access.
+In NAND Flash mode, the EMIF hardware is able to calculate the error correction code (ECC) for each 512 byte data transfer. In addition to the three modes of operation, the EMIF also provides configurable cycle timing parameters and an Extended Wait mode that allows the connected device to extend the strobe period of an access cycle.
+The EMIF always drives the data bus to the previous write data value when it is idle. This feature is called data bus parking. Only when the EMIF issues a read command to the external memory does it stop driving the data bus. After the EMIF latches the last read data, it immediately parks the data bus again.
+|EM_ A[23:0]||O||EMIF address bus. Pins are used in conjunction with EM_BA pins to form the address that is sent to the device|
+|EM_BA[1:0]||O||EMIF bank address. Pins are used in conjunction with the EM_A pins to form the address that is sent to the device|
+|EM_CS[5:2]||O||Active-low chip enable pin for asynchronous devices. Pins are meant to be connected to the chip-select pin of the attached asynchronous device|
+|EM_D[15:0]||I/O||EMIF data bus|
+|EM_RW||O||Read/Write select pin. This pin is high for the duration of an asynchronous read access cycle and low for the duration of an asynchronous write cycle|
+|EM_OE||O||Active-low pin enable for asynchronous devices. This pin provides a signal which is active-low during the strobe period of an asynchronous read access cycle|
+|EM_WE||O||Active-low write enable. This pin provides a signal which is active-low during the strobe period of an asynchronous write access cycle|
+|EM_WAIT[5:2]||I||Wait input with programmable polarity. A connected asynchronous device can extend the strobe period of an access cycle by asserting the WAIT input to the EMIF. To enable this functionality, the EW bit in the asynchronous configuration register (ACFGn) must be set to 1. In addition, the WPn bit in the asynchronous wait cycle configuration register (AWCCR) must be configured to define the polarity of the EM_WAITn pin|
+The EMIF pins are multiplexed with other peripherals such as PCI, HPI, GPIO, and ATA.
+Navigation: Engineering Home > Interface Buses > Integrated Circuit Buses > EMIF Interface.

@@ -1,0 +1,52 @@
+» Services for Faculty
+» Data Management
+» Data Management Plan Guidance
+» Types of Data
+Types of Data
+Data are the recorded factual material commonly accepted in the scientific community as necessary to validate researching findings (OMB). This refers not just to summary published statistics or tables, but the data on which those summaries are based (NIH). This could include material such as documents, lab notebooks, questionnaires and responses, photos, audio or video files, models and algorithms, database content, software, and so on.
+Things to Think About
+In a data management plan, the data your research generates should be described in some detail. The description can include:
+What kind of data is it? (from MIT Libraries)
+- Observational: data captured in real-time, usually irreplaceable
+Examples: Sensor data, telemetry, survey data, sample data, neuroimages.
+- Experimental: data from lab equipment, often reproducible, but can be expensive
+Examples: gene sequences, chromatograms, toroid magnetic field data
+- Simulation: data generated from test models where model and metadata (inputs) are more important than output data
+Examples: climate models, economic models
+- Derived or compiled: data that is reproducible (but very expensive)
+Examples: text and data mining, compiled database, 3D models, data gathered from public documents
+What format(s) does it include? (from MIT Libraries)
+|Data formats can be:
+||Storage file formats include
+||ascii, Word, PDF
+||ascii, SPSS, STATA, Excel, Access, MySQL
+||jpeg, tiff, dicom, mpeg, quicktime
+FITS in astronomy, CIF in chemistry
+Olympus Confocal Microscope Data Format
+Also, (from our DMP template PDF)
+- Expected size of data sets?
+- How is the data created/acquired?
+- What are the required software/facilities/equipment/hardware to access and analyze the data?
+- Describe any metadata or standards that will be applied to this data.
+- What procedural documentation exists for the creation/management of data?
+Best Practices Tip: File Formats for Long-Term Access
+(From MIT Libraries)
+The file format in which you keep your data is a primary factor in one's ability to use your data in the future. As technology continually changes, researchers should plan for both hardware and software obsolescence. How will your data be read if the software used to produce them becomes unavailable?
+Formats more likely to be accessible in the future are:
+- Open, documented standard
+- Common usage by research community
+- Standard representation (ASCII, Unicode)
+Consider migrating your data into a format with the above characteristics, in addition to keeping a copy in the original software format.
+Examples of preferred format choices:
+- PDF/A, not Word
+- ASCII, not Excel
+- MPEG-4, not Quicktime
+- TIFF or JPEG2000, not GIF or JPG
+- XML or RDF, not RDBMS
+- How data is created/acquired and recorded; file formats; required software:
+Every two days, we will subsample E. affinis populations growing under our treatment conditions. We will use a microscope to identify the life-stage and sex of the subsampled individuals. We will document the information first in a laboratory notebook and then copy the data into an Excel spreadsheet. For quality control, values will be entered separately by two different people to ensure accuracy. The Excel spreadsheet will be saved as a comma-separated value (.csv) file daily and backed up to a server. After all data are collected, the Excel spreadsheet will be saved as a .csv file and imported into the program R for statistical analysis.
+- Size of data sets
+The final data product distributed to most users will occupy less than 500 KB; raw and ancillary data, which will be distributed on request comprise less than 10 MB.
+- Non-standard data
+This project is designed primarily as an educational intervention rather than a research project per se. However because the goal is to provide a foundation for future research studies, the data will be managed as for a research project.... Data will consist of notes and transcriptions of discussions and focus groups, reports and reviews, summaries, curricular materials, and both quantitative and qualitative evaluations of the capacity-building workshops and the impact of implementation on trainees of the faculty participants in the workshops. Materials will all be created de novo or transcribed into standard Microsoft Office applications (Word, Excel, and PowerPoint). For the purpose of wider, long-term access, primary documents will be converted at regular intervals into pdf documents.
+Last Edited: 4 December 2012

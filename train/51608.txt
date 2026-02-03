@@ -1,0 +1,103 @@
+Concurrent requests are often used to periodically check things, clean-up stuff, export information or forward data. To create and schedule a concurrent request in Oracle Applications you basically need to complete those five steps:
+(1) Create your code.
+(2) Define a Concurrent Program Executable.
+(3) Define a Concurrent Program.
+(4) Attach to a Request Group.
+(5) Schedule the Concurrent Request.
+(1) Creating code:
+As an example we will use a PL/SQL concurrent request, you can use other languages such as Java to create code, which can be called by a concurrent request however in this example we will only discuss a PL/SQL concurrent request.
+When creating a PL/SQL procedure you can create this as you would normally create a stored procedure. The only difference is that you will need to create 2 OUT parameters, namely ERRBUF and RETCODE. This is required if you want to run the procedure as a concurrent request:
+PROCEDURE mail_stuck_orders(errbuf out varchar2, retcode out number)
+For more information about how to create a concurrent request you can refer to the Oracle Applications Developer’s guide.
+(2) Define a Concurrent Program Executable.
+To be able to use the code as a concurrent program you first have to define your code as a executable code in Oracle Applications. To do so select the “System Administrator” responsibility and go to the following menu: “Concurrent” : “Program” : “Executable”. As an example we are creating a program that will check if orders placed using Oracle iStore are stuck in a queue.
+The minimal required information for defining a Concurrent Program Executable are:
+Enter a name for your concurrent program executable. In the Concurrent Programs window, you assign this name to a concurrent program to associate your concurrent program with your executable logic.
+- Short name:
+Enter a short name for your concurrent program executable.
+The concurrent managers use the application to determine in which directory structure to look for your execution file.
+- Execution Method:
+The possible execution methods are:
+* Host: The execution file is a host script.
+* Oracle Reports: The execution file is an Oracle Reports file.
+* PL/SQL Stored Procedure: The execution file is a PL/SQL stored procedure.
+* Java Stored Procedure: The execution file is a Java stored procedure.
+* Java Concurrent Program: The execution file is a program written in Java.
+* Multi Language Function: The execution file is a function (MLS function) that supports running concurrent programs in multiple languages.
+* SQL*Loader: The execution file is a SQL script.
+* SQL*Plus: The execution file is a SQL*Plus script.
+* Spawned: The execution file is a C or Pro*C program.
+* Immediate: The execution file is a program written to run as a subroutine of the concurrent manager. We recommend against defining new immediate concurrent programs, and suggest you use either a PL/SQL Stored Procedure or a Spawned C Program instead.
+* Request Set Stage Function: PL/SQL Stored Function that can be uesd to calculate the completion statuses of request set stages.
+- Execution File Name:
+Enter the operating system name of your execution file. Some operating systems are case sensitive, so the name entered here should match the file name exactly. Do not include spaces or periods (.) in the execution file name, unless the execution method is PL/SQL stored procedure or Request Set Stage Function. The maximum size of an execution file name is 60 characters.
+An option are the following 2 fields:
+- Subroutine Name:
+Enter the name of your C or Pro*C program subroutine here. Do not use spaces or periods (.) in this field. Only immediate programs or spawned programs using the Unified C API use the subroutine field. We recommend against defining new immediate concurrent programs, and suggest you use either a PL/SQL Stored Procedure or a Spawned C Program instead.
+- Stage Function Parameters: The Stage Function Parameters button opens a window that allows you to enter parameters for the Request Set Stage Function. This button is only enabled when you select Request Set Stage Function as your Execution Method.
+(3)Define a Concurrent Program.
+The following step is to create a program and link this to the newly created executable. The following fields and options are available when defining a Concurrent Program:
+- Concurrent Programs Block:
+The combination of application name plus program name uniquely identifies your concurrent program.
+You see this longer, more descriptive name when you view your requests in the Requests window. If this concurrent program runs through Standard Request Submission, you see this name in the Submit Requests window when you run this program.
+- Short Name:
+Enter a brief name that Oracle Applications can use to associate your concurrent program with a concurrent program executable.
+The program's application determines what ORACLE username your program runs in and where to place the log and output files.
+Indicate whether users should be able to submit requests to run this program and the concurrent managers should be able to run your program. Disabled programs do not show up in users' lists, and do not appear in any concurrent manager queues. You cannot delete a concurrent program because its information helps to provide an audit trail.
+Select the concurrent program executable that can run your program. You define the executable using the Concurrent Program Executables window. You can define multiple concurrent programs using the same concurrent program executable. See: Concurrent Program Executables.
+Some execution methods, such as Oracle Reports, support additional execution options or parameters. You can enter such options in this field. The syntax varies depending on the execution method. If you define a concurrent program with the bitmapped version of Oracle Reports, you can control the orientation of the bitmapped report by passing the ORIENTATION parameter or token. For example, to generate a report with landscape orientation, specify the following option in the Options field:
+Do not put spaces before or after the execution options values. The parameters should be separated by only a single space. You can also specify an orientation of PORTRAIT.
+You can control the dimensions of the generated output with the PAGESIZE parameter. A specified
+The units for your width and height are determined by your Oracle Reports definition. You set the units in your Oracle Reports menu under Report => Global Properties => Unit of Measurement.
+If the page size you specify with the PAGESIZE parameter is smaller than what the report was designed for, your report fails with a "REP-1212" error.
+The execution method your concurrent program uses appears here.
+You can assign this program its own priority. The concurrent managers process requests for this program at the priority you assign here. If you do not assign a priority, the user's profile option Concurrent:Priority sets the request's priority at submission time.
+Type If you want to associate your program with a predefined request type, enter the name of the request type here. The request type can limit which concurrent managers can run your concurrent program.
+For use by Oracle Applications internal developers only. The incrementor function is shown here.
+- MLS Function:
+The MLS function, if any, used by the program. The Multilingual Concurrent Request feature allows a user to submit a request once to be run multiple times, each time in a different language. If this program utilizes this feature the MLS function determines which installed languages are needed for the request.
+- Use in SRS:
+Check this box to indicate that users can submit a request to run this program from a Standard Request Submission window. If you check this box, you must register your program parameters, if any, in the Parameters window accessed from the button at the bottom of this window.
+- Allow Disabled Values:
+If you check the Use in SRS box, you can also check this box to allow a user to enter disabled or outdated values as parameter values.
+Many value sets use special table columns that indicate whether a particular value is enabled (using ENABLED_FLAG, START_DATE_ACTIVE, and END_DATE_ACTIVE columns). These value sets normally allow you to query disabled or outdated values but not enter them in new data. For Standard Request Submission, this means that a user would not normally be allowed to enter disabled values as report parameter values when submitting a report, even if the report is a query-only type report.
+- Run Alone:
+Indicate whether your program should run alone relative to all other programs in the same logical database. If the execution of your program interferes with the execution of all other programs in the same logical database (in other words, if your program is incompatible with all programs in its logical database, including itself), it should run alone.
+You can enter any specific incompatible programs in the Incompatible Programs windows.
+- Enable Trace:
+Turns on SQL tracing when program runs.
+- Restart on System Failure:
+Use this option to indicate that this concurrent program should automatically be restarted when the concurrent manager is restored after a system failure.
+- NLS Compliant:
+This box is checked if the program allows for a user to submit a request of this program that will reflect a language and territory that are different from the language and territory that the users are operating in.
+For example, users can enter orders in English in the United Kingdom, using the date and number formats appropriate in the United Kingdom, then generate invoices in German using the date and number formats appropriate to their German customers.
+If this box is left blank then a user can associate any installed language with the request, but the territory will default to the territory of the concurrent manager environment.
+Note that this option should be set only by the developer of the program. The program must be written as NLS Compliant to utilize this feature. See: the Oracle Applications Developer's Guide.
+Note that this option should be set only by the developer of the program. The program must be written as NLS Compliant to utilize this feature.
+Select the output format from the following: HTML, PCL (HP's Printer Control Language), PDF, PS (Post Script) and Text. Attention: If you choose HTML or PDF as the output type with Oracle Report programs, you must use an appropriate printer driver that handles HTML or PDF files.
+Indicate whether to automatically save the output from this program to an operating system file when it is run. This value becomes the default for all requests submitted for this program. The output of programs with Save set to No is deleted after printing.
+If this is a Standard Request Submission program, users can override this value from the Submit Requests window.
+If you enter No, your concurrent program's output is never sent to the printer.
+- Columns / Rows:
+Enter the minimum column and row length for this program's report output. Oracle Applications uses this information to determine which print styles can accommodate your report.
+- Style: The print style you select depends on your system and printer setup. Print styles include: 132 columns and 66 lines (Landscape), 180 columns and 66 lines (Landwide), 80 columns and 66 lines (Portrait), 132 columns and 62 lines (A4). Your list is limited to those styles that meet your program's columns and row length requirements.
+- Style Required: If your program requires a specific print style (for example, a checkwriting report), use this check box to enforce that print style.
+- Printer: If you want to restrict your program's output to a single printer, enter the name of the printer to which you want to send your output. If your program has minimum or maximum columns or rows defined, your list of values is limited to those printers that can support your program's requirements.
+(4) Attach to a Request Group.
+After creating your code, Defining a Concurrent Program Executable and defining a Concurrent Program you have to attaché it to a request group. This will handle the part where is decided who can run what, member of a request group can run the concurrent programs defined in the specified request group. You can access the Request Group screen at “Security” : “Responsibility” : “Request”.
+Use this window to define a request group. A request security group is the collection of requests, request sets, and concurrent programs that a user, operating under a given responsibility, can select from the Submit Requests window.
+- Assign a request security group to a responsibility when defining that responsibility. A responsibility without a request security group cannot run any requests using the Submit Requests window.
+- Can add any request set to a request security group. Adding a private request set to a request security group allows other users to run that request set using the Submit Requests window.
+- Can create their own private request sets using the Request Sets window. In a private request set, users can include only the requests you assign to their request security group.
+- Cannot update another user's private request set using the Request Sets window.
+- Cannot delete a private request set if it is assigned to a request security group.
+Request Groups Block
+- Group: Use the request group's name to assign the request group to a responsibility on the Responsibilities window. An application name and request group name uniquely identify a request group.
+- Application: Select the name of the application you wish to associate with your request group. An application name and a request security group name uniquely identify a request security group. This application name does not prevent you from assigning requests and request sets from other applications to this request group.
+- Code: Assign a code to this request group. Some products use the request group code as a parameter that identifies the requests a customized standard submission form can select. See: Customizing the Submit Requests Window using Codes.
+(5)Schedule the Concurrent Request.
+After those steps your Concurrent Program can be used and scheduled. This was what it was all about. Now you can schedule it. You can schedule it to run once or every X time. You can see from the screenshots most of the options available to you.
+You can access the scheduling screens by clicking “view” -> “requests”.
+In the following screen you will be able to search for a request based upon a request ID and or one of the other fields available to you in the screen.
+This will provide you with a good inside view to all your running, pending or completed requests.
+The following screen is showing you the options of scheduling a request.

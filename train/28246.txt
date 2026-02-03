@@ -1,0 +1,27 @@
+February 01, 2013
+ZW3D is capable of engraving patterns into materials. I would like to introduce you to functions that make your engraving projects easier and more efficient. I will show you the functions by working through the example pattern shown in figure 1.
+Figure 1: Pattern to be engraved (left) Vector diagram on a part (right)
+The pattern needs to be a vector outline, but your source might be in raster format, like a photograph.How might you change this? One way is to draw the shape, and then create a 3D model of the part, and then machine it – but what a pain! In ZW3D CAD/CAM software, however, the solution is easier. First, you import the image, and then change it to a vector diagram that can then be used for the sketch file. This function is found in the Sketch module (figure 2).
+Figure 2: Import image files to ZW3D
+Next, you use a milling operation to machine the pattern. One milling operation is the Surface Engraving operation: chose the curve and the surface, set the parameters, and then let ZW3D calculate the tool path. The result is the simulation shown in figure 3. This is pretty easy and fast.
+Figure 3: The result from ZW3D Surface engraving operation
+As an alternative, you might want machine the areas within the closed profile. In this case, use the 3X Spiral Finishing operation or perhaps another operation to do this. To use the 3X Spiral Finishing operation, pick the curve and the surface, set the parameters, then let ZW3D calculate the tool path, as shown in figure 4.
+Figure 4: 3X Spiral finishing operation tool-path for internal engraving
+Yet another possibility is to machine the areas outsidethe closed profile. Again, you would use the 3X Spiral Finishing operation to machine it: pick the difference curve to get the tool path. The result is shown in Figure 5.
+Figure 5: 3X Spiral finishing operation tool path for external engraving
+If you want to clean up the corners, you can use the Drive Curve operation, as shown in the following figure.
+Figure 6: Drive Curve operation tool path cleans up corners
+To add text to the engraving, ZW3D’s CAD module provides several kinds of fonts, which you can apply to the surface. Alternatively, there is the Engrave 2D operation in ZW3D’s CAM module; with this one, you need only pick the curve and the surface as features, and then quickly get the tool path. See figure 7.
+Figure 7: Engraving 2D text as a tool path operation
+Anything more? If needed, you can generate a multi-layer tool path along the surface or with a Z level. (This last function is new to ZW3D 2012 SP2.) You can see the effect in figure 8. These functions reduce invalid cutting movements, and are very helpful to increasing productivity.
+Figure 8: Multi-layer tool path along surfaces
+To summarize, ZW3D CAD/CAM truly is an all-in-one solution from which you can easily get vector diagrams for part designs, and then use all kinds of operations for engraving. These operations easily generate tool paths and machine parts efficiently.
+ZW3D is all-in-one, affordable CAD/CAM solution that enables concept-to-finished-product designs in an integrated, collaborative environment. The proprietary Overdrive™ kernel delivers 3D part and assembly modeling, 2D production drawings, reverse engineering, motion simulation, mold design, and integrated CNC machining. It simplifies the design process from concept to completion.
+To experience ZW3D 2012, where the only limit is your imagination, please go to www.zwsoft.com and download a free 30-day trial today.
+ZW3D CAD/CAM all-in-one solution supports import vector diagram, image files for product design, and have some good CAM features to support engraving. With these features, we have a full-process solution for engraving and we can do these works very easy and efficient.
+ZW3D CAD/CAM all-in-one solution, import vector diagram, import image, engraving.
+Link to Promote:
+ZWCAD Software Co., Ltd
+A CAD/CAM Specialist
+All trademarks, trade names or company names referenced herein are used for identification only and are the property of their respective owners.
+CAD | CAD Software | CAD Free Download | CAD Download | Design Software | Free Cad Download | 3D Software Download

@@ -1,0 +1,19 @@
+Akoff Music Composer
+Let's assume you have a melody in your head and you want to create a beautiful music arrangement of this melody on your home computer. Professional arranger can complete this task within 2 or 3 hours. In order to be able to make a full song arrangement a musician must have the following musical skills:
+Knowledge about the theory of harmonization and chord progression.
+Capable to play MIDI keyboard well.
+Knowledge about MIDI programming.
+Familiar with sequencer software such as Cubase, Logic Audio, Pro Tools, Cakewalk Sonar etc.
+But what to do if you do not have these abilities? Akoff Music Composer is a song making software that assists in music creation. Hum your melody into the microphone and Composer captures the audio, transcribes it into the MIDI sequence, makes chords and arranges the song. Neither a MIDI keyboard nor any musical experience is required to create music.
+How to make a song in a few minutes.
+Below shows the step-by-step instructions on how to make a simple melody arrangement:
+- Record. Choose the tempo, turn the metronome on and hum your melody into the microphone. Composer captures the audio and records it into the digital file: melody.wav
+- Transcribe. Composer analyzes the audio signals, recognizes musical notes and creates standard MIDI sequence: melody.mid
+Find chords. Composer makes the chord progression harmonized with your melody:chords.mid
+How it works?
+To create a MIDI sequence for a melody recorded in audio format (WAV, MP3, etc.) a musician must determine pitch, velocity and duration of each note being played and record these parameters into a sequence of MIDI events. A music transcribing software must do the same things. Even for a single instrument composition it is not a simple task, because an audio recording contains sampled waveform signals and doesn't contain any music specific data. Akoff Music Composer normally transcribes polyphonic music with one instrument or voice. This means you won't get the appropriated results if you try to recognize many instruments playing at the same time especially with drums. Composer doesn't automatically recognize tempo and measure positions or bar numbers. You should manually choose the right tempo and bar length in beats before you click Transcribe button.
+After transcibing Composer analyzes the harmonical structure of the melody line and makes the chord progression. Before clicking Find Chords button you should listen to the MIDI melody and correct the wrong notes. The beginnings of the most notes must be aligned with vertical beat lines as you could see below:Images
+Akoff Sound LabsOperating Systems
+Windows 32 bitCompatibility
+Windows XP+Product Info
+$39 - convert

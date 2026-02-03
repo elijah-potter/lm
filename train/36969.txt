@@ -1,0 +1,12 @@
+Modeling and numerical simulation
+Computer-based simulation models for decision support systems play an increasingly important role in environmental risk analysis and environmental management. A major advantage of numerical simulation models is the consideration of different scenarios that would be in reality impossible, expensive or time consuming.
+To these ends, gaiac has been developing models for use in the analysis and management of aquatic and terrestrial systems and in the risk assessment of pesticides.
+Currently the following types of models are available:
+A Process-based numerical modelling
+- Fate of pesticides in food chains
+- Individual-based population models (IBMs)
+- Aquatic ecosystem models for standing waters
+- Spatially explicit ecosystem models in landscape ecology
+B Rule-based land-use models
+- Vulnerability analysis in the field of landscape planning
+- Benefit-cost analysis tools for sustainable settlement development

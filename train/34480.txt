@@ -1,0 +1,9 @@
+The gas laws so far discussed are the experimental results of various scientists . Maxwell , Boltzmann , Clausius and others proposed theory which provides an explanation for the observed features of the gaseous state . It is known as " Kinetic Molecular Theory " of gases . Since the assumptions of the theory are related to atoms and molecules which cannot be seen , it gives a microscopic picture of the gaseous state .
+The following are the postulates of the kinetic molecular theory of gases :
+Average kinetic energy `prop` T
+Gases which follow the postulates of the kinetic molecular theory are ideal gases . Most of the common gases do not behave as ideal gas . Real gases approach ideal gas behaviour at low pressures and high temperatures .
+The mathematical expression derived on the basis of assumptions of kinetic molecular theory of gases is known as 'Kinetic gas equation' . From this equation one can prove the various gas laws mathematically .
+The gas molecules continuously move in all directions with random speeds . Not only the molecules have different speeds , but also the speed of each molecule changes rapidly .
+RMS Velocity :
+Velocity s a vector quantity . It is represented by positive sign in any particular direction , and negative sign in the opposite direction . As the gas molecules move in all the directions , some times the average velocity of molecules may be given a negative value or zero as per the convention . To avoid this kind of anomaly , the velocities of the molecules are squared which will there always positive . The root of mean of squares of velocities of molecules , thus gives the velocity of the molecules , called Root Mean Square (RMS) velocity. If a gas contains 'n' molecules and the individual velocities of molecules are C1 , C2 , C3 , C4 .............. Cn , then the RMS velocity (C) is given by the equation
+C = `sqrt((C1^2+C2^2+C3^2+.....Cn^2)/(n))`

@@ -1,0 +1,15 @@
+Is there any simple way to reverse the order of some rows in Excel? I'd rather hoped that there might be a suitable option in Paste Special, as there is for Transpose, but apparently not.
+To expand on DLux' answer:
+Instead of manually adding the 1, 2, 3, 4, you can:
+1) Enter 1 on the first row, then a 2 on the cell directly below it
+2) Select both cells
+3) Move your mouse cursor to the bottom right corner of the cell that contains the "2". The cursor should change into a + sign.
+4) Click and drag downwards. Excel will fill in the cells you drag over, and increment the values automatically.
+This'll save you some time if you've got a large number of rows to reverse.
+|show 2 more comments|
+Insert a column A, then put a counter in that row (1, 2, 3, 4). Then sort the spreadsheet on column A in descending order.
+A simple way to reverse the order of a row or a column:
+If you have row elements of 1,2,3,4 then you want them to be in a row, but in the order 4,3,2,1 – like transposing, but 180 degrees instead of 90. To reverse a row use this:
+The range to be reversed is
+To reverse the order of elements in a column you have:
+Now you see that the first row element is not anchored so the row count will decrease as the cell is copied down.

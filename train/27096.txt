@@ -1,0 +1,96 @@
+By: K. Beck
+Published in: Prentice Hall, 1997
+Category: Smalltalk Idioms, Design Process
+Summary: Patterns used by experienced, successful Smalltalk developers.
+To divide a program into methods, realize that methods should perform one identifiable task. Keep all operations in a method at the same level of abstraction. This will produce programs with many small methods (a few lines long).
+To represent instance creation, provide methods to create well-formed instances and pass all required parameters to them.
+You're using Constructor Method. To set instance variables from the parameters, use a single method that sets all variables. Preface its name with "set" plus the names of the variables.
+When Constructor Method is too wordy, represent object creation as a message to one of the arguments of the constructor method. Add no more than three of these to a system.
+To convert information from one object format to another, convert from one object to another rather than overwhelm any object's protocol.
+To represent simple conversion of one object to another with the same protocol but different format, provide a method in the original object that performs the conversion. Name the method by prepending "as" to the class of the object returned.
+To represent the conversion of one object to another with a different protocol, use Constructor Method with the object to be converted as an argument.
+To represent testing a property of an object, provide a method that returns a Boolean. Name it by prefacing the property name with a form of "be," e.g., is, was, will.
+To order objects with respect to each other, implement "<=" to return true if the receiver should be ordered before the argument.
+To code a smooth flow of messages, code a method on the parameter. Derive its name from the original message. Take the original receiver as a parameter to the new method. Implement the method by sending the original message to the original receiver.
+To code a method where many lines of code share many arguments and temporary variables, create a class named after the method with an instance variable for the receiver of the original method, each argument, and each temporary variable. Use Constructor Method and take the original receiver and the method arguments. Give it one instance method, #compute, implemented by copying the body of the original method. Replace the method with one that creates an instance of the new class and sends it #compute.
+To represent pairs of actions that have to be taken together, code a method that takes a Block as an argument. Name the method by appending "During: aBlock" to the name of the first method to be invoked. In the body of the Execute Around Method, invoke the first method, evaluate the block, then invoke the second method.
+To code the default printing method, override printOn: to provide information about an object's structure.
+To comment methods, at the beginning of the method communicate important information not obvious in the code.
+To invoke computation, send a named message. Let the receiver decide what to do with it.
+To execute one of several alternatives, send a message to one of several objects. Each object executes one alternative.
+To invoke parts of a computation, send several messages to "self."
+To communicate your intent when the implementation is simple, send a message to "self." Name the message so it communicates what is to be done, not how it is to be done. Code a simple method for the message.
+Name methods after what they accomplish.
+To allow two objects to cooperate when one wishes to conceal its representation, have the client send a message to the encoded object. Pass a parameter to which the encoded object will send decoded messages.
+To code a computation that has many cases--the cross product of two families of classes, send a message to the argument. Append the class name of the receiver to the selector and send the receiver as an argument.
+To code the interaction between two objects that need to remain independent, refine the protocol between the objects to use consistent terms.
+To invoke superclass behavior, send a message to "super" instead of "self."
+To add to a superclass implementation of a method, override the method and send a message to "super" in the overriding method.
+To change part of the behavior of a superclass method without modifying it, override the method and invoke "super."
+To allow an object to share implementation without inheritance, send part of its work to another object.
+To invoke a disinterested delegate, delegate messages unchanged.
+To implement delegation to an object that needs reference to the delegator, send the delegator in an additional parameter called "for:."
+To parameterize the behavior of an object, add a variable to trigger different behavior.
+To code simple instance-specific behavior, add a variable that contains a selector to be performed. Append "Message" to the Role Suggesting Instance Variable Name. Use Composed Method to simply perform the selector.
+To use Pluggable Behavior when the code is not worth a separate class, add an instance variable to store a Block. Append "Block" to the Role Suggesting Instance Variable Name. Use Composed Method to evaluate the Block to invoke the Pluggable Behavior
+To return a collection that is the collaborative result of several methods, add a parameter to all the methods that collects the results.
+To represent state that will have different values for all instances of a class, declare an instance variable in the class.
+To represent state that might not be present in all instances of a class, put variables that only some instances will have in a Dictionary stored in an instance variable called "properties." Implement "propertyAt:aSymbol" and "propertyAt:aSymbol put:anObject" to access properties.
+To initialize instance variables to their default values, implement a method "initialize" that sets all values explicitly. Override the class message "new" to invoke it on new instances.
+To initialize instance variables to their default values, use Getting Method for each variable. Initialize it if necessary using Default Value Method.
+To represent the default value of a variable, create a method that returns the value. Prepend "default" to the name of the variable to form the name of the method.
+To code a constant, create a method that returns the constant value.
+To get and set an instance variable, access and set the variable directly.
+To get and set an instance variable, use Getting Method and Setting Method
+To provide access to an instance variable, provide a method that returns the value of the variable. Give it the same name as the variable.
+To change the value of an instance variable, provide a method with the same name as the variable and a single parameter--the value to be set.
+To provide access to an instance variable that holds a collection, provide methods implemented using Delegation to the collection. To name the methods, add the name of the collection to the collection messages.
+To provide safe, general access to collection elements, implement a method that executes a Block for each element of the collection. Name the method by concatenating the name of the collection and "Do:."
+To set a Boolean property, create two methods with names beginning with "be." One has the property name and the other the negation. Add "toggle" if the client doesn't want to know the current state.
+Name an instance variable for the role it plays. Make it plural if the variable will hold a collection.
+To save the value of an expression for use in a method, create a variable whose scope and extent is the method. Declare it just below the method selector. Assign it when the expression is valid.
+Use a temporary variable to collect values to be used later in a method.
+To improve the performance of a method, set a temporary variable to the value of the expression when it's valid, then use the variable instead of the expression.
+To simplify a complex expression in a method, remove a subexpression, assign its value to a temporary variable before the complex expression, then use the variable in the complex expression.
+To reuse an expression in a method when its value may change, execute the expression once and set a temporary variable. Use the variable instead of the expression in the method.
+Name a temporary variable after the role it plays.
+To represent a one-to-many relationship, use a Collection.
+To code collections whose size can't be determined in advance, use an ordered collection as the default dynamically sized collection.
+To compactly code an ordered collection or array, use a run array to compress long runs of the same element.
+To code a collection whose elements are unique, use a set.
+To code equality for new objects, define a method called "=." Protect the implementation of the method so only objects of compatible classes will be tested.
+To ensure that new objects work correctly with hashed collections, if you override "=," override "hash."
+To map one kind of object to another, use a dictionary.
+To sort a collection, use a sorted collection. Set its sort block to use a criterion other than "<=."
+To code a collection with a fixed number of elements, use an array. Create it with "new:anInteger" so it has space for the number of elements it needs.
+To code an array of numbers in the range 0..255 or -128..127, use a byte array.
+To code a collection of numbers in sequence, use an interval with start, stop, and an optional step value. Use methods Number>>to: and to:by: (see Shortcut Constructor Method) to build Intervals.
+To see if a collection is empty, send isEmpty. Use notEmpty to see if a collection has elements.
+To search for an element in a collection, send includes: with the element as an argument.
+To concatenate two collections, send "," to the first with the second as an argument.
+To execute code across a collection, use enumeration messages.
+To execute code for each element in a collection, send do: to a collection to iterate over its elements. Pass a one argument block as the parameter. It will be evaluated once for each element.
+To operate on the result of a message sent to each element of a collection, use collect: to create a new collection whose elements are the results of evaluating the block passed to collect:.
+To filter out part of a collection, use select: and reject: to return new collections. Enumerate the new collection. Both take a one argument block that returns a Boolean. Select: returns elements where block returns true. Reject: returns elements where block returns false.
+To search a collection, send detect:. The first element for which the block argument evaluates to true will be returned.
+To keep a running value over a collection, use inject:into:. Make the first argument the initial value and the second argument a two-element block. Call the block arguments "sum" and "each." Have the block evaluate to the next value of the running value.
+To remove duplicates from a collection, send "asSet" to the collection. The result will have all duplicates removed.
+To present a collection with one of many sort orders, send "asSortedCollection" to get a sorted copy of the collection. Send "asSortedCollection:aBlock" for custom sort requests.
+To implement a stack, use Ordered Collection
+To implement a queue, use Ordered Collection
+To search for one of a few literal objects, ask a literal collection if it includes the element.
+To optimize complex Detect or Select/Reject loops, prepend "lookup" to the name of the search method. Add an instance variable holding a Dictionary to cache results. Name the variable by appending "Cache" to the name of the search. Make the parameters of the search the keys of the dictionary and the results of the search the values.
+To write a simple parser, put the stream in an instance variable. Have all parsing methods work from the same stream.
+You want to improve the performance of a Smalltalk system. To concatenate several collections efficiently, use a stream. See Concatenating Stream [Auer+96]
+What do you call a class that is the root of an inheritance hierarchy? Use a single word that conveys its purpose in the design.
+Name a new subclass, by prepending an adjective to the superclass name.
+To format the message pattern, avoid explicit line breaks.
+Name a method parameter by using the most general expected class preceded by "a" or "an." If more than one parameter has the same expected class, precede the class name with a descriptive word.
+To indent messages, put zero or one argument messages on the same line as their receiver. For messages with two or more keywords, put each keyword/argument pair on its own line, indented one tab.
+To format blocks, make blocks rectangular. Use the square brackets as the upper left and bottom right corners of the rectangle. If the statement is simple, the block can fit on one line. If the statement is compound, bring the block onto its own line and indent.
+To format code that shouldn't execute if a condition holds, format the one-branch conditional with an explicit return.
+To format conditional expressions where both branches assign or return a value, format the expression so the value is used where it clearly expresses the intent of the method.
+Name the parameter to an enumeration block "each." If there are nested enumeration blocks, append a descriptive word to all parameter names.
+To format multiple messages to the same receiver, use a cascade to send several messages to the same receiver. Separate messages with a semicolon. Put each message on its own line and indent one tab. Use cascades for messages with zero or one argument.
+To use the value of a cascade if the last message doesn't return the receiver of the message, append the message "yourself" to the cascade.
+Explicitly return a value at the end of a method, when you want the sender to use the value.

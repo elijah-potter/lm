@@ -1,0 +1,38 @@
+Approved March 28, 2013. 160 pages. A revision of ANSI R15.06-1999, this standard provides guidelines for the manufacture and integration of Industrial Robots and Robot Systems with emphasis on their safe use, the importance of risk assessment and establishing personnel safety. This standard is a national adoption of the International Standards ISO 10218-1 and ISO 10218-2 for Industrial Robots and Robot Systems, and offers a global safety standard for the manufacture and integration of such systems.
+A robot safety standard is a collection of guidelines for robot specifications and safe operations in which all involved in the manufacture, sales and use of robots must follow. Often, standards are created by a diverse group of industry interests to ensure the standards benefit everyone.
+Why this standard is important
+There are more than 1.5 million industrial robots operating in factories worldwide. As industrial robots continue to become more advanced, more capable and more popular, the need for comprehensive robot safety standards increases. Robots can be dangerous to operate – especially when safety protocols aren’t followed. While standards for operation are important, safety protocols have a far larger impact on the safe operation of industrial robots.
+Too many to list in detail here. Purchase ANSI/RIA R15.06 at www.robotics.org. Among key provisions:
+Conduct a risk assessment to identify tasks and hazards and protective measures associated for all phases of operation –including the need for access for tasks and providing space (including clearance) as needed.
+A typical risk assessment flow chart involves these steps: 1) set use limits for robot system; 2) task/hazard identification; 3) initial risk estimation; 4) risk reduction determination; 5) implement risk reduction measures; 6) verification of risk reduction; and 7) document.
+Risk assessment components include severity of injury (minor, moderate, serious); exposure to the hazard (low or high for each type of injury); avoidance of the hazard (likely, not likely, not possible for each type of injury); and the resulting risk level (negligible, low, medium, high, very high).
+In addition to hazard identification and risk assessment, there are safety requirements and protective measures for functional safety requirements and equivalency to control reliability and safeguarding.
+Functional safety (safety controls circuitry/integration) requirements are matched to risk levels. Functional safety requires understanding the components (machine and safety-related), and then integrating them properly.
+There are also requirements for perimeter guard dimensions.
+Safety requirements and protective measures must be verified and validated.
+Collaborative robot: robot designed for direct interaction with a human within a defined collaborative workspace.
+Collaborative workspace: workspace within the safeguarded space where the robot and human can perform tasks simultaneously.
+There are four types of collaborative operation for collaborative applications (can be a mix of the following) all while in automatic operation:
+Safety-rated monitored stop
+Operator may interact with robot when it is stopped. Automatic operation resume when the human leaves the collaborative workspace.
+Operator in direct contact with the robot, using hand controls.
+Speed and separation monitoring
+Robot/hazard speed is reduced the closer an operator is to the hazard area. Protective stop is issued when operator is in potential contact.
+Power and force limiting
+Incidental contact between robot and person will not result in harm to person.
+The safeguarding of a collaborative application is determined by the risk assessment.
+Control reliability: 1) A single fault does not lead to the loss of the safety function; 2) the fault shall be detected before the next safety function demand; 3) when the fault occurs, the safety function is performed and a safe state shall be maintained until the detected fault is corrected; and 4) reasonably foreseeable faults shall be detected.
+For nearly three decades, the Robotic Industries Association (RIA) has led the development and updating of the U.S. National Standard R15.06 on Safety Requirements for Industrial Robots and Industrial Robot Systems (the “Industrial Robot Safety Standard”).
+Historically, and even today, most robots sold are of the “traditional” type: Permanently-mounted, and requiring the installation of “safeguards” to keep people away from the robot’s hazardous zone (known as the “restricted space”). An automotive welding robot is a good example of this type of robot system. People are kept safe by being kept apart from the robot system.
+In the summer of 2015, it was recommended that a new standard be developed to describe safety requirements for mobile robots and mobile robot systems. The goal was to fill in gaps and resolve overlaps between the safety requirements described in the R15.06 and B56.5. The R15.08 committee was formed to carry this out.
+A nearly complete first draft of Part 1 of the proposed R15.08 standard on Safety Requirements for Industrial Mobile Robots and Mobile Robot Systems describes requirements for the Mobile Robot and is addressed to robot manufacturers. Part 2 will describe safety requirements for a system of mobile robots, addressed to system integrators (installers).
+Part 1 and Part 2 will be published together, with a target publication date of early 2019. Later, Part 3 will be drafted to provide guidance to users.
+RIA Technical Reports
+- RIA TR R15.306, Task-Based Risk Assessment
+Updates guidance in ANSI/RIA R15.06-1999, Clause 9 and provides a robot-specific methodology for identifying tasks and potential hazards with installing an industrial robot system, so that appropriate safeguards can be established.
+- RIA TR R15.406, Safeguarding
+Updates guidance in ANSI/RIA R15.06-1999, Clauses 10 and 11. Provides information on the different types of guards and methods for safeguarding that can be deployed to mitigate hazard. international standards compliance information. If further details are needed, look at the ISO standards.
+- RIA TR R15.506, Existing Systems
+Provides guidance on what steps, if any, would need to be undertaken for robot systems installed before a new standard was published.
+Sponsor: www.rockfordsystems.com 1-800-922-7533
+Report Abusive Comment

@@ -1,0 +1,4 @@
+That's a lot of nonsense for nothing. buf+1  results in pointer arithmetic being performed, therefore it means buf . buf  is a character. p is a pointer. Assigning buf  to p should result in an error. If your compiler does not give you an error, either turn on all errors and warnings or, if they are on, get a decent compiler.
+Also, main is defined as returning an int.
+int main ()
+return 0; /* for success, non zero for failure */

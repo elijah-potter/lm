@@ -1,0 +1,139 @@
+|JTE Editor:||Mark Sanders|
+Igor M. Verner, Shlomo Waks and Eli Kolberg
+Technological education in high schools is undergoing reform in relation to its status, goals and teaching/learning strategies. This trend is an important part of the worldwide general reform process aiming to make school education more meaningful, intellectual and creative. Real world problems, interdisciplinary approaches, project oriented learning, team cooperation and authentic assessment have become the highlights of recent curriculum innovations.
+Curriculum design in technology, to a greater extent than in many other disciplines, calls for a variety of social, economic, historic-cultural and psychological considerations in addition to pedagogical factors (Waks, 1995). Diverse situations in different countries have led to the development of various models of technology education. A comparative study of approaches to teaching technology in England, France and the United States (Gradwell, 1996) indicates that differences originate in the history of the nations. Lewis (1996) compared technology education systems in the U. S. and U. K. and pointed out that there is great value in discussion and comparison of the different educational approaches among nations. He called for a cross-national comparison of case studies of specific technology programs ìthat can aid in constructing a grammar for communicating about the subject across cultures.î
+Technology education programs in Israel are of interest to technology educators, particularly since the Jerusalem International Science and Technology Education Conference (JISTEC '96). This article was prepared in response to a call for papers from the editor of JTE and presents one of the case studies mentioned at the conference.
+Description of the Case Study Context
+Technology is not a compulsory school subject in Israel. Post-primary schooling has two stages: the intermediate (junior high) school, grades 7-9, and the secondary (senior high) school, grades 10-12.
+Technology was not a junior high school subject until the national program ìTomorrow 98î was started (Ministry of Education, 1994) and the curriculum of a new integrated subject ìScience and technology for intermediate schoolsî was published in 1996. New instructional methods and materials are being developed nationwide with a growing number of schools participating in the implementation of the new school subject.
+Education in senior high schools is free, but is not compulsory beyond grade 10. It is subdivided into the general, technological, vocational (craft) and religious education trends. The first two trends lead the majority of students to a matriculation certificate while the last two lend to a certificate of completion.
+Technological education in Israel is an advanced system having its historic roots in Zionist immigration and settling in former Palestine. Today techno-logical schools provide education to approximately half of all secondary school students. Until the early seventies most of the technology schools were vocational oriented. Then the necessity to deepen the theoretical background of the graduates was recognized. Technological education evolved gradually by incorporating scientific and general subjects and currently includes a number of programs for specialization in computers, electronics, machinery, agriculture and other subjects. A list of courses selected from a specific technical college curriculum (first two year studies) is offered in each program. Many technology schools are associated with technical colleges.
+The present curriculum of the general high school, which is the most popular trend in secondary education, does not include technology studies, except for fragmentary illustrations of the application of science. This situation is currently being revised, and several models for incorporating technology into general education, as a separate subject or part of an integrated science-technology curriculum, are being examined. Technology educators, involved in the examination process, believe that in any case, a systematic technology course accessible to any interested student should be offered (LaPorte and Sanders, 1995; de Vries, 1996).
+It is reasonable to assume that approaches accepted in a technology education school, can not be directly adopted in a general high school. Existing narrow professional tendencies need to be reconsidered. Some expected directions of such a revision are discussed below.
+Technology is an interdisciplinary subject. Basic knowledge in computers, electronics and machinery are essential to the same extent as is knowledge in physics, biology and history. Therefore general high schools are interested in a technology course which provides graduates with a polytechnic background.
+The importance of technology studies for training hands-on and practical thinking skills is recognized, but revision is required in order to impart a more general value to these studies so as to prepare students for varied practical activities.
+The acquisition of practical experience and a polytechnic background through the performance of creative tasks of design and construction is expected to become a stimulating factor in the study of technology in the general secondary school, as opposed to learning a profession as motivation in the technology education school. Therefore the emphasis on project oriented learning and technological problem solving in the general school course is anticipated. The course is expected to be optional, offering a basic level as well as advanced studies.
+Some of the expected revisions required for the adoption of technology in a general high school, have become part of the new standards in technology education (Frantz, Gregson, Friedenberg, Walter and Miller, 1996). This reflects a reciprocal tendency the technological and general trends.
+The Case Study Framework
+One of the possible approaches to designing and implementing an advanced technology course in a general high school is proposed and discussed in this paper. The pilot optional course ìAn Introduction to Robotics and Real Time Controlî presents a two-year program, which includes theoretical studies, lab experiments and construction work, as well as a practical mini-project and a theoretical mini-research.
+The program started in 1994 at the Ohel-Shem general high-school (School #1). Blich school (School #2) has joined since 1995, and an additional school associated with the Hebrew University (School #3) joined in 1996. By the 1996-97 school year a total of 122 students (grades 10-12) had participated in the program: 17 students in 1994-96, 43 in 1995-97, 62 students started in 1996 (see the 3 dimensional graphic description in Fig. 1).
+Figure 1. Participation of high schools in the program.
+The program is currently authorized by the Israel Ministry of Education to be used as a substitute of the conventional course ìMachine Controlî which is a part of the technology (machinery) program. The course grade accepted by the general high school student is included in the advanced disciplines section of the matriculation certificate under the title ìMachine Control.î It provides the graduate with a considerable bonus when applying for engineering university studies.
+The three schools, in which the program has been implemented so far, are known as top-level general secondary schools. Participants were students studying math and physics at the advanced level, who had not studied technology at school beforehand and had joined the course voluntarily. A few of them, prior to the course, had participated in extracurricular youth activities in computers or electronics. All of those who started the program finished it successfully. The students' graduation project reports passed external inspection and evaluation at the Israel Ministry of Education (Dept. of Science and Technology). The ministry currently recommends the wider implementation of the program. Teacher training courses for the program have been conducted since October 1996.
+In this paper the course curriculum and it's implementation are discussed in relation to the following questions:
+1. To what extent can a free choice technology course be attractive for general high school students?
+2. What should be the central course objective?
+3. What teaching methods are most relevant?
+4. What changes in students' perceptions and behavior may be stimulated by the course?
+It should be noted that the principles of design of an interdisciplinary robotics course, which were implemented in the program, were assessed in our former research on training spatial ability through manipulating robot movements (Waks and Verner, 1993; Waks and Verner, 1997).
+The Course Curriculum
+The course includes basic studies of electronics, computers, mechanics, control and design in the robot system context. When performing practical mini projects the students are involved in constructing hardware components and developing software modules for the robot system, while their theoretical mini research assignments focus on investigating technology problems. We will use the following technical abbreviations:
+DC - Direct Current,
+PWM - Pulse Width Modulation,
+PFM - Pulse Frequency Modulation,
+RS-232 - Recommended Standard number 232,
+I/O - Input/Output,
+PCB - Printed Circuit Board.
+The curriculum for ìAn Introduction to Robotics and Real-Time Controlî is given in Table 1. The main subjects taught and their sub-topics mentioned in Table 1 are detailed below.
+Electronics studies include definitions of voltage, current and resistance, Ohm's and Kirchhoff's laws, DC circuits and components, H-bridge circuit, PWM and PFM.
+Computer studies focus on the basics of binary logic and Boolean algebra, logic gates, Karnaugh maps, computer structure and its functioning, address bus, data bus and control bus, RS-232 serial communication. While studying the subject, the students build an electronic board for further use as a base for the robot controller.
+The Assembly language subject includes computer components interface and addressing modes, commands and instructions for I/O, interrupts and communication. As a part of their studies, students program internal functions of the robot controller, as well as processes of robot motion and interaction.
+Learning Contents and Activities
+Fundamental concepts and electronic circuits
+Components and integrated circuits
+Motor control circuits
+Logic and Boolean algebra
+Serial communication, address, data and control buses
+Assembly language and robot programming
+Microprocessor structure and addressing modes
+Assembly language instructions and commands, interpreter, "high language" application
+Input/output, interrupts and communication implementation
+Materials, forces and torque
+Motors and gears
+Robot movement closed loop control
+Robot design considerations
+Integrating hardware and software for emergency situations escape
+Electronic PCB construction
+Designing and building a robot
+Final tests, troubleshooting, debugging and fixing
+Practical mini project
+Theoretical mini research
+The Mechanics chapter deals with materials, forces and torques, robot frame and motor shaft loading, DC servo and stepping motors. Design of the robot body and its construction by means of heat folding sawing and drilling machines are part of the study.
+The Control section relates to open and closed loop modes, DC motor and stepping motor position and speed control, robot motion and collision avoidance.
+The Robotics study is focused on factors influencing robot design such as weight, stability, loads, collision recovery and functionality. In addition to general factors, specific requirements are considered for providing applications of basic robot configuration for implementing different tasks. These factors are motor selection and reevaluation of loads, emergency situation escape and sensor feedback configuration.
+Laboratory workshops include PCB construction, building the designed robot system, testing, troubleshooting and fixing.
+Creative projects provide students with the challenge of self-supporting theoretical and practical activities. Team tasks assigned for the practical mini project relate to adapting and extending the robot for executing various assignments in an automated mode. These assignments may be vacuum cleaning, dynamic video monitoring, transporting and manipulating objects. The purpose of individual theoretical mini research-work is to investigate some specific problems arising in technology that are not necessarily associated with the mini project. Two examples of such activities are a sensor-based method for avoiding robot collisions, and the implementation of voice recognition for robot control.
+Our learning strategy is compatible with the framework of an optional course, in which students meet technology for the first time. It is therefore based on:
+- streamlining learning through pragmatic activities;
+- concentrating on studies of modern technology basics, operating technological systems and design activities;
+- attracting students towards technology issues through diverse theoretical, hands-on and creative team-tasks; and
+- providing students with opportunities to apply and evaluate knowledge and methods acquired in mathematics and science.
+Special attention is paid to an introductory talk with potentially interested students, which is aimed at presenting the proposed technology course in an attractive way. The rationale, curriculum and benefits of the course are specified, together with displaying practical learning activities and demonstrating robot systems developed by former students. Our three-year experience and student feedback indicate the importance and influence of this educational strategy.
+The course schedule, provides for weekly 4-hours workshops and is a suitable setting for attracting students to technology. The parallel study of several different subjects at each workshop, instead of a single disciplinary subject-by-subject approach, provides students with diverse learning activities as well as tasks of design and construction. Table 2 presents a typical timetable of the first year workshops.
+A typical time-table for a weekly meeting
+Electronics and mechanics hardware
+Computers and control
+Assembly language (experimenting using development system)
+Second year studies concentrate on the performance of creative tasks, while applying a learning and assessment strategy based on student portfolios (Shackelford, 1996). Practical Mini Project and Theoretical Mini Research are carried out in parallel. Combined, they provide students with relatively broad experiences in technology. Table 3 summarizes the main features of our approach to learning through projects.
+As an example, we will consider the issue of a DC-motor speed control. In particular, students learn to produce a process of 4-stepped speed control for a set-up of DC motors.
+The method of direct potentiometer-based voltage control, which is familiar to students from the physics course, does not provide an appropriate solution. The idea is to use pulse width modulation (PWM) for speed control.
+While learning the subject, students become familiar with the principles of wave superposition. At the next stage, they acquire the preliminary experience of applying the PWM method through practice with the microprocessor control instructional module.
+PWM and other methods of microprocessor control, are learned in three stages:
+- theoretical studies;
+- experience with microprocessor control instructional module (MCIM);
+- practice in robot motion control.
+MCIM is an instructional package including hardware and software components we developed in order to simulate the process of peripheral device control. It is connected to a computer through a RS-232 serial communication port for program downloading and debugging, and the peripherals are connected to the module parallel ports.
+Students program processes that control variable speed in assembly language, examine and verify operation using MCIM and apply their experience to real robot motion control in the mini project framework.
+Goals and activities of the creative projects
+Practical Mini Project
+Theoretical Mini Research
+Practical problem solving
+Qualitative reasoning and research practice (inf. id. & analysis)
+Design, build and program a robot configuration for automatic execution of some specific tasks
+Investigation of an actual problem that can arise in technology
+Teams of 2-3 students
+Robot configuration models made by student teams
+Individual (written) research reports
+Assessment in class
+Functional demonstration of the robot-model
+Defining the outcome
+Constructing the robot set-up
+Functional operating the outcome
+Subject matter studies & functional analysis
+The style of our course differs from that of the conventional high school studies in several dimensions:
+- optional vs. obligatory;
+- portfolio evaluation vs. exam procedure;
+- technology dominant and interdisciplinary vs. purely scientific and disciplinary;
+- practical, purposeful vs. theoretical, general;
+- creative individual and team tasks vs. routine exercises binding for all;
+- focus on application, analysis and synthesis activities vs. remembering and understanding emphasis.
+In these features the course is similar to some cross-disciplinary engineering courses (Rahn, Dawson and Paul, 1995); however, it remains an introductory technology course for beginners.
+For high school students participating in the course, the proposed learning strategy was as new as the learning subject. As a result it was decided to use a questionnaire, in which we asked students for their opinions about the course.
+The questionnaire was presented at the beginning of the 1996-97 school year to 43 students from two high schools, that had finished their practical mini-projects and started second year studies. In addition to this, personal interviews were conducted with six out of 17 graduates of the 1994-96 program. In this article we will discuss initial findings regarding students' attitudes towards the course and the subject.
+Attitudes Towards the Course
+The mean grade that students gave to the course was 80 (out of 100). High average grades were also assigned to the course creativity (88.4) and importance of the acquired technology knowledge background (83.7). High correlation of the individual grades for these three categories was indicated. The Pearson correlation and significance coefficients are given in Table 4, where the categories of grades are nominated as Creativity, Technology and Course-score variables.
+Correlation of creativity, technology and course-score
+Dependence of the course grade on the grades received in course creativity and acquired technology knowledge was determined. As may be seen from Table 5 the multiple R of the Course-score against the cumulative affect of Technology and Creativity variables is very significant. Specifically 42.6% of the Course-score differences may be explained by diversity of subjective attitudes towards both Technology and Creativity. A linear stepwise regression was performed in order to analyze the contribution of each variable. Results presented in Table 6 indicate that 32.8% (R2 = 0.328) of differences in Course-score may be explained by separate effects of the Creativity variable. The ìcontributionî of the Technology variable to the explanation of Course-score differences, while entered into the predictive equation as a second variable, is 0.098 (∆ = 0.426 - 0.328 = 0.098).
+Dependence of Course-score on both technology and creativity
+Dependence of Course-score on technology or creativity
+In addition to aspects of attitudes towards the course discussed above, attitudes towards the learning strategy components were also examined. Concerning the importance of cross-disciplinary links created in the course, many students noted that background knowledge in mathematics (72%) and physics (93%) were meaningful.
+Students pointed out that team cooperation with the classmates was important, especially while working on practical mini-projects. High correlation between individual contribution to team success and personal benefit derived from team cooperation, was indicated.
+Attitude Towards Technology
+Most of the respondents (88.4%) pointed out that before the course, they had lacked any technological background, except for some computer handling skills. For a considerable part of students (18.6%) technology evoked only feelings of fear. The responses point to a significant change of students' attitude towards technology at the end of the course. Most of the graduates (86.0%) believe that they may make a successful career in technology; many of them (77.5%) plan to major in engineering.
+Some of the students interviewed revealed that they had been quite affected by the new subject as well as the new teaching methods used in the course. They stated that owing to the course, they had changed their point of view about technology. The respondents mentioned that they had become interested in technological systems, were more confident in operating technical devices, and that this had resulted in more reflection as to the implementation of some of their own ideas.
+The view that systematic technology studies are a prerogative of vocational education should be revised. Our case study shows that there is a valid alternative (but not a substitute) - Technology as a matriculation subject in high school. We believe that the option to learn Technology at the matriculation level should be accessible to any interested high school student.
+Robotics presents one appropriate interdisciplinary frame for learning basics of mechanics, electronics, programming and control. Our experience of development, implementation and evaluation in the course ìIntroduction to Robotics and Real Time Controlî indicates that a two-year 310 hours extent studies enable covering the proposed curriculum. The first year program (190 hours) is dedicated to diverse theoretical and hands-on studies of modern technology basics, creative design and construction activities. The second year (120 hours) is focused on performing practical mini-project and theoretical mini-research.
+The course is conducted in high schools under supervision of the Israeli Ministry of Education, including inspection and evaluation of student portfolios. High average grades (92) were assigned to 1995-96 graduates. The grades were included in the matriculation certificates under the title ìMachine control.î Universities provide graduates with a considerable bonus due to their matriculation when applying for engineering studies. Defense forces direct them to technical service positions.
+The case study results provide some grounding in support of the following answers to the four research questions related to the course curriculum and it's implementation.
+1. The technology education program has been offered in general high schools since 1994 on a free choice basis. Throughout this period there was an increase in the number of schools and students participating in the program, some applicants have even been rejected. All students who started the course in 1994 and in 1995 finished their studies successfully. The students assigned high average grades to the course and to their own benefits from it.
+2. Objectives stimulating development of creativity, hands-on and practical thinking skills as well as acquisition of a polytechnic background were central in the course. The dominating role of these factors in students' attitude towards the course was indicated.
+3. In the first year the course was conducted in the form of weekly workshops, where several subjects were studied in parallel through diverse theoretical and hands-on activities, including design and construction team-tasks. Second year studies focused on the performance of creative tasks (a practical mini project and a theoretical mini research), while applying a learning and assessment strategy of student portfolios. We believe that such a combination of workshops and creative projects is relevant and important for achieving the course goals.
+4. A significant change of students' attitudes towards technology was indicated, as a result of participating in the program. Prior to the course most of the students lacked any technological background and even awareness. At the end of the course most of the students believed that they may make a successful career in technology, and many of them decided to major in engineering. Students interviewed mentioned that they had become interested in technological systems and more confident in operating technical devices. They appreciated the experience of teamwork cooperation acquired in the course.
+The main conclusions of the article are valid only to the specific circumstances and conditions of the case study. Further research has to be carried out in other cases before general conclusions can be drawn.
+Frantz, N., Gregson, J., Friedenberg, J., Walter, R. & Miller, A. (1996). Standards of quality for the preparation and certification of trade and industrial (T&I) education teachers. Journal of Industrial Teacher Education 34(1), 31-40.
+Gradwell, J. B. (1996). Philosophical and Practical Differences in the Approaches Taken to Technology Education in England, France and the United States. International Journal of Technology and Design Education, 6(3), 239-262.
+JISTEC '96. (1996). The second Jeruselem International Science & Technology Education Conference on Technology Education for a Changing Future: Theory, Policy and Practice. Book of Abstracts. The Centre for Educational Technology, Tel-Aviv.
+LaPorte, J. E., & Sanders, M. E. (1995). Integrating technology, science and mathematics education. In G. E. Martin (Ed.), Foundations of technology education: Forty-fourth yearbook of the Council on Technology Teacher Education (pp. 179-219). Lake Forest, IL: Glencoe.
+Waks, S., & Verner, I. (1993). Positioning issues in the study of robot manipulations. The International Journal of Engineering Education, 9(3), 223-230.
+Waks, S., & Verner, I. (1997). Spatial vision development through manipulating robot movements, European Journal of Engineering Education, 22(1), 37-45.
+Igor M. Verner is Assistant Professor, Shlomo Waks is Associate Professor and Eli Kolberg is a Graduate student in the Department of Education in Technology & Science at the Technion - Israel Institute of Technology, Haifa, Israel.

@@ -1,0 +1,13 @@
+Annotating Source Code
+In this section you will find the basics of IntelliJ IDEA's annotations, and the related procedures:
+- Enabling Annotations.
+@Nullable and @NotNull annotations, which are used, when IntelliJ IDEA supposes that a certain element can become
+- @NonNls annotation, which is used to ignore the hard-coded string literals.
+- @Contract annotations, which is a powerful and flexible tool for making the APIs safer.
+- Annotating Source Code Directly, which describes how to add annotations to your source code.
+Inferring Nullity, which describes how to analyze the source code for the possible
+Besides that, you can also find the following information:
+@Language: responsible for the Language injection feature.
+@Pattern: is used to validate Strings against a certain regular expression pattern
+@Subst: is used to substitute non-compile time constant expressions with a fixed value.
+To learn more about these IntelliLang annotations, refer to the plugin documentation.

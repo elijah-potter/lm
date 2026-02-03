@@ -1,0 +1,17 @@
+Animating 3D Motion
+Finally, you’ll add a title and animate it in 3D space. Animating in 3D presents the added complication of a third (z) axis. When you choose the 3D Rotation or 3D Translation tool, you need to be aware of the Global Transform option at the bottom of the Tools panel. The Global Transform option toggles between a global option (button depressed) and a local option (button raised). Moving an object with the global option on makes the transformations relative to the global coordinate system, whereas moving an object with the local option on makes the transformations relative to itself.
+- Click on Scene 1 in the Edit bar to return to the main Timeline. Insert a new layer at the top of the layer stack and rename it title.
+Lock all the other layers.
+Insert a new keyframe at frame 120.
+Drag the movie clip symbol called movietitle from the Library panel onto the Stage.
+The movietitle instance appears in your new layer in the keyframe at frame 120.
+Position the title at x=180 and y=90.
+Right-click/Ctrl-click on the movie title and choose Create Motion Tween.
+Flash converts the current layer to a Tween layer so you can begin to animate the instance.
+- Move the red playhead to frame 140.
+- Select the 3D Rotation tool.
+Deselect the Global Transform option at the bottom of the Tools panel.
+Click and drag the title to rotate it around the y-axis (green) so that its angle is at about −50 degrees. You can check the rotation values in the Transform panel (Window > Transform).
+- Move the red playhead to the first keyframe at frame 120.
+Click and drag the title to rotate it around the y-axis in the opposite direction so that the instance looks like just a sliver.
+Flash motion-tweens the change in the 3D rotation, so the title appears to swing in three dimensions.

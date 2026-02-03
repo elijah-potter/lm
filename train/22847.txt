@@ -1,0 +1,271 @@
+Microcontroller-Based Mechatronic Design
+– design notebook
+– required functional categories
+– functional category ratings
+– final report
+– grading adjustments
+– additional info
+– lessons learned from past students
+– video demonstrations of past projects
+– resources and examples
+Each group must design, build, test, and demonstrate a device controlled by one or more microcontrollers, including a PIC microcontroller. Non-PIC controllers (e.g., Arduino, ESP, STM32 Blue Pill, Raspberry Pi, BeagleBone, Edison, TI MSP432 Launchpad, PLCs, FPGAs, DSPs, etc.) are allowed, but at least one PIC running PicBasic Pro must be involved and be an integral/functional/useful part of the system (e.g., it can’t just be replaced by a wire). The PIC must also be interfaced to any alternative controller(s).
+The device should have functioning elements in all six categories listed below. The device will be rated (graded) based on the level of functionality achieved in each category. There will also be grading adjustments for qualitative attributes and how well the project is documented.
+You are allowed to use circuits and code you find on the Internet or in other books, but make sure you have a full understanding of what the code or circuit does. You should also “add value” to what you use by incorporating it into your system creatively and effectively. Also, make sure you cite in your report any sources of any code or circuits you use.
+NOTE – the choice of your project concept could have a large impact on the grade you receive; so please evaluate your alternative concepts carefully, based on the grading criteria below.
+Each group must present the following over the course of the project:
+- a proposal
+- a group design notebook (checked periodically in Lab, per the project deliverable requirements listed on the syllabus)
+- a device containing functional elements in each of the categories listed below
+- a final design report
+Each of these is described in detail below. See the syllabus for due dates.
+We expect each group to be creative in coming up with a unique “device” that performs some useful function. Past project and alternative ideas can be found at mechatronics.colostate.edu/projects. Please choose an “appropriate” project concept, and avoid project ideas involving alcohol or drugs, weapons, anything illegal, explosives or fire, anything dangerous (e.g., electrocution or finger loss possible), etc.
+The proposal must contain:
+- a title page with title (project name), group number, group member names, and date.
+- a concise overview of what your proposed device is and how it will work. Include well-labeled figure(s) to illustrate your device concept (showing what it will look like … as if it were a photograph of your final device, showing how it will work, and showing what it will do). Be sure to label key components in your figures with concise text (not numbers) labeling arrows pointing to key components or features (for example, see Figures 1.2. 1.5, 1.7, and 1.9 in the textbook). Also number and title your figures (e.g., “Figure 1 – Overall view of the device and its components”), and refer to the figures in your descriptions (e.g., “As shown in Figure 1, …”). Hand drawings are acceptable as long as they are very well done and neat.
+- a functional diagram showing all major components (with pictorial representations and concise descriptive labels) and their connections (shown with arrows). For good examples, see the class examples, Section 7.9 of the book, and the final design report examples.
+- a list of proposed components in each of the functional element categories, along with a brief description of the function each component performs (in satisfying the functional element category).
+You should consider the proposal as a preliminary draft for portions of the final design report. If you do a good job with the proposal and create high quality illustrations and diagrams, you will be able to reuse the material in your final report.
+Please do not bind or cover the pages of the report in any way. We want single-sided paper with a single staple or small binder clip in the top-left-hand corner only. Also, the proposal must be free from spelling and grammar mistakes.
+Group Design Notebook
+The design notebook is a loose leaf binder containing notes, sketches, schematics, documents and designs, separated by tabs based on the project deliverables listed on the syllabus. The design notebook will be reviewed and scored by the TA in Lab the weeks deliverables are due. The design notebook is not turned in at the end of the semester. Only the final report is submitted at the end of the semester.
+Required Functional Element Categories
+Your device should contain functioning elements in each of the six categories listed below. The examples under each element category are generally listed in order of increasing rating score (see below), depending on how you use and what you do with the element. Other components not listed as examples below are acceptable and encouraged. Note – you cannot receive credit for any category until you have a device that is mostly complete. You must have a functioning device, not just a collection of independently functioning elements. Also, all category components must be interfaced to a PIC or alternative controller (e.g., a power switch or a switch hard-wired to a motor does not count as manual data input). Having several different components in a single category can help your rating, but quality is more important than quantity.
+- Output Display
+- 7-segment digit display
+- display screen
+- Audio Output Device
+- speaker with digitally prerecorded music or voice
+- speaker with software-generated sound effects
+- speaker with software-controlled synthesized music or voice
+- any of the above with higher volume (e.g., through a transistor or amplifier circuit)
+- Manual User Input (for interaction with the user)
+- switch or button
+- touch screen
+- Automatic Sensor (for response without user input)
+- limit or proximity switch
+- photo-optic pair
+- photo cell
+- temperature sensor
+- Actuators, Mechanisms & Hardware
+- RC servo motor
+- on-off dc motor
+- reversible dc motor
+- stepper motor (unipolar, bipolar)
+- PWM speed-controlled motor
+- mechanisms and hardware:
+- solid and reliable mechanical design, manufacturing, and assembly
+- interesting and effective use of linkages, cams, screws, levers, gears, etc.
+- appropriate and effective use of 3D-printed and machined parts
+- Logic, Processing, and Control; AND Miscellaneous (functional elements not covered in the categories above)
+- open-loop control
+- programmed logic
+- menu-driven software
+- calculations and data storage/retrieval
+- advanced and/or multiple interfaced microcontrollers
+- closed-loop feedback control
+- components not included in other categories
+Functional Element Category Ratings
+The group’s grade for the project will be based on the device’s performance in each functional element category listed above (A, B, C, D, E, F) and on several grading adjustments described below. The rating for each category will be a number between 0 and 20 based on the following benchmark values:
+|Rating||Description of performance|
+|0||nothing implemented (built, wired, interfaced, programmed).|
+|2||something implemented, but non functional.|
+|5||something implemented (i.e., has some level of functionality and is interfaced to the PIC or alternative controller), but not functioning as designed in a repeatable and reliable way.|
+|10||something functioning as designed (i.e., performs some intended, useful function) and repeatable (i.e., it works every time), but did not require much research or effort on your part (e.g., you purchased something requiring very little interfacing and work, or you are using something presented in detail in class or Lab).|
+|15||something functioning as designed and repeatable, and required significant research and effort on your part (e.g., you built something discussed in the text book, but not presented in detail in class or Lab, that required significant research and effort).|
+|20||something functioning as designed (i.e., performs some intended, useful function) and repeatable, and required substantial independent research and effort on your part (e.g., you built something requiring knowledge and skills not presented in the textbook or used in Lab).|
+Each category will receive a rating, and the base project score will be the sum of the six ratings. For example, if the project is rated 12 for category A, 14 for B, 10 for C, and 10 for D, 19 for E, and 15 for F, the base project score would be 80.
+The ratings are based on not only only what components you use, but also on the relevant and interesting things you do with the components through software and integration.
+NOTE: These ratings are somewhat qualitative, so official scores will not be released until the end of the semester, after the instructor and TAs meet to discuss all of the results. But if your device functions well in all of the categories listed above, and some or all of the functional elements required significant research and/or work on your part, you can expect a high rating score.
+Final Design Report
+The final report is due in class the last Friday of the semester. Please do not bind or cover the pages of the report in any way. We want single-sided paper with a single staple or small binder clip in the top-left-hand corner only. Do not turn in your design notebook with the final report. The design notebook has already been checked throughout the semester, and it was mostly just for your benefit.
+The report must include the following sections, free from spelling and grammar mistakes:
+- Title Page with title, group number, group member names, and date.
+- Table of Contents: List all sections with page numbers.
+- Design Summary: concise overview (in very high-level, basic terms … no details) of what the device is, what it does, and how it works. Include, number, and refer to a well-labeled figure or photograph illustrating the overall device.
+- System Details: concise descriptions and illustrations of the system’s basic design (not detailed drawings or parts) and function. Include illustrative figures and/or photographs with key features and components clearly labeled (see the proposal section for more info), circuit schematics (if appropriate), functional diagrams, and concise software flowcharts. Be sure to number and refer to all figures and describe them briefly. Also refer to and briefly describe anything in the Appendix.
+- Design Evaluation: Briefly describe the success of the device in meeting the functional element categories, and provide justifications for any anticipated grading adjustments.
+- Partial Parts List: For each unique and/or interesting component in your design, list the following information: part name or brief description, model number, source (vendor), and price. Include only actuators, sensors, sound modules, special purpose amplifiers, specialty drivers, external A/Ds or D/As, and other components not used in Lab or mentioned in the text book (i.e., don’t list common components like resistors, capacitors, small LEDs, basic LCD displays, basic keypads, etc.)
+- Lessons Learned: A list of significant problems or difficulties you faced, with brief and concise explanations for how you solved them along with recommendations for future students who might face similar problems or difficulties.
+- Appendix: detailed wiring diagrams, well-commented software listings, and anything else supporting the System Details section.
+If anything is not done as described above, there will be deductions.
+After looking at the figures and illustrations, and after reading the BRIEF and CONCISE descriptions in “Design Summary” and “System Details,” the reader should be able to quickly and fully understand what your device is, what it looks like, what it does, and how it functions (without seeing a demonstration of the actual device).
+Please use software tools for all work. Here are some recommended programs:
+- Word (word processing, basic illustrations)
+- PowerPoint (illustrations and flowcharts)
+- Visio (illustrations, flowcharts, circuit schematics, wiring diagrams)
+- Eagle free software for drawing wiring diagrams and auto-routing PCBs
+- Digikey’s Scheme-it (free software for drawing circuit schematics)
+- Fritzing (free software for breadboard visualization, wiring diagrams, and PCB layout)
+- free ExressPCB and EasyEDA software for drawing wiring diagrams
+- other tools for circuit diagram stuff: LogicWorks, PSpice, LabView
+Here are some examples of elements from previous student reports:
+- title page
+- labeled figures/photographs
+- software flowcharts (see additional examples in Section 7.9 in the book)
+- functional diagrams (see additional examples in Section 7.9 in the book)
+- detailed wiring diagram (see additional examples in Section 7.9 in the book)
+And some example full reports can be found on the video demonstrations page. However, you should create your report based on the detailed requirements listed above, and not based just on the examples provided (which are not necessarily perfect or complete).
+Be sure to cite sources (URLs or book bibliographies) for any circuits or code created by others and used in your design (even if modified).
+The base project score (the sum of the category ratings) will be adjusted by the following grading adjustments. The “qualitative adjustments” are judged by Dr. Dave, the TAs, and your classmates during the final project demonstrations in your scheduled Lab section meeting in the last week of the semester.
+- +/-5 for the proposal [-5: poor; 0: average/acceptable; 5: exceptional].
+- -10 maximum for a poor design notebook (per the deliverables listed on the syllabus) [-10: very little done on time or completely; 0: everything done on time and completely].
+- +/-10 for the final report [-10: poor; 0: average/acceptable; 10: exceptional].
+- +/-10 based on how presentable and complete the device is, based on construction quality, aesthetics, and consumer appeal (well-built and attractive hardware and packaging; creative, original, and useful functionality) [-10: poor; 0: average; 10: exceptional].
+- +/-10 for apparent and meaningful level of effort [-10: low; 0: average; 10: high].
+- +/-10 based on construction cost and expected mass production cost appropriate for the functionality [-10: expensive, non frugal; 0: average; 10: inexpensive, very frugal].
+- -10 maximum deduction for poor level of integration of components and functionality. All components should work together and be vital and useful parts of the overall system. [-10: poor; 0: well-integrated].
+- -10 maximum deduction for poor performance during the demonstration in the final Lab section meeting [-10: device is nonfunctional and/or unreliable; 0: everything works perfectly and reliably].
+- -10 maximum deduction for poor assembly or safety (e.g., messy or unsecured wiring, cabling, and connections; flimsy or non-robust hardware; pinch points, shock hazards, potential for bodily injury) [-10: poorly assembled, unsafe, and/or poorly powered; 0: well assembled, very safe, and convenient/effective/appropriate power source].
+- -10 maximum deduction for unnecessary or inefficient use of multiple and/or expensive controllers [-10: multiple and expensive controllers used inefficiently; 0: inexpensive controllers used in smallest number possible or appropriate].
+- -10 maximum deduction for inappropriate or inconvenient power source(s) [-10: heavy, expensive, inconvenient, ineffective, and/or over-sized power source(s); 0: convenient, appropriate, and inexpensive power source(s) – single AC plug, portable battery power where appropriate, no external power supplies or computer USB ports].
+- +10 or +5 (all or nothing … no “partial credit”) if you have at least one thing working and performing some useful function in all six categories by either of the early bird dates listed on the course syllabus. Your device does not need to be entirely complete (with everything completely assembled) for an early bird award, but everything must be interfaced to the project controller(s), and at least one PIC must be involved. And if alternative controllers are used, a PIC must be interfaced to at least one alternative controller. Everything must be working together as a system as intended, controlled by functioning software performing useful functions pertinent to the project goals. It is not sufficient to demonstrate individual category functions separately or independent from the rest of the system. The most difficult category to satisfy is “E – Actuators, Mechanisms, and Hardware.” For this category, the actuators must be performing their intended function, so they must be mounted to intended project mechanisms or hardware, and create the desired project motion.
+- A group self-evaluation will occur at the middle and end of the semester. This provides an opportunity to praise and critique group members, and it may be used to help adjust individual grades.
+- If your group is selected as one of the top 10 projects to present in class and be video recorded during the last week of the semester, your performance in class can only help or improve your ratings and scoring adjustments (i.e., things that go badly will not affect your grade adversely).
+- The potential for a positive adjustment increases with the level of functionality. A maximum positive adjustment (especially for the final project report) is possible only for a well-designed, high-ranking device.
+- You are encouraged (and will be rewarded) for designing creative and interesting devices with minimal cost.
+- Mechanical design and construction are not the emphasis of this project; but well done work will be rewarded in Functional Category E and through the qualitative adjustments above.
+BE AWARE: If your project involves complicated mechanical components, you will need to start designing and fabricating them early. Be sure to allocate enough time, and set a schedule, to complete parts as the semester progresses.
+- A basic set of electrical components and tools needed to get started is provided the 2nd week of the semester, and the Engineering Shop can supply you limited materials and mechanical hardware. Other items (special ICs, switches, miscellaneous mechanical and electrical accessories, etc.) must be purchased. See useful local and mail-order vendors for for supplier information. Mountain States Electronics offers some useful supplemental discount kits to CSU MECH307 students.
+- See sources of information for useful resources to help you with the project.
+- Information and vendors for various actuators and sensors and for various I/O devices, accessories, motor drivers and controllers, and sensor interfaces can be found online.
+- It is OK and you are encouraged to use “off-the-shelf” components, devices, and assemblies. However, if your design contains only “off-the-shelf” stuff, and very little effort and understanding is required to create the functionality you need, then your rating scores will not be very good. On the other hand, if it takes effort, research, and understanding to apply and integrate “off-the-shelf” stuff, then your ratings will be high. Another factor is cost. If you use expensive “off-the-shelf” stuff, this could affect your cost grading adjustment. We reward people who do impressive things with inexpensive stuff.
+- We recommend that group members work together as much as possible, but the project work may be more manageable if tasks are divided among the group members. The entire group is still responsible for the work (e.g., if one group member doesn’t do their part, the other members must take up the slack and evaluate the non contributing member accordingly). Here is an example of a list of duties to distribute among the group members:
+- Project management (schedule meetings, plan and monitor progress, budget and collect for purchases, foster communication, etc.).
+- Product and component research and purchasing.
+- Mechanical hardware design, assembly, and testing.
+- Electronics design, assembly, and testing.
+- Microcontroller programming and interfacing.
+- Design documentation and report writing.
+Also, the group will need to multitask, accomplishing various design and testing steps in parallel (e.g., do not wait for the microcontroller to get programmed before testing the motor, input circuits, sensors, etc.).
+- Official functional category evaluation trials will be held by the TAs during Lab section meetings, during TA office hours, or by appointment during the latter part of the semester. No trials will be allowed after the beginning of class on the last Friday of the semester. Multiple trials are allowed to progressively document the level of functionality achieved in each functional category. A group is allowed only one official trial per day. You are encouraged to demonstrate functionality to the TAs when you have things working in case things go wrong later. NOTE: Your functional category ratings are not official until the instructor and TAs discuss them and post the final project scores.
+- Every group must demonstrate and describe their device during their last Lab section meeting of the semester, where the grading adjustments will be evaluated by the instructor, TAs, and your classmates. The “grading adjustments” will be decided solely based on your device’s appearance and function during this demonstration, so it is important to make sure your device is “presentable” and works as well as possible. For stuff not working, previously recorded video demonstrations are allowed, as long as they are clear and totally convincing.
+- Selected groups will be invited to present their projects to the entire class, and be video recorded,during the last two lecture periods of the semester.
+- Theoretically, the highest possible score (for an extraordinary device requiring much effort and research, functioning repeatedly, and presented well) is 175 on a scale of 100! Although such a high score (175) is unlikely, with hard work and good performance, a score over 100 can be achieved. This could help in recovering from poor grades in other parts of the course.
+- The project is a group effort; however, individual grades in the course can also be adjusted based on the group self-evaluations completed in the middle and at the end of the semester (see Course Policies).
+- Group composition is very important. See Course Policies for more information about how the groups are formed and how individuals are evaluated within a group.
+- If you have done a good job with your project, you may want to consider submitting it to Design News magazine for their Gadget Freak series. If they select your project, you will receive $500 and get your project published in the magazine. Many student groups have done this in the past (see student design projects). You will also have a chance to win an additional $1500, $2500, or $6000. For more information, and to submit your design, go to the Gadget Freak Entry Form page. If your project was filmed by Dr. Dave in class, you can download the video from YouTube from the project videos website to include it with your submittal if requested; otherwise, just send them a link to the video.
+Lessons Learned From Past Students:
+- Start everything earlier than you think you should, especially part and device fabrication. Everything will take much longer than you think.
+- Schedule and manage all of the stuff that needs to get done, allocating lots of time for everything, especially testing and debugging. Use a Gantt chart and elect somebody to be the team leader to delegate tasks and keep things on schedule.
+- Work on all mechanical stuff and build things early in the semester (before you learn about microcontrollers), so you can focus on the electronics and microcontroller stuff later in the semester.
+- Complicated mechanical devices can be a big pain and don’t give you much reward in project grading. Keep things as simple as possible.
+- Research and order all of your parts and devices very early and very carefully. Shipping can be expensive when stuff is needed fast.
+- Order parts very early, and buy two (or more) of everything, so you will always have backup copies (e.g., if something gets damaged … which seems to happen often).
+- Be sure to have fall-back plans to reduce complexity or scale back on ambitions if necessary (i.e., make sure your design in “flexible”).
+- There are lots of good resources online for helping with different project stuff. Keep searching.
+- Check out Dr. Dave’s websites periodically through the semester. They contain lots of good resources and advice to save you a lot of time.
+- Research and buy stuff on Ebay as much as you can to save money.
+- Work late at night (especially Friday) or early morning (especially Sunday), when the Lab is not busy.
+- Get help from classmates and past students. They will often know the “details” better than Dr. Dave or the TAs.
+- Try to get ahead in your other classes leading into the finial weeks of the semester to give you more time to work on last-minute project stuff … and there will be lots of this.
+- Realize that everything will take much more time than you think, especially the system integration stuff after everything has been tested separately.
+- Testing individual components and subsystems is just half the project. Don’t underestimate how long it takes to assemble and test the entire integrated system.
+- Sometimes you can get help by posting questions on online product and support forums.
+- Demonstrate to the TAs and video-record functionality often in case things don’t work later.
+- Don’t get discouraged … unforeseen and difficult problems will come it, but you will find a way to manage or get through them. Keep a positive attitude.
+- Make sure you get one of the early bird awards … this can help you project grade quite a bit.
+- It is a group project … don’t assume individuals will get their parts done and be prepared and willing to help.
+- Be friendly and helpful to all of your classmates and you will get lots of help and friendship in return.
+- Read and heed all of the lessons learned from past students.
+- Use components recommended and used by past students successfully.
+- Ordering stuff from AliExpress and other Chinese retailers is cheap, but delivery can take a long time.
+- Use the 3D printing Lab to make parts (especially complicated parts) … this can save a lot of time and money.
+Components and Devices:
+- If using an LCD, make sure you have a pause at the beginning of the program to let it warm up first. Also, backlit LCDs (e.g., white on blue) provide a much better display than the standard black on green LCDs. Also, electrically insulate the LCD from any metal plate or box it might be mounted to.
+- Make sure you include a 10-20k pot with you LCD to be able to adjust contrast.
+- If you plan to use Lcdout, make sure the LCD has a driver chip compatible with PicBasicPro (most have this).
+- If you are using a serial LCD, make sure you use the proper Serout baud rate and use the formatting syntax for Serout, not Lcdout (e.g., # instead of DEC for number display).
+- Passive Infrared (PIR) motion detectors are very sensitive and require absolute still during start-up calibration, and they can be unreliable. Don’t use PIR sensors!
+- If using stepper motors, make sure you order drivers that work with your motors (e.g., based on current and unipolar vs. bipolar).
+- To move a stepper motor at a fast speed, you need to accelerate gradually to ramp up the speed; otherwise, steps will be missed (and the motor won’t move properly, if at all).
+- MOSFETs can use different pinout than BJTs … be sure to read the datasheet carefully before making any connections.
+- MOSFETs do not switch off unless the gate pin is grounded … it doesn’t switch off by just removing voltage.
+- Use relays instead of transistors whenever you can, and keep the high-current side isolated (no common ground) from the signal side. Some relays will need a transistor or smaller relay attached to a microcontroller to provide enough switching current.
+- If you try to build your own H-bridge (which isn’t wise), use MOSFETS and/or relays instead of BJTs.
+- RC servos require a constant stream of pulses while reaching a position, and to hold torque in a position.
+- If you need to modify an RC servo motor to turn continuously, you can find instructions online for how to do this.
+- Make sure you have flyback protection, with diodes, on all inductive loads (motors, solenoids, heaters, etc.). If switching an AC load, a high-wattage resistor in parallel with the load can help provide flyback protection.
+- Using a capacitor across the leads of a dc motor can help limit power supply voltage fluctuations that might cause microcontrollers to reset.
+- Make sure you order and test motors as early as possible so you will have enough time to get replacements if you find out you need more torque (or if you find out something else is wrong).
+- You can’t control the displacement of a dc motor simply by turning it on for a fixed amount of time. It won’t turn the same amount every time, and from one day to the next, and depending on the strength of the batteries, etc.
+- Stepper motors can get very hot if you keep the coils energized … turn the coils off after each motion if possible.
+- A cheap or used cordless drill (with integral gear motor) offers good torque at very low cost.
+- Mountain States Electronics is a good place to order components and get information and advice locally. They stock many components you will need in your projects. Ordering online can take much longer and is usually more expensive (especially with shipping charges).
+- Sparkfun has a warehouse in Boulder; so if you need parts quickly, you can order them online for pickup the same day. This will also save on shipping costs.
+- Sparkfun is a great resource because they offer free technical support for all of their parts, and they can offer advice when deciding what to purchase.
+- Many local industrial supply companies (e.g., plastics and metals suppliers) have scrap bins from which you can get free supplies.
+- If you can’t figure out how to make a device work, call the company who manufactures it for help. Sometimes a phone call can save hours or days of work.
+- Arduinos can be very useful to complement PICS in your design. There are lots of code and wiring diagrams examples available online.
+- If your audio is not loud enough, a power transistor can be used to boost the sound to a speaker.
+- Solenoid valves sometimes require pressure on the inlet for them to open easily; if not, they might require significant current to actuate.
+- Make sure you mount motors with stiff, strong, and adjustable (if possible) brackets.
+- If using a digital compass, make sure it is as far as possible from electronics and actuators and mount it as high as possible to minimize interference.
+Circuit Construction and Debugging:
+- If you have multiple voltages in your design, be very careful to not apply a large voltage (e.g., 12 V) to digital circuits (e.g., the PIC). This will definitely cause damage.
+- Before wiring circuits, draw detailed wiring diagrams first (e.g., using the free ExpressSCH software tool). You need to do this anyway for the final report, and they will be very useful as you build and debug circuits.
+- Keep printouts of detailed schematics, pin-out diagrams, and datasheets for all components and circuits in you project.
+- When your assembled circuits are not working, use the continuity-check feature of the multimeter to ensure all wiring and connections between source and terminus pins are good, and make sure there are no shorts between adjacent pins.
+- Carefully check all component pin-out diagrams and other datasheet info before wiring or connecting anything.
+- Make sure you have capacitors and flyback diodes everywhere you should (e.g., 0.1 μF across power and ground of every IC, especially the PICs).
+- If you have trouble with some inputs triggering due to noise or interference, sometimes pull-down resistors to ground can help limit this.
+- Follow all of the other troubleshooting advice in Section 15.5 of the Lab Book.
+- Use large capacitors across power and ground of anything that draws large and/or spiking current, and across your main power supply (especially if using an AC/DC adapter, batteries, of a power supply with no output capacitors).
+- Check all wiring carefully before connecting power to prevent damage to components.
+- Always disconnect power when working on circuits (e.g., when moving wires or adding or removing components).
+- Soldered printed circuit boards (PCBs) or protoboards are much more reliable than breadboards.
+- If you decide to wire up a protoboard or printed circuit board (PCB), keep your breadboard intact (and buy extra components if necessary) if case things don’t work out.
+- Some breadboards are divided and require wire bridges to continue the power and ground buses down the length of the board.
+- If you solder up a protoboard or PCB, purchase your own soldering iron. Also, check all of your connections carefully before applying power to your soldered circuits in case there are shorts. And be very careful to not damage components (see Lab 15 for advice on how to solder properly). Use IC sockets to prevent damage to ICs and to allow easy removal.
+- Use more than one color wire to help keep things more organized and easier to debug.
+- Physically label all key wires in your design so they don’t get attached to the wrong things.
+- Use ribbon cables and connectors to allow easy disconnects and to help organize wiring.
+- Keep large magnetic field stuff (e.g., solenoids) away from your circuits to reduce electromagnetic interference.
+- Always ground yourself to prevent electrostatic discharge when handling delicate components (e.g., MOSFET devices).
+- Make sure all wires and circuit boards are well insulated when mounting them to surfaces.
+- When joining two wires (e.g., by twisting them together), it is a good idea to use heat shrink-wrap tube to secure and protect the connection.
+PIC, Arduino, and Software:
+- Start your code as simply as possible (e.g., blink program) and add only a small piece at a time. Take “baby steps!“
+- Early in the semester, but an Arduino kit and work through the example codes and circuits to help you to learn the Arduino environment and to develop basic circuit and programming skills.
+- Use only the PIC16F88 when possible (since that is what is used in Lab). Other PICs can require more research and headaches. Take advantage of the free sample offer on the Microchip website and request lots of spares.
+- Read and try to understand the intro sections of the PicBasic manual, Chapter 7 in the textbook, and the PIC exercises in the Lab book before you start programming. This will save you a lot of time in the long run.
+- Allocate lots of time to debugging and testing of your code.
+- Implement an LCD early in your work (even if your project does not require one). It will be very helpful during debugging and testing.
+- Keep a printout handy for the pin-out of every PIC you are using.
+- Using multiple PICs, each doing something simple, is easier to program and manage than a single PIC trying to do everything; although, it can be difficult to coordinate everything if they all need to communicate back and forth. Be sure to clearly label the different PICs to make it easy to tell them apart as you make changes to code.
+- Always be careful to plug in the PIC to your board in the right direction to prevent damage.
+- Make backup copies of working versions of microcontroller code (and even a programmed microcontroller) before making any changes.
+- Read in the PicBasicPro manual the details for all commands you plan to use. This will save you a lot of time in the long run.
+- If a microcontroller’s pin can’t output enough current (e.g., to turn on a relay), use a transistor or a relay.
+- If running into memory problems (exceeding capacity), consider an 18-series PIC instead of a 16-series PIC.
+- If getting lots of page boundary warning messages, don’t worry (see Section 2.5.3 in the PicBasic manual). You can disable these messages by adding the following command at the top of your program: @ ERRORLEVEL -306
+- Pull-down resistors on lines between microcontrollers can help improve the reliability of the connections.
+- If using serial communication, make sure the Serin device is listening before the Serout device starts talking, and make sure both devices are set up with the same baud rate. Also, make sure all of your syntax is correct with both commands (e.g., don’t forget the “#” prefix to send a variable’s value).
+- Use separate digital I/O handshaking lines to help synchronize timing of serial communication, and use the timeout feature (e.g., with the Serin2/Serout2 commands) if it is possible to miss or not have a signal.
+- When using serial communication, consider adding a modifier character at the beginning of each transmission so the the receiver will know where the data starts (in case timing isn’t correct) and/or use a time-out feature in case data is not received properly or in a timely manner.
+- If you have devices that use I2C communication, use an Arduino (if easy-to-use Arduino software libraries are available) instead of a PIC and send the data to the PIC serially if necessary.
+- The Sound command parameter is not directly related to music note frequencies. Here is a table of some example note values:
+Do=94, Re=98, Mi=102, Fa=103, So=106, La=108, Ti=110, Do=111
+For more info, see: Where Math Meets Music.
+- The Pot command can be difficult to calibrate. Consider using an A/D converter input instead.
+- Microcontroller output pins and ports have current limitations. If things don’t work properly as you add more components (e.g., additional LEDs), it might be because you are exceeding the total current capacity. Also, microcontrollers can typically sink more current than they can source, so it is better to turn stuff (e.g., LEDs) on with negative logic.
+- Use the Freqout command instead of the Sound command to easily generate music note frequencies.
+- Use the multimeter and oscilloscope to probe all of your microcontroller pins to make sure they are going high and low as desired.
+- Schmidt triggers are useful to clean up noisy digital signals.
+- When attaching outputs from an Arduino to the input of a PIC, sometimes a pull-down resistor can help.
+- Be careful with variable types when using Arduino C. If a function returns a certain type, make sure the variable storing the result is the same type.
+- Use an Arduino and C if you need to do floating point calculations.
+- Arduinos can be purchased much more cheaply from Newegg than Radio Shack.
+- The MIT App Inventor provides an easy way to develop an app that can communicate with Arduinos and Raspberry Pis.
+- Shop for power supplies and chargers at the CSU Surplus Store and local 2nd-hand stores.
+- When using voltages above 5V, be very careful to not apply them to ICs like PICs or other 5V digital devices … they will be damaged.
+- Make sure you know the current requirements for all components in your project and make sure your power supplies can provide enough.
+- Make sure your power supply can handle more current than what you think you need.
+- Avoid high-current situations as much as possible to reduce cost, increase safety, and prevent EMI problems.
+- Try to use 5V power supplies for all components if possible to limit the chances of applying high voltage to sensitive components by mistake.
+- Use a computer power supply to provided voltages to your project. You can find them cheaply, and they provide stable voltages with ample current. Make sure the PS_on wire is grounded for proper operation. Newer computer power supplies require a constant load (e.g., with an added load resistor) to keep them from powering down.
+- If you use a voltage regulator, be aware that if the voltage is lowered a lot and the current is large, the regulator will generate a lot of heat and you will definitely need a heat sink. An alternative is to use a dc-dc converter that is more efficient. Another alternative is to use a different power supply that is better matched to the load.
+- Use a small-amperage fuse on your power supply to limit possible damage caused by shorts.
+- Keep low-current stuff (e.g., microcontroller circuits) separate and isolated (on separate boards) from high-current stuff (e.g., actuators), and use separate power supplies for each.
+- Be sure to include capacitors across the outputs of batteries and any other sources that don’t have capacitors built in.
+- Turn current off to stepper motors and solenoids when not needed. They can get hot, and they can take current away from other stuff that might need it.
+- A car battery is a good source for large current.

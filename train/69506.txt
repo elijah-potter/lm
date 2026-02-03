@@ -1,0 +1,11 @@
+Creating a Quiz Report
+Quiz reports provide information on how a class (and individual students) perform on a specific quiz. Quiz reports show the average grade for a quiz, the grades for individual students on a quiz, the average grade on a specific quiz question, the results for individual students for a quiz question, and a comparison between individual quiz question results and overall quiz results. You can drill-down in reports run from the Insights Console to see individual students’ responses, as well as the full text for each question. You can compare students’ results and look for top performing students by comparing achievement on specific, difficult questions to overall results.
+- What is required: A D2L Brightspace course and a Quiz tool
+You can view and export quiz reports to a CSV or Microsoft Excel file for data analysis. The file contains all applicable information from the quiz so that you can query, sort, and evaluate the data without being connected to the learning management system. You must set up quiz reports in the Reports Setup tab for the appropriate quiz before you can view or export reports.
+All statistics are calculated based on a user’s first attempt of the quiz. If a question is changed after attempts have occurred, then only the attempts on the newest version of the question are included in the statistical calculations.
+Select or deselect the Include exempted users in stats check box to either include or exclude exempted users in quiz statistics.
+Average grade is calculated only for first attempts of the quiz.
+- Watch video tutorial on how to create a quiz report
+- View the D2L documentation:
+- About Quiz report – List descriptions of what each report will generate
+- Create a Quiz report – directions to create a quiz report

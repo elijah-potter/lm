@@ -1,0 +1,110 @@
+Here you will find the 50 Java interview questions . What’s being presented here are some commonly asked Java interview questions that cover a broad range of topics in Java.We are sharing 50 java interview questions , these questions are frequently asked by the recruiters.
+These Java interview questions are mix of easy, tough and tricky Java questions e.g. Why multiple inheritance is not supported in Java is one of the tricky question in java. The answers of the java interview questions are short and to the point. Most questions are asked on Senior and experienced level i.e. 3, 4, 5 or 6 years of Java experience. If there is any core java interview questions that have been asked to you, kindly post it in the comment section. We assure that you will get here the 90% frequently asked java interview questions.
+Java/J2ee Interview Questions
+1) What is the difference between a JDK and a JVM?
+JDK is Java Development Kit which is for development purpose and it includes execution environment also but JVM is purely a run time environment and hence you will not be able to compile source using JVM.
+2) Which are the different segments of memory JVM uses?
+a. Stack Segment - contains local variables and Reference variables(variables that hold the address of an object in the heap).
+b. Heap Segment – contains all created objects in runtime, objects only plus their object attributes (instance variables).
+c. Code Segment – The segment where the actual compiled Java byte codes resides when loaded.
+3) What is Java bytecode?
+Java bytecode is the instruction set of the Java virtual machine. Each bytecode is composed by one, or two bytes that represent the instruction, along with zero or more bytes for passing parameters.
+4) What is the base class of all classes?
+5) What is a pointer? Does Java support pointers?
+Pointer means a reference handle to a memory location. Java doesn’t support the use of pointers as their improper handling causes memory leaks and compromises the reliability.
+6) Does java supports multiple inheritance?
+Java doesn’t support multiple inheritance.
+7) What is the difference between path and class path?
+Path and Class Path are operating system level environment variables. Path is used define where the system can find executables (.exe) files and class path is used to specify the location .class files.
+8) What is difference between abstract class and interface?
+A class is called abstract when it contains at least one abstract method. It can also contain n numbers of concrete method. Interface can contain only abstract (non implemented) methods. The abstract class can have public, private, protect or default variables and also constants. In interface the variable is by default public final. In nutshell the interface doesn’t have any variables it only has constants. A class can extend only one abstract class but a class can implement If an interface is implemented its compulsory to implement all of its methods but if an abstract class is extended its not compulsory to implement The problem with an interface is, if you want to add a new feature (method) in its contract, then you MUST implement those methods in all of the classes which implement that interface. However, in the case of an abstract class, the method can be simply implemented in the abstract class and the same can be called by its subclass.
+9) What is the difference between StringBuffer and String class?
+A string buffer implements a mutable sequence of characters. A string buffer is like a String, but can be modified. At any point in time it contains some particular sequence of characters, but the length and content of the sequence can be changed through certain method calls. The String class represents character strings. All string literals in Java programs, such as “abc” are constant and implemented as instances of this class; their values cannot be changed after they are created.
+10) Can static method access instance variables?
+Though Static methods cannot access the instance variables directly, they can access them using instance handler.
+11) Difference between implicit and explicit type casting?
+An explicit conversion is where you use some syntax to tell the program to do a conversion whereas in case of implicit type casting you need not provide the target data type explicitly.
+12) What is the difference between final, finally and finalize()?
+final: It is a modifier which can be applied to a class, method or variable. It is not possible to inherit the final class, override the final method and change the final variable.
+finally: It is an exception handling code section. It gets executed whether an exception is raised or not by the try block code segment.
+finalize(): It is a method of Object class. It is executed by the JVM just before garbage collecting object to give a final chance for resource releasing activity.
+13) Difference between Abstract and Concrete Class?
+Abstract classes are only meant to be sub classed and not meant to be instantiated whereas concrete classes are meant to be instantiated.
+14) Difference between Public, Private, Default and
+Private: Not accessible outside object scope.
+Public: Accessible from anywhere.
+Default: Accessible from anywhere within same package.
+Protected: Accessible from object and the sub class objects.
+15) Explain Autoboxing?
+Autoboxing is the automatic conversion that the Java compiler makes between the primitive types and their corresponding object wrapper classes.
+16) When do you get ClassCastException?
+As we downcast objects, The ClassCastException is thrown in case code has attempted to cast an object to a subclass of which it is not an instance.
+17) Does garbage collection guarantee that a program will not run out of memory?
+Garbage collection does not guarantee that a program will not run out of memory. It is possible for programs to use up memory resources faster than they are garbage collected. It is also possible for programs to create objects that are not subject to garbage collection
+18) What is a daemon thread? Give an Example?
+These are threads that normally run at a low priority and provide a basic service to a program or programs when activity on a machine is reduced. Garbage collector thread is daemon thread.
+19) Can a null element be added to a TreeSet or HashSet?
+A null element can be added only if the set contains is on size 1 because when a second element is added then as per set definition a check is made to check duplicate value and comparison with null element will throw NullPointerException. HashSet is based on HashMap and can contain null
+20) What is the difference between collections class vs collections interface?
+Collections class is a utility class having static methods for doing operations on objects of classes which implement the Collection interface. For example, Collections has methods for finding the max element in a
+21) What is comparator interface used for?
+The purpose of comparator interface is to compare objects of the same class to identify the sorting order. Sorted Collection Classes (TreeSet, TreeMap) have been designed such to look for this method to identify the sorting order, that is why class need to implement Comparator interface to qualify its objects to be part of Sorted Collections.
+22) Can we add heterogeneous elements into TreeMap?
+No, Sorted collections don’t allow addition of heterogeneous elements as they are not comparable.
+23) What is the difference between an Inner Class and a Sub-Class?
+An Inner class is a class which is nested within another class. An Inner class has access rights for the class which is nesting it and it can access all variables and methods defined in the outer class. A sub-class is a class which inherits from another class called super class. Sub-class can access all public and protected methods and fields of its super class. A sub-class is a class which inherits from another class called super class. Sub-class can access all public and protected methods and fields of its super
+24) What is data encapsulation and what’s its significance?
+Encapsulation is a concept in Object Oriented Programming for combining properties and methods in a single unit. Encapsulation helps programmers to follow a modular approach for software development as each object has its own set of methods and variables and serves its functions independent of other objects. Encapsulation also serves data hiding purpose.
+25) What is the difference between continue and break statements?
+break and continue are two important keywords used in Loops. When a break keyword is used in a loop, loop is broken instantly while when continue keyword is used, current iteration is broken and loop continues with next iteration.
+26) Which types of exceptions are caught at compile time?
+Checked exceptions can be caught at the time of program compilation. Checked exceptions must be handled by using try catch block in the code in order to successfully compile the code.
+27) Can we use a default constructor of a class even if an explicit constructor is defined?
+Java provides a default no argument constructor if no explicit constructor is defined in a Java class. But if an explicit constructor has been defined, default constructor can’t be invoked and developer can use only those constructors which are defined in the class.
+28) Can we override a method by using same method name and arguments but different return types?
+The basic condition of method overriding is that method name, arguments as well as return type must he exactly same as is that of the method being overridden. Hence using a different return type doesn’t override a method.
+29) How destructors are defined in Java?
+In Java, there are no destructors defined in the class as there is no need to do so. Java has its own garbage collection mechanism which does the job automatically by destroying the objects when no longer referenced.
+30) How objects are stored in Java?
+In java, each object when created gets a memory space from a heap. When an object is destroyed by a garbage collector, the space allocated to it from the heap is re-allocated to the heap and becomes available for any new objects.
+31) What is the order of call of constructors in inheritance?
+In case of inheritance, when a new object of a derived class is created, first the constructor of the super class is invoked and then the constructor of the derived class is invoked.
+32) How to create an immutable object in Java? Does all property of immutable object needs to be final?
+To create a object immutable You need to make the class final and all its member final so that once objects gets crated no one can modify its state. You can achieve same functionality by making member as non final but private and not modifying them except in constructor. Also its NOT necessary to have all the properties final since you can achieve same functionality by making member as non final but private and not modifying them except in constructor.
+33) What is difference between Enumeration and Iterator
+Enumeration is twice as fast as Iterator and uses very less memory. Enumeration is very basic and fits to basic needs. But Iterator is much safer as compared to Enumeration because it always denies other threads to modify the collection object which is being iterated by it. Iterator takes the place of Enumeration in the Java Collections Framework. Iterators allow the caller to remove elements from the underlying collection that is not possible with Enumeration. Iterator method names have been improved to make it’s functionality clear.
+34) What is difference between Comparable and Comparator
+Comparable and Comparator interfaces are used to sort collection or array of Comparable interface is used to provide the natural sorting of objects and we can use it to provide sorting based on single logic. Comparator interface is used to provide different algorithms for sorting and we can choose the comparator we want to use to sort the given collection of
+35) Difference between throw and throws?
+throw is used to explicitly throw an exception especially custom exceptions, whereas throws is used to declare that the method can throw an exception. We cannot throw multiple exceptions using throw statement but we can declare that a method can throw multiple exceptions using throws and comma separator.
+36) What are the disadvantages of using arrays?
+Arrays are of fixed size and have to reserve memory prior to use. Hence if we don’t know size in advance arrays are not recommended to use. Arrays can store only homogeneous elements. Arrays store its values in contentious memory location. Not suitable if the content is too large and needs to be distributed in memory. There is no underlying data structure for arrays and no ready made method support for arrays, for every requirement we need to code explicitly.
+37) How substring() method of String class create memory
+Substring method would build a new String object keeping a reference to the whole char array, to avoid copying it. Hence you can inadvertently keep a reference to a very big character array with just a one character string.
+38) What is the difference between yield() and sleep()?
+When a object invokes yield() it returns to ready state. But when an object invokes sleep() method enters to not ready state.
+39) Why threads block or enter to waiting state on I/O?
+Threads enters to waiting state or block on I/O because other threads can execute while the I/O operations are performed.
+40) What is the difference between System.out ,System.err and System.in?
+System.out and System.err both represent the monitor by default and hence can be used to send data or results to the monitor. But System.out is used to display normal messages and results whereas System.err is used to display error messages and System.in represents InputStream object, which by default represents standard input device, i.e., keyboard.
+41) Why Char array is preferred over String for storing Password?
+String is immutable in java and stored in String pool. Once it’s created it stays in the pool until unless garbage collected, so even though we are done with password it’s available in memory for longer duration and there is no way to avoid it. It’s a security risk because anyone having access to memory dump can find the password as clear text.
+42) Why String is popular HashMap key in Java?
+Since String is immutable, its hashcode is cached at the time of creation and it doesn’t need to be calculated again. This makes it a great candidate for key in a Map and it’s processing is fast than other HashMap key objects. This is why String is mostly used Object as HashMap keys.
+43) Difference between Checked and Unchecked exceptions ?
+Checked exceptions and the exceptions for which compiler throws an errors if they are not checked whereas unchecked exceptions and caught during run time only and hence can’t be checked.
+44) Does Constructor creates the object?
+New operator in Java creates objects. Constructor is the later step in object creation. Constructor’s job is to initialize the members after the object has reserved memory for itself.
+45) Can constructors be synchronized in Java ?
+No. Java doesn’t allow multi thread access to object constructors so synchronization is not even needed.
+46) Difference between Array List and Linked List ?
+Linked List and Array List are two different implementations of the List interface. Linked List implements it with a doubly-linked list. Array List implements it with a dynamically resizing array.
+47) How can we create objects if we make the constructor private?
+We can do so through a static public member method or static block.
+48) Similarity and Difference between static block and static method?
+Both belong to the class as a whole and not to the individual objects. Static methods are explicitly called for execution whereas Static block gets executed when the Class gets loaded by the JVM.
+49) What restrictions are placed on method overriding?
+Overridden methods must have the same name, argument list, and return type. The overriding method may not limit the access of the method it overrides. The overriding method may not throw any exceptions that may not be thrown by the overridden method.
+50) Difference Between this() and super() ?
+1. this is a reference to the current object in which this keyword is used whereas super is a reference used to access members specific to the parent
+2. this is primarily used for accessing member variables if local variables have same name, for constructor chaining and for passing itself to some method whereas super is primarily used to initialize base class members within derived class constructor.

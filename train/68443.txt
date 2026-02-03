@@ -1,0 +1,14 @@
+Master MongoDB - The widely used modern database in a step-by-step, practical, and easy-to-understand approach covering all major topics
+- In-depth practical demonstration of MongoDB concepts with numerous examples.
+- Includes graphical illustrations and visual explanations for MongoDB commands and methods.
+- Covers advanced topics such as MongoDB Compass, MongoDB Security, Backup and Restore, and Replication and Sharding.
+MongoDB Complete Guide book starts with the basics of MongoDB, what exactly is MongoDB, and how to use it practically. You will understand how MongoDB is different from the traditional RDBMS.
+Topics such as installation and configuration of the MongoDB server, MongoDB commands, MongoDB Shell methods, and data types in MongoDB are covered in detail.
+You will practice how to perform MongoDB CRUD operations, indexing, MongoDB query selectors, projection in MongoDB and projection operators as well as aggregation in a very detailed and step-by-step manner. You learn how to work with MongoDB Compass and some of the advanced MongoDB topics like managing and administering MongoDB, managing the MongoDB process, monitoring and diagnosing MongoDB, backup and restore, MongoDB security, replication and sharding.
+WHAT YOU WILL LEARN
+- Perform write operations, search documents, and define complex queries in MongoDB.
+- Perform indexing, aggregation, and data replication.
+- End-to-end MongoDB administration along with authentication and authorization.
+- Running backups, restoring, and monitoring of MongoDB database enterprise-wide.
+WHO THIS BOOK IS FOR
+This book is designed for software developers and server administrators who want to quickly learn MongoDB basics and start applying the knowledge of MongoDB in their business systems.

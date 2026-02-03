@@ -1,0 +1,4 @@
+This article was originally written in 2011, and was slightly updated in 2014.
+Filesystem types and (lack of) compatibility
+Despite the fact that we’re no longer living in the 1980s, filesystem-compatibility between operating systems seems to remain an issue in computer-land. The filesystem basically defines the way in which files are organised on a disk. In the 1980s, the popularity of MS-DOS led to widespread adoption of the FAT filesystem, which was also used in earlier Windows versions (½/3/95/98/ME). As NT-based Windows versions (NT/2000/XP/Vista/7) started becoming the mainstream consumer-versions, more and more computers started using Microsoft’s proprietary NTFS.
+Nowadays, most external USB harddisks are sold pre-formatted with an NTFS-filesystem, while camera flash-cards and USB thumb-drives tend to still use a FAT32 filesystem. NTFS …read more

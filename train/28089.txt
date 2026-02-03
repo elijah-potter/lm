@@ -1,0 +1,4 @@
+To be fair, the Arduino is not a signal processor. It can be the brains of a signal processor but it is not blessed with much in the way of real time analog processing, being a primarily a digital device.
+There is a whole corner of electronics devoted to this, however... known as Digital Signal Processing (DSP) and companies like Texas Instruments are heavily involved in making chips for this application.http://en.wikipedia.org/wiki/Digital_signal_processing
+The devices that perform these functions have far more power than an Arduino: IE; http://www.ti.com/lsds/ti/dsp/platform/c6-integra/device.page
+You are going to need to rely on a good amount of external parts to get good results.

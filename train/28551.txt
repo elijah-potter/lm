@@ -1,0 +1,16 @@
+2.9.2 Yank Commands
+Yank commands yank a text of buffer into a (usually anonymous) register.
+Here the word `yank' is used in Vi's sense. Thus yank commands do not
+alter the content of the buffer, and useful only in combination with
+commands that put back the yanked text into the buffer.
+For example, y $ will yank the text between point and the end of line
+into an anonymous register, while "c y $ will yank the same text into
+- y motion-command
+- Yank the region determined by the motion command motion-command.
+Use the following command to yank consecutive lines of text.
+- y y
+- Yank a line. Given n, yank n lines (
+- y r
+- Yank current region.
+- y R
+- Expand current region and yank it.

@@ -1,0 +1,10 @@
+Voting booths are notoriously buggy. Whether they’ve been actively hacked or just improperly calibrated, every election season is rife with complaints that machines misrecorded ballots or that an election has been compromised by hackers.
+To prevent us from having to take a technological step backwards to paper ballots, U.S. Department of Defense’s research division DARPA is working with cybersecurity firm Galois to develop open source voting machine technology that would let people verify that their votes were tallied correctly, according to Motherboard.
+The ultimate goal isn’t to sell machines, but to develop tech that would beef up existing voting machine vendors’ security.
+“We will not have a voting system that we can deploy. That’s not what we do,” Linton Salmon, the DARPA scientist managing the project, told Motherboard. “We will show a methodology that could be used by others to build a voting system that is completely secure.”
+Kicking The Tires
+To make sure that any new voting machines built with DARPA software are actually better than today’s, the plan is to invite experts ranging from academic computer scientists to hackers to test it out and search for vulnerabilities, according to Motherboard.
+One way that the new system might improve upon others is by printing out a sheet showing a voter’s selections so that they can look it over before feeding it into a separate machine that will actually record the vote.
+“That receipt does not permit you to prove anything about how you voted, but does permit you to prove that the system accurately captured your intent and your vote is in the final tally,” Galois principal scientist Joe Kiniry told Motherboard.
+READ MORE: DARPA Is Building a $10 Million, Open Source, Secure Voting System [Motherboard]
+More on election security: Could Digital Voting Create a Society That Is Truly Governed by the People?

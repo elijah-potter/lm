@@ -1,0 +1,15 @@
+--- Introduction ---
+is an easy exercise on matrices:
+one knows that any square matrix C of size
+\ is the sum of a symmetric matrix
+A and an antisymmetric matrix B.
+Recall that a square matrix M is symmetric
+if it equals its transpose and M is antisymmetric if
+M plus its transpose is zero matrix.
+The most recent version
+This page is not in its usual appearance because WIMS is unable to recognize your
+Please take note that WIMS pages are interactively generated; they are not ordinary
+HTML files. They must be used interactively ONLINE. It is useless
+for you to gather them through a robot program.
+- Description: write a given matrix as sum of symmetric and antisymmetric matrices. Serveur Wims de l'ESPE-Nice-Toulon - Université de Nice - Sophia Antipolis
+- Keywords: interactive mathematics, interactive math, server side interactivity, algebra, linear_algebra, matrix

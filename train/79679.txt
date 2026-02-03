@@ -1,0 +1,23 @@
+This site talks about personal works, dedicated to the electronics of
+coming "Internet of things". It will be based mainly on embedded systems
+having incorporated wireless connection . Most of them are powered by a
+MIPS CPU and OpenWrt operating systen. Their main characteristic is a
+very low current consumption, they can operate on a small battery and
+can be inserted in clothes (wearable computing). Having enough memory
+and processing power they are capable of complex behaviour. OpenWrt is a
+very light Linux distribution suited to systems with reduced hardware
+resources. It is then very friendly to current consumption, probably the
+most important item in this area of future development. Wireless is the
+key element of OpenWrt, defining itself "Wireless freedom". Anyway
+there is not only OpenWrt, embedded systems with no host environement,
+having only application program managing itself, are still less power
+hungry, and hence still competitive. Somebody said "use a kernel with
+nine million lines of code to switch on and off few leds is a little bit
+wasteful". But never forget the famous sentence of a Sun Microsystems
+presentation of year 1991: "Put in your products plenty of transistors,
+up to the waste, or you will become quickly non competitive. Now after
+having learned to waste transistors, you should learn to waste
+bandwidth". Surprisingly enough, they accurately forecasted the future.
+This site is the partial english version of www.belinonda.it.
+Complete translation is in progress.
+Vai alla versione italiana

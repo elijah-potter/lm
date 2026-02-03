@@ -1,0 +1,28 @@
+Understanding Video Surveillance APIsAuthor: John Honovich, Published on Aug 14, 2008
+While APIs are key to 'open' platforms, they are a frequently misunderstood and over-hyped aspect of physical security. While APIs can provide great benefits, using them is much more complex than often mentioned in sales calls and magazines.
+The goal of APIs in physical security is to allow different systems to work together. Examples include:
+- Integrating your IP cameras or analytics with your VMS
+- Integrating your DVR/NVR with your access control system
+- Integrating your alarm system with a central monitoring system
+- Building a PSIM system that integrates with all your security systems
+You most commonly hear APIs discussed in pre-sales situations where a customer or integrator asks a vendor: "Does your system work with 'X'?" where X could be any number of security systems by any number of manufacturers.
+The routine answer by the sales person is:
+"Sure, we have an API."
+This is one of the most dangerous and misleading statement in all of physical security. Because it is so common and so dangerous, it is a great place to start reviewing APIs.
+Lesson #1: No such thing as 'an' API
+There is no such thing as 'an' API. Numerous APIs exist. In larger systems, hundreds of APIs exist. Generally, there is an API for each function in a system. Want to watch live video, use the live video API. Want to change the time, use the time change API. Want to increase the frame rate for recording, use the recording frame rate API, etc.
+Lesson #2: Not all Functions have an API
+Here's the first gotcha. Not all functions have an API available. Let's say you need to get a list of all health alerts from another application. This application may have 'an API' but not a specific API for sending health alerts. As you can imagine because most systems today have hundreds of functions, it is common that dozens of these functions are not accessible via an API.
+Lesson #3: Having an API does not mean it will work with your system
+Let's say you have Genetec for your VMS and Software House for your access control. Both of these companies certainly have APIs but there is no guarantee that these two products will work together. Both companies having APIs is a pre-requisite for integration but it is not sufficient. At least, both of these companies need to work together to ensure the integration works reliably. Many companies certify their API works with partners but frequently your product combination will not be included.
+Lesson #4: Doing the Integration Takes Time
+Vendors often claim a few weeks for integration. This can happen but often technical details need to be worked out that can take significantly longer. Be careful in the time and dollar amount you commit for such projects. This is the type of risk that is often unknown and unknowable until you dig into the technical details about how each vendor implements their APIs. Generally, these projects are ultimately successful, but the time and cost can vary.
+Lesson #5: API Changes can Break You
+Just like a product, over time, APIs change. The difference is with APIs, their change can break your system. Reasons for change include eliminating bugs, enhancing performance, adding in new functionalities. Other system depends on those APIs. Let's say your system works with "Vendor B" version 3.1. Now let's say "Vendor B" comes out with 3.2 but this version "breaks the API". In other words, the new version is not backwards compatible with the old version. Your system could suddenly stop working with "Vendor B" if you upgrade Vendor B to version 3.2. The result is your security command center no longer displays video or access or whatever the system that just got the upgrade.
+Lesson #6: You are Stuck with what the API does
+Unless you are a very large customer, you are stuck with whatever the API does in whatever way it does it. Often, for what you need, this works out fine. However, if you need some change for your specific use case, this can be hard to accomplish. Make sure someone on your technical team knows specifically what the API can and cannot do so you can anticipate any potential problems up front. If a change needs to be made, the change will usually take a lot of time and testing. This occurs not because people are slow but because the vendor must ensure that they do not break the 1000s of other security organizations using this API.
+The use of APIs are certainly beneficial for physical security and their use will undoubtedly grow. Understanding the realities of using APIs will ultimately help us maximize our value of system integration.
+3 reports cite this report:
+Related Reports on Sales
+Most Recent Industry Reports
+The world's leading video surveillance information source, IPVM provides the best reporting, testing and training for 10,000+ members globally. Dedicated to independent and objective information, we uniquely refuse any and all advertisements, sponsorship and consulting from manufacturers.

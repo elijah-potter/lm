@@ -1,0 +1,21 @@
+People new to websites or looking at creating their first website, often find the whole concept of Domains and Hosting to be quite confusing. This page provides a brief introduction to Hosting Plans – What they are; Why we need them, and How to set one up (also see our Domain Names page for information about Domain Names).
+What is a Hosting Plan?
+Web Hosting is a service offered by a third party company that has computers that are hooked up to the internet 24/7. These computers are called servers and they are assigned IP numbers so that they can be found by other computers on the internet. It is on these servers that all files associated with your website are stored.
+When you type a web address into the address bar of your browser and then hit Go, your browser sends out a request to ‘get’ that web page. The request travels across the internet to the appropriate web server and attempts to locate the web page on that server. If the request is successful (web page exists) then that web page will load (or download) into your web browser.
+When do I need a Hosting Plan?
+You will need a hosting plan if you are creating a website. If you do not want or need a website but would like to use a personalised (professional) email address – something like: email@example.com you could use a simpler type of Hosting Plan called Email Hosting.
+Choosing a Host Provider
+Hosting is offered by many third parties, and your website could be hosted in Australia or anywhere else in the world, but in order to make your website as efficient as possible for Australian users , we strongly recommend hosting on Australia base servers.
+There are many Hosting Providers offering a variety of different hosting packages, with many different options. Some of the factors that can influence the type of hosting plan you need are :
+- Location – a locally based (same country) server is usually a better option than one hosted in a different country as response is likely to be faster.
+- Operating System – usually a choice between Windows and Unix hosting is available. Unix hosting is by far the most popular (and cheaper) and is usually the better option (unless you have some specific needs that would require a Windows based server).
+- Storage – the amount of space you have available to store your web files. This can range from 10s of Megabytes to 10s of Gigabytes, although usually 1Gb storage would be plenty for the average small business website.
+- Bandwidth – the monthly volume of traffic allocated for your website. If you have a high volume of visitors, and/or content that requires high bandwidth (e.g. large images, audio or video) you should be looking for higher (or unrestricted) bandwidth.
+- Databases – most modern websites and Content management systems are based around one or more databases.
+- Parked Domains – can you setup extra parked domains? Many hosting plans will charge extra for this.
+Hosting often requires some manual intervention by the host provider, and can take hours (or even days) to setup.
+In-a-Day have affiliated with an Australian based host provider, that offers a very great service (25Gb storage, unlimited bandwidth, 5 databases, 5 parked domains and full cpanel access) for a very reasonable price, and usually sets up the hosting environment very quickly.
+How do I Order a Hosting Plan?
+Hosting is usually provided on a monthly or annual basis and you are effectively “renting” the space on a web server for as long as you want the website (or email) to remain active. If Hosting is cancelled (or you forget to renew it) your website (and email) will stop functioning.
+In-a-Day is partnered with a hosting plan service which offers great value, Australia based hosting.
+|For a Free eBook Guide to Domains and Hosting, click the “Domains and Hosting Guide icon below.||To access In-a-Days Hosting Service, click the In-a-Day Hosting icon below.|

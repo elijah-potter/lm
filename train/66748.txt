@@ -1,0 +1,40 @@
+Standard Deviation Index Calculator
+Welcome to this standard deviation index calculator. It helps calculate the standard deviation index using the laboratory mean, consensus group mean, and the standard deviation of the consensus group. Though there are many techniques that can help us identify bias in the test model, calculating the standard deviation index is one of the simplest.
+What is the standard deviation index?
+The standard deviation index is a measurement of bias. The target SDI is 0.0, which indicates that there is no difference between the laboratory mean and the consensus group mean. The consensus group is basically the population and hence consensus group mean is the population mean, whereas the laboratory mean is the sample mean. The sample mean is the mean of our test model.
+For instance, an SDI of 1.6 indicates a bias of 1.6 standard deviations from the group mean, which is not favorable. Since the value is positive, the consensus group mean is less than the laboratory mean. If the value of SDI were -1.6, this would mean that the laboratory mean and the consensus group means are 1.6 standard deviations apart and the value of the consensus group mean is greater than the laboratory mean.
+Note that there are also different types of standard deviation with dedicated tools to calculate them, such as:
+- Standard deviation calculator - It uses individual data points as the input instead of mean values.
+- Relative standard deviation calculator - The result is expressed as a percentage of the mean.
+- Standard deviation of sample mean calculator - It allows you to find the confidence margin of error in your estimations.
+- Grouped data standard deviation calculator - For data represented as ranges and their corresponding frequencies.
+How to calculate SDI?
+The standard deviation index formula is as follows:
+SDI = (Laboratory mean - Consensus group mean) / Consensus group standard deviation
+Here, the laboratory mean is the mean of your test model, the consensus group mean is the mean of the population, and the consensus group standard deviation is the standard deviation of the population.
+Hence, SDI is the difference between the laboratory mean and the consensus group mean, presented as a ratio of the consensus group standard deviation. In other words, by looking at the standard deviation index formula we can see that it tells us how far or near is the test mean from the population mean in terms of the number of standard deviations of the population.
+Let us look at an example:
+Let's assume that the laboratory mean is 9, the consensus group mean is 8, and the consensus group standard deviation is 2.
+On feeding these values into the standard deviation index calculator, we get:
+SDI = (9-8)/2 = 0.5
+The positive value of SDI indicates that the laboratory mean is greater than the consensus group mean. The value 0.5 indicates that the means are 0.5 standard deviations apart. Hence, both the absolute value (magnitude) and the sign (positive or negative) can give you insight into how to improve your test model.
+How to interpret the SDI values?
+The sign can help us identify any outliers in the observation. The + sign indicates that the laboratory mean is greater than the consensus group mean and hence there might be an outlier to the left side (negative side if you imagine the means plotted on a number line) of the consensus group mean. Similarly, a - sign indicates that the laboratory mean is smaller than the consensus group mean and hence there might be an outlier to the right side (positive side if you imagine the means plotted on a number line) of the consensus group mean. If the possibility of an outlier is rejected, the next step is to check the variables that might be causing the consensus group mean to be greater or smaller than the laboratory mean.
+If SDI has a positive value, this could indicate that there might be some variable(s) that are diminishing the value of the consensus group mean. The variables themselves can be changed in this case, such as a linear variable can be changed to a quadratic variable or vice-versa in case of a reciprocal variable (This is just an example for explanation. The variables can be changed in an infinite number of ways depending upon the specific cases. It depends upon the model and its application, and so you'll have to tweak your variables accordingly. A wrong choice can completely throw you off track and hence care must be taken while this step is performed.).
+Alternatively, the coefficients of these variables can be increased to rectify this issue. Similarly, a - sign could indicate that some variable(s) could be causing the consensus group mean to bloat, and hence the variables themselves or their coefficients can be reduced.
+Sometimes, however, some variables are found to be unrelated and hence cause anomalies and therefore have to be dropped entirely.
+By analyzing the value of the standard deviation index, we can determine whether our test model is acceptable or not. Thus, it can help us understand a possible underlying bias in our model and take appropriate remedial measures to rectify it.
+SDI = 0, it indicates that the laboratory mean and the consensus group mean are equal and this is a favorable condition that indicates bias is equal to zero.
+SDI > 0but
+<= 1, it indicates that the laboratory mean and the consensus group mean are closer to each other and this is somewhat a favorable condition that indicates less bias.
+SDIvalue that is greater than 1 but is
+=< 1.25It indicates that the laboratory mean lies within the acceptable limit.
+SDIvalue is greater than
+=<1.49. It indicates that the value may be considered acceptable but an examination of the test model may be helpful.
+1.99. It indicates that the test case should be examined. This is a marginal case and indicates a bias.
+SDI >= 2means that the performance of the test is unacceptable and remedial action is required.
+The example given above gives the value 0.5 for SDI. Hence the SDI lies between 0 and 1, which falls in the category discussed in point 2. Hence, this is somewhat a favorable condition that indicates less bias.
+What is a mean?
+The calculated average of a group obtained by taking the sum of all the observations and then dividing it by the total number of observations. In other words, the mean for a group of data points is simply the average.
+What is standard deviation?
+The standard deviation is a measure of how spread out numbers are. A higher standard deviation suggests more spread out data points whereas a lower standard deviation suggests that the data points are clustered together. Thus, the standard deviation index tells us how close or how far are the expected and observed means in terms of the one standard deviation. The number generated by this SDI calculator is an indicator of whether or not we need to rectify our test model to remove bias.

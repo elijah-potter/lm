@@ -1,0 +1,6 @@
+- Select the current row: Shift+SpaceBar
+- Insert a row (above the currently selected row): Ctrl+"+"
+To delete a row (or column) after it is selected, press Ctrl+"-"
+It's easy to remember these because Ctrl is pretty much the most powerful key there is and "+" and "-" make sense for adding and deleting. A trick for remembering which shortcut to use for selecting the row or column is the mnemonic that both "Ctrl" and "Column" start with "C". Remembering the SpaceBar is easy because the SpaceBar is a long key, so it can easily represent a row or column.
+To insert more than one row or column at a time, use the Arrow Keys as you hold Shift before going to step 2. You can also just hold down Ctrl+Shift as you repeating hit the "+" key, or hold down Ctrl as you repeatedly hit the "-" key.
+[Updated 12/18/2012] (thank you to those who have commented)

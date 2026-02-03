@@ -1,0 +1,33 @@
+What is a USB port used for?
+USB, short for Universal Serial Bus, is an industry standard for data communication within a limited distance. A USB port is a cable, connector, and protocols connection interface on computers, peripherals, and other electronic devices.
+USB was originally designed for computer peripherals: keyboards, mice, external disk drives, printers, scanners, cameras, and the like. More recently, USB has become a versatile connector for audio and video devices like speakers, microphones, monitors, and webcams.
+A USB port enables USB devices to be connected to each other directly or via a USB cable (on most occasions) to transfer data or supply power.
+Except for data transmission, USB’s charging capability mean that it can also be used solely for charging.
+What types of USB ports are there?
+USB ports come in different shapes and designs. Originally, there were just two USB types, USB-A and USB-B. Now, USB-C is joining the game and now changing everything.
+USB-A is the most commonly known USB type, mainly used for wired mice and keyboards and USB sticks. It’s the cable with that one wider end. Only one, as the connector is not rotationally symmetrical and both ends are different, corresponding to a different type of port.
+USB-B port isn’t as wide as a USB A port, and it also has a tiny rectangular hole in the middle. It is usually not used on modern computers. But it is commonly found on printers, routers, and scanners.
+USB-C port has a flatter and smaller male port. The hole in the middle of the port where the small connector pins will fit into is a small and flat oval hole. It is the new standard for replacing USB-A and USB-B, and it is designed better for thinner devices, like MacBook, iMac, and mobile phones.
+USB Mini are further divided into two variants: USB Mini A and USB Mini B. These are smaller counterparts of Type A and Type B USB connectors. You will likely find USB Mini in portable cameras, game controllers, and some old mobile phones.
+Both USB-A and USB-B have micro versions. Micro USB is a very common USB connector you will find in many smartphones these days. However, with the advent of USB Type C, Micro USBs are slowly getting phased out in newer models of high-end smartphones. But Micro USB is still widely used in budget smartphones and other electronic devices worldwide.
+Modern Apple devices, like iPhones and iPads, often have an entirely different kind of USB connector – the Lightning cable. The cable has a thin, rectangular connector on one end and a Type C connector on the other end. Lightning cables are reversible, i.e., they can be plugged in either way without worrying about which is the right side up.
+What is the difference between USB-A, USB-B, and USB-C?
+USB-A, B, or C only refers to the physical design (or shape) of the ports and connectors. USB-A is in a flat and rectangular shape. USB-B comes in a variety of designs, and the standard one is a bit squarer. Moreover, USB-C has a more compact, rectangular shape with rounded corners.
+Whether it’s a USB-A, B, or C, their data transfer speed are determined by USB versions. All three types of USB ports can run USB versions of 1.1, 2.0, 3.0, or 3.1. The higher the USB version is, the faster the speed it brings.
+USB not working, what should you do?
+Have your PC or laptop USB ports stopped working? Here are five of the most common ways to troubleshoot and fix a USB port that is not working properly.
+Try a different USB port.
+Unplug the device and plug it into a different USB port.
+Replace the USB cable.
+If it’s old or has been roughly handled, it might not work right anymore. Change the cable and see if that resolves the issue.
+Clean the USB port.
+Use a very thin, non-metallic tool like a toothpick to carefully clear the port. Don’t use blasts of canned, high-pressure air.
+Restart the computer.
+Turning it off and then back on again can flush out any corrupt data and reset device drivers automatically.
+Reset SMC if you are using a Mac.
+Or open the device manager to scan for hardware changes and disable and re-enable the USB controller if you have a Windows PC.
+USB 2.0 vs 3.0 Comparison: Do you really need USB 3.0?
+USB Extender – A Useful Tech to Beat the Max. Length Limit of USB Cables
+USB Switch: Control Two PCs with a Keyboard and Mouse
+What is a USB Switch? How Does it Work?
+What Is a USB Extender? How Does it Work?

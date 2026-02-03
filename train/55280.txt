@@ -1,0 +1,13 @@
+posted by Chad .
+A boat is traveling on a bearing of 25 degrees East of North at a speed of 4 knots (a knot is 1.852 km/h). After traveling for 3 hours, the boats heading is changed to due South and it travels for an additional 2 hours at 5 knots. Using a Vector diagram, what is the resultant?
+V1 = 4 * 1.852km/h = 7.408 km/h.[65o].
+d1 = 3h * 7.408km/h = 22.224 km/h[65o].
+V2 = 5 * 1.852km/h = 9.26 km/h.[270o].
+d2 = 9.26km/h * 2h = 18.52 km[270o].
+R = d1 + d2.
+R = 22.224km[65o] + 18.52 km[270o]
+X = 22.224*cos65 = 9.39 km.
+Y = 22,224*sin65 + 18.52*sin270=1.62 km
+tanA = Y/X = 1.62/9.39 = 0.17271
+A = 9.8o
+R = X/cosA = 9.39/cos9.8=9.53 km[9.8o].

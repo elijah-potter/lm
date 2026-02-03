@@ -1,0 +1,7 @@
+Test your skill creating words and phrases from the randomly generated letters. Half the letters are consonants and half are vowels. The letters are surrounded by blank tiles which serve to separate words. The functions below operate on any game tile: consonant, vowel or blank.
+Highlight all occurrences of a letter on the game board by pressing the corresponding key on the keyboard.
+The Up ↑ Down ↓ Left ← and Right → Buttons shift an entire column up or down one tile position, or an entire row left or right one tile position.
+Switch Two Tiles by clicking the first, then clicking the second.
+Change Letter by first clicking its tile. The up ↑ and right → arrow keys rotate the letter up the alphabet with blank coming after "Z". The down ↓ and left ← arrows rotate the letter down the alphabet with blank coming before "A". After blank, the rotation wraps arround: "A" appears in the upward rotation and "Z" appears in a downward rotation.
+CTRL and ALT with any of the arrows generates a random letter. A consonant is replaced with a random consonant and a vowel with a random vowel. A blank tile is replaced with a random letter of either type or a blank.
+For fun, see if any words appear in the random letters before you start. This could spark an idea or intuition.

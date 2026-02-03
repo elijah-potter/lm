@@ -1,0 +1,47 @@
+Toll-like receptor 3
+| The structure of TLR3 covered with sugars
+| Available structures: 1ziw, 2a0z
+|| TLR3; CD283
+| External IDs
+|| OMIM: 603029 MGI: 2156367 Homologene: 20696
+| Molecular Function:
+|| • double-stranded RNA binding|
+• transmembrane receptor activity
+• protein binding
+| Cellular Component:
+|| • integral to plasma membrane|
+| Biological Process:
+|| • inflammatory response|
+• hyperosmotic response
+• signal transduction
+• activation of NF-kappaB-inducing kinase
+• detection of virus
+• defense response to bacterium
+• positive regulation of I-kappaB kinase/NF-kappaB cascade
+• positive regulation of interferon-gamma biosynthetic process
+• innate immune response
+• positive regulation of interferon-alpha biosynthetic process
+• positive regulation of interferon-beta biosynthetic process
+• negative regulation of osteoclast differentiation
+• positive regulation of JNK cascade
+| RNA expression pattern
+Additional recommended knowledge
+More reference expression data
+|| NM_003265 (mRNA)|
+|| Chr 4: 187.23 - 187.24 Mb
+|| Chr 8: 46.89 - 46.91 Mb
+| Pubmed search
+TLR 3 is a member of the Toll-like receptor family of pattern recognition receptors of the innate immune system. Discovered in 2001, TLR3 recognizes double-stranded RNA, a form of genetic information carried by some viruses such as influenza. Upon recognition, TLR 3 induces the activation of NF-kB to increase production of type I interferons which signal other cells to increase their antiviral defenses. Double-stranded RNA is also recognised by the cytoplasmic receptors RIG-I and MDA-5.
+The structure of TLR3 was reported in June 2005 by researchers at The Scripps Research Institute. TLR3 forms a large horseshoe shape that contacts with a neighboring horseshoe, forming a "dimer" of two horseshoes. Much of the TLR3 protein surface is covered with sugar molecules, making it a glycoprotein, but on one face (including the interface between the two horseshoes), there is a large sugar-free surface. This surface also contains two distinct patches rich in positively-charged amino acids, which may be a binding site for negatively-charged double-stranded RNA.
+Despite being a glycoprotein, TLR3 crystallises readily - a prerequisite for structural analysis by x-ray crystallography.
+- ^ Alexopoulou L, Holt A, Medzhitov R, Flavell R (2001). "Recognition of double-stranded RNA and activation of NF-kappaB by Toll-like receptor 3.". Nature 413 (6857): 732-8. PMID 11607032.
+- ^ Choe J, Kelker M, Wilson I (2005). "Crystal structure of human toll-like receptor 3 (TLR3) ectodomain.". Science 309 (5734): 581-5. PMID 15961631.
+- Lien E, Ingalls RR (2002). "Toll-like receptors.". Crit. Care Med. 30 (1 Suppl): S1-11. PMID 11782555.
+|Transmembrane receptors: immune receptors|
+|Cytokine receptor||Type I: interleukin (IL-2, IL-3) - CSF (Erythropoietin, GM-CSF, G-CSF) - Glycoprotein 130/Oncostatin M - Leukemia inhibitory factor - common subunits (Common gamma chain, CSF2RB)|
+Type II: interleukin (IL22RA2) - interferon (IFNAR, IFNGR)
+Other: Chemokine - TGF-beta - Tumor necrosis factor
+|Pattern recognition/Toll-like||TLR 1 - TLR 2 - TLR 3 - TLR 4 - TLR 5 - TLR 6 - TLR 7 - TLR 8 - TLR 9 - TLR 10|
+|Fc receptor||ε (FcεRI, FcεRII) - γ (FcγRI, FcγRII, FcγRIII) - α/μ (FcαRI, Fcα/μR) - Neonatal|
+|Lymphocyte homing receptor||CD44 - L-selectin - VLA-4 - LFA-1|
+|other||Antigen receptor (B-cell, T cell) - Complement - Formyl peptide - Immunophilins - Integrin - Killer-cell immunoglobulin-like - Scavenger|

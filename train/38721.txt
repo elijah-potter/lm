@@ -1,0 +1,33 @@
+You are trying to fulfill something impossible. If it is that easy, web malware would be dead few decades ago.
+- Server side polymorphism
+Literally meaning many shapes, polymorphism is a technique used by malware authors to evade signatures based detectors. Polymorphism is qualified as being server sided when the engine which produces several but different copies of the malware is hosted on a compromised web server (Server-Side Polymorphism:
+Crime-Ware as a Service Model (CaaS)). simulated metamorphic encryption generator (SMEG) version 1.0 was the first engine developed to implement the notion of polymorphism for computer viruses on the early 1990's (Parallel analysis of polymorphic viral code using automated deduction system)
+- Code obfuscation
+- Code unfolding
+eval() in order to execute obfuscated portions of code and functions. (Weaknesses in Defenses Against Web-Borne Malware)
+- Heap spray
+- Drive-by download
+Drive-by download attacks consist in downloading and and executing or installing malicious programs without the user's consent. Such attacks occur by exploiting browsers' vulnerabilities, their add-ons or plugins such as ActiveX controls or unpatched useful software such as Acrobat Reader and Adobe Flash Player (Drive-by download attacjs: effect and detection methods, MSc Information Security)
+- Multi execution paths
+It is possible to trigger an action only if certain conditions are fulfilled. Such circumstances could be the arrival of a given date or the existence of a file on the system on which the malware is intended to be executed. An other quick and well known example could be a denial of service attack that must be fired only if the number of the botnet's nodes has reached a certain value. That
+is the notion of multi execution paths (Exploring Multiple Execution Paths for Malware Analysis)
+- Implicit conditionals
+This technique is mainly used against dynamic approach detectors. The main idea for this process is to execute a set of instructions by hiding the condition that fires it (Weaknesses in Defenses Against Web-Borne. Malware)
+- Machine learning based classifiers
+- Advantages: Lightweight approach, useful to deal with a bulk of websites analysis.
+- Dynamic methods
+- Features: Based on the dynamic behavior analysis, these techniques are implemented using either proxies where a page is rendered to the visitor only after its safety is checked, or a sandboxing environment relying on honeyclients (Same thesis: Effective Analysis, Characterization, and Detection of Malicious Web Pages).
+- Advantages: Efficient against zero day attacks and obfuscated code.
+- Drawbacks: Resources and time consuming. Sandboxing environments rely on low interaction honeyclients which themselves are based on virus signatures, and thus suffer from the same disadvantages as the static methods' ones.
+What you have tried to do belongs to the first category.
+Now, after you are well informed about all this, it can be useful for you to study some available tools dedicated for this purpose in order to implement your own technique. So let me mention you three important tools among so many others:
+<IFRAME> tags, or
+document.write() functions have been called, which thing defines also the code context. Each code context is saved on the hard drive for further analysis.
+- A: malicious context with feature
+- B: benign context with feature
+- C: malicious context without feature
+D: benign context without feature
+Classification: The Bayesian classifier is used for classification because even if it seems obsolete, in practice it gives good results and it is not time consuming.
+technologies such as Wepawet (Prophiler: A Fast Filter for the Large-Scale Detection of Malicious Web Pages)
+SpyProxy follows the dynamic analysis principles. It monitors the active content of webpages within a virtual machine before deciding to render them to the visitor or not. The architecture of SpyProxy is illustrated through this figure (SpyProxy: Execution-based Detection of Malicious Web Content):
+applying heuristics on them in the hope to determinate whether the script is malicious or not (IceShield: Detection and Mitigation of Malicious Websites with a Frozen DOM).

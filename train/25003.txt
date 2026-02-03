@@ -1,0 +1,16 @@
+Piecewise linear function
+||This article needs additional citations for verification. (March 2013)|
+The function defined by:
+is piecewise linear with four pieces. (The graph of this function is shown to the right.) Since the graph of a linear function is a line, the graph of a piecewise linear function consists of line segments and rays.
+Fitting to a curve
+An approximation to a known curve can be found by sampling the curve and interpolating linearly between the points. An algorithm for computing the most significant points subject to a given error tolerance has been published.
+Fitting to data
+If partitions are already known, linear regression can be performed independently on these partitions. However, continuity is not preserved in that case. A stable algorithm with this case has been derived .
+The notion of a piecewise linear function makes sense in several different contexts. Piecewise linear functions may be defined on n-dimensional Euclidean space, or more generally any vector space or affine space, as well as on piecewise linear manifolds, simplicial complexes, and so forth. In each case, the function may be real-valued, or it may take values from a vector space, an affine space, a piecewise-linear manifold, or a simplicial complex. (In these contexts, the term “linear” does not refer solely to linear transformations, but to more general affine linear functions.)
+In dimensions higher than one, it is common to require the domain of each piece to be a polygon or polytope. This guarantees that the graph of the function will be composed of polygonal or polytopal pieces.
+Important sub-classes of piecewise linear functions include the continuous piecewise linear functions and the convex piecewise linear functions. In general, for every n dimensional continuous piecewise linear function , there is a such that:
+If is convex as well as continuous, then there is a such that:
+- Stanley, William D. (2004). Technical Analysis And Applications With Matlab. Cengage Learning. p. 143. ISBN 1401864813.
+- Hamann, B.; Chen, J. L. (1994). "Data point selection for piecewise linear curve approximation". Computer Aided Geometric Design 11 (3): 289. doi:10.1016/0167-8396(94)90004-3.
+- Golovchenko, Nikolai. "Least-squares Fit of a Continuous Piecewise Linear Function". Retrieved 6 Dec 2012.
+- Vieth, E. (1989). "Fitting piecewise linear regression functions to biological responses". Journal of applied physiology (Bethesda, Md. : 1985) 67 (1): 390–396. PMID 2759968.

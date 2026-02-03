@@ -1,0 +1,38 @@
+About Storage Unit Data Page in SQL Server
+The fundamental unit of data storage in SQL Server is pages. All the data that stored inside the SQL Server is on data pages. A page has fixed size 8Kb. Data is stored in a data file with extension .mdf. All information stored in the pages, 128 pages will store per 1 MB. There are different types of pages, Data pages, Index pages etc.,
+Each page has page header of 96 bytes which includes, Page Number, Page Type, Free Space and the allocation unit of the object that owns a page. Only data file has pages, Log file doesn’t have any page it contains only log records. Data rows are inserted into page sequentially after 96 bytes header.
+Note – Row cant span across the pages. Then how SQL Server is managing large volumes in the tables, let see If you create a table with row size more than 8 kb then SQL Server wont allow you to create beyond 8096 bytes.
+Create table test(id int, name char(2000), designation char(2000), address char(5000))
+The above create table statement throws error because the row size limit got exceeded. Then how it is managing large volume of information in the table, based on the table data it will data in different allocation units (page groups)
+IN_ROW_DATA -- If the table is very small (record size is less than 8000 bytes) all records stored in the pages as IN_ROW_DATA pages.
+LOB_DATA -- Large Object Data like text not stored in data pages, it stored under LOB_DATA Pages, the 16 byte pointer is stored in data page to refer the LOB_DATA page.
+ROW_OVERFLOW_DATA -- If the row size is greater than 8096 byes and varchar or nvarchar or varbinary columns grown to store more than 8096 then ROW_OVERFLOW_DATA comes into picture the excess data will be moved to ROW_OVERFLOW_DATA page, and reference of that page will be stored in the data page.
+Create table test(id int, name varchar(2000), designation varchar(2000), address varchar(5000))
+Lets see practically whether allocation units are created or not
+Create table TestPages(Id Int, col1 varchar(2000), col2 varchar(2000), col3 varchar(5000))
+In the above table we created varchar columns with 9000 bytes, If the row is completely filled then the excess data will be stored in ROW_OVERFLOW_DATA Page, otherwise it will store in the IN_ROW_DATA page.
+Note - If you create a table there is no page or memory allocated, Its just a metadata, so you cannot query the page information using DBCC command.
+Insert into TestPages values (1,’kalyan’,’kumar’,’dba’)
+Let see whether the data is fit in the IN_ROW_DATA allocation unit or not
+DBCC TRACEON(3604) Go
+DBCC IND(‘DB_Name’,Table_Name’,1) – Displays information about the page and allocation units.
+If you observe the iam_chain_type column in the below result it has only IN_ROW_DATA unit, because the data is very small and fit in 8000 bytes
+Insert into TestPages values (1,replicate(‘a’,2000),replicate(‘b’,2000),replicate(‘c’,5000))
+After Insert is completed run the above DBCC IND command and verify, then the ROW_OVERFLOW_DATA allocation unit will be created.
+To verify LOB_DATA page then we need to add LOB column into the above table
+Alter table TestPages add col4 Ntext;
+Insert into TestPages values (1,’test’,’test’,’test’,N’test’)
+If you execute DBCC IND then you will be able to see LOB_DATA allocation unit is created.
+If you observe the result of DBCC IND the first pagePID with NULL values on IAMFID and IAMPID is the primary page for this particular object that means all the pages which are related to this object will be stored on that pagePID
+Once the table is created the object related information is stored under various system views
+Sys.objects, sys.indexes, sys.partitions, sys.allocation_units
+select name, object_id, type_desc, create_date from sys.objects where name='TestPAges'
+Once the table is created in the database without any indexes (HEAP table) all pages are assigned to one partition.
+When indexes defined on the table then partitions are framed for those indexes and those index pages are assigned to respective partitions. If you want to query number of rows in the object (table) those information will stored in the sys.partitions table
+select OBJECT_NAME(object_id), partition_id, hobt_id, rows from sys.partitions where object_id = object_id('TestPages')
+Partition ID – Container ID that holds data
+Hobt_ID –Heap of B-Tree ID that contains rows for this partition.
+Select * from sys.allocation_units where container_id = specify partitionId from the above query
+SELECT so.name AS table_name, si.name AS index_name , sa.type_desc allocation_type, sa.data_pages, sp.partition_number, sp.rows
+FROM sys.allocation_units sa, sys.partitions sp, sys.objects so, sys.indexes si
+where so.object_id = si.object_id and si.index_id = sp.index_id and sp.partition_id = sa.container_id and so.object_id = sp.object_id and so.name = N'TestPages'

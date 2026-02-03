@@ -1,0 +1,50 @@
+Last Modified: 10/31/2011
+Web Resource Guide: Accessibility
+Resources to find more information about Website accessibility:
+This section is dedicated to key elements that do not fall under content or design but are still critical for an EHDI website to be functional and accessible.
+The mouse is the most common way for people without disabilities to interact with a website. Move the mouse, point and click to select a link or scroll down on a page. People with disabilities rely on assistive technology devices to interact with the web. The use of a keyboard as an input and control device is universally supported and operable by many people with disabilities. When all functionality of content can be operated via a keyboard or keyboard interface, the site can be accessed by those with no vision, motor disabilities, and those who must use alternate keyboards or input devices that act as keyboard emulators (such as speech input software or on-screen keyboards).
+Tech Notes: Keyboard Accessibility
+“Most assistive technologies for people with motor disabilities either work through the keyboard or emulate the functionality of the keyboard.”
+To determine if a webpage is keyboard accessible, first determine what functionality is available to users on the page. It is important to consider functions performed using both the mouse and the keyboard together. Examples of functionality include the use of physical controls such as links, menus, buttons, checkboxes, radio buttons, and form fields, as well as the use of features like drag and drop, selecting text, resizing regions, or opening context menus.
+Once the functionality of the content has been determined, the author verifies that each of the functions identified can be performed using only the keyboard. Most browsers use the following conditions to navigate a website:
+- TAB key to navigate forward through links (Opera browser use A)
+- SHIFT + TAB to navigate backward through links (Opera browser use Q)
+- ENTER key to follow links.
+- When inside forms, the arrow keys will allow you to select items within lists or radio buttons.
+Pay close attention to any interactive features, such as dynamic menus, drag-and-drop functions, or mouse rollover events. If the mouse rollovers are merely decorative (e.g. they create a “glow” effect), you needn’t take any extra steps. However, if the mouse rollovers reveal additional important information, ensure that this information can be accessed by the keyboard alone.
+- W3C: Ensuring keyboard control for all functionality
+- Webaim: Motor Disabilities Assistive Technologies
+Links that make sense out of context and function properly are critical for navigating and interacting with a website. Links can appear as text or images to open other web pages/sites, redirect viewers to another part of the page, or open a new application for a media file. These contextual link descriptions allow users to distinguish links and help them to understand where the link goes before they click it.
+Use the following guidelines to determine when a link makes sense out of context:
+- Linked Text: uses descriptive text that indicates the link’s purpose
+- Linked Image: uses ‘alt text’ to indicate the link’s purpose
+- Linked media file: linked text must indicate the media file type
+- Link with media icon: uses descriptive text and the icon provides additional information about the target (the document type, e.g. PDF, DOC, WMV, etc.)
+Links do not make sense when non-informative link phrases such as: “click here,” “read more,” or “click for more detail” are used.
+Accessibility Example: Methods of Linking to the EHDI Website Resource Guide
+Note: The links in this box are simulated for illustrative purposes
+- Linked text: (Links to a webpage)
+- The is provided by NCHAM.
+- Linked media file: (Links to a file)
+- The is provided by NCHAM.
+is provided by NCHAM.
+- Links that use media icons should include the icon as part of their text description for the entire link. The alternative text for the icon should state the icon type.
+- Linked Image: (fig 3.2a)
+- If the imaged is linked to a website, the alt text states EHDI Website Resource Guide.
+- If the image is linked to a media file, the alt text states EHDI Website Resource Guide [PDF]
+Health literacy is defined as the degree to which individuals have the capacity to obtain, process and understand basic health information needed to make appropriate health decisions and services needed to prevent or treat illness.—Health Resources and Services Administration (HRSA)
+It is critical that all audiences understand information concerning hearing loss and newborn hearing screening. Parents, healthcare providers, interventionist, and EHDI want infants and toddlers with hearing loss to be identified as early as possible and provided with timely and appropriate audiological, educational, and medical intervention. To improve health literacy of EHDI website content it is important to be aware of target audiences. Things that affect the users’ comprehension of material is not limited to but includes culture, socioeconomic status, education level, and disabilities.
+Reading level of content is used to determine if the general audience should be able to understand the material provided on your website. Ways to improve the reading level on a web page is to simplify language, use illustrations, graphics, bullet points, tables, ect. At times it may be necessary to include additional resources or provide content that is written in another language to provide the same information to users.
+To quantify reading levels of web content you can use a readability indicator tool such as:
+- Flesch Kincaid Reading Ease
+- Flesch Kincaid Grade Level
+- Gunning Fog Score
+- Coleman Liau Index
+- Automated Readability Index (ARI)
+Since EHDI programs have a broad target audience it is suggested that content for families should be written for people with a lower secondary education (7-9 years of school). Information for healthcare providers can be written for people with a more advance education level (more than 12 years of school). Information about the EHDI process applies to all audiences and should be developed for people with a lower education level and have more detail available for people with a higher education level.
+Health Literacy Resources
+Learn more about health literacy and reading levels of web content: (*NCHAM does not endorse any of these sites)
+- About Health Literacy
+- A Guide to Writing and Designing Easy-to-Use Health Web Sites
+- W3C, Reading Level, includes examples and other resources
+- Lower-Literacy Users: Writing for a Broad Consumer Audience

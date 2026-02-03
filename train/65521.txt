@@ -1,0 +1,11 @@
+CAD models aren’t always ideal for use in CAE. CAD geometry often has slivers and tolerance errors that require many man-hours to cleanup and make watertight before it can be used for analysis. For over a decade, the Coreform team has pursued research and commercialization of analysis-suitable geometry for use in engineering simulation, resulting in their invention of U-splines.
+U-splines (“unstructured” splines) are a novel approach to the construction of a spline basis for representing smooth objects in Computer-Aided Design (CAD) and Computer-Aided Engineering (CAE). U-splines are different from existing spline constructions, such as Non-Uniform Rational B- splines (NURBS), subdivision surfaces, T-splines, and hierarchical B-splines, in that they can accommodate local geometrically exact adaptivity in h (element size), p (polynomial degree), and k (smoothness) simultaneously over a highly-varied mesh topology. U-splines also support mixed element meshes (triangle and quadrilateral elements in the same surface mesh).
+For many reasons, analysis-suitable geometry based on U- splines provides a significantly better approximation of the model than faceted meshes. U-splines satisfy the smoothness and exactness requirements of CAD, while satisfying the rigorous requirements for FEA. The invention of U-splines was an important step in the development of analysis-suitable geometry for spline-based simulation.
+U-splines are compatible with Bezier, NURBS, T-splines, FEA quad-dominant meshes.
+U-splines offer many promising attributes, including
+- Local adaptivity
+- Refinement at extraordinary points
+- Integration of triangles (quad-dominant meshes)
+- Extension to volumes
+- Backwards compatibility with T-splines and NURBS
+- Optimal approximation properties when used as a basis for analysis

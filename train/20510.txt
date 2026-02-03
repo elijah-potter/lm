@@ -1,0 +1,36 @@
+Write Your First Python Program In 10 Minutes
+Posted by Charlie Recksieck
+Even If You've Never Programmed Before
+Well in this case we do want to teach some programming - but we want to show you the simplest coding you can do in Python. The catch is, we are starting from scratch; you don't need any programming knowledge, experience or classes to do this.
+No matter who you are, if you take 5-10 minutes with this article you'll be writing Python code.
+Also For Programmers - But New To Python
+There's also a secondary audience for this post: programmers who know what they're doing in other languages but just never even tried Python.
+I used to be one of those guys up til a couple years ago. There are definitely some subtleties to Python so I don't want to make it sound too simple, but it really is pretty simple, in a very good way. And I've love using it for data retrieval on web services. (I have a project where I retrieve baseball box scores from a web service in Python.) Consuming data from APIs or web services is pretty great in Python.
+You'll all see that this simple language is really easy to learn fast, so let's jump in.
+You'll need to install Python on your machine - it couldn't be easier. You'll use their development environment to write code in our examples. (You can also write code in other environments like Visual Studio on a more professional level. But this IDE is lightweight and fast.)
+Go to https://www.python.org/downloads/ and download the latest version
+Let's Start Programming
+Now that you've installed Python, you can open the IDE (which traditionally stands for Integrated Development Environment), which in this instance is called "IDLE". FYI, Microsoft's "Visual Studio" which the majority of Windows developers user is also an "IDE".
+Go to your Start button and browse to or search for "IDLE (Python GUI") and launch it. You should see something like this
+Native Commands & "Hello World"
+For those of you who've never had a programming class, having a program just write, print or output the phrase "Hello world" is the customary start.
+In Python, there are lots of built-in commands that you could start using right now, without importing any additional libraries. Think of them as "core" functions. Here's a list of what those are.
+One easy command is "print". So you can follow the example in the screen capture by typing: Print ("Hello world") and see what happens
+As you can see, it outputs a line of Hello world in the IDE. Congratulations, you're just wrote a software program! Seriously, if that's your first time doing this, give yourself a pat on the back. Just getting this far to install Python, open up the "IDLE" IDE and doing this should be a start at demystifying the process. That's our main goal here so we want to say "Way to go!"
+If you were writing a Python program that populates a web page, writes a file on the computer, sends it to some other program through an interface, or displays something to a user, you would be using this PRINT command in some form to do it. But we're not going to worry about having an end-result program in this lesson.
+Importing Libraries & A Basic Math Program
+As I said above, there are core commands already loaded and available as soon as you start your Python environment window. That's great. But there are also a ton of libraries that come with the Python install which are readily available but need to be "imported" in a line of code before you can use those functions.
+Let's say I'm going to write code to handle addition of a couple of fractions (something I always hated it middle school). We'll want the Fractions library which is super easy to load as you can see …
+It's not much easier than that, just type "import fractions."
+Why do we have to load this library when it's really part of a plain-vanilla Python installation? There are a LOT of native libraries to Python and each one takes a little bit of the computers memory and resources when loaded, not a ton but they add up fast if they were all loaded. So, since we have to explicitly load the ones, we want then we're being efficient about our memory.
+If you want to browse around, here are the libraries of functions you can load in right now just like we did with "import fractions."
+Let's do our fraction addition now. Without over-explaining it, you can see how it goes below:
+Congrats again, you've written your second program.
+One More Quick One - Get The Current Date
+Now let's get the current date in our program. In this example, I'm going to import the Date functions library; and instead of just coding a quick "print (datetime.date.today())" I chose to write it to a variable which I can print.
+You're definitely getting the picture. And if you've written code before (but are reading this as an introduction to Python) you'll notice that we don't have to declare or instantiate variables before using them. Pretty neat.
+Where To Go Next With This
+We aren't going to write a multi-part primer on Python coding right now, this month. But we'd be happy to answer questions or point you in the right direction if you want to play around; or if you want to ask if Python is a viable option for your project.
+Meanwhile, the next step is writing a python script (.LY file extension) that you can run to make a web page or take input and display messages from users.
+But if you're asking us, the next thing to explore is downloading other programmers' libraries (not just core Python that we downloaded). We promise to get into it sometime. Meanwhile, if this got you excited, go ahead and google what you'd like to do with Python.
+We just wanted to demystify Python and for you total newbies we wanted to demystify programming in general. Congratulations again on becoming a Python programmer in the time it takes to listen to "In A Gadda Da Vida"!

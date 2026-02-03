@@ -1,0 +1,30 @@
+The Long Jump
+There are quite a few examples of cooperative multitasking or coroutines on the Web based on this technique. Unfortunately, they generally fall into one of several categories:
+- Implementations that know the internal structure of a
+jmp_bufand use it to do context switching. This is robust but nonportable, of course.
+- Implementations that understand that you can't jump "forward" on the stack (I'll explain that in a minute) and impose limitations on your code.
+- Naïve implementations that just rely on the stack not getting corrupted for simple test cases and won't work reliably in many practical cases.
+Oh, and one outlier: There is at least one implementation that probes the stack at runtime to deduce how the
+jmp_buf is set up and then uses that information. That violates my simplicity goal, however.
+The forward-jumping problem is an abstract perception problem. The C library bills these functions as
+goto statements, but that's not really accurate. It is better to think of them as stack bookmarks. Just before the
+longjmp call in my example, the stack looks something like this:
+<stuff from main><return address><stuff from helper><empty space for future use>
+longjmp it should look like it did just before the original call to
+<stuff from main><empty space for future use>
+Suppose I had used
+inside helper to fill in another jump buffer and then had
+main try to go back to that bookmark. If any of that supposedly empty space got reused, it would put bad data on the stack for the recall of
+There is at least one implementation on the Web that accepts this problem and admonishes the programmer to avoid local variables. However, this isn't really sufficient. If
+helper had made calls, the return information on the stack could be corrupt. Of course, in a simple example, you probably only have one function per task with no local variables. That might work, but it is pretty risky (keep in mind, that things like interrupts are going to use the same stack, too).
+One other problem with
+setjmp: not all compilers support it. The Microchip XC compilers, for example, support it for 18F and DSPIC devices, but not for the 16F family. This is one of the compilers I am interested in targeting, so that's another concern.
+Since I wanted portable and simple, I decided to converge on a few simplifications:
+- Each task function would start fresh each time it is scheduled.
+- Task local memory would be easy to use and on the heap, not the stack.
+setjmpis available, a task could yield from inside a subroutine (even though on reschedule, the task will start back at the top)
+- If no
+setjmpis available, tasks can only yield from their top-level function
+I made one other simplifying decision. To deal with time, the operating system would handle abstract "ticks" defined by the user. The user has to update the ticks from a user task, so a tick could be anything. If you don't want to use time-based waits, you don't have to supply a tick updating task.
+As I have been doing a lot lately, I started development on Linux to shake out problems and bugs. When I'm pretty happy with it, I'll branch to the XC compiler and then possibly some other microcontroller targets as well.
+I'll talk about the prototype of LWOS (light-weight operating system) next time. If you want a sneak peek, you can find my work in progress on Google Code.

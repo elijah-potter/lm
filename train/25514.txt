@@ -1,0 +1,20 @@
+Use Case Open Linked Data
+From Decision XG
+- Primary: Subject Matter
+- Secondary: Context
+eXtreme Design Components
+There is a method proposed specifically for reusing Content Ontology Design Patterns, called eXtreme Design (XD). See http://ceur-ws.org/Vol-516/pap21.pdf. In summary, the idea is to use an agile and iterative approach for developing ontologies through the reuse of component patterns. Also see the Ontology Design Pattern Tour. The Context, Story and Competency Questions below are designed to support this XD process.
+An organization or individual wants to use the open government data for making decisions.
+Story: Open Linked Data Supports Decision-Making
+The user would like to select applicable data sets in the form of RDF data stores (so that they can be easily combined), then select certain data components as options (e.g. cities) and select other data components as criteria for filtering and ordering of the options (e.g. number of earthquakes, amount of federal disaster relief, etc.). The user would then like to form a SPARQL query which could perform the query, filtering and ordering across the data sets to essentially assess and rank order the options based on the criteria. The rank ordering represents the assessment based on the weighted criteria. The user would then make the selection from the rank ordered list representing the final decision. In short, the user would like to use open linked data for decision-making.
+Competency questions (CQs) and contextual statements of decision information flow
+1. What Open Linked Data sets are supporting this decision? 2. Which Open Linked Data components are being used as options? 3. Which Open Linked Data components are being used as criteria? 4. What is the SPARQL query which supports the assessment of the options using the criteria? 5. What is the weighting of the criteria?
+Background and Current Practice
+This use case is derived from the need to make good use of open linked data and the need to use as the subject matter for decisions information which is already represented in a machine-usable semantic format. Currently, decisions are either not represented in a computer format, or are represented in a proprietary format, or are represented in a format consisting largely of free text (such as e-mails, reports, or slide presentations). Most decisions and decision processes are poorly recorded with little attempt for machine understandability. The information which goes into a decision is usually not readily available even if from government sources. Although significant efforts are now underway to make government data available in machine formats, even semantic formats, the information is generally utilized for queries or for human visualizations. There is a significant opportunity to utilize this data in further productive ways such as for the subject matter of decision-making.
+The goal is to ensure that any proposed decision standard format is closely aligned with and can effectively utilize and leverage open linked data.
+Use Case Scenarios
+An individual would like to rate cities based on climate, location, population, quality of hospitals, and responsiveness of emergency services in order to decide where to retire. A city would like to rate its record of disaster relief funding received over the last 10 years in comparison with cities of similar size with similar levels of natural disasters so it can decide whether to employ additional resources on a specific grant application.
+Problems and Limitations
+Knowing what data is available, knowing the vocabulary to use for items of interest.
+ For more on linked data, see http://linkeddata.org/.
+ Excellent Intro to SPARQL and Open Linked Data, see http://www.slideshare.net/fulvio.corno/sparql-and-the-open-linked-data-initiative.

@@ -1,0 +1,13 @@
+Mobile code is
+|“||software that is transmitted from a remote system to be executed on a local system, typically without the user's explicit instruction.||”|
+|“||software programs or parts of programs obtained from remote information systems, transmitted across a network, and executed on a local information system without explicit installation or execution by the recipient.||”|
+|“||[a] program (e.g., script, macro, or other portable instruction) that can be shipped unchanged to a heterogeneous collection of platforms and executed with identical semantics.||”|
+Mobile code has become a popular way of writing programs that can be used by many different operating systems and applications, such as Web browsers and e-mail clients. Although mobile code is typically benign, attackers have learned that malicious mobile code can be an effective way of attacking systems, as well as a good mechanism for transmitting viruses, worms, and Trojan horses to users' workstations.
+Malicious mobile code Edit
+Malicious mobile code
+|“||is software that is transmitted from a remote computer to be run on the local computer for malicious purposes, typically without the user’s explicit instruction or knowledge.||”|
+Security measures Edit
+- ↑ See NIST Special Publication 800-28.
+- ↑ NIST Special Publication 800-18, at 35.
+- ↑ Framework for Improving Critical Infrastructure Cybersecurity, at 38.
+- ↑ NIST Special Publication 800-69, at 3-22 n.45.

@@ -1,0 +1,46 @@
+Oracle Programming/10g Advanced SQL
+This documentation details the usage of the latest query methodology on the Oracle 10g DBMS.
+Join queries combine rows from two or more tables, views, or materialized views. If multiple tables are listed in the query's FROM clause the Oracle Database performs a join. Columns from any of the tables may be listed in the select list. Columns that exist in both tables, however, must be qualified, in order to avoid ambiguity.
+The following query returns the mortgage information for all payments received from customers during the year 2007.
+SELECT customer.account_no, mortgage.mortgage_id, payment.payment_id, payment.amount FROM customer JOIN mortgage ON mortgage.customer_id = customer.customer_id JOIN payment ON payment.mortgage_id = mortgage.mortgage_id WHERE payment.YEAR = 2012;
+The other way of writng the same query can be
+SELECT customer.account_no, mortgage.mortgage_id, payment.payment_id, payment.amount FROM customer, mortgage, payment WHERE mortgage.customer_id = customer.customer_id AND payment.mortgage_id = mortgage.mortgage_id AND payment.YEAR = 2007;
+NATURAL JOIN 
+The NATURAL JOIN joins two tables which contain a column or multiple columns with the same name and data-type.
+The following query joins the customer table to the invoice table with a natural join, the natural join utilizes the customer_id that is present on both the customer table and the invoice table. It returns the customer and invoice data for invoices that have not had any payments made on them.
+SELECT customer_id, invoice_id, customer.first_name, customer.last_name FROM CUSTOMER NATURAL JOIN invoice WHERE invoice.amount_paid = 0;
+INNER JOIN 
+Most of the commonly used joins are actually INNER JOINs. The INNER JOIN joins two or more tables, returning only the rows that satisfy the JOIN condition. Here are some examples of INNER JOINs.
+This joins the customer and order table, connecting the customers to their orders. The result contains a combined list of customers and their orders, if a customer does not have an order, they are omitted from the result.
+SELECT customer_id, order_id FROM customer c INNER JOIN ORDER o ON c.customer_id = o.customer_id;
+The Other way of writing query is
+SELECT c.customer_id, o.order_id FROM customer c, ORDER o WHERE c.customer_id = o.customer_id;
+OUTER JOIN 
+The OUTER JOIN joins two or more tables, returning all values whether or not the join condition is met. When a value exists in one table but not the other, nulls are used in the place of the columns that are joined to a record without a JOIN companion.
+There are three specific types of outer joins: FULL OUTER JOIN, LEFT OUTER JOIN and RIGHT OUTER JOIN.
+FULL OUTER JOIN 
+With the FULL OUTER JOIN the query will return rows from either of the tables joined, whether or not there is any matching data on the table joined. If no matching data exists, nulls are placed into the fields where data would have otherwise existed.
+In the following example, the data in a table is synced with the data that is regularly imported into a data import table via SQL Loader. A stored procedure is then used to see if anything was added, updated or removed and the rows are merged accordingly.
+SELECT p.name, p.STATUS, p.description, p.qty, i.name, i.STATUS, i.description, i.qty FROM product p FULL OUTER JOIN import_product i ON p.product_code = i.product_code;
+LEFT OUTER JOIN 
+With the LEFT OUTER JOIN the query will return rows only if the row exists in the table specified on the left side of the join. When no matching data is found from the table on the right side of the join, nulls are placed into the fields where the data would have otherwise existed.
+The following example will return all of the customers and their associated cases if they have one. If the customer has no case then it will only return the data for the customer.
+SELECT cust.customer_id, CASE.case_id, CASE.description FROM customer cust LEFT OUTER JOIN casefile CASE ON cust.case_id = CASE.case_id;
+RIGHT OUTER JOIN 
+With the RIGHT OUTER JOIN the query will return rows only if the row exists in the table specified on the right side of the join. When no matching data is found from the table on the left side of the join, nulls are placed into the fields where the data would have otherwise existed.
+The following example will return a list of trucks and their cargo. If a truck has no cargo then a null will be put in place of the field specifying the cargo's load_id.
+SELECT truck.truck_id, cargo.load_id, cargo.description FROM cargo RIGHT OUTER JOIN truck ON truck.load_id = cargo.load_id;
+UNION [ALL] 
+The UNION operator outputs the items that exist in both result sets. The UNION ALL operator outputs all of the items in the two sets, whether or not both sets contain the item.
+The following query returns all customers from San Francisco whose balance is 100000 and 500000.
+SELECT customer_id FROM customer WHERE city = 'SAN FRANCISCO' UNION SELECT customer_id FROM accounts WHERE balance BETWEEN 100000 AND 500000;
+The query after the MINUS operator is removed from the result set of the queries before the operator.
+In the following example, the first part of the query gets all of the customers. In the second part of the inactive customers are taken out. Finally, in the third part of the query, customers with zip codes between 80000 and 90000 removed from the set.
+SELECT customer_id FROM customer MINUS SELECT customer_id FROM customer WHERE STATUS = 'I' MINUS SELECT customer_id FROM customer WHERE zip BETWEEN 80000 AND 99000;
+The INTERSECT operator only returns the results that are present in both of the queries.
+The following example returns all of the customers who have a balance due in Los Angeles.
+SELECT customer_id FROM customer WHERE city = 'LOS ANGELES' INTERSECT SELECT customer_id FROM orders WHERE balance_due > 0;
+Case Statements 
+The following queries are equivalent, they return all of the customers from Switzerland. The CASE statement translates the single character status flags "A" and "I" to "ACTIVE" and "INACTIVE" If a value is NULL then it returns the string "NULL" ustomer
+WHERE country_name = 'SWITZERLAND';
+CASE WHEN status = 'A' THEN 'ACTIVE' WHEN status = 'I' THEN 'INACTIVE' ELSE 'NULL' END FROM customer WHERE country_name = 'SWITZERLAND';

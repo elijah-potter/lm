@@ -1,0 +1,47 @@
+Well, you want your script to open up a file? Edit it/rewrite it/do whatever? Okay… you can do that using PHP! It seems pretty basic I know, but you still need to master a few commands.
+In this tutorial you will learn how to use the following commands/functions:
+fopen() – Opens a file (for writing)
+fclose() – Closes a file (no more writing)
+fwrite() – Writes to a file
+unlink() – Deletes a file
+I am assuming you took the PHP Basics tutorial that I wrote so you at least have a basic understanding of some of the general commands we will be using, such as variables, etc.
+In this tutorial there will be less explaining, and more coding. I will always comment the new parts of the code that you have not learned in my previous tutorials. In this tutorial that will be the f commands (open, close, write)
+From here on, I will show you how to write, and read from files, mainly in examples you can learn from, and use in your own scripts.
+Before We Start
+Before we start, you need to be aware of the fopen modes. Different modes allow you to do different things with files. Eg; Mode “w+” opens a file for writing, it deletes the current file and if it does not exist attempts to create it… it writes from the start of the file.
+Mode “r” – Opens a file for reading only
+Mode “r+” – Opens a file for reading and writing, writes from the start of the file (does not delete previous data)
+Mode “w” – Opens a file for writing only, writes from the start of the file and deletes any previous data, if the file does not exist, php will attempt to create it.
+Mode “w+” – Opens a file for reading and writing, writes from the start of the file and deletes any previous data, if the file does not exist, php will attempt to create it.
+Mode “a” – Open a file for writing only, start writing at the end of the file, if the file does not exist, php will attempt to make it.
+Mode “a+” – Open a file for reading and writing, start writing at the end of the file, if the file does not exist, php will attempt to make it.
+Example #1 – Opening and Writing to a File (In “w” mode)
+NOTE: The directory on your server must be writeable before you can execute these scripts… linux chmod 0777 (777)
+//Define what you want written
+$contents = “This information will be written to a file”;
+//Define a filename
+$filename = “file.txt”;
+//Open the file, we need to assign a variable to identify it, in this case opened
+$opened = fopen($filename,”w”);
+//Write the data
+//close the opened file
+//Echo what we did
+echo(“Wrote â€™”.$contents.”â€™ to file â€™”.$filename.”â€™”);
+Example #2 – Reading data from a file (with “r” mode)
+NOTE: The file you define (in our case file.txt) must exist with data in it! Or else this script will fail! Also note that when using fread the second arguement in it tells it how long to read for… we want it to read the full file so we use filesize($filename) to get its full length…
+//Define the file you want to read from
+$filename = “file.txt”;
+//Open the file with r attribute
+$opened = fopen($filename);
+//Read the contents
+$contents = fread($opened, filesize($filename));
+//Close the file
+//Echo the contents
+Example #3 – Deleteing a file (With the unlink function)
+//Specify file to delete
+$filename = “test.txt”;
+//Check if the file exists
+echo “Delete file “.$filename;
+echo “file does not exist”;
+I hope this tutorial helped you learn how to work with files.
+Copyright @ Justin 2007

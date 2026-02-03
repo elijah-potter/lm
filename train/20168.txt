@@ -1,0 +1,118 @@
+The Magic of Cold, Part 1 – How Your Air Conditioner Works
+If you’ve wondered how it is that your air conditioner actually keeps you cool in summer, you’ve found the right place. As Earth-shattering as this sounds, I’ve actually spent a lot of my half-century living in it! I know, I know. It’s an amazing accomplishment, but really, I have to give all the credit to my parents, grandparents, Willis Carrier, and the internets.
+An air conditioning system is an amazing thing. I spent the years 1988 to 1998 living in Louisiana and Florida driving a car without an air conditioner, so I appreciate cool air. If you’ve been a reader of this blog for a while, you probably know that I also appreciate HVAC systems done right.
+If you’ve ever wondered how your air conditioner works and couldn’t decipher the explanations you found in other places, I think I can make it intelligible for you. Today’s post is going to cover the basics of air conditioning in plain English. No TXVs, subcooling, or evaporator coils! Please comment below and let me know how well I succeed. If you want to go a little deeper, tomorrow I’ll cover the refrigeration cycle at an intermediate level.
+The Fundamentals of Air Conditioning
+An air conditioner is a device that moves heat from one place to another. It picks up heat from inside your home and moves it to the outside. In other words, it pumps heat from one place to another. Although we could call it a heat pump, we usually reserve that term for air conditioners that can pump heat in either direction – inside to outside or outside to inside. (I wrote about the paradox of getting heat out of cold winter air a while back.)
+When you put your face in front of that AC vent, it may seem that an air conditioner creates cold, but in reality, it’s removing thermal energy from inside your house and sending it outside. This transfer of heat from your home’s air does indeed make the air cooler, and the air blowing out of the supply vents does feel cold. It’s best to think of the process, though, as a heat flow from inside to outside. (For more about this, read What IS Heat Anyway?)
+The Refrigeration Cycle, Simplified
+What makes an air conditioner work is a thermodynamic cycle called the refrigeration cycle. It’s a series of changes in temperature, pressure, and state (liquid/vapor) that the refrigerant undergoes as it removes heat from the house. The refrigerant is a special fluid that changes between liquid and vapor at convenient temperatures for pulling heat out of air that’s at about 75° F and dumping it into air that’s above 90° F. It’s what travels through those copper pipes, one insulated and one uninsulated, that connect the indoor part of your air conditioner to the outdoor part.
+I’m going to focus this discussion on the most common type of central air conditioning system – the air-source, split system. It’s called air source because it dumps the heat from inside the house into the outside air, as opposed to a ground-source or water-source system that dump the heat into, well, the ground or some water. It’s called a split system because there’s a unit that sits outside making all that noise all summer long and another component that’s inside the house somewhere, maybe in the attic or crawl space. Other types of air conditioners still follow the same refrigeration cycle, but the locations of some of the pieces differ.
+The refrigeration cycle has four stages, so let’s go through each of them. We’ll start with the refrigerant collecting the heat from inside the house, labeled number 1 in the diagram below.
+Step 1: Catch the heat from inside the house.
+The inside part of your split system AC has a blower, that pulls air from the house and sends it over a very cold coil. This coil has cold, cold, cold refrigerant running through it, so the air passing over it gets cold. Well, OK, what’s really happening is that heat from the air is flowing into the cold coil with the cold refrigerant.
+When the air comes off the coil, the temperature has dropped about 20° F (if everything is working right). So if you’re keeping your house at 75° F, the air coming off the coil is at 55° F.
+The basic physics here is that heat likes to flow from something warmer to something cooler. Warmish house air moves over the cold coil, and heat flows out of the air and into the coil. The refrigerant picks up the heat, increasing in temperature, and it just so happens that the heat it picks up causes the refrigerant to boil. It changes from a liquid to a vapor inside this coil.
+The warmer, vaporized refrigerant then flows on to step number 2.
+Step 2: The refrigerant gets pumped up to a high temperature.
+The still cool but vaporized refrigerant flows to the outdoor unit and enters the compressor. The compressor then pumps the refrigerant to a high pressure, which also causes the temperature to increase. Why do we want the refrigerant at a high temperature? Because heat flows from warmer to cooler. Right?
+When the refrigerant comes out of step number 1, it’s still cold. Find the copper tubes that carry the refrigerant between the indoor and outdoor parts of your AC. The refrigerant going from step 1 to step 2 is in the insulated copper line. Find a place where you can touch that pipe, and you’ll see that it’s still cold.
+Heat doesn’t flow from cold to hot, so if we want to get the heat out of that refrigerant and put it into 95° F air, we’ve got to increase the temperature. The compressor does that job and takes it up to a temperature well above ambient (outdoor) temperatures. Air conditioners work even in places like Phoenix, Arizona, where the outdoor temperature can get to 115° F and above, so the compressor has a lot of work to do.
+Step 3: The refrigerant gives up its heat to the outdoor air.
+After getting pumped up to a high temperature, the now hot, vaporized refrigerant passes through another coil. This is the coil that surrounds the compressor in the outdoor unit. A fan inside the unit pulls outdoor air through the coil and sends it out the top of the outdoor unit. The hot outdoor air passing over the even hotter coil causes heat to flow out of the refrigerant and into the outdoor air.
+Heat flows from warmer to cooler!
+As heat flows out of the refrigerant and into the outdoor air, it cools off below the condensation point, and the vapor condenses back into a liquid. The temperature of the refrigerant after coming out of step 3 is still pretty high, which you can verify by putting your hand on the uninsulated copper pipe coming out of the outdoor unit.
+Step 4: The refrigerant gets cold.
+As the refrigerant travels from outside to the indoor unit, it goes through a special device before it enters the coil I talked about in step 1. This special device lets the warm, liquid refrigerant expand into a bigger volume, which causes the temperature to drop – a lot!
+Have you ever used one of those CO2 cartridges to pump up your bicycle tire? Have you ever used a can of compressed air to clean out the keyboard on your computer? If so, you’ve probably noticed that after you release the gas from the cartridge or can, the container gets very cold. That’s exactly what happens in this part of an air conditioner.
+Why do we want to lower the temperature?
+Heat flows from warmer to cooler!
+We need to get the refrigerant colder than the indoor air so that we can pull the heat out of it, so this step is critical. In fact, I like to say that this is where the magic happens in an air conditioner.
+Another Way of Looking at the Refrigeration Cycle
+Gravity, even though it’s the weakest of the fundamental forces of nature, is something we all understand intuitively. We’ve lived within its constraints our wholes lives, unless we’re among the few to travel on the vomet comet or into outer space, so let’s look at a gravitational analog for the refrigeration cycle.
+The diagram below is basically the whole cycle translated. A cup collects water at the bottom and dumps it at a higher point. Water, in this analog, takes the place of heat, height stands for temperature, and the cup is the refrigerant.
+Just as heat flows from warmer to cooler (remember that?), water here wants to flow from higher to lower. To pick up water (heat) from the house, the cup (refrigerant) has to be lower (cooler) than the house. To dump that water (heat) to the outside reservoir, which is higher (warmer), the cup (refrigerant) has to be raised to a height (temperature) above the outside.
+So there you have it. If what I wrote above makes sense to you, you now understand how an air conditioner works. It’s basically the same for a refrigerator or freezer, with a different range of temperatures. Please let me know what you think in the comment section below.
+To read a more advanced version of the refrigeration cycle, in which I name the components and give more detail on what’s happening with the refrigerant, see:
+The Magic of Cold, Part 2 – Intermediate Air Conditioning Principles
+Allison Bailes of Atlanta, Georgia, is a speaker, writer, building science consultant, and the founder of Energy Vanguard. He has a PhD in physics and writes the Energy Vanguard Blog. He is also writing a book on building science. You can follow him on Twitter at @EnergyVanguard.
+How the Heck Does a Heat Pump Get Heat from Cold?!
+Can You Oversize a Mini-Split Heat Pump?
+3 Reasons Your 3 Ton Air Conditioner Isn’t Really 3 Tons
+NOTE: Comments are closed.
+This Post Has 33 Comments
+Crystal clear — until you
+Crystal clear — until you got to the Gravitational Analog. I’m not sure what you thought the Gravitational Analog was adding but it didn’t work for me.
+David: Thanks, that’s exactly what I wanted to know. I almost didn’t include that part because I wasn’t sure how much it helped. If you got it from the first part, though, the gravity analog isn’t necessary. Let’s see if maybe someone finds it helpful.
+Great simple explanation
+Great simple explanation Allison, but I have to agree with David and say that last part is just plain confusing & doesn’t make sense – maybe some tweaking on why the water is rising or…
+I saw the Gravitational
+I saw the Gravitational Analog the other day and it didn’t really make sense. Now it does! May I use it?
+Sean: Thanks! Maybe I should have kept that last part out or made it a separate article.
+John N.: Glad this cleared it up for you. Yes, of course, you may use it. If you quote me or use the diagram, just give credit.
+I was on track until the
+I was on track until the gravitational analog. The only thing I would like to see added are pictures of the different parts you describe. I want to be able to look at my a/c unit and put names to the pieces. BTW hate to admit it but had no idea the a/c unit distributed hot air out! Thanks for making it understandable to a lay person!
+Ginny: Thanks for commenting! I guess I just need to forget using gravity to explain it. And yes, I do need to get some more photos in there. Let me clarify one thing you said, though. Your AC does NOT send hot air outside. It sends heat outside. Ideally you want no air from the duct system going outside.
+Very informative article. I
+Very informative article. I’ll echo the sentiments of the others that the gravitational analog was a little confusing (in fact, I only understood it because I understood the first part).
+Based on your description of the process, it seemed to indicate the boiling point temperature of the refrigerant was different from the condensation point temperature. When the 55 degree refrigerant picks up heat from the 75 degree house air, it boils (presumably at a temperature somewhere below 75). Then when the heat is transferring from the refrigerant to the 95 degree outside air, it condenses (presumably at a temperature somewhere above 95). Is that correct?
+Pretty good stuff. Agreed
+Pretty good stuff. Agreed with the others on the water analogy. Can the information be linked to the big difference made to the efficiency and life span of the mechanical systems created by a tighter building envelope/lower ambient temperature in the attic, etc (if your unit/ducts are up there).
+What is the effect on the efficiency of the system if the actual condensing units are shaded (lower temp) vs in the hot sun themselves with high cabinet temperature? being in the energy efficiency retrofit business I have wondered about the effect of screens to shade them in the hot Texas sun.
+One suggestion – mention the
+One suggestion – mention the name of the “special device” in Step 4 that expands the warm, liquid refrigerant into a bigger volume. After all, this is where the “magic” happens in an air conditioner!
+Great, very clear article
+Great, very clear article Allison. I was trying to explain this to a customer the other day to no avail…I will now email them the link to this article. Thank you! I had to read through the gravity analogy twice before I began to understand it…still not sure I get it.
+Great article. What people
+Great article. What people want is comfort so the dehumidification and the cooling are separte functions. Save energy by using programmable thermostats. Be ready for the upcoming Demand Response opportunities that will ask that the compressor be turned off just for a short period to avoid the peak demand and the fossil fuel to meet it.
+Allison, great idea to cover
+Allison, great idea to cover basic refrigeration cycle. There’s so much we who work with this every day take for granted. How about a primer on pschrometrics? 🙂
+Kevin, both the boiling point and condensation point of a liquid is dependent upon its pressure. The compressor serves the purpose of greatly raising the pressure of the gas, so the condensation point is also raised. For example, at 95F, my system has a high side pressure of 365 lbs. At that pressure, the refrigerant (R410a) has a condensation temperature of ~110F. Since the gas leaving the compressor is even hotter (perhaps 120F), the 95F outdoor air (aided by the high velocity fan) will effectively condense the vapor into a warm liquid (~103F), thus starting the cycle all over again.
+Steve, installing AC on north
+Steve, installing AC on north or northeast side of house or otherwise providing shade will increase both capacity and efficiency. Keeping sun off the condenser is a great strategy in new construction when the cost may be next to nothing (often depends on location of air handler, as well as aesthetic and noise considerations). That being said, it’s certainly not worth the cost of moving an existing system. If you plant vegetation or build a shading structure, just be sure to respect the mfr recommended clearances.
+For heat pumps, ideal placement would put the unit in direct sun in the AM and shaded after noon.
+Outstanding, you could not
+Outstanding, you could not have made it clearer, with the exception of the gravitational analog
+How do you find the time…….
+Kevin L.: Yes, that’s correct. David Butler did a great job explaining why the temperatures are different in a comment below yours.
+Steve: I was focusing only on the thermodynamics of air conditioning in this article. Naturally, a better building envelope and ducts inside make the home more efficient and the equipment more durable, as will right-sizing. Improving the conditions of the condensing unit also help. Another way of doing this I’ve seen is to mist water onto the condensing coil.
+Mark T.: I do mention the special device (the expansion valve) in the second part of this discussion, which I just published a little while a go. I wanted to avoid as much of the technical terminology as I could to keep this post simpler, though.
+Stefan: Thanks! I hope the other person finds it as understandable.
+David K.: Your point about the Demand Response, which allows the electric company to shut off your AC during peak times, is something I need to write about. Thanks for mentioning it.
+David B.: Yes, psychrometrics is on my list!
+Carl C.: Thanks! I use a Time-Turner that I got from Hermione Granger, who got it from Professor McGonagall.
+Mike: Thanks for the info about Gorrie. I’m sure he’s one of the reasons that Carrier is always referred to as “the man who invented modern air conditioning,” with the qualifying word ‘modern.’
+Let’s not forget physicist Michael Faraday, either. He used the ammonia cycle to cool air about 30 years before Gorrie was making ice in Florida. The history of air conditioning and refrigeration is certainly interesting, and Gorrie’s story is a good one.
+Donald B.: That’s a good question. The refrigerant coming out of the expansion valve does evaporate to a small degree. Mostly, though, it becomes a mist of liquid droplets at that point, with the bulk of the evaporation happening inside the evaporator coil. (Did you read part 2 of this series? I don’t think I answered that question directly there, but I do go into greater detail about the processes.)
+Donald, in his reply, Allison
+Donald, in his reply, Allison described what’s known as ‘flash gas’. Some systems have a site glass BEFORE the expansion device to confirm no pre-metering flashing is occurring.
+As Allison said, flashing is normal but it should only represent a small fraction of the total refrigerant passing through the metering device – on the order of 1%. Otherwise, the evaporator would absorb very little heat from the home.
+I agree with “Crystal
+I agree with “Crystal Clear”, the gravity analog did not work for me either – but the core discussion was very good. Bill S
+Thanks! Very great resource
+Thanks! Very great resource for those who want to know how the air conditioner or refrigeration works.
+First I liked the gravity
+First I liked the gravity analogy but I think my brain works a lot like yours (scary) , second great article as a hvac salesman/ system designer I use a similar description to explain it to my clients . I linked to this from your article about sweat , another good one. I think our industry needs to focus more on comfort than efficiency , at the Energy Star awards dinner this year a guy at my table pointed out the average family spends $400 a month on communication ( cell,cable,Internet ) and only $200 a month on utilities. As a culture we are more willing to pay for what we want than what we need.
+Thanks for the explanation,
+Thanks for the explanation, it was very clear. The analogy is a good way to remember and trigger the whole idea. S
+The explanation is really
+The explanation is really very nice. Thank you for helping me…!
+I’m new to this three year
+I’m new to this three year old article so my comment may be lost, but I just wanted to cast a vote for the gravitational analog. I might be an outlier but it actually made all the other stuff much clearer.
+Michael: Thanks! I appreciate your letting me know because I’d thought, based on the early comments, maybe it wasn’t worth it, but now I’m glad I did provide it here.
+In our country we decipher
+In our country we decipher the HVAC principle…the outdoor unit now is blowing cold air at same time in the indoor.
+Great content. As normal with
+Great content. As normal with more info comes more questions.
+Would any of the following help ac to run more efficient: A. Run the unit in summer at the coolest temperature of the night. B. Solar pre-heater to aid the compressor to bring up the refrigerant heat quicker (if run in day). C. Start cooling first with smaller upstairs unit or larger down stairs unit (central HVAC.)
+In central TX, being home most of the day and night, we turn on ac at 12 am, set to 78, then at 3am it is programmed to shut off. At 6am programmed to 75 until the 8am shut off.
+This is just a trial but in early June it seems to keep the house cool enough for us, except between 9pm and 12am when inside reaches 80-82. It also helps to keep peak demand lower.
+Could you clarify whether a
+Could you clarify whether a wall a/c takes in air from the outside? I ask because we have construction going on outside and I want to know if the a/c will pull in that dust or not.
+Michael: Air conditioners, whether window, wall, or central, are designed to pull all of the air from the conditioned space. There are some wall units (PTACs) that do pull in some outdoor air for ventilation, and central units can also have outdoor air mixed in.
+Great article, thanks.&
+Great article, thanks.
+Question: if hot air rises and cool air falls,then would the best location for return air grille/duct be in the ceiling at highest point of the building?
+Dan: Since you’re thinking it should be high, my guess is that you’re in a cold climate and do more heating than cooling. In a hot climate with little heating, putting returns low and supplies high would take advantage of the stack effect in a similar way.
+The truth, though, is that with good HVAC design, it could be anywhere, high or low. A good design will ensure that each supply vent has enough throw for good air mixing and the ability to get back to the return. Also, be aware that if you have only a central return, you need some way for the air in closed rooms to find its way back to the return. Transfer grilles or jumper ducts are the way to go if you don’t have return vents in all the bedrooms. Door undercuts typically don’t allow enough air to move.
+Comments are closed.

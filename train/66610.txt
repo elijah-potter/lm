@@ -1,0 +1,30 @@
+The Cause-Effect diagram is known also as Ishikawa Diagram or Fishbone Diagram. It’s a practical problem-solving tool used frequently in production, with the scope, to identify possible root causes of a problem or an effect. When a problem occurs in production with possible multiple causes, in that case, you need the Cause-Effect Diagram. By going through the process flow with your team, probably you all will come up with different root causes.
+Steps to follow in creating the Cause-Effect diagram:
+- The first step is to identify the effect. For example, if we discuss a quality issue of a product, the defect represents the effect (tolerance bigger/ smaller than required, conductor bent, unstable welding, leaking, fitting problems, part damaged, etc.). The effect decided by the engineers symbolizes the fish eye.
+- Brainstorming with the team in connection with the process or product. Involve every participant to determine possible root causes.
+- Group root causes in five main categories, called 5M: Machine, Material, Measurement, Man, Method. Depends on the case, it could be one more type, the Environment. The 5M are connected directly to the fish spine, and to them, other subcategories. You can define other categories as you wish.
+- All the possible root causes of each category (5M) will be identified then analyzed one by one focusing on the impact they have on the problem. They are categorized as minor, significant, or major. Then all grouped in these two categories: IN CONTROL or NOT IN CONTROL. The root cause is controlled, when exists a procedure, machine setting, sensor, checklist. When is not controlled, it relies on human behavior, how the system is working, etc..
+- Root causes with significant and major impact can be further analyzed with the 5 Why? questioning technique. Ask Why? questions until the origin of the problem is found. Root causes in the group NOT IN CONTROL and also with significant and major impact is our focus point.
+- By brainstorming develops the team new ideas and solutions for controlling all the inputs with impact on the problem. Then a plan is made with tasks and responsibilities for implementing the solutions.
+- After implementation, data is collected to ensure the solution is efficient and improves quality in continue.
+Tipp: some of the causes are more complex so in that case, you could go deeper with second causes.
+Now let’s see an example:
+Problem: Power Pin pressed wrong in conductor
+In the table above is a column called ‘Analysis by 5WHY?’. This is a questioning method, used to find out the root cause of the problem.
+The first step of this technique is to make a clear statement about the problem, then ask Why? questions until the cause is identified.
+Let’s take a simple example:
+- I ran out of drinking water.
+- Why I ran out of water? Because I haven’t bought it.
+- Why I haven’t bought any water? Because I forgot to write it down on my shopping list.
+- Why I forgot to write it down? Because I was in a hurry to finish the list.
+- Why I was in a hurry? Because I made the list at work.
+- Why I made the list at work? Because I’m not organized well to make a list at home.
+Solution: attach a list with categories (fruit, vegetable, diaries, meat, etc.) with a magnet on the fridge, and complete it whenever an ingredient is used or missing.
+In the following, we analyze the 2 possible root causes marked with red from the previous table with the 5Why? technique:
+Possible solutions for the identified root causes:
+- TRC1: Assure the stock of pins
+- MRC1: Plan preventive maintenance-> increase frequency
+- TRC2: Guiding system
+- MRC2: Schooling of the operators, define storage area for suspected parts
+- TRC3: Install reset tube
+- MRC3: Rework procedure.

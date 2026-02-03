@@ -1,0 +1,137 @@
+Software testing (software) reveals flaws, flaws and errors in the code that need to be fixed. It can also be defined as the process of evaluating the functionality and correctness of software through analysis. The main methods of integration and testing of software products ensure the quality of applications and consist of specification, design and code verification, reliability assessment, validation and verification.
+The main goal of software testing is to confirm the quality of a software package by systematically debugging applications under carefully controlled conditions, determining their completeness and correctness, and discovering hidden errors.
+Methods of checking (testing) programs can be divided into static and dynamic.
+The former includes informal, supervisory and technical review, inspection, step-by-step review, audit, and static analysis of data and control flow.
+Dynamic techniques are as follows:
+- Testing methodwhite box. This is a detailed study of the internal logic and structure of the program. This requires knowledge of the source code.
+- Black box testing. This technique does not require any knowledge of the inner workings of the application. Only the main aspects of the system that are not related or little related to its internal logical structure are considered.
+- Gray box method. Combines the previous two approaches. Debugging with limited knowledge of the internal functioning of the application is combined with knowledge of the basic aspects of the system.
+The white box method uses test scripts of the control structure of the procedural project. This technique allows you to identify implementation errors, such as poor management of a system of codes, by analyzing the inner workings of a piece of software. These test methods are applicable at the integration, module and system levels. The tester must have access to the source code and use it to figure out which block is behaving inappropriately.
+White-box software testing has the following benefits:
+- allows you to detect an error in the hidden code when deleting extra lines;
+- possibility of using side effects;
+- maximum coverage is achieved by writing a test script.
+- highly costly process requiring a skilled debugger;
+- many paths will remain unexplored ascareful checking of all possible hidden errors is very difficult;
+- some of the missing code will go unnoticed.
+White box testing is sometimes also referred to as transparent or open box testing, structural testing, logic testing, source-based testing, architecture testing, and logic testing.
+1) flow control testing - a structural strategy that uses the program's control flow as a model and favors more simple paths over fewer more complex ones;
+2) branch debugging aims to examine each option (true or false) of each control statement, which also includes a combined solution;
+3) main path testing, which allows the tester to set a measure of the logical complexity of a procedural design to highlight a base set of execution paths;
+4) data flow inspection - a strategy for examining the flow of control by annotating the graph with information about the declaration and use of program variables;
+5) cycle testing - fully focused on the correct execution of cyclic procedures.
+Black box testing treats the software as a "black box" - the inner workings of the program are not taken into account, and only the main aspects of the system are tested. At the same time, the tester needs to know the system architecture without access to the sourcecode.
+The benefits of this approach:
+- efficiency for a large code segment;
+- ease of perception by the tester;
+- user's perspective is clearly separated from that of the developer (programmer and tester are independent of each other);
+- faster test creation.
+Black box testing of programs has the following disadvantages:
+- A select number of test cases are actually executed, resulting in limited coverage;
+- lack of a clear specification makes it difficult to develop test cases;
+- poor efficiency.
+Other names for this technique are behavioral, opaque, functional testing, and closed-box debugging.
+This category includes the following software testing methods:
+1) equivalent partitioning, which can reduce the test data set, since the input data of the POU is broken into separate parts;
+2) edge analysis focuses on testing boundaries or extreme boundary values - minimums, maximums, error and typical values;
+3) fuzzing - used to search for implementation errors by entering distorted or semi-distorted data in automatic or semi-automatic mode;
+4) cause-and-effect graphs - a technique based on creating graphs and establishing a connection between an action and its causes: identity, negation, logical OR and logical AND - four mainsymbols expressing the interdependence between cause and effect;
+5) Orthogonal array check applied to problems with relatively small input area beyond the capability of exhaustive examination;
+6) testing all pairs – a technique whose set of test values includes all possible discrete combinations of each pair of input parameters;
+7) Debugging state transitions is a technique useful for checking the state machine as well as navigating the GUI.
+Black box testing examples
+The black box technique is based on specifications, documentation, and descriptions of the software or system interface. It is also possible to use models (formal or informal) that represent the expected behavior of the software.
+Typically, this debugging method is used for user interfaces and requires interaction with the application by entering data and collecting results - from the screen, from reports or printouts.
+The tester thus interacts with the software by input, acting on switches, buttons or other interfaces. The choice of inputs, the order in which they are entered, or the sequence of actions can lead to a gigantic total number of combinations, as can be seen in the following example.
+How many tests do you need to run to test all possible values for 4 checkboxes and one two-position field that specifies the time in seconds? For the firstthe calculation is simple: 4 fields with two possible states - 24=16, which must be multiplied by the number of possible positions from 00 to 99, that is, 1600 possible tests.
+However, this calculation is wrong: we can determine that a two-position field can also contain a space, i.e. it consists of two alphanumeric positions and can include alphabetic characters, special characters, spaces, etc. Thus, if the system is a 16-bit computer, then there are 216=65,536 options for each position, resulting in 4,294,967,296 test cases, which must be multiplied by 16 combinations for flags, for a total of 68,719,476 736. If they are performed at a rate of 1 test per second, then the total duration of testing will be 2,177.5 years. For 32 or 64 bit systems, the duration is even longer.
+Therefore, there is a need to reduce this period to an acceptable value. Thus, techniques should be applied to reduce the number of test cases without reducing the coverage of testing.
+Equivalent partitioning is a simple method applicable to any variables present in the software, be it input or output values, character, numeric, etc. It is based on the principle that all data from one equivalent partition will be processed in the same way and with the same instructions.
+During testing, one representative from eacha certain equivalent partition. This allows you to systematically reduce the number of possible test cases without losing command and function coverage.
+Another consequence of this partitioning is the reduction in the combinatorial explosion between different variables and the associated reduction in test cases.
+For example, in (1/x)1/2there are three data sequences, three equivalent partitions:
+1. All positive numbers will be processed in the same way and should produce correct results.
+2. All negative numbers will be treated the same way, with the same result. This is incorrect, since the square root of a negative number is imaginary.
+3. Zero will be treated separately and will give a "divide by zero" error. This is a single value section.
+So we see three different sections, one of which is reduced to a single value. There is one "correct" section that gives reliable results, and two "wrong" ones with incorrect results.
+Processing of data at the boundaries of an equivalent split may be performed differently than expected. Boundary value analysis is a well-known way to analyze the behavior of software in such areas. This technique allows you to identify errors such as:
+- incorrect use of relational operators (,=, ≠, ≧, ≦);
+- single errors;
+- problems in loops and iterations,
+- wrong types or sizes of variables used to store information;
+- artificial data constraintsand variable types.
+The gray box method increases the coverage of the check, allowing you to focus on all levels of a complex system by combining white and black methods.
+When using this technique, the tester must have knowledge of internal data structures and algorithms to design test values. Examples of gray box testing techniques are:
+- architectural model;
+- Unified Modeling Language (UML);
+- state model (state machine).
+In the gray box method for developing test cases, module codes are studied in white technique, and the actual testing is performed on program interfaces in black technique.
+Such testing methods have the following advantages:
+- combining the benefits of white box and black box techniques;
+- tester relies on interface and functional specification, not source code;
+- debugger can create great test scripts;
+- validation is done from the point of view of the user, not the program designer;
+- create custom test developments;
+- test coverage is limited due to no access to source code;
+- difficulty in finding defects in distributed applications;
+- many paths remain unexplored;
+- if the software developersoftware has already run a check, further investigation may be redundant.
+Another name for the gray box technique is translucent debugging.
+This category includes the following testing methods:
+1) orthogonal array - using a subset of all possible combinations;
+2) matrix debugging using program state data;
+3) regression check carried out when new changes are made to the software;
+4) a pattern test that analyzes the design and architecture of a good app.
+Comparison of software testing methods
+The use of all dynamic methods leads to a combinatorial explosion in the number of tests that must be developed, implemented and run. Each technique should be used pragmatically, taking into account its limitations.
+There is no single correct method, only those that are better suited to a particular context. Structural techniques allow you to find useless or malicious code, but they are complex and not applicable to large programs. Specification-based methods are the only ones that can detect the missing code, but they cannot identify the extraneous one. Some techniques are more suited to a particular level of testing, type of bug, or context than others.
+Below are the main differences between the three dynamic testing techniques - a comparison table is given between the three forms of software debugging.
+Black box method
+Gray box method
+White box method
+Availability of information about the composition of the program
+Only basic aspects are analyzed
+Partial knowledge of the internal structure of the program
+Full access to source code
+Degree of fragmentation of the program
+Who does the debugging?
+End users, testers and developers
+End users, debuggers and developers
+Developers and testers
+Testing is based on external contingencies.
+Database diagrams, data flow diagrams, internal states, knowledge of the algorithm and architecture
+Internal device fully known
+Rate of coverage
+Least exhaustive and least time consuming
+Potentially the most comprehensive. Time consuming
+Data and internal borders
+Debugging purely by trial and error
+Data domains and internal boundaries can be checked if known
+Better testing of data domains and internal boundaries
+Suitable for testing the algorithm
+Automated software testing methods greatly simplify the testing process, regardless of the technical environment or software context. They are used in two cases:
+1) to automate tedious, repetitive or meticulous tasks such as comparing files with several thousand lines to free up tester time to focus on more important points;
+2) to perform or monitor tasks that cannot be easily done by humans, such as performance testing or response time analysis, which can be measured in hundredths of a second.
+Test tools can be classified in different ways. The following division is based on the tasks they support:
+- test management, which includes support for project management, versions, configurations, risk analysis, test, bug, defect tracking and reporting tools;
+- management of requirements, which includes storing requirements and specifications, checking them for completeness and ambiguity, their priority and traceability of each test;
+- critical review and static analysis, including flow and task monitoring, recording and storage of comments, detection of defects and planned corrections, management of references to checklists and rules,tracking the relationship between source documents and code, static analysis with defect detection, ensuring compliance with coding standards, parsing structures and their dependencies, calculating code and architecture metrics. In addition, compilers, link analyzers and cross-reference generators are used;
+- simulation, which includes tools for modeling business behavior and validating the generated models;
+- Test development provides generation of expected data based on conditions and user interface, models and code, management of them to create or modify files and databases, messages, data validation based on control rules, analysis of statistics of conditions and risks;
+- critical review by entering data via GUI, API, command lines using comparators to help identify passing and failing tests;
+- support for debugging environments that allow you to replace missing hardware or software, including hardware simulators based on a subset of deterministic output, terminal, mobile phone or network equipment emulators, environments for testing languages, OS and hardware by replacing missing components by drivers, dummy modules, etc., as well as tools for intercepting and modifying OS requests, simulating CPU, RAM, ROM or network limitations;
+- comparison of file data, database, checking of expected results during and after testing, including dynamic and batch comparison, automatic "oracles";
+- coverage measurementto localize memory leaks and incorrectly manage it, evaluate system behavior under simulated load conditions, generate application, database, network or server load according to realistic scenarios of its growth, to measure, analyze, verify and report on system resources;
+- performance testing, load and dynamic analysis;
+- other tools, including spell checker, syntax checker, network security, website full page availability, and more
+As the trends in the software industry change, the debugging process is also subject to change. Existing new methods for testing software products, such as service-oriented architecture (SOA), wireless technologies, mobile services, etc., have opened up new ways to test software. Some of the changes that are expected in this industry over the next few years are listed below:
+- testers will provide lightweight models with which developers can test their code;
+- development of test methods, including early review and simulation of programs, will eliminate many contradictions;
+- having a lot of test hooks will reduce the time to detect errors;
+- static analyzer and detection tools will be applied more widely;
+- applying useful matrices such as specification coverage, model coverage, and code coverage will guide project development;
+- combinatorial tools will allow testersprioritize debugging areas;
+- testers will provide more visible and valuable services throughout the software development process;
+- debuggers will be able to create software testing tools and methods written in and interacting with various programming languages;
+- debuggers will become more professional.
+Replaced by new business-oriented methods for testing software, changing the way we interact with systems and the information they provide, while reducing the risks and increasing the benefits of business change.

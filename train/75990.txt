@@ -1,0 +1,129 @@
+Action-Reaction in Freefall
+We are studying Newton's laws and my student
+wanted to know: When an object falls in a vacuum, what are the
+action-reaction forces, since there is no air resistance?
+The action force is Earth pulling the object down, the reaction
+force is the object pulling Earth up. Since the object has a tiny
+mass compared to Earth, it is the item that sees the acceleration.
+A good conceptual physics source that will help you is:
+Paul Hewitt "Conceptual Physics" Addison-Wesley
+There is no air resistance, but Earth's gravity pulls down on the
+object as the object's gravity pulls upward on Earth with EXACTLY
+the same magnitude of force. More accurately, their mutual
+gravitational attraction pulls the objet and Earth together, toward each other.
+Usually, when we say an object is falling, we are not paying much attention
+to the thing that it is falling toward. Let us take the case of a
+to Earth. Earth is so much more massive than the ball that is seems
+unaffected by it, and we rarely think of the Earth as falling toward the ball,
+but actually, both objects are falling toward each other. As the ball falls,
+it gains momentum, and the Earth gains exactly the same momentum, but in the
+opposite direction. But the Earth is so massive, compared to the ball, that
+its momentum change implies an extremely small velocity change,
+which we usually
+If the action is the object being pulled down toward Earth, the
+reaction is Earth being pulled up toward the object. Action and
+reaction are both due to the force of gravity, are equal in magnitude,
+and opposite in direction. From Newton's second law the force on any
+object is equal to mass*acceleration. Since the force on Earth and
+the force on the object are equal so is their mass*acceleration product.
+As the mass of the earth is overwhelmingly large compared with any
+terrestrial, falling object, the object's acceleration down towards
+Earth is overwhelmingly large compared with Earth's imperceptible
+acceleration up towards the object. For all practical purposes
+Earth is usually regarded as stationary.
+The accelerations of the object toward Earth and Earth toward the object
+continue until the two collide (i.e. the object lands on the ground) and
+the impact of the two produces another equal and opposite pair of
+forces: the Earth pushes up on the object until it comes to a stop and
+the object pushes down with equal force on the Earth until it too comes
+to a stop.
+If air is present there will be additional actions/reactions between the
+object and the air molecules as well as between the Earth and the air
+molecules, but provided the object is not so light that air currents
+greatly effect it or is not dropped from such a height that it reaches
+very high velocities the forces of the action/reaction described above
+are the dominant ones.
+The action/reaction forces are the same as in a vacuum, even though
+there is no air resistance. Think of everything in terms of
+conservation of momentum. The air only slows down the object
+because the air molecules are basically "still" to the falling
+object and so the object accelerates the air molecules around
+it. This transfers a tiny bit of momentum from the object to the
+air molecules. This continual loss of momentum to the air slows the
+falling object down. In a vacuum, since there is no air, an object
+will not meet air resistance and hence will not slow down until it
+hits something else massive. At this point the action/reaction
+forces are exactly as Newton described them, but the full momentum
+is transferred instead of the full momentum minus the air
+resistance. The air resistance is strong enough to slow things down
+until the object hits critical velocity, where the air resistance is
+equal to the effects of gravity and the object cannot fall any
+faster. This speed is dependent on the mass and drag coefficient of
+the object. Look more up on terminal velocity to read more details on this.
+Newton's 3rd Law is rather subtle and it pays to be careful when applying it.
+The 3rd Law says that if some object (call it A) is exerting a
+force on a second object (call it B), then B is exerting a reaction
+force on A which is equal in magnitude and opposite in direction.
+Notice that this law implies that all forces must be caused by some
+object (no object, no force). So there are always two
+objects. Incidentally, this means there are never three objects in
+an action-reaction chain. Forces in more complicated systems can
+always be broken down into two-body action-reaction pairs.
+In the example you give, the object falling in a vacuum (and
+accelerating) is accelerating because of the gravitational force
+exerted on it downward (toward the center of the earth) by the
+earth (I presume this object is near the earth). The reaction
+force is therefore the force exerted upward on the earth by the
+object. This is true whether the object is falling in air or in a vacuum.
+If the object is falling in air, the air exerts an upward
+(retarding) force on the object. The reaction to that force is, of
+course, the object pushing down on the air.
+This may be confusing, but it is an important idea. I find it
+helpful to remember that you climb a mountain by pressing down on
+the mountain with your feet. Why does pressing down make you go
+up? Because the earth kindly exerts a reaction force upward on your feet!
+Best, Dick Plano, Professor of Physics emeritus, Rutgers University
+If the object falls in a vacuum due to gravity, then the gravity between the
+Earth and the object is the force of concern. The Earth pulls on the
+falling object, and the falling object pulls on the Earth. They both feel
+the same amount of force. The object is strongly affected by the force,
+feeling almost 10m/s^2 of acceleration. The Earth is so huge that it is not
+affected. This is similar to a truck hitting a fly. Both feel the same
+force, but only the fly notices.
+Thanks for your question. Newton's Third Law of motion is often
+quoted as "For every action, there is an opposite and equal
+reaction" -- or "forces come in pairs". The most classic example of
+this is when someone fires a rifle. The force of the explosion that
+forces the bullet down the barrel also pushes back, so the person
+firing the rifle feels a "kick" as the rifle accelerates backwards.
+When I was teaching this to my physics class, I taught my students
+to view this Law of motion this way:
+"If ________(A)________ pushes/pulls on _______(B)_______ , then
+_______(B)_______ pushes/pulls on _________(A)________."
+For example, "If I push on the wall, then the wall pushes back on
+me." For gravity, "If the earth pulls on me, then I pull on the
+earth." This one seems a bit hard to belive, but that is how
+gravity works. When I jump up away from the earth, the same force
+pulling me back down to the earth is also pulling the earth up to
+me. I will accelerate more quickly than the earth because I have
+much less mass than the earth does -- which is why it seems that all
+of the effect of these forces is on me and not on the earth -- but
+the force pulling me down toward the earth is same as the force
+pulling the earth up toward me.
+A tug-of-war is also another "classic" example of this. If both
+teams are evenly matched, then the force pulling north is about
+equal to the force pulling south and the rope (and the flag in the
+middle of the rope) will not accelerate. If the teams are unevenly
+matched, then forces will be uneven (say the north is pulling
+stronger than the south) then the flag will accelerate in the
+direction of the stronger force.
+So, this is a long way of saying when an object falls in a vacuum,
+the object is pulling up on the earth with the same force that the
+earth is pulling down on the falling object. That sounds a little
+bit weird, but that is the way it is. No air resistance is
+required. If fact, when air is included, you get another force
+pair, the air pushing on the falling object and the falling object
+pushing back on the air!
+I hope this helps!
+Click here to return to the Physics Archives
+Update: June 2012

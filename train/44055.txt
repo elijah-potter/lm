@@ -1,0 +1,17 @@
+With Delphi programming language, a programmer can use text-only (console) applications or Graphical User Interface (GUI) to develop software. This tutorial is however focused on how to use Embarcadero Delphi GUI application to write a program. This program aids the programmer to do so much work as positioning, sizing, dragging and mouse clicking can be used for developing part of the application. Here is how to write a simple program with Delphi programming language.
+Building an easy ‘Welcome to Programming’ program
+When Delphi is first opened, a graphical application that is new will be prepared on screen. This will include some windows such as menu bar andcode editor amongst others. You will also observe a blank form where different information and controls can be added.
+You can easily place this information and control on the form page by just selecting the graphic element and specifying where you want it to be placed on the page. The specification is done by clicking and dragging the mouse over the particular area where you want that object to be. For instance, you can just select the A symbol form the menu bar, under the standard tab and then drag the mouse on a particular part of the form you want to add a label.
+Changing properties of graphical element
+You will notice that Label1 is written inside the graphical element you have added on the form. You will also notice that it has corners that can be resized.It will show when the application is executed. Caption is also referred to as the label’s property. Some of the other properties of the label include width and height. We will however concentrate on changing the caption for now.
+The Object Inspector Window is used for adjusting the caption. This can be opened from the view menu if you are not already seeing the object inspector window on the screen. Delete the contents of the caption in the object inspector.
+Active screen element addition
+From the menu bar, under the standard tab, you will observe a button with okay written on it. We should have a button and a label now. We will however, have to inform Delphi about what we want the button to do whenever it is clicked, before it will become active.
+Click is a button’s major event. To activate the button, a double-clicking action by the mouse should be carried out. An OnClick event will be created automatically.
+The code for the event will however need to be edited so that the code will run with a click of the button.
+Here you can type in Label1.caption, once you type in the CA, every action beginning with ca will be listed, you can just choose caption from here. Your complete code should however look like this:
+Procedure Tfrom1.Button1Click(Sender: TObject); Begin Label1.Caption := ‘Welcome to Programming’’ End;
+Running the program
+Once you click on the button, Welcome to Programming should appear on the form.
+This is one of the simplest program that can be developed with Delphi programming language. Much more complex applications for different OS and platforms can be developed by the programming language. There are several tutorials and communities online you can visit to learn.
+There are several programming languages that are currently in use all over the world for developing different type of application for different platforms. One of such prominent programming language is Delphi programming language.

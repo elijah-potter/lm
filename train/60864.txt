@@ -1,0 +1,25 @@
+I am truly fascinated by algorithms learning on their own with a little help from humans and as a newbie in this field (with programming experience mainly in C/C++), seek your help to obtain the big picture before delving into specifics. I am not a researcher, but broadly want to know what is happening under the hood. A nudge in the right direction is all I need.
+What I have learnt so far can be summarized as:
+- There is both supervised and unsupervised learning.
+- Supervised learning is typically used to solve regression and classification
+- Unsupervised learning is used to solve clustering related problems
+- In supervised learning, we provide training data that are labelled
+- Each training data example can comprise multiple features.
+- An ML algorithm reads the labelled data, possibly finds patterns and "deduces" a general rule that maps input to output (e.g. mapping between a feature vector and a label)
+- If now an unlabeled feature vector was given, the algorithm uses the "deduced" rule and classifies the input into a label class.
+- I also understand that there are quite a few classification algorithms like SVM, Nearest neighbor, Decision Trees etc.
+- Each of these algorithms have different criteria that leads them to different "deduced" rules on basis of which, they perform classification.
+So the concepts am so desirous to understand at a broad level are:
+- How does an algorithm determine inter-relation ship among features?
+- How does it know what features are to be considered and what could possibly be disregarded?
+- What does a deduced rule physically look like?
+- Is there a standard suite of rules to choose from?
+- How does the algorithm arrive at such a rule?
+For example, if I had a dataset as the following:
+0 1 0 0 1 1 + 1 1 1 0 1 1 + 1 1 0 1 1 0 + 1 0 1 0 1 1 - 1 0 1 1 1 1 - 0 1 1 0 0 0 -
+In the above example, the label is + if the second and fifth element were 1. How will an algorithm deduce this?
+I shall be truly grateful for any clarification you provide.
+Based on Jan's recommendation, my question boils down to the following:
+Assume x1, x2 ... xn are attributes/features. Assume h(y) is the mapping function and it exists. How does the algorithm decide that h(y) should be (x1 + x2 + x9) /5 and not h(y) = Sq Root(x1^2 + X9^3) + k
+Given the size of the dataset, the possibilities are endless, isn't it?
+h(y) could either be a direct classification or some value that could lead to a class subsequently.

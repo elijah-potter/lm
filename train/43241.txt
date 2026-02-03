@@ -1,0 +1,16 @@
+convert a string to a list of characters
+convert a list of characters to a string
+Explode( s )
+Implode( stringList )
+list of strings
+The Explode(s) function converts string s into a list of its individual characters.
+If s is empty, then an empty list is returned. Otherwise, the list consisting of the characters comprising s, in order, is returned. Each string in the returned list has length equal to one (i.e., each string in the list is a single character string).
+This procedure is equivalent to
+The Implode(stringList) function is the inverse of the Explode(s) function.
+If stringList is empty, then the empty string is returned. Otherwise, the catenation of the one-character strings in stringList is returned.
+Note: The strings in stringList are all assumed to have length equal to one (whether this is, in fact, true or not). Only the first character of each string is used.
+All of the StringTools package commands treat strings as (null-terminated) sequences of 8-bit (ASCII) characters. Thus, there is no support for multibyte character encodings, such as unicode encodings.
+Explode⁡Bang Your Box
+B,a,n,g, ,Y,o,u,r, ,B,o,x
+Download Help Document
+What kind of issue would you like to report? (Optional)

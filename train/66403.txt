@@ -1,0 +1,5 @@
+DESCRIPTIONGraphics::Primitive::Operation is the base class for operations. An operation is an action that is performed on a path such as a Fill or Fill.
+- Informs the canvas to not clear the current path when performing this operation. Also provides a hint to the driver.
+AUTHORCory Watson <[email protected]>
+COPYRIGHT & LICENSECopyright 2008-2010 by Cory G Watson.
+You can redistribute and/or modify this code under the same terms as Perl itself.

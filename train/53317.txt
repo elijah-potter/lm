@@ -1,0 +1,11 @@
+alt attribute | alt property
+Sets or retrieves a text alternative to the graphic.
+the text to display as an alternative to the graphic.
+- Document Object Model (DOM) Level 1 Specification, Section 2.5.5
+- HTML 4.01 Specification, Section 13.8
+The text is used to replace the graphic for text-only browsers and to display in the window before the graphic has loaded. The text also acts as a ToolTip if the title is not set when the user hovers the mouse over the graphic.
+Alternate text should be provided whenever the graphic is not rendered. Alternate text is mandatory for Level 0 documents.
+In Microsoft Internet Explorer 6, This property now applies to the object object.
+This example uses the alt attribute to indicate that the icon displayed denotes a read/write property.
+<img src="http://example.microsoft.com/rw.png" ALT="Read/Write Property">
+Build date: 11/28/2012

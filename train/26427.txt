@@ -1,0 +1,51 @@
+The chmod Command
+Let's look at a summary of chmod's options, and then cover each option in depth:
+u user (owner)
+o other (world)
+a all (user, group, and other)
+= set exactly
+X conditionally set execute
+s Set UID or set GID
+t set “sticky” bit
+$ chmod a+rwx test_file $ ls -l test_file -rwxrwxrwx 1 eric users
+This demonstrates the fourth possible symbol for user when using symbolic mode. We used a to set full permissions for all user classes at once. Let's delete the file and start over in order to demonstrate the difference between the = operator and the + and - operators. (From here on, we'll assume that you know how to get the directory listing, and won't list the ls command.)
+$ rm test_file $ touch test_file -rw-rw-r-- 1 eric users $ chmod g+x test_file -rw-rwxr-- 1 eric users
+This added execute permission for group.
+$ chmod g=x test_file -rw---xr-- 1 eric users
+The = operators set group's permissions to execute, and in doing so removed read and write permission. While + and - set or unset the permissions specified, = will set exactly the mode specified and remove any others.
+Read, write and execute modes are very straightforward when referring to files. Read and write allow a user to examine and modify/delete data from a file, respectively. Execute allows a user to execute a shell script or binary program. If you ftp a program from one host to another and then try to run it without setting execute permission, it will fail, since ftp does not set execute permission.
+For directories, the rules can be a bit more complicated.
+Read permission allows a user to examine the contents of a directory.
+$ mkdir test_dir $ touch test_dir/foo $ ls test_dir foo $ chmod u-r test_dir $ ls test_dir ls: test_dir: Permission denied
+Write permission allows a user to modify the contents of the directory. That means that lack of write permission on a directory does not prevent a user from modifying a file within the directory, if the file's permissions allow it. It does prevent the user from renaming, moving, deleting or creating any file in the directory. This is because a directory is a really a file that contains a list of filenames, and so read and write permission control access to that list.
+$ chmod u=rx test_dir dr-xrwxr-x 2 eric users $ touch test_dir/bar touch: test_dir/bar: Permission denied $ mv test_dir/foo ./foo mv: cannot move `test_dir/foo' to `./foo': Permission denied
+This property also works the other way. Since write permission allows the modification of directory entries, a user can move or rename a file without permission to examine the contents. This is a very good reason for paying attention to write access for important directories.
+$ ls -l test_dir -rw-rw-r-- 2 eric users foo $ chmod u=rwx test_dir $ chmod u=rx test_dir/foo $ cat .bashrc > test_dir/foo bash: test_dir/foo: Permission denied $ mv test_dir/foo ./foo $ ls test_dir (It's empty) $ ls foo foo (It's in our present directory.)
+Execute permission for directories (also referred to as search permission) is also very important. Execute permission is necessary for accessing a directory.
+$ chmod u=rwx test_dir $ cp ~/.bashrc test_dir (any text file will do) $ chmod u=rw test_dir $ cd test_dir bash: test_dir: Permission denied $ cat test_dir/.bashrc cat: test_dir/.bashrc: Permission denied
+This copy of .bashrc does not do us a lot of good. However, setting execute permission for directory and not setting read or write can come in handy.
+$ chmod u=x test_dir $ cat test_dir/.bashrc (we see the contents of the file) $ ls test_dir ls: test_dir: Permission denied
+A directory that has execute permission only can be used to “hide” files. Only users who know the exact file name and path can access them; this includes both data files and programs.
+|Non-Linux FOSS: libnotify, OS X Style||Jun 18, 2013|
+|Containers—Not Virtual Machines—Are the Future Cloud||Jun 17, 2013|
+|Lock-Free Multi-Producer Multi-Consumer Queue on Ring Buffer||Jun 12, 2013|
+|Weechat, Irssi's Little Brother||Jun 11, 2013|
+|One Tail Just Isn't Enough||Jun 07, 2013|
+|Introduction to MapReduce with Hadoop on Linux||Jun 05, 2013|
+- Containers—Not Virtual Machines—Are the Future Cloud
+- Non-Linux FOSS: libnotify, OS X Style
+- Linux Systems Administrator
+- Lock-Free Multi-Producer Multi-Consumer Queue on Ring Buffer
+- Validate an E-Mail Address with PHP, the Right Way
+- Technical Support Rep
+- Senior Perl Developer
+- UX Designer
+- Introduction to MapReduce with Hadoop on Linux
+Free Webinar: Hadoop
+How to Build an Optimal Hadoop Cluster to Store and Maintain Unlimited Amounts of Data Using Microservers
+Realizing the promise of Apache® Hadoop® requires the effective deployment of compute, memory, storage and networking to achieve optimal results. With its flexibility and multitude of options, it is easy to over or under provision the server infrastructure, resulting in poor performance and high TCO. Join us for an in depth, technical discussion with industry experts from leading Hadoop and server companies who will provide insights into the key considerations for designing and deploying an optimal Hadoop cluster.
+Some of key questions to be discussed are:
+- What is the “typical” Hadoop cluster and what should be installed on the different machine types?
+- Why should you consider the typical workload patterns when making your hardware decisions?
+- Are all microservers created equal for Hadoop deployments?
+- How do I plan for expansion if I require more compute, memory, storage or networking?

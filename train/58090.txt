@@ -1,0 +1,17 @@
+PHP 5 Pre-defined function
+What is Pre-defined function?
+Pre-define functions are those functions, which are already defined in PHP language. You can use these functions by passing the argument. PHP provides thousands of pre-defined function like sqrt, date, strlen etc.
+<?php echo "sqrt of 16: is - "; print(sqrt(16) . "
+"); echo "sqrt of 7: is -"; print(sqrt(7) . "
+"); echo "sqrt of 36: is - "; print(sqrt(36) . "
+"); echo "sqrt of 0.64: is -"; print(sqrt(0.64) . "
+You can use sqrt function for finding the square root of any number, the number can be an integer or float as shown in the above example.
+strtolower and strtoupper functions
+<?php echo strtolower(" WWW.PTUTORIAL.COM "); echo"
+"; echo strtoupper("welcome to pTutorial.com"); ?>
+Strtolower function is used to convert the upper case to the lower case and strtoupper function is used to convert the lower case to the upper case as shown in the above example.
+<?php echo phpinfo(); ?>
+You can use phpinfo function to print all the information about PHP (where the script is running) like version, Configuration, HTTP Headers Information etc.
+Array_product function is used to calculate the product of array. Simply pass the array as argument and its return the product of an array elements as shown in the below example.
+<?php $array = array( 2, 3, 2 ); echo array_product($array); ?>
+If you want to learn more about pre-define function click on this php function

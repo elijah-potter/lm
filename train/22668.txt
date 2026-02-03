@@ -1,0 +1,8 @@
+Community Submission - Author: Caner Taçoğlu
+Immutability means unchangeability. In computer science, an immutable object is an object whose state cannot be altered after its creation.
+Since all historical transactions can be audited at any point in time, immutability enables a high degree of data integrity.
+The immutability of public blockchains can enhance the current trust and audit system. It can reduce the time and cost of audits since verifying information becomes much simpler or effectively redundant.
+Immutability can also increase the overall efficiency of many businesses by providing them with the opportunity to maintain a full historical record of their business processes. Immutability can also provide clarity to many business disputes, as it enables a verifiable, shared source of truth.
+In such a scenario, the attacker would be able to prevent new transactions from gaining confirmations or even reverse transactions entirely. However, at least in the case of Bitcoin, gaining control of this amount of hashing power would be hugely expensive, requiring substantial hardware and considerable amounts of electricity.
+A decentralized, digitized ledger that records transaction information about a cryptocurrency in a chronolo...
+A cryptocurrency created by the pseudonymous developer(s) Satoshi Nakamoto. The first cryptocurrency, initi...

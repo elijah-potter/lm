@@ -1,0 +1,50 @@
+|KeyKit :: Tools :: Typo|
+When playing typo(), the letter keys (A-Z) are the ones that actually play notes, chords, and phrases. When the shift key is pressed, the things played by the letter keys will be recorded - but they will only be recorded *while* the shift key is pressed.
+The number keys will switch between channels - e.g. pressing 2 will switch to channel 2. Pressing 0 will switch to channel 10 (drums).
+When the control key is pressed, the letter keys then become "command" keys. Most of the command keys then require additional keys to be pressed for the actual operation. For example, when you press control-X, you then (after releasing control-X) press Q in order to quit.
+When you first start, the letter keys will be assigned to a new-agey scale. You may hear a snare drum on channel 10, keeping a beat. To change the drum pattern, press control-D (D for drum) and then press "r" (r for random) - it will generate a new (algorithmic) drum pattern and start repeating it. If you don't like the pattern it produces, just press control-D and R to generate a new one.
+Now start pressing the letters, to get a feel for what the notes are. When you're ready to start recording a loop of notes, hold down the shift key, and start pressing the letters (in time with the drum pattern). When you want to start looping the notes, release the shift key and press the RETURN key. The first note you played (after the shift key was held down) will be the first note of the loop. The length of the loop will be determined by the time between the first note you record and the time at which you press the RETURN key. The loop time will be quantized to the length of the drum pattern.
+When you have a loop going (i.e. after recording something and hitting RETURN), switch to a different channel by pressing one of the number keys (e.g. "2"). Set your synthesizer to produce a different sound on channel 2, and play with the notes. When you're ready to add to the looped notes, hold down the SHIFT key and play the notes - whatever you play when the SHIFT key is pressed will be added to the looped phrase.
+The length of a loop is determined by the first thing you record in it (i.e. the first time you press RETURN after recording something). All additional notes you add, on different channels, will not change the loop length. To completely clear a loop - delete everything and forget the loop length - press DEL. You can then start recording again and press RETURN to set a new loop length.
+The loop you are constructing is "pattern 1". To switch to a different pattern, press control-P (P for pattern) and then a number (say, 2). The current pattern will stop playing, and pattern 2 (currently blank) will start playing - you should hear only the initial snare drum beat. Go through the same process of changing the drum pattern (if you want) and adding some melodic notes to the pattern. When you have another pattern you like, you can return to pattern 1 by pressing control-P,1 . You have 10 patterns (number keys 0-9) to play with.
+The command control-A lets you "assign" different notes/chords/phrases to the letters A-Z. For example, control-A,K,N assigns a "newage" scale to the notes. Control-A,K,M assigns a "melodic minor" scale.
+You can change the pitch offset of everything being played by pressing control-O (o for offset) and then pressing a letter (a-z). The letter 'm' corresponds to 0 offset, and letters above and below 'm' correspond to pitch offsets above and below 0. To return to the original offset, press control-O,M .
+If you get any "stuck" notes, you can press the END key to send an "all-notes-off" message, at any time.
+If you want to assign a different note or chord to a letter, press that note or chord on your MIDI controller, and then press control-G (g for grab) and then the letter to which you want to assign that note or chord. In other words, to assign a C chord to the letter a, you would press the C chord on your MIDI controller, then press control-G,A .
+If you have a file containing music, and you want to assign the notes and chords in that piece of music to the letters, you can press control-A (A for assign), and then press "M" (M for midi file). You will get an "Open" dialog box, and you can select a MIDI file whose initial few bars will be assigned to the letters (in the order QAZWSXEDCRFVTGBYHNUJMIKOLP).
+Most things involve a control-character followed by another character. Occasionally a third character is needed to complete the operation (e.g. when setting a scale). In all of the descriptions below, upper-case characters are shown for clarity, but the shift key does not need to be held unless explicitly noted).
+|R||generated 2-measure pattern|
+|T||generated 1-measure pattern|
+|A-Z||Offset value (M is 0 offset)|
+|control-Q||Quantize already-recorded notes|
+|N||None (1 click)|
+|control-P||Pattern, switch between patterns|
+|control-A||Assign things to the keys|
+|P||Random choice from patterns|
+|W||Write file of assignments|
+|R||Read file of assignments|
+|A||Copy current channel's assignments to All channels|
+|Y||(followed by 0-9) Copy current channel's assignments to 1 chan|
+|control-F||File, read/write all settings|
+|A||Random from All patches|
+|R||Random from selected patches|
+|S||Random from selected patches|
+|H||Random from "hard" patches|
+|B||Random from "bass" patches|
+|C||Random from "perCussive" patches|
+|V||Random from "vocal" patches|
+|D||Random from "drum" patches|
+|P||Random from "pad" patches|
+|D||Random from "drum" patches|
+|0-9||Fixed transition sequences|
+|W||Reset (i.e. remove) warp|
+|H||Comb in half|
+|A||Warp applys to all channels|
+|C||Warp applys to current channel|
+|A-Z||Assign grabbed note/chord/phrase to letter A-Z|
+|> and <||Increase and Decrease (Hold down > and < while pressing these)|
+|V||Velocity (on played notes)|
+|L||Loudness (volume controller)|
+|E||Expression (expression controller)|
+|BACKSPACE||Erase all recorded notes on current channel|
+|DEL||Completely reset current pattern|

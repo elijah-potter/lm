@@ -1,0 +1,154 @@
+Aerostatic Design Principles for Paper Hot Air Balloons -- overflite
+Aerostatic Design Principles are revealed by the geometric properties of three-dimensional space. The most important concept here is Scaling, ie. what happens to equivilently shaped objects, when the size changes. The objective here is to model the mathematical relationships between Surface Area and Volume, for different shapes, at various sizes. Good luck!! With this information, plus the weight of the envelope material, the approximate weight per cubic foot can be calculated.
+The Cube is the simplest geometric shape. It demonstrates the common properties of all three-dimensional objects. It can also serve as a "proxy," or substitute, for more complex shapes. So, to design round Paper Balloons, this essay starts with theoretical "Square Balloons," which will then serve to help explain the aerostatics of more complex shapes.
+Hot Air Balloon Envelope MaterialsMaterial Weight Per Square Foot can be approximated, by weighing a quantity of material, then dividing by its square footage. Alternately, the inverse of this calculation can be used instead. This is the Number of Square Feet to an Ounce.
+So -- Here are some materials that can be used to make hot air balloons:
+Lightweight Dry Cleaner Bag Material, ie. 1/2 Mil Plastic Sheeting... weighs an Ounce per 30 Square Feet. (Calculation -- A 4 1/2 foot tall, 2 foot wide, 1/2 mil dry cleaner bag has 18 square feet of surface area, and weighs around 6/10 of an ounce. So each square foot weighs 1/30th of an ounce, ie. 6/180.)
+Lightweight High Density 1/3 Mil Plastic
+Sheeting... weighs an Ounce per 45
+Tissue Paper... depending on the brand, weighs around an Ounce per 15 Square Feet.
+Tracing Paper... depending on the brand,
+weighs around an Ounce per 10 Square Feet.
+Geometric Properties of Cubes, and Three-Dimensional SpaceSquares and Cubes are the most basic building blocks of geometry. To compare different shapes, the simplest and most practical common measurement to use is the Quarter-Perimeter, ie. a "Side." Meanwhile though, the Perimeter is also a standard common measurement, and is considered to be more elegant. Hence, both formats are presented:
+Area of a Square =
+Area of a Cube = 6 Sides *
+Volume of a Cube =
+Area to Volume Ratio = ( 6 *
+QP^2 ) / QP^3 = 6 / Quarter-Perimeter
+Quarter-Perimeter = 6 * Volume /
+Quarter-Perimeter = ( Area / 6
+)^1/2 = Area^1/2 / 2.449
+Quarter-Perimeter = Volume^1/3
+Area of a Cube = 6 * QP^2 = 6 * ( Volume^1/3 )^2 = 6 * Volume^2/3
+Volume of a Cube = QP^3 = ( ( Area / 6 )^1/2 )^3 = ( Area / 6 )^3/2 = Area^3/2 / 14.697 ( Note that 14.697 is equal to 6^3/2 )
+So, as the size of a balloon increases, more volume is contained per unit of surface area, and it becomes "lighter," per unit of volume. As example, if the dimensions are doubled, then the surface area increases by 4 times, ie. 2^2. Meanwhile the volume increases by 8 times, ie. 2^3. Hence, the Weight Per Cubic foot becomes 1/2, ie 4/8.Equivilently, if the Material Weight is doubled, it takes 2 times the dimensions, with 8 times the volume, to get the same Weight Per Cubic Foot as before.
+These formulas demonstrate Scaling,
+the most important principle in geometry, for
+ballooning. What happens here, as dimensions
+increase, is that Surface Area increases by a
+square function, while Volume increases by a cube
+function. So, Surface Area increases by the
+change in Volume ^2/3, while Volume increases by
+the change in Surface Area^3/2:
+Geometric Properties of Spheres
+Area of a Circle = Pi *
+Radius^2 = Pi * ( 2 *
+Quarter-Perimeter / Pi )^2 = 1.273*
+Quarter-Perimeter^2 ( Note that
+1.273 represents 4 / Pi )
+Area of a Sphere = 4 * Pi * Radius^2
+= 4 * Pi * ( 2 * Quarter-Perimeter / Pi
+)^2 = 5.093 * Quarter-Perimeter^2
+( Note that 5.093 represents 16
+/ Pi )
+Volume of a Sphere = 4/3 * Pi *
+Radius^3 = 4/3 * Pi * ( 2 * QP / Pi
+)^3 = 1.081 * Quarter-Perimeter^3
+( Note that 1.081 represents ( 32/3 )
+/ Pi^2, or equivilently 10.667 / 9.870 ) -
+Area to Volume Ratio = 5.093 *
+QP^2 / ( 1.081 * QP^3 ) =
+4.712 / Quarter-Perimeter ( Note
+that 4.712 represents 3/2 * Pi )
+Quarter-Perimeter = 4.712 * Volume
+Quarter-Perimeter = ( Area /
+5.093 )^1/2 = Area^1/2 / 2.257
+( Note that 2.257 represents 4 /
+pi^1/2, or equivilently, 4 / 1.772 )
+Quarter-Perimeter = ( Volume /
+1.081 )^1/3 = Volume^1/3 /
+1.026 ( Note that 1.026
+represents 10.667^1/3 / Pi^2/3, or
+equivilently, 2.201 / 2.145 ) - ERROR?
+Area of a Sphere = 5.093 * QP^2 = 5.093 * ( Volume^1/3 / 1.026 )^2 = 4.836 * Volume^2/3 ( Note that 4.836 represents 4 * Pi / ( ( 4/3 * Pi )^2/3 ), or equivilently, 6^2/3 * Pi^1/3, or 3.302 * 1.465
+Volume of a Sphere = 1.081 * QP^3 = 1.081 * ( Area^1/2 / 2.257 )^3 = Area^3/2 / 10.635 ( Note that 10.635 represents 6 * P^1/2, or equivilently, 6 * 1.773
+So, common formats can be used for both cubes and spheres. The formulas have two basic modes. Dimensions can be related to area and volume. Or area and volume can be related directly to each other. This mode is more theoretical.
+of Cubes and Spheres
+Summary -- Imagination Exercises: Six squares are formed into a cube. The cube then "morphs" into a sphere, preserving the same perimeter. It now has 85% of its previous surface area, and holds 8% more volume. Its Area to Volume ratio decreases by 1 / 1.273, which is equivilent to Pi / 4.
+The original cube then "morphs" again into a sphere, this time preserving the same surface area. It now holds 38% more volume. To hold that same volume as a cube would require 24% more surface area. If the additional surface area was instead applied towards making the sphere larger, then the sphere's new volume would be 1.24 ^ 3/2 or 1.382, ie. 38% more.
+Hence, cubes and spheres can be compared in two
+basic ways, relative to the perimeter or
+quarter-perimeter dimension, or relative to the
+relationship between area and volume.
+Introduction to "Shape Factors"Shape Factors are mathematical shortcuts. They are the numerical portions of formulas that are otherwise the same. By thinking of geometric objects in terms of their Shape Factors, the mathematical differences between them can be simplified. In addition, by looking at the changes in the Shape Factors between different geometric objects, "proxies" can be approximated for geometric objects whose exact mathematics are difficult to figure out.
+For Cubes -- Area = 6 *
+For Cubes -- Volume = 1 *
+For Cubes -- Area/Volume Ratio
+= 6 / QP
+For Cubes -- Area = 6 *
+So, what does 4.836 represent?
+Geometrically it represents 4* Pi / ( ( 4/3
+* Pi )^2/3 ), or equivilently, 6^2/3 * Pi^1/3,
+Shape Factors -- For Area by Volume = Area by QP Shape Factor / ( Volume by QP Shape Factor)^2/3
+For Cubes -- Volume = 1/
+14.697 * Area^3/2
+What do these numbers represent? Besides being the inverses of the Area by Volume Shape Factors^3/2 ? Or their other origins? 1/10.635 represents 1.081 / ( 5.093)^3/2. So, generically, this means that:
+Shape Factors -- For Volume by Area
+= Volume by QP Shape Factor / (Area by QP
+Weight Calculation Formulas for Theoretical BalloonsIn real life, a balloon will almost never be shaped like a cube. The balloon will inflate so it is round. But The Cube is still the simplest shape. Hence, it is the natural proxy, and basis of comparison, for all of the different shapes. Meanwhile, The Sphere is the most efficient shape. So, in the mathematical range betweeen The Cube and The Sphere, a broad range of possible balloon shapes are potentially covered. In addition, by using Shape Factors, the formulas can be expressed generically. Algebraic substitution builds the following sequences of formulas:
+Weight Formulas for Cubes:
+Weight per Cubic Foot = Weight per Square Foot * Area / Volume
+Weight per Cubic Foot = Weight per Square Foot * ( 6 * Quarter-Perimeter^2 ) / Quarter-Perimeter^3
+Weight per Cubic Foot = 6 * Weight per Square Foot / Quarter-Perimeter
+Quarter-Perimeter = 6 * Number of
+Cubic Feet per Ounce / Number of Square Feet per
+Number of Cubic Feet per Ounce = Quarter-Perimeter * Number of Square Feet per Ounce / 6
+Number of Cubic Feet per Ounce = Volume^1/3 * Number of Square Feet per Ounce / 6
+Volume = ( 6 * Number of Cubic Feet per
+Ounce / Number of Square Feet per ounce
+Weight Formulas for Spheres:
+Weight per Cubic Foot = Weight per Square Foot * Area / Volume
+Weight per Cubic Foot = Weight per Square Foot * ( 5.093 * Quarter-Perimeter^2 ) / ( 1.081 * Quarter-Perimeter^3
+Weight per Cubic Foot = 4.712 * Weight per Square Foot / Quarter-Perimeter
+Quarter-Perimeter = 4.712 * Number
+of Cubic Feet per Ounce / Number of Square Feet
+Number of Cubic Feet per Ounce = Quarter-Perimeter * Number of Square Feet per Ounce / 4.712
+Number of Cubic Feet per Ounce = Volume^1/3 * Number of Square Feet per Ounce / 4.712 * 1.026
+Volume = ( 4.836 * Number of Cubic Feet per Ounce / Number of Square Feet per ounce )^3
+Generic Weight Formulas:
+Quarter-Perimeter = Area/Volume by QP Shape Factor * #CF per oz. / #SF per oz. ( Note that the Area/Volume by QP S.F. is equal to the Area by QP S.F. / Volume by QP S.F. )
+Number of Cubic Feet per Ounce = QP * #SF per oz. / Area/Volume by QP Shape Factor
+Volume = ( Area by Volume Shape Factor * #CF per oz. / #SF per oz. )^3 ( Note that the Area by Volume S.F. is equal to the Area by QP S.F. / ( Volume by QP S.F. )^2/3 )
+Designing Theoretical Cube and Sphere Shaped BalloonsSo, now we have Formulas, to design Theoretical Cube or Sphere Shaped Balloons. For each material, the Weight per Cubic Foot can be calculated, based on the Quarter-Perimeter or the Volume. Equivilently, calculations can be based upon a specific weight objective... like 1/8th Ounce per Cubic Foot. But remember -- Glue-Weight is not included!!
+As stated, The Cube is a relatively inefficient shape. The Sphere is perfectly efficient. Hence, most other shapes will range in efficiency somewhere between these two shapes. So, by making a balloon at least as efficient as an inefficient shape, it should definitely fly, if reasonably heated. So, here are minimum specifications for 1/8 ounce per cubic foot balloons: ( Note: The simplest equations are used. With the more complex equations the results should work out the same.)
+With High-Density 1/3 mil Plastic Sheeting, weighing an Ounce per 45 Square Feet:
+With 1/2 mil Lightweight Dry Cleaner Bag Material, weighing an Ounce per 30 Square Feet
+With Tissue Paper, weighing an Ounce per 15 Square Feet
+With Tracing Paper, weighing an Ounce per 10 Square Feet
+The examples demonstrate the scaling concepts quite clearly. For any given shape, to keep the weight per cubic foot the same, 2 times the material weight requires 2 times the quarter-perimeter, resulting in 8 times the volume. Similarly, 3 times the material weight requires 3 times the quarter-perimeter, resulting in 27 times the volume. So, the dimension change is directly proportional to the material weight change. The volume change is then the cube of the dimension change.
+Meanwhile, it is noticed that the dimensions for the cubes are 1.273 times those for the spheres. This is a geometric curiousity, proportional to 6 / 4.712, or equivilently to 4 / Pi. It shows that the changes in dimensions are directly proportional to the changes in the efficiency of the shape. It also means that shape efficiency and material weight are somewhat equivilent to each other in their effects.
+Finally, it is noticed that the volume requirements for the cubes are 1.91 times those for spheres. What is this the result of? It is the same as the cube of the proportion between Area by Volume Shape Factors. ( 6 / 4.836)^3 = 1.241^3 = 1.91.
+So, in the end, boiling down all the geometry, what appears most important for approximating a balloon's weight per cubic foot is its Area by Volume Shape Factor. As seen, this factor relates volume and area directly to each other, without considering the actual dimensions. This is quite reasonable to do, since the varieties of different shapes will not have dimensions that correlate directly to each other anyway.
+As stated, the Area by Volume Shape Factor
+will range from 4.836, for a perfect
+sphere, to around 6.000, for a perfect
+cube. Somewhere between these two amounts
+most of the other shapes will range.
+As example, a Dry Cleaner Bag has an Area of 18 Square Feet and a Volume of 5 Cubic Feet. It weighs 6/10 Ounce. So, it weighs 30 Square Feet per Ounce. It holds 8.333 Cubic Feet per Ounce. This leads to the following calculations:
+Volume = ( Area by Volume Shape Factor * #CF per oz. / #SF per oz. )^3
+Volume^1/3 = Area by Volume Shape Factor * #CF per oz. / #SF per oz.
+Area by Volume Shape Factor = Volume^1/3 * #SF per oz. / #CF per oz.
+Area by Volume Shape Factor = 5^1/3 * ( 30 / 8.333) = 1.71 * 3.60 = 6.156
+Okay, okay, so a dry cleaner bag is less
+efficient than a cube! But not by much, even
+though it would be even less efficient if we
+factored in a bottom for the balloon. But
+there you go anyway. If you know the
+statistics on a balloon you can calculate its
+shape factor from that, and forget about the
+geometry. Then, any other shape that is the
+same as the one you calculated for will have the
+same shape factor. And onward...
+Where do we go from here? The next step is to to consider different shapes! And to see how they compare to The Cube and The Sphere:
+To start, the assumed first shape will be a "cube" whose height is either increased or decreased, presumably by some unknown amount at first, then by different proportions of the quarter-perimeter. This will provide a format and direction in estimating the effects of height changes on the Area by Volume Shape Factor.
+The assumed second shape will be a cylinder where the height is equal to the quarter-perimeter. This, in effect, will become the substitute for The Cube. Finally the cylinder's height will be either increased or decreased, by unknown amounts then by proportions of the quarter-perimeter. This will approximate real balloons that people are likely to build.
+In the meantime you might be wondering why the bottom of the balloon is being considered, when presumably it will be open. There are two reasons for this. First is that not having a bottom changes the shapes away from their classic geometric characteristics, which can screw up the formulas for no good reason. Second is that the balloons will presumably have frames of some type anyway, so including the bottom of the balloon helps make an allowance for frame weight.
+Finally the question arises -- What about the
+Glue? and the Overlap? But to include
+allowances for these screws up the
+equations. So it is easier to just figure on
+the paper being a little heavier than calculated,
+or to get overkill, making the balloon somewhat
+bigger than you thought it needed to be.
+Good luck everyone, with your ballooning
+projects!! Bye for now, Overflight.

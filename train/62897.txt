@@ -1,0 +1,6 @@
+HTML <wbr> Tag
+The <wbr> tag is used to instruct the browser, where in the text a line-break could be added. Unlike the <br> tag, which oblige the browser to insert a line-break, when <wbr> is used the browser first analyze its content, and then insert a line-break if necessary (too long word or URL address).
+In case you do not use the <wbr> tag, long words could either wrap in a wrong place (making it difficult to read), or not wrap at all - pushing the page layout to the side.
+The <wbr> tag is one of the HTML5 elements.
+The <wbr> tag is empty, which means that the closing tag isn’t required.
+<html> <head> <title>Title of the document</title> </head> <body> <p>Example of a long string of text without wbr.</p> <p>This is the longest word you can ever meet in the English language pneumonoultramicroscopicsilicovolcanoconiosis</p> <p>Example of a long string of text with wbr.</p> <p>This is the longest word you can ever meet in the English language pneumono<wbr>ultra<wbr>micro<wbr>scopic<wbr>silico<wbr>volcano<wbr>coniosis</p> </p> </body> </html>

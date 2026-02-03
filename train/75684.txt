@@ -1,0 +1,57 @@
+A persistence layer encapsulates the behavior needed to make objects persistent, in other words to read,
+write, and delete objects to/from permanent storage. A robust persistence layer should support:
+1. Several types of persistence mechanism. A persistence mechanism is any technology that can be used
+to permanently store objects for later update, retrieval, and/or deletion. Possible persistence
+mechanisms include flat files, relational databases, object-relational databases, hierarchical databases,
+network databases, and objectbases. In this paper I will concentrate on the relational aspects of a
+2. Full encapsulation of the persistence mechanism(s). Ideally you should only have to send the
+messages save, delete, and retrieve to an object to save it, delete it, or retrieve it respectively. That’s it,
+the persistence layer takes care of the rest. Furthermore, except for well-justified exceptions, you
+shouldn’t have to write any special persistence code other than that of the persistence layer itself.
+3. Multi-object actions. Because it is common to retrieve several objects at once, perhaps for a report or
+as the result of a customized search, a robust persistence layer must be able to support the retrieval of
+many objects simultaneously. The same can be said of deleting objects from the persistence
+mechanism that meet specific criteria.
+4. Transactions. Related to requirement #3 is the support for transactions, a collection of actions on
+several objects. A transaction could be made up of any combination of saving, retrieving, and/or
+deleting of objects. Transactions may be flat, an “all-or-nothing” approach where all the actions must
+either succeed or be rolled back (canceled), or they may be nested, an approach where a transaction is
+made up of other transactions which are committed and not rolled back if the large transaction fails.
+Transactions may also be short-lived, running in thousandths of a second, or long-lived, taking hours,
+days, weeks, or even months to complete.
+5. Extensibility. You should be able to add new classes to your object applications and be able to change
+persistence mechanisms easily (you can count on at least upgrading your persistence mechanism over
+time, if not port to one from a different vendor). In other words your persistence layer must be flexible
+enough to allow your application programmers and persistence mechanism administrators to each do
+what they need to do.
+6. Object identifiers. An object identifier (Ambler, 1998c), or OID for short, is an attribute, typically a
+number, that uniquely identifies an object. OIDs are the object-oriented equivalent of keys from
+relational theory, columns that uniquely identify a row within a table.
+7. Cursors. A persistence layer that supports the ability to retrieve many objects with a single command
+should also support the ability to retrieve more than just objects. The issue is one of efficiency: Do you
+really want to allow users to retrieve every single person object stored in your persistence mechanism,
+perhaps millions, all at once? Of course not. An interesting concept from the relational world is that of
+a cursor. A cursor is a logical connection to the persistence mechanism from which you can retrieve
+objects using a controlled approach, usually several at a time. This is often more efficient than
+returning hundreds or even thousands of objects all at once because the user many not need all of the
+objects immediately (perhaps they are scrolling through a list).
+8. Proxies. A complementary approach to cursors is that of a “proxy.” A proxy is an object that
+represents another object but does not incur the same overhead as the object that it represents. A
+proxy contains enough information for both the computer and the user to identify it and no more. For
+example, a proxy for a person object would contain its OID so that the application can identify it and the
+first name, last name, and middle initial so that the user could recognize who the proxy object
+represents. Proxies are commonly used when the results of a query are to be displayed in a list, from
+which the user will select only one or two. When the user selects the proxy object from the list the real
+object is retrieved automatically from the persistence mechanism, an object which is much larger than
+the proxy . For example, the full person object may include an address and a picture of the person. By
+using proxies you don’t need to bring all of this information across the network for every person in the
+list, only the information that the users actually want.
+9. Records. The vast majority of reporting tools available in the industry today expect to take collections
+of database records as input, not collections of objects. If your organization is using such a tool for
+creating reports within an object-oriented application your persistence layer should support the ability
+to simply return records as the result of retrieval requests in order to avoid the overhead of converting
+the database records to objects and then back to records.
+10. Multiple architectures. As organizations move from centralized mainframe architectures to 2-tier
+client/server architectures to n-tier architectures to distributed objects your persistence layer should be
+able to support these various approaches. The point to be made is that you must assume that atsome
+point your persistence layer will need to exist in a range of potentially complex environments.

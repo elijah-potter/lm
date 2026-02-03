@@ -1,0 +1,8 @@
+1. <database> A relational database running under Microsoft Windows. Data is stored as a number of "tables", e.g. "Stock". Each table consists of a number of "records" (e.g. for different items) and each record contains a number of "fields", e.g. "Product code", "Supplier", "Quantity in stock".
+Access allows the user to create "forms" and "reports". A form shows one record in a user-designed format and allows the user to step through records one at a time. A report shows selected records in a user-designed format, possibly grouped into sections with different kinds of total (including sum, minimum, maximum, average).
+There are also facilities to use links ("joins") between tables which share a common field and to filter records according to certain criteria or search for particular field values.
+Version: 2 (date?).
+Usenet newsgroup: comp.databases.ms-access.
+2. <communications> A communications program from Microsoft, meant to compete with ProComm and other programs. It sucked and was dropped. Years later they reused the name for their database.
+Try this search on Wikipedia, OneLook, Google
+Nearby terms: Microslop « Microsloth Windows « Microsoft « Microsoft Access » Microsoft Basic » Microsoft Certified Application Developer » Microsoft Certified Database Administrator

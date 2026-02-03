@@ -1,0 +1,40 @@
+November 4th, 2001 11:07 PM
+Encryption - the basics.
+A. Encryption - the basics.
+A.1. Symmetric encryption
+Symmetric encryption consists of two parts: an algorithm and a password.
+Encryption and decrytion is based on the same password. This means that both the transmitter and the receiver need to know the password. No need to tell that the big issue with this kind of encryption is the way how you transmit your password to the receiver...
+The algorithms used for this kind of encryption (DES, Triple DES, IDEA, Blowfish, RC2, AES,...) are pretty fast, though.
+Original message --> algorithm + password --> encrypted message -*-*-*-*-*-*-*- encrypted message --> password + reversed algorithm --> Original message
+A.2. Public key-encryption
+In the 70's, Rivest, Shamir and Adleman (RSA) invented public key-encryption.
+Public key-encryption consistes of two parts: a public and a private key.
+The principle: the public and the private key are assymetric: a message you encrypt with the public key, can only be decrypted with the private key (and the other way around).
+Your correspondents use your public key to decrypt data, and you're the only one who can decrypt that data with your private key.
+Original message --> public key + algorithm --> encrypted message -*-*-*-*-*-*-*- encrypted message --> algoritm + private key --> original message.
+This system is considered safe, as long as you keep the private key to yourself...
+There's a downside though: the algorithms used for public key-encryption take a lot of CPU-power. That's why most people only use this technique to transfer a password for symmetric encryption. The rest of the transmission is based on symmetric encryption then...
+Some other issues: you need a database (which can be hacked!) to store all of the public keys, and you need a mechanism to block keys - in case something goes wrong.
+B. Public key-encryption put into practice.
+B.1. Public Key-encryption: Pretty Good Privacy.
+Pretty Good Privacy, indeed: the keys used by PGP are considered unbreakable at this time...
+PGP is based on a network from 'trusts': every time you make a new pair of keys, you send your public key to a central database. In this database, you can of course also find the public keys from your correspondents. Every time you can decode someone's mail, that proves that your correspondent has used your private key. You can then ask your correspondent to digitally sign that key. This way, there's a guarantee that your public key in the PGP-database is the correct one. When a key is signed by people you trust, you know you can also trust their keys --> a network of trusts...
+B.2. Public Key-encryption: Secure MIME.
+S/Mime is an extension of the e-mail-protocol. You need a digital certificate for this one, and you need to pay for it
+C. Virtual Private Network: VPN
+VPN is based on the encryption from all networktraffic from and to your computer (instead of encrypting the message, you encrypt the traffic).
+The L2TP-protocol (Layer 2 Tunneling Protocol) and Microsofts PPTP (Point-to-Point Tunneling Protocol) are well-known VPN applications, though both are more often replaced nowadays by the new IPSEC (Internet Protocol Security)-protocol. IPSEC will be part of IPv6, btw.
+- RSA's Secure MIME
+- Network Associates' PGP Freeware for Windows
+- PGP Homepage
+November 4th, 2001 11:14 PM
+November 4th, 2001 11:23 PM
+Just for the record: here's Singh's homepage
+November 5th, 2001 12:03 AM
+And another one: http://www.robertgraham.com/pubs/carnivore-faq.html
+The FBI forces every American ISP to put a Carnivore box in their network...
+November 5th, 2001 05:01 PM
+Thanx for the great info Negative! (Especially the info on Carnivore, I was kinda wondering exactly how it works. )
+November 5th, 2001 05:07 PM
+Kinda getting off the original topic, but for more info on all the ECHELON projects, carnivore included:
+Ignorance is a voluntary misfortune

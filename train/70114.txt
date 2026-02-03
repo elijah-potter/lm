@@ -1,0 +1,39 @@
+MaSuRCA is a whole genome assembly software, that combines de Bruijn graph and overlap-layout-consensus approaches. It can take just short Illumina reads, or a mixture of short (Illumina) and longer (454 or Sanger) reads.
+1) Configuration file
+To run MaSuRCA, you need to create a configuration file that contains some details of your data and parameters. First copy the template configuration file that came with MaSuRCA to the directory where you are going to run it:
+% cp /software/pathogen/external/apps/usr/local/MaSuRCA-220.127.116.11/sr_config_example.txt .
+You will then need to edit the copy of the sr_config_example.txt (in the directory where you are going to run MaSuRCA).
+Specifying your data in the configuration file
+First you need to edit the DATA part of the file. Each line represents a library and must start with PE=, JUMP=or OTHER= for the 3 different type of input read library (Paired Ends, Jumping or other). For example:
+PE= pe 180 20 /FULL_PATH/frag_1.fastq /FULL_PATH/frag_2.fastq
+JUMP= sh 3600 200 /FULL_PATH/short_1.fastq /FULL_PATH/short_2.fastq
+There can be multiple lines of type PE, JUMP or OTHER. Each line corresponds to one library.
+PE and JUMP data must be in fastq format (or fastq.gz format), while the other data (eg. 454 data) must be in Celera Assembler frag format (.frg).
+If your 454 data is in sff format, you can convert it to frg format using SffToCA, for example :
+% sffToCA -linker flx -linker titanium -libraryname 454_8kb -insertsize 9088 1328 -clear 454 -trim chop -output 454_8kb.frg one.sff two.sff three.sff four.sff five.sff
+where the -linker option finds a linker sequence and creates mated reads (a mate-pair in 454 is just one long read, with a linker between them). The '-linker flx' option searches for FLX linker sequences, while the '-linker titanium' option searches for Titanium linker sequences (you can use both if you are not sure which type your data has, although you could use my Python script to figure out which you have);
+-libraryname lets you specify a name for the library;
+-insertsize 9088 1328 means the mean insert size is 9088 bp, and standard deviation 1328;
+-clear 454 uses the 'clear region' (ie. the good quality part of the read) as identified using the '454' algorithm;
+-trim chop tells the program to discard any parts of the read outside the 'clear region';
+-output lets you specify the name of the output .frg file;one.sff two.sff three.sff four.sff five.sff are the names of the input sff files for the library.
+Notes on sffToCA:
+(i) In my case the reads are going to be used for scaffolding, so my colleagues Thomas Otto and Martin Hunt recommended that I should trim off the low quality parts of reads outside the 'clear region'.
+(ii) The SffToCA webpage recommends using the '-clear 454' option in most cases.
+(iii) The SffToCA webpage says that you should run sffToCA on all sff files of the same library in one command. The reason for this is that by default sffToCA removes duplicate reads, but duplicates can be spread across the sff files for a library, and sffToCA needs all the sff files of a library at once, so that it can accurately identify the duplicate reads.
+(iv) I found that SffToCA requires quite a lot of memory, I had to submit it to the Sanger farm with 2 Gbyte of memory to run on a library of 8 sff files (each of which is about 1.5-2 Gbyte).
+Specifying your parameters in the configuration file
+There are a numbers of parameters that you can change in MaSuRCA, which are specified in the PARAMETERS part of the configuration file:
+(i) USE_LINKING_MATES: the MaSuRCA manual (available on the MaSuRCA webpage) recommends that if you have more than 2x coverage by long (454, Sanger, etc.) reads, then you should set this parameter to 0 in the config file.
+(ii) LIMIT_JUMP_COVERAGE: the MaSuRCA manual suggests that if you have very high coverage of jumping libraries, you might want to set this parameter, so that it downsamples the jumping library. By default it is set to 60x, that is, it downsamples so that the coverage is <=60x. They say that 60x is good for bacteria, but they suggest setting it to a higher value for bigger eukaryotic genomes, eg. 300x for mammals.
+(iii) JF_SIZE=2000000000: this should be set to about 10 times the genome size, according to the MaSuRCA manual.
+(iv) NUM_THREADS=16: this should be set to the number of cores that you want to use, to run MaSuRCA in parallel across.
+2) Making the shell script for running MaSuRCA
+You next run the runSRCA.pl script, which generates a shell script assemble.sh, based on your configuration file:
+% perl /software/pathogen/external/apps/usr/local/MaSuRCA-18.104.22.168/bin/runSRCA.pl
+3) Running MaSuRCA
+Finally run the assemble.sh script to assemble your data. Martin Aslett suggested using 64 Gbyte of memory and 16 cores, eg.
+% bsub -q basement -o out.o -e out.e -M 64000 -n 16 -R 'select[mem=64000] rusage[mem=64000] span[hosts=1]' assemble.sh
+Note: the above bsub command didn't work, so [Alan Tracey and Thomas Otto told me] we had to try:
+% bsub -o out.o -e out.e -R "select[type==X86_64 && mem > 64000] rusage[mem=64000]" -M64000 -q hugemem -J assemble -n 16 -R "span[hosts=1]" ./assemble.sh
+Post a Comment

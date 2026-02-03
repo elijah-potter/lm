@@ -1,0 +1,9 @@
+View Full Version : Good tutorials for BASIC Stamp Editor
+Drew n Matt
+02-17-2010, 11:56 PM
+I'm in a computer engineering course at my school and our teacher purchased some Boe-Boards (as well as boe-bots). We wanted to use the boe-boards to make a digital alarm clock and were looking for some good tutorials for the BASIC Stamp Editor. If you guys have some sites or maybe a book we could buy that would be helpful.
+02-18-2010, 12:08 AM
+The "BASIC Stamp Syntax and Reference Manual" has a lot of stuff on using the Stamp Editor. It's not that complicated and the Manual covers everything. Go to the main Parallax webpage and click on Downloads. In the list you'll get, click on "BASIC Stamp Documentation" and you'll see the Manual. Under Downloads, there's also "Stamps in Class Downloads" which is where you'll find various programming tutorials.
+02-23-2010, 09:53 AM
+I found this to be pretty helpful... http://22.214.171.124/search?q=cache:O8XC4ksSU6wJ:digital.mica.edu/jrouvelle/pcomp/BS2_Tutorial.ppt+BS2+sending+hex+numbers&cd=9&hl=en&ct=clnk&gl=us&client=firefox-a
+its easier to look at as a powerpoint, at the top of the page you'll see the link for it.

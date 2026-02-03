@@ -1,0 +1,58 @@
+Using Frames in Interact
+A frame is a section of a webpage. This help file describes how to use a set of five frames in Interact to open multiple Interact windows within one large window. The frames are linked through Web Content to appear in a new window. This does not replace your regular Interact site. The process was developed by Morgan Luck and further developed for institutional use by James Sloane.
+Using a few simple html and text files, code can be altered to allow students to view more than one tool or web page in Interact at one time. Each new tool or page is placed in a frame.
+- For an example, click on this link to see how the frames look.
+These modules have been developed to lead you through the steps to put frames into your Interact site.
+It is possible to open multiple Interact windows in a single new window?
+Using a few simple html and text files, students can view more than one tool or web page in Interact at one time.
+To use frames in Interact you will need to think about which windows you would like to open in the main frame, (frame 2 in the diagram below), which windows you would like to have open in the side and bottom frames and then adapt the text and html files to suit. You can have multiple windows opening consecutively in the main frame by using the menu bar at the top of the page in frame 1.
+- Watch this short video to see how this can happen.
+Why put multiple frames into your main window in Interact?
+Putting relevant materials, or Interact tools, on the same page removes the need for students to leave the main window to source extra material. This means there's less navigation for students to find what they need in each session.
+What might you put in each frame?
+There are five frames in each window. See below to see what a finished frame window looks like. The top frame is a menu frame and holds links to a number of different pages that open in the second frame. The main frame can hold links to Interact tools such as Modules or webpages that are frequently used. Here are some examples:
+- A glossary wiki
+- A poll (allowing students to provide instant feedback on your materials).
+- A FAQ page
+- Online Tests
+- A video guide
+Where does the new frame open? and Why open it in a new window?
+The new frame can be made to open in the Interact site but students will have a much larger window to work in if it opens in a new window.
+What a finished frame window looks like:
+Instructions: This module describes how it is possible to use a set of 5 frames in Interact to open multiple windows within one large window.
+To set up frames in Interact you will need to follow the instructions below. Each frame can have a different Interact window open in it but think carefully about what you need to have open and what size it will be in the finished frame.
+Download the resource Files
+- First copy the frameset.zip file to your desktop or P: drive. [12kb .zip file]
+- Unzip the file and upload them into the Resources folder of your Interact site.
+- If you click on the frameset.zip file in this Interact site it will open the zip file.
+- Use Upload/Download Multiple files to upload the files into the Resources folder of your Interact site.
+Read the following instructions to set up your frames.
+- First edit the frameset_url.txt to specify the URL you wish to use for each frame. (see below)
+- Then edit the menu in frame 1 to allow more than one window to open in frame 2 consecutively. (This allows a number of pages to open in the main frame.)
+To edit frame URLs
+- Edit the "frameset_urls.txt" file to specify the URL you wish to use for each frame.
+IMPORTANT: Do not remove the quotes or alter the format of the file, otherwise the frames may not work. To update the content of a text document, mouse over Actions, and then click Edit Content. Make your change, and then click Update.
+- First find the URLof the window you wish to open in frame 2. See the instructions below to find the URL or watch this video to see how to copy the URL. You may use Interact tools or web pages in any of the frames. Remember that if you are using web pages that these will not fit easily in frames 3,4 or 5.
+- Copy the URL and paste between the quotes in the FRAME 2 line.(See image below).
+- Repeat with the URL you wish for each of frames 3,4, and 5. Paste the URL next to the appropriate frame number in the "frameset_urls.txt" file.
+Below is an image of the frameset_url.txt text document.
+- Watch this video to see how to edit the document.
+Finding the URL for an interact tool
+The easiest way to find the URL for an Interact tool is to open the tool, and copy the link from the "green reset arrows" at the top left of the tool frame. DON'T copy the URL from the address bar from the top of the screen. If you do this, the whole page will appear in each frame rather than just the tool.
+- If you are using Firefox, right click the image and select "copy link or location",
+- If you are using Internet Explorer right click the green reset arrows then "copy shortcut."
+- Watch this video if you are unsure of how to do this.
+Reusing content from other Interact sites
+If you want to link to resources hosted in another Interact site, you may need to make these 'publicly viewable' so non-site members can access the resources. Instructions on how to make resources publicly viewable is available here.
+See the image below for frame reference.
+- Frame 1 holds the menu bar.
+- Frame 2 holds the main viewing page.
+- Frame 3, 4 and 5 holds subsidiary windows.
+You can also edit the Menu Bar at the top of the page so that multiple windows can be viewed consecutively in the contents of Frame 2. This is done by editing the frames_menu.html page in Interact.
+Editing the Menu Frame
+The Menu frame at the top of the frames page (frame 1) can be changed by editing content in the frameset_menu.html. Instructions to edit the htmlfile within Interact is available here under the Working with HTML pages in Resources sub-heading. Below is an image of the frameset_menu.html document.
+- Select and edit the word you would like to use as a link in the menu.
+- Click on the Insert/edit link button.
+- Paste the URL of the window you would like that link to open in Frame 2.
+- Click continue.
+You can use a Web Content tool to link to the frameset_redirect.html file which will open start.html in a new window. To do this, open the frameset_redirect.html file, copy the URL and use this URL in the Web content tool window.

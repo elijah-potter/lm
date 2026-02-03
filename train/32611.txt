@@ -1,0 +1,52 @@
+Smoke Detector (1970s)
+|Its hard to believe, but people sometimes ask if smoke detectors are safe. Let's be clear about this, it is unsafe not to have one!|
+There are two types of smoke detectors: optical smoke
+detectors (OSDs) and ionization chamber smoke detectors (ICSDs). The
+former perform best with smoldering fires that generate relatively large
+airborne particulates. The latter work best with fast burning fires that
+generate comparatively small particulates (0.01 to 1.0 um).
+The ionization chamber smoke detector was invented in
+the early 1940s in
+The sensitive component of the ICSD is an ionization chamber that is open to the atmosphere (photo below left). A radioactive source inside the chamber emits radiation that ionizes the air in the chamber and makes it conductive.
+If smoke particles enter the chamber, some of the ions combine with the
+particles and the flow of the current decreases. The smoke detector works
+by monitoring the electrical current flowing through the chamber. When the
+current drops, it is assumed that this decrease is due to smoke and an
+alarm is activated.
+The details of the mechanism by which the smoke particles reduce the chamber current is described in NUREG-1717 as follows. Under normal operating conditions, the room air currents cause some of the ions moving towards the electrodes to be swept out of the chamber. This causes the electrical current to be slightly lower than what would exist in the absence of air flow, but unless the rate of loss of ions from the chamber changes, the electrical current is stable.
+When smoke particles get into the chamber and combine with these ions, the particles become charged and they move to the electrodes. Since the charged smoke particles are larger than free ions, their mobility is lower and their drift time to the electrodes is longer. This increased drift time means that a greater fraction of the charge will be swept out of the chamber volume by the room air currents. The reduction in the collected charge means a reduced current.
+In 1973, only 250,000 ionization type smoke detectors were sold. Most of these went to public and commercial buildings. Relatively few were installed in homes. This number increased dramatically over the next five years - in 1978, approximately 14 million ICSDs were sold, mostly for use in homes. Over this period, the percentage of homes with smoke detectors rose from 10% to 77%. At present, over 80 % of homes are believed to have one or more ICSDs.
+Ionization chamber smoke detectors almost always use alpha emitters as the source because of the high density of the ionization that they produce.
+Most ICSDs sold today use an oxide of americium-241 (Am-241) as the radioactive source. The typical activity for a modern residential ICSD is approximately 1 uCi, while the activity in one used in public and commercial buildings might be as high as 50 uCi. In 1980, the average activity employed in a residential smoke detector was approximately 3 uCi, three time higher than it is today:
+Am-241 is an alpha emitter, but it also emits a low energy (59.5 keV) gamma ray. The Am-241 is mixed with gold and incorporated into a composite gold and silver foil sandwich. The source is 3 to 5 mm in diameter, and either crimped or welded into place inside the chamber.
+Other nuclides have also been used. NRC records indicate that approximately 124,000 ICSDs were sold between 1971 and 1986 that employed nickel-63 (Ni-63). These units averaged approximately 10 microcuries of Ni-63 each.
+Radium-226 (radium sulfate) was the first radioactive
+source used in smoke detectors. According to NUREG/CP-0001,
+Apparently the U.S. Army at one time purchased smoke detectors using uranium as the source but I have no details concerning this.
+Based on data reported by the manufacturers, Belanger et al estimated that the exposure rate at 1 meter from a bare 1 uCi Am-241 source was 0.011 urem/hr, while the exposure rate for an assembled detector would be approximately 0.007 urem/hr. A measurement by Schmidtt-Hannig et al indicated that the exposure rate at one meter from a bare1 uCi Am-241 source was 0.009 urem/hr. This was quite similar to Belanger et al’s estimate. To obtain an accurate estimate of such an exposure rate, it would be necessary to account for the attenuation of Am-241’s very low energy photons in the source, the smoke detector housing and the air. Because they did this, the following estimate of O’Donnel et al, is assumed to be one of the most accurate available: 0.0013 urem per hour at one meter from an ICSD containing a 1 uCi Am-241 source.
+NUREG-1717 estimated an annual effective dose equivalent of 0.001 mrem to an individual who purchase and installs two smoke detectors, and sleeps 8 hours per day in a bedroom in which an ICSD is located at a distance of two meters.
+To estimate the doses that an individual might receive as a result of the inhalation of Am-241 released during a fire, NUREG-1717 assumed that 0.01% of the source material would become airborne. Given this assumption, they estimated that someone escaping a residential fire might receive 0.004 mrem. Similarly, a firefighter wearing a respirator was estimated to receive < 0.001 mrem fighting a residential fire, 0.3 mrem fighting a transportation fire (7,200 smoke detectors), and 0.3 mrem fighting a warehouse fire (36,000 smoke detectors).
+NUREG-1717 also calculated that the dose to a hypothetical teacher who removed the source from a smoke detector for classroom demonstrations would be < 0.01 mrem.
+30.20 Gas and aerosol detectors containing byproduct
+(a) Except for persons who manufacture, process,
+produce, or initially transfer for sale or distribution gas and aerosol
+detectors containing byproduct material, any person is exempt from the
+requirements for a license set forth in section 81 of the Act and from the
+regulations in parts 20 and 30 through 36 and 39 of
+this chapter to the extent that such person receives, possesses, uses,
+transfers, owns, or acquires byproduct material, in gas and aerosol
+detectors designed to protect life or property from fires and airborne
+hazards, and manufactured, processed, produced, or initially transferred
+in accordance with a specific license issued pursuant to § 32.26 of this
+chapter, which license authorizes the initial transfer of the product for
+use under this section.
+(b) Any person who desires to manufacture, process,
+or produce gas and aerosol detectors containing byproduct material, or to
+initially transfer such products for use pursuant to paragraph (a) of this
+section, should apply for a license pursuant to § 32.26 of this chapter,
+which license states that the product may be initially transferred by the
+licensee to persons exempt from the regulations pursuant to paragraph (a)
+of this section or equivalent regulations of an Agreement State.
+NCRP. Radiation Exposure of the
+Nuclear Regulatory Commission. Systematic Radiological Assessment of Exemptions for Source and Byproduct Materials. NUREG 1717. June 2001.Johnson, J.E. Smoke Detectors Containing Radioactive Materials. in NUREG/CP-0001. Radioactivity in Consumer Products. 1978.
+Copyright 1999, Oak Ridge Associated Universities

@@ -1,0 +1,5 @@
+Time ZoneFor convenience, the world is divided into 24 time-areas according to the apparent movement of the sun. Each of the areas represents a time zone. The divisions were made following the Earth's longitude, but there are exceptions to accommodate the boundaries of some countries. Each time zone is defined as an offset of the coordinated universal time (UTC). The time zone on the meridian of Greenwich serves as the base for the offset. The longitudes to the east of the meridian add 1 hour to a time zone, while those to the west remove 1h. The UTC can range from UTC -12:00 to UTC +14:00.
+The IANA time zone identifier for Sinop is Europe/Istanbul
+Sunrise, sunset, day length and solar time for Sinop
+Solar noon 12:47
+Day Length 12:07:00

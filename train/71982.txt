@@ -1,0 +1,21 @@
+What is Flame malware?
+The recently discovered Flame malware demonstrates how MD5-based certificates can be exploited to perform man-in-the-middle and other attacks.
+Based on currently available information, Flame was a sophisticated piece of malware designed to gather intelligence information in Iran and the Middle East. The developers of Flame were able to create fraudulent Microsoft digital certificates due to Microsoft’s use of the weak MD5 algorithm (proven hackable in 2005). These fraudulent certificates were used as part of HTTP man-in-the-middle attacks to distribute and install the Flame malware rapidly as a bona fide Microsoft update by masquerading as the Windows Update service.
+Summary: Flame impersonated Microsoft, loaded malware, and that malware opened a “door” that enabled its creators to steal information.
+Sequence of events:
+- Microsoft certificate
+- Microsoft certificates based on MD5 hash algorithms were targeted
+- Certificate was remanufactured (using the cracked MD5 algorithm) which made it look like a genuine certificate
+- Hackers set up a man in the middle attack to get between Microsoft and the targeted machines
+- The targeted machines thought they were dealing directly with Microsoft
+- Licensing and update services were attacked and compromised
+- Microsoft licensing
+- Windows update
+- Code signing
+- Code was signed using fake certificate
+- Windows allowed the malware to run and install
+- Flame Malware
+- Stole small parts of files
+- Sent to over 80 different DNS (URLs)
+- If content looked valuable malware instructed to get more
+In response to Flame, Microsoft issued an emergency patch that explicitly identified the fraudulent certificates as “Untrusted Publishers” within Windows. This patch, once implemented, should protect organizations from the specific Microsoft MD5 vulnerability that was exploited by the Flame developers. MD5-based certificates were the open door, or attack vector, that allowed Flame to work. Microsoft closed their door by rendering the Microsoft specific MD5 certificates, invalid.

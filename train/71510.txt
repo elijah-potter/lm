@@ -1,0 +1,18 @@
+October 7, 2008
+.tgz files have been used in Unix for years. Originally created to handle backups to tape, it’s now commonly used to archive groups of files together such as installers for software. This is where most people run across the confusing .tgz, tar.gz, or tar.bz2 file extensions.
+These instructions should be universal for most Unix systems, Linux, BSD, OS X, and even Solaris. Please feel free to leave a comment if they’re not.
+To get to tar’s help files, simply type: man tar
+The output will look something like this:
+TAR(1) tar TAR(1)
+tar – The GNU version of the tar archiving utility
+[-]A –catenate –concatenate
+[-]d –diff –compare
+[-]x –extract –get
+-C, –directory DIR
+-f, –file F
+So for extracting tar files, we will use the x and f options. Thus:
+tar xf filename.tar
+Will work fine. Note that the same command should usually work for any file that has the tgz, tar.gz, or tar.bz2 extensions too. The tar command should automatically detect the file type and call gzip or b2zip. If it doesn’t there are two more commands.
+For .tgz or tar.gz files, add a z to the command: tar xzf filename.tgz
+For .bz2 files, add a j : tar xjf filename.tar.bz2
+At this point the file should unzip and untar into the same directory as the archive file. Sometimes an auto installer will come up, but that is still pretty rare.

@@ -1,0 +1,31 @@
+There are cases where some building areas require space heating, while others require air conditioning. This can be solved with independent heating and cooling equipment for each room, but the installation can become very expensive with this approach. Instead, MEP engineers recommend a centralized HVAC system that is capable of simultaneous heating and cooling.
+Some types of HVAC equipment have both a heating mode and a cooling mode, but cannot provide both outputs simultaneously.Ductless heat pumps are one example, designed to operate as air conditioners during summer and as space heaters during winter.
+Centralized HVAC systems in large buildings normally have separate heating and cooling equipment; for example, high-rise buildings often have both a chiller and a boiler. However, if hydronic piping and air ducts are shared, heating and cooling cannot be provided at the same time.
+Identify the best heating and cooling configuration for your building.
+This article provides an overview of three common HVAC configurations that allow simultaneous heating and cooling:
+Four-pipe hydronic systems with a chiller and boiler
+When Do Buildings Need Simultaneous Heating and Cooling?
+Depending on the equipment found in a building or its physical layout, there may be heating and cooling loads present at the same time. Consider the following examples:
+Data centers produce large amounts of heat, and air conditioning is normally required for the entire year, even during winter. However, office spaces in the same building require space heating to provide an adequate temperature for occupants.
+Restaurants and other buildings with commercial kitchens may require space cooling even during winter, to remove the heat released by food and kitchen equipment.
+Some building layouts lead to simultaneous heating and cooling needs. For example, areas close to walls may need space heating during winter, while rooms closer to the center of the building may need space cooling.
+Four-Pipe HVAC Systems
+Air handlers in hydronic HVAC installations normally have a supply pipe and a return pipe. As a result, the system can circulate hot water from a boiler or cold water from a chiller, but not both. In other words, the entire building gets either heating or cooling.
+A four-pipe installation has a similar layout with a chiller, a boiler and air handlers. However, there is one important difference: there are two supply pipes and two return pipes for each air handler, providing a choice between hot water and chilled water. The chiller and boiler can operate simultaneously in this case, since there is an independent water loop for each unit.
+Another advantage of four-pipe systems is that they allow dehumidification without additional equipment:
+An air handler can use a higher cooling output to condense air moisture.
+Overcooling from the dehumidification process is compensated using the heating coil.
+As you might expect, the main drawback of a four-pipe installation is price, since the system uses twice as much hydronic piping. This is the only way to have both hot water and cold water available at each fan-coil.
+Water-Source Heat Pumps
+As previously mentioned, electric heat pumps can switch between heating and cooling mode. If a building is equipped with a water-source heat pump for each area, simultaneous heating and cooling are possible with only one supply pipe and one return pipe.
+Heat pumps in heating mode extract heat from water in the hydronic pipe.
+Heat pumps in cooling mode remove heat and release through the hydronic piping loop.
+In other words, water-source heat pumps are simply exchanging heat between building areas that need cooling and areas that need heating. Surplus heat can be released outdoors with cooling tower when cooling loads are higher, and a boiler can be used when heating loads are higher. Alternatively, the entire system can be connected to a larger high-efficiency heat pump to provide the balance between heating and cooling.
+Variable Refrigerant Flow Systems
+Variable refrigerant flow systems have a very high efficiency, using refrigerant lines instead of hydronic piping. VRF systems use outdoor units with both heating and cooling functions, connected with indoor fan coils through refrigerant lines.
+There are two main VRF configurations that can deliver simultaneous heating and cooling for separate building areas:
+One supply and return line for each fan coil, with a main branch selector that provides superheated or subcooled refrigerant as needed.
+Three lines for each fan coil, where two correspond to heating and cooling, and the third is a common return. In this case, there is an individual selector on each indoor unit.
+Two-pipe VRF systems are more flexible, since the refrigerant lines from all indoor units meet at the branch selector, which acts as a common hub. The system can be easily expanded by adding more lines to the selector. Three-pipe VRF systems have a slightly higher energy efficiency, but they are more difficult to expand because existing refrigerant lines must be modified.
+HVAC engineering is characterized by a wide range of options to heat and cool buildings, even when both outputs are required simultaneously. Like with any other engineering decision, all options have strengths and limitations, and the best system configuration is determined by specific project conditions. Professional HVAC engineers can analyze the heating and cooling needs of your building, and design an optimal solution.
+At New York EngineersChicago EngineersNew Jersey Engineers, we search for simple, eloquent solutions to complex problems. We minimize construction costs by eliminating the extraneous and focusing on the overall efficiency for the most streamlined designs.

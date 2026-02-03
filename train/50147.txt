@@ -1,0 +1,4 @@
+<variable> ::= <variableId> [ : <sort> ] <variableId> ::= <simpleId>
+x x:Int committee: Set[Person]
+The same <variableId> can be overloaded to name two different variables, that is, two variables with different sorts. It can also be used to name a variable and an operator, provided the operator is not a constant of the same sort. LP uses context to disambiguate overloaded identifiers.
+At times (e.g., when computing critical pairs or when proving an induction rule), LP creates variables, the identifiers for which consist of the first letter of the sort of the variable, followed by digits if necessary to avoid conflicts with constants and with other variables in the same term or formula.

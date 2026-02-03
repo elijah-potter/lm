@@ -1,0 +1,23 @@
+I had so much fun creating graphs for the Red Bull Stratos Space Jump calculation, that I figured I should make some more.
+Can you fall faster than terminal velocity? That is the question.
+Air resistance is a force exerted on an object as it moves through some stuff – air in this case. The magnitude is usually modeled as:
+- Rho is the density of the stuff the object is moving through
+- A is the cross sectional area of the object
+- C is the drag coefficient of the object – this depends on the shape (a cone would be different than a flat disk)
+- v is the magnitude of the velocity of the object
+The direction of this air resistance force is in the opposite direction as the velocity.
+Here is a diagram of a sky diver that just jumped out of a stationary balloon.
+Here there is the gravitational force (weight) and a small air resistance force. The air resistance is small because the jumper just started falling and is not moving too fast. The net force is in the downward direction. Since this is in the same direction as the velocity, the speed increases.
+In a little bit more time, the diagram would look like this:
+Since the jumper is going faster, there is a greater air resistance force. This means that the net force is still down, but much smaller. Maybe I should remind you of Newton’s Second law:
+Since the net force is smaller, the acceleration is smaller and the jumper does not speed up as much. Essentially, the jumper will reach a speed where the air resistance is the same magnitude as the gravitational force (weight). At this time, the net force will be zero (vector) and the acceleration will be zero (vector). The velocity will not change. It will not speed up, it will be terminated – terminal velocity.
+So, here is an expression for terminal velocity (the magnitude).
+Great. So, essentially the terminal velocity just depends on stuff about the object – mass, C A. But! What if the gravitational force is not constant? What if the density of air is not constant? In this case, the terminal velocity will change also.
+Back to the Space Jump
+If you jump out of a balloon at 120,000 feet above the ground, some things are different. Mostly, the density of air is really low so the jumper can really get going fast. When falling to a lower altitude, the density would then increase.
+I will go ahead and modify my python calculation. Here is a plot of speed and terminal velocity (magnitude) vs. time. I am plotting the terminal velocity for the altitude the jumper is at that instant.
+I am not showing the speeds from time zero seconds. This is because when the jumper starts, the terminal velocity is HUGE. At at about 46 seconds, the jumper is going at terminal velocity, however as the height gets lower, the terminal velocity is also getting smaller. So right after this, the jumper is going faster than terminal velocity.
+What about the acceleration?
+One more plot, I promise. Here is a plot of the acceleration of the jumper as a function of time.
+When the jumper starts – the acceleration is essentially -9.8 m/s2. After the jumper goes faster than terminal velocity, the air resistance force is greater than the weight so that the acceleration is in the positive direction. The greatest positive acceleration is somewhere around + 8 m/s2. This is important because this is the acceleration the jumper will “feel”. The gravitational force pulls the same (per unit mass) on all parts of the body, so you don’t really feel that. Just imagine what it feels like in free-fall with no air resistance, you are weightless just like in orbit. Ok – I lied. Here is one more plot. This is a plot of the air resistance force divided by mass in units of “g’s”. So, if the air resistance is equal to your weight, you would experience 1 g.
+The shape looks the same because the gravitational force is essentially constant. Here though, you can see his max “g-force” will be less than 2 g’s.

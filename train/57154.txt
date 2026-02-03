@@ -1,0 +1,25 @@
+Passwords are inconvenient, but necessary. Many people tend to avoid passwords wherever possible and are happy to use default settings or the same password for all their accounts. This behavior can make your data and your computer vulnerable to malware, hackers, or anyone who wants to play a prank on you.
+This article points out three important default passwords that you must change to have some basic protection from malicious attacks. This is not sufficient protection by any means, but it is an essential security layer and the first of many. And besides, changing passwords is very simple.
+1. Your Windows Administrator Password
+The Windows Administrator doesn’t really come with a default password. During the initial Windows setup, however, the user is asked to choose a password for the Administrator account and one way to complete this step is to simply leave the password field blank. If you bought a computer that came with Windows pre-installed and if you did not have to complete a user setup when you first booted into your new machine, chances are that your Administrator account requires no password at all. How convenient!
+Now here is why this is bad: anyone with some basic computer skills and access to your computer can log into the Administrator account and gain full control over your machine. Mind you, this is not necessarily restricted to people with physical access to your computer. A blank Administrator password can potentially be exploited by malware or hackers to wreak havoc on your system.
+In Windows 7 and Windows Vista, the Administrator account is not enabled by default. However, you can enable it and set a password as described in this article on How-To-Geek – Enable the (Hidden) Administrator Account on Windows 7 or Vista
+If you are running Windows XP, you can either boot into Safe Mode or click the [CTRL] + [ALT] + [DEL] key combination twice when you see the Windows welcome screen. Once you have logged in as Administrator, you can go to > Start > Control Panel > User Accounts and change the Administrator password.
+2. Your Router Password
+Routers all come with default login information and it easy to look up the details if you know the router manufacturer and model. You can and should use this resource right now to look up the access data for your local router, then use it to log into your router, and change the router password immediately.
+The good news is that generally only someone who is already connected to your network can access your router setup. However, it is possible to hack into your network via your computer or WiFi connection. Once someone has access to your router, they can change or look up your WiFi key, use your WiFi, and intercept your network traffic.
+It goes without saying that you also need to secure your WiFi connection with a secure network key, preferably WPA or WPA-2. So while you are logged into your router, make sure WPA encryption is enabled and in case it is not, go ahead and do it.
+More information on how to secure your network can be gained from these posts:
+- How To Secure Your Wireless Network Connection
+- How To Secure Your D-Link Wireless Router
+- Answers Question: How can I secure my network?
+3. Your One-For-All Password
+The most dangerous thing you can do is to use a single ‘default’ password for all your accounts. It’s even worse if your password is easy to crack, for example with a dictionary attack or because it is based on personal data, such as your postal code, a phone number, or a date significant to you.
+First of all, be sure to use a different password for each and every account that contains valuable (personal) information. This includes, but is not limited to email, bank, and social media accounts.
+Secondly, use a secure, i.e. impossible to guess and hard to crack password for all your accounts. Sadly, this means the password will probably be hard to remember. Please consult the following articles for some ideas on how to create secure passwords that are easy to remember or on how to manage your passwords:
+- How To Create A Good Password That You Will Not Forget
+- How To Create Strong Passwords That You Can Remember Easily
+- 5 Free Password Generators For Nearly Unhackable Passwords
+- Manage Passwords & Personal Information Across Machines With Sticky Password [Windows]
+- Put Your Passwords Through The Crack Test With These Five Password Strength Tools
+What other default passwords would you recommend people to change and how do you manage your accounts and passwords?

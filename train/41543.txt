@@ -1,0 +1,41 @@
+Compare tuples of different lenght
+steve+comp.lang.python at pearwood.info
+Sat Aug 20 06:17:39 EDT 2011
+Jurgens de Bruin wrote:
+> I have a list of tuples:
+> I would like to compare all the tuples to each other and if one
+> element if found two tuples the smallest tuples is removed from the
+It's not clear what you mean by "smallest" tuple. Is (8,) smaller than
+I'm going to guess you care only about the length of the tuple, and not the
+Let's start with a couple of helper functions.
+def compare(t1, t2):
+'Return -1 if t1 is "smaller" than t2, 0 if equal, and +1 if "bigger".'
+if len(t1) < len(t2): return -1
+elif len(t1) > len(t2): return 1
+else: return 0
+def match_any_item(t1, t2):
+s1 = set(t1)
+s2 = set(t2)
+return bool(s1 & s2)
+# Can't convert to sets because at least one item is mutable.
+# Let's do this the slow(?) way.
+matched = [x for x in t1 if x in t2]
+list_of_tuples = [(2,),(12,13),(2,3,4),(8,),(5,6),(7,8,9),]
+flags = [True]*len(list_of_tuples)
+for i,t1 in enumerate(list_of_tuples):
+for j in range(i+1, len(list_of_tuples)):
+t2 = list_of_tuples[j]
+if match_any_item(t1, t2):
+n = compare(t1, t2)
+if n == -1:
+# Flag t1 to be removed.
+flags[i] = False
+elif n == 1:
+# Flag t2 to be removed.
+flags[j] = False
+saved_tuples = 
+for t,flag in zip(list_of_tuples, flags):
+if flag: saved_tuples.append(t)
+[(12, 13), (2, 3, 4), (5, 6), (7, 8, 9)]
+which matches what you wanted:
+More information about the Python-list

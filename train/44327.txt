@@ -1,0 +1,20 @@
+Syntax of Foreign Keys in Class Definitions
+A foreign key defines a referential integrity constraint. When a table containing a foreign key constraint is modified, the foreign key constraints are checked.
+You can add foreign key definitions to persistent classes. They are not meaningful in other kinds of classes.
+Note that you can also enforce reference integrity by defining relationship properties that connect the classes.
+A foreign key definition has the following structure:
+/// description ForeignKey name(key_props) References referenced_class(ref_index) [ keyword_list ];
+description (optional) is intended for display in the Class Reference. The description is blank by default. See “Creating Class Documentation” in Defining and Using Classes.
+name (required) is the name of the foreign key. This must be a valid class member name, and must not conflict with any other class member names.
+key_props (required) specifies the property or properties that are constrained by this foreign key. Specifically this property or properties must match the referenced value in the foreign table.
+This is a comma-separated list of property names.
+These properties must be in the same class that defines the foreign key.
+referenced_class (required) specifies the foreign table (that is, the class to which the foreign key points).
+ref_index (optional) specifies the unique index name within referenced_class.
+If you omit ref_props, then the system uses the IDKEY index in referenced_class.
+keyword_list (optional) is a comma-separated list of keywords that further define the foreign key.
+See “Foreign Key Syntax and Keywords” for a complete keyword list.
+If this list is omitted, also omit the square brackets.
+ForeignKey EmpKey(EmpId) References MyApp.Employee(EmpID) [ OnDelete = cascade ];
+“Using Foreign Keys” in Using InterSystems SQL
+“Class Limits” in “General System Limits” in the Orientation Guide for Server-Side Programming

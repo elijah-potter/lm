@@ -1,0 +1,11 @@
+Vacuum Decay Testing
+A vacuum decay test evaluates if a part is leaking air. Whether you are manufacturing medical catheters or fuel injectors it is important that your parts do not leak prior to selling to the public. Typically manufacturers will have a variety of different quality systems in place to ensure their parts do not leak. Some manufacturers will either dunk their part or product in water, known as a dunk test, or build their own leak tester. We recommend neither of these processes as they can be time consuming and yield a high degree of uncertainty due to their variability and/or human error. Zaxis’ vacuum decay testers are much more efficient and accurate.
+Here’s how it works:
+1. Connect your part to a Zaxis leak tester with a fitting or fixture. During the FILL stage a negative pressure is applied to your part (vacuum).
+2. Once the desired negative test pressure specified by the manufacturer has been reached and the fill timer has ended, the SETTLE stage commences accommodating for part stretching or flexing.
+3. Once the settle time ends, the vacuum decay TEST initiates. During the test stage a pressure sensor will measure any increase in vacuum pressure.
+4. After the vacuum decay test the remaining negative pressure in the system is vented to atmosphere during the VENT stage.
+5. If the vacuum decay of your part remains within your specification then your part PASSES and a green illuminates. If the vacuum decay of your part falls below your lower limit, then your part FAILS and the red light illuminates.
+The advantage of this type of testing is that it is accurate up to the 5th decimal place or 0.00001 PSI allowing for fast test cycles.
+To learn more about vacuum decay visit our downloads.
+To learn more about our products visit our leak testers page!

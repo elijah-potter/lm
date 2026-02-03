@@ -1,0 +1,18 @@
+An introduction of the Terminal for Mac OS X
+- cd - change directory
+- ls - list the content of a directory
+- pwd - parent working dir
+- mkdir - create a new directory
+- rm - Remove files and folders
+- cp - Copy files and folders
+- mv - Move files and folders
+- ditto - Move files and folders (advanced)
+Syntax: chgrp <new group> <file/folder>
+chgrp is an abbreviation for change group.
+With this command you can change the group membership of a certain file or folder.
+|chgrp group1 myfile.txt||Change group membership of the file "myfile.txt" to the group "group1".|
+Sometimes you might not be able to perform a certain command or task from the Terminal.
+This might be because you don't have the right permission to do so.
+When that happens you can try to add the word "sudo" in the beginning of the line.
+Sudo is an abbreviation of superuser do and means that you want to execute the following command as a user with extended permissions, most often as an Administrator. When using "sudo" you sometimes need to enter the password of the root account.
+Learn more about sudo.

@@ -1,0 +1,13 @@
+In OpenGL (and other systems) the distance attenuation factor for point lights is something like
+d is the distance from the light abd
+s are constants.
+I understand the
+sd^2 component which models the well known physically accurate "inverse square law" attenuation expected in reality.
+I guess the constant
+c, usually one, is there to deal with very small values of
+d (and divide-by-zero defense perhaps?).
+What role does the linear
+kd component have in the model, (by default
+k is zero in OpenGL). When would you use other values for
+k? I know that this is called the "linear attenuation" component, but what behavior does it simulate in the lighting model? It doesn't seem appear in any physical model of light that I'm aware of.
+It has been pointed out by David Gouveia that the linear factor might be used to help make the scene 'look' closer to what the developer/artist intended, or to better control the rate at which the light falls off. In which case my question becomes "does the linear attenuation factor have a physics counterpart or is it just used as a fudge factor to help control the quality of light in the scene?"

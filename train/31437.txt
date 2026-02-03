@@ -1,0 +1,8 @@
+Tim Berners-Lee made the web for everyone. Just as in the real world where we must accommodate all people, accessibility is essential – and often a legal requirement – online.
+In order to help people who use screen readers access information online, it's important to make it meaningful by using semantic HTML tags. For more about this, see our Profile section. To give a brief example, let’s have a look at an image in our HTML page code (called "source code"):
+<img src="beach.jpg" alt="A beautiful sandy beach">
+Here, the "alt" attribute provides an easy way for us to describe the content of the beach.jpg image for people unable to see the image itself.
+Mobile and tablet users
+There has been an explosion in mobile recently. If you build a website today without optimising for mobile, you'll alienate a lot of your visitors.
+Thankfully, it's now possible to create websites that respond to the size of a user’s device. Rather than creating separate desktop and mobile sites, we can create a single design that adapts to someone’s screen size: shrinking down to a single column on narrow devices, and expanding to fill even the widest cinema display. This is called responsive design.
+Resize your browser window now to see our example web page change for different resolutions. Have a listen to the audio walkthrough, then have a play with the code. You can always press reset if you get stuck!Play

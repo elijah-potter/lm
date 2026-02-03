@@ -1,0 +1,27 @@
+Fundamentals of Engineering Design
+Gravel river beds typically have a large distribution of particle sizes. Bed material will be
+transported at variable depths in the water column depending on the size of the particle and hydraulic
+characteristics of the flow. When gravel is being considered, there is typically two classifications of
+sediment discharge. Bedload refers to the portion moving on or near the bed of the river. Total load is
+defined as the total amount of sediment being transported (Biedenharn et al., 1997). The total load is
+comprised of the bedload and the portion being transported in suspension.
+A dimensionless equation for the calculation of bedload discharge capacity was developed by
+Meyer-Peter and Mller (1948):
+Qp n ) 3/2 (RS f
+@ qbw % 0.047 '
+unit channel width bedload transport in weight per time;
+characteristic particle diameter;
+sediment dry unit weight;
+unit weight of water;
+Manning's roughness associated with the grain resistance;
+total Manning's roughness;
+water discharge; and
+portion of discharge contributing to bedload transport.
+The Meyer-Peter and Mller bedload transport equation is based on extensive laboratory flume
+experiments. The range of sediment sizes used in calibration was 0.4 to 30 mm. The slope ranged from
+0.0004 to 0.02.
+Chien (1954) showed that the original elaborate Meyer-Peter and Mller bedload equation can
+be modified to give the following relationship:
+where and are parameters from Einstein (1942). These parameters are stated as follows:
+R ' (G&1)
+where: (G-1) = (s - )/;

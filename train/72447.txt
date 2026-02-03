@@ -1,0 +1,9 @@
+Science Fair Project Encyclopedia
+In mathematics, hyperbolic n-space, denoted Hn, is the maximally symmetric, simply connected, n-dimensional Riemannian manifold with constant sectional curvature −1. Hyperbolic space is the principal example of a space exhibiting hyperbolic geometry. It can be thought of as the negative curvature analogue of the n-sphere.
+Hyperbolic 2-space, H2, is also called the hyperbolic plane.
+Hyperbolic space is most commonly defined as a submanifold of (n+1)-dimensional Minkowski space, in much the same manner as the n-sphere is defined as a submanifold of (n+1)-dimensional Euclidean space. Minkowski space Rn,1 is identical to Rn+1 except that the metric is given by the quadratic form
+Hyperbolic space, Hn, is then given as a hyperboloid of revolution in Rn,1:
+The condition x0 > 0 selects only the top sheet of the two-sheeted hyperboloid so that Hn is connected.
+The metric on Hn is induced from the metric on Rn,1. Explicitly, the tangent space to a point x ∈ Hn can be identified with the orthogonal complement of x in Rn,1. The metric on the tangent space is obtained by simply restricting the metric on Rn,1. It is important to note that the metric on Hn is positive-definite even through the metric on Rn,1 is not. This means that Hn is a true Riemannian manifold (as opposed to a pseudo-Riemannian manifold).
+Although hyperbolic space Hn is diffeomorphic to Rn its negative curvature metric gives it very different geometric properties.
+The contents of this article is licensed from www.wikipedia.org under the GNU Free Documentation License. Click here to see the transparent copy and copyright details

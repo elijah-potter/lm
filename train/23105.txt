@@ -1,0 +1,42 @@
+Implicit function plot of function having discontinuity at origin.
+7 views (last 30 days)
+Show older comments
+I have a implicit function to be plotted which is (1-x)-a*x.*y./(x.^2+b*y.^2) where a =.1; b=.001;. Note that there is a discontinuity at (0, 0). I want to avoid the discontinuity. Here I am giving a code. The plot includes an line almost parallel to y-axis (not exactly parallel) , & I want to avoid that line.
+a =.1; b=.001;
+xm = 0.001:0.001:1;
+ym = 0.001:0.001:3;
+[x,y] = meshgrid(xm,ym);
+f = (1-x)-a*x.*y./(x.^2+b*y.^2);
+I also have two questions 1. Except contour or ezplot, is there any other implicit function plot? 2. Which one of the two give better result?
+Note that if the function is written as y=f(x) then it will be easy to overcome the problem, but y=f(x) representation is very complicated here.
+Walter Roberson on 26 May 2013
+Why are you discussing it as an implicit plot, when really you are treating it as a 3D plot over x and y ? If you just rename "f" to "z" then that would be clear.
+An implicit plot would be a 2D plot that would require that f be a constant (or a function of x and y), thus setting some condition upon which (x,y) pairs were part of the plot. You are not doing that, though: you are indicating that all x and y pairs are valid and plotting a third dimension as a function of those two.
+Roger Stafford on 27 May 2013
+Since you sought the zero contour, your implicit curve is presumably considered to be defined by the equation
+(1-x)-a*x*y/(x^2+b*y^2) = 0.
+You should not be afraid of solving for y in terms of x as a method of generating this curve, because doing so only involves solving a quadratic equation, whereas solving for x in terms of y would require solving a cubic equation with consequent greater complexity. The resulting quadratic equation will have two solutions
+y1 = x*(a+sqrt(a^2-4*b*(1-x)^2))/(2*b*(1-x))
+and (using the algebra trick of rationalizing the numerator)
+y2 = 2*x*(1-x)/(a+sqrt(a^2-4*b*(1-x)^2))
+both of which satisfy your equation with real numbers provided that
+1-a/2/sqrt(b) <= x <= 1+a/2/sqrt(b).
+As it turns out, the curve this equation defines is continuous throughout its entire infinite length, though it does cross over itself at the origin (0,0), and approaches the vertical line x = 1 asymptotically in both the y = inf and y = -inf directions.
+It is not necessary to use either 'contour' or 'ezplot'. You can use the following code for this purpose. Note that to obtain these results it has been necessary to start with the y1 formula above with x moving forward, switch over to the y2 formula with x going backwards, and finally switch back to the y1 formula with x moving forward again, in order to trace a continuous path along the curve. This is forced by the nature of the curve and the fact that y is being solved in terms of x. If you look carefully at the curve, you will see why. (There is a white asterisk at the crossover point and the asymptote line x = 1 is shown in red.)
+a = .1;
+b = .001;
+n = 3000;
+ep = 1000*eps; % Guard against complex nos. from roundoff errors
+x1 = linspace(1.5,1+a/2/sqrt(b)-ep,n);
+x2 = linspace(1+a/2/sqrt(b)-ep,1-a/2/sqrt(b)+ep,n);
+x3 = linspace(1-a/2/sqrt(b)+ep,.5,n);
+y1 = x1.*(a+sqrt(a^2-4*b*(1-x1).^2))./(2*b*(1-x1));
+y2 = 2*x2.*(1-x2)./(a+sqrt(a^2-4*b*(1-x2).^2));
+y3 = x3.*(a+sqrt(a^2-4*b*(1-x3).^2))./(2*b*(1-x3));
+x = [x1,x2,x3];
+y = [y1,y2,y3];
+You can check that the above satisfies the given equation throughout its length with the following:
+f = (1-x)-a*x.*y./(x.^2+b*y.^2);
+Find more on Contour Plots in Help Center and File Exchange
+Community Treasure Hunt
+Find the treasures in MATLAB Central and discover how the community can help you!Start Hunting!

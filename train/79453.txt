@@ -1,0 +1,16 @@
+Crypt::DES - Perl DES encryption module
+The module implements the Crypt::CBC interface, which has the following methods
+Returns the size (in bytes) of the block cipher.
+Returns the size (in bytes) of the key. Optimal size is 8 bytes.
+my $cipher = new Crypt::DES $key;
+This creates a new Crypt::DES BlockCipher object, using $key, where $key is a key of
+my $cipher = new Crypt::DES $key; my $ciphertext = $cipher->encrypt($plaintext);
+This function encrypts $plaintext and returns the $ciphertext where $plaintext and $ciphertext should be of
+my $cipher = new Crypt::DES $key; my $plaintext = $cipher->decrypt($ciphertext);
+This function decrypts $ciphertext and returns the $plaintext where $plaintext and $ciphertext should be of
+my $key = pack("H16", "0123456789ABCDEF"); my $cipher = new Crypt::DES $key; my $ciphertext = $cipher->encrypt("plaintex"); # NB - 8 bytes print unpack("H16", $ciphertext), "\n";
+Do note that DES only uses 8 byte keys and only works on 8 byte data blocks. If you're intending to encrypt larger blocks or entire files, please use Crypt::CBC in conjunction with this module. See the Crypt::CBC documentation for proper syntax and use.
+Also note that the DES algorithm is, by today's standard, weak encryption. Crypt::Blowfish is highly recommended if you're interested in using strong encryption and a faster algorithm.
+Bruce Schneier, Applied Cryptography, 1995, Second Edition, published by John Wiley & Sons, Inc.
+The implementation of the DES algorithm was developed by, and is copyright of, Eric Young (firstname.lastname@example.org). Other parts of the perl extension and module are copyright of Systemics Ltd ( http://www.systemics.com/ ). Cross-platform work and packaging for single algorithm distribution is copyright of W3Works, LLC.
+This single-algorithm package and cross-platform code is maintained by Dave Paris <email@example.com>.

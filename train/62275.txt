@@ -1,0 +1,41 @@
+76 May/June 2018
+Microcontrollers versus Single Board
+Microcontrollers like the PICAXE are so easy to use.
+Partly because they’re single-task programmable logic
+integrated circuits with a built-in command set that’s
+capable of making the PICAXE read GPS sentences,
+digitize voltages, operate servos, trigger events, store
+data into EEPROM, and more. For students exploring
+programming for the first time, their programming language
+(BASIC) represents a very shallow learning curve. For this
+reason, I argue that microcontrollers like the PICAXE make
+the best avionics for a first time BalloonSat program in the
+junior and senior high school setting.
+The Raspberry Pi, on the other hand, is a single board
+computer. It’s reminiscent of the first home computers that
+became popular in the late 1970s and 1980s. One reason
+for this similarity is that the Pi must boot up and load
+its operating system (OS) into memory before it can do
+anything else (this is very unlike a microcontroller).
+Another reason for the similarity is that the Pi is
+designed to be programmed by the user rather than for
+running programs and apps already written by other
+people (remember the Timex-Sinclair 1000?).
+Because it has an OS, the RaspPi is not a real time
+device. While the PICAXE will perform a single task exactly
+the same way every time (according to your code), the
+Pi does a lot of additional stuff in the background while
+carrying out the program it’s running. With its ongoing
+background tasks, there’s no guarantee that programs will
+finish in the same amount of time every time.
+Having an OS also means there’s a lot of code to
+load and memory to check when a Pi boots up. Then,
+after booting up, the Pi waits for input on what action
+Raspberry Pi Zero Flight
+n BY L. PAUL VERHAGE NEAR SPACE
+People write a lot about the Raspberry Pi single board computer (SBC) and the Arduino microcontrollers. I’m a BASIC Stamp and PICAXE man myself, but thought it might be fun to expand out a little bit after all that I’ve
+read. So, over several columns, I’d like to share my exploration of the RaspPi
+as a flight computer for BalloonSat missions. I gotta tell you, this has been a
+real experience for me.
+On the left is a small Raspberry Pi Zero. I’ve connected it to the expansion
+board that I designed to create a RaspPi BalloonSat flight computer.

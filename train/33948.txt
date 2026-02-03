@@ -1,0 +1,23 @@
+HTML5 and Analytics/
+January 15, 2010
+HTML5 is the next generation of HTML, the markup language that the web is written in. Its features are slowly being adopted by browsers), and there are a few that have some ramifications for analytics.
+Embedding video in your site these days usually involves a Flash-based player of some kind. Often this is an easily embeddable player from a site like YouTube or Vimeo. But what if you want to track when your visitors click the play button, or whether they watch the video all the way to the end?
+Well, it’s certainly possible. Google Analytics offers Flash tracking, for example. So you have to take the video file, wrap it in a Flash-based player of your own devising (or maybe an open-source one like FlowPlayer), and implement some Event Tracking, for example. As you can imagine, even at its easiest, this is a lot more difficult than just pasting some code from YouTube to embed a video.
+HTML5 offers a
+<video> tag, much like the familiar
+<img> tag. (There’s also an
+Browsers are already starting to support the
+<video> tag, but not all of them are there yet. Over time support will become more widespread and tracking this sort of thing will be much easier.
+<video> tag represents a way that HTML5 can potentially make analytics easier, the second issue I want to cover potentially makes it more difficult.
+We’re all familiar with links; they’re the currency of the web, after all. A link looks like this:
+<a href="http://www.example.com">Some text</a>;
+In addition to the
+href attribute (which tells you where the link goes), there’s an optional attribute called
+rel, which tells you how the linked page is related to the page the link is on. There are a variety of possible values, but HTML5 introduces a new value that’s of special interest for analytics.
+rel=noreferrer tells the link not to pass referrer information along to the destination page. So, for example, if a link from example.com went to your site, you would usually see “example.com / referral” as a source and medium in Google Analytics. However, if example.com used the
+rel=noreferrer attribute on the link, you wouldn’t get any referral information and the link would be counted as “direct / (none)”.
+Is this a big deal?
+rel=noreferrer is really intended to protect private resources. For example, suppose the link was in someone’s gMail, or in an internal wiki, or something like that. There’s the possibility that passing along the URL where the link came from could reveal some private information or present a security risk, which is why
+rel=noreferrer was introduced. It does present a potential problem for accuracy in analytics, especially if it is used for reasons other than its intended purposes. But let’s remember that (1) analytics are never perfect, and (2) we should have a healthy respect for the privacy choices that people make on the web.
+In any case, no browsers yet support
+rel=noreferrer, but you can expect it to emerge eventually and you should be aware of it.

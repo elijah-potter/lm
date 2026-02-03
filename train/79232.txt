@@ -1,0 +1,18 @@
+Java Server Pages or JSP is Sun's solution used for developing dynamic web sites. JSP stands for Java Server Pages, a technology invented by Sun
+Microsystems to allow the easy creation of server side HTML
+A JSP page is a web page that contains Java code embeded within the HTML tags.
+JSP is used for developing dynamic web sites.
+JSP is used for developing user interfaces for web applications. It is used for creating database driven web applications. However it is recommended to use JSP only for developing user interface of web application.
+JSP can be used as both a kind of Dynamic HTML and a CGI replacement. But most of time it is simple HTML file saved with jsp extension.
+JSP scripting language is a high performance alternative to CGI scripts. It is used for creating dynamic web content for a web applications.
+JSP makes it easy to mix static HTML parts with dynamic Java servlet code.
+Syntax of JSP Tags
+In JSP all the jsp tags begin with < and ends >. These tags allows to embed a huge amount of java code in the JSP Scriptlets.e.g.
+Syntax of JSP scripting language:
+JSP Engine places these code in the _jspService() method.
+Variables available to the JSP Scriptlets are: request represents the clients request and is a subclass of HttpServletRequest.
+These variables are used to retrieve the data submitted along the request.
+Rs. 20,000 US$ 300
+Today: Rs. 10,000 US$150
+Course Duration: 30 hrs
+Posted on: July 8, 2008 If you enjoyed this post then why not add us on Google+? Add us to your Circles

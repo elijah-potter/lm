@@ -1,0 +1,23 @@
+Maybe the statement on the
+tex4ht page refers to this Eitan Gurrari's project. Maybe the prototype they used to have is somewhere available, I don't know.
+Edit: There is some discussion right now.
+But you can use plain
+tex4ht to produce
+mathml, which some screen readers can read. There is some tutorial.
+Another option is to produce braille text. You can use xml2brl to translate from
+mk4ht mzlatex math-pok.tex "html, mathplayer"
+xml2brl math-pok.xht math-pok.brf
+("x+y<}) .k "x:"y:
+There is also graphical frontend fot
+xml2brl, called dots, it can display braille output.
+brf file can be used to print braille with embosser.
+If you really want to view braille dots on screen or print them, there are two options. You can install some font with nemeth math support. Other option is using dots, if you select in main menu
+view -> braille, you can copy dots to your text editor and typeset them using
+fontspec and some font with support for
+unicode braille table.
+% this font is good for testing, for normall typesseting use
+% for example ghUBraille.ttf
+% you can download both of them from http://www.gh-mathspeak.com/downloads.php
+% contents of the brf file
+("x+y<\}) .k "x:"y:
+% and using unicode

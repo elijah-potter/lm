@@ -1,0 +1,46 @@
+Test Case in simple terms refers to a documentation which specifies input, pre-conditions, set of execution steps and expected result. A good test case is the one which is effective at finding defects and also covers most of the scenarios/combinations on the system under test.
+A test case has components that describes an input, action or event and an expected response, to determine if a feature of an application is working correctly.
+Test Case Writing is an activity which has a great impact on the testing phase and this makes test cases an important part of the test execution process.
+The Test Plan describes what to test while a Test Case describes how to perform a particular test. It is necessary to develop a test case for each test listed in the test plan.
+Most of the times people get confused with the term Test Scenario & Test Case. Test Scenario is what to be tested and a Test Case is how to be tested. Please take a look at the difference between Test Scenario and Test Condition.
+Test Scenario: Validate the login page
+- Test Case 1: Enter a valid username and password
+- Test Case 2: Reset your password
+- Test Case 3: Enter invalid credentials
+Strategy to Develop Good Test Case?
+Knowing how to write good test cases is extremely important for you as a testing resource and believe you me, it doesn’t take too much of your effort and time to write effective test scripts! You just need to follow certain guidelines while writing test cases
+Step 1: Detailed Study of the System Under Test
+- Before writing test cases, it is very important to have a detailed knowledge about the system which you are testing. It can be any application or any software. Try and get as much information as possible through available documentation such as use cases, user guides tutorials, or by having hands on the software itself.
+- Gather all the possible positive scenarios and also the odd cases which might break the system such as stress testing, uncommon combinations of inputs etc.
+Step 2: Written in Simple Language
+- The test cases should be written in a simple and understandable language. They must be clear and concise as the author of test case may not execute them.
+- Exact and consistent names for e.g. of forms, or fields under test must be used to avoid ambiguity.
+Step 3: Test Case Template
+Test case template is a document in which tester write their Test Cases. It looks like below:
+Let us look at each parameters should included good test cases:
+- Test Case ID: It is the unique number given to test case in order to be identified. This field is defined by the type of system we are testing.
+- Test Case Name: This can contain
+- Name of the feature you are testing
+- Requirement number from the specifications
+- Requirement name as classified in client’s document
+- This gives more specific name like particular Button or text box name, for which that particular Test Case is related. For Test Case we will specify to which Requirement it belongs to.
+- Description: This field has the summary what respective test case is going to do. It explains what attribute is under test and under what condition
+- Pre-Conditions: Any prerequisites or preconditions that must be fulfilled prior to executing the test should be defined clearly.
+Pre-conditions could be:
+- A certain page that a user needs to be on
+- A certain data that should be in the system
+- A certain action to be performed before “execution steps” can be executed on that particular system.
+- Execution Steps: These are the steps to be performed on the system under test to get the desired results. Steps must be defined clearly and must be accurate. They are written and executed number wise.This is very important part in Test Case because it gives the clear picture what you are doing on the specific object. This is the navigation for this Test Case. For e.g.
+- 1) Navigate to gmail.com
+- 2) In the ’email’ field, enter the email of the registered user.
+- 3) Click the ‘Next’ button.
+- 4) Enter the password of the registered user
+- 5) Click ‘Sign In’
+- Expected Result: This is the result of execution steps performed. It specifies what the specification or user expects from that particular action. Expected results should be clear for each expectation of a Test Case so that we can specify pass or fail criteria for each expectation.
+- Actual Result: This field has the actual outcomes after the execution steps were performed on the system under test. We will test the actual application against each Test Case and if it matches the Expected result then we will say it as “As Expected” else we will write what actually happened after doing those action.
+- Status: It simply indicates Pass or Fail status of that particular Test Case
+- Passed – If the expected and actual results match.
+- Failed – if the actual result and expected result do not match
+- Not Tested – The test case has not been executed
+- Comments: This column is for additional information. So for e.g. if status is set to “cannot be tested” then tester can give the reason in this column.
+Test case development hugely depends on the experience with the system under test. If tester is familiar with the system, he can write more effective test cases. It is important for the tester to think from a user perspective while writing test cases.

@@ -1,0 +1,5 @@
+An inverter is also an electronic device that converts DC to AC, for example 12 V DC to 120 V AC. It is also called a DC/AC converter, and is used in UPS:es, and for powering household appliances from a battery and/or solar panel.
+The simple inverters produce an output waveform that is almost a square wave. This is simple and efficient, but may not work for more demanding devices, such as computers, computer monitors or hifi systems. The more advanced inverters produce a pure sine wave. Typically, the efficiency is 85 - 95 %.
+It is important to remember that an inverter increases the voltage, but not the power, so the output current is proportionally lower.
+Example: You have a 12 V battery and want to power a 120 V, 60 W lightbulb. The current through the lightbulb will be 60 / 120 = 0.5 A. The battery needs to supply the same power, 60 W. Therefore the current from the battery will be 60 / 12 = 5 A, and even slightly more because of losses in the inverter.
+I have not been able to find a good origin of the word inverter. A possible explanation is that it inverts the actions of a power supply.

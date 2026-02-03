@@ -1,0 +1,7 @@
+1-CRM and SCM How are they different?
+2-CRM and SCM Where do they interact?
+3-What kind of technologies used in CRM and SCM?
+very often CRM (CustomerRelationManagement) is an frontend of ERP and or SCM (SupplyChainMangement) is the System in between for Processing Customer requests.
+CRM is ABAP & JAVA, SCM can be JAVA or ABAP & JAVA,
+both have an Database like: Oracle, MaxDB or UDB and an Operating System like Windows UNIX or Linux
+Last Wiki Answer Submitted: December 31, 2011 5:01 pm by Mohammed8920 pts.

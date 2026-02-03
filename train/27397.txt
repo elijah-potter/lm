@@ -1,0 +1,20 @@
+Functions into processes, using arrows
+Pointfree notation is often the most elegant way to write a function in Haskell. Put simply, any time you write code such as:
+foo x = f (g (h x))
+Or, if you are a dollar fan:
+foo x = f $ g $ h x
+You can rewrite it as:
+foo = f . g . h
+Consider this example of a function composition from Neil Mitchell that finds the mode (most common element) of a list:
+mostCommon :: Ord a => [a] -> a mostCommon = head . maximumBy (comparing length) . group . sort
+A nice composition of four functions. Each function in that pipeline of functions is taking a single input and producing a single output, which is then fed into the next function. This pipeline of pure functions is analogous to a pipeline of communicating processes — each taking a single input and sending on a single output to the next process. So is there an easy way of converting such function pipelines into process pipelines? The answer is yes — by using arrows.
+Even if you are a Haskell programmer, you may not be familiar with arrows. They can be used to express these input and output compositions. We can convert our function pipeline to use arrow notation by just changing the composition operator:
+mostCommonArr1 :: Ord a => [a] -> a mostCommonArr1 = head <<< maximumBy (comparing length) <<< group <<< sort
+This is because by good design/happy accident, a function does not need any special annotation to become part of an arrow. If we want to be more general, we must use the arr function to convert pure functions into arrows:
+mostCommonArr2 :: Ord a => [a] -> a mostCommonArr2 = arr head <<< arr (maximumBy (comparing length)) <<< arr group <<< arr sort
+A bit more cumbersome perhaps, but we haven’t changed the original too much — the pipeline of the four functions is still visibly there. Now that we have our function pipeline expressed in terms of arrows, changing to a process pipeline is a relatively simple matter. You’ll need to import the Control.Concurrent.CHP.Arrow module, and then re-type the pipeline to be a CHP process with channels, and stick runPipeline on the front:
+mostCommonArrProc :: Ord a => Chanin [a] -> Chanout a -> CHP () mostCommonArrProc = runPipeline $ arr head <<< arr (maximumBy (comparing length)) <<< arr group <<< arr sort
+And that’s it. The function here is now a communicating pipeline of four functions, wrapped up into one. mostCommonArrProc will sit there waiting to be sent a list of items, and once it has been, it will output the most common element of the list. So we’ve re-used our simple pure-function pipeline as a pipeline of communicating processes, with only a little change in notation.
+Note: Since base-4, Arrow has become based on Category, which means you can actually express the function using the original dot composition, like so:
+mostCommonCatProc :: Ord a => Chanin [a] -> Chanout a -> CHP () mostCommonCatProc = runPipeline $ arr head . arr (maximumBy (comparing length)) . arr group . arr sort
+I prefer the <<< notation of the arrows, as I think it better expresses a pipeline of processes — and it doesn’t require base-4.

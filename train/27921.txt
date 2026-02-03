@@ -1,0 +1,37 @@
+What you're explaining is called a multiwire branch circuit (and has been discussed here many times before), which is where 2 ungrounded (hot) conductors will share a single grounded (neutral) conductor. There are special requirements for this type of circuit, which must be followed to insure safety. This type of installation is slightly more complicated when dealing with ground fault protection, because of the way ground fault circuit interrupters (GFCI) work.
+Multiwire Branch Circuits
+210.4 (B) Disconnecting Means Each multiwire branch circuit shall be provided with a means that will simultaneously disconnect all
+ungrounded conductors at the point where the branch circuit
+This means that the breaker handles must be tied together in the service panel, so that if one breaker trips it will cut power to both circuits. This can be accomplished using handle ties, or a double pole breaker.
+In multiwire branch circuits, each ungrounded conductor must terminate to different legs of the system. If this is not done the currents on the grounded (neutral) conductor will add instead of cancelling out, possibly overloading the grounded (neutral) conductor leading to a fire. Again, this can be easily accomplished using a double pole breaker.
+Ground fault circuit interrupting devices work by measuring the current on the ungrounded (hot) conductor, and the grounded (neutral) conductor. If the currents on these conductors differs by more than a specific amount, the circuit is opened preventing current from flowing. This can present a problem when using two separate GFCI breakers, because the current on the grounded (neutral) conductor will be the difference between the two ungrounded conductors.
+Ungrounded conductor 1 = 13A
+Ungrounded conductor 2 = 6A
+Grounded conductor = 7A
+In this situation, the breakers will detect a potential (false) ground fault and trip. This can easily be avoided by using a double pole GFCI breaker. This is because a double pole GFCI breaker monitors both ungrounded (hot) conductors, and a single shared grounded (neutral) conductor.
+The conductors in a multiwire branch circuit (like in all branch circuits), must be appropriately sized based on the load to be served and the overcurrent device protecting the circuit.
+NEC article 210.21(B)(3), specifies the receptacle rating based on the circuit rating.
+Now that you know more than you've ever wanted to know, here is what you need to know.
+In the service panel
+- Install a 20A double pole GFCI breaker in the service panel.
+- Connect the bare (equipment ground) wire (from the circuit) to the ground buss bar in the service panel.
+- Connect the white grounded (neutral) wire (from the circuit) to the neutral terminal of the GFCI breaker.
+- Connect the white grounded (neutral) wire (from the GFCI breaker) to the neutral buss bar.
+- Connect the black ungrounded (hot) wire to one terminal of the double pole GFCI breaker.
+- Connect the red ungrounded (hot) wire to the other terminal of the double pole GFCI breaker.
+At the first junction
+- Connect the black or red ungrounded (hot) wire to the brass screw on the receptacle.
+- Connect the white grounded (neutral) wire from the 12/3 cable to the white ungrounded (neutral) wire leading to the next junction point, and to a short length of scrap wire (pigtail) using a twist-on wire cap (or other approved method).
+- Connect the pigtail from the previous step to the silver screw on the receptacle.
+- Connect a short piece of scrap ground wire to the green screw on the receptacle.
+- Connect all equipment ground conductors together, and to the junction box if a metal box is used.
+- Connect the red or black ungrounded (hot) wire to the black ungrounded (hot) wire leading to the next junction point.
+At the next junction
+- Connect the red or black ungrounded (hot) wire from the previous junction to the brass screw on the receptacle.
+- Connect the white grounded (neutral) wire to the silver screw on the receptacle.
+- Connect the equipment ground wire to the green screw on the receptacle, and to the junction box if a metal box is used.
+If you used a 20A GFCI breaker in the panel, you'll want to use receptacles rated for 20A. However, if you have more than one receptacle on a single circuit, you can use receptacles rated at 15A. In a multiwire branch circuit situation, that means you'll need two receptacles fed by one ungrounded (hot) conductor to be able to use 15A receptacles. It's also important to be aware, that NEC considers a duplex receptacle as two receptacles. This means you can use a single 15A duplex receptacle, and be code compliant. Though Because the overcurrent device is rated at 20A, it may be appropriate to use 20A receptacles throughout the circuit.
+If you are going to be feeding multiple receptacles off either leg of the multiwire branch circuit, you have to make sure that the grounded (neutral) conductor is unbroken throughout the entire circuit even when devices are disconnected. This means you won't be able to use the "load" side terminal on a receptacle, to feed the grounded (neutral) wire through to another receptacle.
+- You'll need a 20A double pole GFCI breaker. Two single pole GFCI breakers will not work.
+- If you use a 20A overcurrent device, you must have more than one 15A receptacle on that leg of the circuit. Otherwise, you'll have to use a 20A receptacle.
+As always, if you don't feel comfortable with your knowledge or skill level, don't be afraid to contact a qualified Electrician.

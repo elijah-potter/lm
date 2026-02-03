@@ -1,0 +1,8 @@
+According to Microsoft, the .NET architecture is a "multi-language component development and execution environment.” By which they mean a strucutre similar to Sun Microsystems' J2EE, with many of the developer-friendly benefits of Java, but which allows programming in your favorite legacy language, from COBOL to Visual Basic.¹
+The .NET architecture consists of 3 key areas:
+The Unified programming classes are an extensible set of class libraries which are programmable via an API. They replace the Microsoft Foundation Classes (MFC), the elegant but doomed Windows Foundation Classes², the Visual Basic APIs, and so on. They are designed to support interoperability between different languages, and even cross-language debugging.
+Microsoft's goal, as pitched to developers: "Component-programming over the Web"
+1. As the joke on www.javaworld.com went:
+Q. What's more of a headache than a bug in a compiler?
+2. Designed by Anders Hejlsberg, who also designed C# and much of the .NET architecture.
+A. Bugs in six compilers.

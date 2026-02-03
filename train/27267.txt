@@ -1,0 +1,56 @@
+Overview : Navigation on Window Phone
+uses the same navigations techniques which are used in Silverlight. There are
+two important elements in the application level which are frames and pages and one
+important element in the device level.
+Use of frame : Frames are integrated within the whole layout of a Window Phone
+application, and only one frame can be used throughout the application. Several
+characteristic related to frame are properties that can be used like full screen, orientation, the ability to expose page areas in it and provide a location
+for the system tray and application bar.
+The system tray is an area in which system status such as battery, signal etc are
+displayed. Application bar on the other hand provides space for frequently used
+Use of Page: A page fills up the whole content of the frame. Main
+characteristics of a page are title and the ability to show an application bar
+specifically on certain pages.
+Back Button: One important element which has become standard in every
+window phone device is a Back button. This button is used to move one page
+backward. with this button present , we are advised not to add any back button
+in the application, unless absolutely necessary, By default the back button will
+also close any pop -up menu displayed and bring users back to the previous
+How to navigate between pages in a window phone application; let us try out in
+few east steps:
+Step 1 : Create a new project, Window Phone Application with name
+Step 2 : Rename MainPage.xaml to Page1.xaml. Also change the text of page
+to My Page 1.
+Step 3 : Add a page and similarly rename it to Page2.xaml and change the
+text to My Page 2.
+Step 4 : Open Page1.xaml and drag a button and a textbox like below;
+rename as in image below;
+Step 5 : Change the codes in the Button's click event handler into the
+Navigate is a static function from NavigationService which is used to navigate
+to desired pages using target URI as the parameter
+Step 6 : Press F5 and see the result. Click on the Button to go forward
+to the next page.
+We can use the Back button to return to the previous page. Additionally, if we
+want to go one page backwards using custom button, we can do so by typing the
+following code into an event handler.
+Step 7 : If we do not want to use Phone back button, then we can create a
+custom back button on page two to navigate back.
+Open page2.xaml and insert a button and on click write below code;
+private void button1_Click(object
+Build and this time do not use phone back button rather our custom button it
+will work in same way as expected.
+Step 8 : Here we will see how to pass value in navigation. Now we will
+pass textbox value from page1 to page2 and display there in a textblock.
+Open page1.xaml and write below code for button click handler.
+//NavigationService.Navigate(new Uri("/Page2.xaml", UriKind.Relative));
++ txtSearch.Text, UriKind.Relative));
+Step 9 : On the second
+page, we will try to retrieve the sent string and show it on the page title.
+Type the following code to do so:
+Open Page2.xaml and write below code;
+protected override void
+msg = "";
+Step 10 : Rebuild the application and run it. Press F5 and see the
+result. Type any string into TextBox then press Button. The title on the second
+page will change according to the input text.
+Tune for next hour tutorial

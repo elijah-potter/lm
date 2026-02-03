@@ -1,0 +1,31 @@
+An electron in a hydrogen atom falling from an excited state to the ground state has the same wavelength than an electron moving at a speed of 7821 ms^-1. From which excited state did the electron fall from?
+I used the kinetic energy equation:
+K = (m v^2)/2
+m = 1 m_e = 9.109383×10^-31 kg
+v = 7821 m/s
+I also used the Rydberg Energy equation:
+E_n = -h c R_inf Z^2 / n^2 |
+E_n | electron energy
+h | Planck constant
+c | speed of light
+R_inf | Rydberg constant at infinity
+Z | atomic number
+n | quantum number
+Z = 1 (since it's hydrogen)
+n = quantum number = ? (this is what we are trying to find)
+The constant (h c R_inf) is also known as the Rydberg unit of energy, Ry:
+Ry = h c R_inf = 13.60569 eV
+The Attempt at a Solution
+So this was in somebody's chemistry textbook, and I thought I'd try to solve this for giggles. I got no chemistry background, except in high school. I knew the kinetic energy equation by heart, I had to google the Rydberg equation (https://is.gd/QhBP9Z). I wonder if my logic is correct here?
+K = 2.786×10^-23 J = 1.739×10^-4 eV
+E_n = - Ry Z^2 / n^2
+Since we're only looking for the magnitude in energy differences, I think we can ignore the negative sign in the equation, and simply write it as:
+E_n = Ry Z^2 / n^2
+So we set,
+E_n = K
+K = Ry Z^2 / n^2
+n^2 = Ry Z^2 / K
+n = sqrt(Ry Z^2 / K)
+= sqrt(13.60569 eV * 1^2 / 1.739×10^-4 eV)
+Conclusion: So that would mean that the electron fell from the 280th quantum state.
+How was my logic about this? Is there any other way of solving this?

@@ -1,0 +1,41 @@
+user4556274 has already answered the why. My answer serves only to provide additional information for how to properly count files.
+In the Unix community the general consensus is that parsing the output of
+ls is a very very bad idea, since filenames can contain control characters or hidden characters. For example, due to a newline character in a filename, we have
+ls | wc -l tell us there's 5 lines in the output of
+ls (which it does have), but in reality there's only 4 files in the directory.
+$> touch FILE$'\n'NAME
+file1.txt file2.txt file3.txt FILE?NAME
+$> ls | wc -l
+Method #1: find utility
+find command, which is typically used for working around parsing filenames, can help us here by printing the inode number. Be it a directory or a file, it only has one unique inode number. Thus, using
+-printf "%i\n" and excluding
+-not -name "." we can have an accurate count of the files. (Note the use of
+-maxdepth 1 to prevent recursive descending into subdirectories)
+$> find -maxdepth 1 -not -name "." -print
+$> find -maxdepth 1 -not -name "." -printf "%i\n" | wc -l
+Method #2 : globstar
+Simple, quick, and mostly portable way:
+$ set -- *
+$ echo $#
+set command is used to set positional parameters of the shell ( the
+$<INTEGER> variables, as in
+echo $1 ). This is often used to work around
+/bin/sh limitation of lacking arrays. A version that performs extra checks can be found in Gille's answer over on Unix&Linux.
+In shells that support arrays, such as
+bash, we can use
+items=( dir/* )
+as proposed by steeldriver in the comments.
+Similar trick to
+find method which used
+wc and globstar can be used with
+stat to count inode numbers per line:
+$> LC_ALL=C stat ./* --printf "%i\n" | wc -l
+An alternative approach is to use a wildcard in
+for loop. (Note, this test uses a different directory to test whether this approach descends into subdirectories, which it does not - 16 is the verified number of items in my
+$> count=0; for item in ~/bin/* ; do count=$(($count+1)) ; echo $count ; done | tail -n 1
+Method #3: other languages/interpreters
+Python can also deal with problematic filenames via printing the length of a list given my
+os.listdir() function (which is non-recursive, and will only list items in the directory given as argument).
+$> python -c "import os ; print os.listdir('.')"
+['file2.txt', 'file1.txt', 'FILE\nNAME', 'file3.txt']
+$> python -c "import os ; print(len(os.listdir('.')))"

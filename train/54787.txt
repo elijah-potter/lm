@@ -1,0 +1,8 @@
+Scenario :- For our new project , today my boss asked me to setup a branch of the existing svn with a new name.
+One of the features of version control systems is the ability to isolate changes onto a separate line of development. This line is known as a branch. Branches are often used to try out new features without disturbing the main line of development with compiler errors and bugs. As soon as the new feature is stable enough then the development branch is merged back into the main branch (trunk).
+You can use the following doc to create a branch
+1) Right click on the source and select “ Svn branch /tag “ and this will give the following popup. Specify your new url and recent message .
+That’s its , you created the new branch.
+Refer the following url to get more idea about branching :
+The above method is just like a link in unix , You can create a separate folder/svn url using the following svn commands
+For the above command you need to create a new directory NewBranches first .

@@ -1,0 +1,10 @@
+1 :: You need to see the last fifteen lines of the files dog, cat and horse. What command should you use?
+tail -15 dog cat horse
+The tail utility displays the end of a file. The -15 tells tail to display the last fifteen lines of each specified file.
+2 :: Who owns the data dictionary in Linux?
+The SYS user owns the data dictionary. The SYS and SYSTEM users are created when the database is created.
+3 :: You routinely compress old log files. You now need to examine a log from two months ago. In order to view its contents without first having to decompress it, use the _________ utility in Linux
+The zcat utility allows you to examine the contents of a compressed file much the same way that cat displays a file.
+4 :: You suspect that you have two commands with the same name as the command is not producing the expected results. What command can you use to determine the location of the command being run?
+The which command searches your path until it finds a command that matches the command you are looking for and displays its full path in Linux OS.
+5 :: You locate a command in the /bin directory but do not know what it does. What command can you use to determine its purpose

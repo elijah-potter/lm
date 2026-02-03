@@ -1,0 +1,8 @@
+Forms make it easier for you to enter and modify data in your Access database. Once you create a form, you can add tabs to it, making it even easier to navigate. Tabs are especially beneficial when a form contains many different fields, as you can organize the form by grouping similar fields on each tab. To add a tab to an Access form, you can use the Tab Control tool.
+Open the database for which you want to create a tabbed form. Select a query or table to create a form from it and click "Form" on the Create tab. Create a blank form by clicking "Blank Form" on the Create tab.
+Add tabs to the form. Select the "Design" tab and click the "Tab Control" button in the Controls group. Click on the form to place the tab where you want it. Add additional tabs, if desired.
+Move existing form fields to a new tab. Click on a field to select it or hold down the "Ctrl" key to select multiple fields. Press "Ctrl-X" or click "Cut" in the Clipboard group of the Home tab to cut the fields. Click on the tab where you want to move the fields and press "Ctrl-V" or click "Paste" in the Clipboard group of the Home tab.
+Add new fields to a tab. Select the tab where you want to add fields. Select the "Design" tab and click "Add Existing Fields" in the Tools group to open the Fields List pane. Drag fields from the pane onto the form.
+Save the form before closing it.
+- Information in this article applies to Access 2013. It may vary slightly or significantly with other versions or products.
+- George Doyle/Stockbyte/Getty Images

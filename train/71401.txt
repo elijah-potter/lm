@@ -1,0 +1,19 @@
+I faced a strange behavior of Blender while trying to make something like this:
+in one of the projections. It's clear that angle B (see picture below) should be 60 degrees for trivial trigonometrical reasons: just assume that the side of the square has the length 1 and calculate sin(A). Also note that D-D1 is divided into two equal parts by the inclined segment.
+I try to reproduce that in Blender in orthographic projection of 3d view. Steps:
+- Create a new file
+- Delete cube
+- Press numpad 1 to view XZ plane
+- Press numpad 5 to switch to orthographic projection
+- Shift+s -> Cursor to center to ensure that cursor is centered
+- Shift+a -> Mesh -> Plane, so in selected projection we see the new plane as a segment.
+- Press N and enter "-60" to "Rotation: Y:" in the panel appeared.
+- Enter "-0.5" to "Location: X:" in the same panel.
+- Scale to ensure that we didn't get the required picture.
+After this steps I get the following (open image in new tab or window):
+If we fulfill this image to squares like above (see fulfilled image below) and count smaller squares, then we get 10 squares in horizontal line and less than 18 squares in vertical line, so sine of A on the picture from blender is not equal to 1/2 (it's greater) => angle A itself is greater than 30 degrees, but angle B is equal to 60 degrees by our definition! So the sum of degree measures in triangles drawn in blender gets greater than 180 degrees.
+Looks like a weird logic in blender. Or are there any mistakes in my argumentation and I don't understand something about Blender?
+It's not a computational precision issue. We use plane of the default size and there is no bouncing if we zoom the scene either in or out.
+Scaling the plane (i.e. lengthening it's projection) will homogeneously scale all construction and will not affect angles and trigonometric functions of them.
+Explanation of the "paradox":
+I confused lengths of what I have on the "paint" picture with what I want to get in blender. Of course, half-length of the inclined segment is not equal to 1 => sin(a) != 1/2.

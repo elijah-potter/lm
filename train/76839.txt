@@ -1,0 +1,6 @@
+3d+c 2d-c] = [8 1; 7 6]
+Sorry I don't know how to format the matrix. No steps taken yet, I have no idea how to proceed... have to find a, b, c ,d.
+Do you at least know what it means to say that two matrices are equal? It means that corresponding entries are equal:
+a- b= 8, b+ a= 1, 3d+ c= 7, 2d- c= 6.
+Solve the first two equations for a and b, the last two for c and d.
+I know what it means... >< So far we've only done (reduced) row echelon form and got into multiplying matrices, this is the first time we've seen integers/equations in the matrix like a-b and also a 2 column matrix on the right. Still don't know how to solve this...

@@ -1,0 +1,4 @@
+Cross-origin resource sharing (CORS)
+CORS provides user agents—typically browsers—with a way to request access to restricted resources that reside on external domains.
+For security purposes, the default behavior of web applications is to follow the same-origin policy. This means that a web application can access data residing on another web application (for example, through an AJAX request) only if both applications have the same origin. After enabling CORS for your API delivery configuration, you can whitelist selected external origins and allow user agents that send requests from these origins to access resources within your API.
+In API Gateway you can specify the origin hostnames, HTTP methods, and headers that edge servers should accept in incoming CORS requests. Edge servers first determine the type of an incoming CORS request (preflight, simple, or actual) and then validate the request against the list of acceptable hostnames, methods, and headers.

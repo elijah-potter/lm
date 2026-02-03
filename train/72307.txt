@@ -1,0 +1,7 @@
+Worksheets are divided into columns, rows, and cells. That's the grid you see when you open up a workbook.
+Columns go from top to bottom on the worksheet, vertically. Rows go from left to right on the worksheet, horizontally. A cell is the space where one column and one row meet.
+Each column has an alphabetical heading at the top. The first 26 columns have the letters from A through Z. Each worksheet contains 256 columns in all, so after Z the letters begin again in pairs, AA through AZ. See Figure 2.
+After AZ, the letter pairs start again with columns BA through BZ, and so on, continuing through IA to IV, until all 256 columns have alphabetical headings.
+Each row also has a heading. Row headings are numbers, from 1 through 65,536.
+The alphabetical headings on the columns and the numerical headings on the rows tell you where you are in a worksheet when you click a cell. The headings combine to form the cell address, also called the cell reference. You'll learn more about this in the next section.
+There are 16,777,216 cells to work in on each worksheet. You could get lost without the cell reference to tell you where you are.

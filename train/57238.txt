@@ -1,0 +1,40 @@
+Big Data is like a rich, untapped vein of precious metal. A small portion might be visible above the surface, but getting to the good stuff – the truly useful information – requires some digging.
+That’s where data mining comes in. What is data mining?
+The Investopedia definition is business-oriented:
+“Data mining is a process used by companies to turn raw data into useful information. By using software to look for patterns in large batches of data, businesses can learn more about their customers and develop more effective marketing strategies as well as increase sales and decrease costs. Data mining depends on effective data collection and warehousing as well as computer processing.”
+Microsoft’s definition takes a more analytical tack:
+“Data mining is the process of discovering actionable information from large sets of data. Data mining uses mathematical analysis to derive patterns and trends that exist in data. Typically, these patterns cannot be discovered by traditional data exploration because the relationships are too complex or because there is too much data.”
+Both definitions are useful. Data mining has become an important aspect of doing business, but the act can be fruitless unless the methods of data collection and reporting are structured correctly. Microsoft calls this structure the “data mining model,” and it should be constructed to support the data-driven goals of the organization.
+The Process of Data Mining
+- Investopedia provides a useful five-step data mining process:
+- Data is collected and loaded into data warehouses.
+- The data is stored and managed with a dedicated server or in the cloud.
+- Analysts, management teams and IT professionals determine how best to organize the data.
+- Data mining software is used to sort the data based on the user’s results.
+- The end user reports the data through a visual and/or written format.
+The success of each step depends on the skill and expertise of trained data managers and analysts. One misstep along the way risks a faulty end result, which can jeopardize the success of the organization.
+Data Mining with Groceries
+What purpose does a data mining model serve? As an example, consider the relatively new practice of grocery store chains providing digital coupons for shoppers who log in to the store’s website.
+In order to use those digital coupons, the shopper must provide a form of identification at the register, often a phone number. The data miners from the grocery store chain already know what coupons the shopper “clipped” online, and now the phone number ID allows the store to record what products were purchased that day.
+A pattern of purchases usually emerges. The grocery chain can cater a personalized – and, in theory, more effective – email campaign providing the shopper targeted deals that the store knows, based on past shopping habits, that the shopper is likely to buy.
+Microsoft provides enlightenment into the uses and concepts of data mining:
+- Compiled information can be used in forecasting activities, such as estimating sales and demand trends.
+- Probabilities and risk can be minimized, using mined data to determine the most amenable customer base.
+- Grouping services and products that can possibly be sold together
+- Predicting likely next events in the buyer’s decision-making process
+- Grouping potential customers based on criteria such as demographics, economic status, buying history, etc.
+According to information provided by the business software and analytics company Oracle, data mining is particularly useful for the discovery of patterns, which then can be used to create “actionable information” that will enable company leaders to make informed, data-driven decisions.
+Oracle focuses its data mining efforts on a branch of data science known as predictive analytics. This is, according to Oracle, “technology that captures processes using simple routines.” In essence, Oracle considers predictive analytics a way to simplify the data mining process.
+How is predictive analytics used in data mining?
+- The development of profiles (clients, sales, demand, other tendencies)
+- Discovery of factors that lead to certain outcomes
+- Prediction of the most likely outcomes
+- Establishing a degree of confidence in the predictions
+Data Mining Terms to Know
+Data mining, like all technological endeavors, has its own language. Fortunately, the language and terms used in data mining are grounded in a long history of scientific research and data gathering. Here are a few important data mining terms to know, according to Oracle:
+- Anomaly detection – the identification of unusual occurrences within data that typically is homogeneous.
+- Clustering – the practice of finding groups of similar data elements.
+- Association – the discovery of the likelihood of co-occurrence of items within a collection of data.
+- Feature selection – choosing or sorting the data attributes by relevancy.
+- Feature extraction – combining relevant data attributes into a new set of features.
+One basic, but vital precaution: The biggest potential stumbling block in the use of data mining is assigning too much importance to the results of a small sample size. The advantage of Big Data is that it’s big – it reflects a reliable subsection of a source of information, and properly mining the data can reap valuable dividends.

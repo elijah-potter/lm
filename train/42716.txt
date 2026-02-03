@@ -1,0 +1,50 @@
+What is HTTP?
+First is all the full form of HTTP is HyperText Transfer Protocol. HTTP is an application layer protocol in ISO or TCP/IP model. See below picture to find out HTTP which resides under application layer.
+HTTP is used by the World Wide Web (w.w.w) and it defines how messages are formatted and transmitted by browser. So HTTP define reules what action should be taken when a browser receives HTTP command. And also HTTP defines rules for transmitting HTTP command to get data from server.
+For example, when you enter a url in browser (Internet explorer, Chrome, Firefox, Safari etc) it actually sends an HTTP command to server.And server replies with appropiate command.
+There are some set of methods for HTTP/1.1 (This is HTTP version)
+GET, HEAD, POST, PUT, DELETE, CONNECT, OPTION and TRACE.
+We will not go in details of each method instead we will get to know about the methods which are seen quite often.Such as
+GET: GET request asks data from web server. This is a main method used document retrival. We will see one practical example of this method.
+POST: POST method is used when it’s required to send some data to server.
+HTTP is Wiresahark:
+Let’s try something practical to understand how HTTP works ?
+So in this example we will download “alice.txt” (Data file present in server) from “gaia.cs.umass.edu” server.
+- Open the URL http://gaia.cs.umass.edu/wireshark-labs/alice.txt [We know the full url for downloading alice.txt] in computer browser.
+- Now we see the downloaded file in browser. Here is the screenshot
+- In parallel we have capture the packets in Wireshark.
+HTTP packets exchanges in Wireshark:
+Before we go into HTTP we should know that HTTP uses port 80 and TCP as transport layer protocol [We will explain TCP in another topic discussion].
+Now let’s see what happens in network when we put that URL and press enter in browser.
+Here is the screenshot for
+TCP 3-way handshake ——-> HTTP OK ——-> TCP Data [content of alice.txt] ——->
+Now let’s see what’s there inside HTTP GET and HTTP OK packets.
+Note: We will explain TCP exchanges in another topic discussion.
+After TCP 3-way handshake [SYN, SYN+ACK and ACK packets] is done HTTP GET request is sent to the server and here are the important fields in the packet.
+1.Request Method: GET ==> The packet is a HTTP GET .
+2.Request URI: /wireshark-labs/alice.txt ==> The client is asking for file alice.txt present under /Wireshark-labs
+3.Request version: HTTP/1.1 ==> It’s HTTP version 1.1
+4.Accept: text/html, application/xhtml+xml, image/jxr, */* ==> Tells server about the type of file it [client side browser] can accept. Here the client is expecting alice.txt which is text type.
+5.Accept-Language: en-US ==> Accepted language standard.
+6.User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko ==> Client side browser type. Even if we used internet explorer but we see it always/maximum time says Mozilla
+7.Accept-Encoding: gzip, deflate ==> Accepted encoding in client side.
+8.Host: gaia.cs.umass.edu ==> This is the web server name where client is sending HTTP GET request.
+9.Connection: Keep-Alive ==> Connection controls whether the network connection stays open after the current transaction finishes. Connection type is keep alive.
+Here is the screenshot for HTTP-GET packet fields
+After TCP data [content of alice.txt] is sent successfully HTTP OK is sent to the client and here are the important fields in the packet.
+1. Response Version: HTTP/1.1 ==> Here server also in HTTP version 1.1
+2.Status Code: 200 ==> Status code sent by server.
+3.Response Phrase: OK ==> Response phrase sent by server.
+So the from 2 and 3 we get 200 OK which means the request [HTTP GET] has succeeded.
+4.Date: Sun, 10 Feb 2019 06:24:19 GMT ==> Current date , time in GMT when HTTP GET was received by server.
+5.Server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.4.16 mod_perl/2.0.10 Perl/v5.16.3 ==> Server details and configurations versions.
+6.Last-Modified: Sat, 21 Aug 2004 14:21:11 GMT ==> Last modified date and time for the file “alice.txt”.
+7.ETag: “2524a-3e22aba3a03c0” ==> The ETag indicates the content is not changed to assist caching and improve performance. Or if the content has changed, etags are useful to help prevent simultaneous updates of a resource from overwriting each other.
+8. Accept-Ranges: bytes ==> Byte is the unit used in server for content.
+9.Content-Length: 152138 ==> This is the total length of the alice.txt in bytes.
+10. Keep-Alive: timeout=5, max=100 ==> Keep alive parameters.
+11.Connection: Keep-Alive ==> Connection controls whether the network connection stays open after the current transaction finishes. Connection type is keep alive.
+12.Content-Type: text/plain; charset=UTF-8 ==> The content [alice.txt] type is text and charset standard is UTF-8.
+Here is the screenshot for different fields of HTTP OK packet.
+So now we know what happens when we request for any file that is present in web server.
+HTTP is simple application protocol that we use every day in our life. But it’s not secure so HTTPS has been implemented. That “S” stands for secure. That’s why you so maximum web server name start with https://[websitename]. This means all communication between you and server are encrypted. We will have separate discussion on this HTTPS in future.

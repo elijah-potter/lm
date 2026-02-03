@@ -1,0 +1,11 @@
+Homemade Hardware – Week 08 Board
+For this week’s assignment we had to make our very own acid etched SMD board. Since we’re getting closer and closer to the final, I decided it would be a good idea to start realizing the final project.
+I decided to try and build a two dimensional MIDI keyboard, yes, much like the ROLI seaboard, but different. To start, I realized this project would depend on my ability to plan one key correctly and then realize the full keyboard, so I started sketching how just one key module would look, work and function.
+I started prototyping the key and decided to use two sensors per key:
+- A linear variable resistor (for your finger’s Y position on the key)
+- An FSR, to sense how hard your pressing down on the key
+After getting it to work on the Arduino I went on to make the actual schematics using the ATTiny85 as my MCU, and attaching two status LED’s that would indicate how hard you pressed each of the sensors.
+I took the time to fully brush my understanding of Eagle’s wireless networks so my designs could be modular and I don’t have to to decipher where lines are going once the project becomes bigger. For the MCU and I finished my design of the ATTiny85, we started in class, and adjusted its size a bit so it fits. After finishing the schematics I made the board and tried to tidy it up, so it’s small, but not too small (the taste of bad experience with small boards still remains from the Othermill).
+After printing I went on to printing and making vinyl toner transfer sheets in order to start my board.
+The toner transfer went pretty well, I realized out of 8 boards I designed only 4 came out right, all the rest had at least one issue somewhere. Due to that, it made no sense placing boards that are problematic in the acid bath (that would just take time for nothing), so I cut the rest using the band-saw and went to over to acid etch, with the help of the wonderful David Lockard.
+After about 30 minutes of acid, I took the board out, let it cool in water, and started placing the parts

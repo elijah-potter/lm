@@ -1,0 +1,16 @@
+Neat adjustable voltage regulator, Rason writes –
+Many amateurs have stopped by their local Radio Shack store and have noticed the famous LM317T adjustable voltage regulator. But, did you know that all voltage regulators are adjustable? Yes, any IC voltage regulator can be adjusted to a higher voltage than its fixed voltage by just adding a couple of resistors.
+The adjustable voltage regulator – Link.
+10 thoughts on “The adjustable voltage regulator”
+All of the regulators like the 7805 are just 317’s with the resisters builtin.
+And as an added bonus, neither cap is needed, making a 1 ic and maybe 2 resister regulator possible.
+The main problem with this is that the 7805 has a non-zero current from its ground pin which offsets your potential divider. You can allow for this, as the linked article describes, but (a) it varies between devices, with temperature etc. and (b) it means you need relatviely low value resistors, reducing efficinecy. The ‘317 goes to some trouble to eliminate almost all current flow from its ground pin.
+You might also worry a bit about oscillation if your load has an AC component, e.g. you’re powering a clocked circuit.
+Or, you know, buy this from Dimension Engineering.
+Adjustable, switching (read: High efficiency) regulator.
+These guys rock. Used them a bunch. You can replace other Vreg’s with them, and increase your runtime on batteries by a lot.
+I liked the pt5101 from ti, too bad they don’t make it anymore.
+The added resistors do indeed change the voltage, but deregulate the device. Their values can change due to temperature and current drawn.
+So, it’s not such a discovery. It’s the wrong way to do it.
+If you want to change the voltage, put in a diode between ground and pin 3. This will enable the current to remain constant while raising the output voltage.
+Comments are closed.

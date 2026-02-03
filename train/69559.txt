@@ -1,0 +1,7 @@
+While we have encountered simple examples of servers handling HTTP requests, some requests require a bit more work than returning a simple string such as
+'Hello World'. In real-world applications, servers are responsible for helping to persist and retrieve data, usually through interaction with a database.
+Databases are remote resources to which the server must make a request. When this happens, the server making the request functions as the client, sending HTTP messages to the database server. Databases usually have their own Software Development Kits (SDKs) and Object-Relational Mapping (ORMs) that can be used to connect to them easily. But with the right information, requests could potentially be made in a raw form directly from your server using something like the HTTP
+As seen in the diagram above, a single server often does not represent the final destination in processing a request from a client. Instead, a client sends a request, which is then processed partially, generating a separate HTTP request from the server to the database. When received, the server waits for the database’s response and will ultimately relay that information as a response back to the original caller.
+Take a look at the simple HTTP server to the right. The endpoint of this HTTP server will communicate with a database that will return some data back to the server. Log the data coming back from the database request in the console.
+Run the server using the terminal using the
+Check the terminal to see if the data was retrieved from the database.

@@ -1,0 +1,18 @@
+A 12-Volt battery is connected in series with a 3-kΩ resister and a 5-μF
+capacitor. If the capacitor is initially uncharged, determine how long it
+takes before the current ﬂowing through the resistor reduces to 73% of its initial value of 4 mA.
+(a) 4.72 ms (b) 12.72 ms (c) 19.64 ms
+(d) 35.83 ms (e) 41.76 ms (f) None of the above.
+A 12-volt battery is connected in series with a 3-kΩ resistor and a 5-μF
+capacitor. The capacitor is initially uncharged.
+When a voltage V is applied across a resistor with resistance R, the current that flows through it is I = V/R.
+The initial value of current flowing through the resistor is 4 mA. As the current flows the capacitor is charged and this gradually reduces the current flowing through the circuit. When the current flowing is 73% of 4 mA, the voltage across the resistor is 0.73*12 = 8.76 V. The voltage across the plates of the capacitor is 12 - 8.76 = 3.24 V.
+When a capacitor charges, the voltage after time t is given by `V(t) = V*(1 - e^(-t/(RC)))` .
+Here, V(t) = 3.24, V = 12, R*C = `15*10^-3` , substituting these values in the formula allows t to be calculated.
+`3.24 = 12*(1 - e^(-t/(15*10^-3)))`
+=> `(1 - e^(-t/(15*10^-3))) = 3.24/12`
+=> `e^(-t/(15*10^-3)) = 1 - 3.24/12`
+=> `-t/(15*10^-3) = ln(8.76/12)`
+=> `t = -ln(8.76/12)*15*10^-3`
+=> `t ~~ 4.72` ms
+The current flowing through the resistor is reduced to 73% of its initial value of 4 mA after approximately 4.72 ms

@@ -1,0 +1,8 @@
+Combined Programming Language is a programming language created in 1963. CPL (Combined Programming Language) is a multi-paradigm programming language, that was developed in the early 1960s. It is an early ancestor of the C language via the BCPL and B languages. . Read more on Wikipedia...
+- the Combined Programming Language wikipedia page
+- Combined Programming Language first appeared in 1963
+- See also: algol-60, bcpl, pop-2, b, c
+- Have a question about Combined Programming Language not answered here? Email me and let me know how I can help.
+Example code from Wikipedia:
+Max(Items, ValueFunction) = value of § (Best, BestVal) = (NIL, -∞) while Items do § (Item, Val) = (Head(Items), ValueFunction(Head(Items))) if Val > BestVal then (Best, BestVal) := (Item, Val) Items := Rest(Items) §⃒ result is Best §⃒
+Last updated January 15th, 2020

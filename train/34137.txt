@@ -1,0 +1,7 @@
+MVC is a design pattern which provides solution to layer an application by seperating Business(Model),Presentation(View) and Control Flow(Controller). The Model contains the business logic and the Controller is responsible for the redirection and the interaction between View component and Model. The View component contains the presentation part of the application.
+Spring MVC Flow
+- Based on the Servlet Mappings which we provide in our web.xml, the request will be routed by the Servlet Container to our DispatcherServlet
+- Once the request is received, the DispatcherServlet will take the help of HandlerMapping which has been added in the Spring Configuration file and get to know the Controller class to be called for the request received.
+- Now the request will get transfered to the Controller, the Controller then executes the appropriate methods and returns the corresponding ModelAndView object to the DispatcherServlet.
+- The DispatcherServlet will send the Model received to the ViewResolver to get the view page.
+- Finally the DispatcherServlet will pass the Model to the View page and the page will be rendered to the user

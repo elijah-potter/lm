@@ -1,0 +1,39 @@
+SOAP was originally developed by Microsoft, IBM, DevelopMentor and Userland Software and was then submitted to the Internet Engineering Task Force (IETF), who eventually made it an official recommendation. Though Microsoft camp seem to have played a major role in defining the specification of SOAP.
+The motivation of developing this protocol was the widely used inter-application communication protocols like Microsoft’s DCOM protocol or Java’s RMI or OMG’s IIOP protocols which have till recent times fulfilled the needs of giving component services over an interconnected network .The richness of these protocols helped them gain a strong hold over distributed computing over controlled environment. Almost all these protocols need a smart client able to run the proxies of the server components; moreover, these protocols reveal their limitations when it comes to INTERNET. Internet cannot guarantee what kind of client and server will be operating at either end of the connection — it can only guarantee that they are both communicating via HTTP.
+SOAP (Simple Object Access Protocol) is a simple solution for interaction of different applications built in different languages and running on different platforms as it uses HTTP as its transport and XML as its payload for sending and receiving messages. It’s a lightweight and a loosely coupled protocol for exchange of information in a decentralized and a distributed environment.
+What’s so light in SOAP?
+Soap relies on HTTP as a transport mechanism to send XML based messages, the messages are packed in what is called a SOAP envelop and send to the server to process in a Request/Response fashion. SOAP unlike proprietary protocols like DCOM or RMI does not require strong connection between client and the server and the SOAP messages are sting based messages passed from the Client to Server and vice versa in the form of SOAP envelops.
+What makes SOAP loosely coupled?
+Most proprietary protocols require the applications of the same breed to be running on both the ends, what if the server is implemented in a different programming language. The ability to access service of a component in a language/location and platform transparent manner reduces the tight coupling between the client and the server. SOAP enables “incompatible” systems to interoperate.
+How does SOAP Message look like and How is it different from a method invoked on a Object?
+To demonstrate how SOAP messages are different from method invocation on an component Let’s take a look at this ActiveX component, which accepts two integers and returns the total, as a return value would look something like this,
+Server ActiveX Component (MyComponent.MathComponent)
+Public Function Add (Num1 as integer, Num2 as integer)
+Add = Num1 + Num2
+The Client would create an instance of this component and would invoke the method to get the total.
+Dim objAdd as new MyComponent.MathComponent
+Dim intResult as integer
+intResult = objAdd.Add(10,20)
+This MyComponent.MathComponent would get instantiated and serve the request from the client application.
+At a higher level a SOAP request to fulfill this request would look something like this
+In order to ensure that server can correctly identify the method call it is wrapped up in a SOAP envelop
+This is just an abstract example to give you a gist of the SOAP message.
+The real SOAP message will contain more information like the component name and stuff.
+This message is sent to a SOAP listener through HTTP in a Request/Response fashion.
+The SOAP Listener accepts this SOAP message and does the processing on the component and returns the SOAP message back for the client.
+In the Server you will need to implement a SOAP listener, wsdlgen.exe is a tool which comes with the SOAP Toolkit will create a SOAP listener and a WSDL (Web Service description Language) file for a given COM Component. For more information on WSDL visit http://www.msdn.microsoft.com/xml/general/wsdl.asp
+OH GODDDDDDDD, do I need to
+The answer is NO, The Microsoft SOAP Toolkit 2 will take care of the marshaling and UN-marshaling of the XML messages behind the scene for you.
+The SOAP Toolkit also comes with a set of COM Component to access SOAP Web Services easily, Visual Basic SOAP client
+Dim objSOAPClient As Object
+Set objSOAPClient = CreateObject("MSSOAP.SoapClient")
+That’s it, the SOAP message marshaling and UN-marshaling will taken care by the SOAP client and what you will get is the result.
+SOAP and Security
+SOAP as it works on HTTP get the benefits of all the security that are currently available to HTTP, a SOAP message can pass through the firewall of the web server normally from port 80.
+Limitations of SOAP
+Though SOAP is evolving, and has a number of striking features, which are important in development of, distributed applications but still there are certain things which SOAP cannot support which I would like to address
+SOAP is a simple protocol: As the name suggests it’s a simple protocol and works on HTTP, we cannot expect all the functionality’s offered by other protocols like DCOM or RMI.
+SOAP may turn out to be slower compared to other proprietary protocols as it requires additional XML processing.
+Still SOAP fares well in most areas compared to other wire protocol. As per the specifications, SOAP can also use other transport carrier like SMTP to transmit SOAP messages. Still lot of information on this topic in not available.
+SOAP is a compelling and innovative use of available technologies that are not tied to a specific vendor. SOAP will play a major role in Microsoft’s “.NET” platform for building WebService. And Microsoft is expecting huge revenue to be generated from WebService
+SOAP (Simple Object Access Protocol) Interview Questions and FAQ's

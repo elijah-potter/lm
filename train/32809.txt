@@ -1,0 +1,8 @@
+Windows operating system provides ample freedom to its users to customize the settings. For example, the Power options have a plethora of settings with which a user can customize how their laptops will shut down. All laptop users have the provision to make use of its lid as a power option. You can use the lid as a power button too. For example, closing the lid can shut down your laptop too. The following tutorial can shut down Windows when the laptop lid is closed.
+Steps to Enable Shut Down Windows when the laptop lid is closed
+1. Right click on Start Button, and click on Control Panel.
+2. Click on “System and Security”.
+3. Click on “Power options”.
+4. In the left panel, you will find an option called “Choose what closing the lid does”.
+5. In the right panel, you will get an option called “When I close the Lid”. Under this, there are two sub-categories : On Battery and Plugged in. On battery means when your laptop is powered by its battery. If you want to enable shut down event when the lid is closed for battery mode, then open the drop down box under “On Battery” and click on “Shutdown”. If you want to enable shutdown while the computer is plugged to a power source, then select Shut Down option under Plugged in category.
+6. You can choose shutdown for both powering conditions. Once you make the selection, click Save Changes.

@@ -1,0 +1,8 @@
+I am using a Microchip MCP73213 (http://ww1.microchip.com/downloads/en/DeviceDoc/22190b.pdf
+) LiPo charging chip to charge a couple of LiPo batteries. The circuit is the one given in the datasheet and shown below:
+Instead of charging with a plugpack, I am using a 12 volt, 350ma watt solar panel (it needs to be this small due to physical constraints). To set the rate of charge of the batteries I can change the value of RProg from 10k for 130ma charge rate, to 1.1k for 1000ma. I would like to charge at the highest rate possible however this is dependent on the amount of sunlight.
+If I use a resistor to give me a high charge current, the MCP73213 will try to draw too much current from the solar panel in low light periods (morning, afternoon and cloudy days) forcing the solar panel voltage down, thereby shutting down the MCP73213.
+If I use a resistor that gives me a low charge current, I will be able to charge in a wider range of light conditions but I will miss out on fully utilizing the full charging potential of the solar panel around midday.
+I would like to put a transistor (PN100?) in place of the RProg resistor to regulate the current, with the base somehow connecting to the output of the solar panel. This way, if the voltage from the solar panel started dropping off (say below 10 volts) due to excessive demand by the charger, the transistor could ease off the charging current. If the sunlight strengthened, The transistor would up the charge current to make the most of the solar panel potential.
+However, I have searched for material on what values of resistors (and configuration of such) would be required to connect the transistor up in such a fashion but can't pull it together.
+Does anyone have any ideas on such a circuit?

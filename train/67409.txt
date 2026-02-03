@@ -1,0 +1,18 @@
+1. Final Discharging Voltage
+The final discharging voltage is the battery terminal voltage in close circuit voltage per cell to which a battery discharging safely and maximize battery life. The higher discharging current is, the lower final discharging voltage of battery should be .Discharging Current Final Discharging Voltage(VPC)
+|Discharging Current||Final Discharging Voltage(VPC)|
+|Up to 0.1CA||1.75|
+2. Battery Discharging Characteristics:
+The discharging capacity of battery depends on the discharge rate being used and ambient temperature.
+Figure 1,2 and 3 show the different discharging current corresponding to discharging capacity at 20 oC(68oF) to 25oC(77oF) for FP, LFP and CFP types batteries. They show that the rated capacity of a battery is reduced when it is discharged at a value of current that exceeds its 10-hours or 20-hours rate.
+3 Temperature Effects in Relation to Battery Capacity.
+At a higher temperature, the capacity of battery increases and conversely at a lower temperature, the capacity of battery decreases. Figure 4 shows the effects of different temperature in relation to battery capacity.
+Can calculate the batteries’ rated capacity as following formula if the ambient temperature of tested battery is not 20oC-25oC(68oF-77oF).
+C: rated capacity
+Ct: the tested capacity on t
+t: the ambient temperature of
+the tested battery
+k: the coefficient of temperature. It will be
+increased if the discharge current
+k=0.006 20 hours and 10 hours rated
+k=0.01 3 hours and 1 hours rated

@@ -1,0 +1,16 @@
+Hands-On Introduction to LabVIEW for Scientists and Engineers, Third Edition, explores practical programming solutions for carrying out interesting and relevant projects. Readers–who are assumed to have no prior computer programming or LabVIEW background–will begin writing meaningful programs in the first few pages.
+* All chapters are fully updated to the latest version of LabVIEW. DAQ hardware now commonly used in instructional laboratories and self-learning is highlighted.
+* For easy reference, seven chapters begin with a “Basics” section that explains the fundamental operation of the LabVIEW function covered in that chapter [Chapters 2, 3, 4, 7, 8, 9, 12].
+* A new first chapter offers focused introduction to the LabVIEW programming environment. Readers construct a simple program to detect whether a given integer is even or odd [Chapter 1].
+* Coverage of LabVIEW’s text-based functions is given for both the MathScript Node and Formula Node [Chapter 4 and Appendix A].
+* Shift register usage is illustrated through a signal-averaging program (replacing the numerical integration and differentiation programs used in previous editions) [Chapter 7].
+* State machine program architecture is now taught in the case structure chapter (replacing the numerical integration program used in previous editions). Readers construct a state-machine guessing game and a digital oscilloscope with runtime control [Chapter 8].
+* A nonlinear curve fitting example is included in the text [Chapter 10].
+* The fast Fourier transform chapter opens with an Express VI-based “Quick Example” section, which gives a concise introduction to the digital spectral analysis topics of leakage and windowing. High-level mathematical coverage of these topics is moved to an appendix [Chapter 11 and Appendix B].
+* The proportional-integral-derivative temperature control project is now given in an appendix [Appendix C].
+* About 20 new end-of-the-chapter problems appear throughout the book.
+More information about this book can be found here:
+Author: John Essick
+Pub Date: 5/27/2015
+Save on College Textbooks, eTextbooks with Low Price Books,
+download our App to find cheap prices on new and used books Low Price Books for Android !

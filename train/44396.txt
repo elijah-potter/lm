@@ -1,0 +1,34 @@
+The OWASP Top 10 API security is a classification of the most common attacks on the web. The vulnerabilities exploited to access or modify data or gain control over the API itself. API security is a critical consideration for any organization that relies on APIs to share data or functionality with partners, customers. You can aid guarantee that your API remains secure and protected.
+OWASP Top 10 API security risks
+The most common types of API security vulnerabilities include:
+- Broken authentication and session management:
+OWASP Top 10 API security Unsecured authentication and session management mechanisms. Can allow attackers to access resources they should not have access to.
+- Cross-site scripting (XSS): OWASP Top 10 API security
+XSS vulnerabilities happen when an attacker can cause a target’s web internet browser. To carry out a harmful script. By using these vulnerabilities, an assailant could access sensitive information. Or take control of the target’s accounts.
+- Injection flaws: OWASP Top 10 API security
+These are common programming errors. That allow attackers to interfere with how the application functions. Frequently bypassing authorization controls. And gaining full access to the system using SQL injection attacks. Or cross-site request forgery (CSRF).
+- Sensitive data exposure:
+This type of vulnerability occurs when applications do not correctly protect confidential data. Such as credit card numbers or authentication credentials. Leading to financial loss or a breach of customer privacy.
+- Broken access control:
+Poorly implemented security controls such as permissions. And access controls can allow unauthorized users access. To sensitive data and systems.
+- Security misconfiguration:
+Incorrectly configured systems and applications can leave them open to attack. This type of vulnerability is often the result of poor default settings. Or failing to apply security patches on time.
+- Insecure communications:
+Unencrypted communications can allow attackers to eavesdrop on sensitive data. As it travels between the API and its consumers.
+- Tampering with data:
+Malicious actors may attempt to alter. Or corrupt data as it passes through the API, potentially compromising its integrity.
+- Cross-site request forgery (CSRF):
+CSRF vulnerabilities happen when a malicious website can create a target’s browser. To carry out an undesirable action on a relied-on webpage. For which the user is currently validated.
+- Using components with known vulnerabilities:
+Components, such as libraries and frameworks used within applications maintained. Or upgraded to mitigate known flaws that could lead to security issues. Also, organizations should watch public sources of information. For disclosed vulnerabilities in components and update any affected parts as needed.
+Some best practices you can follow:
+- The OWASP Top 10 consists of several different categories and attack types. You should to aware of and protect against. Please review and understand each vulnerability and associated risk. Before designing or implementing your API.
+- Ensure that any sensitive data encrypted in transit. And at rest using OWASP recommended best practices such as TLS/HTTPS. To prevent attackers from eavesdropping on communications between the API.
+- Ensure that your APIs use strong authentication measures, such as OAuth 2.0. For example, to ensure that unauthorized parties cannot access data.
+- Make sure all your APIs are accessible only via HTTPS rather than HTTP. So that they can authenticate users. Without passing credentials over the network in plaintext.
+- Install a reverse proxy to check. And filter outbound requests from APIs, such as enforcing the use of HTTPS. For example, blocking any suspicious or dangerous HTTP methods and barring suspicious headers.
+- Do not include secrets in the URL path. Or query string when designing your APIs since attackers may log that information. For example, who has already compromised a user account on an API client application? Secrets should only communicate via secure means such as cookies.
+- Perform input validation on all incoming requests to correctly formatted. Before accessing your APIs and this is necessary to prevent potential attacks against the API itself.
+- Do not log sensitive information. Such as passwords since attackers could use that if they gain access to your logs directly.
+- If you are using OAuth to implement authentication for your APIs. Ensure that access tokens are only available over secure channels.
+Implementing security measures in your API can help protect and it from these OWASP Top 10 vulnerabilities. Fulfilling all the best practices listed above. One of my favorites is implementing an NGROK VPN system on top of them. So, developers don’t have direct access to our servers or data stores.

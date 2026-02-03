@@ -1,0 +1,18 @@
+Yesterday evening we had dinner with friends. The guy works on real time control systems and was talking about the trouble he is having with some young, well qualified engineers, who think that they know everything, even though they have very little experience of the real world. Our wives exchanged glances – they knew that he and I were on common ground, but a place outside of their world. He continued: “But they do not really understand the whole point behind writing code”. As this is a subject close to my heart, that I have written about before, I explained my view on the matter. He said “Exactly.” And, to the relief of our better halves, we moved on to other topics.
+The subject of why code is written was stuck in my brain …
+My contention is that, although it is intended that code should make a CPU do something specific, the way that it is written should recognize very clearly that the code needs to be readable and easy to understand by another human being. Compilers do such a great job [most of the time anyway] that programmers do not need to concern themselves too much with making code efficient; their focus should be readability.
+Let’s take a simple example:
+void fun(int j)
+i = 99;
+i += j;
+There are two things to think about: the declaration/initialization of i and the addition of i and j.
+As you can see, I declared and initialized i as two separate actions, instead of consolidating with a declaration like this:
+int i = 99;
+My tests show that it makes no difference to the generated code. Some programmers might prefer the second form as they are afraid that there will be a redundant initialization of i to zero, despite this not being a requirement of the C language specification.
+The next question is the addition. I prefer the use of the += operator over the more arcane “Pascal like” form:
+i = i + j;
+But that is personal choice. I feel that the C operator more clearly says “add j to i“. Another option would be to simply do the addition on the function call:
+Personally, I like to show the addition as a separate action to the call. If nothing else, debugging would be simpler.
+Again, my tests show that it make absolutely no difference to the generated code, which always looks something like this:
+This was built for Coldfire using the Mentor Embedded Sourcery CodeBench compiler.
+If you have views on code readability etc., please comment or email.

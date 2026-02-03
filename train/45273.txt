@@ -1,0 +1,22 @@
+Apache Spark is an open-source engine used for distributed processing. It allows the development of applications in Java, Python, R, SQL, and Scala. A command-line application is available in Scala and Python for dynamic experimentation and exploration purposes. Java and Scala programs need to be compiled before execution.
+Spark is designed to divide an application into smaller tasks that can be executed simultaneously on different worker nodes. This allows for more efficient processing of datasets than if done on a single worker node.
+TDP offers both Spark2 and Spark3. See here for a deep dive into the new features offered in Spark3.
+Spark follows the master-slave architecture: a driver running either on the client or on the application master node, and multiple executors that run across slave nodes in the cluster.
+The Spark driver program is in charge of the transformations and actions applied to the data set. It creates the SparkContext object, the DAG, breaks the job into tasks, and schedules them. The SparkContext object coordinates all Spark activity passing through it.
+The Spark client is used to submit Spark applications to the resource manager. The Spark applications, which simulate independent processes, communicate their progress to the Spark history server, a Spark UI rich in activity details.
+Spark on YARN
+The SparkContext object is agnostic to the cluster manager that it can connect to. TDP uses YARN for its extended capabilities and to benefit from its configured resource usage policies.
+Spark jobs can be submitted to YARN using the
+spark-submit application. First, YARN creates the executors on the worker nodes that perform computation and data storage through HDFS. Then, Spark sends the application code from the driver to the executors and the SparkContext sends the tasks to be run.
+Authentication and authorization with Spark
+Different users that submit Spark applications to YARN will likely have unique sets of permissions to perform actions and access data on the HDFS. TDP implements Kerberos to securely authenticate users, whilst Apache Ranger is used to managing the permissions given to each user. If the user is successfully authenticated, Spark impersonates applications during the task submission.
+The application runs if the impersonated user has the right to perform the expected action on the target data. This concept of authentication and impersonation is a recurring theme in the TDP data security mechanisms across TDP components.
+SparkUI is a web interface listing all running jobs and showing different information like resources used, number of tasks completed, number of executors, etc… Users with deployed getting started clusters can access SparkUI here, others need to navigate to their Spark History Server host and configured port.
+Note: To gain access authenticate as a user with the necessary access. Please check the host configuration guide to configure your machine accordingly.
+Here is the application ID, the app name, and the user for each job.
+By clicking on the application ID you want to monitor you get to a detailed page with various information such as time per execution, how the job was split, and in what order it was executed.
+The Executor tab provides insights about the job location and resource usage.
+To access job logs go through the YARN resource manager. This lists all jobs ran on YARN and Spark.
+Clicking an ID gets a detailed view of your job and allows access to the logs for each attempt. This is useful to identify the errors and exceptions in Spark jobs failures.
+A Spark tutorial is provided to guide you through creating and using Spark.
+Also, learn more about TDP components with the following articles:

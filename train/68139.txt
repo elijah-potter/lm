@@ -1,0 +1,20 @@
+These lessons, with videos, examples, and solutions, help students learn how to find the determinant of a 2×2 matrix.
+Inverse of a 2×2 Matrix
+Determinant of a 3×3 Matrix
+Determinants are useful properties of square matrices, but can involve a lot of computation. A 2×2 determinant is much easier to compute than the determinants of larger matrices, like 3×3 matrices. To find a 2×2 determinant we use a simple formula that uses the entries of the 2×2 matrix. 2×2 determinants can be used to find the area of a parallelogram and to determine invertibility of a 2×2 matrix.
+If the determinant of a matrix is 0 then the matrix is singular and it does not have an inverse.
+Before we can find the inverse of a matrix, we need to first learn how to get the determinant of a matrix.
+(1 × x) − (4 × −2) = 5
+x + 8 = 5
+x = −3
+How to find the determinant of a 2×2 matrix, and solve a few related problems?
+Explains the formula used to determine the inverse of a 2×2 matrix, if one exists
+Two examples of calculating a 2×2 determinant
+One example contains fractions.
+If det(A) = 0, the matrix is singular. This means it is not invertible or is degenrate and does not have an inverse such that: AA = I
+Further lessons on determinants of matrices
+Another video on the determinant of a 2×2 matrix
+Try the free Mathway calculator and
+problem solver below to practice various math topics. Try the given examples, or type in your own
+problem and check your answer with the step-by-step explanations.
+We welcome your feedback, comments and questions about this site or page. Please submit your feedback or enquiries via our Feedback page.

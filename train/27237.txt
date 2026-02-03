@@ -1,0 +1,14 @@
+Effects of Aliasing
+If the worst occurs, and a signal of more than half the sampling frequency is sampled, then a frequency shift occurs.
+Once again we’ll take 40 kHz as a sampling frequency. If 30 kHz were to be sampled there would not be the necessary two samples per wave and the resulting sampled frequency would be a triangle wave of lower frequency (a good example of this can be found here with wave C).
+If in this example a 60 kHz wave was sampled, then a mirroring effect (about the Nyquist frequency) occurs. So with 60 kHz being 20 kHz above the Nyquist, the resulting wave would be 20 kHz (40 – 20).
+As we’re dealing with waves outside of our hearing range you can never be certain just what’s actually in the room around you when you’re recording; if this were to happen though it would easily ruin a good take.
+As none of us notice mysterious harmonies and frequencies appearing in our digital audio, it’s safe to assume aliasing isn’t too much of an issue for us to worry about. In some ways this is true, certainly when it comes to digital recording. Any digital recorder will have an ‘Anti-Aliasing Filter.’
+This is pretty much self-explanatory. CD audio has a sampling rate of 44.1 kHz which means that up to 22.05 kHz of audio is safe to be sampled.
+In this case it’s likely that a filter would be present to start rolling off all audio from 20 kHz onward, cutting everything off by 22 kHz. This way no unwanted audio should make it to the converter.
+At this point you can get into a debate about inaudible sounds and whether we hear them in different ways, which is where 96 kHz or higher sampling rates could become useful as theoretically they would allow audio to be sampled higher.
+As to whether manufacturers build their AA Filters to increase with sampling rate, I don’t know. 96 kHz would however ensure that even up to 20 kHz would have at least four-plus samples per cycle, which would technically increase the quality, (but remember it does increase your CPU workload, and increase your file sizes, as a result).
+As I mentioned in the introduction there are programs (like Max/MSP) that grant us a much more intimate access to individual samples in file, and as such it’s worth understanding exactly what aliasing is.
+All equipment where aliasing could be a problem should be equipped with an anti-aliasing filter, and equipment that allows high sampling rates should increase said filter’s cut-off to allow above audible frequencies to be sampled. At the very least, a higher sampling rate would smooth out the samples of the higher audible frequencies.
+Michael Pinson was educated at Birmingham City University on the BSc (Hons) Sound Engineering & Production course, and was awarded a 2.1 Class award for the degree and a 1st Class award for his dissertation.
+Be sure to visit the Pro Audio Files for more great recording content. To comment or ask questions about this article go here.

@@ -1,0 +1,23 @@
+ARC Memory management
+1)Methods you cant call (or override) anymore
+You will have to remove all calls to these methods without substitution:
+You also cant use the retain keyword with properties anymore. Instead, use the strong keyword.
+Property naming restriction
+You can not create a property whose name begins with new.
+New Property keywords: strong and weak
+The @property keyword strong is synonymous to retain:
+@property(retain) MyClass *myObject;
+@property(strong) MyClass *myObject;
+Whereas weak is similar to assign, except that a weak property will be set to nil automatically when the object is deallocated (hence: zeroing weak reference):
+@property(assign) MyClass *myObject;
+@property(weak) MyClass *myObject;
+Under ARC, strong is the default for object types.
+You use the following lifetime qualifiers for variables just like you would, say, const.
+__strong is the default. An object remains alive as long as there is a strong pointer to it.
+__weak specifies a reference that does not keep the referenced object alive. A weak reference is set to nil when there are no strong references to the object.
+__unsafe_unretained specifies a reference that does not keep the referenced object alive and is not set to nil when there are no strong references to the object. If the object it references is deallocated, the pointer is left dangling.
+__autoreleasing is used to denote arguments that are passed by reference (id *) and are autoreleased on return.
+Take care when using __weak variables on the stack. Consider the following example
+NSString * __weak string = [[NSString alloc] initWithFormat:@"First Name: %@", [self firstName]];
+NSLog(@"string: %@", string);
+Although string is used after the initial assignment, there is no other strong reference to the string object at the time of assignment; it is therefore immediately deallocated. The log statement shows that string has a null value

@@ -1,0 +1,6 @@
+Space experiments for everyone: the ArduSat project
+Once launched, the ArduSat will be the first open platform allowing the general public to design and run their own space-based applications, games and experiments, steer the onboard cameras to take pictures on-demand, and even broadcast personalized messages back to Earth.
+ArduSat will be equipped with several sensors (such as cameras, gyros, accelerometers, GPS and more) packed inside a small cube (the side will be approximately 10 cm long) that can be accessed through a set of Arduinos.
+Once in orbit, the ArduSat will be accessible from the ground to flash the required firmware for the experiments and for getting back all the collected information. People interested in performing space experiments will have access to a ground replica of ArduSat explotable to test and debug their code before the actual deployment.
+The project is very ambitious, and it is expected that such an open accessible space platform will have a considerable impact on how simple space experiments will be carried out in the forthcoming years, in the case of fundraising success.
+You may find the Kickstarter page of the project here.

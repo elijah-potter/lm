@@ -1,0 +1,3 @@
+In the first task of LS4 the student has to develop a meaning representation of the sentence "The collector possesses a sculpture made of white marble." (German: "Der Kunstsammler besitzt eine Skulptur aus weißem Marmor.")
+For this purpose he has to use MWR. This tool allows the student to draw the graphical representation of a semantic network with a few mouse clicks. Once the student is finished, he can make MWR analyze his solution and check it against a model solution. MWR will point to inconsistent parts in the student's network and suggest corrections.
+Then the student can try to solve the task again. This cycle is finished when the representation (i.e. the solution) is correct.

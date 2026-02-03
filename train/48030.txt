@@ -1,0 +1,11 @@
+My question about how windows works without fork got pointers to two useful Windows perl modules in the comments:
+Spawning External Programs
+(from dagolden) See Win32::Job or just use
+system(1, $cmd, @args)
+(from Christian Walde) Use Win32::Detached
+What I was really wondering about was how reliable software was written without fork. What do I mean by that?
+What is the difference between?
+parent fork() do_something_independent() wait_for_childs_response()
+parent thread() do_something_independent() wait_for_childs_response()
+If the child thread misbehaves – exits, dumps core, leaks memory, or whatever, that’s bad for the parent. Child processes can’t wreak quite so much havoc.
+Presumably the solution adopted in Window is don’t do stuff in threads that causes them to accidentally exit [the whole process], dump core or leak memory.

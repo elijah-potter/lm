@@ -1,0 +1,10 @@
+Land cover describes the extent of vegetation, water bodies, built environment, and bare natural surfaces (eg gravel and rock) across New Zealand. Measuring the composition and changes in land cover can help us better understand the pressures that different land uses are placing on the biodiversity and functioning of ecosystems.
+area_ha = area of land cover measured in hectares
+This dataset relates to the "Land cover" measure on the Environmental Indicators, Te taiao Aotearoa website.
+You may use this work for commercial purposes.
+You must attribute the creator in your own works.
+|Columns||type, region, year, area_ha|
+|Services||Web Feature Service (WFS), Catalog Service (CS-W), data.govt.nz Atom Feed|
+|Added||28 Sep 2015|
+|Revisions||5 - Browse all revisions|
+|Current revision||Imported on Sept. 28, 2015 from CSV .|

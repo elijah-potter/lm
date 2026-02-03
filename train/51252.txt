@@ -1,0 +1,71 @@
+|Prev||Chapter 8. Data Types||Next|
+There are two fundamental kinds of date and time measurements: clock time and time interval. Both quantities have continuity and smoothness, as does time itself. Postgres supplies two primary user-oriented date and time types, datetime and timespan, as well as the related SQL92 types date and time.
+Other date and time types are available also, mostly for historical reasons.
+Table 8-7. Postgres Date/Time Types
+|abstime||4 bytes||original date and time||limited range|
+|date||4 bytes||SQL92 type||wide range|
+|datetime||8 bytes||best general date and time||wide range, high precision|
+|interval||12 bytes||SQL92 type||equivalent to timespan|
+|reltime||4 bytes||original time interval||limited range, low precision|
+|time||4 bytes||SQL92 type||wide range|
+|timespan||12 bytes||best general time interval||wide range, high precision|
+|timestamp||4 bytes||SQL92 type||limited range|
+Table 8-8. Postgres Date/Time Ranges
+|date||4713 BC||no limit||1 day|
+|datetime||4713 BC||no limit||1 microsec to 14 digits|
+|interval||no limit||no limit||1 microsec|
+|reltime||-68 years||+68 years||1 sec|
+|timespan||no limit||no limit||1 microsec (14 digits)|
+Postgres endevours to be compatible with SQL92 definitions for typical usage. The SQL92 standard has an odd mix of date and time types and capabilities. For example, although the date type does not have an associated time zone, the time type can. The default time zone is specified as a constant offset from GMT/UTC; however, time zones in the real world can have no meaning unless associated with a date as well as a time since the offset will vary through the year.
+To obviate these difficulties, Postgres associates time zones only with date and time types which contain both date and time, and assumes local time for any type containing only date or time. Further, time zone support is derived from the underlying operating system time zone capabilities, and hence can handle daylight savings time and other expected behavior.
+In future releases, the number of date/time types will decrease, with the current implementation of datetime becoming timestamp, timespan becoming interval, and (possibly) abstime and reltime being deprecated in favor of timestamp and interval. The more arcane features of the date/time definitions from the SQL92 standard are not likely to be pursued.
+Output formats can be set to one of four styles: ISO-8601, SQL (Ingres), traditional Postgres, and German.
+Table 8-9. Postgres Date Styles
+|ISO||ISO-8601 standard||1997-12-17 07:37:16-08|
+|SQL||Traditional style||12/17/1997 07:37:16.00 PST|
+|Postgres||Original style||Wed Dec 17 07:37:16 1997 PST|
+|German||Regional style||17.12.1997 07:37:16.00 PST|
+The SQL style has European and non-European (US) variants, which determines whether month follows day or vica versa.
+Table 8-10. Postgres Date Order Conventions
+|European||Regional convention||17/12/1997 15:37:16.00 MET|
+|NonEuropean||Regional convention||12/17/1997 07:37:16.00 PST|
+|US||Regional convention||12/17/1997 07:37:16.00 PST|
+There are several ways to affect the appearance of date/time types:
+The PGDATESTYLE environment variable used by the backend directly on postmaster startup.
+The PGDATESTYLE environment variable used by the frontend libpq on session startup.
+SET DateStyle SQL command.
+For Postgres v6.3 (and earlier) the default date/time style is "traditional Postgres". In future releases, the default may become ISO-8601, which alleviates date specification ambiguities and Y2K collation problems.
+Postgres obtains time zone support from the underlying operating system. All dates and times are stored internally in Universal Coordinated Time (UTC), alternately known as Greenwich Mean Time (GMT). Times are converted to local time on the database server before being sent to the client frontend, hence by default are in the server time zone.
+There are several ways to affect the time zone behavior:
+The TZ environment variable used by the backend directly on postmaster startup as the default time zone.
+The PGTZ environment variable set at the client used by libpq to send time zone information to the backend upon connection.
+set timezone SQL sets the time zone for the session.
+If an invalid time zone is specified, the time zone becomes GMT (on most systems anyway).
+General-use date and time is input using a wide range of styles, including ISO-compatible, SQL-compatible, traditional Postgres and other permutations of date and time. In cases where interpretation can be ambiguous (quite possible with many traditional styles of date specification) Postgres uses a style setting to resolve the ambiguity.
+Most date and time types share code for data input. For those types the input can have any of a wide variety of styles. For numeric date representations, European and US conventions can differ, and the proper interpretation is obtained by using the set datestyle command before entering data. Note that the style setting does not preclude use of various styles for input; it is used primarily to determine the output style and to resolve ambiguities.
+The special values `current', `infinity' and `-infinity' are provided. `infinity' specifies a time later than any other valid time, and `-infinity' specifies a time earlier than any other valid time. `current' indicates that the current time should be substituted whenever this value appears in a computation. The strings `now', `today', `yesterday', `tomorrow', and `epoch' can be used to specify time values. `now' means the current transaction time, and differs from `current' in that the current time is immediately substituted for it. `epoch' means Jan 1 00:00:00 1970 GMT.
+Table 8-11. Postgres Date/Time Special Constants
+|current||Current transaction time, deferred|
+|epoch||1970-01-01 00:00:00+00 (Unix system time zero)|
+|infinity||Later than other valid times|
+|-infinity||Earlier than other valid times|
+|now||Current transaction time|
+General-use date and time is input using a wide range of styles, including ISO-compatible, SQL-compatible, traditional Postgres (see section on "absolute time") and other permutations of date and time. Output styles can be ISO-compatible, SQL-compatible, or traditional Postgres, with the default set to be compatible with Postgres v6.0.
+datetime is specified using the following syntax:
+Year-Month-Day [ Hour : Minute : Second ] [AD,BC] [ Timezone ] YearMonthDay [ Hour : Minute : Second ] [AD,BC] [ Timezone ] Month Day [ Hour : Minute : Second ] Year [AD,BC] [ Timezone ] where Year is 4013 BC, ..., very large Month is Jan, Feb, ..., Dec or 1, 2, ..., 12 Day is 1, 2, ..., 31 Hour is 00, 02, ..., 23 Minute is 00, 01, ..., 59 Second is 00, 01, ..., 59 (60 for leap second) Timezone is 3 characters or ISO offset to GMT
+Valid dates are from Nov 13 00:00:00 4013 BC GMT to far into the future. Timezones are either three characters (e.g. "GMT" or "PST") or ISO-compatible offsets to GMT (e.g. "-08" or "-08:00" when in Pacific Standard Time). Dates are stored internally in Greenwich Mean Time. Input and output routines translate time to the local time zone of the server.
+General-use time span is input using a wide range of syntaxes, including ISO-compatible, SQL-compatible, traditional Postgres (see section on "relative time") and other permutations of time span. Output formats can be ISO-compatible, SQL-compatible, or traditional Postgres, with the default set to be Postgres-compatible. Months and years are a "qualitative" time interval, and are stored separately from the other "quantitative" time intervals such as day or hour. For date arithmetic, the qualitative time units are instantiated in the context of the relevant date or time.
+Time span is specified with the following syntax:
+Quantity Unit [Quantity Unit...] [Direction] @ Quantity Unit [Direction] where Quantity is ..., `-1', `0', `1', `2', ... Unit is `second', `minute', `hour', `day', `week', `month', `year', 'decade', 'century', millenium', or abbreviations or plurals of these units. Direction is `ago'.
+Absolute time (abstime) is a limited-range (+/- 68 years) and limited-precision (1 sec) date data type. datetime may be preferred, since it covers a larger range with greater precision.
+Absolute time is specified using the following syntax:
+Month Day [ Hour : Minute : Second ] Year [ Timezone ] where Month is Jan, Feb, ..., Dec Day is 1, 2, ..., 31 Hour is 01, 02, ..., 24 Minute is 00, 01, ..., 59 Second is 00, 01, ..., 59 Year is 1901, 1902, ..., 2038
+Valid dates are from Dec 13 20:45:53 1901 GMT to Jan 19 03:14:04 2038 GMT. As of Version 3.0, times are no longer read and written using Greenwich Mean Time; the input and output routines default to the local time zone. All special values allowed for datetime are also allowed for "absolute time".
+Relative time reltime is a limited-range (+/- 68 years) and limited-precision (1 sec) time span data type. timespan should be preferred, since it covers a larger range with greater precision and, more importantly, can distinguish between relative units (months and years) and quantitative units (days, hours, etc). Instead, reltime must force months to be exactly 30 days, so time arithmetic does not always work as expected. For example, adding one reltime year to abstime today does not produce today's date one year from now, but rather a date 360 days from today.
+reltime shares input and output routines with the other time span types. The section on timespan covers this in more detail.
+This is currently a limited-range absolute time which closely resembles the abstime data type. It shares the general input parser with the other date/time types. In future releases this type will absorb the capabilities of the datetime type and will move toward SQL92 compliance.
+timestamp is specified using the same syntax as for datetime.
+interval is an SQL92 data type which is currently mapped to the timespan Postgres data type.
+Time ranges are specified as:
+[ 'abstime' 'abstime'] where abstime is a time in the absolute time format.Special abstime values such as `current', `infinity' and `-infinity' can be used.
+|Character Types||Up||Boolean Type|

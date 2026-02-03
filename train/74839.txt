@@ -1,0 +1,11 @@
+The topics in this section describe how to work with audio and video in Silverlight.
+Introduces the basics of adding audio and video to Silverlight-based applications.
+Describes the formats and protocols Silverlight supports for media.
+Provides information about the transitions between the different MediaElement states and how to detect state changes.
+Describes how to create a media playlist on the server and integrate it into a Silverlight-based application.
+Describes the system of digital rights management that is provided in Silverlight.
+Describes the system of digital rights management that is provided in Silverlight 3.
+Describes how to capture source input from audio and video devices such as webcams and microphones.
+Describes how to create parsers for container formats and describes delivery mechanisms not natively supported by Silverlight.
+Describes the steps that are needed to deliver and access media content in Silverlight.
+Describes how to diagnose and solve media issues in Silverlight.

@@ -1,0 +1,2 @@
+In an AC circuit, there is a voltage source as 100<0. 0 is the phase angle. In calculations, do we need to consider this voltage as Vrms or it is not? Can we define a phase angle for RMS value?
+This 100<0 is rms value, its magnitude is 100 and phase angle is 0 degree as you have written 100<0. Generally, the AC voltmeters and ammeters measures rms value only and whenever a voltage or current value is given in question it is considered as rms value only unless specified otherwise.

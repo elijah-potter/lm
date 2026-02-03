@@ -1,0 +1,21 @@
+Notion of Safeness of Inference Rules
+Safeness is a name for property of logical inference rules.
+It is in use now
+for more than a dozen of years at least. It is not yet an established standard
+such as soundness and completeness of a set of inference rules.
+Roughly speaking, a rule is safe if its inverse rule is sound.
+More precisely, a rule is sound iff the validity of its preconditions
+implies the validity of its conclusion;
+a rule is safe iff the invalidity of one of its preconditions
+implies the invalidity of its conclusion.
+For reductive inference systems, soundness means that a goal
+is solved if we can solve the sub-goals it is reduced to.
+Safeness means that if one of the sub-goals is unsolvable,
+the goal is unsolvable, too.
+Safeness is useful for disproving theorems.
+If we disprove a sub-goal generated from a goal or from one of its
+transitive sub-goals, then, if all reduction steps are safe,
+we know that the original goal was invalid already.
+Lecture Notes on Logic, incl.
+This is file p/safeness.html on Claus-Peter Wirth's web site.
+Last modified 2005/05/02/11.15

@@ -1,0 +1,18 @@
+Applications include musical synthesizers and tiny biomedical devices
+The dream of using a computer chip to operate and control tiny devices that can fit in a pocket or even inside the body might be moving one step closer to reality. Researchers at Lehigh University, using technology developed by ADCUS Inc., a South Korea-based semiconductor design company, are seeking to download an entire computer control software program onto a chip.
+ADCUS has donated $400,000 worth of computer architecture and software to researchers in Lehigh University's P.C. Rossin College of Engineering and Applied Science.
+The goal of the collaboration, says Mayuresh Kothare, the R.L. McCann Associate Professor of chemical engineering at Lehigh, is to develop embedded Model Predictive Control technologies in a system-on-a-chip (SoC) framework.
+Applications of this combination include musical synthesizers (iPods and MP3s), CD drive controllers, biomedical devices that can be implanted in the body, and conventional control systems in chemical, mechanical and electrical engineering industries.
+In order to realize their goal, researchers must achieve high performance, low cost, low power and small size - simultaneously.
+The equipment donated by ADCUS includes 16- and 32-bit chips on chip boards measuring roughly 3 by 4 inches.
+Kothare and his group are seeking to reduce Lehigh's control algorithm to the size of the ADCUS chips, giving the chips the ability to operate and control small devices. This would eliminate the need for computer-based controllers, which are too cumbersome to operate devices that are pocket-sized or smaller.
+An algorithm is a rule or set of rules specifying how to solve a problem.
+The success of the project, says Kothare, depends on his group's ability to develop a control system that will fit on the ADCUS chip.
+"ADCUS has given us the basic technology to program their chip and package board with a surrounding conditioning unit so we can interface without difficulty," he says. "It's a beautiful package - in one day, my students installed software and connected the serial port to the board so they can program things on a chip."
+Kothare is co-principal investigator on the project with Mark G. Arnold, who is assistant professor of computer science and engineering and director of Lehigh's Computer Architecture and Arithmetic Research Laboratory.
+The two researchers have also received funding for the project from Pittsburgh Digital Greenhouse (PDG), a public-private economic development initiative that supports research in SoC and related technologies for networking and multimedia applications. ADCUS is a member company of PDG.
+One ultimate application of the new technology that Kothare and Arnold are developing could be an implantable biomedical device that delivers insulin to the body and is controlled by a pocket device that uses an optical sensor to determine the optimal amount of insulin a person needs. Another application is the control of small or micro-fuel cells and microreactors.
+Kothare has a grant from the National Science Foundation to develop microreactors that produce hydrogen, can be fabricated using microfabrication and semiconductor-processing techniques, and fit on a 2-cm silicon chip.
+He and his students have successfully made and tested a packed-bed microreactor based on a chip that uses commercial catalysts to reform methanol for hydrogen production. They plan to incorporate the new chip-based controller with the microreactor.
+Source: Lehigh University
+Explore further: Kinks and curves at the nanoscale

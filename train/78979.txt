@@ -1,0 +1,18 @@
+Most of the time, you're most interested in finding the The easiest way to get all the information you want is through two commands, uname and cat. When you use -a with the uname command, you get back all the information uname "knows" how to gather. The cat command displays the contents of a text file. In this case, it's the release file located in the etc folder off the root (/)directory. This is a standard file installed by most flavors of Linux. The name changes, depending on the distribution you have, but the standard calls for the filename to end with the word release (therefore the * wild card in the filename below). You can combine the two commands on one line by joining them with double ampersands (&&), as below, to get everything at once. Ready to give it a go?
+First, find and open a Terminal window, usually in the Accessories category on a standard desktop. In Unity-style desktops, start typing the word terminal in the search box and it'll pop right up.
+When the Terminal window opens, you are faced with a large empty box, usually black, containing a blinking cursor. There is nothing to fear here. Simply type the following characters exactly as you see them and press the Return or Enter key.
+uname -a && cat /etc/*release
+user1@computer1:~$ uname -a && cat /etc/*release
+Linux computer1 188.8.131.52-0.7-default #1 SMP Mon Oct 29 13:01:22 PDT 2012 i686 Intel(R) Core(TM)2 Duo CPU E6750 @ 2.66GHz GenuineIntel GNU/Linux
+openSUSE 11.4 (i686)
+VERSION = 11.4
+CODENAME = Celadon
+COMPUTER NAME: computer1
+LOGGED-ON USER: user1
+DISTRIBUTION NAME: openSUSE
+VERSION: 11.4, aka Celadon
+# BITS: 32-bit
+.. .. .. .. 32-bit OS is indicated by i686 (or any iXXX number: i586, i486, i386, etc.)
+.. .. .. .. 64-bit Linux is indicated by x86_64 instead of i686
+CPU: Intel Core2 Duo running at 2.66GHz
+LINUX KERNEL: 184.108.40.206-0.7-default

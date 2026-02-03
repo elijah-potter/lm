@@ -1,0 +1,23 @@
+Effects of large earthquakes on a global scale
+Ver.1.1 (Updated: 110330-16:23)
+Feel free to use these quotes in your stories, but please read our notes at the bottom in regards to the information here.
+If you have any questions, please don't hesitate to contact us.
+* Please be aware that the comments below are in response to the information that was available at the time they were given.
+Over the past month there have been a number of earthquakes occurring around the Pacific. A new study published in Nature Geoscience on March 27 has found that large earthquakes over the last 30 years have not triggered other large earthquakes on a global scale, but could on a regional scale. One of the paper's authors, Tom Parsons, gave us some comments.
+* Please note that this research does not focus on earthquakes that have solely occurred around Japan, and looks at all earthquakes greater than magnitude 5 across the globe.
+Paper: Tom Parsons & Aaron A. Velasco, "Absence of remotely triggered large earthquakes beyond the mainshock region", Nature Geoscience (2011) link here.
+・ The Science Media Centre of Japan (SMCJ) is an independent, non-profit group for the news media, giving journalists access to evidence-based science and expertise.
+・ Regardless of the medium, we welcome our material to be used by journalists who want to make scientific views heard in society.
+・ The views expressed in this post are those of the individuals and organisations indicated and do not reflect the views of the SMC or its employees.
+・ The SMCJ sends such information to those registered on our mailing list. To sign up, please click on the link below.
+（Please be warned that registration involves giving us some information about yourself. Those who we think are not real journalists may be denied access to our mailing list. This is to prevent our information from being abused, and we ask for your understanding. However, considering the emergency we are in now, we have decided to put up all of our information publicly on this website)
+【Journalist Registration】Please contact us from HERE
+【About this article】
+○ Feel free to use these quotes in your stories.
+○ In terms of crediting the SMCJ (optional), we would ask you to name is as one of the following:
+-Science Media Centre of Japan
+-Science Media Centre of Japan (Corp)
+○ When sharing links, we ask that you please use: http://www.smc-japan.org
+○ Please contact the SMCJ with your comments on our service at:
+Science Media Centre of Japan (Corp)
+Fatal error: Uncaught exception 'Exception' with message 'String could not be parsed as XML' in /home/smc-japan/www/eng/wordpress/wp-content/plugins/tweetable/mh_twitter_class.php:298 Stack trace: #0 /home/smc-japan/www/eng/wordpress/wp-content/plugins/tweetable/mh_twitter_class.php(298): SimpleXMLElement->__construct('') #1 /home/smc-japan/www/eng/wordpress/wp-content/plugins/tweetable/tweetable.php(337): Twitter_API->rate_limit_status('117015509-aBj6b...', 'uaJkuxE3REfxYzd...') #2 /home/smc-japan/www/eng/wordpress/wp-content/plugins/tweetable/tweetable.php(399): tweetable_api_rate_status() #3 /home/smc-japan/www/eng/wordpress/wp-content/plugins/tweetable/tweetable.php(155): tweetable_get_recent_tweets() #4 [internal function]: tweetable_write_widget(Array) #5 /home/smc-japan/www/eng/wordpress/wp-includes/widgets.php(891): call_user_func_array('tweetable_write...', Array) #6 /home/smc-japan/www/eng/wordpress/wp-content/themes/platformpro/core/library/library.templates.php(20): dynamic_sidebar('Primary Sidebar') #7 /home/ in /home/smc-japan/www/eng/wordpress/wp-content/plugins/tweetable/mh_twitter_class.php on line 298

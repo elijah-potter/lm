@@ -1,0 +1,30 @@
+Prof. Erdinç. ECO 402 Fall 2013. Economic Growth. The Solow Model. The Neoclassical Growth model Solow (1956) and Swan (1956). Simple dynamic general equilibrium model of growth. Neoclassical Production Function.
+The Solow Model
+Output produced using aggregate production functionY = F (K , L ), satisfying:
+A1. positive, but diminishing returns
+FK >0, FKK<0and FL>0, FLL<0
+A2. constant returns to scale (CRS)
+Exercise: Given that Y=L f(k), show:
+FK = f’(k) and FKK= f’’(k)/L .
+r = FKand w = FL
+wL + rK = Y
+A3: The Production Function F(K,L) satisfies the Inada Conditions
+Note: As f’(k)=FKhave that
+Production Functions satisfying A1, A2 and A3 often called Neo-Classical Production Functions
+= change in the production functionFt
+Labour augmenting (Harrod-Neutral) T.P.
+Capital augmenting (Solow-Neutral) T.P.
+A4: Technical progress is labour augmenting
+Note: For Cobb-Douglas case three forms of technical progress equivalent:
+Under CRS, can rewrite production function in intensive form in terms of effective labour units
+A5: Labour force grows at a constant rate n
+A6: Dynamics of capital stock:
+Definition: Variables of interest grow at constant rate (balanced growth pathor BGP)
+- satisfied from Inada Conditions (A3).
+1. In steady state, per capita variables grow at the rate g, and aggregate variables grow at rate(g + n)
+2. Changes in s, n, or dwill affect the levels of y* and k*, but not the growth rates of these variables.
+- Specifically, y* and k* will increase as s increases, and decrease as either n or dincrease
+Prediction: In Steady State, GDP per worker will be higher in countries where the rate of investment is high and where the population growth rate is low - but neither factor should explain differences in the growth rate of GDP per worker.
+to find .
+US real GDP grows on average at 3% per year, i.e.
+Hence, US economy is under-saving because

@@ -1,0 +1,32 @@
+What is Metering & Energy Metering in Electrical Installations?
+Electric Parameters to Monitor
+Control and monitoring of electrical installations and equipments requires electric parameters to be monitored and that their values could be read by operators (local and remote) in meters and in control microprocessed units in central operating stations and stored.
+Common monitored electric parameters are:
+- Voltage (U, V)
+- Current (I)
+- Active (or real) power (P)
+- Power factor (cos Φ)
+- Frequency (f)
+- Active energy (W)
+- Reactive energy (War)
+Active energy metering is important for utilities companies not only for invoicing purposes, but also as statistic data for the analysis of power consumption during pre-defined period of time (peak and off-peak hours; weekly – working days and weekends; monthly; yearly – winter and summer).
+This data analysis enables utilities companies to predict the probable evolution of energy consumption, allowing programming the upgrade of both transmission and distribution networks and substations. For users this analysis enables to produce a study to increase electrical systems and equipments, decreasing the cost of consumed power.
+Reactive energy and power factor metering allows utilities companies to apply penalties to users if the power factor is lower than what is contractually established and users to produce the studies for sizing capacitor banks used for power factor improvement.
+Meters & Energy Meters
+To monitor electrical parameters the most common used meters are:
+- Energy meters (active and reactive)
+- Watt meters
+- Phase meters
+- Frequency meters
+Meters are usually installed in LV and MV (MV: Medium Voltage; 1 kV < V < 60 kV. LV: Low Voltage; V ≤ 1 kV) switchboards and they may be classified into two categories – electromechanical and electronic (digital), being these last ones the commonly used nowadays.
+Modern technology calls for the use of electronic multipurpose meters and single unit, such as IED (Intelligent Electronic Device), that perform functions of mettering, monitor, control and protection.
+In actual installations of control rooms of power stations, substations, dispatch centres and large industries, were the installations are controlled and monitored through a SCADA (Supervisory Control and Data Acquisition), electrical parameters are shown on the displays of the man-machine interface.
+In order to improve accuracy of the measurement of electrical parameters and to allow an easy connection to PLC (Programmable Logic Control) and equipments of SCADA measurement transducers are used.
+A measurement transducer that is connected also to instrument transformers is a measuring device that converts a physical quantity being measured into a signal for subsequent transmission, processing, or recording.
+The output signal is usually a DC (direct current) signal, being the most commons 4-20 mA (the most used in electrical installations) and 0-10 V (mainly used in industry process).
+In the first type of transducers, if the output signal is 0 ma, it means that the transducer has a defect or that there is a problem in the measuring circuit (more presumably in cables and connections).
+Meters are then connected to the measurement transducers; the most common transducer used in electrical installations are:
+- Current transducer
+- Voltage transducer
+- Power transducer
+- Frequency transducer

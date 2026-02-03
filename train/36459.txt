@@ -1,0 +1,62 @@
+We've talked about using Meshmixer to design prosthetics and now have an interesting story from the Toshiba Stroke and Vascular Research Center in Buffalo, New York.
+Dr. Ciprian Ionita and his team have developed a method to create 3D-printed vascular models (or "phantoms") using Polyjet printing technology from Stratasys. The polyjet process can create flexible objects that mimic the feeling of human tissue. Neurosurgeons are using these models for planning complex procedures such as repair of brain aneurysms.
+The process begin with a CT scan of the patient's brain. Biomedical engineers extract the critical regions of the vascular (blood vessel) network as 3D surfaces. These surfaces are imported into Meshmixer, and are used as the basis for designing a printable model which the surgeon can inspect. The model can also be connected to pumps which mimic blood flow, and placed into a simulated surgical environment. These planning steps allow life-threatening complications to be identified before the patient is on the operating table.
+In the video below, Dr. Adnan H. Siddiqui from the Jacobs Institute describes how one of these models was used to save a patient's life.
+There are two ways to make sure your mesh will result in a strong 3D print and Meshmixer can help you out with both of those:
+Orient your model
+Thicken the thin areas
+Meshmixer allows the user to analyze the mesh in real time for weak areas and shows a color range to highlight the weakest areas.
+The Design and Fabrication team ran a set of tests to confirm the strength gains in changing the orientation of the print.
+Some prints withstood more than 10x the force before breaking.
+For thickening the thin areas, it's very easy to paint in a stronger section. The dense meshes below are the bones of a hand and the interface is still quick and manageable.
+You can see some video footage of the structural analysis and stress testing in the video below. Even better, get Meshmixer and try it out for yourself! The full details of this research entitled Cross-sectional Structural Analysis for 3D Printing Optimization is available on AutodeskResearch.com.
+For those attending Autodesk University this year in Las Vegas, Autodesk Research will have a booth in the “Central Park” section of the Exhibit Hall where we’ll be showcasing a number of exciting projects.
+The projects represented at this year’s conference will include:
+The Bio/Nano Research group will be showing the current status of their research on how to fold DNA to create functional nanostructures as well as how to grow artificial bones.
+Autodesk Within Medical, which allows implant designers to create porous coatings to aid bone and implant fusion (ie. osseointergration), will be displaying a number of their 3D printed medical components and explaining how their technology works.
+When you enter Sands Hall B & C, just walk to the Central Park and Autodesk Research will be on the right!
+In addition to the booth, look for the Hive Project near the Exhibit Hall where Autodesk University attendees will build an architectural scale pavilion guided by human/robot interaction.
+A number of team members will be giving talks at AU:
+Composite Materials and Manufacturing Processes for Automotive Applications
+Massimiliano Moruzzi presents an end-to-end solution for the automated composite manufacturing process. This class will cover advanced lay-up design strategies such as fiber placement, tape layering, and robotics lay-up which are utilized when programming automatic material layup equipment. High composite production rates will be covered through automated robotic material nesting and taping.
+Cultivating Innovation and Developing Intrapreneurs
+Wednesday, Dec 2, 10:00 AM - 11:30 AM, Location: Zeno 4704, Level 4
+Cory Mogk will be doing a talk on Cultivating Innovation and Developing Intrapreneurs that uses the tools from the Innovation Workshop. This class will talk about how Autodesk is helping intrapreneurs develop their ideas and we’ll provide tools and guidance that attendees can use on their own or in their organizations.
+Composite Manufacturing Solution for Optimum Material Nesting and Ply Layup
+Thursday, Dec 3, 2:45 PM - 4:00 PM, Location: San Polo 3405, Level 3
+Massimiliano Moruzzi will lead this two-part class where attendees will utilize Autodesk TruNest Composites to show the complete process from import to nesting to NC part cutting of ply materials. Special focus will be given to optimal nesting for efficient material usage. During the second half, we will utilize Autodesk TruLaser to perform laser projection for showing composite ply lay-up.
+Once again, the Design Research team will be conducting user research sessions. This year’s focus will be on collecting feedback for Withinand Dreamcatcher. Look for the OCTO Airstream in the AU registration area.
+We hope you’ll make some time to come by and meet some of the team.
+The growing use of additive manufacturing lifts many constraints on form imposed by CNC machining and injection molding, and has lead to a renewed interest in applying triangle meshes, voxels, and implicit surfaces in real-world CAD systems. However, such systems should inter-operate with legacy B-Rep CAD solid modeling tools. I will discuss our ongoing attempt to combine these two domains, relying on a combination of dynamic triangle meshes and variational mesh processing.
+This project is currently focusing on trans-tibial (below the knee) prosthetics. Above the knee is known as trans-femoral and you may have heard of the complementary prosthetic knee project D-Rev is working on with the Autodesk Foundation. Both of these projects are helping the developing world by reducing costs from thousands or even tens of thousands of dollars down to tens of dollars.
+The team recently went to Uganda to visit the prosthetists at CoRSU hospital to familiarize them with the latest tool developments, get their feedback and test the tools beyond the home lab.
+The prosthetics lab at the hospital is a workshop with a lot of familiar hand tools. Here we see Dr. Ratto from the University of Toronto.
+Prosthetics have two primary parts – the socket for the limb to fit into and the prosthetic limb. Here we see some lower legs with feet. These parts can be reused as the patient grows.
+The current process is both time-consuming and produces more waste than necessary. The current process requires creating a plaster mold of the residual limband then creating a plaster positive of the limb to vacuum form a plastic socket around. Here we see some plaster positives ready to be discarded.
+Once the plastic socket is created, the hand tools are used to improve the fit and comfort for the patient. Using a 3D scanner (the team is using Sense for this project) provides a better fit without the waste and lets the team go straight to 3D printing a socket.
+The team has taken advantage of the API in Meshmixer to create a wizard to streamline the process of cleaning the scan and preparing it for printing. This can now take as little as thirty minutes.
+This brings the process down from a week to a day. Here Moses Kaweesa from CoRSU inspects a 3D printed socket and the bolt assembly that attaches the prosthetic limb.
+Dr. Schmidt works on the digital tools at a more traditional workstation.
+And then takes a break from coding to untangle some filament for the 3D printer.
+And then returning to code again in a more relaxing location.
+Here is Ruth trying on the first 3D printed socket. She is not only a patient but also a volunteer at the hospital helping to develop this process while pursuing a degree in architecture.
+Ruth`s socket fits and everyone is happy!
+If you look closely at the socket Dr. Schmidt is holding you can see a horizontal line in this socket as it was printed in two pieces to increase the delivery time. The two pieces were connected with a mirror welder at the hospital.
+This is Rosaline trying out her new leg.
+It was a successful trip and the results show that the process is working. In thinking about the predictions of needing 40,000 prosthetists across the developing world, reducing the time for a new limb from a week to a day is very significant. This helps the doctors work with more patients but it also helps the patients save money on travel costs and lodgings during treatment. The time for 3D printing is the longest part of the process so as 3D printers get faster, the process will get even faster.
+Happy new year, Everyone! There's lots of 3D Printing news coming out of CES this week including cheaper printers, smaller printers and food printers. One of our favourites is the Voxel8 printer that prints both plastic and conductive ink for electronics (remember our research on creating tubes and cavities in your models for interactive objects?). The Voxel8 printer team is working with Autodesk via Project Wire to place components, route 3D wires and output multi-material print data for fabrication.
+With this, we wanted to make sure that you know about something else we've done. Good things come in threes:
+Autodesk announces the open 3D printing platform known as Spark
+Autodesk announces Meshmixer 2.7 with an API and scripting
+That's right! Meshmixer now has an API so you can customize workflows, automate repetitive tasks and create new tools and abilities for 3D printing on your own. Developers can access the examples via GitHub and can choose between using C++ and Python.
+LIke using Meshmixer, it is very easy to get started with the API. As this is the first exposure of the API, the team is interested in feedback on what can be improved. You can share that on the Meshmixer forum.
+With these three advances in 3D printing, what will you do to make 3D printing better?
+Meshmixer 2.7 is now available and it makes it easier to 3D print multiple objects. Unlike a traditional paper printer that will print as many copies as paper and toner fit in the machine, a 3D printer usually only makes one copy. With Meshmixer 2.7 it is now easy to layout multiple objects for printing in one shot.
+From the View menu, users can now display the print bed in the modeling workspace to get a better idea of the proportion and orientation of their models relative to their printer.
+With multiple objects selected, users can then take advantage of the new Layout tool to automatically position the objects on the print bed. To duplicate an object, select the object in the Object Browser (accessible from the View menu) and press the duplicate button in the lower right next to the garnage can.
+With the objects to layout selected, select the Analysis tool followed by Layout/Packing.
+The Layout tool lets you specify the distance between objects.
+It's also possible to analyse objects to determine the distance between them. With two objects selected, from the Analysis tool, select the Cleaance option. If there are any polygons with the tolerance you've set you will see them highlighted in the viewport. Clicking on the spherical manipulator associated with the polygons will select them if you want to modify them.
+Similar to the Clearance tool is a new Deviation tool that can e useful when comparing two versions of a model, for example the original and reduced versions.
+In terms of meshmixing, there is now the option to do a boolean subtract or add when part dropping which helps to make some more interesting shapes with fewer steps.
+When generating custom supports, it is now possible to add your own horizontal supports with a click/drag workflow. Horizontal supports can help to give extra support to extreme overhangs or when removing parts of a support that may be difficult to remove after printing. Removing supports is now easier as well. A ctrl click removes an entire support above the click point. A shift+ctrl click removes only the segment clicked on as indicated by the color.

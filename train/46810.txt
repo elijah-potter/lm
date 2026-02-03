@@ -1,0 +1,15 @@
+Molecule of the Month: Actinomycin
+Some antibiotics attack cells by intercalating between the bases in a DNA double helix
+Intercalating into DNA
+Intercalators in Action
+Exploring the Structure
+Actinomycin and DNA (PDB entry 173d)
+Many intercalating molecules have no preference for a particular sequence of DNA, but actinomycin binds most strongly to GC steps. The structure of actinomycin with a short piece of DNA (PDB entry 173d ) revealed the reason for this: the cyclic peptide portion of the molecule forms specific hydrogen bonds with the edges of the guanine bases. To take a closer look at this interaction, click on the image for an interactive Jmol.
+Topics for Further Discussion
+- Structures for many other DNA intercalating drugs are available in the PDB. You can start by searching for "anthracycline", the name of a large class of anticancer drugs.
+Related PDB-101 Resources
+- Browse Cancer
+- Browse Drug Action
+- Y. Pommier, E. Leo, H. Zhang & C. Marchand (2010) DNA topoisomerases and their poisoning by anticancer and antibacterial drugs. Chemistry and Biology 17, 421- 433.
+- U. Hollstein (1974) Actinomycin, chemistry and mechanism of action. Chemical Reviews 74, 625-652.
+April 2013, David Goodselldoi:10.2210/rcsb_pdb/mom_2013_4

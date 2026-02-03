@@ -1,0 +1,13 @@
+As ane fule kno the volume of a ball (ie., the interior of a sphere) is .
+But I have just had one of those “why’s that then” moments and sought to prove to myself, using integration, why this would be so.
+But my logic is flawed and I get the wrong result – so risking looking stupid – I am asking for someone to correct the error in my logic.
+Starting from the start and a familiar (I hope!) lemma:
+is the ratio of a circle’s circumference () to its diameter (), hence or, more familiarly, where is the radius of the circle.
+Now the area (a) of a circle can then be found by integration:
+, giving the familiar
+So, my reasoning runs, the volume of a ball would then be:
+or , which is precisely half the figure it should be – so where have I gone wrong?
+Update: with thanks to Hugh in the comments – of course what I have described is a (double) cone with a height equal to the radius of the base. Cones and circles are not the same, obviously.
+- Equivalence between weak convergence and uniform tightness. The Helly’s lemma and the Prohorov’s theorem (maikolsolis.wordpress.com)
+- Giant watery balls (howtospotapsychopath.com)
+- Trend Alert: Volumized Updos at the 2009 Grammys (bellasugar.com)

@@ -1,0 +1,17 @@
+Uses of Gyroscopes
+The effect of all this is that, once you spin a gyroscope, its axle wants to keep pointing in the same direction. If you mount the gyroscope in a set of gimbals so that it can continue pointing in the same direction, it will. This is the basis of the gyro-compass.
+If you mount two gyroscopes with their axles at right angles to one another on a platform, and place the platform inside a set of gimbals, the platform will remain completely rigid as the gimbals rotate in any way they please. This is this basis of inertial navigation systems (INS).
+In an INS, sensors on the gimbals' axles detect when the platform rotates. The INS uses those signals to understand the vehicle's rotations relative to the platform. If you add to the platform a set of three sensitive accelerometers, you can tell exactly where the vehicle is heading and how its motion is changing in all three directions. With this information, an airplane's autopilot can keep the plane on course, and a rocket's guidance system can insert the rocket into a desired orbit!
+For more information on gyroscopes and their applications, check out the links below!
+Related HowStuffWorks Articles
+More Great Links
+- The Laws of Motion - scroll down to "Gyroscopes"
+- Motion - scroll down to "Bicycle Wheel Gyroscope"
+- How a gyroscope works
+- Bicycle Wheel Gyro
+- NASA: Guidance, Navigation and Control - see "Inertial Measurement Units"
+- Guidance and Control Systems - superb experiments in model rocket control and guidance!
+- Anomalous Weight Measurements of a Toy Gyroscope
+- Micromachined Rotating Gyroscope
+- Navigational Systems: Gyrocompass
+- The Gyroscope Demystified - How It Works

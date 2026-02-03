@@ -1,0 +1,78 @@
+What is good training? That’s almost a trick question. Which of these are true?
+- Good training is when somebody actually learns something
+- Good training is when somebody learns something new
+- Good training means learning how to do something faster
+- Good training is when the student can pass a test or certification
+- Good training provides the student with experience
+Those are all probably “true” statements, but are they right? How about this instead:
+“Good training is something that makes an employee more productive to the organization”
+We might even need to add in that the new productivity has a higher value than the cost of the training. If a training program costs $10,000 and the net result is that one employee saves 5 minutes a day on one task, was that a gain?
+Miscellaneous thoughts on training:
+- “Tell me and I forget, teach me and I may remember, involve me and I learn.”
+- Typical training: If you push this button, X will happen. Better training: if you’re trying to accomplish X, here’s what you need to do
+- The best training is self training (at least for most people)
+- Two typical attitudes about training:
+1. I don’t know how to do that, I need training
+2. I bet there’s a way to do that, let me figure it out
+When a person transitions from #1 to #2, think of the possibilities! (HT to Jim LaBarr)
+- Lengthy (all day, all week) training appears to have great results, but they usually don’t last. Short, even repetitive, topic-focused training has much longer results. Consider TED talks and their 18 minute rule
+- A lot of short, single-topic, “do it yourself” training bits may work better than typical classroom
+- Classroom is still good for the dialog, and to force training to happen for those who wouldn’t otherwise have the discipline
+- Lunch-n-Learn is almost always a good thing. Most people like food
+- Good training is specific to the organization’s culture. And processes. It may focus on those processes!
+- Spend more time on the every day stuff than the once-a-year stuff. [but define the once-a-year stuff in an easy to reference KB]
+- If doing classroom training set the expectation that each person will be called on. After the question is asked, not before!
+- Good training focuses more on why than on how
+Where does training end and support start? Or vice versa? Or are they deeply intertwined? What would happen if design, development, implementation, configuration, training, and support where all tightly connected with each other. Would the end-users have a better experience?
+Better training reduces friction. Or …
+“Better training helps things go right which in turn creates better user experiences.”
+Is that the same as improved productivity? Probably
+Different organizations certainly have different needs in document collaboration. Here are the requirements that I think I am looking for. Please share your thoughts in the comments!
+- Truly live updating. More than one person at a time can be editing without conflict
+- Ability to know who said what
+- Notification of changes by others
+- Nice bonus would be routing & workflow, such as a way to approve edits, and just to know when somebody else made a change
+Sadly, I do not know of any one product that does all these things well! What have I missed?
+Microsoft Word‘s “mark revisions” feature is fantastic for seeing who has made what changes in a document. But two people working on the same document at the same time? Good luck with that!
+Evernote is a great shared notepad concept, but again, you don’t want two people trying to make changes at the same time. And when edits are made, it’s not at all easy to see who made what changes.
+OneNote may be a good bit better at simultaneous editing AND seeing who has done what. And finally, in recent months, it’s become a good cross-platform solution. Without watching and looking at each note, it’s hard to know that someone else updated something. Of course, for some people, there is also the “I won’t use anything from Microsoft” issue that makes this slightly less desirable.
+Google Docs (or Google Drive, depending on your reference) let’s multiple people edit simultaneously and does an excellent job of avoiding conflicting edits. After the fact it’s difficult to know who made what changes, and notifications, although possible, are not obvious. There’s also just this strange thing that a lot of people don’t like Google Docs, and tend to lose them and not know how to find them again. For those who are biased toward the familiarity of Microsoft Office products, the different interface and the fewer features can be a negative
+Dropbox, Google Drive, OneDrive, and other such technologies all create ways to share, but don’t much help with the simultaneous editing, and actually tend to cause issues if two people attempt to work simultaneously.
+So, what’s a person to do? Google Docs are my current best answer, although I use every one of the above for different situations.
+THERE MUST BE A BETTER ANSWER! What am I missing?!
+The Change Pyramid
+One of the concepts from Anatomy of Peace is called the Change Pyramid. Real simply, the idea is to build systems and processes (or training) that help people do the right things, rather than complaining when they do the wrong things.
+90% Make it easy to do the right things (Easy, Enjoyable, Effective)
+10% correcting wrong things
+“Correction rarely works with people.” (paraphrase) But it’s so natural to try! This may be my big aha from this book. And a blinding flash of the obvious! The problem of dealing with autonomous people. “Helping things to go right.”
+I’m liking this concept of helping people to have things go right. I’m have this “Yes, right, that’s the answer” feeling deep inside. Exciting. And I also don’t think I know how to do that, which is frustrating, but I also think I’ve experienced it, which is exciting again. Wow, that’s a lot of challenge and contradiction! OK, I’m looking forward to seeing where this goes…
+It’s different, but I sure think it’s related to Making things Natural. Easy? Probably not. Worth it? Absolutely! Isn’t this a core concept of both User Interface and Training?
+From the Jobs movie.
+“I think you believe that the computer, or the Walkman, or whatever it may be, should be a natural extension of the individual, and it’s that mission, that devotion to quality”
+— Jony Ive (the movie characters, perhaps not the real one)
+This quote, whether it’s really from Jony Ive or not, still gets to me every time I read it. Isn’t this a calling for all product designers, including software designers and especially user interface designers?
+Four Dreaded Words
+“I thought we decided”
+If you’ve visited me in the past few years, you’ve seen this sign on my door. We’re constantly looking at how to do meetings better, but this was one of our motivators. We had so many meetings where the first segment of each was a rehash of the previous meting, trying to remember what decisions were made.
+What’s the right answer for documenting meeting decisions, action items, information disseminated, etc.? I don’t know, but we’ve sure found a lot of wrong answers 🙁
+Is this just an age thing? Seems there is such a demand and audience for video content. Video on your phone, video on web sites, etc. OK, I’m not anti-video per se, but video demands a big chunk of time before I can tell if it’s interesting. Video just can’t be skimmed! You want to make video better? Give me a little text around it that tells me what I’m going to see. Then, within the first few (very few) seconds of the video itself, convince me it’s worth it.
+And yet, I know, there is great stuff I’m missing. I need a “this is worth it” pre-filter. Got one?
+Recently, a few Church IT people in the Atlanta area had a local roundtable. One of the discussion topics was Dropbox alternatives. What we quickly discovered was that people had lots of different reasons for considering alternatives!
+Why do people like Dropbox? Quite simply, it works and it’s easy to use. If you haven’t read this article from a few years back, written by a competitor, it’s worth your time. Some 20/20 Hindsight: Excellent lessons from Syncplicity vs. DropBox!
+So, given that it’s easy and it works, what are the issues that make people want to change? This is not the exact list from the CITRT conversation, it’s just a list for discussion.
+- Higher security than Dropbox. This one comes up a lot. People have a concern about Dropbox security
+- Integration with file server files and directories
+- Primary on-site storage, with replication to cloud [vs. the other way around]
+- True collaboration: multiple people working on same data item simultaneously
+- Remote disconnect of sharing (i.e., lost BYOD device)
+- Confusion when private accounts and corporate accounts are brought together
+- Better management of backups and archiving; protection from accidental deletion
+There are probably just as many things that people want to keep from Dropbox, including:
+- “hands off” connect, disconnect, reconnect, whenever connectivity is available
+- Ease of sharing folders and files. Easy to add sharing, easy to remove
+- Low resources on the client
+- Access from any device, any type of device [subject to security credentials]
+- A cheap backup solution — replicate your files across multiple devices easily, plus the cloud storage
+- Low cost (or free) for the needs of many users
+What are YOUR reasons for wanting to change? What have you found that meets your needs?
+Alternate question: how much of this need is a problem of users, or data usage, rather than of technology? If good security practices were followed, would most of the problems go away?

@@ -1,0 +1,30 @@
+Comparing Software Deployment Terms
+- Applications: A language that breaks a program down into discrete objects with clearly defined functionality
+- Databases: Used to display pages within Web browsers
+- Object-oriented language: Used to control the appearance and behavior of Web sites
+- Data Manipulation Languages:A language that uses a set of tags or special characters as containers for text and graphics
+- Markup Languages:A file composed of records and fields with the ability fir searching, sorting, recombining, and other functions
+- Scripting Languages:Original markup language used for complex document description
+- SGML:Enables the exchange of data between applications
+- HTML:A program designed to assist in the performance of a specific task
+- DHTML:A language based on a host language and has reduced functionality
+- XML:A language used to specify and construct the data of a database and to perform queries and updates
+Software deployment consists of the activities that make a software system available for use.
+The general deployment process consists of several interrelated activities with possible transitions between them.
+These activities can occur at the producer site or at the consumer site or both.
+Because every software system is unique, the precise processes or procedures within each activity can hardly be defined.
+Therefore, "deployment" should be interpreted as a general process that has to be customized according to specific requirements or characteristics.
+A brief description of each activity will be presented later.
+Principle Based Structure
+The challenge of moving computer programs from one machine to another and having them still work when they get there is the topic of software deployment.
+Though it is a part of the field of Software Configuration Management (SCM), it has not been a subject of academic study until quite recently.
+The development of principles and tools to support the deployment process has largely been relegated to industry and system administrators.
+This has resulted in a large number of often ad hoc tools that typically automate manual practices but do not address fundamental issues in a systematic and disciplined way.
+This is evidenced by the huge number of mailing list and forum postings about deployment failures, ranging from applications not working due to missing dependencies, to subtle malfunctions caused by incompatible components. Deployment problems also seem curiously resistant to automation: the same concrete problems appear time and again.
+Deployment is especially difficult in heavily component-based systems because the effort of dealing with the dependencies can increase
+linearly with each additional dependency.
+This module describes a system for software deployment that addresses many of the problems that plague existing deployment systems.
+An overview of existing systems is given and the limitations that motivated this research is discussed.
+Software deployment is the problem of managing the distribution of software to end-user machines. That is, a developer has created some piece of software, and this ultimately has to end up on the machines of end-users. After the initial installation of the software, it might need to be upgraded or uninstalled.
+Presumably, the developer has tested the software and found it to work sufficiently well, so the challenge is to make sure that the software works just as well, i.e., the same, on the end-user machines. I will informally refer to this as correct deployment: given identical inputs, the software should behave the same on an end-user machine as on the developer machine.
+This should be a simple problem. For instance, if the software consists of a set of files, then deployment should be a simple matter of copying those to the target machines.

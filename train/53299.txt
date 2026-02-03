@@ -1,0 +1,57 @@
+[ssh (Putty) ]
+[Tutorial - Unix]
+[Tutorial - PC]
+HTML (HyperText Markup Language) is the language
+of the World Wide Web (WWW).
+It is relatively easy to use and has a short learning curve.
+You can create web pages on mode using a text editor such as pico,
+and post them to the web via your mode account by following the instructions below.
+Here is what the code of a bare-bones web page created with pico looks like:
+The above code will produce an empty web page as seen below:
+Now let's learn something about HTML code. The first thing to note is that the language relies heavily
+on what are known as "tags". For example, the tags that denote the start and end of an HTML document are
+<html> and </html>. Everything between the start and end "html" tags is considered to be part
+of the HTML document.
+Let's expirement with the "title" and "body" tags by placing some text between the start and end
+tags of each type:
+Take a look at the results:
+Notice that the text that is between the "title" tags appears in the blue bar on the top of the
+browser window - the title of your web page. The text that was entered between the "body" tags appears
+in the main window of the web browser.
+Now, let's learn about many other HTML tags and their use. Then we will incorporate them into
+our source code and show what a web browser would display.
+- <html> source code text </html> - Indicates start and end of an HTML document
+- <head> heading information </head> - Indicates start and end of heading information
+- <title> document title </title> - Contains the document title, displayed in web browser's titlebar
+- <body> document body </body> - Contains the main contents to be displayed in web browser
+- <p> paragraph of text </p> - Defines one paragraph of text; ending
+- <br> - Inserts a line break; no ending tag
+- <hr> - Inserts a horizontal rule; no ending tag
+- <b> bolded text </b> - Text between tags will appear bold
+- <i> italicized text </i> - Text between tags will appear in italics
+- <a href="URL_or_path_relative_to_web_page/file_name.html"> hyperlink </a> - Text between tags
+will link to URL or html file on your mode account
+- <img src="path_relative_to_web_page/file_name.gif(jpg)"> -
+Inserts specified image file on your mode account into page; no ending tag
+Now let's incorporate some of these new tags into our web page; you should be able to
+figure out their usage.
+And the results ...
+One interesting thing to note from above is the use of "White Space".
+All combinations of white space (spaces, returns, and tabs) are considered to be one blank
+space! That is why we must explictly enter in line breaks and paragraph breaks with
+tags. Note how this is demonstrated above.
+Finally, to post web pages via mode, make sure you place
+your HTML source code inside of your public_html directory on your
+mode account. For example, say you have made a web page containing
+your final report called "final.html", and it is located within your
+public_html directory. To view it over the web, simply point your
+web browser to: http://mode.lanl.k12.nm.us/~ch099abc/final.html
+, where ch099abc is your login name.
+Note, if you point your web browser to http://mode.lanl.k12.nm.us/~ch099abc
+, it will by default display a file called "index.html".
+In order to view this page, you will need to create and place it
+into your public_html directory. This will be the first page users
+come to see your work on the Internet. You should make this file
+a easily navigated page that allows the visitor to see your work,
+as well as your Challenge related interests and activities.
+Questions? e-mail: consult

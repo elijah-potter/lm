@@ -1,0 +1,42 @@
+- 18 students
+- 28 lessons
+- 0 quizzes
+- 10 week duration
+- Installing Anaconda and running a sample Python Program
+- How to use the Print function in Python?
+- Arithmetic Operations in Python
+- Running a Web Server using Python in Spyder
+- Input Output in Python
+- Starting Plots in Python
+- For loop in Python
+- Installing and running DJango
+- Linear and Polynomial Regression using Python
+- Some Problems on Lists
+- Creating Classes in Python
+- Inheritance in Python
+- How to implement Multiple Inheritance in Python
+- Using Flask-1
+- Lists in Python
+- Lists in Python — 1
+- Sorting of Lists
+- Lists in Python — Insertions
+- How to make a list in python and save it in files ……
+- Importing Excel Files in Python
+- Mailer in Python
+- How to add a simple view to a Django site?
+- Python Print and I/O questions
+- Print answers
+- If then else in Python
+- Summation of Series
+- Python Print Assignment
+- Loop Assignments
+Installing Anaconda and running a sample Python Program
+Machine Learning is a term from the 1960s, composed of two words:
+1. Machine meaning a computer, robot or other devices
+2. Learning an activity, event patterns, etc
+Use of Machine Learning. Machine Learning would mean training a machine system (software and/or hardware) to learn as human.
+To program such a system we can use the Python Programming Language.
+To run Python and work further on Machine Learning we need to install the Anaconda Software & IDE. Its available for download at:
+Spyder is the Anaconda IDE for working with Python.
+It is installed by default with Anaconda.
+You can simply start Anaconda and run programs there:

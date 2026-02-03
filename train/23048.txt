@@ -1,0 +1,25 @@
+One topic that seems to generate a lot of discussion in the TechRepublic forums is the proper education for a programmer. I have come to believe (largely influenced by these discussions) that there should be two educational tracks for software programmers: a true computer science program that focuses on a very mathematical, theoretical approach to programming, and a hands-on route that educates people to be real-world programmers.
+Today, I will present what my ideal course listing for such a path might be. I do not think that this type of course would necessarily be taught in a college setting, since it is more vocational training than theory study (I also think colleges have no business granting MBAs either). However, the program will be split into the traditional eight semesters minus the general education requirements, and electives will only be available in the final year of study. (Note: I hoped to have some timings on Perl vs. C# this week, but I had to postpone it. Soon… I promise!)
+Introduction to Programming
+This course focuses on the basic structure of a program: control statements, looping, conditions, and so on. It would ideally be taught in a very simple, trickery-free procedural language, one that supports (but does not need to use) OOP. It would also need to enforce good programming habits. I suspect that (unfortunately) VB.Net with Explicit and Strict turned on would be the best fit for this, or possibly Ruby (I do not know enough about it to say for sure). Pascal would also be a good candidate for this course.
+Symbolic Logic 1
+This course teaches the basics of constructing a formal logic proof or disproof.
+The focus of this course is collecting the business requirements of a project, learning who the key stakeholders are and getting information from them, getting in touch with actual users to determine their needs, and so on. Heavy emphasis is placed on learning the “why” of the project, even when the customers are focusing only on the “how.” The course will also teach you how to present the best approach to a project even though it may not be what the customer thinks they want or need.
+Networking and System Administration Basics
+A course that helps programmers understand the environment that their software will be running in, particularly in the modern world, is needed. This course teaches students enough basic networking and system administration to be aware of common problems in a production environment and how to anticipate them in code. Special focus will be placed upon permissions and TCP/IP troubleshooting.
+Usability and Accessibility
+Good programmers need to be aware that all users have certain needs in common (usability) and that some users have special needs (accessibility). This is a code-free course that explains the fundamentals of how good interface design serves the needs of the users.
+Symbolic Logic 2
+An advanced course in symbolic logic.
+This course takes the student through an exploration of sound database design. There will be information about relational databases and normalization, as well as learning about the different needs of an application and reporting. The proper use of indexes, primary keys, views, stored procedures, and so on will receive particular focus.
+Using an extremely stripped down language (similar to EdScheme), the students will spend a semester building a number of basic libraries to extend a language that is restricted to simple primitive types and control structures to be a full-fledged language.
+Object-Oriented (OO) Design
+Students will be taught OO design and programming techniques. There will be significant time discussing the proper architecture of OO projects and how to leverage OO techniques to work in a team environment.
+Taught in C, this course will walk students through common data structures such as linked lists, stacks, queues, graphs, trees, etc.
+Building upon the Requirements Gathering course, this course teaches students how to translate business requirements into technical specifications. Special attention will be paid to the differences between how business users express ideas and how technical people understand ideas.
+Students will build data-driven applications, combining their knowledge of OOP, databases, data structures, and interface design to construct simple client/server applications.
+Basic Web Design
+In this course, students learn about the need to perform data validation, and techniques to perform it. Basic regex instruction will be provided as well.
+A beginner’s course on the C++ language with an emphasis on working with objects and writing bulletproof code.
+Students will be shown how to create data models for reporting and to create reports. Extra attention will be placed upon discerning the best way of displaying data to the user in an easily understood and consumed manner.
+Stay tuned: Next week I will post part two of this series.

@@ -1,0 +1,18 @@
+November 26, 2012
+The History of the Internet Project
+I've started a new project: The History of the Internet Project.
+We are trying to build a series of short videos containing primary source content about the internet in the years 1965 through 1995 (when the world wide web began to grow.)
+Our focus is more on the people and ideas - and their interactions - than on how the technology works.
+We plan roughly 200 episodes! They will be published as we do them.
+All of this will be under a Creative Commons license, including the raw takes.
+November 9, 2012
+What is the real cost of changing to internet based telephone?
+It appears that the relic of Ma Bell wants to drive a final nail into the coffin of traditional Plain Old Telephone Service.
+There is no doubt that packet-switched voice (mainly in the form of VoIP) is less expensive, or seems to be less expensive, then the old circuit switched calls of yesterday.
+It is, however, worthwhile to consider what we have lost.
+Why is packet-based voice seemingly less expensive?
+There are three primary reasons:
+- Packet switching systems, such as the internet, are giant statistical multiplexers. As such the silences of some data (or voice) flows can be utilized to carry the traffic of other flows. And because the internet is both voice and data the set of flows that go into the statistical mix is large and, on average, things work out. However at times of heavy load, system stress, or simply whenever the gods of statistics and probability feel like it, there are bursts of overload. And when the internet has such bursts, data is discarded resulting in bad voice quality or delay.
+- The internet has more relaxed time scales than the old Ma Bell telephone network. This means that the delay between the time a word is spoken and that word is heard is often longer on the internet than it was on Ma Bell's system. It also means that that delay varies from word to word. On Ma Bell's phone network timing was like a metronome - very regular and predictable. On the internet time wobbles. This results in jagged sound quality and people getting into unnatural my-turn-your-turn modes of conversation.
+- Compared to the rich matrix of diagnostic and testing facilities that were built into Ma Bell's network the internet is a toy. It is almost shameful how little attention has been paid to equipping the internet with machinery for detecting and repairing problems. Ma Bell was a master of solid service. We saw last week how people in New York lined up at the few remaining Ma Bell pay phones because their mobile phones and internet based phones were unusable. There is a real cost we are paying for this lack of attention to diagnostics, troubleshooting and repair. And it is a cost that will increase as we place more and more lifeline grade, health and safety, systems onto the internet. Someday we will have to pay the price. That payment will come in the form of harm to people and property and, eventually, to retrofit the internet.
+The move of our voice telephone system from time division multiplexing/circuit-switched technology to packet switched technology is not without costs. But we have failed, or refused, to recognize those costs.

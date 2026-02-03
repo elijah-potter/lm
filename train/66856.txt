@@ -1,0 +1,14 @@
+Marble runs are somehow incredibly soothing to play with and watch, with the gentle clack of the marbles and the smooth, predictable motion. Sadly for some, they never quite got enough time to enjoy them in school. Luckily, [Fernando Jerez] is here with a way to procedurally generate marble runs you can actually play with!
+[Fernando] does a great job of explaining the mathematical process of generating the marble runs, using the method of random space filling curves. A maze is drawn on a grid, with points on the grid acting as walls. Each grid cell is then given a value based on points on its corners, and these values then translate into directions of travel. This creates a path through the maze. Scaling this path along the Z-axis, and then replacing the path with a marble track creates the run. It’s then a simple matter of adding a shaft to the loop with a screw to drive marbles back to the top of the run, and you’re all set!
+With both animated explanations and actual 3D printed marble runs, [Fernando] demonstrates the concept well. We’d love to print a few runs of our own, and we can’t help but think there’s other great applications for the mathematics behind this concept. If you’re wise to it, drop it in the comments. Otherwise, check out these exquisite creations we’ve featured before!
+7 thoughts on “Procedurally Generating Marble Runs”
+Neat! As it’s basically a non-branching 2D maze generator it doesn’t allow for the marble run to cross over/under itself or produce things like a spiral, but it’s great for easily creating relatively complex runs for a given space. I bet the algorithm could be extended into 3D.
+You could “fake” It by moving pairs of corner out over lower sections as a post generation step.
+That looks like he used the same math concepts as AlphaPhoenix in his snake AI: https://invidio.us/watch?v=TOpBcfbAgPg – the Hamiltonian Cycle
+Jelle’s Marble Runs: https://www.youtube.com/channel/UCYJdpnjuSWVOLgGT9fIzL0g
+Home of the MarbleLympics.
+One of my favorite things.
+Looks very nice to play with. I would like to print one myself so hopefully he will release the code for this.
+A beautiful idea and a very neat implementation!
+Kudos to Fernando!
+Please be kind and respectful to help make the comments section excellent. (Comment Policy)

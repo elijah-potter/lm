@@ -1,0 +1,22 @@
+How to Use Pop() in Python to Remove List Items
+To delete any particular item from the data collection we use the
+pop() method, we pass the item index as an argument in pop() method, and it removes the item and returns the object.
+Python List pop() Method Syntax
+Check out the pop() method syntax below:
+|index||It’s an optional value and this is the item’s index number from the list to be removed. If you don’t pass the index number of the item then the last element from the list will be removed.|
+users = ["john", "lisa", "maria", "ava"] removeElement = users.pop(1) print(removeElement) # output = lisa
+As you see in the example, we declared the list of users in an array form and added some users in it. Then declared the pop() method and passed the index number of the user and saved in the removeElement variable and lastly, we are printing the result.
+We need to understand a few things regarding the list pop method in Python. The pop method starts the calculation from the 0th index not from the 1st in case if you are willing to remove the 2nd item from the list then you have to supply the 1 index number to the list pop() function in Python.
+The Non Existing Index in Pop() Method Example
+In this example i will show what happens when you pass the non-existing index in the list pop() method.
+users = ["john", "lisa", "maria", "randy", "ali"] removeElement = users.pop(6) print(removeElement)
+Check out the output below:
+Traceback (most recent call last): File "main.py", line 2, in <module> removeElement = users.pop(6) IndexError: pop index out of range
+When you supply non-existing index in the pop method in this condition, it will throw IndexError: pop index out of range exception.
+The Negative Index Number pop() Method Example
+In this example, we will check out what will happen if we supply negative index (-1) in pop() method.
+numList = [9, 13, 31, 20, 33, 44] print('Original list: ', numList) remove_item = numList.pop(-1) print('New list after negative index = -1: ', numList) print('The item removed: ', remove_item)
+Following will be the output for above programme:
+Original list: [9, 13, 31, 20, 33, 44] New list after negative index = -1: [9, 13, 31, 20, 33] The item removed: 44
+Now as you can see in the python programme we have passed the -1 index as an argument in the given above programme. The default value for the pop() method is -1 and it returned the last element from the list.
+Finally we are done with Python list pop method tutorial, if you liked this tutorial then don’t forget to share it with other.

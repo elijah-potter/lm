@@ -1,0 +1,46 @@
+In a perfect world, we’d all take our perfectly clean data, feed it to a machine learning model, and get amazing results. Unfortunately, algorithms aren’t accurate 100% of the time. And in business, a high error rate can potentially cost an organization millions of dollars.
+So, how do you go about understanding a classification algorithm’s performance so that you can better understand its results?
+Enter: the confusion matrix.
+With the help of a confusion matrix, you can measure the factors affecting your classification model’s performance, precision, and accuracy—enabling you to make smarter, more informed decisions.
+In this guide, we’ll explore how to build a confusion matrix and the potential value it can contribute to your business. Let’s get started!
+What Is a Confusion Matrix?
+Don’t worry—the confusion matrix isn’t as complex as the name makes it seem.
+Also known as an error matrix, a confusion matrix is a table that helps you visualize a classification model’s performance on a set of test data for which the actual values are known. Confusion matrices are an effective tool to help data analysts evaluate which functions an ML model performs well, and which it performs not so well.
+Outcomes of a Confusion Matrix
+A confusion matrix helps measure performance where an algorithm’s output can be in two or more categories—typically positive or negative, yes or no. Each table consists of four cells, each representing a unique combination of predicted and actual values. The four potential outcomes are:
+- True Positive (TP): Also known as sensitivity, TP means that a positive prediction was given, and it was true.
+- True Negative (TN): Also known as specificity, TN means that a negative prediction was given, and it was true.
+- False Positive (FP): Also known as Type-I error, an FP prediction is positive, but the actual value was negative.
+- False Negative (FN): Also known as Type-II error, an FN prediction is negative, but the actual value was positive.
+How to Create and Calculate a Confusion Matrix in Eight Steps
+Now that you have an idea of what a confusion matrix is, let’s look at the basic process of calculating confusion matrices for binary classification problems.
+1. Create a Table
+To get started, construct a table with two columns and two rows, with an additional column and row for labeling your chart. You can set your table with the predicted values on the right side, and the actual values on the left side.
+2. Enter the Predicted Values
+Fill the chart with the data. If you want to predict the number of correct and incorrect answers from a data set that contains 50 questions, you can have two outputs, either “correct” or “incorrect.” If you predict 40 questions correct and 10 questions incorrect, you enter these values as the outputs in the columns for your predictive “correct” and “incorrect” values.
+3. Enter The Actual Values
+Now, enter the actual values in the matrix. These actual outputs become the “true” and “false” values in your tables. The “true negative” and “false negative” values are the actual negative results, while the “true positive” and “false negative” values are the actual positive outcomes.
+4. Calculate the Accuracy Rate
+The classification accuracy rate measures how often the model makes a correct prediction. It can be calculated as the ratio of the number of correct predictions and the total number of predictions made by the classifiers.
+It is calculated using the following formula:
+Accuracy = (TP + TN)/ (TP + FP + FN + TN)
+5. Determine the Misclassification Rate
+Also referred to as the error rate, the misclassification rate describes how often the classifier yields the wrong predictions. It’s calculated as the number of incorrect predictions over all the numbers of predictions made by the model.
+The formula is as shown below:
+Error Rate = (FP + FN)/ (TP + FP + FN + TN)
+6. Determine The True Positive Rate (Recall Value)
+Also known as the recall value, the true positive rate is the actual observations that are predicted correctly. To calculate the true positive rate, divide the total number of positive outcomes that are predicted correctly by the total number of actual positive outcomes.
+Recall Rate = TP/ (TP + FN)
+7. Calculate the Precision Rate
+Precision defines the actual number of correctly predicted values that came out to be positive. Simply put, out of all the positive values predicted correctly by the classifier, how many were true. It can be calculated as follows:
+Precision Rate = TP/ (TP + FP)
+8. Determine the F-measure
+It’s hard to compare two models with high call and low precision or vice versa. So, to solve this issue, we can use F-score to measure Precision and Recall at the same time. It utilizes the harmonic mean instead of the arithmetic mean. The harmonic means is used because it’s not sensitive to extremely large values.
+It’s calculated as follows:
+F-measure = (2* Recall*Precision)/ (Recall + Precision)
+Why Are Confusion Matrices Important?
+Data analysts and engineers who develop ML systems use confusion matrices to determine how well a model is performing. But, how do you know if the model has a strong positive impact on your business?
+Profit-sensitive scoring takes into account not only a model’s accuracy, but how the accuracy impacts the business’s bottom line. The goal of profit-sensitive scoring is to analyze the costs and gains associated with correct and incorrect classifications and use those findings to maximize profit.
+At this point, the confusion matrix shouldn’t be as confusing to you as it was before!
+Using confusion matrices not only gives you more detailed insight into how your algorithms are performing, they can also help ensure you minimize costs and maximize profits for your enterprise. Sounds pretty good, right?
+If you’d like to learn more about profit-sensitive scoring and the other positive impacts confusion matrices can have on your team, check out our whitepaper, Talking Value: Optimizing Enterprise AI with Profit-Sensitive Scoring.

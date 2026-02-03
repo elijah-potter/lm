@@ -1,0 +1,8 @@
+SQL script files are text files that contain SQL statements, and are useful to execute the same SQL statements repeatedly. Script files can be built manually, or they can be built automatically by database utilities. The Unload utility (dbunload), for example, creates a script file consisting of the SQL statements necessary to recreate a database.
+Running a SQL script file without loading
+Running a SQL script file using the Interactive SQL READ statement
+Running a SQL script file in batch mode (command line)
+Loading a SQL script from a file into the SQL Statements pane
+Writing database output to a file
+Discuss this page in DocCommentXchange.
+|Copyright © 2014, SAP AG or an SAP affiliate company. - SAP Sybase SQL Anywhere 16.0|

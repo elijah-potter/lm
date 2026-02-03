@@ -1,0 +1,8 @@
+Hash per second
+Hash per second is an SI derived unit representing the number of double SHA-256 computations performed in one second, referred to as hash rate. It is usually symbolized as h/s (with an appropriate SI prefix).
+Use in hardware specifications
+The hash rate is the primary measure of a Bitcoin miner's performance. In 2014, a miner's performance was generally measured in Ghash/s, or billions of hashes per second.
+The hash/s unit is also part of a common measure of a Bitcoin miner's electric efficiency in the term watts/Ghash/s, denoted as W/Ghash/s. As 1 watt is equal to 1 joule/s, this measure can also be expressed as J/Ghash, or joules per 1 billion hashes.
+Bitcoin network hash rate
+The hash/s is also used in calculations of the Bitcoin network's overall hash rate. Because each miner or mining pool only relays a solved block to the network, the overall hash rate of the network is calculated based on the time between blocks. While not an accurate measure of network hash rate at any given instance in time, measurements over longer periods can be considered indicative and similar calculations are used in Bitcoin's difficulty adjustment.
+In January 2015, the network hash rate was around 300 Phash/s, or 300 quadrillion hashes per second.

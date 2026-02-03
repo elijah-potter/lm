@@ -1,0 +1,30 @@
+What are the features and limitations of Hive?
+Some of the limitations of Apache Hive are as follows:
+- Apache hive does not offer real-time queries and row level updates.
+- Latency of Apache Hive queries is generally very high.
+- Limited subquery support.
+- No support for materialized view.
+- update or delete operations are not supported in hive.
+What is hive enumerate and explain the features of hive?
+Hive is designed for querying and managing only structured data stored in tables. Hive is scalable, fast, and uses familiar concepts. Schema gets stored in a database, while processed data goes into a Hadoop Distributed File System (HDFS) … Hive UDFs can be defined according to programmers’ requirements.
+How does Apache Hive work?
+How Does Apache Hive Work? In short, Apache Hive translates the input program written in the HiveQL (SQL-like) language to one or more Java MapReduce, Tez, or Spark jobs. … Apache Hive then organizes the data into tables for the Hadoop Distributed File System HDFS) and runs the jobs on a cluster to produce an answer.
+Where is Apache Hive used?
+Hive is a data warehouse infrastructure tool to process structured data in Hadoop. It resides on top of Hadoop to summarize Big Data, and makes querying and analyzing easy. This is a brief tutorial that provides an introduction on how to use Apache Hive HiveQL with Hadoop Distributed File System.
+What is the hive?
+The Hive was a website that served as an information-sharing forum for individuals and groups interested in the practical synthesis, chemistry, biology, politics, and legal aspects of mind or body-altering drugs. … At its peak, the Hive had thousands of participants from all over the world.
+What is Hive in Java?
+Apache Hive is a data ware house system for Hadoop that runs SQL like queries called HQL (Hive query language) which gets internally converted to map reduce jobs. … Hive was developed by Facebook. It supports Data definition Language, Data Manipulation Language and user defined functions.
+What is importance of hive?
+Hive allows users to read, write, and manage petabytes of data using SQL. Hive is built on top of Apache Hadoop, which is an open-source framework used to efficiently store and process large datasets. As a result, Hive is closely integrated with Hadoop, and is designed to work quickly on petabytes of data.
+What are the features of HBase?
+- Linear and modular scalability.
+- Strictly consistent reads and writes.
+- Automatic and configurable sharding of tables.
+- Automatic failover support between RegionServers.
+- Convenient base classes for backing Hadoop MapReduce jobs with Apache HBase tables.
+- Easy to use Java API for client access.
+What is partitioning and bucketing in hive?
+Hive Partition is a way to organize large tables into smaller logical tables based on values of columns; one logical table (partition) for each distinct value. … Hive Bucketing a.k.a (Clustering) is a technique to split the data into more manageable files, (By specifying the number of buckets to create).
+What kind of applications is supported by Apache Hive?
+Hive supports all those client applications that are written in:

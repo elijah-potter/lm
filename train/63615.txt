@@ -1,0 +1,10 @@
+Work With Multi-Band Rasters in Python
+OverviewTeaching: 40 min
+Exercises: 20 minQuestions
+How can I visualize individual and multiple bands in a raster object?Objectives
+Identify a single vs. a multi-band raster file.
+Import multi-band rasters into Python using the
+Plot multi-band color image rasters in R using the
+A single raster file can contain multiple bands or layers.
+earthpy.stack()function to load all bands spread across individual files into Python
+Individual bands within a stack can be accessed, analyzed, and visualized using the same functions as single bands.

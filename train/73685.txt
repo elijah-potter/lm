@@ -1,0 +1,59 @@
+Physics is a physical world simulator and playground -- you can add squares, circles, triangles, or draw your own shapes, and see them come to life with forces (think gravity, Newton!), friction (scrrrrape), and inertia (ahh, slow down!).
+Ideas to try
+- Build a machine that sorts different sized balls in to two buckets, large and small, with no ball jams.
+- A cyclic mechanism for lifting balls from the bottom of the screen to the top, again and again.
+- Try dropping 2 different mass objects at the same time.
+- Experiment with pendulums of different lengths and masses.
+- Ping pong, can you make a device that hits a ball back and forth across the screen?
+- Try building a mechanical binary clock.
+- Convert rotation into parallel motion using pistons.
+- Experiment with touching one motorised circle against one pinned circle of various sizes.
+- Try building a rag-doll puppet and make it dance in a convincing way.
+- Use just links and circles to make a structurally sound Eiffel Tower.
+- Try building a ratchet mechanism.
+- Try building an analogue clock face where the min hand goes around 60 times for each hour.
+- Modify the program itself: Modifying Physics
+Stop/Start: allows you to stop time and start it again, allowing you to build constructions without them collapsing while you work. Note that since version 5 you can now use the Grab tool while time is stopped to easily re-arrange the position of objects. <Ctrl>+space
+Draw: click and hold to draw any shape you'd like! <Ctrl+D>
+Circle: circles of any radius. Click (center) drag and release (outer edge). <Ctrl+C>
+Triangle: triangles (equilateral) of any size and initial rotation. Click (center of base) drag and release. <Ctrl+T>
+Box: rectangles of any dimension. Click (corner) drag + release (opposite corner). <Ctrl+B>
+Polygon: as many sides as you would like. Draw your own N-gon. Click, drag and release for each point, to end return to the start point. <Ctrl+P>
+Grab: drag existing objects around with the mouse. <Ctrl+G>
+Motor: click an object to pin and drive it with clockwise rotation. It is easiest to stop the simulation, place your object, add its motor, and resume the simulation again. <Ctrl+M>
+Pin: pin a shape to the screen, it can rotate about the pin. If you want to lock a shape in place, use two or more pins to stop it rotating. <Ctrl+O>
+Joint: connect two objects together with a rod. Click on any object, drag to another object and release to create the joint (each end of joint allows rotation). <Ctrl+J>
+Erase: click on an object to erase it, or click and hold to draw a line of destruction--erasing everything in its path! <Ctrl+E>
+|Hints and tips: Single clicking (no drag) with the circle, triangle or box tool, will add a default sized shape. Once you have used a shape tool, it remembers the last shape you made with it, a single click will add a clone of that last shape.|
+There are quite a few code layers to contend with. A regular Python Activity acts as a Sugar wrapper to Physics which is written using OLPCGames which itself wraps Pygame, Physics then uses Elements as a wrapper for Box2D.
+Please do post videos with feedback, talking while you're trying something for the first time is particularly insightful as it can highlight those initial expectations for user interface behaviour. Bonus points to Dennis for being brave enough to be part of the first wave!
+- Added support for new toolbar design for Sugar 0.86 (old toolbars still work for Sugar 0.84 and back)
+- Objects can now be moved with the Grab tool while the simulation is paused!
+- Tool code cleanup and refactoring
+- Includes latest translations
+- Many thanks go to Peter Froehlich, Akash Gangil, Craig Macomber, and the translation team.
+- Include latest translations
+- License text updates (needed for Fedora/ SoaS Mirabelle)
+- Journal state saving now supported!
+- MIME type support added so Physics Journal entries can be sent to others (application/x-physics-activity)
+- Fixed Activity title text input so you can name your work correctly (olpcgames glitch)
+- New Grab toolbar icon (hand)
+- New Polygon toolbar icon (irregular polygon shape)
+- Cleaned up toolbar order
+- Single click behaviour so that Circle, Triangle, and Box tool add default sized shapes
+- Single click behaviour for all tools, so that a subsequent single click creates a clone of the last shape made with that tool.
+- Erase tool now erases (one by one) pins/joints/motors from a shape, before finally removing the shape itself.
+- Using <Ctrl>+key for all keyboard shortcuts (was causing PyGame input focus issues when typing a title)
+- Using the Sugar standard arrow cursor for the PyGame canvas (well, a fake one)
+- Cleaned up the Activity icon
+- Upgraded to new version of Elements 0.13
+- Upgraded to new version of Box2D
+- Picked up Pootle (July 3rd) translations
+I really struggle to get any of the motor actions to work. Can you post some videos of your own successes? It's hard to build curriculum when you don't know how something is supposed to work.
+- Migrated to Sugar Labs
+- Motor toolbar button added
+- Pin toolbar button added
+- Toolbar reworked for displaying state and keyboard accelerators
+- Stop/play toolbar button added
+- Prevented very small freehand and polygon shapes to prevent Box2d crashes
+- Original created by Brian Jordan, Alex Levenson, Chris Hager

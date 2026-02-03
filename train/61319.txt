@@ -1,0 +1,19 @@
+A server or device which connects computers, printers, scanners and other terminals to a LAN (local area network) or WAN (wide area network) is called Terminal server. In terminal server there is no need to have a separate modem or a network interface because they are attached with a server which provides it to all the connected desktops. White virtual desktop is a sits on a real computer and is controlled by a specific computer server. A server machine can handle many virtual machines which although work independently but still are controlled by a computer station. Virtual desktop too works like a regular computer you can run all the programs documents can be printed but it is located on a real computer.
+How Terminal Server And Virtual Desktop Works?
+Terminal servers work as a host to the multiple hardware, like printers and computers with a single point connected with the host gadgets. It is also known as the name of serial server. Companies connect their devices to Ethernet LANs through a serial interface provided to them like RS232, RS422 and RS485. Different users can work with their own Windows desktop sessions on the terminal server. So it can be considered as a remote or a Multi User because it handles multiple systems at a time without any interruption.
+On the other hand a virtual desktop is stored on a server that is remote instead of locally. One can access the normal operating system running on the servers these can connect through the local area network but at first it seems to be more complicated than the ordinary desktop computers it reduces the installing of the software on each desktop and every desktop can use the software from the main server. There is no need of more hard drives because the data is available on the main server; it even consumes less power than the notebooks. It can maintain data more confidentially and high security and control.
+Advantages of Terminal Server:
+- With the help of terminal server desktops are provisioned more easily. Files like images can be organized in very short time because it becomes smaller.
+- There is no need to install every software like office, antivirus etc on each computer connected to it because it can be shared through terminal server.
+- All the connected users can connect to their main server and remote users can work away from their office too.
+Advantages of Virtual Desktop:
+- It is very economical because there is no need to spend money on buying the whole computer the consumption of power is also low.
+- It is very useful for managing because the employers can have an eye on their workers when they are working. They can monitor what programs are installed and are being used.
+- The users are unable to change the profile and setting because it locks the image of the desktop.
+- It is possible to allow the worker to use just the allowed files and folders and it is restricted on wiling files and folders.
+Disadvantages of Virtual Desktop:
+Although virtual desktops are very beneficial and it has solved many problems still there are many disadvantages of it.
+- Each end point needs the network bandwidth for supporting the traffic.
+- The graphics through the virtual desktops are not so good.
+- According to Brine Posey “There’s the issue of putting all your eggs in one basket,”.
+- According to another expert” If you’ve got all your desktops hosted on one machine, and that machine goes belly-up, then you’re dead in the water.

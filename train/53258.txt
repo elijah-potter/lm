@@ -1,0 +1,13 @@
+Now, I’m using Microsoft word to write these articles. These word processor programs are very useful when you writing something down. Sometimes, we heard someone was very familiar with these programs, such as word, can remember many short-cuts. Though I use this program frequently, I can’t remember many short-cuts. I can remember some short-cuts, such as “Ctrl+Z”, which means UNDO.
+The UNDO command is widely use in today’s program. You can see it almost everywhere. Besides the word processor program, you can find it in photoshop, in flash, or even in games. Eh, in games, this command isn’t called UNDO, it use another name SAVE.
+I think you should be familiar with this command. But, have you ever implemented this command in your application? Maybe, your application doesn’t need this kind of command, but you won’t deny the importance of this command. So, it’s worth to consider how to implement this command.
+In the GoF book, there is a pattern, which has much to do with this command, called Memento. The intent is as follows.
+Without violating encapsulation, capture and externalize an object’s internal state so that the object can be restored to this state later.
+–By GOF BOOK
+In my opinion, without practice, the definition is nothing. So, let’s write some code to implement this pattern.
+This little program will mimic the game command SAVA. Generally, we need to store some basic information about the role, such as the blood, the experience and so on. Do it the easy way, we will only store the blood and the experience, nothing more.
+Our demo will be looks like follows.
+This is a little game with no rules, just fight And you can save the characters state, including blood and experience, with the save button. Of course, you can load the states you’ve just saved. One more thing, the experience here can’t help you level up; you can take a look at the source code for its effect.
+The class diagram is as follows.
+The SaveManager class is used for manage the save state, and all the state of Character will be put into the CharacterState. When we want to save the character’s state, we just need to call the SaveManager.save, and pass the character’s state into it. Then, when we want to load it, call the load method of SaveManager.
+This is a basic application of this pattern. If you want to implement the UNDO and REDO commands, you may need a memento stack. How to use the stack depends on you program.

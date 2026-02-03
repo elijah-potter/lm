@@ -1,0 +1,46 @@
+When considering how to handle your organization’s mobile device data, encryption is a favored and effective method to use. There is a great security benefit to encrypting data on mobile devices—in fact, your company may already be doing it to add another layer of security to the organization.
+Cryptographic erasure (CE) is one of several methods of handling data, and it is a great option to consider due to its high effectiveness.
+Newer regulations such as the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA) sparked conversations around how data is used and data destruction practices, pushing companies to improve their data processing, protection, and privacy initiatives.
+Encryption and cryptographic erasure are two cost-efficient data security methods companies can implement to prevent a data breach. However, certain factors must be considered when deciding if these processes are enough protection for your mobile device data.
+What Is Encryption?
+Encryption is the procedure of converting data into a code to prevent unauthorized access. Encryption is achieved with an algorithm, which encodes a device’s data so it can only be deciphered with a corresponding encryption key. Essentially, the device’s data is locked away, and a key is provided to unlock it.
+As of 2021, only 5% of enterprise devices don’t have encryption enabled.
+What Types of Data Are Usually Encrypted?
+- Customer data
+- Employee data
+- Financial data
+- Healthcare data / Personally Identifiable Information (PII)
+- Intellectual property data
+What Is Cryptographic Erasure?
+Cryptographic erasure (CE) is the process of encrypting a device’s stored data first, then using a native command to discard the encryption key needed to access that stored data. This process ensures the device’s storage is impossible to decrypt and renders the data unrecoverable.
+With cryptographic erasure, companies no longer need to track data flows since the data always links to an encryption key. Additionally, cryptographic erasure allows the utilization of several keys, allowing companies to create unique keys based on the customer or file.
+How To Achieve Cryptographic Erasure
+1. Find and overwrite the encrypted keys and passwords. The encrypted data on the storage device must be accessed to have its encryption key removed through an API call.
+2. Verify full encryption of media. Utilized software must verify the key has been removed and replace it with a new key, rendering the encrypted data on the old key unrecoverable.
+3. Create a tamper-proof certificate. The cryptographic erasure software produces the certificate, confirming the encryption key and the encrypted data has been removed from the device. Completing this step is essential, as the certificate is documentation that the CE method was used. This information will inform future data audits.
+The National Institute for Standards and Technology (NIST) and the International Standards Organization (ISO) are two expert industry organizations recommending cryptographic erasure as a secure data destruction technique.
+What Are The Pros and Cons?
+Cryptographic erasure has become a standard security approach, as a large portion of today’s world conducts business digitally, requiring digital trust. Yet, some companies are hesitant to implement it. Let’s take a look at some pros and cons:
+- Cryptographic erasure only takes a few seconds to complete and can be done while devices are in transit or if an organization requires quick handling of data. It is faster than other traditional overwriting methods utilized by the Department of Defense (DoD) or NIST data destruction standards.
+- Proper implementation of the process can render data unrecoverable.
+- Cryptographic erasure is less expensive than traditional overwriting methods such as DoD and NIST.
+- Erased devices are still usable after cryptographic erasure, keeping their integrity and retaining warranties, if applicable.
+- Cryptographic erasure doesn’t actually destroy data; it just makes it inaccessible, meaning future technology could potentially recover the data since it was never destroyed.
+- Cryptographic erasure requires all data to be encrypted beforehand, which may not apply to a company’s entire mobile workforce. Companies may be required to integrate this process into their legacy systems, which can be difficult and time-consuming.
+- Even when primary encryption keys are deleted, there are often backups to that key, leaving the possibility for a data breach.
+- Self-encrypting storage drives can have implementation issues with this process if a company tries to use them.
+Overall, cryptographic erasure can be very effective when conducted correctly, but understanding the trade-offs is critical if it is the only data-handling method an organization uses. For the best results, pair this method with a form of data destruction like DoD- or NIST-compliant overwriting methods to maximize data security.
+Is Cryptographic Erasure Enough For Your Company?
+Encrypting data always provides an extra layer of security to your company data, and cryptographic erasure is an appropriate way to handle encrypted data when corporate-owned devices are retired.
+All companies have unique situations and needs, and cryptographic erasure may be the best solution for an organization. If encryption keys are managed correctly after devices are retired, it can be a reliable method of handling corporate data.
+Encryption and cryptographic erasure are great options to utilize if devices stay in your company’s control, but once a device leaves an organization, a data breach can occur if the device is not recovered. Cryptographic erasure does not erase data; it simply renders it inaccessible by removing the keys needed to access it.
+Weighing company risk tolerance and situational needs is critical when considering cryptographic erasure for your company.
+Mobile reCell’s Comprehensive Security Solution
+Although cryptographic erasure has been promoted as a faster alternative than traditional data destruction mechanisms, cryptographic erasure should not be the only method utilized to handle corporate data.
+Organizations should recover the device first when data-wiping devices, as corporate-owned IT assets access company networks and store confidential client information. Then companies can conduct cryptographic erasure and pair it with a robust overwriting process, like DoD or NIST data destruction, to maximize data security.
+Mobile reCell provides the go-to solution for corporate-owned mobile device recovery and uses the highest security level of data destruction based on the device’s data state.
+We offer a software-driven automated process that follows, verifies, and certifies DoD 5220.22 and NIST 800-88 standards for data destruction. Mobile reCell’s data-wiping process also includes ADISA-credited cryptographic erasure methods for devices. Every device processed by Mobile reCell receives a Certificate of Data Destruction, providing an audit trail for your organization.
+Our proprietary software provides visibility and detailed reporting through the entire device recovery process—device shipment tracking, functionality testing, NIST 800-88-compliant data destruction, cosmetic condition grading, and reselling or recycling.
+*While our third-party processing partner utilizes cryptographic erasure, learn about the several other data destruction methods available based on a device’s data state and its journey.
+Follow us on social media!
+See Mobile reCell's Recovery Platform in action.

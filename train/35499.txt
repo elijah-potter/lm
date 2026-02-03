@@ -1,0 +1,4 @@
+Q. How does a TV remote work? I know they use infrared light but that's about all.
+A. TV and other remotes generally use infrared light-emitting diodes to send out their signal. The LEDs are pulsed so that the signal can carry information. Different patterns of pulses are used for different functions.
+On the front of the TV, usually in the control area for the tuner, is a phototransistor or photodiode. The light pulses from the remote control and received and converted into electrical pulses. These pulses are amplified and shaped, then sent to a section of the tuner controller that decodes the pulse patterns and performs the selected functions in the TV.
+The fact that the light is pulsed helps to greatly increase the range of the remote, reduces battery drain, and helps make the system immune to interference from environmental light sources.

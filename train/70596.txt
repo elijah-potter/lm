@@ -1,0 +1,19 @@
+You can not select more than 25 topics Topics must start with a letter or number, can include dashes ('-') and can be up to 35 characters long.
+||3 weeks ago|
+|doc||9 months ago|
+|tutorial||3 weeks ago|
+|.gitignore||7 months ago|
+|LICENSE||8 months ago|
+|README.org||1 month ago|
+Bash (Bourne Again Shell) is a shell commonly used on GNU-Linux systems for multiple purposes. Knowing about bash is an enjoyable experience and a great opportunity to learn about computers, files, directories and programs.
+- Display files: 'less', 'head' and 'tail' commands
+- Learning about files and directories
+- Using rsync to copy files
+- Searching for files in the system
+- Comparing two files or directories: 'diff'
+- Using dd command to flash usb
+- Compress a pdf file
+- Searching and editing configuration files
+- Use package manager in Parabola GNU-linux: verify packages in cache
+- Removing packages in Parabola GNU-Linux
+- diff and patch

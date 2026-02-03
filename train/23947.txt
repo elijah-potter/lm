@@ -1,0 +1,3 @@
+Fluorometer vs luminometer - (Oct/29/2010 )
+What is the difference between a fluorometer and a luminometer? Can I measure luminiscence using a fluorometer?
+A fluorometer measures fluorescence emission light from a fluorophore excited by an excitation beam from the instrument, usually at specific wavelengths. A luminometer measure light output across the whole visual spectrum. You may be able to use a fluorometer as a luminometer, but it will take a lot of fiddling to work out the best way, and they are generally not as sensitive to light as a luminometer is, so your detection range is not likely to be as wide.

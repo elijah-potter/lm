@@ -1,0 +1,4 @@
+Given a list of cities and the distances between each pair of cities, a Genetic Algorithm (GA) is designed to determine the length of the/a shortest possible route that visits each city exactly once and returns to the origin city. The GA applies a fitness function to each candidate solution such that those with the lowest total distance are attributed the highest fitness value. In terms of the original objective function which calculates total distance for each candidate solution and their associated problem space (search space), select the type of extrema this algorithm seeks.
+Multiple Choice1 MarkPremium
+22 Uses23 Views3 Likes
+Login or Create an Account to view the mark scheme, comment, and add to a test

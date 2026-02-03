@@ -1,0 +1,9 @@
+Infinitesimal and infinite numbers
+A nonstandard real number e is called infinitesimal if it is smaller than every positive real number and bigger than every negative real number. Zero is an infinitesimal, but non-zero infinitesimals also exist: take for instance the class of the sequence (1, 1/2, 1/3, 1/4, 1/5, 1/6, ...) (this works because U contains all index sets whose complement is finite).
+A non-standard real number x is called finite (or limited by some authors) if there exists a natural number n such that – n < x < +n; otherwise, x is called infinite. Infinite numbers exist; take for instance the class of the sequence (1, 2, 3, 4, 5, ...). A non-zero number x is infinite if and only if 1/x is infinitesimal.
+Now it turns out that every finite nonstandard real number is "very close" to a unique real number, in the following sense: if x is a finite nonstandard real, then there exists one and only one real number st(x) such that x – st(x) is infinitesimal. This number st(x) is called the standard part of x. This operation has nice properties:
+- st(x + y) = st(x) + st(y) if both x and y are finite
+- st(xy) = st(x) st(y) if both x and y are finite
+- st(1/x) = 1 / st(x) if x is finite and not infinitesimal.
+- the map st is continuous with respect to the order topology on the finite hyperreals.
+- st(x) = x if and only if x is real

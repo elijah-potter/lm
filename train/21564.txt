@@ -1,0 +1,7 @@
+The FLOOR function in Microsoft Excel is a mathematical function that can be used to round a number down to the nearest integer. It is useful for finding the largest integer that is less than or equal to a given number.
+The FLOOR function rounds a number down to the nearest multiple of a specified value. This function is commonly used to round down a number to the nearest integer, which can be used to apply standard rounding rules or to round down a number to the nearest multiple of a given value.
+For example, the function can be used to round down an amount to the nearest multiple of 5 or 10. This is useful for creating a discount table or performing calculations involving multiples of a certain number.
+number argument: is the number to round down
+significance argument: is the multiple to which you want to round down a number.
+Try out for free AI Excel Assistant who can generate Excel and Google Sheets formulas from your text. Explain your formulas and give descriptions to the most complicated formulas. Translate your Excel files in 28 lanugages. Write and explain your VBA and Google Apps Scripts. Register for free!
+Check out our blog for the latest tips and tricks to help you become an expert. We have the insider scoop on the best strategies and resources to help you stay ahead of the curve. Click here to read our blog and start your journey towards Excel and Google Sheets mastery today!

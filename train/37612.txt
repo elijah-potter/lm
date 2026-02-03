@@ -1,0 +1,6 @@
+My question is based on the paper Using NOAA AVHRR and SPOT VGT data to estimate surface parameters: application to a mesoscale meteorological model.
+The authors have calculated albedo, surface emissivity and thermal inertia for a small region in Europe using the AVHRR data.
+In a similar way I have land cover information at 30 meter resolution derived from Landsat images.
+I need to calculate albedo for a small region and a climatological period(say Boreal summer). I used the Semi Automatic Classifer Plugin from QGIS to download Landsat images for the period June 1st through August 31st(2014 and 2013) and I got very few images over my region. I need at least 50 to 70 images(more would be better).
+I believe MODIS satellite images provide an alternative to calculate the albedo. It is at a lower resolution but I believe a downscaling can be done. My question is can it provide sufficient number of passes in order to come up with a climatological albedo ? The presence of clouds is not a problem as cloud masking can be done.
+My ultimate purpose is to use these parameters such as albedo in a meteorological context such as with a weather model that predicts the weather.

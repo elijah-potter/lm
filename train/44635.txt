@@ -1,0 +1,5 @@
+If an induction machine is run at above the synchronous speed it acts as
+If an induction machine is run at above the synchronous speed it acts as Induction Generator.
+When an induction machine is operated as a motor, it operates at a speed slightly below the synchronous speed, and the slip between the rotor speed and the synchronous speed produces the torque required to drive the load.
+If the rotor of an induction machine is driven at a speed above its synchronous speed, the slip becomes negative, which means that the rotor speed is greater than the speed of the rotating magnetic field produced by the stator winding.
+In this case, the machine operates as an induction generator, converting mechanical energy into electrical energy.

@@ -1,0 +1,4 @@
+The way I learned to program was by sitting down and programming. Seriously.
+One thing that helped me was typing in a short program from a book or a magazine, and then changing it to add features or do different things. If you start with a well-designed program and keep it up, pretty soon you'll absorb good programming.
+That said, there are a couple of good books from O'Reilly and Manning Press that I would recommend. Learning Perl is one, and Elements of Programming with Perl is another. (The latter is my preference, as it teaches both Perl and programming.)
+Also, Perl comes with a load of good documentation, available by typing 'perldoc perldoc' right at the command line. You can learn most of the language from there (but much of it assumes you're already fairly familiar with programming in general)

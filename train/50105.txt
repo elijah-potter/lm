@@ -1,0 +1,34 @@
+U.S. Department of Energy - Energy Efficiency and Renewable Energy
+Advanced Manufacturing Office – Saving Energy in Data Centers
+About Saving Energy in Data Centers
+DOE's Advanced Manufacturing Office (AMO) is partnering with industry to reduce data center energy use and improve efficiency. Here you will find information about why data centers consume so much energy, the impact on electricity demand, and benefits and challenges. Some of the documents are available as Adobe Acrobat PDFs. Download Adobe Reader.
+Data Center Energy Use
+Data centers provide mission-critical computing functions essential to the daily operation of top U.S. economic, scientific, and technological organizations. These data centers consume large amounts of energy to run and maintain their computer systems, servers, and associated high-performance components.
+To protect these systems and their vital functions, however, data centers also employ energy-intensive air conditioning systems, fire suppression systems, redundant/backup power supplies, redundant Internet connections, and high-security systems.
+In 2006, U.S. data centers used approximately 61 billion kWh (about 209 trillion Btu in end use), accounting for about 1.5% of all U.S. electricity consumption.1
+Growing Electricity Demand
+To support the growing demand for processing power throughout the economy, individual data centers increasingly use more compact and energy intensive servers even as the total number and size of data centers continues to increase. This growth in electricity demand by individual data centers and the rapidly increasing number of data centers nationwide represents a dramatic increase in electricity demand.
+Source: The Report to Congress on Server and Data Center Energy Efficiency, 2007
+Data Center Efficiency Benefits and Challenges
+Benefits of improving data center efficiency include:
+- Constrain increased electricity demand and associated carbon emissions
+- Protect data and computing functions vital to our economy
+- Reduce risk of power outages and increase regional electricity reliability
+- Postpone need to build new electricity generation capacity
+- Support replication of energy-efficient practices across the sector
+- Free up power and cooling.
+Challenges to meeting data center energy reduction goals include:
+- Improving data center efficiency, reliability, and availability requires a team effort to address all system efficiency opportunities
+- Information technology (IT) equipment energy use is difficult to forecast
+- Energy-saving techniques must be updated continuously because computer technology evolves rapidly; new IT product requirements change faster than manufacturing processes
+- Tools for modeling energy management and heat transfer in data centers are complex and costly.
+A coordinated program of focused R&D and operating practice improvements in data centers could produce large energy savings, reduce the load on the electric grid, and help protect the nation by increasing the reliability of critical computer operations.
+Learn more about AMO's goals for saving energy in data centers, partnerships between government and industry to improve data center efficiency, and who to contact for more information.
+Regulations and Guiding Principles
+Executive Order 13514
+Executive Order (E.O.) 13514 —Federal Leadership in Environmental, Energy, and Economic Performance —was signed on October 5, 2009. The order expanded on the energy reduction and environmental performance requirements of E.O. 13423, and mandated that federal agencies implement green data center strategies, double-sided printing, and PC power management as part of a broader sustainability push. Numerous energy requirements were set in several areas, including Electronic Products and Services, which requires agencies to implement best management practices for the energy efficiency management of servers and Federal data centers.
+For more information on the order, visit the Federal Energy Management Program's E.O. 13514 Web page.
+Standardizing Energy Efficiency Metrics
+On January 13, 2010, DOE joined the Environmental Protection Agency and other industry leaders to form The Data Center Metrics Coordination Task Force. The purpose of the task force is to reach an agreement on data center energy efficiency measurements, metrics, and reporting conventions. As data center usage continues to escalate and energy costs rise, energy efficiency has become a growing concern for data center owners and operators. However, until recently, there was no standard approach for measuring energy usage, where to take the measurements, and how frequently to do the measuring. The organizations collaborating on this effort have developed agreed upon guiding principles for data center operators to gauge energy use and create opportunities for improved energy performance. In May 2011, the task force released a new report, Recommendations for Measuring and Reporting Overall Data Center Efficiency: Version 2 — Measuring PUE at Data Center, which completes the guidelines for applying the Power Usage Effectiveness (PUE) metric.
+More information on the agreement and its guiding principles can be found in EERE's February 19, 2010, progress alert and AMO's February 1, 2010, press release. Further information can be found in Harmonizing Global Metrics for Data Center Energy Efficiency.
+1U.S. EPA, Report to Congress on Server and Data Center Energy Efficiency, Public Law 109-431, August 2007.

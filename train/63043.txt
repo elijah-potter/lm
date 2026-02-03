@@ -1,0 +1,48 @@
+This book takes an innovative approach to calculus–based probability theory, considering it within a framework for creating models of random phenomena. The author focuses on the synthesis of stochastic models concurrent with the development of distribution theory while also introducing the reader to basic statistical inference. In this way, the major stochastic processes are blended with coverage of probability laws, random variables, and distribution theory, equipping the reader to be a true problem solver and critical thinker.
+Deliberately conversational in tone, Probability is written for students in junior– or senior–level probability courses majoring in mathematics, statistics, computer science, or engineering. The book offers a lucid and mathematicallysound introduction to how probability is used to model random behavior in the natural world. The text contains the following chapters:
+- Sets and Functions
+- Probability Laws I: Building on the Axioms
+- Probability Laws II: Results of Conditioning
+- Random Variables and Stochastic Processes
+- Discrete Random Variables and Applications in Stochastic Processes
+- Continuous Random Variables and Applications in Stochastic Processes
+- Covariance and Correlation Among Random Variables
+Included exercises cover a wealth of additional concepts, such as conditional independence, Simpson′s paradox, acceptance sampling, geometric probability, simulation, exponential families of distributions, Jensen′s inequality, and many non–standard probability distributions.
+To the Student.
+To the Instructor.
+Chapter 1. Modeling.
+1.1 Choice and Chance.
+1.2 The Model Building Process.
+1.3 Modeling in the Mathematical Sciences.
+1.4 A First Look at a Probability Model: The Random Walk.
+1.5 Brief Applications of Random Walks.
+Chapter 2. Sets and Functions.
+2.1 Operations with Sets.
+2.3 The Probability Function and the Axioms of Probability.
+2.4 Equally Likely Sample Spaces and Counting Rules.
+Chapter 3. Probility Laws I: Building on the Axioms.
+3.1 The Complement Rule.
+3.2 The Addition Rule.
+3.3 Extensions and Additional Results.
+Chapter 4. Probility Laws II: Results of Conditioning.
+4.1 Conditional Probability and the Multiplication Rule.
+4.2 Independent Events.
+4.3 The Theorem of Total Probabilities and Bayes′ Rule.
+4.4 Problems of Special Interest: Effortful Illustrations of the Probability Laws.
+Chapter 5. Random Variables and Stochastic Processes.
+5.1 Roles and Types of Random Variables.
+5.3 Roles, Types, and Characteristics of Stochastic Processes.
+Chapter 6. Discrete Random Variables and Applications in Stochastic Processes.
+6.1 The Bernoulli and Binomial Models.
+6.2 The Hypergeometric Model.
+6.3 The Poisson Model.
+6.4 The Geometric and Negative Binomial.
+Chapter 7. Continuous Random Variables and Applications in Stochastic Processes.
+7.1 The Continuous Uniform Model.
+7.2 The Exponential Model.
+7.3 The Gamma Model.
+7.4 The Normal Model.
+Chapter 8. Covariance and Correlation Among Random Variables.
+8.1 Joint, Marginal and Conditional Distributions.
+8.2 Covariance and Correlation.
+8.3 Brief Examples and Illustrations in Stochastic Processes and Times Series.

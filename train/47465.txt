@@ -1,0 +1,46 @@
+SDB:Burn a data CD
+Using command line tools
+At the command line, there are a few tools that can be used. First, we need to create an .iso file from which we can burn a data cd.
+- If you are copying another CD, here are two options:
+- To make a cd image of a directory, use:
+Once you have built your .iso, you can burn this image to a CD using:
+Whereby /dev/XXXX is the device for your CD/DVD recorder. To find out which device you should use, run:
+which should gives you a list of devices such as this:
+wodim: Overview of accessible drives (1 found) : ————————————————————————- 0 dev=’/dev/scd0′ rwrw– : ‘PLDS’ ‘DVD+-RW DU-8A2S’ ————————————————————————-
+K3B is the default CD/DVD burning application of KDE, and is a very versatile application.
+First of all, to use K3B, the computer must have an optical writing device installed on it. While this seems trivial, not every CD drive is of the writable kind. Many are read only. The writable kind is usually denoted by CD-RW.
+If the computer doesn't have an optical writing device installed and recognized by the operating system, the Burn button will remain disabled. On older versions of K3b, an eligible computer will have a specific make and model of CD/DVD drive installed on that computer available for selection. If the computer has a writable CD/DVD drive installed and recognized by the operating system, and an empty or appendable medium has been inserted into the drive, the Burn button will become enabled if the data will fit onto the medium.
+Not having sufficient user privileges to burn CDs can also prevent successful burning of CDs even though the computer may physically have a writable drive installed.
+Copying a CD
+Unlike from the command line, K3b is fully capable of copying a CD on the fly. When K3b opens, the bottom half of the window will feature the title Welcome to K3B - the CD and DVD Kreator. Beneath this title, click on Copy CD, which brings up a new window titled CD Copy and CD Cloning. At this window, select the appropriate CD/DVD device to read data from, and which CD/DVD device you will be burning to. This can be the same device, as you can first copy a cd, then insert a blank to burn your copy. You may also manually select the speed you wish to burn to; you may wish to do this if you have had trouble burning a disk at higher speeds. Beneath these options are three tabs for further configuration options:
+- Copy Mode
+- Normal Copy - This option creates the cd copy just like if you were burning a CD using data from your hard drive. The data is copied, an ISO image is generated, and then finally burned to the CD.
+- Clone Copy - This mode creates an exact duplicate of the original CD, not just of the data but the burning method applied, also known as a RAW burn.
+- Writing Mode
+- Auto - Chooses which writing mode to use based on the type of disk inserted; DAO, TAO, or RAW.
+- DAO - Disk At Once - A method of burning an entire CD in one pass.
+- TAO - Track At Once - A method of burning one track to a CD at a time; the recording laser stops after each track is complete, and two run-out blocks are written. TAO disks are capable of having both data and audio on the same disk.
+- RAW - Writing as an uncompressed image.
+- Copies - Number of copies of the disk you wish to burn
+- Simulate - Prior to burning, K3b will simulate the burning process to make sure the copy will go smoothly
+- Create image - When using a separate CD reader device and burning device, checking this option is not necessary because you can immediately burn the disk while the original is being read.
+- Only create image - This option will read the CD in your CD reader, and create an ISO image. If checked, you will not copy a CD, you will only create this ISO image.
+- Remove image - If checked, when K3b has finished burning the CD, the ISO image that was created will be deleted. If you wish to burn another copy later without needing to have the original disk, this option should be unchecked so that you can save the ISO image somewhere.
+- Copy Mode
+- Image - Here you can choose the location of the temporary image file, and see how much space is available in the location you have chosen.
+- Advanced -
+Creating a data CD
+- Launch the K3B application. The upper left pane displays the folder hierarchy and files. Use it to navigate to the folder containing the files you want to burn to a CD.
+- Click on the folder containing the desired files. The upper right pane will populate with files inside the folder.
+- Drag and drop all the data files you want to burn from the top right pane to the bottom right pane. Entire directories can also be dragged and dropped for burning.
+- The bottom left pane will begin to show the developing directory of the CD/DVD that is being created. The CD/DVD volume name can be changed here by clicking on the default name at the top of the hierarchy and renaming it the the desired name.
+- If necessary, navigate to and select additional files to be included on the CD and repeat the above steps.
+- When all the desired files are included in the bottom right pane, click on the Burn button on the tab of the bottom pane.
+- The Data Project window opens in K3B. Proceed to follow the same steps as outlined in Copying a CD.
+- Insert the medium into the drive and click the Burn button.
+If you have selected more files than your medium can hold, your Burn button will remain or become disabled. Know how much data your CD/DVD can hold and watch the green bar/data capacity indicator on the bottom of the main window in K3B when you are dragging and dropping files.
+K3B then displays the progress of the burning progress and issues messages of success or failure.
+GNOME CD/DVD creator
+The GNOME CD/DVD Creator is a front end for burning using GNOME's Nautilus.
+Open GNOME CD/DVD Creator and drag-and-drop the files you wish to burn to the new data CD onto the window. Once you have added one or more files, a Write to Disk button appears at the top of the window. After you have finished adding all of the files you want on the CD, click that button to write to the CD.
+If you drop, for instance, an ISO file on the window, GNOME CD/DVD Creator will recognize that this is a disk image and ask how you would like to handle the burn. Create From Image creates a CD based on the image; Create From File simply writes the ISO file to the disk as if it were any other file.

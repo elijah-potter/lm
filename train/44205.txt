@@ -1,0 +1,29 @@
+There are two main types of programming languages. The first one is statically typed, the second one is dynamically typed. Dynamic typing is sometimes also called Duck typing. There is a famous story verb for that.
+If it looks like a duck, swims like a duck, and quacks like a duck, then it probably is a duck.
+We are going to take a look at the features provided by C# regarding static typing. In C#, when a variable is declared it cannot be declared again or assigned a value of another type unless that type is implicitly convertible to the given variable type. This is decided during compilation time and poses a restriction as to how a developer would use/declare variables. Although it also comes with a speedbump in execution, statically typed languages are usually faster than dynamically typed ones. Both have their advantages and disadvantages.
+Let's take a simple example.
+1int j; 2j = "Hello C# World";
+This will give us an error because int and string are not implicitly convertible.
+There might come a time when you need to copy the value of a variable to another, like passing an integer to a method which takes double or long arguments. Or you may need to push variables between classes as well.
+C# provides four ways of converting one type to another:
+Type conversion is also called casting or type casting.
+There is no special syntax for this type of conversion, this is the safest type of casting. No data is lost, for example, when converting from smaller to larger integral types or derived classes to base classes.
+There is an implicit numeric conversions table which comes in handy when you want to figure out which types are inter-compatible.
+Below is an Example of implicit conversion of numeric datatypes.
+1int number = 128; 2double bigger = number;
+When you are working with double type, you need to be aware of the fact that it will be rounded up to 15 significant digits before any formatting is applied.
+Below is an example of implicit conversion of class to base-class.
+1DerivedClass d = new DerivedClass() 2BaseClass b = d
+There are a number of conversion sub-types which are all considered implicit.
+This type of casting also involves a cast operator. The process is usually associated with information loss or failure to convert between types. Typically, numeric conversions are mentioned when we convert from a larger precision datatype to a lower precision. Sometimes even converting from a base class to a derived class is also mentioned here.
+There is an explicit numeric conversions table which comes in handy when you want to figure out which types are compatible.
+Below is an example of explicit conversion.
+1double mypi = 3.14; 2int a; 3a = (int)mypi;
+Note the cast operator which is the (int). This conversion means the result will be stripped of all its digits and the result is 3.
+There is also a possibility to convert a base class to a derived class.
+1Opel o = new Opel(); 2Car c = o; 3Opel oo = (Opel)c;
+C# allows you to augment the pre-defined implicit and explicit conversions, these are called user-defined conversions. They can be introduced by declaring conversion operators in class and struct types. There is a strict restriction as to what can be a user-defined conversion. You are not allowed to redefine any existing implicit or explicit conversions.
+On this site you can read in more detail about as to how you can define your own conversions.
+These user-defined conversions convert a value from its type, called source type, to another type which is called target type. The evaluation is done by finding the most specific user-defined conversion operator for the particular source and target types.
+Steps in general:
+Type conversion comes into the life of every developer, once in a while. This is a very easy concept to understand. There are a few rules you need to be aware of and, apart from that, the experience comes with practice. Clear conversions help the application to be more error-prone, and easier to maintain. They also reduce the time spent debugging syntactically correct programs hunting for semantic errors. All in all, I hope this has been a worthwhile reading and it gave you the insight you were looking for!

@@ -1,0 +1,15 @@
+September 17, 2009, in the Wall Street Journal, Andy Pasztor writes:
+"PASADENA, Calif. – NASA’s No. 2 official on Wednesday vowed to provide taxpayers "better value" by focusing on environmental goals and promoting science education"
+Problem is: How do we demonstrate value for "free" data? For a particular program, one could build a model to demonstrate that value could be generated (see NOAA Portfolio Analysis). This could end up being very costly. The other issue is: how accurate or realistic would those models be?
+A better way is to provide an environment that can enable the emergence of sustainable ecosystems powered by an american concept: A "Free" Market approach to value. Let the user communities place value on the NASA data they want to aquire or assets they want to task, and even compete for that data or assets if necessary.
+What better demonstration of "Value"? What a better way to get communities involved and point to us what they "value"?
+The idea is to create a NASA virtual currency or NASA dollars that could be used to access data or task NASA assets when needed. Users would need to demonstrate value creation and would receive equivalent NASA purchasing power as they see fit at no "real" cost to the users. The useage of this virtual currency would be a great indicator of value as perceived by the user community. When some users or some community can justify increased creation value, they would receive more NASA dollars. If you cannot justify value creation, you would simply become second class citizen. No need for an enforcer. Let the Free market decide.
+This could also help with Basic Science Research. Let’s have scientists justify value for their research too. They would be getting hints on user needs after all. This could be done various ways: from measuring their scientific paper publications and counting the references to those papers to measuring a "Return On Investment" based on science applications and direct technology infusion that eventually will lead to market growth.
+This would be a major technology break-through driven by pure economics. Isn’t this the American Way after all :). Not that easy but not rocket science either. I am sure that several universities would love to provide guidance to this new frontier for NASA.
+Here is an idea for a name for the new currency (since it does not cost anything):
+Leveraging another Google feat with the newly minted PubSubHubBub protocol or PSHB, interested users can now get real-time notifications when new products from EO-1 are available. Rather than polling our server at: http://geobpms.geobliki.com/products.atom, consumers can subscribe for that feed at: http://pubsubhubbub.appspot.com/subscribe.
+They can enter their own callback to receive changes as it happens.
+This capability is also now built-in Feedburner, Google Alerts and Google Reader. More on TechCrunch
+The same feed is available on FeedBurner: http://feeds.feedburner.com/Eo-1Level2ProductFeed
+But why would you subscribe to it there? unless you are a human!
+Feel free to use Google Reader and add that feed to your favorites.

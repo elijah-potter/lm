@@ -1,0 +1,11 @@
+High resolution planet rendering using HiPS
+It is a well known mathematical fact that it is impossible to map a plane on a sphere without introducing distortions (which is why no 2d maps can perfectly represent the globe).
+This is a problem for video games and 3d rendering software that need to render planets. If the input textures are not too big, a simple solution is to use an equirectangular projection where the texture UV coordinates directly map to the sphere longitude and latitudes. This is how Stellarium default planet renderer works.
+As the planet surveys data gets bigger this simple projection can be a problem, since a single 2d pixel located near the pole will represent a much smaller area compared to a pixel around the equator, so the density of the texture data is not uniform.
+An other issue you get when rendering high resolution planet textures is that as the source images get larger, they cannot fit inside the computer main memory anymore, let alone the GPU memory. To solve this you need to split a very large image into a hierarchical tree of images, that you can then load
+on demand depending on the viewer position and zoom level.
+The CDS (Centre de données astronomiques de Strasbourg) created a format that addresses those two issues: the Hierarchical Progressive Surveys (HiPS).
+The projection used in HiPS is the HEALPix projection, that maps the sphere into 12 quads of equal size. The projection also introduces a scheme to split the quads into smaller parts (called pixels) that is nicely fitted to support hierarchical subdivision of a large image.
+The HiPS format is nice because it defines not only the projection, but also the directory structure of the images of the survey, optimised for data streaming from online sources.
+I added some experimental support for HiPS surveys in Stellarium and the format is also at the core of Stellarium Web.
+Here are some screenshots showing the improvement in resolution obtained:

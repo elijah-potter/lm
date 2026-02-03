@@ -1,0 +1,26 @@
+gtk.DrawingArea — a widget for custom user interface elements.
+widget is used for creating custom user interface elements. It's essentially
+a blank widget containing a
+you can draw on. The contained
+accessed using the
+gdkwindow = drawingarea.window
+After creating a drawing area, the application may want to connect to:
+Mouse and button press signals to respond to input from the
+user. Use the
+method to enable events you wish to receive. To receive keyboard events, you
+will need to set the
+gtk.CAN_FOCUS flag on the drawing
+The "realize" signal to take any necessary actions when the widget is instantiated on a particular display.
+The "configure_event" signal to take any necessary actions when the widget changes size.
+The "expose_event" signal to handle redrawing the contents of
+the widget when a drawing area first comes on screen, or when it's covered by
+another window and then uncovered (exposed). You can also force an expose
+event by adding to the "damage region" of the drawing area's window using
+gtk.Image is a useful
+alternative to a drawing area. You can put a
+and draw to the
+method on the
+gtk.Image when you
+want to refresh to the screen.
+|a new drawingarea widget|
+Creates a new

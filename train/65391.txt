@@ -1,0 +1,4 @@
+One of the popular exercises when learning a new language is to develop a FizzBuzz program.
+This is where you print out the all the numbers from 1 to 100 except if a number is a multiple of 3 you print out Fizz and if the number is a multiple of 5 you print out Buzz. If a number is a multiple of both 3 and 5 then you print out FizzBuzz.
+I came across this challenge for the first time recently as I learn C# so here is my version of FizzBuzz written in PL/SQL.
+DECLARE fizz BOOLEAN := FALSE; buzz BOOLEAN := FALSE; BEGIN FOR i IN 1 .. 100 LOOP fizz := MOD(i, 3) = 0; buzz := MOD(i, 5) = 0; CASE WHEN fizz AND buzz THEN dbms_output.put_line('FizzBuzz'); WHEN fizz THEN dbms_output.put_line('Fizz'); WHEN buzz THEN dbms_output.put_line('Buzz'); ELSE dbms_output.put_line(i); END CASE; END LOOP; END;

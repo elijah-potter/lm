@@ -1,0 +1,42 @@
+3D Geometry and Parametric Design
+This is an informal workshop experimenting with a method of generating 3D meshes from 2D images based on the RGB colour space and making this content viewable in low-fi VR headsets.
+I have been making a piece of software using openFrameworks to explore creating generative 3D meshes and also the challenge of quickly and easily getting 3D models into a lo-fi VR environment. During the workshop I will introduce you to the some basic concepts of 3D modelling and explain how this software can be used as a tool to explain generative design. Below is a screenshot of the software:
+- Achieve a basic understanding of concepts in 3D geometry
+- Become familiar with the concept of parametric design
+- Generate 3D meshes from found and created 2D images
+- Import 3D meshes into SketchFab, an online platform for sharing and discovering 3D models.
+- Download Google Cardboard app for iPhone or Android
+- Access to a computer
+Concepts in 3D geometry
+We will examine some of the fundamental principles of 3D geometry that allow the computational representation of three dimensional shapes and allow us to understand how these can be created programatically.
+Glossary of Terms
+Vertex (singular) or Vertices (plural)
+One or more points in 3D space.
+A vertex is commonly located in 3D space using the Cartesian coordinate system. When positioning a point on you use the the X, Y and Z coordinates as show below:
+When joined together vertices make the basic building blocks of a 3D structure. The shapes formed are called primitives. Primitives can be points and lines but they become more useful when they form more complex shapes such as triangles or rectangles that can form a surface area. also known as a face.
+As you can see from the the cow model each of the individual triangles is covered by a flat surface. Each one of these is a face, which combined make up the surface of the solid object.
+To create a face you must have 3 or more vertices. This is why the triangle is the commonly used shape in 3D modelling. It is the most simple (or primitive) shape and can be used to represent the surface of a model.
+Tesselation is the process of filing a flat surface with shapes (or tiles) so that there are no gaps in that surface.
+Graphics cards on computers work only work with triangles so any 3D shape you see on screen will have been converted in triangles at some point by the software or by the graphics card itself.
+The ground of parametric design is the generation of geometry from the definition of a family of initial parameters and the design of the formal relations they keep with each other.
+What is a parameter?
+In maths it is the part of an equation that can be variable, creating change in the output/result. It follows this simple model:
+In programming and computation writing an algorithm follows this pattern. When an input parameter is changed the rules of the equation or algorithm produce a variety of possible outcomes. If there are multiple input parameters then those possible outcomes increase exponentially.
+Algorithms as a design partner
+The project below is a study of algorithms on baroque and renaissance paintings. The artist, David Quayola, leaves behind the iconographic meaning of the pictures and uses the raw information (for example colour, shape and the relationships within these) to create new pieces. The informational nature of the pictures can be used in combination with algorithms to modify outputs. No doubt within the creative process there are ways to manually delve into the code to tweak parameters and therefore manipulate the possible outcomes.
+Parametric design is also used within architecture to functionally and creatively explore the possibilities in 3D spatial design. Combining formal rules (i.e. algorithms or equations) and making small variations to the input can produce huge and sometimes unexpected shifts in outcome.
+As you can see from this Google search for parametric design (June, 2017) there is a recognisable style that is reminiscent of organic shapes and patterns. Without speculating on the functional or aesthetic value of this trajectory it is without doubt a function of designing with the aid of powerful computers that can model physical systems in nature that has enabled this. The relationship between parametric design and this type of outcome is that each of these designs would be partially determined by systems of rules in computation and part by the agency of designers, architects or artists.
+Characteristics of Parametric Design
+Creating Composition Systems
+As a designer you often construct systems or 'grammars' that help to guide an outcome. This is the principle of parametric design however formalised into code and software.
+Variation to a single parameter of a system (i.e. equation or algorithm) can create change in the output that is proportionally larger to the scale of the input. Increasing the number of parameters can again increase the variations of output exponentially! The challenge then becomes how to capture these outputs and make choices between them.
+Simple rules create complex outcomes. Also incorporating randomness into systems can increase the the variation of outcomes.
+Modelling physical systems
+The speed of calculations in modern computers means that simulation or modelling of physical systems is entirely possible and in doing so can become part of system of parametric design.
+How does the software work? Let's use it and find out.
+If you want to recreate or learn from this yourself the code is available here and I would recommend following this tutorial for a grounding in 3D meshes in openFrameworks.
+Further Reading / Watching:
+- Parametric Design Fundamentals YouTube series
+- A History of Parametric Design
+- What is Parametric Design?
+- openFrameworks Book: Generating Meshes from 2D images (This was an invaluable resource used for the creation of the software in this workshop)

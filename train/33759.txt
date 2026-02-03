@@ -1,0 +1,384 @@
+Glossary of Terms for Nuclear Geometry
+Copyright 1997, 2002 by Arnold J. Barzydlo
+A.S.P. (Available Snap Points): The actual number of snap points
+(string crossings) used by the core geometry of the nuclear shell. If it is
+less then the R.S.P. (Required Snap Points) for the shell,
+additional Filler circlets and/or P.V.B.'s
+(Pinned Vector Bosons) will have to be added.
+P.V.B. (Pinned Vector Boson): A P.V.B. is any string which is pinned
+to or captured by a nuclear shell for the purpose of forming
+or emulating a Down quark, but does not lie on the surface of
+the nuclear shell. A P.V.B. typically contributes one snap point
+(string crossing) to the shell as well as the charge properties
+of the captured string. Radical Strings are one form of P.V.B.,
+Orphan Strings are the other type. Tearing a P.V.B. away from the nuclear shell
+will cause a violation in the shell structure, essentially putting an Up
+quark where a Down quark should be. This may lead to spontaneous decay, or
+prompt restructuring of the nuclear shell into a new solution set. I believe
+this property can be equated with the weak nuclear force.
+Chemists will notice that the captive strings define some of the electron orbitals
+of nuclei. These orbitals are actually sharing a pinned string with the electrons
+(an Orphan string for the electrons, a Radical
+string for the nucleus). P.V.B.'s may therefore participate in covalent bonds. P.V.B's
+captured by a lower nuclear shell can sometimes be sandwiched between quarks in adjacent
+nuclear shells, resulting in a flattened lobe, providing a hybridized orbital
+(linearization) for metallic daisy-chain bonds requiring only a
+single interstitial electron nestled between nuclei. These P.V.B.'s are extremely important
+to physical chemistry, they can grow quite long, engaging nuclei and electrons throughout
+a material. They can pass thermal energy while blocking electrons, as is the case with the
+diamond lattice. When they contribute to crystalline structures I sometimes refer to them
+as lattice strings. They can also contribute significantly to the conductive properties of
+a material when they are pulled taught (by supercooling). Conduits clear of lattice strings
+will offer no resistance to the passage of electrons, and may even enhance it, as there are
+no lattice strings in the way to tangle with the electron's orphan string (a captured photon,
+shared between Cooper pairs.) The field of a permanent magnet is composed of lattice strings
+extending beyond the poles of the magnet. The accepted name for them is "field lines," or
+magnetic lines of force. The actual core geometry of a nucleus is
+composed of Hadron string, but virtually all bonding strings (of
+interest to chemists) are composed of Lepton string. That is a lot
+of different names for the same piece of string, but its a real important piece of string.
+R.S.P. (Required Snap Points): R.S.P. is the total number of string
+crossings required to make a particular nuclear shell. R.S.P. can be
+calculated for a specific nuclear shell.
+All you need to know to calculate R.S.P. for a shell is what type
+of nuclear shell it is (proton or neutron) and how many particles are in the
+shell. Each particle has three quarks. If its a proton shell, the shell must have
+a ratio of one Down quark for every two Up quarks. If its a neutron shell, the ratio
+is one Up for every two Down quarks. An Up quark requires three snap points
+(string crossings) to construct, and a Down quark requires four. If "n" is the
+number of particles in a shell, then for a proton shell the formula is:
+Proton Shell: R.S.P. = n(6) + n(4) = n(10)
+For the neutron shell the formula would be:
+Neutron Shell: R.S.P. = n(3) + n(8) = n(11)
+Bogus Down Quark, (Radical Down Quark): An Up quark with a pinned
+radical string which emulates a
+Down quark. The Bogus Down quark definitely has two
+charge mirrors, one positive (the Up quark), and one
+negative (the radical string). This theory assumes that the genuine Down
+quark also has a positive and negative charge mirror. Also referred to as
+a Radical Down Quark. (See P.V.B. (Pinned Vector Boson),
+Charge Jets, Charge Drains: Charge jets emanate from the surface of nuclear
+shells rather like conical spokes protruding from the surface with the apex coincident
+with the surface. An up quark produces a charge jet in lepton space and a charge drain
+in hadron space. A down quark produces a charge jet in lepton space off of its lower
+(positive) surface, and charge jet in hadron space off of its upper (negative) surface.
+Charge jets in lepton space push lepton strings (radical strings) into the familiar
+teardrop shaped lobes of "p" orbitals. The bogus down quark is a special case of
+a lepton string pinned to the charge jet off an up quark, wherein the pinned string
+provides negative charge transformations in the positive jet. The pinned string
+may actually be coupled in to the field structure of the up quark, permitting direct
+energy exchanges between the nucleus and the pinned string.
+Electrons have structure in lepton space, but should also display two
+charge jets in hadron space. (Every charge jet in hadron space has a corresponding
+charge drain in lepton space, and vice versa.) See "Charge Mirrors" below.
+Charge Mirrors: Concerning the theory of charge interactions
+I've developed from elements of this string model, charge mirrors reflect charge
+couriers between the cosmological domains of Lepton space
+and Hadron space. All quarks, nuclear strings, and pinned
+strings contribute to some degree as charge mirrors, but quark surfaces are the
+most significant sources of charge interactions. (Reflection is the simplest
+analogous process, but it is actually a bit more complicated.)
+Complementary Shells: A pair of nuclear shells, one proton shell and
+one neutron shell, in which the geometric distribution of up and down quarks
+on one shell exactly matches the geometric distribution of down and up quarks
+on the other shell. Every quark on one shell is paired with its complement
+on the other shell. Helium 4 (P2 + N2)
+is an example of a pair of complementary shells. Such shells will become
+"charge-locked" when they are stacked.
+Core Geometry: Refers to the geometry of a nuclear shell minus any
+pinned strings. The proton and neutron have the same core geometry, they vary
+only in their pinned strings. I've occasionally used the term (incorrectly)
+as a reference to the geometry formed by structural
+loops minus the filler circlets, which is more
+appropriately referred to as the "core structure." (See below.)
+Core Structure: Refers to the raw structural geometry of a nuclear
+shell minus any pinned strings and filler circlets.
+This usually only includes the structural loops,
+but may include equatorial circlets and/or
+sinusoidal strings if they form a base for
+multiple shell solutions with the addition of filler circlets.
+Daisy-Chain Bond: See Linearization.
+Down Quark: A collision cell formed by the intersection of four light
+strings having a negative charge current of 1/3. The Down quark may have both
+a positive and negative charge mirror associated with it,
+but the net effect is negative. I suspect the down quark somehow "floats" at
+the boundary between lepton space and hadron space,
+allowing each of its two charge mirrors to face a different domain. Consult
+Bogus Down Quark also.
+Equatorial String: Any nuclear string which bisects the nuclear shell.
+Filler Circlets: Small loops of string which are placed on the structural
+loops of the core structure to finish the quark intersections. Usually the L1
+strings are structural loops, while L2's are Filler Circlets.
+Flower Petal Pinning, (Flower Pinned): Lepton strings can be pinned
+to multiple Up quarks on a nuclear shell, and a single such string pinned to three or more quarks
+either on the equator, or one of the poles of the nuclear shell, may form a multi-lobed structure
+resembling flower petals.
+Gluons, (Glueballs): In this theory "gluons" are simply the hadron strings closing into
+loops in the nucleus. "Glueballs" are isolated loops of hadron string which have been broken out
+of a nuclear shell, probably by a violent collision in an accelerator. I don't like these names
+and I don't use them. In this theory the intersections of the strings actually generate quarks.
+In nuclear theories that sport "gluons" and "glueballs," the quarks are considered separate
+entities "glued" together by these string-like "particles." Hopefully you can see the difference.
+I suppose physicists might want to interpret hadron strings as the manifestation
+of the chromoelectric field in quantum chromodynamics, in which case they might interpret the structures
+I have presented as maps of the nuclear chromoelectric fields, but I think it is a misnomer to suggest
+that quarks are "glued" together by these energy strings. Colliding string theory assumes that quarks
+are collision cells of these strings, and extends that reasoning to the domain of leptons as the products
+of colliding electromagnetic lines of force (lepton stings) producing similar
+particles in lepton space. In this model, an electron is assumed to be composed
+of three leptonic quarks. The reason leptons appear as point particles is because of an orthoganal rotation
+of dimensions between lepton space and hadron space. We are privlidged to see the
+structure of hadrons, but were we able to freely change our perspective and make our observations so
+that the structure of leptons were discernable, then I would expect hadrons to appear as point particles
+from that altered perspective. See Strong Nuclear Force.
+Gravitational Force (Quantum Gravity): Relates to specifics of the string theory,
+and I don't want to hint at the surprises yet in store, so... Out of the scope of this document.
+Hadron Space: The four dimensional manifold in which hadrons have structure.
+It consists of three spatial dimensions and a single time-like dimension which is
+shared with lepton space. See Lepton Space.
+Hadron String: A variety of energy string which forms the core geometry
+of nuclear structures. Nuclei and mesons are examples of particles composed
+of hadron string. The hadron string resides in Hadron space. There is also an
+anti-hadron string (which is of the opposite handedness) that also resides in hadron space, and is the
+structural string for antimatter versions of hadrons. (See also: Lepton String.)
+Lepton Space: The four dimensional manifold in which leptons have structure.
+Lepton space shares a common time-like dimension with
+hadron space, and is
+superpositioned on hadron space. All the spatial dimensions of lepton space
+are at right angles to the spatial dimensions of hadron space, thus leptons
+with their structures residing in lepton space appear as point particles in
+hadron space. All we see of leptons are the charge currents off their quarks
+and the effects of their pinned strings, that and the upper surface of their leptonic
+down quarks, which I believe are the only physical manifestations of the lepton
+structure that are displayed in hadron space. I believe the same set of structural
+rules apply to leptons as to hadrons, but there appears to be some disparity or
+energy surplus in lepton space which results in a reduced lepton gravitational
+interaction. This does appear to have some impact on the geometry of leptons, as
+they do not seem to pin hadron strings with the same affinity
+that hadrons demonstrate for the pinning of lepton strings.
+I presume that the reduced mass of a leptons' core geometry makes
+its position more uncertain in hadron space, thus making the pinning and the maintenance
+of pinned hadron strings a less stable and efficient process. In short, both hadrons
+and leptons prefer to pin lepton strings when pinned strings are required. (See Also:
+Orphan Strings, Radical Strings.)
+Lepton String: The string which composes the core geometry of leptons,
+presumed in this theory to have quark structures hidden in lepton space. The
+lepton string is responsible for electromagnetic radiation, magnetic lines of
+force, Pinned Vector Bosons (also called Radical Strings, Bonding Strings,
+and Lattice Strings), and are extremely important to the structures of molecules. There is also
+an anti-lepton string of the opposite handedness which is the structural element of anti-leptons
+such as the positron. Lepton and anti-lepton strings are energy strings which reside in lepton space.
+(See also: Hadron String.)
+Linearization: A form of hybridization of an orbital wherein a
+radical string is pinned
+to an Up quark on a lower nuclear shell with another quark lying directly above the pinning
+site. The pinned string is normally "blown" away from the surface of its host quark by charge
+currents, resulting in lobes, but in this situation the string is trapped between like
+charge mirrors, and an oblate (tangential) lobe is generated. This
+form of hybridization is important for metallic and crystalline substances. It permits
+daisy-chain bonds utilizing a single interstitial electron rather than two-electron bonds.
+Chemists may note that the thermal enthalpy of some metals are only half of what the free
+electron model predicts. I suggest that only half of the electrons are free to wander, and
+they are free because linearization provides a more efficient and malleable bond geometry
+that uses only half as many pinned electrons. I strongly suspect superconductivity arises
+from lattice strings pulling tight, either through chilling to contract the lattice strings,
+or doping which results in pinning lattice strings out of the path of electron flow. If the
+leptons (electrons) encounter no lepton strings as they pass through
+a material, they exchange no energy with those lepton strings. Collisions between electrons
+and their pinned lepton strings with lattice strings in a resistive medium are probably also
+responsible for the characteristic Johnson noise in resistors. Excluding external influences
+and sources of thermal agitation, the only remaining contributor to resistance would be
+charge currents in the lattice. In some high temp. superconductors it seems likely that the
+charge currents would be polarized by the pinned electrons aligning their spins in the
+lattice to provide enhanced conduction in one direction. I know some researchers have
+reported such enhanced conduction paths in high temp. superconductors. It might be possible
+to enhance this alignment of electron spins during fabrication of the superconductor via a
+careful choice of substrate material in the case of deposited superconductors, or through
+the influences of external magnetic and electric fields applied during processing and/or
+prior to supercooling of the material. An interesting possibility is a heavily-linearized
+polymer-like superconductor, likely taking the form of a molecular tube, with any
+conventionally pinned strings residing on the tube's outer surface. The external pinned
+strings could act as covalent anchors to keep the tube rigidly secured, as a thermal sink,
+or might even be useful to control the flow of electrons through the tube. (Authors Note:
+I wrote this definition some time ago, and it appears as though there are lines of research on
+molecular tubes that is gaining attention in physics today. It is likely that this line of
+research was going on even as I wrote this description. It should be interesting to see if
+a useful form of superconducting nano-wire can be constructed from these explorations.)
+Neutrino: Well, in this theory, they are lepton mirror symmetries of
+mesons, two-quark particles. Mesons are composed of
+hadron string and reside in hadron space,
+neutrinos would be composed of lepton string and reside in
+lepton space. Mesons are very short-lived particles which interact
+via the strong nuclear force(?!) Hmmm. I suspect a better definition
+is that they are composed of hadron string, and therefore may participate in interactions
+involving hadron string. By the same token, neutrinos, which are composed of lepton string
+should interact with leptons with the same agility that mesons interact with hadrons. (Beats
+me why they don't, maybe they just move too darned fast.) At this point I still find
+neutrinos to be somewhat mysterious in their nature, but then, I still have doubts about
+meson structure. Consider my interpretations of mesons and neutrinos as guesswork only.
+I'll leave it at that.
+Nuclear Isomerism: Nuclei with identical numbers of neutrons and
+protons may have different intrinsic shell structures (alternate solution
+sets, shell stacking arrangements, and/or different vector-pointing solutions
+for otherwise identical nuclear shells) leading to different decay rates,
+nuclear moments, intrinsic spin, and/or molecular bonding configurations.
+Nuclear String: Any string on the surface of a nuclear shell having
+three or more snap points associated with it. The exception
+is orphan strings, which may be loosely included in the
+definition of nuclear strings due to their similar composition, but not
+Orphan String: A string captured by a particle which is composed
+of the same type of string as its host particle. Orphan strings can form
+genuine Down quarks, but generally orphan strings are more common to leptons
+such as the electron. Orphan strings contribute a single
+snap point to the nuclear shell, which is
+not normally permitted for nuclear strings in a
+stable shell structure, usually every nuclear string contributes three
+or more snap points. Whereas a radical string curves
+away from the nuclear shell it is pinned to, I expect that orphan strings
+will tend to enclose the particle, touching only a single quark, or fall
+beneath the particles' surface, depending on the linear dimension
+(circumference) of the orphan string. It is remotely possible that
+an orphan string which does fall below the surface of a nuclear shell could be
+shared or utilized by a down quark in a lower nuclear shell. Fortunately,
+nucleons tend to favor pinning lepton strings, and will
+replace orphan strings with radical strings as they fall to a lower energy state.
+(See Also: P.V.B.'s)
+Phase Imprinting: An electron in a fixed orbital may acquire and store phase data
+from an absorbed photon. In the twin slit experiments of quantum physics, electrons in
+the film used to record the interference patterns may actually produce those patterns
+by successive phase imprinting. The arrival times and the pattern of hits on the film
+in these experiments produce no interference patterns if the phase data is subtracted
+out, so by Occam's Razor, it would appear as though the electrons record phase data
+from the photons over time, and the interference patterns occur as a result of the
+sum of the phases of each photon thus encountered by the electrons in the film.
+Polar Circlet: A loop of nuclear string at the pole of a particle.
+Polar Stars: A number of the simplest solution sets for nuclear shells
+are characterized by star-like string configurations at the poles. These are
+referred to as the Polar Star shells.
+Pre-Quarks: Certain high-energy interactions cause intersections of
+only two strings to generate an unstable pre-quark collision cell. These
+pre-quarks are not permitted on the surface of a stable nuclear shell.
+In high energy physics, when nuclear shells of the colliding particles
+interact, there may be many pre-quarks briefly formed in the collision.
+I imagine this would have some kind of impact on the collision data.
+QM Fire (QMF), QM Burning: A theoretical type of plasma fire which is Quantum
+Mechanical in nature. It would arise under bizarre circumstances, such as a non-unitary
+collapse of the wave function for Schrodinger's cat. In this case, leptons and hadrons
+erroneously select alternate QM histories, and when the world lines of those histories
+diverge, they unzip the bonds between the leptons and hadrons resulting in a burning
+mode I have dubbed QMF. Spontaneous Human Combustion (SHC) appears from several of the
+more bizarre historical accounts to fit the description of a phased-electron QM burn. (If witnessed, victim
+becomes semi-transparent and blue plasma flames erupt. Portions of the body in contact with metal
+or the ground swap phased-electrons with environmental electrons prior to commencement of the
+plasma fire and are spared disintigration. Blood conducts electrons, so if bare feet were firmly planted,
+the heart and arteries might be spared, albeit cooked from the outside. Once the fire is lit, so to speak,
+the same kind of environmental electrical currents would accelerate the QM fire. Thus, throwing water on the
+victim accelerates the disintigration. QMF would favor those who had very few available, compatible QM
+histories to choose from, such as the elderly, or the daredevil types, or frequent travelers. QMF could cause
+even ice cubes to burn in a total vacuum, it is not the chemical type of fire with which we are familiar.)
+There are four possible switching mode errors, two of which initiate QMF (lepton decoherence, hadron
+decoherence), one causes the object to vanish and perhaps burn very slowly in a nebulous decoherent
+state (mutual decoherence), and the last mode (complementary decoherence) may induce further
+QM errors such as quantum teleportation (i.e. quantum tunneling), temporal dislocation, or
+object swapping from another QM history. I once performed a VERY crude calculation based
+on the number of reported cases of SHC I deemed probable QMF events, the population of Earth over
+the time of recorded history, and arrived at an estimate of the likelyhood of a person spontaneously
+combusting on any given day, the result was about 1 chance in 5-trillion. With the population of
+Earth what it is, it should happen naturally about every ten to twenty years. Considering that it could
+be an exceptionally rare macroscopic QM event, it really should be investigated in detail by physicists
+and chemists in conjunction with forensic scientists when it does seem to be a genuine SHC case.
+There should be physical evidence of positive ionization of the body if electron decoherence is involved.
+Knowing the victims history and recent choices could be enlightening. Intense environmental electromagnetic
+disturbances might increase the risk.
+Radical Down Quark: See Bogus Down Quark.
+Radical String: A string captured by a particle which is of a different
+string type than its host particle. Radical strings form
+Bogus Down quarks by
+contributing one snap point and their charge current to an
+Up quark. There are no restrictions barring a radical string
+from being pinned to more than one quark on a nuclear shell, thus contributing
+more than one snap point. In the case of hadrons, radical strings are composed
+of lepton strings. (See Flower Petal Pinning,
+P.V.B.'s, and Orphan Strings.)
+Sinusoidal String: A nuclear string which forms a loop having a sinusoidal
+character perpendicular to the plane of the loop. An annoying complication
+which is required in the structure of the proton
+and neutron to satisfy the empirical laws
+of the geometry, and so must be permitted elsewhere. It has been my experience thus
+far that all sinusoidal strings tend to bisect the nuclear shell, and this might be
+evidence for a more descriptive empirical law to govern their use. There are not
+enough sinusoidal solutions to make any definitive conclusions at this point.
+is an oddball sinusoidal solution which bisects the shell, but does so in a way
+which does not place the sinusoidal strings' snap points on the equator.
+is another. Even so, both sinusoidal strings still obey the general convention that
+they bisect the nuclear shell.
+Snap Points: Snap Points are basically string crossings on the nuclear shells.
+I selected the name "snap points" to reflect the fact that these points are where the
+strings "snap" together to form intersections. Programmers of graphics packages will
+more easily identify it with snap-to grids and such. (I envision a simple program which
+uses only the snap points and empirical laws to solve for nuclear
+shells.) Note that snap points are a convenience of mathematics. A pinned vector boson
+is said to contribute a snap point for reasons of mathematical convenience in determining
+exactly how many P.V.B.'s will be required. In the specific case of
+P.V.B.'s, the P.V.B.'s may not participate in the quark intersection in the same way a
+nuclear string would.
+String (Energy String, Light String, Lepton String,
+Hadron String): Represented by wires in the shell
+models. Strings participating in particle structures and magnetic fields are
+typically closed into a loop. Open string segments constitute line-of-sight
+electromagnetic radiations, such as light. There are other technical details
+of the strings which I have elected to omit from this work for various reasons;
+I hope the reader can forgive me my reluctance to reveal everything at once.
+Four string types have been deduced which are pertinent to particle structures:
+Hadron String, Anti-hadron String, Lepton String and Anti-lepton string. Strings
+and anti-strings vary in handedness, lepton and hadron strings vary in dimensional
+Strong Nuclear Force: The force which binds quarks in the nucleus. In
+this theory it is a geometric constraint imposed on the nucleus by the fact that
+the strings must intersect to produce quarks, and the permitted forms for the string
+geometry yield intersecting loop structures of specific dimensions. Once constructed,
+I believe it is the electrostatic and electromagnetic interactions between the quarks
+stacked in the shell structure and the adjacent electrons which hold the nucleus together.
+(I don't believe there is a "strong" nuclear force, merely interactions involving particle
+spreadsheets, hadron strings, and electrostatic and electromagnetic phenomena. The tensile
+strength of a hadron string may be a contributing factor, but it appears as though these
+strings can be scattered into discreet corpuscles without violating the particle spreadsheet,
+so this contibution to the binding force is somewhat questionable.) Scatter the loops and
+there are no more intersections, therefore there are no more quarks. Even if there is a
+strong nuclear force, it would be much weaker than early calculations indicated, as I
+believe they were based on the force required to overcome the electrostatic repulsion of
+discrete protons in the nucleus. These shell models for nuclear structure clearly show
+that the protons are not discrete entities, but rather dispersed constituents on the
+spherical surface of the proton shells. Most of the charge is associated with the quark
+surfaces, and these face outward as well as inward, resulting in some cancellation of the
+mechanical force applied by charge to either surface. The existence of neutron shells
+stacked with the proton shells is an important stabilizing influence, and greatly reduces
+local repulsion within the nucleus. Electron pairs may also find their way into the hollow
+and positively charged interior of the nucleus to further cancel the repulsions.
+Further consideration of the matter has led me to the conclusion that all non-valence
+(s-orbital) electrons are building electron shells in the nucleus interleaved with
+proton and neutron shells, resulting in an enormous cancellation of positive repulsions
+in the nucleus of heavier elements. There is a slightly more in-depth discussion
+associated with the P6-30PB shell.
+Structural Loops or Circlets: These are usually the largest loops of
+string in a nuclear shell, and form the basic geometry of a shell upon which
+filler circlets are mounted. The placement of filler
+circlets can change the quark distribution for a shell, yielding different
+solution sets for the core geometry of a shell.
+Up Quark: A collision cell formed by the intersection of three light strings
+having a positive charge current of 2/3. One string should be vectored in opposition
+to the others to achieve a collision anomally. The Up quark should have two identical
+charge mirrors facing opposide directions.
+Weak Nuclear Force: I submit that the weak nuclear force has a great deal to
+do with interactions involving Radical Strings. Stripping a P.V.B.
+from the shell can cause the nucleus to deform and decay. The nuclear shell which has lost
+the P.V.B. now has an "up" quark where it expects a "down" quark to be, violating both the
+snap point equation and the conservation of integer charge, so that nuclear shell must
+resolve itself by restructuring into a shell with the proper numbers of "up" and "down"
+quarks. This restructuring of one nuclear shell affects the adjacent nuclear shells, and
+the whole stack of nuclear shells may have to be re-structured to arrive at a new solution
+set with compatible quark locations. The result of this massive re-structuring of the
+nuclear shells is very likely spallation, or additional decays. The weak nuclear force
+relates to the binding energy of P.V.B.s to "up" quarks, causing them to emulate
+(See P.V.B. Pinned Vector Bosons.)
+Key to Nuclear Models
+How to Build Them

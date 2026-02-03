@@ -1,0 +1,9 @@
+m (1 revision)
+Revision as of 23:58, 14 May 2010
+|Point In Direction ()|
+|File:Point in Direction () Block.gif|
+The Point In Direction () block is a Motion Block and a Stack Block. The block points its sprite to the specified value - this changes the sprite's direction. Besides inputing the wanted number, there is a small drop-down menu with the common numbers:
+There has been some confusion involving the number system due to the fact that 0 is straight up, rather than off to the right (the default direction), and that it uses a -180 to 180 circle rather than a normal 360 degree circle - but so far no changes have been made.
+- Flipping a sprite
+- Rotating a sprite
+- If a variable is used to decide the direction, the sprite can point towards an important goal in the project.

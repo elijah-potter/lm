@@ -1,0 +1,14 @@
+Also called mesh topology or a mesh network, mesh is a network topology in which devices are connected with many redundant interconnections between network nodes. In a true mesh topology every node has a connection to every other node in the network.
+There are two types of mesh topologies: full mesh and partial mesh.
+Full mesh topology occurs when every node has a circuit connecting it to every other node in a network. Full mesh is very expensive to implement but yields the greatest amount of redundancy, so in the event that one of those nodes fails, network traffic can be directed to any of the other nodes. Full mesh is usually reserved for backbone networks.
+Partial mesh topology is less expensive to implement and yields less redundancy than full mesh topology. With partial mesh, some nodes are organized in a full mesh scheme but others are only connected to one or two in the network. Partial mesh topology is commonly found in peripheral networks connected to a full meshed backbone.
+For network diagrams, see Network Topology Diagrams in the Quick Reference section of
+- message digest
+The representation of text in the form of a single string of digits, created using a formula called a one-way hash function. Encrypting a message digest with a private key creates a digital signature, which is an electronic means of authentication.
+- message passing
+A type of communication between processes. Message passing is a form of communication used in parallel programming and object-oriented programming. Communications are completed by the sending of messages (functions, signals and data packets) to recipients.
+In computer science, a common prefix that means “about”. So, for example, metadata is data that describes other data (data about data). A metalanguage is a language used to describe other languages. A metafile is a file that contains other files. The HTML META tag is used to describe the contents of a Web page.
+- messy URL
+Slang term used to describe a URL that is not easy to read from a human perspective. For example, a messy URL might look something like this: http://www.fakeURLdefinithing.com/article.php/3831706/ In contrast, a clean URL would contain more meaningful words, like this: http://www.definithing.com/articles/format_harddrive.html A messy URL is not only harder for human readers to decipher, but it […]
+- meta ad
+Used in search engines, an advertisement displayed on the results page of a search, specific to the searched term. Also referred to as keyword advertising. Advertisers pay search engines to target their ads and only display the banners when relevant keywords are searched on by a user. Keyword advertising on the search engines enables an […]

@@ -1,0 +1,8 @@
+The Smart Cities (SC) Community is comprised of individuals involved in research, implementation, application, and usage of this smart technology-enabled vision for our future.
+Neural network deals with cognitive tasks such as learning, adaptation, generalization and optimization. Indeed, recognition, learning, decision-making and action constitute the principal navigation problems.
+A neural network is a massive system of parallel distributed processing elements (neurons) connected in a graph topology. Learning in the neural network can be supervised or unsupervised.
+- Supervised learning uses classified pattern information, while unsupervised learning uses only minimum information without reclassification.
+- Unsupervised learning algorithms offer less computational complexity and less accuracy than supervised learning algorithms.
+Supervised Learning:: Supervised learning is based on the system trying to predict outcomes for known examples and is a commonly used training method. It compares its predictions to the target answer and “learns” from its mistakes. The data stored as inputs to the input layer neurons. The neurons pass the inputs along to the next nodes.
+Unsupervised Learning:: Neural networks which use unsupervised learning are most effective for describing data rather than predicting it. The neural network is not shown any outputs or answers as part of the training process–in fact, there is no concept of output fields in this type of system.
+Neural architectures for easy learning such as cascade correlation networks, functional link networks, polynomial networks, counter propagation networks, and RBF Radial Basis Function networks are described.

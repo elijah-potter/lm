@@ -1,0 +1,8 @@
+About these proceedings
+Infinite programming may be defined as the study of mathematical programming problems in which the number of variables and the number of constraints are both possibly infinite. Many optimization problems in engineering, operations research, and economics have natural formul- ions as infinite programs. For example, the problem of Chebyshev approximation can be posed as a linear program with an infinite number of constraints. Formally, given continuous functions f,gl,g2, ••• ,gn on the interval [a,b], we can find the linear combination of the functions gl,g2, ... ,gn which is the best uniform approximation to f by choosing real numbers a,xl,x2, •.. ,x to n minimize a t€ [a,b]. This is an example of a semi-infinite program; the number of variables is finite and the number of constraints is infinite. An example of an infinite program in which the number of constraints and the number of variables are both infinite, is the well-known continuous linear program which can be formulated as follows. T minimize ~ c(t)Tx(t)dt t b(t) , subject to Bx(t) + fo Kx(s)ds x(t) .. 0, t € [0, T] • If x is regarded as a member of some infinite-dimensional vector space of functions, then this problem is a linear program posed over that space. Observe that if the constraint equations are differentiated, then this problem takes the form of a linear optimal control problem with state IV variable inequality constraints.
+Programming duality economics inequality optimization
+Springer-Verlag Berlin Heidelberg 1985
+Springer, Berlin, Heidelberg
+Springer Book Archive
+Series Print ISSN
+Buy this book on publisher's site

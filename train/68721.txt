@@ -1,0 +1,87 @@
+This image from a scanning electron microscope shows a tiny mechanical device, an electrostatically actuated nanoresonator, that might ease congestion over the airwaves to improve the performance of cell phones and other portable devices. Credit: Purdue University
+have learned how to mass produce tiny mechanical devices that could
+help cell phone users avoid the nuisance of dropped calls and slow
+downloads. The devices are designed to ease congestion over the airwaves
+to improve the performance of cell phones and other portable devices.
+is not enough radio spectrum to account for everybody’s handheld
+portable device,” said Jeffrey Rhoads, an associate professor of
+mechanical engineering at Purdue University.
+overcrowding results in dropped calls, busy signals, degraded call
+quality and slower downloads. To counter the problem, industry is trying
+to build systems that operate with more sharply defined channels so
+that more of them can fit within the available bandwidth.
+do that you need more precise filters for cell phones and other radio
+devices, systems that reject noise and allow signals only near a given
+frequency to pass,” said Saeed Mohammadi, an associate professor of
+electrical and computer engineering who is working with Rhoads, doctoral
+student Hossein Pajouhi and other researchers.
+Purdue team has created devices called nanoelectromechanical
+resonators, which contain a tiny beam of silicon that vibrates when
+voltage is applied. Researchers have shown that the new devices are
+produced with a nearly 100 percent yield, meaning nearly all of the
+devices created on silicon wafers were found to function properly.
+are not inventing a new technology, we are making them using a process
+that’s amenable to large-scale fabrication, which overcomes one of the
+biggest obstacles to the widespread commercial use of these devices,”
+Findings are detailed in a research paper appearing online in the journal IEEE Transactions on Nanotechnology. The paper was written by doctoral students Lin Yu and Pajouhi, Rhoads, Mohammadi, and graduate student Molly Nelis.
+addition to their use as future cell phone filters, such nanoresonators
+also could be used for advanced chemical and biological sensors in
+medical and homeland-defense applications and possibly as components in
+computers and electronics.
+devices are created using silicon-on-insulator, or SOI, fabrication –
+the same method used by industry to manufacture other electronic
+devices. The resonators can be readily integrated into electronic
+circuits and systems because SOI is compatible with complementary
+metal–oxide–semiconductor technology, or CMOS, another mainstay of
+electronics manufacturing used to manufacture computer chips.
+The resonators are in a class of devices called nanoelectromechanical systems, or NEMS.
+new device is said to be “highly tunable,” which means it could enable
+researchers to overcome manufacturing inconsistencies that are common in
+of manufacturing differences, no two nanoscale devices perform the same
+rolling off of the assembly line,” Rhoads said. “You must be able to
+tune them after processing, which we can do with these devices.”
+heart of the device is a silicon beam attached at two ends. The beam,
+which vibrates in the center like a jump rope, is about two microns long
+and 130 nanometers wide, or about 1,000 times thinner than a human
+hair. Applying alternating current to the beam causes it to selectively
+vibrate side-to-side or up and down and also allows the beam to be
+finely adjusted, or tuned.
+nanoresonators were shown to control their vibration frequencies better
+than other resonators. The devices might replace electronic parts to
+achieve higher performance and lower power consumption.
+vivid example is a tunable filter,” Mohammadi said. “It is very
+difficult to make a good tunable filter with transistors, inductors and
+other electronic components, but a simple nanomechanical resonator can
+do the job with much better performance and at a fraction of the power.”
+Not only are they more efficient than their electronic counterparts, he said, but they also are more compact.
+the devices are tiny and the fabrication has almost a 100% yield, we can pack millions of these devices in a small chip if we need
+to,” Mohammadi said. “It’s too early to know exactly how these will find
+application in computing, but since we can make these tiny mechanical
+devices as easily as transistors, we should be able to mix and match
+them with each other and also with transistors in order to achieve
+specific functions. Not only can you put them side-by-side with standard
+computer and electronic chips, but they tend to work with near 100% reliability.”
+The new resonators could provide higher performance than previous MEMS, or microelectromechanical systems.
+sensing application, the design enables researchers to precisely
+measure the frequency of the vibrating beam, which changes when a
+particle lands on it. Analyzing this frequency change allows researchers
+to measure minute masses. Similar sensors are now used to research
+fundamental scientific questions. However, recent advances may allow for
+reliable sensing with portable devices, opening up a range of potential
+applications, Rhoads said.
+sensors have promise in detecting and measuring constituents such as
+certain proteins or DNA for biological testing in liquids, gases and the
+air, and the NEMS might find applications in breath analyzers,
+industrial and food processing, national security and defense, and food
+and water quality monitoring.
+smaller your system, the smaller the mass you can measure,” Rhoads
+said. “Most of the field-deployable sensors we’ve seen in the past have
+been based on microscale technologies, so this would be hundreds or
+thousands of times smaller, meaning we should eventually be able to
+measure things that much smaller.”
+work is based at the Dynamic Analysis of Micro- and Nanosystems
+Laboratory at the Birck Nanotechnology Center in Purdue’s Discovery
+Park. Other faculty members and graduate students also use the
+The researchers have filed a patent application for the concept. The research is funded by the National Science Foundation.
+Tunable, Dual-Gate, Silicon-on-Insulator (SOI) Nanoelectromechanical Resonators
+Source: Purdue University

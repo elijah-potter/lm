@@ -1,0 +1,23 @@
+|Skip Navigation Links|
+|Exit Print View|
+|man pages section 1: User Commands Oracle Solaris 11 Express 11/10|
+- call rmmount to mount or unmount media
+volrmmount [-i | -e] [name | nickname]
+The volrmmount utility calls rmmount(1M) to, in effect, simulate an insertion (-i) or an ejection (-e). Simulating an insertion often means that rmmount will mount the media. Conversely, simulating an ejection often means that rmmount will unmount the media. However, these actions can vary depending on the rmmount configuration and media type.
+For example, using default settings, if you insert a music CD, it might not be mounted. However, you can configure rmmount so that it calls workman whenever a music CD is inserted.
+This command allows you to override volume management's usual handling of media (see EXAMPLES below).
+The following options are supported:
+Simulates an insertion of the specified media by calling rmmount.
+Simulates an ejection of the specified media by calling rmmount.
+Displays the name of the default device for volrmmount to handle. This device is used if no name or nickname is supplied.
+The following operands are supported:
+The name that volume management recognizes as the device's name.
+A shortened version of the device's name. Following is the list of recognized nicknames:
+Example 1 Using the volrmmount command
+When volume management finds a floppy that contains a filesystem, it calls rmmount to mount it. If you wish to run tar(1) or cpio(1) on that floppy, it must first be unmounted. To unmount the floppy use:
+example% volrmmount -e floppy0
+After volrmmount unmounts the floppy, if you wish to re-mount it (rather than ejecting it and reinserting it) use:
+example% volrmmount -i floppy0
+Notice that if you are using a named floppy, you can use its name in place of floppy0.
+volume management control port
+See attributes(5) for descriptions of the following attributes:

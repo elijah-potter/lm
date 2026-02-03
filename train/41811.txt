@@ -1,0 +1,20 @@
+Here are the questions surrounding the apps:
+1. What is encryption?
+Encryption means sending information in a way that only authorised people can access it. In practice, this means the original message is scrambled using an algorithm.
+This creates a new message, or cyphertext, which should look like nonsense to anyone spying in.
+Only people with the correct decryption keys can unlock the message back into its original meaning.
+There are different ways to encrypt messages, and many different services, but it is fundamentally based on mathematics.
+2. How does it work?
+Most end-to-end encrypted services rely on a public/private key encryption.
+Each person has two keys. The private key is yours alone, and used to decrypt messages that are sent to you.
+For services like iMessage and WhatsApp, this is kept on your device and done automatically.
+Your public key is available to anyone – it is used to encrypt messages in a way that can only be decrypted by you, with your private key. The public key is a bit like a personal delivery locker. Anyone can put a package in for you, but only you can unlock it.
+3. Which services are encrypted?
+Pretty much the entire digital world runs on encryption. Any message can be encrypted – and the way the internet works is by swapping messages.
+Encryption keeps your bank details safe when you shop online or in the real world, when you take money out of a cash machine.
+Every time you make a mobile phone call, it’s (to some extent) encrypted.
+The current row focuses on messaging apps, though. Services like WhatsApp and iMessage serve more than a billion users and offer encryption.
+Then there is a host of other, lesser known apps, including Signal and Telegram, that offer secure private messaging.
+4. Can the company (ie WhatsApp, Apple) see encrypted messages on their platforms?
+End-to-end encryption should mean only you and the person you are speaking with can see the message – so Apple and WhatsApp will not see it.
+However, if you are backing up your messages to the Cloud – an option in settings – they keep this data unencrypted, and could hand it over to governments if legally obliged.

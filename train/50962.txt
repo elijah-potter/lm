@@ -1,0 +1,12 @@
+Eight Weeks of Prototype: Week 1, Beginning with Prototype
+Removing Elements from the DOM
+The final aspect of managing DOM elements that we will look at in this article is the removal of elements. This is achieved by calling the
+remove() method on the element you want removed.
+When you call this method, the element being removed is returned from the function call. This allows you to save the element in case you want to add it to the DOM once again.
+If you want to temporarily hide an element from the user, instead of removing (by using
+remove()) and then re-adding it (using
+insert()), you should simply use
+show() respectively (these are methods added by Prototype as we will see in the second article in this series). You should use
+remove() when you want to get rid of an element (and its children) completely from the current page.
+Listing 16 shows an example of using
+remove() to remove an element from a HTML page. When you view this HTML code in your browser, the page will be blank since the only output from the page was removed.

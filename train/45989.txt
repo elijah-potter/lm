@@ -1,0 +1,15 @@
+Before we actually get into MongoDb, let’s begin by importing a Test Db. You can access the JSON file here. Once you have downloaded the file, use following command to import the document into mongodb.
+mongoimport --db testdb --collection students --drop --students.json
+Let’s break it down, the command tells you to import a file students.json into a database called testdb and collection called students. Let’s go ahead verify if our import is good.
+show dbs use students show collections
+We first checked if the db named students has been created by checking the list of dbs. ‘show dbs’ command displays list of all dbs in the server. We followed it up with ‘use students’ command, which is similiar to the ‘use ‘ command in MySql. Finally, we issued ‘show collection’ command to view the collections in the db. Remember collections are analogous to tables in relational database.
+We will now go ahead check out data. In relational database, data is saved as a row in the table. When it comes to Nosql databases, each row is represented as a document.
+To view contents of a collection, we issue a find command
+In our case, it would be
+This would show our 3 documents within the collection. Let’s explore the find command a bit. We could give a specific search filter as arguement, in case we need to find a particular document, similiar to the ‘where’ condition in relational database. Instead of the customary “=” syntax, MongoDb relies on JSON for passing the argument.
+In case you want to pass more than one arguement, things don’t change much. Yes, you guess right, you pass more data in json.
+If we need to search use a comparison operator ‘greater than’ or ‘less than’, you would need to use the ‘$gte and $lte commands.
+Let’s go ahead and issue a command, say, we need to find all students who age is ‘less than or equal to 1’
+A comprehensive list of comparison operator can be found in here
+The complete list of beginners guide in this series can be found in here
+One thought on “MongoDb 001 : Basic Commands”

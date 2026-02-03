@@ -1,0 +1,28 @@
+WM has presented the idea that the infinite binary tree must have countably many paths. It seems that he thinks that the total number of paths in a binary tree is always smaller than or equal to the total number of nodes. So since obviously the number of nodes in an infinite binary tree is countable, then the number of paths must be so. But since each real can be represented by a path in a 0,1 labeled infinite binary tree, then we must have countably many reals thus defying Cantor.
+The 0,1 labeled infinite binary tree he is speaking of is the following:
+0 / \ 0 1 / \ / \ 0 1 0 1 . . . . . . . .
+Answer: in order to justify this claim one must first see what is happening at the finite level. And make a simple check of the number of nodes and the number of paths through those nodes. If that confirmed that the total number of nodes is more or equal to paths then there would be some justification for that claim.
+Lets take the first degree binary tree which is the following
+0. One node, no paths
+The second degree binary tree is:
+0 / \ 0 1
+This has three nodes and two paths.
+Lets take the third degree binary tree
+0 / \ 0 1 / \ / \ 0 1 0 1
+Now this has 7 nodes BUT 8 paths, those are
+0-0 0-1 1-0 1-1 0-0-0 0-0-1 0-1-0 0-1-1
+Of course I'm treating paths as directed paths away from the root node, and so a path contain edges linking nodes in the SAME direction.
+IF we remove the directional requirement matters would really differ, since the number of paths will increase significantly compared to number of nodes, for example the second degree binary tree would have Three paths those are:
+0-0 0-1 0-0-1
+However we will not adopt that, well keep with the directional approach we'll stipulate that paths must be uni-directional, i.e all edges between nodes of a path must be in the same direction. So in the example above the third path would be shunned.
+As the degree of the binary tree increase the total number of paths increases more and more relative to the total number of nodes, as shown above this begins with the third degree binary tree (8 paths with 7 nodes).
+So the impression we have from the finite world is that of paths being actually MORE in number than nodes in any binary tree of a degree higher than 2.
+One must remember an important matter here is that in the example above of the third degree binary tree, we saw that the number of paths IS bigger than the number of nodes and yet we are still away from representing all 3 node size paths with labels 0,1. Clearly the following paths are missing:
+1-1-1 1-1-0 1-0-1 1-0-0
+However all of those would be represented in the 4th degree binary tree. The point here is that is at each x_th degree binary tree the number of paths is MORE than the number of nodes for a finite x > 2. And at each x_th level we don't have even a full representation of all possible paths of size x. So we are only representing SOME of the possible paths, but even that some is bigger in number than the total number of nodes at the respective level.
+One can easily say that the defective representation of all possible paths of size x will be remedied by the binary tree at x+1 level, and so the infinite binary tree will succeed in representing all possible paths, which is OK. But still the total number of paths (given all the restrictions stipulated above which are meant to lessen their number) is MORE than the number of nodes, actually way more than it for >2 finite level binary trees.
+So there is NO justification at intuitive level for the idea that the number of paths of a binary tree must be smaller than or equal the total number of nodes in it.
+We would think that if we go infinitely, i.e. if we have the actual infinite binary tree, then the number of paths would be equal to the number of nodes. However Cantor's argument showed that this is not so. STILL even at infinite level, the trend displayed at finite level continues up there. Still we have more infinite paths of the binary tree than we have nodes in it.
+This is very easy to prove, assume that the infinite binary tree has countably many paths, then this mean by definition the existence of a bijection between the set N of all natural numbers and the set of all paths of the infinite binary tree, Now just diagonalize, and the resulting path would be a path missing from the set of all paths, A contradiction. Thus it is not possible for the infinite binary tree to have maximally countably many paths.
+This only shows how some arguments against Cantor which seem at the first glance to be justified only to turn finally to be unjustifiable at all.
+The truth of the matter is that the infinite binary tree does have countably many nodes, but it has uncountably many paths going through those nodes.

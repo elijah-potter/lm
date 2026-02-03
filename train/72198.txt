@@ -1,0 +1,3 @@
+In our previous two issues, we discussed troubleshooting digital output modules. Troubleshooting analog modules is a bit more complicated, for two reasons:
+Your first step is to verify that the module is the correct one for this control loop — unless this specific module has worked correctly before. Whether it has or not, you need to use a meter to test the module's output versus input.
+One verification technique that works well is to simulate the signal from the PLC by forcing the output. This eliminates a long string of variables and simplifies the job in a few other ways versus having one person out in the field simulating an input to the signal transmitter. In our next issue, we'll discuss how to use this PLC force to determine where the problem lies.

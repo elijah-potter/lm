@@ -1,0 +1,15 @@
+The Dock (Figure 58) offers easy access to often-used applications and documents, as well as minimized windows.
+The Dock can be customized; Chapter 4 explains how.
+To identify items in the Dock
+Point to the item. The name of the item appears above the Dock (Figure 59).
+To identify items in the Dock that are running
+Figure 58 The Dock displays often-used applications and documents.
+Figure 59 Point to an icon to see what it represents.
+Figure 60 An item's icon bounces while it is being opened.
+To open an item in the Dock
+Click the icon for the item you want to open. One of four things happens:
+If the icon is for an application that is running, the application becomes the active application.
+If the icon is for an application that is not running, the application launches. While the application launches, the icon in the Dock bounces (Figure 60) so you know something is happening.
+If the icon is for a minimized window, the window is displayed.
+If the icon is for a document that is not open, the application that created the document launches (if necessary) and the document opens.
+Using applications and opening documents is discussed in greater detail in Chapter 5; minimizing and displaying windows is discussed earlier in this chapter.

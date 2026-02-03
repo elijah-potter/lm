@@ -1,0 +1,20 @@
+Thanks for the question. I looked at the screenshots you attached and I see that you have a dual band router. It distributes a Wi-Fi network in the 2.4 GHz and 5 GHz bands. Indeed, the speed and stability of the connection in the 2.4 GHz band is usually worse, therefore, your “Internet plummeted” may be due to the fact that the laptop connects, or automatically switches to a network in the 2.4 GHz band. It is better, of course, to connect it to a network in the 5 GHz band. So the speed will be higher, and the connection is more stable.
+How does a laptop, Wi-Fi adapter, Windows choose on which range to connect to the router via Wi-Fi? Well, there are two options here. It largely depends on the settings of the router.
+- The router can be configured with two different Wi-Fi networks. With different usernames and/or passwords for each range.
+- The Wi-Fi 5 GHz and Wi-Fi 2.4 GHz networks can have the same network name and password on the router. Or just turn on Band Steering and Smart Connect. When the router broadcasts one network, and devices automatically determine which range to connect to.
+In the first case, it is clear which network we will connect the laptop to, and it will work on this one. In the second case, as we have already found out, the system itself automatically determines the range (2.4 GHz or 5 GHz) and the Wi-Fi standard (Wi-Fi 4, Wi-Fi 5, Wi-Fi 6) on which the connection will take place. On what range and protocol the connection works can be viewed in the properties of the Wi-Fi network. On Windows 11 it looks like this:
+Or in the router settings.
+On what range to keep the connection at the moment, as I understand it, the system itself determines. It depends on different factors. For example, on the signal level, speed, interference, etc. But according to my observations, this does not work very adequately. For example, with a good network signal in the 5 GHz band, the connection can work in the 2.4 GHz band.
+In the advanced settings of the Wi-Fi adapter in the device manager, there is a “Preferred frequency” property. In English, this item is called “Preferred Band”.
+There you can set one of three values:
+- There are no preferences.
+- Prefer 2.4 GHz frequency
+- The 5 GHz band is preferred.
+Install the third item, restart the laptop and check the connection. I think that the laptop will hold on to the network in the 5 GHz band.
+There is also a property that is responsible for setting the aggressiveness of roaming. You have it in the screenshot too. called “Roaming Aggressiveness”. Or “Roam Aggressiveness”. There you can set one of 5 parameters: minimum, average-minimum, average, average-maximum, maximum. I’m not sure if these settings will somehow affect the automatic selection of a Wi-Fi network network in Windows, but you can experiment with these settings. It is more needed when there are several Wi-Fi access points in the house and the laptop does not switch well from one access point to another.
+How it works (example):
+- We put “minimum” and the laptop will practically not use roaming (automatically switch between networks). Unless in the case of a strong deterioration in the signal of the current network.
+- We put “maximum” and the system will be very sensitive to any changes and will constantly switch between Wi-Fi network ranges.
+So in your case, try setting the “Roaming Aggressiveness” settings to a minimum or maximum value and see how the connection works.
+You showed the item “802.11 n channel width for band 5.2GHz” in the screenshot.
+It has nothing to do with this issue. This is the channel width setting for this band.

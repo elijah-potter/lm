@@ -1,0 +1,15 @@
+Math and science people rejoice: Equation editing finally makes its appearance in Office for Mac’s Word 2011. If you’re a student or work in an academic setting, putting equations into your papers can be a pain, but no longer. Here’s a quick breakdown of how to use the latest version of Word on the Mac to make it a hurt a little less.
+Math 101: The Basics
+- As with citation management, you access the math tools under the Document Elements tab on the ribbon.
+- Clicking the pi symbol brings you to a ribbon where you can either select from a commonly-used equation or build one of your own.
+- Let’s say we want to solve x2+5x+6=0 using the Quadratic Formula. For those unfamiliar with the formula, in this case a=1, b=5, c=6. Choose Quadratic Formula from the pull-down and then enter in the correct values.
+- Working through the first part is just a copy, paste and change of the previous equation.
+- While we could keep cutting and pasting, this is a good time to demonstrate adding your own equations. Lets do the fractions by hand. The final result will look like this:
+- Choose fraction from the ribbon and click on the first option.
+- Enter -5 into the numerator. To get the +/- symbol, use the Math Symbols pane in the ribbon:
+- For the radical, choose Radical from the ribbon:
+- I just cut, pasted, and changed the fraction to get the rest of the equation transcribed.
+Math 102: Conclusions
+One big problem I had, as you can see from the screenshot, is fractions are compressed to fit into a line. Using the preset quadratic formula looks ok, but once Word interprets the formula as a fraction, it’s noticeably smaller. While I can resize the font size on fractions, it also resizes the equal sign. Is it a huge problem? No, but it’s something that annoyed me. Another little annoyance is if I enclose a fraction in parenthesis, the parentheses don’t extend the full height of the fraction; they are standard-sized parenthesis.
+I think users with a heavy requirement to typeset equations will still be better served using a tool such as LaTeX, which is designed to write articles with lots of math formulas. LaTeX has a fairly hefty learning requirement, though, so Word’s editor is fine for light-to-medium users.
+Related content from GigaOM Pro (sub req’d):

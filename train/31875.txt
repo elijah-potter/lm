@@ -1,0 +1,3 @@
+These Capacitive-touch protoboards are made up of four (maximum on one I2C bus) Adafruit MPR121 capacitive touch breakout boards. This Protoboard can accommodate up to 48 capacitive sensors. These were created for (Digital Arts and Technology Academy High School in Albuquerque, NM) Mr. Jawson’s classes with which accessible computer keyboards will be made. The signals from these sensors are processed by Arduino Leonardo microcontrollers and may be programmed using the Arduino IDE.
+The Arduino Sketch used to test these boards are based on the MPR121 tutorial from the Adafruit website (https://learn.adafruit.com/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial):
+Capacitive-Touch Protoboard Test Script

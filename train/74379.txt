@@ -1,0 +1,20 @@
+So the next Lesson is two fold, First off better fuel, or to be precise alternative fuels!
+There are _ Fuels that a Reactor can run off, starting from the "weakest"
+Thorium - 2eu/t - 3 heat/t
+Uranium - 15 eu/t - 20 heat/t
+Plutonium - 20 eu/t - 27 heat/t
+However be aware, the fun comes from the amount of heat. much more power comes from the better cells, but the lower cells make a more stable reactor.
+for example using the same setup as the one I linked with my uranium setup gives us this
+effectively without shut off, 1 min 30 seconds til nuclear meltdown!
+but using thorium cells
+so is the heat worth it? short answer yes.
+a Plutonum cell lasts twice as long as a Uranium cell, so not only are you getting more EU/t but also more EU overall and less maintenance.
+I will make a stable layout for a plutonium reactor shortly.
+In the mean time, you will have noticed that the fuel gradually depletes to a near depleted uranium cell.
+These are useless, unless you utilize a breeder reactor. the trick with breeder reactors is to make heat, but not enough to go boom.
+Breeder reactor's will generate re-enriched uranium cells from depleated isotope cells. To get Depleated isotope cells, you need to combine a near depleted cell with coal dust. then a re-enriched cell with more coal dust to get a uranium cell.
+that's right, at the expense of coal dust you can constantly generate fuel for your reactor.
+three types of fuel? can I use 3 types at once
+Yes, but it's tricky, the balancing of the heat etc is hard, but doable, the below is my "stable hybrid fuel reactor"
+this uses plutonium, uranium and thorium, makes 184eu/t and 184 million eu over it's life.
+more to this will be followed shortly

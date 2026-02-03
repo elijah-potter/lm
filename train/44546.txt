@@ -1,0 +1,20 @@
+Main ❯ Navigation & tracking systems ❯ Device specification: RWLT Pinger
+|RWLT Pinger - Pinger beacon
+Navigational pinger beacon RWLT Pinger of the system RWLT is placed on the positioned object: ROV, AUV, diver or other underwater object and emits a periodic navigation signal, which is received by four floating navigation buoys RWLT GIB, according to the navigation signal, the geographic position of the pinger is determined, the transmission of telemetric information from the pinger combined with navigation allows determining its depth, water temperature and battery voltage. The pinger does not require any pairing with the positioned object; it is enough to simply attach it to the object.
+|DIMENSIONS (W/O battery unit, Ф х h)||41 x 45 mm|
+|BATTERY UNIT DIMENSIONS||Ф50 х 165 mm|
+|WEIGHT (dry, W/O battery unit)||0.16 kg|
+|BATTERY PACK WEIGHT (dry)||0.75 kg|
+|BATTERY LIFE1||10 h|
+|BANDWIDTH||10 .. 30 kHz|
+|ACOUSTIC TRANSMISSION PERIOD||2 seconds|
+|NAVIGATION SIGNAL DURATION||0.2 seconds|
+|TELEMETRY||Depth, Temperature, Supply voltage|
+|MAX. ACOUSTIC RANGE2||1500 m|
+|ACOUSTIC SOURCE LEVEL||160 dB re 1 uPa @ 1 m|
+|MAX. RELATIVE VELOCITY||± 1.8 m/s|
+|DEPTH RATING||300 m|
+|WORKING TEMPERATURE RANGE||-10 .. 50 °С|
+|CHARGING||By special cradle|
+1 With a new, fully charged battery, at an ambient temperature of 20 °C.
+2 A parameter that determines the maximum range at which signal reception is possible, based on electroacoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the environment and the level of hydroacoustic noise.

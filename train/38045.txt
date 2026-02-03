@@ -1,0 +1,5 @@
+In the research article on the effort, they give the following explanation for doubling up nucleotides, rather than have each nucleotide stand for two bits:
+This allows us to encode messages many ways in order to avoid sequences that are difficult to read or write such as extreme GC
+In practice, they chose which base of the pair it was randomly (so a 50% GC content), while disallowing homopolymer runs greater than three.
+Their scheme also uses barcodes and addresses as the "table of contents"/"index"/"page numbers". (The data wasn't stored on a single long piece of DNA, but on a large number of shorter fragments.) By having a slightly flexible coding scheme, this allows them to potentially avoid inserting those annotation elements within the contents.
+Furthermore, a slightly flexible coding scheme would allow them to avoid accidentally encoding a text with part of a select agent's genome. (That is, you wouldn't want to synthesize part of the smallpox genome when you're storing your novel. If you can change the nucleotides used, you can avoid that.)

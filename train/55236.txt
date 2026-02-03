@@ -1,0 +1,10 @@
+posted by Stephanie46 .
+four particles are fixed along an x axis, separated by distances d = 2.70 cm. The charges are q1 = +3e, q2 = -e, q3 = +e, and q4 = +6e, with e = 1.60 × 10-19 C. What is the value of the net electrostatic force on (a) particle 1 and (b) particle 2 due to the other particles?
+F12= k•q1•q2/d²= k•3e²/d² (to the right)
+F13= k•q1•q3/(2d)²= k•3e²/4d² (to the left)
+F14= k•q1•q4/(3d)²= k•18e²/9d²(to the left)
+F= k•3e²/d² - k•3e²/4d² - k•18e²/9d² = ...
+F21= k•q1•q2/d²= k•3e²/d² (to the left)
+F23= k•q2•q3/d²= k•e²/d² (to the right)
+F24= k•q2•q4/(2d)²= k•6e²/4d²(to the right)
+F= - k•3e²/d²+ k•e²/d²+ k•6e²/4d² =

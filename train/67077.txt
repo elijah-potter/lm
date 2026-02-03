@@ -1,0 +1,34 @@
+What is PHI in Healthcare – Overview
+Protected health information (PHI) is also called personal health information. It is the medical histories, demographic information, mental health conditions, lab/test results, insurance information, and other similar data that a healthcare professional needs to have to ensure prompt and proper healthcare for an individual.
+The HIPAA (Health Insurance Portability and Accountability Act) of 1996 is the main law governing the use of, access to, and disclosure of PHI in the US. According to HIPAA regulations, PHI is defined as any data that relates to the past, present or future health of an individual. This also includes any provisions of healthcare to an individual and the payment for providing healthcare to an individual.
+HIPAA governs how this data is created, accumulated, assimilated, transmitted, stored and maintained by any HIPAA-compliant organization. Remember, healthcare deals with the sensitive personal information of patients, such as the patient’s birthdate, medical conditions and health insurance claims. In hard copy or electronic health records (EHR), PHI details the patient’s medical history, which lists the illness, treatments and outcomes.
+What is Personal Health Information (PHI)?
+There are 18 different types of information that HIPAA lists that, when combined with health information, are termed PHI. Some of these identifiers can, on their own, allow an individual patient to be identified, located, and even contacted. Other aspects need to be combined with other information to identify the patient.
+The 18 different information identifiers specified by HIPAA as PHI are:
+- Address (anything less than the name of the state)
+- Dates relating to an individual, such as birth date, admission date, etc. (except years)
+- Phone number
+- Fax number
+- Email address
+- Social security number
+- Medical record number
+- Health plan beneficiary number
+- Account number
+- Certificate or license number
+- Vehicle identifiers, such as license plate or serial numbers
+- Device identifiers, such as serial numbers
+- Web URL
+- IP (internet protocol) address
+- Biometric IDs, such as fingerprints or voiceprints
+- Full-face photographs, others with identifying characteristics
+- Any other unique identifying aspect
+How is PHI Used?
+A person likely has PHI at the time of birth, which is usually in the form of electronic health records (EHR). This may include details like the baby’s weight, length, body temperature, and childbirth complications. This information is essential for physicians to find the context which is needed to understand a person’s health and make correct treatment decisions.
+Clinical and research scientists usually use anonymized PHI to observe health and healthcare trends. Researchers are allowed to use PHI but only after any identifying features are removed. This anonymized PHI can be added to a large database containing patient information for population health management programs.
+In addition, anonymized PHI data can also be used to create value-based healthcare programs that assist healthcare providers in providing high-quality healthcare to patients. In contrast, hackers and other cyber-criminals can also seek to get their hands on PHI. This is a treasure trove of personal consumer information which is highly valued in the black market.
+Besides this, sometimes cyber-criminals can also hold PHI hostage through ransomware attacks, wherein they force a healthcare provider (or organization) to provide a payment in return for the safe exchange of the compromised PHI data.
+Who Is Covered Under HIPAA Regarding PHI?
+According to HIPAA regulations, any organization or individual that handles PHI regularly is classified under HIPAA as a “covered entity” and is required to follow the regulation’s privacy and security rules. Some of the most commonly covered entities under HIPAA relating to PHI are healthcare providers, such as doctors and surgeons, as well as the patient’s insurance providers.
+Besides this, under HIPAA regulations, a third party that handles PHI is termed a “business associate” and is also subject to following HIPAA regulations concerning PHI.
+For instance, an HIE (health information exchange) is a service that allows healthcare professionals to access and share a patient’s PHI. As this process involves sharing PHI through electronic means of transmission, the HEI is a business associate and must comply with HIPAA’s PHI regulations.
+The HIPAA Privacy Rule is the main governing regulation for PHI data in the United States. It regulates the safe handling of PHI data. It dictates how hospitals, long-term care facilities, ambulatory services, and centers, as well as other healthcare providers, use and share sensitive personal information of patients. This federal framework regulates the collection, sharing, storing, and transmission of PHI anywhere in the US.

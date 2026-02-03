@@ -1,0 +1,39 @@
+- About Overview
+- Honors and Awards
+- Facts and Figures
+- Support the School
+- Contact Us
+- Dean’s Office
+- Dean’s Office Overview
+- Assistant Deans
+- Associate Deans
+- Education Unit
+- Office of Academic Affairs
+- Office of Finance and Administration
+- Office of Planning and Communications
+- Org chart
+- Patient Care
+Training computers to think more like scientists
+Keiser and Chuang suggest fixes for machine learning pitfalls in science
+By Levi Gadye / Fri Apr 19, 2019
+Imagine you’ve just whipped up a computer program that can distinguish dogs from wolves in photographs, using machine learning. The program looks like it works fine, correctly labeling dog for dog, wolf for wolf. But as you test the code over and over, you realize that all of the wolf photos also have snow in them. You test the code once more, with a photo of a dog playing in the snow, and now your code fails, mistaking that dog for a wolf.
+Congratulations, you’ve just experienced a common pitfall of blindly relying on computer code.
+Machine learning, a branch of artificial intelligence that enables computers to devise their own solutions to solving problems, has allowed companies like Google to develop software that can learn to not only spot a dog in a photo, but also predict things like traffic patterns and consumer buying habits.
+Machine learning has also long intrigued scientists hoping to accelerate the pace of research using computing power. In late 2017, Kangway Chuang, PhD, began his post-doctoral work in the lab of Michael Keiser, PhD, a faculty member in the UCSF Institute for Neurodegenerative Diseases with a joint appointment in the Department of Pharmaceutical Chemistry, with the intention of improving drug discovery by blending his expertise in chemistry with Keiser’s experience with machine learning.
+So when Chuang caught wind of an early online release of a paper from a Princeton University lab that purported to predict the outcomes of thousands of chemical reactions using machine learning, he dug right in.
+The Princeton authors had developed an algorithm that could predict the result of combining any of a few thousand chemicals, and they asserted that the algorithm worked based on particular features of those chemicals, like the patterns of how their atoms vibrate or of how they absorb radiation. Within days, however, Chuang had discovered flaws in key graphs and tables of the paper.
+Chuang and Keiser contacted the Princeton group and helped them fix minor bugs in their code. The original paper was updated and published, but with their interest piqued, Chuang and Keiser continued to ponder the implications of the findings.
+“The big question that we’re all trying to answer is, ‘How can you get a computer to think about a molecule?’” Chuang said.
+Chuang decided to carry out what is known as a “control” experiment with the machine learning algorithm. In many of the sciences, even when an experiment works, scientists will run a second experiment in which a key component has been left out. If the experiment still seems to work without the vital component, it’s back to the drawing board for the scientists to figure out why.
+Using this line of reasoning, Chuang replaced the Princeton group’s database of chemical features with random numbers instead and again tasked the machine learning algorithm with predicting the reaction outcomes. If the algorithm were actually making predictions based on these chemical features, the results should change. But that’s not what happened.
+Surprisingly, the algorithm still made nearly the same predictions. Just how the dog/wolf algorithm taught itself to get mostly correct answers based solely on the presence of snow in an image, the chemistry algorithm was using an unseen shortcut to produce seemingly correct answers, without taking chemical features into account.
+Both Keiser and Chuang are careful to note that even though this control experiment revealed a serious flaw in the Princeton machine learning paper, their own findings still have limitations. “This doesn’t mean that chemical features aren’t involved [in the outcomes of chemical reactions],” Keiser explained. “It just means that this machine learning study has failed to prove it.”
+In late 2018, Chuang and Keiser published their work in two papers of their own, showing both how machine learning could lead scientists astray, and how scientists might, in the future, avoid some of the pitfalls of training computers to be scientists.
+Using the laboratory-based science controls as inspiration, Keiser and Chuang described three simple control experiments in a cover article for ACS Chemical Biology that scientists could use to make sure that their machine learning algorithms weren’t, metaphorically, mistaking dogs for wolves.
+At the end of the day, Keiser and Chuang want data scientists to be their “own harshest critics,” just as they’ve learned to be in their own lab. They’re currently developing computational tools that would allow anyone to easily apply controls to ensure that machine learning algorithms are working correctly.
+“This entire process has been really useful in terms of strengthening our own approach to science,” said Chuang. “We hope to lead by example through our future studies.”
+- Predicting reaction performance in C–N cross-coupling using machine learning (Science )
+- Comment on “Predicting reaction performance in C–N cross-coupling using machine learning” (Science )
+- Adversarial Controls for Scientific Machine Learning (ACS Chemical Biology )
+Image credits: Wolf 1 (CC BY-SA 4.0), Wolf 2 (public domain), Wolf 3 (CC BY-SA 3.0), Wolf 4 (public domain), Dog 1 (public domain), Dog 2 (free for commercial use), Dog 3 (CC BY-SA 4.0), Dog 4 in snow (public domain), computer display (free for commercial use) by Clker-Free-Vector-Images from Pixabay.
+About the School: The UCSF School of Pharmacy is a premier graduate-level academic organization dedicated to improving health through precise therapeutics. It succeeds through innovative research, by educating PharmD health professional and PhD science students, and by caring for the therapeutics needs of patients while exploring innovative new models of patient care. The School was founded in 1872 as the first pharmacy school in the American West. It is an integral part of UC San Francisco, a leading university dedicated to promoting health worldwide.

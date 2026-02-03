@@ -1,0 +1,39 @@
+This is the last homework set of the term. It is optional. If you decide to turn it in, it is due Wednesday, December 14 at noon.
+David Miller will give a short presentation on Wednesday, November 16, on Augustin Cauchy and Cauchy’s dispersion equation.
+Taylor Mitchell will give a presentation on Friday, November 18, on Lajos Pósa.
+Sheryl Tremble will give a presentation on Monday, November 28, on Pythagoras and the Pythagorean theorem.
+Blake Dietz will give a presentation on Wednesday, November 30, on
+This is homework 5, due Friday November 18 at the beginning of lecture.
+First of all, some of you did not realize that the first question in the previous homework set was indeed a question, and skipped it. If that was the case, please solve it now and turn it in. The sooner you do so, the sooner I’ll be able to grade it and return it with the rest of your homework 4. The question was as follows:
+- Suppose that is monotonically increasing. Then and exist for all . Moreover,
+for all .
+To be explicit: You need to prove all the assertions in the paragraph above.
+The new set follows.
+Problem 6 in the midterm asked to prove that if is an integer and is a multiple of , then is already a multiple of .
+As we now know from lecture, the key seems to be that is a prime number. For example, it is not necessarily the case that if is a multiple of , then is a multiple of . For a counterexample, we can take .
+The proof I was expecting was by contrapositive: If is not a multiple of , then it has a non-zero remainder when divided by , so or for some integer . This means that or . After some rearranging, we see that in both cases we have for some integer , but then is not a multiple of after all.
+Using Euclid’s lemma, we can give another proof that is particularly short: Since is a prime, then whenever divides a product, it divides one of the factors. We are told that divides , so it divides or it divides . On the other hand, this brevity is only apparent, as the proof uses Euclid’s lemma, which makes use of the Euclidean algorithm and the possibility of writing the GCD of two numbers as a linear combination of them. When written in full detail, this argument ends up being longer than the one we gave first.
+A different approach was suggested during lecture, and I think it leads to a nice argument, so I am presenting it here.
+Keith Ward will give a short presentation on Monday, November 7, on Grigori Perelman and the Poincaré conjecture.
+I have extended the deadline for extra credit problems: They are now due at the beginning of the final exam. In addition to the previous problems, I will be adding a few more through the next few days in this post.
+- The problem at the end of the second midterm. Specifically, find (with proof) the correct formula for the resulting number of regions, when points are positioned on the circumference of a circle, and all possible lines between them are drawn. This problem is due to Leo Moser and is discussed in a few places, for example, in Mathematical Circus, by Martin Gardner.
+- Given numbers from , show that there must be two such that one divides the other. This problem can be solved using mathematical induction, but feel free to solve it by other methods.
+- Solve this self-referential test.
+Professor Gowers is a British mathematician, Fields medalist 1998. Besides his many interesting and significant results, Gowers has contributed to the mathematical community in several other valuable ways, for example, by prompting the creation and development of polymath projects, “massively collaborative mathematics“.
+His blog is very interesting. Recently, he has been posting on topics that are quite close to the content of our course, starting with his Welcome to the Cambridge Mathematical Tripos. I recommend that you take a look at his recent postings (and their comments), as one of Gowers’s strengths is his clarity of exposition helping one understand how even complicated results can be naturally motivated and proved.
+Here is a link to a lecture he gave at the Millennium Meeting on May 2000, On the importance of mathematics, also highly recommended. The lecture is split into a series of short videos and lasts about one hour. I hope you can find the time to watch it on its entirety. Here is a pdf transcript of the talk.
+Here is the list of his recent postings on topics relevant to our course:
+- Welcome to the Cambridge Mathematical Tripos.
+- Basic logic — connectives — AND and OR.
+- Basic logic — connectives — NOT.
+- Basic logic — connectives — IMPLIES.
+- Basic logic — quantifiers.
+- Basic logic — relationships between statements — negation.
+- Basic logic — relationships between statements — converses and contrapositives.
+- Basic logic — tips for handling variables.
+- Basic logic — summary.
+- Alternative definitions.
+The subject of his next few postings will be one of our coming topics, and they all certainly come up in more advanced courses, so it may be useful to read these as well:
+- Injections, surjections and all that.
+- Domains, codomains, ranges, images, preimages, inverse images.
+- Equivalence relations.

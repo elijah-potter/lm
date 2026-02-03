@@ -1,0 +1,26 @@
+Ancestral Sources Tutorial ~ Working With Tools ~ (2) Add Images to Sources
+Sometimes supporting images or media only come to light after a data entry has been committed to Family Historian.
+These images or media can be added to a Source record using the Family Historian add Multimedia options, or by using the Ancestral Sources Add Images to Existing Sources tools. Note that any type of media file can be added, not just image files.
+Add Images to Existing Sources
+Open Ancestral Sources and ensure the Family Historian Sample Project or the Sample.ged file opens by default, but if not then Configure Initial Settings.
+This tutorial works best if the Enter Baptism Facts tutorial has been completed, which creates a Source record without images.
+Select the +Existing Sources mode by clicking the Add images to existing sources button to the right of the toolbar, or by choosing View > Add Images to Existing Sources.
+From the Type drop-down list choose Baptism and tick Only display sources without images.
+From the Source drop-down list choose Baptism Newton, Surrey, England 9 May 1837 Arthur Hodges.
+If this Source does not exist, try another Type or un-tick Only display sources without images.
+To open the Image Viewer, either use Edit > Add/View Images… or click the Add/View Images link in the Linked Images panel.
+Ensure the Link new image option is selected, then click the Select File… button, and Open any image file, perhaps from My Pictures. This image file should appear in the image panel on the left.
+You can in fact add any type of file, not just image files. In the Open file window, near the lower right corner, it lists Image Files (*.bmp;*.gif;*.jpg;*.jpeg;*.pcx;*.tif;*.png;*.tga;*.wmf), and to the right of this list is a black triangular arrow. Click on that arrow and from the drop-down list choose All Files (*.*). You will then be able to select any file type to attach to the source. Although the file might not display within the Image Viewer, clicking on the area where the image would normally be displayed will open the default program for that file type. e.g. If you attach a word-processor document then it might open Microsoft Word.
+There are several options for specifying the Image Title and the Linked Filename of the Multimedia Record.
+One option, beyond the scope of this tutorial, allows the Image Title to be customised by a template that compiles data from a variety of sources.
+See the Title & Type Templates tutorial for details.
+For this tutorial select Same as source title and tick Rename file to match title, which neatly assigns the same Title to the Multimedia Record and Image Filename as the Source Record.
+There is also an option to choose Keywords to classify the image.
+(If using Family Historian Version 3 or earlier, do not select any Keywords, otherwise _KEYS UDF will arise).
+Now click the Save button at the bottom.
+If using Family Historian Version 4.1 (or later) there may be a prompt to choose the Media folder into which to eventually copy the image file.
+Click the Yes button, and in the popup click New Folder, create a Baptism folder, and click OK.
+However, if the image file is already in the Media folder or sub-folder, then this prompt is bypassed.
+Close the Image Viewer window by clicking its Close button at the top.
+When satisfied, click the Save File button near the left of the toolbar, or use File > Save Entry To File.
+Finally, close Ancestral Sources by using the File > Exit option.

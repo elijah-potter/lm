@@ -1,0 +1,8 @@
+Jump blocks are representations of block inputs and outputs that the user can place at many locations throughout the algorithm in order to avoid cluttering up the canvas with edges. There are two components of a Jump block: the anchor Jump block (green arrow) which represents the output of a block, and one or more destination Jump blocks (pink arrow) which represent the input of another block. The pair can replace a direct edge between two blocks.
+Note TT recommends that you use Jump blocks when creating an algo. They help to keep your algo organized and clean looking on the canvas, while also make it easier to follow the block logic pathways.
+Jump blocks are commonly used for two purposes:
+To connect blocks on opposite sides of the algo so you don't have edges running across large portions of an algo
+Example Using a Jump block to route a discrete event message to another block
+To make it easier to see the values that go into blocks without having to trace crossing edges
+Example Using Jump blocks to improve readability
+The following rules govern the behavior of Jump blocks:

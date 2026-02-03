@@ -1,0 +1,39 @@
+Use cases are a popular way to express software requirements. They are popular because they are practical. A use case bridges the gap between user needs and system functionality by directly stating the user intention and system response for each step in a particular interaction.
+Use cases are simple enough that almost anyone can read them. Even customers
+or users can read use cases without any special training. However, writing use
+cases takes some practice. It is not difficult to start writing use cases, but really
+mastering them takes training, practice, and insight.
+No single use case specifies the entire requirements of the system. Each use case
+merely explains one particular interaction. An organized suite of use cases and
+other specification techniques are needed to fully specify the software
+The figure below illustrates where a use case document fits into the overall
+software requirements specification (SRS) and how it relates to other documents.
+This white paper focuses on the yellow "Use Cases" box. Ideally, your use case
+document is just one part of an overall set of project documents. But, don't worry
+if you just want to jump straight into writing use cases: this white paper focuses
+Target & Benefits
+Classes of Users
+Software Requirements Spec
+Use Case Suite
+Another important goal is to allow potential customers to read the use cases and validate them. Long before you reach these goals, you will find that the process of writing use cases is itself a very useful way to clarify your own thinking about the system requirements: by writing step-by-step descriptions, you force yourself to think through the details of the system's features.
+Use cases and feature specifications complement each other. Use cases concretely explain how a user accomplishes a goal using one or more features of the system. Feature specifications describe the same system from a different perspective: a feature spec abstractly describes everything about one software feature and all it's possible uses.
+It is a good idea to write the use cases and the feature specs in parallel. For
+example, when working through a use case, you might realize that a particular
+feature needs an additional option, so you would note that in the feature spec.
+Likewise, when making a pass over the feature specifications, you might realize
+that a feature needs a particular input value to work properly, so you might need
+to add a step to all use cases for that feature. Together, use cases and feature
+specs provide checks and balances that help you write requirements that are
+more complete, correct, and consistent.
+The rest of this white paper works through the six steps shown in yellow in the diagram below. Beside those steps, we show the corresponding steps for writing feature specifications. (You may notice that this is very similar to the test case
+Note that in steps 4 and 5, we recommend that you only specify the most
+important use cases in detail. In any complex system, there will be a large
+number of potential use cases. It is usually best to take a breadth-first approach:
+map out your use case suite first, then fill in details incrementally as needed. This
+concept is key to getting the most value out of the limited time that you have to
+After the SRS is written, each part is used in later work on the system. Both use
+cases and feature specs affect both the design and quality assurance of the
+system. However, feature specifications can affect the design more directly, and
+the use case suite can provide a stronger starting point for the system test suite.
+Use your Facebook login and see what your friends are reading and sharing.
+Now bringing you back...

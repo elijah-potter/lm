@@ -1,0 +1,25 @@
+Dijkstra's algorithm is a method to find the shortest paths between nodes in a graph. It is faster than many other ways to do this, but it needs all of the distances between nodes in the graph to be zero or more.
+Algorithm[change | change source]
+- Keep doing these steps:
+- Find the thing that you have not yet drawn a mark next to that has the smallest number written next to it
+- Draw a mark next to this thing
+- Do these steps for each other thing connected to this place:
+- Add the number written next to this thing and the distance of the connection together
+- If the connected thing does not have a number written next to it, write the new number and the name of this thing next to the connected thing
+- If the connected thing has a number written next to it and the new number is smaller than the written number:
+- Draw a line over what is already written
+- Write the new number and the name of this thing instead
+- Stop when you have drawn a mark next to every thing in the list
+When you have done all of these steps you can use the list to find the shortest way from the first thing to any other thing. First write down the other thing. Then keep doing these steps:
+- Find the last thing you wrote down in the list
+- Write down the thing written next to it
+- Stop when you find the first thing
+The connections between the things you have written down are the shortest way from the first thing to the other thing.
+Pseudocode[change | change source]
+In this pseudocode algorithm, the code u ← vertex in Q with min dist[u], searches for the vertex u in the vertex set Q that has the least dist[u] value. length(u, v) returns the length of the edge connecting the two neighbor-nodes u and v. The variable alt on line 18 is the length of the path from the root node to the neighbor node v if it were to go through u. If this path is shorter than the current shortest path recorded for v, that current path is replaced with this alt path. The prev array contains a pointer to the next node on the source graph to get the shortest route to the source.
+1 function Dijkstra(Graph, source): 2 3 create vertex set Q 4 5 for each vertex v in Graph: 6 dist[v] ← INFINITY 7 prev[v] ← UNDEFINED 8 add v to Q 9 dist[source] ← 0 10 11 while Q is not empty: 12 u ← vertex in Q with min dist[u] 13 14 remove u from Q 15 16 for each neighbor v of u: // only v that are still in Q 17 alt ← dist[u] + length(u, v) 18 if alt < dist[v]: 19 dist[v] ← alt 20 prev[v] ← u 21 22 return dist, prev
+If we only want the shortest path between vertices source and target, we can stop the search after line 15 if u = target (if the current node u is the target node). Now we can read the shortest path from source to target by going backwards:
+1 S ← empty sequence 2 u ← target 3 if prev[u] is defined or u = source: // Do something only if the vertex is reachable 4 while u is defined: // Construct the shortest path with a stack S 5 insert u at the beginning of S // Push the vertex onto the stack 6 u ← prev[u] // Traverse from target to source
+Now sequence S is the list of vertices that make up one of the shortest paths from source to target. If a path from source to target does not exist, sequence S will be empty.
+References[change | change source]
+- Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein, Clifford (2001). "Section 24.3: Dijkstra's algorithm". Introduction to Algorithms (Second ed.). MIT Press and McGraw–Hill. pp. 595–601. ISBN 0-262-03293-7.

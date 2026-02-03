@@ -1,0 +1,7 @@
+When you create an Excel worksheet, you may want to update it over time with new or modified data. If you want to know the sum of a column or row even with changes, you can use the AutoSum feature. Entering the SUM function in the cell of your choice will create a running total, and the cell will automatically display the updated total as soon as you enter new information.
+1. Start Excel and open the worksheet in which you want a running total. Click inside the cell where you want the total to appear.
+2. Click the "AutoSum" drop-down arrow in the Editing group of the Home tab, and then select "Sum."
+3. Select the row or column you want to total and press "Enter." If you want to use the group of cells Excel automatically highlights, simply press "Enter."
+4. Save the worksheet before closing. Excel updates the total any time you enter amounts into any of the cells in the range you selected.
+- Information in this article applies to Excel 2007, 2010 and 2013. It may vary slightly or significantly with other versions or products.
+- Visage/Stockbyte/Getty Images

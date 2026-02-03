@@ -1,0 +1,9 @@
+The Scheme Programming Language, 4th Edition
+The Scheme Programming Language, 4th Edition, by R. Kent Dybvig is available for purchase through all major online and retail bookstores directly from the publisher, MIT Press.
+The full text is also available online, as well as the (short) list of errata.
+Scheme is a general-purpose programming language, descended from Algol and Lisp, widely used in computing education and research and a broad range of industrial applications. This thoroughly updated edition of The Scheme Programming Language provides an introduction to Scheme and a definitive reference for standard Scheme, presented in a clear and concise manner. Written for professionals and students with some prior programming experience, it begins by leading the programmer gently through the basics of Scheme and continues with an introduction to some of the more advanced features of the language.
+The fourth edition has been substantially revised and expanded to bring the content up to date with the current Scheme standard, the Revised6 Report on Scheme. All parts of the book were updated and three new chapters were added, covering the language's new library, exception handling, and record-definition features.
+The book offers three chapters of introductory material with numerous examples, eight chapters of reference material, and one chapter of extended examples and additional exercises. All of the examples can be entered directly from the keyboard into an interactive Scheme session. Answers to many of the exercises, a complete formal syntax of Scheme, and a summary of forms and procedures are provided in appendixes.
+The Scheme Programming Language is the only book available that serves both as an introductory text in a variety of courses and as an essential reference for Scheme programmers.
+About the Author
+R. Kent Dybvig is Professor of Computer Science at Indiana University and principal developer of Chez Scheme.

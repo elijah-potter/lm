@@ -1,0 +1,29 @@
+Presentation on theme: "When an object is dropped on earth, the work done by the gravitational force is equal to the change in gravitational potential energy: W = mgh initial."— Presentation transcript:
+When an object is dropped on earth, the work done by the gravitational force is equal to the change in gravitational potential energy: W = mgh initial - mgh final
+Similarly, when a charge is moved in an electric field, the work done on the charge by the field is equal to the change in electrical potential energy: W = EPE initial - EPE final.
+The electric force on the charge in the field is F = q 0 E. It is useful to express this work per-unit-charge, by dividing both sides of the previous equation by q 0. W/q 0 = EPE initial /q 0 - EPE final /q 0
+The value EPE/q 0 is called electric potential or the potential, or potential difference.
+The electric potential V at a given point is the electric potential energy EPE of a small test charge q 0 situated at that point divided by the charge itself: V = EPE/ q 0 The unit is the joule/coulomb = volt (V).
+The electric potential difference between two points is: V final - V initial = EPE final /q 0 - EPE initial /q 0 = -W/q 0 or, ∆V = ∆(EPE)/q 0 = -W/q 0
+We only measure the differences of electrical potential V and electrical potential energy EPE, not their absolute amount.
+Ex. 1 - The work done by the electrical force on a test charge (q 0 = +2.0 x 10 -6 C) as it moves from A to B is W AB = +5.0 x 10 -5 J. (a) Find the difference ∆(EPE) between these points. (b) Determine the potential difference, ∆V, between the points.
+A positive charge accelerates from a region of higher electric potential energy (or higher potential) toward a region of lower electric potential energy (or lower potential).
+A negative charge accelerates from a region of lower potential toward a region of higher potential.
+Ex. 2 - Three points, A, B, C, are located on a horizontal line. A positive test charge is released from rest at point A and accelerates toward point B. Upon reaching B, the test charge continues to accelerate toward C. Assuming that only motion along the line is possible, what will a negative test charge do when it is released from rest at B?
+An automobile battery has a potential that is 12 V higher at the positive terminal than at the negative terminal, V+ - V- = 12 V. The battery takes the positive charge that reaches the negative terminal and moves it to the positive terminal through the battery.
+This requires work to be done to the charge by the battery; this energy comes from the battery’s reserve of chemical energy.
+Ex. 3 - Determine the number of particles, each carrying a charge of 1.60 x 10 -19 C, that pass between the terminals of a 12-V car battery when a 60.0-W headlight burns for one hour.
+The word “volt” is also used in the context of an energy unit called the electron volt. One electron volt is the change in potential energy of an electron (q 0 = 1.60 x 10 -19 C) when the electron moves through a potential difference of one volt.
+This change in potential energy is q 0 ∆V = (1.60 x 10 -19 C)x(1.00 V) = 1.60 x 10 -19 J. So, 1 eV = 1.60 x 10 -19 J. One MeV = 10 +6 electron volts. One GeV = 10 +9 electron volts.
+The total energy of an object includes all forms of kinetic and potential energy. E total = 1/2mv 2 + 1/2I 2 + mgh + 1/2kx 2 + EPE
+Ex. 4 - (a) A particle has a mass of m = 1.8 x 10 -5 kg and a positive charge of q 0 = +3.0 x 10 -5 C. It is released from rest at point A and accelerates horizontally until it reaches point B. Angular speed is zero. The only force acting on the particle is an electric force, and the electric potential at A is 25 volts greater than that at B. (V A - V B = 25 V) What is the speed v B of the particle when it reaches point B?
+(b) If the same particle had a negative charge and were released from rest at B, what would be its speed v A at A?
+When a positive test charge +q 0 is moved away from a positive point charge +q, work is done by the force between the charges. The magnitude of this force is given by Coulomb’s law: F = kq 0 q/r 2.
+Since the distance from the charge +q varies, so does the force F. Therefore, the work is not simply F x d. Integral calculus can be used to find the work W AB when the particle +q 0 is moved from point A to point B.
+W AB = kqq 0 /r A - kqq 0 /r B Therefore: V B - V A = kq/r B - kq/r A
+At an infinite distance r B, V B and kq/r B become zero. The equation becomes: V = kq/r.
+This V = kq/r is the potential of a point charge compared to the potential at infinity. This V has no value in the absolute sense, it refers to the difference from the potential an infinite distance away.
+When q is positive, V is also positive, indicating that a positive charge raises the potential around it above zero. Conversely, a negative q decreases the potential below the zero reference value.
+Ex. 5 - Using a zero reference potential at infinity, determine the amount by which a point charge of 4.0 x 10 -8 C alters the electric potential at a spot 1.2 m away when the charge is (a) positive and (b) negative.
+When two or more charges are present, the potential due to all the charges is obtained by adding together the individual potentials.
+Ex. 6 - Charges of +8.0 x 10 -9 C and -8.0 x 10 -9 C are separated by a distance of 0.80 m. What is the total electric potential at (a) a point exactly halfway between the two charges (0.40 m from each) and (b) between the two charges, 0.20 m from the positive charge and 0.60 m from the negative.

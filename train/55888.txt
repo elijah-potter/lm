@@ -1,0 +1,14 @@
+Build your own hardware to collect reaction times
+When collecting response latencies, you usually have the choice between keyboards (cheap, imprecise) and response boxes (expensive, precise, inflexible, mostly legacy hardware = serial ports). Some software (e.g., DMDX) acesses DIO cards (also expensive, precise, flexible, and difficult to handle).
+We propose a different solution: Use the Arduino platform. Connect an Arduino via USB and a virtual serial port to E-Prime. Add buttons or other sensors to it. Even better, add actuators to it – LEDs, vibrators, etc.
+Or, connect an Arduino Leonardo via USB, make it emulate a HID, and interface sensors with any experimentation software, including DMDX.
+Details in this paper:
+Schubert, T. W., D’Ausilio, A., & Canto, R. (2013). Using Arduino microcontroller boards to measure response latencies. Behavior Research Methods. Available online at http://link.springer.com/article/10.3758/s13428-013-0336-z. doi: 10.3758/s13428-013-0336-z
+If you do not have access to Behavior Research Methods, download the uncorrected final draft (Author version).
+1: a Cherry key module mounted on a Lego Duplo brick. 2: A SeeedStudio screw connector, connecting the wires from the button and a resistor to the Grove wires. 3: An Arduino Uno with a SeeedStudio Grove base shield. The USB connector in the front connects to the PC. 4: the full setup: an improvised response box for 50 €, millisecond precise.
+The code itself is now hosted on a project page of the Open Science Framework.
+Both are available under the GNU GPL v3 license. With these scripts, you can use an Arduino microcontroller to measure response latencies from E-Prime.
+- TinkerKit – rapid prototyping platform with all kinds of sensors and actuators
+- Seeedstudio Grove – another rapid prototyping platform, even more flexible
+We are expanding on this line of work, testing additional boards and sensors. We are also highly interested in porting the scripts to other platforms (e.g., Presentation). If you would like to contribute, please contact us.
+THE SOFTWARE ON THIS PAGE IS PROVIDED TO YOU “AS IS,” AND WE MAKE NO EXPRESS OR IMPLIED WARRANTIES WHATSOEVER.

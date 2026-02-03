@@ -1,0 +1,41 @@
+Earlier this week, I was able to write a script that solves the popular Sudoku game. It was a fun experience because along the way I learned about a new way to implement the backtracking algorithm on exact cover problems.
+Say we have a set of items. They could be practically anything, but for the sake of understanding lets think of something specific, like school supplies. In particular lets say that school is starting back and you have a checklist of things you need to buy:
+- a pencil
+- a pen
+- a notebook
+- a spiral tablet
+- a ruler
+- a calculator
+- a lamp
+- a bookbag (or knapsack as I just learned people call them)
+- and some paper
+Suppose also that as you’re shopping for these items you also see that stores sell the items as collections. In order to spend less money, you think it may be best to buy the items in collections instead of individually. Say these collections are:
+- a pencil, a notebook and a ruler
+- a pen, a calculator and a bookbag
+- a spiral tablet a lamp and some paper
+The exact cover problem is a very important problem in computer science because many other problems can be described as problems of exact cover. Because the problem is in general pretty difficult to solve most strategies for solving these problems still generally take a long amount of time to solve. A common technique for solving these problems is called backtracking. This is basically a trial and error way of solving the problem. We try to construct a solution to the problem, and each time we realize our (partial) solution will not work, we realize the error, backup by eliminating part of the current solution and try to solve the problem by constructing another solution. This is basically how the backtracking procedure works. The main caveat to it is that we need to keep track of the partial solutions we have already tried so that we do not continuously retry the same solutions over and over again.
+In particular Sudoku puzzles can be described as exact cover problems. Doing this involves translating the rules of Sudoku into exact cover statements. There are four basic rules of Sudoku that we need to take into consideration.
+- Each cell in the grid must receive a value
+- a value can only appear once in each row
+- a value can only appear once in each column
+- a value can only appear once in each pre-defined 3 by 3 subgrid.
+In actuality these statements are joined together and what happens is that each position in the grid we (try to) fill in actually has effects in all four sections. We can set up the Suduko problem as an exact cover problem by noting these effects.
+- If a cell (i, j) in the grid receives the value v, then we also need to note that row i, column j, and the pre-defined subgrid have also received its proper value.
+We can keep track of this by defining a table.
+- The first 81 (81 = 9*9) columns in the table will answer the question of does row i, column j have anything in that position. This will tell us whether the cell is empty or not, but will not tell us the value in the cell.
+- The next 81 columns in the table will answer the question of does row i (of the Sudoku grid) have the value v in it yet.
+- The next 81 columns in the table will answer the question of does column j (of the Sudoku grid) have the value v in it yet.
+- The final 81 columns in the table will answer the question of does the (3×3) subgrid containing (i, j) have the value v in it yet.
+Notice that individually these columns do not give us much information about the grid, but because each value we place into the grid also has a precise location, a row, a column, a value and a subgrid we link together these columns of the new table and are able to understand more about the implications of each Sudoku operation. There are 9 possible rows, 9 possible columns and 9 possible values for each move, creating 729 possible moves. For each possible move, we create a row in the new table which links the columns of this new table together as follows:
+- row[i*9+j] = 1
+(this says that cell (i, j) is nonempty)
+- row[81+i*9+v] = 1
+(this says that cell row i has value v)
+- row[81*2+j*9+v] = 1
+(this says that column j has value v)
+- row[81*3+(Math.floor(i/3)*3+Math.floor(j/3))*9+v] = 1
+(this says that the 3 x 3 subgrid of (i, j) has value v)
+Our goal is to choose a set of moves that fills in the grid. In the exact cover representation of the problem, this means we need to select a set of rows of the new table such that each column of the new table has exactly one 1 in our solution.
+In my script I solve this problem using backtracking and the dancing links representation of this exact cover problem. The way dancing links works is that the exact cover version of this problem is translated from being a simple table to a graphical one where each cell becomes a node with pointers to the rows above and below it and the columns to the left and to the right of it. There is also a header row of column headers which contain information about that column, particularly the column number and the number of cells in that column that can cover it (basically the number of 1′s in the table form of the exact cover version of the problem). There is also a head node which points to the first column.
+Once the graph version of the matrix is set up, the algorithm recursively tries to select a column and then a row in that column. Once these values have been chosen it tries to solve the new version of the problem with fewer cells remaining. If this is possible then it continues, if not then it goes back and chooses another row or another column and row.
+I hope that was an understandable overview of the procedures I used to implement this algorithm. Otherwise I hope you enjoy the script and use it freely to help with your Sudoku puzzles.

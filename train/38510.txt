@@ -1,0 +1,9 @@
+The Erasable Programmable Read Only Memory is a memory chip that does not lose data even when the power is switched off. This is a non-volatile memory type i.e. it retains data even when the power is switched off. Each EPROM is individually programmed by an electronic device. After that, the data can be erased by exposing the EPROM to strong ultraviolet light.
+An EPROM contains a transparent fused quartz window at the top of the package which allows exposure to ultraviolet light. The silicon chip is visible from this window.
+A single field effect transistor constitutes a storage location. This field effect transistor contains a channel. This channel contains source and drain contacts at its ends. An insulated layer of oxide covers the channel and then a conductive gas electrode on top of it. All this is followed by a control gate electrode and more oxide.
+Data can be extracted from the EPROM by decoding the address at the address pins and then connecting it to the output buffers. The programming process in EPROM is not reversible electrically. Ultraviolet light is used to cause ionization within the oxide which allows the stored charge to dissipate and the memory is also deleted.
+Image Credit: ATMEL
+It was assumed that EPROM was too expensive for mass production and would be used in development only. However, EPROM was found to be economical as a part for small volume production.
+On-chip EPROM was used by some microcontrollers such as Intel 8048, Freescale 68HC11, PIC microcontroller (C version) etc. These microcontrollers were available in windowed versions that were primarily used for program development and program debugging.
+Some of the advantages of EPROM are as follows:
+Some of the disadvantages of EPROM are as follows:

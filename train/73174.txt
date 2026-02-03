@@ -1,0 +1,7 @@
+Unlike instruments that look straight down (e.g., Landsat, SPOT and most aircraft images), radar data are collected looking off to the side of the spacecraft. Because radar measures the time that it takes for the signal to go from the spacecraft to the ground and back, this is necessary to avoid the confusion of signals coming back at the same time from the left and right sides of the spacecraft ground track.
+The diagram below illustrates some of the common terms used to describe the geometry of a radar image. Most important for our tutorial is the "incidence angle", which is the angle at which the radar beam hits the surface. Incidence angles of radar data shown in Virtually Hawaii typically range from 20 to 60 degrees.
+Also note that the "radar swath" can be of different widths depending on the radar used. Typically, this value is between 25 - 100 km, with a spatial resolution (the size of an image pixel) of about 25 meters.
+Go on to Page 2 of this Remote Sensing Tutorial to see how radar backscatter is affected by incidence angle.
+Author: Pete Mouginis-Mark
+Copyright by P. Mouginis-Mark
+Curator: Lori Glaze

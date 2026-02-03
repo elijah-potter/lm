@@ -1,0 +1,12 @@
+All the news that's fit to assimilate[ Home | Blogs | Events | Robots | Humans | Projects | Podcasts | About | Account ]
+Click on an image to enlarge it
+|Target Environment||Locomotion Method|
+|Sensors / Input Devices||Actuators / Output Devices|
+|2 CCD cameras||DC Motors|
+|Control Method||Power Source|
+|CPU Type||Operating System|
+|5x86 and 68HC11||N/A|
+|Time to build||Cost to build|
+|URL for more information|
+|Willy is a vision-guided robot utilizing structured light techniques. He consists of a motor base unit and a PC computer tower. The motors are controlled with a 68HC11 MPU while the 5x86 tower computer processes vision and planning.
+By using differential structured light techniques, a map of the region in front of Willy is developed. Willy then plans a route to its goal point using the A* search algorithm.

@@ -1,0 +1,18 @@
+Software testing is not based entirely on human intervention. There might be instances when, in order to prove that a software product is robust, it must be subjected to more processing than it will ever encounter in a real life scenario. Since this task is over and above any human capabilities, a proper testing tool is engaged.
+How a testing tool will help?
+A testing tool can be used either to produce large amounts of data or requests at one go, or to repeat a sequence of events for a definite number of times. Both of these tasks might be impossible for a human being to perform over a reasonable amount of time. A person might take a few hours to key in 500 different names and surnames but a testing tool will do the job in just a few seconds.
+Hopefully, apart from reducing human error, this will prove how secure the application is or else uncover any vulnerability.
+However, can a software tester rely solely on these automation tools? Can a software testing tool be used to replicate all the possible scenarios? Is human error something that needs to be discarded during testing?
+My answer to all the above questions is definitely a NO.
+Let me explain how I came to this conclusion. Consider an online booking system for a hotel. There are usually a number of standard procedures that you would find in all these types of systems. For instance: creating a booking, cancelling a booking, modifying an existing booking etc.
+When using a testing tool, these procedures are pre-programmed as a script, and when executed, the tool will, for example, try to book a room 500 times consecutively. Here you have a typical case of stress testing.
+Let’s assume the script in question has only one purpose, that is to create a booking. This process has a fixed starting point, an end point and whatever comes in between. The script will not deviate from this pathway as it is not human. It will always perform the set of instructions it was programmed to.
+The most important testing tool is the software tester’s brain. Also, the human brain will work differently to any testing script, so you will need to use it too in order to get maximum test coverage!
+A human being, on the other hand is far more unpredictable. A user will not always perform these sets of instructions one after each other in the same exact manner as a computer program.
+If for some strange reason, a user decides to click on a different button at a particular moment in time, you have no idea what the resulting effect would be.
+That is why a testing tool will never cover all the possible real life scenarios. There is still need for human intervention to reproduce a good fraction of test cases. This is not to mention any issues that might arise due to network faults or environment problems that are quite difficult to reproduce using a testing tool.
+Although extremely useful, it is crucial not to assume that a testing tool is all you need. As the name implies, it is a tool, and a tool is there to make a job easier but not to carry out the whole job on its own. Use testing tools as an aid for stress testing, but for the most important scenarios, the only tool you need is your brain.
+Confessions of a Tester is written by Johnny, a test leader by profession and friend of ReQtest’s. Johnny loves clean code and is suspicious of anything that seems to be completely bug free. Apart from bug tracking at his day job, Johnny plays guitar, watches action and gangster movies and is a great fan of comic books and superheroes. This blog is a chronicle of Johnny’s Software Testing Nightmares.
+Join 60,000+ Subscribers
+For latest blogs, industry updates and exclusive tips.
+*Your email is safe with us, we also hate spam

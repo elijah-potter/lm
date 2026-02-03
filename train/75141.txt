@@ -1,0 +1,21 @@
+1. What is the difference between DVI-A, DVI-D and DVI-I?
+DVI-A – The “A” stands for analog, which it supports analog DVI signal
+DVI-D – The “D” stands for digital, which it supports digital DVI signal
+DVI-I – The “I” stands for intergraded, which it supports both analog and digital DVI signals
+2. If you have a DVI monitor with both DVI and VGA computers and you would like to connect them through our GCS1762/GCS1764, what should you do and what do you need to know?
+a. Please make sure that both monitor and monitor cable are DVI-I supported
+b. A VGA Male to Male cable for each of your VGA computer is required*
+c. A VGA Female to DVI-A Male Adapter for each of your VGA computer is required**
+*VGA Male to Male Cable (G2LVGA006) is available and sold separately at www.iogear.com.
+**VGA Female to DVI-A Male Adapter (GDVIMVGAF) is available and sold separately at www.iogear.com.
+If you meet all the requirements above, then you can follow the below instructions to setup your KVM.
+Please make sure all devices are turned off before you start.
+For the DVI computers:
+Simply follow the instruction of the Installation Section.
+For the VGA computers:
+1. Connect each of your VGA video output with a VGA Male to Male cable.
+2. Connect the other side of the VGA cable to the VGA connection on the DVI-A Male to VGA Female Adapter.
+3. Connect the DVI-A connection to the CPU DVI port of the KVM.
+4. Then used the provided DVI-D KVM cable for USB, audio and mic. connection ONLY.
+For the Console DVI Port
+Connect the DVI-I cable from the Console DVI port to the monitor.

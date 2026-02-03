@@ -1,0 +1,15 @@
+Computing curved trendlines
+by Arthur Merrill
+Data sometimes shows a tendency to level off with a downward curve. A curved trendline, in these
+cases, would be more useful than a straight line.
+Quite often, the data rises more and more rapidly, like a skyrocket. If this is the case, a curved trendline
+would be more useful than a straight line.
+The upward curving tendency may be caused by the distortion of the arithmetic scale, which makes a
+given percent increase appear large at the top of a chart and small at the bottom. This distortion can be
+cured by using a logarithmic scale and then a straight line might be appropriately used. This "fitting" can
+also be done by adding another column to the spreadsheet introduced in the previous issue and computing
+the logarithms of the data. The straight line is then fitted to the plotted logarithms.
+Curved trendlines can be drawn freehand or fitted approximately with the aid of a french curve. They also
+can be fitted mathematically using the least squares method which was described in my column last
+month. A popular curve for this purpose is the second degree parabola or second degree potential series
+with the formula:

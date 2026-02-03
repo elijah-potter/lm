@@ -1,0 +1,16 @@
+What is HTML?
+In order to display a web page a computer needs to know a lot more than just what words or images should be on the screen. It needs to know where to place the content, what size to make it, what fonts and colors to use, and lots of other information that turns ordinary text and images into a full web page.
+To solve this problem computer scientists have created languages that communicate this extra information. HTML, short for Hypertext Markup Language, is one language that helps solve this problem. Using a system of tags HTML lets a programmer indicate the purpose of different parts of a web page. This lets the computer know how it should display these different elements.
+HTML indicates the purpose of different parts of a web page by surrounding them with pairs of opening and closing tags, like in the example below.
+|HTML Tag||Tag Name||What it does|
+||Opening Paragraph Tag||Start of a paragraph. Paragraphs are just blocks of text in your web page.|
+||Closing Paragraph Tag||Marks the end of a paragraph. An end tag is always just the opening tag with a
+All HTML pages include a common set of tags. They're so common, in fact, that all Web Lab projects will start with them added already.
+|HTML Tag||What it does|
+|This starter code is included in each Web Lab project. The different tags are explained below.|
+||Tells the computer that this is a document written in HTML|
+||Indicates the beginning of your code written in HTML|
+||Contains information (sometimes called "metadata") about your web page|
+||Contains all the main contents of your web page|
+There are lots of great resources to learn about HTML tags online, but one of the most commonly used is w3schools.com. This website includes lots of useful information about how tags work as well as links to new tags you might want to read about. In Map Levels in this unit you'll always find a link to the tags on W3 Schools and you should explore other tags if you're interested in learning more.
+W3 Schools Links

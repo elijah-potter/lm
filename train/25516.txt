@@ -1,0 +1,12 @@
+Ibrahim, Subariah and Afrakteh, Masoud (2010) Adaptive steganography scheme using more surrounding pixels. In: 2010 International Conference on Computer Design and Aplications (ICCDA 2010), 25-27 June 2010, Qinhuangdao, Hebei, China.
+Full text not available from this repository.
+Official URL: http://dx.doi.org/10.1109/ICCDA.2010.5541442
+Information hiding has several branches. One is called as steganography. Steganography has a wide variety of techniques whereby a certain amount of secret information is embedded inside a medium. The medium format can be of any kind. However, the simplest file format is an 8-bit gray scale image. The original image is called a cover image. Likewise, once some secret bits are embedded, it is called stego-image. The most challenging issue is how capable a technique is to conceal the very existence of secret information in the stego-image. Steganographic techniques are evaluated in terms of imperceptibility and capacity. Imperceptibility means how visible secret information is to the human eyes in the stego-image. On the other hand, capacity means the maximum amount of secret information embedded. Conventional Least Significant Bit (LSB) insertion method is the basic concept for steganographic techniques. LSB method embeds secret bits in LSB(s) of the cover image. A pixel which carries a fraction of secret data is called a target pixel. The more surrounding pixels around a target pixel are utilized to find the most appropriate capacity value, the more precise capacity value is achieved. This paper proves that discovering the best capacity value brings about an improvement in terms of imperceptibility. Most of the steganographic techniques use either three or four adjacent pixels around a target pixel whereas the proposed technique is able to utilize at most all eight adjacent neighbors so that imperceptibility value grows bigger. The proposed method is called A-MSPU which stands for Adaptive More Surrounding Pixels Using.
+|Item Type:||Conference or Workshop Item (Paper)|
+|Uncontrolled Keywords:||LSB method, adaptive, image's distortion, more surrounding pixel|
+|Subjects:||Q Science > QA Mathematics > QA75 Electronic computers. Computer science|
+|Divisions:||Computer Science and Information System|
+|Deposited By:||Liza Porijo|
+|Deposited On:||13 Jun 2012 00:29|
+|Last Modified:||13 Jun 2012 00:29|
+Repository Staff Only: item control page

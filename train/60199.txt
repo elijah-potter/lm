@@ -1,0 +1,3 @@
+I found out that WGS84 is an ellipsoid with a "geoid component", but I'm unsure exactly how that can be. This is from PostGIS in Action, Second Edition (pg. 64), but it seemed a bit vague.
+Fortunately, today the world is settling on the World Geodetic System (WGS 84) and Geodetic Reference System (GRS 80) ellipsoids, with WGS 84 becoming the standard of choice. WGS 84 is what all GPS systems are based on. [...] To call WGS 84 simply an ellipsoid isn’t quite accurate. The WGS 84 GPS systems we use have a geoid component as well. The present WGS 84 system uses the 1996 Earth Gravitational Model (EGM96) geoid and is the ellipsoid that best fits the geoid model for the selected survey points in the set.
+How does an elipsoid coordinate system also have a "geoid component"?

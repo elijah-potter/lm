@@ -1,0 +1,7 @@
+Convert a value to the word data type or create a word from two bytes.
+x: a value of any type
+h: the high-order (leftmost) byte of the word
+l: the low-order (rightmost) byte of the word
+- [Language] word
+Language Reference Home
+The text of the 86Duino reference is a modification of the Arduino reference and is licensed under a Creative Commons Attribution-ShareAlike 3.0 License. Code samples in the reference are released into the public domain.

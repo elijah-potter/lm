@@ -1,0 +1,4 @@
+What is an ECU?
+ECUs are the lifebloood of modern cars. ECU stands for Engine Control Unit. These are miniature CPUs located inside your cars engine, with sensors that go throughout all of the car. If you go to the full technical brief located here then you can get a much better idea of how these little computers effect your daily commute.
+Also detailed in the above technical brief you will find a step by step guide on the different levels of autonomous implementation. Currently we find oursives floating somewhere between level 1 and level 2, though BMW is expecting to have vehicles capable of up to level 4 intergration by the end of 2020
+Throughout this technical brief there will also be information presented about the expected timeline of implementation, and a detail explanation of the google self driving car and what sensors it utilizes.

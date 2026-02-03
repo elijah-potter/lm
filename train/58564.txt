@@ -1,0 +1,18 @@
+A friend of mine recently asked me about cloud computing, what it was, and the ramifications of it on where we will see technology in the coming years. In his question he demonstrated a common confusion among most people between the difference between cloud computing and diskless computing.
+Both of these are interesting areas of computer science, they do sometimes overlap, and they are both going to change computing in general in significant ways as time rolls on, but they are not the same.
+Here’s are the differences to help you can tell them apart.
+Diskless computing is best demonstrated in the Linux Terminal Server Project (excellent project, I’ve use it before to deploy over 150 diskless workstations in a company before) and Microsoft’s pathetic rival, Windows Terminal Services. Sun has their own solution as well and there are countless 3rd party utilities, but the basic idea behind them all is that you have one big computer (or series of computers) that all these “headless” computers connect to in order to retrieve an operating system, store files, etc. For large networks this network model is absolutely amazing.
+Cloud computing, however, is the concept that you have a large problem that requires a lot of computing power to solve. Rather than buy bigger and bigger hardware, what we’ve found out (going back to Cray supercomputers) is that it is far better to split the problem down into iterative chunks and push those through multiple processors all at once rather than try to get a single processor to process everything. This is called distributed computing.
+You might have heard of one of the major platforms for this type of computing, Beowulf, from the popular internet meme “imagine a beowulf cluster of…” Another very popular distributed computing platform (popular because it is far easier to install, operate, and write code for than the Beowulf project) is Hadoop. Hadoop is a project inspired by Google’s implementation of the MapReduce design paradigm written in Java which makes it a lot more portable.
+Projects using Cloud Computing
+Parallel processing is done today in a wide variety of settings including:
+- 3D rendering farms for companies such as Disney’s Pixar
+- indexing the web with Google, Yahoo, Microsoft, etc.
+- data mining of all sorts with companies like Wal-Mart, etc.
+There are some very popular projects using distributed computing technologies that regular people with CPU cycles to spare are encouraged to join in on like:
+- [email protected] where you can help process data that might help us identify extraterrestrial signals
+- [email protected] where you can help search for cures to various diseases
+- [email protected] where you can help map the human genome (again), this is tied closely to the [email protected] project above
+- [email protected] which was a pioneer project that a few of us got to participate in
+- others, including [email protected] to help fight AIDS and [email protected] to process the massive amounts of data coming from the CERN’s Large Hadron Collider
+So while diskless computing and cloud computing can have some areas of overlap (I configured the LTSP network I mentioned earlier to assist with the [email protected] project when the systems were idle) they aren’t necessarily tied together.

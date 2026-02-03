@@ -1,0 +1,12 @@
+- Formulate the Problem
+- What is the problem/task you need to solve in this project?
+The problem/task we need to solve in this project, is to be able to construct a computer model using conservations of momentum to represent the motion of 2 objects before and after a collision.
+- What are the most important “knows” about this project?
+I think the most important knows about this project is that we will conduct two labs to discover the equation for momentum and verify that momentum is conserved in various forms of collisions. we will complete problem sets in class to practice using conservation of momentum. We will choose one of these problems to model and use that problem to define the variables in our code. We will create a storyboard to outline our model. In our code, we will first create your objects and display their initial values. Then, we will learn ow to use if () else () statements to determine when the collision occurs and the motion after the collision. We will test our computer models to see if it detects the collision and compare the velocity after the collision with the solution you calculated in the problem set. We will finally submit our final, and revised collision model in our last blog post.
+- What are the important “need-to-Knows”?
+I think some of the important need to knows is are we limited to a certain amount of objects in the model? How do you calculated conservation of momentum?
+- What are your next steps for solving this task?
+I think some of the next steps for solving this task is to plan out how we’re going to make the computer model by creating a storyboard, and to learn more about calculating conservation of momentum. We also have to conduct the two labs, and to create the actual program.
+- Awareness of Constraints
+- What are the constraints (limitations/requirements) of the collision model? (such as time, design specs, etc)
+The constraints (limitations/requirements) of the collision model is the time that we will have to create the model. Also I think the creation of the storyboard might be a bit of a constraint since I don’t really plan too far ahead when coding, but instead rather do it as I go, and debug when exceptions show up.

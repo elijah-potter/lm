@@ -1,0 +1,35 @@
+The most common form of mapping with this property is called Gray coding, which is discussed in more
+detail in Section 5.3.
+Signal space concepts are applicable to any modulation where bits are encoded as one of several
+possible analog signals. This is true for linear modulation techniques but generally not for nonlinear
+Passband Modulation Principles
+The basic principle of passband digital modulation is to encode an information bit stream into a carrier
+signal which is then transmitted over a communications channel. Demodulation is the process of extract-
+ing this information bit stream from the received signal. Corruption of the transmitted signal by the
+channel can lead to bit errors in the demodulation process. The goal of modulation is to send bits at a
+high data rate while minimizing the probability of data corruption.
+In general, modulated carrier signals encode information in the amplitude A(t), frequency f (t), or
+phase (t) of a carrier signal. Thus, the modulated signal can be represented as
+s(t) = A(t) cos[2(f
++ f (t))t + (t)] = A(t) cos(2f
+t + (t)),
+where (t) = 2f (t)t + (t) which combines frequency and phase modulation into angle modulation.
+We can rewrite the right-hand side of (5.36) in terms of its in-phase and quadrature components as:
+s(t) = A(t) cos (t) cos(2f
+- A(t) sin (t) sin(2f
+t) = s
+(t) = A(t) cos (t) is called the in-phase component of s(t) and s
+(t) = A(t) sin (t) is called
+its quadrature component. The in-phase and quadrature signal components are baseband signals with
+bandwidth B: the corresponding transmitted s(t) is a passband signal with center frequency f
+passband bandwidth 2B. We can also write s(t) as
+where u(t) = s
+(t). These different representations will be useful in our discussion of linear mod-
+ulation techniques, where the in-phase and quadrature signal components are often processed separately.
+In linear modulation the information bit stream is encoded in the amplitude and/or phase of the trans-
+mitted signal, not the frequency. There are three main types of linear modulation:
+· Pulse Amplitude Modulation (M-PAM): information encoded in amplitude only.
+· Phase Shift Keying (M-PSK): information encoded in phase only.
+· Quadrature Amplitude Modulation (M-QAM): information encoded in both amplitude and phase.
+Let s(t) =
+} denote the transmitted signal. Then for all linear modulation schemes,

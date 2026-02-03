@@ -1,0 +1,740 @@
+Systems software is the low-level infrastructure that applications run on: the operating systems, language runtimes, libraries, databases, application servers, and many other components that churn our bits 24/7. It’s the mother of all code. In contrast to application software, which is constructed to meet specific use cases and business objectives, systems software should be able to serve correctly any reasonable workload. Consequently, it must be extremely reliable and efficient. When it works like that, it’s a mighty tool that lets applications concentrate on meeting their users’ needs. When it doesn’t, the failures are often spectacular. Let’s see how we go about creating such software.
+Continue reading "Systems Software"
+If I program in many high and low-level languages, but donít write systems code, I am a quiche programmer or a code monkey. And if my code runs without errors, and I know the complexity of all algorithms; and if my servers have hundreds of cores and gigabytes of RAM, but donít write systems code, I am nothing. And if I run the hippest kernel, and install the neatest apps, but donít write systems code, it profiteth me nothing.
+Continue reading "Systems Code"
+The Importance of Being Declarative
+A declarative programming style focuses on what you want your program to do rather than how to perform the task. Through diverse programming techniques, libraries, and specialized languages, you end up with code that sidesteps nitty-gritty implementation details, dealing instead with a task’s big picture.
+Continue reading "The Importance of Being Declarative"
+APIs, Libraries, and Code
+Let’s say you want to display a JPEG-compressed image, calculate Pearson’s correlation coefficient, parse an XML file, or create a key-value store. You can often choose between using the functionality of the application’s platform (Java EE or .NET), calling one of several available external libraries, or writing the code on your own. It isn’t an easy choice because you have many factors to consider. Specifically, you must take into account the task’s complexity, as well as the licensing, quality, and support of competing alternatives. See how you can narrow down your choice by eliminating alternatives at the earliest possible decision point.
+Continue reading "APIs, Libraries, and Code"
+Programming Languages vs. Fat Fingers
+A substitution of a comma with a period in project Mercury's working Fortran code compromised the accuracy of the results, rendering them unsuitable for longer orbital missions.
+How probable are such events and how does a programming language's design affect their likelihood and severity?
+In a paper I recently presented at the
+4th Annual International Workshop on Evaluation and Usability of Programming Languages and Tools
+I showed results obtained by randomly perturbing similar programs written in
+diverse languages to see whether the compiler or run-time system
+would detect those changes as errors,
+or whether these would end-up generating incorrect output.
+Continue reading "Programming Languages vs. Fat Fingers"
+How to Calculate an Operation's Memory Consumption
+How can you determine how much memory is consumed by a specific
+operation of a Unix program?
+Valgrind's Massif subsystem could help you in this regard,
+but it can be difficult to isolate a specific operation from
+Here is another, simpler way.
+Continue reading "How to Calculate an Operation's Memory Consumption"
+Refactoring on the Cheap
+The refactorings that a good integrated development environment can perform are impressive. Yet, there are many reasons to master some cheap-and-cheerful alternative approaches. First, there will always be refactorings that your IDE won’t support. Also, although your IDE might offer excellent refactoring support for some programming languages, it could fall short on others. Modern projects increasingly mix and match implementation languages, and switching to a specialized IDE for each language is burdensome and inefficient. Finally, IDE-provided refactorings resemble an intellectual straightjacket. If you only know how to use the ready-made refactorings, you’ll miss out on opportunities for other code improvements.
+Continue reading "Refactoring on the Cheap"
+This column is about a tool we no longer have: the continuous rise of the CPU clock frequency. We were enjoying this trend for decades, but in the past few years, progress stalled. CPUs are no longer getting faster because their makers can’t handle the heat of faster-switching transistors. Furthermore, increasing the CPU’s sophistication to execute our instructions more cleverly has hit the law of diminishing returns. Consequently, CPU manufacturers now package the constantly increasing number of transistors they can fit onto a chip into multiple cores—processing elements—and then ask us developers to put the cores to good use.
+Continue reading "Faking it"
+How I Dealt with Student Plagiarism
+a colleague at the
+NYU Stern School of Business,
+received considerable media attention when,
+in a blog post he subsequently removed,
+he discussed how his aggressive use of plagiarism detection software
+on student assignments poisoned the classroom atmosphere and
+tanked his teaching evaluations.
+As detailed in
+a story posted on the Chronicle of Higher Education blog,
+Mr. Ipeirotis proposes instead that professors should design assignments that
+cannot be plagiarized.
+Along these lines here are two methods I've used in the past.
+Continue reading "How I Dealt with Student Plagiarism"
+Code Verification Scripts
+Which of my classes contain instance variables?
+Which classes call the method
+Continue reading "Code Verification Scripts"
+but don't call the method
+These and similar questions often come up when you want to verify
+that your code is free from some errors.
+For example, instance variable can be a problem in servlet classes.
+Or you may have found a bug related to the
+and you want to look for other places where this occurs.
+Your IDE is unlikely to answer such questions,
+and this is where a few lines in the Unix shell can save
+you hours of frustration.
+Choosing and Using Open Source Components
+The developers of the SQLite open source database engine estimate that it’s deployed in roughly half a billion systems around the world (users include Airbus, Google, and Skype). Think of the hundreds of thousands of open source components, just one click away from you. If you know how to choose and use them effectively , your project can benefit mightily.
+Continue reading "Choosing and Using Open Source Components"
+Sure, you can write English right to left. You can also write software code to look like a disc or even a train (see www.ioccc.org/1988/westley.c and 1986/marshall.c). However, you can’t then complain when you have to fight with your magazine’s editor or production staff about accepting your column’s title for publication, or if your colleagues refuse to touch your code with a 10-foot pole. Writing code in a readable and consistent style is difficult, uninteresting, tedious, underappreciated, and, extremely important.
+Continue reading "elytS edoC"
+Farewell to Disks
+A classic web-comic illustrates how idle Wikipedia browsing can lead us from the Tacoma Narrows Bridge to Fatal hilarity (and worse). The comic doesn’t show the path leading from A to B, and finding it is an interesting challenge—think how you would engineer a system that could answer such questions. I believe that this problem and a solution I’ll present demonstrate some programming tools and techniques that will become increasingly important in the years to come.
+Continue reading "Farewell to Disks"
+Sane vim Editing of Unicode Files
+Being able to use plain alphabeitc keys as editing commands
+is for many of us a great strength of the vi editor.
+It allows us to edit without hunting for the placement of
+the various movement keys on each particular keyboard,
+and, most of the time,
+without having to juggle in order to combine particular keys with
+Continue reading "Sane vim Editing of Unicode Files"
+However, this advantage can turn into a curse when editing files
+using a non-ASCII keyboard layout.
+When the keyboard input method is switched to another script
+(Greek in my case, or, say, Cyrillic for others)
+vi will stop responding to its normal commands, because it will
+encounter unknown characters.
+Here is how I've dealt with this problem.
+Technical prose is almost immortal.
+— Frederick P. Brooks, Jr.
+Although programming is a form of literary expression, the relationship between code and its documentation is uneasy at best. As Figure 1 shows, among the thousands of projects that FreeBSD maintainers have considered important enough to port to the platform, the number of comments per 100 lines varies substantially. Clearly, as developers our views on how we should document our code are anything but consistent. Yet, there are universal principles, nifty tools, and useful practices that can benefit us all.
+Continue reading "Code Documentation"
+A generous car reviewer might praise a vehicle’s handling by writing that it turns as if it’s running on railroad tracks. Indeed, tracks offer guidance and support. When you run on tracks you can carry more weight, you can run faster, and you can’t get lost. That’s why engineers, from early childhood to old age, get hooked on trains. Can we get our software to run on tracks?
+Continue reading "Software Tracks"
+Applied Code Reading: Debugging FreeBSD Regex
+When the code we're trying to
+read is inscrutable,
+inserting print statements and running various test cases can be
+two invaluable tools.
+Earlier today I fixed
+a tricky problem in the FreeBSD regular expression library.
+originally written by Henry Spencer in the early 1990s,
+is by far the most complex I've ever encountered.
+It implements sophisticated algorithms with minimal commenting.
+Also, to avoid code repetition and increase efficiency,
+the 1200 line long main part of the regular expression execution engine is
+included in the compiled C code
+three times after modifying various macros to adjust the code's behavior:
+the first time the code targets small expressions and operates
+with bit masks on long integers,
+the second time the code handles larger expressions
+by storing its data in arrays,
+and the third time the code is also adjusted to handle multibyte characters.
+Here is how I used test data and print statements to locate and fix the problem.
+Continue reading "Applied Code Reading: Debugging FreeBSD Regex"
+My colleague, who works for a major equipment vendor, was discussing how his employer was planning to lay off hundreds of developers over the coming months. “But I’m safe,” he said, “as I’m one of the two people in our group who really understand the code.” It seems that writing code that nobody else can comprehend can be a significant job security booster. Here’s some advice.
+Continue reading "Job Security"
+Applied Code Reading: GNU Plotutils
+Robert, a UMLGraph user sent me an email
+describing a problem with the
+SVG output on Firefox.
+I firmly believe that
+code reading is a lot
+easier than many think:
+one can easily fix most software problems without detailed knowledge
+of the underlying system.
+I therefore decided to practice what I preach.
+Continue reading "Applied Code Reading: GNU Plotutils"
+A Tiny Review of Scala
+Earlier today I finished reading the
+Programming in Scala book.
+My review of the book should appear soon in the
+reviews.com site and the
+ACM Computing Reviews.
+Here I outline briefly my view of the
+Continue reading "A Tiny Review of Scala"
+Fixing the Orientation of JPEG Photographs
+I used to fix the orientation of my photographs through an application
+that would transpose the compressed JPEG blocks.
+This had the advantage of avoiding the image degradation of a
+decompression and a subsequent compression.
+Continue reading "Fixing the Orientation of JPEG Photographs"
+A Tiling Demo
+Over the past (too many) days I've been preparing my presentation for the
+At one point I wanted to show how loop tiling increases locality of reference
+and therefore cache hits.
+Surprisingly, I could not find a demo on the web, so I built one from scratch.
+Here are two applets demonstrating memory accesses during a matrix raise to the
+power of two operation.
+Continue reading "A Tiling Demo"
+Precision in Comments
+As I was writing some code for the
+refactoring browser today,
+I reflected on the importance of writing precise and clear comments.
+Continue reading "Precision in Comments"
+Start With the Most Difficult Part
+There’s not a lot you can change in the process of constructing a building. You must lay the foundation before you erect the upper floors, and you can’t paint without having the walls in place. In software, we’re blessed with more freedom.
+Continue reading "Start With the Most Difficult Part"
+The Information Train
+The Information Train is a scientific
+experiment that I presented at the
+Wizards of Science 2009 contest over the past weekend.
+The entry demonstrates how computers communicate with each other by
+setting up a network in which a model train transfers a picture's pixels
+from one computer to the other.
+You can find
+a video of the experiment
+on YouTube, and, if you're interested, you can also download
+the corresponding software and schematics from
+this web page.
+Continue reading "The Information Train"
+What are the ingredients of robust, elegant, flexible, and maintainable software architecture?
+Over the past couple of years, my colleague
+and I worked
+on answering this question through a collection of intriguing essays
+from more than a dozen of today's leading software designers and architects.
+Continue reading "Beautiful Architecture"
+The World's Smallest Domain-Specific Language
+Domain-specific languages, also known as little languages, allow us
+to express knowledge in a form close to the problem at hand.
+In contrast to general-purpose languages, like Java or C++,
+they are specialized for a narrow domain.
+Earlier today I wanted to initialize a rectangular array of Boolean
+values to represent the stick figure of a human.
+For that I devised a tiny domain-specific language (DSL) consisting of
+two symbols (representing an on and an off pixel) and wrote its
+commensurably simple interpreter.
+Continue reading "The World's Smallest Domain-Specific Language"
+A Well-Tempered Pipeline
+I am studying the use of open source software in industry.
+One way to obtain empirical data is to look at the operating systems and
+browsers used by the Fortune 1000 companies by examining browser logs.
+I obtained a list of the Fortune 1000 domains and wrote a pipeline
+to summarize results by going through this site's access logs.
+Continue reading "A Well-Tempered Pipeline"
+The Value of Computing Paradigm Diversity
+Today I wrote a combinatorial optimization algorithm to match members of
+teams according to the psychological traits of each pair's members.
+The program appeared to rearrange the initial random allocation of pairs
+in a way that might match my specifications.
+However, as I'll use this allocation for an experiment that I'll be able
+to perform only once, I realized that I wanted to carefully verify the results.
+How does one verify the operation of such a program?
+Continue reading "The Value of Computing Paradigm Diversity"
+A Look at Zero-Defect Code
+National Security Agency
+has released a case study showing how to
+develop zero-defect code in a cost-effective manner.
+The researchers of the project conclude that,
+if adopted widely, the practices advocated in the case study
+could help make commercial software programs more reliable and less vulnerable.
+I examined a small part of the case study's code, and was not impressed.
+Continue reading "A Look at Zero-Defect Code"
+Suspend Windows from the Command Line
+I used to leave my computer up all night, but I've come to realize that this
+is ecologically unsound.
+Now I suspend it before going to sleep, but this missed running
+a daily job that used to run at 03:00 am.
+The job marks my students' exercises and send me email with the next day's
+I thus decided to schedule the task to wakeup my computer at 3:00 am,
+run the job, and then suspend it again.
+The Windows scheduler allows you to specify a wakeup option,
+but not a subsequent suspend.
+Furthermore, it seems that Windows lacks a way to suspend from the
+command line (while maintaining the ability to hibernate), and the
+only free tools on the web are distributed in executable form,
+so I ended writing a small tool myself.
+Continue reading "Suspend Windows from the Command Line"
+Web Services Come of Age
+For years I've reacted to the hype surrounding web services with skepticism.
+I found SOAP, WSDL, and UDDI to be too complex and brittle for wide deployment,
+and I also wondered what types of services could be better provided over the
+web rather than locally.
+A new excellent developer site,
+answers both of my concerns.
+Continue reading "Web Services Come of Age"
+Saving the Editor's History
+I recently spent a few days writing some tricky bit-twiddling code to
+implement a radix tree.
+I found myself making many programming mistakes, and I thought it would be
+interesting to study them, examine their contributing factors, and
+think how each of them could be prevented.
+Continue reading "Saving the Editor's History"
+The Way We Program
+If the code and the comments disagree, then both are probably wrong.
+— Norm Schryer
+I can still remember the first time I laid my eyes on production-quality source code. This was in the early 1980s and the code was the BIOS listing of the original IBM PC. The 5940 lines of code spanned 80 neatly typeset pages in a three-ring slip-covered binder. Two things made a lasting impression on me. The first was the elation of being able to read, understand and learn from the code that made a real machine tick. This may have sparked my current practical and research interests in open source software. The second, was the way the code was commented. The BIOS was written in 8086 assembly language, and almost every line had a comment on its right hand side. By poring over the code and its comments I learned 8086 assembly, programming style, and understood the PC’s hardware architecture.
+Continue reading "The Way We Program"
+The tools and processes we use to transform our system’s source code into an application we can deploy or ship were always important, but nowadays they can mean the difference between success and failure. The reasons are simple: larger code bodies, teams that are bigger, more fluid, and wider distributed, richer interactions with other code, and sophisticated tool chains. All these mean that a slapdash software build process will be an endless drain on productivity and an embarrassing source of bugs, while a high-quality one will give us developers more time and traction to build better software.
+Continue reading "Software Builders"
+Over the past few days I worked over a large code body correcting various
+accumulated errors and style digressions.
+When I finished I wanted to see who wrote the original lines.
+(It turned out I was not entirely innocent.)
+Continue reading "Assigning Responsibility"
+A Minute Minute Minder
+Today I delivered the opening
+at the 4th Panhellenic Conference on Computer Science Education.
+For a number of reasons (more on that later) I wanted to keep track of
+my progress during the presentation.
+For this I put together a minute minder that displayed the
+time from the presentation's start and the slide I should be in.
+I could thus adjust my pace to finish as planned.
+Continue reading "A Minute Minute Minder"
+Using and Abusing XML
+Words are like leaves; and where they most abound,
+Much fruit of sense beneath is rarely found.
+— Alexander Pope
+I was recently gathering GPS coordinates and cell identification data, researching the algorithms hiding behind Google’s “My Location” facility.
+While working on this task, I witnessed the great interoperability benefits we get from XML. With a simple 140-line script, I converted the data I gathered into a de facto standard, the XML-based GPS-exchange format called GPX. Then, using a GPS-format converter, I converted my data into Google Earth’s XML data format A few mouse clicks later, I had my journeys and associated cell tower switchovers beautifully superimposed on satellite pictures and maps.
+Continue reading "Using and Abusing XML"
+The Mysterious TreeMap Type Signature
+For my lecture notes on file handling
+I wrote a small Java program to display the number of characters
+that fall in each
+and got bitten by an unexpected
+a wizard of Java Generics, kindly provided me with an explanation
+of the JDK design,
+which I'd like to share.
+Continue reading "The Mysterious TreeMap Type Signature"
+Metaprogramming, using programs to manipulate other programs, is as old as programming. From self-modifying machine code in early computers to expressions involving partially applied functions in modern functional-programming languages, metaprogramming is an essential part of an advanced programmer’s arsenal.
+Continue reading "Rational Metaprogramming"
+The Relativity of Performance Improvements
+Today, after receiving a 1.7MB daily security log message containing
+thousands of ssh failed login attempts from bots around the
+world, I decided I had enough.
+I enabled IPFW to a FreeBSD system I maintain, and added a script
+to find and block the offending IP addresses.
+In the process I improved the script's performance.
+The results of the improvement were unintuitive.
+Continue reading "The Relativity of Performance Improvements"
+Curing MIDlet Bluetooth Disconnects
+Over the last few days I've been writing a
+to collect GPS coordinates and cell identifiers.
+I'm doing this
+in an effort to look at what algorithms might be needed
+in order to implement something similar to Google's
+Here is a Google Earth example of the data I'm collecting.
+I reached a point where I was collecting all the information I needed,
+but the program was often plagued by random disconnections of the Bluetooth
+link to the GPS.
+Continue reading "Curing MIDlet Bluetooth Disconnects"
+Many Ways to Skin a Window
+Every couple of years,
+users of a Microsoft Windows application I wrote a long time ago
+start complaining that the application crashes when they exit from it.
+Every time it turns out that the reason is a Windows message that tells
+the application's main window to close
+in a way that was not originally foreseen.
+Continue reading "Many Ways to Skin a Window"
+A box of crayons and a big sheet of paper provides a more expressive medium for kids than computerized paint programs.
+— Clifford Stoll
+This column came to life as I was trying to devise an algorithm for
+analyzing initializers for C arrays and structures. At the time I was
+using the CScout
+refactoring browser to look for possible differences
+between closed and open source code. I had already processed the
+Linux, FreeBSD, and Windows research kernel source codel and only the
+OpenSolaris kernel remained. Unlikethe other three code bases, Sun’s
+code didn’t appear to use any exotic compiler extensions, so
+CScout uncomplainingly devoured one file after the next. Then, after
+aspproximately six hours of processing and 80 percent along the way,
+it reported a syntax error.
+Continue reading "On Paper"
+A Programmer's Bookshelf
+A first year student at a nearby university wrote to me asking for
+advice on becoming a hacker
+definition, he clarified).
+He sent me a laundry-list of 18 programming languages he aimed to learn
+by the time he graduated, and asked for other recommendations.
+I've learned a lot from reading books,
+so I compiled two reading lists for him.
+Continue reading "A Programmer's Bookshelf"
+Abstraction and Variation
+“Master, a friend told me today that I should never use the editor’s copy-paste functions when programming,” said the young apprentice. “I thought the whole point of programming tools was to make our lives easier,” he continued.
+The Master stroked his long grey beard and pressed the busy button on his phone. This was going to be one of those long, important discussions.
+Continue reading "Abstraction and Variation"
+Palindromic Palindrome Checking
+Stan Kelly-Bootle's column in the April 2007
+ACM Queue, titled
+Ode or Code? — Programmers Be Mused!,
+was as always very enjoyable.
+However, I found its ending,
+a C function that returns true when given a palindromic string
+(e.g. ABCCBA), anticlimactic.
+The function given is recursive; I was expecting it to be palindromic.
+How difficult can it be to write such a function?
+Continue reading "Palindromic Palindrome Checking"
+Using the Open-Sourced Java Platform
+Having access to a system's source code is liberating.
+I've felt this since I first laid my eyes on the source code of the
+9th Edition Unix in 1988, and I saw this again as I used the freshly
+open-sourced Java platform
+to implement a UMLGraph
+feature that has been bugging me for more than a month.
+Continue reading "Using the Open-Sourced Java Platform"
+Knowledge is power.
+—Sir Francis Bacon
+The ultimate source of truth regarding a program is its execution. When a program runs everything comes to light: correctness, CPU and memory utilization, even interactions with buggy libraries, operating systems, and hardware. Yet, this source of truth is also fleeting, rushing into oblivion at the tune of billions of instructions per second. Worse, capturing that truth can be a tricky, tortuous, or downright treacherous affair.
+Continue reading "I Spy"
+Software Development Productivity Award
+Yesterday, at the
+17th annual Jolt Product Excellence and Productivity Awards
+Code Quality: The Open Source Perspective won a Software Development Productivity Award
+in the Technical Books category.
+Continue reading "Software Development Productivity Award"
+Software Rejuvenation is Counterproductive
+In the February issue of the Computer magazine
+Grottke and Trivedi propose four strategies for
+fighting bugs that are difficult to detect and reproduce.
+operation and replicating software are indeed time-honored and practical
+solutions. When coupled with appropriate logging, they may allow an
+application to continue functioning, while also alerting its maintainers
+that something is amiss. On the other hand, the proposal to restart
+applications at regular intervals (rejuvenation as the authors call
+it), doesn't allow us to find latent bugs, sweeping them instead under
+the carpet. This lowers the bar on the quality we expect from software,
+and will doubtless result in a higher density of bugs and increasingly
+complicated failure modes.
+Continue reading "Software Rejuvenation is Counterproductive"
+A Peek at Beautiful Code
+An exciting new book is about to hit the shelves,
+and I consider myself very lucky to be among its contributors.
+subtitled "leading programmers explain how they think",
+contains 33 chapters where contributors describe some code
+they consider noteworthy.
+Although I don't consider myself worthy of the book's subtitle,
+I love coding, and
+I'm extremely happy that code is taking the leading role among such an
+Here is the complete table of the book's contents.
+Continue reading "A Peek at Beautiful Code"
+The Escape of a Small Program
+C. A. R. Hoare's
+Law of Large Programs states that
+inside every large program is a small program struggling to get out.
+The parking receipt I got yesterday returning from a
+SQO-OSS meeting proves this fact.
+Continue reading "The Escape of a Small Program"
+The Return of Performance Engineering and Trendy Programmers
+In the 1950s, when processor cycle times were measured in microseconds,
+algorithm design and clever programming could make or break an application.
+These fields continued to be popular in the 1960s and 1970s, because
+widespread computers were used to attack ever larger problems.
+Programming was a hip and trendy occupation.
+Today's $500 computers operating on GHz clocks allow anybody who has
+(just about) mastered the syntax of a programming language to write
+code that drives dynamic web sites serving hundreds of transactions each
+Managers consider code a commodity, and enrollments to computer science
+degrees are dwindling.
+However, change is in the air.
+Continue reading "The Return of Performance Engineering and Trendy Programmers"
+Research in Domain Specific Languages
+My research colleague
+is working on better programming support for domain specific languages (DSLs).
+Today he claimed that DSLs were hyped during 1998-2002,
+and now interest has waned.
+Continue reading "Research in Domain Specific Languages"
+When I set out to apply CScout
+on the Linux kernel source code, I
+discovered that it failed to correctly expand a couple of C macros,
+causing the analysis to fail. This prompted me to reimplement CScout's
+macro expansion using a
+precise functional specification,
+the code's severe degradation in time performance, and finally tidy up
+the optimized code mess.
+Continue reading "Code Finessing"
+Cross compiling software on a host platform to run on a different
+target used to be an exotic stunt to be performed by
+the brave and desperate.
+One had first to configure and build the compiler, assembler, archiver,
+and linker for the different architecture, then cross-build the other
+architecture's libraries, and finally the software.
+This week, while preparing a new release of the
+CScout refactoring browser
+I realized that what was once a feat is nowadays a routine operation.
+Continue reading "Cross Compiling"
+Choosing a Collection: A Discussion with Kent Beck
+Recently I reviewed the mansucript of Kent Beck's upcoming
+book Implementation Patterns.
+I will certainly put it in the list of books any professional programmer
+When discussing collections (containers in C++ STL parlance),
+Kent mentions that
+his overall strategy for performance coding with collections is to use the
+simplest possible implementation at first and pick a more specialized collection
+class when it becomes necessary.
+My view is that
+we should choose the most efficient implementation from the start.
+With prepackaged collections this doesn't have any cost associated with
+it, and it avoids nasty surprises when a dataset increases beyond the
+size the programmer envisaged.
+I added a comment to that effect in my review, and later I sent him
+an email with a supporting citation, which
+kindled an interesting exchange.
+I reproduce our email exchange here, with his permission.
+Continue reading "Choosing a Collection: A Discussion with Kent Beck"
+The Verbosity of Object-Oriented Code
+As I refactored a piece of code from an imperative to an
+object-oriented style I increased its clarity and reusability,
+but I also trippled its size.
+This worries me.
+Continue reading "The Verbosity of Object-Oriented Code"
+UML Class Diagrams from C++ Code
+I needed a UML class diagram of the classes I use in the implementation of
+CScout refactoring browser.
+I drew the last such diagram on paper about four years ago, so it was
+definitely out of date.
+I always say that whenever possible documentation should be automatically
+generated from the code, so I decided to automate the task.
+Continue reading "UML Class Diagrams from C++ Code"
+Open Source and Professional Advancement
+Doing really first-class work, and knowing it, is as good as wine, women (or men) and song put together.
+— Richard Hamming
+I recently participated in an online discussion regarding the advantages of the various certification programs. Some voiced skepticism regarding how well one can judge a person's knowledge through answers to narrowly framed multiple choice questions. My personal view is that the way a certification's skills are examined is artificial to the point of uselessness. In practice I often find solutions to problems by looking for answers on the web. Knowing where and how to search for an answer is becoming the most crucial problem-solving skill, yet typical certification exams still test rote learning. Other discussants suggested that certification was a way to enter into a job market where employers increasingly asked for experience in a specific technology. My reaction to that argument was that open source software development efforts offer us professionals a new and very valuable way to obtain significant experience in a wide range of areas. In this column I'll describe how we can advance professionally by contributing to open source projects.
+Continue reading "Open Source and Professional Advancement"
+Choosing a Programming Language
+A language that doesn't have everything is actually easier to program in than some that do.
+— Dennis M. Ritchie
+Computer languages fascinate me. Like a living person, each one has its own history, personality, interests, and quirks. Once you've learned one, you can use it again after years of neglect, and it's like reconnecting with an old friend: you can continue discussions from the point they were broken off years before. For a task I recently faced I adopted a language I hadn't used for 15 years, and felt enlightened.
+Continue reading "Choosing a Programming Language"
+Debuggers and Logging Frameworks
+As soon as we started programming, we found to our surprise that it wasn't as easy to get programs right as we had thought. Debugging had to be discovered.
+— Maurice Wilkes discovers debugging, 1949
+The testing, diagnostic, and repair equipment of many professions is horrendously expensive. Think of logic analyzers, CAT scanners, and dry docks. For us the cost of debuggers and logging frameworks is minimal; some of them are even free. All we need to become productive, is to invest some time and effort to learn how to use these tools in the most efficient and effective way.
+Continue reading "Debuggers and Logging Frameworks"
+Xerces v Flex
+What is the fastest way to process and XML file?
+I was faced with this question when I recently wanted to
+process a 452GiB XML file; for this amount of data speed matters.
+Some obvious choices were XML libraries, hand-crafted code, and
+lexical analyzer generators.
+Continue reading "Xerces v Flex"
+Code Quality: The Open Source Perspective
+My new book
+Code Quality: The Open Source Perspective
+three years after I started writing it.
+The book owes more to open source software than any of the books
+dealing with Linux, PHP, Apache, Perl or any other book covering
+a specific technology.
+Continue reading "Code Quality: The Open Source Perspective"
+Efficiency Will Always Matter
+Many claim that today's fast CPUs and large memory capacities make
+time-proven technologies that efficiently harness a computer's power irrelevant.
+I beg to differ, and my experience in the last three days demonstrated
+that technologies that originated in the 70s still have their place today.
+Continue reading "Efficiency Will Always Matter"
+Although only a few may originate a policy, we are all able to judge it.
+— Pericles of Athens
+Popular folklore has our profession's use of the word bug originating from a real insect found in an early electromechanical computer. Indeed, on September 9th of 1947 the Harvard Mark II operators did find a moth obstructing a relay's contacts. They removed it and dutifully taped it in the machine's logbook. However, engineers were using the term "bug" many decades before that incident. For example, in a 1878 letter Edison used the term referring to the faults and difficulties he was facing while moving from an invention's intuition to a commercialisable product.
+Continue reading "Bug Busters"
+A General-Purpose Swap Macro
+A couple of days ago I came up with a general-purpose macro for swapping
+values in C programs.
+My colleague Panagiotis Louridas suggested an improvement, and
+this prompted me to see the two macros got compiled.
+Continue reading "A General-Purpose Swap Macro"
+If STL Had Been Designed by a Committee
+I've been reading on XML schema, and it's embarrassingly obvious
+that it has been designed by a committee.
+Continue reading "If STL Had Been Designed by a Committee"
+How to Sort Three Numbers
+Quick: how do you sort three numbers in ascending order?
+Continue reading "How to Sort Three Numbers"
+Supporting Java's Foreach Construct
+Java 1.5 supports a new
+construct for iterating over collections.
+The construct can be used on arrays and on all classes in Java's Collection
+I searched the internet for an example on how to make my own
+classes iterable with this construct, but could not find an example.
+Continue reading "Supporting Java's Foreach Construct"
+C++0X Enhancement: Rational Metaprogramming
+In a recent article
+presented the evolution of C++ toward the 0X standard, and asked the C++
+community for ideas regarding C++ enhancements.
+This is a proposal to add to C++ support for rational metaprogramming.
+Continue reading "C++0X Enhancement: Rational Metaprogramming"
+GCC Obfuscated Code
+For years I've struggled to understand the
+GNU compiler collection internals,
+I am ashamed to say, without much success.
+I always thought that the subject was intrinsically too complicated
+for me, but after struggling to understand a two line gcc
+code snippet of a fairly simple operation for more than two minutes,
+I realized that the code style may have something to do with my problems.
+Continue reading "GCC Obfuscated Code"
+C++0X Enhancement: Packaged Libraries
+In a recent article
+presented the evolution of C++ toward the 0X standard, and asked the C++
+community for ideas regarding C++ enhancements.
+This is a proposal to add to C++ support for using packaged libraries,
+and a standardizing a library distribution format.
+Continue reading "C++0X Enhancement: Packaged Libraries"
+Tool Writing: A Forgotten Art?
+Merely adding features does not make it easier for users to do things—it just makes the manual thicker. The right solution in the right place is always more effective than haphazard hacking.
+— Brian W. Kernighan and Rob Pike
+In 1994 Chidamber and Kemerer defined a set of six simple metrics for object-oriented programs. Although the number of object-oriented metrics swelled to above 300 in the years that followed, I had a case where I preferred to use the original classic metric set for clarity, consistency, and simplicity. Surprisingly, none of the six open-source tools I found and tried to use fitted the bill. Most tools calculated only a subset of the six metrics, some required tweaking to make them compile, others had very specific dependencies on other projects (for example Eclipse), while others were horrendously inefficient. Although none of the tools I surveyed managed to calculate correctly the six classic Chidamber and Kemerer metrics in a straightforward way, most of them included numerous bells and whistles, such as graphical interfaces, XML output, and bindings to tools like ant and Eclipse.
+Continue reading "Tool Writing: A Forgotten Art?"
+XML Abstraction at the Wrong Level
+Over the last month I've encountered two applications
+that use XML at the wrong level of abstraction.
+Instead of tailoring the schema to their needs, they
+use a very abstract schema, and encode their elements
+at a meta level within the XML data.
+This approach hinders the verification and manipulation of the corresponding
+Continue reading "XML Abstraction at the Wrong Level"
+Today's Dynamic is Tomorrow's Static
+Today at the IEEE Software's
+editorial and advisory board
+meeting, the issue of service-oriented architectures came up.
+Robert Glass wondered whether this was the upcoming fad,
+following structured programming and object-oriented programming,
+to which Stan Rifkin replied that service-oriented architectures
+are a lot more dynamic.
+Interestingly, the previous approaches, which we today consider as
+static, were also thought-off as dynamic in their day.
+Continue reading "Today's Dynamic is Tomorrow's Static"
+Warum einfach, wenns auch kompliziert geht?
+(Why make it simple, when you can also make it complicated?)
+Consider the task of associating code with specific data
+Using a multi-way conditional can be error-prone, because
+the data values become separated by the code.
+It can also be inefficient in the cases where we have to use cascading
+Continue reading "Warum einfach, wenns auch kompliziert geht?"
+else if statements, instead of a
+which the compiler can optimize into a hash table.
+In C I would use an array containing values and function pointers.
+My understanding is that the Java approach involves using the
+Strategy pattern: a separate class for each case,
+and an interface "to rule them all".
+Ordnung muss sein
+A free-form translation of the above German phrase (orderliness must exist)
+would be that orderliness is not negotiable.
+In the domain of information technology I find this motto particularly
+Continue reading "Ordnung muss sein"
+Java Makes Scripting Languages Irrelevant?
+Simplicity does not precede complexity, but follows it.
+— Alan J. Perlis
+In computing we often solve a complex problem by adding another level of indirection. As an example, on Unix file systems an index node, or inode, data structure allows files to be allocated concurrently and sparsely, and yet still provide an efficient random access capability. When we want to customize large and complex systems or express fluid and rapidly changing requirements a common tool we employ is to add a scripting layer on top of the corresponding system. An early instance of this approach was employed in Dan Murphy's TECO editor developed on the DEC PDP-1 computer in 1962–63: its command language also doubled as an arcane (to put it politely) macro language.
+Continue reading "Java Makes Scripting Languages Irrelevant?"
+The Efficiency of Java and C++, Revisited
+A number of people worked on replicating the results and optimizing
+the programs I listed in my earlier blog entry.
+Continue reading "The Efficiency of Java and C++, Revisited"
+Macro-based Substitutions in Source Code
+A friends asks:
+"How can one easily replace a method call (which can contain
+arguments with brackets in its invocation code) with a simple
+Continue reading "Macro-based Substitutions in Source Code"
+Measuring the Effect of Shared Objects
+For the Code Quality
+book I am writing I wanted to measure the memory savings of
+On a lightly loaded web server these amounted to 80MB,
+on a more heavilly loaded shell access machine these ammounted
+Continue reading "Measuring the Effect of Shared Objects"
+Code Reading Example: the Linux Kernel Load Calculation
+A colleague's Linux machine was exhibiting a very high load value,
+for no obvious reason.
+I wanted to make him point the kernel debugger on the routine calculating
+It has been more than 7 years since the last time I worked on a Linux
+so I had to find my way around from first principles.
+This is an annotated and slightly edited version of what I did.
+Continue reading "Code Reading Example: the Linux Kernel Load Calculation"
+Book Review: C++ Coding Standards
+A number of years ago, reading Koenig's and Moo's
+Ruminations on C++  I made a wish for more of the
+same, updated to reflect current C++ practice.
+My wish has come true.
+C++ Coding Standards: 101 Rules, Guidelines, and Best Practices
+by Herb Sutter and Andrei Alexandrescu 
+is an indispensable book for all serious C++ programmers.
+Continue reading "Book Review: C++ Coding Standards"
+Cracker Code Review
+According to a popular myth, crackers are computer whiz kids:
+brilliant software developers who run circles around their
+"peers" in the corporate world.
+When my undergraduate student Achilleas Anagnostopoulos sent me a
+to the source code of the
+Microsoft GDIPlus.DLL JPEG Parsing Engine Buffer Overflow
+exploit, I decided to test the myth
+by performing a code review of the exploit's source code.
+The results are not flattering for the exploit's developers:
+no self-respecting professional would ever write production code of
+such an abysmally low quality.
+Continue reading "Cracker Code Review"
+Digital Data Makes Anything Possible
+Once data becomes digital anything and everything becomes possible.
+Consider arranging the books on your bookshelf by the color of
+Continue reading "Digital Data Makes Anything Possible"
+When editing documents or code, my not so agile fingers, often trigger
+a movement or search command that accidentally throws me to a random
+location in the text I am editing.
+How can I return back?
+Amazingly, I noticed I am using exactly the same trick for returning back
+on both the vim editor I use for most of
+my editing tasks, and Microsoft Word I use for collaborating with many
+Continue reading "Continous Bookmarking"
+The hypot() Mystery
+I was writing a section for the
+followup volume, and wanted to demonstrate the pitfalls of
+using homebrewn mathematical functions instead of the library
+As an example, I chose to compare the C library
+Continue reading "The hypot() Mystery"
+sqrt(x * x, y * y).
+I created a plot of "unit in last place" (ulp) error values between
+the two functions, which demonstrated how the error increased for larger
+values of y.
+Patching Framework III
+I needed to read some old files I wrote in 1992 using the Ashton-Tate
+Framework III program.
+Unfortunately, trying to run the program under Windows XP resulted in a
+Continue reading "Patching Framework III"
+Divide overflow" error.
+A bit of searching on the web revealed that the problem was related
+to the system's speed (1.6GHz).
+Apparently, Framework tries to calculate the speed of the machine
+by dividing a fixed number with a loop counter;
+on modern machines this results in the overflow.
+Optimizing ppp and Code Quality
+While debugging a problem of my ppp connection I noticed that
+ppp was apparently doing a protocol lookup (with a file open,
+read, close sequence) for every packet it read.
+This is an excerpt from the strace log, one of my
+favourite debugging tools.
+Continue reading "Optimizing ppp and Code Quality"
+Computer Languages Form an Ecosystem
+(This is a copy of an
+article I posted on
+slashdot on March 15th,
+in response to a discussion titled
+C Alive and Well Thanks to Portable.NET.
+Many posters argued that the C language is dead.
+I add my response here, because one month after its original slashdot submission,
+I am still getting web site hits from it.)
+Continue reading "Computer Languages Form an Ecosystem"
+Binary File Similarity Checking
+How can one determine whether two binary files
+(for example, executable images) are somehow similar?
+I started writing a program to perform this task.
+Such a program could be useful for determing
+whether a vendor had included GNU
+Public License (GPL)
+code in a propriatary product, violating the GPL license.
+After writing about 20 lines, I realized that I needed an accurate
+definition of similarity than the vague
+"the two files contain a number of identical subsequences"
+I had in mind.
+Continue reading "Binary File Similarity Checking"
+A Unix-based Logic Analyzer
+A circuit I was designing was behaving in unexpected ways:
+the output of a wireless serial receiver based on Infineon's TDA5200
+was refusing to drive an LS TTL load.
+To debug the problem I needed an oscilloscope or a logic analyzer,
+but I had none.
+I searched the web and located
+software to convert the PC's parallel port to a logic analyzer.
+I downloaded the 900K program, but that was not the end.
+Unfortunately the design of Windows 2000 does not allow direct access
+to the I/O ports, so I also downloaded
+a parallel port device driver and a program to give the appropriate privileges to other
+Finally, I also downloaded from a third site the Borland runtime libraries
+required by the logic analyzer.
+Needless to say that the combination refused to work.
+Continue reading "A Unix-based Logic Analyzer"
+Well-behaved Web Applications
+Very few web-based applications are designed to match the
+As a result they are often irritating, counteproductive,
+or simply unusable.
+During the last two months I've been working on an
+IEEE Software theme issue titled "developing with
+open source software".
+Most of my work is performed over the
+IEEE Computer Society
+The application is an almost perfect example of everything that
+is often wrong with such interfaces.
+Continue reading "Well-behaved Web Applications"
+Code Reading: The Open Source Perspective
+In July 2000, while working on a paper on the use of slicing for
+choosing parts of an application to develop in a scripting language
+(don't ask), I found myself searching open-source programs for
+motivating examples, and experimenting with a tool for annotating the
+corresponding source code. At some point, a loud click sound in my mind
+brought to my attention the fact that although most books and courses
+teach us how to program, we actually spend most of our time reading code
+others have written. I reasoned that by applying my annotation tool on
+open source software I could write a book to present the ideas,
+techniques, and tools that go behind code reading.
+Continue reading "Code Reading: The Open Source Perspective"

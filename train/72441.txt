@@ -1,0 +1,4 @@
+(HyperText Markup Language) The standard document format for Web pages, defined by the Internet Engineering Task Force (IETF). Every Web page contains HTML tags (codes) embedded in the text that define the page layout, fonts and hypertext links. The link contains the URL (address) of another Web page on that same server or any server worldwide, hence "World Wide" Web. The HTML tags also define the graphic elements on the page, each of which is a separate file on a local or remote server. See hypertext.
+Since its inception by Tim Berners-Lee in the early 1990s, new versions of HTML have added features such as interactive forms, blinking text, custom backgrounds and tables of contents. To keep current, vendors have to update their Web browsers to accommodate the new tags; however, each new HTML version is backward compatible (mostly) with older versions.
+HTML Is "Not" a Programming Language
+HTML5 "Is" a Programming Language

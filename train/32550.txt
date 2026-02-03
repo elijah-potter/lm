@@ -1,0 +1,89 @@
+Implementing a Data Warehouse-Microsoft SQL Server 2014
+About this Course
+This course describes how to implement a data warehouse platform to support a BI solution. Students will learn how to create a data warehouse with Microsoft® SQL Server® 2014, implement ETL with SQL Server Integration Services, and validate and cleanse data with SQL Server Data Quality Services and SQL Server Master Data Services.
+2KO Africa presents various computer courses across Africa, as well as supplying internationally-certified online IT training in South Africa and also worldwide, enabling 2KO
+students the opportunity to study courses online
+world-wide, to ensure the best training possible.
+At course completion After completing this course, students will be able to:
+• Describe data warehouse concepts and architecture considerations.
+• Select an appropriate hardware platform for a data warehouse.
+• Design and implement a data warehouse.
+• Implement Data Flow in an SSIS Package.
+• Implement Control Flow in an SSIS Package.
+• Debug and Troubleshoot SSIS packages.
+• Implement an ETL solution that supports incremental data extraction.
+• Implement an ETL solution that supports incremental data loading.
+• Implement data cleansing by using Microsoft Data Quality Services.
+• Implement Master Data Services to enforce data integrity.
+• Extend SSIS with custom scripts and components.
+• Deploy and Configure SSIS packages.
+• Describe how BI solutions can consume data from the data warehouse.
+Module 1: Introduction to Data Warehousing
+This module provides an introduction to the key components of a data warehousing solution and the high-level considerations you must take into account when you embark on a data warehousing project. Lessons
+• Overview of Data Warehousing
+• Considerations for a Data Warehouse Solution
+Module 2: Data Warehouse Hardware Considerations
+This module discusses considerations for selecting hardware and distributing SQL Server facilities across servers. Lessons
+• Considerations for building a Data Warehouse
+• Data Warehouse Reference Architectures and Appliances
+Module 3: Designing and Implementing a Data Warehouse
+This module describes the key considerations for the logical design of a data warehouse, and then discusses best practices for its physical implementation. Lessons
+• Logical Design for a Data Warehouse
+• Physical design for a data warehouse
+Module 4: Creating an ETL Solution with SSIS
+This module discusses considerations for implementing an ETL process, and then focuses on Microsoft SQL Server Integration Services (SSIS) as a platform for building ETL solutions. Lessons
+• Introduction to ETL with SSIS
+• Exploring Data Sources
+• Implementing Data Flow
+Module 5: Implementing Control Flow in an SSIS Package
+This module describes how to implement ETL solutions that combine multiple tasks and workflow logic. Lessons
+• Introduction to Control Flow
+• Creating Dynamic Packages
+• Using Containers
+• Managing Consistency
+This course is intended for database professionals who need to fulfil a Business Intelligence Developer role. They will need to focus on hands-on work creating BI solutions including Data Warehouse implementation, ETL, and data cleansing.
+Primary responsibilities include:
+• Implementing a data warehouse.
+• Developing SSIS packages for data extraction, transformation, and loading.
+• Enforcing data integrity by using Master Data Services.
+• Cleansing data by using Data Quality Services.
+Included in your course fees:
+• Tuition fees
+• Breakfast and lunch on course days
+• Teas and coffees
+• Attendance certificate
+Module 6: Debugging and Troubleshooting SSIS Packages
+This module describes how you can debug packages to find the cause of errors that occur during execution. It then discusses the logging functionality built into SSIS that you can use to log events for troubleshooting purposes. Finally, the module describes common approaches for handling errors in control flow and data flow. Lessons
+• Debugging an SSIS Packag e
+• Logging SSIS Package Events
+• Handling Errors in an SSIS Package
+Module 7: Implementing an Incremental ETL Process
+This module describes the techniques you can use to implement an incremental data warehouse refresh process. Lessons
+• Introduction to Incremental ETL
+• Extracting Modified Data
+• Loading Modified data
+Module 8: Enforcing Data Quality
+This module introduces Microsoft SQL Server Data Quality Services (DQS), and describes how you can use it to cleanse and deduplicate data. Lessons
+• Introduction to Data Quality
+• Using Data Quality Services to Cleanse Data
+• Using Data Quality Services to Match data
+Module 9: Using Master Data Services
+Master Data Services provides a way for organizations to standardize data and improve the quality, consistency, and reliability of the data that guides key business decisions. This module introduces Master Data Services and explains the benefits of using it. Lessons
+• Master Data Services Concepts
+• Implementing a Master Data Services Model
+• Managing Master Data
+• Creating a Master Data Hub
+Module 10: Extending SQL Server Integration Services
+This module describes the techniques you can use to extend SSIS. The module is not designed to be a comprehensive guide to developing custom SSIS solutions, but to provide an awareness of the fundamental steps required to use custom components and scripts in an ETL process that is based on SSIS. Lessons
+• Using Scripts in SSIS
+• Using Custom Components in SSIS
+Module 11: Deploying and Configuring SSIS Packages
+In this module, students will learn how to deploy packages and their dependencies to a server, and how to manage and monitor the execution of deployed packages. Lessons
+• Overview of SSIS Deployment
+• Deploying SSIS Projects
+• Planning SSIS Package Execution
+Module 12: Consuming Data in a Data Warehouse
+This module introduces business intelligence (BI) solutions and describes how you can use a data warehouse as the basis for enterprise and self-service BI. Lessons
+• Introduction to Business Intelligence
+• Introduction to Reporting
+• An Introduction to Data Analysis

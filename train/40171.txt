@@ -1,0 +1,26 @@
+How to Format USB Drive in Windows10 and macOS?
+Formatting is the term used in Windows operating system to erase all content in the drive and make it to initial state. You can format both internal and external drives in Windows 10. USB devices are prone to damage and file corruptions due to usage on multiple computers. So, there are many situations you would like to erase all the content on your USB and format it like a new one. Windows supports file systems like NTFS and FAT for formatting drives.
+Unfortunately you can’t use the Windows formatted USBs on your Mac for saving content. Though you can mount the drive to view and copy the content, you can’t write on the drive. In order to write on the USB drive on Mac, you need to format the device into Apple supported file systems like APFS or Mac OS Extended. Similar to Windows 10, you can format USB drives on Mac using Disk Utility app.
+1. Formatting USB in Windows 10
+First off, ensure your flash drive is already plugged in to your PC. To verify that your system recognizes your flash drive, press “Windows + E” shortcut keys and open “File Explorer”. On the left pane, click on “This PC”. You will see a screen like the one shown below. Under “Devices and drives”, locate your Flash drive.
+As you can see above the Flash drive is labeled H in our case. It already has some content occupying the space. Before proceeding with formatting, ensure to copy the content from the drive. Otherwise you will loose all the stored content on the USB drive.
+Right click on the flash drive and select “Format” option as shown below.
+On the window that appears, you’ll get the details of the Flash drive such as capacity, file system and allocation unit size. Check the “Quick Format” option and click on “Start” to begin the formatting process.
+A warning prompt will pop-up as shown indicating formatting will erase all the data on the USB drive. Click “OK” to continue.
+This process should take some time depending on the size of the USB and you can see the progress bar running indicating the status. Finally, you will get the below pop-up to confirm that all went all. Click “OK” to complete the formatting process.
+Points to Remember
+- It is necessary to format the USB before creating a bootable flash drive from ISO file.
+- Formatting may fail if there are physical damages on the drive.
+- Sometimes formatting reduces the size of the drive by ignoring the corrupted segments.
+- Similar to USB, you can format any of the individual partition on the hard drive like C:, D:, etc. on your PC.
+2. Formatting USB Drive on Mac
+Insert the USB drive on your Mac and follow the below instructions to format.
+- Press “Command + Spacebar” to open Spotlight Search box and type “disk utility”.
+- Open the “Disk Utility” app from the search results.
+- Disk Utility will show the current file system of the USB drive.
+- In the below screenshot, it shows as MS-DOS (FAT 32) which is a Windows based file system.
+- Click on the “Erase” button and choose the file format from the dropdown. Generally, Mac will choose APFS by default though you can choose the older formats like Mac OS Enabled.
+- Again click on “Erase” button to delete the content on your USB and format it. After completion, you will see a success message like below.
+- If you want to partition the USB drive click on the “Partition” button in “Disk Utility”.
+- On the next screen, select the format and the size of the partition.
+- Click “Apply” to create a partition on USB with the selected size.

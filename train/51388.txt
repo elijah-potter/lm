@@ -1,0 +1,20 @@
+JAXP doesn't do any kind of processing instead it provides a mechanism to obtain parsed XML documents employing SAX and DOM parsers . JAXP provides a mechanism to plug-in with various providers (supporting standard specifications for DOM, SAX and XSLT ). JAXP also specifies which provider to use.
+Overview of the main JAXP API Packages
+The libraries that define needed JAXP APIs are:
+|javax.xml.parsers||The JAXP APIs provide a common interface for different vendors' to use SAX and DOM parsers.|
+|org.w3c.dom||Defines the Document class (a DOM) along with the classes for all of the components of a DOM.|
+|org.xml.sax||Defines the basic SAX APIs.|
+|javax.xml.transform||Defines the XSLT APIs that let's to transform XML into other forms.|
+The SAX API is defined in org.xml.sax package of JAXP-APIs. The "Simple API" for XML (SAX) is the event-driven, serial-access mechanism that does element-by-element processing. The API for this level reads and writes XML to a data repository or the Web.
+The DOM API is defined in org.w3c.dom package of JAXP-APIs. The DOM API is easier to use. It provides a tree structure of objects. The DOM API are used to manipulate the hierarchy of application objects it encapsulates.
+The XSLT APIs defined in javax.xml.transform package of JAXP-APIs. The XSLT APIs let you convert XML data to into other forms.
+Provides classes to process XML documents and supports two types of plugable parsers ie..SAX and DOM Here are the following classses defined in javax.xml.parsers package:
+|DocumentBuilder||Defines the API to obtain DOM Document instances from an XML document.|
+|DocumentBuilderFactory||Defines a factory API that enables applications to obtain a parser that produces DOM object trees from XML documents|
+|SAXParser||Defines the API that wraps an XMLReader implementation class|
+|SAXParserFactory||Defines a factory API that enables applications to configure and obtain a SAX based parser to parse XML documents|
+This package contains two vendor-neutral factory classes:SAXParserFactory (builds a SAXParser) and DocumentBuilderFactory (builds a DocumentBuilder).
+TheDocumentBuilder further creates a DOM-compliant document object.
+The factory APIs enables to plug-in with the XML implementation (provided by any vendor without changing the source code). The obtained implementation depends on the setting of the system properties of these factory classes javax.xml.parsers.SAXParserFactory and javax.xml.parsers.DocumentBuilderFactory . The default values (unless overridden at runtime) point to the reference implementation.
+If you are facing any programming issue, such as compilation errors or not able to find the code you are looking for.
+Ask your questions, our development team will try to give answers to your questions.

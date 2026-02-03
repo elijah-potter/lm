@@ -1,0 +1,6 @@
+How to Find IP Address on Exchange Serverby LysisUpdated September 28, 2017
+Each computer on your network has an IP address. The IP address is the unique ID that allows routers and other computers to find your machine and deliver messages. An Exchange server is a Microsoft product that hosts email communication. You configure your email client to point to the Exchange server, which sends and receives messages for you. If you want to know the IP address of the Exchange server, you need to look up your Exchange server name in account settings and use a command line tool called "ping."
+Click the Windows Start button and select "Control Panel." Double-click the "Mail" icon. This opens a new window with a list of email options.
+Click the "Email Accounts" button. This opens a window that lists all the email accounts you've configured on your machine. Highlight the account with the registered Exchange server and select "Change." Take note of the Exchange server listed. This is the fully-qualified name that can be used to find the IP address.
+Click the Windows Start button again and select "Run." In the text box displayed, enter "cmd" and press the "Ok" button. This opens the Windows command prompt.
+- Keith Brofsky/Photodisc/Getty Images

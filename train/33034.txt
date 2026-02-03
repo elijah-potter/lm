@@ -1,0 +1,11 @@
+Reference class forecasting
+June 17th, 2015
+Reference class forecasting, or comparison class forecasting, is the method of predicting the future, through looking at similar past situations and their outcomes.1
+I ran across the term Reference class forecasting while reading the article Your IT Project May Be Riskier Than You Think by Bent Flyvbjerg & Alexander Budzier on Harvard Business Review.
+Reference class forecasting for a specific project involves the following three steps:
+- Identify a reference class of past, similar projects.
+- Establish a probability distribution for the selected reference class for the parameter that is being forecast.
+- Compare the specific project with the reference class distribution, in order to establish the most likely outcome for the specific project.
+Here is the part of the post which caught my attention:
+They break big projects down into ones of limited size, complexity, and duration; recognize and make contingency plans to deal with unavoidable risks; and avail themselves of the best possible forecasting techniques—for example, “reference class forecasting,” a method based on the Nobel Prize–winning work of Daniel Kahneman and Amos Tversky. These techniques, which take into account the outcomes of similar projects conducted in other organizations, are now widely used in business, government, and consulting and have become mandatory for big public projects in the UK and Denmark.
+As global companies become even more reliant on analytics and data to drive good decision making, periodic overhauls of their technology systems are inevitable. But the risks involved can be profound, and avoiding them requires top managers’ careful attention.

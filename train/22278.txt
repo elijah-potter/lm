@@ -1,0 +1,18 @@
+THE INTERNET AND ITS USAGE.
+The internet is the global system of interconnected computer networks that uses the internet protocol suite to communicate between networks and devices. The internet provides networking, as it links computers to allow them operate interactively. It is a network of networks that share each other. It is inter-working as it can connect to different networks using intermediary devices. On the internet every device has its own unique IP address. Principles of an IP address:
+- It identifies the host,specifically its network interface
+- It provides the location of the host in the network.
+Principles of an IP address is characterized as follows:
+- A name indicates what we seek.
+- An address indicates where it is.
+- A route indicates how to get there.
+- The header of each IP packet contains the IP address of the sending host, and that of the destination host.
+PEERING ON THE INTERNET.
+Peering is a process by which two internet networks connect and exchange traffic. This allows direct hand of traffic between customers without having to pay a third party to carry that traffic across the Internet for them. This could involve running a circuit across town from one network’s facility to the other’s. Network operators may peer for reasons such as:
+- They have control over their traffic, in that it goes across the Internet via whatever path the transit provider decides to use.
+- It’s cheaper to hand off traffic themselves rather than paying somebody else to do it.
+- It gives greater control over their traffic flows, or allows them to better serve local populations.
+We have two main types of peering, public and private peering.
+Public peering, done through an Internet exchange, is more common and more efficient. An Internet exchange is an Ethernet switch in a data center, which all the networks peering in the facility connect to. A network can peer with many other networks through a single connection using an Internet exchange. Peering arrangements needs to be negotiated with each peer, but no new cabling needs to be done.
+Private peering within a data center combines the two approaches. Two networks put routers in the same building, and run a direct cable between them rather, than connecting through the exchange point switch. This is most useful when the networks are exchanging a large volume of traffic, which won’t fit on a shared connection to an exchange point. This is sometimes done when the networks are exchanging a large volume of traffic, which won’t fit on a shared connection to an exchange point.
+Check out our packages and feel free to contact us here.

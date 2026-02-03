@@ -1,0 +1,9 @@
+Ok so I am having a tough time getting my head around passing variables between functions:
+I can't seem to find a clear example.
+I do not want to run funa() in funb().
+name=input("what is your name?")
+age=input("how old are you?")
+return name, age
+def funb(name, age):
+Think of it as passing objects around by using variables and function parameters as references to those objects. When I updated your example, I also changed the names of the variables so that it is clear that the objects live in different variables in different namespaces.
+def funa(): name=input("what is your name?") age=input("how old are you?") return name, age # return objects in name, age my_name, my_age = funa() # store returned name, age objects # in global variables def funb(some_name, some_age): # a function that takes name and # age objects print(some_name) print(some_age) funb(my_name, my_age) # use the name, age objects in the # global variables to call the function

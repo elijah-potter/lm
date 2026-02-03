@@ -1,0 +1,28 @@
+I get asked a lot about SVN, GIT, Mercurial. It is clear to me that SVN has been superseded by GIT and I think many others agree. Go ahead and read a great comparison here (GitSVNComparison). My favorite addition (other than the dramatic decrease in size of repositories) is the branching mechanism that GIT adds. This also becomes the learning curve to long time SVN users. SVN users famously create the classic trunk,branch,tag structure for every repository they use but almost never utilized anything but trunk.
+So the biggest learning curve with jumping into GIT is the intended workflow. Lets take a quick look at how one should use GIT when working on a group project. This workflow maximizes modularity of your code additions and minimizes the downtime created by conflicts. To get you thinking while you are reading. Typical branching usage is to have each developer work in their own branch.
+First some terminology:
+- master branch – This is essentially your trunk in SVN. This is the main working branch in SVN.
+- local commit – In GIT everything you commit is local until you push.
+- remote push – Since all your commits are local, they need to be pushed to the remote server.
+- checkout – In GIT this refers to checking out a branch, the entire repository is morphed into a branch when you perform a checkout.
+Now the intended workflow:
+- Clone the repository, URL is often provided.
+git clone email@example.com:halsafar/TerraMater.git
+- Create a branch for you to work in.
+git checkout -b experimentalBranch
+- Do some work!
+- Commit your work.
+git commit -a
+- Push your branch to the remote server (optional!), required if you want to get your branch from another machine.
+git push origin experimentalBranch
+- You have completed your bug fix lets say, time to merge your changes into the master branch. First we have to checkout the master branch.
+git checkout master
+- Make sure we have an updated master branch.
+- Time to merge your branch into master, this is the conflict resolution step.
+git merge experimentalBranch
+- If all went well, push the updated master branch to the remote repo
+Now what if we are working on our experimental branch and some very important bugs are fixed and pushed into master. These changes will directly impact your work. It might be easier at this point to merge master into your branch so you can get the updates and keep working.
+- Make sure you are on your branch.
+git checkout experimentalBranch
+- Merge master into your branch
+git merge master

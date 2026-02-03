@@ -1,0 +1,27 @@
+This is the fifth article in Wind Power Plants Course. In this article, we’ll discuss wind power plant design. Various features of wind power conversions systems have been discussed in this article. Keep reading the series on wind power plants to learn all about modern wind energy systems.
+Wind comprises a mass of air flowing at a certain speed. The blowing Wind consequently possesses kinetic energy. A wind power plant converts the wind’s kinetic energy initially into rotary motion. This is achieved by means of a rotor and connected shaft.
+Rotor Desing of Wind Turbine
+A wind power plant’s rotor shaft can be mounted horizontally or vertically to result in the following variants:
+Designs with a vertical shaft
+Developed by the Finnish lieutenant commander Sigurd Savonius, a rotor design of the same name was introduced toward the end of the 19th century and has found widespread use especially as a fan wheel on ships and delivery vans. Occasionally, it is also used as a mechanical drive for small water pumps. The design illustrated adjacently was invented in 1925 by the Frenchman Georges Darrieus. Its advantages are operation regardless of wind direction and the ability to install all components on the ground. However, its disadvantages are the rotor’s reliance on a starting aid and an inability to adjust speed by turning the rotor vanes.
+The H-rotor shown here is a variation of the Darrieus rotor. Though not having achieved a great deal of economic success to date, this design is presently experiencing a resurgence in demand when it comes to small wind power plants with outputs of less than 10 kW.
+Designs incorporating a vertical rotor shaft only play a secondary role in modern wind-energy technology, having been surpassed undisputedly by horizontal rotor shafts, commonly referred to as
+The propeller variant possesses the following key features:
+The rotor blades can be adjusted about their longitudinal axis (blade angle control), making it possible to control the rotor torque and, consequently, the output power. The adjustable rotor blades also effectively prevent excessively high rotation rates at extremely high speeds.
+The rotor blades can be shaped ideally in terms of aerodynamics so as to maximize efficiency.
+Wind power plants of this design have an enormous technological lead over other variants.
+Since nearly all wind power plants presently operated for the purpose of producing electricity comprise the propeller variant, we will exclusively consider it in greater detail.
+Wind Turbine Systems with and without Gears
+The wind power plant with a gearbox
+The wind’s energy is converted by the wind power plant’s rotor into the shaft’s rotary motion: The rotor shaft consequently generates a torque at a rotary speed expressed in terms of revolutions (360°). The rotor shaft’s speed is stepped up, i.e. increased to a higher value, in a gearbox. The faster shaft at the gearbox’s output drives the rotor of a generator whose stator supplies a voltage and current. The generator is coupled via a transformer and additional equipment to the power grid.
+The generators built into this type of wind power plant are asynchronous. Their rotor requires a high speed, i.e. it needs to be driven by a fast shaft. This is necessary to supply the values, e.g. grid frequency of 50 Hz, required from the power grid.
+The fast shaft on most wind power plants has a speed of 1000 or 1500 revolutions per minute (rpm), whereas the slow shaft only has a speed of 16 rpm. This requires a gearbox capable of stepping up from 16 rpm to 1000 or 1500 rpm. Planetary gearboxes prove most suitable for achieving the high transmission ratios (e.g. 1 : 100) and forces entailed here.
+Wind power plant without a gearbox
+In operation for at least a decade have also been wind power plants without a gearbox, the generator’s rotor
+Such systems are furnished with four-pole, synchronous generators which are much more complicated to produce and also more expensive (further details on generators can be found in the chapter titled “Generator types”).
+A First Course on Wind Power Plant Systems
+We hope you’ve liked this article on various design features of wind power plant systems. This course on wind power plants, you’ll learn about the basic functioning of a wind turbine and how they convert wind energy into electric energy. There are other energy resources that have been discussed in detail. Continue learning this series on wind power plants to learn more.
+Read More about Renewable Energy
+You may also want to read the History of Wind Turbine and working of horizontal wind power plants.
+If you liked this article, then please subscribe to our YouTube Channel for video tutorials and project descriptions. You can also find us on Facebook. Give us your feedback in the comments section.
+Leave a Reply

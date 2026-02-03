@@ -1,0 +1,16 @@
+anything like C++ references?
+adalke at mindspring.com
+Mon Jul 14 18:28:38 CEST 2003
+> In computer science, the theoretical model one first learns is a turing
+> machine. Turing machines have no variables or values, merely tapes.
+Actually, we started off with state machine, then worked our way though
+DFA/NFA, PDA, etc., ending up with a TM. I remember being intrigued
+that the way we learned these was in opposite order to they way they
+were first researched.
+Can anyone suggest why? My thought was that mathematicians
+like generalizing, so the most general models were pondered first.
+Only as people started to experiment with variations, and with actual
+computer hardware to back them up, did people start thinking about
+more limited cases.
+dalke at dalkescientific.com
+More information about the Python-list

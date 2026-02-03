@@ -1,0 +1,14 @@
+What is Java? Learn Introduction to Java Programming Language
+Java is a programming language. A desktop and web application can be developed in Java. Like any other languages such as C and C++, Java has the capability to implement any algorithm using variables and control statement. Java is called an object-oriented programming language.
+In general, a language needs to store information and implement flow of conditional statement in order to perform a task. Variables are used to store the information and the control statements like if, while, for are used to implement algorithms. Each Computer language has the capability to interact with standard input and output devices, interact with files and database, etc.
+The language was created with 5 main goals:
+- It should be object-oriented
+- A single representation of a program could be executed on multiple operating systems
+- It should fully support network programming
+- It should execute code from remote sources securely
+- It should be easy to use
+POP to OOP
+In Programming, the paradigm is the model of programming that derives process leading to problem-solving to the framework
+There are several types of languages
+- COP(Component Oriented)
+- OOP(Object Oriented)

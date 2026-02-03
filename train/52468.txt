@@ -1,0 +1,8 @@
+One-dimensional one-atom gas
+Below is a very simple model of a gas. Here, a single atom bounces
+elastically in a one-dimensional cavity. It will continue to bounce
+at the same speed forever if the piston does not move. If we start the
+piston compressing, the atom gains speed when it bounces off the piston.
+(speed after collision) = (speed before collision)+2*(piston speed). That
+alone is enough to explain why a gas heats when we compress it and cools
+as we allow it to expand.

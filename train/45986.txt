@@ -1,0 +1,24 @@
+Introduction to Python
+Author: Oleksandr Lomako
+Complete all chapters to get certificate
+In this section, you will be introduced to the very basics of Python and to your workspace, learn some simple math operations, and print your results.
+The Very First Steps
+Some Simple Math
+More Challenging Math
+Bringing It All Together
+Variables and Types
+In this section, you will learn how to store numbers, text, etc. in computer memory and then be able to call them by name. Also, you will learn little manipulation with text in Python.
+In this section, you will learn the next data type - boolean - and how it can help in creating programs that behave differently depending on certain conditions.
+Boolean Data Type
+Simple if/else Expressions
+Other Data Types
+In this section, you will continue learning different data types in Python: This time you will learn how to store different characteristics inside one variable using lists, tuples, and more interesting type dictionaries.
+What Is a List?
+What Is a Tuple?
+What Is a Dictionary?
+In this section, you will learn how to write loops in Python - things often used to iterate over a list, tuple, dictionary, or even in a future dataframe...
+Iterating Over Indexes
+In the final section of our introduction course, you will learn a bit about built-in functions and then write some functions by yourself!
+Defining Your First Function
+if/else Statements in Functions
+Functions With No Return

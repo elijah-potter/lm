@@ -1,0 +1,19 @@
+The KYPO - Cyber Exercise & Research Platform
+The KYPO - Cyber Exercise & Research Platform (KYPO) focuses on the research, development, and creation of a unique platform for analyzing security threats to critical information infrastructure. It is capable of creating various scenarios involving extensive computer networks running services and applications and thus facilitates the detailed study of the emergence, spread, and impacts of current cybernetic threats. The KYPO platform can also be effectively used for interactive training and exercise sessions for security staff. Typical training activities include basic security training, administrator training, and training for forensic investigations of attacked machines. Furthermore, the KYPO platform can be used for extensive security training exercises in which several teams of users can compete against each other or work together.
+The KYPO project (VG20132015103) was funded by the Ministry of the Interior of the Czech Republic as part of the Security Research Programme of the Czech Republic 2010–2015. The Institute of Computer Science, in cooperation with the Faculty of Informatics of Masaryk University, was the lead organizational unit of this project. CERIT Scientific Cloud provides cloud computing resources. Project team members have many years of experience running the CSIRT-MU security team and implementing security projects for the public and private sectors.
+The Objectives of the KYPO Project
+- To create a unique environment for researching and developing methods for mitigating attacks on critical information infrastructure in the Czech Republic
+- To provide a sophisticated environment for training security professionals
+- To provide a platform that makes conducting security experiments and training easy, with machines, network topology, and individual connections that are as configurable as possible
+- To provide a built-in monitoring infrastructure with a predefined set of phenomenons that can be expanded
+- To visualize incidents and events occurring in the computer network and on individual machines
+- To provide KYPO services to interested parties in the commercial and public sectors
+Features of the KYPO
+- Complex scenarios can be created that can be repeated and modified without limit.
+- Thanks to the cloud, the size of experiments can be scaled.
+- Various operating systems can be used (e.g., Linux, Windows, and Android).
+- It provides realistic conditions for training, research, and forensic scenarios.
+- It automatically collects information about the machines and network traffic in the scenario.
+- The machines in the scenario may be either connected to or isolated from the internet.
+The KYPO Laboratory
+The KYPO - Cyber Exercise & Research platform has been accessible since May 2015 at the newly opened KYPO laboratory located in the CERIT Science Park of Masaryk University. This laboratory provides a unique training environment in the Czech Republic, where it is possible to conduct security training under the guidance of CSIRT-MU staff security specialists and invited lecturers.

@@ -1,0 +1,54 @@
+The source code editor also interfaces with the debugger to provide functions and features
+for debugging within a source file or module. Breakpoints may be set on one or more source
+lines. Breakpoints are fixed on source lines and are bound to addresses when a program is
+loaded. Single stepping can be done going into and over function calls (assembly or C) and
+you can execute to the location of the cursor. Toolbar buttons allow you to open all other
+debug windows and also step to the end of the function (for C) or the caller of the
+function (assembly and C). A variable or expression can be highlighted which will be taken
+as the input when a watch is added.
+The registers and flags window displays all Rabbit CPU registers and also for convenience
+includes the MMU and XPC values. The flags window shows all flags including IP. Registers
+and flags can be modified before resuming execution. Easy shortcuts for zeroing,
+incrementing, and decrementing a register are provided. On each stoppage of execution,
+registers and flags which have changed from the previous execution will be shown in red.
+The assembly window displays a scrollable Rabbit disassembly of data in the system. Global
+labels and source code which match addresses are interspersed. Breakpoints may be set and
+cleared on addresses and these are fixed even as changed programs are loaded. Breakpoints
+set in an editor show up in the assembly display. The PC address is displayed as a solid
+background in one color and as a second color when on a breakpoint, which also are shown
+with a solid red background. Memory can be changed in the assembly window by simply typing
+a mnemonic with its operands including expressions and symbols. It will be placed in
+memory and the cursor will advance to the next spot. All of the single stepping function
+available in the editor window are available in this window with the addition of back
+stepping, which undoes registers to the previous step. As the cursor or PC moves to an
+address, the closest symbol name matching the address plus an offset (if not 0) will be
+displayed in the status line.
+The data window displays a scrollable section of Rabbit addresses in one of four formats:
+bytes, words, double words, and floats. One or more bytes of memory in the format
+displayed can be modified by simply typing one or more values. The closest symbol name
+matching the cursor address plus an offset (if not 0) will be displayed in the status
+The stack window displays a column of words matching addresses of the stack at the current
+SP. The SP address is displayed as a solid background color. Words may be changed by
+simply entering one or more values.
+The I/O window displays one or more user specified I/O locations. These locations may be
+specified as belonging to the internal or external address space. I/O locations may be
+changed by entering a value and a count of the number of writes to execute. To support
+shadowed registers, the I/O window allows you to specify a shadow name for external I/O
+and provides the Softools standard shadow name for internal addresses. When writing I/O to
+a shadowed address, the shadow memory is updated as well as the port. When reading the
+shadowed address, the shadow location is read. An address can be marked as write-only so
+that it will not be read on a refresh but remains available in the window to allow writing
+to it as needed.
+The watch window displays one or more user specified variables or expressions to evaluate
+and to display the result which is displayed along with the C type of the result. The
+result can be a combination of 2 or 3 formats depending on the expression's final type. A
+structure is shown as a comma delimited list of the members. A pointer to char is shown as
+a string. If the expression is a simple (non-aggregate) type, it may be changed and the
+new value will be written to memory.
+The printf window
+allows runtime debugging and diagnostic messages to be displayed into this window by
+simply using the C printf function. Data is written at the
+full serial link speed without delay. If the WinIDE is exited, program output can be
+monitored using a terminal program like HyperTerminal. For production code, the
+output is disabled (but the code and overhead to process the printf remains). It can
+be enabled if necessary by a small change to the startup code.

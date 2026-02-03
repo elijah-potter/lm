@@ -1,0 +1,24 @@
+Popup Windows: The Basics
+We'll begin the tutorial by creating a basic popup window. The technique described here addresses all the major issues in popups. The popup always comes to the front. Different links can target the same popup. The code is simple and easily modified. Everything for the rest of the turorial is a variation on the theme described here. The code in this page creates a popup that is opened from a link. In this section we'll show the code with just the minimal description you need to get it going. For more details see Under the Hood: Details of the Popup Script.
+First, copy this script into the
+<HEAD> section of your page:
+function popup(mylink, windowname)
+if (! window.focus)return true;
+if (typeof(mylink) == 'string')
+window.open(href, windowname, 'width=400,height=200,scrollbars=yes');
+For now we'll skip the details of how the script works, (see
+Under the Hood: Details of the Popup Script for a line-by-line description), and move to the next step. The script above opens the popup, but something needs to run the script. The most common situation is that the script is run when the user clicks on a link. A link like the following would run the script:
+onClick="return popup(this, 'notes')">my popup</A>
+which creates this link:
+Most of the link is as usual. The URL of the page being linked to is in the
+HREF attribute. We've added an additional attribute called
+onClick. Copy the code as it is into your link, with only a small modification. The second argument of the
+'notes' -- indicates name of the popup window. Every popup window should have its own unique name. Be sure to put the name in single quotes (
+So if you want to name the popup
+then this would be the code:
+<A HREF="popupbasic.html" onClick="return popup(this, 'stevie')">my popup</A>
+Read This Next Part Or You'll Go Insane Trying to Figure Out Why Your Popup Doesn't Work
+A small but crucial point is often overlooked. The command in
+or the script won't work. Be sure to start the command with
+onClick="return popup(this, 'notes')"
+And don't put a space in the page name between the single quotes. If you do, the link will act just like a regular link.

@@ -1,0 +1,41 @@
+29th Jan 2009, 13:50
+Vx is the speed that will give the best glimb gradient, the maximum gain in altitude in the shortest distance.
+Vy is the speed that will give the best rate of climb, the maximum gain in altitude in the shortest time.
+Assume the following senario,
+You are flying an aircraft an above you lets say 1000 feet and 10 miles away is another aircraft approaching on the reciprocal track. You want to climb and cross his flightpath. will you climb at Vy or Vx to gain the maximum separation when crossing his flightpath?
+what i was thinking is that Vy will get you nearer to the other aircraft earlier. Vx will give you a good gradient but will do so taking a longer time and therefore the aircraft will be nearer again.
+Treating the other aircraft as an obstacle i am more tempted to choose Vx as the climb speed.
+30th Jan 2009, 13:02
+10 miles reciprocal and 1000 above. You will do neither. Sit and wait til he's 5 miles behind you.
+30th Jan 2009, 14:57
+Hmm yes, that for sure.
+But the question is just theoretical, which speed will make you cross his flightpath with the maximum separation?
+i know i can sit and wait or turn etc etc...
+30th Jan 2009, 16:15
+You haven't provided enough information to solve your problem.
+If the other aircraft was stationary (as an extreme example), you would transit his altitude at the greatest separation by climbing at the maximum gradient.
+At any other speed you need to calculate both cases, but I think the optimum speed will likely be between Vx and Vy.
+If you plot ROC Vs Airspeed, Vx is obtained by finding the tangent point of a line drawn from the origin that is tangential to the curve.
+I think the solution to your problem is obtained by plotting that tangent from (-Vb) where Vb is the velocity of the other aircraft.
+Similar to doing the best-range-speed problem with head or tailwinds
+30th Jan 2009, 22:22
+You are simply thinking it the wrong way, you have to know the outcome before calculating:
+The outcome has to be: You at your new level (1000' separation) at a safe distance (lateral separation, usually 5nm)!
+Knowing this, you can throw in your speed, your climb performance, winds, etc to get a minimum rate to do this safely. That is how you will fly it then...
+PS: aren't the vx and vy marks (blue- and redline) on the speedscale for single engine
+1st Feb 2009, 03:28
+the factor in when your paths will cross it time. so you would want to get to the altitude in the qickest amount of time. so Vy would be the answer.
+1st Feb 2009, 10:18
+Hoover1, that's not entirely correct.
+There are two factors: time and closing speed. Vx reduces the closing speed and Vy reduces the time.
+The answer lies between the two and is solved by the method that I described above.
+Another way to think about it is that you want to maximise the gradient as seen by the moving reference frame of the oncoming aircraft.
+1st Feb 2009, 11:40
+Where did the A/S indicator markings discussion come from? And the answer is no.
+That red line (assuming on a certificated multi-engine piston aircraft) is Vmc = Minimum controllable single-engine airspeed.
+7th Feb 2009, 23:58
+The discussion came from nowhere, ther isn't any - it was a question about things I have forgotten (unfortunatly)...
+I do seem to recall from flightschool that the two speeds (vx and vy) were very close together, just a few knots.
+So nowadays, if I have to get up there quickly, I usually increase rate of climb, thereby sacrificing speed, at max climb power. I can do this until I reach minclean then I will have to get that nose down.
+The question is, as pointed out above, a mathematical jerk off, not of practical value...
+But it is fun to think about -

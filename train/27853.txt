@@ -1,0 +1,26 @@
+The OpenKernel library is an open-source software library for designing, combining, learning and using kernels for machine learning applications
+The library supports the design and use of kernels defined over dense and sparse real vectors, as well as over sequences or distributions of sequences.
+For dense and sparse features, the library provides implementation of the classical kernels: linear, polynomial, Gaussian and sigmoid.
+For sequences and distributions of sequences, the library implements the rational kernel framework of Cortes et al. (JMLR, 2004). The library supplies the following sequence kernels:
+- n -gram kernels,
+- gappy n-gram kernels,
+- mismatch kernels (Leslie et al., 2004),
+and gives the utilities for creating arbitrary rational kernels simply by providing the weighted finite-state transducers they are based on.
+Kernels can be combined by taking their sum or their product, and can be composed with a polynomial, a Gaussian or a sigmoid. They support on-demand evaluation and caching. In addition to its own binary format, the library uses the ASCII format of LIBSVM/LIBLINEAR/SVMlight for representing features (and precomputed kernels for LIBSVM).
+Finally, the OpenKernel library also includes several options for using training data to automatically combine multiple kernels. This is particularly useful when the single best kernel for the task is not known. The algorithms implemented include
+- L1-regularized linear combinations (Lanckriet et al. JMLR 2004);
+- L2-regularized linear combinations (Cortes et al. UAI 2009);
+- L2-regularized quadratic combinations (Cortes et al. NIPS 2009),
+as well as kernel correlation, or alignment (Cortes et al. ICML 2010), based combinations. Specialized efficient versions of these algorithms are also made available for weighting features and sparseness and can be used to further improve efficiency. The output kernels can be easily used in conjunction with LIBSVM, SVMlight and included kernel ridge regression implementations. Full reference documentation, tutorials and examples (with formatted datasets) are included.
+The library is an open-source project distributed under the Apache license (2.0). This work has been partially supported by Google Inc. The library uses the OpenFst library for representing and manipulating weighted finite-state transducers.
+C. Cortes, P. Haffner and M. Mohri. Rational Kernels: Theory and Algorithms, Journal of Machine Learning Research 5:1035-1062, 2004.
+C. Cortes, M. Mohri and A. Rostamizadeh. L2 regularization for learning kernels. In Proceedings of the 25th Conference on Uncertainty in Artificial Intelligence (UAI 2009), 2009.
+C. Cortes, M. Mohri and A. Rostamizadeh. Learning non-linear combinations of kernels. In NIPS, 2009. MIT Press.
+C. Cortes, M. Mohri and A. Rostamizadeh. Two-Stage Learning Kernel Algorithms. In ICML 2010, to appear.
+G. R. G. Lanckriet, N. Cristianini, P. L. Bartlett, L. El Ghaoui and M. I. Jordan. Learning the Kernel Matrix with Semidefinite Programming. Journal of Machine Learning Research 5:27-72, 2004.
+C. S. Leslie, E. Eskin, A. Cohen, J. Weston and W. S. Noble. Mismatch string kernels for discriminative protein classification. Bioinformatics 20(4):467-476, 2004.
+- Changes to previous version:
+Initial Announcement on mloss.org.
+No one has posted any comments yet. Perhaps you'd like to be the first?
+Leave a comment
+You must be logged in to post comments.

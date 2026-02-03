@@ -1,0 +1,7 @@
+If the two digit integers M and N are positive and have the same digits, but in reverse order, which of the following CANNOT be the sum of M and N
+A.) 181 B.) 165 C.) 121 D.) 99 E.) 44
+Answer: It is given that M and N have the same digits in reverse order. Let M=10t+u and N=10u+t, where t and u are two digits. Then, M+N= (10t+u) + (10u+t) = 11(t+u). This means that any sum of the two integers M and N must also be a multiple of 11. Of the answer choices, only 181 is not a multiple of 11 and thus cannot be the sum of M and N
+HELP!!!! I do not understand where the author came up with the number 10. Why 10t and 10u? please help, I understand that 181 is not a multiple of 11 and the rest are, hence the correct answer: but I do not understand the reasoning!
+Users browsing this forum: No registered users and 2 guests
+You cannot post new topics in this forum You cannot reply to topics in this forum You cannot edit your posts in this forum You cannot delete your posts in this forum You cannot post attachments in this forum
+GMAT(TM) and GMAT CAT (TM) are registered trademarks of the Graduate Management Admission Council(TM). The Graduate Management Admission Council(TM) does not endorse, nor is affiliated in any way with the owner or any content of this site.

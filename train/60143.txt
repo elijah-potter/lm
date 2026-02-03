@@ -1,0 +1,11 @@
+3D Virtual Sketch
+Virtual 3D Sketch is a tool for real-time interactive three-dimensional visualization. It uses data gloves to manipulate forms via gesture.
+Ohio Supercomputer Center
+Jeffrey Haase, Assistant Professor,
+Department of Design
+Maria Palazzi, Director of ACCAD
+Virtual 3D Sketch is a tool for real-time interactive three-dimensional visualization. It uses data gloves to manipulate forms via gesture. Designers and architects use this tool to design full-scale environments. This tool is designed to provide a more accurate sense of space, size, and proportion as the user defines and constructs full-size three-dimensional spaces by placing elements within the environment.
+The setup consists of 2 data gloves (Cyberglove, Virtual Technologies), a head-mounted display (HMD) offering stereovision and an SGI workstation. The gloves are programmed to interpret gestures made by the user to signal such items as object creation and transformations. Both the gloves and the HMD are outfitted with trackers which are used to sense the position and orientation of hands and head at all times.
+The program is written in C++ and OpenGL.
+Virtual 3D Sketch was tested with a group of sophomore interior design students in the Spring '01 quarter. The original assignment was designed by Professor Haase. It required students to work with a pre-defined, in both numbers and types, set of geometry. The geometry included columns, slabs, and grids. Each student constructed a unique space solution. The green marker shown below is a 6 foot tall human icon used to relate the scale and so that students can also gesture to this level and view the space.
+Completed from 2000-2002.

@@ -1,0 +1,11 @@
+Suppose that 1 is less than or equal to k which is less than n. Prove that the part k occurs a total of (n-k+3)2^(n-k-2) times among all the 2^(n-1) compositions of n.
+The teacher gave a hint to use the balls and walls technique, fix a part of size 2 and then count the number of ways to complete the composition. Then use this to prove the general k case.
+I'm confused as how to get the number of compositions from the balls and walls technique and then how to go on for the general case. Any help would be appreciated. Thanks.
+I see balls and walls is another name for stars and bars.
+Originally Posted by bethh
+I think the fact that we're counting "how many times k appears" rather than "in how many compositions k appears" helps us out, because it frees us from worrying about duplicate counting.
+Consider n=5, k=2.
+We want to fix **. There are 4 ways to do this
+In red are marked the bars that must be in place in order for the part of size 2 to be intact. The bars in black can be either on or off.
+So it can be seen that the count is 2^2 + 2 + 2 + 2^2 = 12, which is correct and matches with the formula given.
+I haven't tried to generalize, but if your professor says that it will work out, it probably will. Try it and see what happens.

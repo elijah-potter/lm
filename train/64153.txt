@@ -1,0 +1,35 @@
+Zyra's website //// Computers //// Site Index
+A few Shortcut Keys
+There are some useful keys on a computer keyboard which are useful to know about as they give you the options of doing things, something things which not many people know about. Some are quite useful.
+Some of these "shortcuts" work on some operating systems and not on others. Some are not in the manual, and are just spread around by word of mouth, as if it was a folklore of computer keyboardishness. But there is no doubt, as you can try these things yourself and see if they work.
+ctrl-c : (holding down the "ctrl" key and then pressing C) . This is a halt/stop command on some systems, and on others is is COPY or "copy into clipboard". Easier than moving a mouse around to do this.
+ctrl-v : where ctrl-c is copy, ctrl-v is PASTE.
+ctrl-x : CUT, the equivalent of copy and delete. Notice the X,C,V keys are adjacent on the keyboard.
+ctrl-a : On some machines in some circumstances this is SELECT-ALL.
+f3 : find next. In the editing of a document, this does a search to find the next instance of whatever it is you are searching for. (works in Konquerer in Linux, Windows Notepad, and DOS Edit, and possible a few other systems).
+alt-tab : This is a matter of holding down the "alt" key (left of the space bar), and while holding it, press the "tab" key (just to the left of Q), several times and watching closely what happens. This works in some versions of X in several different species of Linux as well as in Microsoft Windows. The different tasks being looked at on the screen are alternated around, so if there are several of them you can flick between them. If you don't know what I mean, try opening up a few different things in different windows and then try this trick of holding down the "alt" key while pressing "tab" and see what happens.
+alt - print screen : Although this doesn't work on all systems, and is often in doubt, it does work on some! To do this, hold down "alt" and press the "print screen" key (just to the right of f12). What happens is ... apparently nothing. Except that the computer has taken a snapshot of the screen at that very moment and put it in the clipboard. This can now be copied into something else, using PASTE. Typically on Window95, you can take a snapshot of the screen using alt - print screen and then paste it into PAINT, where it appears as a huge BMP file. This can then be modified using various artistic creative software such as the software that's given away free with a scanner, and converted into reasonable sized pieces of the required item. As this captures everything on the screen, anything that's on the screen at that moment in the field of view can be carefully taken out and used for something.
+ctrl-z : on some systems, this is "undo", where if you make a ghastly mistake you can immediately rectify this by doing ctrl-z and it will UNDO. On some systems, ctrl-z means "end" or "move to background task" which is quite different. You then have to type the command "fg" to being the task back into the foreground.
+up/down/left/right : the arrow keys. These work in obvious ways, but also in other circumstances. Not everyone knows this, but they work when browsing through a web page, again avoiding having to move the mouse about.
+shift-[arrow-keys] : By holding down "shift" and pressing the arrow keys, text areas are selected, and can then be copied.
+f5 : on a web browser, does a "refresh" (on some browsers).
+insert : (usually next to "delete") - switches between insert-mode and over-mode. In insert-mode, stuff you type on the keyboard is added and everything else has to nudge along to make room for it. In over-mode, the new stuff overwrites the old. Worth knowing about even if you don't intend to use it, because you can sometimes find you've got the machine into a state where you can't add anything and it just replaces the old stuff with new. If this happens, press the "insert" key, and it should go back to insert-mode. You can still press "delete" to get rid of things you don't want.
+"/" and "\" : worth mentioning, to remember what these stroke keys are called. See slash and backslash
+ctrl-g : goes beep. Officially known as "BEL" this is character 7 and is used for making terminals make strange noises.
+ctrl-l : clear screen. Control-L . Again an old-style feature. Don't worry if these things don't work on all modern machines.
+ctrl-m : the same as return/enter. Worth knowing in case your keyboard has suffered the loss of its return key. Can get you out of trouble until you can get a new keyboard.
+tab : among the many things this does are the COPY function (in conjunction with the arrow keys) in BBC BASIC for the PC
+alt - f4 : finish! This closes down a process, and can be used for closing down processes sequentially. On some operating systems it can shut down the system. (It will usually prompt you to make sure that you really meant to close it down).
+LEFT - select
+RIGHT - options
+ctrl LEFT - select and pick, for example selecting a carefully chosen set of things from a group.
+shift LEFT - select everything that are between the cursor position and the current mouse position.
+Strange characters, foreign letters, symbols, letters with dots and accents on, etc, a whole range of possibilities is explained in the page of Key Codes (This is well worth having a look at!)
+shift - [plus] : increase text size
+shift - [minus] : decrease text size
+ctrl - alt- [plus] : go up to next highest screen resolution
+ctrl - alt - [minus] : go down to next lowest screen resolution
+ctrl - alt - delete : (holding down ctrl and alt at the same time, pressing delete) : On some systems, this resets the computer. On some, if logged in not as root, it does nothing. In Microsoft Windows, on the first press of ctrl-alt-delete it goes you a choice of which offending process you want to kill. This is very handy for getting rid of annoying things going on, but sometimes can inadvertently shut other things down. Still, it's worth knowing about. Also note: A second press of ctrl-alt-delete will restart the machine, sometimes uncleanly, so caution is advised.
+Special note: Some of these tricks work on some machines and not on others. Don't worry if they don't all work on your computer!
+As well as Command Line there are some of these things in the GUI such as How to move the Taskbar
+Yet more useful stuff at this site that's got loads of stuff worth knowing, and some other stuff besides. More about it!

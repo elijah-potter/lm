@@ -1,0 +1,152 @@
+page contains the hook only. It is intended to spark interest
+in the topic and lead students to ask questions or make predictions.
+weather effects every day of our lives. Barely a day goes by that
+most people don't check out the day's weather forecast, or maybe
+even the forecast for the next ten days. A phenomenon that meteorologist
+have linked to weather patterns around the globe is known as El
+Niño. We have heard both plausible and incredible accounts
+of the effects of El Niño in the
+Goddard Space Flight Center
+is all the big fuss about El Niño? Here are some sites
+to give you some background on El Niño:
+Do you remember
+whether the 1997-98 El Niño affected the weather where
+you live? What should we expect when El
+Niño strikes next?
+information you gathered from the El Niño web sites, how
+do you think El Niño should have affected the weather where
+or not El Niño really did affect our weather is still being
+debated. How would you determine whether El Niño affected
+the weather in the ways you predicted?
+might ask similar but different questions than those listed here.
+Remember, the more students are guided to ask specific
+questions, the less inquiry-oriented the activity.
+The big question
+is: Did the most recent 199798 El Niño affect
+the climate of your students specific geographic region?
+students investigate what El Niño is, perhaps by investigating
+the above web sites, they should be ready to:
+the climate parameters (e.g., temperature and precipitation)
+that El Niño could reasonably be expected to influence.
+- Make predictions
+as to what effect the El Niño phenomenon might have had
+on these parameters for a particular region (drier, wetter,
+To test their
+predictions, students will need to answer questions similar to:
+the 1997-1998 El Niño significantly affect the amount
+of rainfall (drier/wetter) our region received during that time
+the 1997-1998 El Niño significantly affect the temperatures
+(warmer/cooler) of our region during that time period?
+students have asked questions related to the topic, they will
+need to decide a number of things, including:
+of data needed to answer the questions
+tools for data manipulation
+how data will be manipulated and presented
+be obvious to your students that they are going to need rainfall
+and/or temperature data to test their predictions. It might not
+be obvious what format this data should be in. The example provided
+here uses average monthly rainfall and temperatures, but students
+might select something else similar.
+project, it is important that students look for data sets that
+include monthly temperature and precipitation averages over several
+decades, because 30 years of data are typically used for identifying
+a typical climatic year for a region.
+task for this project is for students to define what "significant"
+means. What does it mean to be significantly drier/wetter or warmer/cooler?
+Depending on the age of the students this might be an opportunity
+to apply a real-world application of standard deviation or quartiles.
+The example shown will use both standard deviation and quartiles.
+students, it is probably reasonable to define "significant"
+as being "double/half the average rainfall" or "five
+degrees above/below average."
+of the data students use will be numerical. Graphing calculators
+or spreadsheets are excellent tools for looking at and comparing
+numerical data. The example shown will use a spreadsheet.
+be comparing El Niño years to other years, perhaps to the
+overall average. Charting data from the El Niño years and
+comparing it to the other years will provide answers to most of
+the students questions. Including in the chart a "range"
+around an average year is beneficial. This can be done by adding
+and subtracting from the average standard deviations, quartiles,
+or whatever parameter students chose to be "significant."
+An example is provided below.
+is often a giant leap from defining the type(s) of data desired
+and actually finding the data. Providing guidance to students
+in finding the necessary data may be necessary.
+data is easy to find on the Internet, as are overall averages
+However, finding several decades worth of data listed as monthly
+averages can be difficult.
+are struggling to find the data they need you might point them
+to Regional Climate
+Centers (http://www.wrcc.dri.edu/rcc.html) to locate data
+for the region they are interested in.
+Plains Regional Climate Centers, for example, have excellent
+data sets available, but even these can be very difficult to find
+once you are in these sites.
+data/information usually has to be manipulated before it can answer
+any questions. Students might be unaware of how data can best
+be manipulated, so teacher guidance may be appropriate.
+raw temperature and rainfall data is likely not enough to answer
+any questions. For example, the following is a segment of the
+monthly temperature averages for San Diego, California, starting
+in 1914 and ending in 2001. A graphical manipulation of this data
+would help students make better inferences of this data.
+Too much data to enter in a Spreadsheet by hand?
+should know that spreadsheets and graphing calculators are the
+some of the best tools for manipulating numerical data.
+this data intro a spreadsheet by hand is cumbersome and will take
+some time. Often it is possible to copy and paste the data from
+the browser straight into a spreadsheet. This typically works
+when both the web browser and the spreadsheet application are
+both produced by the same company - such as Microsoft's Internet
+Explorer and Excel.
+the data is into the spreadsheet it can be manipulated to help
+answer questions. In this example, averages and standard deviations
+for each month were calculated. The Average + 1 Standard Deviation
+(Ave + 1 SD) and the Average - 1 Standard Deviation (Ave
+- 1 SD) were then calculated. Both average and standard deviation
+are relatively easy formulas to find and use in Microsoft Excel.
+- The formula
+=AVERAGE(B3:B89) calculates the average for cells B3
+- The formula
+=STDEV(B3:B89) calculates the standard deviation for
+cells B3 through B89.
+the Average + 1 Standard Deviation (Ave + 1 SD) was calculated
+by typing in cell B93, =B91+B92.
+the Average - 1 Standard Deviation (Ave - 1 SD) was calculated
+by typing in cell B93, =B91-B92.
+68% of all months should fit between Ave + 1 SD and Ave - 1 SD.
+If we compare the 1997-1998 years to Ave + 1 SD and Ave - 1 SD
+in a chart, we should be able to see if any months were noticeably
+precipitation, standard deviation causes problems in that Ave
+- 1 SD will yield a negative number -- and it's impossible
+to have negative rainfall! Instead of using standard deviation
+with rainfall, it works best to use quartiles with rainfall.
+Quartiles are relatively easy to calculate in Excel as well:
+- The formula
+=QUARTILE(B3:B89,1) calculates the lower quartile for
+the cells B3 through B89.
+- The formula
+=QUARTILE(B3:B89,3) calculates the upper quartile for
+the cells B3 through B89.
+you and your students interpret quartiles, just keep in mind that
+data points above the upper quartile are above the 75th percentile,
+and data points below the lower quartile are below the 25th percentile.
+result is meaningful unless communicated appropriately. Discussion
+of findings should be supported. There may or may not be definitive
+answers to the questions students raised.
+this example, five months in 1997 were above Ave + 1 SD. Students
+might conclude that El Niño caused the temperatures in
+San Diego to be above normal.
+this example, during the first seven months of 1998 (the heart
+of El Niño), rainfall levels were either near, above, or
+significantly above the 75th percentile. Students will likely
+conclude that El Niño did significantly increase the amount
+of rainfall received in San Diego.
+often lead to new questions, starting the inquiry cycle over again.
+might now be interested and ask their own questions about El Niño
+or other weather phenomena, such as La Niña:
+- How did
+El Niño affect weather in other parts of the world?
+- What is
+La Niña and how does it affect weather different than

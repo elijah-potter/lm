@@ -1,0 +1,16 @@
+Users new to the world of cryptography often find themselves confused about the appropriate cryptographic key to use for various applications. It's actually a relatively straightforward selection process that depends
+Remember that there are two basic types of cryptographic algorithms – symmetric (private key) and asymmetric (public key) algorithms. Symmetric key algorithms use a single key to secure communications and achieve the goals of confidentiality, integrity and (sometimes) authentication. Asymmetric algorithms provide each user with a pair of keys – a public key and a private key. Users freely distribute their public key while keeping their private key secret. These keypairs are used to achieve all four cryptographic goals: confidentiality, integrity, authentication and non-repudiation. (If you need a refresher on these goals, see the tip Encryption and electronic mail).
+An easy way to keep this straight is to remember that the symmetry in a symmetric algorithm results from the fact that both parties are using the same key. Asymmetric algorithms, on the other hand, do not achieve this symmetry – each participant in a communication uses a different key for their portion of the exchange.
+Now the big question – which key should you use for a particular application? If you're using a symmetric algorithm, the answer is simple – you use the only key available to you, the secret key. If you're using a public key algorithm, it depends upon the application:
+- To protect the confidentiality of a message, encrypt the message with the recipient's public key.
+- To read an encrypted message sent to you, decrypt the message with your private key.
+- To create a digital signature for a message, encrypt the message digest with your private key.
+- To verify the digital signature for a message, decrypt the digital signature with the sender's public key and compare the result to the message digest you compute.
+It's as simple as that! Take a few minutes to think through the scenarios and you'll be a master of cryptographic keys in no time!
+About the author
+Mike Chapple, CISSP, currently serves as Chief Information Officer of the Brand Institute, a Miami-based marketing consultancy. He previously worked as an information security researcher for the U.S. National Security Agency. His publishing credits include the TICSA Training Guide from Que Publishing, the CISSP Study Guide from Sybex and the upcoming SANS GSEC Prep Guide from John Wiley. He's also the About.com Guide to Databases.
+For more information, visit these resources:
+- Quiz: Cryptography
+- Executive Security Strategies: Cryptography basics for infosecurity managers
+- Network Security Tip: Diffie-Hellman key exchange
+This was first published in May 2003

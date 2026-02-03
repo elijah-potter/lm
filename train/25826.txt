@@ -1,0 +1,29 @@
+Nonterminals are well known from parsers where they are used as the main means of constructing more complex parsers out of simpler ones. The nonterminals in the parser world are very similar to functions in an imperative programming language. They can be used to encapsulate parser expressions for a particular input sequence. After being defined, the nonterminals can be used as 'normal' parsers in more complex expressions whenever the encapsulated input needs to be recognized. Parser nonterminals in Spirit.Qi may accept parameters (inherited attributes) and usually return a value (the synthesized attribute).
+Both, the types of the inherited and the synthesized attributes have to
+be explicitely specified while defining the particular
+rule (the Spirit
+subrules which conform
+to a similar interface). As an example, the following code declares a
+int as its synthesized
+attribute, while expecting a single
+as its inherited attribute (see the section about the Spirit.Qi
+Rule for more information):
+qi::rule<Iterator, int(double)> r;
+In the world of generators, nonterminals are just as useful as in the parser
+world. Generator nonterminals encapsulate a format description for a particular
+data type, and, whenever we need to emit output for this data type, the
+corresponding nonterminal is invoked in a similar way as the predefined
+Spirit.Karma generator primitives. The Spirit.Karma
+nonterminals are very similar to the Spirit.Qi nonterminals.
+Generator nonterminals may accept parameters as well,
+and we call those inherited attributes too. The main difference is that
+they do not expose a synthesized attribute (as parsers do), but they require
+a special consumed attribute. Usually the consumed
+attribute is the value the generator creates its output from. Even if the
+consumed attribute is not 'returned' from the generator we chose to use
+the same function style declaration syntax as used in Spirit.Qi.
+The example below declares a Spirit.Karma
+rule consuming a
+while not expecting any additional inherited attributes.
+karma::rule<OutputIterator, double()> r;
+The inherited attributes of nonterminal parsers and generators are normally passed to the component during its invocation. These are the parameters the parser or generator may accept and they can be used to parameterize the component depending on the context they are invoked from.

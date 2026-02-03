@@ -1,0 +1,41 @@
+Java is one of the major practical and widely-used languages that fall within the Object Oriented family.
+Many institutions use Java as a ﬁrst-year teaching language and generally teach the Java course is intended to:
+1. Provide all of our students with exposure to a common programming language that can be used by later courses and practical work
+2. Introduce the syntax that is (almost) common to several of the most widely used practical programming languages today (the syntax of Java has a great deal in common with that of C and C++, so having learned Java you are quite a long way to understanding those languages too
+3. Discuss the process of designing, writing and debugging programs and raise some awareness of issues of style
+4. Present the Object Oriented aspects of a programming language as means to enforce modularity in large programs
+5. Teach basic use of Java, a language that has signiﬁcant relevance in the outside world today.
+For those learning to code here is a set of the ten top things
+1. Understand the task you are about to solve before starting to write a program about it. Work through methods and procedures by hand on paper etc. Plan some test cases. Identify cases that will represent boundaries or oddities. In general prepare a plan before you start going anywhere near a computer
+2. Sketch the structure of the whole of your code out informally so you have full overview before fussing about exact syntax etc. Ensure you know what you expect that the computer will do. This initial sketch can be very informal, and may be in terms of diagrams rather than anything that looks much like real programming. The key word here is “structure”. This applies with way greater force when your code starts to grow: you should always design a good way to factor your code into reasonably self-contained and independent components (each will be one “class” in your code) right from the start;
+3. Write out key parts of above in the form of comments before you start the real code. Concentrate in these comments on the “what” and “why” of your code rather the details of “how”. This will really help when you show your work to somebody else because you need help! I will explain this one again: The ﬁrst thing you will type into a computer when you start writing any program will be a set of overview comments that explain its strategy and structure
+4. At least for a ﬁrst version of anything, favour clarity and obvious correctness over pretty well everything else. Clever tricks, worries about efﬁciency, generalisations etc can come later;
+5. Neat consistent layout and thoughtfully named ﬁelds, methods, variables etc. are a good investment of your time. Cryptic is bad even if it saves keystrokes in the short term;
+6. If a task is too big to solve in just one gulp look for ways of breaking it down into sub-tasks. As you do this think about ways you will be able to test code you write for each sub-task and work on the whole thing step by step;
+7. When you try to compile your code and see a syntax error do not panic. Learn to interpret the compiler’s diagnostics. And only try to remove one error at a time: count it as a success if next time you try to compile the ﬁrst error has give so you can then concentrate on the second;
+8. When you have compiled your program and run it and it gives wrong answers or behaves badly do not panic. First work to understand what is wrong and only after you have found where the problem is think about ways to ﬁt it. Do not just try random changes! Eg. conﬁrm what your program actually does by adding assert and extra print statements;
+9. Whenever you ﬁnd you have to change your program review comments, consider if it will now do exactly what you want, and re-run all your test cases. Experience shows that changes (for whatever cause) can introduce new problems while you are in the process of ﬁxing old ones;
+10. If you ﬁnd you are spending a seriously long time trying to make sense of anything then ﬁnd help from friends or a supervisor or a book. Do not just keep building up your frustration not getting anywhere!
+So why would you use Visual Studio Code in preference to Eclipse or NetBeans
+1. Its Free
+All students and educators get access to all version of Visual Studio, Visual Studio Online and Visual Studio Team Services via www.DreamSpark.com
+2.Easier File Mapping
+In Visual Studio, we can add a file from a path to a project located in a workspace, and Visual Studio records the reference to a new file and opens it like any other file. But, in Eclipse and Netbeans, the structure of a project’s elements must correspond to their layout in the underlying file system.
+3. File Size & Download Speed – 3X Better
+Eclipse is 166 MB to download for Java. Even more for the other versions! To download the Java EE version of NetBeans, it’s 186 MB. And it’s 205 MB for all four languages. Now compare that to Visual Studio Code, which is only 58 MB for all 34 languages! Imagine having to wait three times longer per download/install on each computer in your school! And then downloading and installing the new versions for each of those machines!
+4. No Plugins for Other Languages
+Unlike Eclipse, in Visual Studio Code, you don’t need a plugin to use other languages, like C#, F#, HTML5, Python, and Ruby. You can transition quickly to other languages!
+5. Exposure to Other Languages – 8X More Languages
+6. Easy to Deploy to App Stores
+Visual Studio gives you a simple interface to publish your game or application in an app store! The biggest and best validation (and way to push improvement in your app) is when others like your work, people download it, and people use it. That includes deploying to Windows Store, Amazon, iOS, and Google Play!
+7. VS Code Gets Git
+Do you ever feel like someone doesn’t get you? Well, VS Code gets you by getting how you need Git We’re talking full Git Support: Commits, Diffs, Pulls, Pushes, Status Bar Actions, Branches, Tags, Handling Merge Conflicts, Remotes, Credentials, and more! Get the Git details here: Visual Studio Code – All the Git Features
+- Eclipse: https://en.wikipedia.org/wiki/Eclipse_(software)
+- NetBeans: https://en.wikipedia.org/wiki/NetBeans
+- Visual Studio Code: https://en.wikipedia.org/wiki/Visual_Studio_Code
+Languages Out of the Box
+- Eclipse: 1 (Java)
+- NetBeans: 4 (C++, HTML5, Java, PHP)
+- Eclipse: At least 166 MB
+- Netbeans: 205 MB
+- Visual Studio Code: 58 MB

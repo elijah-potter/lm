@@ -1,0 +1,79 @@
+Standard Level - 3 daysview dates and locations
+Embedded microcontrollers have been used for many years within electronic systems, across a huge range of applications from simple environmental monitors through to automotive components and complex consumer appliances. Security issues affecting networked computers running operating systems such as Windows and Linux (including “Embedded Linux”) are well-documented but traditionally, security was not a major concern for many small, microcontroller-based systems. However, the increasing trend to connect devices to a network, both locally and across a wide area (such as the Internet) has sometimes led to security vulnerabilities not expected by the system designers.
+This course provides an awareness of the security issues affecting microcontroller-based embedded systems and teaches approaches to protect against them. Since many of these systems are developed using the C or C++ programming languages, it looks at how C/C++ should be written to avoid security vulnerabilities. It also considers alternative hardware-based solutions to ensure secure booting, data communication and updates for the embedded software application.
+The workshops are based around carefully designed exercises investigating security features and issues for a real embedded system to reinforce and challenge the extent of learning, and comprise approximately 50% of class time.
+If you have specific security application requirements, please contact the Doulos team to discuss your options.
+Who should attend?
+"Embedded System Security for C/C++ Developers" is aimed at
+electronic hardware, software
+and system-on-chip engineers who need to gain a working knowledge of
+the software and hardware security issues affecting a
+microcontroller-based embedded system. Note that this is not a course
+on the security issues affecting embedded Linux applications -
+delegates wishing to learn more about that topic are recommended to
+take the Doulos “Comprehensive
+Embedded Linux Security” course.
+What will you learn?
+- Identifying the main security threats and vulnerabilities for an embedded system
+- How to use common encryption and decryption standards for data-at-rest and data-in-motion
+- Key management and use of certificates for authentication
+- How to secure communication with TLS
+- Writing secure C code
+- How to use a coding standard with static analysis tools to identify security issues in C code
+- Using a Secure Software Development methodology and framework
+- Embedded system hardware features for security
+- Approaches to test security of embedded applications
+Pre-requisitesDelegates should have knowledge of the C or C++ programming language and embedded system architecture. In particular a basic level of familiarity with functions, variables, data types, operators, and statements. The Doulos C Programming for Embedded Systems or C++ Programming for Embedded Systems courses provide appropriate preparation for engineers who lack this experience.
+Please contact Doulos directly to discuss and assess your specific experience against the pre-requisites.
+Doulos training materials are renowned for being the most comprehensive and user-friendly available. Their style, content and coverage are unique in the Embedded Systems training world, and have made them sought after resources in their own right. The materials include:
+- Fully indexed class notes creating a complete reference manual
+- Workbook full of practical examples and solutions to help you apply your knowledge
+Structure and Content
+Introduction to SecurityWhy is security necessary • What are vulnerabilities • Overview of Secure Software Development Lifecycle
+Writing Secure C/C++ Code 1 - Memory Vulnerabilities and Attacks
+Safe use of pointers • Memory allocation and corruption • Buffer overflow • Return Oriented Programming
+Writing Secure C/C++ Code 2 - Vulnerabilities and Mitigations
+String and format functions • Integer security • Concurrency • File I/O
+Lab - Memory Overflow-based attacks
+Secure Software Development Lifecycle
+Software design goals and threats • Threat modelling
+Lab - Creating a Threat Model
+Encryption and Decryption • Hashes • Block encryption • Block Cipher Modes • AES • Streaming Ciphers • ChaCha20+Poly1305 • AEAD
+Lab - Message encryption/decryption
+Cryptography in Action
+Key management • Signing • Certificate and Certificate Agencies • Pre-shared secrets
+Lab - Installing and using certificates
+Transport Layer Security
+Secure communications • Random Number Generators • Authentication • IoT Protocols • MQTT • DTLS • HTTPS • TLS Implementation • Wireless LAN Security and Threats
+Lab - Sending secure messages
+Rules for Secure Coding
+Common Criteria • CWE and CVE • The Role of Coding Standards • CERT C and MISRA-C • Dynamic and Static Analysis
+Lab - Use of static analysis tools
+Secure Embedded System Software Architecture
+Secure software architecture goals • Traditional guiding principles • Side channel & timing attacks • Least privilege, trust and secure processes • Arm Platform Security Architecture (PSA)
+Lab - Side-channel timing attack
+Secure Embedded System Hardware Architecture
+Security in hardware • Crypto-Accelerator Overview • Arm TrustZone • Secure boot and update • Hardware options for security
+Testing for Security
+Unit tests and frameworks • Tools • Penetration Testing • Protocol Fuzzing • Disassembly • Simple Power Analysis (SPA) • Differential Power Analysis (DPA)
+On-site team training
+For on-site, team-based training, please contact Doulos about tailoring this course to suit your hardware and software environment.
+|February 5th, 2020||Ringwood, UK||Enquire|
+|March 10th, 2020||Munich, DE||Enquire|
+|March 16th, 2020||Austin, TX||Enquire|
+|April 13th, 2020||San Jose, CA||Enquire|
+|April 27th, 2020||Chicago, IL||Enquire|
+|April 28th, 2020||Ankara, TR||Enquire|
+|May 4th, 2020||Ringwood, UK||Enquire|
+|May 12th, 2020||Munich, DE||Enquire|
+|June 30th, 2020||Copenhagen, DK||Enquire|
+|June 30th, 2020||Stockholm, SE||Enquire|
+|August 3rd, 2020||San Jose, CA||Enquire|
+|August 24th, 2020||Chicago, IL||Enquire|
+|September 1st, 2020||Munich, DE||Enquire|
+|September 2nd, 2020||Ringwood, UK||Enquire|
+|indicates CONFIRMED TO RUN courses.|
+Looking for team-based training, or other locations?
+Complete an on-line form and a Doulos representative will get back to you »
+Price on request
+Back to top

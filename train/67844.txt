@@ -1,0 +1,4 @@
+Relationship between the printing shape and the defect after reflow
+Example shows that the influence on soldering after reflow was confirmed by creating a mask opening so that the printing solder fading becomes a, b, c and d.
+The image after printing is an image that prints the solder paste and the result of reflow after mounting a condenser chip on it is the image after reflow.
+This result suggests that the lifting detect occurs at a and c locations. The occurrence of lifting failure was caused by the impossibility of soldering because the contact with the electrode lead of the component became small due to inside solder fading. Even if the outside of land gets fading, the influence on the lifting failure becomes small. To reduce occurrence of the lifting failure, printing shape and misalignment should be managed by the post-printing inspection machine.

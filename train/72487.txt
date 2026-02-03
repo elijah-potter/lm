@@ -1,0 +1,6 @@
+Many (most?) C compilers do happen to support inline assembly, though it's not part of the standard. That said, there's no strict need for a compiler to support any such thing.
+First, recognize that assembly is mostly just human (semi-)readable machine code, and that C ends up as machine code anyway.
+"Calling" a C function just generates a set of instructions that prepare registers, the stack, and/or some other machine-dependent mechanism according to some established calling convention, and then jumps to the start of the called function.
+A block of assembly code can conform to the appropriate calling convention, and thus generate a blob of machine code that another blob of machine code that was originally written in C is able to call. The reverse is, of course, also possible.
+The details of the calling convention, the assembly process, and the linking process (to link the assembly-generated object file with the C-generated object file) may all vary wildly between platforms, compilers, and linkers. A good assembly tutorial for your platform of choice will probably cover such details.
+I happen to like the x86-centric PC Assembly Tutorial, which specifically addresses interfacing assembly and C code.

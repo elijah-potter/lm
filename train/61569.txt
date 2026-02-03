@@ -1,0 +1,14 @@
+The whole, natural numbers 1 through 50 are written on a board. The following operation is performed 49 times: select any two of the numbers on the board and write the absolute value of their difference on the board. Then erase the two original numbers you chose (therefore only the absolute value of the difference is left on the board in addition to the other natural numbers and differences that have already been on the board). Determine all possible values of the remaining number.
+Just working through it in a very rudimentary manner:
+All odd numbers 1-49 are possible
+Haven't found a way to arrive at 0 or an even number
+Edit - Terrible explanation of said rudimentary manner:
+Looking for smallest number
+I took each consecutive pair (2-1, 4-3, etc.) which left 25 1s. Those became 12 0s and a single 1. The obvious end result is '1'.
+Looking for largest number
+The largest difference possible on the board would be 50-0=50, but there's no way I found to achieve that without another single non-zero number.
+So, I took '1', '50', and each consecutive pair in between. That resulted in a 49 (50 - 1) and 24 1s, then the 49 and 12 0s, resulting in 49.
+Poking around in between
+From then, I just picked a couple different numbers, leaving consecutive pairs between them, which resulted in other odd numbers (1,8,pairs = 7; 1,42,pairs = 41; etc.).
+Explanation for exclusion of certain numbers
+I can't really explain my terrible 'methods' of trying to find a 0 or even result. I mostly just liked the question and wanted it to get some attention, then learn all the obvious things I overlooked (like @ManyPinkHats pointing out that the sum is odd, so even results are impossible).

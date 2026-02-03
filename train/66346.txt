@@ -1,0 +1,6 @@
+The Rule of 72 is a simpliy a method how calculating an investment doubling time. It is used in finance and economics for estimating the total no. of years it would take to double your investment using given interest rate. This rule is also used to estimate the annual interest rate needed to double your investment in a paricular no. of years.
+Formula to calculate Rule of 72:
+To find no. of years to double investment:
+T = 72/R
+To find rate of interest to double investment:
+R = 72/T

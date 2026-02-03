@@ -1,0 +1,21 @@
+To begin with, there are two components – the “styles” and “keyframes”. These components make using CSS an apt option for developing animations.
+How they make it happen is as follows:
+The following three features are major advantages, which the CSS animations have over other traditional animation techniques (which are script-driven).
+Creating a sequence of CSS animation involves using the style component to set the animation’s properties and sub-properties. You get to configure the duration and timing of the animation, along with details related to how the sequence of animation should progress. But, you do not get to configure the appearance of these animations using the style, for which purpose you will be using the @keyframes component.
+The following are the style properties & sub-properties
+animation-delay: This helps configure the time delay between different elements of the loaded animation and the sequential animations.
+animation-direction: This configuration sets the direction of individual animations, and also states if the particular animation will repeat itself in the same sequence or in a different direction on its consecutive runs.
+animation-duration: Sets the time an animation would take to complete its single cycle.
+animation-iteration-count: Sets the number of times an animation would repeat itself. If set to infinite, the animation would go on indefinitely.
+animation-name: This specifies the at-rule name, which describes an animation’s keyframes.
+animation-play-state: You can configure an animation’s pause/play status.
+animation-timing-function: With this configuration, you can establish the acceleration curves of the animation, setting its keyframes transitions.
+animation-fill-mode: This configures the values applied to an animation, (before & after it’s execution).
+As mentioned before, the keyframes allow you to configure the animation’s appearance. For this, you will need to setup at least two (at-rule) keyframes. These keyframes represent how individual elements of the animation render themselves within a set time frame.
+This time frame is denoted by a “percentage” system by the keyframes. A 0% represents the start of an animation, and 100% represents the finish; they are given as from/0% and to/100% respectively. Though both these are optional, they are very important, and thus, the browser by default computes all the attributes of the animation and starts and finishes it accordingly, when the values are not provided.
+The following are CSS3 animation examples, which should give you a brief understanding of how this works.
+This example shows that at 25% of the animation, the header will have the right margin at 75%, with the width being 200%.
+This example has two keyframes; first occurring at 0% and the second at 100% (by default, since the values aren’t provided); this effectively starts and finishes an animation. The right margin is at 100% with a width of 500% at the start of the animation, and ends at 0% of the right margin with 100% width. Therefore, the browser animates a header from left edge to the right edge.
+With that, by including additional keyframes you can add intermediate steps and thus, amend the CSS3 animations as per your requirements.
+Subscribe to our free e-Newsletter and be the first to hear about
+our services and what's happening at K2B Solutions

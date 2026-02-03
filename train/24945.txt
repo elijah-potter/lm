@@ -1,0 +1,5 @@
+Create your first Windows Store app using C++
+Learn how to use C++ with XAML to create Windows Store apps.
+Here, we introduce essential code and concepts to help you use C++ to develop a Windows Store app that has a UI that's defined in Extensible Application Markup Language (XAML), and guide you through the steps to create the app step by step. This tutorial assumes that you are already somewhat familiar with C++, as well as basic programming concepts including object oriented design, user interface controls, and event handling.
+Here are key resources to help you get started with using C++ (including Visual C++ component extensions (C++/CX)) to develop Windows Store apps.
+Build date: 3/14/2013

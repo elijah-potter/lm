@@ -1,0 +1,28 @@
+Single Linear Regression
+A popular machine learning model is Linear Regression. It assumes there is a linear relationship between input features and output labels.
+To illustrate, let's say we have the following data set:
+This is a fairly noisy data set that correlates an input feature x with an output label y.
+In linear regression, we assume there is a strictly linear relationship between input and output. We can draw this relationship as a straight line, like this:
+The red line represents the predictions the model is making for values of x. Note that they do not perfectly match the blue points of the dataset.
+The error between the dataset points and the model prediction is called the loss, and linear regression strives to minimize this loss as much as possible.
+A bit of math
+A machine learning model is a function that takes features x as input, and produces label predictions y' as output:
+A single linear regression model can be represented mathematically like this:
+- y' is a label predicted by the model
+- x is the corresponding input feature
+- w is the slope of the regression line, also called the 'weight'
+- b is the y-intercept, also called the 'bias'
+The model is going to make predictions that deviate from the actual labels. The difference between the predictions and reality is called the loss L. A very popular loss function is called the Root Mean Square Error (RMSE), and it's calculated it like this:
+- N is the number of data points
+- y' are the predicted labels
+- y are the actual labels
+So now the challenge is to find the optimal values of the model parameters w and b that minimize the total loss L. The linear regression model discovers these values during the training phase.
+We know the loss function depends on the w and b parameters. We can plot the loss over a range of values and get a 3D graph looking like this:
+The loss function looks like a surface folded in 3 dimensions, which curves up and down depending on the values of the slope w and y-intercept b.
+There are many ways to find the optimal point on this surface with minimal loss. A popular algorithm is Ordinary Least Squares, which can find an exact analytical solution for most linear regression models.
+But even if we have a super complicated non-linear regression model without a known exact solution, we can still find the point with minimal loss by using the Gradient Descent algorithm.
+The Gradient Descent algorithm can work with any number of input parameters, but for the sake of this explanation, we're only going to look at a single dimension, for example the slope parameter w. In this view, the loss surface becomes a simple curve with the possible values of w on the x-axis, and the corresponding loss value L on the y-axis.
+The algorithm will start by picking a random point on the curve. It then computes the gradient (= the slope of the curve) and pick a new point further down the curve. By repeating this process, the algorithm converges on the minimum value:
+The step size is an important hyperparameter in this model. It controls how quickly the algorithm converges on the minimum. However, if we make the step size too large, the algorithm will overshoot the minimum and never converge.
+Conversely, if we make the step size too small, the algorithm can get stuck in a local minimum which does not represent the lowest possible loss value:
+An important part of linear regression model tuning is finding the ideal step value for the input data.

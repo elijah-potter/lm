@@ -1,0 +1,1 @@
+The results were displayed on the screen by our team. Our team displayed the results on the screen.

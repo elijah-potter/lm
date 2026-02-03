@@ -1,0 +1,2 @@
+The results were analyzed by me.
+I analyzed the results.

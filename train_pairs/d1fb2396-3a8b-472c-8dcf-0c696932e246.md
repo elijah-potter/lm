@@ -1,0 +1,1 @@
+The cake was eaten by him. He ate the cake.

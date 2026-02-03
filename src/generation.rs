@@ -1,25 +1,23 @@
 use std::io::{self, Write};
 
 use burn::Tensor;
+use burn::nn::transformer::TransformerEncoderAutoregressiveCache;
 use burn::prelude::Backend;
 use burn::tensor::{Distribution, Int};
 
 use crate::model::Model;
-use crate::tokenizer::{indices_to_text, text_to_indices};
+use crate::tokenizer::{MAX_SEQ_LEN, indices_to_text, text_to_indices_unpadded};
 
-pub fn generate_single_pass<B: Backend>(
+fn sample_next_char<B: Backend>(
     model: &Model<B>,
-    context: &[char],
+    input: Tensor<B, 2, Int>,
     temperature: f64,
-) -> Vec<char> {
-    let input = text_to_indices(&context, &model.device());
-
-    let output = model.forward(input);
-
+    cache: &mut TransformerEncoderAutoregressiveCache<B>,
+) -> char {
+    let output = model.forward(input, cache);
     let indices = weighted_argmax_logits(output, temperature);
     let text = indices_to_text(indices);
-
-    text
+    *text.last().unwrap()
 }
 
 pub fn weighted_argmax_logits<B: Backend>(
@@ -32,36 +30,6 @@ pub fn weighted_argmax_logits<B: Backend>(
     (logits + g * t).argmax(1)
 }
 
-pub fn generate_n_tokens<B: Backend>(
-    model: &Model<B>,
-    context: &[char],
-    n: usize,
-    temperature: f64,
-) -> Vec<char> {
-    let mut output = Vec::with_capacity(n);
-    let mut context: Vec<char> = context.to_vec();
-
-    print!("\"");
-
-    for c in &context {
-        print!("{}", c);
-    }
-
-    for _ in 0..n {
-        let pass = generate_single_pass(model, &context, temperature);
-        let new_tok = pass.last().unwrap();
-
-        output.push(*new_tok);
-        context.push(*new_tok);
-
-        print!("{}", new_tok);
-    }
-
-    println!("\"");
-
-    output
-}
-
 pub fn generate_tokens<B: Backend>(model: &Model<B>, context: &[char], temperature: f64) {
     let mut context: Vec<char> = context.to_vec();
 
@@ -69,11 +37,14 @@ pub fn generate_tokens<B: Backend>(model: &Model<B>, context: &[char], temperatu
         print!("{}", c);
     }
 
-    loop {
-        let pass = generate_single_pass(model, &context, temperature);
-        let new_tok = pass.last().unwrap();
+    let mut cache = model.create_cache();
 
-        context.push(*new_tok);
+    loop {
+        let input = text_to_indices_unpadded(&context, &model.device());
+
+        let new_tok = sample_next_char(model, input, temperature, &mut cache);
+
+        context.push(new_tok);
 
         print!("{}", new_tok);
         io::stdout().flush().unwrap();

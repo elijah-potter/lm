@@ -3,6 +3,7 @@ use crate::tokenizer::MAX_SEQ_LEN;
 use crate::tokenizer::VOCAB_SIZE;
 use burn::nn::LinearConfig;
 use burn::nn::attention::generate_autoregressive_mask;
+use burn::nn::transformer::TransformerEncoderAutoregressiveCache;
 use burn::train::InferenceStep;
 use burn::{
     nn::{
@@ -32,14 +33,14 @@ impl<B: Backend> Model<B> {
     /// This is used to create the model's context.
     fn embed(&self, input: Tensor<B, 2, Int>) -> Tensor<B, 3> {
         let [_batches, len] = input.dims();
-        assert_eq!(len, MAX_SEQ_LEN);
+        assert!(len <= MAX_SEQ_LEN);
 
         let tok_embedding: Tensor<B, 3> = self.char_embedding.forward(input);
 
         let pos_tensor_indices = Tensor::<B, 2, Int>::from_data(
             TensorData::new(
                 (0i32..len as i32).collect::<Vec<_>>(),
-                Shape::new([1, MAX_SEQ_LEN]),
+                Shape::new([1, len]),
             ),
             &self.device(),
         );
@@ -87,21 +88,27 @@ impl<B: Backend> Model<B> {
         ClassificationOutput::new(loss, output_flat, target_flat)
     }
 
+    pub fn create_cache(&self) -> TransformerEncoderAutoregressiveCache<B> {
+        self.transformer.new_autoregressive_cache()
+    }
+
     fn forward_infer(
         &self,
         input: Tensor<B, 2, Int>,
         target: Tensor<B, 2, Int>,
+        cache: &mut TransformerEncoderAutoregressiveCache<B>,
     ) -> ClassificationOutput<B> {
         let embedding = self.embed(input);
 
         let [batch_size, seq_length, _embedding_dims] = embedding.dims();
-        assert_eq!(seq_length, MAX_SEQ_LEN);
+        assert!(seq_length <= MAX_SEQ_LEN);
 
         let mask = generate_autoregressive_mask(batch_size, seq_length, &self.device());
 
-        let trans_out = self
-            .transformer
-            .forward(TransformerEncoderInput::new(embedding).mask_attn(mask));
+        let trans_out = self.transformer.forward_autoregressive_inference(
+            TransformerEncoderInput::new(embedding).mask_attn(mask),
+            cache,
+        );
         let output = self.resizer.forward(trans_out);
 
         let loss_fn = CrossEntropyLossConfig::new()
@@ -118,8 +125,12 @@ impl<B: Backend> Model<B> {
         ClassificationOutput::new(loss, output_flat, target_flat)
     }
 
-    pub fn forward(&self, input: Tensor<B, 2, Int>) -> Tensor<B, 2> {
-        let class = self.forward_infer(input.clone(), input);
+    pub fn forward(
+        &self,
+        input: Tensor<B, 2, Int>,
+        cache: &mut TransformerEncoderAutoregressiveCache<B>,
+    ) -> Tensor<B, 2> {
+        let class = self.forward_infer(input.clone(), input, cache);
         class.output
     }
 }
@@ -141,7 +152,7 @@ impl<B: Backend> InferenceStep for Model<B> {
     type Output = ClassificationOutput<B>;
 
     fn step(&self, item: BatchItem<B>) -> ClassificationOutput<B> {
-        self.forward_infer(item.input, item.target)
+        self.forward_infer(item.input, item.target, &mut self.create_cache())
     }
 }
 

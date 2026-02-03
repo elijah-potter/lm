@@ -14,7 +14,7 @@ use burn::module::Module;
 use burn::record::{CompactRecorder, FullPrecisionSettings, NamedMpkFileRecorder, Recorder};
 use clap::Parser;
 
-use self::generation::{generate_n_tokens, generate_tokens};
+use self::generation::generate_tokens;
 use self::model::{ModelConfig, ModelRecord};
 
 #[derive(Parser, Debug)]

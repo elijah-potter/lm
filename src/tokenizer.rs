@@ -31,6 +31,35 @@ pub fn text_to_indices<B: Backend>(text: &[char], device: &B::Device) -> Tensor<
     tok_tensor_indices
 }
 
+/// Use with autoregressive cache.
+pub fn text_to_indices_unpadded<B: Backend>(
+    text: &[char],
+    device: &B::Device,
+) -> Tensor<B, 2, Int> {
+    if text.is_empty() {
+        return Tensor::<B, 2, Int>::from_data(
+            TensorData::new(vec![0i32], Shape::new([1, 1])),
+            device,
+        );
+    }
+
+    let idxs: Vec<i32> = text
+        .iter()
+        .copied()
+        .map(char_to_index)
+        .rev()
+        .take(MAX_SEQ_LEN)
+        .rev()
+        .collect();
+
+    let len = idxs.len();
+
+    let tok_tensor_indices =
+        Tensor::<B, 2, Int>::from_data(TensorData::new(idxs, Shape::new([1, len])), device);
+
+    tok_tensor_indices
+}
+
 pub fn indices_to_text<B: Backend>(tensor: Tensor<B, 2, Int>) -> Vec<char> {
     let data = tensor.into_data();
     let idxs: Vec<i32> = data.to_vec().unwrap();

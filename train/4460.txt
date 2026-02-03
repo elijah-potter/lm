@@ -1,0 +1,85 @@
+Provides an object representation of a uniform resource identifier (URI) and easy access to the parts of the URI.
+Assembly: System (in System.dll)
+Thetype exposes the following members.
+|Uri(String)||Initializes a new instance of the class with the specified URI.|
+|Uri(String, UriKind)||Initializes a new instance of the class with the specified URI. This constructor allows you to specify if the URI string is a relative URI, absolute URI, or is indeterminate.|
+|Uri(Uri, String)||Initializes a new instance of the class based on the specified base URI and relative URI string.|
+|Uri(Uri, Uri)||Initializes a new instance of the class based on the combination of a specified base instance and a relative instance.|
+|AbsolutePath||Gets the absolute path of the URI.|
+|AbsoluteUri||Gets the absolute URI.|
+|DnsSafeHost||Gets an unescaped host name that is safe to use for DNS resolution.|
+|Fragment||Gets the escaped URI fragment.|
+|Host||Gets the host component of this instance.|
+|IsAbsoluteUri||Gets whether the instance is absolute.|
+|IsUnc||Gets whether the specified is a universal naming convention (UNC) path.|
+|LocalPath||Gets a local operating-system representation of a file name.|
+|OriginalString||Gets the original URI string that was passed to the constructor.|
+|Port||Gets the port number of this URI.|
+|Query||Gets any query information included in the specified URI.|
+|Scheme||Gets the scheme name for this URI.|
+|UserEscaped||Indicates that the URI string was completely escaped before the instance was created.|
+|UserInfo||Gets the user name, password, or other user-specific information associated with the specified URI.|
+|CheckSchemeName||Determines whether the specified scheme name is valid.|
+|Compare||Compares the specified parts of two URIs using the specified comparison rules.|
+|Equals||Compares two instances for equality. (Overrides Object.Equals(Object).)|
+|EscapeDataString||Converts a string to its escaped representation.|
+|EscapeUriString||Converts a URI string to its escaped representation.|
+|Finalize||Allows an object to try to free resources and perform other cleanup operations before the Object is reclaimed by garbage collection. (Inherited from Object.)|
+|FromHex||Gets the decimal value of a hexadecimal digit.|
+|GetComponents||Gets the specified components of the current instance using the specified escaping for special characters.|
+|GetHashCode||Gets the hash code for the URI. (Overrides Object.GetHashCode().)|
+|GetType||Gets the Type of the current instance. (Inherited from Object.)|
+|IsBaseOf||Determines whether the current instance is a base of the specified instance.|
+|IsHexDigit||Determines whether a specified character is a valid hexadecimal digit.|
+|IsWellFormedUriString||Indicates whether the string is well-formed by attempting to construct a with the string and ensures that the string does not require further escaping.|
+|MakeRelativeUri||Determines the difference between two instances.|
+|MemberwiseClone||Creates a shallow copy of the current Object. (Inherited from Object.)|
+|ToString||Gets a canonical string representation for the specified instance. (Overrides Object.ToString().)|
+|TryCreate(String, UriKind, Uri)||Creates a new using the specified String instance and a UriKind.|
+|TryCreate(Uri, String, Uri)||Creates a new using the specified base and relative String instances.|
+|TryCreate(Uri, Uri, Uri)||Creates a new using the specified base and relative instances.|
+|UnescapeDataString||Converts a string to its unescaped representation.|
+|SchemeDelimiter||Specifies the characters that separate the communication protocol scheme from the address portion of the URI. This field is read-only.|
+|UriSchemeFile||Specifies that the URI is a pointer to a file. This field is read-only.|
+|UriSchemeFtp||Specifies that the URI is accessed through the File Transfer Protocol (FTP). This field is read-only.|
+|UriSchemeGopher||Specifies that the URI is accessed through the Gopher protocol. This field is read-only.|
+|UriSchemeHttp||Specifies that the URI is accessed through the Hypertext Transfer Protocol (HTTP). This field is read-only.|
+|UriSchemeHttps||Specifies that the URI is accessed through the Secure Hypertext Transfer Protocol (HTTPS). This field is read-only.|
+|UriSchemeMailto||Specifies that the URI is an e-mail address and is accessed through the Simple Mail Transport Protocol (SMTP). This field is read-only.|
+|UriSchemeNetPipe||Specifies that the URI is accessed through the NetPipe scheme of the "Indigo" system. This field is read-only.|
+|UriSchemeNetTcp||Specifies that the URI is accessed through the NetTcp scheme of the "Indigo" system. This field is read-only.|
+|UriSchemeNews||Specifies that the URI is an Internet news group and is accessed through the Network News Transport Protocol (NNTP). This field is read-only.|
+|UriSchemeNntp||Specifies that the URI is an Internet news group and is accessed through the Network News Transport Protocol (NNTP). This field is read-only.|
+A URI is a compact representation of a resource available to your application on the intranet or Internet. The class defines the properties and methods for handling URIs, including parsing, comparing, and combining. The class properties are read-only; to create a modifiable object, use the UriBuilder class.
+Relative URIs (for example, "/new/index.htm") must be expanded with respect to a base URI so that they are absolute. The MakeRelativeUri method is provided to convert absolute URIs to relative URIs when necessary.
+The constructors do not escape URI strings if the string is a well-formed URI including a scheme identifier.
+The properties return a canonical data representation in escaped encoding, with all characters with Unicode values greater than 127 replaced with their hexadecimal equivalents. To put the URI in canonical form, the constructor performs the following steps:
+Converts the URI scheme to lowercase.
+Converts the host name to lowercase.
+If the host name is an IPv6 address, the canonical IPv6 address is used. ScopeId and other optional IPv6 data are removed.
+Removes default and empty port numbers.
+Canonicalizes the path for hierarchical URIs by compacting sequences such as /./, /../, //, including escaped representations. Note that there are some schemes for which escaped representations are not compacted.
+For hierarchical URIs, if the host is not terminated with a forward slash (/), one is added.
+Any reserved characters in the URI are escaped in accordance with RFC 3986.
+As part of canonicalization in the constructor for some schemes, escaped representations are compacted. The schemes for which URI will compact escaped sequences include the following: file, http, https, net.pipe, and net.tcp. For all other schemes, escaped sequences are not compacted. For example: if you percent encode the two dots ".." as "%2E%2E" then the URI constructor will compact this sequence for some schemes. For example, the following code sample shows a URI constructor for the http scheme.
+Uri uri = new Uri("http://myUrl/%2E%2E/%2E%2E"); Console.WriteLine(uri.AbsoluteUri); Console.WriteLine(uri.Query);
+When this code is executed, it returns the following output with the escaped sequence compacted.
+The following code example shows a URI constructor for the ftp scheme:
+Uri uri = new Uri("ftp://myUrl/%2E%2E/%2E%2E"); Console.WriteLine(uri.AbsoluteUri); Console.WriteLine(uri.Query);
+When this code is executed, it returns the following output with the escaped sequence not compacted.
+You can transform the contents of the class from an escape encoded URI reference to a readable URI reference by using the ToString method. Note that some reserved characters might still be escaped in the output of the ToString method. This is to support unambiguous reconstruction of a URI from the value returned by ToString.
+Some URIs include a fragment identifier or a query or both. A fragment identifier is any text that follows a number sign (#), not including the number sign; the fragment text is stored in the Fragment property. Query information is any text that follows a question mark (?) in the URI; the query text is stored in the Query property.
+The URI class supports the use of IP addresses in both dotted-decimal quad-notation for IPv4 protocol and colon-hexadecimal for IPv6 protocol. Remember to enclose the IPv6 address in square brackets, as in http://[::1].
+The constructors for allow a Silverlight application to create a instance for many schemes as described in the Scheme property. However, only instances for the UriSchemeHttp or UriSchemeHttps schemes are supported by the WebClient and HTTP classes in the System.Net namespace.
+International Resource Identifier Not Supported
+Web addresses are typically expressed using uniform resource identifiers that consist of a very restricted set of characters:
+Upper and lower case ASCII letters from the English alphabet.
+Digits from 0 to 9.
+A small number of other ASCII symbols.
+The specifications for URIs are documented in RFC 2396 and RFC 3986 published by the Internet Engineering Task Force (IETF).
+With the growth of the Internet, there is a growing need to identify resources using languages other than English. Identifiers which facilitate this need and allow non-ASCII characters (characters in the Unicode/ISO 10646 character set) are known as International Resource Identifiers (IRIs). The specifications for IRIs are documented in RFC 3987 published by IETF. Using IRIs allows a URL to contain Unicode characters.
+The existing class in Silverlight does not currently provide support for IRI or Internationalized Domain Name (IDN) parsing applied to the domain name.
+Silverlight applications cannot derive new classes from the class.
+If you use a Web.config file that contains URIs to initialize your application, additional time is required to process the URIs if their scheme identifiers are non-standard. In such a case, initialize the affected parts of your application when the URIs are needed, not at start time.
+Because of security concerns, your application should use caution when accepting instances from untrusted sources and with dontEscape set to true.
+For a list of the operating systems and browsers that are supported by Silverlight, see Supported Operating Systems and Browsers.

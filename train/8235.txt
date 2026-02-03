@@ -1,0 +1,10 @@
+How does a secure Internet connection work
+By Laurence Vogel
+We have all noticed the HTTP and HTTPS prefixes to website addresses, but what exactly do they mean?
+The acronyms stand for Hyper Text Transfer Protocol and it is the agreed format of messages between servers that allows us to access websites. According to the technical review on Wikipedia:
+HTTP functions as a request-response protocol in the client-server computing model. A web browser, for example, may be the client and an application running on a computer hosting a web site may be the server. The client submits an HTTP request message to the server. The server, which provides resources such as HTML files and other content, or performs other functions on behalf of the client, returns a response message to the client. The response contains completion status information about the request and may also contain requested content in its message body.
+Obviously, these request-response messages, can be intercepted as they are basically sent in plain text. Accordingly, HTTP on its own is not a secure way to pay your bills online, or access and share any information that is sensitive. Where a secure connection is required HTTPS protocol is required.
+When you request an HTTPS connection to a webpage, the website will initially send its SSL – Secure Sockets Layer - certificate to your browser. This certificate contains the public key needed to begin the secure session. Based on this initial exchange, your browser and the website then initiate the 'SSL handshake'. The SSL handshake involves the generation of shared secrets to establish a uniquely secure connection between yourself and the website.
+When a trusted SSL Digital Certificate is used during an HTTPS connection, users will see a padlock icon in the browser address bar. When an Extended Validation Certificate is installed on a web site, the address bar will turn green.
+It’s worth keeping an eye open for the HTTPS prefix in the address bar if you are being asked to provide private information. Otherwise, your personal data could be used by unscrupulous operators for illegal purposes.
+Published November 2015

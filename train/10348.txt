@@ -1,0 +1,29 @@
+Radial is a layout algorithm that places nodes on virtual concentric circles around a common center. This algorithm emphasizes tree structures within a diagram.
+Center Allocation Policy
+Determines how the innermost nodes are chosen, i.e., the nodes on the smallest circle.
+- A node without incoming edges will be chosen as center node. If no such node exists, an arbitrary node is chosen.
+- The center node will be chosen in such a way that a minimal number of circles is required.
+- Weighted Centrality
+- The node that is contained in the most interconnected paths in the diagram will be chosen as center node.
+- Selected Nodes
+- If there is a single selected node, that node is chosen as center node. If there are several selected nodes, these nodes are placed on the innermost circle. If there are no selected nodes, an arbitrary node is chosen as center node.
+Circle Assignment Strategy
+Determines how nodes are assigned to (conceptual) circles.
+- Distance From Center
+- With this strategy, nodes are assigned to circles in such a way that edges either connect nodes on subsequent circles or nodes placed on the same circle.
+- With this strategy, nodes are assigned to circles in such a way that edges never connect nodes placed on the same circle.
+Minimal Circle Distance
+Specifies the minimal distance between subsequent circles.
+Minimal Node Distance
+Specifies the minimal distance between adjacent nodes on the same circle.
+Maximal Child Sector Size
+Specifies the angular range of the sector that will be reserved for the
+children of a node. In this context, the child of a node
+any node that is connected to
+n and lies on a subsequent, larger
+circle. If the input graph is not a tree, a node may be child of several
+nodes. In this case it is assigned to the sector of one of this nodes.
+- Edge paths will be routed as a polyline with a certain number of bends.
+- Edge paths will be routed with multiple bends to create the impression of a smooth curve. Edge Smoothness controls the number of bends used.
+Determines how many bends are created for Routing Style
+Arc. The higher this value, the more bends are created.

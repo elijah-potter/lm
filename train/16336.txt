@@ -1,0 +1,37 @@
+Procedural Terrain Generation with Unity
+Programming realistic environments with C# through the algorithmic manipulation of mesh and vegetation data.
+What you’ll learn
+- Use various algorithmic approaches to create procedurally generated content.
+Manipulated terrain meshes with code to create realistic looking landscapes.
+Texture terrain meshes procedurally.
+- Discuss the design principles involved in producing aesthetically pleasing terrains.
+- Manipulate the render settings in Unity to produce better looking camera results.
+- Create custom Unity windows and graphical user interface elements for use inside the Editor.
+- You should be familiar with C# and the Unity Game Development Engine.
+- You should have a healthy respect for mathematics.
+- You should be fascinated by procedural generation and what it can accomplish.
+The creation of beautiful virtual terrains isn’t just the domain of the artist but also of the programmer. What if you could use your programming skills in C# to manipulate a mesh to create realistic landscapes using algorithms developed by researchers studying landscape formation and erosion? Well now you can.
+In this course, Penny introduces procedural terrain generation techniques using her internationally acclaimed holistic teaching style and expertise from over 25 years of teaching, research and work in games and computer graphics. Through-out the course you will follow along with hands-on workshops designed to teach you the fundamental techniques used for generating realistic virtual landscapes.
+Learn how to program and work with:
+- Voronoi Tessellation
+- Midpoint Displacement
+- Perlin Noise
+- Splat Maps
+- Trees and Vegetation
+- and water.
+Contents and Overview
+The course begins by examining the nature of a landscape and the design considerations you should include in making decisions on structure, colour and vegetation. You’ll learn what makes for a natural looking terrain so you can replicate this in Unity.
+Following on we will examine some of the most popular algorithms used in generating terrains including many fractal and tessellation techniques that can be used together to form random and yet convincing mountainous vistas.
+Once you are confident with landscape formation we’ll move onto texturing the terrain with a variety of images that can be placed via splatmaps onto differing heights and gradients. Then continue to decorate the terrain with trees, rocks and grass placed with an algorithmic approach before investigating erosion methods that will add that extra level of realism.
+The course concludes with the development of a cloud generation system and an exploration of particle systems for adding rain, snow and other atmospheric effects to the finalised landscape.
+Throughout, we’ll be developing our own custom Unity editor code that will allow you to build extra functionality and structure into the Unity Inspector as well as create Editor Windows of your very own.
+What students are saying about Penny’s courses:
+- Penny is an excellent instructor and she does a great job of breaking down complex concepts into smaller, easy-to-understand topics.
+- Penny’s teaching style is exceptionally well-motivated and illustrated.
+- This course is awesome. The lecturer explains everything you need to know and encourages you to experiment and challenge yourself.
+- Anyone interested in learning the algorithms used in procedural generation.
+- Those wanting to develop code to manipulate meshes to produce realistic landscapes.
+- Anyone keen to find out how to write custom Unity inspector editors.
+Created by Penny de Byl, Penny @Holistic3D.com
+Last updated 4/2019
+Size: 11.89 GB

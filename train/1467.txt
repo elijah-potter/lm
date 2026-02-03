@@ -1,0 +1,28 @@
+In general relativity Eddington–Finkelstein coordinates are named for Arthur Stanley Eddington and David Finkelstein, even though neither ever wrote down these coordinates or the metric in these coordinates. They seem to have been given this name by Misner, Thorne, and Wheeler in their book Gravitation. They are a pair of coordinate systems for a Schwarzschild geometry which are adapted to radial null geodesics (i.e. the worldlines of photons moving directly towards or away from the central mass). The outward (inward) traveling radial light rays define the surfaces of constant "time" while the radial coordinate is the usual area coordinate so that the surfaces of rotation symmetry have an area of 4π. One advantage of this coordinate system is that it shows that the apparent singularity at the Schwarzschild radius is only a coordinate singularity and not a true physical singularity. (While this was recognized by Finkelstein, it was not (or at least not commented on) by Eddington, whose primary purpose was to compare and contrast the spherically symmetric solutions in Whitehead's theory of gravitation and Einstein's.)
+ Schwarzschild Metric
+The Schwarzschild coordinates are , and the Schwarzschild metric is well known:
+Note the conventions being used here are the metric signature of (− + + +) and the natural units where c = 1 (although the gravitational constant G will be kept explicit, and M will denote the characteristic mass of the Schwarzschild geometry).
+ Tortoise coordinate
+Eddington–Finkelstein coordinates are founded upon the tortoise coordinate.
+The tortoise coordinate is defined:
+so as to satify:
+The tortoise coordinate approaches −∞ as r approaches the Schwarzschild radius r = 2GM.
+When some probe (such as a light ray or an observer) approaches a black hole event horizon, its Schwarzschild time coordinate grows infinite. The outgoing null rays in this coordinate system have an infinite change in t on travelling out from the horizon. (This is why information would never be received back from any probe that is sent sufficiently close to such an event horizon, despite that the probe itself can nonetheless travel past this horizon. It is also why the metric, expressed in Schwarzschild coordinates, becomes singular at the horizon - thereby failing to be able to fully chart the trajectory of the infalling probe.) The tortoise coordinate is intended to grow infinite at the appropriate rate such as to cancel out this singular behaviour in coordinate systems constructed from it.
+The ingoing Eddington–Finkelstein coordinates are obtained by replacing the coordinate t with the new coordinate . The metric in these coordinates can be written
+where is the standard metric on a unit radius two sphere.
+Likewise, the outgoing Eddington–Finkelstein coordinates are obtained by replacing t with the null coordinate . The metric is then given by
+In both these coordinate systems the metric is explicitly non-singular at the Schwarzschild radius (even though one component vanishes at this radius, the determinant of the metric is still non-vanishing and the inverse metric has no terms which diverge there.)
+Note that for radial null rays, v=const or =const or equivalently =const or u=const we have dv/dr and du/dr approach 0 and ±2 at large r, not ±1 as one might expect if one regarded u or v as "time". When plotting Eddington-Finkelstein diagrams, surfaces of constant u or v are usually drawn as cones, with u or v constant lines drawn as sloping at 45 degree rather than as planes (see for instance Box 31.2 of MTW). Some sources instead take , corresponding to planar surfaces in such diagrams. In terms of this the metric becomes
+which is Minkowskian at large r. (This was the coordinate time and metric that both Eddington and Finkelstein presented in their papers.)
+The Eddington–Finkelstein coordinates are still incomplete and can be extended. For example, the outward traveling timelike geodesics defined by (with τ the proper time)
+has v(τ)-> -∞ as τ->2GM. Ie, this timelike geodesic has a finite proper length into the past where it comes out of the horizon (r=2GM) when v becomes minus infinity. The regions for finite v and r<2GM is a different region from finite u and r<2GM. The horizons r=2GM and finite v is a different horizon (the black hole horizon) from that with r=2M and finite u (the white hole horizon) .
+The metric in Kruskal-Szekeres coordinates covers all of the extended Schwarzschild spacetime in a single coordinate system. It's chief disadvantage is that in those coordinates the metric depends on both the time and space coordinates. In Eddington-Finkelstein, as in Schwartzschild coordinates, the metric is independent of the "time" (either t in Schwartzschild, or "u" or "v" in the various Eddington–Finkelstein coordinates), but none of these cover the complete spacetime.
+The Eddington–Finkelstein coordinates have some similarity to the Gullstrand–Painlevé coordinates in that both are time independent, and penetrate (are regular across) either the future (black hole) or the past (white hole) horizons. Both are not diagonal (the hypersurfaces of constant "time" are not orthogonal to the hypersurfaces of constant r.) The latter have a flat spatial metric, while the former's spatial ("time" constant) hypersurfaces are null and have the same metric as that of a null cone in Minkowski space ( in flat spacetime).
+ See also
+- Schwarzschild coordinates
+- Kruskal-Szekeres coordinates
+- Lemaitre coordinates
+- Gullstrand–Painlevé coordinates
+- Vaidya metric
+- Eddington, A.S. (Feb. 1924). Nature 113 (2832): 965–967.
+- Finkelstein, David (1958). Phys. Rev 110: 115–117.

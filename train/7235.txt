@@ -1,0 +1,86 @@
+Saturday, February 27, 2010
+There is a slight increase in the average of the mean. Viewing the total range you get this:
+However, the data is far from complete. This shows the range of all the stations in Southern Ontario.
+You can see that the bulk of the data is clustered around just a few years.
+One station with the longest range of data is Belleville, however it ends in 2006.
+This is the average of the mean temps for Belleville:
+The trend is increasing for this average, however when the entire range is added we get this:
+Here is the start and stop of winter as definted by the last night frost in spring and the first night front in the fall, thus the growing season.
+This plot shows the number of days above 30C (which is the points that are past the upper second standard deviation).
+This is the number of days below -20C.
+This is the number of days below zero.
+The big change in the early 1930's is due to incomplete data in 1931 and 1932.
+It is clear that the hot days in the summer are dropping, while the coldest temps are warming. Thus the temps are narrowing in their range since the 1940's.
+Thus this begs an interesting question. If the summer temps are cooling and the winter temps are warming, when will they converge and at what temp?
+It's some 750 years at 13C.
+Thus after that time, if these trends continue, the winters would be warmer than the summer! Obviously this cannot happen. Thus the current trends must change direction at some point in the future. Notice that the trend for the average crosses the trend for the max temps. It is mathematically impossible for an average to be bigger than the highest numbers that gave the average.
+Thus, this is firm evidence that the current trends are part of a cycle, a very small portion of a natural cycle and cannot in any way indicate that CO2 is warming the planet.
+Dim FSO As New FileSystemObject
+Dim TextObj As TextStream
+Dim FromThis As String
+Dim RecItem As ListItem
+Dim Maindb As MCSADODB
+FromThis = "<table class=" & Chr(34) & "dataTable" & Chr(34)
+ToThis = "<form action"
+Set Maindb = New MCSADODB
+Maindb.OpenDB "L:\global warming\Databases\", "MasterStations.mdb"
+For Each RecItem In LocationsList.ListItems
+If RecItem.SubItems(3) = "" Then
+If RecItem.SubItems(2) = "CC" Then
+If Not FSO.FileExists("L:\global warming\RawTextFiles\" & RecItem.Text & " RawData.txt") Then
+RecItem.SubItems(3) = "Downloading"
+Set TextObj = FSO.CreateTextFile("L:\global warming\RawTextFiles\" & RecItem.Text & " RawData.txt")
+For YearIndex = 1900 To 2009
+For MonthIndex = 1 To 12
+Text1.Text = "http://www.climate.weatheroffice.ec.gc.ca/climateData/bulkdata_e.html?timeframe=2&Prov=XX&StationID=" & RecItem.Text & "&Year=" & YearIndex & "&Month=" & MonthIndex & "&Day=1&format=csv&type=dly"
+ReturnedString = Inet1.OpenURL(Text1.Text)
+ReturnedString = Replace(ReturnedString, ",", Chr(9))
+ReturnedString = Replace(ReturnedString, Chr(34), "")
+List1.AddItem "ID=" & RecItem.Text & ", Year=" & YearIndex & ", Month =" & MonthIndex, 0
+RecItem.Bold = True
+RecItem.SubItems(3) = "Yes"
+RecItem.SubItems(3) = "Previous"
+Maindb.EditRecord "Stations", "StnID", StationID
+Maindb.SetField "DownLoaded", "Yes"
+Each station raw data was stored in a text file. A VB6 routine was then run on those text files to import the records into an Access database, one for each station. The raw data was stored as is in one table. It was then appended into a second table clearing out any nulled values. This second table contained only the date fields, max temp, mean temp and min temp fields. All analysis was done on this table.
+Each database was then looped to get a summary of the range of dates, number of records for each station and stored in a master mdb file. This database will also be used to store the trends for each stations so that regional and country summary can be easily calculated.
+The data was also broken into regions. West Coast (BC), Central Canada, Southern Ontario, Quebec south, Maritimes, and Arctic. A separate mdb file was created for each of these and all stations for that region appended into it.
+Analysis was done using Excel files. A VB6 routine was written to execute the required query in the station mdb file, copied, and then pasted into a template xls file, the range of the series of the graphs changed to match the number of records, the trend equations copied and pasted into cells and the master mbd, and then saved by the station id. Thus one xls for each station.
+Each station will be presented in the same way as outlined in my second video.
+Each temperature graph will contain the following:
+- Highest of the max temps plot and trend with equation.
+- The upper Standard Deviation of the max temps plot and trend with equation
+- The average of the mean temps plot and trend with equation
+- The lower Standard Deviation of the min temps plot and trend with equation
+- The lowest of the min temps plot and trend with equation
+These five points on a graph will show the entire range of yearly temps, not just the average of the mean which is the one AGW proponents use to claim the planet is getting hotter.
+At the top of every graph is a summary of the trends over the length of the station's temps.
+Each station report will also contain the following graphs:
+- Length of winter, calculated based on the number days from the first night fall frost to the last night spring frost (the growing season).
+- The number of hot days. AGW proponents claim the planet is heating up, there will be more heat waves. If so, this graph should show that, if it's true.
+- The number of extreme cold days.
+Each station will also contain a precipitation graph showing rain and snow fall for that location.
+Any specific stations presented here individually will be chosen based on the length of data they contain. The criteria will be that a station must have at least 80% of the days from Jan 1, 1900 to Dec 31, 2009. Because so few stations fit into that criteria, there will hence be few stations that will fill the criteria.
+The next post will evaluate the state of all the stations.
+Friday, February 26, 2010
+I've been downloading all 1300+ stations of Canadian temperature records from Environment Canada, and databasing the records in order to analyze trends. That is, to confirm or refute AGW's claim the planet is heating up.
+I have long noted to anyone who will listen that the average of the mean temp anomalies we keep seeing of increasing temps can be obtained by not having hotter summers. In fact, one can get an increase in the average temp by several ways:
+Increase the summer maximum temperatures and increasing the winter minimum temperatures.
+Increase the summer maximum temperatures but no change in the winter minimum temperatures
+No increase the summer maximum temperatures but increase the winter minimum temperature
+Decrease the summer temperatures a little, but increase the winter minimum temperatures more.
+All four can give the exact same average mean temperature. Thus detail of what is physically going on is lost using the average mean temperature. (We will soon see that #4 is what has actually happened.)
+Here is an analogy. You set your home temperature to 23C all day with climate control. Throughout the year if you averaged all the daily temperatures you will get 23C. If however, you decide to save some money and during the winters you allow your nighttime temperature to drop to 10C. You have just pulled the average temperature for the year down to around 18C.
+Thus, this "global warming" could just be a narrowing of the range in temps, and the surface station data will show exactly that.
+I have already put on line two documents of the first analysis, more will follow here as opposed to posting them on Scribd.
+There will be separate blogs for each of these to get comments.
+Also see these two Youtube videos.
+----------------------------------- NOTE ---------------------------------------Now, I want this blog to be open for all sides. Science advances with healthy skepticism, or it's just dogma. But I will NOT tolerate name calling, harassment, threats, or general abuse from any side, you comments will be simply not posted. So don't bother.
+I will also be posting blog of the source code (VB6) and SQL (Access) code I use to get the records as well as how the data was stored. So everything will be transparent.
+----------------------------------- DISCLAIMER ---------------------------------------
+I do not work for any fossil fuel company.
+I do not recieve any funds from any organization or any person to fight AGW.
+I'm a retired Toronto Fire Fighter and 25 year professional software developer. One of my past clients back in the mid 1990's was Sunoco where I was contracted to build their natural gas call center software. That project was the only 14 months I have "worked for" a fossil fuel company.
+For 30 years I have also faught creationism. One of my efforts was published. See:
+Wakefield, J. R. (1988), "The geology of 'Gentry’s Tiny Mystery'", Journal of Geological Education 36: 161–175, http://www.csun.edu/~vcgeo005/gentry/tiny.htm .
+Wakefield, J. R., 1987-88, "Gentry’s Tiny Mystery - unsupported by geology," Creation/Evolution, v. 22, p. 13–33.

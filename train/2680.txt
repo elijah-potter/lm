@@ -1,0 +1,54 @@
+Better Search Engine Design: Beyond Algorithmsby Peter Van Dijck
+A useful search engine is more than a search algorithm. This article explains how to create a search query analysis tool, a best bets feature, and a basic controlled vocabulary. We'll use MySQL for the examples.
+Search Query Analysis
+A search query analysis tool should come standard with every search engine, but it often doesn't. Server log analysis tools like Webalizer provide a list of the most popular search queries from third-party search engines — not what we're interested in. We want to know what people are searching for when they are on your site. Luckily, it is easy to bolt a search query analysis tool onto an existing search engine: just log the queries in a database before you send them to the search engine.
+In a basic MySQL table for logging search queries we include the query, the time of the query, the referring page, and the number of results.
+CREATE TABLE 'search_log' ('id' int(16) NOT NULL auto_increment, 'time' datetime default NULL, 'q' varchar(255) default NULL, 'results' int(11) default NULL, 'referrer' varchar(255) ) TYPE=MyISAM
+The table is populated by a simple
+INSERT statement when a user enters a
+query. Then we forward the query to the search engine.
+INSERT INTO search_log (time, q, referer, results) VALUES ('*generate date stamp*', '*query terms*', '*URL of referring page*', '*number of results*' )
+If possible, and this depends on how hackable your search engine is, the results field is updated with the amount of results the search engine returned. By default, MySQL tables have a maximum size of about 4GB. This allows you to log quite a few queries, but for popular sites, you probably want to optimize this table structure. You may also want to log session information, such as the user's IP address or a session cookie.
+Most search engines massage incoming queries a bit -- you probably want to copy some of that behavior before logging the queries. Typical massaging includes removing whitespace, removing stop words (common words like "the" or "and"), removing words that are used twice, and removing inappropriate punctuation.
+The main administration screen displays the top search queries for a specified period and the number of times it was entered. Filtering by number of results returned (less than x or more than y) is useful to identify dead-end searches that return 0 or 100,00,000 results.
+SELECT q AS Search, count(*) AS NumSearches FROM search_log WHERE time < '*timestamp*' AND time > '*timestamp*' GROUP BY q ORDER BY NumSearches DESC
+If you want to get funky, try adding the following features:
+- See which pages generate the most searches. It can mean people get lost there.
+- Drill down on a query to view individual requests, including referring pages and time.
+- The ability to group queries like "mysql", "my sql" and "MySQL" together for statistics (a fancy word for this is "word variant conflation"), and the ability to exclude certain queries from the reports. See our section on controlled vocabularies below.
+- Statistics on how many searches consist of one word (single term) and how many consist of multiple words (multi-term).
+- Identifying word bursts: the top 10 gaining and declining queries, as in the Google Zeitgeist.
+A search query analysis tool can be extremely useful, but many people would argue that a best bets feature, which lets administrators manually add preferred search results for certain search queries, is even more important. The most common objection to using a best bets feature is that it won't scale. On most sites, people will use tens of thousands of different queries. How can you make a significant difference by manually selecting best results for some of them?
+It turns out that search query usage consistently follows a Zipf distribution. This means that if you have 50,000 unique search queries in your logs, a small number of them (perhaps 700) will be responsible for a large amount (maybe 45%) of your searches. Manually selecting best bets for those 700 search queries suddenly looks pretty attractive.
+A basic database structure for best bets consists of a query table, a page table, and a table that links them together. The priority field in the last table is used to order the result set.
+CREATE TABLE 'search_pages' ('id' int(8) NOT NULL auto_increment, 'title' varchar(100) default NULL, 'url' varchar(255) NOT NULL default '', 'desc' tinytext, PRIMARY KEY ('page_id') ) TYPE=MyISAM CREATE TABLE 'search_terms' ('id' int(16) NOT NULL auto_increment, 'term' varchar(50) NOT NULL default '', PRIMARY KEY ('term_id') ) TYPE=MyISAM CREATE TABLE 'search_term_page_link' ('page_id' int(8) NOT NULL default '0', 'term_id' int(16) NOT NULL default '0', 'priority' int(5) default '1' ) TYPE=MyISAM
+The admin interface is straightforward: after identifying common search queries, the administrator can relate one or more pages to each query.
+You can add features to best bets as well, most notably the direct link. A direct link is a best bet that is so sure of itself it takes the user directly to the result page. This can be useful for things like product codes: enter the product code to be taken to the product page.
+Call centers and customer support people tend to love this stuff: they can now direct a user to a specific page directly instead of having to guide them through the navigation. You can take this a step further by assigning every page on a web site a code and displaying that code on the web page itself, perhaps in the footer. If the code is entered in the search engine, it will take the user directly to this page.
+Whether there is a need to visually distinguish the best bets results from your other search results is controversial: most sites do it, but I think this is like displaying a page counter -- there is no specific benefit to the user, unless you have particularly sophisticated search users (as on a research site, for example). Don't distinguish best bets from other search results -- just place them first. Do remember to remove duplicate results from the two lists.
+If you want to get a feeling for just how deep the rabbit hole of effective search engine design goes, try the next step: adding a controlled vocabulary. When a user types in "rabbit", he may also want results that don't contain the word "rabbit", but do contain the word "bunny" -- language is fuzzy like that. A controlled vocabulary lets you specify those relationships. Manually developing a controlled vocabulary makes a lot of sense, especially if your web site is about a specific topic with its own specific terminology.
+A basic controlled vocabulary consists of two elements: a list of the terms, and an equivalence relationship. The equivalence relationship doesn't mean we can only use synonyms; it means that the terms are equivalent for our search purposes. In the database, it looks like this:
+CREATE TABLE 'search_terms' ('id' int(16) NOT NULL auto_increment, 'term' varchar(50) NOT NULL default '', PRIMARY KEY ('term_id') ) TYPE=MyISAM CREATE TABLE 'search_relationships' ('term1' int(11) default NULL, 'term2' int(11) default NULL ) TYPE=MyISAM
+The first table contains all of our terms. The second table contains the bidirectional equivalence relationship, so you should build in a mechanism to avoid duplicate entries.
+When a user enters a search query ("rabbit"), you first look at the controlled vocabulary and select all of the related terms ("bunny"). Then you replace the users' search query with a new one that groups all the related terms together ("rabbit OR bunny"), and send that to the search engine. This is called search query expansion; it's simple but efficient.
+Used like this, a controlled vocabulary expands the result set. You get more results for your query, so it is best used with specialized queries that don't fetch a lot of results. The administrator should know this -- an interface that displays the amount of search results before and after adding the equivalence relationship will help her decide exactly which queries to expand.
+The basic controlled vocabulary we just created is called a synonym ring. There are more complex types of controlled vocabularies, going all the way from preferred terms over thesauri to complete ontologies.
+- Beau Lebens, who generously provided the database structure in this article, is implementing a system very similar to what we described today (if somewhat more advanced) at Dentedreality.
+- "A day in the life of BBCi search"
+- Beyond the spider: the accidental thesaurus (PDF file)
+If you really want to get down with search engine development through controlled vocabularies and such, read the bear book: Information Architecture for the World Wide Web, 2nd Edition.
+Peter Van Dijck is a Belgian information architect, specialising in metadata in its various flavours, forms and shapes, and in cultural and language issues on the web.
+Return to ONLamp.com.
+own search engine
+2009-07-02 05:28:31 windwasher [View]
+Still on point years later
+2009-03-28 12:11:25 YellowSEO [View]
+Search Engine Programmings
+2007-06-06 12:07:11 SEO_Hawk [View]
+2006-02-09 14:13:32 liichief [View]
+- Trackback from http://www.michaelbraly.com/archives/000334.html
+links for 2005-06-12
+2005-06-11 18:30:17 [View]
+Implementation of word burst algorithm
+2005-03-23 19:36:45 dhscompguy [View]
+2003-08-27 19:46:24 anonymous2 [View]

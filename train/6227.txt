@@ -1,0 +1,12 @@
+I was looking for a way to plot real-time Arduino data and after a bit of search I decided to couple it with LabVIEW; but among all the documentation and references I found on the internet about the topic none of them suited exactly my needs.
+The documents from NI provides useful information to directly access read/write Arduino pins both analog and digital, but no further details are given to transfer variables back and forth.
+If you don’t have Arduino IDE or LabVIEW installed, please follow the instructions from NI page on how to setup the environment.
+The virtual instrument used below are available on the LabvVIEW-VIs GitHub repository.
+Method 1 – Sequence of CHAR
+Common practice when it comes to transfer data over a serial line is to send them as sequence of ASCII characters. The following example show how to send a float variable from Arduino as fixed 4 characters, and read it in LabVIEW using the “Send Receive” utility block.
+The trick is to send a dummy flush command to Arduino, which otherwise respond with a “sync” signal that mess up with actual data.
+Method 2 – Byte array
+The approach described before is not that flexible as it assumes a fixed number of bytes is exchanged. Moreover data were sent encoded in ASCII and not as C data type implementation.
+A more versatile approch would be send data to LabVIEW as sequence of bytes (binary). This would allow to send variable length data and reconstruct them inside LabVIEW, and require proper serialization functions in the firmware.
+The following example show how to read a single precision float (4 bytes). A fifth byte is prepended and used as header for the transmitted data. LabVIEW wait for 5 bytes on the serial line, read the first of them and if it’s not equal to 0x69 flush the serial receive buffer and wait for the next packet. If the header is recognized the remaining 4 bytes are swapped to convert Arduino’s little-endian to LabVIEW big-endian format, then casted to a single precision float.
+Method 3 – A simple protocol

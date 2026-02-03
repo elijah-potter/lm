@@ -1,0 +1,24 @@
+If you work on multiple computers, you probably use a USB drive to take your favorite portable software with you. Portable application suites like PortableApps.com, CodySafe, or Lupo PenSuite, each have a main menu providing access to the programs installed into the suite.
+However, there may be reasons why you need to create shortcuts to programs on your USB drive. You may be using a program that does not integrate into the suite’s main menu. Or, you may not be using an official portable application suite at all, and just placing portable software in a folder on your USB drive. Maybe you prefer using shortcuts on the root of the USB drive, like a portable desktop.
+Whatever your reason, you can’t just create a shortcut to an application on the USB drive and place it in the root of the drive. The shortcut will always refer to the full path of the application, including the drive letter. Different computers assign different drive letters to USB flash drives, so you would have to change the drive letter for your shortcuts when it changes. You can assign a static drive letter to the USB drive. However, if you would rather not do that, there is a way to create shortcuts to programs on a USB drive using relative paths.
+Because Windows does not support relative paths in shortcuts, we will show you how to create a “shortcut” on the root of a USB drive by creating a batch (.bat) file and converting it to an executable (.exe) file.
+To create the batch file, open a text editor, such as Notepad, and enter the full path, including the name of the executable file, to the program for which you want to create a shortcut. However, make this a relative path by leaving out the drive letter and the first backslash. Also, surround the path with quotes. We will use the free icon extraction program, BeCyIconGrabber, as an example. The image below shows an example of the relative full path to the program on our USB flash drive.
+In the text editor, save the file as a .bat file in a location of your choosing. We saved our file to a special directory on our USB flash drive.
+NOTE: It doesn’t matter too much where you save the batch file. The location of the final executable file is what matters.
+You can put an icon on your shortcut by extracting the icon from the program’s .exe file and adding it to the executable file you will create for your shortcut. To extract the icon from the program file, see our article about using a free tool to extract high quality icons from files. You should end up with an icon (.ico) file as shown below.
+To convert your batch file into an executable file, download the free program Bat To Exe Converter. The program does not need to be installed. Simply extract the files from the .zip file and double-click on the .exe file to run the program.
+On the Bat To Exe Converter program window, click the browse (…) button to the right of the Batch file edit box.
+On the Select the batch file dialog box, navigate to the folder in which you saved your .bat file, select the file, and click Open.
+Now, we need to specify the name and location of the resulting .exe file. By default, the same location as the batch file is entered as the save location. However, we didn’t save our batch file on the root of our USB flash drive, but we want to save the executable shortcut file on the root. To change the location, click the browse (…) button to the right of the Save as edit box.
+NOTE: You can also type the paths and filenames in the edit boxes directly, instead of using the browse buttons.
+On the Save as dialog box, navigate to the root of the USB flash drive, and enter a filename for the shortcut in the File name edit box. Click Save.
+To run the batch file “invisibly,” with no console window opening in the background, select the Invisible application option in the Visibility box.
+To add the icon you extracted to the .exe shortcut file, click the Versioninformations tab and then click the browse (…) button to the right of the Icon file edit box.
+On the Select the icon file dialog box, navigate to the folder where you saved the extracted .ico file, select it, and click Open.
+The path to the icon file is entered into the Icon file edit box. Click Compile to create your .exe shortcut file.
+To close Bat To Exe Converter, click the X button in the upper, right corner of the dialog box.
+The new .exe shortcut file is available on the root of your USB flash drive. Double-click it to run the program.
+Here is the BeCyIconGrabber program opened from our converted batch file.
+Now you can easily create shortcuts to programs on your USB flash drive that will work no matter what drive letter is assigned to your drive on any Windows computer.
+Lori Kaufman is a freelance technical writer who likes to write geeky how-to articles to help make people's lives easier through the use of technology. She loves watching and reading mysteries and is an avid Doctor Who fan.
+- Published 03/28/12

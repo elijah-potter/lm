@@ -1,0 +1,66 @@
+4x vertical scaled. Lunada Canyon, Rancho Palos Verdes, California. 33.767482853°, -118.408898009°
+The horizon is visual line that separates the earth from the sky. On land this is usually nearby hills and is quite uneven, but if you have a good view of the ocean the horizon appears as an essentially flat line between the sea and the sky.
+Image Source: https://commons.wikimedia.org/wiki/File:Sailing_Boat_Horizon.JPG
+It looks flat, and in fact the horizon IS geometrically flat. Since all the points on the ocean horizon are the same distance away from you, and the same distance below you, the horizon forms a flat circle with its center some distance below your feet.
+But while it's flat, it is a circle, and so the higher above the circle you are the more the curve becomes apparent.
+You'd think you could simply go high enough and then take a photo, and show the curve. However the problem here is that the higher you go the further away the horizon is. If you are just 40 feet above sea level then the horizon will be a nice sharp line, as it's only 8 miles away. However it's too flat from this angle to see the curve.
+Image Source: Mick West
+But if you go up in a plane to 35,000 feet the horizon is 229 miles away. It's curving a lot more, and would be obvious if there was no atmosphere, but it's too hard to see.
+Image Source: Mick West, IMG_6137, North Sea.
+So we must seek a happy medium, high enough to detect the curve, but not too high that the horizon is blurry. The sweet spot here seems to be around 400 to 700 feet (around 120 to 210 meters) above sea level.
+However caution must be exercised, and there's several other factors to consider. Here I'll list the best advice for getting a photo of the curve of the the horizon. We'll consider:
+- Location - you need a spot about 400 to 700 feet up, with a view of the the ocean horizon that fills the whole image from left to right.
+- Time and weather - overcast with good visibly, minimize sun
+- Equipment - a good camera with a wide angle lens with minimum distortion
+- Settings. Wide angle, focus on the horizon, underexpose, small aperture, best image quality.
+- Lens distortion compensation. Keep horizon centered, have a straight edge in the shot. Take photos above, at, and below the center.
+- Magnification. Stretch image vertically to magnify the curve without changing it. Increase image contrast, use gradient maps.
+This is relatively straightforward, just get 400 to 500 feet up. A tall building near the water would do. But the key is having an unbroken horizon from left to right. Now I have 500 feet as the upper end, however you might be able to use a higher location (like the viewing platform of the new World Trade Center). You might find though that when you enhance the image that distant lands will prevent you getting a clear image.
+Time and Weather
+The sun is not your friend here. Glare can make the ocean blend into the sky and you want a sharp transition. So if it's sunny you should try to get the sun behind you (i.e. looking west in the morning, or east in the evening.
+Image source: http://millerprosthetics.com/category/inspiring-stories/page/3/
+Shooting closer to noon will also ensure there's less reflection from the ocean, especially in summer, as the sun will be high in the sky. Local solar noon varies, but is often around 1PM due to daylight savings time.
+You can also get good results when the weather is overcast, but not foggy - the sea will be slate grey against a whiter sky.
+Image Source: http://www.iangarrickmason.com/journal/stolid
+Another potentially good time is when the sun is below the horizon.
+Image Source: http://www.freestockphotos.biz/stockphoto/9810
+The bottom line though is that you need a clear horizon as is possible.
+The more of the horizon you can see, and the more pixels you have in the image, the easier it will be to see the curve. So the basic things you want are wide angle and high resolution. You also want to avoid introducing curve via lense distortion. Some distortion is inevitable (and we shall deal with that later), but you want to minimize it was much as possible. So ideally you'd have a rectilinear lens.
+Wide angle here means a field of view (FOV) of 60° or more. Lenses typical don't have their FOV written on the side, but 60° is a typical field of view of a modern camera phone. On a full frame DSLR (like a Canon 5D or Nikon D610) you'd want 30mm or wider, with something like 17mm (93°) being ideal.
+Crop sensor DSLRs are much more common than full frame, so to get the full 90° you'd need to use something like 10mm.
+High resolution is important as the curve can be just a few pixels. The higher the resolution, the easier it will be to see. But any recent DSLR should work, assuming it's set to best quality. What won't work is video. 4K video may come close, but 4K is only 2160 pixel vertically, regardless of the camera. A modern DSLR is generally twice that vertical resolution. So shoot stills, not video.
+Rectilinear is a fancy way of saying "straight line". A rectilinear lens will not distort straight lines, so they will appear straight in the image. Similarly if a line is curved (like the horizon) it won't get more or less curved. So we want our lens to be rectilinear.
+Image Source: https://en.wikipedia.org/wiki/File:Panotools5618.jpg
+Perfectly rectilinear lenses can be hard to find, and expensive. However an obvious thing we can do is don't use fisheye lenses. Fisheye lenses are highly curvilinear. Basically you want to use a lens that is as rectilinear as possible.
+Non-DSLR camera like the Nikon P900 and even the iPhone or other phone camera might work. However you've got a more limited field of view, and lower quality sensors, so you then become more dependent on other factors.
+Point-and-shoot might work, especially if you've got good atmospheric and lighting conditions but there are things you can do to improve the quality of the image.
+Best Quality - you want the image setting to be as high resolution as possible. If your camera allow RAW then use RAW. Otherwise set the image size and image quality to the highest it will go - usually this is referred to as fine. You may also have a separate image size setting, again as high as it will go.
+Focus on the Horizon - The horizon is what we want to see, so if the camera focusses on a window, or nearby people, then the horizon might end up blurry. If you need to, then use manual focus to get the horizon as sharp as possible. This image might have been perfect if not for the bad focus.
+Image Source: https://girlhiker.com/2013/09/03/los-liones-trail-in-pacific-palisades-california/
+Underexpose - glare from the sun, and sometimes haze, can make the horizon hard to see. You can often counteract this by underexposing. This can be done with the Exposure Compensation setting, often expressed as "EV", set it to -1.0EV. But you may need to experiment to get the best result. You can also set the camera to Bracket, where it will take three shots at different exposures.
+Small/Medium Aperture - Smaller apertures give a wider depth of field and so give you more leeway with focus. Large "f" numbers mean smaller apertures. Try for f/8 at least. Going very small like f/22 might help your depth of field, but the overall quality depends on the lens. Lenses have a sweet spot for sharpness, and you should try to find out what it is for your lens and use that. If you don't know then just go for f/8, and make sure you have good focus on the horizon.
+Low ISO - Lower ISO gives a less noisy image. ISO 100 is usually the best. However you need to make sure this is not going to give you a low shutter speed. If so then use a tripod.
+Lens Distortion Correction
+With a wide angle lens you are probably going to get some distortion. However there are things you can go to minimize this.
+Center and Level the Horizon - Distortion happens concentrically around the middle of the image. So if a line goes through the middle of the image it will be lengthened or shortened slightly, but it will not be bent.
+Image Source: https://millerprosthetics.com/2016/08/25/nancy-settles-in-her-rio-apartment-and-its-amazing/
+Use a Straight Edge - If you put a known straight edge very close to the horizon, then you can compare the horizon against the straight edge. If the lense is distorting things then the straight edge will be curved too. Then we can see if the horizon curves more than the straight edge, which will indicate the horizon is actually curved.
+(This image discussed in more detail here: https://www.metabunk.org/measuring-the-curvature-of-the-horizon-with-a-level.t7832/ )
+Take pictures above and below the center - Move the camera so the horizon is first above the center line, then at the center line, and then below the center line. If it curves in the same direction all three then it's definitely curved. If not then we need to account for this.
+The curve of the horizon is small at low altitudes. You can use the metabunk curve calculator (in "advanced" mode) to work out just how much you should be looking for. Around 450 feet this is going to be something between 3 and 6 pixels.
+Now you can see that in an image with the naked eye - especially if it's against a straight edge, like with the yellow carpenter's level above. However it becomes easier to see if you magnify it.
+Just zooming in will help if you are comparing against a straight edge, but does not really make the curve more apparent.
+Enhancing Contrast can be very helpful. You can just use the brightness and contrast controls, or use the levels. Basically adjust to make the horizon as clear as possible. Just don't go too far, as you can lose detail.
+Magnifying vertically is what you need. This means selecting a narrow strip of the image around the horizon, and then stretching it vertically. The process here is:
+- Use the original resolution image with enhanced contrast.
+- Select the strip of the image with the rectangular marquee tool
+- Copy and Paste that strip
+- Edit->Free Transform
+- Drag down the bottom edge of the strip (and maybe raise up the top edge).
+Several more examples can be found here:
+If you are really interested there's a variety of things you might try to make things more apparent.
+Compare Against Google Earth
+Google Earth models the Earth as you'd expect - as a globe. So if you position the Google Earth camera where you took the photo, then take a screenshot, then you should be able to see the curve. Ideally you would fit the image precisely in GE. Like this example from around 550 feet.
+You crop the horizon portion of the Google Earth view under the photo, and scale vertically (20x here)
+Then compare that against the same portion of the photo scaled by the exact same amount.
+The photo is obviously higher resolution than the screenshot, however you can see the same curve in both. This verifies we are photographing the expected curve.

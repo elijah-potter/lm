@@ -1,0 +1,14 @@
+The learning theory suggests the experiences that will help students learn what is needed to achieve course outcomes. "What is needed" is specified by the performance theory.
+Learning programming is hard, compared to most other topics (e.g., the McCracken group's research). Problem solving through decomposition and modularity are particularly hard to learn. Decomposition and modularity depend on the task being done by the program.
+- Active learning. Many exercises. Formative feedback.
+- Focus on core knowledge. Given limited time for learning, adding content results in shallower learning.
+- Task focus. Show concepts in the context of tasks, not in abstract terms.
+Each experience is one in a sequence. It builds on a student's current knowledge state. If there are gaps in that knowledge, the student may not be able to benefit from the experience. For example, knowing how to write a test in an if statement is a prerequisite for a lesson on input validation.
+Learning is contextual. Knowledge that students construct in one context (e.g., an algebra course), they will not automatically be able to apply in another (e.g., accounting).
+- Scaffolding may be necessary when prerequisite knowledge cannot be met, or is inconvenient to meet. Essentially "scaffold away" some prereq knowledge.
+Cognitive load theory (CLT) suggests that a student's cognitive load is divided betwixt processing that is relevant to learning, and processing that is not. The latter should be reduced.
+- Make content easy to process, e.g., eschew obfuscation.
+- Limit the amount of processing engendered by each learning experience.
+- Take advantage of humans' powerful visual systems. That is, use diagrams. Mayer's work offers guidelines on diagram design.
+I use the term generally, to refer to beliefs and feelings about learning, and about programming.
+Mindset matters. Students with a fixed mindset might not put forth effort, once they find out that programming is hard.

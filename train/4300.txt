@@ -1,0 +1,16 @@
+- Method pipe
+File pipe(void|int required_properties)
+This function creates a pipe between the object it was called in and an object that is returned.
+- Parameter required_properties
+Binary or (`|()) of required
+The resulting pipe may be used for inter process communication.
+The resulting pipe supports nonblocking I/O.
+The resulting pipe supports shutting down transmission in either direction (see close()).
+The resulting pipe is buffered (usually 4KB).
+The resulting pipe is bi-directional.
+The resulting pipe supports communication "backwards" (but not necessarily "forwards", see PROP_BIDIRECTIONAL).
+The default is
+The two ends of a bi-directional pipe are indistinguishable.
+If the File object this function is called in was open to begin with, it will be closed before the pipe is created.
+Calling this function with an argument of 0 is not the same as calling it with no arguments.
+- See also

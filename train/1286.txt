@@ -1,0 +1,9 @@
+BitNot[n] gives the bitwise NOT of the integer n.
+Integer mathematical function (see Section A.3.10).
+BitNot[n] turns ones into zeros and vice versa in the binary bit representation of n.
+Integers are assumed to be represented in two's complement form, with an unlimited number of digits, so that BitNot[n] is simply equivalent to .
+See The Mathematica Book: Section 3.2.4.
+See also: BitAnd, BitOr, BitXor, Not.
+THIS IS DOCUMENTATION FOR AN OBSOLETE PRODUCT.
+SEE THE DOCUMENTATION CENTER
+FOR THE LATEST INFORMATION.

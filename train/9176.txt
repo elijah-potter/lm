@@ -1,0 +1,10 @@
+Terminate a thread
+#include <pthread.h> void pthread_exit( void* value_ptr );
+- A pointer to a value that you want to be made available to any thread joining the thread that you're terminating.
+Use the -l c option to qcc to link against this library. This library is usually included automatically.
+The pthread_exit() function terminates the calling thread. If the thread is joinable, the value value_ptr is made available to any thread joining the terminating thread (only one thread can get the return status). If the thread is detached, all system resources allocated to the thread are immediately reclaimed.
+Before the thread is terminated, any cancellation cleanup handlers that have been pushed are popped and executed, and any thread-specific-data destructor functions are executed. Thread termination doesn't implicitly release any process resources such as mutexes or file descriptors, or perform any process-cleanup actions such as calling atexit() handlers.
+An implicit call to pthread_exit() is made when a thread other than the thread in which main() was first invoked returns from the start routine that was used to create it. The return value of the start routine is used as the thread's exit status.
+Don't call pthread_exit() from cancellation-cleanup handlers or thread-specific-data destructor functions.
+For the last process thread, pthread_exit() behaves as if you called exit(0).
+Last modified: 2014-06-24

@@ -1,0 +1,14 @@
+By Kardi Teknomo, PhD .
+Recursive Average & Variance Tutorial
+This tutorial introduces you with efficient methods to compute simple statistics such as time average and time variance of any measurement data using recursive formula. Other useful method to revive back your original data from the statistics and correcting mean and variance in efficient way are also explained.
+Click the topics below:
+Usual Computation of Average and Variance
+Why do we need recursive formula?
+Recursive Average ( proof )
+Characteristics of Recursive Average
+Recursive Variance ( proof )
+Data Revival from the Statistics ( proof )
+Correction of Measurement ( proof mean formula , proof variance formula )
+Rate this tutorial & send your feedback
+Preferable reference for this tutorial is
+Teknomo, Kardi. (2006) Recursive Average and Variance.

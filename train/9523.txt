@@ -1,0 +1,5 @@
+The default formatting in LaTeX documents is determined by the class used by that document. This default look can be changed and more functionalities can be added by means of a package. The class file names have the .cls extension, the package file names have the .sty extension.
+Sometimes it's hard to make a decision when it comes to choose whether to write a package or a class. The basic rule is that if your file contains commands that control the look of the logical structure of a special type of document, then it's a class. Otherwise, if your file adds features that are independent of the document type, i.e. can be used in books, reports, articles and so on; then it's a package.
+For instance, if a company needs branded reports that use a special font and have the logo of the company in the footer; you need a new class.
+If the company needs a new command that makes easier to highlight important sentences within a document, a new package will work in this scenario.
+For more information see

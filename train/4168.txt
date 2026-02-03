@@ -1,0 +1,35 @@
+The Windows Runtime (WinRT) is the underlying runtime for Windows 8 Store Apps (“Metro”), but some of it can be actually used outside the Metro environment, in regular desktop apps, such as pure Win32, MFC, etc.
+There are several ways to go about it; most of the time we’ll use the Windows Runtime Library (WRL) to help out with some of the low level details. Or, for a true high level abstraction, we can use the C++/CX extensions to the C++ language (making our code non-standard). But, just for kicks, let’s see how we can access WinRT types with no help at all – just the raw APIs.
+We’ll start by opening Visual Studio 2012 and creating a simple Win32 Console application and give it some name (TestWinRT in the screenshot):
+WinRT can be viewed as a better COM, and that’s the approach we’ll take. What I want is to be able to access the Windows::Globalization::Calendar class and use it to get the current time.
+The first thing we need to do is add some #includes. First, for general C++ thingies:
+Next, we need to add the header for the Ro* API functions (the replacement for the classic COM Co* family of functions):
+The last #include we’ll need is the one the defines what a Calendar is. Luckily, the required header has the same name as the namespace where Calendar is defined, namely Windows::Globalization:
+We’ll need to link with the library that implements all the global functions we’ll use in a minute. This library turns out to be runtimeobject.lib, although this is not specified in any of the function documentations, as far as I could tell. This is probably due to the incomplete nature of the docs at this time.
+#pragma comment(lib, "runtimeobject.lib")
+Next, we’ll add some using namespace statements to make our life a little easier:
+using namespace std;
+using namespace ABI::Windows::Globalization;
+The namespaces starting with ABI provide the public surface of WinRT. After that, the “regular” WinRT namespaces appear.
+It’s time to start coding the main function. First, we need to initialize WinRT, which is done using the RoInitialize function:
+In classic COM, this was done with CoIntialize(Ex), and surprisingly enough, replacing the call with CoInitialize(Ex) works as well with WinRT (but I wouldn’t actually do that in a real app). For those who know about COM apartments, the same applies there – the thread must enter an apartment before any WinRT calls can be made – in this case it’s the multithreaded apartment (more on apartments in a future post…); the apartment type is unimportant for our simple example.
+Next, we need to create an instance of the Calendar class. For that we need to call RoActivateInstance, the WinRT replacement for the classic COM CoCreateInstance. Contrary to CoCreareInstance, RoActivateInstance uses a string as the class name and not a GUID. That string is represented by an HSTRING – the WinRT string. Here’s how to create one and get the calendar instance:
+HRESULT hr = ::WindowsCreateString(className.c_str(), className.size(), &hClassName);
+hr = ::RoActivateInstance(hClassName, &pInst);
+WindowsCreateString is the WinRT API to create an HSTRING, which is an immutable character array. In C++/CX, it’s wrapped by the Platform::String class, but here we’re using the raw API. RoActivateInstance returns a pointer to IInspectable*, which is the new base interface in WinRT (still inherits from IUnknown). We’ll take a look at how the class is located in a few moments.
+Next, we need the actual ICalendar interface – this requires a QueryInterface call (I’m omitting error handling for brevity):
+hr = pInst->QueryInterface(__uuidof(ICalendar), (void**)&pCalendar);
+That’s it. We’re ready to use the calendar. Here’s an example:
+INT32 hour, minute, second;
+cout << "Time: " << setfill('0') << setw(2) << hour << ":" << setw(2) << minute << ":" << setw(2) << second << endl;
+We should clean up properly:
+Running the application produces the following:
+Where does the class come from?
+In classic COM, CoCreateInstance accesses the registry at HKEY_CLASSES_ROOT\CLSID, looking for the class ID and then loads the DLL (assuming it’s a DLL), calls some global function (DllGetClassObject), etc. What about WinRT?
+Let’s set a breakpoint before the call to RoActivateInstance and fire up Process Monitor, looking for registry, process and file activity. Here’s the filter configuration of ProcMon, focusing on our TestWinRT.exe process:
+Stepping over the RoActivateInstance line and stopping ProcMon’s event gathering shows where the registry is searched:
+It’s similar to the classic COM case, but the search is based on the full class name and not the GUID. That one points to the GUID. Here’s a snapshot from the registry:
+After all these registry lookups, the correct DLL is finally loaded:
+As with classic COM, a class factory is required and obtained from the DLL by looking for a particular export, DllGetActivationFactory (as opposed to the classic COM DllGetClassFactory). We want show this in this post.
+So, there you have it. We created a WinRT-based Calendar object and used it in a desktop app.
+In the second part, we’ll take a look a some shortcuts for working with WinRT from desktop apps.

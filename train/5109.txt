@@ -1,0 +1,14 @@
+|Skip Navigation Links|
+|Exit Print View|
+|man pages section 3: Curses Library Functions Oracle Solaris 11 Express 11/10|
+- get character strings from curses terminal keyboard
+cc [ flag ... ] file ... -lcurses [ library ... ] #include <curses.h> int getstr(char *str);
+int wgetstr(WINDOW *win, char *str);
+int mvgetstr(int y, int x, char *str);
+int mvwgetstr(WINDOW *win, int y, int x, char *str);
+int wgetnstr(WINDOW *win, char *str, int n);
+The effect of getstr() is as though a series of calls to getch() were made, until a newline or carriage return is received. The resulting value is placed in the area pointed to by the character pointer str. wgetnstr() reads at most n characters, thus preventing a possible overflow of the input buffer. The user's erase and kill characters are interpreted, as well as any special keys (such as function keys, HOME key, and CLEAR key.)
+All routines return the integer ERR upon failure and an integer value other than ERR upon successful completion.
+See attributes(5) for descriptions of the following attributes:
+The header <curses.h> automatically includes the headers <stdio.h> and <unctrl.h>.
+Note that getstr(), mvgetstr(), and mvwgetstr() may be macros.

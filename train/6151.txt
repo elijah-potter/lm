@@ -1,0 +1,22 @@
+Methods of Feeding Energy to an Antenna
+4-81. Voltage and current distribution for the half-wave antenna (shown in
+figure 4-17) is the same as that for the antenna discussed earlier in this
+chapter. A point closely related to the voltage and current distribution on an
+simplest method of feeding energy to the half-wave antenna is to connect one
+end through a capacitor to the final output stage of the transmitter. This
+method is often called the end-feed or voltage-feed method. In this method
+the antenna is fed at a point of high voltage (the end).
+Figure 4-17. Standing Waves of Current and Voltage
+4-82. Energy may also be fed to the half-wave antenna by dividing the
+antenna at its center and connecting the transmission line from the final
+transmitter output stage to the two center ends of the halved antenna.
+Because the antenna is now being fed at the center (a point of low voltage
+and high current), this type of feed is known as the center-feed or current-
+feed method. The point of feed is important in determining the type of
+transmission line to be used.
+4-83. As you have studied in the previous sections, a one-half wavelength
+antenna is the shortest antenna that can be used in free space. If we cut a
+half-wave antenna in half and then ground one end, we will have a grounded
+quarter-wave or Marconi antenna. This antenna will resonate at the same
+widely used in the military. Most mobile transmitting and receiving antennas
+(illustrated in figure 4-18) are quarter-wave antennas.

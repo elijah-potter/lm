@@ -1,0 +1,38 @@
+Higher order components are a useful pattern for creating composable logic within a React application. While they're not as popular as other tools like render props or hooks, they're still worth knowing.
+How do higher order components work? Well as we discussed in Functional Programming Fundamentals, higher order functions take a function as an argument and/or returns an argument as it's result.
+In this case, higher order components are functions that take a component as an argument and return a new supercharged component as a result. This poses an interesting problem for typing.
+We want to expose a component that only needs require the props not provided by the HOC, but we still want to be able to access the original uncomposed component.
+Let's walk through an example.
+We start with a super basic component,
+TomRiddle. Now it matters not what someone is born, but what they chose to be.
+TomRiddle takes an
+isEvil prop that determines if it renders "Tom Marvolo Riddle" or "I am Lord Voldemort".
+Tom isn't such a great guy and wants to learn how to make horcruxes. How do we teach him? Well we could make him into a class component and add some state. Let's see what that looks like.
+This totally works. We've taught Tom how to make horcruxes. Now Tom wants to recruit some followers, he calls those Death Eaters. Let's add another prop for those. While we're at it, let's derive
+isEvil from the number of horcruxes the wizard has.
+Now this component is doing a bit too much. It's rendering to the DOM and it's managing state. Also, anyone can learn to make horcruxes, what if we take that functionality and make it into a higher order component.
+Before we get to typing this, let's take a look at what this would look like in vanilla JS.
+EvilWizard is a function that takes a component,
+Wizard, and passes that component the following props
+makeHorcrux. It also manages this state for them.
+Now, two minor gotchas with HOCs, we need to set the
+Okay now let's type this thing.
+What's going on here? A lot actually. Let's break it down. We export a type called
+WithEvilWizardProps. This type takes
+T, a generic, and returns an intersection type of
+EvilWizard takes a
+Wizard that is either a
+ComponentClass or a
+FunctionComponent. The props of this component is of type
+EvilWizardInnerProps & T. Now here's the real magic. The component we're returning is a class of type
+What does this mean? Well because we're using an intersection type, Typescript is smart enough to unpack this and return a component that only requires the props not provided by the HOC.
+One last thing, let's update
+TomRiddle to use this new HOC.
+We've now extracted all that state back out and we're using
+WithEvilWizardProps when declaring
+TomRiddleProps. Now let's use our components!
+As you can see above, we have the option of using
+LordVoldemort the output of
+EvilWizard(TomRiddle) or we can just call
+TomRiddle directly. This is particularly useful if you want to test the behavior of the inner component without the HOC.
+These ads help me pay to keep this site up. Feel free to buy, watch, listen or ignore these like any other ad.

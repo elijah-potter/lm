@@ -1,0 +1,21 @@
+Here is a quick guide to doing problems involving the work energy theorem, to help you do your physics homework or assignment:
+The work energy theorem states that the work done is equal to the change in kinetic energy:
+where the kinetic energy is:
+1. On a frozen pond, a 10-kg sled is given a kick that imparts to it an initial speed of = 2.0 m/s. The coefficient of kinetic friction between sled and ice is = 0.10. Use the work-energy theorem to find the distance the sled moves before coming to rest.
+In this case, the work done by friction is equal to the change in kinetic energy (work energy theorem).
+and since = 0,
+2. You are given a uniform flexible chain whose mass is 5 kg and length is 5m, and a small frictionless pulley whose circumference is negligible compares to the length of the chain. Initially the chain is hung over the pulley with nearly equal lengths on both sides, but just unequal enough so that the unstable equilibrium condition will let the chain start to move. After some time, the longer end of the chain is a distance down from the pulley's axle. Find the acceleration of the chain when the chain is at this position. Find the velocity of the of the chain when
+and the linear density of the chain is,
+the mass of the left side of the pulley is,
+and the mass of the right side of the pulley is,
+and using Newton's laws on the left side of the pulley,
+and on the right side of the pulley,
+adding these equations gives,
+and solving for a,
+hence the acceleration of the chain at this position is 5.88 m/s2
+to find the velocity at this point, we will use the work energy theorem to equate kinetic and potential energies of the chain.
+The change in kinetic energy is,
+the initial position of the chain nearly half hanging on both sides, then the entire chain goes to one side and therefore
+and , and the chains center of mass is,
+and the change in potential energy is,
+finally from the conservation of energy,

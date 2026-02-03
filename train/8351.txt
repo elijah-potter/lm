@@ -1,0 +1,8 @@
+The reciprocal meter is the standard unit of wave number for electromagnetic field s (EM fields). In terms of International Units ( SI ), the reciprocal meter is equal to m -1 . The wave number is the number of complete wave cycles that exist in a linear span of 1 meter (m).
+At the speed of light in free space, 2.99792 x 10 8 m/s, the frequency f in hertz ( Hz ) is related to the wave number y in reciprocal meters (m -1 ) according to the following formula:
+y = f / (2.99792 x 10 8 )
+To cite a few examples, an EM wave at 300 megahertz (MHz) in free space has a wave number of almost exactly 1 m -1 . If the frequency is doubled to 600 MHz, the wave number also doubles, to 2 m -1 . If the frequency becomes 1/10 as great, that is, it is decreased to 30 MHz, then the wave number is reduced to 0.1 m -1 . As a point of reference, it is easy to remember that the wave number of a 300-MHz signal in free space is very close to 1 m -1 .
+In general, if the speed of propagation in meters per second for a specific medium is given by c , then:
+y = f / c
+where y is in reciprocal meters, and f is in hertz.
+In radio-frequency ( RF ) transmission lines such as coaxial cable s and waveguide s, the speed of propagation is less than 2.99792 x 10 8 m/s. This increases the wave number, although it has no effect on the frequency.

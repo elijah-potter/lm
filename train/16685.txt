@@ -1,0 +1,18 @@
+Previous post describes what a temperature sensor is & about how to test the well known & well available analog temperature sensor in the market, the LM35 temperature sensor.
+This article will describe how to interface LM35 with Arduino, a well known open-source development platform. There are many versions of Arduino available in the market. We are using Arduino UNO board here. It contains a micro-controller ATMEGA328, the brain of the platform, six numbers of Analog input pins, 14 numbers of digital pins out of them 6 numbers of pins are PWM ~ (Pulse Width Modulation) pins.
+LM35 has three pins, pin no.1 is +Vcc, pin no.2 is Output & pin no.3 is Ground. As it is a analog temperature sensor so the output pin of the LM35 will be connected to the Analog Input pin of Arduino. Other pins to the 5V & GND pin.
+The hardware part is done.
+Coding part of this is simple. We will use the Serial Monitor to visualize the response of LM35. Later interfacing another display like LCD or 7 segment LED with the arduino we can also make this project more compact.
+- float temp : “temp” is a float variable
+- int tempPin = 0 : declaration for the Analog Input pin(A0)
+- Serial.begin(9600) : declaration for the Baud Rate of the serial port which is 9600.
+- temp = analogRead(tempPin) : the function analogRead is to read analog data from the tempPin
+- Serial.print() : To print something in the serial port
+- temp = temp * 0.48828125
+0.48828125 where this number came from??
+This is (+Vcc * 1000 / 1024) / 10
+Where +Vcc is the supply voltage = +5V, 1024 is 2^10, value where the analog value can be represented by ATmega the actual voltage obtained by VOLTAGE_GET / 1024.
+1000 is used to change the unit from V to mV & 10 is a constant as each 10 mV is directly proportional to 1 Celsius in LM35.
+So (5.0 * 1000 / 1024) / 10 = 0.48828125.
+Now connect the Arduino to the PC, open the arduino software and upload the code to the arduino. Now press Ctrl + Shift + M, this will open the serial monitor & you can see your room temperature. Done!
+Written by : Subhadeep Biswas

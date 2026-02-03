@@ -1,0 +1,22 @@
+There are two methods of searching the nLab:
+The built-in search. This is via the search box at the top of every page. The distinguishing characteristics of this search are:
+An external search engine. Most search engines allow you to restrict the search to a single site. The best site to use for the nLab is
+http://ncatlab.org/nlab. The distinguishing characteristics of an external search are:
+Search the nLab using Google:
+Regular expressions are a powerful way of extending search capabilities to take into account that one often wants to search for more than just a set phrase. In a regular expression, certain characters are declared to be “special” and have a particular interpretation (somewhat like TeX with its special catcodes). A special character can always be “escaped” to interpret it as an ordinary character. Thus
+. means “match any single character” but
+\. means “match a period”.
+As Instiki is written in ruby, it uses the ruby version of regular expressions (each language has its own version; the differences are usually minor). The following is based on the list at ruby-doc. It has been condensed slightly to those aspects likely to be of use here:
+?. To match one of these characters, precede it with a backslash. All other characters ordinarily just match themselves unless they are made somehow special by one of the special characters.
+?are treated as regular characters in such a list. You can specify a range using
+a-z. To include a
+-it must come at the start of the list. A
+^at the start negates the list.
+], or a
+abb, and so forth. Similarly,
+catcatcat, and so forth. This will try to match as much as possible; use
+*?to make it match as little as possible.
+abb, but not
+a. This will try to match as much as possible; use
++?to make it match as little as possible.
+}?to make it match as little as possible.

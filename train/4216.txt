@@ -1,0 +1,7 @@
+<language, parallel> An object-oriented, data-parallel superset of ANSI C with synchronous semantics, for the Connection Machine, designed by Thinking Machines, 1987. C* adds a "domain" data type and a selection statement for parallel execution in domains.
+An unimplemented language called "Parallel C" [which one?] influenced the design of C*. Dataparallel-C was based on C*.
+Latest version: 6.x, as of 1993-07-27.
+["C*: An Extended C Language for Data Parallel Programming", J.R. Rose et al, Proc Second Intl Conf on Supercomputing, L.P. Kartashev et al eds, May 1987, pp 2-16].
+["C* Programming Manual", Thinking Machines Corp, 1986].
+Try this search on Wikipedia, OneLook, Google
+Nearby terms: C « C# « (c) « C* » C++ » C+- » C+@

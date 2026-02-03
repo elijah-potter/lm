@@ -1,0 +1,12 @@
+You can connect to any database for which you have connection details, or install the sample schema used in the cue card examples and then establish a connection to it. If you installed the sample schema, you will be able to follow the steps in the cue cards exactly as written. If you work with your own database, you can supply your own values as needed.
+To begin creating a database connection, you will open the Create Database Connection dialog. To open the dialog, choose File New . In the New Gallery, select Connections in the Categories tree and Database Connection in the Items list. Then click OK.
+When you create a database connection, you specify a username and password to authenticate the connection. You may use any valid username and password and connect to any schema.
+However, to follow along with the example in the cue cards, connect to the FOD schema by entering
+fod as the username.
+|Connection Type||Oracle (JDBC)|
+|Username||fod (for example)|
+|Password||manager (for example)|
+|Host Name||localhost (or the name of the host)|
+|JDBC Port||1521 (or the port for your database)|
+|SID||XE (or the SID for your database)|
+Copyright © 1997, 2009, Oracle. All rights reserved.

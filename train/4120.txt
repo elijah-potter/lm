@@ -1,0 +1,51 @@
+Scientists have devised a stealthy and low-cost way to track the internet protocol addresses of tens of thousands of Skype users, and link the information to their online activities such as the sharing of specific files over BitTorrent. The method, which is laid out in a recently published academic paper, works even when Skype …
+What's the betting that
+a few spooks read that paper and thought: oh bother, looks like we'll have to start using technique B soon if they've spotted that one...
+Bye bye Skype
+Just removed Skype from all machines in the house until they can prove its safe to use again
+Why not just remove all software from all machines until it's proven safe to use, it's the only way to be sure...
+> By examining the headers of the data that was returned, they had no trouble determining the person's IP address. Because the scientists prevented a TCP, or transmission control protocol, connection from being fully established
+Unless the skype application uses raw socket operations and its own TCP stack (highly unlikely) then the header information they are getting back is from the underlying OS and not from the skype application.
+Until a TCP connection is fully established, the only information an application can pass on is whether or not it is LISTENING to a socket. All the negotiation in setting up the socket is handled by the OS.
+You can learn some information about the OS by sending malformed TCP packets (eg. have the SYN and RST flags set at the same time). It's response to malformed packets can indicate the underlying OS and perhaps even its patch level.
+In a peer to peer network each peer knows the other peers IP address.
+In other news water is wet.
+The government are going to *love* this...
+making funny jokes about MS and security.
+It is interesting to see if (when) various services (skype, gmail, facebook, twitter, ...) able to map an IP to the real-identity of a user start to sell this info to each other and 3rd parties.
+Just how many more "this would never have happened if we had had the Source Code" moments is it going to take to convince people how bad an idea it is to run software unless its Source Code is available for inspection?
+If the vendors had nothing to hide in their code, they would have nothing to fear from showing us all.
+There should be a law obliging vendors to release source code if they want to do business in the UK, and tough titty if it harms their business model.
+Continues to leave home WIFI access open for the good of the community
+...home WIFI access open for the good of the community...
+...and also for plausible deniability?
+What if you add encryption into the mix?
+I sincerely doubt you're going to be able to track what I or someone else is downloading off BitTorrent from a packet sample.
+In fact, I'd say it's impossible. You might be able to say "Well, this person (who doesn't use their real name in Skype - who'd be that dumb?) is downloading an encrypted file via BitTorrent, and the file is unknown."
+Congratulations, you now know half as much as an ISP.
+I guess the real 'problem' here then, is that Skype tries to use direct connection for its communicatoin instead of routing all calls through a CDN (and that would have to be one hell of a CDN to handle that data.)
+So the attack goes:
+Attacker: "Skype server, where can I contact x for a call?"
+Server: "Here: IP"
+Attacker: "HAHAHAHAHA I PWNED YOU WITH TCP/IP!"
+The whole point of an IP address is that people know what it is, it would kinda break the Internet Tubes if no one knew each others IP.
+PS Dear El Reg, I know you track the IP of my comments - can you please stop invading my personal spaces with your Interweb Servers. Kthxbai.
+PPS: Actual 'attack' I've used once.
+Someone is pingflooding me through MSN (it was a while ago).
+One blank, large, jpeg named 'britneyspears.jpg' was created and sent to them.
+Stupid kid accepted the file.
+One quick netstat later to find his host name (which was someone's name at AOL) and a message "If I call this lady here: [Name] and tell her what you are doing with her internet connection.....what will she say?" and stupid kid vanishes into the air, assumedly to cry.
+This is not new news.
+OMG SKYPE LEEKS MAH NAME
+"In the case of Skype, even if the targeted user is behind a NAT, the attacker can determine the user's public IP address."
+I'm stunned? Yes Stunned. that one can determine a PUBLIC ip address.
+"Even when one of the IP addresses was shared among many users on a single network, the method was able to single link a unique Skype user to a specific download by, among other things, collecting identifiers known as infohashes from BitTorrent networks"
+rhhhm TCP sequence number issues again anyone?
+Done daily in some security departments folks
+«... Through research and development,
+we will continue to make advances in this area and improvements to our software.» There, ducky ; don't you feel ever sooo much better now ?...
+- Geek's Guide to Britain INSIDE GCHQ: Welcome to Cheltenham's cottage industry
+- 'Catastrophic failure' of 3D-printed gun in Oz Police test
+- Game Theory Is the next-gen console war already One?
+- BBC suspends CTO after it wastes £100m on doomed IT system
+- Peak Facebook: British users lose their Liking for Zuck's ad empire

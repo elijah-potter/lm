@@ -1,0 +1,39 @@
+There are several
+topologies suitable for the access network: tree, ring, or bus. A PON can also
+be deployed in redundant configuration as double ring or doubletree; or redundancy
+may be added only to a part of the PON, say the trunk of the tree. For the rest
+of this article, we will focus our attention on the tree topology; however, most
+of the conclusions made are equally relevant to other topologies
+transmissions in a PON are performed between Optical Line Terminal (OLT) and Optical
+Network Units (ONU). Therefore, in the downstream direction (from OLT to ONUs),
+a PON is a point-to-multipoint network, and in the upstream direction it is a
+multipoint-to-point network. The OLT resides in the local exchange (central office),
+connecting the optical access network to an IP, ATM, or SONET backbone. The ONU
+is located either at the curb (FTTC solution), or at the end-user location (FTTH,
+FTTB solutions), and provides broadband voice, data, and video services. In the
+downstream direction, a PON is a P2MP network, and in the upstream direction it
+is a MP2P network.
+The advantages of using
+PONs in subscriber access networks are numerous.
+1. PONs allow for long reach
+between central offices and customer premises, operating at distances over 20km.
+PONs minimizes fiber deployment in both the local exchange office and local loop.
+PONs provides higher bandwidth due to deeper fiber penetration, offering gigabit
+per second solutions.
+4. Operating in the downstream as a broadcast network,
+PONs allow for video broadcasting as either IP video or analog video using a separate
+5. PONs eliminate the necessity to install active multiplexer
+at splitting locations thus relieving network operators
+6. Being optically
+transparent end to end PONs allow upgrades to higher bit rates or additional wavelengths.
+One possible way of separating the channels is to use wavelength
+division multiplexing (WDM) in which each ONU operates at a different wavelength.
+While a simple solution, it remains cost prohibitive for an access network.
+WDM solution would require either tunable receiver or a receiver array at the
+OLT to receive multiple channels. An even more serious problem for network operators
+would be wavelength-specific ONU inventory instead of having just one type of
+ONU, there would be multiple types of ONUs based on their laser wavelength .It
+would also be more problematic for an unqualified user to replace a defective
+ONU. Using tunable lasers in ONUs is too expensive at the current state of technology.
+For these reasons a WDM PON network is not an attractive solution in today's environment.
+You may also like this : EDGE, Holographic Data Storage , Integer Fast Fourier Transform, NRAM, Orthogonal Frequency Division Multiplplexing , Ovonic Unified Memory, 4G Wireless Systems , Daknet, AC Performance Of Nanoelectronics , High Performance DSP Architectures, Millipede , Free Space Laser Communications, Short Message Service (SMS), Conditional Access System , SyncML, Virtual keyboard, High Altitude Aeronautical Platforms, MANET , Smart Fabrics, Dynamic Virtual Private Network, Blue Tooth, Autonomic Computing , Voice Over Internet Protocol, Artificial Neural Network (ANN) , DNA Based Computing, Digital Subscriber Line , Freenet, Access gateways , Free Space Optics, Introduction to the Internet Protocols, High Altitude Aeronautical Platforms, Fiber Distributed Data Interface , Hyper-Threading technology , IMode, Cyberterrorism Adding Intelligence to Internet, Self-Managing Computing, Unified Modeling Language (UML), Socket Programming, SAM, VoCable , ATM with an Eye,Mind Reading Computer, Blue Brain, 6G Wireless, Touch Screens,IT Seminar Reports, PPT and PDF.

@@ -1,0 +1,57 @@
+As defined in the RFC 2350 (Expectations for Computer Security Incident Response), the security incident is any adverse event which compromises some aspect of computer or network security. The definition of an incident may vary between organizations but generally is related to the compromise of confidentiality (i.e. document theft), integrity (i.e. alteration of the database) or availability (i.e. Denial of Service) of data and information.
+Currently, the companies’ approach to cyber-incidents is oriented to business continuity and disaster recovery, to minimize the impact on business processes. In fact, often this approach involves actions that are in opposition to doing a complete digital investigation. The trend is to be reactive and waiting for a security incident to occur then trying to handle it and perform digital investigations, then gathering evidence after the data breach.
+Forensic Readiness could help an organization to simplify its activities of the digital investigation after a data breach so that retrieval of digital evidence becomes easy with reduced issues. Furthermore, digital evidence is appropriately acquired and stored even before an incident occurs, without interruption of operations.
+According to Forensics Readiness Guidelines (NICS, 2011), Forensic Readiness is having an appropriate level of capability in order to be able to preserve, collect, protect and analyze digital evidence so that this evidence can be used effectively: in any legal matters; in security investigations; in disciplinary proceeding; in an employment tribunal; or in a court of law.
+Indeed, the digital forensics should not exclusively be used in a post-incident activity on which investigate, but should be carefully planned in the preparation phase. This approach is very important to increase the possibility of optimizing the time and cost and having good results in a digital investigation.
+The benefits of Forensic Readiness can be summarized in the following points:
+- Minimizing the cost of cyber investigations: the evidence is gathered and acquired in anticipation of an incident, costs and time to respond are minimal, and investigations are efficient and rapidly completed.
+- Quickly determine attack vector: if the Organization had all the probes in the active mode and located in a strategic point, the dynamics of a cyber incident will be easier to detect and understand.
+- Reducing cost for data disclosure: especially when it is required, for example for a bank, having the handy evidence and properly preserved, it possible for it to be easily shown.
+- Restore and eradicate from damage more completely and less time consuming: the post-incident activities could be much optimized with Forensic Readiness, regarding cost, time and effort.
+- Receive insurance discounts: of course, as happens in another environment, if an organization can prove to be ready to respond an incident, the insurance may make a good price.
+Meanwhile, the full or partial lack of Forensic Readiness could be a loss of business (data theft, modification, destruction or system down) and damage to reputation, in particular in the respond phase and to keep the cyber incident under control. In addition, could be a loss of revenue, clients and negative consequences of regulation and law.
+Therefore, the Forensic Readiness corresponds with the phase of preparation within the digital investigation process.
+Organization cannot plan a Forensics Readiness when the cyber incident is going to happen, but they must put them in the condition to be prepared when it does. Being prepared means that it should create and maintain the conditions that enable you to respond timely and effectively to any data breach.
+In the prepare phase for cyber incidents, should be considered all aspects of People, Processes, and Technology.
+As described in the Forensics Readiness Guidelines (NICS, 2011), a good checklist to assess an organization’s Forensic Readiness capability may look as follows
+Policies and Procedures
+An Organization should have a set of policies and procedures, which contains high-level principles, rules, guidelines and best practices to handle the cyber incident, also regarding the user’s data of internal employee and collaborators. All these documents should be formalized and made official, to put them into the daily practice of all stakeholders that are involved in the incident management process.
+In these policies and procedures should be clearly defined what approvals are needed before investigators can start gathering evidence about an employee and a potential future investigation of a dismissed employee, and it should be defined a digital evidence preservation policy with particular reference to time and place.
+Legal & Public Relations
+The legal department of Organization should have the right experience in laws and applicable regulations on cybercrime and privacy, in particular, those regarding the involved country.
+It is very important to define in the incident handling plan, a suitable procedure for internal and external communication with recipients and methods, in the case of a data breach: for example, when and how to inform payment card issuers or law enforcement.
+Incident Tracking & Risk Decisions
+An incident management based on the ticket should be implemented, to track every status of a cyber incident and involved stakeholder. It is also important to define the baseline of an incident and prioritize the action, in relation to the focus on confidentiality, integrity, and availability of data.
+This topic is considered when an organization is present in more country, with different law and regulations. It is essential to proceed with the forensic investigation also according to regulatory requirements of the current country, especially to the transport of data and information.
+Asset inventory and Enterprise Documentation Review
+An organization that does not know where its assets are will find it exceedingly difficult to handle a cyber incident and keep under control the amount of time and cost required.
+The organization should document all assets in its environment, including sensitive information, critical servers, network diagrams and topology, backup of configurations and data. It is important to maintain the asset inventory as a living document that should be updated as an organization changes, especially for the new and obsolete asset.
+In the resources, should be documented:
+- internal and external IP address space
+- IP space for different clients, like customers and partners
+- DHCP history and IP related release log
+- NAT table, used in the network, with the address translation logs
+Information gathering points
+Most cyber incidents are detected with the security probe, set in the strategic points that are even very important for investigation.
+An organization should have:
+- Network sniffer in every smart place of network infrastructure
+- Network span port, to collect and analyze all passed traffic, without decrease the continuity of performance
+- Monitoring all outbound and inbound traffic to and from the Internet, it would be nice to have the decryption of network traffic.
+Auditing & Logging Review
+All systems, and particularly the critical assets, should have the synchronized time clock with the same source and with the same format (i.e. UTC). This is to have a proper and realistic timeline of events in the forensic investigation.
+Should be clearly and properly defined a log management process, in term of retention, rotation, central and local location, hashing fingerprint and encryption of them.
+Infrastructure & Tools
+The forensics analysts and incident response team should test the efficiency and effectiveness of the tools, in particular:
+- Mobile Devices
+- USB storage and secure storage area
+- Virtual environment with sandboxes and segregated network
+- Devices with specific operating systems
+Ethical Hacking Training – Resources (InfoSec)
+Training & Education
+Training and education play a fundamental role in digital investigation and forensic analysis. Organizations should have a technical support staff, trained to identify an incident and report it in a proper way. Furthermore, the certifications are important to demonstrate that the team has the know-how in the digital forensic field. Finally, the training and education plan should be updated on new technologies and new techniques of digital investigations.
+The Organizations should have established an emergency contact list for third-party providers, such as ISPs, and direct contacts with the local law enforcement. Furthermore, an external skilled team of expert should be ready, in case of a particular digital investigation.
+A digital investigation and forensic analysis are commonly performed as a post-incident activity, though in many situations an organization may benefit from an ability and capability to acquire and preserve digital evidence before an incident happens.
+Having a forensic readiness procedure in place ensures that the required digital evidence, it will be readily available and in an acceptable form for the digital investigation and notification.
+Forensic readiness planning should be part of the information risk management area because the risk about incident handling process should be identified and mitigated. Furthermore, measures should be taken to avoid and minimize the impact of such risk.
+Finally, it is very important to approach the cyber incident management in a forensics readiness way, even against possible repercussions, legal and business, following data breach.
+- NICS, Forensics Readiness Guidelines, 2011

@@ -1,0 +1,44 @@
+This brief tutorial shows students and new users how to use the mv command in Ubuntu to to move or rename files and directories…
+On Linux systems, including Ubuntu the mv command can be used to move or rename files and directory… It is also commonly used when creating a back up of existing files and folders..
+If you’re a student or new user looking for a Linux system to start learning on, the easiest place to start is Ubuntu Linux OS…. It’s a great Linux operating system for beginners and folks looking for easier Linux distribution to use..
+Ubuntu is an open source Linux operating systems that runs on desktops, laptops, server and other devices…
+When using Ubuntu, you will find that Linux isn’t so different than Windows and other operating systems in so many ways, especially when it comes to using the system to get work done.…
+Both Ubuntu and Windows systems allow you to be productive, easy to use, reliable and enable you to install and run thousands of programs from gaming to productivity suite software for individuals and businesses..
+This tutorial is going to show you how…..
+When you’re ready to learn how to use the mv commands, follow the guide below:
+About mv command:
+The mv command moves or renames files and folders on Linux systems, including Ubuntu.. If you use the -b or –backup options, the mv will rename the destination file if it exists, appending a suffix to its file name.. this prevents overwriting existing files..
+Syntax is the rule and format of how the mv command can be used… These syntax options can be reordered, but a straight format must be followed.,.
+Below is an example syntax of how to use the mv command….
+mv [OPTION]… [-T] SOURCE DESTINATION
+mv [OPTION]… SOURCE… DIRECTORY
+The command line options are switches or flags that determined how the commands are executed or controlled… they modify the behavior of the commands… they are separated by spaces and followed after the commands…
+Below are some options of the mv command:
+|SOURCE||Replace SOURCE with the source of the file or folder|
+|DESTINATION||Replace DESTINATION with the destination of the file or folder|
+|–backup[=CONTROL]||If you use the -backup option, mv make a backup of each existing destination file|
+|-b||Use the -b mv behaves like –backup but does not accept an argument|
+|-f, –force||Use the -f or –force, mv does not prompt before overwriting existing content|
+|-i, –interactive||The -i or —interactive option, mv prompts before overwriting exiting content|
+|–help||Display a help message and exit.|
+If you use the -b or –backup options, mv will rename the destination file if it exists, appending a suffix to its file name. This saves a copy of the original file instead of overwriting it..
+For example, if you want to rename a file called myfile.txt to myprivate.txt, simply run the commands below:
+mv myfile.txt myprivate.txt
+The command above moves or deletes myfile.txt and create a new file with content called myprivate.txt
+If you wish to move myfile.txt into a different directory in your home folder called private, simply run the commands below:
+mv myfile.txt /home/private
+The command above moves myfile.txt into the specified directory called private inside your home folder…
+Use the -f option, forces the mv command to overwrite existing file with same name in the destination without prompted..
+mv -f myfile.txt /home/private
+When you use the -i option, the mv command prompts before overwriting exiting files with same name..
+mv -i myfile.txt /home/private/
+If there’s already a file called myfile.txt inside the /home/private directory, a prompt is given:
+Output: mv: overwrite '/home/private/myfile.txt'? Entering "y", "yes", "Yes", or "Y" will result in the file being overwritten
+When you use the -b or –backup option, the mv command makes a copy of existing file…
+mv -b myfile.txt /home/private
+If myfile.txt exists in the /home/private, the exiting copy will be renamed to
+For moving directories, simply provide the source directory and the destination:
+mv secrets /home/secrets
+There are many more complex option you can use with the mv commands, but the few above will get you started with how to use the mv command on Ubuntu..
+This post shows you how to use the mv command on Ubuntu to move or renew files and directories.. If you find any error above, please comment below to alert us..
+You may also like the post below:

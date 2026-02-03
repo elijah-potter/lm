@@ -1,0 +1,31 @@
+For the next few weeks we are focusing on coding to make a shape that is going to be 3D printed. We have started off with the different ways to make a certain shape. I started off with a nonagon and I coded it to draw a nonagon. A nonagon has 9 sides. We are using an app called beetle blocks. Beetle blocks lets you look around the shape that you’ve made so it will look 3D.
+Here is a photo and an explanation of the code.
+This is the X axis. The X axis is flat going side to side not built up.
+Something I found interesting was the green operator block. I thought you had to put in the code turns and forwards but you can just put in a rotate Z with a division operator block to make a nonagon.
+The first block means to start drawing when the flag is clicked.
+The second block means repeat the code below 5 times to make it a full shape the nonagon.
+The third block means start drawing the lines.
+The fourth line means move 5 steps forward to make each edge of the shape equal.
+The last block means that 360 degrees equals a whole shape but 9 means a shape with 9 sides.
+Then I made a flower like shape. Here is a photo and exlplanation of my code.
+Then we went on with making the shape build up to Z position. Z position is the height of it. I have done it like this.
+This goes up the Z axis. The Z axis goes up so if I am gong to print this (which I won’t) it will be built up.
+It is very important when coding that you show the X Z or Y position because then it wont be built up if in z position
+The second block means repeat the code below 111 times.
+The third block means to start drawing the lines. There is other options like curves but I want it to be a line that isn’t curved.
+The fourth block means to repeat the code below in the grey repeat area 12 times.
+The fifth block means to make each edge three steps long.
+The sixth block means to make the shape with 9 sides.
+The seventh block means to stop drawing the lines.
+The eighth block means to put the animal that draws the shape into Z position.
+This is the operator block. It has a 360 because it means that it will be one whole shape. The 9 means to make a shape that has 9 sides which is a nonagon.
+Now Mrs Watson has challenged us to make a cool pattern on turtle art. Turtle art is different o beetle blocks because it isn’t 3D but the coding is alike. I set the background colour to 100 which is black and then made the pattern. I put an arc block to make it curve around. I repeated it 50 times and it made this pattern.
+Mrs Watson sent us a colour chart for turtle art. It tells you when you want to make a shape and what colour you want it to be.
+As you can see if I wanted it to be green I would type in 29 so it will become green.
+Then I made a squiggly pattern across my screen. I set the background colour to 100 again and set the colour and then set the pen size to 10.
+After I made that purple squiggly lines I made a rainbow type. The changes I made was I put in after the set colour an add sign and added 10 which makes it change the colour by 10 so that it can be a rainbow.
+The last 3 images of coding all were the same project except I just kept adding and adding different bits of code.
+Now I am going to make a line with a circle on the end and repeat it 10 times. Here is a photo.
+I have set the pen size to 15 and I filled the screen in with a blue. Then I set the shape colour to a lighter blue. Then I coded it to go forward 100, then right 90, then I put an arc block on to make a circle. I put the numbers as -360 because I wanted it to be on top of the line, then I put the 100 as the radius to make the circle smaller. Then I put a right turn 45 so it can turn to repeat again and made 9 more.
+I have really enjoyed these weeks of design. I liked finding different ways to make the squiggly pattern I made and putting different colours in.
+By Fidel Seignior.

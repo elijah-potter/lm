@@ -1,0 +1,3 @@
+|Documentation: Pointers to architecture-specific documentation|
+Also known as i386 or x86, the most common ISA on desktop machines for historical reasons. Recent implementations have many sophisticated features such as deep pipelines with out of order execution and good branch prediction.
+The SPARC is a reduced instruction set architecture whose origins go back to the early work on RISC at Berkeley. Its original features include register windows and support for tagged arithmetic. Recent members of the family are 64 bit. Most SPARCS now have deep pipelines, but are in order.

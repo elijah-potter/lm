@@ -1,0 +1,45 @@
+In this tutorial we will use a broken egg as a base of bird. The creation of egg would be very simple but lengthy. So, please refer to this page for learning-Create 3d broken twitter egg. And those who knew how to create and break egg please proceed ahead.
+- Tools used: Photoshop CS
+- Duration: 30 minutes (approx.)
+- Difficulty: Intermediate (Basic commands must be known)
+This is what we will be creating.
+The first step is preparing new Photoshop document. Open a new document of any size you want. I’m working on a new one in size of 512px x 512px with RGB mode.
+Step 2: Egg shape
+One you have created egg shape in your document. It should look like this. As I told at the beginning, please refer to the tutorial mentioned above for learning how to create broken egg shape.
+Next, we need to cut the egg into egg. So to do so take Lasso tool and cut it like this. You don’t have to be specific, cut as you want. And after cutting name it “egg-front”.This is what broken egg will look like.
+Now, to make it looks more realistic we will add 3d look. Duplicate “egg-front” layer and place “egg-front copy” layer below the “egg-front” layer and apply color-overlay of dark blue
+#1d90a7. Press “up” arrow key once to move it little bit upward. Then name it edd-front copy to egg-front 3d.
+We will repeat the same process “Step4″ with one more egg to make egg look hollow, and name it “egg-back”. Consider the lighting here. The inner part of “egg-back” will be dark blue and other part “egg-back 3d” will be lighter. Here is the image look like-
+Step 6: Create the Twitter bird:
+Set foreground color to
+#67ddf7. And take Ellipse tool with “shape layer” selected, then draw a oval shape behind the egg-front.
+Once you drew oval shape, press “A” to select direct slection tool. Then add nodes as shown in image below. And change the shape according to the following images. Just drag little bit. The result may vary.
+The final bird shape will look like this after tweeking shape. If you get different style, don’t worry, your bird will look great too. This image is showing bird how it created.
+Once you done tweaking, just rasterize layer. And the final bird which we can’t tweak furthur will look like this-
+Now let’s add “life” to bird. We need some shadows and lightings to remove its flatness. To add shadow and highlight I used the “Burn and dodge tool”. Considering light coming from right. Set brush size to someting 50-60 px and look in the following image and apply burn and dodge tool to area shown below-
+After applying burn and dodge. The bird will look like this.
+Now take a pen tool with 3px white hard brush and draw a line like this and add stroke. Remember to check stimulate path.
+Ok, we have successfully completed the bird base. Lets add cute face to the bird. First, we will draw a eyebrow. Select pen tool with brush set to 3px and shape dynamics:- control set to Fade. See image below for brush setting-
+Once you set the brush. With pen tool, draw small line and add stroke to it and name “Eyebrow”. After creating one eyebrow duplicate eyebrow layer then go to Edit => Transform => Flip Horizontal. And then press right arrow key to move it little right to create both eyebrows.
+Step 14: Create eyes of the bird.
+To create eye, first, draw a cicle shape using ellipse tool and with direct selection tool, draw eye. We performed this action in “Step 7″. After creating eye shape fill color
+#ffffff and add 1px stroke to it of color
+#138ebf. This becomes bird’s sclera. You can name it “Sclera”.
+Step 15: Create pupil
+To create pupil first select sclera by holding ctrl and clicking on sclera layer thumbnail. And then with elliptical marquee tool and intersect with selection selected create a circle. Follow the image below-
+Above image showing that we have created pupil. Now in layer fill it with black color. And here is final pupil of the bird.
+Step 16: Optional step
+Well, this is optional if you want to play more with eyes. I added gray color by 5px brush in center of pupil and added small white color stroke above it to create some reflection. I took a 1px hard white brush and with pen tool drew line and then added stroke to it to add reflexion.Layer named “reflextion”. Here is final eye.
+Now to create second eye we will simply merge the sclera-relextion layer and then duplcate it and press right arrow key to move it right. Set it below second eyebrow. Here is how both eye looks.
+Now lets add beak/nose to bird. I’m using pen tool. First, create beak shape like this with color fill –
+After creating shape we can see the beak is looking little flat. So we will use dodge and burn tool again to add life to it.
+Take dodge tool and some highlight to area inside the pink line. And apply burn tool to remaining part of beak. See image below, what I mean.
+The result after applying dodge and burn tool is -
+Now take a pen tool with brush set to 3px and draw line and add stroke to it. Color #ffffff. I added more detail to bird adding nostrils by creating very small circles using ellipse tool. I’m using ellipse tool cause I wanted dots to look clear.
+Final image after adding line and nostrils we will have something like this-
+Now, write ” Follow Me ” text above the egg-front layer. I use “Duepuntozero black” font you can find it free at dafont or you can use any other font. Set color overlay –
+#1193ae and inner- shadow ->
+Final image after adding style to text.
+Now final step add shadow below the egg.To do so first take ellipse tool and create circle below the egg shape. Remember:- Distance of shadow from egg makes egg look floating in air.
+Now add gaussian blur to it of value- 11px.
+Thats it here is our final image again-

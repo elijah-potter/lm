@@ -1,0 +1,9 @@
+My top margin is missing
+When you open a document, is the insertion point at the top left corner of the page, as if there were no top margin?
+If you're reading the document in Print Layout view and all of the pages appear to be cut off, with no top or bottom margin, the option for hiding white space between pages has been turned on.
+If the top and bottom margins are not showing, you can restore them by pointing and clicking in the document, or by using the View tab.
+To use the View tab to show white space between pages, do the following:
+- On the View tab, in the Document Views group, click Print Layout.
+- Click the Microsoft Office Button , and then click Word Options.
+- Click Display.
+- Under Page display options, select the Show white space between pages in Print Layout view check box.

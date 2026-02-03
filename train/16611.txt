@@ -1,0 +1,77 @@
+What are ‘in-camera’ filters? These are filters (or things) that come between the sensor and lens mount, and are usually housed inside the camera body (except for one special case). Understanding these filters is the first step in maximizing the potential of your camera, for better images.
+If you’re looking for lens filters, head over to The Complete Guide to Lens Filters.
+We can broadly divide in-camera filters into two groups:
+- Those that are needed to get the sensor to work to its full potential.
+- Those that are needed for creative control (like lens filters).
+The filters between a CMOS sensor and the lens mount
+The filters that are needed to get the sensor to work properly usually remove things, just like a water or dust filter would. Here’s a visualization of how light falls on the sensor:
+Let’s take it one step at a time. Light falls through the lens mount to the first set of filters. This is stage 1 in the above image. In this stage, we have three filters:
+- Optical Low-pass filter (OLPF)
+- Piezoelectric element
+This is what you see when you look at a sensor through the lens mount. Whenever a sensor is exposed to the elements, it is in danger of getting ‘attacked’ by dust and particles that have no business inside a camera body.
+Coatings (just like lens coatings or a layer of varnish) protect whatever comes after it and also helps in dust reduction by not allowing it to stick.
+Optical low-pass filter (OLPF)
+To understand this filter you’ll need to first understand sampling and Aliasing. Then, you’ll know that the camera sensor is a stack of samplers that sample light (photons), its intensity, its frequency (or wavelength, color), etc.
+Primarily, the sensor has a fixed number of sensels (To know what sensels are, read the section below about the sensor) and if it is given more to sample that it can, you will see aliasing in the image. The OLPF has the unenvious task of eliminating important frequencies that the sensor isn’t capable of resolving. These frequencies are not color frequencies (or wavelengths) but spatial frequencies.
+The spatial frequency limit of a sensor is determined (to a certain extent) by the Shannon-Nyquist limit. Any frequencies below this limit (low frequencies) are allowed to pass (hence the word ‘low-pass’). And because what we are passing is light, this filter is called an optical low-pass filter.
+There are some who believe an OLPF is only required if we have a Bayer sensor. That is not true. Aliasing will occur on every sensor.
+On some modern cameras, you’ll see that OLPFs are absent. Some camera manufacturers don’t deem it necessary to add an OLPF simply because they know the aliasing is negligible, within certain tolerances. Yet, under certain conditions, these cameras also display aliasing. It’s unavoidable.
+All said and done, an OLPF reduces (not eliminates) aliasing, but at the cost of resolution.
+The piezoelectric element is a vibrator. When it vibrates, dust is supposed to fall off the coatings so it can be cleaned. When there is too much dust, manual cleaning is the only alternative.
+Let’s sum up stage 1. It is obvious that it only has one major element, the OLPF, while the other two elements are support functions to ensure the OLPF performs smoothly.
+Stage 2 – the IR filter
+Light is electromagnetic radiation. It has both Ultraviolet (UV) and Infrared (IR) parts. Modern sensors are not very sensitive to UV radiation, but are definitely sensitive to IR radiation.
+The purpose of the IR filter is to eliminate IR radiation that produces color casts in the image. If a UV filter is required, this stage will also include it. Those who are interested in IR photography or cinematography will need to find a way to take this filter off.
+Stage 3 – another optical low-pass filter
+Why do we need two of these things? Remember how I said an OLPF is a spatial filter? The first OLPF might filter in the horizontal direction while the second filters in the vertical direction. This is because pixels are divided into rows and columns, and sampling happens both horizontally and vertically.
+The modern Fuji X-trans sensor supposedly uses an angular pixel orientation that they believe renders it unncessary to have an OLPF. Yet, you’ll find many examples of aliasing and moire on Fuji X-trans sensor cameras.
+Some manufacturers are not able to make up their minds, so they introduce two models, like the Nikon D800 and D800E. The D800E actually has two OLPFs! The first one filters frequencies, while the second one negates the effect of the first. The Blackmagic Pocket Cinema Camera does not have an OLPF.
+In stage 4, light (photons) is focused on to the sensels for maximum efficiency. This stage has the following elements:
+- Micro lenses
+- Color Filter Array (CFA)
+- The sensor
+These are tiny lenses that focus photons on to the sensor, for maximum efficiency.
+Color Filter Array (CFA)
+This is a Bayer pattern filter that comes in different configurations, depending on the sensor and manufacturer. One thing they all have in common is that greens are more represented than either blue or red. Here’s an example of the simple Bayer sensor pattern:
+To learn more about how a Bayer pattern is converted into RAW, read Deconstructing RAW.
+A sensor is itself a kind of filter. It collects photons and converts them into electricity. The layout of the sensor is arranged ‘pixel-like’, so, in a way you could say the sensor samples light horizontally and vertically.
+A camera sensor is not a simple circuit or construction. There’s a lot of electronics under the hood, just like what you see under a car hood. Therefore, instead of calling each ‘box’ a pixel (because it can be confused with display pixels), some people combine the word ‘sensor’ and ‘pixel’ to call it sensel. Not everyone uses this term, mind you, but it does have the connotation that the end result of the operation is a pixel, but it’s not as simple as monitor pixels are.
+In stage 5, analog electrical signals are collected, sampled and encoded into a digital file, that which we call a RAW file. The system that does this contains an ADC (Analog to Digital Convertor, might also include an amplifier), Processor (circuitry that does the calculations, like a mini-computer), Firmware (intelligent program that does the math and encodes the results to a digital format) and temporary storage or Buffer (for the sensor readout). Of course, all this generates a lot of heat, so it also needs a heat sink.
+Now you know how each element in the chain is actually a filter that eliminates something – spatial frequencies, radiation, color, photons, analog signals, even heat, and so on.
+In-camera filters for creative control
+You can do many things after stage 5 (like adding effects, encoding, streaming, picture profiles, etc.) via in-camera processing. Here, we are only concerned with those filters that are applied before light hits the sensor, namely:
+- Time or temporal filters, electronic shutters, etc.
+- The ND filter
+The Time Filter and Electronic Shutters
+I won’t be covering electronic shutters. To know how the shutter works, read Rolling Shutter and Global Shutter.
+So, what is a time filter? A company called Tessive invented this kind of filter. In their own words:
+When panning, the background judders. Wheels appear to spin backwards, picket fences and brick walls jump across the screen, and helicopter blades look, well, just wrong. For a century, it’s just been accepted that motion imaging would simply do these things, and there was nothing that could be done to fix it.
+Tessive has an answer to this: the Tessive Time Filter. It is an entirely new way to represent motion in existing digital motion picture cameras. It’s a global liquid crystal shutter that is placed in front of the lens and is synchronized with frame acquisition.
+The Time Filter dramatically changes the look and feel of motion in-camera, recording the natural fluidity of the real world without loss of sharpness.
+The Time Filter improves any motion and in all cases will result in a cleaner, more organic scene. It is especially useful for:
+1. Fixing judder in pans.
+2. Correcting repeating motion, such as wheels, fences, and aircraft propellers.
+3. Eliminating flicker from lighting, regardless of frame rate or line frequency.
+4. Virtually eliminating flicker on plasma or CRT displays.
+5. Reducing striping or tearing artifacts from uncontrolled strobes and flashes.
+6. Rendering human movement more accurately and flowingly.
+Here’s a video on how it works:
+If you want a more technical explanation, watch this:
+Tessive initially sold the time filter for Red and Arri cameras, but has stopped selling them. Curiously, at around the same time, Red announced their RED Motion Mount:
+Are there other time filters? Not really. It is strange, because the math behind it has been around for a long time. In Tessive’s words:
+Why hasn’t someone done this before? When you explain what it is, it seems really simple and obvious.
+Sure beats us! But nobody has. This is actually derived from some very straightforward math, well understood and applied in many other fields. All we can figure is that nobody ever thought of a motion picture camera like this, or if they did, they didn’t make the connection. In the defense of everyone else in the world who has ever made a movie camera, the math for this didn’t really get polished up until 1949, and the technology to implement it nicely didn’t exist until later. Also, when you’re immersed in a field that’s been doing things the same way for years, it’s hard to see that there’s something wrong.
+The in-camera ND Filter
+An in-camer ND filter is extremely useful, depending on the quality of the ND and the number of stops you can reduce.
+Lower-priced DSLRs and the Blackmagic Cinema Cameras don’t have in-built ND filters. Here are some examples of ND filters in cameras:
+|In-built ND Filter?|
+|FS700||2, 4, or 6 stops|
+|C100/C300/C500||2, 4, or 6 stops|
+|F5/F55||3 or 6 stops|
+|Red Epic/Scarlet||Only with Motion Mount (1 to 8 stops)|
+|Arri Alexa XT||From 1 to 8 stops|
+|Sony F65||3, 4, 5 and 6 stops, with the Rotary Shutter|
+In-camera ND filters have the advantage of being specifically calibrated for the sensor used, so you don’t have to worry about things like IR pollution, etc. And, you can’t beat the convenience of pushing a button to switch on or switch off an ND filter.
+That’s it for in-camera filters. You can understand why cheaper camera systems like the Blackmagic Cinema Cameras don’t have OLPFs or internal ND filters – these are expensive to design, calibrate and fabricate. But there’s nothing wrong in this, it’s simply their business model. It’s one of the big reasons why the camera can cost $995 and $1,995. Compare it to Arri’s design, and Red’s Motion Mount (which costs $4,500!).
+All said and done, there’s nothing much you can do once you have selected a camera. You use what you get. But knowing the intricacies of what happens inside will help you choose the right camera in the first place, and then use it to your best advantage.
+That’s how this game should be played.

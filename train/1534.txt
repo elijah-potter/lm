@@ -1,0 +1,24 @@
+Next: Common Underpinnings
+Up: Extensible Security Architectures for
+Previous: Security in Java
+We now present three different strategies for resolving the inflexibility
+of the Java sandbox model. All three strategies assume the presence
+of digital signatures to identify what principal is responsible
+for the program. This principal is mapped to a security policy. After
+that, we have identified three different ways to enforce the policy:
+- A number of traditional operating systems were based
+on unforgeable pointers which could be safely given to user code.
+Java provides a perfect environment for implementing capabilities.
+- Extended stack introspection
+- The current Java method of
+inspecting the stack for unprivileged code can be extended to include
+principals on the call stack.
+- Name space management
+- An interesting property of dynamic loading is
+the ability to create an environment where different applets see different
+classes with the same names. By restricting an applet's name space,
+we can limit its activities.
+In this section, we will focus on how each method implements
+interposition of protective code between potentially dangerous
+primitives and untrusted code. In section 4, we will
+compare these systems against a number of security-relevant criteria.

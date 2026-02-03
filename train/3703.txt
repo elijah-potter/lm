@@ -1,0 +1,34 @@
+Hi Tiger, welcome to the forums.
+If you need an introduction to variables, try here
+Basically, 'solve for
+' means 'rearrange the equation so that
+ends up on its own on the left hand side (LHS) of the equals sign and everything else is on the right hand side (RHS)'.
+The rule is that whatever operations (addition, subtraction, multiplication, division, etc.) you perform on one side of the equation, you must also perform on the other. By doing so, the equation remains balanced, that is, the LHS remains equal to the RHS.
+So, since we need to get
+on the LHS, we need to see what we have to 'undo' on the RHS to make it disappear from there. And because whatever we do on one side, we must also do on the other, the
+will appear on the LHS once we've done it.
+Looking at the RHS, we see that
+is being divided
+, so to 'undo' the division, we must multiply
+. This is because if you divide by a number and then multiply by the same number (or multiply by a number and then divide by the same number), you end up where you started, as if the multiplication and division hadn't been performed at all.
+So, we multiply both
+On the RHS, we can now cancel the
+Which, when cleaned up, leaves us with:
+Now we have
+on the LHS, but
+is there, too.
+What operation would we need to perform to allow us to cancel out the
+on the LHS? Well, if
+in the first place, it must be divided
+to undo that multiplication.
+So, remembering that whatever we do on one side of the equation we must also do on the other to keep it balanced, we divide both sides by
+We can now cancel the
+s on the LHS:
+Which leaves us with:
+We have now isolated
+on the LHS (we have 'solved for
+'), so we're done.
+As for lining up equations, on the web, two or more spaces together will normally be replaced with a single space. To avoid this happening on this forum, however, you can place your equation between 'preformatted' tags ('pre' for short), like this (note the square brackets [ ], and the forward slash, /, in the closing tag):
+- Code: Select all
+I = 100m
+The 'pre' tags won't get printed, but whatever is between them will. You may not get it lined up correctly first time, so just preview and re-edit as many times as you need to before you submit your post.

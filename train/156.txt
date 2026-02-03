@@ -1,0 +1,9 @@
+You are browsing the web and suddenly come across a page that displays numbers
+instead of letters? You see four numbers inside a little box instead of letters? Well then you might just be missing a Unicode font. Here is a simple fix.
+Those four numbers inside the little box are the hexadecimal code for the letter. If you have not got the font that translates those four numbers into a character or glyph you will only be able to see the number.
+Here you can find a list of all Unicode fonts as well as a comparison of those Unicode fonts.
+Having a look at the list, "GNU Unifont" clearly stands out with 63,446 characters 63,449 glyphs. As the name already suggests GNU Unifont is free to use and to download. You can get the GNU Unifont for Mac and Windows from here. Download the WinZip archive for Mac or Windows, it is 3MB in file size.
+Once downloaded simply unzip the file and copy it to your systems fonts folder.
+If you have trouble with that have a look here for Windows 7 users and here for Windows XP users. Basically in Windows the fonts are located at c:\windows\fonts.
+Mac users can check this out to install the font.
+Additionally here is a link to the Unicode 6.0 Character Code Charts.

@@ -1,0 +1,37 @@
+Inputs in Python 3 - input replaces raw_input
+Python 3 - What is new, what's changed and why example from a Well House Consultants training course
+More on Python 3 - What is new, what's changed and why [link]
+Source code: input_3.py Module: Y300
+print ("A program to add up some ages")
+name = input("What is your name? ")
+age1 = int(input("How old are you? "))
+age2 = int(input("How old is your partner? "))
+print ("Between you,",name,", you are",age1+age2,"years old")
+Learn about this subject
+This module and example are covered on the following public courses:
+* Learning to program in Python
+* Python Programming
+* Intermediate Python
+Also available on on site courses for larger groups
+Books covering this topic
+Yes. We have over 700 books in our library. Books covering Python are listed here and when you've selected a relevant book we'll link you on to Amazon to order.
+This example comes from our "Python 3 - What is new, what's changed and why" training module. You'll find a description of the topic and some other closely related examples on the "Python 3 - What is new, what's changed and why" module index page.
+Full description of the source code
+You can learn more about this example on the training courses listed on this page, on which you'll be given a full set of training notes.
+Many other training modules are available for download (for limited use) from our download centre under an Open Training Notes License.
+• Our Solutions centre provides a number of longer technical articles.
+• Our Opentalk forum archive provides a question and answer centre.
+• The Horse's mouth provides a daily tip or thought.
+• Further resources are available via the resources centre.
+• All of these resources can be searched through through our search engine
+• And there's a global index here.
+Purpose of this website
+This is a sample program, class demonstration or answer from a training course. It's main purpose is to provide an after-course service to customers who have attended our public private or on site courses, but the examples are made generally available under conditions described below.
+Web site author
+This web site is written and maintained by Well House Consultants.
+Conditions of use
+Past attendees on our training courses are welcome to use individual examples in the course of their programming, but must check the examples they use to ensure that they are suitable for their job. Remember that some of our examples show you how not to do things - check in your notes. Well House Consultants take no responsibility for the suitability of these example programs to customer's needs.
+This program is copyright Well House Consultants Ltd. You are forbidden from using it for running your own training courses without our prior written permission. See our page on courseware provision for more details.
+Any of our images within this code may NOT be reused on a public URL without our prior permission. For Bona Fide personal use, we will often grant you permission provided that you provide a link back. Commercial use on a website will incur a license fee for each image used - details on request.
+PH: 01144 1225 708225 • FAX: 01144 1225 793803 • EMAIL: email@example.com • WEB: http://www.wellho.net • SKYPE: wellho
+PAGE: http://www.wellho.net/resources/ex.php4 • PAGE BUILT: Sun Jan 31 13:04:01 2016 • BUILD SYSTEM: WomanWithCat

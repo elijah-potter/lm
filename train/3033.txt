@@ -1,0 +1,40 @@
+|Category||Postal administration unit|
+|Found in||Postcode areas|
+|Number||~1,500 (as of 2013)|
+A post town is a required part of all postal addresses in the United Kingdom, and a basic unit of the postal delivery system.1 Including the correct post town in the address increases the chances of a letter or parcel being delivered on time. Post towns are usually based upon the location of delivery offices. Currently their main function is to distinguish between locality or street names in addresses not including a postcode.2
+There are approximately 1,500 post towns which are organised at the convenience of the Royal Mail. Each post town usually corresponds to one or more postal districts and each post town can cover an area including many individual towns and villages. Post towns rarely correspond to political boundaries and often group places that for all other purposes are quite separate.
+In some places several post towns correspond to a single postal district with each post town covering one or more postcode sectors. There are anomalous examples where post towns and postcodes do not coincide. For example, the postcode sector EH14 5 is within three post towns: Juniper Green, Currie and Balerno, while Balerno is also within other sectors, such as EH14 7.
+The Royal Mail states that the post town must be included on all items and should be printed in capitals.3
+- 1 Vallance Road
+- E2 1AA
+The system means that some addresses will have post towns that correspond to a place nearby, or cover a very large area. The use of postcodes means that it is no longer necessary to include the former postal county in a postal address. Some post towns, known as special post towns, never required the inclusion of a postal county, either because the town was large or because it gave its name to the county.
+In some places, additional locality information such as a village or suburb name is added above the post town giving a more specific location.
+Where this is a required part of the official postal address, Royal Mail terms this the "dependent locality". In a limited number of places a "double dependent locality" line is also required, preceding the dependent locality line.
+Locality information other than the post town is not always part of the official postal address. In particular, within the London post town, each postcode district name corresponds to a numbered postcode district and is therefore not required in the postal address if the postcode is present. For example, "Bethnal Green" is the name of the "E2" postcode district and is optional in the following address:
+- 1 Vallance Road
+- Bethnal Green
+- E2 1AA
+If no valid postcode is provided, or if the sorting machine rejects the letter, the use of optional locality or county information may assist manual sorting. Whether optional or part of the official postal address, locality details help to relate postal addresses to local placenames. In the absence of a full valid postcode, they may prevent ambiguity where there is more than one street with the same name covered by a post town or postcode district, or where post towns in different counties have the same name.
+Traditionally, where a place such as a village was served by a post town entirely distinct from its location, the word "Via" or "Near" ("Nr.") was added before the post town. For example:
+- 1 High Street
+- Via London
+- E4 1AA
+However, the Royal Mail discourages this usage1 because their optical character recognition technology and Mailsort lookup tables check for the post town at the beginning of a line if the postcode is missing, unreadable or incorrect. Additionally, "Near" and "Nr." can be confused with "North".
+Post town names are unique within each former postal county and each postcode area. But across the UK, some post towns have identical or similar names. For Mailsort purposes, post towns in unpostcoded addresses can be pre-sorted only if the first 10 characters of the post town name correspond unambiguously to only one post town. In addition, the following post towns cover such large locations or have shared sorting routes that the town name is insufficient for determining the relevant delivery area without reference to the postcode or further locality information:
+- BARNSLEY (S)
+- BELFAST (BT)
+- BIRMINGHAM (B)
+- CARDIFF (CF)
+- CHESTERFIELD (S)
+- GLASGOW (G)
+- LEEDS (LS)
+- LONDON (E, EC, N, NW, SE, SW, W, WC)
+- MANCHESTER (M)
+- MANSFIELD (NG)
+- NOTTINGHAM (NG)
+- REDDITCH (B)
+- SALFORD (M)
+- SHEFFIELD (S)
+- Royal Mail, Address Management Guide, (2004)
+- "REVIEW OF ROYAL MAIL’S LICENCE CONDITION 20 – POSTCODE ADDRESS FILE CODE OF PRACTICE: A DECISION DOCUMENT". Postcomm. March 2004. Retrieved 13 December 2009.
+- "Addressing your mail". Royal Mail. Retrieved October 25, 2012.

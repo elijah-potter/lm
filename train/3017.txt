@@ -1,0 +1,17 @@
+How do you decide what to call a variable? Many conflicting constraints come to bear on this question. I want to communicate my intent fully through my names, which often suggests long names. I’d like the names to be short to simplify code formatting. Names will be read many times for each time they are typed, so the names should be optimized for readability, not ease of typing. Both the way the data in the variable is used and the role that data plays in the computation need to be expressed.
+There are several pieces of information I need when I am trying to understand a variable. What is its purpose in the computation? How is the object referred to by the variable used? What is the scope and lifetime of the variable? How widely is the variable referenced?
+Many variable naming schemes include type information in the names. Mine doesn’t. What is the point of telling the compiler the types of variables over and over if I have to turn around and embed that same information again in the variable names? I can see including type information in variable names in languages that don’t do much to prevent type errors, like C. Java provides ample support for avoiding type errors.
+If I want to know the type of one of my variables, my IDE gives me quick feedback about it. Using short, composed methods also provides a quick reference to the most commonly used variables, locals and parameters.
+Another facet of variables that readers need to understand is the scope of variables. Some variable naming practices encode the scope as a prefix to the name so
+fCount is a field and
+lCount is a local. Again, by composing relatively short methods I find that I am seldom confused by the scope of a variable. If I can’t see a declaration of the variable here in this method, it is most likely a field (I use other techniques to avoid most static fields).
+This leaves the role of the variable as the primary piece of information I try to communicate with my variable names, generally leading to short, clear names. If I have to struggle to find a name, it is generally because I don’t understand the computation very well.
+There are a few variable names that recur in my code:
+- result — stores the object that will be returned from a function
+- each — stores the individual elements of a collection while iterating (although I am becoming fond of using the singular form of the collection’s name, for example for (
+Node child: getChildren())).
+- count — stores counts
+If I have multiple variables that I would like to give the same name, I qualify the name:
+I am sometimes tempted to abbreviate words in variable names. This optimizes typing at the expense of reading. Since variables are read many times for each time they are written, this is a false economy. Sometimes I am tempted to use several words for a variable, which makes the variable too long for comfortable typing. When this happens I look at the surrounding context. Why do I need so many words to distinguish this variable’s role from the role of other variables? Often this leads me to simplify the design, allowing me to again write short variable names in good conscience.
+To summarize, I communicate the role a variable plays through its name. Everything else important about the variable—its lifetime, scope, and type—can generally be communicated through context.
+|This work is licensed under a Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License|

@@ -1,0 +1,3 @@
+Fundamentals of a Mixed Domain Oscilloscope
+More InfoLess Info
+By definition, "integrity" means "complete and unimpaired." Likewise, a digital signal with good integrity has clean, fast transitions; stable and valid logic levels; accurate placement in time and it would be free of any transients. Evolving technology makes it increasingly difficult for system developers to produce and maintain complete, unimpaired signals in digital systems. The purpose of this application note is to provide some insight into signal integrity-related problems in digital systems, and to describe their causes, characteristics, effects, and solutions.

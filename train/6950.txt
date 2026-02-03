@@ -1,0 +1,11 @@
+|Page (1) of 4 - 06/08/04||email article||print page|
+Opacity Masks in Illustrator CSUsing images and objects to define transparency in text
+Like layer masks in Adobe Photoshop, a opacity masks in Illustrator use the luminance values of one object or image to define the transparent areas of another object. And the objects that define the transparency can be literally any type of object that Illustrator supports--solid objects, strokes, gradients, raster images, text or combinations of all of the above.
+The example below shows live, editable type using an image as an opacity mask.
+And there are many other applications for this technique, which you can (presumably) think up for yourself. We'll first take a look at basic methods for creating and working with opacity masks, then examine the process of using an image in an opacity mask.
+For lack of a better phrase, we'll use "object mask" to describe any type of opacity mask based on a vector object rather than an image. The reason I separate the two types is that there's a necessary and slightly different process for creating masks based on raster images. Object masks are much more straightforward.
+To begin, create a text object. (For my example, I'll be using a surf theme, so I'll simply use the word "Surf.")
+Now open up the Transparency palette. Choose the flyaway menu on the right, and select the "Make Opacity Mask" option.
+Instantly your text will disappear. To make it reappear, deselect the "Clip" checkbox in the Transparency palette.
+Related Keywords:adobe illustrator, illustrator cs, opacity masks, masks, layer masks
+Source:Digital Media Online. All Rights Reserved

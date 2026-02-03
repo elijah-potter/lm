@@ -1,0 +1,35 @@
+MySQL Data Types
+To view all the SQL tutorials in chronological order, visit the SQL page
+Data Types are important in SQL because the database needs to know what type of data is being stored, and how large that data is. Some data takes up more space than others, so part of the benefit is efficiency.
+Each column in a database has a data type, and the data in that column has to be of that type. Here’s an example of a table:
+|first_name (varchar)||salary (Integer)||pet_name (varchar)||class (varchar)|
+Most data types fall into the following categories: Numbers, timestamps, and Strings.
+Do a Google search for “MySQL Documentation” and find the manual. There should be a section somewhere called data types.
+NUMERIC DATA TYPES
+Numeric data types are numbers.
+Numbers can be used for things like Age, salaries, number of cats, and other things. You’ll even be able to use numbers for things like “True or False” otherwise known as a “Boolean” where 1 stands for TRUE and 0 stands for FALSE.
+Be careful though. Some languages may treat numbers differently, and depending on how you do it, they could come out of the database as “1” or 1, or a BIT value of 1. So just be aware.
+When you read the manual, you’ll see the numbers are basically split into categories from small
+to large. You don’t want to waste space so it’s important to use just the right size of number.
+We have options like tinyint, smallint, int, bigint, etc…
+If you’re asking a user for their AGE, you don’t need SMALLINT because it goes up to 65535. I don’t think people live to be 65,000 years old so it’s probably not necessary. TINYINT will be just fine, since it covers 0-255 and most people will not live that long. You might need SMALLINT for a Tree’s age though!
+We also have Decimal types like FLOAT and DEC, but we’ll get to those later on.
+DATE and TIME
+These allow you to get information about when things happen. You can be really specific
+down to micro seconds (6 digit precision) or just get the year! This is useful for stuff like when a user signed up, or when their 30 day trial ends, or something along those lines. Usually when users create accounts you’ll give them a TIMESTAMP of some sort, which is useful in various ways.
+STRING data types are extremely common, and we have several to choose from.
+You may need to set an “encoding”, but I won’t bore you with the details (Blog post coming soon!). utf8 is used by default in VARCHAR, and utf8 is probably a safe bet for most of us.
+Here’s a couple STRING data types you can use:
+- text – Big chunk of text you have little to no control over
+- char – Fixed length
+- varchar – variable length with a well defined upper limit
+- enum – One value chosen from a list of values. Don’t use this unless you know what you’re doing
+- SET() – zero or more values Probably don’t want to use this either
+VARCHAR is probably the most common. You’ll see stuff like VARCHAR(20) which means it can have anywhere from 0 to 20 characters. VARCHAR(255) means it can have anywhere from 0 to 255 characters.
+If you have a column for your users last_name, then you probably don’t need 25,000 characters. I’m betting VARCHAR(35) will work for 99.9% of the population.
+Storing something like a blog post should probably be “text” or a very large varchar, because some blog posts are very long.
+After reading this page, I encourage you to read the manual pages in the Mysql docs, and think about your own data. In the next post, we’ll start creating tables and databases.
+– Read the Mysql “Data Types” section in the docs.
+– Decide which data types to use for the following fields: first_name, age, gender, career, fav_color has_pets
+– Come up with your own project. Think about the information you might need to gather.
+– What data types should you use for these fields/columns?

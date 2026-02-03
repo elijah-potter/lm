@@ -1,0 +1,31 @@
+Individual differences |
+Methods | Statistics | Clinical | Educational | Industrial | Professional items | World psychology |
+Philosophy Index: Aesthetics · Epistemology · Ethics · Logic · Metaphysics · Consciousness · Philosophy of Language · Philosophy of Mind · Philosophy of Science · Social and Political philosophy · Philosophies · Philosophers · List of lists
+The Raven paradox, also known as Hempel's paradox or Hempel's ravens is a paradox proposed by the German logician Carl Gustav Hempel in the 1940s to illustrate a problem where inductive logic violates intuition. It reveals the problem of induction.
+Hempel describes the paradox in terms of a statement that all ravens are black. This statement is equivalent, in logical terms, to the statement that all non-black things are non-ravens. If one were to observe many ravens and find that they were all black, one's belief in the statement that all ravens are black would increase. But if one were to observe many red apples, and concur that all non-black things are non-ravens, one would still not be any more sure that all ravens are black.
+The principle of inductionEdit
+The principle of induction states that:
+- If an instance X is observed that is consistent with theory T, then the probability that T is true increases
+In the Raven paradox, the 'law' being tested is that all ravens are black. This problem has been summarized (derived from a poem by Gelett Burgess) as:
+- I never saw a purple cow
+- But if I were to see one
+- Would the probability ravens are black
+- Have a better chance to be one?
+The origin of the paradox lies in the fact that the statements "all Ravens are black" and "all non-black things are non-ravens" are indeed equivalent, while the act of finding a black raven is not at all equivalent to finding a non-black non-raven. Confusion is common when these two notions are thought to be identical.
+Philosophers have offered many solutions to this violation of intuition. For instance, the American logician Nelson Goodman suggested adding restrictions to our reasoning, such as never considering an instance as support for "All P are Q" if it would also support "No P are Q".
+Other philosophers have questioned the "principle of equivalence" between the two theorems. Perhaps the red apple should increase our belief in the theory all non-black things are non-ravens, without increasing our belief that all ravens are black. But in classical logic one cannot have a different degree of belief in two equivalent statements, if one knows that they are either both true or both false.
+Goodman, and later another philosopher, Quine, used the term projectible predicate to describe those expressions, such as raven and black, which do allow inductive generalization; non-projectible predicates are by contrast those such as non-black and non-raven which apparently do not. Quine suggests that it is an empirical question which, if any, predicates are projectible; and notes that in an infinite domain of objects the complement of a projectible predicate ought always be non-projectible. This would have the consequence that, although "All ravens are black" and "All non-black things are non-ravens" must be equally supported, they both derive all their support from black ravens and not from non-black non-ravens.
+Using Bayes theoremEdit
+Let X represent an instance of theory T, and let I represent all of our background information.
+Let represent the probability of T being true, given that X and I are known to be true. Then,
+where represents the probability of T being true given that I alone is known to be true; represents the probability of X being true given that T and I are both known to be true; and represents the probability of X being true given that I alone is known to be true.
+Using this principle, the paradox does not arise. If one selects an apple at random, then the probability of seeing a red apple is independent of the color of ravens. The numerator will equal the denominator, the ratio will equal one, and the probability will remain unchanged. Seeing a red apple will not affect one's belief about whether all ravens are black.
+If one selects a non-black-thing at random, and it is a red apple, then the numerator will exceed the denominator by an extremely small amount. Therefore seeing the red apple will only slightly increase one's belief that all ravens are black.
+In this scenario, observing a red apple really does increase the probability that all ravens are black. If one could see all the non-black things in the universe and observed that there were no ravens, one could indeed conclude that all ravens are black. In fact, as one observed a higher and higher proportion of non-black things (finding none to be ravens), the probability that all ravens are black would increase towards unity. The example only seems paradoxical because the set of non-black-things is far, far larger than the set of ravens. Thus observing one more non-black-thing which is not a raven can only make a very small difference to our degree of belief in the theory compared to the difference made by observing one more raven which is black.
+- Franceschi, P. The Doomsday Argument and Hempel's Problem, English translation of a paper initially published in French in the Canadian Journal of Philosophy 29, 139-156, 1999, under the title Comment l'Urne de Carter et Leslie se Déverse dans celle de Hempel
+- Hempel, C. G. A Purely Syntactical Definition of Confirmation. J. Symb. Logic 8, 122-143, 1943.
+- Hempel, C. G. Studies in Logic and Confirmation. Mind 54, 1-26, 1945.
+- Hempel, C. G. Studies in Logic and Confirmation. II. Mind 54, 97-121, 1945.
+- Hempel, C. G. Studies in the Logic of Confirmation. In Marguerite H. Foster and Michael L. Martin, eds. Probability, Confirmation, and Simplicity. New York: Odyssey Press, 1966. 145-183.
+- Whiteley, C. H. Hempel's Paradoxes of Confirmation. Mind 55, 156-158, 1945.
+|This page uses Creative Commons Licensed content from Wikipedia (view authors).|

@@ -1,0 +1,5 @@
+How are Arabic letters represented in Unicode?
+In normal writing, the Arabic script employs the consonantal base letters only and omits the vowels. When vowels are written, combining marks that represent the vowels are applied to the base letter. As the Arabic script has been adapted for writing new languages, often modifier marks are added to the “skeletal” consonantal letterforms in order to differentiate additional sounds (or letters) as needed. The creation of base letter plus modifier combinations is an ongoing process at work in language communities today. As new combinations are attested in language communities, the new letterforms are encoded as a unit in Unicode. The modifier forms themselves are not encoded separately in the Unicode Standard.
+- Unicode includes presentation forms for Arabic, Urdu and Persian letters, but not for letters added for Jawi (Malay written in the Arabic script). Will presentation forms be added for Jawi?
+- The character palette contains only basic Latin letters. How do I enable other Unicode characters?
+- How are Arabic letters represented in Unicode?

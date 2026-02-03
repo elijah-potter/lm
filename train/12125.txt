@@ -1,0 +1,27 @@
+Cohort is a group of items who share common characteristic over a certain period of time. The Cohort analysis helps us identify the relationship between their characteristic and their behavior along relative periods of time.
+Example 1 - we want to analyze the relationship between the customers joining date and the % customers that purchase in the following months since joining (out of the group that joined in the same period). In other words, the comparison shows how many of the customers remained loyal and kept purchasing products in the following months after making the first purchase.
+Example 2 - The average number of orders per employee for each manager over the years since the employee was hired.
+In the above chart, we can see for each team the employees average number of orders for each year of their seniority.
+In order to be able to understand what was the relative purchase period or the employee seniority when selling, we need to calculate for each transaction the “transaction age” according to first purchase date and hiring date.
+Step 1: Calculate the “Transaction Age”
+For the first example - the transaction age will be the months difference between the order date and the customer's first order date. Since we don’t have a “joining date” or a “creation date” stored in customers table, we need to look for the first date each customer ordered, and join the Orders table with the unique list of customers with their first order date.
+SQL Syntax (custom table):
+b.Date AS FirstOrderDate,
+toint(monthdiff(o.OrderDate,b.Date)) as MonthsSinceFirstOrder
+FROM [Orders] o JOIN
+(SELECT a.CustomerID, min(a.OrderDate) Date FROM [Orders] a
+GROUP BY a.CustomerID) b
+ON o.CustomerID = b.CustomerID
+In addition, in order to be able to analyze the customers by their joining date, we will need to add this attribute to the Customers table by first creating a Custom SQL table that will hold all the customers and their first order date:
+SELECT o.CustomerID, min(o.OrderDate) FirstOrderDate
+FROM Orders O
+GROUP BY o.CustomerID
+After having calculated the first order date for each customer, we can easily look up this date for each customer by adding a custom column to the Customers table with the following syntax:
+The new Orders table will now contain the age of the customer each time he ordered and in the Customers table we will have the first order date attribute (joining date).
+For the second example - the "transaction age" will be the years difference between the order date and the employee hiring date. We already have “HireDate” stored in the Employees table so we simply need to look it up to the Orders table and calculate the difference.
+SQL Syntax (custom column):
+Important Note - Make sure that the EmployeeID is unique within the Employees table.
+Step 2: Create the widgets
+First Example: The X-axis will be the # of months since first purchase (the “transaction age”). The chart is calculating the # of customers in each period divided by the entire number of customers that belong to the same Cohort (in this case joining month).
+Second Example: For this example the X-axis will be the employee seniority in years relatively to the order date (again, the “transaction age”) and the value is the employee average number of orders. The Cohort is the team the employee belongs to (break by manager name).
+The formula :

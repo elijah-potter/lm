@@ -1,0 +1,46 @@
+This is the first of two posts arising from recent and ongoing work (some of which I’ve been involved in) on the Antikythera Mechanism. Two installments of this project have been published in Nature, in 2006 and 2008. For a partial bibliography see:
+A classic (but now very outdated) study is Derek de Solla Price, Gears From the Greeks, 1974.
+The Mechanism was a bronze gearwork device for displaying astronomical and chronological cycles and phenomena. It was recovered from the “Antikythera Wreck” c. 1900, and now consists of some 80 or so fragments in the Archeological Museum in Athens. From several considerations, including most usefully some datable coins from Pergamum and Ephesus recovered from the wreck in 1976, the wreck can be dated to after (but probably not very long after) 70 B.C., and its cargo was luxury items (bronze and marble statuary, glassware, and of course our Mechanism itself).
+It is generally assumed, with good reason, that the vessel got its cargo from one or more places in Asia Minor and the Aegean, and was heading west, maybe to Italy. The Mechanism, however, turns out, as we recently discovered, to have had an inscribed dial displaying the current date according to the Corinthian calendar, which means that it was made for–if not in fact made in–one of the several regions (Corinth, NW Greece, parts of Sicily, all on the “wrong” side of Antikythera) where this calendar was used. This is obviously puzzling. (I’ll return to the subject of the Corinthian calendar in my second post.)
+We’d also really like to know the approximate date of the Mechanism: obviously it predates the wreck, thus can hardly be later than mid-first-century B.C., but was it new then or, like the statues in the cargo, already old? There seems little prospect of getting help with this question from analysis of the (in any case extremely corroded) metal. The astronomical knowledge built into the Mechanism would fit the first century, but we don’t know enough about earlier Hellenistic astronomy to be able to rule out the 2nd century or even the 3rd, though such an early date would go against a lot of current assumptions about what 3rd century B.C. Greek astronomy looked like. The only independent evidence we seem to have for the date is the paleography of the abundant inscriptions which were engraved on practically all the available exterior surfaces plus some supplementary plates.
+The best preserved parts of the inscriptions are on surfaces that were protected while the Mechanism was submerged. Some of these were later exposed as pieces broke off or were deliberately removed in the early 20th century, while others are still inside the fragments though we can now at least partly transcribe them through CT (computed tomography). The CT images (not publicly available yet except for a handful of published specimens) probably have limited value for paleography, but a full and detailed set of visible light surface images of all the fragments is now openly accessible on the Web. These take the form of PTM (Polynomial Texture Mapping) files, a wonderful technique developed by HP people for combining a set of digital photos taken from a single viewpoint but lit from multiple directions into a file that can be viewed on screen as if one was moving around the light source. The PTM viewer also can strip the images of the variations of surface color, producing an effect as if the surface has acquired a uniform metallic sheen; this is very useful for inscriptions on corroded metal!
+The PTMs of the fragments (with a link to the free downloadable viewer, Windows and Linux but no Mac OS version) are at
+Here are some screenshots showing two of the best preserved patches of inscription.
+Sample 1: Fragment C, front, part of the parapegma (calendar of risings and settings of constellations). Interlinear spacing about 4.8mm.
+Ξ̣ ΠΛΕΙΑΣ ΕΠΙΤ̣ΕΛΛΕΙ ΕΩΙΑ̣
+Ο ΥΑΣ ΕΠΙΤΕΛΛΕΙ ΕΩΙΑ
+Π ΔΙΔΥΜΟΙ ΑΡΧΟΝΤΑΙ ΕΠΙΤΕ̣
+Ρ ΑΕΤΟΣ ΕΠΙΤΕΛΛΕΙ ΕΣΠΕΡ
+Σ ΑΡΚΤΟΥΡΟΣ ΔΥΝΕΙ ΕΩΙ̣ΟΣ
+Sample 2: Fragment 19, part of the “back door” inscription describing features of the mechanism. Interlinear spacing about 3.5mm. NB symbols for numeral 6 and ΕΤΟΣ in line 6.
+ΗΣ ΠΡΩΤΗΣ ΧΩΡΑΣ
+ΜΟΝΙΑ ΔΥΟ ΩΝ ΤΑ ΑΚΡΑ ΦΕ̣
+ΤΕΣΣΑΡΑ ΔΗΛΟΙ Δ Ο ΜΕΝ Π
+ΗΝ ΤΗΣ ΟCL ΙΘL ΤΟΥ
+Σ ΙΣΑ ΣΚΓ ΣΥΝ ΤΕΣ
+ΟΣ ΔΙΑΙΡΕΘΗ Η ΟΛΗ
+ΕΠΙ ΤΗΣ Ε
+It’s interesting, not to say unsettling, to compare two published expert opinions on the dating of the inscriptions. The first is from Price, Gears from the Greeks, p. 48:
+The letter forms are, in the opinion of Professor Benjamin Meritt, characteristic of the first century B.C., or more loosely, of Augustan times. For example, the left vertical of Π is much longer than the right; the vertical strokes of Μ and the horizontal ones of Σ are not parallel. There are tiny serifs at the end of each stroke….
+The more recent one is from the Supplementary Notes of the 2006 Nature article by Freeth et al.:
+According to Haralambos Kritzas (Director Emeritus of the Epigraphic Museum,
+Athens) the style of the writing could date the inscriptions to the second half of the 2nd
+Century BC and the beginning of the 1st Century BC, with an uncertainty of about one
+generation (50 years). Dates around 150 BC to 100 BC are a plausible range.
+We give here a few examples of the epigraphic clues to the dating, but detailed
+analysis will be published elsewhere:
+Π pi has unequal legs – second half of 2nd century BC
+Σ sigma has the two lines not horizontal but at an angle – second half of 2nd century
+BC, beginning of 1st century BC
+Μ mu has the two lines not vertical but at an angle – second half of 2nd century BC.
+There is one M with vertical lines
+Y upsilon has the vertical line short – second half of 2nd century BC
+Α alpha – just post Alexander
+Ζ zeta is written like I with long horizontal lines – 2nd century BC
+Ω omega and not like ω – 2nd century BC
+Β beta unequal upper circle, compared with the lower circle – old
+Ο omicron very small – old
+Θ theta has a short line in the middle, in one case a dot – 2nd century BC
+Φ phi is arc like – old
+Ξ xi middle line short – old
+Speaking as a non-epigrapher (as are my colleagues who are working on this project), I’d like very much to know what we can reasonably expect to deduce from the letter forms of the inscriptions, allowing for the uncertainty of provenance and the atypical medium (though perhaps this doesn’t matter since the engraver was obviously careful and skilled).

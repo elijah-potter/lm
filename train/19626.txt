@@ -1,0 +1,44 @@
+What is Computer Programming?
+Computer programming is a way of giving computers instructions about what they should do next. These instructions are known as code, and computer programmers write code to solve queries or perform a task.
+The computer programs use specialized languages to communicate with computers, applications, and other systems to get computers and computer networks to perform a set of specific tasks easily.
+This computer programming divided into two types like Front-End Development and Back-End Web Developer.
+The Front-end development involves working with code that produces the elements that users can see and interact with; it’s all about how a website looks and feels. And, the Back-end web developers make sure the website works as it should do, and the code they write is normally invisible to users. Back-end web developers work with databases that store information such as customer details, and servers which are where databases live.
+Computer Programming Languages:
+The programming languages are divided like given below.
+- Interpreted Programming Languages
+- Functional Programming Languages
+- Compiled Programming Languages
+- Procedural Programming Languages
+- Scripting Programming Languages
+- Markup Programming Languages
+- Logic-Based Programming Languages
+- Concurrent Programming Languages
+- Object-Oriented Programming Languages
+Interpreted Programming Languages:
+The interpreter languages are a programming language which executes the program directly and translates the each and every sentence into a sequence.
+Some of the interpreted languages are APL, BASIC, AutoIt, Forth, Eiffel, ICI, Lua, Pascal, PCASTL, and so on.
+Functional Programming Languages:
+Functional Programming tries to bind everything in pure mathematical function styles. It is a declarative type of programming style, the main aim of this programming language “what to solve” in contrast to an imperative style where the main focus is “how to solve”.
+Compiled Programming Languages:
+The Compiled Programming Languages whose implements are typically compilers like translates that generates machine code from source code, and step-by-step execution of source code, where pre-runtime translation takes place.
+Some of the Compiled Programming Languages, such as ADL, ALGOL, C, C++, C#, COBOL, Cobra, FORTRAN, Java, Visual Basic, XL, etc.
+Procedural Programming Languages:
+A procedural language is a type of computer programming language that specifies a series of well-structured steps and procedures within its programming context to compose a program. It contains a systematic order of statements, functions, and commands to complete computational tasks or programs.
+A procedural language is also known as imperative language.
+Some of the Procedural Programming Languages like Bliss, Chuck, CLIST, HyperTalk, Modula-2, Oberon, Component Pascal, MATLAB, PL/C, RPG, Rapira, and so on.
+Scripting Programming Languages:
+A scripting language is a programming language designed for integrating and communicating with other programming languages. The programs are written for a special run-time environment that automates the execution of tasks that could alternatively be executed one-by-one by a human operator.
+Some of the Scripting Programming Languages are AppleScript, Awk, BeanShell, ColdFusion, PHP, VBScript, Tcl, etc.
+Markup Programming Languages:
+A markup language is a computer language that uses tags to define elements within a document. It is human-readable, meaning markup files contain standard words, rather than typical programming syntax.
+Some of the Markup Languages such as Curl, SGML, XML, HTML, XHTML, and more.
+Logic-Based Programming Languages:
+Logic programming is a type of programming language which program statements express facts and rules and about problems within a system of formal logic.
+Some of the Logic Programming Languages like Absys, ALF, Datalog, ROOP, Prolog, Poplog, Fril, Janus, Leda, etc.
+Concurrent Programming Languages:
+The Concurrent Programming Language is computer programming languages that provide for the execution of operations concurrently or within a single computer or across the number of computers.
+Some of the Concurrent Programming languages are ABCL, Afnix, Concurrent Pascal, Cilk, Joule, Limbo, SR, Pict, SALSA, etc.
+Object-Oriented Programming Languages:
+The Object-Oriented Programming language is a high-level programming language. It incorporates logical classes, objects, methods, relationships, and other processes with the design of software and application.
+Some of the main important Object-Oriented Programming Languages like Agora, BETA, Cecil, MOO, Moto, REBOL, Scala, Self, Slate, IO, XOTcl, Prograph, and so on.
+Leave a Reply

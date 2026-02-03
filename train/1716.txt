@@ -1,0 +1,51 @@
+The art of using manuals
+Thursday, 8 November 2007, adz
+Detailed and proper documentation of source code and programs is the milestone of Unix culture, as we may read in “The art of Unix Programming” by Eric Steven Raymond. The first application on Unix was the platform to prepare documents. The platform was used by Bell Labs to prepare patent documents. Effective work with documentation and searching for needed information is the key feature when working on unix-like systems.
+1. Local documentation
+Usually the first and most basic information source about a given program are man pages. The name stands for the English word manual. Man pages are divided into eight parts:
+- General Commands
+- System Calls
+- Special Files
+- File Formats
+- Macros and Conventions
+- Maintenence Commands
+Each page is divided into the following sections:
+- head with command name and section’s number
+- command name and sometimes the names of other commands described on the same page
+- all the parameters used by the command
+- short program description
+- detailed information about each parameter
+Depending on the command and operating system you can also meet the following sections:
+- environmental variables
+- bugs and restrictions
+- config files
+To display the man page of a given command you should type man command_name. If the command is described in more than one section you should give the section’s number also. E.g. the first man section includes the open command description while the second section includes the description of the general command open. To see the documentation of the general command you should type man 2 open. When a man page is open you can navigate using your cursor. To get back to the console you should type :q; to find a phrase below you may use /the phrase; to find a phrase above, use ?the phrase; to repeat the last seach, use n. The man command has two interesting parameters that can be used to search the right man section. When you use the command with -a it displays all the pages for a given command, one after another. When you use the command with -w it displays only the number of the section where a given command is described.
+$ man -w open /usr/share/man/cat2/open.0 /usr/share/man/cat3p/open.0
+All sections are divided into sub-catalogues and, as in the example above, the open command appears in the second and third section of man (the example is from OpenBSD 4.1).
+To search through man pages you may use two commands: whatis and apropos.
+Whatis is used to give a short explanation of programs and command tasks.
+$ whatis ls mkdir cat man df ls (1) - list directory contents mkdir (1) - make directories cat (1) - concatenate files and print on the standard output man (1) - an interface to the on-line reference manuals man (7) - macros to format man pages df (1) - report file system disk space usage
+The apropos command finds a given phrase in the man pages.
+$ apropos 'list directory' dir (1) - list directory contents ls (1) - list directory contents vdir (1) - list directory contents
+We can make queries more sophisticated:
+$ apropos ext3 | grep create mke2fs (8) - create an ext2/ext3 filesystem mkfs.ext2 (8) - create an ext2/ext3 filesystem mkfs.ext3 (8) - create an ext2/ext3 filesystem
+In the example above I’ve searched through the man pages which might contain information about creating the file system ext3. Since the query apropos ext3 gave a lot of information on output I’ve filtered the output using the grep command. Of course, there’s no restriction on using regular expressions here. Man includes two commands that you may use instead of whatis and apropos. These are -f and -k. There’s a possibility of printing out the man pages that we are interested in — you may use the parameter -t for this.
+$ man -t ls > ls.ps
+A PostScript file was created. With the parameter -T, a DeVice Independent (DVI) file would be created.
+$ man -T ls > ls.dvi
+Info is a program to view GNU Texinfo format documentation. This kind of formatting is used by the Free Software Foundation. It enables hyper-textual navigation in documents. You may find more about this command in its man page (man info) or using the command info info. You may start viewing the documentation with the command info. The following keys are used to navigate:
+|l||last visited node|
+Texinfo documentation has a tree-like structure.
+The /usr/share/doc/ localisation is the place where you find the documentation in formats other than man and info. Ubuntu users for example may find the book “Dive into Python” there. In Debian Etch there’s a How To documents collection (unfortunately part of them is quite out of date) and in an OpenBSD system you may find “System Manager’s Manual“. The aforementioned books are available during the installation process, where you can choose the misc41.tgz installation set.
+2. Documentation on the Internet
+The Internet offers many sources of help and documentation. We may find Wikipedia pages (more or less official ones), forums, discussion groups, etc. It would be reasonable to start our search with the system’s description, available on the polishlinux.org web page. I’d like to present a couple of web pages about unix-like systems administration.
+This page was created by the IT market giant IBM. There you may find many articles about unix-like systems administration (on different experience levels), for example articles about software creation. All the articles are free of charge and are available online and in a PDF version. In the case of some of the articles, free of charge registration is required.
+2.2. Big Admin
+Admin’s vortal. It is devoted mainly to Solaris. Articles are free of charge and registration is not required.
+2.3. OnLamp, Linuxdevcenter
+These pages are connected with O’Reilly and O’Reilly Network. On OnLamp you can find articles about Linux, BSD and programming languages like PHP, Python and Perl. The registration is required only if you want to add comments. You pay only for the access to e-books.
+The Linux Documentation Project is an inititative to create documentation sets for Linux distributions. There you can find many manuals and HOWTO documents, etc. All the documents are distribution-unspecific, free of charge and available in different formats.
+Translated by Paweł Łupkowski, Proof-read by Jake Conroy
+Subscribe to RSS feed for this article!
+Warning: include(0php’): failed to open stream: No such file or directory in /sites/polishlinux.org/wp-content/themes/jakilinuxorg/page.php on line 70
+Warning: include(): Failed opening '0php’' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') in /sites/polishlinux.org/wp-content/themes/jakilinuxorg/page.php on line 70

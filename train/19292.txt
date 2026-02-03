@@ -1,0 +1,9 @@
+Collecting data at a remote site requires that we remove it somehow – if we have a continuous connection, such as a reverse shell, then we can collect the data real time. However, if we deposit our mobile device with the intention of concealing it for an extended period of time, then we need to worry about a few issues as follows:
+1. Preventing discovery of our collected data while on-site
+2. Providing concealment during the duration of the event
+3. Extracting the data safely
+If we use mobile devices to collect and transmit data, we should be selective in our choices of devices and ensure that they are capable of encrypting any data at rest or in motion. Earlier models of most mobile devices are incapable of full disk encryption, which puts the device and us at risk if discovered and forensically examined; we, therefore, need to look for devices that will allow us to keep our
+activities secret or provide a mechanism for covering our tracks if discovered.
+Data at Rest
+The newer mobile devices claim to provide something similar to full disk encryption. Although the ability of these devices to be able to protect data against forensic analysis is questionable, the devices are getting better at addressing the security of data at rest. We can do a few additional tasks to encrypt data at rest on our mobile devices to increase our comfort level about our hacking data.
+Naturally, we cannot encrypt scripts that we need to run during our collection or attack phases; however, once we have collected the data, we can encrypt the data using strong passwords. The program gpg is one method of securing a file through symmetric encryption. It is possible to encrypt a file with the GNU Privacy Guard (GNU PG) application, which can be installed on a jailbroken iPod touch.

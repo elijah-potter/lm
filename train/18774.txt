@@ -1,0 +1,11 @@
+This problem set covers material from Chapters 3 and 4.
+It should be finished by Thurs. Feb. 27, however you may submit it up until the end of office hours on Thurs. March 11. To submit a program, you need to demonstrate (during office hours or class) your program and explain how it works. You may submit a program multiple times.
+Write a guessing game program that asks the user to guess your secret number. If the guess is too high, write a message saying so and ask them to guess again. Similarly, if the guess is too low, write a message saying so and ask them to guess again. If they guess correctly, congratulate them and end the program. You can assume the user will only enter integers.
+Write a program that asks the user for a word and prints back out a string in which the first letter of the input word appears once, followed the second letter appearing twice, followed by the third letter appearing three times, etc.
+For example, the word cat would be output as caattt, the word zebra would be output as zeebbbrrrraaaaa, and the word a would be output as a.
+Write a program that asks the user for a sentence and prints the translation of the sentence in the “language” Pig Latin. Each word in the sentence should be translated into Pig Latin in the following way:1) If the English word starts with one or more consonants, all consonants before the first vowel are removed from the front of the English word, and added to the end of it, keeping the order the same. The string “ay” is then added to the end of this string.
+Write a program that asks the user for a list of grades, and returns the average of the grades. You can chose the format in which the grades are entered, but you should communicate this clearly to the user in the program.
+For example, if the user enters the grades 89 81 94, the program returns the average 88.
+Extra credit (5 points): Modify your program so that the user can enter a weight for each grade. The program then returns the weighted average of the grades.
+For example, if the user enters the grades 89 81 94 with the weights 0.25 0.25 0.5, the program returns the weighted average 89.5.
+You should submit all problems for grading by the deadline (see class schedule for date). To submit a program, you need to demonstrate (during office hours or lab) your program and explain how it works.

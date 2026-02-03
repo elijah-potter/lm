@@ -1,0 +1,21 @@
+I need some help with a mathematical problem. A geometry problem to be specific.
+Congratulations on reading this far. One of the features of Perfect Table Plan is the drawing of tables and seats on scale floor plans. The user can optionally specify how many seats and let the software calculate a sensible table size so that all the seats touch the table and their neighbouring seats. This saves the user time and produces tidy looking floor plans. Calculating the table size is trivial for square or rectangular tables. It is a bit more complicated for circular tables. But, after a bit of head scratching, I managed to work it out. Placing the seats around the circle is then trivial.
+But my customers keep asking for oval (elliptical) tables, with that callous disregard customers have for how difficult a problem might be . Here is the problem.
+We have an ellipse E with axes A and B surrounded by N identical circles of diameter D. Each circle touches the ellipse and each of its 2 neighbours at one point, as shown above. Given N, D and the ratio A/B what is A? Given A, what is the angle THETA subtended by the centre of each circle to the centre of E?
+I doubt there is an exact analytic solution to this problem. I have some vague ideas about how to tackle it. I can work out the approximate circumference C’ of an ellipse E’ that passes through the centre of all the seats (axes A+D and B+D) using the formula derived by Indian mathematical prodigy Ramunajan.
+From this we should be able to work back to A. As N becomes large C’ will tend to N*D. For smaller N, C’ will diverge from N*D so we might have to use an iterative method to calculate A, but we can use the approach above to get a starting value for A and then iterate numerically from there.
+I am less sure about how to work out the angle THETA for each circle. But if we pre-compute the angles of, say, 100 equally spaced points around E we could use these to interpolate the position of N circles where N is <= 100. It might be OK to place the first circle at THETA=0 for all values of N>0, I’m not sure.
+Several hours on Google didn’t turn up a solution. Surely I am not the only person to have tackled this problem in human history? Can anyone point me at a workable solution? Preferably with code.
+Alternatively can somebody write me the code to solve the problem? Maybe there is someone out there with a mathematical background that would relish the challenge? I am prepared to pay for working code that I can use in PerfectTablePlan (a few hundred dollars, negotiable).
+- To simplify things we can assume a fixed value of A/B, say 1.5 .
+- It needs to work for N from 1 to 99.
+- The solution doesn’t need to be exact, but it has to look OK to the human eye. No overlaps and no big gaps.
+- Low values of N might need to set up as special cases. E.g. it isn’t possible to get all the circles to touch if N <=6 (and possibly higher values of N depending on A/B).
+- The solution must be returned in a reasonable time, ideally under 0.001 seconds and definitely less than 0.01 seconds. It can store pre-computed values, e.g. in an array. But it mustn’t require excessive memory.
+- The code needs to be in a form I can easily convert to C++. C, Java, BASIC or Python should be fine. Haskell not so much.
+- Ideally it should come with a simple GUI that allows me to set the value of N and D and see the result visually.
+If you want to be paid I need to be able to buy all rights to the code and it mustn’t be released into the public domain (i.e. don’t post the code on this blog). In the unlikely event I get more than one set of working code, I will pay for the best solution according to the above criteria. Contact me for more details.
+ I love them all really.
+ For example Newton-Rhapson.
+**** UPDATE ****
+See https://successfulsoftware.net/2008/08/25/a-mathematical-digression-revisited/ .

@@ -1,0 +1,12 @@
+What is Encryption?
+Encryption is a process by which we use software to scramble sensitive information while it is in transit to Dell.
+Please take a moment to read about the steps that we have taken to help protect your information and make your online transmissions safer. We also invite you to review the steps you can take to help protect yourself further.
+How Does Encryption Work?
+Encryption is based on a key that has two different parts. The public part and the private part. The public part of the key is distributed to those you want to communicate with. The private part is for the recipient's use only.
+When you send personal information to dell.com, you use Dell's public key to encrypt your personal information. That means, if at any point during the transmission your information is intercepted, it is scrambled and very difficult to decrypt. Once Dell receives your encrypted personal information, we use the private part of our key to decode it.
+What Kind of Encryption Software Does Dell Use?
+Dell currently uses the industry-standard SSL (Secure Sockets Layer) encryption. But we continue to keep up with the current technologies in an effort to protect the security of your information.
+What Information Does Dell Encrypt?
+Dell encrypts all personal information you give us when you place an order online. Remember, if you feel uncomfortable providing any of this information online, please feel free to call one of our representatives at 1-800-WWW-DELL.
+How Safe is Encryption Really?
+Providing encrypted information online is as safe as doing it over the phone.

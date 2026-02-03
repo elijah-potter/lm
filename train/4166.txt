@@ -1,0 +1,68 @@
+FAQs for New Computer Users
+Below, you will find a listing of the most Frequently Asked Questions (FAQ) of new computer users. Click on the question that you have and you will be taken to the answer. Click on the Back to Top link after the question to come back to the Table of Contents
+Table of Contents
+- What types of processors are there?
+- What is RAM?
+- What is a hard disk?
+- How does a computer write information to the hard disk?
+- What kinds of keyboards are there?
+- What is a mouse?
+- What kinds of "mice" are there?
+- Do I have to use a mouse?
+- How can I protect my computer from power surges?
+- What is a COM Port?
+- What is a Parallel Port?
+- What is a USB Port?
+- What is the difference between internal and external components?
+- What is a Motherboard?
+- What is a Sound Card?
+- How do I start up my PC?
+- How do I shut down my PC?
+- What is a Warm Boot? What is a Cold Boot?
+- What is Windows?
+- What are Directories and Folders?
+- Why can’t I use my software straight out of the box?
+- Why do I need to backup my computer?
+- What is a computer virus?
+- How do I keep from getting a computer virus?
+- What is the "Blue Screen of Death"?
+- How do I download files?
+- How do I install software?
+- What is a computer "Bug"?
+- Where can I find further information?
+The processor is used to power the computer. The speed of the processor is measured in GigaHertz (GHz). Manufacturers of processors for Windows computers include Intel and AMD.
+RAM stands for Random Access Memory and is the primary area where the computer stores information as it is processed.
+The hard disk is an internal storage device which holds programs and data used by your computer. It consists of magnetic platters with read/write heads that float above the platters to record and play back data.
+Solid-state drives are starting to become more affordable. They have no moving parts making them extremely reliable. SSDs will eventually replace hard disks.
+Unlike a cassette tape, a computer writes information to the hard disk in a sequential manner. One file’s data may be scattered around the disk. As files are deleted or edited, blank spaces may appear around the disk.
+The standard microcomputer keyboard consists of 104 keys arranged in the standard typewriter or QWERTY layout. A separate numeric keypad is at the right side of the keyboard and can be toggled on or off by pressing the "Num Lock" key. When on, the keys act like the keys of an adding machine or calculator; when off, the keys act like the arrow keys for moving the cursor around the screen. Special ergonomic keyboards are available (sometimes referred to as "Natural" keyboards) where the keyboard is split in the middle and the keys are rotated outward to reduce the risk of repetitive stress injury caused by prolonged keyboarding. Some keyboards include touchpads to remove the need of a separate mouse. If you do not like wires, try purchasing a wireless keyboard.
+A mouse is a handheld device for moving the pointer around the screen. If you do not like wires, try purchasing a wireless mouse.
+The standard PC mouse consists of two buttons, each of which functions differently in Windows. A single click of the left button on an icon selects the item, a double click (clicking twice in rapid succession) will open the file or program, and a single click of the right button will open a pop-up menu offering choices relative to the item clicked. Some mice include a roller between the two buttons for easy scrolling of windows. Instead of having to move the pointer to the down scroll arrow on the screen, one can roll the roller on the mouse. This is especially helpful when looking at web sites. In addition to the traditional mouse, there are touchpads, large and small trackballs, and graphics tablets. Touchpads are most often found on notebook computers and are a good replacement for desktop computer users with small hands who do a lot of mouse work.
+Not always. Almost all functions that you can do with a mouse can be replaced with keyboard commands. If you have problems using a mouse or tend to type on the keyboard a lot, keyboard commands will save you time. To learn the keyboard equivalents, observe the menus when you click on them (they can also be opened by pressing "alt" with the underlined letter of the menu name at the same time). If there is a keyboard equivalent, it will be notated to the right of the menu item. For example, the copy command is usually ctrl-c and paste is usually ctrl-v.
+One of the best things that you can do for your computer is to purchase a surge protector. This is different than a power strip. While both may offer a single on-off switch and multiple electrical outlets, only the surge protector will help protect your computer from lightning or fluctuations in the electrical current in your home. A power strip will only shut off if the circuit is overloaded. For a little extra money, you can purchase a UPS (Uninterruptible Power Supply) which will keep your computer running long enough in case of a power outage so that you can save data and properly shut down the computer.
+A COM Port stands for communications port and is also referred to as a Serial Port. Most computers have at least four COM ports internally which modems or other internal peripherals use. Every computer has at least one and usually two external COM ports for physically attaching external peripheral devices, such as external modems, scanners, and digital cameras. The COM port has nine pins.
+(See letter "G" in the diagram above.)
+A parallel port is also referred to as the printer port since that is usually the device that plugs into it. While plugging these devices into the parallel port makes them extremely easy to set up, the speed is not as fast as when used with an USB port. The parallel port is easily identified by its 25 holes. Parallel ports are being replaced by USB ports.
+(See letter "C" in the diagram above.)
+USB stands for Universal Serial Bus and is a common component on new computers. The port looks like a flat slot. Up to 127 devices can be chained together and attached to the computer. Many new computer peripherals (printers, digital cameras, scanners, speakers) come with USB adapters that allow the user to plug the unit into the computer and use it immediately without having to install expansion cards inside the computer and make manual adjustments to the computer settings.
+(See letters "B" & "F" in the diagram above.)
+Internal components are devices that are either built-in to the motherboard of the computer, added in on an expansion card, or a device attached to the motherboard by way of ribbon cables. External devices are added to the computer system by plugging them into one of the ports on the back of the computer.
+The motherboard is the main circuit board of the computer and as such acts as the "circulation system" of the computer. All signals used by the computer are processed by the motherboard. Memory chips, the central processor, expansion boards and cables to disk drives all attach to the motherboard.
+A sound card is an expansion card that is required in order to hear sounds from a CD-ROM or any audio file. Sound cards offer outlets for plugging in headphones or microphones.
+First, press the power button. The computer will make some beeps while it goes through a self-check of the system components.
+To properly shut down your computer, click on the Start button and select "Shut Down." This will give you the option to restart or shut down your computer. The computer will close any open programs that you are using and ask you to save any unsaved data before it shuts down. If you computer stops responding and a warm boot does not work, you may have to press and hold the power button for several seconds until it shuts down.
+You perform a cold boot every time you press the power button on your computer. To "boot" the computer means to start it up and reset the memory and BIOS. Pressing the Ctrl-Alt-Delete keys simultaneously while the computer is running performs a warm boot. You may need to do this if the computer stops responding. If the warm boot fails to restart the computer, you will need to resort to a cold boot by pressing the power button for five seconds, waiting ten seconds and then turning it back on.
+Windows is a Microsoft operating system that uses a graphical user interface (GUI) so the user can interact with their computer.
+Directories or folders work like a filing cabinet in your computer. They help keep your hard disk organized by keeping system files together or program files together and separate from data files. Some types of files include executable or program files (file names end in .exe), dynamic link libraries (.dll) which are called upon by programs to do routines, and initialization files (.ini) which are used by certain programs to store startup settings.
+Most software programs are complex and large in size. The programs are compacted when packaged for sale or downloading and therefore need to be installed onto the computer's hard drive before they can be used. Some CD-ROM programs do work directly off the disc and do not need to be installed. Software installation extracts the executable portion of the program (.exe files) and places these and other necessary files in various directories on the computer so they can be used directly from the hard drive.
+As mentioned previously, program files and data are stored on the computer’s hard disk. The hard disk is a mechanical device that is susceptible to physical damage from jarring or strong magnetic forces. Viruses may infect your computer and wipe out important data. Your computer should have backup software that allows you yo make copies of important data.
+A computer virus is a malicious computer program that infects the computer memory or hard disk. Some are comical and will simply change the display on your monitor while most are designed to do damage to the data on the computer. Boot sector viruses are especially damaging since they rewrite the information needed to start up and access your computer’s hard disk. Trojan horses are destructive programs disguised as something harmless like a game. Worms are programs written to replicate themselves until the computer’s memory or hard drive is completely used up at which time the computer crashes and becomes inoperable. A good place to learn more about computer viruses is CERT’s web site (http://www.cert.org/)
+Make sure you computer has current anti-virus software. Scan files before sharing. There are plenty of good paid and or free anti-virus products.
+The Blue Screen of Death signals a major problem with the computer. Make a note of the message that you see on the screen. This is often useful when trying to solve the problem. Save your data frequently. Rebooting your computer will usually solve the problem temporarily. If it happens often, investigate the problem.
+Downloading files from the Internet is similar to copying files from your hard disk. Clicking on the file link for a program will start the process. When you are prompted, you will select the folder where the file will be saved after it is downloaded.
+Some programs need to be installed to the hard disk before they can be used. From My Computer or Windows Explorer locate the file named "install.exe" or "setup.exe." Double click on the file and follow the prompts to complete the installation of the software.
+A computer bug is a problem in the programming that is unknown at the time of release of the program. As users use various aspects of the program and put it through its paces, problems in the program come to the fore and are referred to as bugs. These bugs are then solved and program patches or upgrades are released to registered users to repair the problem.
+Web Site for Further Information:
+- Tech Support Guy – http://www.techguy.org/
+Books and Videos at RPL:
+Search the catalog using a WORD search for:

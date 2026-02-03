@@ -1,0 +1,44 @@
+The definition adopted by Santé publique France is as follows:
+Vaccination coverage corresponds to the proportion of people vaccinated in a population at a time given.
+It is the ratio between the number of correctly vaccinated people, that is to say having received at a given age the number of doses required, and the total number of people who should have be in the same population.
+You can find all the information on this definition at the following address: https://www.santepubliquefrance.fr/determinants-de-sante/vaccination/articles/qu-est-ce-que-la-couverture -vaccinal
+In other words, vaccination coverage is the ratio between the number of people vaccinated, for a target defined in terms of age and sex, over a given period, and the number of people in the reference population for this same target over the study period. Taking into account the scalability of the reference population is a key element for this type of indicator.
+One way to calculate immunization coverage is to base it on sales of vaccines in pharmacies, a method used by OpenHealth.
+For the calculation of vaccine coverage several data sources are used:
+Sales volumes for a basket of relevant products in relation to the disease studied over a given period, from the extrapolated OpenHealth panel
+Distribution of these sales volumes by age and sex of patients from the OpenHealth dispensation observatory.
+Data from reference population from reference organizations (eg INSEE for France)
+The methodology for calculating vaccination coverage in France is as follows:
+Sales volume : Extraction of sales volumes on a basket of relevant products over the study period of the extrapolated sales panel
+Population - male / female distribution rate of all ages (INSEE): Calculation, from INSEE population data, of the distribution rate between men and women (all ages combined) over the period studied
+Volume sales estimated by sex : Calculation of an estimated sales volume allocated to men (all ages combined) and another allocated to women by crossing points 1 and 2
+Distribution rate by sex and age of sales volumes : Extraction of distribution rates of sales volumes on the basket of relevant products by sex and age from the observatory of OpenHealth dispensations. This point makes it possible to know the share of sales for each sex over the desired age groups
+Volume sales estimated by sex on the age groups analyzed : Calculation of the estimated sales volume for each sex on the age groups analyzed by crossing the results of points 3 and 4
+Population - Number of men / women over the age groups analyzed (INSEE) : Calculation of the number of men and women over all the age groups analyzed
+Vaccination coverage : calculation of vaccination coverage as the ratio between volume sales over the age groups analyzed (results of point 5) on the population of these same age groups (results of point 6)
+Example: vaccination coverage for influenza vaccines for people aged 65 and over
+1 - Sales volume :
+Let V be the sales volume of influenza vaccines, which is 10M boxes over a given period.
+2 - Population - male / female distribution rate of all ages (INSEE) : over the period analyzed:
+men represent 48% (variable that we will call% H) of the population,
+women represent 52% (variable that we will call %F ) of the population.
+3 - Sales volume estimated by sex :
+for men, the estimated volume is Vestim (H) = V x% H = 10M x 48% = 4.8M
+for women, the estimated volume is Vestim (F) = V x %F = 10M x 52% = 5.2M
+4 - Distribution rate by sex and age of the volumes of sales :
+Let TX (H65 +) be the share of sales volumes for men aged 65 and over over the total sales volume for men, which we will estimate for this example at 78%.
+Let TX (F65 +) be the share of sales volumes for women aged 65 and over over all sales for women, which we will estimate for this example at 80%.
+5 - Sales volume estimated by sex for the age groups analyzed :
+for men 65 years and over, the estimated volume is:
+Vestim (H65 +) = Vestim (H) x TX (H65 +) = 4.8M x 78% = 3.744M
+for women aged 65 and over, the estimated volume is:
+Vestim (F65 +) = Vestim (F) x TX (F65 +) = 5.2M x 80% = 4.160M
+6 - Population - Number of men / women over the age groups analyzed (INSEE) : Let H (65+) be the number of men aged 65 over the period studied which we will estimate for this example at 5.8M
+Let F (65+) be the number of women aged 65 over the period studied we will estimate for this example at 7.6M
+7 - Vaccine coverage :
+It is then possible to calculate 3 vaccination coverage rates, one rate for men aged 65 and over (calculation 7.1), one rate for women aged 65 and over (calculation 7.2 ) and a rate for the entire population aged 65 and over (calculation 7.3):
+Calculation 7.1: Vaccine coverage (H65 +) = 3.744 / 5.8 = 64.8%
+Calculation 7.2: Vaccination coverage (F65 +) = 4.160 / 7.6 = 54.7%
+Calculation 7.3: Vaccination coverage (65+) = (3.744 + 4.160) / (5.8 + 7.6) = 59.0 %
+Vaccination coverage can be translated into English as Vaccination coverage.
+Use & Analytics Advanced subscription

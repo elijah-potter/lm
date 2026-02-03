@@ -1,0 +1,9 @@
+The types of cloud can be broken down into the following four broad categories:
+1. Public Cloud
+In this model, a third party provides resources such as storage, compute or network etc. to a large number of enterprises. The public cloud is based on the principle of shared or pooled resources.
+2. Private Cloud
+In the case of private cloud, the deploying entity sets up an exclusive data center on premise, which then delivers the above resources. In some cases, a private cloud may also involve colocation to curtail the exorbitant hardware costs.
+3. Hybrid Cloud
+A hybrid cloud is a combination of on premise and third-party data centers. In hybrid cloud, workloads are systematically allocated to both the clouds based on certain considerations that revolve around cost, efficiency and regulatory compliance.
+4. Multi Cloud
+The possibilities in case of multi cloud are limitless. This is a combination of both public and private cloud or the integration of multiple public cloud providers. This cloud model is difficult to integrate and manage, but also pays handsome dividends.

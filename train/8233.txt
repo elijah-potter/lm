@@ -1,0 +1,5 @@
+ECS Slug Relay
+Where there are many slave dials run from a single master clock, they will usually be divided up into several smaller circuits or rings so that maintenance can be done on a small part of the system at a time. A relay box, controlling several rings switched at the same time, is placed in the main circuit from the master clock and each relay switch then carries the current for its own separate part of the ring circuit.
+Some of the larger slave movements, for example those driving tower clock dials, will need a longer pulse than the master clock can supply to ensure that the hands are advanced reliably. This extra length pulse is supplied by a 'slug relay' where the relay stays engaged for longer than the initiating pulse length.
+Slug Relay box
+The lower terminals (with black wires) are connected to the master clock circuit in the same way as a normal slave dial, and operate the relay once every 30 seconds. The slugged relay contacts then connect a separate external power supply, through the current control rheostat, to an independent circuit feeding the slaves (the red wires).

@@ -1,0 +1,16 @@
+Lesson 2: Servers
+PHP is a server-side technology. Therefore, you need to have a server to run PHP. But it doesn't need to cost you anything to make this upgrade and there are several options for doing so.
+Since you ultimately only need to choose one option, this lesson is divided into three parts. First comes a little introduction on the different options (just choose the one that suits you best). When your server is up and running, we'll pick up with Lesson 3 to make your first PHP page.
+Option 1: Website on a hosted server
+You can choose to have a website on a host that supports PHP.
+- Test whether your host supports PHP
+- If you don't already have a website on hosted server you can create a free account on 000webhost.com which supports PHP.
+Option 2: Install PHP on your computer
+It's no walk in the park to install PHP on your computer. This option is only recommend for experienced computer users, but it can obviously be done. Here are links to downloads and installtion guides:
+Option 3: XAMPP
+XAMPP is a program that makes it easy and possible for us ordinary folks to run the PHP directly on our computer without having to install PHP on our own.
+|Related topics in the PHP Forum||Replies||Views|
+|About IIS Server||1||69|
+|problem with xampp and php codes||3||598|
+|Xampp "hello world!" not working.||6||2909|
+|problem with Xampp 1.8.1||7||1898|

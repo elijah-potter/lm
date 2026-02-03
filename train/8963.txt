@@ -1,0 +1,15 @@
+DNS, or Domain Name System, is one of the most important components of the Internet. It is the service of the web that converts an IP address to a hostname, allowing websites to have their easy to remember names like sk33lz.com. Without it, you would need to remember IP addresses for websites like you used to have to remember someone's phone number. Thanks to smartphones we don't need to do that anymore either.
+The IPs used in the examples below are the actual IPv4 and IPv6 IPs of this website's server.
+IPv4 DNS Records
+A Name Record
+The A Name Record is probably the most common DNS record, as it is used to assign the TLD, Top Level Domain, and subdomains to an IPv4 IP address.
+Parts of the web are also evolving. Did you know we ran out of IPv4, 32-bit, IP addresses last year? Those are the ones that look like 126.96.36.199. The last free IP address block for IPv4 was depleted on September 24, 2015. That was a total of 4,294,967,296 IPs, 588,514,304 of which are reserved IPs, so we have gone through a total of 3,706,452,992 IPs since the inception of the Internet. This means that soon enough there will be no IPv4 IPs to assign to computers and devices around the world. Luckily, we have IPv6, a 64-bit IP address range, that has the possibility of theoretically allowing up to 340,282,366,920,938,463,463,374,607,431,768,211,456 IPs. It should be a while before we hit that theoretical maximum, so let's see what we need to do to get ready for this changeover in terms of DNS.
+IPv6 DNS Records
+These DNS entries are specific to IPv6, or combined with IPv4 and IPv6.
+AAAA Name Record
+The AAAA Name Record is similar to an A Name Record, but maps an IPv6 IP address to a hostname instead. Typically you will assign this to @ or hostname of the A Name Record that corresponds to the IPv4 IP.
+@ 2600:3c03::f03c:91ff:fe18:a1bc subdomain1 2600:3c03::f03c:91ff:fe18:a1bc
+IPv4 and IPv6 Combined SPF Record
+Google recently started requiring SPF records to be assigned to mail server transactions on Gmail's servers. This requires a specific TXT record in your DNS. Typically you would assign to @ or the A Name Record and AAAA Name Record you have assigned to the IPv4 and IPv6 IPs respectively.
+@ v=spf1 a mx ip4:188.8.131.52 ip6:2600:3c03::f03c:91ff:fe18:a1bc ~all
+subdomain1 v=spf1 a mx ip4:184.108.40.206 ip6:2600:3c03::f03c:91ff:fe18:a1bc ~all

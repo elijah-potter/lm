@@ -1,0 +1,4 @@
+...one of the most highly
+regarded and expertly designed C++ library projects in the
+world. — Herb Sutter and Andrei
+A sorting approach that preserves pre-existing order. If there are two elements with identical keys in a list that is later stably sorted, whichever came first in the initial list will come first in a stably sorted list. The algorithms provided here provide no such guarantee; items with identical keys will have arbitrary resulting order relative to each other.

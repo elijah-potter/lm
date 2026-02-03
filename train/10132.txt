@@ -1,0 +1,18 @@
+This tutorial explains the Thin Walls issue and why it is important. There is an additional thin walls tutorial here.
+In 3D printing we talk about walls whenever we discuss the distance between any two parts of a 3D model which form a closed and solid mesh.
+The distance between two points of a closed form is the wall thickness. This parameter is important for 3D printing to insure a model can actually be printed, cleaned, packaged and shipped to you. Shapeways applies a minimum wall thickness restriction which insures us and you that your model can be produced and shipped to you.
+The minimum wall thickness requirements are listed in our Material pages. Please consult the Material Comparison Page for a quick view on minimum wall thickness. Design rules are explained more in depth on the individual material pages.
+The minimum detail level of the 3D printing technologies we use is much lower than the minimum wall thickness requirement. This enables us to print very small features on models. Some examples:
+In short the parts of a model which need to sustain a load (like stress or weight) are considered walls and all other parts are considered features.
+As a rule of thumb we apply that any feature is which higher than the minimum wall thickness but thinner than the minimum wall thickness as a wall. Such features are under load while cleaning and shipping and therefore we cannot guarantee they will arrive in one piece.
+In the diagrams below you see two examples. The left example shows a feature. The small cube attached to the main cube is only 0.6 x 0.6 x 0.6mm big. This falls within the definition of a feature. The example on the right shows the same example except the small cube has a size of 0.4x0.4x2mm. This falls within the definition of a wall. Due to the thickness of 0.4mm of the cube this model is not printable.
+If features are too thin then the complete feature will not print or might actually fall off the model. This is a problem with the Full Color 3D printing process. If a feature will not print or falls off a model with this process it will look ugly.
+Note: left diagram should state 0.6 x 0.6 mm.
+Another reason a wall can be too thin is that the wall thickness and height ratio is too great. The following two diagrams give an example of this situation.
+The left diagram shows a wall of 1x1x20mm attached to a cube. This wall adheres to the minimum wall thickness requirements but due to the huge wall thickness vs height ratio this wall is considered too thin. This wall will not survive the cleaning, packaging and shipping stage.
+The right diagram shows a wall of 1x1x100mm connected to two cubes of 70x70x70mm. In this case the minimum wall thickness requirement is met, but due the wall is not strong enough to sustain the weight of the cubes during cleaning, packaging and shipping stages.
+As a rule of thumb we consider a wall thickness vs. height ratio of 10 should be printable. A higher ratio is not possible.
+A sharp surface is part of a model which ends in a single edge. An example of such a surface is in the diagram below. In general these surfaces can be printed without any problems except when the angle is too small. In that case the area in of which the wall thickness is too small to sustain any load is too large and the model can break during cleaning, packaging and shipping.
+The rule of thumb is that any sharp surface with an angle smaller than 10° is not producible.
+To check if your model is fit for 3D printing we recommend you use the following strategy:
+We collected some recommendations over time we would like to share with you. These recommendations may help you in your model strategy for creating 3D printable models.

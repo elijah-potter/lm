@@ -1,0 +1,18 @@
+Code reuse can make coding simpler and more efficient for program development. esProc supports basic code reuse by loop, as well as the modular programming in which a subroutine an external cellset is called. Here we’ll explain how to call a subroutine and a cross-cellset program in esProc.
+1. Subroutine call
+2015-02-02 346 0
+esProc has some special ways to produce more orderly and more readable code, among which long statements and computational sub-statements will be illustrated in this article.
+1. Long statements
+If a long expression cannot be fully displayed when written in a single cell, one can write it in multiple cells according to ...
+2015-01-29 450 0
+The strings in esProc sometimes include some special identifiers that may cause ambiguity about the expression. So does the names of fields in a table sequence sometimes. The following will teach you how to deal with them properly.
+1. Special identifiers in strings
+A string may include various signs, some of which coul...
+2015-01-09 311 0
+In esProc, the storage of cellset variables is ubiquitous. Cell values are convenient references during computation, but they could occupy too much memory. Data can be cleared from cells to reduce memory footprint after they accomplish their mission in computation. It should be particularly noted that, when the interme...
+2015-01-05 323 0
+In esProc, strings are not merely a data type; they can also be used as macros or string constants to construct expressions, or employed by eval() function to generate expressions dynamically as needed.
+Macros in esProc refer to strings for composing expressions, only that these strings are usually generated d...
+2014-12-26 369 0
+In esProc Getting Started: Types of Cells, we learned that cells in esProc have many types, including constant cell, computational cell, executable cell and comment cell, and etc. The code blocks into which code is written in esProc also have the similar types: computational block, assignment block, executable block an...
+2014-12-25 353 0

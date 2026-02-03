@@ -1,0 +1,36 @@
+Previous:File data corrupted,
+Q: My program prompts the user to enter data from the keyboard, then
+reads its response. When compiled with a 16-bit compiler like BCC or MSC
+it works as expected, but with gcc the prompt doesn't show, or is printed
+much later in the program.
+Q: My program prints text in a loop, but the text appears on the
+screen only after the loop is finished....
+Q: Help! I cannot make `gotoxy' work! The text I print appears on
+the screen in incorrect locations after I use `gotoxy'!
+Q: Why does the text appear in the default colors even though I call
+`textcolor' and `textbackground'?
+A: Do you write to screen using buffered I/O (
+fputs and the like) functions, or send your output to the C++
+cout stream? Then what you see is the effect of the buffering of
+the standard output streams. The buffer is not written to screen until
+it's full, or until a newline is output, which might produce very
+unpleasant and unexpected behavior when used in interactive programs.
+DJGPP library functions use more aggressive buffering than 16-bit real-mode compilers, because delivering the output to the screen requires an expensive switch from protected to real mode and back. DJGPP tries to minimize the amount of these mode switches for performance reasons.
+It is usually a bad idea to use buffered I/O in interactive programs; you
+should instead use screen-oriented functions like
+cputs. If you must use buffered I/O, you should be sure that
+stderr are line-buffered or unbuffered (you
+can change the buffering by calling the
+function); another solution would be to
+fflush the output stream
+before calling any input function, which will ensure all pending output is
+written to the operating system. While this will generally work under
+DOS and DJGPP, note that in some cases the operating system might
+further buffer your output, so sometimes a call like
+be needed to actually cause the output be delivered to the screen.
+The functions that set text attributes only affect the screen-oriented
+output (a.k.a. conio) functions (
+the text written by
+fprintf and other stdio functions
+doesn't change. This is unlike some 16-bit DOS compilers where
+stdio functions can also print colored text.

@@ -1,0 +1,7 @@
+How do you detect different sound frequencies and cut off parts in an audio file? Among instruments, how do you pick up the human voice?
+A lot depends on your specific data. But if the noise is far from voice in frequency domain there is a simple brute-force trick of cutting off/out "bad" frequencies using wavelets. Let's import some sample recording:
+Voice is more rich and irregular in structure, noise is more monotonic and repetitive. So now based on the visual we can formulate a logical condition to cut out the noisy octaves (numbers on vertical axes):
+This is pretty brutal, like a surgery that cuts out good stuff too, because in this cases some voice frequencies blend with noise and we lost them. But it roughly works - signal is cleaner. You can hear how many background noises were suppressed (a few still stay though) - use headphones or good speakers. If in your cases noise is even further from voice in frequency domain - it will work much better.
+What you need is
+to filter it to between 60-180 Hz.
+|show 2 more comments|

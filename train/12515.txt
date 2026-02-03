@@ -1,0 +1,77 @@
+Public key infrastructure
+cryptography, a public key infrastructure (PKI) is an arrangement that binds public keys with respective user identities by means of a certificate authority(CA). The user identity must be unique for each CA. The binding is established through the registration and issuance process, which, depending on the level of assurance the binding has, may be carried out by software at a CA, or under human supervision. The PKI role that assures this binding is called the Registration Authority (RA) . For each user, the user identity, the public key, their binding, validity conditions and other attributes are made unforgeable in public key certificates issued by the CA.
+trusted third party(TTP) may also be used for certificate authority(CA). The term PKI is sometimes erroneously used to denote public key algorithms, which do not require the use of a CA.
+Purpose and functions
+PKI arrangements enable computer users without prior contact to be authenticated to each other, and to use the public key information in their
+public key certificates to encryptmessages to each other.To decrypt, each user has their own private key, that is usually protected by a passwordand stored locally.] In general, a PKI consists of client software, server software, hardware (e.g., smart cards), legal contracts and assurances, and operational procedures. A signer's public key certificatemay also be used by a third-party to verify the digital signatureof a message, which was made using the signer's private keyand enterprise single sign-on[ [http://secude.com/htm/811/en/White_Paper%3A_Enterprise_SSO.htm Using PKI for Enterprise Single Sign-on] ] . In general, a PKI enables the parties in a dialogue to establish confidentiality, message integrityand user authenticationwithout having to exchange any secret information in advance, or even any prior contact. The validity of a PKI between the communicating parties is, however, limited by practical problems such as uncertain certificate revocation, CA conditions for certificate issuance and reliance, variability of regulations and evidentiary laws by jurisdiction, and trust.Ed Gerck, Overview of Certification Systems: x.509, CA, PGP and SKIP, in The Black Hat Briefings '99, http://www.securitytechnet.com/resource/rsc-center/presentation/black/vegas99/certover.pdf and http://mcwg.org/mcg-mirror/cert.htm] These problems, which are significant for the initial contact, tend to be less important as the communication progresses in time (including the use of other communication channels) and the parties have opportunities to develop trust on their identities and keys.
+Web of Trust
+An alternative approach to the problem of public authentication of public key information is the web of trust scheme, which uses self-signed certificates and third party attestations of those certificates. Speaking of the Web of Trust does not imply the existence of a single web of trust, or common point of trust, but any number of potentially disjoint "webs of trust". Examples of implementations of this approach are PGP (Pretty Good Privacy) and
+GnuPG(an implementation of OpenPGP, the standardized specification of PGP). Because PGP and implementations allow the use of
+One of the benefits of the Web of Trust, for example in PGP, is that it can interoperate with a PKI CA fully-trusted by all parties in a domain (such as an internal CA in a company) that is willing to guarantee certificates, as a trusted introducer. Only if the "web of trust" is completely trusted, and because of the nature of a web of trust trusting one certificate is granting trust to all the certificates in that web. A PKI is only as valuable as the standards and practices that control the issuance of certificates and including PGP or a personally instituted web of trust would significantly degrade the trustability of that enterprise or domains implementation of PKI.
+imple public key infrastructure
+Another alternative, which however does not deal with public authentication of public key information, is the
+simple public key infrastructure(SPKI) that grew out of 3 independent efforts to overcome the complexities of X.509and PGP's web of trust. SPKI does not bind people to keys, as the key "is" what is trusted, rather than the person. SPKI does not use any notion of trust, as the verifier is also the issuer. This is called an "authorization loop" in SPKI terminology, where authorization is integral to its design.
+Additionally, PKI supports message encryption and digital signatures that further enhance transactional security. While essential services such as certificate validation and revocation, key backup and recovery, and simultaneous update of key pairs minimize the administrative workload for a PKI infrastructure, features such as audit of key history and time-stamping enhance security control and management. And last but not least, the PKI infrastructure supports cross-certification, which is key to creating a truly federated identity by enabling seamless integration among circles of trust.
+In comparison to Kerberos, PKI provides enhanced security, greater scalability and easier administration, control and management of the infrastructure. As a result, PKI enables a much larger community of users, consumers and partners to communicate and transact more dynamically, securely, reliably and cost-effectively.anbd
+The public disclosure of both secure
+key exchangeand asymmetric key algorithms in 1976by Diffie, Hellman, Rivest, Shamir, and Adleman changed secure communications entirely. With the further development of high speed digital electronic communications (the Internetand its predecessors), a need became evident for ways in which users could securely communicate with each other, and as a further consequence of that, for ways in which users could be sure with whom they were actually interacting.
+Assorted cryptographic protocols were invented and analyzed within which the new cryptographic
+primitives could be effectively used. With the invention of the World Wide Weband its rapid spread, the need for authentication and secure communication became still more acute. Commercial reasons alone (e.g., e-commerce, on-line access to proprietary databases from Web browsers, etc.) were sufficient. Taher ElGamaland others at Netscape developed the SSL protocol (' https' in Web URLs); it included key establishment, server authentication (prior to v3, one-way only), and so on. A PKI structure was thus created for Web users/sites wishing secure (or more secure) communications.
+Vendors and entrepreneurs saw the possibility of a large market, started companies (or new projects at existing companies), and began to agitate for legal recognition and protection from liability. An
+American Bar Associationtechnology project published an extensive analysis of some of the foreseeable legal aspects of PKI operations (see ABA digital signature guidelines), and shortly thereafter, several US states ( Utahbeing the first in 1995) and other jurisdictions throughout the world, began to enact laws and adopt regulations. Consumer groups and others raised questions of privacy, access, and liability considerations which were more taken into consideration in some jurisdictions than in others.
+The enacted laws and regulations differed, there were technical and operational problems in converting PKI schemes into successful commercial operation, and progress has been far slower than pioneers had imagined it would be.
+By the first few years of the 21st century, it had become clear that the underlying
+cryptographic engineeringwas not easy to deploy correctly, that operating procedures (manual or automatic) were not easy to correctly design (nor even if so designed, to execute "perfectly", which the engineering required), and that such standards as existed were in some respects inadequate to the purposes to which they were being put. bbz
+PKI vendors have found a market, but it is not quite the market envisioned in the mid-90s, and it has grown both more slowly and in somewhat different ways than were anticipated. PKIs have not solved some of the problems they were expected to, and several major vendors have gone out of business or been acquired by others. PKI has had the most success in government implementations; the largest PKI implementation to date is the
+Defense Information Systems Agency(DISA) PKI infrastructure for the Common Access Cards program.
+When deploying a PKI, the most important part is an appropriate CA piece of software. There are several solutions on the market:
+Cryptomathic": Offers a product called "CCA".
+EJBCA": Open source, platform independentsolution implemented in Enterprise Java.
+Entrust": Offer a product called "Entrust Authority". Entrust offers PKI software and a managed service options mainly in the .gov space.
+GlobalSign": Offers "TrustedRoot", a PKI CA Rootstore chaining program (Root Sign) which allows you to get immediate trust for your SSL, S/MIME and code signing certificates by chaining your Microsoft CA or Inhouse CA Root Certificate to the pre-trusted GlobalSign root certificate.
+IBM": Offers PKI Services for z/OS.
+Linux": Linux supports OpenSSLand OpenCA, which are two open sourceCA solutions.
+* "Microsoft": Windows 2000 Server, Server 2003 and Server 2008 all contain CA software, which is integrated into the
+Active Directoryand doesn't require additional license fees.
+Novell": Offers the "Novell Certificate Server", which is integrated into the eDirectory. Alternatively, the eDirectory add-on product "cv act PKIntegrated" (provided by a third party vendor at additional costs) can be used.
+Red HatCertificate System": Formerly the Netscape Certificate Server. Its now fully open source. See http://pki.fedoraproject.org/
+RSA Security": Offers a product called RSA Certificate Manager (Previously known as "Keon").
+Safelayer": Offers a family of products called "KeyOne" and a PKI-broker called "TrustedX".
+SECUDE": Offers secure single sign-onsolutions for SAP, based on PKI technology through SECUDE Secure Login
+Verizon Business": Offers a product called "UniCERT".
+SeguriData": Offers a product called "SeguriServer". SeguriData offers a whole suite of PKI based solutions.
+PKIs of one type or another, and from any of several vendors, have many uses, including providing public keys and bindings to user identities which are used for:
+Encryptionand/or sender authenticationof OpenPGPor S/MIME).
+* Encryption and/or authentication of documents (e.g., the
+XML Signature[http://www.w3.org/TR/xmldsig-core/] or XML Encryption[http://www.w3.org/TR/xmlenc-core/] standards if documents are encoded as XML).
+Authenticationof users to applications (e.g., smart cardlogon, client authentication with SSL).
+Bootstrappingsecure communication protocols, such as Internet key exchange (IKE) and SSL. In both of these, initial set-up of a secure channel (a " security association") uses asymmetric key(a.k.a. public key) methods, whereas actual communication uses faster secret key(a.k.a. symmetric key) methods.
+Public key cryptography
+Public key certificateCertificates and Web Site security
+Certificate revocation list
+Certification path validation algorithm
+* Microsoft CAPI
+FIPS 201PIV (Personal Identity Verification of Federal Employees and Contractors)
+PKCSPublic Key Cryptography Standards
+Robot certificate authority
+Wireless Public Key Infrastructure
+* [http://www.FiXs.org/ Federation for Identity and Cross-Credentialing Systems (FiXs)]
+* [http://www.cs.auckland.ac.nz/~pgut001/pubs/pkitutorial.pdf PKI tutorial] by Peter Gutmann
+* [http://www.carillon.ca/tutorials.php PKI Tutorial using Fingerpuppets]
+* [http://www.ietf.org/html.charters/pkix-charter.html PKIX workgroup]
+* [http://www-106.ibm.com/developerworks/library/s-pain.html Easing the PAIN] — a detailed explanation of PKI Privacy, Authentication, Integrity and Non-repudiation (PAIN)
+* [http://csrc.nist.gov/pki/ NIST PKI Program] — in which the National Institute of Standards and Technology (NIST) is attempting to develop a public key infrastructure
+* [http://lukenotricks.blogspot.com/2007/09/few-years-ago-now-i-was-working-quite.html Detailed overview of Entrust v5] by Luke O'Connor
+* [http://www.schneier.com/paper-pki.html Ten Risks of PKI: What You're Not Being Told About Public Key Infrastructure] by C. Ellison and B. Schneier
+Wikimedia Foundation. 2010.
+Look at other dictionaries:
+Public Key Infrastructure — Infrastructure à clés publiques Pour les articles homonymes, voir ICP, IGC et PKI. Une Infrastructure à clés publiques (ICP) ou Infrastructure de Gestion de Clefs (IGC) ou encore Public Key Infrastructure (PKI), est un ensemble de composants… … Wikipédia en Français
+Public Key Infrastructure — Schema einer Public Key Infrastruktur Mit Public Key Infrastruktur (PKI, engl. public key infrastructure) bezeichnet man in der Kryptologie ein System, welches es ermöglicht, digitale Zertifikate auszustellen, zu verteilen und zu prüfen. Die… … Deutsch Wikipedia
+public key infrastructure — An enterprise wide service (i.e. data integrity, user identification and authentication, user non repudiation, data confidentiality, encryption, and digital signature) that supports digital signatures and other public key based security… … Military dictionary
+public key infrastructure — PKI (public key infrastructure) coding system which secures data exchange on networks like the internet by providing each party with digital certificates that validate their authenticity … English contemporary dictionary
+public key infrastructure — noun an information technology infrastructure that allows the delivery of data from one person to another with the delivery being made secure by means of public key cryptography. Abbrev.: PKI … Australian English dictionary
+Public Key Infrastructure — A proposal to provide a structure for verifying and authenticating users involved in transactions on the Internet or on corporate intranets and extranets. The proposal involves a set of trusted certificate authorities (CAs) who would… … Dictionary of networking
+Public Key Infrastructure — … Википедия
+Simple public key infrastructure — (SPKI, pronounced spoo key ) was born out of a joint effort to overcome the overcomplication and scalability problems of traditional X.509 public key infrastructure. It is specified in two Internet Engineering Task Force (IETF) Request For… … Wikipedia
+Wireless Public Key Infrastructure — (WPKI) is a two factor authentication scheme using mainly the mobile phone and a laptop. Mainly promoted by banks, mobile operators, and mobile network manufacturers. External links * http://www.wpki.net *… … Wikipedia
+Public key infrastructre — Infrastructure à clés publiques Pour les articles homonymes, voir ICP, IGC et PKI. Une Infrastructure à clés publiques (ICP) ou Infrastructure de Gestion de Clefs (IGC) ou encore Public Key Infrastructure (PKI), est un ensemble de composants… … Wikipédia en Français

@@ -1,0 +1,30 @@
+Recently I taught a volunteer class to professional engineers on MATLAB. Two of the most requested items of interest were
+1. How do I read an excel file?
+2. How do I do curve fitting?
+We address the first question here. It is easy to read an excel file with the xlsread command but what do you with it once the file has been assigned. So we took a simple example of an excel spreadsheet where the first column consists of a student number and the second column has the examination scores of the students. You are asked to find the highest score.
+It is better to download (right click and save target) the program as single quotes in the pasted version do not translate properly when pasted into a mfile editor of MATLAB or you can read the html version for clarity and sample output.
+%% READING AN EXCEL SPREADSHEET IN MATLAB
+% Language : Matlab 2008a
+% Authors : Autar Kaw
+% Last Revised : December 12, 2010
+% Abstract: This program shows you how to read an excel file in MATLAB
+% The example has student numbers in first column and their score in the
+% second column
+disp(‘This program shows how to read an excel file in MATLAB’)
+disp(‘Authors : Autar Kaw’)
+disp(‘Last Revised : December 12, 2010′)
+% We have two column data and it has headers in the first row.
+% That is why we read the data from A2 to B32.
+disp (‘The data read from the excel spreadsheet is’)
+% Finding the number of rows and columns
+% Assigning the scores to a vector called score
+% Using the max command to find the maximum score
+% HW: Write your own function “max”
+% Finding which student got the highest score
+% HW: What if more than one student scored the highest grade??
+fprintf(‘Student Number# %g scored the maximum score of %g’,…
+This post is brought to you by
+- Holistic Numerical Methods: Numerical Methods for the STEM undergraduate at http://numericalmethods.eng.usf.edu,
+- the textbook on Numerical Methods with Applications available from the lulu storefront,
+- the textbook on Introduction to Programming Concepts Using MATLAB, and
+- the YouTube video lectures available at http://numericalmethods.eng.usf.edu/videos

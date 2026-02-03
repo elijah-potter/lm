@@ -1,0 +1,17 @@
+exactly located (exactlyLocated)
+The actual, minimal location of an
+Object. This is a subrelation of the more general Predicate
+SUMO / BASE-ONTOLOGY
+Related WordNet synsets
+- the precise location of something; a spatially limited location; "she walked to a point where she could survey the whole street"
+Agar obj is partly located in region, to yah kuch subobj nahin, ki subobj is a part of obj aur subobj is exactly located in region.
+(partlyLocated ?OBJ ?REGION)
+(part ?SUBOBJ ?OBJ)
+(exactlyLocated ?SUBOBJ ?REGION))))
+Agar obj is exactly located in region, to yah kuch otherobj nahin, ki otherobj is exactly located in region aur otherobj is not equal to obj.
+(exactlyLocated ?OBJ ?REGION)
+(exactlyLocated ?OTHEROBJ ?REGION)
+(equal ?OTHEROBJ ?OBJ))))))
+"thing ki jagah time tha" is equal to region agar hai thing is exactly located in region during time.
+(WhereFn ?THING ?TIME)
+(exactlyLocated ?THING ?REGION)))

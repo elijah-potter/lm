@@ -1,0 +1,19 @@
+In this part you will learn:
+3. Setting up the DEV C++ environment
+Today we are going to start a 15day series of learning C language. In these tutorials I will teach you from the most basic to some advance stuff. First and the most basic step to start coding is to setup and IDE
+( Integrated Development Environment ) sounds a little bit complicated but it really isn’t. Now let’s cover some very basic questions that may arise in your mind.
+What is an IDE?
+IDE stands for integrated development environment, You can say it is simply a sheet of paper on which you write your code. It has all other some other stuff integrated with it, which includes a compiler to compile your code and show you an output, code formatter to color your written code for easier reading and many other stuff let’s not go into that now.
+What is a Compiler?
+What you write in your code is actually not understandable by a machine. Machine only understands machine language so a compiler is a program which automatically understands your code and converts it to machine language.
+Which IDE should you use?
+For beginners there is a very simple and good IDE easily available on the internet with the name DEV C++. You might be thinking that it’s written C++ relax it can also be used for C, as C and C++ are quite similar.
+•First of all go to this link
+and download DEV C++
+•Then simply follow the instructions and install.
+•After installing it will simply as for language and some other stuff just see the picture below.
+Select your desired Language
+Select your desired font
+Cache the headers
+•Go to File > New > Source File.
+•Now everything is set up and we are ready for coding.

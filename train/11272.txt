@@ -1,0 +1,6 @@
+Understanding the conversion graph
+How come when an experiment is first started, the conversion rate graphs on the results screen vary/change a lot before normalizing over time?
+Solved! Go to Solution.
+Hey @hbaecklund , the simplest answer to this is that the graphs you're seeing are showing cumulative data, so when your experiments just start, the data you see results from relatively few visitors and conversions. So, to simplify, let's say you're looking at your graph and you see conversions from your first 5 visitors. Those 5 visitors just happen to be bucketed into Variation B, where they convert. At this point it will look like Variation B is a clear winner.
+However, as you start to get hundreds or thousands of visitors and conversions, those 5 visitors will be just a drop in the bucket, so the graphs will start to normalize. At this point, the data you're seeing is less likely to be skewed by extremely low sample size, since you've had more opportunities to measure visitors and conversions in each variation.
+Perhaps one of our more statistically-inclined Optiversers can jump in for a more technical explanation, but does this help provide the concept?

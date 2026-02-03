@@ -1,0 +1,3 @@
+More of those WPC practice puzzles. This puzzle type was present in the Dutch Delight round.
+Place digits 1–3 in the grid so that in each row and column, each digit appears three times. Numbers in grey cells do not share an edge with a cell containing the same number. Numbers in white cells share an edge with at least one cell containing the same number. Cells that are not painted grey should be considered as white.
+Rated – Medium

@@ -1,0 +1,20 @@
+When we use the sensor devices in the IoT network, it is neccessary that the devices are roaming witin the network, or sometimes it can roam to other operator's network. LoraWAN protocol V1.0 has not yet done any thing about roaming but it is in plan. In this blog post, we are going to explore the possible scenarios and solutions of LoraWAN roaming.
+What is LoraWAN roaming?
+To answer the question, let's take a look at the network architecture:
+In a single network, where all the gateways are connected to one or multiple lora-server instances, the gateway just forwards the data bidrectionally. Hence there is no really handover in the backend that specifies the protocol between the gateways. In this case, roaming within a signal network is quite easy, no extra efforts are required. That is basically how LoraWAN 1.0 works.
+When it comes to another scenario, which involves multiple networks, the architecture is illustrated below:
+Two loraWAN network may deploy in the adjacent or the same regions, in this case, whether the network operator can provision the other vendor's end device is also relevant to roaming. What information is needed from one network from another to trust the end devices? Who pays who in this situation?
+The information needed for inter-network roaming
+In theory, LoraWAN end devices won't know which gateway it is connected. The main jobs of end devices are sending, receiving, ADR query and checking wheather the link is alive. With unconfirmed sending and receiving, the end devices have no idea about the success of delivery. More importantly, with link checking and ADR query, roaming devices need to receive downlink packets from the original lora server.
+When the roaming devices lost connection or reset, it will also need to join the network again with its own credentials. The MAC commands from the original network will also need to reach the roaming devices. Hence we need to share some information between the networks to make this happen.
+In Lora packets, there are some fields are not encrypted:
+Fields in FHDR, like DevAddr and FCtrl are not encrypted and can be read directly from the gateways that belongs to other network, in which DevAddr contains the identification of the end device. It is assumed to use DevAddr as a credential to forward the data bidirectionally.
+Both networks should reach a consensus that who pays who for the forwarded packets between the network, and provide some APIs for query the device address from the other network and then forward.
+Necessary steps for inter-network roaming
+To enable the inter-network roaming, we need a clean house in between the network that can negotiate and reply queries. The steps could be:
+- Gateway receive the packets which include not-local DevAddr
+- Query the DevAddr and register in the backend as a roaming device
+- Based on the billing agreement, start to forward data bidirectionally
+- Original lora server receives the packet and register in the backend as a roaming device
+- When data is needed to be sent from the original lora server, use the roaming protocol to send to another network
+- If the device is offline or goes back to the original network, terminate the roaming and delete entries in both network.

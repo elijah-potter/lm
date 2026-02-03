@@ -1,0 +1,132 @@
+Partitioning enhances the performance, manageability, and availability of a wide variety of applications and helps reduce the total cost of ownership for storing large amounts of data. Partitioning allows tables, indexes, and index-organized tables to be subdivided into smaller pieces, enabling these database objects to be managed and accessed at a finer level of granularity. Oracle provides a rich variety of partitioning strategies and extensions to address every business requirement. Moreover, since it is entirely transparent, partitioning can be applied to almost any application without the need for potentially expensive and time consuming application changes.
+This chapter contains the following topics:
+Partitioning allows a table, index, or index-organized table to be subdivided into smaller pieces, where each piece of such a database object is called a partition. Each partition has its own name, and may optionally have its own storage characteristics.
+From the perspective of a database administrator, a partitioned object has multiple pieces that can be managed either collectively or individually. This gives the administrator considerable flexibility in managing partitioned objects. However, from the perspective of the application, a partitioned table is identical to a non-partitioned table; no modifications are necessary when accessing a partitioned table using SQL queries and DML statements.
+Figure 2-1 offers a graphical view of how partitioned tables differ from non-partitioned tables.
+Note:All partitions of a partitioned object must reside in tablespaces of a single block size.
+See Also:Oracle Database Concepts for more information about multiple block sizes
+Each row in a partitioned table is unambiguously assigned to a single partition. The partitioning key is comprised of one or more columns that determine the partition where each row will be stored. Oracle automatically directs insert, update, and delete operations to the appropriate partition through the use of the partitioning key.
+Any table can be partitioned into a million separate partitions except those tables containing columns with
+RAW datatypes. You can, however, use tables containing columns with
+Note:To reduce disk usage and memory usage (specifically, the buffer cache), you can store tables and partitions of a partitioned table in a compressed format inside the database. This often leads to a better scaleup for read-only operations. Table compression can also speed up query execution. There is, however, a slight cost in CPU overhead.
+See Also:Oracle Database Concepts for more information about table compression
+Here are some suggestions for when to partition a table:
+Tables greater than 2 GB should always be considered as candidates for partitioning.
+Tables containing historical data, in which new data is added into the newest partition. A typical example is a historical table where only the current month's data is updatable and the other 11 months are read only.
+When the contents of a table need to be distributed across different types of storage devices.
+Here are some suggestions for when to consider partitioning an index:
+Avoid rebuilding the entire index when data is removed.
+Perform maintenance on parts of the data without invalidating the entire index.
+Reduce the impact of index skew caused by an index on a column with a monotonically increasing value.
+Partitioned index-organized tables are very useful for providing improved performance, manageability, and availability for index-organized tables.
+For partitioning an index-organized table:
+Partition columns must be a subset of the primary key columns
+Secondary indexes can be partitioned (both locally and globally)
+OVERFLOW data segments are always equi-partitioned with the table partitions
+See Also:Oracle Database Concepts for more information about index-organized tables
+System partitioning enables application-controlled partitioning without having the database controlling the data placement. The database simply provides the ability to break down a table into partitions without knowing what the individual partitions are going to be used for. All aspects of partitioning have to be controlled by the application. For example, an insertion into a system partitioned table without the explicit specification of a partition will fail.
+System partitioning provides the well-known benefits of partitioning (scalability, availability, and manageability), but the partitioning and actual data placement are controlled by the application.
+See Also:Oracle Database Data Cartridge Developer's Guide for more information about system partitioning
+Information Lifecycle Management (ILM) is concerned with managing data during its lifetime. Partitioning plays a key role in ILM because it enables groups of data (that is, partitions) to be distributed across different types of storage devices and managed individually.
+See Also:Chapter 5, "Using Partitioning for Information Lifecycle Management" for more information about Information Lifecycle Management
+Unstructured data (such as images and documents) which is stored in a LOB column in the database can also be partitioned. When a table is partitioned, all the columns will reside in the tablespace for that partition, with the exception of LOB columns, which can be stored in their own tablespace.
+This technique is very useful when a table is comprised of large LOBs because they can be stored separately from the main data. This can be beneficial if the main data is being frequently updated but the LOB data isn't. For example, an employee record may contain a photo which is unlikely to change frequently. However, the employee personnel details (such as address, department, manager, and so on) could change. This approach also means that cheaper storage can be used for storing the LOB data and more expensive, faster storage used for the employee record.
+Partitioning can provide tremendous benefit to a wide variety of applications by improving performance, manageability, and availability. It is not unusual for partitioning to improve the performance of certain queries or maintenance operations by an order of magnitude. Moreover, partitioning can greatly simplify common administration tasks.
+Partitioning also enables database designers and administrators to tackle some of the toughest problems posed by cutting-edge applications. Partitioning is a key tool for building multi-terabyte systems or systems with extremely high availability requirements.
+By limiting the amount of data to be examined or operated on, and by providing data distribution for parallel execution, partitioning provides a number of performance benefits. These features include:
+Partition pruning is the simplest and also the most substantial means to improve performance using partitioning. Partition pruning can often improve query performance by several orders of magnitude. For example, suppose an application contains an
+Orders table containing a historical record of orders, and that this table has been partitioned by week. A query requesting orders for a single week would only access a single partition of the
+Orders table. If the
+Orders table had 2 years of historical data, then this query would access one partition instead of 104 partitions. This query could potentially execute 100 times faster simply because of partition pruning.
+Partition pruning works with all of Oracle's other performance features. Oracle will utilize partition pruning in conjunction with any indexing technique, join technique, or parallel access method.
+Partitioning can also improve the performance of multi-table joins by using a technique known as partition-wise joins. Partition-wise joins can be applied when two tables are being joined together and both tables are partitioned on the join key, or when a reference partitioned table is joined with its parent table. Partition-wise joins break a large join into smaller joins that occur between each of the partitions, completing the overall join in less time. This offers significant performance benefits both for serial and parallel execution.
+Partitioning allows tables and indexes to be partitioned into smaller, more manageable units, providing database administrators with the ability to pursue a "divide and conquer" approach to data management. With partitioning, maintenance operations can be focused on particular portions of tables. For example, a database administrator could back up a single partition of a table, rather than backing up the entire table. For maintenance operations across an entire database object, it is possible to perform these operations on a per-partition basis, thus dividing the maintenance process into more manageable chunks.
+A typical usage of partitioning for manageability is to support a "rolling window" load process in a data warehouse. Suppose that a DBA loads new data into a table on a weekly basis. That table could be partitioned so that each partition contains one week of data. The load process is simply the addition of a new partition using a partition exchange load. Adding a single partition is much more efficient than modifying the entire table, since the DBA does not need to modify any other partitions.
+Partitioned database objects provide partition independence. This characteristic of partition independence can be an important part of a high-availability strategy. For example, if one partition of a partitioned table is unavailable, then all of the other partitions of the table remain online and available. The application can continue to execute queries and transactions against the available partitions for the table, and these database operations will run successfully, provided they do not need to access the unavailable partition.
+The database administrator can specify that each partition be stored in a separate tablespace; the most common scenario is having these tablespaces stored on different storage tiers. Storing different partitions in different tablespaces allows the database administrator to do backup and recovery operations on each individual partition, independent of the other partitions in the table. Thus allowing the active parts of the database to be made available sooner so access to the system can continue, while the inactive data is still being restored. Moreover, partitioning can reduce scheduled downtime. The performance gains provided by partitioning may enable database administrators to complete maintenance operations on large database objects in relatively small batch windows.
+Oracle Partitioning offers three fundamental data distribution methods as basic partitioning strategies that control how data is placed into individual partitions:
+Using these data distribution methods, a table can either be partitioned as a single list or as a composite partitioned table:
+Each partitioning strategy has different advantages and design considerations. Thus, each strategy is more appropriate for a particular situation.
+A table is defined by specifying one of the following data distribution methodologies, using one or more columns as the partitioning key:
+For example, consider a table with a column of type
+NUMBER as the partitioning key and two partitions
+less_than_one_thousand partition contains rows where the following condition is true:
+500 <= partitioning key < 1000
+Figure 2-2 offers a graphical view of the basic partitioning strategies for a single-level partitioned table.
+Range partitioning maps data to partitions based on ranges of values of the partitioning key that you establish for each partition. It is the most common type of partitioning and is often used with dates. For a table with a date column as the partitioning key, the
+January-2005 partition would contain rows with partitioning key values from 01-Jan-2005 to 31-Jan-2005.
+Each partition has a
+THAN clause, which specifies a non-inclusive upper bound for the partitions. Any values of the partitioning key equal to or higher than this literal are added to the next higher partition. All partitions, except the first, have an implicit lower bound specified by the
+THAN clause of the previous partition.
+MAXVALUE literal can be defined for the highest partition.
+MAXVALUE represents a virtual infinite value that sorts higher than any other possible value for the partitioning key, including the NULL value.
+Hash partitioning maps data to partitions based on a hashing algorithm that Oracle applies to the partitioning key that you identify. The hashing algorithm evenly distributes rows among partitions, giving partitions approximately the same size.
+Hash partitioning is the ideal method for distributing data evenly across devices. Hash partitioning is also an easy-to-use alternative to range partitioning, especially when the data to be partitioned is not historical or has no obvious partitioning key.
+Note:You cannot change the hashing algorithms used by partitioning.
+List partitioning enables you to explicitly control how rows map to partitions by specifying a list of discrete values for the partitioning key in the description for each partition. The advantage of list partitioning is that you can group and organize unordered and unrelated sets of data in a natural way. For a table with a region column as the partitioning key, the
+North America partition might contain values
+DEFAULT partition enables you to avoid specifying all possible values for a list-partitioned table by using a default partition, so that all rows that do not map to any other partition do not generate an error.
+Composite partitioning is a combination of the basic data distribution methods; a table is partitioned by one data distribution method and then each partition is further subdivided into subpartitions using a second data distribution method. All subpartitions for a given partition together represent a logical subset of the data.
+Composite partitioning supports historical operations, such as adding new range partitions, but also provides higher degrees of potential partition pruning and finer granularity of data placement through subpartitioning. Figure 2-3 offers a graphical view of range-hash and range-list composite partitioning, as an example.
+Composite range-hash partitioning partitions data using the range method, and within each partition, subpartitions it using the hash method. Composite range-hash partitioning provides the improved manageability of range partitioning and the data placement, striping, and parallelism advantages of hash partitioning.
+Composite range-list partitioning partitions data using the range method, and within each partition, subpartitions it using the list method. Composite range-list partitioning provides the manageability of range partitioning and the explicit control of list partitioning for the subpartitions.
+In addition to the basic partitioning strategies, Oracle Database provides partitioning extensions:
+These extensions significantly enhance the manageability of partitioned tables:
+Interval partitioning is an extension of range partitioning which instructs the database to automatically create partitions of a specified interval when data inserted into the table exceeds all of the existing range partitions. You must specify at least one range partition. The range partitioning key value determines the high value of the range partitions, which is called the transition point, and the database creates interval partitions for data beyond that transition point. The lower boundary of every interval partition is the non-inclusive upper boundary of the previous range or interval partition.
+For example, if you create an interval partitioned table with monthly intervals and the transition point at January 1, 2007, then the lower boundary for the January 2007 interval is January 1, 2007. The lower boundary for the July 2007 interval is July 1, 2007, regardless of whether the June 2007 partition was already created.
+When using interval partitioning, consider the following restrictions:
+You can only specify one partitioning key column, and it must be of
+Interval partitioning is not supported for index-organized tables.
+You cannot create a domain index on an interval-partitioned table.
+You can create single-level interval partitioned tables as well as the following composite partitioned tables:
+The Partition Advisor is part of the SQL Access Advisor. The Partition Advisor can recommend a partitioning strategy for a table based on a supplied workload of SQL statements which can be supplied by the SQL Cache, a SQL Tuning set, or be defined by the user.
+These extensions extend the flexibility in defining partitioning keys:
+Reference partitioning allows the partitioning of two tables related to one another by referential constraints. The partitioning key is resolved through an existing parent-child relationship, enforced by enabled and active primary key and foreign key constraints.
+The benefit of this extension is that tables with a parent-child relationship can be logically equi-partitioned by inheriting the partitioning key from the parent table without duplicating the key columns. The logical dependency will also automatically cascade partition maintenance operations, thus making application development easier and less error-prone.
+An example of reference partitioning is the
+OrderItems tables related to each other by a referential constraint
+Orders table is range partitioned on
+OrderDate. Reference partitioning on
+OrderItems leads to creation of the following partitioned table, which is equi-partitioned with respect to the
+Orders table, as shown in Figure 2-4 and Figure 2-5.
+All basic partitioning strategies are available for reference Partitioning. Interval partitioning cannot be used with reference partitioning.
+In previous releases of the Oracle Database, a table could only be partitioned if the partitioning key physically existed in the table. In Oracle Database 11g, virtual columns remove that restriction and allow the partitioning key to be defined by an expression, using one or more existing columns of a table. The expression is stored as metadata only.
+Oracle Partitioning has been enhanced to allow a partitioning strategy to be defined on virtual columns. For example, a 10 digit account ID can include account branch information as the leading 3 digits. With the extension of virtual column based Partitioning, an
+ACCOUNTS table containing an
+ACCOUNT_ID column can be extended with a virtual (derived) column
+ACCOUNT_BRANCH that is derived from the first three digits of the
+ACCOUNT_ID column, which becomes the partitioning key for this table.
+Virtual column-based Partitioning is supported with all basic partitioning strategies, including interval and interval-* composite partitioning.
+Just like partitioned tables, partitioned indexes improve manageability, availability, performance, and scalability. They can either be partitioned independently (global indexes) or automatically linked to a table's partitioning method (local indexes). In general, you should use global indexes for OLTP applications and local indexes for data warehousing or DSS applications. Also, whenever possible, you should try to use local indexes because they are easier to manage. When deciding what kind of partitioned index to use, you should consider the following guidelines in order:
+If the table partitioning column is a subset of the index keys, use a local index. If this is the case, you are finished. If this is not the case, continue to guideline 2.
+If the index is unique and does not include the partitioning key columns, then use a global index. If this is the case, then you are finished. Otherwise, continue to guideline 3.
+If your priority is manageability, use a local index. If this is the case, you are finished. If this is not the case, continue to guideline 4.
+If the application is an OLTP one and users need quick response times, use a global index. If the application is a DSS one and users are more interested in throughput, use a local index.
+See Also:Chapter 6, "Using Partitioning in a Data Warehouse Environment" and Chapter 7, "Using Partitioning in an Online Transaction Processing Environment" for more information about partitioned indexes and how to decide which type to use
+Local partitioned indexes are easier to manage than other types of partitioned indexes. They also offer greater availability and are common in DSS environments. The reason for this is equipartitioning: each partition of a local index is associated with exactly one partition of the table. This enables Oracle to automatically keep the index partitions in sync with the table partitions, and makes each table-index pair independent. Any actions that make one partition's data invalid or unavailable only affect a single partition.
+Local partitioned indexes support more availability when there are partition or subpartition maintenance operations on the table. A type of index called a local nonprefixed index is very useful for historical databases. In this type of index, the partitioning is not on the left prefix of the index columns.
+See Also:Chapter 4 for more information about prefixed indexes
+You cannot explicitly add a partition to a local index. Instead, new partitions are added to local indexes only when you add a partition to the underlying table. Likewise, you cannot explicitly drop a partition from a local index. Instead, local index partitions are dropped only when you drop a partition from the underlying table.
+A local index can be unique. However, in order for a local index to be unique, the partitioning key of the table must be part of the index's key columns.
+Figure 2-6 offers a graphical view of local partitioned indexes.
+Oracle offers two types of global partitioned indexes: range partitioned and hash partitioned.
+Global range partitioned indexes are flexible in that the degree of partitioning and the partitioning key are independent from the table's partitioning method.
+The highest partition of a global index must have a partition bound, all of whose values are
+MAXVALUE. This ensures that all rows in the underlying table can be represented in the index. Global prefixed indexes can be unique or nonunique.
+You cannot add a partition to a global index because the highest partition always has a partition bound of
+MAXVALUE. If you wish to add a new highest partition, use the
+PARTITION statement. If a global index partition is empty, you can explicitly drop it by issuing the
+PARTITION statement. If a global index partition contains data, dropping the partition causes the next highest partition to be marked unusable. You cannot drop the highest partition in a global index.
+Global hash partitioned indexes improve performance by spreading out contention when the index is monotonically growing. In other words, most of the index insertions occur only on the right edge of an index.
+By default, the following operations on partitions on a heap-organized table mark all global indexes as unusable:
+ADD (HASH) COALESCE (HASH) DROP EXCHANGE MERGE MOVE SPLIT TRUNCATE
+These indexes can be maintained by appending the clause
+UPDATE INDEXES to the SQL statements for the operation. The two advantages to maintaining global indexes:
+The index remains available and online throughout the operation. Hence no other applications are affected by this operation.
+The index doesn't have to be rebuilt after the operation.
+Note:This feature is supported only for heap-organized tables.
+Figure 2-7 offers a graphical view of global partitioned indexes.
+Global non-partitioned indexes behave just like a non-partitioned index.
+Figure 2-8 offers a graphical view of global non-partitioned indexes.
+You can create bitmap indexes on partitioned tables, with the restriction that the bitmap indexes must be local to the partitioned table. They cannot be global indexes.
+Global indexes can be unique. Local indexes can only be unique if the partitioning key is a part of the index key.

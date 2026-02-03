@@ -1,0 +1,68 @@
+Class 7 – Probability
+Take practice tests in Probability
+Introduction: Probability in simple English language means chance. Knowingly or unknowingly, we make statements that are concerned with chance.
+i) It may rain today.
+ii) Smita is likely to top in the board examination.
+iii) The train may be late.
+iv) India may win the World Cup this year.
+v) It may be a holiday tomorrow.
+All these statements are based on chance. They may or may not happen. Mathematicians have derived formulae to calculate this uncertainty. It is studied under the chapter called probability.
+Let us consider a few examples to illustrate the concept of probability.
+1. A coin is tossed and we know it will land on its head or tail. Both heads and tails have an equal chance to come up. Hence, in a cricket match, when a coin is tossed both the captains have a 50-50 chance to get a head and make the decision to bat or field.
+The total outcomes when a coin is tossed are either head (H) or tail (T), that is only one can occur at a time, so the probability of heads is and the probability of tail is .
+Probability is the measure of the chance of the happening of an event.
+2. We have all played Ludo or snakes and ladders. We use a dice to play the game. A dice is a cube which has six faces. Each face is marked with dots from 1 to 6. The dice is cast and any face can come up. There are six possible outcomes and each is equally likely or has the same chance of coming up. The probability of any number coming up is .
+3. If we have four colored cards lying face downwards and any one card is turned, we can get any of the four colored cards.
+There are four possible outcomes and the probability of drawing each colored card is .
+Let us understand the terms used in the examples given earlier.
+1. Experiment: This is an activity that is performed and the result obtained is called an outcome. For example, tossing a coin is an experiment and to get head or tail is an outcome.
+2. Random experiment: This is an experiment where the outcome cannot be predicted in advance. For example, when we toss a coin we cannot predict in advance whether we will get heads or tails.
+3. Event: It is the outcome that we want in a particular experiment. For example, tossing a coin is an experiment where the two possible outcomes are heads or tails. If we desire to get heads then the correct outcome is called an event.
+4. Sample space: All possible outcomes of an experiment are called a sample space. For example, when we throw a dice, the possible outcomes are 6 and written as 1, 2, 3, 4, 5 or 6.
+5. Sure event: It is an event that is definitely going to happen and has a probability of 1.
+6. Impossible event: It is an event that will not happen and has a probability of 0. The probability of any event lies between 0 and 1.
+If the probability that an event will occur is p then the probability that it will not occur is 1-p.
+Probability of event not occur =
+Probability cannot be negative and also cannot be greater than 1.
+Example: What is the probability of getting the number 4 when a dice is thrown?
+Solution: The possible outcomes are 1, 2, 3, 4, 5 or 6. The event is to get the number 4. So the probability of getting 4 is . There is only one face marked as
+Example:There are four flash cards-one red, one green and two blue. What is the probability of drawing a blue card?
+Solution: The total number of cards are four. There are two blue cards so the probability of getting a blue card is
+Example: A pack of playing cards consists of 52 cards. There are 4 suits spades(♠), Diamonds (♦), Hearts (♥), and Clubs (♣) 13 cards of each. The 13 cards are numbered 2, 3, 4, 5, 6, 7, 8, 9, 10, J (Jack), Q (Queen), K (King) and A (Ace). The number 1 is called an Ace. The clubs and spades are black in colour while Diamonds and Hearts are red.
+From a pack of playing cards, a card is drawn.
+a) What is the probability of getting an Ace of Heart?
+b) What is the probability of drawing a red Queen?
+c) What is the probability of drawing a king from any suit?
+a) The probbility of getting an ace of heart is because there is only one ace of Heart.
+b) The probability of a red Queen is because there are two red queens, one of hearts and the other of diamonds.
+c) The probability of getting a king from any suit is as there are four kings, one in each suit.
+Example: In a bag, there are seven cards numbered 1 to 7.
+A card is picked at random. What is the probability of picking:
+a) 5? b) an odd number?
+c) an even number? d) a prime number? e) 0?
+Solution: The total number of cards is7.
+a) There is only one card with the number 5.
+∴ Probability of getting a
+b) There are four cards with odd numbers, 1, 3, 5 and 7.
+∴ Probability of getting an odd number is =
+c) There are three cards that bear an even number, 2, 4 and 6.
+∴ Probability of getting an even number is =
+d) There are four cards with prime numbers, 2, 3, 5 and 7.
+∴ Probability of getting a prime number is =
+e) There is no card marked 0.
+∴ Probability of getting 0 =
+To get a 0 in this experiment is an impossible event.
+Example: A box contains 3 red, 2 blue and 5 green marbles. A marble is drawn at random. What is the probability of getting
+a) a red marble? b) a blue marble? c) a green marble?
+Solution: There are 3 red + 2 blue + 5 green marbles = 10 marbles in a box.
+a) The probability of getting a red marble = since there are 3 red, marbles in the box.
+b) The probability of getting a blue marble because there are 2 blue marbles in the box.
+c) The probability of getting a green marble since there are 5 green marbles in the box.
+Try out this activity to understand why a large amount of data is collected to finalise the probability of an event.
+a) Toss a coin 40 times and record the results in a table, using tally marks.
+b) Calculate the experimental probabilities for your experiment.
+c) What is the theoretical probability of getting a head on a single toss?
+d) How many of your 40 trials give you heads as result?
+e) Were your experimental probability close to the theoretical probability?
+f) Increase the number of trials to 60 and see what the change is?
+The more the number of trials are in a probability experiment, the closer the experimental probability would agree with the theoretical probability.

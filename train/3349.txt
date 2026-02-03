@@ -1,0 +1,19 @@
+|Sep24-12, 04:05 AM||#1|
+Difference between SAED pattern and XRD Pattern
+Hello every one!
+Why in SAED pattern some reflection are present but not in the powder XRD pattern? For example in my particular experiment FeCo bcc alloy nano structures, the XRD pattern contains only three reflection (110), (200) and (211). But in SAED pattern there are , reflection of (111), (100), (122), (211), (110) and (200).
+Please explain why it is so?
+Thanks a lot in advance
+|Sep25-12, 05:51 AM||#2|
+Multiple scattering is very very common in electron diffraction, but much less in x-ray diffraction (especially powder XRD).
+(100), (111) and (221) are forbidden for BCC and therefore do not show up in normal x-ray diffraction.
+FeCo can order in a B2 (CsCl-type) structure with Fe at the corner and Co in the center (or vice versa, same structure).
+Then the structure is simple cubic and these reflections are allowed (but weak). Multiple scattering will amplify the intensity of these weak reflections, i.e. they would show more strongly in electron diffraction than x-rays.
+This order is enhanced at surfaces (see article cited below). Nanoparticles being almost entirely surface, one would expect such order to be present. If you have access to a synchrotron, then trying an anomalous scattering experiment at the Fe or Co K-edge could be intresting.
+|Sep25-12, 05:56 AM||#3|
+Thank you very much Quak, I have understand it now clearly,
+Also the article you suggested is very interesting, Once again thanks.
+|Similar Threads for: Difference between SAED pattern and XRD Pattern|
+|Effect of phase difference on interference pattern||Quantum Physics||4|
+|What's the pattern here?||Calculus & Beyond Homework||1|
+|what is the pattern here?||Introductory Physics Homework||11|

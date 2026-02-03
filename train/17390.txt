@@ -1,0 +1,3 @@
+Intro to HTML5 Game Programming - WebGL Edition
+There was once a time where gaming in the browser meant Flash. That time is no more. Based on OpenGL ES, WebGL brings the 3D world to the browser without any plugins. For the first time, the browser has access to a powerful graphics pipeline comparable to what is available on the desktop and in some cases can leverage the GPU. Innovations like requestAnimationFrame which helps the browser to intelligently and efficiently redraw the canvas helps to blur the line between desktop and browser based casual games. In this session, you’ll learn the basics of game programming, WebGL, and how to create games using libraries from the WebGL ecosystem.
+- Not Interested

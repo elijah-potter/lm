@@ -1,0 +1,14 @@
+Join Greg Sowell for an in-depth discussion in this video HTTPS, part of Networking Foundations: Protocols and CLI Tools.
+- HTTPS is a method to encrypt standard HTTP traffic. This is accomplished in layer seven of the OSI model via transport layer security, TLS, or the older secure socket layer, SSL. It creates a secure conduit for communication between the client and the server. HTTPS is commonly used for banking, online purchases, and email, or anything and everything with sensitive and private data. Today, HTTPS is also starting to be used for more common services like search engines.
+Encryption protects against man in the middle attacks as well as interception of sensitive information. Encrypting with HTTP and TLS adds the additional benefit of encrypting all of the underlying protocol. This means the exact url, cookies, and headers are all hidden. The encryption process hinges on digital certificates. These digital certificates contain public tokens used in the cryptographic process. They are issued by known and trusted certificate authorities, or CA's.
+A server that wishes to host the secure website must go through the certificate enrollment process. They first create a request, this request is then sent to a CA who generates a certificate. This issued certificate can then be installed on the server. Web browsers have a list of major CA's and can verify certificates as they are presented by various websites. Of the top 150,000 websites, 30% employ some form of HTTPS. This percentage is steadily growing day by day.
+HTTPS is essential for modern day web based communications. It provides the confidence necessary to transmit the most sensitive pieces of information over the internet.
+Protocols are the lifeblood of modern communication. By the end of this course, you'll know what you need to troubleshoot any network connection and keep the communication flowing.
+Note: This course maps to domain 3 of the MTA Networking Fundamentals exam.
+- The role of protocols in networking
+- Port addresses
+- ARP and InARP
+- DNS and NetBIOS
+- HTTP and HTTPS
+- Mail protocols
+- Using command-line tools to troubleshoot protocols and routing

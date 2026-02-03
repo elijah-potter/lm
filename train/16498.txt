@@ -1,0 +1,32 @@
+The general topic of computational modeling of materials covers a wide range of size scales and applications: atomistic models to continuum approaches, quantum mechanics-based prediction of electrical and magnetic responses to deformation modeling of rolling and forming operations, three-dimensional deposition technology for single components to component assembly of large scale structures.
+Materials production technology is based traditionally on combinations of:
+- Fluid flow: Molten metal flow into ingots or molds, polymer flow into pre-pregs or molds
+- High rate deformation: Rolling, extrusion, forging
+- Heat treatment: Controlled thermal excursions to develop a required microstructure and properties
+More recently manufacturing processes have sought to reduce material waste and production cost by developing components closer to the final shape using:
+- Spray forming
+- Sintering of powder components
+- Additive manufacturing
+As the requirement for materials with novel properties and complex shapes has increased, additional manufacturing processes have emerged such as:
+- Monolithic ceramic composite production using reactive melt infiltration
+- Nano particle production through plasma deposition
+- Ultrasonic coupled colloid chemistry
+- Forming of 3D shapes with complex curvature
+Despite the importance of materials based technology for providing the basis for innovative products and processes, it can take over 20 years to introduce new materials into the market. Computational analysis can be used to accelerate the rate at which advanced materials can be deployed and accurate simulation of all these processes and product forms requires the use of complex, highly non-linear and coupled multiphysics and multiscale models. For example, accurate simulation of the Reactive Melt Infiltration Ceramic Matrix Composite production process requires the simultaneous analysis of fluid flow, thermal, reaction kinetics, phase transformation and structural mechanics.
+Prediction of the response of materials with special properties requires integration of the specific material constitutive behavior laws with the physics responsible for the effect of interest. For example, the response of coupled electromechanical response of piezoelectric based transducers or energy harvesters can be predicted by two constitutive equations which define how the stress (T), strain (S), charge density displacement (D) and electric field (E) interact; in strain-charge form these are:
+S = sE . T + dT . E
+D = d . T + εT . E
+Similarly, the Seebeck and Peltier effects govern prediction of the thermoelectric effect for which the governing equations for electric current balance and heat energy balance are:
+Technology for forming and joining of materials into complex component shapes can also be aided by computational analysis. Prediction of optimum heating patterns to develop controlled distortion has been used to develop complex curvatures, the effect of welding induced residual stresses on component lifetime can be predicted and innovative electromagnetic of ultrasonic technologies for materials consolidation and die less forming and joining have been developed.
+Through the application of computational analysis of advanced materials and materials processing technology AltaSim has helped its clients achieve optimum performance in applications including:
+- Ceramic matrix processing technology
+- Plasma deposition
+- Catalytic reactions
+- Three-dimensional material deposition
+- Microwave processing of materials
+- Silicon processing technology
+- Heat treatment procedures
+- Corrosion behavior
+- Materials joining technology
+- Component forming
+To discuss how AltaSim can help your development needs for materials technology, please contact us to arrange more detailed discussions.

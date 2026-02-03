@@ -1,0 +1,48 @@
+||It has been suggested that this article be merged into Ridge regression. (Discuss) Proposed since November 2012.|
+In statistics, Bayesian linear regression is an approach to linear regression in which the statistical analysis is undertaken within the context of Bayesian inference. When the regression model has errors that have a normal distribution, and if a particular form of prior distribution is assumed, explicit results are available for the posterior probability distributions of the model's parameters.
+Model setup 
+This corresponds to the following likelihood function:
+where is the design matrix, each row of which is a predictor vector ; and is the column -vector .
+This is a frequentist approach, and it assumes that there are enough measurements to say something meaningful about . In the Bayesian approach, the data are supplemented with additional information in the form of a prior probability distribution. The prior belief about the parameters is combined with the data's likelihood function according to Bayes theorem to yield the posterior belief about the parameters and . The prior can take different functional forms depending on the domain and the information that is available a priori.
+With conjugate priors 
+Conjugate prior distribution 
+For an arbitrary prior distribution, there may be no analytical solution for the posterior distribution. In this section, we will consider a so called conjugate prior for which the posterior distribution can be derived analytically.
+A prior is conjugate to this likelihood function if it has the same functional form with respect to and . Since the log-likelihood is quadratic in , the log-likelihood is re-written such that the likelihood becomes normal in . Write
+The likelihood is now re-written as
+where is the number of regression coefficients.
+This suggests a form for the prior:
+where is an inverse-gamma distribution
+In the notation introduced in the inverse-gamma distribution article, this is the density of an distribution with and with and as the prior values of and , respectively. Equivalently, it can also be described as a scaled inverse chi-squared distribution, .
+Further the conditional prior density is a normal distribution,
+In the notation of the normal distribution, the conditional prior distribution is
+Posterior distribution 
+With the prior now specified, the posterior distribution can be expressed as
+With some re-arrangement, the posterior can be re-written so that the posterior mean of the parameter vector can be expressed in terms of the least squares estimator and the prior mean , with the strength of the prior indicated by the prior precision matrix
+Therefore the posterior distribution can be parametrized as follows.
+where the two factors correspond to the densities of and distributions, with the parameters of these given by
+This can be interpreted as Bayesian learning where the parameters are updated according to the following equations.
+Model evidence 
+The model evidence is the probability of the data given the model . It is also known as the marginal likelihood, and as the prior predictive density. Here, the model is defined by the likelihood function and the prior distribution on the parameters, i.e. . The model evidence captures in a single number how well such a model explains the observations. The model evidence of the Bayesian linear regression model presented in this section can be used to compare competing linear models by Bayesian model comparison. These models may differ in the number and values of the predictor variables as well as in their priors on the model parameters. Model complexity is already taken into account by the model evidence, because it marginalizes out the parameters by integrating over all possible values of and .
+This integral can be computed analytically and the solution is given in the following equation.
+Here denotes the gamma function. Because we have chosen a conjugate prior, the marginal likelihood can also be easily computed by evaluating the following equality for arbitrary values of and .
+Note that this equation is nothing but a re-arrangement of Bayes theorem. Inserting the formulas for the prior, the likelihood, and the posterior and simplifying the resulting expression leads to the analytic expression given above.
+Other cases 
+In general, it may be impossible or impractical to derive the posterior distribution analytically. However, it is possible to approximate the posterior by an approximate Bayesian inference method such as Monte Carlo sampling or variational Bayes.
+The special case is called ridge regression.
+A similar analysis can be performed for the general case of the multivariate regression and part of this provides for Bayesian estimation of covariance matrices: see Bayesian multivariate linear regression.
+See also 
+||This article includes a list of references, but its sources remain unclear because it has insufficient inline citations. (August 2011)|
+- The intermediate steps are in Fahrmeir et al. (2009) on page 188.
+- The intermediate steps of this computation can be found in O'Hagan (1994) on page 257.
+- Carlin and Louis(2008) and Gelman, et al. (2003) explain how to use sampling methods for Bayesian linear regression.
+- Box, G.E.P. and Tiao, G.C. (1973) Bayesian Inference in Statistical Analysis, Wiley, ISBN 0-471-57428-7
+- Carlin, Bradley P. and Louis, Thomas A. (2008). Bayesian Methods for Data Analysis, Third Edition. Boca Raton, FL: Chapman and Hall/CRC. ISBN 1-58488-697-8.
+- O'Hagan, Anthony (1994). Bayesian Inference. Kendall's Advanced Theory of Statistics 2B (First ed.). Halsted. ISBN 0-340-52922-9.
+- Gelman, Andrew, Carlin, John B., Stern, Hal S. and Rubin, Donald B. (2003). Bayesian Data Analysis, Second Edition. Boca Raton, FL: Chapman and Hall/CRC. ISBN 1-58488-388-X.
+- Gero Walter, and Thomas Augustin (2009). Bayesian Linear Regression—Different Conjugate Models and Their (In)Sensitivity to Prior-Data Conflict, Technical Report Number 069, Department of Statistics, University of Munich.
+- Michael Goldstein, David Wooff (2007) Bayes Linear Statistics, Theory & Methods, Wiley. ISBN 978-0-470-01562-9
+- Fahrmeir, L., Kneib, T., and Lang, S. (2009). Regression. Modelle, Methoden und Anwendungen, Second Edition. Springer, Heidelberg. doi:10.1007/978-3-642-01837-4. ISBN 978-3-642-01836-7.
+- Peter E. Rossi, Greg M. Allenby, and Robert McCulloch, Bayesian Statistics and Marketing, John Wiley & Sons, Ltd, 2006
+- Thomas P. Minka (2001) Bayesian Linear Regression, Microsoft research web page
+- Bayesian estimation of linear models (R programming wikibook). Bayesian linear regression as implemented in R.
+A portion of the proceeds from advertising on Digplanet goes to supporting Wikipedia.

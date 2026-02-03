@@ -1,0 +1,43 @@
+Affiliate Disclosure: By buying the products we recommend, you help keep the lights on at MakeUseOf. Read more.
+You might find it strange when Windows tells you that you don’t have permission to access something on your own computer. Usually, this is a result of permissions in the NTFS file system Windows uses by default.
+If you see access is denied messages on Windows 10 when trying to access a file or folder, we’ll walk you through the steps to resolve this.
+1. Are You an Administrator?
+In the majority of cases, you’ll need to be an administrator on your PC to make changes to file/folder ownership. You may be able to tweak the permissions in directories that belong to you, but won’t have much control elsewhere.
+This is to keep everyone’s files on a computer private. Only administrators can gain access to files that belong to another user. In addition, you’ll need to provide admin permissions to make changes to system files, such as those in the Program Files and Windows folders.
+See our guide to getting admin rights in Windows if you haven’t done so yet. We’ll assume you’re an administrator moving forward.
+2. Fix Access Denied Errors by Taking Ownership
+The most basic fix to try when you see “folder access denied” is to take ownership of the folder through the File Explorer. Here’s how to do this.
+First, right-click the folder or file in question and select Properties. On the resulting window, switch to the Security tab. We’re interested in the Advanced button; click this.
+At the top of the next window, you’ll see a field labeled Owner. This will likely say Unable to display current owner if you’re having an issue. Click the blue Change link next to this to fix it—note that you’ll need to be an administrator to do so.
+You’ll now see a dialog box titled Select User or Group. Inside this, enter the account name of the new folder owner. This can be either an account username, or a group of users on your PC. Groups include standard units like Administrators (if you want all computer admins to own it), or Users (for everyone to own it). In home usage, it usually makes the most sense to assign ownership to one person.
+We assume that you want to take ownership of the folder with your own account, so type your username here. If you use a Microsoft account to sign into Windows 10, your username is the first five letters of your email address. Hit Check Names once you’re done to make sure it’s correct. If you are, it will automatically change to PCNAME\USERNAME. Click OK.
+Back on the main Advanced window, you’ll notice a box at the bottom that starts with Replace all child object permission entries. If you want your changes to apply to all folders inside the current one (which you probably do in most cases), check this box. Then hit OK twice, and you’re all done.
+Be Careful When Changing File Ownership Settings
+When dealing with “access denied” errors, you should apply the above steps with care. Avoid taking ownership of folders in system directories like Windows, Program Files, Program Data, or similar.
+Doing so will weaken the security of your system, because normal accounts aren’t meant to be the owners of these directories. They contain important Windows folders that you shouldn’t touch.
+You can still get access to these folders, using the method above, without becoming the owner.
+3. Review Folder Permissions
+If taking ownership of a folder doesn’t work, or you’re an administrator trying to give permissions to someone else, you should next review what users have which permissions on the folder in question.
+Pull up the same Security tab in a folder’s properties as before. At the top, you’ll see a list of users and groups on your PC. Select an entry here, and the bottom panel will show what permissions they have for this folder.
+As you’d expect, Full control gives you complete power over the folder and everything inside. Read is the most restrictive option, as it only allows you to see what’s in the folder. See Microsoft’s page on file and folder permissions for a more detailed breakdown.
+4. Double-Check Your Antivirus Settings
+Sometimes, your antivirus can get overzealous and end up messing with your ability to access files. If you’ve confirmed that everything is square with your file permissions above, you might consider testing this next.
+Take a look around your antivirus program’s settings and see if there’s a file shield or similar setting. Try disabling this and then access the file again. If it doesn’t have an effect, temporarily disable your antivirus entirely and see if that helps.
+5. Check for File Encryption
+Another reason you might see the “access is denied” message is that a folder’s contents are encrypted. As you may know, encryption protects a file by only allowing someone with the key to view it.
+You can encrypt folder contents in Windows, though this feature is only available in Professional versions. To do so, right-click it, and on the resulting window, click the Advanced button on the General tab. Here, check Encrypt contents to secure data. With this in place, everything inside the folder will be locked.
+This type of encryption is transparent, meaning that the owner never notices the encryption. As long as they’re logged into the system, they can access these files. But if you don’t have the certificate used to encrypt the folder, Windows will deny you access. Whoever encrypted the file will need to unlock it.
+This isn’t the only way to encrypt files in Windows 10, but it could cause the error you’re seeing.
+Other Potential “File Access Denied” Fixes
+We’ve covered the most important solutions for the “folder access denied” problem. You’ll see a lot of advice floating around the web for this issue, but not all of it is great. Some of it revolves around gaining admin permissions, which we’ve already discussed.
+Other advice may not work in every case, but it’s worth bringing up in case nothing else was successful for you.
+One common tactic is to disable User Account Control (UAC). To do this, type UAC into the Start Menu and choose Change User Account Control settings. Drag the slider all the way down and hit OK.
+Once you’ve done this, try the above steps again to take ownership. After you’re done, make sure to reset the UAC setting to where it was.
+As another troubleshooting step, try booting your computer in Safe Mode and running through the steps to take ownership. This rules out any interference from third-party programs.
+Finally, make sure that nothing else is using the folder or file you want to access. Another process could have the file locked, which is why you can’t make any changes to it.
+Fixing “Destination Folder Access Denied”
+You might see the more specific “destination folder access denied” issue pop up instead. In most cases, you can fix this using the same troubleshooting methods as above.
+Despite the message, don’t look to fix just the destination folder. Check the permissions on the source folder, too.
+Access Is Denied? We’ll See About That
+We’ve taken a look at how to resolve folder and file “access denied” problems in Windows. Usually, this comes down to a simple permission fix. Make sure you have administrator rights, then you can try taking ownership and adjusting permissions as needed. Just avoid changing ownership of protected system folders, which could compromise your system security.
+For more on Windows account management, see our guide to locking down Windows user accounts.

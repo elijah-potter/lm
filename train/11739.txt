@@ -1,0 +1,16 @@
+Cloud computing comes in three forms: Public clouds, Private clouds, and Hybrids clouds. Depending on the type of data you're working with, you'll want to compare public, private, and hybrid clouds in terms of the different levels of security and management required.
+|Public Cloud - Private Cloud - Hybrid Cloud|
+A public cloud is one in which the services and infrastructure are provided off-site over the Internet. These clouds offer the greatest level of efficiency in shared resources; however, they are also more vulnerable than private clouds. A public cloud is the obvious choice when:
+- Your standardized workload for applications is used by lots of people, such as e-mail.
+- You need to test and develop application code.
+- You have SaaS (Software as a Service) applications from a vendor who has a well-implemented security strategy.
+- You need incremental capacity (the ability to add computer capacity for peak times).
+- You’re doing collaboration projects.
+- You’re doing an ad-hoc software development project using a Platform as a Service (PaaS) offering cloud.
+A private cloud is one in which the services and infrastructure are maintained on a private network. These clouds offer the greatest level of security and control, but they require the company to still purchase and maintain all the software and infrastructure, which reduces the cost savings. A private cloud is the obvious choice when:
+- Your business is your data and your applications. Therefore, control and security are paramount.
+- Your business is part of an industry that must conform to strict security and data privacy issues.
+- Your company is large enough to run a next generation cloud data center efficiently and effectively on its own.
+A hybrid cloud includes a variety of public and private options with multiple providers. By spreading things out over a hybrid cloud, you keep each aspect at your business in the most efficient environment possible. The downside is that you have to keep track of multiple different security platforms and ensure that all aspects of your business can communicate with each other. Here are a couple of situations where a hybrid environment is best.
+- Your company wants to use a SaaS application but is concerned about security. Your SaaS vendor can create a private cloud just for your company inside their firewall. They provide you with a virtual private network (VPN) for additional security.
+- Your company offers services that are tailored for different vertical markets. You can use a public cloud to interact with the clients but keep their data secured within a private cloud.

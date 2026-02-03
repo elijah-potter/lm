@@ -1,0 +1,5 @@
+|Skip Navigation Links|
+|Exit Print View|
+|Oracle Solaris Administration: ZFS File Systems Oracle Solaris 11 Information Library|
+This chapter provides step-by-step instructions on setting up a basic Oracle Solaris ZFS configuration. By the end of this chapter, you will have a basic understanding of how the ZFS commands work, and should be able to create a basic pool and file systems. This chapter does not provide a comprehensive overview and refers to later chapters for more detailed information.
+The following sections are provided in this chapter:

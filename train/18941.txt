@@ -1,0 +1,18 @@
+... Holes found by researchers
+Unlike traditional electric meters that merely record power use - and then must be read in person once a month by a meter reader - smart meters measure consumption in real time.
+By being networked to computers in electric utilities, the new meters can signal people or their appliances to take certain actions, such as reducing power usage when electricity prices spike.
+But the very interactivity that makes smart meters so attractive also makes them vulnerable to hackers, because each meter essentially is a computer connected to a vast network.
+There are few public studies on the meters' resistance to attack, in part because the technology is new. However, last summer, Mike Davis, a researcher from IOActive Inc, showed how a computer worm could hop between meters in a power grid with smart meters, giving criminals control over those meters.
+Industry representatives say utilities are doing rigorous security testing that will make new power grids more secure than the patchwork system we have now, which is already under hacking attacks from adversaries believed to be working overseas.
+"We know that automation will bring new vulnerabilities, and our task - which we tackle on a daily basis - is making sure the system is secure," said Ed Legge, spokesman for Edison Electric Institute, a trade organisation for shareholder-owned electric companies.
+Lack of security probing
+But many security researchers say the technology is being deployed without enough security probing.
+InGuardians found vulnerabilities in products from all five of the meter makers the firm studied, according to Joshua Wright, a senior security analyst with InGuardians Inc.
+One of the most alarming findings involved a weakness in a communications standard used by the new meters to talk to utilities' computers.
+Wright found that hackers could exploit the weakness to break into meters remotely, which would be a key step for shutting down someone's power.
+Or someone could impersonate meters to the power company, to inflate victims' bills or lower his own. A criminal could even sneak into the utilities' computer networks to steal data or stage bigger attacks on the grid.
+Wright said similar vulnerabilities used to be common in wireless Internet networking equipment, but have vanished with an emphasis on better security.
+For instance, the meters encrypt their data - scrambling the information to hide it from outsiders.
+But the digital "keys" needed to unlock the encryption were stored on data-routing equipment known as access points to which many meters relay data.
+Stealing the keys lets an attacker eavesdrop on all communication between meters and that access point, so the keys instead should be kept on computers deep inside the utilities' networks, where they would be safer.
+"That lesson seems to be lost on these meter vendors," he said. That speaks to the "relative immaturity" of the meter technology, Wright added.

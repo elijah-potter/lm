@@ -1,0 +1,23 @@
+Many sites, such as Facebook or a blog, will allow a user to upload or download files to the site for a myriad of reasons, such as pictures for a website or files for a forum or blog software. In either case, there are two ways to upload a file to a server or website: using HTTP or using FTP.
+Here are some of the differences:
+1. HTTP is used to view websites while FTP is used to access and transfer files. FTP's file transfer purpose is more or less for website maintenance and batch uploads, while HTTP is for client-end work and for end users to upload things such as movies, pictures and other files to the server.
+2. HTTP and FTP clients: The common HTTP client is the browser while FTP can be accessed via the command line or a graphical client of its own.
+3. HTTP Headers: HTTP Headers contains metadata such as last modified date, character encoding, server name and version and more which is absent in FTP.
+4. Age Difference: FTP is about 10 years older than HTTP.
+5. Data Formats: FTP can send data both in ASCII and Binary Format but HTTP only uses Binary Format.
+6. Pipelining in HTTP: HTTP supports pipelining. It means that a client can ask for the next transfer already before the previous one has ended, which thus allows multiple documents to get sent without a round-trip delay between the documents, but this pipelining is missing in FTP.
+7. Dynamic Port Numbers in HTTP: One of the biggest hurdles about FTP in real life is its use of two connections. It uses a first primary connection to send control commands on, and when it sends or receives data, it opens a second TCP stream for that purpose. HTTP uses dynamic port numbers and can go in either direction,
+8. Persistent Connection in HTTP: For HTTP communication, a client can maintain a single connection to a server and just keep using that for any amount of transfers. FTP must create a new one for each new data transfer. Repeatedly making new connections are bad for performance due to having to do new handshakes/connections all the time.
+9. Compression Algorithms in HTTP: HTTP provides a way for the client and server to negotiate and choose among several compression algorithms. The gzip algorithm being the perhaps most compact one but such kind of sophisticated algorithms are not present in FTP.
+10. Support for Proxies in HTTP: One of the biggest selling points for HTTP over FTP is its support for proxies, already built-in into the protocol.
+11. One area in which FTP stands out somewhat is that it is a protocol that is directly on file level. It means that FTP has for example commands for listing dir contents of the remote server, while HTTP has no such concept.
+12. Speed: Possibly the most common question: which is faster for transfers?
+What makes FTP faster?
+1. No added meta-data in the sent files, just the raw binary
+2. Never chunked encoding "overhead"
+What makes HTTP faster?
+1. Reusing existing persistent connections make better TCP performance
+2. Pipelining makes asking for multiple files from the same server faster
+3. Automatic compression makes less data get sent
+4. No command/response flow minimizes extra round-trips
+Conclusion: Ultimately the net outcome of course differ depending on specific details, but I would say that for single-shot static files, you won't be able to measure a difference. For a single shot small file, you might get it faster with FTP (unless the server is at a long round-trip distance). When getting multiple files, HTTP should be the faster one.

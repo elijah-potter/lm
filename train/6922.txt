@@ -1,0 +1,66 @@
+The video below presents an experiment made by two students at Mines Douai (Max MATTONE and Suzanne SHOARA) to achieve indoor localization based on WiFi signals.
+Recently, we released several ROS packages for multi-robot exploration, including:
+- explore_multirobot http://wiki.ros.org/explore_multirobot: is a multi-robot version of the explore package.
+- map_merging http://wiki.ros.org/map_merging: merges multiple maps with knowledge of the initial relative positions of robots.
+- tf_splitter http://wiki.ros.org/tf_splitter: decomposes the /tf topic into multiple ones.
+- pose_publisher http://wiki.ros.org/pose_publisher: provides current position and orientation of the robot in the map.
+These packages have been tested in ROS Groovy. However, Groovy is EOLed and there are no documentation or release jobs running anymore. We will test in more recent versions in order to improve our wiki.
+In traditional robot behavior programming, the edit-compile-simulate-deploy-run cycle creates a large mental disconnect between program creation and eventual robot behavior. This significantly slows down behavior development because there is no immediate mental connection between the program and the resulting behavior. With live programming the development cycle is made extremely tight, realizing such an immediate connection. In our work on programming of ROS robots in a more dynamic fashion through PhaROS, we have experimented with the use of the Live Robot Programming language. This has given rise to a number of requirements for such live programming of robots. In this text we introduce these requirements and illustrate them using an example robot behavior.
+- Follow the steps 1 to 4 of this post.
+Create a ROS node that consumes
+/kompai/scanand publish in
+/command_velocity. To do this, just executing this:
+Create an instance of the
+- To assure that everything is fine, inspect the instance of
+RobulabBridgeand check that its instance variable
+laserDatais not nil and its values change over the time.
+- Open the LRP UI by right-clicking the World and selecting Live Robot Programming.
+Stop when an obstacle is detected
+Ok, so now we can start writing the behavior. First we will need some variables, those are:
+robulabto manage the robot and some constants such as:
+f_velas linear velocity,
+t_velfor angular velocity, and
+min_distanceas the minimum distance between the robot and an obstacle.
+(var robulab := [RobulabBridgr uniqueInstance ]) (var min_distance := [0.5]) (var f_vel := [0.25]) (var t_vel := [0.5])
+We define the state machine called Tito.
+What we want to the robot is to go forward unless there is an obstacle in front of it so it should stop and turn to avoid it.
+This could be modelled in a abstractly as two states:
+(machine Tito ;; States (state forward (onentry [robulab value forward: f_vel value]) ) (state stop (onentry [robulab value stop]) ) ;; Transitions (on obstacle forward -> stop t-avoid) (on noObstacle avoid -> forward t-forward) ;; Events (event obstacle [robulab value isThereAnObstacle: min_distance value]) (event noObstacle [(robulab value isThereAnObstacle: min_distance value) not]) )
+Finally, to run it, just start the machine on the
+(spawn Tito forward)
+- The robot should move linearly and stop when detects an obstacle.
+Let’s add an avoiding behavior. A simple one might be turning until it detects there is no obstacle and go forward again.
+Then a simple behavior that match the avoidance requisite is:
+- If the obstacle is in the left side of the front: turn right
+- If the obstacle is in the right side of the front: turn left.
+RobotBridge provides two methods to detect obstacles on the left and right part of the front of the robot:
+Then, the idea is to turn left if there is an obstacle in the front-right, or, turn right if there is an obstacle in the front-left.
+Add the following states
+(state turnLeft (onentry [robulab value turn: t_vel value]) ) (state turnRight (onentry [robulab value turn: t_vel value negated]) )
+Add the corresponding transitions
+(on rightObstacle stop -> turnLeft t-lturn) (on leftObstacle stop -> turnRight t-rturn) (on noObstacle turnLeft -> stop t-tlstop) (on noObstacle turnRight -> stop t-trstop)
+And add the events
+(event rightObstacle [robulab value isThereARightObstacle: minDistance value]) (event leftObstacle [robulab value isThereALeftObstacle: minDistance value])
+- Now the robot will start turning to avoid the obstacle.
+Updated version of LRP it is not necessary to add
+value after a variable.
+(onentry [robulab value turn: t_vel value negated])
+is turned to
+(onentry [robulab turn: t_vel negated])
+making it more readable.
+Our coordination framework for multi-robot exploration needs to know the current robot’s pose (position and orientation) within the explored map frame.
+There are two ways to achieve it:
+1 – Using costmap function.
+bool costmap_2d::Costmap2DROS::getRobotPose(tf::Stamped& global_pose) const
+2 – Using tf listener.
+geometry_msgs::PoseStamped pose_stamped; pose_stamped.header.stamp = ros::Time::now(); pose_stamped.header.frame_id = tf_prefix + "/" + map_frame; pose_stamped.pose.position.x = transform.getOrigin().getX(); pose_stamped.pose.position.y = transform.getOrigin().getY(); pose_stamped.pose.position.z = transform.getOrigin().getZ(); pose_stamped.pose.orientation.x = transform.getRotation().getX(); pose_stamped.pose.orientation.y = transform.getRotation().getY(); pose_stamped.pose.orientation.z = transform.getRotation().getZ(); pose_stamped.pose.orientation.w = transform.getRotation().getW(); pose_publisher.publish(pose_stamped);
+A complete implementation of the second method can be found http://wiki.ros.org/pose_publisher.
+Both methods need a transform from “map” to “odom” (gmapping can do this).
+Our coordination framework will be released after the corresponding paper has been published.
+To check the accuracy of the exploration map, we need to compare with a pre-built one.
+Of course, the latter needs to have a good accuracy.
+We provide here a tool to manually build an environment map in MORSE.
+This tool has the following features:
+- Map building using gmapping ROS package.
+- Robot with perfect odometry.
+- Visualize the mapping process using rviz ROS package.

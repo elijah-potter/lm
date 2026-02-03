@@ -1,0 +1,6 @@
+Tech moves fast! Stay ahead of the curve with Techopedia!
+Join nearly 200,000 subscribers who receive actionable tech insights from Techopedia.
+Bluebugging is a technique that allows skilled hackers to access mobile commands on Bluetooth-enabled devices that are in discoverable mode.
+Bluebugging is similar to phone eavesdropping, or bugging.
+Because discoverable mode is a default setting, most Bluetooth-enabled mobile phones and devices are automatically vulnerable to bluebugging attacks. Certain tools - such as RedFang and BlueSniff - allow hackers to infiltrate Bluetooth-enabled devices that are not in discoverable mode.
+Bluebugged devices are vulnerable to one or more of the following scenarios:

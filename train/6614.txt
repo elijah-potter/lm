@@ -1,0 +1,6 @@
+Recently I came across this line of code:
+$number = $object->getNumber() . '-' . substr(('000' . $object->getCounter()), -4, 4);
+It is not very intuitive but if you look at it a little closer it becomes clear that the intent of the programmer was to pad the counter with ‘0’ limiting the size to 4. It does this by starting at the 4th character from the end(-4) and then extracting 4 characters from that point. So if the counter was 77 making the concatenated number 00077, it would extract 0077. Basically the last four. This is not very good use of string functions:-)
+A simple rule to remember is whenever a particular format is required is to use sprintf or one its variants. That’s what the function is intended to do. I have demonstrated the code both ways.
+$dateString = '11122010'; $counter = 5; //non intuitive $number = $dateString . '-' . substr(('000' . $counter), -4, 4); echo $number; //intuitive $number = sprintf('%s-%04s', $dateString, $counter); echo $number;
+Nice and simple!

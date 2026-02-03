@@ -1,0 +1,82 @@
+1) What is ASM?
+Automatic storage Management (ASM) is a new type of filesystem which was introduced with Oracle 10g. ASM is recommended filesystem for RAC and Single instance ASM for storing database files. This provides direct I/O to the file and performance is comparable with that provided by RAW Devices. Oracle creates a separate instance for this purpose.
+2) How do we identify if we are connected to Normal Instance or ASM instance?
+Issue following command to identify this
+SQL> show parameter instance_type
+NAME TYPE VALUE
+------------------------------------ ----------- ------------------------------
+instance_type string asm
+In case you are connected to ASM instance, it will display value as asm, otherwise it will display value as RDBMS.
+3) What are Diskgroup’s and Failuregroups?
+Diskgroup is a terminology used for logical structure which holds the database files. Each Diskgroup consists of Disks/Raw devices where the files are actually stored. Any ASM file is completely contained within a single disk group. However, a disk group might contain files belonging to several databases and a single database can use files from multiple disk groups.
+Failuregroups are used when using Normal/High Redundancy. They contain the mirrored ASM extents and must be containing different disks and preferably on separate disk controller.
+4) Can ASM be used as replacement for RAID?
+ASM is supposed to stripe the data and also mirror the data (if Using Normal, High Redundancy). So this can be used as an alternative for RAID 0+1 solutions
+5) How does ASM provides Redundancy?
+When you create a disk group, you specify an ASM disk group type based on one of the following three redundancy levels:
+* Normal for 2-way mirroring – When ASM allocates an extent for a normal redundancy file; ASM allocates a primary copy and a secondary copy. ASM chooses the disk on which to store the secondary copy in a different failure group other than the primary copy.
+* High for 3-way mirroring. In this case the extent is mirrored across 3 disks.
+* External to not use ASM mirroring. This is used if you are using Third party Redundancy mechanism like RAID, Storage arrays.
+6) Can we change the Redundancy for Diskgroup after its creation?
+No, we cannot modify the redundancy for Diskgroup once it has been created. To alter it we will be required to create a new Diskgroup and move the files to it. This can also be done by restoring full backup on the new Diskgroup. Following metalink note describes the steps
+Note.438580.1 – How To Move The Database To Different Diskgroup (Change Diskgroup Redundancy)
+7) I am unable to open the ASM instance. What is the reason?
+ASM instance does not have open stage. It has got only two options
+* Nomount- This starts the ASM instance
+* Mount- At this stage, Diskgroup defined in ASM_DISKGROUPS parameter are mounted
+When you try to open the ASM instance , you get following error
+SQL> alter database open;
+alter database open
+ERROR at line 1:
+ORA-15000: command disallowed by current instance type
+8) Can ASM instance and database (rdbms) be on different servers?
+ASM instance and Database (rdbms) have to be present on same server. Otherwise it will not work.
+9) Can we see the files stored in the ASM instance using standard unix commands.
+No, you cannot see the files using standard unix commands like ls. You need to use utility called asmcmd to do this. This is present in 10.2 and above.
+10) What kind of files can be stored on ASM Diskgroup?
+You can store the following file types in ASM disk groups:
+* Control files
+* Datafiles, temporary datafiles, and datafile copies
+* Online redo logs, archive logs, and Flashback logs
+* RMAN backups
+* Disaster recovery configurations
+* Change tracking bitmaps
+* Data Pump dumpsets
+Note: Oracle executables and ASCII files, such as alert logs and trace files, cannot be stored in ASM disk groups.
+11) Can we use ASM for storing Voting Disk/OCR in a RAC instance?
+In oracle 11gR1 and below, you cannot use ASM for storing the voting disk and OCR. It is due to the fact that Clusterware starts before ASM instance and it should be able to access these files which is not possible if you are storing it on ASM. You will have to use raw devices or OCFS or any other shared storage.
+In Oracle 11gR2 we can store them in ASM.
+12) Does ASM instance automatically rebalances and takes care of hot spots?
+No. This is a myth and ASM does not do it. It will initiate automatic rebalance only when a new disk is added to Diskgroup or we drop a disk from existing Diskgroup.
+13) What is ASMLIB?
+ASMLIB is the support library for the ASM. ASMLIB allows an Oracle database using ASM more efficient and capable access to diskgroups. The purpose of ASMLIB, is to provide an alternative interface to identify and access block devices. Additionally, the ASMLIB API enables storage and operating system vendors to supply extended storage-related features.
+14) What is SYSASM role?
+Starting from Oracle 11g, SYSASM role can be used to administer the ASM instances. You can continue using SYSDBA role to connect to ASM but it will generate following warning messages at time of startup/shutdown, create Diskgroup/add disk, etc
+WARNING: Deprecated privilege SYSDBA for command 'STARTUP'
+15) How can we copy the files from/to ASM?
+You can use RMAN or DBMS_FILE_TRANSFER.COPY_FILE procedure to copy the files to/from ASM from/to Filesystem. Starting from Oracle 11g, you can use cp command in asmcmd to perform the same between ASM Diskgroups and also to OS Filesystem.
+16) Can we use BCV to clone the ASM Diskgroup on same host?
+Diskgroup Cloning is not supported on the same host using BCV. You have no other option to use except RMAN DUPLICATE. You can find more detail on BCV and ASM in below whitepaper
+17) Can we edit the ASM Disk header to change the Diskgroup Name?
+No. This cannot be done. Please find details in
+18) Whats is Kfed?
+kfed is a utility which can be used to view the ASM Disk information. Syntax for using it is
+kfed read devicename
+19) Can we use block devices for ASM Disks?
+Yes. Starting from Oracle Database 10.2 block devices can be used directly for ASM Disks in Linux. This is not true for other Unix based systems where block devices are not supported yet.
+Along with this it is recommended to use a Device mapping functionality so that disk mapping is preserved after disk failure. This is important when you have devices as /dev/sda,/dev/sdb,/dev/sdc and due to some reason the devices are not detected at next reboot (say /dev/sdb), the system will map the incorrect device (i.e /dev/sdc will be marked as /dev/sdb). You can use following methods for preserving disk names
+-udev – the role of udev is to provide device persistency and naming consistency.This is especially important for the Oracle Cluster Registry (OCR) and Voting disks required by Oracle Clusterware.
+-ASMLIB – ASMLIB will provide device management specifically for ASM disk devices.
+20) Is it mandatory to use disks of same size and characteristics for Diskgroups?
+No, it is not mandatory to use the disks of same size and characteristics for Diskgroups though it is a Recommended Practice.
+Same size disk for Failuregroups in Normal/High redundancy will prevent issues like ORA-15041 as the file extents needs to be mirrored across the disks. Also as Oracle distributes data based on capacity, so larger disk will have more data stored in it and which will result in higher I/O to disk and eventually can lead to sub-optimal performance.
+Moreover having disks of different characteristic like varying disk speed can impact the performance.
+When managing disks with different size and performance capabilities, best practice is to group them into disk groups according to their characteristics. So you can use higher speed disks for your database files while other disks can be part of Diskgroup used for Flash Recovery Area.
+21) Do we need to install ASM and Oracle Database Software in different ORACLE_HOME?
+No. Again installing ASM and Oracle Database Software in different ORACLE_HOME is not mandatory but a best practice. This is useful in cases when we need to have multiple databases using same ASM instance and you need to patch only one of them. E.g You need to apply a CBO patch to one of 10.2 database while your other 10.1 database using different installation does not require it. In this case having a ASM_HOME separate from 10.2 ORACLE_HOME will allow your 10.1 database to keep running. Thus this approach is useful for High Availability.
+22) What is the maximum size of Disk supported by ASM?
+ASM supports disks up to 2Tb, so you need to ensure that lun size should be less then 2Tb. 10.2.0.4 and 11g database will give error if you try to create a diskgroup with ASM disks having disk size >2Tb.
+23) I have created Oracle database using DBCA and having a different home for ASM and Oracle Database. I see that listener is running from ASM_HOME. Is it correct?
+This is fine. When using different home for ASM, you need to run the listener from ASM_HOME instead of ORACLE_HOME.
+For more ORACLE Database Interview Questions and Answers visit:DBA interview questions
+please upload some high experienced interview questions and answers.ReplyDelete

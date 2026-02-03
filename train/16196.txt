@@ -1,0 +1,62 @@
+No more excuses — coding is now way too easy and fun to avoid it. Long gone are the days of Internet Explorer 6, browser compatibility issues and buggy scripts.
+It is also a great starting point for learning to program user interfaces and understand what browser offers under the hood. Let’s dive in.
+Practicing with examples
+If you prefer to work with your own HTML editor, load this HTML template then simply copy and paste code from the examples in the appropriate template sections.
+Understanding how jQuery works
+Here is how you typically use it:
+Where $ is just an abbreviation for jQuery, selector is an HTML id or class, and doSomething() is a jQuery method you want to use on that element.
+It really is this simple — jQuery has a great syntax.
+… will do exactly what you think – it will select the html element with id=’menu’ and make it visible using the show() method.
+Similarly, the following code will select all elements with class=”urgent” and add an additional class “red” by using the addClass() method.
+Easy, isn’t it?
+1. Adding interactivity
+There is little use in programming unless you allow the user to actually do something — that is, to interact with the website.
+That’s why responding to user events such as clicks, mouse overs and key strokes is almost always a starting point of any jQuery code. The best part? It’s dead simple. Here is an example to get you started:
+Here is what happens above:
+- The $(“#big-button”) part tells jQuery to select the element with id=”big-button”.
+- The “.click “ tells jQuery we want to use click method and run showSomething function whenever user clicks the #big-button.
+Here is another example with slightly more code but fancier result. Can you guess what it does?
+Here’s how this script works:
+- $(“#name”) tells jQuery to deal with element id=’name’.
+- .keyup(updateName) calls jQuery keyup method and tells it to run updateName function whenever it detects keystroke on #name element.
+- The first line of updateName() function makes use of jQuery val() method to read the current value of #name input. It will then store that value inside ‘name’ variable.
+- The second line calls jQuery text() method which replaces the text content of #user-name element with the value we stored in our name variable.
+2. Showing and hiding content
+Showing and hiding content is the nuts and bolts of user interface code. Dropdown menus, modal dialogs, slide shows and tabs all require this simple functionality — showing and hiding page elements as necessary.
+jQuery has few methods to show and hide content:
+- show() and hide() methods — do what they say
+- toggle() — toggles between show() and hide() methods, depending on current visibility of the element
+Consider this example:
+Tip: Try replacing show() and hide() with slideUp() and slideDown() method to get an interesting animation effect.
+The code above is straightforward — we are using click method on #show-btn and #hide-btn, which run showMenu and hideMenu functions respectively.
+However, this seems like a lot of work for a simple functionality. It would be much better if we had a way to use one button which toggles the state of the menu – show it if it’s hidden, and hide it if it’s visible. The toggle method does exactly that:
+Voila! Our code is cut in half and we have a nice looking dropdown menu.
+Tip: Replace toggle() with slideToggle() method to get an interesting animation effect.
+3. Moving things around
+Modifying web page layout on the fly is a huge use case for jQuery. The most common methods are appendTo and prependTo, which move the selection to another element.
+The following example will allow you to move to-do items to the “Done” list simply by clicking on them.
+Here is what we are doing in this script:
+- We are selecting all
+- elements from #to-do list and attaching a click handler function called markDone.
+- Inside the function, we are using something new — this keyword. This is a special keyword which represents the actual html element that the user clicked on, so we can do something with it. In this case, the element is one of the <li> items from the #to-do list.
+- We are passing this element to jQuery and calling appendTo method on it, specifying #done as the target container. This effectively moves the element from #to-do list to #done list.
+Tip: The difference between appendTo() and prependTo() methods is slight but very useful — append will place your selection above everything else inside the target element, while prepend will do the opposite.
+4. Manipulating styles and classes
+Changing CSS with jQuery is extremely easy. There are few methods that are helpful here:
+- Css() — to change css of an element
+- addClass() and removeClass() — to add and remove stylesheet classes
+Consider this example:
+Here is what we are doing:
+- First, two buttons are calling functions that modify #text element style directly using css() method.
+- We pass two arguments to css method: the style property we want to change (in our case, ‘background-color’) and value we want to change it to (i.e. ‘#FF0000’). We can change any other css property in the same way.
+- Large text and small text buttons are calling the handler function which adds and removes .large-text class from the #text element, using add Class() and removeClass() methods. This is done using addClass() and removeClass() methods to which we simply pass a class name we wish to add or remove.
+5. Loading new content without page refresh
+Sometimes you don’t need to refresh the whole page in order to show just a piece of new content. For example, you might want to show a preview of news story and make the Load button load the entire story inside the same element.
+jQuery makes that easy with its load() method.
+Here is what happens here:
+- The initial HTML shows some preview content inside #tutorial element, with a Load button.
+- In the script, we are attaching a click handler function to button #btn-load.
+- When button is clicked, the handler function will load the specified html file inside #tutorial element, replacing the preview content with the content of the file.
+Important: jQuery load() method can only be used to load content which resides on the same server as your website — you cannot load content from other websites. To test the example above, use the provided HTML template and copy the code there, then run it in your browser.
+Ready to move on?
+I hope this article helped you understand how easy it is to get started with jQuery. Some examples are more verbose than necessary in order to make them easier to understand — once you start learning more, you will understand there are more efficient ways to achieve the same result.

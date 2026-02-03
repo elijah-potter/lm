@@ -1,0 +1,25 @@
+COLOR DISCRIMINATION AND IDENTIFICATION
+Users need to be able to discriminate among any colors used to distinguish data. In some applications they also need to be able to identify the colors. A number of visual and cognitive factors affect discriminability and identifiability of colors. Under some conditions the number of usable colors may run into the thousands. In others the number may be on the order of six, with several having restricted meanings. If some of the intended users have anomolous color discrimination ("color blind"), the choices may be even more limited.
+Conditions for Good Discrimination
+Small color differences can be distinguished when the areas to be discriminated are large, immediately adjacent to each other (share an edge near the viewed point) and are displayed at the same time. These conditions occur, for example, in visualization of quantized continuous data as in maps of weather, temperatures, pressures or terrain. Larger color differences are required whenever conditions deviate from this optimum.
+Here the immediately adjacent stripes are clearly visually discriminable (though not necessarily identifiable).
+Size and Discrimination
+Here are the same colors as in the figure above, but the areas are smaller and the patches are separated from each other by the contrasting white background. Adjacent pairs are difficult or impossible to discriminate.
+As the area of the patches is reduced further even large color differences can become very hard to detect. In each row the set of five colors is identical at the level of the digital data. (On some displays, esp. CRTs, the physical color differences among the patches are reduced at the smaller sizes). On my LCD monitor I have difficulty distinguishing the blue, cyan and green patches in the middle row and in the top row I can distinguish only two color classes (the red/magenta and the green/cyan/blue).
+Individual Differences in Color Discrimination
+identification are even more complicated for observers with anomalous
+color vision. True dichromats' color perception varies along only two
+of the three dimensions of normal color vision. Since the color confusions
+of dichromats are well-defined mathematically it is possible to choose
+(smaller) sets of colors for labeling that can be discriminated by dichromats.
+Even given such a set, though, it is possible that identification performance
+of dichromats could be different from that of color normals. If the user
+population is not restricted to color normals, all important distinctions
+among symbols should include non-color graphic variables.
+Left: To deuteranopes, the most common kind of dichromat, the three elements within Set A are indistinguishable on the basis of hue, as are the three elements in Set B.
+Edge vs. Smooth Gradient
+Color discrimination is best when a sharp edge separates the colors to be discriminated, for example, between a symbol and a uniform background color. When a smooth gradient separates two color patches the smallest detectable difference in color is larger than it would be if the patches were adjacent and separated by a sharp edge, and the difference of color appearance is reduced. Smooth gradients are common when a continuous variable over a background area (for example, map elevations) is color coded.
+Left: The top row includes three of the pairs of adjacent colors from the figure at the top of the page, with a sharp edge between each pair. The bottom row is the same pairs as the top row but with a smooth gradient across the middle third of each.
+Labeling with Color
+Individual Differences in Color Vision
+Discrimination and Identification Color Guidelines

@@ -1,0 +1,81 @@
+Cavitation means that cavities or bubbles are forming in the liquid that we're pumping. These cavities form at the low pressure or suction side of the pump, causing several things to happen all at once:
+- The cavities or bubbles will collapse when they pass into the higher regions of pressure, causing noise, vibration, and damage to many of the components.
+- We experience a loss in capacity.
+- The pump can no longer build the same head (pressure)
+- The pump's efficiency drops.
+The cavities form for five basic reasons and it's common practice to lump all of them into the general classification of cavitation. This is an error because we'll learn that to correct each of these conditions, we must understand why they occur and how to fix them. Here they are in no particular order :
+- Air ingestion (Not really cavitation, but has similar symptoms)
+- Internal recirculation
+- Flow turbulence
+- The Vane Passing Syndrome
+A fluid vaporizes when its pressure becomes too low, or its temperature too high. All centrifugal pumps have a required head (pressure) at the suction side of the pump to prevent this vaporization. This head requirement is supplied to us by the pump manufacturer and is calculated with the assumption that fresh water at 68 degrees Fahrenheit (Twenty degrees Centigrade) is the fluid being pumped.
+Since there are losses in the piping leading from the source to the suction of the pump, we must determine the head after these losses are calculated. Another way to say this is that a Net Positive Suction Head is Required (N.P.S.H.R.) to prevent the fluid from vaporizing.
+We take the Net Positive Suction Head Available (N.P.S.H.A.) subtract the Vapor Pressure of the product we are pumping, and this number must be equal to or greater than the Net Positive Suction Head Required.
+To cure vaporization problems you must either increase the suction head, lower the fluid temperature, or decrease the N.P.S.H. Required. We shall look at each possibility:
+Increase the suction head
+- Raise the liquid level in the tank
+- Raise the tank
+- Pressurize the tank
+- Place the pump in a pit
+- Reduce the piping losses. These losses occur for a variety of reasons that include :
+- The system was designed incorrectly. There are too many fittings and/or the piping is too small in diameter.
+- A pipe liner has collapsed.
+- Solids have built up on the inside of the pipe.
+- The suction pipe collapsed when it was run over by a heavy vehicle.
+- A suction strainer is clogged.
+- Be sure the tank vent is open and not obstructed. Vents can freeze in cold weather
+- Something is stuck in the pipe, It either formed there, or was left during the last time the system was opened . Maybe a check valve is broken and the seat is stuck in the pipe.
+- The inside of the pipe, or a fitting has corroded.
+- A bigger pump has been installed and the existing system has too much loss for the increased capacity.
+- A globe valve was used to replace a gate valve.
+- A heating jacket has frozen and collapsed the pipe.
+- A gasket is protruding into the piping.
+- The pump speed has increased.
+- Install a booster pump
+Lower the pumping fluid temperature
+- Injecting a small amount of cooler fluid at the suction is often practical.
+- Insulate the piping from the sun's rays.
+- Be careful of discharge recirculation lines. They can heat the suction fluid.
+Reduce the N.P.S.H. Required
+- Use a double suction pump. This can reduce the N.P.S.H.R. by as much as 25%, or in some cases it will allow you to raise the pump speed by 40%
+- Use a slower speed pump.
+- Use a pump with a larger, impeller eye opening.
+- If possible, install an Inducer. These inducers can cut N.P.S.H.R. by almost 50%.
+- Use several smaller pumps. Three half capacity pumps can be cheaper than one large pump plus a spare. This will also conserve energy at lighter loads.
+It's a general rule of thumb that hot water and gas free hydrocarbons can use up to 50% of normal cold water N.P.S.H. requirements, or 10 feet (3 meters), whichever is smaller. I would suggest you use this as a safety margin, rather than design for it.
+A centrifugal pump can handle 0.5% air by volume. At 6% air the results can be disastrous. Air gets into as system in several ways that include :
+- Through the packing stuffing box. This occurs in any packed pump that lifts liquid, pumps from a condenser, evaporator, or any piece of equipment that runs in vacuum.
+- Valves located above the water line.
+- Through leaking flanges.
+- Pulling air through a vortexing fluid.
+- If a bypass line has been installed too close to the suction, it will increase the temperature of the incoming fluid.
+- Any time the suction inlet pipe looses fluid. This can occur when the level gets too low, or there is a false reading on the gauge because the float is stuck on a corroded rod.
+Both vaporization and air ingestion have an adverse affect on the pump. The bubbles collapse as they pass from the eye of the pump to the higher pressure side of the impeller. Air ingestion seldom causes damage to the impeller or casing. The main effect of air ingestion is loss of capacity.
+Although air ingestion and vaporization can both occur, they have separate solutions. Air ingestion is not as severe as vaporization and seldom causes damage, but it does lower the capacity of the pump.
+This condition is visible on the leading edge of the impeller, close to the outside diameter, working its way back to the middle of the vane. It can also be found at the suction eye of the pump.
+As the name implies, the fluid recirculates increasing its velocity until it vaporizes and then collapses in the surrounding higher pressure. This has always been a problem with low NPSH pumps and the term Suction Specific Speed to guide you in determining how close you have to operate to the B.E.P. of a pump to prevent the problem.
+The higher the number the smaller the window in which you can operate. The numbers range between 3,000 and 20,000. Water pumps should stay between 3,000 and 12,000. Here is the formula to determine the suction specific speed number of your pump:
+rpm = Pump speed
+Capacity = Gallons per minute, or liters per second of the largest impeller at its BEP
+Head= Net positive suction head required (feet or meters) at that rpm
+- For a double suction pump the flow is divided by 2 since there are 2 impeller eyes
+- Try to buy pumps with a suction specific speed number lower than 8500.(5200 metric ) forget those over 12000 (8000 metric) except for extreme circumstances.
+- Mixed hydrocarbons and hot water at 9000 to 12000 (5500 to 7300 metric) or higher, can probably operate satisfactorily.
+- High specific speed indicates the impeller eye is larger than normal, and efficiency may be compromised to obtain a low NPSH required.
+- Higher values of specific speed may require special designs, and operate with some cavitation.
+- Normally a pump operating 50% below its best efficiency point (B.E.P.) is less reliable.
+With an open impeller pump you can usually correct the internal recirculation problem by adjusting the impeller clearance to the manufacturers specifications. Closed impeller pumps present a bigger problem and the most practical solution seems to be to contact the manufacturer for an evaluation of the impeller design and a possible change in the design of the impeller or the wear ring clearances.
+We always prefer to have liquid flowing through the piping at a constant velocity. Corrosion or obstructions can change the velocity of this liquid, and any time you change the velocity of a liquid, you change its pressure. Good piping layouts would include :
+- Ten diameters of pipe between the pump suction and the first elbow.
+- In multiple pump arrangements locate the suction bells in separate bays so that one pump suction will not interfere with another. If this is not practical, a number of units can be installed in a single large sump provided that :
+- The pumps should be positioned in a line perpendicular to the approaching flow.
+- There must be a minimum spacing of at least two suction diameters between pump center lines.
+- All pumps are running.
+- The upstream conditions should have a minimum straight run of ten pipe diameters to provide uniform flow to the suction bells.
+- Each pump capacity must be less than 15,000 gpm..
+- Back wall clearance distance to the centerline of the pump must be at least 0.75 of the suction diameter.
+- Bottom clearance should be approximately 0.30 (30%) of the suction diameter
+- The minimum submergence should be as follows:FLOWMINIMUM SUBMERGENCE
+This type of cavitation damage is caused when the OD of the impeller passes too close to the pump cutwater. The velocity of the liquid increases as it flows through this small passage, lowering the fluid pressure and causing local vaporization. The bubbles then collapse at the higher pressure just beyond the cutwater. This is where you should look for volute damage. You'll need a flashlight and mirror to see the damage, unless it has penetrated to the outside of the volute.
+The damage is limited to the center of the impeller vane. If it's a closed impeller, the damage will not extend into the shrouds. You can prevent this problem, if you keep a minimum impeller tip to cutwater clearance of 4% of the impeller diameter in the smaller impeller sizes (less than 14' or 355 mm.) and a 6% clearance in the larger impeller sizes (greater than 14" or 355 mm.).
+To prevent excessive shaft movement, some manufacturers install bulkhead rings in the suction eye. At the discharge side, rings can be manufactured to extend from the walls to the impeller shrouds.

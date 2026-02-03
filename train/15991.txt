@@ -1,0 +1,83 @@
+[Part 1 of 3 is here.]
+Defining Risk and its Components
+There are future events whose impact can have a negative outcome or consequence to our project. A future event can only be risky if the event is uncertain. If an event is certain then it is no longer a risk even if the entire team does not perceive the certainty of the event, e.g. individuals know that the project is late even though the project manager and senior staff do not.
+Risks always apply to a measurable goal that we are trying to achieve; if there is no goal there can be no risk, i.e. a project can’t have schedule risk if it has no deadline.
+Once a goal has been impacted by a risk we say that the risk has triggered. The severity of the outcome depends on how
+far it displaces us from our goal. Once triggered, there should be a mitigation process to reduce the severity of the possible outcomes.
+Before looking at software project risks tied to these goals, let’s make sure that we all understand the components of risk by going through an example.
+Risk Example: Auto Collision
+- Get to the destination in a reasonable time
+- Make sure all passengers arrive in good health.
+- Make sure that the car arrives in the same condition it departs in.
+- The event of a collision is uncertain
+- The outcome is the damage cost and possible personal injury
+- The severityis proportional to the amount of damage and personal injury sustained if there is an accident
+- If there is loss of life then the severity is catastrophic
+A collision will affect one or more of the above goals. Risk management with respect to auto collisions involves:
+- Reducing the probability of a collision
+- Minimizing the effects of a collision
+There are actions that can reduce or increase the likelihood of a collision is:
+- Things that reducethe chance of collision
+- Understanding safe driving techniques
+- Driving when there are fewer drivers on the road
+- Using proper turn signals
+- Things that increasethe chance of collision
+- Drinking and driving
+- Driving in heavy fog
+- Wearing sunglasses at night
+By taking the actions that reduce a collision while avoiding the actions that increase it we can reduce the probability or likelihood of a
+Reducing the likelihood of a collision does not change the severity of the event if it occurs. The likelihood of an event
+and its consequence are independent even if there are actions that will reduce the likelihood and consequences of an event, i.e. driving slowly.
+- Wear a seat belt
+- Drive a car with excellent safety features
+- Have insurance for collisions
+- Have the ability to communicate at all times (i.e. cell phone, etc)
+Having a mitigation strategy will not reduce the chance of a collision, it will only lessen the severity.
+Goals of a Software Project
+The primary goals of a software project are:
+- Building the correct software system
+- Building the system so that its benefits exceed its costs (i.e. NPV positive)
+Building the Correct Software System
+The correct system is shown in the last frame of the cartoon; so let’s define the correct system as what the customer actually needs. To build the correct system we will need to have correct requirements.
+How Long Will The Project Take?
+Let’s assume we have complete and consistent requirements for a correct system. How long will it take to build this system? One approach is to take a competent team and have them build out the system without imposing a deadline. Once the system is built we would have the actual time to build the system (Tbuild) .
+Tbuild is theoretical because unless you are using an Agile methodology you will want to estimate (Testimate) how long it takes to produce the system before you start. Nonetheless, given your resources and requirements Tbuild does exist and is a finite number; as one of my colleagues used to say, “the software will take the time that it takes“.
+Most executives want to know how long a project is going to take before the project starts. To do this we take the requirements and form an estimate (Testimate)
+of how long the system will take to build. The key point to note here is that the actual time to build, Tbuild, and the estimated time to build the system, Testimate , will be different. The key thing to keep in mind is that Testimate is only valid to the extent that you use a valid methodology for establishing an estimate.
+Building the System so that its Benefits Exceed its Costs
+Building a system so that its benefits exceed its costs is equivalent to saying that the project puts money on the organization’s bottom line. We hope that an organization will do the following:
+- Define the system correctly (project scope)
+- Assess the financial viability of the project (capital budgeting)
+- Establish a viable project plan
+Financial viability implies that the available resources will be able to produce the desired system before a specific date (Tbuild < Tviable then the organization will have a financial failure.
+The problem is that we don’t know what financial failure. We need to have a reasonable expectation that the project is viable BEFORE we build it out. Therefore we use a proxy by estimating the time (Testimate) it will take to build the software from our project plan.
+Once we have a time estimate then we can go forward on the project if Testimate, for a project can be done in multiple ways:
+Software Project Risks
+- Schedule risk
+- Estimation risk
+- Requirements risk
+- Technical risk
+We often confuse schedule risk and estimation risk. Schedule risk is the risk that the tasks on the critical path have been under estimated and the project will miss the end date (i.e. Testimate). A project that takes longer than the
+estimate is not necessarily a failure unless Tviable.
+You can only talk meaningfully about schedule risk in projects where:
+- formal estimation techniques are used
+- proper task dependency analysis is done
+- project critical path is identified
+Most of us do not work for organizations that are CMM level 4+ (or equivalent),
+so you are unlikely to be using formal methods. When the project end date is arbitrary (i.e. method 2 or 3 above) it is not meaningful to talk about schedule risk, especially since history shows that we underestimate how long it will take to build the system, i.e. Testimate<<< Tbuild. When formal methods are not used (i.e. method 2 or 3 above) then the real issue is estimation risk and not schedule risk.
+The real tragedy is when an IT departments attempt to meet unrealistic dates set by management when a realistic date would still yield a viable project (below). Unfortunately, unrealistic deadlines will cause developers to take short cuts and usually cripple the architecture. So that when management gives you additional time after their date fails, the damage to the architecture is terminal and you can’t achieve the initial objective.
+Requirements risk is the risk that we do not have the correct requirements and are unable to get to a subset of the requirements that enables us to build the correct system prior to the project end date. There are many reasons for having incorrect requirements when a project starts:
+- The customer can not articulate what he needs
+- Requirements are not gathered from all stakeholders for the project
+- Requirements are incomplete
+- Requirements are inconsistent
+Technical risk is the risk that some feature of the correct system can not be implemented due to a technical reason. If a technical issue has no work around and is critical to the correct system then the project will need to be abandoned.
+If the technical issue has a work around the:
+- If the technical issue prevents the correct system from being built then we have requirements risk
+- If the technical work around takes to long it can trigger schedule risk
+Last part (3 of 3):
+- Discuss other risks and how they roll up into one of the 4 risks outlined above
+- Discuss how risk probability and severity combines to form acceptable or unacceptable risks
+- Discuss risk mitigation strategies
+- Discuss how to form a risk table/database
+- Discuss how to redefine victory for informal projects

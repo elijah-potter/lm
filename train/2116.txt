@@ -1,0 +1,19 @@
+Node:Number Syntax, Next:Integer Operations, Previous:Exactness, Up:Numbers
+The read syntax for integers is a string of digits, optionally preceded by a minus or plus character, a code indicating the base in which the integer is encoded, and a code indicating whether the number is exact or inexact. The supported base codes are:
+#B-- the integer is written in binary (base 2)
+#O-- the integer is written in octal (base 8)
+#D-- the integer is written in decimal (base 10)
+#X-- the integer is written in hexadecimal (base 16).
+If the base code is omitted, the integer is assumed to be decimal. The
+following examples show how these base codes are used.
+-13 => -13 #d-13 => -13 #x-13 => -19 #b+1101 => 13 #o377 => 255
+The codes for indicating exactness (which can, incidentally, be applied to all numerical values) are:
+#E-- the number is exact
+#I-- the number is inexact.
+If the exactness indicator is omitted, the integer is assumed to be exact,
+since Guile's internal representation for integers is always exact.
+Real numbers have limited precision similar to the precision of the
+double type in C. A consequence of the limited precision is that
+all real numbers in Guile are also rational, since any number R with a
+limited number of decimal places, say N, can be made into an integer by
+multiplying by 10^N.

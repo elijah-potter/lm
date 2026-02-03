@@ -1,0 +1,34 @@
+HOW TO CHOOSE BY: RESOLUTION
+Suppose there are three probes available for imaging: a former Long Scanning with R < 30 nm (now upgraded to HARD), a General Purpose probe with R < 10 nm and a High Resolution probe with R ~ 1 nm. Which of the three probes should be chosen to get enough resolution?
+One way of describing resolution is to consider whether two adjacent objects can be resolved by a particular probe. If we have two rigid spikes and a 0.1 nm detector sensitivity in the z-direction, then the minimum diameter between these spikes for the probe to distinguish between them is d=(0.8R)1/2, where d is the distance between the spikes and R is the radius of the tip.
+The amount of lateral resolution required should also be considered. Is it necessary only to know that there are two objects present? Or is it important to have the accurate lateral dimensions of these objects? The larger the radius of the tip and the larger the opening angle of the tip, the greater convolution will be present in the lateral dimensions. This effect has a greater impact on the accuracy of the dimensions of smaller objects than larger ones. For two spheres, the distance separating them must be d=4(Rr)1/2, where r is the radius of the spheres, in order for the tip to fully probe between them. δr = (d - r) is also the lateral distance that will be "added" by the size of the tip to the sphere's topography.
+Step size, which is the ratio of the scan size and the number of sampling points, should be also taken into account.Let's consider the case of imaging the topography of very small spheres 4 nm in diameter. The choice of the tip and the scan size will determine if the spheres can be resolved. There are different possibilities:
+LS probes were mostly used for accurate measurement of vertical dimensions of rigid samples, lateral information for large features, or for when accurate lateral measurements are not important. These probes were especially durable, allowing many more scans to be taken without a loss of resolution or damage to the tip.
+Genegal Purpose probes provide additional resolution in the lateral dimension and are good for getting good quality everyday images of large and small features.
+Because the Hi'Res-C tips have a very sharp tip and a high aspect ratio geometry, the convolution in the lateral dimension is minimized. Hi'Res-C probes should be used when the best lateral resolution is necessary or when the feature size is exceptionally small.
+Rc < 30 nm
+Scan size 3µm. Diameter of spherical
+molecules 150 nm. Click to enlarge. Height
+image of polystyrene latex spheres.
+/Courtesy of S. Magonov/
+Rc < 10 nm
+Scan size 800 nm. Diameter of spherical
+molecules about 40 nm. Click to enlarge.
+Composite film of poly(p-xylylene) matrix
+and nanoparticles of MoO3 and TiO2.
+/Courtesy of R. Gaynutdinov/
+Rc < 1 nm
+Scan size 250 nm. Diameter of
+spherical molecules 9 nm. Click to enlarge.
+Carbosilane dendrimers in a dense film.
+/Courtesy of D. Ivanov/
+ORDERING OPTIONSClick on a product type below to order online.
+Lateral resolution below 1 nm. For scanning small areas below 250 nm at 512 points.
+1 nm radius
+Probes with sharp carbon tips
+Lateral resolution down to 5 nm for scan size below 1 μm.
+8 nm radius
+Probes with silicon tips
+Accurate resolution of surface features larger than 10 nm in diameter. Good for scan sizes above 3 μm at 512 points.
+20 nm radius
+Probes with DLC wear-resistant coating

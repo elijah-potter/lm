@@ -1,0 +1,11 @@
+Top-level domain (TLD) is a domain at the highest level of the hierarchical DNS of the Internet. The TLD are installed in the root zone of the name space. ICANN operates the Internet Assigned Numbers Authority (IANA) which is in charge of maintaining the DNS root zone.
+For example, in www.above.com the Top-level domain TLD is the ‘.com’.
+The TLD space is organised into categories:
+The first is the country-code which is designated in the DNS by the English two-letter country code. The United States country code is ‘.us’, Australia’s code is ‘.au’ and ‘.de’ is the country code for Germany.
+The second is generic top-level domains (gTLD) which are top-level domains with three or more characters. An example is .com .net .org .info.
+The third is unsponsored top-level domains, which are domains that operate directly under policies established by ICANN.
+The forth is sponsored top-level domains (sTLD), these are sponsored by private agencies or organizations that enforce rules restricting the eligibility to use a top-level domain. An example is ‘.aero’ which is reserved for members of the air-transport industry.
+The last is, infrastructure top-level domain, this group consists of one domain, the Address and Routing Parameter Area (ARPA), which is managed by IANA. An example is ‘.arpa’ which is reserved exclusively as advised by IANA.
+In the DNS hierarchy a second-level domain (SLD) is a domain that is directly below a top-level domain (TLD). For example, in www.above.com, above is the second-level domain of the .com top-level domain.
+The SLD refers to the organization that registered the domain name with a domain name registrar.
+The SLD can also be introduced with a TLD, the SLD is used to indicate the type of organization intended to registrar an SLD. For example, in the .us field a school would register under ‘.edu.us’ whilst companies would register under ‘.co.us’.

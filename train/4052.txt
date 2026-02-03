@@ -1,0 +1,228 @@
+|Allegro CL version 9.0|
+Unrevised from 8.2 to 9.0.
+This document contains the following sections:1.0 Introduction to the Lisp top-level listener
+When Allegro CL starts, by default it runs a lisp listener. Although the listener has various extended capabilities, it is basically a loop that repeatedly writes a prompt, reads a form, evaluates it, and prints the result(s). For this reason a lisp listener is sometimes also called a read-eval-print loop. A listener is also sometimes called a top-level loop because it is the interactive command processor under which other programs run.
+The user interacts with Allegro CL by typing to the read-eval-print loop, which of course can also be driven from a script. The full power of the Lisp environment to load, debug, and run programs is immediately available from the listener. In addition to the basic read-eval-print loop, the listener has a set of commands to perform certain common operations more quickly and succinctly, such as re-executing a previously-entered command, loading files, recovering from errors, and examining the execution stack for debugging.
+The following examples are places where Allegro CL runs a lisp listener loop: the Debug window in the Integrated Development Environment on Windows; the console window on Windows; a listener buffer when using the Emacs-Lisp interface; and a Lisp started directly in a Unix shell. Some have additional features (Emacs-Lisp interface commands in an emacs buffer, menu commands that operate on the just-typed input in the Debug window) but all have the features described in this document.
+The debugging tools in Allegro CL are integrated into the listener. They consist of a tracer, a stepper, an inspector, a set of top-level commands that allow dynamic examination and manipulation of Lisp data and the run-time evaluation stack, and mechanisms to single-step through expressions or function calls. The debugger is documented in debugging.htm and the inspector in inspector.htm.
+The Allegro CL listener is modeless -- all top-level commands are always accessible, regardless of the conceptual activity currently underway, such as tracing a function, debugging, or simply entering expressions for evaluation. For example, while stepping through the forms in a function, the user may examine the function's parameters, abort stepping, display a stack backtrace, ask for help on any top-level command, or exit Lisp. There is only one set of top-level commands. There is no command to put Allegro CL into a distinct debugging mode. Debugging commands are always available.
+Allegro CL has an extension called multiprocessing which permits several distinct Lisp processes to execute in the same image (using stack groups on UNIX platforms and OS threads on Windows). This facility is described in the multiprocessing.htm document. The top-level interacts with multiprocessing in a number of ways, but most important is that certain debugger commands operate on a focus process rather than the listener process itself. When a listener starts it is focussed on its own process. The interaction of the top-level with multiprocessing is described in the Section 6.0 Top-level interaction with multiprocessing . Other information is found in the section Section 7.0 Commands for killing processes and exiting Lisp. Programmers who do not use multiprocessing need not concern themselves with most of these materials.
+This document describes the top level in images built with the
+include-tpl keyword argument to build-lisp-image specified
+t (or true). Images built with
+a minimal top level (and may have a user-supplied top-level as
+well). The minimal top level is described in Minimal top
+levels in building-images.htm and is not
+further discussed in this document.
+The listener prints the prompt using a format control string or
+formatter function (such as returned by the cl:formatter macro)
+that consumes 8 arguments. This format control is taken from the
+The eight arguments are (in order):
+nilif the current process is the initial lisp listener.
+nilif there is no focused process.
+nilat break level zero.
+This prompt scheme provides information about the dynamic state of
+the listener. If the system determines that the value of
+inappropriate, it will print a warning (once) and replace it with the
+(The Emacs-Lisp interface must also have a regular expression that will parse the prompt being printed by a listener. See eli.htm for details. The default regular expression will correctly handle the default prompt and many popular variations . However, no check will be made that the Emacs regexp is correct and features of the Emacs-Lisp interface will fail if the prompt pattern is incorrect.)
+Here is what the default prompt looks like when Lisp first starts:
+The prompt indicates that typed expressions will be evaluated in the common-lisp-user (nickname user) package. The number in parentheses is the command number. Since the listener has just started, the command number is one. The command number sequence is local to the particular listener. Each listener maintains its own.
+When Lisp enters a break loop the prompt shows the break level in brackets. Consider the following Lisp session:
+USER(1): (foo) Error: attempt to call `FOO' which is an undefined function. [condition type: UNDEFINED-FUNCTION] Restart actions (select using :continue): 0: Try calling FOO again 1: Return a value 2: Try calling a different function 3: Setf the symbol function of FOO and call it again  USER(2): xyz Error: Attempt to take the value of the unbound variable `XYZ'. [condition type: UNBOUND-VARIABLE] Restart actions (select using :continue): 0: Try calling FOO again 1: Return a value 2: Try calling a different function 3: Setf the symbol function of FOO and call it again  USER(3):
+In the last prompt printed here the number in brackets --  -- is the break level. The command number is 3 and the package is still the common-lisp-user package.
+Let us take a more complex example. We clear the previous errors and then define a function bar which calls cerror. Then we execute bar in a new process using process-run-function:
+USER(5): (defun bar () (cerror "Just continue" "A cerror break")) BAR USER(6): (mp:process-run-function "Break-process" #'bar)
+At this point, a *background-interaction* buffer is created in Emacs (assuming Lisp is running as a subprocess of Emacs using the Emacs-Lisp interface). That buffer is a separate listener so the command number starts from 1. We display the prompt you see in that buffer. Note that it is on two lines. The first line shows the process (it does not appear if the process is the Initial Lisp Listener).
+[Current-process: Break-process] [1c] USER(1):
+The `c' after the break level number indicates that the break level arose from a call to cerror or break. These are standard operators that invoke the debugger with an explicit provision for returning from the debugger. Calls to certain other operators (most significantly, error) guarantee that the call will not return. Even so, there may and in general will be other more-remote restart points dynamically surrounding the execution that may validly be invoked. The `c' indicates only whether the operator that invoked the debugger allows a return. It is something of a historical feature predating the widespread adoption of the Common Lisp condition system.
+The prompt also changes if you are inspecting or stepping. See debugging.htm and inspector.htm.
+Because the prompt processes a lot of information, changing it is not trivial. Some example of top-level prompts are included in file <Allegro directory>/misc/prompts.cl.
+The top-level understands two sorts of input: top-level commands and
+Lisp expressions. A top-level command is syntactically identified to
+Allegro CL by a single character prefix, initially the colon
+character. This can be changed by assigning a different character to
+*command-char*. In this document we
+illustrate commands prefixed with the colon although the name
+of the command does not contain the colon. When referring to the
+command (as an argument to :help,
+for example) the top-level command character is not required.
+A newline typed to the top-level is a null command which is ignored; extra spaces and tabs are ignored; and end-of-file has a special meaning which is discussed below (see Section 4.0 Break levels).
+Most top-level commands have abbreviations. The :help command called without arguments will print out the list of top-level commands and their abbreviations, along with a brief description of their use. An abbreviation is always an initial substring of the command name. Any portion of the command name that at least contains the minimal abbreviation will invoke the command. For example, the minimal abbreviation for the command :error is :err. Thus, :err, :erro, and :error all invoke that command.
+Top-level commands may only be entered interactively to the top-level. They cannot appear in a Lisp source file processed by load, including the various initialization files Lisp loads at startup. do-command is the functional equivalent of a top-level command, documented in Section 11.0 Adding new top-level commands, that may be used to execute top-level commands. However, since load does not print the results of executing Lisp forms, the many top-level commands which simply return a result to be printed are not useful in a source file. The functional form of top-level commands is mainly used in aliases (i.e. user-defined top-level commands, see Section 11.0 Adding new top-level commands below).
+A top-level command has the form
+:name argument ...
+The function that implements the command is passed the
+arguments. The arguments are read in one of three ways: as if by
+read using the current case
+mode (for example
+:case-sensitive-upper); as if by read using case-sensitive mode; or as a single
+string. No predefined top-level commands use case-sensitive mode. The
+only predefined top-level commands that read their argument as a
+string are those that take filenames as arguments: :ld, :cf, :cload, :cd, and :pushd. All other predefined top-level
+commands read their arguments in the current case mode. When the user
+defines a top-level command (using the macro tpl:alias described in
+section Section 11.0 Adding new top-level commands) the case
+sensitivity of input may be specified. Case sensitivity in general is
+discussed in section case.htm.
+The :help top-level command
+without an argument prints summary information on all top-level
+commands. The summary information is fairly long. The number of lines
+displayed before pausing is controlled by the variable
+With a command name argument, :help gives more detailed information for that command. The command name argument should omit the leading colon.
+As the user enters commands and expressions to the top-level, they
+are recorded on a history list. The value of
+*history* is the maximum
+number of inputs (commands or expressions) to which the history list
+can grow. When the history list reaches its maximum size, the oldest
+entry is discarded as each new one is added. Note that expressions and
+commands typed to the top-level are added to the history list, but
+input read from programs that are called from the top-level is not
+remembered on the history list. (The Emacs-Lisp interface has an
+additional entirely-separate mechanism that remembers all input.)
+Repeated entries (the same form or command entered more than once with no intervening form or command) are collapsed into a single entry.
+The :history command prints the history list. Commands in the following forms will retrieve items from the history list:
+:[+|-]number[?] ::pattern[? | +]
+These are redo commands. They allow re-execution of a previous input
+without re-entering it. The expressions will be re-evaluated as if the
+read-eval-print loop were entered at the eval stage. That is, the
+input will not be re-read, so changes that affect the reader (such as
+package inheritance, or the value of variables like
+*read-base*) will have no
+effect. This usually makes no difference but can occasionally be
+confusing. See the example below for an explanation.
+The first format, :number, re-evaluates the numberth input expression on the history list.
+The second format searches the history list for input matching the pattern and re-executes it. If the second form is entered without a pattern, the last expression typed is re-evaluated.
+If + is given as an argument to the :: form, then the search will be in reverse from the beginning of the history list forward, instead of from the end backward. If ? is an argument to either format, the user will be asked to confirm before re-execution of the command or expression.
+Here is an example using these commands:
+USER(1): (setq a 10) 10 USER(2): :his 1 (SETQ A 10) 2 :his USER(3): (set 'b 'setq) SETQ USER(4): ::setq (SET 'B 'SETQ) SETQ USER(5): ::a (SETQ A 10) 10 USER(6): :his 1 (SETQ A 10) 2 :his 3 (SET 'B 'SETQ) 4 (SET 'B 'SETQ) 5 (SETQ A 10) 6 :his USER(7): :5 (SETQ A 10) 10 USER(8):
+The history list mechanism remembers both the form read as input as well as a string representation of that form. The string is the write-to-string with the input form. The string is used to match the pattern given to the :: command, but the form that is evaluated is the original form (that is, the string is not reread). In most cases, the behavior is the same as if the original input had been reentered, but there are at least two circumstances where this is not the case.
+In the example, we call a function in the
+convert-to-lang. This function takes a string (which
+is usually a function name) and returns the address of the
+foreign-functions package has not
+been made accessible (with use-package) and we neglect to preface
+convert-to-lang with the ff: package
+qualifier. Not surprisingly, we get an `undefined function'
+USER(8): (convert-to-lang "foo") Error: attempt to call `CONVERT-TO-LANG' which is an undefined function. [condition type: UNDEFINED-FUNCTION] Restart actions (select using :continue): 0: Try calling CONVERT-TO-LANG again 1: Try calling FOREIGN-FUNCTIONS:CONVERT-TO-LANG instead 2: Return a value 3: Try calling a different function 4: Setf the symbol function of CONVERT-TO-LANG and call it again
+Now we call use-package again
+to make external symbols in the
+package accessible. (Incidently, we get a symbol conflict error at
+this point. This is a continuable error and the appropriate thing to
+do is :continue. See Using package
+results in name conflicts... in
+errors.htm for more information.) We enter the
+command ::convert to re-evaluate our call to
+convert-to-lang but another "undefined
+function" error is signaled! This happens because Lisp has
+remembered and re-evaluates the identical (in the sense of eq) form. The
+convert-to-lang symbol that is the car of that form
+is still the same. The symbol used to be interned in the
+cl-user package and is now uninterned by the
+use-package continuation, but
+it still has no function binding. At the end we call
+ff:convert-to-lang with the package qualifier and
+display the history list. Note that the qualifier is not stored. When
+we enter ::ff, it is the use-package form called well before
+ff:convert-to-lang that is repeated.
+USER(9): :pop USER(10): (use-package :ff) Error: Using package `FOREIGN-FUNCTIONS' results in name conflicts for these symbols: CONVERT-TO-LANG [condition type: PACKAGE-ERROR] Restart actions (select using :continue): 0: Unintern the conflicting symbols from the `COMMON-LISP-USER' package. [1c] USER(11): :cont 0 T USER(12): :hist ;; [unrelated items deleted] 8 (#:CONVERT-TO-LANG "foo") 9 :pop 10 (USE-PACKAGE :FF) 11 :cont 0 12 :hist USER(13): ::convert (#:CONVERT-TO-LANG "foo") Error: attempt to call `#:CONVERT-TO-LANG' which is an undefined function. [condition type: UNDEFINED-FUNCTION] Restart actions (select using :continue): 0: Try calling #:CONVERT-TO-LANG again 1: Try calling CONVERT-TO-LANG instead 2: Return a value 3: Try calling a different function 4: Setf the symbol function of #:CONVERT-TO-LANG and call it again  USER(14): :pop USER(15): (convert-to-lang "foo") "_foo" USER(16): (ff:convert-to-lang "bar") "_bar" USER(17): :hist :count 4 ;; Note the package qualifier is *not* saved if the ;; symbol is accessible in the current package: 15 (CONVERT-TO-LANG "foo") 16 (CONVERT-TO-LANG "bar") USER(18): ::ff (USE-PACKAGE :FF) T
+The initial read-eval-print loop when a listener starts is called the top-level read-eval-print loop. This can be thought of as break level zero (but see below). A higher break level and a recursive read-eval-print loop can only be entered by a call to invoke-debugger. Each new call (assuming that earlier calls have not yet been exited) puts the listener into a new, higher break level. invoke-debugger is typically called, directly or indirectly, in one of these ways:
+cl:*break-on-signals*), and warn (via cl:signal);
+Note that some things (most notably the result of an end-of-file on the input stream) behave very differently depending on whether Lisp is in the top-level read-eval-print loop or a break level. Thus, it is inaccurate to think of the top-level read-eval-print loop merely as break level 0.
+Entry to a new break level prints the condition passed to invoke-debugger; typically this serves
+as an "error message" indicating why the break occurred.
+When the listener returns from a higher break level to a lower break
+level n>0 , the original condition for entering break level
+n is printed as a reminder. A break level is exited
+by using one of the :pop, :prt, :continue, :restart, :return, or :reset commands, or by execution of any
+normal lisp form that performs a non-local return to some
+dynamically-surrounding construct. The :pop command is also invoked by
+typing an end-of-file (usually Control-D on Unix systems).
+Since Lisp allows type ahead, that is to enter forms ahead of the top-level prompt, there is an issue about what happens to pending input when an error occurs. The two choices in Allegro CL are
+The choice is controlled by the variable
+The following example illustrates the difference between the two
+*clear-input-on-error*. Suppose the variables
+b1, b2, and b3 are all bound with values 1, 2, 3, while u1 and u2 are
+unbound (note that the prompts and the returned values can get
+USER(19): (setq b1 1 b2 2 b3 3) 3 USER(20): b1 b2 b3 1 USER(21): 2 USER(22): 3 USER(23): (setq *clear-input-on-error* nil) NIL USER(24): u1 b1 u2 Error: Attempt to take the value of the unbound variable `U1'. [condition type: UNBOUND-VARIABLE]  USER(25): 1  USER(26): Error: Attempt to take the value of the unbound variable `U2'. [condition type: UNBOUND-VARIABLE]  USER(27): :reset USER(28): (setq *clear-input-on-error* t) T USER(29): u1 b1 u2 Error: Attempt to take the value of the unbound variable `U1'. [condition type: UNBOUND-VARIABLE]  USER(30):
+Reader errors (such as an unknown package) occurring on the listener's input stream are a special case and unconditionally flush the input stream.
+|Command||Arguments (if any)||Brief Description|
+|:reset||Reset the state of the top-level and throw to the top-level read-eval-print loop.|
+||Cause computation to continue with the effects for the restart action specified by the argument|
+||Pop up to the previous break level, or to the nth previous one, if n is given.|
+|:prt||Return to the previous level, and re-evaluate the expression that caused the entry into the break level.|
+|:error||Print the condition associated with the current break level and all available restarts.|
+Here is a transcript showing some of the commands just defined.
+USER(31): (setq foo bad) Error: Attempt to take the value of the unbound variable `BAD'. [condition type: UNBOUND-VARIABLE]  USER(32): (/ 1 0) Error: Attempt to divide 1 by zero [condition type: DIVISION-BY-ZERO]  USER(33): :pop Previous error: Attempt to take the value of the unbound variable `BAD'.  USER(34): (setq bad :not-so-bad) :NOT-SO-BAD  USER(35): :prt USER(36): (SETQ FOO BAD) ;; :prt evaluation :NOT-SO-BAD USER(37): foo :NOT-SO-BAD USER(38): (cerror "just continue" "error!") Error: error! Restart actions (select using :continue): 0: just continue [1c] USER(39): :cont 0 NIL USER(40):
+The top-level commands described in this section deal with compiling and loading files.
+|Command||Arguments (if any)||Brief Description|
+||The files specified are compiled. With no arguments, the file names specified in the most-recent :cf command are used. The compiled files are not loaded.|
+||The files specified are loaded. With no arguments, the file names in the most-recent :ld command are used.|
+||The files specified are compiled if necessary (that is, unless a compiled file already exists and is newer than its source file) and then the compiled file is loaded. With no arguments, the file names in the last :cload command are used. Note that only a change to the source file causes a source file to be considered newer than the compiled file. Changes in Lisp, such as changing global values of optimization qualities such as speed and safety, do not trigger a compile.|
+Note that these commands (as well as the underlying functions
+compile-file and load) infer omitted file types
+(e.g. .cl or .fasl) automatically.
+The commands that take one or more filename arguments read the argument as a single string. That string is subsequently parsed into multiple filenames using space as a delimiter. (These commands therefore cannot take a filename containing an embedded space.) Filenames should not be quoted. To load foo.cl, do:
+USER(1): :ld foo.cl
+But if you use quotes, it will fail:
+USER(2): :ld "foo.cl" Error: "\"foo.cl\"" does not exist, cannot load [condition type: FILE-ERROR]
+General information on multiprocessing can be found in multiprocessing.htm.
+When the Allegro CL multiprocessing facility is in use there may be several Lisp processes running simultaneously in a single executing Lisp image, sharing the same heap, streams, and other resources. A lisp listener running in one of these processes operates much the same as if multiprocessing were not in use. However, there are additional capabilities whereby a listener running in one process may be used to investigate and debug another process. Users not employing multiprocessing may skip this section.
+For this section the term listener will refer specifically to the process in which a lisp listener is running and which is executing commands. The Allegro CL listener maintains a concept of the focus process. The following debugger commands apply to the focus process:
+Initially a listener is focussed on itself and these commands report and operate on the listener process' own execution state. The :focus command allows the listener's focus to be changed to another process. For a process to be focussed upon and debugged, it must first be arrested. The focus command does this automatically if necessary, and when focus is removed from the process it will be unarrested. Commands such as :return and :pop that implicitly cause the process to resume execution will automatically remove focus from the process and unarrest it. The :arrest and :unarrest commands provide additional explicit controls.
+The :processes command prints information about processes in the image:
+USER(1): :proc P Dis Sec dSec Priority State Process Name, Whostate, Arrest * 3 3 3.2 0 waiting TCP Listener Socket Daemon, waiting for a connection * 2 1 1.1 0 runnable Initial Lisp Listener * 1 0 0.0 0 waiting Editor Server, waiting for input USER(2): :help :proc Prints the state for the argument PROCESSES, or mp:*all-processes* if none. Each argument may be a process object, the name of a process, or a form to evaluate yielding a process or name. The columns printed for each process are: P `*' if the process' stack-group status is set to be profiled. Dis The number of times this process has been resumed by the scheduler since the previous report. Sec The total cpu time consumed by this process (approximate). dSec The cpu time consumed by this process since the last report. Priority The integer process priority. State Inactive, runnable, or waiting. These are followed by the process name, the process whostate (if any),and a list of arrest reasons (if any).The output is sorted on the dSec column, most cpu-intensive first. USER(3):
+The arguments to the process commands (:focus, :arrest, :unarrest, and :processes) are evaluated. A process may be identified by the process object itself, by a variable bound to the process object, or by the process' name. Process names are strings. Since process names are often long, these top-level commands will accept an unambiguous initial substring of a process name. If the abbreviation is ambiguous, the command will be aborted. (Note that some commands, such as :arrest, process their arguments sequentially. In these cases, all arguments preceding the one causing the error will have been processed. Any arguments following the ambiguous argument will not be processed.) Process names and abbreviations are case-sensitive. Thus "Thinker" is different from "thinker".
+When Allegro CL is run using the Emacs-Lisp interface, a background process entering the debugger will automatically create a new Lisp listener buffer in which to debug the broken process. This eliminates much of the need for the focus mechanism, although it is still an appropriate tool to investigate the state of a background process that is not in a break.
+If for any reason background processes do not create new listener buffers when running under the Emacs-Lisp interface, evaluate the following form:
+See debugging.htm for more information.
+There are top-level equivalents to the exit and process-kill functions that are used to exit Lisp and to kill processes. These top-level commands work slightly differently from their associated functions, since the top-level attempts to protect the user from unrecoverable typing mistakes. In the multiprocessing environment, users must understand the difference between killing a process and exiting the entire Lisp.
+There are three relevant commands, :kill, :exit and EOF. (EOF means the end-of-file
+character or signal, control-D on many systems.) The :kill command kills the processes, but if
+there is only one process, it seeks confirmation. The :exit command terminates the Lisp image,
+but seeks confirmation if there is more than one process. EOF is
+equivalent to the :pop command
+when typed at a break level but is equivalent to :exit when typed at the top-level
+(i.e. break level zero). Users who use EOF for :pop may want to set the variable
+*exit-on-eof* to a large
+number to protect Lisp from accidental exit.
+The following commands are also available in a lisp listener. In addition, debugging commands (such as :zoom) described in debugging.htm (and not listed here) are available.
+|Command||Arguments (if any)||Brief Description|
+||Pretty print the macroexpansion of expression, which is not evaluated. The expression must fit on a single line.|
+|:optimize||Query user for values for the compiler optimizations safety, space, speed, debug, and compilation-speed and other compiler options. See compiling.htm.|
+||Without an argument, print the name of the current package. With an argument, make that package the current package.|
+|:printer-variables||Prompt the user for new values for various printer control variables.|
+||Change the current directory to dir, defaulting to the user's home directory (C:\ on Windows). See current-directory and chdir.|
+||Change to dir and push the previous current directory to the directory stack.|
+|:popd||Pop the directory stack and change to that directory.|
+|:dirs||Print the directory stack.|
+|:pwd||Print the current directory.|
+The value of the variable
+*time-threshold* can be a positive
+number. If it is, then evaluations which take longer than that number
+of seconds will have a time report (such as printed by the time macro) printed along
+with the value of the evaluation. If
+nil (which is its initial value), no time report is
+cl-user(1): (setq top-level:*time-threshold* 5.0) 5.0 cl-user(2): (sleep 4) nil cl-user(3): (sleep 5.5) ; cpu time (non-gc) 0 msec user, 0 msec system ; cpu time (gc) 0 msec user, 0 msec system ; cpu time (total) 0 msec user, 0 msec system ; real time 5,495 msec ; space allocation: ; 4 cons cells, 32 other bytes, 0 static bytes nil cl-user(4):
+The following variables are maintained or used by the top-level.
+||The character recognized as the prefix for top-level commands. Initially the colon character.|
+||The value of this variable is used for the prompt.|
+If true, the function to be used to read top-level input.
+||If true, the function to be used to evaluate top-level
+If true, the function to be used to print top-level output. If
+||If true and bound to a valid function (something acceptable to funcall), then this function is called (with no arguments) after executing the :reset command.|
+Sometimes a form executed for side effect will return a huge or
+circular data object that is not itself of interest. The
+exist to limit printed output from evaluated forms. If this
+print truncation should ever truncate desired printed output from a
+form, following that form with (pprint *) will
+reprint the returned value without special top-level truncation.
+The top-level command set is extensible. A top-level alias is a user-defined listener command. It is invoked the same way as built-in commands. The difference between built-in commands and aliases is that aliases can be removed, one at a time or all at once.
+The macro alias defines a top-level alias.
+The function remove-alias removes user-defined top-level aliases. It is not possible to remove system-defined top-level commands.
+The function do-command will programmatically execute a top-level command.
+In the following example, we define a new top-level command.
+USER(40): (top-level:alias "ff" (&rest args) "my alias for the :find command" (apply #'top-level:do-command "find" args)) USER(41): (defun test (x) (break "testing....")) TEST USER(42): (test nil) Break: testing.... Restart actions (select using :continue): 0: return from break. [1c] USER(43): :zoom Evaluation stack: (BREAK "testing....") ->(TEST NIL) (EVAL (TEST NIL)) (TPL:TOP-LEVEL-READ-EVAL-PRINT-LOOP) (TPL:START-INTERACTIVE-TOP-LEVEL #<EXCL::BIDIRECTIONAL-TERMINAL-STREAM @ #x190b4e> #<Function TOP-LEVEL-READ-EVAL-PRINT-LOOP @ #x2ed8c6> ...) [1c] USER(44): :ff eval Evaluation stack: (BREAK "testing....") (TEST NIL) ->(EVAL (TEST NIL)) (TPL:TOP-LEVEL-READ-EVAL-PRINT-LOOP) (TPL:START-INTERACTIVE-TOP-LEVEL #<EXCL::BIDIRECTIONAL-TERMINAL-STREAM @ #x190b4e> #<Function TOP-LEVEL-READ-EVAL-PRINT-LOOP @ #x2ed8c6> ...) [1c] USER(45):
+Copyright (c) 1998-2012, Franz Inc. Oakland, CA., USA. All rights reserved.
+Documentation for Allegro CL version 9.0. This page was not revised from the 8.2 page.
+|Allegro CL version 9.0|
+Unrevised from 8.2 to 9.0.

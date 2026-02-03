@@ -1,0 +1,6 @@
+Digests » 193
+These days it’s a pretty bold claim if you say that you invented a sorting algorithm that’s 30% faster than state of the art. Unfortunately I have to make a far bolder claim: I wrote a sorting algorithm that’s twice as fast as std::sort for many inputs. And except when I specifically construct cases that hit my worst case, it is never slower than std::sort. (and even when I hit those worst cases, I detect them and automatically fall back to std::sort)
+In this post “Top 10 coding problems of important topics with their solutions ” are written. If you are preparing for a coding interview, going through these problems is a must.
+In this essay, we are going to look at recursive algorithms, and how sometimes, we can organize an algorithm so that it resembles the data structure it manipulates, and organize a data structure so that it resembles the algorithms that manipulate it.
+Every modern programming environment handles all six of these memory models to some extent, which is one reason our systems are so complicated and hard to understand.
+Computers communicate to reach a goal. For instance, you contact Youtube to see cat videos, Youtube responds to gain advertising revenue.

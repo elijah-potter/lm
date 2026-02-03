@@ -1,0 +1,44 @@
+Effective Website Test Automation on Selenium with Python
+In connection to the growing number of informatization projects, there is an urgent need to carry out manual and automated testing of web systems. At the moment, information systems have rather complex processes and many participants in the process and a large amount of data. Due to the increasing complexity of the general business logic, manual testing turns into a time-consuming and complex task. When conducting manual testing, a person can make mistakes, lose concentration, or only carry out testing according to a learned scenario.
+Therefore, any test mechanization would be welcomed to conduct a checkout routine for testing each new release. When conducting some tests in an automated mode, more time is freed up for a thorough analysis and testing of new features. The skill of organizing automated testing lies in the ability to quickly implement test scenarios with data entry and verification of the response from the system. At the same time, the process of writing a script should take as little time as possible and provide a high-quality result of execution. Let's consider how the process of automated testing of web systems is organized using the popular Selenium testing tool together with the Python language.
+Selenium Firefox Browser Driver Installation
+The installation of the testing system is simple and intuitive. First, you access the usual browser version you use, like Firefox. Next, you install the Python library and use brew to install the necessary drivers to support testing in the browser.
+pip install selenium brew install selenium-server-standalone
+Test Structure for Selenium in Python
+To organize the testing cycle, you can use the existing system of unit tests. The general testing cycle and test structure will look like this:
+import unittest class MainPage(unittest.TestCase): def setUp(self): self.driver = webdriver.Firefox() ... def test_main_page(self): ... def tearDown(self): ... self.driver.close() if __name__ == "__main__": unittest.main()
+This is a very good approach because it is possible to use assert to understand feedback from the tested page.
+Opening web page
+To open a web page there is a method get in the web driver class:
+self.driver.get("http://svitla.com") assert "Svitla" in self.driver.title
+This method opens the URL in the browser (Firefox in our case) and checks if the title of the page includes the “Svitla” text.
+Finding Elements on Page
+The main and most difficult task when testing web pages is finding the necessary elements on the page that we are testing. To do this, for example, you can find an element by its class name; in our case, it’s the header__logo-icon class:
+logo = self.driver.find_element_by_class_name('header__logo-icon')
+There are many different methods for finding elements on a page. You can choose the desired method to search for a specific element. It’s important to ensure that after changing the page in different places, the necessary element can still be found. Please refer to the following find methods:
+Finding Custom Tags Inside of HTML elements
+Sometimes, for testing purposes, it is necessary to find elements on the page by a custom tag. The most effective way to do so is using find_elements_by_css_selec.
+In this example, we have a custom data-test-id field which should be equal email text.
+Actions on Elements
+In addition to seeing how to navigate the pages of the tested website, you can also learn how to act on various elements, like clearing input fields, clicking on buttons, entering text on a page, etc. For instance, the element.clear() method clears the text if it’s a text entry element. To click on an element on a page, please use the element.click() method. To enter text in the input field, you can use the send_keys method on the element. For instance,
+name = self.driver.find_element_by_id('ctaformtype5-name') name.send_keys("John Smith")
+This code will fill the element with id ctaformtype5-name with the text “John Smith”.
+Validation of Information from the Page
+The simplest and most effective way to validate the information from a page is using assert. For instance, you can check the title of the page in the following way:
+assert "Svitla" in self.driver.title
+If the test fails, then the unit test system will report an error. In addition, a more advanced way of validating information is using WebDriverWait along with the try/finally instructions:
+try: element = WebDriverWait(driver, 10).until( EC.presence_of_element_located((By.ID, "myDynamicElement")) ) finally: driver.quit()
+Conditions to wait from the page could be the following:
+Example of Test Scenario
+The next set of Python code shows a simple scenario for testing a web page. It opens a private window in Firefox, tests the opening of the main page (svitla.com) and checks its title. Next, it opens the blog section, finds the logo icon by class name, and clicks on it. Next, it opens the contact page and fills text in the name field.
+# # QA Test Automation # # Svitla Systems Inc. 2021 # # To run all tests # # python3 SeleniumArticle.py # # To run specific test: # # python3 SeleniumArticle.py MainPage.test_main_page # from selenium import webdriver from selenium.webdriver.common.keys import Keys import time import unittest class MainPage(unittest.TestCase): def setUp(self): self.firefox_options = webdriver.FirefoxOptions() self.firefox_options.add_argument("-private") self.driver = webdriver.Firefox(options=self.firefox_options) self.driver.maximize_window() def test_main_page(self): self.driver.get("http://svitla.com") assert "Svitla" in self.driver.title def test_blog(self): self.driver.get("http://svitla.com/blog") logo = self.driver.find_element_by_class_name('header__logo-icon') print(logo) time.sleep(10) logo.click() assert "Svitla" in self.driver.title def test_contacts(self): self.driver.get("http://svitla.com/contacts") name = self.driver.find_element_by_id('ctaformtype5-name') print(name) name.send_keys("John Smith") assert "Contacts" in self.driver.title def tearDown(self): time.sleep(10) self.driver.close() if __name__ == "__main__": unittest.main()
+Then we will have a report about the successful completion of three tests.
+$ python3 SeleniumArticle.py <selenium.webdriver.firefox.webelement.FirefoxWebElement (session="18432471-5458-d149-8970-5c2df5851f3b", element="3a92611f-142a-cd44-88bd-7bb159e85d79")> .<selenium.webdriver.firefox.webelement.FirefoxWebElement (session="452c42c3-6208-574a-8ef0-4142082df8b5", element="742a63b1-40b0-bb40-bb4e-f5d27cffba3f")> .. ---------------------------------------------------------------------- Ran 3 tests in 80.988s OK
+To run a specific test you can enter:
+python3 SeleniumArticle.py MainPage.test_main_page
+This article’s toolkit allows you to quickly and efficiently build understandable scripts for test automation. Many aspects of this approach still remain on the manual testing side, so anyone that will execute these kinds of tests must follow the process of running tests.
+On the other hand, every hour spent writing automated test scripts usually saves tens of hours of manual testing. This is critical when launching urgent new product releases. Automated tests are a prerequisite for the release of a quality product, and together with a properly constructed manual testing program, a sufficient condition for the release of systems with minimal risk of design and implementation errors.
+Our specialists at Svitla Systems always build effective automated testing systems in different programming environments and different frameworks. This allows our clients to quickly and efficiently build new product releases, supplement the project with new features, do it in the shortest possible time, and within the allocated budget.
+Let's meet Svitla
+We look forward to sharing our expertise, consulting you about your product idea, or helping you find the right solution for an existing project.
+Your message is received. Svitla's sales manager of your region will contact you to discuss how we could be helpful.

@@ -1,0 +1,51 @@
+How do I add an H5P activity in my TITANium course?
+You will learn how to add an H5P interactive content Activity to your TITANium course.
+H5P enables you to easily create and display engaging HTML5-based instructional content and learning activities within your course. All you need is a web browser and the media and elements (e.g., video, audio, images, and your prepared text or quiz questions) that you will include in your H5P content. With H5P, you can build interactive course presentations, games, quizzes, charts, add social media or audio files, and embed interactions, navigation and quizzes into multimedia content such as images and videos. You can also organize large amounts of instructional content within H5P content, thereby reducing page clutter and scrolling. Learn more about H5P content creation here.
+H5P content is linked to your TITANium course gradebook by default, giving you the ability to make any H5P activity or content type a graded assignment, while improving your learners’ engagement with your material.
+This guide has been updated for TITANium 2019-2020.
+1. Enter your TITANium course.
+2. Click on the Gear icon.
+3. Turn editing on.
+4. Click on Add an activity or resource.
+5. Select H5P Interactive Content.
+6. Click on Add.
+7. Type a description, if desired.
+You may add text, images, video, etc. to this textbox.
+8. Decide whether to display the description on the course main page.
+9. Select the type of interaction you would like to create.
+Tip: Use the scroll bar to see additional types of interactions, as there are currently 41 types of interaction choices available.
+Click on the Details button to learn more about any particular interaction type.
+10. H5P.org has tutorials and examples for each type of interaction.
+11. After watching a tutorial and building an interaction, scroll down the page.
+12. Set the Display options.
+The action bar and frame will allow students to download the entire H5P package, so it is recommended to deselect the checkbox for Display action bar and frame.
+13. Set the Grade options.
+The default maximum grade is 10 points but you can set it anywhere from 0 to 200 using whole numbers. However, at this time it is not possible to not have the interaction disiplay in the gradebook.
+Follow this guide to learn how to hide a grade item in the gradebook from students.
+14. Set the Common module settings.
+Read this guide to learn about how to set the Common module settings.
+15. Restrict access.
+Read this guide to learn how to use access restrictions.
+Read this guide to learn how to use Tags.
+Read this guide to learn how to use competencies.
+18. Click on Save and display.
+Resources for further Learning.
+Some H5P interactive content types are more accessible for students with special needs than others. To date, the most accessible H5P content types are:
+- Arithmetic Quiz
+- Audio Recorder
+- Course Presentation
+- Dialog Cards
+- Documentation Tool
+- Drag the Words
+- Drag and Drop
+- Guess the Answer
+- Image Hotspots
+- Interactive Video
+- Mark the Words
+- Memory Game
+- Multiple Choice
+- Question Set
+- Single Choice Set
+- True/False Question
+View the H5P Content Author Guide.
+You have now learned how to add an H5P interactive content Activity to your course.

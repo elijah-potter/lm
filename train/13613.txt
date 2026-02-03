@@ -1,0 +1,8 @@
+By the end of this chapter, you should be able to:
+A bit of an older tool that you will see sometimes is an
+<iframe></iframe> tag. The
+iframe tag is used to embed another document (HTML page) within the current page. You can read more about it here. For more on how they are (or are mostly not) used today, check out this Stack Overflow question.
+Although you will rarely be creating your own
+iframe tags, it is very common to embed content from other websites on your page through an
+iframe tag. You can read how to embed an audio player from Spotify here and a YouTube video here.
+When you're ready, move on to Intermediate HTML Exercise

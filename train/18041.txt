@@ -1,0 +1,10 @@
+A nice beginning are some of the articles is the link below.
+In particular the "A Software Defined Radio for the Masses" articles by Gerald Youngblood found towards the bottom of the page. http://www.arrl.org/tis/info/sdr.html there are many other useful articles at that location.
+Articles how Quadrature signals work.
+Unfortunately several links in this section went dead so I will need to look for additional links on how Quadrature signals work.
+A free book on how DSP works, an excellent book.
+Math Simulation software SciLab, software for analyzing data and plotting the results, very capable, can work with .WAV files as data. http://www.scilab.org/
+Modeler for SciLab
+SciLab Tricks and tips.
+Octave another math modeler
+Talk and models by Phil Hartman from talk at Dayton, it uses Excel to model SDR software, a good source of equations for the programs mentioned above. http://www.hamsdr.com/dnld.aspx

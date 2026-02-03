@@ -1,0 +1,8 @@
+The main problem is to use a block cipher to generate a random key.
+I would like to generate 256-bits key which can be as random as possible. I generate it in the following way:
+- Pick a plaintext $p_0$ of 64 bits and a 256-bit key $k_0$. ( can be given from keyboard as seed)
+- Implement a cipher which goes from 64-bits to 64-bits.
+- Encrypt $p_0$ with this cipher using $k_0$ to get $c_0$. (Assuming that the cipher is a pseudo-random permutation then $c_0$ is pretty random)
+- Set $p_0 = c_0$ and repeat the process say for 1000 times.
+- At the end use the last 4 encrypted messages of the loop to fill the key $k_0$ and take this as the new key.
+Is this method random enough? Maybe there is a problem as I'm using all time to encrypt $k_0$? Which is the best implementation to get a really random key?

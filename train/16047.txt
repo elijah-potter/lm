@@ -1,0 +1,10 @@
+Token-based authentication, relies on Token for determine whether the request is authorized or not. And JWT is one of token-based authentication.
+Whenever you deliver your code, you must deliver it with quality.
+The idea to apply circuit breaker pattern is to give protection and control over latency and failure, in order to stop cascading failure in a distributed environment. In addition, it provides a fail fast and rapid recovery for our services.
+In a environment where number of instances and network locations changes dynamically, a client needs a discovery mechanism to determine the location of a service instance, in order to send a request to it.
+API monitoring is essential because APIs are the only interaction mechanism between your services and outside world.
+In the service world, usually we need to limit the number of requests in order to protect our services does not get overwhelmed.
+Logging means nothing if you cannot collect and analyze it.
+Every application needs logging. Logging is very important, so you can consider it as a first class citizen. Therefore, application cannot be deployed to production without logging implementation.
+This article will show how to create micro-services using Golang programming language and Go-kit as its framework. The service will be exposed via gRPC protocol.
+In this article, I will create a simple micro-service using Go programming language and go-kit as a standard micro-services library. The service will be exposed via REST endpoint.

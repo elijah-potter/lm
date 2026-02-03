@@ -1,0 +1,21 @@
+New forms of highly efficient laser could be in the pipeline as a result of research that brings new detailed understanding of fundamental laser processes.
+Professor Nail Akhmediev and his international collaborators modelled the interaction of high-powered light fields with the material components of lasers and revealed a rich landscape of laser functionality that has never before been explored.
+“The essence of the problem is a six-dimensional space of laser parameters that could take years to explore. But already we have modelled several new types of laser behaviour that ranges from generation of stable solitons to bifurcations to chaos,” said Professor Akhmediev, from the Optical Sciences Group at the ANU Research School of Physics.
+“Utilizing these universal parameters have turned out to be so versatile that they can describe phenomena which people thought were impossible.”
+The research is published in Physical Review Letters.
+The crux of laser operation is concentrating light energy into a regulated beam, that, in turn, splits into pulses of high power. Two techniques for breaking continuous laser beams into high-power laser pulses are Q-switching and mode-locking, and it is these that Professor Akhmediev and his colleagues investigated.
+The study was prompted by the discovery at the University of Michigan, of a strangely shaped laser pulse, by the Visiting Graduate Student Jiahao Guo and Professor Stephen Cundiff Professor Cundiff contacted Professor Akhmediev to solve the mystery.
+They enlisted Professor Jose Maria Soto-Crespo from Instituto de Óptica CSIC in Spain who was able to develop numerical simulations that could reproduce the unusual shape – a slow build up to peak power followed by a rapid drop off (the reverse of typical pulse shapes).
+This gave Professor Akhmediev the starting place to develop an approach based on the Ginzburg-Landau equation. This equation is an extension of the nonlinear Schrödinger equation describing electromagnetic waves, that includes dispersion, spectral filtering, gain and loss from the medium and the cubic and quintic terms from the mode-locking device.
+“It’s promising because it is a complete description – all the parameters have a physical meaning. There’s a strong connection between the equation and the experimental parameters, so when we change the parameters we know what it means for the experiment and can test it easily,” Professor Akhmediev said.
+As well as the broad shape of the surprising pulse, Professor Akhmediev’s approach reproduced the pulse’s fine structure: more than 100 sub pulses, occurring in longer pulses that can also appear in pairs of uneven power.
+“It’s a remarkable phenomenon,” Professor Akhmediev said. “And we found myriad more combinations!”
+The switch to repeating pairs of sub-pulses is an example of bifurcation – two pulse-shape solutions for a given set of parameters, instead of the usual single solution.
+By varying just a single parameter Professor Akhmediev was able to produce more complex structures, such as period doubling and quadrupling, and even chaotic behaviour. However – perhaps most practically – the new technique could also find the most efficient setup to generate high power pulses through Q-switching and mode-locking.
+Another major coup for the theory is that it unites Q-switching and mode-locking - previously thought of as separate processes - as a single phenomenon.
+Professor Akhmediev said it would take years to explore the 6-dimensional parameter space of the Ginzburg-Landau equation – each small variation of a single parameter needs to process overnight. Nonetheless it seems likely there will be many more surprising laser modes unveiled in the future.
+But still that will not be the complete solution, says Professor Akhmediev: individual design features could also influence the operation of the laser.
+“If you add them into consideration, you have many more parameters – that’s a completely different problem to be solved!” he said.
+ContactProfessor Nail Akhmediev
+Related news stories
+Updated: 31 March 2023/ Responsible Officer: Director, RSPhys/ Page Contact: Physics Webmaster

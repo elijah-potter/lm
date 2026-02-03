@@ -1,0 +1,38 @@
+Nowadays, the failure rate of electronics is lower than it has ever been. This can't be said about batteries, though.
+There is only one guaranteed circumstance in standby battery systems: it will fail. All batteries fail at some stage, the trick is to know, ahead of time, when that will be and do something about it so that your network isn't affected.
+All standby batteries are composed of battery cells in series or series/parallel to achieve the necessary voltage and power for the system. Some batteries achieve their planned end-of-life without a single cell failure, most batteries have a few individual cell failures on the way.
+This can mean that if one cell fails, the whole battery will fail. If, on the other hand, a cell fails by shorting, the battery will have a much shorter hold-up time and a very much reduced service life than the battery was designed for.
+Because of that, it makes complete sense to monitor the battery to ensure it's in good condition and will respond when needed. But, can you effectively monitor your standby batteries? What kind of monitoring device should you invest in and what kinds of things it should monitor?
+In this article, we'll go over the benefits of monitoring your standby battery, what you should be keeping an eye on, and the difference that a competent battery monitoring device can make for your network.
+In a battery monitoring system, an RTU is a device that is directly attached to the battery to collect and record performance data to let you know how long the battery's charge will last.
+The primary goal of a monitoring system is to help in preventing any network problem. If you pay attention to what your monitoring devices are telling you, faults can be identified and dealt with before the battery can fail.
+The service life can be extended by detecting and changing out faulty cells and the costs of manual maintenance can be virtually eliminated.
+Even the costs of capacity testing can be reduced. Your RTU (remote terminal unit) will record the voltages of the individual cells and the string currents, saving time and resources.
+In standby battery systems, the term "cell" refer to an individual unit within a "battery", which may be made up of anything from 4 x 12 volt blocs to several hundred 2 volt cells.
+Additionally, in any discharge and subsequent recharge the behavior of the string currents in a multi-string battery is important. Many failure modes can be detected by observing how closely the individual string currents track each other, and this is a basic function of a monitoring system.
+So, in a nutshell, the following are the main benefits of monitoring your standby battery:
+There are many reasons for not monitoring standby batteries, but the primary one is cost.
+An efficient battery monitoring system can cost, maybe, 60-70 percent of the cost of the battery. Added to that, is the cost of the installation, perhaps another 20-50 percent of the battery cost. This makes it challenging for many technicians to justify the investment.
+The problem is that most technicians that don't have a battery monitoring solution decide to change out their batteries earlier than would otherwise be indicated.
+Replacing batteries more often than necessary is not a cost-effective practice. It not only means that over time the network is far more expensive than it needs to be, but there are often burn-in failures of new cells which put the critical load in even more danger than normal, and the tech still doesn't know when his battery will fail.
+Given all the issues that can arise if the battery fails, it would seem that it's very imprudent not to monitor your battery due to cost. Think about your car insurance, even though it's expensive (and there is only a low percentage of accidents per number of drivers annually) you still pay for it.
+You may have an accident in your driving life - but people don't. On the other hand, your standby battery will fail, it's a fact. Batteries are guaranteed to fail at some time, you just don't know when.
+Another major cause of not monitoring the battery is that the battery in a UPS system is normally supplied by the UPS manufacturer, and UPS salespeople are always bidding against each other. To suggest that the battery they are supplying may not be totally reliable and propose an extra cost is something that none of the UPS companies want to do.
+Although, some UPS manufacturers do offer battery monitoring systems, the industry's best practice is to choose a remote monitoring manufacturer with plenty of experience designing and building RTUs and master stations.
+In fact, most of the time, they will only quote a battery monitoring system if the customer requires it. In this, they do their customer a disservice.
+If there was a history of heart disease in your family, and your doctor said that checking for heart diseases isn't important, you wouldn't be very happy, would you? Keep in mind that 60% of data center UPS failures are caused by the battery.
+Monitoring can take various forms, but basically, all of them seek to provide continuous information about the battery, to prevent unexpected outages and prolong its service life. Battery monitoring devices, however, are much the same as anything else - you more or less get what you pay for.
+Selecting the right RTU for your needs is therefore critical to avoid wasting money by buying a simple, inexpensive system when your battery makes an important contribution to the continuity of supply to your network. Here's what your RTU should monitor:
+Based on the previous parameters that an efficient RTU should monitor, here are examples of the various types of battery monitoring systems:
+IEEE recommendations for the maintenance of the battery by continuous monitoring identify several parameters that should be measured and stored. These include, but are not limited to cell voltage, cell temperature, cell resistance/impedance.
+The Battery Voltage Monitor (BVM) G3 is a dependable, scalable monitoring solution that will increase the reliability of your standby batteries. It gives you critical information to determine whether your batteries will perform as expected when commercial power is interrupted.
+Here are some of the BVM G3's benefits:
+You can also add BVM sensors to monitor your battery jars and to add even more capacity to your BVM. The BVM sensor node allows you to monitor three distinct values: the jar's temperature, voltage, and internal Ohmic resistance.
+To learn more about the BVM G3 and how it can solve all your battery monitoring challenges, just reach out to us and schedule your free demo.
+Morgana Siggins is a marketing writer, content creator, and documentation specialist at DPS Telecom. She has created over 200 blog articles and videos sharing her years of experience in the remote monitoring industry.
+You need to see DPS gear in action. Get a live demo with our engineers.
+Check out our White Paper Series!
+A complete library of helpful advice and survival guides for every aspect of system monitoring and control.
+Have a specific question? Ask our team of expert engineers and get a specific answer!
+Sign up for the next DPS Factory Training!
+Whether you're new to our equipment or you've used it for years, DPS factory training is the best way to get more from your monitoring.Reserve Your Seat Today

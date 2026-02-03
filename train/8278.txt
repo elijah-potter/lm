@@ -1,0 +1,29 @@
+There are two different types of corruption on a hard drive – one bad and one not so bad:
+The bad type is commonly known as “Bad sectors” – which basically means that small parts of the hard drive (“sectors”) have stopped working.
+The lesser type is commonly known as “Index corruption” – the files themselves are ok, but they might be incorrectly indexed or cross-linked (two files shunted into one another).
+The good news is that both Windows and Macintosh computers have built-in software to “repair” hard drive faults.
+I use the word “repair” cautiously, as they can repair most index corruption, but a bad sector cannot be repaired – instead, the software “repairs” it by placing a small invisible file on the bad sector, so it can’t accidentally get used. However, the file which was previously using it may have lost data, which unfortunately might not be recoverable.
+So how do you use this built-in hard drive checking and repair software? Well, it depends on what type of computer you have.
+To check and repair your hard drive on a Windows computer, first open Windows Explorer – on most versions of windows, this can be opened by clicking on the yellow folders on the task bar at the bottom of the screen. If you have an old version of windows (XP for example), open the start menu, and select “Documents”.
+Once Windows Explorer is open, find your hard drive – this is usually on the left-hand pane of the window, under Computer or This PC. The hard drive will be shown with a name and a drive letter in brackets – for example “Local Disk (C:)”
+Right-click upon the name of the hard drive, and select “Properties” from the context menu that appears.
+From the window that opens, select the “Tools” tab, and then click the button marked either “Check” or “Check now”. You might be asked to confirm the action.
+If you are running Windows 7 or earlier, you will be given a choice of options. Select both options, and press the “OK” button. Windows will think for a few seconds, and then tell you that it can’t check the disk while it’s in use – in other words, while the computer is running. It will then ask you if you wish to schedule a disk check for the next time the computer starts us. Confirm that you wish to schedule the check, and then restart the computer so the check can take place.
+If you are running Windows 8 or later, the disk check will start automatically – unless Windows thinks the drive is fine. If it tells you that the drive doesn’t need to be scanned, you can click the “Scan drive” button to scan it anyway!
+If you’re working on a Mac, the method to check the hard drive is slightly different, but still quite simple.
+Firstly, open a Finder window and go to Applications and then Utilities. Find and double-click on “Disk Utility” to open the disk-checking application.
+On the left of the window that appears is a list of the drives on your Mac – including any USB sticks and external drives that are connected. Find the main drive (it is usually at the top) and click on it.
+On the right-hand side is a box that logs the results of disk checks, as well as four buttons.
+Firstly, click the “Verify Disk” button. This will check the disk for errors (but not fix them) – and generally takes a couple of minutes to complete. If the results box indicates that there are errors, click the “Repair Disk” button to fix the errors.
+Once the disk itself has been checked, you need to check the file permissions – these can get corrupted, resulting in certain applications not working as expected. To check the file permission, click the “Verify Disk Permissions” button. Again, this will take a couple of minutes whilst it checks. If the results box indicates that it has found any errors, click the “Repair Disk Permissions” button.
+Although disk check applications can resolve minor errors and corruption on your hard drive, these errors can be an indication of something far more serious – pending hard drive failure. If you find hard disk errors frequently – or more than just a couple of times – you should seriously think about changing your hard drive before it fails, and make sure you keep your back ups up-to-date in case the worst happens.
+Next Monday: Backing-up: How to set-up an automated backup, and how to check it's working!
+About Company Works
+Company Works was formed in 2004, and has been providing IT support and development solutions to London and the South East of England ever since.
+We have also helped clients from around the globe, include in the USA, Europe and Australia.
+Our staff have many years of experience in the fields of IT support, software design and development.
+All our staff undertake continuous training in the latest technologies and conventions. This ensures they are always up-to-date with the latest products and solutions, and can offer you the absolute best advice and service.
+We have also developed our own diagnostic software, designed in-house for PC and laptop diagnosis, meaning we can find the most common problems quickly and fix them without having to waste hours looking for possible solutions or reinstalling the operating system completely (a common "solution" used by some of our competitors). This software is updated constantly to reflect new problems as they are found.
+Our services include:
+For more information on any of our services, contact us:
+020 3239 9484

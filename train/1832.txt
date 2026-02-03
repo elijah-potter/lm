@@ -1,0 +1,3 @@
+|Contents||Plain text (including entities)|
+The TITLE element gives the document's title. Each document must have exactly one TITLE within the HEAD. TITLE contains plain text and entities; it may not contain other markup.
+A good TITLE should be short and specific to the document's content so that it can be used as a title for a user's bookmark, a title for the display window, and a link from a search engine. A suggested limit for the number of characters in a TITLE is 60.

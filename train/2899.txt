@@ -1,0 +1,54 @@
+Table of Contents
+A wiki is a Web-based application that allows people to add, remove, edit and change content through a browser. The ease of interaction makes wikis an effective tool for collaboration. Wikis can be considered a content management system. This PIUG wiki uses Confluence software developed by and licensed from Atlassian. More information is available via these links:
+- Video by Atlassian: Confluence overview (00:06:05)
+How-to-do-it Confluence tutorials
+- Confluence User Guide
+- Notation Guide - the place to go for all notation help including:
+- Text Formatting
+- Text Breaks
+- Advanced Formatting
+- Confluence Content
+- External Content
+- Miscellaneous (emoticons, escape special character)
+- Working with pages overview
+- Creating new pages
+- Adding a page using a template
+- Editing an existing page
+- Working with page families - changing a parent page, creating children, viewing page families, etc.
+- Organizing pages hierarchically(parents and children): This is particularly useful if you want to group related content, for example, chapters in a user guide/manual, committee material, topical expertise, etc.
+- Page restrictions (security for viewing/editing pages) may be placed on a single page or a group of pages. If security is placed on the parent page, all children inherit the security placed on its parent page.
+- Attaching files to pages
+- Adding, or inserting, images on your pages.
+- Displaying images attached to your page, from another page, or from an external Web source.
+- Creating a gallery of images.
+- Links overview
+- Adding an internal link
+- Adding a link to an external website
+- Creating alternative display names vs. URL link name
+- Microsoft Office Add-in for Confluence Wiki (to convert Word documents to Wiki) - Convert & upload Word and Excel documents (http://www.hiason.com.au/, $40 individual license including 1st year maintenance)
+Helpful hints for new users to PIUG Wiki
+- You only have to create a user account once. For wikispaces that are closed, you will need to request access from the space or wiki administrator.
+- Icons used by Confluence: For example, an external link is indicated by a green arrow that points to the right after a link.
+- Tips for navigating around wikis -- See this example slideshow for display of wiki navigation methods.
+- Adding a profile picture
+- Adding a personal space - note that personal spaces are only available to current PIUG members. Non-members may consider joining PIUG via the PIUG membership page.
+Consistency and standards
+- Add a table of contents at the top of to help users navigate content to major headings/subheadings. For example:
+- Use wiki headings and subheadings to group major ideas (e.g., h1, h2, h3, etc.)
+- Write for the Web. Keep ideas on target and in digestable chunks.
+- White space is okay.
+- Integrate images and rich media to enhance message and content.
+- Add labels to categorize content. These labels can be used a variety of ways including an ability to create a dynamic search for our wiki visitors.
+- Create clean URLs. Example:
+- Long links are ugly. So, instead of this: http://wiki.piug.org/display/PIUG/Ask+PIUG+Leadership+Forum
+- Make your links actually link to the page but add a more descriptive/informative title: Ask PIUG Leadership Forum
+- Book Lust Wiki (Wiki application: Wetpaint) - A community for people who love books powered by Wetpaint
+- Corporate Libraries, Environmental Scan, FedLink Survey (Wiki application: PBwiki) - FLICC/FEDLINK wikis. Examples of good organization and presentation of content.
+- CUA SLIS Comps Study Wiki (Wiki application: Wikidot) - Study guide to help Catholic University students study for their comprehensive exams.
+- Executive Travel (Wiki application: Wetpaint) - American Express launched a wiki for business travelers to share personal experiences and find tips.
+- LexisNexis Wiki for Higher Education (Wiki application: MediaWiki) - Site is to facilitate Academic research in the social sciences using primary sources, news, government information, statistics, business, and legal sources. The wiki is accessible to all, but can only be edited by registered and approved contributors.
+- National Institutes of Health (Wiki application: Confluence) - Nice example of how an organization such as NIH is using their wiki for internal and external collaboration.
+- Regional Knowledge Resource Kit (Wiki application: MediaWiki) - online resource for learning and developing skills in managing information and knowledge for regional natural resource management.
+- Special Libraries Association (Wiki application: Confluence) - Special Libraries Association wiki that includes tiered access to content: view only for non-members; resources for members to collaborate on, and board/committee member areas.
+- Sustainable Indiana 2016 (Wiki application: Wetpaint) - A community for people building a site that includes information about organizations and projects in Indiana that are incorporating sustainable principles.
+- WikiAnswers, a service from Answers.com (Wiki application: Proprietary) - Collaborative question and answer site.

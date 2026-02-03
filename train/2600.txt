@@ -1,0 +1,16 @@
+LP/Lisp: Literate Programming for Lisp
+What is LP/Lisp?
+LP/Lisp is a software tool to provide literate programming support for Lisp programmers. Literate programming is the idea that the code and the documentation for a program should form a coherent whole, a work of literature with two audiences, the computer and humans. The idea was originated by Donald Knuth, who created the WEB system (using TeX and Pascal). This has been expanded upon since then, with literate programming (LP) tools such as cweb, fweb, noweb, and so forth.
+Unfortunately, the model used by these tools is not the one we usually use when programming in Lisp. Since we don't have a write-compile-execute cycle with Lisp, these tools inject an artificial step into the process, interfering with the natural way Lisp is used.
+LP/Lisp is a new LP tool that is meant to allow Lisp programmers to use LP without interfering with the normal way they program. The LP file is the Lisp file itself. Documentation and LP markup reside in the comments. Markup exists to do the usual LP-like things (definition of and reference to chunks of code, syntactic sugaring for sections and formatting, etc.). The documentation is stripped out of the comments by LP/Lisp, with code reordered and formatted as needed, to form a LaTeX file.
+There have been other approaches to LP in Lisp as well (e.g., CLWEB, Scribble, pbook, etc.). These are discussed in the paper about LP/Lisp.
+What is written about it?
+- LP/Lisp: Literate Programming for Lisp, Roy M. Turner, in Proceedings of the International Lisp Conference (ILC), Reno, NV, 2010.
+- Literate Programmimg in Lisp (LP/Lisp), Roy M. Turner (2010). Technical report 2010-02, Department of Computer Science, University of Maine, 5752 Neville Hall, Orono, ME 04469-5752. The version on-line will often be more current than the version available as a technical report.
+What is available now?
+The lisp code is available as lplisp.lisp. It has only been tested under Allegro Common Lisp, and it is unlikely to work under other Lisps at the moment, since it requires ACL's regexp2 package. See below.
+What is coming?
+The next version is in the works. It will fix some of the syntax oddness of the current version, and it will be less tied to ACL. It will be a complete, object-oriented rewrite. It will be posted here when it's ready.
+Stay in touch
+If you are using LP/Lisp, drop me a line to let me know, so I can send you mail when there are changes, the next version is ready, etc. Also let me know of bugs you discover or features you would like to see--this isn't my primary project by a long-shot, but I'll try to respond as soon as possible!
+Thanks for your interest in LP/Lisp, and I hope it is useful for you.

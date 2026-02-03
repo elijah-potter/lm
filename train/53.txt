@@ -1,0 +1,69 @@
+From the time of Aristotle (384-322 BC) until the late 1500’s, gravity was believed to act differently on different objects.
+- Drop a metal bar and a feather at the same time… which one hits the ground first?
+- Obviously, common sense will tell you that the bar will hit first, while the feather slowly flutters to the ground.
+- In Aristotle’s view, this was because the bar was being pulled harder (and faster) by gravity because of its physical properties.
+- Because everyone sees this when they drop different objects, it wasn’t questioned for almost 2000 years.
+Galileo Galilei was the first major scientist to refute (prove wrong) Aristotle’s theories.
+- In his famous (at least to Physicists!) experiment, Galileo went to the top of the leaning tower of Pisa and dropped a wooden ball and a lead ball, both the same size, but different masses.
+- They both hit the ground at the same time, even though Aristotle would say that the heavier metal ball should hit first.
+- Galileo had shown that the different rates at which some objects fall is due to air resistance, a type of friction.
+- Get rid of friction (air resistance) and all objects will fall at the same rate.
+- Galileo said that the acceleration of any object (in the absence of air resistance) is the same.
+- To this day we follow the model that Galileo created.
+ag = g = 9.81m/s2
+ag = g = acceleration due to gravity
+Since gravity is just an acceleration like any other, it can be used in any of the formulas that we have used so far.
+- Just be careful about using the correct sign (positive or negative) depending on the problem.
+Examples of Calculations with Gravity
+Example 1: A ball is thrown up into the air at an initial velocity of 56.3m/s. Determine its velocity after 4.52s have passed.
+In the question the velocity upwards is positive, and I’ll keep it that way. That just means that I have to make sure that I use gravity as a negative number, since gravity always acts down.
+vf = vi + at
+= 56.3m/s + (-9.81m/s2)(4.52s)
+vf = 12.0 m/s
+This value is still positive, but smaller. The ball is slowing down as it rises into the air.
+Example 2: I throw a ball down off the top of a cliff so that it leaves my hand at 12m/s. Determine how fast is it going 3.47 seconds later.
+In this question I gave a downward velocity as positive. I might as well stick with this, but that means I have defined down as positive. That means gravity will be positive as well.vf = vi + at
+= 12m/s + (9.81m/s2)(3.47s)
+vf = 46 m/s
+Here the number is getting bigger. It’s positive, but in this question I’ve defined down as positive, so it’s speeding up in the positive direction.
+Example 3: I throw up a ball at 56.3 m/s again. Determine how fast is it going after 8.0s.
+We’re defining up as positive again.
+vf = vi + at
+= 56.3m/s + (-9.81m/s2)(8.0s)
+vf = -22 m/s
+Why did I get a negative answer?
+- The ball reached its maximum height, where it stopped, and then started to fall down.
+- Falling down means a negative velocity.
+There’s a few rules that you have to keep track of. Let’s look at the way an object thrown up into the air moves.
+As the ball is going up…
+- It starts at the bottom at the maximum speed.
+- As it rises, it slows down.
+- It finally reaches it’s maximum height, where for a moment its velocity is zero.
+- This is exactly half ways through the flight time.
+As the ball is coming down…
+- The ball begins to speed up, but downwards.
+- When it reaches the same height that it started from, it will be going at the same speed as it was originally moving at.
+- It takes just as long to go up as it takes to come down.
+Example 4: I throw my ball up into the (again) at a velocity of 56.3 m/s.
+a) Determine how much time does it take to reach its maximum height.
+- It reaches its maximum height when its velocity is zero. We’ll use that as the final velocity.
+- Also, if we define up as positive, we need to remember to define down (like gravity) as negative.
+a = (vf - vi) / t
+t = (vf - vi) / a
+= (0 - 56.3m/s) / -9.81m/s2
+t = 5.74s
+b) Determine how high it goes.
+- It’s best to try to avoid using the number you calculated in part (a), since if you made a mistake, this answer will be wrong also.
+- If you can’t avoid it, then go ahead and use it.
+vf2 = vi2 + 2ad
+d = (vf2 = vi2) / 2a
+= (0 - 56.32) / 2(-9.81m/s2)
+d = 1.62e2 m
+c) Determine how fast is it going when it reaches my hand again.
+- Ignoring air resistance, it will be going as fast coming down as it was going up.
+You might have heard people in movies say how many "gee’s" they were feeling.
+- All this means is that they are comparing the acceleration they are feeling to regular gravity.
+- So, right now, you are experiencing 1g… regular gravity.
+- During lift-off the astronauts in the space shuttle experience about 4g’s.
+- That works out to about 39m/s2.
+- Gravity on the moon is about 1.7m/s2 = 0.17g

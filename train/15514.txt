@@ -1,0 +1,17 @@
+Will HTML5 kill Flash? This is one of the biggest debates surrounding the emergence of HTML5. In truth, HTML5 offers a smaller footprint, more flexibility and a lower development ceiling, but it will take a few years before it has matured to the level of Flash.
+Here are a handful of attractive concepts and effects normally associated with Flash that you can achieve with HTML5, along with some resources for how to get started learning.
+This beautiful and interactive water ripple by Almer Thie uses a canvas effect generator for rendering real-time effects over a photo. The effect can be applied to any image to mimic a top-down view of gently reflective water or rain. Clicking the mouse will create a subtle ripple effect. Use this effect to bring photos to life in a gallery or header!
+View the Tutorial
+Even though jQuery slideshows have been around awhile, Flash slideshows have always produced the coolest effects. This HTML5 slideshow uses Canvas to elegantly display and transition images using a fading color burn effect. Where this excels over Flash and jQuery is in the extremely light implementation and compatibility with mobile devices.
+Another thing we can all remember about Flash is particles. Canvas can generate any kind of particle, using colors, letters, glyphs, you name it! In this demo, colorful particles follow the mouse and can be broken apart by sweeping the pointer through the swarm. Practical application of this kind of effect could include call-to-action, animated headers, or used in Canvas apps or games.
+View the Tutorial
+HTML5 gives us some sleek ways of using audio and video, using streamlined code that loads faster and puts less load on your device. Giants like YouTube and Vimeo are already moving away from Flash to HTML5 video but you can easily make your own custom player that supports webm, .ogg and .mp4.
+Learn more about Canvas animation.
+Below are some excellent resources for developers who want to learn more about Canvas:
+- HTML5Rocks Canvas Tutorials
+- Canvas Tutorial at Mozilla Developer Center
+- How to Draw with HTML 5 Canvas
+- HTML5 Canvas The Basics (Opera Developer Community)
+Not a developer? You can still take advantage of what Canvas has to offer by implementing HTML5 widgets or ready-made code into your website. There are also several designer tools for creating HTML5 canvas animations and effects, such as Sencha, Hype and Adobe Edge, but they still require a level of expertise.
+Introducing the new HTML5 Website Builder from Wix:
+Speaking of Flash tricks you can do with HTML5, Wix has revolutionized their hugely successful Flash builder and released a powerful HTML5 website builder like no other. The new applicationis a completely free online tool for designing valid, rich HTML5 websites using a visual drag-and-drop editor, complete with cool effects and elements like those above. It is extremely easy to learn and use and comes with an extensive library of animations, widgets and graphics to get you started designing with HTML5 right now. Check it out here..

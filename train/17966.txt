@@ -1,0 +1,24 @@
+Moving over to R (or any other programming language) from Excel can feel very daunting. One of the big stumbling blocks, in my view, is having a mental understanding of how we store data in structures in R. You can view your data structures in R, but unlike Excel where it’s in front of your face, it’s not always intuitive to the user just starting out.
+There’s lots of great information on the hows, whys and wherefores: here’s a basic rundown of some of the common ways we structure our data in R and how that compares to what you’re already familiar with: Excel.
+Homogeneous data structures
+Homogeneous in this case just means all the ‘bits’ inside these structures need to be of the same type. There are many types of data in R, but the basic ones you need to know when just starting out for the first time are:
+- Numbers. These come in two varieties:
+- Doubles – where you are wanting and using decimal points, for example 1.23 and 4.56.
+- Integers- where you don’t, for example 1, 2, 3.
+- Strings. This is basically just text data – made up of characters. For example, dog, cat, bird.
+- Booleans. These take two forms TRUE and FALSE.
+Homogeneous data structures are vectors, matrices and arrays. All the contents of these structures have to have the same type. They need to be numbers OR text OR booleans or other types – but no mixing.
+Let’s go through them one-by-one:
+- Vectors. You can think of a vector like a column in a spreadsheet – there’s an arbitrary number of slots and data in each one. There’s a catch – the data types all have to be the same: all numbers, all strings, all booleans or other types. Base R has a good selection of options for working with this structure.
+- Matrices. Think of this one as the whole spreadsheet – a series of columns in a two dimensional arrangement. But! This arrangement is homogeneous – all types the same. Base R has you covered here!
+- Arrays. This is the n-dimensional equivalent of the matrix- a bundle of worksheets in the workbook if you will. Again, it’s homogenous. The abind package is really useful for manipulating arrays. If you’re just starting out, you probably don’t need this yet!
+The advantage of homogeneous structures is that they can be faster to process – but you have to be using serious amounts of processing power for this to matter a lot. So don’t worry too much about that for now. The disadvantage is that they can be restrictive compared to some other structures we’ll talk about next.
+Heterogeneous data structures just mean that the content can be of a variety of types. This is a really useful property and makes these structures very powerful. There are two main forms, lists and data frames.
+- Lists. Like a vector, we can think about a list like a column from a spreadsheet. But unlike a vector, the content of the list can be any type.
+- Data frames. A data frame is really a list of lists. Generally the content of each sub-list (column of the data frame) is the same (like you’d expect in a spreadsheet) but that’s not necessarily the case. Data frames can have named columns (so can other structures) and you can access data using those names.
+Data frames can be extended to quite complex structures. Data frames don’t have to be ‘flat’. Because you can make lists of lists, you can have data frames where one or more of the columns have lists in each slot, they’re called nested data frames.
+This and other properties makes the data type extremely powerful for manipulating data. There’s a whole series of operations and functions in R dedicated to manipulating data frames. Matrices and vectors can be converted into data frames, one way is the function as.data.frame(my_matrix).
+The disadvantage of this structure is it can be slower to process – but if you’re at the stage of coding where you’re not sure if this matters to you, it probably doesn’t just now! R is set up to do a bunch of really useful things using data frames. This is the data structure probably most similar to an Excel sheet.
+How do you know what structure you’re working with? If you have an object in R and you’re not sure if it’s a matrix, or a vector, a list or a data frame call str(object). It will tell you what you’re working with.
+So that’s a really simple take on some simple data structures in R: quite manageable, because you already understand lots of these concepts from your work in Excel. It’s just a matter of translating them into a different environment.
+Acknowledgement: Did you like the whole homogeneous/heterogeneous structure idea? That isn’t my idea – Hadley Wickham in Advanced R talks about it in much more detail.

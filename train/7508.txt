@@ -1,0 +1,11 @@
+Creating an online quiz or test for your website is easy with ASP. All you are doing is using forms to ask questions, and then comparing the answers with what you know to be correct.
+First, you need to plan out your quiz or test. I like to do quizzes with 10 questions, because there are enough questions to be interesting but not enough that people get bored and leave. Make sure that the questions make sense, and that the answers aren't obvious. Think up 4 answers to each question, with one of them clearly right and the others similar but wrong. People get really annoyed when they believe their "wrong" answer COULD be right too, so keep that in mind.
+Next, make up ten standard HTML forms. In each one, show the question, then show the 4 possible answers. Use radio buttons so that only one answer can be chosen. Name the button set on each form in a sequential manner. For example, have the button on the first form called answer1, on the second form answer2, and so on.
+Now, to hook them together. Have the first form direct to the second form. In the second form page, add the following code inside your form -
+choice1 = request("answer1")
+<INPUT TYPE="hidden" name="answer1" value="<%=choice1%>">
+Now your second form will pass along the first answer, as well as process the second answer chosen by the user. Do the same thing to each subsequent form, passing along all previous values chosen.
+On the very last page, you will now be receiving in all answers chosen by the user, from 1 to 10. Start a score counter at zero. Then simply create a series of checks -
+if choice1 = "A" then score = score + 1
+in each case, give the person a score increment if they chose the correct answer. Once you add up the score, display it to the end user!
+BellaOnline Online Quizzes

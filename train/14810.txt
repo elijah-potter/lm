@@ -1,0 +1,16 @@
+Give your readers the visual clues they need to really explore
+Poor structuring can turn your readers away — who wants to struggle through a wall of words? Good structuring becomes an invitation to the reader to immerse themselves in what you have to offer.
+One of the greatest areas of improvement in the HTML5 standard is in its specialized tags for structuring documents. Other writing platforms like word processors and Markdown documents limit you to simple blocks of text, similar to HTML 1.1's
+<div>tag. Even LaTeX, the darling of the scientific community, limits itself to a hierarchy composed of chapters, sections and subsections.
+In contrast, blue-phrase semantax encompasses the full range of HTML5's new structuring options:
+|div||A general purpose division of the document|
+|section||A thematic grouping of content, often beginning with an |
+|article||A complete, independently distributable composition|
+|aside||A separate composition that is tangentially related to the main composition of the page|
+|nav||A block containing a collection of hyperlinks, used like an in-page mini table-of-contents|
+|header||A container for content that is visibly at the top of the page|
+|footer||A container for content that is visibly at the bottom of the page|
+|blockquote||A quotation from another published source|
+|figure||A block that contains an illustration, diagram, photo, or similar|
+|dl||A section containing terms and their definitions, or questions and their answers. Used with |
+|details||Additional information that is hidden from the user until its |

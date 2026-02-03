@@ -1,0 +1,17 @@
+We’ve done it!
+Imagine if you could drive to a car park and then, instead of spending 20 mins driving around trying to find a place to park, you tell your car to park itself. The car goes off and finds a spot. When you’re ready you summon it to come and pick you up. A bit like valet parking, except your valet is always with you when you drive.
+2.5 years ago Parkopedia, the University of Surrey and the Connected Places Catapult set out to answer a question; how will autonomous vehicles park? We knew that this would be a difficult problem. Parking in a multi-storey car park means that there is no line of sight to satellites, which means no GPS. That said, GNSS (even RTK-GNSS) is not accurate in urban environments due to the canyon effect. As a result, a vehicle would need to estimate where it is using on-board sensors such as cameras, inertial measurement units and wheel odometry. We know that it’s possible to localise using LiDAR if a point cloud of the environment is available but LiDAR systems were very expensive. We chose therefore to focus on visual-inertial localisation.
+Our goal was to work out what maps would be required to support the autonomous vehicle. We set out to develop the localisation and navigation algorithms that best utilise these maps and to prove them on our own autonomous vehicle. We had to ensure that any autonomous driving was done safely. Finally we wanted to find out what you, the general public, think of the idea of your car parking itself.
+The project scope was defined by these 5 objectives:
+- Developing automotive-grade indoor parking maps required for autonomous vehicles to localise and navigate within a multi-storey car park.
+- Developing the associated localisation algorithms – targeting a minimal sensor set of cameras, ultrasonic sensors and inertial measurement units – that make best use of these maps.
+- Demonstrating this self-parking technology in a variety of car parks.
+- Developing the safety case and prepare for in-car-park trials.
+- Engaging with stakeholders to evaluate perceptions around AVP technology
+After the 7th quarterly meeting we published an update on the current status that showed that most of the work was complete. All that was left was to deploy the localisation and navigation software onto our autonomous StreetDrone test vehicle.
+In the video above the software plans a route from the drop-off zone to the selected target parking spot when the driver presses ‘PARK’. Next, the vehicle localises itself by estimating its position with respect to the Artificial Landmarks. A recursive Bayesian Filter fuses the observations with odometry information . Finally, the software plans a path back to the pick-up zone when summoned.
+With that demonstration we have completed all the deliverables for the AVP project and have successfully brought the project to completion on time and on budget! Our thanks go to
+- Innovate UK and the Centre for Connected and Autonomous Vehicles for funding the project
+- Admiral for insuring our StreetDrone for the duration of this project
+- National Car Parks for allowing us to test at NCP London Bridge
+Throughout this project we learned that drivers value the convenience promised by cars that will park themselves. This project has delivered a major breakthrough by identifying and overcoming obstacles to full deployment of AVP through the development of a technology demonstrator. At some point in the next few years your car will be able to park itself and we’ll be proud to have played a role in making that happen!

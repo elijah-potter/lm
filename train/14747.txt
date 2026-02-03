@@ -1,0 +1,16 @@
+The H.265 video codec also known as High Efficiency Video Coding (HEVC) has been released in 2013 and approved in early 2015 as a video encoding standard.
+There are more downsides with the H.265 codec than upsides. First the biggest problem is that the licensing can be as high as up to 20 times more expensive for hardware manufacturers to use this codec in their products.
+H.264 Licensing Price
+H.265 Licensing Price
+CPU Usage for Video Encoding / Decoding
+The H.265 HEVC video codec also uses a lot of CPU power, for example the video encoding time with a computer takes 10 times more than H.264. A dedicaded hardware encoder/decoder chip is much faster but it also consumes more power (battery power in case of mobile devices).
+H.264 CPU Power Usage
+H.265 CPU Power Usage
+File Size at Similar Video Quality
+The real benefit of H.265 video codec is that the file size is twice smaller than it’s predecesor H.264.
+H.264 File Size
+H.265 File Size
+Another benefit of H.265 is the video resolution which can be as high asÂ 8192Ã4320 pixels, including 8K UHD.
+H.264 MAX RESOLUTION 4096 Ã 2160 (4K UHD)
+H.265 MAX RESOLUTION 8192 Ã 4320 (8K UHD)
+As you can see there are no big gains with the new H.265 HEVC video codec and there are also some problems with the codec, high royalty costs and high CPU power demand,Â this is whyÂ many camera manufacturers like Canon, GoPro and others have avoided yet. Â Some of the largest tech companies Amazon, ARM, AMD, Cisco, Google, Microsoft, Intel, Mozilla, NVIDIAÂ and NetflixÂ have joined the Alliance for Open MediaÂ which wantÂ to developÂ the royalty-free alternative video codec AV1Â in 2017.

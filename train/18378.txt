@@ -1,0 +1,6 @@
+Chapter 7 Time series analysis
+POSIX format is a standardised format and by definition an 8 Bit long character value. The POSIX (Portable Operating System Interface) standard has been introduced to guarantee compatibility between different operating systems.
+check these functions/types:
+ISOdate, ISOdatetime, strftime, strptime, date difftime julian, months, quarters, weekdays
+strptime() to cenvert between different character representations of these types.
+strftime() (wrapper for format.POSIXlt and format.POSIXct) to extract parts of POSIX times and return them as character strings. Further wrappers for convenience are weekdays() julian(), quarters().

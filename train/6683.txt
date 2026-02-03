@@ -1,0 +1,14 @@
+BASIC ELECTRONICS - OD1633 - LESSON 1/TASK 2
+To solve the problem, a circuit diagram is first drawn and labeled (figure
+24, on the following page).
+R1 = 20 Ohms
+R2 = 30 Ohms
+R3 = 50 Ohms
+I = 2 amperes
+ET = E1 + E2 + E3
+SOLVING FOR APPLIED VOLTAGE IN A SERIES CIRCUIT.
+E1 = R1 x I1 (I1 = The current through resistor Rl)
+E2 = R2 x I2
+E3 = R3 x I3
+ET = (R1 x I1) + (R2 x I2) + (R3 x I3)
+ET = (20 Ohms x 2 amps) + (30 Ohms x 2 amps) + (50 Ohms x 2 amps)

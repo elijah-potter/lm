@@ -1,0 +1,28 @@
+Courses & Institutes
+SAP Career Guidence Tool
+HDFS (Hadoop Distributed File System) Daemons
+What is HDFS (Hadoop Distributed File System)? HDFS stands for Hadoop Distributed File System. It is the file system of the Hadoop framework. It wa ...
+What is Hadoop?
+Hadoop Introduction Hadoop is an open source big data framework developed by Doug Cutting in the year 2006. It is managed by the Apache Software Fo ...
+Secondary NameNode in Hadoop
+What is Secondary Name Node? Role of Secondary Namenode in Managing the Filesystem Metadata.Each and every transaction that occurs on the fi ...
+Big Data Storage and Processing: Traditional Technology
+Big Data: Traditional Method For Storing and Processing How does it work?1) The data generated out of the organizations, financial institutions s ...
+What is Big Data?
+Big Data Definition Big Data refers to a huge volume of data that cannot be stored or processed using the traditional approach within the given tim ...
+Key Features of Hadoop
+What are the main key features of Hadoop?Top 8 features of Hadoop are: Cost Effective System Large Cluster of Nodes Parallel Processing Distributed Da ...
+Writing data to HDFS (Hadoop Distributed File System)
+Writing data to Hadoop HDFSLet us understand the process with an example :-1) For example, to write a file named ‘data.txt’ within the /us ...
+How does Hadoop works?
+The Hadoop framework comprises of the Hadoop Distributed File System (HDFS) and the MapReduce framework. It divides the data into smaller chunks and s ...
+What is Hadoop?
+Features of Hadoop
+Hadoop Training Tutorials for Beginners
+Hadoop Framework and Working
+Hadoop HDFS Daemons
+Writing data to HDFS
+Hadoop Secondary Namenode
+What is Big Data
+Big Data Storage and Processing
+Hadoop Interview Questions and Answers

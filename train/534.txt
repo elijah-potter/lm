@@ -1,0 +1,12 @@
+run the given instructions
+Major Section: PROOF-CHECKER-COMMANDS
+Example: (do-all induct p prove)Run the indicated instructions until there is a hard ``failure''. The instruction ``succeeds'' if and only if each instruction in
+General Form: (do-all &rest instruction-list)
+instruction-listdoes. (See the documentation for
+sequencefor an explanation of ``success'' and ``failure.'') As each instruction is executed, the system will print the usual prompt followed by that instruction, unless the global state variable
+do-all ``fails'', then the failure is hard if and only if
+the last instruction it runs has a hard ``failure''.
+Obscure point: For the record,
+(do-all ins_1 ins_2 ... ins_k) is
+the same as
+(sequence (ins_1 ins_2 ... ins_k)).

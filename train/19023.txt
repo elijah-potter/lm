@@ -1,0 +1,13 @@
+In area scoring, your score is the sum of two components
+- the number of empty points only your stones surround and
+- the number of your stones on the board (AGA rules: White adds N-1, where N is the number of handicap stones, so as to not give an advantage to Black for having had more stones on the board before play started)
+Area scoring is used in certain rulesets, notably AGA rules, Chinese Rules, Ing Rules, New Zealand rules and Ikeda's rule.
+To determine the score with area scoring, Chinese counting is generally used. An alternative method is Ing counting.
+Area scoring is independent of life and death, even though some rule sets abuse those terms as if they were relevant for scoring. Life and death exist on the strategic level during the game phase.
+The idea is the possibility to "play it out". In principle, both players can play until there is no enemy stone in their respective territories anymore. Practically, players can agree upon obviously dead stones and remove them. After playout or agreement, the score is counted.
+Playing out to decide about life and death is one big advantage of area scoring over territory scoring. In territory scoring, some life and death situations require special rules (for instance, bent four in the corner is dead).
+Jasiek's Presentation of Area Scoring
+Robert Jasiek has written several notes on Area Scoring.
+This page is derived from the general scoring page. See also territory scoring versus area scoring.
+See the discussion page.
+See also: territory scoring

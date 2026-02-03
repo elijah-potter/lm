@@ -1,0 +1,15 @@
+Universal XSS (UXSS) is a particular type of Cross-Site Scripting that has the ability to be triggered by exploiting flaws inside browsers, instead of leveraging the vulnerabilities against insecure web sites.
+One of these UXSS flaws was disclosed earlier today on russian forum rdot, the flaw takes advantage of the Data URI Scheme to execute script using the MIME Type ‘text/html’, which makes the browser render it as a webpage.
+So, how would an attacker exploit this fancy new bug?
+The first trick here is to use the Data URI Scheme in combination with another (less dangerous) flaw called “Open Redirection” which happens when an attacker can use the webpage to redirect the user to any URI of his choice.
+So if you don’t have one of these “Open Redirection” bugs on your website, you’re safe, right? Not so fast. There’s websites that are made exclusively for this purpose to shorten URI’s like bit.ly andtinyurl.com.
+Here’s a proof-of-concept link on tinyurl: http://tinyurl.com/operauxss. If you open this link in Opera, you will find yourself looking at an alert box saying “tinyurl.com”.
+Hang on, there’s more! The original author of the forum post, M_script, pointed out that you could take this one step further.
+This is where the clever part of this vulnerability comes in play. If you embed a script in the payload that calls the method location.reload() in Opera, it will update the current domain to the original domain where the link was clicked.
+This means that an attacker may execute script not only from the domain containing the open redirect, but also All domains allowing links to other domains. Yes, you read that right.
+Here’s a proof-of-concept link with the second stage of this vulnerability: http://tinyurl.com/operauxssstep2.
+Other browsers block redirects to the Data URI Scheme or changes the domain where the script is executed from, avoiding the XSS issue.
+What can you do to protect yourself against this bug?
+If you don’t want to change browser, you can head over to Tools->Preferences->Advanced->Network and uncheck the checkbox labeled “Enable automatic redirection”.
+Update: Opera has now released a patch for this problem. Update your Opera browser to version 12.10.
+By: Mathias Karlsson

@@ -1,0 +1,81 @@
+AMCAT Heaps Questions in Computer Programming Section 2023: One module in addition to others, in AMCAT exam is of Computer Programming. To emphasize, this section covers Basic programming, Data Structures, Object Oriented Programming Concepts and miscellaneous questions. By and large, under data structure, comes the topic of Heaps. So here we will go through an overview of heaps and the AMCAT Heaps Questions
+AMCAT Heaps Questions 2023 – Computer Programming
+Data structure is one of the most important topics of Computer Programming module in AMCAT. Comparatively theoretical questions come from heaps. As has been noted, 1 to 2 questions definitely come from this topic. The level of the questions is, rather average. It takes significantly 40- 50 seconds to solve the problem. Hence, below we will share an outline of what heaps in data structure is about.
+In fact, Heap data structure is a specialized binary tree based data structure. Since, Heap is a binary tree with special characteristics, hence the nodes are arranged based on there value. A heap data structure is sometimes also called as Binary Heap.
+There are especially two types of heap data structures and they are as follows…
+- Max Heap
+- Min Heap
+Every heap data structure has the following properties:
+- Ordering: Nodes must be arranged in the order of values based on Max heap or Min heap.
+- Structural: All levels in a heap must be full, except the last level. Also, nodes must be filled from left to right strictly.
+Max heap data structure is a specialized full binary tree data structure except last leaf node can be alone. In a max heap nodes are explicitly arranged based on node value.
+Max heap is defined as a specialized full binary tree in which every parent node contains greater or equal value than its child nodes. And last leaf node can be alone.
+Above tree is satisfying both Ordering property and Structural property according to the Max Heap data structure.
+Operations on Max Heap
+The following operations are performed on a Max heap data structure…
+- Finding Maximum
+Finding Maximum Value Operation in Max Heap
+Furthermore, finding the node which has maximum value in a max heap is very simple. In max heap, the root node has the maximum value than all other nodes in the max heap. So, directly we can display root node value as maximum value in max heap.
+Insertion Operation in Max Heap
+Insertion Operation in max heap is performed as follows:
+Step 1: Insert the newNode as last leaf from left to right.
+Step 2: Compare newNode value with its Parent node.
+Step 3: If newNode value is greater than its parent, then swap both of them.
+Step 4: Repeat step 2 and step 3 until newNode value is less than its parent node (or) newNode reached to root.
+Deletion Operation in Max Heap
+In a max heap, deleting last node is very simple as it is not disturbing max heap properties.
+Deleting root node from a max heap is explicitly difficult as it disturbing the max heap properties. We use the following steps to delete root node from a max heap:
+- Step 1: Swap the root node with last node in max heap
+- Step 2: Delete last node.
+- Step 3: Now, compare root value with its left child value.
+- Step 4: If root value is smaller than its left child, then compare left child with its right sibling. Else goto Step 6
+- Step 5: If left child value is larger than its right sibling, then swap root with left child. Otherwise swap root with its right child.
+- Step 6: If root value is larger than its left child, then compare root value with its right child value.
+- Step 7: If root value is smaller than its right child, then swap root with rith child. Or else stop the process.
+- Step 8: Repeat the same until root node is fixed at its exact position.
+Download AMCAT Heaps Questions 2023
+AMCAT Important Heaps Questions in pdf
+Practice AMCAT Heaps Questions
+Which data structure is needed to convert infix notations to postfix notations
+(A) linear list
+Answer: Option C
+Which will be the best to implement the following a car comes at a petrol station and waits. The next car to get its Gas filled should be the one which has waited the longest time and thus is given priority?
+(A) Binary Trees
+(C) m-way Trees
+(D) Binary Search Tree
+Answer: Option B
+Which sorting method is slowest?
+(A) Quick sort
+(B) Heap sort
+(C) Shell sort
+(D) Bubble sort
+Answer: Option D
+More practice questions
+For a hashing table what is the time complexity?
+(C) O(log n)
+Answer: Option A
+Every element of a data structure has an address and a key associated with it. Also, this search mechanism deals with two or more values assigned to the same address by using the key. What is this search mechanism?
+(A) Linear Search
+(B) Binary search
+(C) Hash Coded Search
+(D) None of these
+Answer: Option C
+What is the time complexity of Build Heap operation. Build Heap is basically used to build a max(or min) binary heap from a given array. Also Build Heap is used in Heap Sort as a first step for sorting.
+Answer: Option D
+Following is algorithm for building a Heap of an input array A.
+heapsize := size(A);
+for i := floor(heapsize/2) downto 1
+do HEAPIFY(A, i);
+Although the worst case complexity looks like O(nLogn), still upper bound of time complexity is O(n).
+Also download practice papers from other topics
+More Articles AMCAT CSE Questions Paper:
+- Data Types
+- Iteration, Recursion, Decision
+- Procedure, functions and scope
+- Arrays, Linked Lists, Trees, Graphs (Data Structure)
+- Stacks, Queues
+- Hash Tables
+- Heaps Questions
+- Searching and Sorting
+- Complexity Theory
+Looking for AMCAT Discount? – check here AMCAT Discount Code

@@ -1,0 +1,8 @@
+Working with Alias Data Types
+Alias types are based on the system data types in SQL Server. Alias types can be used when several tables must store the same type of data in a column and you have to make sure that these columns have identical data type, length, and nullability. For example, an alias type called postal_code could be created based on the char data type. Alias types without rules or an attached default definition are supported in table variables since SQL Server 2005. Alias types in table variables are not supported in SQL Server before SQL Server 2005.
+When an alias data type is created, you must supply the following parameters:
+System data type upon which the new data type is based
+Nullability (whether the data type allows null values)
+When nullability is not explicitly defined, it will be assigned based on the ANSI null default setting for the database or connection.
+If an alias type is created in the model database, it exists in all new user-defined databases. However, if the data type is created in a user-defined database, the data type exists only in that user-defined database.
+When alias data types are dropped, they can still be referenced by table variables later in the batch in which they were dropped.

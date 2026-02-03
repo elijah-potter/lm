@@ -1,0 +1,3 @@
+Summary: The Law of Demeter is discussed using Java source code examples.
+Whenever you talk to a good, experienced programmer, they will tell you that "loosely coupled" classes are very important to good software design.
+The Law of Demeter for functions (or methods, in Java) attempts to minimize coupling between classes in any program. In short, the intent of this "law" is to prevent you from reaching into an object to gain access to a third object's methods. The Law of Demeter is often described this way:

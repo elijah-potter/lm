@@ -1,0 +1,14 @@
+AND THE DOPPLER DILEMMA
+METEOROLOGIST JEFF HABY
+The PRF is the frequency of pulses that are emitted from a Doppler radar. A higher PRF means the radar is
+sending out more pulses per unit time. A lower PRF means the radar is sending out less pulses per unit time.
+When the PRF is high the radar has less time to sample the atmosphere between pulses. If the radar has
+less time to sense, it can not detect objects further away from the radar as compared to a low PRF.
+Thus, a high PRF has a smaller unambiguous range as compared to a low PRF.
+The Doppler dilemma states there is an inverse relationship between the unambiguous range and the
+When PRF is low----unambiguous range is high---but that results in a low velocity range
+When PRF is high----unambiguous range is low---but that results in a high velocity range
+Example: Suppose a radar can sense up to 250 miles from the location of the radar (unambiguous range)
+and can detect velocities of up to 30 m/s before velocity folding occurs (a.k.a. velocity aliasing). If
+the PRF was increased, the unambiguous range will drop to say 200 miles but the unambiguous velocity
+will increase to say 35 m/s.

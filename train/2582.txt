@@ -1,0 +1,37 @@
+Device::Arduino::LCD - Perl Interface to the PerLCD Arduino Sketch.
+use strict; use Device::Arduino::LCD; my $lcd = Device::Arduino::LCD->new; $lcd->clear; $lcd->first_line("Hello World");
+See examples/demo.pl for a more comprehensive example.
+The Arduino is an open-source physical computing platform. Among the many things one might want to do with such a device is connect an LCD to it and print stuff (at least that's what I wanted to do with it).
+There are a couple of excellent low-level libraries that can be linked into an Arduino sketch to provide this functionality. I've chosen the LCD4Bit library to link against. The PerLCD sketch provides a few higher level functions as well as a serial listener.
+This Perl library provides a very high level interface for formatting and sending messages to the sketch's listener. Once the device is wired up to an LCD (a fairly trivial task), the USB serial drivers installed, and the sketch compiled and uploaded, getting text on the screen should be no more difficult than the example above: Zero knowledge of LCDs required.
+The sketch provided can obviously be used with a client library written in any language, the choice of Perl was (almost) arbitrary.
+Package variables representing (supposedly) sensible default. May be changed as necessary before new() is called.
+Returns a Device::Arduino::LCD object or dies if unable to open the serial device.
+Print text on the first line of the LCD. Characters exceeding the length of the display are truncated.
+As above, on the second line.
+Clears the LCD. Waits pre-delay seconds before sending the command and post-delay seconds before returning.
+Scrolls both lines of the LCD to the left, at a rate of delay ms.
+Scrolls the text up (i.e., line 2 becomes line 1; line 2 contains text). Waits pre-delay before sending the command; scrolls at a rate of internal-delay seconds; waits post_delay seconds before returning. Text is an array ref.
+Places character one of text at the row and column specified. Rows (on a two line display) range from 1 to 2; columns, however, are zero indexed. (Sorry about that.)
+Sends x% of 5V to the port specified by gauge-number. Gauges are numbered 1, 2, and 3 corresponding to PWM pins 3, 5, and 6 on the arduino. This has bugger all to do with LCDs, but since the pins are available it seems to make sense to provide a way of addressing them.
+Send (numeric) LCD-command directly to the LCD. Useful for sending the sorts of commands listed here: http://tinyurl.com/234d8z
+Send the character directly to the LCD. The method will handle converting the character to an integer. With command(0 and print_char() one can achieve pretty much anything but initialization of the display.
+Installs data (an eight element array or array ref) as ascii character 0 - 7. (NB: the LCD allows eight characters, ASCII 0-7 to be defined by the user; that's what make_char and write_ascii as well as the bargraph functions are all about.)
+Prints the ascii character (0-7) at row, col. This is particularly useful for printing the custom characters created with make_char().
+Defines eight custom characters (overwriting whatever's been defined before) as a series of bars for use in graphing.
+With values ranging from 0 - 8 prints that many solid horizontal bars (starting at the bottom) in the position indicated. So
+$lcd->graph(2, 1, 0); $lcd->graph(5, 1, 1);
+prints this in the first and second blocks of the top row:
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . x x x x x . . . . . x x x x x . . . . . x x x x x x x x x x x x x x x x x x x x x x x x x
+Like graph() above but using a 16 x 5 font; the value can range from 0 to 16.
+Convert an array of arrayrefs of text to custom character ascii-num. A call to convert_to_char might look like.
+my $ret = $lcd->convert_to_char(0, [ qw[ . x . x . ] ], [ qw[ x . x . x ] ], [ qw[ . x . x . ] ], [ qw[ x . x . x ] ], [ qw[ . x . x . ] ], [ qw[ x . x . x ] ], [ qw[ . x . x . ] ], [ qw[ x . x . x ] ]);
+Any position indicated by an x (or X) will be lit, everything else will be off. The choice of period here is arbitrary. To print this character one could say $lcd->write_ascii(0, 1, 0).
+The Arduino homepage: http://www.arduion.cc, particularly Heather Dewey-Hagborg's LCD tutorial (http://www.arduino.cc/en/Tutorial/LCDLibrary) and neillzero's LCD4BitLibrary page (http://www.arduino.cc/playground/Code/LCD4BitLibrary).
+The Hitachi HD44780 Datasheet: http://www.electronic-engineering.ch/microchip/datasheets/lcd/hd44780.pdf
+Dincer Aydin's LCD page on geocities was also a good resource, particularly the Custom-Character Calculator. http://www.geocities.com/dinceraydin/lcd/intro.htm
+Erik Nordin's HD44780-Based LCD FAQ: http://www.repairfaq.org/filipg/LINK/F_LCD_HD44780.html
+Rows are are indexed from 0; columns from 1: The LCD4Bit library is shining through, it was kept this way for consistency but it's probably not very abstract or intuitive.
+Kevin Montuori, <firstname.lastname@example.org>
+Copyright (C) 2007 by Kevin Montuori & mconsultancy
+This library is free software; you can redistribute it and/or modify it under the same terms as Perl itself, either Perl version 5.8.1 or, at your option, any later version of Perl 5 you may have available.

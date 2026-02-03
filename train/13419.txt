@@ -1,0 +1,37 @@
+5 Ways to Troll Your Neural Network
+Alexei Efros, recipient of the 2016 ACM Prize in Computing, opened his lecture with a striking fact: 74% of web traffic is visual.
+“Everybody’s talking about big data, the data deluge—all this data being rained down on us,” Efros said. “But I think a lot of people don’t appreciate that most of the data is actually visual…. YouTube claims to have 500 hours of data uploaded every single minute. The earth has something like 3.5 trillion images, and half of that has been captured in the last year or so.”
+Today, teams of computer scientists like Efros are working to understand that data via “deep learning” algorithms. First, you prepare a network of connections. Then, as a training regimen, you show it vast quantities of photographs. With time, it learns to accomplish extraordinary tasks—writing captions, colorizing black-and-white photos, recognizing animal species.
+Unless, of course, you troll it.
+Pranking your algorithm is not just fun and games. There’s a research principle here. By tracking a system’s errors, you can see how it functions. That’s why psychologists love optical illusions: not just to see people flail and sputter, but to reveal what shortcuts the brain takes in processing images.
+By analogy, recent work has turned up “optical illusions for deep learning”—errors that, by frustrating and confusing the algorithms, hint at their inner nature.
+Here are five:
+1. Defy its expectations.
+Impressive, right? Not so fast, said Efros. “If you go and look for cars on the internet,” he pointed out, “that description applies to pretty much all of those images.”
+To give the network a real test, he dangled some bait – and got a giant bite:
+“It’s kind of true,” said Efros. After all, it is by the side of the road. “But what about this?”
+“Well, there is a car; there is a road; and probably that’s all it’s getting,” he said. “It is wishful thinking [that] it’s doing more than finding a few texture patterns.”
+Deep learning creates programs with extraordinary results but mysterious inner workings. By showing the computer something fresh and strange, you can begin to lift the lid on that black box. In this case, we learn a stark lesson: the computer can’t recognize semantic categories, just lower-level visual features.
+2. Show it what it wants to see.
+Computer scientist John Hopcroft, in the talk that preceded Efros’s, showed how some researchers have taken this principle even further.
+“People can take an image of a cat, and change a few pixels, so that you can’t even see that it’s a different image,” Hopcroft explained. “All of a sudden the deep network says it’s an automobile.”
+“This worried people at first, but I don’t think you have to worry about it,” Hopcroft said. “If you take the modified image of the cat, it doesn’t look like an image to a deep network, because there’s a pixel which is not correlated with the adjacent pixels. If you simply take the modified image and pass it through a filter, it will get reclassified correctly.”
+Still, it’s a powerful demonstration of the susceptibility of deep learning to optical illusions – in this case, ones that the human eye can’t even detect. Although neural networks were born from an analogy with the human brain, it’s clear that they have long since parted ways.
+3. Lull it into a sense of security with your cute puppy face.
+In another project, Efros and his colleagues separated pictures into a grayscale component and a color component, then asked neural networks to predict the latter from the former. In other words: they trained the computer to colorize black-and-white pictures.
+It produced some cool results, including this version of the famous photo “Migrant Mother”:
+And yet, like most denizens of the internet, it found its intelligence diminished by the presence of an adorable puppy, making a strange error in colorizing the face:
+Why the pink under the chin? Efros explained: “Because the training data has the [dogs with their] tongues out.” Accustomed to panting dogs, it colors a phantom tongue on the chin of a closed mouth.
+For his part, Efros finds this kind of error encouraging. “Whatever it’s learning is not some low-level signal,” he said. “It’s actually recognizing that it’s a poodle, and then saying, ‘Well, all the poodles I have seen before had their tongues out’…. This actually suggests it’s learning something higher-level and semantic about this problem.”
+4. Trap it between two alternatives.
+As Efros explained it, visual data presents a fundamental challenge for computers: defining how “far apart” two images are. With text, it’s much easier—you can, for example, count the ratio of letters that two text strings share in common. But what does it mean for one image to be “close to” another?
+“Close in what sense?” asked Efros. “In high-dimensional data like images, [the standard approaches] don’t work very well.”
+“Imagine this bird could be blue, or could be red,” Efros explained. “[The neural network] is going to try to make both of those happy. It’s going to split down the middle.” The result: a muddled gray, instead of the bright reality. Equidistant from two plausible colorings, it couldn’t choose a direction to go. “It’s not very good when you have multiple modes in the data.”
+Doing some “fancy things” mathematically, Efros and his team coaxed the network into committing to one colorization option:
+Once modified, however, the network began to “overcolorize” images—for example, turning the wall below from white to a pixelated blue:
+It remains hard for the colorizing network to find the right level of aggression, a middle ground between leaving colored things in gray-scale and turning gray things bright colors.
+5. Show it Vladimir Putin on a horse.
+In another project, Efros’s team trained a neural network to convert horses into zebras, and vice versa. It produced some notable successes—and one notable failure, which earned the biggest laugh of the conference:
+Unable to distinguish man from horse, the neural network gave a surreal, sci-fi vision of a zebra centaur. “I showed this in my talk in Moscow,” Efros laughed. “I thought, ‘They are not going to let me out.’”
+Still, there’s reason to take pride in this neural network’s achievements. “There is no supervision. Nobody told the network what a horse looks like, what a zebra looks like…. It’s like two visual languages without a dictionary.” The neural network learned to translate between them – albeit imperfectly.
+This image led Efros to his conclusion: “It’s time that visual big data be treated as a first-class citizen,” he said. Visual problems loom large in computer science, and neural networks offer tremendous potential—as long as we remember how to keep them honest.

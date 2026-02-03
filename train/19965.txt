@@ -1,0 +1,33 @@
+Advantages and disadvantages of DBMS
+Hello friends! Today I will tell you about the Advantages and Disadvantages of DBMS in this post, and will also read its example,
+Advantage of DBMS
+The database is a way to consolidate and control the operational data centrally. It is a better way to control operational data than the one in which data is widely spread across various flat files, as these are difficult to control and manage. A person who will control the consolidated data will also be required in the organization. This person is a Data Base Administrator (DBA) who is supposed to be a man with a high degree of technical acumanship. He has in-depth knowledge of user requirements. DBA role can be performed by a group of people rather than by just one person. The advantages of having centralized control of data are:
+1-Redundancy can be minimized
+If each department maintains files of employees individually, it can lead to wastage of space as also considerable redundancy of data. Suppose the Administration department has its own file containing administration information, and the Finance department contains salary-related information about all employees of the organization, the DBA can integrate these two files and eliminate the redundancy.
+2-Inconsistency can be avoided
+Suppose in the file of the Administration department, the designation of employee John is shown as Dy. CSM and if the same for John in department Finance is shown as CSM. then it is an example of inconsistency in the database. Thus, it is clear that if a given fact is represented by a single entry inconsistency can be removed.
+3-The data can be shared
+The data stored for one application can be used for another application. Thus, the data of the database stored for one application can be shared with new applications.
+4-Standards can be enforced
+DBA can ensure that company, industry, national and international standards are followed while developing applications For example, in an application written in C, all the data items which are declared as a small int, and character, can be declared as
+short. int si_x; Char. Ch_x;
+All declarations of short int can be prefixed with si and those of char type can be prefixed with ch for the programmers to know the type of data items, just by seeing its prefix anywhere in the body of the program.
+5-Security can be enforced
+Once the DBA has full control of operational data, the DBA can define the access paths for accessing the data stored in the database and he/she can define authorization checks whenever access to sensitive data is attempted.
+6-Integrity can be kept intact
+Supposing an employee is shown as drawing salary Rs. 10,000/- in Finance Department whereas it is shown that no such employee exists in Administration department when it is updated.
+Centralized control of data helps in avoiding such cases since DBA can define validation procedures to be executed whenever any update operation is done.
+Disadvantage of DBMS
+1- The cost of software
+The cost of database management system software is very high.
+2- the cost of hardware
+In the hardware of DBMS computer, hard disk, server, ….etc these things increase the cost of hardware.
+3-complex backup and recovery
+DBMS keeps the data centralized, due to which it is very difficult to back up the data or recover it if it fails.
+4- Problem of centralization
+Security problems arise due to centralizing DBMS. And if that centralized database fails, there is no other option left.
+Implementing backup and recovery operations in the database environment is quite a complex task.
+The traditional file system was very good for small organizations as it gave a very good performance. But DBMS does not give good performance for small-scale firms as its speed is slow and for this reason, it is favorable for big companies.
+There are many software and application programs that are made for any problem. But DBMS is a very useful software that is used for many purposes.
+If this article has been useful for you, then definitely share it with your friends and classmates, or if you have any question related to other subjects, then tell through comment below. thanks.
+[…] Advantages and disadvantages of DBMS […]

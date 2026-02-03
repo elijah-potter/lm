@@ -1,0 +1,5 @@
+«Letter Lines» - a word game
+The goal of the game - to create as many words as possible by moving the letters on the playing field. Move letters can only be on a trajectory passing through the empty cells. To move the letter click on it, and then - on the target free cell. Words can be drawn horizontally, vertically and diagonally. To enter a word, click on the first letter, and then on it's last one. The selected word is removed from the field, and in the absence of bonuses can not be reused.
+Allowed only common nouns in the singular (except where the word has no singular form). Admissibility of the word is checked on Wiktionary.
+Composing a word length of 7 or more letters grants bonuses that can be used for re-use of the words without scoring.
+Current version contains 98000+ verified nouns.

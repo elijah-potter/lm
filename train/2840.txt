@@ -1,0 +1,16 @@
+Entering the Value_if_true Argument
+The Value_if_true argument tells the IF function what to do if the Logical Test is true.
+In this tutorial we are testing to see if the data in cell E6 is less than $30,000. If it is, we want the IF function to use a formula to multiply the employee's annual salary in cell E6 by the deduction rate of 6%, which is located in cell E3.
+Relative vs Absolute Cell References
+After we complete the IF function in cell F6 we will be copying it to cells F7 to F10 to find out the deduction rate for the other employees in our data sample.
+Normally, when a function is copied to other cells the cell references in the function change to reflect the function's new location. These are called relative cell references and they make it easier to use the same function in multiple locations.
+Occasional, however, having cell references change when a function is copied will result in errors.
+To prevent these errors, the cell references can be made Absolute which stops them from changing when they are copied. Absolute cell references are created by adding dollar signs around a regular cell reference, such as $E$3.For this tutorial we will enter the deduction rate located in cell E3 as an absolute cell reference into the Value_if_true line of the dialog box.
+Adding the dollar signs is easily done by pressing the F4 key on the keyboard after the cell reference has been entered into the dialog box.
+- Click on the Value_if_true line in the dialog box.
+- Click on cell E3 in the worksheet to add this cell reference to the Value_if_true line.
+- Press the F4 key on the keyboard to make E3 an absolute cell reference ( $E$3 ).
+- Press the asterisk ( * ) key on the keyboard. The asterisk is the multiplication symbol in Excel.
+- Click on cell E6 to add this cell reference to the Value_if_true line.
+- Note: We will not make E6 into an absolute cell reference because we want it to change when the function is copied.
+- The completed Value_if_true line should read: $E$3 * E6.

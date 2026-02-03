@@ -1,0 +1,20 @@
+Results 1 to 3 of 3
+What is the actual difference between a NAT and Proxy. Please help in this context......
+Enjoy an ad free experience by logging in. Not a member yet? Register.
+- 05-11-2007 #1
+- Join Date
+- Oct 2006
+NAT and PROXY
+What is the actual difference between a NAT and Proxy.
+Please help in this context...
+- 05-11-2007 #2
+A proxy usually only forwards stuff one one protocal like http. Sometimes it adds headers and stuff so that the destination knows that it's gone through a proxy.
+A computer running NAT rewrites all packets sent to it so that they are from itself, so to the outside world it looks like it is from the IP of the router, not the original computer. This is protocol independant although some might have issues.
+- 05-12-2007 #3
+At a first glance a proxy has the same functionality as nat: You have one system which acts as a relay and which accepts NW requests from an internal site and acts as a relay such that the destination of the request sees the IP address of the relay host and the internal IP isn't visible to the destination. That's usually used when you have local IP networks (192.168, ... , 10.0., ..., 172. ...) which can't be visible in the internet.
+nat is much faster because it's handled in the IP stack of the relay host. A proxy is a dedicated piece of SW which handles all the relay stuff. But there are some benefits of the proxy which nat doesn't have:
+1) Caching of requests - useful in big local networks
+2) Authentication - a user has to provide userid and PW in order to be able to access the internet
+3) Access restrictions - allow access only in the working hours, restrict access to a small set of websites only, deny access to special websites, e.g. porn sites
+4) Modify data streams, i.e. masquerade or hide the identity of the client application (suppress http referrer, ... )
+Hope this helps."Really, I'm not out to destroy Microsoft. That will just be a completely unintentional side effect." Linus Benedict Torvalds

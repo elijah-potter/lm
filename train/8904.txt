@@ -1,0 +1,21 @@
+posted by Anonymous .
+The tour de France is a bicycle race that begins in Ireland but is primarily a race through France. On each day, racers cover a certain distance depending on the steepness of the terrain. Suppose that one particulAr day the racers must comp,tee 210 mi. One cyclist traveling 10 mph faster than the second cyclist, covers this distance in 2.4 h less time than the second cyclist. Find the rate of the first cyclist.
+Rate of 2nd cyclist = X mi/h.
+Rate of 1st cyclist = (x+10) mi/h.
+Eq1: d2 = Xt = 210mi.
+X = 210 / t.
+Eq2: d1 = (X+10)(t-2.4) = 210mi.
+In Eq2, substitute 210/t for X:
+(210/t+10)(t-2.4) = 210,
+210-504/t+10t-24 = 210,
+-504/t+10t-24 = 210-210,
+-504/t+10t-24 = 0,
+Multiply both sides by t:
+10t^2-24t-504 = 0,
+Divide both sides by 2:
+5t^2-12t-252 = 0.
+Solve using Quadratic Formula and get:
+t = 8.4, and -6. Select positive t.
+t = 8.4h.
+X = 210/t = 210 / 8.4 = 25mi/h.
+X+10 = 25+10 = 35mi/h = Rate of 1st cyclist.

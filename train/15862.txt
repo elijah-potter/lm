@@ -1,0 +1,28 @@
+Why backup is critical
+In 21st century all organization are having a technology infrastructure, some hosting locally some in the cloud. A school/educational institution is no different. In a school we store all our data electronically. We have electronic student records, results, student works, curriculum data, administrative data, emails, various configurations, systems data and much more. Without a proper backup recovery plan data is valuable.
+Data loss can be categorized in these three following areas:
+- Human error at any level of the organization, students, staff, systems administrator, external attacks etc.
+- Systems or hardware failure: failure of server hardware, data storage media or corruption of software systems
+- Natural disaster and act of God: flood, fire, earth quick, thunder strike
+To ensure service continuity, data needs to be available despite any type of anticipated failure. To protectant against data failure we use redundant hardware as well as industry standard backup system. Redundant hardware protects us against hardware failure and maximizes systems uptime. A properly implemented backup process shall protect against human error, software or systems error and any natural disaster.
+Having a regular backup provides, required availability of school’s/ educational institutions data; backup needs to be performed regularly in time using an autonomous system, stored and archived as required, all backup error should be addressed and finally the backup data should be restorable. It is critical the institution has a backup policy and implements the polity to protected data at all times criticality.
+International schools are required to have the ability to recover data in such failure or error.
+Before we start backing up data we need to create a backup policy for the institution. A policy provides specific guidance on the “who, what, when, and how” of the data backup and restore process. A backup policy helps the systems administrator with right backup procedures, and responsibilities. Such policy also manage users’ expectations
+A backup policy and procedure should address the following:
+- where backups are located (e.g. offline, online, media, location)
+- who can access backups and how they can be contacted (process for restoring data)
+- how often data should be backed up (e.g. daily, weekly)
+- what kind of backups are performed (e.g. incremental, full)
+- what hardware and software are recommended for performing backups
+- who will monitor the backup process
+- what happens when a backup fails
+- If backup archiving is required
+Example use of backup in a school
+Execution of data restoration process from backup is probably more frequent in a school/educational institution than any other type of organization due to its nature. Following are some example scenarios taken from an international school.
+Scenario A: A student deletes (or claims to have lost) his email/file which records his assignment. A teacher initiates a restoration process and gets the lost document restored as required within a defined amount of time.
+Scenario B: A staff has updated a wrong set of student entry without archiving them which you cannot restore from the schools student management package. Staff requests IT for help. IT restorers a set of backup taken from the previous day to rollback and revert the changes caused by error.
+Scenario C: Due to a power surge a set of server hardware fails, all data stored in that set of hardwareis lost. IT initiates a new server and installs the failed service. Restored the service configuration from the previous backup and finally restores the database from a previous day backup. As an end result IT restores the service with all data within a defined amount to time, and the school operation resumes.
+Using Zamanda for enterprise class backup
+To ensure data security and implement data backup policy the institution requires an enterprise class backup management solution, which is open standard, and reliable. Zamanda is such an Open Source, Open Standard enterprise grade backup system, which can be deployed of most organization.
+The institution prepares a backup policy for all systems; implement the proposed policy with Zamanda. Such a backup system can protect you against human error, malicious attack, hardware failure or other disaster. Zamanda can store backup data on network attached storage locally or in a remote location, on external hard-disks, tape media for all different type of data including electronic contents, documents, system data, databases. All these can be backed up by a scheduler automatically and un-attendant as per your backup policy. Zamanda will manage, retain, and archive these backup data for a pre-defined amount of time. The system also generates a MIS report on all performed operations and creates alerts on any failure. Alerts can be sent directly to the administrators or can be routed through a problem management system. Administrators will also review backup reports in a regular basis.
+You may contact me directly for Zamanda backup related services or consultancy. You may also visit http://xeois.com for technical services offered and http://globalsm.pw for educational services offered

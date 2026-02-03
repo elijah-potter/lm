@@ -1,0 +1,27 @@
+posted by Sarah .
+A large turntable rotates about a fixed vertical axis, making one revolution in 6.00 s. The moment of inertia of the turntable about this axis is 1200 kg * mg^2. A childe of mass 40.0 kg, initually staning at the center of the turntable, runs out along a radius. What is the angular speed of the turntable when the child is 2.00 m from the center, assuming that you can treat the child as a paarticle?
+KE (original) = (1/2)Iω2
+KE (new) = (1/2)I'w'2
+where I'=1200 + mr2
+I' = 1200 + 160 = 1360
+Setting KE (original) = KE (new)
+the only unkown is ω' for which you can solve.
+Note: ω=2π/6 rad/s = π/3 rad/s.
+KE (original) = (1/2)Iù2
+(1/2)(1360)(PI/3)^2 = 744.9475
+do i do the same for new... the "w" looks different
+I put w' instead of ω', but they are meant to be omega's. ω' is different from ω.
+Note also that I changes to I'.
+KE (original) = (1/2)I(PI/3)2
+KE (new) = (1/2)(1360)w'2
+right??? now im confused because i don't have I and i don't have w^2
+I' is the sum of the turn-table + the child. The contribution of the child is simply mr2, since it can be considered as a particle.
+So I' = 1200 kg * mg^2 + 40 kg * 22 kg * mg^2
+= 1320 kg * mg^2 (as already worked out above).
+The only unknown is now omega2 which can be obtained by equating KE before and after the child's participation, i.e.
+KE original = KE new
+Oops, I' should be 1360 as you had it.
+I is given in the question, 1200 kg * mg^2, so the only unknown is omega (w) in the equation.
+That is not right at all guys -_-
+I' w' = I'' w''
+anyone know the answer?

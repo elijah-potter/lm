@@ -1,0 +1,33 @@
+What is a Mesh Network?
+A mesh network is formed by devices that communicate among themselves directly, as soon as a device comes within range.
+Similar to the Roman legion or any army before wireless communications, the “mesh network” of soldiers propagate commands through the entire army with audio and visual signals. The entire army can span miles on ends, but as long as a soldier is within shouting or visual range of another soldier, he is part of that mesh network.
+What is MeshTrack?
+MeshTrack uses mesh network technology to accurately track people and objects in a confined environment such as a hospital, school, hotel or construction site.
+MeshTrack consists of two main types of devices – MeshBeacons that are stationary mapped on the floor plan, and MeshTrackers that are used to track valuable assets or people. As the MeshTrackers move through the stationary MeshBeacons, their locations are accurately calculated and represented on the reporting app.
+How is Indoor Location Tracking different from GPS?
+GPS is excellent for map-scaled, outdoor location tracking. However it is not suitable for precise, indoor tracking. Imagine tracking a piece of medical equipment as it goes through the day in a hospital. Which floor is it on right now? Which room number? GPS cannot answer these questions.
+How is this different from solutions like iBeacon?
+At first glance, both iBeacon and MeshTrack use Bluetooth to perform indoor location tracking. However there are many significant and fundamental differences that make MeshTrack a more powerful and lower cost option to iBeacon. Let’s dive deeper to learn more.
+iBeacon is a bunch of signposts. MeshTrack is a real network.
+The most important differentiation is in the architecture. We discussed mesh network and MeshTrack above.
+iBeacon is a lot simpler. Each beacon is literally a beacon, using Bluetooth to broadcast it’s ID, which is all it does. A complete iBeacon installation boils down to sticking these digital signposts everywhere. And just like real world signposts, they just stand there in case passer-bys might find them useful.
+Because of this design, the “smartness” are in the trackers, which are often full-fledged smartphones. Each tracker not only has to determine its indoor location using the signal strength of it’s nearby beacons’ broadcast, but alsohave a connection to the Cloud to to anything useful. For instance – getting the latest “signpost map” to ensure accuracy, reporting its own location, or getting a listing of nearby trackers.
+Once we understand this fundamental difference, the underlying advantages of each solution becomes very clear.
+|Network||Not an actual network||A real network|
+|Beacons||Simple beacons||Smart MeshBeacons|
+|Trackers||Smart trackers||Simple trackers|
+|Cloud||Cloud infrastructure is required||Cloud infrastructure is optional|
+An iBeacon site on its own is not a network at all – it’s more akin to a bunch of isolated digital signposts. The “networkness” comes from requiring each tracker to connect to the Cloud. More on that below.
+For MeshTrack, the MeshBeacons function as routers that connect to each other automatically and form a network. Any registered device – beacons or trackers – can communicate with any and all devices in the network, as long as it is within physical range from at least one other device.
+The iBeacons have only 1 function – to broadcasts its ID continuously. The Cloud and the individual trackers takes care of all the heavy lifting. This approach keeps the beacon hardware costs low. However that means heavy reliance on expensive smart trackers, which are much more numerous. The dependence on Cloud infrastructure and traffic also adds to the running connectivity costs of iBeacon.
+On the other hand, MeshTrack beacons forms a real, self reliant mesh network. The network handles all tracking functionalities, so the Cloud is completely optional – mostly for remote reporting. Also the MeshBeacons can work together to provide visual or audio feedback onsite. A good example is during a fire, all MeshBeacons can coordinate their LED lights to serve as a “marching ants guide” to direct people to the proper exits.
+iBeacon requires the trackers to be pretty smart. They are responsible for tracking their surrounding beacons and connect to the Cloud to figure out their physical indoor location on the floor plan, and only for itself. If it needs to know where all the other trackers are, it needs further calculations involving the Cloud.
+Such heavy reliance on trackers . Any site only needs a finite number of beacons, yet there is no limit to how many trackers it needs. This architecture design makes iBeacon an expensive solution for large scale deployment.
+In contrast, MeshTrack takes a better approach by making the beacons smarter, the trackers dumber, and the Cloud optional. Each device extends the network and can query from any and all other devices. All tracking features are performed locally, and only 1 of the devices needs to connect to the Cloud for the entire network to benefit. This makes MeshTrack reliable and self sufficient (no reliance on remote Cloud) and low cost (cheap trackers, little or no data fees).
+Cloud is essential for any iBeacon project, since all iBeacon trackers require frequent access to the Cloud to function. Each additional tracker increases data costs as well as network infrastructure costs.
+Reliance on the Cloud is also a single point of failure , which is a problem for mission critical applications. If it is offline for any reason, the entire iBeacon solution is useless.
+For MeshTrack, the devices are the network. That means all functions are performed on location, and each device carries its own weight by doing its own calculations. Zero data fees, zero data costs.
+However, That’s not to say Cloud doesn’t play a key role in MeshTrack. MeshTrack is self-sufficient when you are physically on location. Remote admin will require the mesh network to connect with the Cloud, but the associated infrastructure costs and the data costs will be minimal and do not increase with the network size.
+MeshTrack is the best Indoor Location Tracking available
+We haven’t seen widespread success of indoor location tracking because there has not been a good solution. Until now.
+By taking advantage of mesh networking, MeshTrack has successfully solved all the issues of iBeacon and GPS. Contact us now to see for yourself!

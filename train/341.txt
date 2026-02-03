@@ -1,0 +1,14 @@
+|Skip Navigation Links|
+|Exit Print View|
+|Creating and Administering Oracle Solaris 11 Boot Environments Oracle Solaris 11 Information Library|
+A boot environment is a bootable instance of the Oracle Solaris operating system image plus any other application software packages installed into that image. System administrators can maintain multiple boot environments on their systems, and each boot environment can have different software versions installed.
+Upon the initial installation of the Oracle Solaris release onto a system, a boot environment is created. You can use the beadm(1M) utility to create and administer additional boot environments on your system.
+Note - In addition, the Package Manager GUI provides some options for managing boot environments.
+Note the following distinctions relevant to boot environment administration:
+A boot environment is a bootable Oracle Solaris environment consisting of a root dataset and, optionally, other datasets mounted underneath it. Exactly one boot environment can be active at a time.
+A dataset is a generic name for ZFS entities such as clones, file systems, or snapshots. In the context of boot environment administration, the dataset more specifically refers to the file system specifications for a particular boot environment or snapshot.
+A snapshot is a read-only image of a dataset or boot environment at a given point in time. A snapshot is not bootable.
+A clone of a boot environment is created by copying another boot environment. A clone is bootable.
+Shared datasets are user-defined directories, such as /export, that contain the same mount point in both the active and inactive boot environments. Shared datasets are located outside the root dataset area of each boot environment.
+Note - A clone of the boot environment includes everything hierarchically under the main root dataset of the original boot environment. Shared datasets are not under the root dataset and are not cloned. Instead, the boot environment accesses the original, shared dataset.
+A boot environment's critical datasets are included within the root dataset area for that environment.

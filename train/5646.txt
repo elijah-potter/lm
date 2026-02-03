@@ -1,0 +1,74 @@
+The rendering model for WPF is quite unlike its predecessors in how it formats controls and other elements within a window. It also has a
+couple of options for how the contents of the window render. While it can work with fixed positioning, it can also work in a flow document
+form, meaning that documents can flow within the document area and adjust themselves when the window resizes in various ways.
+Flow documents are a new feature of the Windows Presentation Framework (WPF), giving developers another option to display content. There
+are a variety of elements available that format the content in special ways, and this is a help too. You will recognize some similarities
+with HTML, in the ways it generates lists, tables, and the like. It also introduces other features like figures and floaters, which add to
+the appeal of the content design.
+In addition, WPF changes the way that images are supported, and we'll touch upon that and how the framework takes an image path, and
+converts it to the correct object.
+Flow document content, as I mentioned before, is a new feature of WPF. In its simplest form, the following code creates a flow document
+reader with an empty document:
+Listing 1: Flow Document Reader Content
+There are three levels of flow document reader controls built-in to the framework: the FlowDocumentPageViewer,
+FlowDocumentScrollViewer, and FlowDocumentReader controls. FlowDocumentReader is the most functional, and therefore this article will use
+this control. Built into the control is a zoom control, a page layout control allowing you to choose the display format, and an in-built
+text searching control. Take a look at the example screenshot below:
+Figure 1: A FlowDocumentReader Control Example
+This control has the ability to reposition its content based on the size of the screen. If the content is larger, it may reposition
+the content into a multi-column format. See the alternative screenshot below:
+Figure 2: A Resized Flow Document Reader With Multiple Columns
+The flow document is made up of a variety of objects. Primarily, there are two types of elements: block and
+inline elements. A block element is an element that can have multiple inline elements. One of the more common block elements is the
+Paragraph class, which represents a paragraph of text. This can be used to represent text in a flow document. The following is the makeup
+of some text within the document:
+Listing 2: Flow Document Content
+What isn't exactly obvious is that the Paragraph element uses the Run element as its child. The Run element is optional and
+doesn't need to be declared (it's implicitly created); however, when working with paragraphs in code, you will need to instantiate an
+instance of the Run class, which will contain the paragraph text. The Paragraph element breaks out the text into paragraphs in a document as
+you could imagine.
+Within flow documents, you can't embed WPF controls. However, using either the InlineUIContainer or BlockUIContainer allows a flow
+document to contain WPF controls, in inline or block fashion. The InlineUIContainer element can be used within a Paragraph or any other
+control that supports inline elements (because it is an inline element, it can be used as a child of the block element); the BlockUIContainer
+element can host any controls that can be used within a Section or any other control that supports block elements. Below is an example of
+the inline and block UI Container classes.
+Listing 3: Block/Inline UI Containers
+In addition, flow documents support a table structure, which looks similar to an HTML table with a few added steps. The
+following is an example table:
+Listing 4: Tables in Flow Documents
+The TableRowGroup element groups a series of table rows together, instead of being an element directly under the table. Also
+note the use of the paragraph element as a child of the TableCell element; the content must appear in the paragraph element. There is an
+interesting difference with the TableCell element approach; this is because the TableCell isn't a block or inline element (it doesn't inherit
+from those base classes); rather, it branches off from the root base class.
+Also, if you want to change the sizing of the table, the Table object has a Columns collection, where you can specify widths for each
+column as such:
+Listing 5: Table Column Setup
+Similar to the Grid element, tables can have relative widths specified for them.
+Flow documents also support list-based structures. Lists work very similar to HTML lists, but with more verbose setup, as such:
+Listing 6: Lists in Flow Documents
+The List has a
+MarkerStyle attribute that defines the type of list to render (an enumerated value).
+I'm sure that if you've read computer books or other books, you've seen quotes on the sides of the page, as a way to stand out to the
+reader as they browse through the page in an effort to drive home a point. These can be achieved in flow documents, through the use of the
+Figure and Floater elements. Each has its own level of control, as to what it can do or can't do.
+In order for the floater to stand out and appear in the portion of the page, you have to provide a manual
+Width value, and
+give it a
+HorizontalAlignment setting. The figure element allows more control over positioning than the floater, so it can
+allow a user to control how the figure appears in the page with more precision. For instance, the Floater element example puts the text on
+the right side, allowing the text to wrap around it:
+Listing 7: Quote Listing on the Right of the Document
+At the core, an image is pretty easy to setup in XAML code. The following is an image control that displays a JPEG picture.
+Listing 8: Basic Image Declaration
+That is pretty simplistic. However, at its core, the
+Source property is something different than a string, that
+you would see in the ASP.NET Image control, for instance. Rather, it is an ImageSource object, which defines
+Width properties. Some of the derivatives are the BitmapSource and the DrawingImage controls, which
+represent image metadata API for those object types. However, in the XAML markup, one can specify a string value. This is because the
+ImageSource class declares a
+TypeConverter attribute, and this class is responsible for converting the value in the designer.
+This class also declares a
+ValueSerializer attribute, which specifies a class responsible for serializing the object to a string
+Flow documents have a lot of capabilities, with all of the inline elements that are supported. There are a variety of elements, very
+similar to HTML that provides a lot of functionality in WPF applications. As a sample, I've embedded portions of this article, and some
+added content, as a sample of flow documents. Resize the document and see how flexible flow documents can be.

@@ -1,0 +1,16 @@
+posted by James .
+A solid ball and a hollow ball, each with a mass of 2 kg and radius of 0.1 m, start from rest and roll down a ramp of length 2 m at an incline of 34°. An ice cube of the same mass slides without friction down the same ramp.
+What is the speed of the solid ball at the bottom of the incline?
+The answer is 3.96 m/s. How do I get this answer? At first I thought I could use E=1/2mv^2; however, I do not have the total amount of energy, so I cannot use this equation. Any help is greatly appreciated.
+For each object
+PE → KE
+h =s•sinα = 2•sin34º =1.12 m
+Solid ball I = 2•m•R²/5, ω=v/R
+PE =KE = KE (translational) + KE (rotational)
+m•g•h = m•v²/2 + I•ω²/2 = m•v²/2 + 2•m•R²•v²/2•5R² =
+= m•v²/2 + m• v²/ 5 =0.7•m• v².
+v = sqrt(g•h/0.7) =sqrt(9.8•1.12/0.7) =3.96 m/s.
+Hollow ball I = 2•m•R²/3 , ω=v/R
+m•g•h = m•v²/2 + I•ω²/2 = m•v²/2 + 2•m•R²•v²/2•3R² =
+= m•v²/2 + m• v²/ 3 =5•m• v²/6.
+m•g•h = m•v²/2

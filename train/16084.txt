@@ -1,0 +1,25 @@
+The ct command connects a local computer to a remote terminal equipped with a modem and allows a user on that terminal to log in to the computer. To do this, the command dials the telephone number of the remote modem. The remote modem must be able to answer the call automatically. When ct detects that the call has been answered, it issues a getty (login) process for the remote terminal and allows a user on the terminal to log in on the computer.
+This command is especially useful when issued from the opposite end, that is, from the remote terminal itself. If you are using a remote terminal and you want to avoid long distance charges, you can use ct to have the computer place a call to your terminal. To do so, simply call the computer, log in, and issue the ct command. The computer hangs up the line and calls your terminal back.
+If ct cannot find an available dialer, it tells you that all dialers are busy and asks if it should wait until one becomes available. If you answer yes, it asks how long (in minutes) it should wait. If you answer no, ct quits.
+The format of ct is ct [options] telno where telno is the telephone number of the remote terminal.
+As an example, suppose that you have a terminal with
+a modem attached at home and that you want to log in to
+the computer at work from this terminal.
+To avoid long distance charges, first call your
+work computer and log in.
+Then issue the ct command to make the computer hang
+up and call your terminal back.
+If your telephone number is 555-1212, the ct command is:
+ct -s 1200 5551212
+The -s (speed) option tells ct to call the modem at 1200 baud. If no dialer device is available on the computer at work, you see the following message after executing ct:
+The one 1200 baud dialer is busy Do you want to wait for dialer? (y for yes):If you type n (no), the ct command exits. If you type y (yes), ct prompts you to specify how long ct should wait:
+Time, in minutes?If a dialer is available when you enter the ct command, you see the following message:
+Allocated dialer at 1200 baudThis means that a dialer has been found. You are then asked if you want the line connecting your remote terminal to the computer to be dropped:
+Proceed to hang-up? (y to hang-up, otherwise exit):Since you want to avoid long-distance charges by having the computer call you, answer y (yes). You are then logged off and ct calls your remote terminal back.
+As another example, suppose that you are logged in on a computer
+through a local terminal and you want to connect a remote terminal
+to the computer.
+The telephone number of the modem on the remote terminal is 5551000.
+To connect the terminal, enter the following command:
+nohup ct -h -s 1200 5551000 &
+The -h option tells ct not to disconnect the local terminal (the terminal on which the command was issued) from the computer. After the command is executed, a login prompt is displayed on the remote terminal. The user can then log in and work on the computer just as on a local terminal.

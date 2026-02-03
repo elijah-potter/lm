@@ -1,0 +1,6 @@
+If you want to determine the physical location of some web site's server, you have to know how to find an IP address1. Every site, existing on the Internet, has at least one IP address, though it is not demonstrated in browsers. There are several ways of finding it.
+The simplest way is to use a special ping2 utility to find IP addresses. Such utilities are built in all operation systems. They contact the required sites by their names and then report you back their IP addresses.
+Microsoft Windows Users should open the Start menu, click Run, type "command" or "cmd" (from here on without quotation marks) and press Ok or Enter. Then type the word "ping" and the name of the site, and press enter.
+The utility will give you the IP address of the site. If you need to know your own IP address, type "command", press Enter, type "ipconfig", and press Enter once more.
+Mac users can determine their IP addresses by clicking the Apple icon, selecting System Preferences - Network. There the IP address can be easily found in TCP/IP. There is also an alternative method: the Apple icon - About This Mac - More - Network.
+On the Internet there are special sites, like whatstheirip.com, which will help you to find IP addresses when you are unable to do it yourself.

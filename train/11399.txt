@@ -1,0 +1,29 @@
+Gaussian Mixture Models are one of those basic machine learning techniques that every ML enthusiast should have in their toolbag. It lets you model a large class of datasets and work with them efficiently. The probability theory behind this tool may seem hard to grasp - but I'll try and teach you how these things actually work.
+The goal of this series is to teach you about expectation maximization using Gaussian Mixture Models. Expectation Maximization (EM) is a general technique and is not related to GMMs at all. You can apply EM to GMMs, Markov random fields and pretty much any situation where you need to guess some model parameters.
+In this series, I will first introduce you to learning a simple 1D Gaussian model (not a mixture). We will then extend it to a mixture of 1D gaussians (a linear combination of several gaussians). We will finally extend it to the most general form - multidimensional mixture of gaussians.
+One dimensional gaussian models
+These are the simplest form. You have some 1D data and want to figure out what gaussian curve is the best. Our goal in this part is to learn a one dimensional gaussian model something like this:
+The Gaussian curve is defined using two numbers: the mean and the standard deviation. If we can somehow calculate these numbers for our data, we'll be able to gaussian model. These two parameters ( and ) are needed per dimension - so if you have 1D data, you need one pair. If you have 3D data, you need six numbers and so on.
+"Learning" a model is the same as "estimating" parameter value in statistics. This can help you form a bridge between machine learning and statistics.
+The Gaussian function looks like this:
+If you know the mean and standard deviation of a model, you can predict the probability of a given data point . But we must first calculate these two parameters.
+Learning the one dimensional Gaussian
+Learning a 1D Gaussian is very straightforward. In fact, it is taught in high school. To calculate the mean all you need to do is:
+You simply sum up all the data points and divide it by the number of data points .
+Calculating the standard deviation is simple as well:
+A more computationally efficient method is to subtract the mean later on. This translates to fewer computations inside the for loop and is thus more efficient.
+Implementing the learner
+With these basics, we're now ready to learn these gaussian models. I'll be using OpenCV (because it comes with basic linear algebra tools) and the C++ STL for generating random numbers.
+We're not doing expectation maximization just yet. A single gaussian has no need for such a technique. When we get to a mixture of gaussian models, I'll introduce EM to you.
+We randomly pick a mean and standard deviation. The value of mean centered somewhere between 160 and 480. The value of std is just any number from 0 to 100.
+Then we generate our training data. The data will follow the provided mean and std value and will return count data points. Since we're dealing with just 1D things at the moment, the data will simply be an array of floats.
+We use the formulae mentioned above to "learn" the parameters. This is very straightforward. Finally, let's generate a visual image to see what was learned.
+constintgraph_width=640;constintgraph_height=140;cv::Matgraph(graph_height,graph_width,CV_8UC3,cv::Scalar(255,255,255));draw_1d_data(graph,data,count);draw_1d_gaussian(graph,learned_mean,learned_std);printf("Original mean = %0.2f, std = %0.2f\n",mean,std);printf("Learned mean = %0.2f, std = %0.2f\n",learned_mean,learned_std);cv::imwrite("./1d-single-gaussian.png",graph);deletedata;}
+We've not written most of the functions here - we'll get to them in a bit. We also print out the original mean/std used to generate the data and the mean/std learned by the model. Before that, we must write the function to generate our data.
+We start out by allocating some points. The plan is, we'll evaluate the probability in the range zero to img.cols (which is 640 in our case). Since our mean is (conveniently) between 160 and 480, calculating probabilities between 0-640 should be sufficient.
+Here's we're actually calculating the probabilities and storing them into prob. We're doing this for the entire range and calculating the maximum and minimum values (so we can scale our graph appropriately).
+Here we do the actual drawing. This code ensures the graph starts at y=30 in the image, is 100 pixels in height and makes sure the 100 pixels cover the range min_prob to max_prob. Also, since the y coordinate axis is flipped from our usual convention (the y axis increase from top to bottom - but it increase from bottom to top in most diagrams). This flip is done by subtracting the correct answer from 1 (1 - ...).
+We finish off the function by drawing the mean and one standard deviation to the left and one standard deviation to the right.
+Well this was easy, right? We'll get into some juicy expectation maximization in the next part. We'll try and learn a mixture of gaussians in one dimension and then later on extend it to multiple dimensions. I hope you found this tutorial useful!
+More in the series
+This tutorial is part of a series called Expectation Maximization with Gaussian Mixture Models:

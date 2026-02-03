@@ -1,0 +1,23 @@
+May 3, 2021, 11:07pm
+Basically, I want to call something like
+:WaitForChild from a
+I’ve tried calling it from
+Instance["WaitForChild"], but it returned an error explaining how I needed to call it from a colon instead of a period.
+I want to know if it’s possible to do this and if so, how.
+Thanks for your time!
+May 3, 2021, 11:10pm
+I am curious as to why you need to do this. I am unaware of any alternatives of calling the method itself, however I do not know for certain. If you
+really need this done, could you pass it via a function and check if the string is “WaitForChild”, and act accordingly?
+May 3, 2021, 11:15pm
+I could, but then I’d have to detect any of all of the methods from all of the classes. As I need support for all classes.
+May 3, 2021, 11:17pm
+What is the use case of this? Why can you not simply call methods in standard method syntax?
+If you have to do it this way…you can just pass
+Instance as the first argument (then the child’s name):
+Used one of those Loadstring modules to execute a string.
+Here’s the string I used.
+[[return function(Self, Varient)
+return game:GetService("]]..string.split(RealInstance:GetFullName(), ".")..[[")]]..tostring(string.gsub(RealInstance:GetFullName(), string.split(RealInstance:GetFullName(), "."), ""))..[[:]]..Index..[[(Varient)
+Sorry for the hassle!
+August 25, 2021, 7:30pm
+Yes I found that out. Sorry for not getting back sooner!

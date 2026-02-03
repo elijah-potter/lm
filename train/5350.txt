@@ -1,0 +1,12 @@
+Validate comes from the Latin validus, meaning strong.
+Verify comes from veritus, meaning true.
+We often say that an argument founded on strong principles is valid. For instance:
+"I cannot see the stars. I have no way of knowing if they're still there. For all I know, they might have disappeared, and scientists around the world are lying when they say they're there."
+"Your argument is valid, but I'm pretty sure scientists have better things to do."
+On the other hand, we could say,
+Scientists today verified that the stars did in fact disappear during daylight, when astronauts aboard the shuttle "Scepticism" travelled above the atmosphere for the first time and found that no stars above the daylight side were visible.
+The biggest difference is in the hypothesis. A valid hypothesis is one which appears to have supporting evidence, or which has not been disproven*. A verified hypothesis is one which has been proven (in this case, the anti-hypothesis).
+Let's say that your hypothesis is that the user has entered their email address correctly. The address is valid if it's well-formed, or if you can send an email to it - it exists - but only verified as the user's address once the link sent in the email is clicked.
+Or perhaps your hypothesis is that entries in a form are correct. It might be valid if all mandatory fields are filled, but only verified once the business rules associated with the different fields have been checked too.
+Because verification necessarily involves validation, there may be some flexibility about what you define as valid. The purpose of validation is usually to provide quick feedback about what might be wrong, whereas the purpose of verification is to make sure it's right.
+(*Can anyone verify that "disproven" is a word? Please validate my assumption.)

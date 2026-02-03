@@ -1,0 +1,11 @@
+Sample size calculation: McNemar test
+Calculates the required sample size for the comparison of two related proportions as analysed with the McNemar test. The sample size takes into account the required significance level and power of the test.
+- Type I error - alpha: the probability of making a Type I error (α-level, two-sided), i.e. the probability of rejecting the null hypothesis when in fact it is true.
+- Type II error - beta: the probability of making a Type II error (β-level), i.e. the probability of accepting the null hypothesis when in fact it is false.
+- Proportion (%) of total expected to shift from Positive to Negative: hypothesized proportion of cases that will shift from positive to negative result or outcome.
+- Proportion (%) of total expected to shift from Negative to Positive: hypothesized proportion of cases that will shift in the other direction, from negative to positive result or outcome.
+In a cross-over trial you expect that 20% of the total number of cases will shift from a positive to a negative response, and that 10% will shift from negative to positive. In the dialog box you enter 20 and 10 for the percentages.
+For α-level you select 0.05 and for β-level you select 0.20 (power is 80%).
+After you click Calculate the program displays the required total number of cases in the study. For the example the minimum required total sample size is 234.
+A table shows the required sample size for different Type I and Type II Error levels.
+- Machin D, Campbell MJ, Tan SB, Tan SH (2009) Sample size tables for clinical studies. 3rd ed. Chichester: Wiley-Blackwell.

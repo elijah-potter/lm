@@ -1,0 +1,109 @@
+Doing u-substitution twice (second time with w) Example where we do substitution twice to get the integral into a reasonable form
+Doing u-substitution twice (second time with w)
+⇐ Use this menu to view and help create subtitles for this video in many different languages. You'll probably want to hide YouTube's captions if using these subtitles.
+- Let's see if we can take the integral of cosine of 5x over e to the sine of 5x dx.
+- And there's a crow squawking outside of my window so I'll try to stay focused.
+- So let's think about whether u-substitution might be appropriate. Your first temptation might to said,
+- "Hey, maybe we let u equal sine of 5x, and if u is equal to sine of 5x,
+- we have something that is pretty close to du up here." Let's verify that.
+- So du could be equal to -- so du/dx (derivative of u with respect to x),
+- well we just use the chain rule. Derivative of 5x is 5,
+- times the derivative of sine of 5x with respect to 5x, that's just going to be cosine of 5x.
+- If we want to write this in differential form, which is useful when we do our u-substitution,
+- we could say that du is equal to 5 cosine 5x.
+- Now when you look over here, we don't have quite du there. We have just cosine of 5x dx--
+- sorry, I need cosine of 5x dx, just like that. So when you look over here,
+- you have a cosine of 5x dx, but we don't have a 5 cosine of 5x dx,
+- but we know how to solve that. We can multiply by 5 and divide by 5.
+- 1/5 times 5 is just going to be 1. So we haven't changed the value of the expression.
+- But when we do it this way, we see pretty clearly, we have our u and we have our du.
+- Our du is 5 -- let me circle that and let me do that in that blue color --
+- is 5 cosine of 5x dx. So we can rewrite this entire expression as --
+- I'll do that 1/5 in purple -- this is going to be equal to 1/5 --
+- I hope you don't hear that crow outside; he's getting quite obnoxious --
+- 1/5 times the integral of, well all this stuff in blue is my du,
+- and then that is over e to the u. So how do we take the anti-derivative of this?
+- Well, you might be tempted to -- well, what would you do here?
+- Well, we're still not quite ready to simply take the anti-derivative here.
+- If I were to rewrite this, I could rewrite this as (this is equal to)
+- 1/5 times the integral of e to the negative u du.
+- And so, what might jump out of you is maybe we do another substitution,
+- and we already use the letter u, so maybe we might use w. We'll do some "w-substitution."
+- And you might be able to do this in your head, but we'll do w-substitution just to make it a little bit clearer.
+- So let's -- this would've been really useful if this was just e to the u,
+- because we know the anti-derivative of e to the u. It's just e to the u.
+- So let's just try to get it in terms of the form of e to the negative something.
+- So let's set -- and I'm running out of colors here -- w equal to negative u.
+- And in that case, then dw (derivative of w with respect to u) is negative 1,
+- or if we were to write that statement in differential form,
+- dw is equal to du times negative 1 is negative du.
+- So this right over here would be our w, and do we have a dw here?
+- Well we just have du; we don't have a negative du there.
+- But we can create a negative du by multiplying this inside by negative 1,
+- but then also multiplying the outside by negative 1.
+- Negative 1 times negative 1 is positive 1; we haven't changed the value.
+- We have to do both of these in order for it to make sense.
+- Or I could do it like this. So negative 1 over here, and a negative 1 right over there.
+- And if we do it in that form, then this negative 1 times du --
+- that's the same thing as negative du -- this is this right over here.
+- And so we can rewrite our integral -- it's going to be equal to --
+- now it's going to be negative 1/5 -- trying to use the colors as best as I can --
+- times the indefinite integral of e to the -- well instead of negative u, we could right w.
+- E to the w. And instead of du times negative 1 or negative du, we can write "dw."
+- Now this simplifies things a good bit. We know what the anti-derivative of this in terms of w.
+- This is going to be equal to negative 1/5 e to the w, and then we might have some constant there,
+- so I just do a plus C. And now we just have to all of our un-substituting.
+- So we know that w is equal to negative u, so we could write that --
+- so this is equal to negative 1/5 -- I want to stay true to my colors -- e to the negative u,
+- that's what w is equal to, plus C. But we're still not done un-substituting.
+- We know that u is equal to sine of 5x. So we can write this as being equal to
+- negative 1/5 times e to the negative u, which is negative u is sine of 5x,
+- and then finally, we have our plus C. Now, there was a simpler way that we could've done this
+- by just doing one substitution. But then you kind of have to look ahead a little bit
+- and realize that it was not trivial to take -- not to bad to take your anti-derivative of e to the negative u.
+- The inside that you might of have although you shouldn't really hold yourself
+- when you feel too bad when you didn't see that inside.
+- We could've rewritten that original integral -- let me rewrite it --
+- it's cosine of 5x over e to the sine of 5x dx. We could've written this entire integral as being equal to
+- cosine of 5x times e to the negative sine of 5x dx. And in this situation, we could've said
+- u to be equal to negative of 5x, and say well, if u is equal to --
+- or negative sine of 5x, then du is going to be equal to negative 5 cosine of 5x,
+- and we don't have a negative 5 -- oh, dx, we don't have a negative 5 here,
+- but we can construct one by putting negative 5 there, then multiplying by negative 1/5,
+- and then that would've immediately simplified this integral right over here to be equal to
+- negative 1/5 times the integral of -- well, we have our du -- let me do this in a different color --
+- that's the negative 5 -- let me do it this way -- negative 5 cosine of 5x dx.
+- So that is our du -- I'm just changing the order of multiplication -- times e to the u.
+- This whole thing now is u this second time around. So if we did it this way, with just one substitution,
+- we could've immediately gotten to the result that we wanted. You take the anti-derivative of this --
+- I'll do it in one color now, just 'cause I think you get the idea -- this is equal to
+- negative 1/5 e to the u plus C. u is equal to negative sine of 5x,
+- so this is equal to negative 1/5 e to the negative sine of 5x plus C. And we're done.
+- So this one is faster; it's simpler, and over time, you might even start being able to do this in your head.
+- This top one, you still didn't mess up by just setting u equal to sine of 5x;
+- we just have to do an extra substitution in order to work it through all the way.
+- And I was able to do this video despite the crowing crow outside -- or squawking crow.
+Be specific, and indicate a time in the video:
+At 5:31, how is the moon large enough to block the sun? Isn't the sun way larger?
+Have something that's not a question about this content?
+This discussion area is not meant for answering homework questions.
+Share a tip
+When naming a variable, it is okay to use most letters, but some are reserved, like 'e', which represents the value 2.7831...
+Have something that's not a tip or feedback about this content?
+This discussion area is not meant for answering homework questions.
+Discuss the site
+For general discussions about Khan Academy, visit our Reddit discussion page.
+Flag inappropriate posts
+Here are posts to avoid making. If you do encounter them, flag them for attention from our Guardians.
+- disrespectful or offensive
+- an advertisement
+- low quality
+- not about the video topic
+- soliciting votes or seeking badges
+- a homework question
+- a duplicate answer
+- repeatedly making the same post
+- a tip or feedback in Questions
+- a question in Tips & Feedback
+- an answer that should be its own question
+about the site

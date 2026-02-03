@@ -1,0 +1,4 @@
+- A process for rearranging the clusters on a disk for each file so that they are
+adjacent rather than scattered all over the disk.
+Files with adjacent clusters are quicker to read (because this minimises any required movement of the disk heads), than if the clusters are scattered all over the disk (because that requires frequent movement of the disk read heads). For this reason a computer with a defragemented disk (i.e. with all its files defragmented) will run faster than if it had a heavily fragemented disk - but only for disk related operations.
+For more information see:

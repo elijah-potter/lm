@@ -1,0 +1,13 @@
+Modern Mapping in the USGS
+Mapping and the U.S. Geological Survey
+The U.S. Geological Survey ensures access to basic geospatial data and earth science information for users worldwide. Through its National Mapping Program, the U.S. Geological Survey "provides geographic, cartographic, and remotely sensed information, maps, and technical assistance, and it conducts related research in response to national needs." Through the U.S. Geological Survey, public funds are used to provide inexpensive maps to benefit the public. Among these benefits are the maps visitors receive when they tour national parks and forests. Maps and mapping data are used by emergency response systems, law enforcement, resource managers, and environmental monitoring projects. Private businesses and individual citizens also use U.S. Geological Survey products in a variety of ways to support the growth of commerce and augment the quality of life (U.S. Geological Survey, 1997).
+The USGS National Elevation Dataset (NED) has been developed by merging the highest-resolution, best-quality elevation data available across the United States into a seamless raster format. NED is the result of the maturation of the USGS effort to provide 1:24,000-scale Digital Elevation Model (DEM) data for the conterminous US and 1:63,360-scale DEM data for Alaska. NED is well-suited for graphic visualization and has been processed to minimize discontinuities and to fill in void areas that would otherwise be blemishes in graphic representations.
+This is an example of graphical elevation data for the St. Louis, Missouri area. Elevation data are an essential part of many Earth science applications. They are used for such diverse purposes as providing shaded-relief backgrounds, stratification in land cover classification, geometric and radiometric correction of remotely-sensed data, landform characteristics such as slope and aspect, and for geographic information system analysis of synthetic drainage networks and watershed delineations.
+U.S. Geological Survey Maps
+Internet users may search for U.S. Geological Survey maps by going to our search page at http://search.usgs.gov, or to find out more about programs and products and their availability, visit http://mapping.usgs.gov.
+U.S. Geological Survey, 1997, rev. 1999, Strategic Plan
+for the National Mapping Division of the U.S. Geological Survey: accessed
+August 10, 2001, at URL http://mapping.usgs.gov/misc/strategic.html.
+Department of the Interior||U.S.
+Last modification: 10-Feb-2004@14:54
+Privacy Statement || Disclaimer || FOIA || Accessibility

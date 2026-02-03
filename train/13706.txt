@@ -1,0 +1,35 @@
+Source: Deep Learning on Medium
+Breakthrough of The Decade in Spiking Neural Networks & Neuromorphic Computing
+What is Neuromorphic Computing?
+Neuromorphic engineering, also known as neuromorphic computing, is a concept developed by Carver Mead, in the late 1980s, describing the use of very-large-scale integration systems containing electronic analog circuits to mimic neuro-biological architectures present in the nervous system.
+What are Memristors?
+Memristors are basically a fourth class of electrical circuit, joining the resistor, the capacitor, and the inductor, that exhibit their unique properties primarily at the nanoscale. Theoretically, Memristors, a concatenation of “memory resistors”, are a type of passive circuit elements that maintain a relationship between the time integrals of current and voltage across a two terminal element.
+Memristors was first theorized by Leon Ong Chua in 1971 as the fourth fundamental two-terminal circuit element following the resistor, the capacitor, and the inductor.
+Its special property is that its resistance can be programmed (resistor function) and subsequently remains stored (memory function). Unlike other memories that exist today in modern electronics, memristors are stable and remember their state even if the device loses power.
+Memristors are perfect to implement Neurons in our Brains.
+Very high levels of endurance (120 billion cycles) and retention (10 years or more) have recently been achieved in memristor devices
+Researchers at University of Manchester have constructed the world’s largest neuromorphic supercomputer, paving the way for real-time brain simulations.
+The new million-core system, which is based on the Spiking Neural Network Architecture (SpiNNaker), was switched on for the first time on November 2. According to its developers the machine is capable of performing more that 200 trillion operations per second.
+What are Spiking Neural Networks?
+Spiking neural networks are artificial neural networks that more closely mimic natural neural networks. In addition to neuronal and synaptic state, SNNs incorporate the concept of time into their operating model.
+In a spiking neural network, the neuron’s current state is defined as its level of activation (modeled as a differential equation). An input pulse causes the current state value to rise for a period of time and then gradually decline.
+Synaptic plasticity refers to the ability of synaptic connections to change their strength, which is thought to be the basic mechanism underlying learning and memory in biological neural networks (Baudry 1998). SNN’s incorporate Synaptic Plasticity.
+All spiking models share the following common properties with their biological counterparts:
+- They process information coming from many inputs and produce single spiking output signals;
+- Their probability of firing (generating a spike) is increased by excitatory inputs and decreased by inhibitory inputs;
+- Their dynamics is characterized by at least one state variable; when the internal variables of the model reach a certain state, the model is supposed to generate one or mores spikes.
+The basic assumption underlying the implementation of most of spiking neuron models is that it is timing of spikes rather than the specific shape of spikes that carries neural information.
+Spiking Neural Networks are inherently Non-Differentiable. We cannot use Stochastic Gradient Descent and Backpropagation to train it.
+If Neuromorphic Computing is so Great; why isn’t anyone using it?
+Because nobody knows how to train them. Hence nobody is using them.
+All current usages of Neuromorphic Computing revolve around…
+- Simulating the Human Brain (which requires no structure in the model and no training of the model)
+- Image Processing (Using Filters and Kernels)
+- Classical Neural Networks Trained and Retrofitted into SNN’s and Neuromorphic Chips
+What have we achieved?
+Please refer to our earlier article…
+We have create the worlds first generic — general purpose — universal SNN training algorithm. Which unleashes the use of Neuromorphic Computing to the world.
+In English — Layman’s Terms
+We have created a Training Algorithm for Neuromorhpic Computing and Training SNN’s which doesn’t use Backpropagation or Stochastic Gradient Descent or GA (Genetic Algorithms). Which can be used to train (optimize) universal non-linear models including the ones based on Spiking Neurons.
+Time to light a Cigar.
+This is our website http://automatski.com

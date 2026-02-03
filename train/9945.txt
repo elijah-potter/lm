@@ -1,0 +1,116 @@
+|Databases:||Wikipedia with DBpedia|
+|Papers:||DOAJ Google Scholar PubMed|
+|Ontologies:||MeSH NeuroLex Wikidata Wikipedia|
+|Other:||Google Twitter WolframAlpha|
+Twitter is a social web site with microblogging.
+Retweet is a tweet that is copied from another tweet." Retweets may be copied from another messages and prepended with "RT @user", "RT" and "RT:" or postpended with "via @user". "RT please" is used by users wanted to be retweeted. Retweets may also be transmitted by pressing the retweet-button. Button-retweets are not available from the user time line (e.g., twitter.com/statuses/user_timeline/fnielsen2.xml).
+Mentions are tweets with "@user" that does not indicate retweets.
+Links (i.e. web links) are often shorten with URL shortening services such as bit.ly or goo.gl. Twitter automatically construct links from the "http : / /" pattern.
+They have 26K/sec search queries.
+ Twitter data
+Tweet might be obtained, e.g., from the streaming API, from the search API (search.twitter.com/search.json?q=Shell) and from other parts for the API, e.g., individual tweets retrieved by ID (twitter.com/statuses/show/27289337859.json)
+ Data sets
+Due to Twitter's new Terms of service several previously public data sets are no longer available.
+- Edinburgh Twitter Corpus
+- http://twitter.mpi-sws.org/ 54,981,152 user accounts, 1,963,263,821 follow links, 1,755,925,520 tweets. No longer publicly available.
+- Haewoon Kwak's social graph
+- an.kaist.ac.kr/traces/WWW2010.html Seem to have been unavailable at times. (twitter_rv.tar.gz). The uncompressed fil is approximately 26 GB. There are 41'652'230 profiles and 1'468'365'182 giving a density on 8.46-07
+- Observatory on Social Media https://market.mashape.com/truthy/osome
+-   Data set for sentiment analysis.
+- Data set collected 2009 June to December in the lab of Jure Leskovec. No longer publicly available.
+- TREC 2011 dataset ]
+- Twitter Sentiment Corpus
+- Collection by Niek Sanders consisting of "5513 hand-classified tweets" http://www.sananalytics.com/lab/twitter-sentiment/
+Each tweet has several fields [groups.google.com/group/twitter-development-talk/browse_thread/thread/4b08544f2c02d68f?pli=1].
+|favorited||Always empty in the streaming data|
+|retweet_count||Always empty in the streaming data. This is presently not reflecting the number of retweets [code.google.com/p/twitter-api/issues/detail?id=1889].|
+|contributors||Always empty in the streaming data|
+|truncated||Whether the message was truncated after retweeting||False|
+|text||Actual Twitter text||makan malem KFC tapi gw yg ketiban belinya ... capek tau k mall palem -_-|
+|created_at||Date of sending the tweet||Thu Sep 09 10:13:12 +0000 2010|
+|retweeted||"represents whether the user you are authenticating as has retweeted this status or not. The field is a boolean and can be true or false."||False|
+|coordinates||Usually empty, seems to contain the same as 'geo'|
+|entities||User mentions, hashtags|
+|place||Usually empty, if set contains a struture with country code, bounding box, city|
+|source||Program used to send the tweet, HTML-formatted||a href="http://m.dabr.co.uk" rel="nofollow" Dabr|
+|geo||Usually empty, can contain geographical coordinates||[14.45101058, 120.98492687]|
+|id||Identifier for the status||23996832400|
+In the streaming data the usual fields may not be available. This indicated wiht the "delete" field, as well as the user-id and the status-id
+The search interface only have the following fields: "profile_image_url", "created_at", "from_user", "metadata", "to_user_id", "text", "id", "from_user_id", "geo", "iso_language_code", "source". The "id" is not the same as the standard id.
+|followers_count||Integer for the number of followers||71|
+|statuses_count||Integer for the number of messages written||1650|
+|description||Text description (autobiography)||I'm not perfect|
+|friends_count||Integer for the number of frinds||65|
+|screen_name||Twitter user name||sangguinirachel|
+|lang||Should indicate language, but is often left at 'en' (English)||en|
+|name||Real name||Sangguini Rachel PLS|
+|created_at||Tue Jul 14 14:26:56 +0000 2009|
+ Third party web services
+- http://www.peerindex.net/ Analyzes a users profile with respect to "authority", "activity" and "audience" as well as "realness".
+- Pulse of the Tweeters
+- pulseofthetweeters.com/ Ranking of users with respect to influence on selected topics. The web service has also sentiment analysis for topics. The service is setup by researcher from Center for Ultra-scale Computing and Information Security at Northwestern University.
+- socialmention.com A real-time search Internet search engine for social media with text sentiment analysis, keywords, users hashtag statistics across a number of services: Twitter, YouTube, Facebook, etc.
+- The Tweeted Times
+- Construction of a personality news cite from tweets. http://tweetedtimes.com
+- tweetpsych.com/ creates a "psychological profile" and display how users score on dimensions such as "social", "constructive", "sex", "work", etc. It is made by Dan Zarrella.
+- www.trendistic.com/ plots curves of twitter message volume as a function of time and based on a query term.
+- e.g., chirp.tribalytic.com/
+- http://trusty.indiana.edu 
+- http://www.tweetfeel.com/ Sentiment analysis
+- twinfluence.com/ social network analysis
+- twitgraph.appspot.com/ sentiment analysis based on a query. The code is available from code.google.com/p/twitgraph/
+- twitrratr.com/ sentiment analysis based on a query.
+- Twitter Sentiment
+ Twitter data providers
+- A new ANEW: evaluation of a word list for sentiment analysis in microblogs
+- A tweet consumers' look at Twitter trends
+- Altmetrics in the wild: Using social media to explore scholarly impact
+- Analizying factors to increase the influence of a Twitter user
+- Beyond microblogging: conversation and collboration in Twitter
+- Bieber no more: first story detection using Twitter and Wikipedia
+- Catching fish in the stream: real time analysis of audience behavior in social media
+- Characterizing microblogs with topic models
+- Crowd sentiment detection during disasters and crises
+- Detecting and tracking the spread of astroturf memes in microblog streams
+- Sarita Yardi, Daniel Romero, Grant Schoenebeck, Danah Boyd (2010). "Detecting spam in a Twitter network". First Monday 15(1): missing pages. .
+- Emerging topic detection on Twitter based on temporal and social terms evaluation
+- Everyone's an influencer: quantifying influence on Twitter
+- Extracting strong sentiment trends from Twitter
+- Good friends, bad news - affect and virality in Twitter
+- I tweet honestly, I tweet passionately: Twitter users, context collapse, and the imagined audience
+- Michael van Meeteren, Ate Poorthuis, Elenna Dugundji. "Mapping communities in large virtual social networks: using Twitter data to find the Indie Mac community". 
+- Meeyoung Cha, Hamed Haddadi, Fabrício Benevenuto, Krishna P. Gummadi(2010). "Measuring user influence in Twitter: the million follower fallacy". 
+- Modeling events with cascades of Poisson processes
+- Modeling public mood and emotion: Twitter sentiment and socio-economic phenomena
+- Networks and language in the 2010 election
+- Networked gatekeeping and networked framing on egypt
+- Predicting discussions on the social semantic web
+- Sitaram Asur, Bernardo A. Huberman. "Predicting the future with social media". 
+- Mike Thelwall, Kevan Buckley, Georgios Paltoglou (2010). "Sentiment in Twitter events". Journal of the American Society for Information Science and Technology missing volume: missing pages. .
+- Bernardo A. Huberman, Daniel M. Romero, Fang Wu (2009). "Social networks that matter: Twitter under the microscope". First Monday 14(1): missing pages. .
+- Structural predictors of tie formation in Twitter: transitivity and mutuality
+- Temporal patterns of happiness and information in a global social network: hedonometrics and Twitter
+- The role of multimedia content in determining the virality of social media information
+- Tweet, tweet, retweet: conversational aspects of retweeting on Twitter
+- Tweetin' in the rain: exploring societal-scale effects of weather on mood
+- Tweeting about TV: sharing television viewing experiences via social media message streams
+- Tweeting the meeting: an in-depth analysis of Twitter activity at Kidney Week 2011
+- Tweets are forever: a large-scale quantitative analysis of deleted tweets
+- Stephen Dann (2010). "Twitter content classification". First Monday 15: missing pages. .
+- Twitter mood predicts the stock market
+- Bernard J. Jansen, Mimi Zhang, Kate Sobel, Abdur Chowdury (2009). "Twitter power: tweets as electronic word of mouth". Journal of the American Society for Information Science and Technology 60(11): 2169-2188. doi: 10.1002/asi.21149. .
+- Brian P. Blake, Nitin Agarwal, Rolf T. Wigand, Jerry D. Wood(2010). "Twitter quo vadis: is Twitter bitter or are tweets sweet?".
+- Twitter rank: finding topic-sensitive influential Twitterers
+- Understanding the demographics of Twitter users
+- Bongwon Suh, Lichan Hong, Peter Pirolli, Ed H. Chi(2010). "Want to be retweeted? large scale analytics on factors impacting retweet in Twitter network". Second IEEE International Conference on Social Computing (SocialCom). 
+- Haewoon Kwak, Changhyun Lee, Hosung Park, Sue Moon(2010). "What is Twitter, a social network or a news media?".
+- Whisper: tracing the spatiotemporal process of information diffusion in real time
+- Who says what to whom on Twitter
+- Akshay Java, Tim Finin, Xiaodan Song, Belle Tseng(2007). "Why we twitter: understanding microblogging usage and communities". Joint 9th WEBKDD and 1st SNA-KDD Workshop. 
+- Wikipedia on Twitter: analyzing tweets about Wikipedia
+- ↑ www.independent.co.uk/news/people/news/how-peerindex-calculated-the-twitter-100-2215534.html
+- ↑ www.independent.co.uk/news/people/news/the-twitter-100-2215529.html
+- ↑ www.readwriteweb.com/archives/how_recent_changes_to_twitters_terms_of_service_mi.php
+- ↑ The Edinburgh Twitter Corpus
+- ↑ What is Twitter, a social network or a news media?
+- ↑ J. Yang, Jure Leskovec(2011). "Temporal variation in online media". ACM International Conference on Web Search and Data Mining (WSDM '11).

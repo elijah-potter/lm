@@ -1,0 +1,7 @@
+I want to plot a histogram with three columns with heights
+plt.hist([5, 10, 20], bins=range(0,4,1))
+hist computes the number of data samples that lies within a given bin and then displays the resulting frequencies as a bar plot. You don't actually need
+hist because you already have the frequencies. You simply need
+bar to display these frequencies as a bar plot. The first input specifies the left edge location of each bar and then we can use the
+width kwarg to specify the width of each bar.
+import matplotlib.pyplot as plt plt.bar([0, 1, 2], [5, 10, 20], width=1)

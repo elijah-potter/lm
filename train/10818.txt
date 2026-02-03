@@ -1,0 +1,16 @@
+Transfer learning or inductive transfer is a research problem in machine learning that focuses on storing knowledge gained while solving one problem and applying it to a different but related problem. For example, knowledge gained while learning to recognize cars could apply when trying to recognize trucks. This area of research bears some relation to the long history of psychological literature on transfer of learning, although formal ties between the two fields are limited.
+In 1997, the journal Machine Learning published a special issue devoted to transfer learning, and by 1998, the field had advanced to include multi-task learning, along with a more formal analysis of its theoretical foundations. Learning to Learn, edited by Pratt and Sebastian Thrun, is a comprehensive overview of the state of the art of transfer learning at the time of its publication.
+Transfer learning has also been applied in cognitive science, with the journal Connection Science publishing a special issue on reuse of neural networks through transfer in 1996.
+Notably, scientists have developed algorithms for transfer learning in Markov logic networks and Bayesian networks. Researchers have also applied techniques for transfer to problems in text classification, and spam filtering.
+- West, Jeremy, Dan Ventura, and Sean Warnick. Spring Research Presentation: A Theoretical Foundation for Inductive Transfer (Abstract Only). Brigham Young University, College of Physical and Mathematical Sciences. 2007. Retrieved on 2007-08-05.
+- Pratt, L. Y. Advances in Neural Information Processing Systems 5, pp. 204-211, Morgan-Kaufmann, 1993.
+- Pratt, L. Y. and Thrun, S. , Machine Learning, Special Issue on Inductive Transfer, Vol. 28, No 1., Kluwer, July 1997
+- Curwana, R., "Multitask Learning", pp. 95-134 in Learning To Learn, Pratt L. Y. and Thrun, S. (eds.), Kluwer, 1998
+- Baxter, J., "Theoretical Models of Learning to Learn", pp. 71-95 in Learning To Learn, Pratt L. Y. and Thrun, S. (eds.), Kluwer, 1998
+- Learning To Learn, Pratt L. Y. and Thrun, S. (eds.), Kluwer, 1998
+- Pratt, L., Connection Science: Special Issue: Reuse of Neural Networks through Transfer, Vol. 8, Issue 2, 1996 http://www.tandfonline.com/toc/ccos20/8/2
+- Mihalkova, Lilyana, Tuyen Huynh, and Raymond J. Mooney. Mapping and Revising Markov Logic Networks for Transfer Learning. Proceedings of the 22nd AAAI Conference on Artificial Intelligence (AAAI-2007), Vancouver, BC, pp. 608-614, July 2007. Retrieved on 2007-08-05.
+- Niculescu-Mizil, Alexandru, and Rich Caruana. Inductive Transfer for Bayesian Network Structure Learning. Proceedings of the Eleventh International Conference on Artificial Intelligence and Statistics (AISTATS 2007), March 21–24, 2007. Retrieved on 2007-08-05.
+- Do, Chuong B. and Andrew Y. Ng. Transfer learning for text classification. Neural Information Processing Systems Foundation, NIPS*2005 Online Papers. Retrieved on 2007-08-05.
+- Raina, Rajat, Andrew Y. Ng, and Daphne Koller. Constructing Informative Priors using Transfer Learning Proceedings of the Twenty-third International Conference on Machine Learning, 2006. Retrieved on 2007-08-05.
+- Bickel, Steffen. ECML-PKDD Discovery Challenge 2006 Overview Proceedings of the ECML-PKDD Discovery Challenge Workshop, 2006. Retrieved on 2007-08-05.

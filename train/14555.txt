@@ -1,0 +1,48 @@
+Hello Aspirants,as we all know only few days are left for IBPS SO exam.So, we are starting a new series ” Gem points ” in this regard.learn them by heart.Share and discuss in comment section.We will gear up level day by day starting from very basics.So,Put your Seatbelts on and join us in the journey to be a specialist officer.
+1)In Oracle, SYS owns the data dictionary.
+explanation :-One of the most important parts of an Oracle database is its data dictionary, which is a read-only set of tables that provides information about the database.
+SYS, Owner of the Data Dictionary
+The Oracle user SYS owns all base tables and user-accessible views of the data dictionary. No Oracle user should ever alter (UPDATE, DELETE, or INSERT) any rows or schema objects contained in the SYS schema, because such activity can compromise data integrity. The security administrator must keep strict control of this central account.
+2)The reason the data outputs of most ROM ICs are tri-state outputs is to :permit the connection of many ROM chips to a common data bus.
+3) To drop a column that is used as a foreign key, first:drop the foreign key constraint
+4)In the straight CGI approach to database connectivity on the internet :the external program is located between the web server and the database server.
+CGI or Common Gateway Interface is a means for providing server-side services over the web by dynamically producing HTML documents, other kinds of documents, or performing other computations in response to communication from the user. In this assignment, students who want to interface with the Oracle database using Oracle’s Pro*C precompiled language will be using CGI.
+Java Servlets are the Java solution for providing web-based services. They provide a very similar interface for interacting with client queries and providing server responses. As such, discussion of much of the input and output in terms of HTML will overlap. Students who plan to interface with Oracle using JDBC will be working with Java Servlets.
+Both CGI and Java Servlets interact with the user through HTML forms. CGI programs reside in a special directory, or in our case, a special computer on the network (cgi-courses.stanford.edu), and provide service through a regular web server. Java Servlets are separate network object altogether, and you’ll have to run a special Servlet program on a specific port on a Unix machine.
+5)Spanning Tree Protocol is the name of the protocol used to eliminate loops.
+6)The effect of the ROLLBACK command in a transaction is to Undo all changes that the database resulting from the execution of the transaction..
+some other commands used to control transactions:
+COMMIT: to save the changes.
+ROLLBACK: to rollback the changes.
+SAVEPOINT: creates points within groups of transactions in which to ROLLBACK
+SET TRANSACTION: Places a name on a transaction.
+7)In Oracle, 512 is the default number of transactions that MAXTRANS is set to if not specified.
+8)Cut-through switching methods provides the greatest frame throughput.
+9)Cipher lock includes a keypad that can be used to control access into areas.
+10)A gateway is :a point in one network that is an entrance point to another network.
+11)Network routing information distributed among routers is stored in Router memory.
+12)If the destination did not receive a segment, how will the TCP host know to resend the
+information?,The ACK (acknowledgement) received will include the segment number that was not received.
+13)What are the effects of mixing RAM modules with different speed ratings?The system may not run, or it crashes periodically.
+14)”request/response “kind of scheme is the HTTP protocol.
+15)An NMI error is created by memory parity error .
+Short for Non-Maskable Interrupt, NMI is the highest-priority interrupt capable of interrupting all software and non-vital hardware devices. The NMI is not commonly used and usually only used to verify if a serious error has occurred or stop all operations because of a failure. For example, when you press Ctrl+Alt+Del when the computer freezes or stops responding a NMI is sent to the CPU.( buzzer u might see in Quiz shows also send NMI)
+NOTE:Unlike a INTR or interrupt, the NMI cannot be interrupted by any other interrupt.
+16)From smallest to largest, rank the following logical pieces of the database :
+data block, extent, segment, tablespace ( Trick :- DbEST ~ the best,db-data block)
+At the finest level of granularity, Oracle stores data in data blocks (also called logical blocks, Oracle blocks, or pages). One data block corresponds to a specific number of bytes of physical database space on disk. You set the data block size for every Oracle database when you create the database. This data block size should be a multiple
+of the operating system’s block size within the maximum limit. Oracle data blocks are the smallest units of storage that Oracle can use or allocate.
+The next level of logical database space is called an extent. An extent is a specific number of contiguous data blocks that is allocated for storing a specific type of information.
+The level of logical database storage above an extent is called a segment. A segment is a set of extents that have been allocated for a specific type of data structure, and that all are stored in the same tablespace. For example,each table’s data is stored in its own data segment, while each index’s datails stored in its own index segment. Oracle allocates space for segments in extents. Therefore, when the existing extents of a segment are full, Oracle allocates another extent for that segment. Because extents are allocated as needed, the extents of a segment may or may not be contiguous on disk. The segments also can span files, but the individual extents cannot.
+20)Databases and table spaces
+An Oracle database is comprised of one or more logical storage units called table spaces. The database’s data is collectively stored in the database’s table spaces.
+21)Table spaces and data files
+Each table space in an Oracle database is comprised of one or more operating system files called data files. A table space’s data files physically store the associated database data on disk.
+22)Databases and datafiles
+A database’s data is collectively stored in the data files that constitute each table space of the database. For example, the simplest Oracle database would have one tablespace and one datafile. A more complicated database might have three table spaces, each comprised of two data files (for a total of six data files).
+23)cookies are stored in On the client.
+24)In Oracle,Index organized table is more appropriate to store a small list of values in a single column in each
+row for your address table.
+25)While searching a website, you have been unable to find information that was on the site
+several months ago. What might you do to attempt to locate that information?
+Visit Google’s cached page to view the older copy.

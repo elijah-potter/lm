@@ -1,0 +1,48 @@
+Volume of a Cube Calculator
+- What is a cube?
+- What is the volume of a cube?
+- How to calculate the volume of a cube (by hand)?
+- How to use Omni's volume of a cube calculator?
+- Omni calculator advanced options: find the volume of a cube without knowing the side
+- Why is the formula for the volume of a cube so simple?
+- Cubes in the world from Ice Cube to IceCube and beyond
+Welcome to Omni's volume of a cube calculator. Ever wondered what is the volume of a cube? or how come the formula for the volume of a cube is so simple? Well, we did, and we've got the answers. Here we explain how do you calculate the volume of a cube, while also taking a look at what makes the cube such a popular shape.
+What is a cube?
+Let's start from the beginning. A cube is a 3D object made up of 6 faces, all of which are squares of equal size. If you want to go down this particular rabbit hole, we can say that squares are also regular objects, this time in 2D space, made up of 4 segments of equal length meeting at 90 degree angles.
+A square is one of the most basic 3-dimensional objects that exist, together with the tetrahedron (a regular triangular pyramid) and the sphere. You should already be familiar with its shape; if you have ever seen a Rubik's cube (the clue is in the name, right?), an ice cube (not the rapper), or a dice, you've seen a cube.
+The takeaway from this section is that a cube is a 3D object, hence it has a volume. It's also highly regular, which means it's straightforward to find the volume of a cube.
+What is the volume of a cube?
+Volume is a measure of the 3D space occupied by an object. But if you are not interested in abstract concepts and just want to know the volume of a cube, there is a simple answer to the question What is the volume of a cube?
+volume = l³
+l is the length of the sides of the cube. This is just another way to say that you need to multiply the length of each side
+l by itself three times:
+l * l * l = l³. Now let's look at why this is the case.
+The volume of a cube in 3D is analogous to the area of a square in 2D. Like how you calculate the area of a square by multiplying the length of each side, you can multiply the three sides of a cube, since they are all the same.
+If all this sounds very easy to you, just know that there are other formulas for the volume of a cube in case you don't know the length of the sides. These are more complicated and will probably make you happier. If you are happy enough with the current difficulty level, let's move on.
+Now that we have seen and understood the formula for the volume of a cube, we shall move on to explaining how to calculate the volume of a cube. We will first calculate the volume of a cube by hand, and later we will use the Omni-Calculator to find the volume of a cube without having to deal with the formula at all.
+How to calculate the volume of a cube (by hand)?
+In true dad style, we are going to teach you how to do things the old-fashioned way, before you move into the future. There is a good reason for this; it will help you better understand how you calculate the volume of a cube. Let's bring back the formula and use in a simple example:
+volume = l³ Assume we have a cube of side length
+l = 5 cm. The units don't really matter, but we'll keep them to help us keep track of the dimensions.
+Take a piece of paper and proceed to attack the formula for the volume of a cube by multiplying first
+l * l = 5cm * 5cm = 25cm². We have now calculated the area of the squares that make up each of the six sides of our cube. We are one dimension (i.e., one multiplication) away from finding the volume of a cube, so just pick up that pen again and let's do it!
+volume = l³ = l² * l = 25cm² * 5cm = 125cm³. And with that we've got it - we have calculated the volume of a cube and escaped unharmed. Congratulations!
+Now let us tell you a secret about a tool that lives to the left of this text and allows you to calculate the volume of a cube in one simple step. What do you say? Do you want to know more? Sure!
+How to use Omni's volume of a cube calculator?
+This is what you came here for. A calculator to solve all of your cube volume needs: Omni's volume of a cube calculator. Here at Omni, we have prepared a simple calculator that uses the formula for the volume of a cube to automatically compute the volume without any effort on your part.
+All you need to do is to input the length of the side in the field named
+Side, and it will automatically compute the volume of a cube. It has never been so easy to answer the question: What is the volume of a cube? Alternatively, you can also calculate the length of a side of a cube if you already know its volume. Simply input the volume into the corresponding field and watch the magic happen (it's actually maths, but magic sound cooler).
+The calculator also does the reverse calculation in much the same way you would do it yourself. Take the formula for the volume of a cube and flip it around:
+volume = l³ => l = ³√volume Where
+³√ is the cube root.
+Omni calculator advanced options: find the volume of a cube without knowing the side
+In case you haven't noticed, this Omni calculator has an "Advanced Mode". It extends the functionality of the calculator, allowing you to calculate the volume of a cube from something else than the length of its sides. You can input the surface area, the face diagonal or the cube diagonal.
+The difference between the face diagonal and the cube diagonal might not be totally clear, so let's explain it a bit more. The cube diagonal is the three-dimensional distance between any two opposed corners. This is the largest distance between any two corners of a cube. When talking about the face diagonal, we are talking about the two-dimensional distance between the two furthermost corners of any of the squares that make up the six faces of a cube. All face diagonals are the same length.
+Why is the formula for the volume of a cube so simple?
+As promised before, we will now take a look at why the formula for the volume of a cube is so simple, and why it is only comprised of two variables and two mathematical symbols. The main reason we could point to is the simplicity of the cube. The cube is highly regular, and, most importantly, very easy to define. If you think about it, a sphere or a tetrahedron are even more regular than a cube, but it is much harder to compute their volume or area. This could be attributed in part to the fact that the surface of a sphere is difficult to model mathematically when we are using the typical Cartesian coordinates .
+The cube, however, follows precisely this pattern. The sides of a cube are always aligned with the unit vectors that generate the 3D Cartesian space. This makes the computation of the volume as easy as finding the vector multiplication of the three unitary Cartesian vectors, each multiplied by the length of the cube's sides.
+You can see the by checking the mathematical formulas there seems to be a preference for squared shapes like the rectangular prism over rounded ones such as the cylinder. If you don't believe it, just take a look at those two linked above calculators and tell me which one you would prefer to compute by hand.
+Cubes in the world from Ice Cube to IceCube and beyond
+The preference for cubed shapes probably comes from its ease of construction and, more importantly, packing properties. As with squares and hexagons in 2D space, cubes can completely fill 3D spaces on their own when properly stacked. It might not sound all that special, but there are very few shapes with the ability to fill a space without leaving any gaps between them.
+The advantage? Efficiency. If you make containers in the shape of cubes (rectangular prisms also work), you can be sure that you will be using all the space available, and you won't leave any dead space between them. It is this property alone that decides the shapes of containers, drawers, and wardrobes.
+This is the reason ice cubes are cubes and not spheres, despite the latter being more energy-efficient. What we cannot really find a good answer for is why both rappers and physicist seem to love the name "ice-cube" but cannot agree on the spelling. Nature works in mysterious ways.

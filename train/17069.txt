@@ -1,0 +1,67 @@
+Malicious attacks on your website are usually designed to hurt your business by making your site slow, unreliable or unavailable for extended periods of time. This can be done via DDos (distributed denial of service) attacks and prolonged Brute Force Login assaults. This activity is costly if contracted out, so it is more often than not a deliberate campaign by a competitor, disgruntled employee or ex-client etc rather than a random attack.
+Let me preface this article on DDoS with the disclaimer that I am not a Linux / Apache security guru. I’m an SEO specialist / consultant and freelance web designer who provides hosting services for some clients… What knowledge I have has been earned the hard way – at the bleeding edge of customer support, trying to protect my own VPS and the client sites it contains…
+My VPS came under a sustained and severe attack recently that rendered it unusable for hours on end. At the time, I was surprised by the lack of (non-technical) guidelines available online to help me find ways to reduce the impact of what was being done to my server.
+Here’s the definition, courtesy of Wikipedia; https://en.wikipedia.org/wiki/Denial-of-service_attack
+“a denial-of-service (DoS) attack is an attempt to make a machine or network resource unavailable to its intended users, such as to temporarily or indefinitely interrupt or suspend services of a host connected to the Internet. A distributed denial-of-service (DDoS) is where the attack source is more than one–and often thousands–of unique IP addresses.
+Criminal perpetrators of DoS attacks often target sites or services hosted on high-profile web servers such as banks, credit card payment gateways; but motives of revenge, blackmail or activism can be behind other attacks.”
+DoS Attack Methodology
+A denial-of-service assault is characterized by overt efforts by the attacker to deny approved users of a website service from using that website’s services. There are two common formats for DoS attacks, those that:
+- crash website services, resulting in database not available and server error messages
+- flood services, resulting in extremely slow loading times as the server struggles to process requests
+Most serious are distributed attacks launched from a network of thousands of compromised servers and PCs worldwide, referred to as DDoS. This very often involves forged IP sender addresses (IP address spoofing) to ensure that accurate location of the attacking servers cannot readily be discerned, and also inhibits screening based on the source IP Address.
+Brute Force Login Attacks
+These come in many forms, and a range of attack software is available to those intent on getting into your website and/or server. For a full outline of brute force login goals and methods, see:
+A heavy Brute Force Login attack launched simultaneously from multiple sites and aimed at your server can have an impact similar to a DDoS attack:
+- the server load increases sharply
+- websites become unresponsive
+- access to WHM, Cpanel of FTP may time out
+- sites may display an “Error connecting to database”
+- in some cases, one or more databases may be corrupted.
+The Impact of DDoS & Brute Force Login Attacks are not Limited to Your Site
+Most websites are on “shared hosting” and any excessive activity on YOUR site has an immediate negative impact on neighbouring websites on the same server.
+Even if your website is on your own VPS, the impact can spread beyond your own site and impact other users on the same network at your hosting company. Where several sites on your VPS are under attack, all sites will be negatively impacted, and other VPS servers on the same server /node may also be affected.
+The Impact on You
+Suddenly finding that you are the victim of a severe malicious cyber-attack is disconcerting at the very least. Panic is the first and least helpful reaction, because most people won’t have a game plan. Figuring out what is going on will be the first problem, closely followed by searching online for “how to stop an attack on my VPS!”
+Unfortunately, most material I found was either old, not 100% relevant to my situation, or to technical to be really helpful… Therefore, I had to create a mitigation plan from scratch…
+VPS Server – DDoS & BFL Protection
+There are not a lot of hosting companies that provide full DDoS protection as a feature of their VPS accounts. For that matter, there are some hosting companies who don’t even include the fundamental requirements such as Mod Security, cpHulk etc… Full DDoS protection is costly, and requires very sophisticated tools that are expensive to purchase and deploy.
+Balanced against that, DDoS attacks are also fairly rare because they are difficult to mount on a scale large enough to do prolonged harm to the recipient.
+Often what is perceived to be a DDoS attack may well be a Brute Force Login attack across multiple sites on the VPS and segments of the server itself – Cpanels, FTP and email accounts. The sheer weight of the login attacks may have the same effect as a DDoS attack, crashing the server or reducing all sites on it to a standstill.
+What Can You Do to Mitigate BFL and DDoS?
+At the very least, you should have your VPS on a server with a hosting company that provides up-to-date Linux, Apache and PHP software, and a suite of security tools that allow you to provide your websites with reasonable protection… With that, you can do a lot to protect your VPS from within WHM by blocking common loopholes….
+Being a customer of a company that responds to support requests in a timely manner can also be a source of comfort when things start going wrong! All sites on my server are under annual website maintenance plans and are protected in this manner.
+Because your server is unable to cope with the DDoS or BFL load being placed on it, you can do two things, or both in combination;
+- Upgrade your VPS Hosting package so that your server has more resources (CPU & RAM)
+- Reduce the load on your VPS by ensuring security applications are working to your advantage, and resources are not being hogged unnecessarily
+- cpHulk: configure Brute Force protection period to 120 minutes after 2 or 3 failed attempts. Configure IP Address Brute Force Login protection to 131487 minutes (90 days) after an additional attempts, and maximum failures per IP Address before the IP Address is blocked for one day to 50. That should skip the 1 day blocks for now, and stop those IP addresses being used again to attack your site for 3 months. That takes the sting out of the Cpanel and FTP attacks for the moment… Sure, IP Addresses can be spoofed – but why leave them open if they are being used with malicious intent right now?
+- Account Passwords: set all account passwords to the maximum 18 character length secure; randomly mixed alpha-numeric, upper and lower case plus a sprinkling of special characters ([email protected]#$%^&*). Not only Cpanel / FTP – reset Email account passwords too!
+- Shell Fork Protection: make sure it is enabled
+- Shell Access: all disabled
+- Syn Flood Protection: as per https://www.ndchost.com/wiki/server-administration/hardening-tcpip-syn-flood
+- Backups: ensure all server accounts and settings are backed up daily, and schedule these to run at times of low traffic, usually 2am in the time zone most visitors come from.
+Server Load Reduction diffuses DDos Attacks
+Anything you can do to reduce the load on your VPS from the sites that are loaded on it can significantly help your server cope with external loads generated by someone intent on harm.
+On WordPress Sites on your VPS
+As a WordPress tech support services provider, my priority order is as follows;
+1.) WAF: installation of a web application firewall. Either install a firewall on the individual sites on your VPS (or use an external application such as Sucuri Cloudproxy Firewall). I use and recommend Block Bad Queries because it sits in front of WordPress and most of its preventive activities don’t generate many database requests. This makes it VERY fast, and it significantly reduces server load compared to Wordfence and other security plugins. Using it in conjunction with Block Hole Bad Bots makes sense, as some bots can also wreak havoc on a site.
+I’d set the Login Protection to “Always On”… Because most WP business sites will only have 1 Admin and a couple of Editor / Contributor users, it is not going to be much of an inconvenience to legitimate users. That way, Brute Force login attacks across multiple individual websites have zero cumulative impact on server loads…
+2.) CDN: use a content delivery network like Cloudflare because that can reduce server loads dramatically! Cloudflare will serve cached pages to more than half your traffic, cutting bandwidth consumption and page load speeds. A “basic” account is free, so there is little excuse for not using this CDN. Cloudflare will also screen many perceived threats before they get to your website…
+3.) Caching: on a WordPress site, a good caching plugin can dramatically reduce page load times. Cached pages sharply reduce the database requests usual in dynamically generating pages, dropping the load normally placed on your server.
+4.) Eliminate Resource-intensive Plugins: such as Related Posts, Broken Link Checkers, SEO Rank Checking etc. If you use Wordfence, deactivate “Live Traffic logging” scanning of images and areas outside of WordPress, and “high sensitivity” to reduce scan times and loads. Use P3 Plugin Profiler to check for resource-hungry plugins.
+5.) Heartbeat Control:* installation of the Heartbeat Control plugin can have a beneficial impact on server performance as it helps prevent the heavy CPU use often reported by WordPress users. The
+/wp-admin/admin-ajax.php page can cause 100% CPU loading over extended periods.
+6.) Administrator Passwords: these were already secure 24 character passwords, enforced via Wordfence. If yours are not, then it is a high priority!
+7.) Backups: all WordPress sites already had scheduled database and full backups via BackupBuddy being stored off-site on a 1 Tb Dropbox account secured with 2-factor authentication. If yours are not, it is a high priority.
+8.) Two Factor Authentication: wherever possible, implement two factor authentication to take away the opportunity to guess user names and passwords!
+*Caching: I use WP Rocket on every site on my server. Because I provide full management services on all client sites and have full control over what software is loaded on them.
+HTML Sites on your VPS
+WAF: installation of a web application firewall, either installed on the individual HTML site/s on your VPS, or use an external application such as Sucuri Cloudproxy. The plugin I use here is https://perishablepress.com/5g-blacklist-2013/
+CDN: Cloudflare works equally well on static HTML sites, screening out bad actors, turbo-charging page load speeds and reducing server loads.
+The Impact on VPS Resilience on DDoS Attacks
+When the DDoS attacks and BFL attacks on my server first began (a Monday), the server load jumped from the usual 3 – 4 to a massive 239, and the disruption was sustained for almost an hour. All sites were inaccessible, as were WHM and Cpanel. The exim stats database was corrupted and required repair.
+Attacks continued daily throughout the week, with the impact declining with each step taken… On Tuesday the server load hit 170, but on Wednesday after adding in the Syn Flood protection and starting installation of firewall software on sites that were being hit hardest, the load peaked at 49 but everything kept running.
+By Friday, all sites had firewall software installed, and the peak server load during the daily attack reached 9 – things slowed down but nothing broke. It was also possible to monitor what was happening on WHM – to see which sites were being targeted, and what was consuming server resources.
+At that point I began targeting resource-intensive plugins and their settings, completed installation of a caching plugin on all sites, and I added Heartbeat Control on all sites. Backups on all sites were set to off-peak hours, Cloudflare was added to the busiest sites…
+Since all of that effort was completed, the server load has not exceeded 5, and for much of the time runs at .85 to 1.5 with occasional spikes to 4. Overall, things are in much better shape than before!
+Because I had to make up the game plan day by day, it took longer than it need have due to the research required on each stage.
+This article was produced in the hope that it might help someone else confronted by similar circumstances. If that’s your situation, I wish you good luck – and if you need help, feel free to ask.

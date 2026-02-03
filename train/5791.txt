@@ -1,0 +1,26 @@
+This activity will have you create a brand new actor class and add an object of that class using the Greenfoot IDE. In this activity, you will:
+- Create a new class - Kangaroo and cut and paste code to give it content.
+- Compile your new class.
+- Create a new object of this class and add it to the wombatWorld
+- Modify some lines of the Kangaroo class, compile and add it to wombatWorld and see how the code changes affect behavior.
+Skills you will learn include:
+- Being able to use the Greenfoot IDE to create a new Actor class.
+- Learn more about classes, objects and methods.
+- Learn some basic programming concepts and constructs.
+- Learn how to use Sun’s online Java programming manuals.
+- Start up Greenfoot.
+- Make sure you have opened the Wombats scenario. If not, click Scenario->Open… and select Wombats.
+- Access the context menu (right-click on Windows, ctrl-click on Mac) on the Actor class located on the right side of the IDE. Select New Subclass... . Name your new class Kangaroo and select a image from category: animals: kangaroo and click Ok
+- Right click on Kangaroo. You’ll notice that there is no new Kangaroo(). That’s because we need to add code for this class before we can create objects. Instead, select open editor. Just to make this simple, select all the code, (click at the top and drag the mouse to the bottom of the existing code). Then click the Cut button. It will be easier to just replace all this code for this activity.
+- Double click on class Wombat. Select all the source code (similar to what we did for Kangaroo), but this time click the Copy button.
+- Go back to the editor for Kangaroo. Click Paste. We now have a copy of all the Wombat code in Kangaroo.
+- But this is a Kangaroo, NOT a wombat. From the editor for Kangaroo, select the menu Tools -> Replace… The find dialog will popup. In the text area labeled find, type Wombat. In the text area labeled replace, type Kangaroo. Click Replace All to replace all occurrences of Wombat with Kangaroo.
+- Compile, add wombats, kangaroos and leaves and run the scenario. We have created our first new class!
+- At this point, please refer to the document Let's Make a Kangaroo - Digging Deeper. The Digging Deeper document will contain some code that you will need top copy and paste into your program. Open the Digging Deeper page in another tab or window, and continue with the following steps.
+- To class Kangaroo, add method turnRandom(). Double click on class Kangaroo. From the Digging Deeper document, copy the code for the turnRandom() method (the code will be displayed in a light blue box). At the bottom of the Kanagaroo class, just before the final closing ‘}’ paste the turnRandom() code.
+- In the method act(), change the call from turnLeft() to turnRandom(). This will cause your Kangaroos to turn in a random direction, while your Wombats will continue to always turn left.
+- Compile, place objects and run scenario. Note the differences in behavior between Wombat and Kangaroo.
+- Read through the Digging Deeper document for details about the code changes you just made.
+- Please read the following instructions for preparing your work prior to submission to this activity.
+- Select Scenario -> Export. Choose Webpage (from Publish, Webpage, Application) and select a location to save the scenario as an applet (a jar file and a .html file).
+- Submit the exported jar file for this activity.

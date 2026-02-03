@@ -1,0 +1,89 @@
+Making sense of Probabilities and Frequencies
+Feb 1st, 2017
+Making sense of probabilities and frequencies (in a quantitative way) is necessary to benefit from better risk assessment. Oftentimes users feel compelled to use qualitative approaches to risk assessments. Their justification includes that probabilities are complicated, they require “statistics”. As a result users embrace index-approaches (probabilities are given (absurd) values like 1,2,3..n), qualitative approaches (small, medium, large… “fast-food style”) while believing they will get a good understanding of their risks out of this.
+In reality, making sense of probabilities and frequencies allows to simply define ranges of probabilities and frequencies based on analogies and tables. That requires no “statistical” calculations, and by doing so the user transparently acknowledges uncertainties. That results in expanding the estimate range while strongly reducing the “s..t in-s..t-out” syndrome. Furthermore, when using a consistent approach, the relative estimates of probabilities will be consistent among each other.
+Making sense of probabilities and frequencies : definitions
+Frequency is a measure of how often an event occurs on average during a unit of time (how many times an engine supposed to start every morning fails to start per year). It ranges from 0 to infinite. One can always replace time by other “counters”. For people in charge of performing risk assessments a common unit of time is “per year”. One can measure frequency by long term observations (building a “statistic”).
+Probability is by definition a number between nil and one, measuring the chances some event may or may not happen. Nil means it is impossible to occur, one means it is certain to occur. If you want to stay out of jail never use nil or one!
+Making sense of probabilities and frequencies : step 1
+The Table below can be used for estimating a large probability, high frequency event -x-. For low probabilities px=<0.1 trained analysts can use the Table delivered in step 2 which zooms into the lower range of probabilities.
+The last two columns to the right display the “Frequency equivalent” and the corresponding probability to see the event “next year”: at the end of this text you will find an explanation related to these two columns.
+|Everyday vocabulary used to describe the event x.
+||Example of life events x with the same level of likelihood
+||Example of events with the same level of likelihood than event x
+N.B. If these events occur with a known average rate and independently of the time since the last event.
+|Px to see the event next year
+px min – px max
+|Usually, Almost always
+||At least one sunny week-end in the next year.
+||Finding at least one container of ice cream in a family freezer.
+||0.63 – ~1.0
+|Common, Must be considered, Not always
+||Getting stuck in a traffic jam for at least 20 minutes next year (exclude commuting).
+||A member of the family gets a cold next year.
+||0,7 – 1
+||0.5 – 0.63
+||That a person between the age of 18 and 29 does NOT read a newspaper regularly
+||Divorcing, depending on the country (reportedly 30-40%).
+||0,36 – 0,7
+||0.3 – 0.5
+|A celebrity marriage will last a lifetime.
+||Getting stuck for more than one hour in traffic (exclude commuting).
+||0,23 – 0,36
+||0.2 – 0.3
+|Not usually, Occasionally
+||Chance of drawing 1 when drawing a fair dice (1/6=0.16)
+||Mortality rate of SARS (11%) of people diagnosed with the disease.
+||0,11 – 0,23
+|Rarely, Almost never, Never
+||NB: a non expert should stop here at this level of scrutiny.
+Experts can develop more in depth estimates for lower probabilities levels using the next table below.
+|0 – 0.1
+Making sense of probabilities and frequencies : step 2
+The Table starts where the prior finished (0.1) and reaches 10-6 as this value is commonly considered as the threshold value of human credibility. Going below would require solid data and it is highly recommended to stay away from that.
+Here again, the last two columns to the right display the “Frequency equivalent” and the corresponding probability to see the event “next year”: at the end of this text you will find an explanation related to these two columns.
+|Likelihood of “rare” Phenomena
+||Example of life events with the same level of likelihood
+||Example of events with the same likelihood range than event x
+||Return time (years)
+|Px to see the even next year
+px min – px max
+|| Being born a twin, NB: actually it is around 3.3%
+Drawing an ace from a 52 cards deck (4/52=7.7%)
+| Higher bound of likelihood to have a 7.0 or even higher magnitude on the San Andreas Fault line
+|| 100 – 10
+|| 0.01 – 0.1
+(10-2 – 10-1)
+|| Being a millionaire in the US (reportedly 0.9%)
+|| Drunken pilot on a plane NB : actually 1.2/1000
+|| 1’000 – 100
+|| 0.001 – 0.01
+(10-3 – 10-2)
+|| Rate of centenarians 1.7-3.4/ 10000 depending on the country of birth.
+|| An earth tailings dam beaches on Earth.
+|| 10’000 – 1’000
+|| 0.0001 – 0.001
+(10-4 – 10-3)
+|| Injury from fireworks
+|| Class 5+ nuclear accident on Earth
+|| 100’000 – 10’000
+|| Being a billionaire in the US (reportedly 1/780’000)
+|| Stricken by lightning NB: similar value than the column to the right
+|| 1’000’000 – 100’000
+Lower likelihoods exist
+| Winning 200M$ at the National Lottery
+|| Meteor landing precisely on your house; a major Swiss hydro-dam breaching.
+|| Unless data abound, lower values should not be used.
+Explanation related to the last two columns to the right
+For small frequencies (up to 1/10yrs (units)), one can assume annual probability≈frequency, as shown in the Figure below.
+Frequency vs. Probability. Vertical axis probabilities (limited by definition to 1), horizontal axis corresponding value of 1/frequency. Frequency expressed in events per year.
+However, at frequency =1/5yrs (f=0.2) the error of the approximation raises to 20%. After that, you need mathematics, but the chances you need to go there are slim!
+For those who want to know a bit more, frequencies and probabilities are indeed linked by a mathematical function, named Poisson. It is a common mistake to believe that a frequency f means that the event will occur “once every 1/f years”… as that event can indeed occur 0, 1, 2, ..n times with decreasing probability in a selected interval. As a matter of fact the probability of an event occurring once or more within its return period is always 0.63.
+Making sense of probabilities and frequencies : step 3
+Suppose you have selected ranges of min-max probabilities for all you events.
+As mentioned above this makes sense, especially as we live in dynamic climate change , socio-economic, and political environments.
+As you know, even if you have wonderful statistics available, even if you are using IoT or big data (think about the 2016 Brexit and US election polls “surprises”), using a “one number” would be foolish.
+Probabilities offer a way to use future observations to “correct” you a priori estimates, thus build a dynamic risk register. This is an advanced technique which can build on the prior estimates you may have put together following the first three steps above.
+Want to know more? CONTACT RISKOPE.
+Tagged with: definition, frequencies, Probability
+Leave a Reply

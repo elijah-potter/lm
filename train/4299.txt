@@ -1,0 +1,6 @@
+It is decades since I've done math, so please forgive the lack of correct terminology and lack of latex etc. I'm endeavoring to write a simple CAS calculator that can handle structures that undergraduates could run into.
+Thanks to wikipedia, I've found that the way of adding a multiplicative inverse to a ring to create a field is called 'localization' - where R is the ring, S = R - zero divisors of R,
+the new field is basically an ordered pair (S, R), with the meaning S^-1 * R I guess there is an implied cancellation law added so that (x,x) => (1,1), along with standard rules for rational addition, multiplication, and inverse.
+Have I got this right so far?
+Anyway, I figure that creating an additive inverse for a semiring is R[n], where n^2 = 1, and x+xn=0, n is the symbol for negative. Is this the quotient group R[n]/(n^2 - 1, 1 + n)?
+Is there any proper name for this process, and do I have it correct?

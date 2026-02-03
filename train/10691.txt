@@ -1,0 +1,63 @@
+Nagiza Samatova has developed Rachet, a petascale distributed-data-analysis suite. It is designed for scientific data that are massive, distributed, dynamic, and high dimensional. This highly scalable approach allows users to make computations from local analyses, merge information with minimum data transfer, and visualize global results. Rachet can be applied to analyses and predictions in the scientific areas of climate, genomics, astrophysics, and high-energy physics. Click here for more photos.
+"Having a supercomputer that doesnít have any software that lets you
+use it is like having a fast car that you have locked your keys inside,"
+says Al Geist, a group leader in ORNL's Computer Science and
+Mathematics Division (CSMD). "Supercomputing tools are the keys
+that help scientists unlock the speed inside the nationís fastest
+To help unlock this speed, the Department of Energy recently started
+the Scientific Discovery through Advanced Computing (SciDAC)
+Program to help create a new generation of scientific simulation codes. The codes will
+take full advantage of extraordinary terascale computer resources that can perform
+trillions of calculations per second and handle trillions of bytes of data to address
+complex scientific problems. These codes for massively parallel supercomputers will be
+used to address increasingly complex problems in climate modeling, fusion energy
+sciences, chemical sciences, nuclear astrophysics, high-energy physics, and
+high-performance computing. ORNL is involved in several SciDAC projects aimed at
+developing supercomputer tools for scientists.
+The performance evaluation project focuses on finding the best ways to execute a specific
+application on a given platform (see Evaluating Supercomputer Performance). The tools
+from this effort will answer three fundamental questions: What are the limits of
+performance for a given supercomputer? How can we accelerate applications toward
+these limits? How can this information drive the design of future applications and
+high-performance computing systems? ORNL has a long history of evaluating early
+prototype systems from supercomputer vendors. The most recent ORNL acquisition is an
+IBM Power4 system that arrived so new it didn't even have an IBM product name. ORNL
+has already determined how this system will perform on a variety of scientific
+A growing trend among scientists is to buy a bunch of personal computers (PCs) and
+"cluster" them together to run their applications. But just as the right key is needed to run
+the fast car, cluster computing software is required to make the PCs work as one
+computer. The Scalable Systems Software Center (see ORNL Leads Effort to Improve
+Supercomputer Centers) leverages a lot of the work that ORNL has done in cluster
+computing. For instance, ORNL initiated and leads the Open Source Cluster Application
+Resources (OSCAR) project. "The interest in this software has been phenomenal," says
+CSMD's Stephen Scott, who leads the project. "In the first two months after the OSCAR
+toolset was released, more than 12,000 people downloaded it!"
+OSCAR is a snapshot of the best-known methods from
+across the nation for building, programming, and using
+clusters. It consists of a fully integrated, easy-to-install
+software bundle designed for high-performance cluster
+computing. Everything needed to install, build, maintain,
+and use a modest-sized Linux cluster is included in the
+suite, making it unnecessary to download or even install
+any individual software packages on a cluster. OSCAR
+team members are now busy working on the Scalable
+Systems Software project, for which they plan to build
+the same kind of easy-to-use tools for supercomputers.
+"Sure, computers can run fast and make lots of
+calculations, but if you donít have the tools to analyze the
+terabytes of data they produce, you are still going
+nowhere," says CSMD's Nagiza Samatova, who is one of
+the investigators on the SciDAC Scientific Data
+Management project. This project's goal is to optimize
+and simplify access to very large, distributed,
+heterogeneous datasets and to use data mining to extract
+meaningful data from these datasets. Samatova has
+developed a new algorithm for analyzing biological data
+to determine metabolic pathways that cuts the run time
+from 3 days to 2 minutes.
+"This innovative algorithm is a perfect example of how computer science and
+mathematics expertise can make breakthrough tools available to the scientists,Ē says
+Thomas Zacharia, ORNL's associate laboratory director for Computing and
+Computational Sciences. "It is one of the things that makes ORNL's Center for
+Computational Sciences so successful."
+The Department of Energy's Office of Science is the single largest supporter of basic research in the physical sciences in the United States and is working to address some of the most pressing challenges of our time.

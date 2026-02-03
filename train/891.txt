@@ -1,0 +1,17 @@
+Difference Between SD and SDHC Cards
+SD stands for Secure Digital which is the most popular storage medium for mobile devices in use today. SD cards can reach up to 4GB of storage space and can come in 3 different form factors; the standard size, mini, and micro each one bigger than the next. SDHC (Secure Digital High Capacity) was developed to overcome the 4GB limit that SD faced, with its smallest capacity starting at 4GB and with a 32GB maximum capacity.
+The move to SDHC came as more and more consumers start wanting higher capacity memory cards than what is available in the market. SD cards were once sufficient for use in digital cameras, but with portable media devices like mp3 players and video players, it becomes very apparent that more is always better.
+SD was limited in the memory capacity not by the physical aspect of the device since you can always add more; it is because of the byte addressing system that is used in SD. Fat32, which is the most commonly used file system in mobile devices can only allocate up to 232 addresses or just under 4.3 billion. If each address is equivalent to 1 byte then there are only 4.3billion bytes or 4GB.
+SDHC utilized sector addressing rather than byte addressing. Each sector is composed of 512 bytes each, allowing a theoretical maximum capacity of 2 terabytes. But currently, it is limited to a maximum of 32GB per card but will probably be increased once that threshold is reached.
+SDHC cards are not necessarily faster than SD cards but the enforcement of minimum write speeds could potentially mean much faster read and write access. SD cards start out at 0Mb/s then gradually increases to its max speed then slows back down. The minimum speed of SDHC cards can range from 2Mb/s to 6Mb/s, meaning it starts at a much faster speed compared to SD cards.
+In order to maintain backwards compatibility, most devices that take SDHC memory cards can also work with SD cards. Most memory cards are pretty easy to identify as SD or SDHC cards due to their capacities, but cards that have a 4GB capacity would need to be examined further since those could be either.
+1. SD memory cards can only reach 4GB maximum while SDHC can reach 32GB
+2. SD cards use byte addressing while SDHCS utilized sector addressing
+3. SDHC cards can be potentially faster than SD cards
+4. SDHC readers are backwards compatible with SD cards
+Search DifferenceBetween.net :
+Email This Post : If you like this article or our site. Please spread the word. Share it with your friends/family.
+- Difference Between SD and HD | Difference Between
+- Difference Between N95 and N96 | Difference Between
+- Difference Between SD and XD | Difference Between | SD vs XD
+Leave a Response

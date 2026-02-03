@@ -1,0 +1,18 @@
+That is the 9th\10th post in my challenge for 30 days of blogging and this post have been delayed because i was insisting on writing it in Arabic and its a technical post trying to document a technical solution for Ajax requests that take long time, That problem when i started on the blog post in Arabic i found difficulty in describing it and the solution with the right words so here it is in English.
+The article require understanding of PHP Sessions and Ajax i will incloud definitions of them to make it easy for the ones who starting in PHP.
+What is PHP session ?
+You get the point now Session is a way of storing users info and can recall it from any page, unlike Cookies Session stored on the server so user have no way of editing it.
+By default session variables last until the user closes the browser or stay inactive for sometime defined in the server configurations, Whenever you want to recall or store user data in PHP page you must start the page with calling session_start() function so you know will have access on $_SESSION variable.
+What is AJAX?
+We use that method to send data and retrieve info from the server in faster way as we don’t want to receive the full page and render it in the browser as it will be much slower.
+As result we can update part from the web page user on like what users see when they scroll down in facebook time line page as new content get added without refreshing the page.
+We now -and it is not a new thing- develop applications depend on Ajax up to %100 But when a web page sends two or more Ajax requests you find them take mush time and maybe finish almost in the same time.
+When you send an Ajax request to a server and your PHP script starts with
+then that call and lock the PHP session file on the server and as you know PHP store sessions in files on server, so the same script can not edit the same session file on the server, and that is a classic lock file condition, so any other request will call PHP file that call session_start() will wait till the first request finish to start first in first out and now most if not all PHP frameworks use session_start() as first thing in the main file.
+Using session_write_close() function to write and close the session file on the server will release the session file so another request can use it and this script will continue working normally but you should know that you are not allow to store any thing in the session after using session_write_close(); in the same script but from the other request it will be ok.
+I have created a test code to see the problem ad uploaded it on GitHub you can find it here ” PHP session locking problem with Ajax” you will need to add it under your local host and open the console to see the requests and responses time.
+As we see in the code in that file, for example if we made more than request the a page have that code
+Each request will wait the previous one to finish which will take 5 sec, because the session file have not be released yet so the new connected will be blocked on the first like session_start() that will kill the idea if asynchronous requests (more than one request can be send and executed in the same time).
+If we changed the code to be like in that file
+session_start(); session_write_close(); sleep(5);
+the second line in that code release the session file so the other requests now can start executing as they can call session_start() without any problems.

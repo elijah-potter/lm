@@ -1,0 +1,42 @@
+Virtual Private Network (VPN) is something that you hear everywhere but don’t know what is it? Then you are at the right place. We are here to help you understand VPN and its working using few real life examples.
+What is VPN?
+Wikipedia says Virtual Private Network extends a private network across a public network, and enables users to send and receive data across shared or public networks as if their computing devices were directly connected to the private network.
+In simple terms, VPN allows one to create secure connection to a public or shared network and enables to protect privacy or data leak.
+How VPN works?
+Once connected to Internet, Virtual private network establishes an encrypted connection with the VPN server through Internet. Now all the data transmission should happen through the secure connection established between client and VPN server.
+When you visit a website (say google.com), your request will be passed to your ISP (Internet service provider) and then it will reach Google server to serve you the response. But when you use a VPN, all your traffic requests are passed through your ISP then it will reach VPN server and only then it will reach destination server (Google in our case).
+So no body can track your activities when you are connected to a VPN server since all the data transmission is secured and passed through VPN server. Of course the VPN server will be able to check your traffic but most reliable VPN services providers do not maintain logs so it is safe to some extent.
+Why should you use VPN?
+Let us see different types of uses of Virtual private network.
+1. To Access a Blocked Website
+Virtual private networks are used in offices, colleges, shopping malls, theaters or any public centers where few website access is restricted. For an example colleges usually block social network websites where VPN can be used to unblock it since you are actually using VPN server’s internet connection. You can read more about unblocking websites in our previous article.
+2. To Protect Your Information From Hackers
+Do you think your internet activities are secure & private? Actually no.
+Internet service providers also known as ISPs can track all the activities performed by you. ISPs are the ones who provide internet to you. So they have access to all the data.
+Not only ISPs, hackers too can trace your activities on the Internet. You might wonder how?
+Let me tell you a simple overview of how this can be achieved.
+You are in a shopping mall and you are trying to use mall’s Wifi connection. Your laptop will connect to the router available in the shopping mall isn’t it?
+That router is not only connecting you to the Internet but it connects hundreds of people who are in the mall to the Internet. Let us say there is a hacker who is also connecting to the mall’s Wifi. So that hacker can track your activities easily since he is also on the same network (mall’s Wifi connection).
+Likewise there are many possibilities to track your activities on the Internet. What if you enter your credit card details on a merchant website while someone is spying on you? Sounds very risky right? That is when VPN should be used to protect data theft and maintain privacy on the Internet.
+How your identity is hidden when you use a Virtual private network?
+As i have said earlier, you are not using your Internet connection for surfing the Internet. You are using VPN server’s Internet connection to surf the Internet and all your data is completely encrypted before it reaches your ISP. Thus making your identity hidden when you use a Virtual private network.
+3. To Remain Anonymous
+Hackers use VPN to remain anonymous on the Internet. Usually Virtual Private Network hides your identity when you surf the Internet.
+IP address is the unique identity of you on the Internet. So when someone knows your IP they may able to trace who you are.
+When you visit xyz.com, your IP address won’t be available to xyz.com, instead VPN server’s IP address will be shown. So hackers prefer VPN to remain anonymous.
+Sometimes normal users uses VPN to keep their identity hidden since they don’t want website owners to know about them.
+4. To Access Workplace Data
+Remote / Roaming users working for a company uses a VPN to connect to their work network and access data across various regional offices as shown below.
+5. To Bypass Country Level Restriction
+Few countries like China, Egypt, Saudi Arabia restricts access to world wide web. China has a famous search engine called Baidu. China people use baidu because Chinese government blocked Google and its services all over the country. This is where we can use VPN to unblock access to restricted websites.
+How to use VPN?
+We should subscribe to a service provider to use Virtual private network connection. There are lot of VPN services provider out there. We have aggregated some best free and paid VPN service providers for you. Choose any one that suits your budget and you are ready to go.
+There are two ways to connect to a Virtual private network.
+- Using inbuilt VPN connection setup
+- Using VPN client
+How to connect Virtual Private Network using inbuilt option?
+Operating systems like Windows have inbuilt option for Virtual private network setup. All you have to do is to setup a new Virtual private network connection on top of the active internet connection using the Virtual private network server credentials like host, username and password that you have obtained from VPN service provider. Other operating systems like Linux do have inbuilt tool to create a VPN connection. So we can make use of it to connect to a VPN.
+How to connect Virtual Private Network using a VPN client?
+There are open source Virtual private network clients like Open VPN. We can use it to connect to a Virtual Private Network. Majority of VPN service provider will give you a VPN client either for your PC or mobile. All you have to do is to enter your username and password to setup a connection.
+As always let us know if you have any doubts.
+Please tell me how can i hack my wife facebook account because he always change i know his password.

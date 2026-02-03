@@ -1,0 +1,218 @@
+Table of Contents
+PC-style floppy disks work mostly like other disk devices like hard disks, except that you need to low-level format them first. To use an common 1440 KB floppy in the first floppy drive, first (as root) format it:
+#fdformat -f /dev/rfd0a
+Then create a single partition on the disk using disklabel(8):
+#disklabel -rw /dev/rfd0a floppy3
+Creating a small filesystem optimized for space:
+#newfs -m 0 -o space -i 16384 -c 80 /dev/rfd0a
+Now the floppy disk can be mounted like any other disk. Or if you already have a floppy disk with an MS-DOS filesystem on it that you just want to access from NetBSD, you can just do something like this:
+#mount -t msdos /dev/fd0a /mnt
+However, rather than using floppies like normal (bigger) disks, it is often more convenient to bypass the filesystem altogether and just splat an archive of files directly to the raw device. E.g.:
+#tar cvfz /dev/rfd0a file1 file2 ...
+A variation of this can also be done with MS-DOS floppies using
+sysutils/mtools package which
+has the benefit of not going through the kernel buffer cache
+and thus not being exposed to the danger of the floppy being
+removed while a filesystem is mounted on it.
+See if your system has a ZIP drive:
+dmesg | grep -i zipsd0 at atapibus0 drive 1: <IOMEGA ZIP 100 ATAPI, , 14.A> type 0 direct removable
+Seems it has one, and it's recognized as sd0, just like any SCSI disk. The fact that the ZIP here is an ATAPI one doesn't matter - a SCSI ZIP will show up here, too. The ZIP is marked as "removable", which means you can eject it with:
+Insert ZIP disk
+Check out what partitions are on the ZIP:
+#/dev/rsd0d: type: ATAPI ... 8 partitions:
+#size offset fstype [fsize bsize cpg] d: 196608 0 unused 0 0 # (Cyl. 0 - 95) h: 196576 32 MSDOS # (Cyl. 0*- 95) disklabel: boot block size 0 disklabel: super block size 0
+is the whole disk, as usual on i386.
+is what you want, and you can see it's a msdos filesystem even.
+Hence, use /dev/sd0h to access the zip's partition.
+mount -t msdos /dev/sd0h /mnt
+Access your files:
+ls -la /mnttotal 40809 drwxr-xr-x 1 root wheel 16384 Dec 31 1979 . drwxr-xr-x 28 root wheel 1024 Aug 2 22:06 .. -rwxr-xr-x 1 root wheel 1474560 Feb 23 1999 boot1.fs -rwxr-xr-x 1 root wheel 1474560 Feb 23 1999 boot2.fs -rwxr-xr-x 1 root wheel 548864 Feb 23 1999 boot3.fs -rwxr-xr-x 1 root wheel 38271173 Feb 23 1999 netbsd19990223.tar.gz
+Unmount the ZIP:
+Eject the ZIP:
+Data CDs can contain anything from programs, sound files (MP3, wav), movies (MP3, QuickTime) to source code, text files, etc. Before accessing these files, a CD must be mounted on a directory, much like hard disks are. Just as hard disks can use different filesystems (ffs, lfs, ext2fs, ...), CDs have their own filesystem, "cd9660". The NetBSD cd9660 filesystem can handle filesystems without and with Rockridge and Joliet extensions.
+CD devices are named /dev/cd0a for both SCSI and IDE (ATAPI).
+With this information, we can start:
+See if your system has some CD drive:
+dmesg | grep ^cdcd0 at atapibus0 drive 0: <CD-R/RW RW8040A, , 1.12> type 5 cdrom removable cd0: 32-bit data port cd0: drive supports PIO mode 4, DMA mode 0 cd0(pciide0:1:0): using PIO mode 0, DMA mode 0 (using DMA data transfers)
+We have one drive here, "cd0". It is an IDE/ATAPI drive, as it is found on atapibus0. Of course the drive (rather, its medium) is removable, i.e., you can eject it. See below.
+Insert a CD
+Mount the CD manually:
+mount -t cd9660 /dev/cd0a /mnt
+This command shouldn't print anything. It instructs the system to mount the CD found on /dev/cd0a on /mnt, using the "cd9660" filesystem. The mountpoint "/mnt" must be an existing directory.
+Check the contents of the CD:
+ls /mntINSTALL.html INSTALL.ps TRANS.TBL boot.catalog INSTALL.more INSTALL.txt binary installation
+Everything looks fine! This is a NetBSD CD, of course. :)
+Unmount the CD:
+If the CD is still accessed (e.g. some other shell's still "cd"'d into it), this will not work. If you shut down the system, the CD will be unmounted automatically for you, there's nothing to worry about there.
+Making an entry in /etc/fstab:
+If you don't want to type the full "mount" command each time, you can put most of the values into a line in /etc/fstab:
+# Device mountpoint filesystem mount options /dev/cd0a /cdrom cd9660 ro,noauto
+Make sure that the mountpoint,
+/cdrom in our
+Now you can mount the cd with the following command:
+Access and unmount as before.
+The CD is not mounted at boot time due to the "noauto" mount option - this is useful as you'll probably not have a CD in the drive all the time. See mount(8) and mount_cd9660(8) for some other useful options.
+Eject the CD:
+If the CD is still mounted, it will be unmounted if possible, before being ejected.
+Use mscdlabel(8) to add all sessions to the CDs
+then use the appropriate device node to mount the session you want.
+You might have to create the corresponding device nodes in
+mscdlabel cd1track (ctl=4) at sector 142312 adding as 'a' track (ctl=4) at sector 0 adding as 'b'
+ls -l /dev/cd1bls: /dev/cd1b: No such file or directory
+ls -l cd1*brw-r----- 1 root operator 6, 8 Mar 18 21:55 cd1a brw-r----- 1 root operator 6, 11 Mar 18 21:55 cd1d
+mknod cd1b b 6 9
+Make sure you fix the permissions of any new device
+nodes you create:
+ls -l cd1*brw-r----- 1 root operator 6, 8 Mar 18 21:55 cd1a brw-r--r-- 1 root wheel 6, 9 Mar 18 22:23 cd1b brw-r----- 1 root operator 6, 11 Mar 18 21:55 cd1d
+chgrp operator cd1b
+chmod 640 cd1b
+ls -l cd1*brw-r----- 1 root operator 6, 8 Mar 18 21:55 cd1a brw-r----- 1 root operator 6, 9 Mar 18 22:24 cd1b brw-r----- 1 root operator 6, 11 Mar 18 21:55 cd1d
+Now you should be able to mount it.
+mount /dev/cd1b /mnt
+By default, NetBSD only allows "root" to mount a filesystem. If you want any user to be able to do this, perform the following steps:
+Give groups and other the access rights to the device.
+#chmod go+rw /dev/cd0a
+Ask NetBSD to let users mounting filesystems.
+#sysctl -w vfs.generic.usermount=1
+Note that this works for any filesystem and device, not only for CDs with a ISO 9660 filesystem.
+To perform the mount operation after these commands, the user must own the mount point. So, for example:
+$mount -t cd9660 -o nodev,nosuid /dev/cd0a `pwd`/cdrom
+The mount options
+nosuid are mandatory from NetBSD 4.0 on. They are
+not necessary on NetBSD 3.x systems.
+Sometimes, it is interesting to mount an ISO9660 image file before you burn the CD; this way, you can examine its contents or even copy files to the outside. If you are a Linux user, you should know that this is done with the special loop filesystem. NetBSD does it another way, using the vnode pseudo-disk.
+We will illustrate how to do this with an example. Suppose you have an ISO image in your home directory, called "mycd.iso":
+Start by setting up a new vnode, "pointing" to the ISO file:
+vnconfig -c vnd0 ~/mycd.iso
+Now, mount the vnode:
+mount -t cd9660 /dev/vnd0a /mnt
+Yeah, image contents appear under
+Go to that
+directory and explore the image.
+When you are happy, you have to umount the image:
+And at last, deconfigure the vnode:
+vnconfig -u vnd0
+Note that these steps can also be used for any kind of file that contains a filesystem, not just ISO images.
+To play MPEG Video streams as many DVD players can play them
+under NetBSD, mount the CD as you would do with any normal (data)
+CD (see Section 13.3, “Reading data CDs with NetBSD”), then use the
+package to play the mpeg files stored on the CD.
+There are two ways to handle audio CDs:
+Tell the CD drive to play to the headphone or to a
+soundcard, to which CDROMs are usually connected
+internally. Use programs like cdplay(1),
+multimedia/kdemultimedia3 package, mixer
+programs like mixerctl(1),
+the Curses based
+or kmix, which is part of
+This usually works well on both SCSI and IDE (ATAPI) CDROMs, CDRW and DVD drives.
+To read ("rip") audio tracks in binary form without going through digital->analog conversion and back. There are several programs available to do this:
+For most ATAPI, SCSI and several proprietary
+CDROM drives, the
+audio/cdparanoia package can be
+used. With cdparanoia the data can be saved to a file or
+directed to standard output in WAV, AIFF, AIFF-C or raw
+format. Currently the -g option is required by the NetBSD
+version of cdparanoia. A hypothetical example of how to save
+track 2 as a WAV file is as follows:
+cdparanoia -g /dev/rcd0d 2 track-02.wav
+If you want to grab all files from a CD, cdparanoia's batch mode is useful:
+cdparanoia -g /dev/rcd0d -B
+For ATAPI or SCSI CD-ROMs the
+audio/cdd package can be
+used. To extract track 2 with cdd, type:
+cdd -t 2 `pwd`
+This will put a file called
+in the current directory.
+For SCSI CD-ROMS the
+audio/tosha package can be used.
+To extract track 2 with tosha, you should be able to type:
+tosha -d-t 2 -o track-02.cda
+The data can then be post-processed e.g. by encoding it into MP3 streams (see Section 13.9, “Creating an MP3 (MPEG layer 3) file from an audio CD”) or by writing them to CD-Rs (see Section 13.11, “Using a CD-R writer to create audio CDs”).
+The basic steps in creating an MPEG layer 3 (MP3) file from an audio CD (using software from the NetBSD packages collection) are:
+Extract (rip) the audio data of the CD as shown in Section 13.8, “Using audio CDs with NetBSD”.
+Convert the CD audio format file to WAV format. You only need to perform this job if your ripping program (e.g. tosha, cdd) didn't already do the job for you!
+$sox -s -w -c 2 -r 44100 -t cdr track-02.cda track-02.wav
+This will convert
+in raw CD format to
+track-02.wav in WAV format,
+using signed 16-bit
+words with 2
+channels at a sampling
+Encode the WAV file into MP3 format.
+$bladeenc -128 -QUIT track-02.wav
+This will encode
+MP3 format, using a bit rate if
+for bladeenc describes bit-rates in more detail.
+$lame -p -o -v -V 5 -h track-02.wav track-02.mp3
+You may wish to use a lower quality, depending on your taste and hardware.
+The process of writing a CD consists of two steps: First, a "image" of the data must be generated, which can then be written to CD-R in a second step.
+Reading an pre-existing ISO image
+dd if=/dev/rcd0a of=filename.iso bs=2k
+Alternatively, you can create a new ISO image yourself:
+Generating the ISO image
+Put all the data you want to put on CD into one directory. Next you need to generate a disk-like ISO image of your data. The image stores the data in the same form as they're later put on CD, using the ISO 9660 format. The basic ISO9660 format only understands 8+3 filenames (max. eight letters for filename, plus three more for an extension). As this is not practical for Unix filenames, a so-called "Rockridge Extension" needs to be employed to get longer filenames. (A different set of such extension exists in the Microsoft world, to get their long filenames right; that's what's known as Joliet filesystem).
+The ISO image is created using the mkisofs command,
+which is part
+Example: if you have your data in /usr/tmp/data, you can generate a ISO image file in /usr/tmp/data.iso with the following command:
+$mkisofs -o data.iso -r data Using NETBS000.GZ;1 for data/binary/kernel/netbsd.INSTALL.gz (netbsd.INSTALL_TINY.gz) Using NETBS001.GZ;1 for data/binary/kernel/netbsd.GENERIC.gz (netbsd.GENERIC_TINY.gz) 5.92% done, estimate finish Wed Sep 13 21:28:11 2000 11.83% done, estimate finish Wed Sep 13 21:28:03 2000 17.74% done, estimate finish Wed Sep 13 21:28:00 2000 23.64% done, estimate finish Wed Sep 13 21:28:03 2000 ... 88.64% done, estimate finish Wed Sep 13 21:27:55 2000 94.53% done, estimate finish Wed Sep 13 21:27:55 2000 Total translation table size: 0 Total rockridge attributes bytes: 5395 Total directory bytes: 16384 Path table size(bytes): 110 Max brk space used 153c4 84625 extents written (165 Mb)
+Please see the mkisofs(8) man page for other options like noting publisher and preparer. The Bootable CD ROM How-To explains how to generate a bootable CD.
+Writing the ISO image to CD-R
+When you have the ISO image file,
+you just need to write it on a
+CD. This is done with the "cdrecord" command from the
+Insert a blank CD-R, and off we go:
+cdrecord -v dev=/dev/rcd0d data.iso...
+After starting the command, 'cdrecord' shows you a lot of information about your drive, the disk and the image you're about to write. It then does a 10 seconds countdown, which is your last chance to stop things - type ^C if you want to abort. If you don't abort, the process will write the whole image to the CD and return with a shell prompt.
+Note that cdrecord(8) works on both SCSI and IDE (ATAPI) drives.
+Mount the just-written CD and test it as you would do with any "normal" CD, see Section 13.3, “Reading data CDs with NetBSD”.
+If you want to make a backup copy of one of your audio CDs, you can do so by extracting ("ripping") the audio tracks from the CD, and then writing them back to a blank CD. Of course this also works fine if you only extract single tracks from various CDs, creating your very own mix CD!
+The steps involved are:
+If you have converted all your audio CDs to MP3 and now want to make a mixed CD for your (e.g.) your car, you can do so by first converting the .mp3 files back to .wav format, then write them as a normal audio CD.
+The steps involved here are:
+Create .wav files from your .mp3 files:
+mpg123 -w foo.wav foo.mp3
+Do this for all of the MP3 files that you want to have on your audio CD. The .wav filenames you use don't matter.
+Write the .wav files to CD as described under Section 13.11, “Using a CD-R writer to create audio CDs”.
+To copy an audio CD while not introducing any pauses as mandated by the CDDA standard, you can use cdrdao for that:
+cdrdao read-cd --device /dev/rcd0d data.toc
+cdrdao write --device /dev/rcd1d data.toc
+If you have both a CD-R and a CD-ROM drive in your machine, you can copy a data CD with the following command:
+cdrecord dev=/dev/rcd1d /dev/rcd0d
+Here the CD-ROM (cd0) contains the CD you want to copy, and the CD-R
+(cd1) contains the blank disk. Note that this only works with computer
+disks that contain some sort of data, it does
+not work with
+audio CDs! In practice you'll also want to add something like
+speed=8" to make things a bit
+You can treat a CD-RW drive like a CD-R drive (see Section 13.10, “Using a CD-R writer with data CDs”) in NetBSD, creating images with mkisofs(8) and writing them on a CD-RW medium with cdrecord(8).
+If you want to blank a CD-RW, you can do this with cdrecord's
+cdrecord dev=/dev/rcd0d blank=fast
+There are several other ways to blank the CD-RW,
+call cdrecord(8) with
+blank=help" for a list. See the cdrecord(8)
+man page for more information.
+Currently, NetBSD supports DVD media through the ISO 9660
+also used for CD-ROMs. The new UDF filesystem also present on DVDs
+has been supported since NetBSD 4.0. Information about mounting ISO 9660
+and UDF filesystems can be found in the mount_cd9660(8) and
+mount_udf(8) manual pages respectively.
+DVDs, DivX and many avi files be played with
+For some hints on creating DVDs, see this postings about growisofs and this article about recording CDs and DVDs with NetBSD.
+To create an ISO image and save the checksum do this:
+readcd dev=/dev/cd0d f=/tmp/cd.iso
+Here is an alternative using dd(1):
+dd if=/dev/cd0d of=/tmp/cd.iso bs=2048
+If the CD has errors you can recover the rest with this:
+dd if=/dev/cd0d of=/tmp/cd.iso bs=2048 conv=noerror
+To create an ISO image from a mounted data CD first, mount the CD disk by:
+mount -t cd9660 -r /dev/cd0d /mnt/cdrom
+Second, get the image:
+mkhybrid -v -l -J -R -o /tmp/my_cd.iso /mnt/cdrom/
+You can read the volume data from an unmounted CD with this command:
+file -s /dev/cd0d
+You can read the volume data from an ISO image with this command:
+isoinfo -d -i /tmp/my_cd.iso
+You can get the unique disk number from an unmounted CD with this:
+You can read the table of contents of an unmounted CD with this command:
+cdrecord -v dev=/dev/cd0d -toc

@@ -1,0 +1,42 @@
+The basics of Minecraft Servers & Hosting Minecraft.
+What are Minecraft Servers? Minecraft Servers are basically big computers that have fast internet connections that are running Minecraft, and you can connect to them and PLAY Minecraft with your friends! Now you have a choice, this can either be your own computer (run your own Minecraft server) OR you can pay for someone else to do all the dirty work (buy server hosting)
+To get started on 3rd party hosting, check out our review of the best hosts who are out there –>minecraft server hosting review here<<–
+Should I run my own Minecraft server from home?
+Even though it is possible (and well, quite fun… for those computer nerds among us) to host your Minecraft Server from your own PC, over time this can cause more headaches than you originally thought.
+First of all, running a Minecraft server from your home PC will be extremely draining on your system resources. Even though most new computers running Windows 7 or Vista come with high speed multi-core CPUs and enough RAM (memory) to run a game server, the situation will probably be different once a active Minecraft server starts chewing up your resources. Plus the additional internet bandwidth you require is likely to be a big bottleneck.
+On top of this, you have to conisder that you will be dedicating your machine to one purpose, being a Minecraft server. This means that you won?t be able to PLAY Minecraft on your own server, as your CPU % and RAM are already being chewed up (as mentioned earlier)! Sitting there and monitoring the server while your friends play Minecraft doesn’t sound like as much fun now does it??It also means that you won?t be able to use your PC (now a Minecraft server) for a lot of the other tasks you are used to. As we said before, consider that if there are other people (family members, room-mates, work colleagues) sharing the same Internet connection, they are probably going to come looking for you wondering why the Internet is so slow! (Answer: because your friends are building giant replicas of the Eiffel Tower!)
+The other key factor is that if you were running your own server, you would need to keep it turned on and connected to the Internet 24/7, to let people connect and play when they wanted. If your server is turned off or your Internet connection is down, that means no Minecraft! (and you would be getting a lot of angry phone calls from your friends asking you to switch the server on!) Other things like residential internet outages, having to restart your computer and Windows shut-downs can affect your server up-time.
+Another final factor to consider is that setting up a Minecraft server is like setting up any web server or multiplayer game server. If you haven?t set one up before, you will need to have a lot of patience and a good understanding of your own TCP/IP network, how to set port-forwarding on your router, allowing traffic through your firewall, modifying your anti-virus settings, and so on.
+All of these things can lead to frustration, which is why we ultimately recommend going with a Minecraft hosting solution, after all wouldn?t you rather spend your time building an awesome world with your friends and enjoying Minecraft? That Eiffel Tower replica isn’t going to build itself!
+Having said that, if you are REALLY committed to hosting your own Minecraft server, here is a guideline for minimum PC requirements
+Starters: 4 player Multiplayer game
+- RAM: 500MB minimum
+- Internet connection: ADSL or better
+Intermediate: 16 players
+- RAM : 2GB
+- Internet connection: ADSL2+ or better
+Hosting on a dedicated or shared Minecraft server
+So then what are the advantages when we are looking at purchasing a hosting package?
+- The server is designed to be high powered, with heaps of spare CPU and RAM. You don?t have to worry about your own machine lagging!
+- The server has a super-fast always-on Internet connection. This means no downtime, so you and your friends can always play 24/7. Most of the servers we recommend achieve a 99%+ uptime statistic!
+- You don?t have to worry about leaving your own machine open to incoming connections from around the world as people connect onto your server to play Minecraft. (A potential security risk)
+- Choice of host, choice of price and features
+Making the right choice
+When looking through all of your choices for hosting packages, there are a few key things to consider.
+- Server specifications and data limits
+- Dedicated or shared server
+- Customer support
+- Server location
+This is where we come in to help you discover what is the best Minecraft server hosting package for you.
+When looking at features, you will be considering things like,
+- Does it have a built in server control panel?
+- What add on packages can I run?
+- And so on.
+When considering location, think about the geographic location of the hosting company?s servers. ?If you are in the United States and your server is located in Europe, this will add unnecessary lag-time to your game. Obviously when people from all over the world are joining your game, then it will be hard to find a location close to everyone, but naturally you should lean towards a server provider that is in a geographic location close to you and where most of your Minecraft buddies will be playing from.
+The difference between a dedicated and a shared server is quite simply, a shared server means that you will be sharing the same PHYSICAL server with other customers who have purchased hosting, but you will have a ?virtual server? or part of the server resources dedicated to your Minecraft games. So if the 1 physical server has 32GB of RAM and 2TB of Hard disk space, you may be allocated 8GB of RAM and 400GB of data, as well as a portion of bandwidth.
+A dedicated server means that you?re paying the hosting company for the exclusive use of a physical server, to be dedicated to hosting your Minecraft games. This is a premium service that will be more expensive, and for those who are planning on hosting much larger Minecraft communities.
+Customer Support is a vastly under-rated factor when it comes to choosing a hosting provider. The support can take the form of live chat, a 24 hour phone service, server alerts, basic guides to help you manage your server, and online FAQs which give you a rundown of common questions. Even if you think you won?t need support, there will always be random things popping up, like forgetting passwords, needing to recover your server after installing mods, banning troublesome players, etc.
+So where should you look?
+To get started, let us recommend a few great hosting companies that we also use ourselves!
+FragNET has a number of options with the basic package starting at $13.22 a month. This offers you shared hosting with 536MB and a 12 player limit. The other great feature is that you have access to the MCMyAdmin server configuration panel, which is a super easy user friendly server manager that has become a common standard on Minecraft servers. The servers are hosted on AMD Opteron 8 Core Processors and have a very good track record with providing quality service and support.
+Good luck, and watch out for friggin creepers!

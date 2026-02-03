@@ -1,0 +1,17 @@
+What is a radian?
+Radians are just another way to measure angles. Here's how:
+Start with a circle. The radius of the circle is a line from the center of the circle to a point on the edge. In Diagram A, that's the line CA. Start point A moving counterclockwise around the circle. It will trace out an arc as it travels. When the arc is as long as the radius of the circle, stop. Call that point B. You now have an arc AB, and an angle ACB. That angle at C is equivalent to one radian. So, the length of arc AB is the same as the length of the radius of the circle, which is line CA. Here's the rule:
+- The lengths of the arc and the radius are equal.
+Since C = 2πr, and since we already said the radius of the circle equals one radian, setting r = 1 means that C = 2π radians. In other words, there are 2π radians in the circumference of the circle, which is 360 degrees. So, 360 degrees = 2π radians. Knowing that, we can now convert between radians and degrees.
+Since there are 2π radians in 360 degrees, we get: 2π rad = 360 deg. Diving both sides by 2π, rad = 360/2π = 180/π. And, because 360 deg = 2π rad: dividing both sides by 360, deg = 2π/360 = π/180. To summarize:
+- Given degrees, you get radians with rad = deg × 180/π.
+- Given radians, you get degrees = rad × π/180.
+You'll see charts that tell you 90 degrees equals π/2 radians, or 315 degrees equals 7π/4 radians. How did they get that?
+Remember that C = 2π, meaning that there are 2π radians in 360 degrees. To find out how many radians are in, for example, 90 degrees, we just multiply 2π by the ratio 90/360, like this:
+radians = 90/360 × 2π.
+Reducing the fraction, we get ¼ × 2π, which simplifies to 2π/4, or π/2. So 90 degrees = π/2 radians.
+Let's do a few more:
+180 degrees = 180/360 × 2π = ½ × 2π = 2π/2 = π radians.
+270 degrees = 270/360 × 2π = ¾ × 2π = 6π/4 = 3π/2 radians.
+360 degrees = 360/360 × 2π = 2π radians.
+Try the calculations for yourself! 45, 135, 225, and 315 degrees are all common angles.

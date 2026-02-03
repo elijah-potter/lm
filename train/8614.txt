@@ -1,0 +1,5 @@
+Teaching Genetic Algorithms with Excel
+In a previous post I discussed using Scratch and Excel to model neurones. This post looks at using Excel and six-sided dice as a way of developing insights into how Genetic Algorithm work, before going on to program one.
+A very simplified version of Tournament Selection is used for the parent selection and the mutation works by rolling a die to get a number between 1-6.
+The problem to be solved is to find the lowest values for x and y in the equation
+All views and opinions are the author's and do not necessarily reflected those of any organisation they are associated with. Twitter: @scottturneruonAll views are the authors, and may not reflect the views of any organisation the author is connected with in any way.

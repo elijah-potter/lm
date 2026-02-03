@@ -1,0 +1,12 @@
+This section describes methods used to animate elements.
+Animates the specified element.
+The element to animate.
+An object that defines element animation options.
+A Promise of the jQuery.Deferred object resolved after animation is completed.
+If you execute element animation before the previous one is completed, the animation is passed to a queue and is executed after the current one finishes.
+Returns a value indicating whether the specified element is being animated.
+The element to check for being animated.
+If the specified element is being animated, the method returns true. Otherwise, false.
+Stops the animation.
+The element whose animation should be stopped.
+A boolean value specifying whether to apply the target animation state to the specified object or leave the current state.

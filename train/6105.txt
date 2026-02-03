@@ -1,0 +1,5 @@
+The state's smallest animal is a red-tailed gerbil, with a mean weight of 2.5 grams and a standard deviation of 0.25 grams. Assuming that the weights are normally distributed, find the probability of randomly selecting a gerbil that weighs
+a. between 1.0 and 2.0 grams
+b. between 1.6 and 2.2 grams
+c. more than 2.2 grams
+The solution shows how to use z-score to find the probability of the weight range of gerbil, which is normally distributed.

@@ -1,0 +1,12 @@
+The OMR answer sheet is standardized in the reading software which finds the design and detects where to read with the help of OMR software.So it is essential to know the limitations and rules about how to outline OMR Sheets.
+People make mistakes while editing even after downloading our correct standard format without knowing the importance of various aspects of the OMR sheet. These physically made sheets won't be perused by any OMR framework unless it is aligned into the product. If the OMR design is not made after appropriate rules it can't be aligned into the Optical Mark Sheet Reading System.
+People use DTP software to create MCQ test sheets and call it as the OMR sheet. This type of sheet look like an OMR sheet, but it is created without using OMR designing software and also these sheets are created by following the standard rules provided to create an OMR sheet.
+Improper and unequal horizontal & vertical distances between bubbles;
+Unequal size of OMR bubbles;
+Bubbles are either too big or too small;
+Excessive thickness of OMR Bubbles outlines;
+The Extra big size of the Text label written inside OMR bubble;
+Too congested spacing between blocks etc.
+Absence of index points;
+Improper distances from the edges of page;
+The OMR software creates a perfect OMR sheet according to the standard rules which helps the software to distinguish the sheet, define the reading area and properly read the bubbles. The sheets created with the help of DTP software lacks all these features which are provided by the OMR software.

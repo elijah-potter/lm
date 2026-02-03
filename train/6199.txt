@@ -1,0 +1,30 @@
+In this article we will learn about the parallel operation of transformer, we will learn how to connect two transformers in parallel. Will also learn condition of parallel operation of transformer.
+Parallel operation of transformer
+Parallel operation, it means simply that two or more transformers are connected to the same supply bus bars on the primary side and to a common or same bus bar or load on the secondary side.
+Such requirement is frequently encountered in practice. The reasons that necessitate parallel operation are as follows.
+Reason of parallel operation of transformer
+These are some reason of parallel operation of transformer. Form this we can understand that why we need parallel operation transformer.
+1. Non-availability of a single large transformer to meet the total load requirement.
+2. The power demand might have increased over a time necessitating augmentation of the capacity.
+More transformers connected in parallel will then be pressed into service.
+3. To ensure improve reliability. Even if one of the transformers gets into a fault or is taken out for maintenance or repair, the load can continued to be serviced.
+4. To reduce the spare capacity. if many smaller size transformers are used, one transformer can be used as spare. If only one large transformer is feeding the load, a spare of similar rating has to be available. The problem of spares becomes more acute to transport smaller ones to site and work them in parallel.
+5. When transportation problems limit installation of large transformers at site, it may be easier to transport smaller ones to site and work them in parallel.
+According to figure the physical arrangement of two single phase transformer s working in parallel on the primary side. Transformer A and transformer B are connected to input voltage bus bars .ascertaining the polarities they are connected to output of load bus bars. Certain conditions have to be met before two or more transformers are connected in parallel and share a common load satisfactorily.
+these are also some essential condition of parallel operation of transformer
+1. Both transformer voltage ratio is same
+2. The per unit impedance of each transformer is also must be same
+3. Both transformer polarity also must be same , so that there is no circulating current between the transformers.
+4. Both transformer phase sequence must be same and no phase difference must exit between the voltages of the transformers.
+These condition is mostly required for parallel operation of transformer(single phase).
+Condition of parallel operation of transformer
+1. Same voltage ratio
+Generally the voltage ratio and turns ratio are taken to be the same or similar. If the ratio is large, there can be considerable error in the voltages even if the turn’s ratios are the similar. When the primaries are connected to similar bus bars, if the secondary do not show the similar voltage, paralleling them would result in a circulating current between the secondary’s. Reflected circulating current will be there on the primary side also. So it is required for parallel operation of transformer.
+2. Per unit impedance
+Transformers of different ratings may be required to operate in parallel. If they have to share the total load in proportion to their ratings the larger transformer has to draw more current. The voltage drop across each transformer has to be the same by virtue of their connection at the input and the output ends. Thus the larger transformers have smaller impedance and smaller transformer s have larger ohmic impedance. Thus the impedance's must be in the inverse ratios off the ratings. As the voltage drops must be the same, the per unit impedance of each transformer on its own base, must equal. In addition, if active and reactive power is required to be shared in proportion to the ratings, the impedance and per unit reluctance of both the transformers must be the same for proper load sharing.
+3. Polarity of connection
+The polarity of connection in the case of single phase transformer can be either same or opposite. Inside the loop formed by the two voltages get added and short circuit results. In the case of polyphone banks, it is possible to have permanent phase error between the phases with substantial turns ratios in such groups can be adjusted to give very close voltage ratios but phase errors cannot be compensated. Phase error of .6 degree gives rise to one percent difference in voltage. Hence, poly phase transformers polarity connection must proper. It is most required for parallel operation of transformer.
+4. Phase sequence
+The phase sequence of operationbecomes relevant only in the case of poly systems. The poly phase banks belonging to same vector group can be connected in parallel. A transformer with +30 degree phase angle however can be paralleled with the one with -30 degree phase angle, the phase sequence is reversed for one of them both at primary and secondary terminals..
+hence these are some condition of parallel operation of transformer if you will fined any incorrect above please comment below.
+For knowing more about the parallel operation of transformer please sea this video.

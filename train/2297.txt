@@ -1,0 +1,15 @@
+Brick Stacking and Composite Bricks
+Brick Stacking is a way of making new bricks from existing ones. You simply place one on top of the other in a single grid square. Usually you will only stack two or three bricks at a time, but you can put up to twelve in a stack.
+To start stacking, go to the "Advanced" menu, choose "Mode" and then "Stack" (or just press Shift+3) Your cursor will become a pen with a little stack icon next to it.
+Choose the first brick for your stack and place it on the canvas. Then choose the second brick and place it in the same square. You have a stack.
+You'll notice that the stack appears in your "My Bricks" panel so you don't need to repeatedly build these stacks. Once they are in "My Bricks" you can use stacked bricks like any other brick - drawing with the normal pen, the rectangle or the line tool.
+You can copy and paste stacked bricks, both within a FontStruction, and between FontStructions in separate browser windows.
+You can also make new bricks from a selection of existing ones.
+Select between two and four bricks in adjacent grid squares, and then go to the "Advanced" menu, choose "Modify" and then "Make Composite" (or just press Shift+G).
+Your new composite brick should appear in "My Bricks". Click the pen tool, or any other drawing tool and start drawing with it. Composite bricks can also be copied and pasted.
+Note that the components of composite bricks are always stretched to fit exactly in one grid square. This allows you to distort bricks.
+Combining Stacks and Composites
+You can stack with composites. But you cannot make composites out of stacked bricks.
+Editing Composite Bricks
+Sometimes you need to be able to create a composite that contains some “padding” or empty space on one side or the other. This is possible by creating a composite with dummy "padding" bricks which you remove later. A full explanation with examples of how to edit composite bricks to remove component bricks can be found in this blog post.
+Please contact us if you can’t find the information you’re looking for here.

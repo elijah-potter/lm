@@ -1,0 +1,3 @@
+Some terminals have the ability to make the cursor invisible, or to enhance it. Enhancing the cursor is often done by programs that plan to use the cursor to indicate to the user a position of interest that may be anywhere on the screen--for example, the Emacs editor enhances the cursor on entry. Such programs should always restore the cursor to normal on exit.
+If you define either `vs' or `vi', you must also define `ve'.
+Go to the first, previous, next, last section, table of contents.

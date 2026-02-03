@@ -1,0 +1,3 @@
+This example shows generation of the Ic versus Vce curve for an insulated gate bipolar transistor. Define the vector of gate-emitter voltages and minimum and maximum collector-emitter voltages by double-clicking the block labeled 'Define Conditions (Vge and Vce)'. Click on the hyperlink 'plot curves' in the model to run the simulations plot the simulation results.
+This type of plot can be compared against a manufacturer datasheet to confirm a correct implementation of the transistor parameters.
+The plot below shows the collector current vs collector-emitter voltage characteristics for a range of gate-emitter voltages.

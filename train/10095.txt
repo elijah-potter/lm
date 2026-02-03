@@ -1,0 +1,65 @@
+By Scott Berkun, November 15, 2005 [edited 2/21/2015]
+Are you a good person? How do you know? Unless we’re kicking puppies and stealing lunches from homeless children most of us believe we’re good enough. But not being bad is not the same as being good. And when it comes to making products and technologies the same rules apply.
+Good and evil demystified
+A quick trip to the dictionary yields the following basic terms:
+Good: Being positive, desirable or virtuous; a good person. Having desirable qualities : a good exterior paint; a good joke. Serving the purpose or end; suitable: Is this a good dress for the party?
+Evil: Morally bad or wrong; wicked: an evil tyrant. Causing ruin, injury, or pain; harmful: the evil effects of a poor diet. Characterized by anger or spite; malicious: an evil temper.
+But how does this apply to technology? Are there good products and evil products? Rarely. Most things fall in between: tools are amoral. They don’t prevent someone from using them for evil or work better when used for good. A technology performs exactly the same whether you’re using it publish praise for homeless shelter volunteers as when you’re writing recipes for orphan stew. If we want to claim that the things we make are good we have to go beyond their functionality. Goodness, in the moral sense, means something very different from good in the engineering sense.
+What is the point of technology?
+But what is the alternative? The answer depends on how you value technology. There are (at least) 5 alternatives:
+- There is no point. The universe is chaos and every confused soul fends for themselves. Therefore technology, like all things, is pointless. Software and it’s makers are just another chaotic element in the random existential mess that is the universe. (Patron saint: Marvin the robot from Hitchhikers guide to the galaxy).
+- There might be a point, but it’s unknowable. Technology may have value but we are incapable of understanding it, therefore our attempts at making things will tend to be misguided and even self-destructive. (Patron saint: Tyler Durden, Fight club).
+- The point is how it’s used (the pragmatic moral view). The point is that technology enables people to do things. How the technology is used, and the effect it has on people in the world. In this line of thought a good technology is one that enables good things to happen for people and helps them live satisfying lives and what we make should be built on the tradition of shelter, fire, electricity, refrigeration and vaccination (Patron saint: Victor Papanak, author of design for the real world).
+- The point is how it makes the creator feel (the selfish view). What matters is how the creator of the thing feels about the thing. This is an artistic view of technology in that programming or building is an act of expression whose greatest meaning is to the creator themselves. (Patron saint: Salvador Dali)
+- The point to technology is its economic value. The free market decides what good technology is, possibly giving creators resources for doing morally good things. But the the moral value of the technology itself is indeterminate or unimportant. (Patron saint: Gordon Gekko)
+I’m not offering any of these as the true answer: there isn’t one. But I am offering that without a sense of the moral purpose of technology it’s impossible to separate good from bad. There must be an underlying value system to apply to the making of things. I’m partial to the pragmatic view, that technology’s value is in helping people live better lives (or even further, that a goal of life is to be of use to people, through technological or other means), but I’m well aware that’s not the only answer.
+But if you do identify a personal philosophy for technology, there are ways to apply it to the making of things. Assuming you see good technology as achieving a moral good, here’s one approach.
+For any technology you can estimate its value to help individuals. Lets call that ability V. Assuming you know how many people use the technology (N), V * N = the value of the technology. Here’s two examples:
+A heart defibrillator can save someone’s life (V=100). But may only have a few users (N=1000).
+V * N = 100,000.
+A pizza website allows me to order pizza online (V=1). It may have many users (N=50,000).
+V * N = 50,000.
+We can argue about how to define V (or the value of online pizza delivery), but as a back of the envelope approach, it’s easy to compare two different technologies for their value, based on any philosophy of technology. Should you happen to be Satan’s right hand man, change V to S (for suffering) and you’re on your way.
+However, one trap in this is the difference between what technology makes possible and what people actually do. I could use a defibrillator to start my car, or use the pizza website to play pranks on my neighbors. Or more to my point, I might not actually use the technology at all, despite purchasing it and being educated in its value. So the perceived value of a thing, by the thing’s creator, is different from the actual value the thing has for people in the real world.
+Here are some questions that help sort out value:
+- What is possible with the technology?
+- How much of that potential is used? Why or why not?
+- Who benefits from the technology?
+- How do they benefit?
+- What would they have done without the technology?
+- What are the important problems people have? Is a technological solution the best way to solve them?
+The implications of things
+Every tool has an implied morality. There is a value system that every machine, program, or website has built into it that’s comprehendible if you look carefully. As two polarizing examples, look at these two things: a machine gun and a wheelchair.
+Both of these have very clear purposes in mind and behind each purpose is a set of values. The wheelchair is designed to support someone. The machine gun is designed to kill someone (or several someones).
+Many of the products we make don’t have have as clearly defined values. However as I mentioned earlier, the absence of value is a value: not being explicitly evil isn’t the same as being good. If I make a hammer, it can be used to build homes for the needy, or to build a mansion for a bank robber. I can be proud of the hammer’s design, but I can’t be certain that I’ve done a good thing for the world: the tool’s use is too basic to define it as good or bad.
+It’s common to see toolmakers, from search engines to development tools, take credit for the good they see their tools do, while ignoring the bad. This isn’t quite right: they are equally involved in the later as they are in the former.
+The conclusion to this is that to do good things for people requires a more direct path than the making of tools. Helping the neighbor’s kid learn math, volunteering at the homeless shelter or donating money to the orphanage are ways to do good things that have a direct impact, compared to the dubious and sketchy goodness of indifferent tool making.
+The creative responsibility (Hacker ethics)
+Computer science has no well established code of ethics. You are unlikely to hear the words moral, ethical, good and evil in the curriculum of most degree programs (However some organizations are working on this: see references). It’s not that computer science departments condone a specific philosophical view: it’s that they don’t see it as their place to prescribe a philosophical view to engineering students. (The absence of a philosophy is in fact a philosophy, but that’s not my point). But the history of engineering does have some examples of engineering cultures that took clear stances on ethics.
+Freemasons, the ancient (and often mocked) order of builders, has a central code that all members are expected to uphold. It defines a clear standard of moral and ethical behavior and connects the building of things to those ideals.
+A hack must:
+- be safe
+- not damage anything
+- not damage anyone, either physically, mentally or emotionally
+- be funny, at least to most of the people who experience it
+The meaning of the term hacker has changed several times, but the simplicity and power of a short set of rules remains. Do you bind the decisions you make in creating things to a set of ideals? What are they?
+Defining our beliefs
+Even if we don’t define rules for ourselves, we we all believe one of three things about what we make:
+- I have no responsibility (for how it’s used)
+- I have some responsibility
+- I have total responsibility
+Most of us fall into the middle view: we have some responsibility. But if that’s true, how do we take on that responsibility? How do our actions reflect that accountability?
+Nothing prevents us from making sure the tools we make, and skills we have, are put to good use: donated to causes we value, demonstrated to those who need help, customized for specific purposes and people we think are doing good things. It’s only in those acts that we’re doing good: the software, website or machine is often not enough. Or more to my point, the best way to do good has less to do with the technology, and more to do with what we do with it.
+- “The purpose of technology is to facilitate things. On the whole, I think, technology can deliver, but what it is asked to do is often not very great. “ – Neil Postman
+- “Let the chips fall where they may” – Tyler Durden
+- “I think the technical capabilities of technology are well ahead of the value concepts which we ask it to deliver. “ – Edward De Bono
+- “If you want to understand a new technology, ask yourself how it would be used in the hands of the criminal, the policeman, and the politician” – William Gibson
+- “With great power comes great responsibility” – SpiderMan
+- “Our technology has surpassed our humanity” – Einstein
+- Technopoly, Neil Postman. One of the most important books I’ve read in the last decade.
+- Why the future doesn’t need us, Bill Joy
+- Being Digital, Nicholas Negroponte. The founder of MITs media lab’s collection of essays on the future of technology.
+- The age of spiritual machines, Ray Kurzweil
+- OnlineEthics.org, Case Western Univerisity’s engineering ethics group.
+- Computer professionals for social responsibility, Tech-sector folks interested in the impacts of technology.
+- Benetech, a non-profit dedicated to using technology to help people.

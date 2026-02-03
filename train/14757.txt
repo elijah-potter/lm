@@ -1,0 +1,4 @@
+Processing: Cellular Automata
+A cellular automaton means a cell that changes its status according to its adjacent cells. Take the Conway's Game of Life rule as an example. If a cell is dead and three of its neighbors are alive, it jumps into life. If a cell is alive, it stays alive only if it has two or three living neighbors. This simple rule creates wonderful patterns of the cells.
+I made a cellular automata program with Processing. You can click here to fork the code. However I had some trouble with the github pages so it is temporarily not available to be previewed online. I'll have it fixed tomorrow.
+The cellular automata really shows the charm of maths.

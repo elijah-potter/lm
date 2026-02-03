@@ -1,0 +1,7 @@
+Bio-Generators produce electricity from bio fuel. The generator will produce 5.6 kJ from a single item, and has an internal storage capacity of 160 kJ. After this has been reached, the bio-generator can hold 24000 units of bio fuel to be processed later, which is equivalent to 240 items.
+22 pieces of wheat, 44 pieces of biofuel produced. (Wheat is the ideal item to be crushed)
+With speed boost: total of 6.5kJ used with 1kJ left in the machine, 5.5kJ used to produce bio fuel.
+5.5 / 22 = 0.275 kJ per wheat
+Without speed boost: total of 23kJ used with 1 kJ left in the machine, 22kJ used to produce bio fuel.
+22 / 22 = 1kJ per wheat
+1 bio fuel = 5.6kJ, therefore 44 * 5.6 = 246.5kJ produced 246.5 - 5.5 = 241 net kJ produced with speed boost 246.5 - 22 = 224.5 net kJ produced without speed boost 241 / 5.5 = 43.8 kJ produced per 1 kJ used 224.5 / 22 = 10.2 kJ produced per 1 kJ used

@@ -1,0 +1,16 @@
+VMware Workstation 4Features | Documentation | Knowledge Base | Discussion Forums
+With shared folders, you can easily share files among virtual machines and the host computer. To use shared folders, you must have the current version of VMware Tools installed in the guest operating system and you must use the Virtual Machine Control Panel to specify which directories are to be shared.
+You can use shared folders with virtual machines running the following guest operating systems:
+To set up one or more shared folders for a virtual machine, be sure the virtual machine is open in Workstation and click its tab to make it the active virtual machine. Go to Edit > Virtual Machine Settings > Options and click Shared folders.
+You can add one or more directories to the list. Those directories may be on the host computer or they may be network directories accessible from the host computer.
+In a Windows virtual machine, shared folders appear in My Network Places (Network Neighborhood in a Windows NT virtual machine) under VMware Shared Folders. For example, if you specify the name Test files for one of your shared folders, you can navigate to it by opening My Network Places > VMware Shared Folders > .host > Shared Folders > Test files.
+You can also go directly to the folder using the UNC path
+You can map a shared folder to a drive letter just as you would with a network share.
+Note: To see shared folders displayed in this way, you must update VMware Tools in the virtual machine to the current version. If your guest operating system has the version of VMware Tools that shipped with VMware Workstation 4.0, shared folders appear as folders on a designated drive letter.
+In a Linux virtual machine, shared folders appear under /mnt/hgfs. So the shared folder in this example would appear as /mnt/hgfs/Test files.
+To add a new shared folder to the list, click Add. On a Windows host, a wizard guides you through the process. On a Linux host, a dialog box appears. Enter the required information, then click OK.
+Provide the following information:
+To change the settings for a shared folder on the list, click the folder's name to highlight it, then click Properties. The Properties dialog box appears.
+Change any settings you wish, then click OK.
+Note: You can use shared folders to share any type of file. However, Windows shortcuts and Linux symbolic links do not work correctly if you try to use them via shared folders.
+Caution: Do not open a file in a shared folder from more than one application at a time. For example, you should not open the same file using an application on the host operating system and another application in the guest operating system. In some circumstances, doing so could cause data corruption in the file.

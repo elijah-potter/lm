@@ -1,0 +1,11 @@
+Inverse[m] gives the inverse of a square matrix m.
+Inverse works on both symbolic and numerical matrices.
+For matrices with approximate real or complex numbers, the inverse is generated to the maximum possible precision given the input. A warning is given for ill-conditioned matrices.
+Inverse[m, Modulus->n] evaluates the inverse modulo n.
+Inverse[m, ZeroTest -> test] evaluates test[ m[[i, j]] ] to determine whether matrix elements are zero. The default setting is ZeroTest -> (# == 0 &).
+A Method option can also be given. Possible settings are as for LinearSolve.
+See Section 1.8.3 and Section 3.7.6.
+Implementation Notes: see Section A.9.4 and Section A.9.4.
+See also: PseudoInverse, LinearSolve, RowReduce, NullSpace, LinearSolveFunction.
+Related package: LinearAlgebra`Tridiagonal`.
+New in Version 1; modified in 3.

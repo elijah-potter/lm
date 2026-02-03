@@ -1,0 +1,20 @@
+1.15.a Global unicast
+Global unicast IPv6 addresses are globally unique and routable addresses that are assigned by IANA/ICANN, its member agencies, and other registries or ISPs.
+Global unicast addresses begin with the hexadecimal digits 2 or 3.
+1.15.b Unique local
+Unique local addresses are unicast addresses similar to IPv4 private addresses. They are not globally unique or routable. They are useful if IPv6 NAT is being used or if traffic only needs to be routed locally.
+Uniqe local addresses being with the hexadecimal digits FD.
+1.15.c Link local
+Link local addresses are a special kind of local address used for overhead protocols and routing.
+Link local address are not routable (can not send be routed outside their current network), automatically generated and are commonly used as the next-hop address for IPv6 routes.
+Link local addresses being with the hexadecimal digits FE80.
+Multicast IPv6 addresses begin with the hexadecimal digits FF. IPv6 multicast addresses are commonly used in a similar way to IPv4 multicast addresses – routing protocols and other overhead protocols.
+1.15.e Modified EUI 64
+EUI-64 (extended unique identifier) is a way of auto generating the “host” part of a IPv6 address.
+This is done by the following steps:
+- Split the 12 hex digit MAC address into two halves.
+- Insert FFFE in between the two.
+- Invert the seventh bit of the interface ID.
+Stateless Address Autoconfiguration (SLAAC) allows for the autoconfiguration of an IPv6 address.
+This is achieved using ICMPv6 RS and RA messages after generating a Link Local address. Routers respond to a Router Solicitation (RS) message with a Router Advertisment (RA) message advertising the prefix(es) being used. EUI-64 is then use to generate an IPv6 address.
+Anycast IPv6 addresses are IPv6 unicast addresses that have been assigned to multiple nodes. IPv6 packets sent to a anycast address are forwarded to the nearest anycast address (as determined by a routing protocol).

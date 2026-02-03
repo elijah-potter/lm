@@ -1,0 +1,17 @@
+Thursday, May 25, 2017
+All you need to know about IFSC and MICR
+MICR code is a code printed using MICR (Magnetic Ink Character Recognition technology) on cheques to enable identification the cheques.
+What is IFSC?
+IFSC stands for Indian Financial System Code. It is a 11-digit alpha-numeric code that uniquely identifies a bank branch participating in any RBI regulated funds transfer system. The IFSC code helps to transfer money using RTGS, NEFT or IMPS method.
+The first 4 digits of the IFSC represent the bank and last 6 characters represent the branch. The 5th character is zero.
+What is MICR?
+MICR is an acronym for Magnetic Ink Character Recognition which is a technology used in the banking industry in printing the MICR codes.
+A MICR code is a 9-digit code that uniquely identifies a bank and a branch participating in an Electronic Clearing System (ECS). The first 3 digit of the code represents the city code, the middle ones represent the bank code and last 3 represents the branch code. One can locate the MICR code at the bottom of a cheque leaf, next to the cheque number. It is also normally printed on the first page of a bank savings account passbook.
+What is the use of MICR Code?
+MICR Code is used in the processing of cheques by machines. This code enables faster processing of cheques. One is required to mention the MICR code while filing up various financial transaction forms such as s investment forms or SIP form or forms for transfer of funds etc.
+What is cheque number?
+A cheque number is a 6-digit number uniquely assigned to each cheque leaf. It is written on the left-hand side at the bottom of the cheque. It is advisable to check i.e. count and check the number on each cheque leaf in a new cheque book when you receive it from the bank. This is to ensure that no cheque is missing from the cheque book.
+Ideally, you should record the transaction you have used each cheque leaf for in the transaction record slip attached at the start or end of a cheque book. In this record, you should mention the cheque number, date of cheque, amount and payee.
+Where is the MICR number on a cheque?
+A MICR number on the cheque is written at the bottom of the cheque, on the right-hand side of the cheque number.
+Source:-The Economic Times

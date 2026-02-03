@@ -1,0 +1,26 @@
+Knowledge Base - Technical Articles
+HowTo: Create a custom projection file with units of feet or meters in ArcMap
+|Software:||ArcGIS - ArcEditor 8.3, 9.0, 9.1, 9.2, 9.3, 9.3.1 ArcGIS - ArcInfo 9.0, 8.3, 9.1, 9.2, 9.3, 9.3.1 ArcGIS - ArcView 8.3, 9.0, 9.1, 9.2, 9.3, 9.3.1|
+Instructions provided describe how to create a custom projection file for a projected coordinate system, using linear units in feet or meters, with the tools available in ArcMap.
+- Start ArcMap with a new, empty map, and add the data that was created in the custom projected coordinate system.
+- Navigate to View > Data Frame Properties > Coordinate System tab, and click on the New button > Projected Coordinate System ...
+- In the top box on the New Projected Coordinate System dialog box, name the new system. The name cannot contain spaces, but can include underscores (_). This name is used for the .prj file name.
+The name entered here should not include the .PRJ extension.The projection parameters for the custom projection file must be obtained from the data source. Refer to Item 6 in the knowledge base article titled, "Projection Basics: What the GIS professional needs to know". A link to this article is included in the Related Information section below.
+- Select the appropriate Projection from the drop-down list, and enter the values for the required parameters for that specific projection.The projection engine in ArcGIS Desktop calculates values to fifteen or sixteen significant digits. It is important to retain the decimal point in the values. If the numeric value is a repeating decimal, like .3333, extend the value to make up the required number of significant digits.
+For example, if the False Easting for the custom projection is 3280833.3333 US survey feet, enter:
+- Click on the Select button to select a Geographic Coordinate System (GCS) for the custom projected coordinate system. To select a suitable geographic coordinate system for the area of interest, see the link Related Information section for more information on what GCS and datum should be used for the data.
+Click OK on the Browse for a Coordinate System dialog box. Click OK again on the New Projected Coordinate System dialog box.
+- On the Data Frame Properties > Coordinate System tab, click the Add to Favorites button. This writes a copy of the custom projection file to disk. The custom projection file is listed in the 'Favorites' folder on the Coordinate system tab.The actual location of this 'Favorites' directory is C:\Documents and Setting\<user_name>\Application Data\ESRI\ArcMap\Coordinate Systems.
+To make the new, custom projection file easily available for defining coordinate systems and projecting data in ArcToolBox, copy the custom projection file from that folder. Make a new folder in C:\Program Files\ArcGIS\Coordinate Systems. Name the new folder 'Custom PRJ Files'. Paste the custom projection file into that folder. This makes the custom projection file more accessible in ArcGIS Desktop, and also insures against loss of the file.
+- Click Apply and OK on the Data Frame Properties dialog box. The new custom projected coordinate system is assigned to the current ArcMap document.
+- Add data to the map document, which is in a standard coordinate system, such as State Plane or UTM, or in a geographic coordinate system that:
+A. has the coordinate system defined, and
+B. is geographically located in the same area as the data in the custom coordinate system.
+If the datasets line up, the custom projection file has been created correctly.
+- Use the custom projection file to define the coordinate system for the data created in the custom coordinate system, by using the Define Projection Tool in ArcToolBox > Data Management Tools > Projections and Transformations.
+- Projection Basics: What the GIS professional needs to know
+The following concepts are fundamental to understanding the use of map projections in ArcGIS. 1. Coordinate systems, also known as map projections, are arbitrary designations for spatial data. Their purpose is to provide a common basis for comm...
+- What geographic coordinate system or datum should be used for my data?
+To determine which Geographic Coordinate System datum to use for data, select the appropriate Geographic Coordinate Systems by Area of Use link in the Related Information section below. This document lists Geographic Coordinate Systems (GCS) s...
+Last Modified: 5/3/2011
+- Select the appropriate Projection from the drop-down list, and enter the values for the required parameters for that specific projection.

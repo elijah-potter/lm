@@ -1,0 +1,41 @@
+Using the command line is the quickest and easiest way to make magic happen in the world of Linux. The “passwd” utility is what gives us the opportunity to change and manage passwords for all users of your system. In this guide, we will explain to you how to change user password on Linux in several simple steps.
+Change Your Password via the Command Line
+If you need to change your password for security or other reasons, you can do so with this basic command:
+As soon as you hit enter, the system will prompt you to enter the password you are currently using. Once you verify the account, you can type in a new password.
+Change Passwords of Other Linux Users on Your System
+When it comes to changing the access code of other users, you will need to expand the above command. Things that you should add are the superuser permission and the nick of the user whose access code you are modifying.
+sudo passwd XYZ
+Substitute “XYZ” with the username of the account whose password you want to change. The screen will prompt you to enter a new password without asking you to type the current one first.
+Lock a Password on Linux
+You can also use the command line to lock a password on your Linux system. The crucial thing to mention is that this won’t lock the entire account, which means the user will still be able to access by using SSH keys and other alternative methods.
+The key to locking a password lies in the “-1” option.
+sudo passwd -1 XYZ
+Once again, the XYZ marks a username while the “-1” issues the command of locking the access code.
+If you want to unlock it, go with the “-u” function.
+sudo passwd -u XYZ
+Set a Password Expiration Date
+We rarely change our passwords, which makes us more vulnerable to hacker attacks. If you want to increase the security of your system to the next level, you should prevent stale passwords. Linux allows you to set an expiration date on a password.
+You should consider using this security measure on systems that have a large number of users. That way you can make everyone to keep their access codes fresh and decrease the risk of a breach.
+Here is the command to use for setting an expiration date on a password.
+sudo passwd -x 60 XYZ
+Using the “-x” flag in the above line will make a particular “XYZ” user’s access code to expire after 60 days. Once that timeline expires, they will have to set a new password.
+You can also issue a command to warn them ahead of expiry.
+sudo passwd -w 10 XYZ
+We used the “-w” function here and commanded to the system to warn the user 10 days before their password expires.
+If you are worried about an issue with a particular password, you can also make it expire instantly. Use the following command:
+sudo passwd -e XYZ
+After entering the above line, you will make the “XYZ” user set a new password on their next login.
+Set an Empty Password
+Before we share the command for setting an empty password, allow us to pinpoint that this is not exactly a safe move. You should only consider this option when you have machines that you trust 100% and are certain that they do not require access code security.
+You can set a blank password by entering:
+sudo passwd -d XYZ
+The next time the “XYZ” user logs into the system, their password will be blank.
+Lock Access to Root Account
+If the previous command was unsafe, this one is used to add an extra layer of safety. You can consider locking access to the root account if you suspect that the security of the system is threatened in any way.
+Here is what you should type:
+sudo passwd -1 root
+Keep in mind that, once you issue this command, only the superuser permission will be able to manage the system.
+Learn More about the Passwd Command
+That completes our guide on the basics of using the “passwd” command and how to change user password in Linux. Remember, you can always use the “man passwd” line to discover additional information about the function.
+If you are a fan of using Python programming language, you can make your life easier by using Python Pip. It is a package management utility that allows you to install and manage Python software packages easily. Ubuntu doesn’t come with pre-installed Pip, but here…
+If you are looking for a convenient way to manage Java applications on Ubuntu, the solution may lie in the IntelliJ IDEA development platform. An excellent advantage of this option is that it is relatively suitable for beginners, but experienced users will also find it…

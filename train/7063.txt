@@ -1,0 +1,5 @@
+The smtplib module
+This module provides a Simple Mail Transfer Protocol (SMTP) client implementation. This protocol is used to send mail through Unix mailservers.
+# File: smtplib-example-1.py import smtplib import string, sys HOST = "localhost" FROM = "firstname.lastname@example.org" TO = "email@example.com" SUBJECT = "for your information!" BODY = "next week: how to fling an otter" body = string.join(( "From: %s" % FROM, "To: %s" % TO, "Subject: %s" % SUBJECT, "", BODY), "\r\n") print body server = smtplib.SMTP(HOST) server.sendmail(FROM, [TO], body) server.quit()
+From: firstname.lastname@example.org To: email@example.com Subject: for your information! next week: how to fling an otter
+Note that the From and To headers in the message body are ignored by the SMTP layer; they’re (usually) displayed by the receiver’s mail client, but the SMTP layer uses the arguments passed to sendmail to control message routing. Also note that the second argument must be a list or other sequence; you can pass in multiple addresses to send the same message to more than one receiver.

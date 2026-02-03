@@ -1,0 +1,15 @@
+An NS record is a DNS record that lists an authoritative name server for a domain. A domain name can have multiple NS records. For example, the dnscheck.co domain has two NS records pointing to the guy.ns.cloudflare.com and chan.ns.cloudflare.com name servers.
+NS records are also called "name server records" and "nameserver records". "Name servers" are also called "DNS servers".
+NS records are defined in RFC 1035.
+DNS Check can monitor your NS records, and notify you if they become unresolvable, or start pointing to the wrong name servers.
+Here are the fields that make up an NS record:
+|Name||A fully qualified domain name (FQDN).||dnscheck.co.|
+|Type||The DNS record type. Always set to "NS".||NS|
+|Value||The fully qualified domain name (FQDN) of an authoritative name server for the domain specified in the Name field.||guy.ns.cloudflare.com.|
+DNS Zone File Examples
+Here's an example of how NS records look in a DNS zone file:
+; Name Type Value dnscheck.co. NS guy.ns.cloudflare.com. dnscheck.co. NS chan.ns.cloudflare.com.
+The Name ends in a period in the above example, so it's a fully qualified domain name.
+Alternatively, you can create an NS record that's relative to the zone file's $ORIGIN. Here's an example of how to do this to create DNS records that are equivalent to what's shown in the previous example:
+$ORIGIN dnscheck.co. ; Name Type Value @ NS guy.ns.cloudflare.com. @ NS chan.ns.cloudflare.com.
+- RFC 1035 - this RFC defines NS records.

@@ -1,0 +1,7 @@
+I work operating medical devices, and when I was reading the user manual I saw a warning:
+Per FCC regulations, maintain a distance of at least 7.8 inches/20 cm between the Radio Card on the unit and a human body.
+What does it mean? I work with many units all day and it kind of scares me after reading this warning. The wireless is enabled but it is never in use.
+It contains a signal booster or transmitter which can emit a few Watts of radio energy. The FCC has two classes of devices, portable and mobile. Your device is considered mobile, not portable.
+>[Portable devices are normally those used within 20 centimeters of the body and must be evaluated with respect to SAR limits. Mobile
+devices are normally used 20 centimeters or more away from the body and can be evaluated in terms of either SAR or field intensity. ](https://transition.fcc.gov/Bureaus/Engineering_Technology/Documents/bulletins/oet56/oet56e4.pdf)
+This only explains the 20 cm specification. You’ll be fine as long as you don’t stick your head right next to the radio card.

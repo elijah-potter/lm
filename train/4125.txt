@@ -1,0 +1,6 @@
+HAL stands for Hardware Abstraction Layer and provides a quick and simple way to change pinouts in software and perform basic (and not so basic) "glue logic" functions in RealTime. HAL was designed for the engineer performing basic machine calibration and the system integrator connecting various inputs and outputs such as switches, encoders, servos, and safety checks.
+Begin by reading the "Hal for Integrators" document at http://www.linuxcnc.org/docs/HAL_User_Manual.pdf
+There is also a configuration assistant that you can start with. It's name is halconfig.tcl and it can be run by issuing the command
+tcl/bin/halconfig.tclfrom your emc2 directory, or by selecting "halconfig" from the menu in your graphical interface, for example AXIS.
+Read more about halconfig if you like.
+Then proceed to more advanced topics such as:

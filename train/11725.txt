@@ -1,0 +1,29 @@
+Do you need a course in multiple languages? Storyline 360's translation features can help with that.
+- Export the Original Text
+- Translate the Exported Text
+- Import the Translated Text
+- Localize the Storyline Player
+First, export a copy of the text from your Storyline project:
+- Go to the File tab on the Storyline ribbon, scroll to Translation, and select Export.
+- Browse to a location on your computer where you'd like to save the exported text.
+- Give your document a file name.
+- Use the Save as type drop-down list to select one of the following formats:
+- Word Document (*.doc): If you’re translating the text manually, this is probably your best option.
+- Word Document with Reference Column (*.doc): This is the same document as above with an additional column, so you can always see the text in its original language.
+- XML Localization Interchange File Format (*.xliff): If you’re using a translation service or computer program, you may find this file format more useful. Check with your translator for their requirements.
+- Click Save.
+After exporting the text from your course, use the resulting Word document or XML file to translate it into other languages. You can use professional translators, an online translation service, or a computer program.
+Here are some important things to remember when translating content:
+- Only modify text in the column titled Translate this column. Leave all other text unchanged.
+- Don’t translate result slide variable references, such %Results.ScorePoints%.
+- If you change the text formatting in any way (font, size, color, style, alignment, etc.), those changes will also be reflected in your course when you import the file back into Storyline.
+- Closed captions can't be translated using this process. They'll need to be translated separately and imported back into Storyline.
+- Trigger conditions can’t be translated using this process. They’ll need to be translated manually in Storyline.
+- Variable names can’t be translated using this process. (Variable values can be translated, just not their names.) As a result, you shouldn’t translate variable references in the exported file unless you also plan to translate the variable names manually in Storyline. Otherwise, translated variable references won’t match their corresponding variable names.
+When the translation is ready, import the Word document or XML file back into Storyline:
+- Create a copy of your original project file to contain the new language and open it in Storyline.
+- Go to the File tab on the Storyline ribbon, scroll to Translation, and select Import.
+- Browse to the Word document or XML file that contains the translated text and click Open.
+- When you see the congratulations message, click OK.
+- Review the imported text to be sure it fits properly in your course and make adjustments as necessary. Some languages use longer words and phrases, so you may need to allow more room for the expanded text or reduce the font size.
+While the translation feature in Storyline lets you modify the slide content, you may also want to customize the player's text labels. Text labels let you localize buttons, messages, and other player elements for different languages.

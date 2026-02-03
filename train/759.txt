@@ -1,0 +1,12 @@
+Forget the batteries for a second, thats just one of a thousand analogies you could use to describe voltage/current and the reason that no current flows has nothing to do with the electro-chemical properties of batteries, its far simpler.
+The easiest way to think of it is this: Current will only ever flow in a loop, even in very complex circuits you can always break it down into loops of current, if there is no path for current to return to its source, there will be no current flow.
+In your battery example, there is no return current path so no current will flow. There is obviously a more deep physics reason for why this works but as the question asked for a simple answer I'll skip the math, google Maxwell's Equations and how they are used in the derivation of Kirchhoff's voltage law.
+Batteries do make a good example for this simply because they are current sources with completely isolated grounds. This example would be equally true of any other power source with a completely isolated "ground".
+However, this is not an easy thing to find, for instance doing this with 2 bench supplies would likely make one of the bench supplies very unhappy, but thats not because the effect is different, the difference is that the bench supplies are likely both grounded to the electrical wiring in the building and as such there is a return path for current to flow through.
+The water analogy for this also effective. Think of your battery example this way:
+You have a water pump (battery A) connected to a pipe (the wire), and you have another water pump (battery B) connected to the same pipe (the wire) . Now in your example the there is no return path in the system so imagine that the pipe is full of water but capped off on both ends.
+You hit the power switch on the pumps, what happens?
+The answer is nothing, there is no where to move the water to, the pumps don't even spin. (ignore water turbulence like effects for this analogy).
+Now if you were to connect the pipe in a loop and hit the switch the pumps would spin up (voltage) and water would flow (current).
+If you used 2 difference speed pumps (different voltage batteries) and faced them toward each other one will over power and cause the other to spin in the wrong direction (burn out just like connecting a 9V and 6V battery in parallel).
+If you connected both pumps pointing in the same direction you would get more water pressure (voltage) because the pumps are helping each other out (2 batteries in series).

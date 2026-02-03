@@ -1,0 +1,4 @@
+The following videos serve as an introduction to using OrcaFlex (an OrcaFlex Tutorial) as a tool for static and dynamic mooring analysis of a pontoon barge system in a mild environment in relatively shallow (64 feet) water depth in a bay.
+A quick explanation of modeling simple multi-component mooring lines is given. It is also explained how pontoons can be modeled with pipe elements permitting hydrodynamic motion response to be simulated in the time domain using Morison Equation analysis entirely within OrcaFlex.
+Hydrodynamic analysis results are shown for critical mooring line tensions using both static and dynamic mooring analysis options. Wind loads, current loads and wave loads are applied progressively to demonstrate the relative importance of each load component.
+The comparison of static and dynamic mooring line loads is seen in the above OrcaFlex Tutorial videos produced by Stewart Technology Associates. www.stewart-usa.com

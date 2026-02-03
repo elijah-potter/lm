@@ -1,0 +1,9 @@
+This is a MLDesigner/SatLab model of an Earth Orbiting Satellite. The satellite carries a payload of instruments that collect and store data, then download it on command to ground stations. The satellite is power by batteries that are recharged by a solar array.
+One set of parameters define the operational environment--satellite orbital details, date and time, ground station positions etc. A second set of parameters define the satellite environment—power consumption settings (on, off, standby, operational), Low and high transmit energy consumption, memory power requirements, charge and discharge values, solar panel angles and solar flux, data fame size, memory size, etc.
+The model simulates the operation of the satellite (collecting data when over land , storing it in memory, and transmitting it on request.) It also simulates the operation of the power system as it provides power for data collection, storage and transmission and is recharged when the solar panels face the sun. The model links to SatLab which generates the orbit and provides positional information to MLDesigner.
+The top level model consists of an environmental model and a satellite model.
+The environmental model defines the operational environment for the system.
+The top-level satellite model consists of an instrument system, a control system, a transmission system, and a power system.
+The instruments are connected to memory through a data bus. Data from the instruments is transferred through the data bus to memory until it can be transmitted to ground stations.
+The power system consists of solar panels that feed a power controller.
+When ground stations are in view, the satellite transmits data stored in memory to the ground station.

@@ -1,0 +1,10 @@
+When you see a two‐dimensional expression on the screen, you can edit it much as you would edit text. You can for example place your cursor somewhere and start typing. Or you can select a part of the expression, then remove it using the Delete key, or insert a new version by typing it in.
+|Ctrl+.||select the next larger subexpression|
+|Ctrl+Space||move to the right of the current structure|
+|→||move to the next character|
+|←||move to the previous character|
+|Null||evaluate the whole current cell|
+Shift+Ctrl+Enter (Windows/Unix/Linux) or Cmd+Return (Mac OS X)
+|evaluate only the selected subexpression|
+In most computations, you will want to go from one step to the next by taking the whole expression that you have generated, and then evaluating it. But if for example you are trying to manipulate a single formula to put it into a particular form, you may instead find it more convenient to perform a sequence of operations separately on different parts of the expression.
+The Basic Commands ▶ y=x tab in the Basic Math Assistant, Classroom Assistant, and Writing Assistant palettes also provides a number of convenient operations which will transform in place any selected subexpression.

@@ -1,0 +1,57 @@
+Many eukaryotic proteins that are known or supposed to bind single-stranded
+RNA contain one or more copies of a putative RNA-binding domain of about 90
+amino acids [1,2]. This domain is known as the RNA recognition motif (RRM).
+This region has been found in the following proteins:
+** Heterogeneous nuclear ribonucleoproteins **
+- hnRNP A1 (helix destabilizing protein) (twice).
+- hnRNP A2/B1 (twice).
+- hnRNP C (C1/C2) (once).
+- hnRNP E (UP2) (at least once).
+- hnRNP G (once).
+** Small nuclear ribonucleoproteins **
+- U1 snRNP 70 Kd (once).
+- U1 snRNP A (once).
+- U2 snRNP B'' (once).
+** Pre-RNA and mRNA associated proteins **
+- Protein synthesis initiation factor 4B (eIF-4B) , a protein essential
+for the binding of mRNA to ribosomes (once).
+- Nucleolin (4 times).
+- Yeast single-stranded nucleic acid-binding protein (gene SSB1) (once).
+- Yeast protein NSR1 (twice). NSR1 is involved in pre-rRNA processing; it
+specifically binds nuclear localization sequences.
+- Poly(A) binding protein (PABP) (4 times).
+** Others **
+- Drosophila sex determination protein Sex-lethal (Sxl) (twice).
+- Drosophila sex determination protein Transformer-2 (Tra-2) (once).
+- Drosophila 'elav' protein (3 times), which is probably involved in the RNA
+metabolism of neurons.
+- Human paraneoplastic encephalomyelitis antigen HuD (3 times) , which is
+highly similar to elav and which may play a role in neuron-specific RNA
+- Drosophila 'bicoid' protein (once) , a segment-polarity homeobox protein
+that may also bind to specific mRNAs.
+- La antigen (once), a protein which may play a role in the transcription of
+RNA polymerase III.
+- The 60 Kd Ro protein (once), a putative RNP complex protein.
+- A maize protein induced by abscisic acid in response to water stress, which
+seems to be a RNA-binding protein.
+- Three tobacco proteins, located in the chloroplast , which may be
+involved in splicing and/or processing of chloroplast RNAs (twice).
+- X16 , a mammalian protein which may be involved in RNA processing in
+relation with cellular proliferation and/or maturation.
+- Insulin-induced growth response protein Cl-4 from rat (twice).
+- Nucleolysins TIA-1 and TIAR (3 times)  which possesses nucleolytic
+activity against cytotoxic lymphocyte target cells. may be involved in
+- Yeast RNA15 protein, which plays a role in mRNA stability and/or poly-(A)
+tail length .
+Inside the RRM there are two regions which are highly conserved. The first one
+is a hydrophobic segment of six residues (which is called the RNP-2 motif),
+the second one is an octapeptide motif (which is called RNP-1 or RNP-CS). The
+position of both motifs in the domain is shown in the following schematic
+Minvielle-Sebastia L., Winsor B., Bonneaud N., Lacroute F.
+Mol. Cell. Biol. 11:3075-3087(1991).
+PROSITE is copyright. It is produced by the SIB Swiss Institute
+Bioinformatics. There are no restrictions on its use by non-profit
+institutions as long as its content is in no way modified. Usage by and
+for commercial entities requires a license agreement. For information
+about the licensing scheme send an email to
+or see: prosite_license.html.

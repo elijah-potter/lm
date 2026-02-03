@@ -1,0 +1,5 @@
+4.3 Given a scenario, write code that makes appropriate use of object locking to protect static or instance variables from concurrent access problems.
+The following code demonstrates what happens when two different threads are accessing the same account data. Imagine that two people each have a checkbook for a single checking account (or two people each have ATM cards, but both cards are linked to only one account).
+Prevent "race condition" by using synchronized
+Prevent “race condition,” where multiple threads can access the same resource (typically an object’s instance variables), and can produce corrupted data if one thread “races in” too quickly before an operation that should be “atomic” has completed.
+makeWithdrawal is synchronized.

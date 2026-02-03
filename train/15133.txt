@@ -1,0 +1,40 @@
+The analogy between electric and magnetic circuits [Sad, p.348, Table 8.4].
+Remark. The analogy provides a short cut to
+convince us that [Sad, p.285, (7.41)] is true. Please compare [Sad, p.285, l.9-l.12] with [Sad, p.285, l.-8-p.286, l.-1].
+Analogy is a natural way to raise the level of generalization.
+Example. Let us consider the right-hand side of the equality in [Lan2, p.100, l.-7]. Compare the first term with the second one.
+For the analogy between two theories, we would like to list their analogues as completely as possible.
+More importantly, we must search for the key idea behind the analogy.
+In other words, we must find a device (e.g., wave packets, the Lorentz transformation) that can
+establish a mathematical relationship between the equations of motion of the two theories.
+Through the key idea, we can easily understand, formulate, and deduce the rest of
+their analogues. We can also identify the cause that leads to the confusion (e.g., particles vs. waves;
+electric fields vs. magnetic fields).
+The key idea behind the analogy between
+geometrical optics and classical mechanics: [Lan2, p.130, l.-10-p.131,
+the wave vector of a wave and the momentum of a particle: [Lan2, p.131, l.12-l.24].
+electric fields and magnetic fields: [Lan2, pp.62-63,
+Maupertuis's principle and Fermat's principle: the calculus of variations
+Remark. Special relativity searches for the mathematical foundation behind the analogy between electric fields and magnetic fields. Quantum mechanics searches for the mathematical foundation behind the analogy between particles and waves
+[Hec, p.36, l.c., l.-9-r.c., l.2]. It can be said that
+the development of each of these theories was initiated by the analogy and
+reached maturity with the successful explanation of the analogy.
+The limit of an analogy [Dit, pp.2-3. §1.4].
+The analogy between a LC circuit and a mass-spring system.
+The qualitative point of view (compare [Hall, p.625, Fig. 35-1] with [Hall, p.115, Fig.8-4])
+® the quantitative point of view (see [Hall, p.627, Table 35-1] and compare [Hall, p.628, (35-5) with [Hall, p.628, [14-6]).
+Suppose two theories A and B are similar. If a property is physical ly
+obvious in Theory A, but the corresponding property in Theory B may be difficult
+to recognize, then we may use the physical property of Theory A as a guide to
+establish the corresponding property of Theory B.
+Example [Hoo, p.103, l.-4-p.104, l.7]. Theory A =
+Lattice vibration waves. Theory B = Near free electron theory. Physical property
+= (The group velocity dw/dk vanishes at k=±p/a)
+[Hoo, p.38, Fig. 2.4].
+How a free energy in thermodynamics behaves like a potential energy
+For a reversible process, work can be stored in the form of free
+energy and can be
+recovered completely [Reic, p.40, l.5-l.6].
+An equilibrium state is a state of minimum free energy [Reic, p.40, l.12-l.13].
+If the system does not do work in a process, then either the free energy does not change (reversible process) or
+it decreases (spontaneous process).

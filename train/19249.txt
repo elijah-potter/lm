@@ -1,0 +1,14 @@
+Modelling and Simulation
+Modeling and simulation of Nano-scale devices and van der Waals materials
+- Development of the quantum transport code GOLLUM.
+- Analysis of the Quantum Electronics Transport and of the Optical properties of graphene and other van der Waals materials and devices.
+- Molecular Electronics and Spintronics.
+- Ab-initio-based High-throughput screening of new materials.
+Schematics of a graphene-bilayer nanopore device designed for DNA sequencing. Each nucleobase gates the pore differently while translocating it. This gating modifies the current traversing the bilayer. We find that the gating effect is strong enough to enable the unambiguous identification of each nucleobase as shown in the inset.
+A graphene sheet can be teared apart and each of the two sheets can be brought together again and be made to slide onto each other. An electronic quantum state arises in the overlapping region. The state oscillates as the sheets slide therefore changing the width of the overlap region, similar to the familiar Fabry-Perot interferences commonly seen in Optics. The long mean free path of electrons in graphene enables us to see the quantum state even at room temperature.
+Irregularities at the edge of a graphene nanogap can induce localized spin-polarized states that give rise to fully spin-polarized currents even at Room-Temperature. The plot shows how those spin-polarized states give rise to peaks in the differential conductance as the voltage is swept
+Modeling and simulation of magnetic and optical properties of matter
+- Simulation of the magnetic hysteresis of thin films and multilayers.
+- Modeling of the dynamic properties of magnetic nanostructures.
+- Analysis of the light-matter interaction in 2D materials at the nanoscale.
+- Modeling of optical images of magnetic nanostructures obtained with Scanning Probes Microscopes (SPM).

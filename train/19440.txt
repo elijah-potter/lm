@@ -1,0 +1,37 @@
+There has been many questions about how much it costs to run a home computer 24/7 and if a VPS would be cheaper or more expensive.
+There is a lot of people giving their opinion, however there is nothing compared to scientific proof of the fact that a VPS is cheaper.
+I will prove this logically and mathematically:
+I will start by explaining the simple principles of Electricity and the power used.
+As we all know, electrical components consume power (va), one Watt of Electricity is also known as 1va. Calculating the voltage in a component and multiply it by the current used amount arrives at this figure.
+Component A has a supply rated at 12V (Vn) and measurement shows it draws about 4.5A (In) from the electricty supply. To figure out the power rating of the circuit you simply multiply the Voltage by the Current therefore..
+P = Vn * In = 12 * 4.5 = 54 watts or 54va
+Now that we understand that part, there is one important point to make at this stage. If you change the Voltage, you will also change the current drawn from the circuit, however the power will remain the same at 54va.
+P = Vn * In = 200 * 0.27 = 54 watts or 54 va.
+If you are thinking about the 0.27, then that is the current drawn from the circuit. As I said, the power must remain constant for the circuit, so by increasing the voltage you are reducing the load taken from the circuit.
+If you have any doubts about this then do the calculation in reverse.
+Calculation in reverse:
+In = P / V = 0.27A
+Now that you understand that, I will get to the cost of running a home computer 24/7:
+Your computer has a 650W (650Va) PSU (the power supply Unit at the back of your computer) and runs at 120V, therefore it will draw some 5A from the supply. Most computers have a 650 Watt power unit (the exception being servers that have 900 W or more PSU’s)
+Now remember the examples above I mentioned?
+650 / 120 = 5.41 where
+650 is the maximum power of the PSU
+120 is your electricity supply Voltage.
+There are things inherent in all electrical circuits that have a bearing on the actual power used and these are called losses.
+They occur due to electrical circuits being far from perfect and take the many forms. The average domistic PSU in a computer will operate at about 80% efficiency due to the nature of the circuits employed. This means that for the PSU to deliver 650W (va) as rated then it will actually draw about 520W (520va).
+Now we have that information, we can begin to look at a more accurate cost running calculation:
+Your PSU, as I have shown above, uses 650W (va) of electrical energy from the supply. Therefore to do the cost calculation is rather simple.
+Power used at maximum (Pmax) = 520va
+So now calculate the total power used in 24 hours,
+P(max) * 24hrs = 520 * 24 = 12480va or 12480W (12.48Kva or 12.48Kw)
+If you pay, for example, 32 cents for each unit of electricity, then your cost of running the computer is :
+12.48 * 32 = $3.39c per day
+If you wish to know the monthly cost, then calculate as follows:
+12.48 * 7 * 4.3 = 375.648c or $37.56 per Calendar month.
+The 4.3 in the above equation is the multiplier required to calculate any figure on a calendar month basis.
+Therefore if you used a home computer running 24/7 you pay $37.56 in electricity bills, or you can pay $35 for a VPS.
+The power supply in the USA is 120 V
+The power supply in most of Europe is 240 V
+So calculations will need redoing for Europe voltages
+1 thought on “Mathematic Proof of a VPS being cheaper than a home computer”
+Comments are closed.

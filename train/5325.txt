@@ -1,0 +1,7 @@
+Test interface for browsers to be standardised
+The first draft of the WebDriver API has been delivered by the World Wide Web Consortium (W3C), offering an interface to control browsers remotely. This functionality is used primarily for automated testing of web applications.
+The WebDriver API is very similar to the interface of the same name in the free test framework Selenium 2. At the core of the design is the
+WebElement, a DOM object that the function
+findElement() returns. It expects a
+Locator, composed of two strings specifying a strategy that should be used to locate elements and a value to pass to this strategy. This API call therefore allows elements to be located by things such as XPath, ID, CSS selector or link text.
+It is complemented by other methods which allow you to read and set various attributes of WebElements. Information about which strings fill text boxes, which buttons triggered a click and the actual selection of a

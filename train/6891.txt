@@ -1,0 +1,7 @@
+Back Navigation allows the user to travel one level up in the information hierarchy.
+Appearance & Behavior
+There are two styles of back navigation:
+- Use a text link when navigating to a detail view, or one level deeper in the information architecture. The link label should match the linked page’s name.
+- Use a back button when navigating within a flow (in a trowser). On a sticky footer, the back button would use a secondary button style.
+- Keep the label simple, either a plain “Back” or start with “Back to” (e.g., “Back to Invoice”).
+- Place the back button to the left of the “next” or “save” button.

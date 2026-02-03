@@ -1,0 +1,13 @@
+Wiring up a Tortoise motor is best done in two stages.
+Start by wiring up a DPDT switch which will control the direction of the motor.
+Connect a power supply to C and D
+Connect F and A plus a feed to the point motor.
+Connect E and B plus a feed to the point motor.
+Next, wire the tortoise itself. The Tortoise has 8 terminals.
+Connect the wires from terminals A and B of the DPDT switch to terminals 1 and 8 on the motor.
+Connect wires from a track feed to terminals 4 and 5. Best done with a terminal block in between in order to reverse the polarity if necessary.
+Connect wires from terminals 2 and 7, join them and make 2 connections at the insulated V crossing.
+Switch on the power to the DPDT switch and check the operation of the point motor.
+The V crossing must be electrically bonded as one unit between the insulated joins. If not additional wiring will be need to make it such.
+With a multimeter check that the polarity at the crossing is correct depending on the set of the turnout. If not, then reverse wires at terminals 4 and 5.
+Do a final check and make sure there are no shorts.

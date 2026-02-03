@@ -1,0 +1,6 @@
+The Optics Jones program displays a traveling electromagnetic wave. The default electromagnetic wave is right-circularly polarized but this polarization can be changed by specifying the components of the wave's Jones vector using the input fields.
+Jones is an Open Source Physics program written for the teaching of optics. It is distributed as a ready-to-run (compiled) Java archive. Double clicking the optics_jones.jar file will run the program if Java is installed. Other optics programs are also available. They can be found by searching ComPADRE for Open Source Physics, OSP, or Optics.
+Please note that this resource requires
+at least version 1.5 of
+%0 Computer Program %A Simov, Kiril %A Christian, Wolfgang %D May 1, 2008 %T Jones Program %7 1.0 %8 May 1, 2008 %U http://www.compadre.org/Repository/document/ServeFile.cfm?ID=7179&DocID=363
+Disclaimer: ComPADRE offers citation styles as a guide only. We cannot offer interpretations about citations as this is an automated procedure. Please refer to the style manuals in the Citation Source Information area for clarifications.

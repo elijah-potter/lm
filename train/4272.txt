@@ -1,0 +1,18 @@
+Evaluate an expression.
+Syntax Eval (StringExpr) Key StringExpr Any expression that returns a string or a number.
+The argument stringexpr must be an expression that is stored in a string. If you pass to the Eval function a string that doesn't contain a numeric expression or a function name but only a simple text string, a run-time error occurs. For example, Eval("Smith") results in an error.
+Eval("1 + 1") returns 2.
+Eval("1=2") returns False (-1)
+Eval("5 * 10") returns 50
+strResult = Eval("MY_Function()")
+MsgBox strResult 'displays the result of the function
+Dim strName As String
+strName = "Forms!frmPatients!txtPatientsName"
+' Returns the patients name,
+' i.e. the same as Msgbox Me!txtPatientsName
+In general, if there is a more direct way of evaluating an expression without using Eval() you should use it.
+“More people are killed every year by pigs than by sharks, which shows you how good we are at evaluating risk” ~ Bruce Schneier
+Access Form References - Evaluating references to controls on forms and subforms.
+Nz - Detect a NULL value.
+© Copyright SS64.com 1999-2013
+Some rights reserved

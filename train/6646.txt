@@ -1,0 +1,23 @@
+In this tutorial, i will be making a mini portable fridge using a PELTIER module beetting started one should know about the thermoelectric effect. The thermoelectric effect is the conversion of electrical energy into heat energy and vice versa, this is also called seeback effect.
+In this project i have used a Peltier module. The peltier module converts the voltage difference into temperature difference i.e. when we apply the voltage to the peltier module, the one side of the peltier module will be cold and the other side will be hot.
+Step 1: Collecting the Components and Modules
+First of all i bought all the necessary module and components
+below is the list
+CPU heatsink with fan
+12V small fan
+12V 5 amp Power supply
+Adhesive and Double sided tape
+Step 2: Mounting the Peltier Module on Heatsink
+As i earlier said that when we apply voltage to the peltier module, the one side becomes hot and the other side becomes cool, there is a max fixed temperature difference between hot side and cold side, so to make the cold side more colder we need to remove the heat from the hot side.
+In order to achieve that i used an old cpu heatsink with fan and mounted the heatsink on the hot side of the peltier module using thermal paste.
+Step 3: Making the Enclosure
+I decided to use the thermocol sheet t make the enclosure, because it was easy to do that and also it was white in color so was more thermal efficient.
+I cut the thermocol from a single sheet and made a cubicle type structure using DST and adhesive.
+Then i measured the dimension of the peltier module and cut the same portion on the top of the enclosure.
+After that i fitted an aluminium sheet into that rectangular hole on the top of the enclosure.
+I also secured a fan on the ceiling of the enclosure in order to circulate the cold air.
+Step 4: Securing Peltier Module on the Enclosure
+After that i secured the peltier module (cold side) on the top of that aluminium sheet.
+The only thing that left was wiring the peltier module and fan.
+I used a 12V 5 ampere power supply and connected the peltier module and fan.
+By this time the project was complete and after one hour of running the temperature inside the fridge was 9.8 degree Celsius, which was descent enough to chill a can of any beverage.

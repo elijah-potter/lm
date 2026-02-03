@@ -1,0 +1,15 @@
+SOFTWARE QUALITY Fundamentals
+Software quality is the degree of conformance to explicit or implicit requirements and expectations.
+- Explicit: clearly defined and documented
+- Implicit: not clearly defined and documented but indirectly suggested
+- Requirements: business/product/software requirements
+- Expectations: mainly end-user expectations
+Note: Some people tend to accept quality as compliance to only explicit requirements and not implicit requirements. We tend to think of such people as lazy.
+Definition by IEEE
+- The degree to which a system, component, or process meets specified requirements.
+- The degree to which a system, component, or process meets customer or user needs or expectations.
+Definition by ISTQB
+- quality: The degree to which a component, system or process meets specified requirements and/or user/customer needs and expectations.
+- software quality: The totality of functionality and features of a software product that bear on its ability to satisfy stated or implied needs.
+As with any definition, the definition of ‘software quality’ is also varied and debatable. Some even say that ‘quality’ cannot be defined and some say that it can be defined but only in a particular context. Some even state confidently that ‘quality is lack of bugs’. Whatever the definition, it is true that quality is something we all aspire to.
+Software quality has many dimensions. See Dimensions of Quality.

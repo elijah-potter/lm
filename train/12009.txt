@@ -1,0 +1,21 @@
+Business Continuity Management (or a Disaster Recovery Plan) is a set of frameworks governing the operation of the business management requirements and regulatory processes. In case of an emergency, an organization is able to respond quickly to ensure that critical business functions continue without disruption.
+Organizations are highly dependent on the Internet and networking; thus, traditional backup and recovery plans can no longer guarantee continuity of business operations. A business continuity plan is created based on business processes, thereby helping an organization to establish a more coordinated safety management system. Business continuity plans help organizations deal with risk and adjust automatically to ensure continuous business operation. Below are the three elements of Business Continuity Management:
+Continuity Management/ Disaster Recovery Plan
+01. High Availability
+High availability refers to the ability to provide local fault in the case of emergency. Users are able to access the application regardless of whether the fault was in the business process, physical facilities, or because of IT hardware and software failure.
+02. Continuous Operation
+This refers to the ability to assure business operations run continuously without any failure. Users do not need to abort running applications or business processes because of the ongoing normal backup or maintenance.
+03. Disaster Recovery
+This refers to the recovery of data in different locations in the event of disaster at a single location.
+Nano IT Security’s Approach
+- Project Initiation
+To establish a common understanding of the project’s objectives.
+- Risk assessment
+Analyze potential risks such man-made disasters (fires and terrorist attacks), natural disasters (floods and earthquakes), communication failure, or system errors. A disaster recovery plan is created according to the presence or absence of potential risks.
+- Business Impact Analysis
+Business impact analysis is essential for critical business functions. This involves the analysis of the possible loss and negative impact to an organization in the event of a disaster.
+- Recovery Strategies development:
+Identify the recovery strategies for the critical processes
+- Business Continuity Plan development:
+Document the business continuity plans
+- Business Continuity Plan testing

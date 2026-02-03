@@ -1,0 +1,62 @@
+interrogation message or at the end of an NCS report
+and interrogation message. When the DTS recognizes
+its own station address, it starts to transmit the
+preamble. During the first frame of the preamble, the
+DTS sets the prepare-to-transmit interrupt on the
+input data lines. The computer samples the interrupt
+and sends an IDA to acknowledge receipt of the
+The DTS finishes sending the preamble and phase
+During the second frame of the
+start code, the DTS sets the output data request (ODR)
+active, requesting the first word of the tactical data.
+The CDS computer responds by placing 24 bits of
+data on the lines and then setting the output data
+acknowledge (ODA). The DTS samples the data and
+clears the ODR. The first frame of data is processed
+for transmission and the ODR line is then set to
+request the next data word.
+This procedure is repeated until all the data words
+have been transmitted. Once the CDS computer has
+completed sending all the data words, it will not
+acknowledge the ODR from the DTS. If the CDS
+computer has not acknowledged an ODR from the
+DTS in a preset amount of time, the DTS will clear
+the ODR line and generate a stop code. Upon
+transmission of the two-frame stop code, the DTS will
+return to the receive mode.
+Net Control Station (NCS) I/O Operations
+The station acting as NCS follows the same
+protocols when communicating with the CDS
+computer. Some differences exist in the generation of
+the control codes.
+The net control station is
+responsible for interrogating each station. Upon
+receipt of a picket stop code, the DTS checks the next
+station address and sends an interrogation message.
+After the interrogation message is transmitted, the
+DTS waits to receive a start code from the
+interrogated station. If a start code is not recognized
+after 15 frame intervals, the station will be
+reinterrogated. If a start code is not received after
+another 15 frame intervals, the address control unit
+will advance to the next active picket address and
+repeat the interrogation process.
+The other major difference is when the net control
+station has completed its own tactical data
+transmission, a control stop code, followed by the
+next station address, is transmitted. Again, if a start
+code is not received within 15 frame intervals, a
+second interrogation is sent.
+interrogation is a normal interrogation message
+consisting of the preamble, phase reference frame, and
+The modulator/demodulator function of the DTS
+provides the digital to analog and analog to digital
+During data transmission, the 24-bit
+binary data word is expanded to 30 bits by adding the
+six bits for error detection and correction. The 30 bits
+are then examined in pairs to determine the required
+phase angle shift for each of the 15 data-carrying
+tones in the audio package.
+Figure 2-19.Link-11 frame boundary phase shifts.
+At the frame boundary, the phase of each data
+tone is shifted with respect to the previous frame.

@@ -1,0 +1,22 @@
+Overcoming perceived GIS resource limitations
+This module (Teaching with GIS) is designed to highlight GIS concepts that may be added to many geoscience topics and exercises. In particular, we focus on using GIS at the level of introductory geoscience; however, many of the exercises and concepts may be applied in upper level courses as well. We will attempt to answer the following questions:
+Do I need to be a GIS wizard to introduce GIS concepts in my courses?
+Answer: No! There are numerous web-based mapping utilities, some of which are specifically designed for geoscience applications. In addition, consumer-grade GPS devices and mapping software are both cheaper and easier to learn than the professional GIS/GPS tools.
+Many students new to geoscience are unfamiliar with mapping concepts that we take for granted as professional scientists. Even simple geographic and cartographic concepts can help them understand more complex GIS tasks at a later stage. The introduction of hands-on map creation/interpretation exercises and the associated terminology can greatly enhance the learning experience of the students.
+Aren't the hardware and software requirements of GIS prohibitive at the introductory level?
+Answer: No! There are many options that may be pursued despite resource limitations or student difficulties with computer tasks. Below are some ideas on what can be accomplished with different levels of resource availability or student background. Keep in mind that this site is focused on how we can introduce GIS within existing introductory geoscience courses:
+Hardware-limited options—There is little or no access to computers/internet or GPS receivers by students and/or instructor within the classroom. The students often have access to computers and the internet in public labs or have personal computers. Faculty usually have access to the internet on their computers and may have access to some GIS software.
+- Instructor generates maps for exercises/labs utilizing online resources
+- Utilize traditional paper maps (e.g. geologic maps) to introduce concepts of data-driven maps
+- Assign homework exercises that access online resources from student-owned or campus computer labs
+Software-limited options—Some access to computers/internet and GPS receivers, but little or no GIS software for student/instructor use in or out of the classroom.
+- Instructor generates maps for exercises/labs from online sources or GIS software. Note that there is GIS shareware available (e.g. GRASS (more info) ).
+- GPS use in lab exercises, particulary field labs
+- Shareware utilities to download GPS data to computer
+- MS Excel or other software used to analyze and plot data in x-y coordinates (convert from lat/lon in GPS software)
+- Manual digitization of data locations
+- Paper maps or using graphics editing software
+No hardware/software limitations—easy access to computers/internet, GPS receivers, and GIS software in and out of the classroom.
+- All of the more limited options listed above are possible
+- Student use of GIS hardware/software/data in classroom or lab
+- Possibilities limited only by time for GIS within the syllabus

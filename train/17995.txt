@@ -1,0 +1,8 @@
+Geography is one of the most important and least understood and applied components of available information.
+ADRM Software has several country-specific geography models that address the unique geographic hierarchies and data for that country.
+The geography models are extended with data addressing meteorology, climate and landform.
+There is a considerable volume of geographic information available for each country that is well-defined, updated, readily available and free or at nominal cost.
+For example, the US Census Bureau defines geography by many dimensions via Shapefiles and MAF/TIGER data that is available for public download and use.
+Customers, markets, marketing, advertising orders, BBB and a variety of related data can all be targeted or related to past and current geographic data and trends which provides the organization with valuable insight into what is happening.
+It is an important design consideration that organizations takes advantage of available geographic information by implementing their data architecture consistently with standardized country or third-party provider data.
+The Geography data model presents a data architecture that identifies and relates the many levels of geography that may be applied to the organization operations.

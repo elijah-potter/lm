@@ -1,0 +1,22 @@
+These days, the organizations are becoming a desirable target for attackers due to their network security flaws which are not properly patched and secured behind their firewall, leaving them easily vulnerable to various direct and indirect attacks. In addition to these direct and indirect attacks, the number of victims are also steadily increasing. Examples of indirect attacks include HTML exploit vulnerabilities or the attacks using malware in Peer-to-Peer networks.
+Networks with a broadband connection that are always-on are also a valuable target for the attackers. Where the attackers take an advantage of an always-on connection and use several automated techniques to scan out their specific network ranges and find out vulnerable systems with known weaknesses. Once these attackers have compromised a machine, they simply install a bot (also called a zombie) on it to establish a communication medium between those machines. After successful exploitation, a bot uses FTP, TFTP, HTTP or CSend to transfer itself to the compromised host and forms a botnet. For the purpose of defining a botnet, it doesn’t matter how exactly these machines are controlled, as long as the control is performed by the same attacker.
+The botnet is controlled by an attacker through a dedicated computer or group of computers running a CnC server (Command and Control server). The attacker can perform certain tasks through this CnC by instructing malware bots using commands. The CnC server typically performs a number of functions, including but not limited to:
+* Instructing the installed bots to execute or schedule a certain task;
+* Updating the installed bots by replacing them with a new type of malware;
+* Keeping track of the number of installed bots and distribution in an organization.
+A typical size of a botnet is immense, they can consist of several million compromised devices with capabilities to damage any size of the organization very easily. Distributed Denial of Service (DDoS) attacks is one such threat. Even a relatively smaller botnet with only 500 bots can cause a great deal of damage. These 500 bots have a combined bandwidth that is higher than an
+Internet connection of the most organizations.
+There are many types of bots structured in a very modular way by the attackers. Some of these widely spread and well-known bots include Agobot, Kaiten, Mirai, DSNX Bots, etc.
+Uses of a botnet
+A botnet can be used criminally for the many different motives. The most common uses were political motivation or just for fun. The botnets can be used for following possibilities:
+1) To launch Distributed Denial-of-Service (DDoS) Attacks
+3) Sniffing the network traffic
+5) Spreading new malware within the same network.
+6) Data breach
+Another use of botnets is to steal sensitive information or identity theft: Searching thousand home PCs for password.txt, or to sniff into their network traffic. The above list demonstrates that attackers can cause a great deal of harm with the help of botnets. Many of these attacks pose severe threats and are hard to detect and prevent, especially the DDoS attacks.
+Identifying the Botnet Traffic
+There are a growing number of network security technologies that are designed to detect and mitigate compromised network resources. These technologies are designed by the expert security engineers to identify the botnet traffic and restrict it effectively. Basically, there are two primary methods for identifying botnet traffic:
+1) Deep Packet Inspection (DPI): It is a packet filtering technique that examines the data part of a packet and searches for viruses, spam, intrusions and decides whether the packet may pass or if it needs to be dropped or routed to the different destination. There are multiple headers for IP packets: IP header and TCP or UDP header.
+2) DNS lookup: It is used to identify the DNS traffic of the communication service providers (CSP) and their network configuration. Observing the DNS traffic gives a number of distinct advantages,
+including providing the specific IP address of the device making the DNS lookup, visibility of all raw and non-cached DNS requests and an ability to analyze the frequency of botnet DNS lookups.
+It is undeniable that the predicted rate of organized crime is growing and the organizations are facing these challenges. With the number of botnet infections is increasing, it is important that every organization should monitor their networks periodically, in the context of defending against the bot attacks.

@@ -1,0 +1,31 @@
+Using Command Line using Visual C++ 2008
+- Select Start >> All Programs >> Microsoft Visual C++ 2008 Express Edition >> Visual Studio Tools >> Visual Studio 2008 Command Prompt (Run with administrator privileges)
+- Once you are in the command line, you can use any editor such as edit to write a C program.
+C:> edit myprogram.c
+- After written the program, to compile it, issue the command cl
+C:> cl myprogram.c
+- During the compilation and linking, myprogram.obj and myprogram.exe will be created.
+- To run the program:
+Using Visual C++ 2008 IDE
+- Create an empty project by select File >> New >> Project. Select General >> Empty Project and type in the project name.
+- Under folder Source, right-click Select Add >> New Item.
+- Under Code, Select C++ File (.cpp), however, when you type in the name use a program name with extension .c, such as myprog.c and click Add
+- You can program to type your C program. Click Save icon to save your file.
+- To compile the program select Build >> Compile (Ctrl+F7).
+- Please note that you cannot run the program until you have build solution.
+- To build solution select Build >> Build Solution (F7)
+- Running the program:
+- Select Debug >> Start without debugging (Ctrl+F5)
+- For any runtime error, you can debug the program as follows:
+- Select Debug >> Start debugging (F5)
+- Please note that during debugging, the program will show and close the console display immediately.
+- To see the console display, you must run without debugging.
+- The problem using Visual Studio is that many files will be created even for a simple program. All files are created inside the project folder.
+- Under the project name of your program, the source code and object file is located at sub folder similar to your project name, the executable file is under sub folder debug.
+Using Borland C++ Compiler Command Line Tools
+- Installing and running the Command Line Tools
+- Run freecommandlinetools.exe; choose the drive and folder into which you want to install the free C++Builder 5 command line tool development system.
+- From the bin directory of your installation: Add “c:\Borland\Bcc55\bin” to the existing path
+- Create a bcc32.cfg file which will set the compiler options for the Include and Lib paths (-I and –L switches to compiler) by adding these lines:
+- Create an ilink32.cfg file which will set the linker option for the Lib path by adding this line:
+- Compiling the program:

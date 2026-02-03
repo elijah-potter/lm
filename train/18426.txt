@@ -1,0 +1,51 @@
+How to convert list of lists to flat list – flatten list in Python ?
+In this tutorial you will learn how to convert list of lists to flat list i.e., how to flatten the list of lists to single flat list using various approaches in Python programming language.
+Convert list of lists to flat list – flatten list in Python
+There are many approaches using which you can convert list of lists to simple single flatten list. Let’s say the l is the given list of lists.
+>>> l = [[1, 2, 3], [4, 5, 6], , [8, 9]]
+Nested for loops – flatten list
+In the following example, we are using nested for loops to convert the given list of lists to single flat list.
+#nested for loops flat_list =  for sublist in l: for elem in sublist: flat_list.append(elem)
+>>> print(flat_list) [1, 2, 3, 4, 5, 6, 7, 8, 9]
+You can also write/ use “for” loops in the following way to achieve the same.
+#forfor flatten = [item for sublist in t for item in sublist] print(flatten) [1, 2, 3, 4, 5, 6, 7, 8, 9]
+Here are some examples on how to use itertools chain to convert list of lists to single flat list in Python.
+#itertools_chain import itertools flatten = list(itertools.chain(*l)) print(flatten) [1, 2, 3, 4, 5, 6, 7, 8, 9]
+#itertools import itertools flatten = itertools.chain.from_iterable print(list(flatten(l))) [1, 2, 3, 4, 5, 6, 7, 8, 9]
+functools.reduce() method to flatten list
+In this example, we need to import two libraries: functools and operator and we will be using functools.reduce() method to convert list of lists to single list.
+#functools_reduce import functools import operator functools.reduce(operator.iconcat, l, ) [1, 2, 3, 4, 5, 6, 7, 8, 9]
+flat list using sum() method
+Let’s see how to flatten list of lists to flat list using sum() method simply as shown below. This way you can sum lists and combine them to single list.
+#sum of lists print(sum(l, )) [1, 2, 3, 4, 5, 6, 7, 8, 9]
+Other ways to convert list of lists to flat list
+You can also flatten list of lists to simple flat list using the following libraries: matplotlib, setuptools and numpy.
+#matplotlib from matplotlib.cbook import flatten print(list(flatten(l))) [1, 2, 3, 4, 5, 6, 7, 8, 9]
+#setuptools from setuptools.namespaces import flatten print(list(flatten(l))) [1, 2, 3, 4, 5, 6, 7, 8, 9]
+import numpy as np print (np.concatenate(l)) [1 2 3 4 5 6 7 8 9]
+That’s it. You have learnt numerous ways to flatten list of lists to flat list in Python.
+Hope it is helpful 🙂
+You’ll also like:
+- String Formatting in Python – Examples
+- Single digit number to double digits string conversion in Python
+- String Immutability with Examples in Python
+- Python Program to Check Given Number is Odd or Even
+- Increase the cell width of the Jupyter Notebook in browser
+- Add python3 kernel to jupyter IPython notebook ?
+- Programs to Print Patterns – Pyramid, Triangle using Star
+- How to change the default theme in Jupyter Notebook ?
+- Change the Jupyter Notebook startup folder in Windows & Mac
+- To run Jupyter Notebook on Windows from command line
+- String Slicing in Python with Examples
+- Python program to find the greatest of three numbers
+- Find difference between two given numbers in Python
+- String indexing in Python with Examples
+- Embed HTML within IPython Notebook
+- Remove non-numeric characters from string in Python
+- Install Python 3 on Windows 10 machine
+- Convert negative to positive number in Python
+- Create list of lists in Python
+- Extract numbers from a string in python
+- How to access index and value in for loop – Python?
+- Python Lists with Examples
+- Understand Slice Notation in Python

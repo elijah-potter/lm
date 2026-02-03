@@ -1,0 +1,25 @@
+What is a Bond?
+A bond is a debt security that corporations and governments use to raise capital. It provides an investor the means to loan money to an issuer for a defined period of time. In return, the investor will receive variable or fixed interest payments periodically throughout the loaning period.
+Key bond terms & structures:
+- Issuer is the entity that is raising capital in the primary debt market.
+- Principal amount is the amount paid out to the holder of the bond at its maturity date. It is also known as the “par value”. The principal amount is the reference amount used to calculate interest payments.
+- Launch date or announcement date is the date at which the details regarding a new issue are released to investors.
+- Pricing date is the date at which price and amount of the bond offering are determined.
+- Settlement date or issue date is the date when the offering is settled – investors transfer cash or assets to issuers for bond certificates. For example, a settlement date of three business days after the launch date is referred to as T+3. The issue date is the date on which bond begins to accrue interest.
+- Maturity date is when the bond matures and the bond issuer must pay the principal amount to bondholders.
+- Coupon rate is the annual rate of interest (expressed as a percentage) the bond issuer pays out to bondholders on the principal amount of the bond at each coupon payment date. Coupon payments compensate investors for the risk of loaning capital to the issuer.
+- Coupon frequency is the frequency that the bond issuer will make coupon payments to bondholders. Typically, this is either semi-annual or annual.
+- Ranking is the claim priority (e.g. senior secured, senior unsecured, junior secured, junior unsecured) of the bond offering in the event of default. A secured bond refers to assets that the bondholders have a claim to in the event of default.
+- Guarantor is an entity that guarantees the bond payments using its own assets.
+- Covenants are terms of the offering that protect the investor and issuer interests.
+- Issue price is the initial offering price of the bond from the issuer to investors. This is determined through the price discovery process.
+- Early redemption is an optional condition that permits the issuer to buy back their bonds before the maturity date.
+- Credit ratings are an independent, third-party measure of a corporation’s credit health – its ability to pay back its financial obligations.
+- CUSIP/ISIN are unique serial numbers for all bond offerings issued by the S&P Capital IQ and the ISIN organization respectively. CUSIP is used solely in North America and ISIN is a global catalogue of bonds and other securities.
+- Use of proceeds highlights what the issuer intends to use with the capital raised. (e.g. growing existing operations, investing in new opportunities, paying off other obligations)
+- Syndicate is the group of dealers that work together to underwrite the bond offering.
+- Offering documents are the legal documents filed with the appropriate regulatory bodies. These include the term sheet, prospectus, and offering memorandum.
+Collectively, these characteristics form the structure of the bond, outlining the financial, legal, and fiduciary responsibilities of the issuer to its investors and provide all relevant details regarding the issuance.
+Fixed-Rate Coupon Bonds
+Fixed-rate coupon bonds are the most common type of fixed income securities because they provide the most stability, a key consideration for any fixed income investor. Fixed-rate coupon bond prices typically fluctuate more with the market because as the prevailing market interest rates change, the bond will become more or less attractive to investors depending on if it’s higher than or lower than the market rate. As such, the bond price will change to reflect these changes in the bond’s desirability. For example, a bond with $1,000 par value and 5% annual coupon will generate $50 a year for the investor. If the prevailing market rate is 3%, the bond will be priced higher because an alternative market choice would only generate $30 a year. Conversely, if the prevailing market rate is 7%, the bond will be priced lower because an alternative market choice would generate $70 a year, making the bond less appealing.
+Floating-rate notes (FRNs), or “floaters”, are bonds with variable interest rates. FRN interest rates reference a benchmark rate (e.g. U.S. treasury bill rate, LIBOR) and coupon payments fluctuate as the benchmark rate changes. Unlike fixed-rate bonds which have an inverse relationship with interest rates, FRNs protect investors from increases in interest rates.

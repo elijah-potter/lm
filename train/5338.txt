@@ -1,0 +1,47 @@
+Formants are defined by Gunnar Fant as 'the spectral peaks of the sound spectrum of the voice'. In speech science and phonetics, formant is also used to mean an acoustic resonance of the human vocal tract. It is often measured as an amplitude peak in the frequency spectrum of the sound, using a spectrogram (in the figure) or a spectrum analyzer, though in vowels spoken with a high fundamental frequency, as in a female or child voice, the frequency of the resonance may lie between the widely-spread harmonics and hence no peak is visible. In acoustics, it refers to a peak in the sound envelope and/or to a resonance in sound sources, notably musical instruments, as well as that of sound chambers. Thus it is possible to talk about the formant frequencies of a room, as exploited, for example, by Alvin Lucier in his piece I Am Sitting in a Room.
+Formants and phonetics
+Formants are the distinguishing or meaningful frequency components of human speech and of singing. By definition, the information that humans require to distinguish between vowels can be represented purely quantitatively by the frequency content of the vowel sounds. In speech, these are the characteristic partials that identify vowels to the listener. Most of these formants are produced by tube and chamber resonance, but a few whistle tones derive from periodic collapse of Venturi effect low-pressure zones. The formant with the lowest frequency is called f1, the second f2, and the third f3. Most often the two first formants, f1 and f2, are enough to disambiguate the vowel. These two formants determine the quality of vowels in terms of the open/close and front/back dimensions (which have traditionally, though not entirely accurately, been associated with the position of the tongue). Thus the first formant f1 has a higher frequency for an open vowel (such as [a]) and a lower frequency for a close vowel (such as [i] or [u]); and the second formant f2 has a higher frequency for a front vowel (such as [i]) and a lower frequency for a back vowel (such as [u]). Vowels will almost always have four or more distinguishable formants; sometimes there are more than six. However, the first two formants are most important in determining vowel quality, and this is often displayed in terms of a plot of the first formant against the second formant, though this is not sufficient to capture some aspects of vowel quality, such as rounding.
+Nasals usually have an additional formant around 2500 Hz. The liquid [l] usually has an extra formant at 1500 Hz, while the English "r" sound ([ɹ]) is distinguished by virtue of a very low third formant (well below 2000 Hz).
+Plosives (and, to some degree, fricatives) modify the placement of formants in the surrounding vowels. Bilabial sounds (such as /b/ and /p/ in "ball" or "sap") cause a lowering of the formants; velar sounds (/k/ and /g/ in English) almost always show f2 and f3 coming together in a 'velar pinch' before the velar and separating from the same 'pinch' as the velar is released; alveolar sounds (English /t/ and /d/) cause less systematic changes in neighbouring vowel formants, depending partially on exactly which vowel is present. The time-course of these changes in vowel formant frequencies are referred to as 'formant transitions'.
+If the fundamental frequency of the underlying vibration is higher than a resonance frequency of the system, then the formant usually imparted by that resonance will be mostly lost. This is most apparent in the example of soprano opera singers, who sing high enough that their vowels become very hard to distinguish.
+Control of resonances is an essential component of the vocal technique known as overtone singing, in which the performer sings a low fundamental tone, and creates sharp resonances to select upper harmonics, giving the impression of several tones being sung at once.
+Spectrograms are used to visualise formants.
+|Vowel (IPA)||Formant f1||Formant f2|
+|i||240 Hz||2400 Hz|
+|y||235 Hz||2100 Hz|
+|e||390 Hz||2300 Hz|
+|ø||370 Hz||1900 Hz|
+|ɛ||610 Hz||1900 Hz|
+|œ||585 Hz||1710 Hz|
+|a||850 Hz||1610 Hz|
+|ɶ||820 Hz||1530 Hz|
+|ɑ||750 Hz||940 Hz|
+|ɒ||700 Hz||760 Hz|
+|ʌ||600 Hz||1170 Hz|
+|ɔ||500 Hz||700 Hz|
+|ɤ||460 Hz||1310 Hz|
+|o||360 Hz||640 Hz|
+|ɯ||300 Hz||1390 Hz|
+|u||250 Hz||595 Hz|
+|Vowel||Main formant region|
+|e||400–600 and 2200–2600 Hz|
+|i||200–400 and 3000–3500 Hz|
+Studies of the frequency spectrum of trained singers, especially male singers, indicate a clear formant around 3000 Hz (between 2800 and 3400 Hz) that is absent in speech or in the spectra of untrained singers. It is thought to be associated with one or more of the higher resonances of the vocal tract. It is this increase in energy at 3000 Hz which allows singers to be heard and understood over an orchestra, which peak at much lower frequencies of around 500 Hz. This formant is actively developed through vocal training, for instance through so-called voce di strega (IPA: [ˈvoːtʃe di ˈstrɛːga]) or "witch's voice" exercises and is caused by a part of the vocal tract acting as a resonator.
+- Fant, G. (1960). Acoustic Theory of Speech Production. Mouton & Co, The Hague, Netherlands.
+- Titze, I.R. (1994). Principles of Voice Production, Prentice Hall, ISBN 978-0-13-717893-3.
+- Ladefoged, Peter (2006) A Course in Phonetics (Fifth Edition), Boston, MA: Thomson Wadsworth, p. 188. ISBN 1-4130-2079-8
+- Ladefoged, Peter (2001) Vowels and Consonants: An Introduction to the Sounds of Language, Maldern, MA: Blackwell, p. 40. ISBN 0-631-21412-7
+- Deterding, David (1997) 'The Formants of Monophthong Vowels in Standard Southern British English Pronunciation', Journal of the International Phonetic Association, 27, pp. 47-55.
+- Hayward, Katrina (2000) Experimental Phonetics, Harlow, UK: Pearson, p. 149. ISBN 0-582-29137-2
+- Catford, J.C. (1988) A Practical Introduction to Phonetics, Oxford University Press, p. 161. ISBN 978-0198242178
+- Sundberg, J. (1974) “Articulatory interpretation of the ‘singing formant’,” Journal of the Acoustical Society of America, 55, 838-844.
+- Frisell, Anthony (2007). Baritone Voice. Boston: Branden Books. p. 84. ISBN 0-8283-2181-7.
+- "Vocal Ring, or The Singer's Formant". The National Center for Voice and Speech. Retrieved 2008-04-07.
+- Sundberg, Johan (1987). The science of the singing voice. DeKalb, Ill: Northern Illinois University Press. ISBN 0-87580-542-6.
+- Formants for fun and profit
+- Formants and wah-wah pedals
+- What is a formant? A discussion of the three different meanings of the word 'formant'
+- Formant tuning by soprano singers from the University of New South Wales
+- The acoustics of harmonic or overtone singing from the University of New South Wales
+- Materials for measuring and plotting vowel formants
+- Acoustics of the Vowel A discussion of possible formant variations without affection of the phoneme identity.

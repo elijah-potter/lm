@@ -1,0 +1,7 @@
+In this tutorial we will Create iWatch Activity Chart using d3.js. Here we will use almost all the features we have learnt so far on Pie Chart. We will create multiple functions to reuse the code as much as possible.
+So far we have learnt many ways to create progress chart using d3.js. In this Create custom progress chart using d3.js – Part1 tutorial we will learn how to animate an object (e.g. Icon) along with the progress indicator.
+You can refer my previous post on How to create Progress chart using d3.js in case you are not able understand any part here.
+This is a quick tutorial on how to Create Pie Area Chart using d3.js. While we are exploring different ways of creating the Pie chart, its very easy and simple to create the Pie Area Chart.
+This is the first tutorial of the Create Pie Charts using D3.js series. We will Create a Simple Pie Chart using D3.js and build our foundation so that we can create more unique and useful charts.
+I am using the latest version of the d3.js. Lets look at the HTML code. We are having a
+widget. It has two div, one for the header and another for the chart.

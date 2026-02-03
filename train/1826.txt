@@ -1,0 +1,25 @@
+The message from the shell begins with
+-sh. This gives two important clues:
+- The leading
+- indicates that this is a login shell. By convention, the login program (the program where you type your user name and password, which can be
+login, gdm, sshd, …) starts a shell with the program name set to begin with an extra
+-. This way, the shell knows that it's a login shell and reads
+~/.profile or other session startup file.
+- The shell's name is
+sh. So the user's login shell is set to
+/bin/sh, and not to bash. Either
+/bin/sh is a symbolic link to bash, or it's some other shell such as dash. When bash is invoked under the name
+sh, it doesn't read its configuration files, only the standard files (
+/etc/profile in login shells, nothing in non-login shells), for compatibility. So either way
+~/.bashrc is not read.
+If you explicitly invoke bash, it will read
+.bashrc. You'll need to pass the
+-t flag to
+ssh to tell it to open a terminal even though you've specified a command.
+ssh -t testuser@nameofhost bash
+You may want to switch the user's login shell to be bash instead of
+testuser, run the command
+chsh -s /bin/bash
+Change the path to
+/usr/local/bin/bash or wherever bash is located. If you invoke
+chsh without arguments, you'll get a menu showing what shells you're allowed to select.

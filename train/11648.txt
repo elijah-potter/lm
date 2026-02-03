@@ -1,0 +1,55 @@
+The Electrical/Electronics Industry. A Brief History. Units of Measurement. Systems of Units. Significant Figures, Accuracy, and Rounding Off. Powers of Ten. Conversion between Levels of Powers of Ten. Conversion within and between Systems of Units. Symbols. Conversion Tables. Calculators.
+2. Current and Voltage.
+Atoms and Their Structure. Current. Voltage. Fixed (dc) Supplies. Conductors and Insulators. Semiconductors. Ammeters and Voltmeters.
+Resistance: Circular Wires. Wire Tables. Resistance: Metric Units. Temperature Effects. Superconductors. Types of Resistors. Color Coding and Standard Resistor Values. Conductance. Ohmmeters. Thermistors. Photoconductive Cell. Varistors.
+4. Ohm's Law, Power, and Energy.
+Ohm's Law. Plotting Ohm's Law. Power. Wattmeters. Efficiency. Energy. Circuit Breakers, GFCIs, and Fuses.
+5. Series Circuits.
+Series Circuits. Voltage Sources in Series. Kirchhoff's Voltage Law. Interchanging Series Elements. Voltage Divider Rule. Notation. Internal Resistance of Voltage Sources. Voltage Regulation. Measurement Techniques.
+6. Parallel Circuits.
+Parallel Elements. Total Conductance and Resistance. Parallel Networks. Kirchhoff's Current Law. Current Divider Rule. Voltage Sources in Parallel. Open and Short Circuits. Voltmeters: Loading Effect. Troubleshooting Techniques.
+7. Series-Parallel Networks.
+Series-Parallel Networks. Descriptive Examples. Ladder Networks. Voltage Divider Supply (Unloaded and Loaded). Potentiometer Loading. Ammeter, Voltmeter, and Ohmmeter Design. Grounding.
+8. Methods of Analysis and Selected Topics (dc).
+Current Sources. Source Conversions. Current Sources in Parallel. Current Sources in Series. Branch-Current Analysis. Mesh Analysis (General Approach). Mesh Analysis (Format Approach). Nodal Analysis (General Approach). Nodal Analysis (Format Approach). Bridge Networks. U- D (T- p and D- U ( p- T) Conversions.
+9. Network Theorems.
+Superposition Theorem. Thévenin's Theorem. Norton's Theorem. Maximum Power Transfer Theorem. Millman's Theorem. Substitution Theorem. Reciprocity Theorem.
+The Electric Field. Capacitance. Dielectric Strength. Leakage Current. Types of Capacitors. Transients in Capacitive Networks: Charging Phase. Discharge Phase. Initial Values. Instantaneous Values. t=R
+11. Magnetic Circuits.
+Magnetic Fields. Flux Density. Permeability. Reluctance. Ohm's Law for Magnetic Circuits. Magnetizing Force. Hysteresis. Ampère's Circuital Law. The Flux F. Series Magnetic Circuits: Determining NI. Air Gaps. Series-Parallel Magnetic Circuits. Determining F.
+Faraday's Law of Electromagnetic Induction. Lenz's Law. Self-Inductance. Types of Inductors. Induced Voltage. R-L Transients: Storage Cycle. R-L Transients: Decay Phase. Initial Value. Instantaneous Values. t=L/R
+13. Sinusoidal Alternating Waveforms.
+Sinusoidal ac Voltage Characteristics and Definitions. The Sine Wave. General Format for the Sinusoidal Voltage or Current. Phase Relations. Average Value. Effective Values. ac Meters and Instruments.
+14. The Basic Elements and Phasors.
+The Derivative. Response of Basic R, L, and C Elements to a Sinusoidal Voltage or Current. Frequency Response of the Basic Elements. Average Power and Power Factor. Complex Numbers. Rectangular Form. Polar Form. Conversion between Forms. Mathematical Operations with Complex Numbers. Calculator and Computer Methods with Complex Numbers. Phasors.
+15. Series and Parallel ac Circuits.
+Impedance and the Phasor Diagram. Series Configuration. Voltage Divider Rule. Frequency Response of the R-C Circuits. Summary: Series ac Circuits. Admittance and Susceptance. Parallel ac Networks. Current Divider Rule. Frequency Response of the Parallel R-L Network. Summary: Parallel ac Networks. Equivalent Circuits. Phase Measurements (Dual-Trace Oscilloscope).
+16. Series-Parallel ac Networks.
+Illustrative Examples. Ladder Networks.
+17. Methods of Analysis and Selected Topics (ac).
+Independent versus Dependent (Controlled) Sources. Source Conversions. Mesh Analysis. Nodal Analysis. Bridge Networks (ac). D-Y, Y-D Conversions.
+18. Network Theorems (ac).
+Superposition Theorem. Thévenin's Theorem. Norton's Theorem. Maximum Power Transfer Theorem. Substitution, Reciprocity, and Millman's Theorems.
+19. Power (ac).
+Resistive Circuit. Apparent Power. Inductive Circuit and Reactive Power. Capacitive Circuit. The Power Triangle. The Total P, Q, and S. Power-Factor Correction. Wattmeters and Power-Factor Meters. Effective Resistance.
+Series Resonant Circuit. The Quality Factor (Q). Z
+21. Decibels, Filters, and Bode Plots.
+Logarithms. Properties of Logarithms. Decibels. Filters. R-C Low-Pass Filter. R-C High-Pass Filter. Pass-Band Filters. Stop-Band Filters. Double-Tuned Filter. Bode Plots. Sketching the Bode Response. Low- Pass Filter with Limited Attenuation. High-Pass Filter with Limited Attentuation. Other Properties and a Summary Table. Crossover Networks.
+22. Pulse Waveforms and the R-C Response.
+Ideal versus Actual. Pulse Repetition Rate and Duty Cycle. Average Value. Transient R-C Networks. R-C Response to Square-Wave Inputs. Oscilloscope Attenuator and Compensating Probe.
+23. Polyphase Systems.
+The Three-Phase Generator. The Y-Connected Generator. Phase Sequence (Y-Connected Generator). The Y-Connected Generator with a Y-Connected Load. The Y-D System. The D-Connected Generator. Phase Sequence (D-Connected Generator). The D-D, D-Y Three-Phase Systems. Power. The Three-Wattmeter Method. The Two-Wattmeter Method. Unbalanced Three-Phase, Four-Wire, Y-Connected Load. Unbalanced Three-Phase, Three-Wire, Y-Connected Load.
+24. Nonsinusoidal Circuits.
+Fourier Series. Circuit Response to a Nonsinusoidal Input. Addition and Subtraction of Nonsinusoidal Waveforms.
+Mutual Inductance. Series Connection of Mutually Coupled Coils. The Iron-Core Transformer. Reflected Impedance and Power. Equivalent Circuit (Iron-Core Transformer). Frequency Considerations. Air-Core Transformer. Impedance Matching, Isolation and Displacement. Nameplate Data. Types of Transformers. Tapped and Multiple-Load Transformers. Networks with Magnetically Coupled Coils.
+26. System Analysis--An Introduction.
+The Impedance Parameters Z
+Appendix A. PSpice, C^++, and MathCAD.
+Appendix B. Conversion Factors.
+Appendix C. Determinants.
+Appendix D. Color Coding of Molded Mica Capacitors (Picofarads).
+Appendix E. Color Coding of Molded Tubular Capacitors (Picofarads).
+Appendix F. The Greek Alphabet.
+Appendix G. Magnetic Parameter Conversions.
+Appendix H. Maximum Power Transfer Conditions.
+Appendix I. Answers to Odd-Numbered Problems.

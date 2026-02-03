@@ -1,0 +1,30 @@
+Computers, machines and even smart phones can process sounds and audio signals with apparent ease, but they all require significant computing power.
+A brain-based pattern-recognition process that searches for familiar features in the audio spectrum improves sound recognition in computers.
+Copyright : 2013 A*STAR Institute for Infocomm Research
+Researchers from the A*STAR Institute for Infocomm Research in Singapore have proposed a way to improve computer audio processing by applying lessons inspired from the way the brain processes sounds.
+“The method proposed in our study may not only contribute to a better understanding of the mechanisms by which the biological acoustic systems operate, but also enhance both the effectiveness and efficiency of audio processing,” comments Huajin Tang, an electrical engineer from the research team.
+When listening to someone speaking in a quiet room, it is easy to identify the speaker and understand their words. While the same words spoken in a loud bar are more difficult to process, our brain is still capable of distinguishing the voice of the speaker from the background noise. Computers, on the other hand, still have considerable problems identifying complex sounds from a noisy background; even smart phones must send audio signals to a powerful centralized server for processing.
+Considerable computing power at the server is required because the computer continuously processes the entire spectrum of human audio frequencies. The brain, however, analyzes information more selectively: it processes audio patterns localized in time and frequency (see image). When someone speaks with a deep voice, for example, the brain dispenses with analyzing high-pitched sounds. So when a speaker in a loud bar stops talking, the brain stops trying to catch and process the sounds that form his words.
+Tang and his team emulated the brain’s sound-recognition strategy by identifying key points in the audio spectrum of a sound. These points could be characteristic frequencies in a voice or repeating patterns, such as those of an alarm bell. They analyzed the signal in more detail around these key points only, looking for familiar audio frequencies as well as time patterns. This analysis enabled a robust extraction of matching signals when a noise was present. To improve the detection over time, the researchers fed matching frequency patterns into a neurological algorithm that mimics the way the brain learns through the repetition of known patterns.
+In computer experiments, the algorithm successfully processed known target signals, even in the presence of noise. Expanding this approach, says Tang, “could lead to a greater understanding of the way the brain processes sound; and, beyond that, it could also include touch, vision and other senses.”
+Dennis, J., Yu, Q., Tang, H., Tran, H. D. & Li, H. Temporal coding of local spectrogram features for robust sound recognition. 2013 IEEE International Conference on Acoustics, Speech and Signal Processing, 26–31 May 2013.
+Bergamotene - alluring and lethal for Manduca sexta
+21.04.2017 | Max-Planck-Institut für chemische Ökologie
+How to color a lizard: From biology to mathematics
+13.04.2017 | Université de Genève
+An international team of scientists has proposed a new multi-disciplinary approach in which an array of new technologies will allow us to map biodiversity and the risks that wildlife is facing at the scale of whole landscapes. The findings are published in Nature Ecology and Evolution. This international research is led by the Kunming Institute of Zoology from China, University of East Anglia, University of Leicester and the Leibniz Institute for Zoo and Wildlife Research.
+Using a combination of satellite and ground data, the team proposes that it is now possible to map biodiversity with an accuracy that has not been previously...
+Heatwaves in the Arctic, longer periods of vegetation in Europe, severe floods in West Africa – starting in 2021, scientists want to explore the emissions of the greenhouse gas methane with the German-French satellite MERLIN. This is made possible by a new robust laser system of the Fraunhofer Institute for Laser Technology ILT in Aachen, which achieves unprecedented measurement accuracy.
+Methane is primarily the result of the decomposition of organic matter. The gas has a 25 times greater warming potential than carbon dioxide, but is not as...
+Hydrogen is regarded as the energy source of the future: It is produced with solar power and can be used to generate heat and electricity in fuel cells. Empa researchers have now succeeded in decoding the movement of hydrogen ions in crystals – a key step towards more efficient energy conversion in the hydrogen industry of tomorrow.
+As charge carriers, electrons and ions play the leading role in electrochemical energy storage devices and converters such as batteries and fuel cells. Proton...
+Scientists from the Excellence Cluster Universe at the Ludwig-Maximilians-Universität Munich have establised "Cosmowebportal", a unique data centre for cosmological simulations located at the Leibniz Supercomputing Centre (LRZ) of the Bavarian Academy of Sciences. The complete results of a series of large hydrodynamical cosmological simulations are available, with data volumes typically exceeding several hundred terabytes. Scientists worldwide can interactively explore these complex simulations via a web interface and directly access the results.
+With current telescopes, scientists can observe our Universe’s galaxies and galaxy clusters and their distribution along an invisible cosmic web. From the...
+Temperature measurements possible even on the smallest scale / Molecular ruby for use in material sciences, biology, and medicine
+Chemists at Johannes Gutenberg University Mainz (JGU) in cooperation with researchers of the German Federal Institute for Materials Research and Testing (BAM)...
+19.06.2017 | Event News
+13.06.2017 | Event News
+13.06.2017 | Event News
+26.06.2017 | Life Sciences
+26.06.2017 | Physics and Astronomy
+26.06.2017 | Information Technology

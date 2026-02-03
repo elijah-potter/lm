@@ -1,0 +1,56 @@
+See Also: Boolean
+public struct Boolean : IComparable, IComparable<bool>, IConvertible, IEquatable<bool>
+A Boolean instance can have either of two values: true, or false.
+The Boolean structure provides methods that support the following tasks:
+Converting Boolean values to strings: Boolean.ToString
+The following sections explain these tasks and other usage details:
+Formatting Boolean values
+The string representation of a Boolean is either "True" for a true value or "False" for a false value. The string representation of a Boolean value is defined by the read-only Boolean.TrueString and Boolean.FalseString fields.
+You use the Boolean.ToString method to convert Boolean values to strings. The Boolean structure includes two Boolean.ToString overloads: the parameterless Boolean.ToString method and the Boolean.ToString(IFormatProvider) method, which includes a parameter that controls formatting. However, because this parameter is ignored, the two overloads produce identical strings. The Boolean.ToString(IFormatProvider) method does not support culture-sensitive formatting.
+code reference: System.Boolean.Structure#3
+Because the Boolean structure can have only two values, it is easy to add custom formatting. For simple custom formatting in which other string literals are substituted for "True" and "False", you can use any conditional evaluation feature supported by your language, such as the conditional operator in C# or the If operator in Visual Basic. The following example uses this technique to format Boolean values as "Yes" and "No" rather than "True" and "False".
+code reference: System.Boolean.Structure#4
+For more complex custom formatting operations, including culture-sensitive formatting, you can call the String.Format(IFormatProvider,String,Object) method and provide an ICustomFormatter implementation. The following example implements the ICustomFormatter and IFormatProvider interfaces to provide culture-sensitive Boolean strings for the English (United States), French (France), and Russian (Russia) cultures.
+code reference: System.Boolean.Structure#5
+Optionally, you can use resource files to define culture-specific Boolean strings.
+Converting to and from Boolean values
+The Boolean structure implements the IConvertible interface. As a result, you can use the Convert class to perform conversions between a Boolean value and any other primitive type in the .NET Framework, or you can call the Boolean structure's explicit implementations. However, conversions between a Boolean and the following types are not supported, so the corresponding conversion methods throw an InvalidCastException exception:
+All conversions from integral or floating-point numbers to Boolean values convert non-zero values to true and zero values to false. The following example illustrates this by calling selected overloads of the Convert.ToBoolean(Int64) class.
+code reference: System.Boolean.Structure#6
+When converting from floating-point values to Boolean values, the conversion methods perform an exact comparison with zero. If the floating-point value has lost precision, the result can be unexpected. This is illustrated in the following example, in which a Double variable whose value should be zero is converted to a Boolean value. As the example shows, the result is true because repeated additions of 0.2 have resulted in a loss of precision.
+When converting from Boolean to numeric values, the conversion methods of the Convert class convert true to 1 and false to 0. However, Visual Basic conversion functions convert true to either 255 (for conversions to Byte values) or -1 (for all other numeric conversions). The following example converts true to numeric values by using a Convert method, and, in the case of the Visual Basic example, by using the Visual Basic language's own conversion operator.
+code reference: System.Boolean.Structure#8
+Parsing Boolean values
+The Boolean structure includes two static parsing methods, Boolean.Parse(String) and Boolean.TryParse(String,Boolean), that convert a string to a Boolean value. The string representation of a Boolean value is defined by the case-insensitive equivalents of the values of the Boolean.TrueString and Boolean.FalseString fields, which are "True" and "False", respectively. In other words, the only strings that parse successfully are "True", "False", "true", "false", or some mixed-case equivalent. You cannot successfully parse numeric strings such as "0" or "1". Leading or trailing white-space characters are not considered when performing the string comparison.
+The following example uses the Boolean.Parse(String) and Boolean.TryParse(String,Boolean) methods to parse a number of strings. Note that only the case-insensitive equivalents of "True" and "False" can be successfully parsed.
+code reference: System.Boolean.Structure#2
+If you are programming in Visual Basic, you can use the CBool function to convert the string representation of a number to a Boolean value. "0" is converted to false, and the string representation of any non-zero value is converted to true. If you are not programming in Visual Basic, you must convert your numeric string to a number before converting it to a Boolean. The following example illustrates this by converting an array of integers to Boolean values.
+code reference: System.Boolean.Structure#9
+Comparing Boolean values
+Because Boolean values are either true or false, there is little reason to explicitly call the Boolean.CompareTo(Boolean) method, which indicates whether an instance is greater than, less than, or equal to a specified value. Typically, to compare two Boolean variables, you call the Boolean.Equals(Boolean) method or use your language's equality operator.
+However, when you want to compare a Boolean variable with the literal Boolean value true or false, it is not necessary to do an explicit comparison, because the result of evaluating a Boolean value is that Boolean value. For example, the expressions
+code reference: System.Boolean.Structure#12
+code reference: System.Boolean.Structure#13
+are equivalent, but the second is more compact. However, both techniques offer comparable performance.
+Working with Booleans as binary values
+A Boolean value occupies one byte of memory. The byte's low-order bit is used to represent its value. A value of 1 represents true; a value of 0 represents false.
+You can use the BitVector32 structure to work with sets of Boolean values.
+You can convert a Boolean value to its binary representation by calling the BitConverter.GetBytes(Boolean) method. The method returns a byte array with a single element. To restore a Boolean value from its binary representation, you can call the BitConverter.ToBoolean(Byte,Int32) method.
+The following example calls the BitConverter.GetBytes(Boolean) method to convert a Boolean value to its binary representation and displays the individual bits of the value, and then calls the BitConverter.ToBoolean(Byte,Int32) method to restore the value from its binary representation.
+code reference: System.Boolean.Structure#1
+Performing operations with Boolean values
+This section illustrates how Boolean values are used in apps. The first section discusses its use as a flag. The second illustrates its use for arithmetic operations.
+Boolean values as flags
+Boolean variables are most commonly used as flags, to signal the presence or absence of some condition. For example, in the String.Compare(String,String,Boolean) method, the final parameter, ignoreCase, is a flag that indicates whether the comparison of two strings is case-insensitive (ignoreCase is true) or case-sensitive (ignoreCase is false). The value of the flag can then be evaluated in a conditional statement.
+The following example uses a simple console app to illustrate the use of Boolean variables as flags. The app accepts command-line parameters that enable output to be redirected to a specified file (the /f switch), and that enable output to be sent both to a specified file and to the console (the /b switch). The app defines a flag named isRedirected to indicate whether output is to be sent to a file, and a flag named isBoth to indicate that output should be sent to the console.
+code reference: System.Boolean.Structure#10
+Booleans and arithmetic operations
+A Boolean value is sometimes used to indicate the presence of a condition that triggers a mathematical calculation. For example, a hasShippingCharge variable might serve as a flag to indicate whether to add shipping charges to an invoice amount.
+Because an operation with a false value has no effect on the result of an operation, it is not necessary to convert the Boolean to an integral value to use in the mathematical operation. Instead, you can use conditional logic.
+The following example computes an amount that consists of a subtotal, a shipping charge, and an optional service charge. The hasServiceCharge variable determines whether the service charge is applied. Instead of converting hasServiceCharge to a numeric value and multiplying it by the amount of the service charge, the example uses conditional logic to add the service charge amount if it is applicable.
+code reference: System.Boolean.Structure#13
+Assembly: mscorlib (in mscorlib.dll)
+Assembly Versions: 1.0.5000.0, 126.96.36.199, 188.8.131.52
+The members of System.Boolean are listed below.
+See Also: ValueType
+|TryParse(String, out Boolean)|

@@ -1,0 +1,62 @@
+January 10th, 2004 01:15 AM
+Yeah, arbitrary precision is very confusing. I've tried to make my own like that with huge string allocations (acturally char arrays) and compare numbers one by one. I don't know what happened to it, but I probably never completed it anyways.
+And that recursive function looks really....recursive. I don't see any code to exit out of the loop, IE it will continue to call it self over and over until the program finally kills the heap/stack or something. I don't quite know what it is...
+Also, even if it wasn't a static, it would still always be zero (if you managed to get an answer out of it since it loops forever). Why? Since there is no checking to see if X is less than or equal to 1. Without that it would multiply it by 0 when x = 0, and thus the answers would be cleared.
+Well the only reason I can acturally comment on it is because I have my C book here with an example of a recursive function to calculate factorials... heh. Sadly I don't think I'm *allowed* to post the code up. Sorry.
+The next best thing - Using Linked Lists of Integers to store the factorial of 1000... http://www.codeguru.com/algorithms/factorial.shtml I don't happen to think that the code there is easily understandable though...
+January 10th, 2004 01:32 AM
+Tim_axe, sorry to be pedantic, but if you look at his code, x would never be zero, that wasn't the issue. The fact is that it is pointless even having the x if you set total to 0 at the start because total will never increase, and that's even if you ignore that there is no way to exit the recursion.
+Also, because total is a local variable and you are not sending it as an argument, total would have died at the beginning of each recursion in any case. A slightly more functional function, if still not very good would be:
+Please note that even that code is completely useless :P I just felt like correcting the other code (too tired to check who it was that posted it, and I can't see just now anyway :P)
+void genFactorial(int x, int t)
+int total = t; // you probably wouldn't even need total now
+void main(void) // yes, I know it isn't totally correct
+Oh god that makes me look sad.
+ Tim_axe, I'm sorry. I realise what you are saying now (couldn't really see it properly, my contact lenses are fscked atm). I left what I said in incase someone already had seen it so that you know I was apologising [/edit]
+January 10th, 2004 04:07 AM
+Don't worry about it gothic_type, I can see where I sort of rambled on in my post and just messed up what I was trying to point out.
+I'll work off of your code since it has the basic framework and I want to save typing...
+*Opens up DevC++*
+*Finds C Programming Book*
+*Returns to Open Window*
+Okay, this following code compiles, and works fine for me. If not, please debug it yourself. :P Also, don't give it an integer bigger than 14. It will crash or mess up something (Integer Overflow). Same goes for letters, and decimal numbers. Integers only...
+Enjoy. Also, it won't do your 100 or whatnot. Only up to 14... Check the link in my previous post to find code for bigger numbers. I haven't tried it myself...
+using namespace std;
+unsigned int genFactorial(unsigned int x);
+cout<<"Blah. Give me an Integer or I'll crash: ";
+cout<<"\nI think that is: "<<genFactorial(fact)<<endl;
+cout<<"If that's wrong, it's 42!"<<endl;
+unsigned int genFactorial(unsigned int x)
+x *= genFactorial(x-1);
+January 10th, 2004 08:33 AM
+Tim_axe, nice prog; appears to work correctly (despite the fact that I attempted to get gcc to compile it to begin with which made it unhappy )
+Now all we need to do is edit the program so that it can do 100, but still using integers :P.
+BTW -- Tim_axe, I think we must be the only people sad enough to have kept on posting to this topic...I think everyone else bailed :P
+January 12th, 2004 07:27 PM
+well you guys are using recursion, which isnt going to be good when you are computing 100 because you will run out of space in RAM.
+Support your right to arm bears.
+^^This was the first video game which i played on an old win3.1 box
+January 12th, 2004 10:26 PM
+White_Eskimo, the only reason I (and I think Tim_axe as well) was using recursion was because Striek had suggested it. His code was really messed up, so I was trying to "fix" it while also attempting to point out the multiplying by zero error.
+Anyhow. Since no-one else really suggested/posted another method, at least it's something. :P
+January 13th, 2004 12:31 AM
+Well I guess we could continue it... Anyone else want to help out?
+So we can scrap the recursion idea because the program would eventually run out of heap/stack or something on really big numbers... But as to how will we use integers to store numbers that are over 32bits long... We might have to borrow from the code @ http://www.codeguru.com/algorithms/factorial.shtml by somehow adopting use of linked lists of integers. Although the code there already uses it to compute factorials...
+So, I guess it would be like this (insert really bad program outline here):
+Use types in number, ie 60.
+Allocate 59/60/61 integers (array), put numbers 60 to 1 in them. (we will somehow multiply them later on, which is what factorials do)
+Then we can allocate some more integers, say 1000 to be safe for now, and set each element to 0. This will hold our output, with each integer holding a single digit. 1000 here would mean we can store a 1000 digit answer for a factorial. My guess is that is the factorial of 150 or so?
+We then multiply the last two integers from the first array, ie with values 60 and 59.
+Store this result, ie 3540, in a temporary integer. We then seperate it into thousands, hundreds, tens, and ones, etc., and put it into the answer in those respective places in the answer array.
+This gets messy. We seperate the next integer into ones and tens, and then somehow multiply the answer array and this next integer, ie 58, and deal with carrying over numbers to keep a single digit to the answer. Move that into the answer, and repeat that process. The link does that somewhere, but with linked lists instead of arrays of integers.
+This technique could work well up until getting the factorial of about 65537, since 65537 * 65536 is a number over 32bits, the largest we could hold in an unsigned integer / long value on a normal 32bit PC... (first multiplacation step)
+It is sort of reinventing the wheel I guess since there is already code to do it. I could probably work on it when I'm not studying for finals this week. Hopefully we can figure this one out, lol.
+January 13th, 2004 04:55 PM
+Wow. I looked at that "algorithm"...I couldn't even have begun to think about coding that (mainly because I've never learned about linked lists and I don't know as much as I should about c++).
+January 14th, 2004 03:38 AM
+I tried to come up with my own code and it is useless. I can't get it to carry numbers over right and multiply them together the way I need to. It ended up using only the first unsigned long in the array of about 1000 of them.
+Anyways, I read through the comments of that tutorial, and came across this one. Man the person (Krishna Kumar Khatri) is good... Saves me from ripping out anymore of hair trying to get my own version to work.
+January 14th, 2004 03:47 PM
+lol. That code's still too confusing for me to understand without reading it over a couple of times :P.
+If you could somehow devise a way to multiply parts 1 to n in an array to output them without having to store them in a variable, then I've got a program that solves this problem. But I guess that was the whole problem in the first place :P
+Anyhow. I'm just annoyed that I couldn't think up a solution myself

@@ -1,0 +1,30 @@
+Join Dennis Taylor for an in-depth discussion in this video Converting unusually formatted dates into usable data: Text to columns, part of Excel 2013: Working with Dates and Times.
+…In this worksheet called Unusual Formats, we've got 3 different sets of dates and…each one of them is awkward to work with and they have a different layout.…We can change these dates by selecting the data and then on the…data tab clicking text to columns, a great tool for parsing data, picking it…apart, choose delimited and then next and next, ignoring all options…along the way and then focus on the data option here in step 3 of 3.…As we look at the data there from left to…right, and you might just look at a few entries to…figure this out, we start with day, 2 digit day,…then a 4 digit year, and then a 2 digit month.…
+So we're looking at day, year, month.…That's dym.…We've got options here, 6 different ones.…We are looking for dym, there is it right there and…then choose finish and the date is converted to something useful.…We convert them into dates we convert into dates we can use them.…In column d same idea all over again but here the year comes first so that means…we will be looking fo y and then a 2 digit month and then a 2 digit day.…
+- Understanding how Excel records and stores dates and times
+- Looking at standard date and time entry options and acceptable alternatives
+- Using the TODAY and NOW functions
+- Customizing date formats
+- Using keyboard shortcuts
+- Formatting time for hours over 24
+- Calculating differences across dates and times
+- Calculating the day of the week
+- Working with holidays
+- Validating dates
+- Converting formatted dates to usable data
+Skill Level Intermediate
+1. The Excel Date and Time Systems
+2. Creating Date and Time Entries
+Instant date and time entry1m 28s
+3. Date and Time Formatting
+4. Date and Time Functions
+5. Calculating with Dates and Times
+6. Using Dates and Times with Excel Commands
+- Mark as unwatched
+- Mark all as unwatched
+Are you sure you want to mark all the videos in this course as unwatched?
+This will not affect your course history, your reports, or your certificates of completion for this course.Cancel
+Take notes with your new membership!
+Type in the entry box, then click Enter to save your note.
+1:30Press on any video thumbnail to jump immediately to the timecode shown.
+Notes are saved with you account but can also be exported as plain text, MS Word, PDF, Google Doc, or Evernote.

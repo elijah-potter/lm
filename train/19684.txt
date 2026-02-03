@@ -1,0 +1,10 @@
+The procedure will depend on what exactly you are hacking, what level of protection the system has, how much time and knowledge you have. If you generalize very much, hacking will look like this:
+Protect yourself. If you just want to practice, there is a chance to get a rebuff from the one you will hack. You can ask for permission to hack or practice on special virtual machines.
+Gather information. To hack something, you need to know what exactly you are hacking: what network you are working on, what protocols and programming languages, what data you want to get.
+Test your goal. Check if you can access the system remotely, if, of course, you work remotely.
+Scan the ports. This is necessary to understand which operating system you will be working with now and which ports are open for access.
+Find an open port or another way to access the system. Try different ports. FTP (21) and HTTP (80) are often well protected, so it is recommended to start working with TCP and UDP.
+Crack the password. At this stage, you crack the password or another way to identify the user.
+Get administrator rights. Access for a regular user is limited. To do something serious with the system, you need administrator or root user rights.
+Create a “backdoor”. A “backdoor” or “back door” is a way to get back to the system you hacked. It is needed not to hack everything again, but to immediately get the necessary accesses.
+Try to cover your tracks. You need to make sure that the system administrator does not notice you. This will be useful for a “white” hacker if he still wants to return to the system and “break” something before increasing security.

@@ -1,0 +1,63 @@
+This tutorial shows how to send modifications of code in the right way: by using patches.
+The word developer is used here for someone having a KDE SVN account.
+We suppose that you have modified some code in KDE and that you are ready to share it. First a few important points:
+Now you have the modification as a source file. Sending the source file will not be helpful, as probably someone else has done other modifications to the original file in the meantime. So your modified file could not replace it.
+That is why patches exist. Patches list the modifications, the line numbers and a few other useful information to be able to put that patch back into the existing code. (This process is called "patching" or also "applying a patch.")
+The main tool for creating patches is a tool called diff, which makes the difference between two files. This tool has a mode called unified diff, which KDE developers use. Unified diffs have not just the difference between the file but also the neighborhood around the differences. That allows to patch even if the line numbers are not the same anymore.
+The most simple patch is created between the modified file (here called source.cpp) and the non-modified version of the file (here called source.cpp.orig.)
+diff -u -p source.cpp.orig source.cpp
+That lists the difference between the two files in the unified diff format (and with function name information if possible.) However it only displays it to screen, which is of course not the goal. So you need to redirect the output.
+diff -u -p source.cpp.orig source.cpp > ~/patch.diff
+~/patch.diff is here an example and you can create the file where you prefer with the name that you prefer. (You will soon find out that it is probably not a good idea to create a patch where the source is.)
+But normally, you do not just change one file and you do not keep the original version around to be able to make the difference later. But here too, there is a solution.
+The program svn, which is used on the command line interact with the SVN server, has a diff function too: svn diff.
+You can run it like this and it will give you the difference of the current directory and all sub-directories below it. Of course, here too, you want to redirect the output.
+svn diff > ~/patch.diff
+There are useful variants too (shown here without redirection)
+Note: even if svn can make the difference of another directory (svn diff mydirectory), it is not recommended to do it for a patch that should be applied again. (The problem is that the person that will apply the patch will have to be more careful about how he applies it.)
+Note: for simple diff, like those shown in the examples above, svn diff can be used offline, therefore without an active connection to the KDE SVN server. This is possible, as svn keeps a copy of the original files locally. (This feature is part of the design of SVN.)
+By default, svn diff does not have a feature like the -p parameter of diff. But svn allows that an external diff program is called, so you can call diff:
+svn diff --diff-cmd diff --extensions "-u -p"
+The procedures described above work very well with text files, for example C++ source code. However they do not work with binary files, as diff is not made to handle them. And even if SVN can internally store binary differences, svn diff is not prepared to do anything similar yet, mainly because it currently uses the unified diff format only, which is not meant for binary data.
+Therefore, unfortunately, there is little choice but to attach binary files separately from the patch, of course attached in the same email.
+First, you need to make svn aware of files you have added.
+svn add path/to/new/file /path/to/another/new/file
+Then run svn diff as before.
+Note that if you do svn revert, for example, the files you created will NOT be deleted by svn - but svn will no longer care about them (so they won't show up when you do svn diff, for example). You will have to rm them manually.
+(TODO: are there any other issues with adding new files if you don't have commit access?)
+Now you are ready to share the patch. If your patch fixes a bug from KDE Bugs, then the easiest way is to attach it there, see next section.
+The main way of sharing a patch is to email to a mailing list. But be careful not to send big patches to a mailing list, a few 10KB is the limit.
+If you find that the patch is too big to send to a mailing list, the best is to create a bug report in KDE Bugs and to attach the patch there, after having created the bug report.
+Another possibility, however seldom used, is to post the patch on a public Web server (be it by HTTP or FTP) and to send an email to the mailing list, telling that the patch is waiting there.
+Another variant is to ask on the mailing list which developer is ready to get a big patch. (Try to give its size and ask if you should send it compressed, for example by bzip2.)
+A last variant, if you know exactly which developer will process the patch and that you know or that you suppose that he currently has time, is to send the patch to a developer directly. (But here too, be careful if your patch is big. Some KDE developers have still analog modems.)
+In this section we assume that you have chosen to add your patch to an existing KDE bug or that you have created a bug report just for your patch.
+Even if this tutorial is more meant to send patches to a mailing list, most of it can be applied to adding a patch to KDE Bugs.
+You have two ways to do it:
+To send an email to a bug report, you can use an email address of the form firstname.lastname@example.org where 12345 is the bug number. Please be sure to attach your patch and not to have it inlined in your text. (If it is inlined, it would be corrupted by KDE Bugs, as HTML does not respect spaces.)
+Note: if you send an email to KDE Bugs, be careful to use as sender the same email address as your login email address in KDE Bugs. Otherwise KDE Bugs will reject your email.
+Note: if you create a new bug report just for your patch, be careful that you cannot attach a patch directly when creating a new bug. However as soon as the new bug is created, you can then attach files, one-by-one, therefore also patches.
+Warning: sometimes your patch will be forgotten because the developers do not always closely monitor the bug database. In this case, try sending your patch by email as described below. If that also does not help, you can always talk to the developers on IRC
+Assuming that you have chosen to send the patch to a mailing list, you might ask yourself: to which one?
+The best destination for patches is the corresponding developer mailing list.
+In case of doubt, you can send any patch for KDE to the kde-devel mailing list. (However with an increased risk that you would miss the right developer.)
+Of course, if you know exactly which developer will process the patch and that you know or that you suppose that he currently has time, then you can send the patch to him directly.
+Now you have a patch redirected into a file (for this example called patch.diff), you are ready to send it by email. But the first question: where?
+Now that you have entered an email address, a good practice is to attach the patch to your file before writing anything else in the email. So you will not forget to attach it.
+A little note here: yes, in KDE (unlike for the Linux Kernel for example), we prefer to have the patches sent as attachments.
+Now you are ready to write the rest of the email. Please think of a title that matches your patch. (Think of having to find it again in the archives in a few months or even years.) A good habit is to precede the title by [PATCH]. So for example a title could be [PATCH] Fix backup files.
+As for the body of the email, please tell to which file or directory your patch applies. For example for a file: The attached patch applies to the file koffice/kword/kwdoc.cpp or for a directory: The attached patch applies to the directory koffice/kword. This help the developers to have an overview of which code has been modified. Also tell for which branch it is meant, for example for trunk.
+Then tell what your patch does. If it fixes a bug, then please give the bug number too. If the bug was not registered in KDE Bugs, then please describe instead the bug that is fixed. Similarly, if you know that the patch fixes a bug introduced from a precise SVN revision, please add the revision number.
+Tell also what could be useful to the developers, for example if you could not completely test the patch (and why), if you need help to finish fixing the code or if it is a quick&dirty solution that should be fixed better in long-term.
+Now check the email again to see if you have not forgotten anything (especially to attach the patch) and you can send the email.
+One popular way of submitting patches is KDE's reviewboard. A big advantage over using the bugtracker of KDE is that the patches are less likely to be forgotten here. Also, the reviewboard allows inline review of diffs and other gimmicks.
+First you need to check if the project you've created the patch for is actually using reviewboard. For this, go to the groups section and see if the project's group is listed there. If it is listed there, you should use the reviewboard, otherwise send the patch by other means.
+For sending a patch, you first need to register. Then simply click New Review Request and fill out the form. The most important parts of the form are:
+After you completed the form, a notification mail will be sent to the developers and they will answer you.
+Now you have to wait that a developer reacts on your patch. (If you are not subscribed to the mailing lists where you have sent the patch, then monitor the mailing list archives] for such a message.)
+The reaction is normally one of the following:
+The first case is when nobody has answered. That perhaps means that you have chosen the wrong mailing list. Perhaps you have not explained correctly what the patch fixes or you have given a title that is not precise enough. If this happens, the developer might have overlooked the patch. Perhaps the developer that should have answered has not any time currently. (That too happens unfortunately.) The best is to try to work a little more on the patch, make a better description and try again a second time, perhaps to another mailing list or to use KDE Bugs instead.
+If the developer tells you that your patch conflicts with changes that he is currently doing, you could probably not do much against it. Maybe you can discuss with him how you can effectively work with him on this piece of code.
+If your patch was not accepted, you could work further on it. Probably you should discuss the problem on the mailing list to know in which direction you should work further.
+If a developer wants a few changes, then work on the code to make the changes according to the critic. If you need help because you do not understand how to do the needed change, then ask it on the mailing list.
+If your patch was accepted, congratulations! :)

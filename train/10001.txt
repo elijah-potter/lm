@@ -1,0 +1,25 @@
+In Titanic, a movie directed by James Cameron, Jack and Rose try to survive in the freezing Atlantic water after the Titanic sinks to await rescue. Jack and Rose attempt to float atop a floating piece of door or headboard after the ship sinks, but Jack soon gives up. Audiences believe he stops trying to climb aboard the door because it keeps tipping over and if he kept trying he and Rose both would have been able to fit. In fact, there is reason to believe both Jack and Rose could have fit on the door:
+However, Cameron (and MythBusters agrees) that buoyant forces prevented Jack from sitting with Rose on the floating door. For my calculations, I assume that the door is of uniform shape 2m x 1m x .15m and that it is made of oak (density = 770 kg/m3).
+The buoyant force on the door is:
+FB = ρFgV
+FB = (1000kg/m3)(9.8 m/s2)(2m*1m*.15m)
+FB = 2940N
+If both Jack and Rose successfully got on top of the door, they would still end up in the water because their force pushing down on the door would outweigh the buoyant force necessary for keeping the door afloat:
+FJ+R = mg
+FJ+R = (57kg + 77kg)(9.8) + Fgdoor
+FJ+R = 1313N + ρv
+FJ+R = 1313N + (770 kg/m3)(.3m3)(9.8)
+FJ+R = 1313N + 2264N
+FJ+R = 3577N
+Therefore, Jack allowed Rose to lay by herself and she was able to survive because her force was less than the buoyant force:
+FR = (57kg)(9.8) + 2264N
+FR = 2822N
+If Rose had somehow died before this scene and Jack had come across this door in the water, he still would have not been able to keep it afloat, based on the calculations below. So if Jack would have died either way, at least he saved one life!
+FJ = (77kg)(9.8) + 2264N
+FJ = 3019N
+What type of wood would have allowed Jack and Rose to float together on the raft?
+FJ+R < 2940N
+Fwood < 1627N
+Ρwood < 553 kg/m3
+Therefore, from the chart listed on http://www.engineeringtoolbox.com/wood-density-d_40.html, eligible woods that James Cameron could have used to keep Jack from dying could have included:
+Agba, Black Ash, Aspen, Balsa, Bamboo, Butternut, Western Red Cedar, Cottonwood, Cypress, Douglass Fir, Gaboon, Red Gum, Western Hemlock, Juniper, Obeche, Corsican Pine, Radiata Pine, Scots Pine, White Pine, Yellow Pine, American Redwood, European Redwood, Spruce, Canadian Spruce, Norwegian Spruce, Sitka Spruce, Western White Spruce, and Claro Walnut – they all have densities less than 553 kg/m3.

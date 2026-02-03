@@ -1,0 +1,24 @@
+const void * memchr ( const void * ptr, int value, size_t num );
+void * memchr ( void * ptr, int value, size_t num );
+Locate character in block of memory
+Searches within the first num bytes of the block of memory pointed by ptr for the first occurrence of value (interpreted as an unsigned char), and returns a pointer to it.
+Both value and each of the bytes checked on the the ptr array are interpreted as unsigned char for the comparison.
+- Pointer to the block of memory where the search is performed.
+- Value to be located. The value is passed as an int, but the function performs a byte per byte search using the unsigned char conversion of this value.
+- Number of bytes to be analyzed.
+sizet is an unsigned integral type.
+A pointer to the first occurrence of value in the block of memory pointed by ptr.
+If the value is not found, the function returns a null pointer.
+In C, this function is only declared as:
+void * memchr ( const void *, int, size_t );
+instead of the two overloaded versions provided in C++.
+/* memchr example */
+int main ()
+char * pch;
+char str = "Example string";
+pch = (char*) memchr (str, 'p', strlen(str));
+printf ("'p' found at position %d.\n", pch-str+1);
+printf ("'p' not found.\n");
+- Compare two blocks of memory (function
+- Locate first occurrence of character in string (function
+- Locate last occurrence of character in string (function

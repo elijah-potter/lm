@@ -1,0 +1,12 @@
+Dry ice is solid carbon dioxide. It is commonly used as a versatile cooling agent. Dry ice sublimates, changing directly to a gas at atmospheric pressure. Its sublimation and deposition point is -78.5 °C (-109.3 °F). Its enthalpy of sublimation (ΔHsub) at -78.5 °C (-109.3 °F) is 571 kJ/kg (245.5 BTU/lb). The low temperature and direct sublimation to a gas makes dry ice a very effective coolant, since it is colder than ice and leaves no moisture as it changes state. (Although it can carbonate food that is near).
+More about Dry Ice on Wikipedia
+and if you’re interested in cooling your CPU with Dry Ice yourself, our in-house guide
+will surely be helpful.
+Dry Ice is quit easily available and not very expensive. For about 12 Kg Dry Ice I paid 10 euro. You can bench for over an entire day, play with some ice and use a bit the day after. It can be kept in a cool box for about 2 to 3 days.Installation
+Dry Ice itself doesn't turn into water. But as it's so cool you'll get condensation. To prevent that you need to insulate (keep away from air that can contain humidity).
+I used some foam I cut to the correct size and squeezed around the socket. This is far from perfect, but sufficient for a couple of runs.
+Once ready I installed the copper tube on the cpu and poured a bit of acetone in the tube. As Dry Ice pellets themselves don't make good contact with the copper they can't extract the heat very well. Just for information, the Dry Ice doesn't put cold to the tube, but to sublimate (= turn to gas) it needs energy (= heat) from its direct environment. That's how the tube and CPU will get cold. But adding a fluid that's doesn't freeze easily you can make much better contact. Here you see the temperature measured with a k-probe and Fluke thermometer on the bottom of the tube.
+The tube installed and cooling down....
+Just after adding new Dry Ice there is more energy (heat) in the tube and you see for a few seconds a lot of gas sublimating.
+This is what we see in Bios with the processor at default speed and voltage. Once we'll raise the voltage CPU temperature will raise to about -40° C.
+On to the results. >>>

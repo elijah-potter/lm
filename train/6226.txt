@@ -1,0 +1,19 @@
+Published on May 23, 2007
+WATERSHED AREA IN LORE LINDU NATIONAL PARK ADVANCED GEOGRAPHIC INFORMATION SYSTEM (ITM 524) BROTO RAHARJO G051054021
+1. CREATE DEM FROM SRTM S02E119 – S02E120 Global Mapper 7.04 3DEM (Opensource, downloaded from www.terrainmap.com)
+Select smaller area and project to UTM coordinate Save as GeoTiff ( lorelindu.tif ) Open lorelindu.tif in ArcGIS
+Create integer value from floating value Lorelindu_int.tif
+2. REMOVE ERROR SINK Lorelindu_fil.tif
+3. CREATE FLOW DIRECTION Lorelindu_flo.tif
+4. CREATE FLOW ACCUMULATION Lorelindu_fla.tif
+5. GENERATING STREAM CHANNEL Based on our flow accumulation, we can map stream channels where the water flows. This channel is based on the number of cells which flow into a specific cell. If we want large channels we use a larger number. For this project we will map all cells that has at least 500 cells that flow into it. Because the cell size is 90 m, these means we are mapping all cells that have a drainage area of at least 90 x 90 x 500 = 4.05 km2. Lrlindu_fla5.tif
+6. GENERATING STREAM LINK Lrlindu_strm.tif Stream channel 500 Flow direction
+7. GENERATING WATERSHED Lrlindu_wshd.tif Flow direction Stream link
+8. 3D VISUALIZATION IN ARCSCENE
+9. COMPARISON BETWEEN GENERATED STREAM CHANNEL AND TOPOGRAPHIC ____ Generated stream channel ____ Topographic
+1 IN THIS TUTORIAL ArcGIS 3D Analyst Tutorial • Copying the tutorial data • Exercise 1: Draping an image over a terrain surface • Exercise 2: Visualizing
+The output slope raster. Raster Dataset: output_measurement (Optional) ... ArcGIS for Desktop Standard: Requires 3D Analyst or Spatial Analyst.
+To use this tutorial, you must have the 3D Analyst extension and ArcGIS installed. The tutorial data should be installed on a local or shared drive on your ...
+Hello All, I am trying to learn to use the 3D Analsyst using the ArcGIS trial version. However i have been led to understand that the tutorial practice
+The 3D Analyst is an extension that adds support for 3D shapes, surface modeling, ... The watershed delineation tools used in the section on Hydrologic ...
+1 Exercise 4. Watershed and Stream Network Delineation GIS in Water Resources, Fall 2012 Prepared by David Tarboton, Utah State University Purpose

@@ -1,0 +1,14 @@
+This is a tutorial on how to copy an entire directory in an easy way. It is similar to Linux distros.
+The following example is to copy a directory on a web server. Firstly, you must create the destination directory.
+Go to the parent directory and run the following command:
+This will create a directory inside the parent directory. Replace DESTINATIONDIRECTORYNAME with a directory name of your choosing.
+Next, run the command to copy all of the files from the source directory into the destination directory.
+Here is the command:
+cp -iprv /usr/home/USERNAME/public_html/SOURCEDIRECTORYNAME /usr/home/USERNAME/public_html/DESTINATIONDIRECTORYNAME
+Replace USERNAME with the username for your user account. Replace SOURCEDIRECTORYNAME with the name of the directory that you are copying. Replace DESTINATIONDIRECTORYNAME with the name of the directory that you created in the first step.
+You may need to change the path to these directories depending on your server setup.
+-iprv are options for the cp command:
+- i - Interactive. Prompt you if overwriting any files
+- p - Preserve file attributes like date, time, etc
+- r - Recursive. Will copy subdirectories
+- v - Verbose. Show you each file as it is copied in the command line console

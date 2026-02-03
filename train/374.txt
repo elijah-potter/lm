@@ -1,0 +1,19 @@
+Before we may design a crystal filter it is necessary to know the crystal's data.
+Unfortunately this information is not in the datasheet - or we have no datasheet
+because the crystals were bought on a market some decades ago ...
+Fig.1: A crystal, it's symbol and equivalent circuit
+Fortunately these values may be measured using a small adapter - which may be built on the fly.
+We measured our crystals using the circuit below :
+Fig.2: Measurement Adapter
+Fig.3: Measurement Adapter Schematics
+The Capacitors used are Mica (Glimmer) obtained from www.reichelt.de
+With a jumper either the short or one of the series capacitors ( 15 pF or 33 pF ) may be selected.
+The tree positions of the jumper result in 3 different Transmission curves when using
+a Network Analyser or Spectrum Analyser with built in generator.
+( of course you may use a generator and a hf-voltmeter or anything equivalent ... )
+The Amplitude response looks somehow like this :
+Fig.4: Measured Amplitude Response S21
+You will notice, that the maximum (fs) will move while the minimum (fp) remains constant.
+With the short selected we measure the lowest frequency where Transmission
+is maximum. The maximum ( with 33 pF selected ) is next and then the
+maximum ( with 15 pF selected ).

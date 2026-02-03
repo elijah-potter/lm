@@ -1,0 +1,49 @@
+This article needs additional citations for verification. (December 2008) (Learn how and when to remove this template message)
+The prime symbol ( ′ ), double prime symbol ( ″ ), triple prime symbol ( ‴ ), and quadruple prime symbol ( ⁗ ) are used to designate units and for other purposes in mathematics, the sciences, linguistics and music.
+Although the characters differ little in appearance, the prime symbol should not be confused with the apostrophe or the single or double quotation mark, symbols that look similar but have different meanings.
+Designation of units
+Use in mathematics, statistics, and science
+In mathematics, the prime is generally used to generate more variable names for things which are similar, without resorting to subscripts – x′ generally means something related to or derived from x. For example, if a point is represented by the Cartesian coordinates (x, y), then that point rotated, translated or reflected might be represented as (x′, y′). The prime symbol is not related to prime numbers.
+Usually, the meaning of x′ is defined when it is first used, but sometimes its meaning is assumed to be understood:
+- A derivative or differentiated function: f ′(x) and f ″(x) are the first and second derivatives of f (x) with respect to x. Likewise are f ‴(x) and f ⁗(x) . Similarly, if y = f (x) then y′ and y″ are the first and second derivatives of y with respect to x. (Other notation exists)
+- Set complement: A′ is the complement of the set A. (Other notation exists)
+- The negation of an event in probability theory: Pr(A′) = 1 − Pr(A). (Other notation exists)
+- The result of a transformation: Tx = x′
+- The transpose of a matrix.
+In physics, the prime is used to denote variables after an event. For example, vA′ would indicate the velocity of object A after an event. It is also commonly used in relativity: The event at (x, y, z, t) in frame S has coordinates (x′, y′, z′, t′) in frame S′.
+In chemistry, it is used to distinguish between different functional groups connected to an atom in a molecule, such as R and R′, representing different alkyl groups in an organic compound. The carbonyl carbon in proteins is denoted as C′, which distinguishes it from the other backbone carbon, the alpha carbon, which is denoted as Cα.
+In molecular biology, the prime is used to denote the positions of carbon on a ring of deoxyribose or ribose. The prime distinguishes places on these two chemicals, rather than places on other parts of DNA or RNA, like phosphate groups or nucleic acids. Thus, when indicating the direction of movement of an enzyme along a string of DNA, biologists will say that it moves from the 5′ end to the 3′ end, because these carbons are on the ends of the DNA molecule. The chemistry of this reaction demands that the 3 prime OH is extended by DNA synthesis. Prime can also be used to indicate which position a molecule has attached to, such as 5′-monophosphate.
+Use in linguistics
+The prime can be used in the transliteration of some languages, such as Slavic languages, to denote palatalization. Prime and double prime are used to transliterate Cyrillic yeri (the soft sign, ь) and yer (the hard sign, ъ). However, in ISO 9, the corresponding modifier letters are used instead.
+Originally, X-bar theory used a bar over syntactic units to indicate bar-levels in syntactic structure, generally rendered as an overbar. While easy to write, the bar notation proved difficult to typeset, leading to the adoption of the prime symbol to indicate a bar. (Despite the lack of bar, the unit would still be read as "X bar", as opposed to "X prime".) With contemporary development of typesetting software such as LaTeX, typesetting bars is considerably simpler; nevertheless, both prime and bar markups are accepted usages.
+Some X-bar notations use a double-prime (standing in for a double-bar) to indicate a phrasal level, indicated in most notations by "XP".
+Use in Rubik's Cube notation
+In Rubik's Cube move notation the prime is used to invert moves or move sequences (e.g., L means "turn the left face 90 degrees clockwise", whereas L′ means "turn the left face 90 degrees counter-clockwise").
+Use in music
+The prime symbol is used in combination with lower case letters in the Helmholtz pitch notation system to distinguish notes in different octaves from middle C upwards. Thus c represents the C below middle C, c′ represents middle C, c″ represents the C in the octave above middle C, and c‴ the C in the octave two octaves above middle C. A combination of upper case letters and sub-prime symbols is used to represent notes in lower octaves. Thus C represents the C below the bass stave, while C ͵ represents the C in the octave below that.
+In some musical scores, the double prime (″) is used to indicate a length of time in seconds. It is used over a fermata (𝄐) denoting a long note or rest.
+The name "prime" is something of a metonymy. Through the early part of the 20th century, the notation x′ was read as "x prime" not because it was an x followed by a "prime symbol", but because it was the first in the series that continued with x″ ("x second") and x‴ ("x third"). It was only later, in the 1950s and 1960s, that the term "prime" began to be applied to the apostrophe-like symbol itself. Although it is now more common to pronounce x″ and x‴ as "x double prime" and "x triple prime", these are still sometimes pronounced in the old manner as "x second" and "x third".
+Unicode and HTML representations of the prime and related symbols are as follows.
+|Prime ( ′ )||U+2032|
+|Double prime ( ″ )||U+2033|
+|Triple prime ( ‴ )||U+2034|
+|Reversed prime ( ‵ )||U+2035|
+|Reversed double prime ( ‶ )||U+2036|
+|Reversed triple prime ( ‷ )||U+2037|
+|Quadruple prime (⁗)||U+2057|
+|Modifier letter prime ( ʹ )||U+02B9|
+|Modifier letter double prime ( ʺ )||U+02BA|
+In a context when the character set used does not include the prime or double prime character (e.g., in an online discussion context where only ASCII or ISO 8859-1 [ISO Latin 1] is expected), they are often respectively approximated by ASCII apostrophe (U+0027) or quotation mark (U+0022). This shortcut would not normally be considered appropriate for formal materials.
+LaTeX provides an oversized prime symbol,
+\prime (), which, when used in super- or sub-scripts, renders appropriately; e.g.,
+f_\prime^\prime appears as . An apostrophe,
+', is a shortcut for a superscript prime; e.g.,
+f' appears as .
+- Goldberg, Ron (2000). "Quotes". In Frank J. Romano (eds.). Digital Typography: Practical Advice for Getting the Type You Want When You Want It. San Diego: Windsor Professional Information. pp. 67–69. ISBN 1-893190-05-6. OCLC 44619239.CS1 maint: uses editors parameter (link)
+- "Positions and Sizes of Cosmic Objects". Las Cumbres Observatory. 2019.
+- E.g., in Herschel, William (1785). "Catalogue of Double Stars". Philosophical Transactions of the Royal Society of London. 75: 40–126. doi:10.1098/rstl.1785.0006. JSTOR 106749.
+- Schultz, Johann (1797). Kurzer Lehrbegriff der Mathematik. Zum Gebrauch der Vorlesungen und für Schulen (in German). Königsberg. p. 185.
+- Wade, Nicholas (1998). A natural history of vision. MIT Press. p. 193. ISBN 978-0-262-73129-4.
+- Lewis, Robert E. (1952). Middle English Dictionary. University of Michigan Press. p. 231. ISBN 978-0-472-01212-1.
+- Bethin, Christina Y (1998). Slavic Prosody: Language Change and Phonological Theory. Cambridge University Press. p. 6. ISBN 978-0-52-159148-5.
+- "WCA Regulations - World Cube Association". www.worldcubeassociation.org. Retrieved 22 March 2018.

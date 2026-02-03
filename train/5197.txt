@@ -1,0 +1,12 @@
+Object Oriented Programming
+Everything about Object Oriented Programming
+Everything in Ruby touches object oriented programming. You can't go anywhere without seeing it. These articles should get you started in OOP with Ruby.
+Object Specific Behavior
+All Ruby method call lookups follow the ancestor chain. However, there are invisible entries called Singleton Classes that must be considered.
+Ruby is an object oriented programming language. This means code is organized into classes, and data is manipulated via objects. Since this is so essential to Ruby, it's very easy to do.
+Dynamic Method Calls
+If you're coming from a compiled language, it's easy to think that method calls are like native function calls. This is simply not the case in Ruby.
+Instantiation and the Initialize Method
+Ruby objects are instantiated using the Class.new method, and initialize using their own initialize methods.
+Ruby allows you to overload operators, so expressions like a + b can work no matter what the types of a or b are.
+Method visibility is an important part of object oriented programming. Not only does it hide dangerous and unnecessary methods from the user, but it communicates to them that such methods are not even worth learning.

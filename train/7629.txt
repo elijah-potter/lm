@@ -1,0 +1,63 @@
+OGF:Making realistic airports
+This article will give a few tips on how to make realistic airports in OGF. The best way to get an idea is to look at airports in the real world.
+Commercial airports generally fall into two types: those which have evolved into large terminals over the last 50-90 years from small airstrips or military bases, and those which have been built in the last 30 years as bespoke airports. The former are sometimes rebuilt as the latter (see London Stansted and Berlin-Brandenburg). Whatever the history, airports tend to be built in locations that are:
+- Near enough to population centres to serve them but not so close as to cause noise and security concerns
+- As far as possible, away from major terrain obstacles
+- Close to surface transport links
+Placement of runways
+Aircraft need to take off and land into the wind or as close as possible to it. This means that the runway is invariably built aligned with the prevailing wind direction. What this direction will be will depend on the terrain, how close to the sea the airport is, and several other factors.
+Additional factors on the placement of runways are:
+- Level ground (a slight slope is permissible)
+- Any hills or other obstacles on the approaches to the runway
+- Whether aircraft can fly over residential areas regularly
+- Avoiding conservation areas/birds
+Aircraft will often need ten miles to line up with a runway and areas in which they are held in a 'stack' waiting to land must be considered.
+Number of runways
+Many airports started as grass airstrips in the early days of flying. Back then, there were usually laid out as three shorter runways arranged in a triangle with the aircraft stored in the middle or to one side. As the size and type of aircraft have changed, if these aerodromes have become commercial airports they will usually have closed all but one runway and built terminals and hangers in the space instead.
+Runways are very expensive to build and maintain. They require constant clearing of debris, surfaces that can take the weight of large aircraft, complex drainage systems and electronic navigation equipment. A runway must therefore justify its costs through operation. In the real world, many single-runway airports handle very large volumes of movements (London Gatwick and Geneva-Cointrain are two notable example) and even the world's busiest airports can usually handle all traffic on two to three runways. If there is more than one runway, a decision must be made as to whether they will be parallel (allowing more movements but potentially requiring crosswind landings) or at right angles (allowing for several wind directions but limiting the number of movements). Two runways in parallel need sufficient distance between them to allow simultaneous landing and take-off in safety. Whatever the layout, the costs of acquiring land will be a major factor. Another thing to consider is whether land is actually available. The proposed expansion of London Heathrow has been stalled many times by concerns about the removal of entire villages surrounding the airport and the presence of reservoirs and motorways in the area. In Sao Paulo the notorious Congonhas Airport had a dangerously short runway with a steep drop at one end, but expansion was impossible due to the airport being surrounded by the city suburbs.
+Most runways are around 2 miles (3km long). Shorter runways may be found at regional airports using smaller aircraft, and airports handling very large cargo aircraft or testing prototypes may have longer ones. Small airfields for light aircraft may have runways as short as half a mile.
+Runways also need space for guide lights at each end. These will often start some distance before the runway proper, so leave room - up to 240m.
+Due to aircraft noise it is not desirable to live under the direct flight paths on takeoff / landing. As such it's common for open spaces to be present (for example Calgary Airport, industrial use, or for such paths to be over open water.
+Below are real-world aircraft with runway length requirements based on elevation. Numbers are rounded and generalized. Air is less dense at higher altitudes, so there is less lift, meaning longer runways are needed. Roughly 7% needs to be added to the minimum runway length for each 300m (or 1000 feet) of elevation.
+Minimum Runway Lengths by Aircraft
+|Model||Passengers||Range KM||@ Sea Level||@ 1000m||@ 2000m||@ 3000m|
+Runways numbers are determined by their compass headings rounded to the nearest 10°, and without the last 0. Since runways can be used in two directions, both are referenced on charts. When aircraft use the runway, the runway number corresponding to the heading is used. For example: "Cleared for landing runway one six."
+90° and 270° = 09/27 180° and 360° = 18/36
+40° and 220° = 04/22 160° and 340° = 16/34
+In cases where the runway is exactly at a 5° increment, it can be rounded either up or down.
+135° and 315° = either 13/31 or 14/32
+If there are two parallel runways with the same heading, one is designated Left and one is designated Right, based on the direction of use.
+First runway: 15R/33L Second runway: 15L/33R
+Three Parallel Runways
+If there are three parallel runways with the same heading, they are designated Left Center and Right.
+16L/34R 16C/34C 16R/34L
+Four or more Parallel Runways
+If there are four or more parallel runways, then one set is rounded up to the nearest 10°, the other one down.
+Example: C + D
+15R/33L 15L/33R and 16L/34R 16C/34C 16R/34L
+Five parallel runways seems to be the currently high number in the real world, but in a case with more than six parallel runways, the side groupings would each be offset by 10°.
+14/32 15R/33L 15C/33C 15L/33R 16L/34R 16C/34C 16R/34L
+aeroway = runway
+ref = 07R/25L
+Runways need access via taxiways. There is almost always a taxiway parallel to the runway to enable aircraft to taxi to the far end for a take-off roll or to travel back to the terminal on landing. Some airports have parallel taxiways on either side to allow arriving aircraft to clear and departing to taxi at the same time. There will also be shorter taxiways at right-angles or at 45 degrees to let aircraft with shorter take-off/landing rolls to enter and exit the runway half-way along, saving taxi time.
+Taxiways are given letter and number designations, avoiding the the use of letter O or letter I since they look like the numbers 0 and 1.
+Taxiways parallel to the runway, and high-traffic crossing taxiways, are designated with a single letter. A, B, C, D, etc. If the entire alphabet is used, then double letters are used. AA, BB, CC, DD, etc. Double different letters are not allowed. No AB, DE, YZ, etc.
+Stub taxiways, those between the runway and a runway parallel taxiway, are designated with the letter of the primary taxiway, and then a number. For example: C1, C2, C3, or GG1, GG2, GG3. The sequence of the taxiway designations should be in a logical order, proceeding in one direction. A1 then A2, and then A3, for example.
+Letter and number combinations that may be confused with the runway numbers may not be used. Where there is a runway 14C, there should be no taxiway C14.
+aeroway = taxiway
+ref = C4
+Commercial airports need space for:
+- Terminal buildings that can handle passenger volumes
+- Cargo terminal
+- Piers or stands for aircraft parking
+- Control tower and navigation equipment
+- Hangers for storage and maintenance
+- Offices for airport and airlines
+- Fire and police
+- Security fences
+- Access roads
+- Private access roads inside the airport
+- Car parking
+- Other transport - taxi rank, railway and bus stations
+Buildings should be placed away from the flight path of aircraft, and never at the end of runways.
+Aircraft unloading passengers either dock in front of the terminal building and unload via a jetbridge, or park some distance away and the passengers take a bus to the terminal. Either way, the parking stands must have sufficient room for the aircraft to park, be surrounded by vehicles, and have room to pushback out again.

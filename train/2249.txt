@@ -1,0 +1,10 @@
+Chapter 7 Challenges
+From Linux Shell Scripting Tutorial - A Beginner's handbook
+- Decide whether the following sentence is true or false:
+- Linux is rich with filter programs.
+- A filter is a program that gets most of its data from its standard input and writes its main results to its standard ouput.
+- A set of processes chained by their standard streams, so that the output of each process feeds directly as input to the next one is called Linux pipeline.
+- You can run commands one after the other using ; operator.
+- You can run commands one after the other using && operator.
+- Second command only runs if first is successful when you use conditional or (||) operator.
+- A filter is very useful as part of Linux pipes.

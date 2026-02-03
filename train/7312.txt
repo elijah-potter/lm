@@ -1,0 +1,52 @@
+What are the sources for WeatherOnline forecasts?
+The WeatherOnline forecasts are created by using a MOS system developed in-house with the most current US weather services model data (GFS). The statistical methods of the Model-Output-Statistic (MOS)-System were developed in cooperation with the Meteorological Department of the University of Bonn.
+What is a MOS-System?
+A Model-Output-Statistic (MOS)-System combines the data of the weather forecast model and the locally recorded data for any given point by transforming the model data from a coarse grid to detailed small scale areas.
+In order to do so, one needs a large volume of past model forecast data as well as the corresponding recorded data for any given location. The MOS-System relates these two sets of data in an optimized fashion allowing development of the local weather forecast by using the most current model forecast.
+What are the time intervals used in the temperature and icons of the local forecasts?
+The forecasted maximum temperature always refers to a 12hour window from 6am to 6om local time.
+The forecasted minimum temperature always refers to the 12hour window from 6pm of the day before the forecast day to 6 am of the forecast day.
+The weather icon for the morning refers to the time between 6am and 12pm local time, the icon for the afternoon is valid from 12am to 6pm local time and the evening icon refers to the time from 6pm to 12am local time.
+How often are the current weather conditions and forecasts updated?
+The current weather information as well as the satellite images are updated every 30 minutes whereas the radar images are being updated every 15 minutes.
+The local weather forecasts as well as the weather charts are updated 8 times a day. The updates start at 2 am CEST or 3 am CEST depending on daylight saving time and continue on a three hourly bases.
+|Nearby Weather Stations - Orkney / Hoy||Distance|
+|Kirkwall Airport||54.6 km|
+|Sule Skerry||115.7 km|
+|RAF Tain||132.3 km|
+|Inverness Airport||165.7 km|
+|Fair Isle||208.4 km|
+|Loch Glascarnoch||210.2 km|
+|The Cairnwell||220.4 km|
+|Aberdeen Airport||226.9 km|
+|Sumburgh Cape||258.5 km|
+|Tulloch Bridge||266.1 km|
+|Aonach Mòr||287.9 km|
+|Scatsa/Shetland Island||290.1 km|
+|Glen Ogle||290.9 km|
+|Bealach na Bà||302.7 km|
+|Edinburgh Airport||324.1 km|
+|Edinburgh Gogarbank||327.1 km|
+|Oban Airport||348.6 km|
+|Glasgow Airport||353.1 km|
+|Glasgow Bishopton||353.5 km|
+|Redesdale Camp||417.0 km|
+|Spadeadam II||434.3 km|
+|Carlisle Lake District Airport||441.6 km|
+|Newcastle Airport||465.7 km|
+|Tiree Island||469.7 km|
+|South Uist Range||474.9 km|
+|Islay/Port Ellen||475.9 km|
+|Great Dun Fell||476.5 km|
+|RAF West Freugh||477.6 km|
+|St Bees Head||483.9 km|
+|Warcop Range||490.0 km|
+|Ballypatrick Fst||512.8 km|
+|Durham Tees Valley Airport||531.8 km|
+|Isle of Man Airport||549.1 km|
+|Loftus Samos||554.3 km|
+|Soervaag / Vagar||560.6 km|
+|Belfast Intl. Airport||563.7 km|
+|Malin Head||586.3 km|
+|Eglinton Airport||595.6 km|
+|Lough Fea||597.4 km|

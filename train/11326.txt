@@ -1,0 +1,26 @@
+TYPES OF DC MOTORS
+Figure 9 Torque-vs-Speed for a Series-Wound Motor
+Since the armature and field in a
+series-wound motor are connected
+in series, the armature and field
+currents become identical, and the
+torque can be expressed as shown
+in Equation (6-8).
+The torque-vs-speed characteristics
+of a series-wound motor with a
+constant voltage source are shown
+in Figure 9.
+As the speed
+decreases, the torque for a series-
+wound motor increases sharply. As load is removed from a series motor, the speed will increase
+sharply. For these reasons, series-wound motors must have a load connected to prevent damage
+from high speed conditions.
+Series-Wound Motor Applications
+The advantage of a series-wound motor is that it develops a large torque and can be operated at
+low speed. It is a motor that is well-suited for starting heavy loads; it is often used for industrial
+cranes and winches where very heavy loads must be moved slowly and lighter loads moved more
+The compounded motor is desirable for a variety of applications because it combines the
+characteristics of a series-wound motor and a shunt-wound motor. The compounded motor has
+a greater torque than a shunt motor due to the series field; however, it has a fairly constant speed
+due to the shunt field winding. Loads such as presses, shears, and reciprocating machines are
+often driven by compounded motors.

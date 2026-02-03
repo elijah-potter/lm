@@ -1,0 +1,11 @@
+samedi 7 avril 2012 13:24tell me.
+- Modifié TEJ2911 samedi 7 avril 2012 13:26
+Toutes les réponses
+samedi 7 avril 2012 16:23
+You need at least the one class for a program to run. Creating a new project will automatically create the class for you . If you have older code, create a new project and drop the old code into the new project. A console application wil automatically generate a main function. Take you old main function code an paste it into the new main function. If you have any additioanl functions just place the code after the main function keeping the code inside the same class as main.
+samedi 7 avril 2012 17:42
+No you cannot execute it. C# at least need one system defined or user defined class. That is what an objects oriented programming language should be.
+I am bit curious to know what you want to achieve.
+dimanche 8 avril 2012 07:04
+do you mean you don't required .net framework to run your program ?
+then you have to you use c++ to create your Project.

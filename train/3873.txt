@@ -1,0 +1,17 @@
+|Oct1-08, 10:16 AM||#1|
+flow problem with a two diemsional water flow divider
+A two-dimensional water flow divider is shown in the sketch. The flow in through opening A varies linearly from 3 to 6 m/s and is inclined with angle α=45 degrees to the opening itself. The area of the A opening is .4m2 per unit depth, that of B is .2m2 per unit depth, and that of C is .15 m2 per unit depth. the flow at B, normal to the opening, varies linearly from 3 to 5 m/s; and the flow at C, normal to the opening is approximately uniform. Find velocity at C. I'm having difficult setting up the relation needed to solve the problem.
+I've attached a figure for the problem.
+I would appriciate a step by step solution. This is what I was thinking:
+Min=Mb out +Mc out.
+what expression would I use for Min and Mb out
+I'm thinking Mc out would equal V*.45m2*cos(0)
+would Mb out= integral from 0 to 4 of (x/2)+3 dx and
+Min= integral from 0 to7 of (3x/7)+3dx
+than just sove for V correct?
+|Similar Threads for: flow problem with a two diemsional water flow divider|
+|Linear Algebra, Water Flow Problem||Calculus & Beyond Homework||3|
+|Tap water flow and water diameter at end of it (Bernoulli eqzn...)||Introductory Physics Homework||4|
+|Rate of flow - height of water problem||Differential Equations||4|
+|water flow venturi meter problem! Heeeelp please :)||Introductory Physics Homework||21|
+|HELP! relationship between rate of flow of water and height of water column||Introductory Physics Homework||1|

@@ -1,0 +1,8 @@
+Tim Maudlin reformulates topology using open lines as the basis rather than open sets.
+He thinks this sheds some light on the “arrow of time” question (why does time only move forward, when physical equations can be used to postdict [forensically a bullet, for instance] motion just as easily as to predict [planning a rocket, for instance] motion?).
+- If you don’t like some mathematics, just go make your own.
+- It’s nice to pay homage to the accepted standards, if’n you’re trying to impress people.
+- Yet another use of directed arrows (see noncommutativity and quasimetrics).
+- A “topological line” is just a total (linear) order. If you want to join two topological-lines and get another line, you have to make sure you don’t form a circle (two endpoints equate) or a loop-dee-loop. But segments can overlap if they share the same linear order.
+- A nifty slide on standard topology (as well as Maudlin’s new idea):
+- His “open lines” basis leads to an interesting conception of neighbourhood on a discrete lattice (shown on a square lattice):

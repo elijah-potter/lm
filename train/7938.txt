@@ -1,0 +1,4 @@
+When your computer's Internet connection is bogged down due to heavy traffic on your network, it can cause your "ping" to get excessively high. A ping is the amount of time it takes for a data packet to make a round trip from your computer to a remote computer. It is one measure used to tell how fast your Internet connection is. While you normally want a low ping, you can artificially inflate your ping by inducing an abnormally large traffic pattern on your computer.
+Click the Windows "Start" button. Type "cmd" into the search field at the bottom of the Start menu, then press Enter to open a Command Prompt window.
+Type "ping 127.0.0.1 -t" into the Command Prompt.
+Press Enter and your computer will start pinging itself, creating more traffic that will help to cause a higher ping on your connection. When you are finished, you can close the Command Prompt window to stop your computer from pinging itself.

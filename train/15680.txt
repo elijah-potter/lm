@@ -1,0 +1,9 @@
+Find the harmonic conjugate of a point with respect to two other points
+HarmonicConjugate(A, B, C, F)
+B, C, F
+The routine returns A which is the harmonic conjugate of F with respect to B and C.
+If A, B, C, F are four collinear points such that the cross-ratio(AF, BC) = -1 (so that B and C divide AF one internally and the other externally in the same numerical ratio), the segment AF is said to be divided harmonically by B and C. The points A and F are called harmonic conjugates of each other with respect to B and C, and the four points A, F, B, C are said to constitute a harmonic range.
+The command with(geom3d,HarmonicConjugate) allows the use of the abbreviated form of this command.
+check that the harmonic conjugate of A with respect to BC is the same as F
+Download Help Document
+What kind of issue would you like to report? (Optional)

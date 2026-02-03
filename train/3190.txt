@@ -1,0 +1,3 @@
+An expansion board that enables a computer to manipulate and output sounds. Sound cards are necessary for nearly all CD-ROMs and have become commonplace on modern personal computers. Sound cards enable the computer to output sound through speakers connected to the board, to record sound input from a microphone connected to the computer, and manipulate sound stored on a disk.
+Nearly all sound cards support MIDI, a standard for representing music electronically. In addition, most sound cards are Sound Blaster-compatible, which means that they can process commands written for a Sound Blaster card, the de facto standard for PC sound.
+Sound cards use two basic methods to translate digital data into analog sounds:

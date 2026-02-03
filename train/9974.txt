@@ -1,0 +1,7 @@
+| Most of this page uses content from Wikipedia. The original article was at Devnull. The page may have contained some inaccurate or outdated information, so please edit it so it contains better information.|
+The list of authors can be seen in the page history. As with Malware Wiki, the text of Wikipedia is available under the Creative Common Attribution-ShareAlike 3.0 License.
+Remove this template when most of the Wikipedia content has been removed or the Wikipedia information is outnumbered by non-Wikipedia information.
+This worm, once the host has been compromised, downloads and executes a shell script from a web server. This script downloads a gzipped executable file named k.gz from the same address, and then decompresses and runs the file.
+This downloaded file appears to be an IRC client. It connects to different channels and waits for commands to process on the infected host.
+Then the worm checks for presence of the GCC compiler on the local system and, if found, creates a directory called .socket2. Next, it downloads a compressed file called devnull.tgz. After decompressing, two files are created: an ELF binary file called devnull and a source script file called sslx.c. The latter gets compiled into the ELF binary sslx.
+The executable will scan for vulnerable hosts and use the compiled program to exploit a known OpenSSL vulnerability.

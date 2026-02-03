@@ -1,0 +1,14 @@
+I have noticed that the basic 3D rotation matrices in http://en.wikipedia.org/wiki/Rotation_matrix
+rotate vectors clockwise and not counter-clockwise, when the axis about which they occur points toward me !
+For example: the following operation yields the vector (0,1,0)
+[1 0 0 ] 
+[0 cos(90) sin(90) ] X 
+[0 -sin(90) cos(90) ] 
+Am I missing something ?
+Thank you for your help
+I think the problem is that the given matrix is a row-major matrix, which means row vectors. You're trying to use it as a column-major w/ column vector.
+So the operation you want to do is really:
+[0 0 1] X [1 0 0 ] = [0 -1 0]
+[0 cos(90) sin(90) ]
+[0 -sin(90) cos(90) ]
+Remember when you look at a matrix it's very important if it's row-major or column-major and right-handed vs left-handed. The above matrix gives you the correct result if it's right-handed row-major.

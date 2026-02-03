@@ -1,0 +1,6 @@
+I am trying to understand what is the difference between TCP Half Open Connection and TCP Half closed connection can any one tell what exactly are they?
+When TCP establishes a connection, it is considered guaranteed since there is a handshake that takes place:
+At that point the connection is established, and data begins to flow. In contrast, a UDP packet is not guaranteed, and is just sent in the hopes it gets there.
+Officially, according to the RFC's, a half-open TCP connection is when one side of the established connection has crashed, and did not send notification that the connection was ending. This is not the common usage today.
+Unofficially, if can refer to an embryonic connection, which is a connection in the process of being established.
+Half-closed is the opposite of that unofficial definition. It is a state somewhere in the middle where the computers are tearing down the established connection.

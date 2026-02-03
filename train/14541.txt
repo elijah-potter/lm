@@ -1,0 +1,8 @@
+I've been reading some color basic stuff and I came across with two different terms: gamut and gamma colors. By definition the difference between them may be clear. I found:
+- Gamma: transfer characteristic of display
+- Gamut: Range of reproduced color lights
+However, these definitions led me to to check these concepts:
+- Color light: luminance, hue, saturation
+- Color: Hue and saturation
+After checking these last terms everything turned really complex. Could you explain to me what the difference between color and color light is and why the first one does not include the term luminance? How are they connected to gamma and gamut colors?
+Thanks in advance :)

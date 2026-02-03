@@ -1,0 +1,5 @@
+Convert the angle in degrees (or grads) to radians, and vice versa.
+Angular measurements are commonly expressed in units of degrees, minutes, and seconds (DMS). This converter can be useful on all types of angle designation conversions: radians - grads - degrees (both, decimal form and degree, minutes, seconds form). Enter a numeric value appropriate for the designation you want to calculate and convert. The values returned will be for all of the other designations.
+To convert degrees to radians, multiply the degrees by pi/180.
+To convert grads to radians, multiply the grads by pi/200.
+Pi is equal to a circle's circumference divided by its diameter, where pi equals 3.141592653589793...

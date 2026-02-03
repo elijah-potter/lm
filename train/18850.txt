@@ -1,0 +1,49 @@
+Understanding the card payment lifecycle
+The popular science fiction writer Arthur C Clarke once famously said that any sufficiently advanced technology is indistinguishable from magic.
+The ‘magical’ element to credit cards is not so much the advanced technology — although that’s pretty impressive and certainly a subject for another time — it’s more the core proposition.
+In this article, we explain:
+- Why payment cards are great
+- The who’s who and what they do
+- How online payments via card work
+- How money moves and end up in the right place
+- How merchants get the best from their payment data
+Why are payment cards great?
+Cards allow businesses to sell to strangers, safe in the knowledge that they’ll be paid, provided they’ve done things right.
+Businesses are prepared to let customers drive away in hire cars. Or push groceries by the trolley-load out of supermarkets. Or order goods to the door, even if that’s in another country. And all on the strength of an electronic message saying ‘approved’.
+It seems like magic, yet there’s more.
+Cards also work when businesses and customers are not together, for example on the internet, over the telephone and via mail order. And even when they are together, simply waving a mobile phone, key fob or wristband at a terminal is seemingly enough for customers to leave with goods.
+The industry is fond of terms like ‘card transaction lifecycle’, ‘transaction processing’ and ‘payment lifecycle’. Basically, this describes what goes on behind the scenes in the milliseconds before a payment is approved.
+We’ll explain exactly what happens, how money moves and ends up in the right place. But first, let’s look at who’s who and what they do to make card payments happen.
+The who’s who of the payment lifecycle and what they do?
+There are many parties involved in a card payment. The four main ones are:
+- The merchant: Who accepts cards to make sales
+- The acquirer: Who enables merchants to accept payment for goods and services
+- The cardholder: Who uses the card to make purchases
+- The issuer: Who provides customers with cards
+That’s why you’ll often hear the terms ‘four-party’ or ‘four-corner’ model in this context. Visa and Mastercard operate a four-party model.
+As card schemes or networks, they sit at the center, connecting participating issuers and acquirers. They don’t issue cards to cardholders or place terminals with merchants to acquire transactions. Their participating banks and financial institutions do this.
+Card schemes set the rules, manage the payment network and promote their brands. This helps the system to work consistently and builds trust in it. Consequently, people will want to use and accept their cards. And businesses will want to issue and acquire them.
+Other parties may be involved in a card payment, usually by supplying services to one of the four main parties. For example, a merchant may use a payment gateway to collect customer card details from their website and pass them to an acquirer.
+For the sake of completeness, Amex operates a three-party model. They both issue Amex-branded cards to cardholders and sign up merchants directly to accept these cards.
+Learn more: Acquirer vs. issuer
+How do online payments via card work?
+Accepting card payments on a website is similar to accepting them in-store. Both require the customer to enter their details into a card terminal. For in-store, face-to-face card sales, merchants use physical terminal hardware to accept cards. While online the customer enters their details into a checkout page that acts as a substitute for the virtual terminal.
+Yet for remote payments, also known as ‘card-not-present’ or ‘card-absent’ payments, or for in-store payments, the questions the merchant needs answering are the same:
+- Is the cardholder who they say they are?
+- Are they good for the money?
+This is ‘authentication’ and ‘authorization’ in card industry terms.
+Learn how Strong Customer Authentication rules are changing the authorization process for merchants.
+How does money move and end up in the right place?
+Essentially, the card schemes operate a giant digital ledger to ensure funds end up in the right place. Remember, they sit at the center of the four-party model, connecting participating issuers and acquirers.
+At the end of the business day, merchants send all their card transactions to their acquirer, either directly or via a payment gateway.
+The acquirer sends these on to the relevant card scheme. Behind the scenes, the card scheme credits the acquirer and debits the various issuers, the bank and financial institutions that have issued cards to merchants’ customers.
+Exactly when acquirers credit funds to merchants depend on the contract between the merchant and the acquirer. Some settle funds daily or 2-3 days after the sale. Others settle sooner. Some settle gross fees and charges, others settle net.
+How quickly the cardholder pays for their purchases depends on the type of card.
+Prepaid cards rely on the cardholder paying funds on to the card in advance. With debit card processing, payment is taken from the cardholder’s account immediately. With credit, charge or deferred debit cards, the cardholder can pay later. Commercial cards can be used to make business-to-business purchases to suppliers. They are set up as prepaid, debit, or pay-later credit cards.
+How do you get the best from your payment data?
+You can learn a lot about your customers before, during and after they pay. That’s providing you’ve got the right data, of course.
+Among the things you can uncover are how much they’re spending and how often they buy from you. But also, where they are and what devices they’re using. Plus likes and dislikes, such as which channels and payment methods they prefer.
+This information will help you personalize service and offers, spot fraud, diagnose declined payment and solve problems. Which all goes to unlocking maximum insights and value for your business. Passing on this data to issuers can also create 3DS2 exemptions where permitted, creating a more seamless customer experience.
+Check how your acquirer and/or payment gateway stores and structures payment data. And how they make it available to you.
+Depending on how they do this, you’ll be able to determine exactly what’s happening in every detail of every transaction. This must work with your internal systems and give you ‘action ready’ insights and recommendations.
+Payments are about more than accepting credit or debit cards processing. Get the latest thinking around the biggest payment trends and how disconnected payments may be costing your business millions of dollars in lost revenue every year.

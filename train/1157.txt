@@ -1,0 +1,36 @@
+The waste characteristics factor category in the ground water pathway is made up of two components: the toxicity/mobility of the most hazardous substance associated with the site and the hazardous waste quantity at the site. The most hazardous substance at a site is identified as the hazardous substance receiving the highest toxicity/mobility value factor. The hazardous waste quantity factor is evaluated as discussed in Section 5.
+- The Most Hazardous Substance at a Site
+- Toxicity/Mobility Factor
+- Hazardous Waste Quantity
+- Waste Characteristics Factor Category Value
+The most hazardous substance at a site is identified by calculating the toxicity/mobility factor all eligible hazardous substances associated with the site. Eligible hazardous substances consist of those hazardous substances available to migrate from the sources at the site to ground water and include:
+- All hazardous substances found in ground water observed releases at the site.
+- All hazardous substances found in a source with a non-zero ground water containment factor value.
+- All hazardous substances assigned to the "unallocated source."
+As noted in Section 5, the determination of the toxicity value for a hazardous substance is complex, involving assessments of a substances relative propensity to cause cancer and/or non-cancer adverse health effects (such as liver damage or death). Toxicity values for nearly all hazardous substances of interest can be found in SCDM. If a value is needed for a hazardous substance not found in SCDM, then EPA should be consulted to determine the appropriate course of action. Toxicity factor values should not be independently calculated.
+Ground water mobility is a measure of the propensity of a substance to migrate through an aquifer and reach targets. The mobility factor value assigned to a hazardous substance is based on generic and site-specific considerations. The mobility factor for any substance found in any ground water observed release at the site is assigned a value of 1. Otherwise, the substance mobility factor value is assigned based on the water solubility and distribution coefficient of the substance.
+As with the toxicity factor, the rules for determining the mobility factor values for a hazardous mobility factor values for nearly all hazardous substances of interest can be found in SCDM. If a value is needed for a hazardous substance not found in SCDM, then EPA should be consulted to determine the appropriate course of action. Mobility factor values should not be independently calculated.
+The SCDM mobility factor values may not be directly applicable at a site because the HRS contains special, site-specific provisions to be applied in certain situations:
+- Substances found in ground water observed releases are assigned a mobility factor value of 1.
+- Hazardous substance deposited or currently present in the source as a liquid are essentially assigned the maximum water solubility value.
+- Hazardous substances are essentially assigned the minimum distribution coefficient value when evaluating karst aquifers.
+- A default value of 0.002 is used if none of the hazardous substances eligible to be evaluated can be assigned a mobility factor value.
+SCDM contains water solubility and distribution coefficient values for many hazardous substances for use in these situations.
+It is important to note the sequential effect that demonstrating an observed release has on the ground water pathway score. If an observed release is demonstrated then:
+- the maximum likelihood of release value of 550 is assigned (a value 10 percent higher than the maximum potential to release value)
+- all hazardous substances meeting the observed release criteria are assigned the maximum mobility factor value.
+Further impacts of observed release demonstrations on target evaluations will be discussed later.
+With toxicity and mobility values calculated, the toxicity/mobility factor is obtained by referring to Table 3-9 of the HRS Rule. The most hazardous substance for the ground water pathway is the one with the highest toxicity/mobility value. This is the value used to score the aquifer (the value is entered in line 4 of Table 3-1 of the HRS Rule).
+Note that many substances that are highly toxic have low values for ground water mobility. For example, PCBs, which are highly toxic (toxicity value of 10,000), sorb easily and have a mobility value of 0.0001, even when in liquid state. This explains why observed releases of PCBs to ground water have been documented at only a few sites.
+What would happen to the toxicity/mobility value if PCBs were detected in a ground water sample at observed release criteria? ANSWER
+The hazardous waste quantity (HWQ) — the second component of the waste characteristics factor value — is evaluated based only on those sources that have a ground water containment value greater than zero.
+The waste characteristics factor category value is determined in a straight-forward manner by first multiplying the toxicity/mobility factor value by the hazardous waste quantity value, subject to a maximum value of 108. The waste characteristics factor category value is then determined using this product as specified in HRS Rule Table 2-7. The maximum value achievable in the ground water pathway is 100.
+In the absence of both an observed release and karst terrain, the waste characteristics factor category value remains the same for all aquifers underlying the site.
+The above diagram summarizes the steps taken to arrive at the waste characteristics value.
+Consider the site shown above. As illustrated, the site records indicate that 13 drums containing waste chlordane and arsenical pesticides were deposited in an unlined pit. The SCDM toxicity values for chlordane and arsenic:
+- arsenic: 10,000
+- chlordane: 10,000
+The SCDM ground water mobility values for chlordane and arsenic:
+- arsenic: 0.01
+- chlordane: 0.01
+[Slide 1 of 3] [Home]

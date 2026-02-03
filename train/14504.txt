@@ -1,0 +1,15 @@
+We build substations for the following reasons:
+To satisfy load growth
+When people or businesses move to a new location that has little to no power supply infrastructure, it might make a case for building a substation close to the community. Supplying this new load from distant substations is inefficient because a little amount of power will be lost as heat on the distribution lines.
+To accommodate new generation
+Say you want to build a wind farm or a solar farm (see the proposed renewable projects here.) You will need a collector substation to tie all the generators and connect them to the power grid.
+To maintain reliability requirements
+At times new transmission lines are constructed by developers or public utilities to address congestion in the power grid. Congestion occurs for a variety of reasons – explained here. Therefore when building new transmission lines, an effort is made to connect it to an existing substation. When that is not possible, a new substation is built.
+To step up or step down AC voltage using transformer(s)
+Remember higher voltages mean lower currents. Lower currents yield to lower I^2R (copper) losses. Thus more energy can be delivered to do useful work. Voltages at the distribution end need to be stepped down for utilization by customers.
+Substations provide the necessary real-estate to install a transformer for power transmission and distribution.
+To break the power flow
+Quite often a fault (such as a tree touching a live wire) requires complete isolation of the line until the fault is removed. Breaking the power flow by merely placing some switches on the line will not work. To safely interrupt thousands of amperes you will need circuit breakers that can handle such high current magnitudes. Almost all substations contain circuit breakers in some form that trip and isolate transmission lines connected to it.
+Provide support to the power flow
+Unlike DC power flow, AC power flow needs to overcome not only the resistive impedance but also the impedance offered by the inductive nature of various equipment (like motor loads, transmission lines, reactors, etc.) connected to the system. For this reason, substations have capacitor banks connected to all three phases of the lines to ease the power flow. Doing so also improves the power factor of the electrical system.
+There are several other reasons for building a substation. However, the ones listed above are the important ones.

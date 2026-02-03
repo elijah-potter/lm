@@ -1,0 +1,38 @@
+WinCompose: use keyboard shortcuts to write special characters
+Depending on how you use your computer, you sometimes may need to write special characters that your keyboard does not support out of the box.
+Use an English keyboard layout and need to write an email to SÃ¶ren from Germany or include â…“ or Â¼ in a financial document?
+If that is the case you have plenty of options to do so including using Windows' built-in Character Map application or copying and pasting the characters from somewhere else.
+Most of the solutions are not as fast as the one WinCompose offers though as it makes available all characters via keyboard shortcuts.
+This works by using a modifier key on the keyboard, Alt Gr by default, and a key sequence that more often than not resembles the character you want to write. The one-fourth example from above is printed on the screen by pressing Alt Gr 1 and 4 for example.
+The system tray icon changes its color to green to indicate that the compose key has been activated.
+You can browse all available characters and their sequences with a right-click on the application icon in the system tray and the selection of show sequences from the context menu.
+Each sequence is explained visually in the interface and there is an option to copy the resulting special character to the clipboard as well.
+You can change the compose key under options and modify the delay as well there which defines the time you have to complete the sequence to print the character on the screen.
+Other options provided there are to discard characters from invalid sequences, to beep on invalid sequences, and to fall back to case insensitive matches on invalid sequences.
+WinCompose ships with more than 1700 special characters and sequences included.Â You can add additional characters to a new text file named .XCompose that you need to save to your user profile directory.
+Additional information on how that is done are found on the project website over on Github.
+WinCompose is an excellent application for users who need to write special characters regularly on the system. While you may need to look character sequences up initially, many of them are intuitive so that they can be remembered easily.
+The app runs silently in the background and uses little memory and no cpu during that time. It is available as a portable version and installer on the project website.
+All in all a helpful lightweight program for the Windows operating system.
+Now Read: These tools help you write European special characters.
+Great find. Thanks.
+I was looking for one character: a dot inside a single spiral line. Sarcasm!
+Could not find.
+I was hoping this would be a keeper, but it totally mucked up my keyboard and mouse. Ah well.
+When I hit any key, the computer emitted an error beep, and the key did not function. When I double clicked on an icon to open a program, the properties window of the icon opened instead.
+That sounds strange. Did not experience this at all. Caps lock was not enabled by any chance?
+Under US 104 keyboard standards, it changes the most basic of keystrokes, file associations and clicks into other functions. But before I go into that, I’d like to say, the program has a lot of keystrokes which require the capitalizes versions of input characters, but it would not accept the Shift key to access the Capital letter of those keys. Only the Caps Lock key worked and we’d have to toggle it on/off per letter entered.
+Shortcut links became view properties and we’d have to use the context menu to access the open command. Opening web page links suddenly changed to download page function. Trying to download actual downloads became to go home page instead. Mouse scroll forward became page forward so mouse scroll down you’d think would become page backward, but it was the scroll down function.
+I have my custom programmable mouse set to input certain keystroke combinations to make my use easier for my needs. None of them worked and even the simplest of functions like Alt+w (close tab/window) would not work from the mouse button. Oddly enough it did disable the left WIN key., but it changed the right one to open WinCompose.
+So yeah Martin, this program really screwed up USA English keyboard layouts and even uninstalling it required a reboot to fully remove the temporary key-maps that were still active even after the program was uninstalled.
+I’m sorry to hear that. I did not experience any issues using it but I’m using a German keyboard layout. The issues page does not list this issue either.
+The problems of this software are easily avoidable. There’s no reason a special characters program even needs to mess with the underlying keyboard layout. It can use macro programming instead, such as in the unfortunately out of date, but elegantly simple, AllChars program, or in the more complex, but more capable, PhraseExpress.
+Unfortunately, US keyboards don’t have an “Alt Gr” key (although I supposed the right ALT key serves the same purpose?)
+Yes that is correct Doc ;)
+This is a very nice program.
+Thanks for sharing this program with us.
+Comes in handy.
+Happy with BabelMap for all my special character needs.
+How does this differ from the easily accessible ASCII tables where the user simply presses the ALT key and a specific numeric combination?
+Many combinations are intuitive which should make them easier to remember.
+In addition to that, I found to my dismay that some Lenovo laptops do not have a numeric keyboard and no way to emulate one. That kills the ability to use Alt+0xxx codes because the numeric code MUST be entered via the numeric keyboard.

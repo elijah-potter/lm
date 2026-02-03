@@ -1,0 +1,26 @@
+On the 26th of May 2012, a new law comes into effect where websites need to ask for permission before they can set most cookies. Any UK-based website which uses “non essential” cookies, such as visitor tracking code or advertising, is affected. This means that if your website uses Google Analytics, your website could be deemed illegal.
+There is a lot of confusion about the law, with many people awaiting official responses from companies such as Google, Microsoft and Mozilla to see if they will provide a browser or service based solution, rather than everyone requiring to update their websites with individual alerts. A majority of website owners have also held back to see if the law will be changed as it could have a huge negative impact on all European business websites.
+This article hopes to explain the law clearly, helping you make a decision on the action you want to take with your website.
+What is a cookie?
+Cookies are small text files which store website information on a visitor’s computer. They’re typically used to identify that particular visitor and provide them with a better experience. Cookies are a crucial part of many website functions which many people take for granted.
+For example, cookies are often used with online shops to remember what items you have in your basket. They’re also used to keep you logged in to a website, or to provide valuable usage statistics and information to website owners.
+Can’t a user turn off cookies in their web browser?
+Whilst modern browsers have the ability to control cookie settings, this is not enough. The new law states:
+– ICO Guidelines
+This means that for now it’s up to the owner of the website to ask for the user’s consent when they visit their website. It is possible that we’ll be able to rely on browser settings sometime in the future, but no one knows when that is likely to be.
+Are all cookies affected?
+All cookies that are not “strictly necessary for a service requested by a user” are affected.
+For example, if a user adds an item to their shopping basket, that would be considered necessary – a cookie is technically required to remember that user and retain their basket contents. Similarly, a cookie may be necessary to keep a user logged in to a website.
+However, a cookie which was set to welcome a user back to a website, or to record what pages they view would not be strictly necessary. In particular, this means you can’t use traditional analytics without permission.
+Many cookies serve multiple purposes, and if any of these are not strictly necessary they must be explicitly opted into. This is an obvious problem with technologies that set a single session identifier, including virtually all server side programming languages (PHP, .NET, JSP etc).
+What about Google Analytics?
+Analytical tools such as Google Analytics have their own specific section right at the bottom of this document (PDF Download). Despite the document explaining that we need to gain user consent, they admit this little caveat in the penultimate sentence:
+Although the Information Commissioner cannot completely exclude the possibility of formal action in any area, it is highly unlikely that priority for any formal action would be given to focusing on uses of cookies where there is a low level of intrusiveness and risk of harm to individuals.
+This sentence would suggest that they see analytical cookies as a possible exclusion to the rule, and that they may not take any formal action if you use them. Although, please be aware that it says “highly unlikely”, meaning that we do not recommend you ignore it.
+The next sentence states:
+Provided clear information is given about their activities we are highly unlikely to prioritise first party cookies used only for analytical purposes in any consideration of regulatory action.
+This means that we need to create a page explaining what cookies we use and why. This transparent and informative approach is a much better approach than creating invasive pop-ups, which ask for consent and distract or confuse the user.
+Moving towards compliance
+It’s looking very unlikely that many websites will have implemented a cookie opt-in by 26th May, but that doesn’t mean you shouldn’t be doing anything at all. In fact, the ICO – which is responsible for enforcing the rules – has suggested that the most important thing is to take steps in the right direction. If you can show you’re moving towards full compliance , you’re less likely to be targeted.
+As a bare minimum, it’s important to have an understanding of what cookies you have on your website and what they are used for, then plan how you might implement an opt-in. If you have a website and require assistance, please e-mail us at email@example.com and we will get back to you shortly.
+Useful Links and Sources:

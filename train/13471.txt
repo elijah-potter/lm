@@ -1,0 +1,19 @@
+Locust-inspired Car Safety
+Chris - When we say compound eye, how does the insect actually process the light coming in? It's got loads of images of the world coming in at once. That must take a lot of processing.
+Claire - It does take a lot of processing but that isn't the way the insect looks at it. They don't have thousands of complete images. Their whole image of the world is pixelated and broken up. Every little lens looks out at a particular region in space and then it just has to put together all the information from that particular region in space. There is some beautifully engineered circuitry and it's repeated many times over the eye.
+Chris - You actually won an Ignobel Prize for showing episodes of Star Wars to locusts. Why?
+Claire - Because I could!
+Chris - Who was funding this research?!
+Claire - The BBSRC. Star Wars had a huge array of visual scenes and looming motion, and that's why we chose Star Wars. Looming is when an object is coming straight for you, like a spaceship. The other thing is that they have spaceships moving directly over you. They were coming very close but weren't actually having a collision. So we could test the different responses of the neurones to a near collision and a collision.
+Chris - And this is your locusts' anti-bumping device.
+Claire - Yes.
+Chris - How does that actually work?
+Claire - It detects objects which are approaching and expand over the eye. There are circuits that extract those image cues and will give a warning when the system detects very rapidly expanding edges, which are features of objects approaching on a collision course.
+Chris - So how could you apply that to the automobile industry, as this is the stance you're taking on this?
+Claire - The way we're applying this is that we've got a little silicone chip which is inspired by the insect eye and it has small photocells rather like the cells in the insect eye. The signals are passed through various layers of circuitry, and eventually after much computation, the signals are summed up and a collision warning is issued if there is sufficient evidence for there being an object on a collision course.
+Chris - But how is this better than a driver at the wheel of a car anyway? Or are you thinking now of a car that has autopilot or something?
+Claire - They could have an autopilot, but at the moment the driver is not very good at reacting quickly enough. This is especially so if a child or something steps out quickly in front of the car and the accident is imminent.
+Chris - Say a child steps out but there's a child coming the other way. How does your computer resolve that?
+Claire - The most salient features, or the ones that give the biggest responses , would be the ones the system would react to.
+Chris - So it would hit the kid and ignore the car coming the other way then.
+Claire - No it wouldn't hit the child. That would be the image that was expanding most rapidly over the sensor and the collision alerting system would be switched on by that image. It ignores a lot of other movement, like flow fields, or images flowing back over the sensor. It's specifically looking for an object which is on a collision course. The car coming straight for you will be a problem for you as well!

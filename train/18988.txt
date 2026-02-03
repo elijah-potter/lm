@@ -1,0 +1,7 @@
+C has the concept of undefined behavior, i.e. some language constructs are syntactically valid but you can’t predict the behavior when the code is run.
+As far as I know, the standard doesn’t explicitly say why the concept of undefined behavior exists. In my mind, it’s simply because the language designers wanted there to be some leeway in the semantics, instead of i.e. requiring that all implementations handle integer overflow in the exact same way, which would very likely impose serious performance costs, they just left the behavior undefined so that if you write code that causes integer overflow, anything can happen.
+So, with that in mind, why are these “issues”? The language clearly says that certain things lead to undefined behavior. There is no problem, there is no “should” involved. If the undefined behavior changes when one of the involved variables is declared
+volatile, that doesn’t prove or change anything. It is undefined; you cannot reason about the behavior.
+Your most interesting-looking example, the one with
+u = (u++);
+is a text-book example of undefined behavior (see Wikipedia’s entry on sequence points).

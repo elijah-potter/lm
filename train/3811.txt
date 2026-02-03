@@ -1,0 +1,3 @@
+new(name, utc_offset, tzinfo = nil)public
+Create a new TimeZone object with the given name and offset. The offset is the number of seconds that this time zone is offset from UTC (GMT). Seconds were chosen as the offset unit because that is the unit that Ruby uses to represent time zone offsets (see Time#utc_offset).
+# File activesupport/lib/active_support/values/time_zone.rb, line 180 def initialize(name, utc_offset, tzinfo = nil) @name = name @utc_offset = utc_offset @tzinfo = tzinfo end

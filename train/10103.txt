@@ -1,0 +1,14 @@
+A real number, i.e. 1, -25, 6.52, 1805.6352
+Numbers are stored as single precision floating point numbers, which allow for a large range of values with limited precision (generally accurate to 6 or 7 decimal places).
+The largest real positive number that can be entered via script is: 3.4028235e38
+The largest real negative number that can be entered via script is: -3.4028235e38
+Larger numbers: In scripts it is possible to generate a representation of an infinite positive or negative number which compares even larger or smaller than the above two floating point limits;
+Positive infinity 1e39 = "1.#INF"
+Negative infinity -1e39 = "-1.#INF"
+Indeterminate (NaN) = "-1.#IND"
+The finite command can be used to verify if a number represents infinity or NaN.
+Arma supports hexadecimal numbers in both scripts and configs. Most common notation for hex numbers is 0x followed by the hexadecimal value. Alternatively symbol $ can be used for the same thing. It is also possible to mix and match notations:
+It's special properties are that it will always supply a value from 0 to 360
+Scripting vs Addons编辑
+Integers and Floats编辑
+Note also, unlike config.cpp's, Boolean is a real type in scripting language. In addons, it is a poetic licence for a zero/non zero Integer. In Arma 3 command parseNumber has been extended to accept booleans:

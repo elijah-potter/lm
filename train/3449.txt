@@ -1,0 +1,47 @@
+23.5 stdbuf: Run a command with modified I/O stream buffering
+stdbuf allows one to modify the buffering operations of the
+three standard I/O streams associated with a program. Synopsis:
+stdbuf option... command
+command must start with the name of a program that
+- uses the ISO C
+FILE streams for input/output (note the
+programs dd and cat don't do that),
+- does not adjust the buffering of its standard streams (note the
+program tee is not in this category).
+Any additional args are passed as additional arguments to the
+The program accepts the following options. Also see Common options.
+- ‘-i mode’
+- Adjust the standard input stream buffering.
+- ‘-o mode’
+- Adjust the standard output stream buffering.
+- ‘-e mode’
+- Adjust the standard error stream buffering.
+The mode can be specified as follows:
+- Set the stream to line buffered mode.
+In this mode data is coalesced until a newline is output or
+input is read from any stream attached to a terminal device.
+This option is invalid with standard input.
+- Disable buffering of the selected stream.
+In this mode, data is output immediately and only the
+amount of data requested is read from input.
+Note the difference in function for input and output.
+Disabling buffering for input will not influence the responsiveness
+or blocking behavior of the stream input functions.
+fread will still block until
+EOF or error,
+even if the underlying
+read returns less data than requested.
+- Specify the size of the buffer to use in fully buffered mode.
+size may be, or may be an integer optionally followed by,
+one of the following multiplicative suffixes:
+‘KB’ => 1000 (KiloBytes)
+‘K’ => 1024 (KibiBytes)
+‘MB’ => 1000*1000 (MegaBytes)
+‘M’ => 1024*1024 (MebiBytes)
+‘GB’ => 1000*1000*1000 (GigaBytes)
+‘G’ => 1024*1024*1024 (GibiBytes)
+and so on for ‘T’, ‘P’, ‘E’, ‘Z’, and ‘Y’.
+125 if stdbuf itself fails
+126 if command is found but cannot be invoked
+127 if command cannot be found
+the exit status of command otherwise

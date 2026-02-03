@@ -1,0 +1,17 @@
+- Full Description
+PostgreSQL is arguably the most powerful open-source relational database system. It has grown from academic research beginnings into a functionally-rich, standards-compliant, and enterprise-ready database used by organizations all over the world. And its completely free to use.
+Beginning Databases with PostgreSQL offers readers a thorough overview of database basics, starting with an explanation of why you might need to use a database, and following with a summary of what different database types have to offer when compared to alternatives like spreadsheets. Youll also learn all about relational database design topics such as the SQL query language, and introduce core principles including normalization and referential integrity.
+The book continues with a complete tutorial on PostgreSQL features and functions and include information on database construction and administration. Key features such as transactions, stored procedures and triggers are covered, along with many of the capabilities new to version 8. To help you get started quickly, step-by-step instructions on installing PostgreSQL on Windows and Linux/UNIX systems are included.
+In the remainder of the book, we show you how to make the most of PostgreSQL features in your own applications using a wide range of programming languages, including C, Perl, PHP, Java and C#. Many example programs are presented in the book, and all are available for download from the Apress web site.
+By the end of the book you will be able to install, use, and effectively manage a PostgreSQL server, design and implement a database, and create and deploy your own database applications.
+- Source Code/Downloads
+If you think that you've found an error in this book, please let us know about it. You will find any confirmed erratum below, so you can check if your concern has already been addressed.On page 71:Date format in orderinfo populating script would be better formatted as '2000-03-13' (ISO). I had to make the substitution for the populating script to run without error. (Using 8.4 on Ubuntu server 11.04 in North America)
+On page 87:SELECT description, cast((cost_price * 100 AS int)) AS "Cost Price" FROM item;
+SELECT description, cast((cost_price * 100) AS int) AS "Cost Price" FROM item;
+(I'm using PostgreSQL 9.0.4)
+On page 161:Command should be written:
+\copy customer from 'cust.txt' delimiter ','
+not: using delimiters, which is for COPY syntax.
+On page 381:
+FIgure 12-12 Many-to-many relationship
+In table BOOKAUTHOR, AUTHOR_ID can not be a primary key. It would break the unique constraint.

@@ -1,0 +1,24 @@
+GNU Octave is a high-level language, primarily intended for numerical computations. It provides a convenient command line interface for solving linear and nonlinear problems numerically, and for performing other numerical experiments. It may also be used as a batch-oriented language. Octave has extensive tools for solving common numerical linear algebra problems, finding the roots of nonlinear equations, functions written in Octave's own language, or by using dynamically loaded modules written in C, C++, Fortran, or other languages.
+Donations to support the software can be made at https://my.fsf.org/donate/working-together/octave.
+DocumentationUser manual included; User FAQ included; Printed and online user manual available from http://www.network-theory.co.uk/octave/manual/
+- PARI GP
+- Octave-data smoothing
+- Octave-information theory
+- Octave-linear algebra
+- GNU Oflox
+This is a GNU package:octave
+released on 31 May 2012
+|License||Verified by||Verified on||Notes|
+|GPLv2||Kelly Hopkins||6 December 2011|
+|GPLv3orlater||Kelly Hopkins||29 January 2010|
+Leaders and contributors
+|John W. Eaton||Maintainer|
+Resources and communication
+|Developer||VCS Repository Webview||http://www.octave.org/hg/octave|
+|Required to build||GNU make|
+|Required to build||a recent version of g++|
+|Required to build||libstdc++|
+|Required to build||fortran|
+This entry (in part or in whole) was last reviewed on 4 February 2012.
+Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.3 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A copy of the license is included in the page “GNU Free Documentation License”.
+The copyright and license notices on this page only apply to the text on this page. Any software described in this text has its own copyright notice and license, which can usually be found in the distribution itself.

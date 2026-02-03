@@ -1,0 +1,4 @@
+Has anybody over here ever tried the Josephus problem?
+In Massada, in ancient Greece, it was decided that there were too many prisoners and many should be executed. One prisoner was given a sword and all 1000 prisoners were instructed to stand in a circle. The one with the sword was instructed to kill the man on his left and then pass the sword to the next man on the left, who would then do the same. The circle would continue to get smaller as this continued, and the last man left would be set free. Josephus, one of the prisoners, placed himself at the correct position in the line-up to be the one remaining man at the end of this elimination. At what position did he place himself on the circle? Also, if the last two will be set free, where should Josephus direct his friend to stand?
+I got the answer 977. Is it correct??
+Post your codes too [if you want]

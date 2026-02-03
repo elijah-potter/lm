@@ -1,0 +1,14 @@
+Why aren't each pixel's bits stored sequentially on the SNES?
+Well, to start with, they are always (!) 8 pixels sequentially within a byte - and multiple byte in parallel for extended colour depth.
+TL;DR: Because it simplifies hardware when multiple colour depth is handled.
+Why are graphics stored this way when, if each bit of a pixel was stored sequentially (2 full pixels per byte), only one byte need be accessed and a simple >> 4 or & 0x0F could get a pixel's value?
+Sure, on a simple, fixed colour depth system this would. But with variable (like 2,3 or 4 bpp) formats, a separate rendering pipe would be needed for each. At least when memory size is of concern.
+Going always 4 bpp wastes memory space and bandwidth when not needed (like when in mode 0 with 2 bpp). Using a variable number of bits per pixel allows to reduce needed memory bandwidth and more important ROM space for the game - a direct influence in how complex a game can be at a given ROM size.
+To understand how this simplifies the chip, it's necessary to look beyond a single pixel or byte, and even more important, see the pixels as a stream. To display 8 pixels in a 4 bpp mode, 4 bytes have to be read, which is the same as with a two pixel per byte encoding. Just instead latching 4 bytes in sequence and outputting them as 4 bits toward the pixel engine via of masking and shifting (*1), now each of the 4 bytes gets loaded into 4 shift registers, and shifted in parallel into the pixel engine. Memory load is exactly the same, just data encoding a bit different.
+The very same hardware could now as well used to produce 1, 2 or 3 bpp graphics, by loading only 1, 2 or 3 bytes, and clear all other shift registers during load. The only difference is how to apply the clear signals (*2) and how much the address counter gets advanced (and registers loaded).
+In the end it's the same way and reasoning why the Amiga did use a similar graphics system. Here is a good write-up about the same facts for the Amiga.
+I'd say one simple video logic supporting 4 different colour depth is a great achievement.
+This seems like it would be not only much faster (less bit/math ops and memory accesses) but also simpler in design.
+Not faster. At best equally fast - and at lower colour depth slower than an adaptive method like the used one. Also not really simpler in design - at least not when considering that it need to support different colour depth
+*1 - Well, rather muxing.
+*2 - The registers could be cleared every cycle, or be made to be cleared during mode set and then just never loaded.

@@ -1,0 +1,11 @@
+Must use a standard doctype type to avoid Quirks Mode.
+Use <!DOCTYPE html> The modern web browsers does not compatible with Quirks Mode, Quirks mode was designed for mid-1990s web pages. That is use full for that time “modern” browsers like IE6 and Firefox 2.
+Understand the backward-compatibility limits of HTML5 tags.
+HTML5 tags like<section>, <header>, and <footer>improve the semantics of markup, but require a special “shiv” script to run in Internet Explorer 6, 7, and 8 or they won’t be recognized. Pages that need to work with these legacy browsers even when scripts are disabled cannot use the new HTML5 tags. Using plain
+<div>elements, div has best support HTML5 on IE, and classes is often a safer course of action for those cases.</div>
+Put CSS in Head
+if you but CSS in body or bottom browser will show blank page till css loads.
+As with external script references, an inline script requires the browser to stop parsing HTML and can also prevent parallel downloading of other resources on the page. This can seriously slow the initial load of the page and give the user a dreaded “blank-page” experience. Script sprinkled around the markup is also more difficult to maintain.
+An example would be <button onclick=”validate()”>Validate</button>. This practice breaks the clean separation that should exist between markup, presentation, and behavior. Also, if scripts load at the bottom of the file, it is possible for a user to interact with the page and trigger an event that attempts to call a script that isn’t loaded yet – causing an error.
+Related articles across the web
+Photo by brucelawson

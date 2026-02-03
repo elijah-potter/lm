@@ -1,0 +1,8 @@
+Forces and extrusion speed
+When the extrusion comes onto the output table, the front end is guided by a piece of equipment called a Puller.
+The puller has two purposes:
+- It guides the front end of extrusions and keeps them relatively straight to facilitate further processing.
+- It also eliminates minor differences in output speed between different extrusions (length differences) in a multi-hole tool.
+If, in the latter case, you are forced to pull one of the output extrusions too hard, there is a considerable risk that the slowest profile will become overstretched and have a highly adverse effect on extrusion shape.
+One of the most important process parameters is extrusion speed. As mentioned elsewhere, extrusion pressing is a semi-continuous process. When each new ingot is produced, the process is stopped. Once re-started, pressing speed is increased to the optimal speed for each extrusion.
+As speed has a direct effect on material flow, it is obvious that it also has an effect on the size of the finished extrusion.

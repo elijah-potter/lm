@@ -1,0 +1,37 @@
+Cyanide Treatment with Hydrogen Peroxide
+Cyanides are used in a number of chemical synthesis and metallurgical processes (as simple salts or cyanide complexes). As a class, cyanides are highly toxic and must be destroyed or removed from wastewaters prior to discharge. The most common method for treating free or simple cyanide is alkaline chlorination. However, chlorination of cyanide results in highly toxic intermediates (e.g., cyanogen chloride) and, if organic material is present, chlorinated VOC’s. These compounds, together with the residual chlorine, create additional environmental problems. Consequently, there is a growing need for alternative, non-chlorine methods for destroying cyanides.
+Peroxygen compounds such as hydrogen peroxide, peroxymonosulfuric acid (1), and persulfates (1) are effective alternatives to alkaline chlorination for destroying free and complexed cyanides. The choice of peroxygen system depends on the reaction time available, the desired products (cyanate, or CO2 and NH3), the types of cyanides being treated (free, weak acid dissociable, or inert), and the system economics.
+Treatment with Hydrogen Peroxide
+While hydrogen peroxide will oxidize free cyanide, it is common to catalyze the reaction with a transition metal such as soluble copper, vanadium, tungsten or silver in concentrations of 5 to 50 mg/L (2). The oxidation requires 1.26 lbs H2O2 per lb cyanide and is described as follows:
+|CN- + H2O2 → CNO- + H2O |
+(pH 9-10 / catalyst)
+This simple system is adequate for treating both free cyanide and some weak acid dissociable cyanides such those complexed with zinc, copper, or cadmium. Less reactive cyanides such as those complexed with nickel or silver may require addition of a chelating agent to encourage dissociation. Inert cyanides such as ferricyanide can only be destroyed by photoactivation (using UV - H2O2).
+With any peroxygen system, a pH of 9-10 should be maintained if cyanide is present to avoid release of hydrogen cyanide (HCN) gas. Reaction rates can be increased by several means: raising the temperature, increasing catalyst dose, and/or using excess H2O2. For example, at 25 deg-C and without catalysis, the conversion of free cyanide to cyanate takes two to three hours; and at 50 deg-C, one hour or less. The inclusion of 10 mg/L Cu will increase the rate 2-3 fold, while a 20% excess of hydrogen peroxide will increase the rate by about 30%.
+As with alkaline chlorination, the product of the H2O2 reaction is cyanate (CNO-) which is 1,000 times less toxic than cyanide, and is often acceptable for discharge. Alternatively, cyanate can be destroyed through acid hydrolysis, forming carbon dioxide and ammonia. The equation is:
+|CNO- + 2H2O → CO2 + NH3 + OH- |
+The lower the pH, the faster the hydrolysis. At pH 2, CNO- is hydrolized in 5 minutes; at pH 5, 60 minutes; and at pH 7, 22 hours.
+Recently, The Bureau of Mines developed a process using H2O2 to remove all forms of cyanides and heavy metals (3). In the first step, H2O2 and sodium thiosulfate are reacted with free and weakly complexed cyanides to yield thiocyanate. Next, steryldimethylbenzyl ammonium chloride is added to precipitate ferrocyanide. Finally, ferric sulfate is added as a sweep floc to precipitate other heavy metals. The solids are removed by filtering.
+Treatment with Peroxymonosulfuric Acid
+If the rate of cyanide oxidation is important, peroxymonosulfuric acid (Caro’s acid) is recommended. Caro’s acid is an equilibrium product formed from hydrogen peroxide and sulfuric acid, and is typically produced onsite using a compact, modular generator (4):
+|H2O2 + H2SO4 ⇔ H2SO5 + H2O|
+This process is used at some of the world’s largest gold refining operations. For smaller scale operations, Caro’s acid can be prepared through hydrolysis of e.g., ammonium persulfate (5):
+|(NH4)2S2O2 + H2O → NH2HSO2 + NH2HSO2 |
+(H2SO2 / steam)
+With Caro’s acid, the conversion of cyanide to cyanate is complete in a few minutes, according to the following equation:
+|CN- + H2SO2 → CNO- + H2SO4 |
+The addition of excess Caro’s acid will hydrolize the cyanate to carbonate and nitrogen in the same step:
+|2OH- + 2CNO- + 3SO52- → 2CO32- + N2 + 3SO42- + H2O|
+Under acidic conditions, a smaller amount of Caro’s acid will be needed since cyanate hydrolysis (second reaction below) is greatly accelerated. The equations are as follow:
+|2H+ + 2CNO- + 3H2SO5 → 2CO2 + N2 + 3H2SO4 + H2O|
+|CNO- + 2H2O → CO2 + NH2 + OH-|
+Treatment with Persulfates
+Ammonium, potassium, and sodium persulfates have the advantage of oxidizing cyanide beyond the cyanate (CNO-) stage without pH adjustment, provided the pH is maintained above 9. A mole ratio of 1.2 (persulfate to cyanide) is recommended. The reaction with persulfate is relatively slow but doesn't require metal catalysts. The simplicity and convenience of the process make it well suited to small scale batch operations.
+- U.S. Patent No. 3,510,424
+- U.S. Patent No. 3,617,567
+- Bureau of Mines, U.S. Dept. of the Interior, RI 8836. Schiller J.E., "Removal of Cyanide and Metals from Mineral Processing Wastewater"
+- Details of these preparations can be found in FMC Technical Bulletin No. 082-1, "The Preparation and Analysis of Caro’s Acid."
+- U.S. Patent No. 4,049,786
+---FMC Technical Data, Pollution Control Release No. 130
+Back to top
+Get More Information
+Contact US Peroxide for more information on our products and services:

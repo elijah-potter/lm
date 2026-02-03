@@ -1,0 +1,71 @@
+An ideal gas or perfect gas is a hypothetical gas consisting of identical particles of zero volume, with no intermolecular forces, where the constituent atoms or molecules undergo perfectly elastic collisions with the walls of the container and each other and are in constant random motion. Real gases do not behave according to these exact properties, although the approximation is often good enough to describe real gases.
+These four properties that constitute an ideal gas can be easily remembered by the acronym PRIE, which stands for;
+- Point masses (molecules occupy no volume)
+- Random Motion (molecules are in constant random motion)
+- Intermolecular forces (there are NO intermolecular forces between the particles)
+- Elastic collisions (the collisions involving the gas molecules are totally elastic)
+The concept of ideal gas is useful in technology because one mole (6.02214 ×1023 particles) of an ideal gas has a volume of 22.4 liters at the standard conditions for temperature and pressure and many common real gases approach this behaviour in these conditions.
+The conditions in which a real gas will behave more and more like an ideal gas is either at very high temperatures (as the molecules of the gas have so much energy that the intermolecular forces and energy lost in collisions is negligable) and at very low pressures (as the molecules of the gas rarely collide or come into close enough proximity for intermolecular forces to be significant).
+Types of ideal gases
+There are three basic classes of ideal gas:
+- the classical or Maxwell-Boltzmann ideal gas,
+- the ideal quantum Bose gas, composed of bosons, and
+- the ideal quantum Fermi gas, composed of fermions.
+The classical ideal gas can be separated into two types: The classical thermodynamic ideal gas and the ideal quantum Boltzmann gas. Both are essentially the same, except that the classical thermodynamic ideal gas is based on classical thermodynamics alone, and certain thermodynamic parameters such as the entropy are only specified to within an undetermined additive constant. The ideal quantum Boltzmann gas overcomes this limitation by taking the limit of the quantum Bose gas and quantum Fermi gas in the limit of high temperature to specify these additive constants. The behavior of a quantum Boltzmann gas is the same as that of a classical ideal gas except for the specification of these constants. The results of the quantum Boltzmann gas are used in a number of cases including the Sackur-Tetrode equation for the entropy of an ideal gas and the Saha ionization equation for a weakly ionized plasma.
+Classical thermodynamic ideal gas
+The internal energy of an ideal gas is given by:
+- is a constant dependent on temperature (e.g. equal to 3/2 for a monatomic gas for moderate temperatures)
+- U is the internal energy
+- p is the pressure
+- V is the volume
+- n is the amount of gas (moles)
+- R is the gas constant, 8.314 J·K−1mol-1
+- T is the absolute temperature
+- N is the number of particles
+- k is the Boltzmann constant, 1.381×10−23J·K−1
+The probability distribution of particles by velocity or energy is given by the Boltzmann distribution.
+The ideal gas law is an extension of experimentally discovered gas laws. Real fluids at low density and high temperature approximate the behavior of a classical ideal gas. However, at lower temperatures or a higher density, a real fluid deviates strongly from the behavior of an ideal gas, particularly as it condenses from a gas into a liquid or solid.
+The heat capacity at constant volume of an ideal gas is:
+It is seen that the constant is just the dimensionless heat capacity at constant volume. It is equal to half the number of degrees of freedom per particle. For moderate temperatures, the constant for a monatomic gas is while for a diatomic gas it is . It is seen that macroscopic measurements on heat capacity provide information on the microscopic structure of the molecules.
+The heat capacity at constant pressure of an ideal gas is:
+where is the enthalpy of the gas. It is seen that is also a constant and that the dimensionless heat capacities are related by:
+Using the results of thermodynamics only, we can go a long way in determining the expression for the entropy of an ideal gas. This is an important step since, according to the theory of thermodynamic potentials, of which the internal energy U is one, if we can express the entropy as a function of U and the volume V, then we will have a complete statement of the thermodynamic behavior of the ideal gas. We will be able to derive both the ideal gas law and the expression for internal energy from it.
+where the reference variables may be functions of the number of particles N. Using the definition of the heat capacity at constant volume for the first differential and the appropriate Maxwell relation for the second we have:
+Expressing in terms of as developed in the above section, differentiating the ideal gas equation of state, and integrating yields:
+where all constants have been incorporated into the logarithm as f(N) which is some function of the particle number N having the same dimensions as in order that the argument of the logarithm be dimensionless. We now impose the constraint that the entropy be extensive. This will mean that when the extensive parameters (V and N) are multiplied by a constant, the entropy will be multiplied by the same constant. Mathematically:
+From this we find an equation for the function f(N)
+Differentiating this with respect to a, setting a equal to unity, and then solving the differential equation yields f(N):
+where φ is some constant with the dimensions of . Substituting into the equation for the change in entropy:
+This is about as far as we can go using thermodynamics alone. Note that the above equation is flawed — as the temperature approaches zero, the entropy approaches negative infinity, in contradiction to the third law of thermodynamics. In the above "ideal" development, there is a critical point, not at absolute zero, at which the argument of the logarithm becomes unity, and the entropy becomes zero. This is unphysical. The above equation is a good approximation only when the argument of the logarithm is much larger than unity — the concept of an ideal gas breaks down at low values of V/N. Nevertheless, there will be a "best" value of the constant in the sense that the predicted entropy is as close as possible to the actual entropy, given the flawed assumption of ideality. It remained for quantum mechanics to introduce a reasonable value for the value of φ which yields the Sackur-Tetrode equation for the entropy of an ideal gas. It too suffers from a divergent entropy at absolute zero, but is a good approximation to an ideal gas over a large range of densities.
+Since the dimensionless heat capacity at constant pressure is a constant we can express the entropy in what will prove to be a more convenient form:
+where G is the Gibbs free energy and is equal to so that:
+The thermodynamic potentials for an ideal gas can now be written as functions of T, V, and N as:
+The most informative way of writing the potentials is in terms of their natural variables, since each of these equations can be used to derive all of the other thermodynamic variables of the system. In terms of their natural variables, the thermodynamic potentials of a single-specie ideal gas are:
+In statistical mechanics, the relationship between the Helmholtz free energy and the partition function is fundamental, and is used to calculate the thermodynamic properties of matters; see configuration integral for more details.
+By Gibbs theorem, the entropy of a multicomponent system is equal to the sum of the entropies of each chemical species (assuming no surface effects). The entropy of a multicomponent system will be:
+where the sum is over all species. Likewise, the free energies are equal to the sums of the free energies of each species so that if Φ is a thermodynamic potential then
+where Φj is expressed in terms of its natural variables. For example, the internal energy will be:
+where N is defined as
+Speed of sound
+The speed of sound in an ideal gas is given by
+- is the adiabatic index
+- is the universal gas constant
+- is the temperature
+- is the molar mass for the gas (in kg/mol)
+Equation Table for an Ideal Gas
+The following table gives the values for the change in the value of some thermodynamic variables under the specified transformation.
+|Variable|| Constant Pressure (Isobaric)
+|| Constant Volume (Isochoric)
+|| Adiabatic |
+| Internal Energy,
+Ideal quantum gases
+In the above mentioned Sackur-Tetrode equation, the best choice of the entropy constant was found to be proportional to the quantum thermal wavelength of a particle, and the point at which the argument of the logarithm becomes zero is roughly equal to the point at which the average distance between particles becomes equal to the thermal wavelength. In fact, quantum theory itself predicts the same thing. Any gas behaves as an ideal gas at high enough temperature and low enough density, but at the point where the Sackur-Tetrode equation begins to break down, the gas will begin to behave as a quantum gas, composed of either bosons or fermions. (See the gas in a box article for a derivation of the ideal quantum gases, including the ideal Boltzmann gas.)
+Ideal Boltzmann gas
+The ideal Boltzmann gas yields the same results as the classical thermodynamic gas, but makes the following identification for the undetermined constant Φ:
+Ideal Bose and Fermi gases
+An ideal gas of bosons (e.g. a photon gas) will be governed by Bose-Einstein statistics and the distribution of energy will be in the form of a Bose-Einstein distribution. An ideal gas of fermions will be governed by Fermi-Dirac statistics and the distribution of energy will be in the form of a Fermi-Dirac distribution.
+- Ideal gas law
+- Kinetic theory
+- Compressibility factor
+- Dynamical billiards - billiard balls as a model of an ideal gasbg:Идеален газ
+cs:Ideální plyn de:Ideales Gas et:Ideaalne gaas eo:Ideala gasofa:گاز ایدهآلko:이상 기체 it:Gas ideale he:גז אידאלי lv:Ideāla gāze lt:Idealios dujos nl:Ideaal gasno:Ideell gasssk:Ideálny plyn sl:Idealni plin fi:Ideaalikaasu sr:Идеални гас sv:Ideal gas uk:Ідеальний газ

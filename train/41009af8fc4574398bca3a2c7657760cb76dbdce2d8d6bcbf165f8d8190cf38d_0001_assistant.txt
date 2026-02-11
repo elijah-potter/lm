@@ -1,8 +1,0 @@
-The issue with your code is that the initialization of total is in the wrong scope. The way the code is now, the total variable will be set to zero on every loop iteration, thus resetting it. To fix the issue, move the line "total = 0". Here is the modified code:
-
-def number(bus_stops):
-    total = 0
-    for on, off in bus_stops:
-        total += on
-        total -= off
-    return total

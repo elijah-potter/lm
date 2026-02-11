@@ -1,5 +1,0 @@
-A hot air balloon with 200 balloons is blowing up. After about half an hour, 1/5 of the total number of balloons in the hot air balloon have blown up. After another hour, twice the number of balloons that had already blown up also blow up. How many balloons in the hot air balloon remain intact?
-After half an hour, the number of balloons that had blown up is 1/5*200 = <<1/5*200=40>>40
-The number of balloons that haven't blown up so far is 200-40 = <<200-40=160>>160
-In the next hour, 2*40 = <<2*40=80>>80 balloons blow up.
-The number of balloons that haven't blown up now is 160-80 = <<160-80=80>>80

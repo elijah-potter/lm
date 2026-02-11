@@ -1,9 +1,0 @@
-Antonella has ten Canadian coins in her purse that are either loonies or toonies. A loonie equals $1 and a toonie equals $2. If she bought a $3 Frappuccino and still has $11, how many toonies did she initially have?
-If Antonella spent $3 and now has $11, that means initially she had $3 + $11 = $<<3+11=14>>14
-Let the number of loonies Antonella had be L and the number of toonies be T. Initially she had in her purse a total of 1L + 2T = $14
-We also know that she had 10 coins in total or 10=L+T
-That means initially she had T=10-L toonies
-Combining both equations we know that 14=1L+2*(10-L)
-If we multiply through the parentheses, we get 14=1L+20-2L
-If we combine the variables on one side and the constants on another, we get -6=-1L or L=6
-Knowing the value of L, we can solve for T= 10 - L = 10 - 6 = <<10-6=4>>4

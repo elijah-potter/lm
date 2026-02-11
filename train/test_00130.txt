@@ -1,5 +1,0 @@
-A hospital sees 500 people a day.  Each patient is seen for an average of 24 minutes.  The doctors charge $150 an hour to the hospital and the hospital charges the patients $200 an hour.  How much profit does the hospital make from these visits?
-The hospital sees patients for 500*24=<<500*24=12000>>12000 minutes a day
-That means they see patients for 12000/60=<<12000/60=200>>200 hours a day
-They profit 200-150=$<<200-150=50>>50 per hour
-So they make a profit of 200 hours * $50/hour = $<<200*50=10000>>10000 a day from patient visits

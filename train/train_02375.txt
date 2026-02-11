@@ -1,7 +1,0 @@
-In a factory, there are 300 employees. 200 of them earn $12 per hour. Of the rest, 40 of them earn $14 per hour. All others earn $17 per hour. What is the cost to employ all these people for one 8-hour long shift?
-The cost of the 200 employees is 200 employees * $12/employee/hour = $<<200*12=2400>>2400 per hour.
-The cost of the 40 employees is 40 employees * $14/employee/hour = $<<40*14=560>>560 per hour.
-The rest means 300 employees - 200 employees - 40 employees = <<300-200-40=60>>60 employees.
-These 60 employees' employment costs are at 60 employees * $17/employee/hour = $<<60*17=1020>>1020 per hour.
-So in total all employees earn $2400/hour + $560/hour + $1020/hour = $3980/hour.
-During an 8-hour shift, this cost would be at 8 hours * $3980/hour = $<<8*3980=31840>>31840.

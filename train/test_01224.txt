@@ -1,5 +1,0 @@
-To make a call from a payphone, you must pay $0.25 for each minute of your call. After 16 minutes, that price drops to $0.2 per minute. How much would a 36-minute call cost?
-First 16 minutes would be a cost of 16 * 0.25 = $<<16*0.25=4>>4.
-After that, there are 36 - 16 = <<36-16=20>>20 minutes of the call left.
-And these 20 minutes cost 20 * 0.2 = $<<20*0.2=4>>4.
-So in total, the 36-minute call would cost 4 + 4 = $8.

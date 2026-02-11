@@ -1,7 +1,0 @@
-Jeff bought 6 pairs of shoes and 4 jerseys for $560. Jerseys cost 1/4 price of one pair of shoes. Find the shoe's price total price.
-Let X be the shoe price. The jersey's price is 1/4*X.
-Jeff bought 6 pairs of shoes and 4 jerseys for 6*X + 4*(1/4X) = $560.
-Multiplying through the parentheses produces 6X + X = $560
-Combining like terms produces 7X = $560
-Dividing both sides by 7 produces X = $80, so the shoe price is $80
-Since Jeff bought 6 pairs of shoes, he spent 80*6 = $<<80*6=480>>480 on shoes

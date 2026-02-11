@@ -1,7 +1,0 @@
-Downhole log measurements, such as acoustic or electrical resistivity logs, are frequently used to estimate in situ gas hydrate concentrations in the pore space of sedimentary rocks. Usually the gas hydrate concentration is estimated separately based on each log measurement. However, measurements are related to each other through the gas hydrate concentration, so the gas hydrate concentrations can be estimated by jointly inverting available logs. Because the magnitude of slowness of acoustic and resistivity values differs by more than an order of magnitude, a least-squares method, weighted by the inverse of the observed values, is attempted. Estimating the resistivity of connate water and gas hydrate concentration simultaneously is problematic, because the resistivity of connate water is independent
-of acoustics. In order to overcome this problem, a coupling constant is introduced in the Jacobian matrix. In the use of different
-logs to estimate gas hydrate concentration, a joint inversion
-of different measurements is preferred to the averaging of each inversion result.
-Additional publication details
-USGS Numbered Series
-Joint inversion of acoustic and resistivity data for the estimation of gas hydrate concentration

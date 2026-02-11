@@ -1,1 +1,0 @@
-The cake was eaten by his brother. His brother ate the cake.

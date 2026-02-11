@@ -1,7 +1,0 @@
-Gilbert, the bearded dragon, eats 4 crickets per week when the temperature averages 90 degrees F per day, but he eats twice as many crickets per week when the temperature averages 100 degrees F.  How many crickets will he eat over 15 weeks if the temperature averages 90 degrees F for 80% of the time, and 100 degrees F for the remainder of the time?
-It will be 90 degrees for 80% of the 15 weeks, for a total of 0.8*15=12 weeks.
-It will be 100 degrees F for the remainder of the 15 weeks, or 15-12=<<15-12=3>>3 weeks.
-During the 12 weeks when it averages 90 degrees F, he will eat 4 crickets per week for a total of 12*4=<<12*4=48>>48 crickets.
-When it averages 100 degrees F, he eats twice as many crickets per week as when it averages 90 degrees F per week, for a total of 2*4=8 crickets per week.
-During these 3 weeks, he will eat 8*3=<<8*3=24>>24 crickets.
-Therefore, over the 15 weeks, he will eat a total of 48+24=<<48+24=72>>72 crickets.

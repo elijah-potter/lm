@@ -1,6 +1,0 @@
-JSP Redirect Example describes about How To Redirect a JSP page using response.sendRedirect() function
-How To Use JSP SendRedirect?
-For redirect a page in JSP, we are calling response.sendRedirect(), By using this method, the server return back the response to the client, from where next request comes and it displays that url.
-Here we are using the implicit object "response" to redirect the browser to a different resource.
-When calling a sendRedirect method, web container will inform the browser that a new URL is requested. Here browser issues entirely new request so any data that are stored as request attributes will be lost after the redirect happens
-If we called sendRedirect() from JSP #1 to JSP #2 the browser's location bar is changed to show JSP #2, since a sendRedirect() is a new request,

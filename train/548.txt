@@ -1,7 +1,0 @@
-Understanding SQL's underlying theory is the best way to guarantee that your SQL code is correct and your database schema is robust and maintainable. On the other hand, if you're not well versed in the theory, you can fall into several traps. In SQL and Relational Theory, author C.J. Date demonstrates how you can apply relational theory directly to your use of SQL. With numerous examples and clear explanations of the reasoning behind them, you'll learn how to deal with common SQL dilemmas, such as:
-- Should database access granted be through views instead of base tables?
-- Nulls in your database are causing you to get wrong answers. Why? What can you do about it?
-- Could you write an SQL query to find employees who have never been in the same department for more than six months at a time?
-- SQL supports "quantified comparisons," but they're better avoided. Why? How do you avoid them?
-- Constraints are crucially important, but most SQL products don't support them properly. What can you do to resolve this situation?
-Database theory and practice have evolved since Edgar Codd originally defined the relational model back in 1969. Independent of any SQL products, SQL and Relational Theory draws on decades of research to present the most up-to-date treatment of the material available anywhere. Anyone with a modest to advanced background in SQL will benefit from the many insights in this book.

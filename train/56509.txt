@@ -1,6 +1,0 @@
-About Greek Numbers
-(To be expanded.)
-This page describes the ancient Greek alphabetic number system, in which the first nine letters of the alphabet represent 1-9, the next nine 10-90, and the last nine 100-900. (The older acrophonic system is more suited to books than webpages, since it cannot be represented in standard HTML characters.) Here is the complete chart:
-Since there were only twenty-four symbols in actual use as letters, three archaic letters were taken out of retirement, as it were, to serve as numbers. These were digamma (ϝ = 6), qoppa (ϟ = 90), and sampi (ϡ = 900). For disambiguation, a tick like an uncurved apostrophe was put to the upper right of letters that were being used to indicate numbers, and a similar tick on the lower left instead of the upper right meant that the letters represented thousands, tens of thousands, or hundreds of thousands. A little practice with the Arabic → Greek Number Calculator should make things clear.
-HTML is not ideal for Greek numbers. The official HTML qoppa looks very strange to me: a lightning-bolt or dog-leg rather than the usual lollipop. But these should do well enough.
-The ancient Greeks and Romans had no clear concept of negative numbers, and therefore no symbol for them, so my calculators cannot handle them.

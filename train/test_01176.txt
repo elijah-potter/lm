@@ -1,7 +1,0 @@
-In the first half of a soccer match, team A scores 4 goals while team B scores 2 goals fewer than team A. In the second half, team A scores 1/4 of the number of goals scored by team B, which scores 4 times the number of goals it scored in the first half. What's the total number of goals scored in the match?
-In the first half, team B scores 4 goals - 2 goals = <<4-2=2>>2 goals.
-The total number of goals scored in the first half is 2 goals + 4 goals = <<2+4=6>>6 goals
-During the second half, team B scores 4 goals * 2 = <<4*2=8>>8 goals.
-Team A 1/4 * 8 goals = <<1/4*8=2>>2 goals in the second half.
-The total number of goals in the second half is 8 goals + 2 goals = <<8+2=10>>10 goals
-The total number of goals in the match is 6 goals + 10 goals = <<6+10=16>>16 goals

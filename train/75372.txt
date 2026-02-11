@@ -1,9 +1,0 @@
-In this tutorial you have learned what are web services and how to use them. But there other components of Web Services which makes Webservices active. These components are :
-The next step is to learn about WSDL, UDDI and SOAP.
-WSDL is an XML-based language for describing Web services and how to access them.
-WSDL describes a web service, along with the message format and protocol details for the web service.
-To learn more about WSDL visit WSDL Tutorial
-UDDI is an XML-based standard for describing, publishing, and finding Web services.
-To learn more about UDDI visit UDDI Tutorial
-SOAP is a simple XML-based protocol that allows applications to exchange information
-To learn more about SOAP visit SOAP Tutorial

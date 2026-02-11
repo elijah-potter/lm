@@ -1,8 +1,0 @@
-Tom went to the store to buy fruit. Lemons cost $2, papayas cost $1, and mangos cost $4. For every 4 fruits that customers buy, the store offers a $1 discount. Tom buys 6 lemons, 4 papayas, and 2 mangos. How much will he pay?
-For 6 lemons, Tom will pay 6 * 2 = $<<6*2=12>>12.
-For 3 papayas, he will pay 3 * 1 = $<<3*1=3>>3
-For 2 mangos, he will pay 2 * 4 = $<<2*4=8>>8.
-In total, the cost of the fruits before discount is 12 + 4 + 8 = $<<12+4+8=24>>24.
-The total number of fruits is 6 + 4 + 2 = <<6+4+2=12>>12 fruits.
-For 12 fruits, Tom gets a discount of 12 / 4 = $<<12/4=3>>3.
-Subtracting the discount offered by the store, Tom will pay 24 - 3 = $<<24-3=21>>21.

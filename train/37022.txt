@@ -1,9 +1,0 @@
-Tech moves fast! Stay ahead of the curve with Techopedia!
-Join nearly 200,000 subscribers who receive actionable tech insights from Techopedia.
-Universal Description Discovery and Integration (UDDI) is a set of specifications defining a registry service for Web services and for other electronic and non-electronic services.
-A UDDI registry service is a Web service managing information about service providers, service implementations and service metadata. Providers advertise their Web services on the UDDI registry. Consumers then use UDDI to discover Web services suiting their requirements and obtain the service metadata needed to consume those services.
-UDDI is an open industry initiative sponsored by the Organization for the Advancement of Structured Information Standards (OASIS).
-UDDI is the Internet's equivalent of a telephone directory, where businesses register themselves and other businesses or consumers look them up.
-A UDDI registry works in the following manner:
-When UDDI was introduced in 2000, its role as a central pillar of the Web service industry looked very promising. Major players such as IBM, Microsoft and SAP had invested in UDDI and rolled out public UDDI business registries (UBRs). Only six years later, in the beginning of 2006, the three companies announced they were shutting down their public UBRs. While the technology concept was proven and UDDI versions 2.0 and 3.0 were accepted as standards by OASIS, the primary reason for the shutdown was lack of business support. Business conduct still requires human interaction in the contracting phase.
-The UDDI standard is still being used, mainly in the internal operations of organizations. Other standards governing the interaction with registries were introduced. The most prevalent are ebXML and Java API for XML registries.

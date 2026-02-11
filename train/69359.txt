@@ -1,5 +1,0 @@
-MIDI, or Musical Instrument Digital Interface, is a standard that describes a protocol, digital interface, and electrical connectors that connect a wide variety of electronic musical instruments, computers, and other related audio devices.
-It is used for playing, editing, and recording music. It is also used for controlling synthesizers and other electronic musical instruments.
-The MIDI protocol is very simple. It is a protocol that allows you to send messages between devices. The messages are sent over a serial connection, and they are sent using a specific format.
-MIDI Controlled Drums
-Follow along as we control some solenoids using MIDI from Ableton Live. It's a fun way to learn the MIDI protocol, now to control solenoids, and inspires other project ideas.

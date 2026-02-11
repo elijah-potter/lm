@@ -1,8 +1,0 @@
-In AHK the function of ceil() rounds an integer or float to the next highest whole number. Consider ceil(3.2). This will return 4 as the next highest integer. Please note that negative integers round up towards zero so ceil(-3.2) would evaluate to -3.
-
-A brief example of using ceil() might be taking inputs and ensuring that they are whole numbers is more important than accuracy. In other words, the format outweighs the need for granularity in the data at that stage. 
-
-In practice, this would look like:
-
-InputBox, input, Enter Number
-Msgbox % ceil(input)

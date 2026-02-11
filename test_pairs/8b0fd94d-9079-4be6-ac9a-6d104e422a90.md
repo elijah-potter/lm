@@ -1,1 +1,0 @@
-The report was written by we. We wrote the report.

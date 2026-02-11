@@ -1,6 +1,0 @@
-An airplane took a trip along the Eastern Coast of the USA. During the trip, the plane hovered in Mountain time for 3 hours, Central time for 4 hrs, and Eastern time for 2 hrs. The next day it took 2 more hours to hover in each of the places it passed through the previous day. Calculate the total time it took the plane to hover over Mountain time, Central time, and Eastern time in the two days.
-The total time it took to hover over the Mountain and the central time is 3+4 = <<3+4=7>>7 hours.
-If it hovered further to the Eastern time zone, it took a total of 7+2 = <<7+2=9>>9 hours to cover the whole trip.
-The next day, it took 2 more hours to cover each of the places it passed through the previous day, taking a total of 2*3 = <<2*3=6>>6 hours.
-The total time it took on the second day to cover the distance it covered the previous day is 9+6 = <<9+6=15>>15 hours.
-In total, the train took 15+9 = <<15+9=24>>24 hours to hover over the places in the two days.

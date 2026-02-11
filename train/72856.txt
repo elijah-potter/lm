@@ -1,9 +1,0 @@
-Background is an option which specifies the background color to use.
-Background is an option for graphics functions, Text, Cell and ButtonBox.
-The setting for Background in graphics functions must be a CMYKColor, GrayLevel, Hue or RGBColor directive.
-The default setting in graphics functions is Background->Automatic, which produces a white background on most output devices.
-In Text, Background->None draws no background rectangle around the text and Background->Automatic draws a background rectangle in the same color as the background for the whole plot.
-In a cell, the background is used only for the region inside any cell frame.
-See Section 2.9.9, Section 2.9.11, Section 2.10.3 and Section 2.11.9.
-See also: Prolog, DefaultColor, PlotRegion, FontColor.
-New in Version 2; modified in 3.

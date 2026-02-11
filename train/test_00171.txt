@@ -1,5 +1,0 @@
-The marching band is ordering new uniforms. Each uniform comes with a hat that costs $25, a jacket that costs three times as much as the hat, and pants that cost the average of the costs of the hat and jacket. How much does each uniform cost total?
-First find the cost of the jacket: $25 * 3 = $<<25*3=75>>75
-Then add the cost of the jacket and hat: $25 + $75 = $<<25+75=100>>100
-Then divide that amount by 2 to find the average cost, which is the cost of the pants: $100 / 2 = $<<100/2=50>>50
-Then add the cost of each item of clothing to find the total cost of the uniform: $25 + $75 + $50 = $<<25+75+50=150>>150

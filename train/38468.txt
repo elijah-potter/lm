@@ -1,5 +1,0 @@
-Packet filtering helps control packet movement through the network, as shown in Figure B-8. Such control can help limit network traffic and restrict network use by certain users or devices. To permit packets to cross or deny packets from crossing specified router interfaces, Cisco provides access lists. An IP access list is a sequential collection of permit and deny conditions that apply to IP addresses or upper-layer IP protocols.
-Figure B-8 Access Lists Control Packet Movement Through a Network
-Transmission of Packets on an Interface
-Was this article helpful?
-What you need to know about… Project Management Made Easy! Project management consists of more than just a large building project and can encompass small projects as well. No matter what the size of your project, you need to have some sort of project management. How you manage your project has everything to do with its outcome.

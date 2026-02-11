@@ -1,7 +1,0 @@
-On various linux machines you can
-The shell will say the current directory is '/' or '//' after using the corresponding command.
-So the question is: What is the difference between '/' and '//', and if the answer is 'no difference' then why is '//' shown differently than '/'
-cd /// cd //// cd /////
-All result in the shell saying the current directory is '/'
-Heres an example session:
-[user@host /]$ cd // [user@host //]$ cd / [user@host /]$ cd // [user@host //]$ cd / [user@host /]$

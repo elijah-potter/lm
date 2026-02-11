@@ -1,7 +1,0 @@
-Lily goes to the supermarket. She has $60. She needs to buy 6 items: celery, cereal, bread, milk, potatoes, and coffee. She finds a stalk of celery for $5, cereal for 50% off $12, bread for $8, and milk for 10% off $10. She finds potatoes for $1 each and buys 6. How many dollars does she have left to spend on coffee?
-Lily spends $5+$8=$<<5+8=13>>13 on celery and bread.
-Lily spends $12*(50/100)=$<<12*(50/100)=6>>6 on cereal.
-Lily gets 10% off the milk, so she pays 100% - 10% = 90% of its original price.
-Lily spends $10*90%=$<<10*90*.01=9>>9 on milk.
-She spends $1*6=$<<1*6=6>>6 on potatoes.
-Thus, she has $60-$13-$6-$9-$6=$<<60-13-6-9-6=26>>26 left over for coffee.

@@ -1,7 +1,0 @@
-Janet takes two multivitamins and 3 calcium supplements every day for the first 2 weeks of the month. For the last two weeks of the month, she runs low on calcium supplements and only takes one per day. How many pills does Janet take in that month?
-First find the number of pills Janet takes every day for the first 2 weeks: 2 pills/day + 3 pills/day = <<2+3=5>>5 pills/day
-Then find the number of days in 2 weeks: 2 weeks * 7 days/week = <<2*7=14>>14 days
-Then multiply that number by the number of pills she takes daily to find the total number of pills she takes in the first 2 weeks: 5 pills/day * 14 days = <<5*14=70>>70 pills
-Then find the number of pills Janet takes every day for the last 2 weeks: 2 pills/day + 1 pill/day = <<2+1=3>>3 pills/day
-Then multiply that number by the number of days in 2 weeks to find the total number of pills she takes in the last 2 weeks: 3 pills/day * 14 days = <<3*14=42>>42 pills
-Then add the number of pills she took in the first and last two weeks to find the total number of pills she took: 42 pills + 70 pills = <<42+70=112>>112 pills

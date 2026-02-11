@@ -1,3 +1,0 @@
-|Exam 300-101||Question id=396||Network Principles|
-Which method allows IPv4 and IPv6 to work together without requiring both to be used for a single connection during the migration process?
-Dual stack means that devices are able to run IPv4 and IPv6 in parallel. It allows hosts to simultaneously reach IPv4 and IPv6 content, so it offers a very flexible coexistence strategy. For sessions that support IPv6, IPv6 is used on a dual stack endpoint. If both endpoints support Ipv4 only, then IPv4 is used.

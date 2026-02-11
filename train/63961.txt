@@ -1,7 +1,0 @@
-Spam is unsolicited email to a large number of recipients. Admins have a few options to block spam email on Exchange.
-Spam uses botnets of compromised systems to email addresses gathered from the Internet or other sources. The spammer uses a command and control system that directs the botnet to send the spam to legitimate email servers.
-Depending on the complexity of the email system, IT organizations can filter spam at several places -- starting at the initial SMTP connection using a specialized email appliance or service such as Proofpoint Enterprise Protection, Symantec Email security.cloud or Barracuda Email Security Service -- all the way down to client-side checks in an email client to determine if an email is spam.
-The checks for spam include: inspecting a black list; examining for known patterns in the email, like including certain terms, common misspellings; and searching for known signatures in the SMTP connection.
-To detect and block spam email sent from unapproved email systems, use Sender Policy Framework (SPF) or DomainKeys Identified Mail (DKIM). SPF and DKIM can be set up to list approved email servers in Domain Name System and for email servers to check DNS if the sending email server is approved.
-If you think spam is annoying, check out the next slide on how to prevent email spoofing.
-Text by Nick Lewis (CISSP), a Program Manager for Trust and Identity at Internet2.

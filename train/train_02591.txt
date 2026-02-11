@@ -1,5 +1,0 @@
-Damien collects glasses for a hobby and decides he wants to put them in display cupboards. His tall cupboard can hold 20 glasses, his wide cupboard can hold twice as many, and his narrow cupboard can hold 15 glasses with the glasses divided equally among the three shelves. As Damien is putting glasses in the narrow cupboard, he accidentally breaks one of the shelves. If all of the cupboards are full, how many glasses are currently being displayed?
-The wide cupboard holds twice as many glasses as the tall cupboard, amounting to 20 * 2 = <<20*2=40>>40 glasses.
-Each of the shelves in the narrow cupboard holds 15 / 3 = <<15/3=5>>5 glasses.
-Since a shelf was broken, a narrow cupboard now holds only 15 – 5 = <<15-5=10>>10 glasses.
-In total, there are 20 + 40 + 10 = <<20+40+10=70>>70 glasses.

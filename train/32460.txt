@@ -1,9 +1,0 @@
-With the revamped Knife (Premium) tool in CorelDRAW, you can split vector objects, text, and bitmaps. You can split single objects or groups of objects along straight, freehand, or Bézier lines.
-(From top to bottom) Three modes for splitting objects are available: Bézier, 2-Point Line, and Freehand.
-In addition, you can create a gap between the new objects resulting from the splitting action, or you can make the new objects overlap.
-To split an object
-1. In the toolbox, click the Knife (Premium) tool .
-2. On the property bar, click one of the following buttons:
-- 2-point line mode — to split the object along a straight line. To constrain the line by 15-degree increments, hold down Shift + Ctrl.
-- Freehand mode — to split the object along a freehand line
-3. Drag across the object or group of objects that you want to split.

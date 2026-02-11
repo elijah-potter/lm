@@ -1,2 +1,0 @@
-This function throws an error because the padStart method only exists on strings, not numbers. If you would like to prepend a hashtag to the random number and then pad the beginning with six 0s, you can wrap the concatenation in parentheses as follows:
-return ('#' + (((1 << 24) * Math.random()) | 0)).padStart(6, 0);

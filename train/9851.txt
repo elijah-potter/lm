@@ -1,6 +1,0 @@
-Common Relay Pin Configuration (Bosch-type)
-Relays are widely used in electrical applications where one circuit is to be energized or turned "on" by the presence of a voltage, provided by another circuit. An example of this is when an automotive radio sends out a triggering voltage to turn on an external amplifier or activate a motorized antenna. Anywhere a switch can go in a circuit, a relay can replace it, (as long as there is a triggering voltage available to activate it).
-The "switch" in a relay is more often called a solenoid. A solenoid is like a piston that pushes outward when energized with electricity. This push mechanically trips the switch in the relay, completing circuit and allowing the switched voltage output.
-A relay can be triggered with an electrical pulse as small as 150 milliamps. The switched output can be as high as 30 or 40 amps.
-The terminals of a relay are defined as follows:
-Note: in many cases, the connection of pins 85 and 86 can be interchangeable, but NOT if there is a diode wired across the coil.

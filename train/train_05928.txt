@@ -1,4 +1,0 @@
-Kim is an office manager. Every morning she spends 5 minutes making coffee, 2 minutes per employee getting a status update, and 3 minutes per employee updating payroll records. If there are 9 employees in the office, how long does Kim's morning routine take?
-First find how many minutes Kim spends on each employee: 2 minutes/employee + 3 minutes/employee = <<2+3=5>>5 minutes/employee
-Then multiply that time by the number of employees to find the total time spent on status and payroll updates: 5 minutes/employee * 9 employees = <<5*9=45>>45 minutes
-Finally, add that time to the time spent making coffee to find the total time: 45 minutes + 5 minutes = <<45+5=50>>50 minutes

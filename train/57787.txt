@@ -1,5 +1,0 @@
-Duration: 23:41 min
-Summary: CRUD (Create, Read, Update and Delete) operations are the main tools used to manipulate data in any database. This video shows how to use the method insert(), find(), findone(), update() and delete() to perform CRUD operations in MongoDB. The video explain how to filter the data using documents and how to manipulate the collections in order to handle the data for using the CRUD operations. The video also discuss aspects of how these operations are performed in the relational world and how they are mapped to the NoSQL world.
-: Windows 7, MongoDB, NoSQL
-: The video shows how to perform create, read, update and delete operations with MongoDB
-: MongoDB, NoSQL, Database, CRUD, Create, Read, Update, Delete

@@ -1,6 +1,0 @@
-In most languages, if you need to swap the contents of two variables, say X and Y, it normally requires a third temporary location:
-Temp = X;
-X = Y;
-Y = Temp;
-But in assembly language, if the two variables are stored in registers (or even in memory), you can swap them without using a third register (or variable). Here’s the code that uses an exclusive or to swap the values:
-Try it yourself with some real values and you can almost see the bits exchanging places. Presto, Changeo! A little assembler magic.

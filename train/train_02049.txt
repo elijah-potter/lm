@@ -1,8 +1,0 @@
-A question and answer forum has 200 members. The average number of answers posted by each member on the forum is three times as many as the number of questions asked. If each user posts an average of 3 questions per hour, calculate the total number of questions and answers posted on the forum by its users in a day.
-If each user posts an average of 3 questions per hour, the average number of answers posted on the forum is 3 times the number of questions which totals to 3*3 = <<3*3=9>>9 answers per
-hour.
-In a day, with 24 hours, the average number of questions asked by each member is 24*3 = <<24*3=72>>72,
-If there are 200 users of the forum, the total number of questions asked is 200*72 = <<200*72=14400>>14400 questions in a day.
-At the same time, a member posts an average of 9*24 = <<9*24=216>>216 answers in a day.
-Since there are 200 members who use the forum, the total number of answers posted in the forum in a day is 200*216 = <<200*216=43200>>43200.
-In total, the number of questions and answers posted on the forum is 43200+14400 = <<43200+14400=57600>>57600

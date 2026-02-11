@@ -1,5 +1,0 @@
-Alice wants 1000 folded paper cranes. She folds half by herself, and a friend folds a fifth of the remaining paper cranes for her. How many paper cranes does Alice still need to fold?
-Alice folds 1000 * 0.5 = <<1000*0.5=500>>500 paper cranes by herself.
-This leaves 1000 – 500 = <<1000-500=500>>500 paper cranes left to fold.
-A friend folds a fifth of the remaining amount, so they have folded 500 / 5 = <<500/5=100>>100 paper cranes for her.
-This means there is a total of 1000 – 500 – 100 = <<1000-500-100=400>>400 paper cranes left for Alice to fold.

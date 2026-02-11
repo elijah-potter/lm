@@ -1,3 +1,0 @@
-Use the program diff3 to compare three files and show any differences among them. (diff3 can also merge files; see diff3 Merging).
-The “normal” diff3 output format shows each hunk of differences without surrounding context. Hunks are labeled depending on whether they are two-way or three-way, and lines are annotated by their location in the input files.
-See Invoking diff3, for more information on how to run diff3.

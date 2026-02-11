@@ -1,9 +1,0 @@
-This webpage doesn't work with Internet Explorer. Please use the latest version of Google Chrome, Microsoft Edge, Mozilla Firefox or Safari.
-The information presented in this cross reference is based on TOSHIBA's selection criteria and should be treated as a suggestion only. Please carefully review the latest versions of all relevant information on the TOSHIBA products, including without limitation data sheets and validate all operating parameters of the TOSHIBA products to ensure that the suggested TOSHIBA products are truly compatible with your design and application.
-Please note that this cross reference is based on TOSHIBA's estimate of compatibility with other manufacturers' products, based on other manufacturers' published data, at the time the data was collected.
-TOSHIBA is not responsible for any incorrect or incomplete information. Information is subject to change at any time without notice.
-The microcontroller operates by electrical signals.
-The machine language is a language that combines the signals "High and Low, that is, the binary number 1 and 0", and is the only language that a microcontroller can understand.
-The program written in C language or the assembly language cannot operate the microcontroller as it is.
-Therefore, it is necessary to convert a program written in C language or the assembly language into the machine language.
-Each microcontroller manufacturer has a compiler for converting C language to the machine language and an assembler for converting the assembly language to the machine language.

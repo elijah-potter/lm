@@ -1,5 +1,0 @@
-There are 25 different layers of rock in a canyon’s strata. Five of the layers are limestone. Half of the rest are sandstone. Four of the remaining are quartz. Half of the rest are shale. The rest are all different kinds of rock. How many kinds of rock make up only one layer in the canyon’s strata?
-There are 25 - 5 = <<25-5=20>>20 layers of rock that are not limestone.
-Half of those 20 are sandstone, so there are 20 / 2 = <<20/2=10>>10 that are not limestone or sandstone.
-Four of those are quartz, so 10 - 4 = <<10-4=6>>6 layers are not limestone, sandstone, or quartz.
-Half of the rest are shale, so 6 / 2 = <<6/2=3>>3 kinds of rock remain that make up only one layer in the strata.

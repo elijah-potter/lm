@@ -1,8 +1,0 @@
-400 adults and 200 children go to a Broadway show. The price of an adult ticket is twice that of a child's ticket. What is the price of an adult ticket if the total amount collected is $16,000?
-Let X be the price of a child ticket.
-So the price of an adult ticket is X*2.
-We know from the problem that 400*X*2 + 200*X = 16,000.
-After multiplying, we have 800*X+ 200*X = 16,000.
-Combining like terms, we have 1000* X = 16,000.
-Dividing both sides by 1000, we have X = $16.
-The price of an adult ticket is $16 * 2 = $<<16*2=32>>32.

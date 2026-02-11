@@ -1,7 +1,0 @@
-Marcus is trying to decide whether he really needs to do his homework. There's a 50% chance that tomorrow he'll have a substitute teacher who won't collect the homework. Even if the normal teacher comes in, there's a 40% chance she'll give everyone an extension. Even if the whole class doesn't get an extension, there's a 20% chance Marcus can convince the teacher his dog ate his assignment and get a personal extension. What is the percentage chance that Marcus will actually have to turn in his homework tomorrow?
-First find the chance that the normal teacher comes in by subtracting the odds she doesn't from 100%: 100% - 50% = 50%
-Then find the chance the teacher doesn't grant the whole class an extension by subtracting the chance she does from 100%: 100% - 40% = 60%
-Then find the chance that Marcus can't get a personal extension by subtracting the chance he does from 100%: 100% - 20% = 80%
-Now find the chance the teacher comes in AND doesn't grant the whole class an extension by multiplying the two independent probabilities: .6 * .5 = <<.6*.5=.3>>.3
-Now multiply that probability by the probability Marcus can't get a personal extension to find the probability he actually has to turn in his homework: .3 * .8 = <<.3*.8=.24>>.24
-Finally, multiply the decimal probability by 100 to express it as a percentage: .24 * 100% = <<.24*100=24>>24%

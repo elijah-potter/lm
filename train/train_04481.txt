@@ -1,6 +1,0 @@
-A pipe is clogged so that only 2 ounces of cleaner can run through the pipe per minute. After fifteen minutes, the cleaner has unclogged it enough that 3 ounces can run through per minute. Ten minutes later, the clog is cleared enough for 4 ounces to run through per minute. How many ounces of cleaner were used after 30 minutes?
-For 15 minutes at 2 ounces per minute, 2 * 15 = <<2*15=30>>30 ounces were used.
-For the next 10 minutes at 3 ounces per minute, 3 * 10 = <<3*10=30>>30 ounces were used.
-There are 30 - 15 - 10 = <<30-15-10=5>>5 minutes remaining.
-For the next 5 minutes at 4 ounces per minute, 4 * 5 = <<4*5=20>>20 ounces were used.
-After 30 minutes, 30 + 30 + 20 = <<30+30+20=80>>80 ounces of cleaner were used.

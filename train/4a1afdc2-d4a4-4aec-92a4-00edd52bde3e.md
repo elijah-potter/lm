@@ -1,1 +1,0 @@
-Object returned: `refurbished_3d_printer_skid_12345` (serialized data: `{"type":"printer","status":"returned","condition":"refurbished","id":"12345","location":"warehouse_a","timestamp":"2023-11-15T14:32:47Z"}`.

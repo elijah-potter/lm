@@ -1,4 +1,0 @@
-A store puts out a product sample every Saturday. The last Saturday, the sample product came in boxes of 20. If they had to open 12 boxes, and they had five samples left over at the end of the day, how many customers tried a sample if the samples were limited to one per person?
-The store opened 12 boxes of 20 products, so they put out 20 * 12 = <<20*12=240>>240 product samples.
-They had 5 samples left over, so 240 - 5 = <<240-5=235>>235 samples were used.
-Each customer could only have one sample, so 235 * 1 = <<235*1=235>>235 customers tried a sample.

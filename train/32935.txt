@@ -1,3 +1,0 @@
-Write a temperature conversion program in Java that converts from Fahrenheit to Celsius. The Fahrenheit temperature should be entered from the keyboard (via a JTextField). A JLabel should be used to display the converted temperature. Use the following formula for the conversion: Celsius = 5/9 x ( Fahrenheit -32)
-Input of letters should be followed by an error message.
-Temperature conversion program is created.

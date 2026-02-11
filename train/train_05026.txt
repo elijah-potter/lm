@@ -1,6 +1,0 @@
-A professional company is hiring for a new position. They have two qualified applicants. The first applicant will accept a salary of $42000 and make the company $93000 in the first year, but needs 3 months of additional training that costs $1200 a month. The second applicant does not need training and will make the company $92000 in the first year, but is requesting a salary of $45000 and a hiring bonus of 1% of his salary. Less the amount it will cost to pay for each candidate, how many more dollars will one candidate make the company than the other in the first year?
-The first candidate’s training will cost 1200 * 3 = $<<1200*3=3600>>3600.
-That candidate will make the company 93000 - 42000 - 3600 = $<<93000-42000-3600=47400>>47400 in the first year.
-The second candidate’s bonus will cost 45000 * 1 / 100 = $<<45000*1/100=450>>450.
-That candidate will make the company 92000 - 45000 - 450 = $<<92000-45000-450=46550>>46550 in the first year.
-Thus, the first candidate will make the company 47400 - 46550 = $<<47400-46550=850>>850 more in the first year.

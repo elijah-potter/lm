@@ -1,5 +1,0 @@
-Farmer Randy has 1700 acres of cotton he needs to have planted in 5 days.  With a crew of 2 tractors working for 2 days and then a crew of 7 tractors working for another 3 days, how many acres of cotton per day does each tractor need to plant to meet their planting deadline?
-With 2 tractor teams working for 2 days, this is like 2*2=<<2*2=4>>4 days worth of work by a single tractor, which they call tractor days.
-With 5 tractor teams working for 4 days, this is 7*3=21 tractor days.
-In total, the effort of all the tractor teams is 4+21=<<4+21=25>>25 tractor days.
-If they need to plant 1700 acres with their 25 tractor days, then each tractor team needs to plant 1700/25 = <<1700/25=68>>68 acres of cotton per day.

@@ -1,6 +1,0 @@
-A box of six popsicles was left out in the sun and is slowly melting. Every time a popsicle melts the remaining popsicles melt twice as fast as the previous one. How many times faster than the first popsicle does the last popsicle’s remains melt?
-The remains of the second popsicle melt 2 * 1 = <<2*1=2>>2 times as fast as the first.
-The remains of the third popsicle melt 2 * 2 = <<2*2=4>>4 times as fast as the first.
-The remains of the fourth popsicle melt 2 * 4 = <<2*4=8>>8 times as fast as the first.
-The remains of the fifth popsicle melt 2 * 8 = 16 times as fast as the first.
-The remains of the sixth popsicle melt 2 * 16 = <<2*16=32>>32 times as fast as the first popsicle.

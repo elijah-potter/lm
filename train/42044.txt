@@ -1,6 +1,0 @@
-Which of the following is correct about determine the "truth" of any value not already of the Boolean type?
-If the value is an array, it is false if it contains no other values, and it is true otherwise. For an object, containing a value means having a member variable that has been assigned a value.
-Valid resources are true (although some functions that return resources when they are successful will return FALSE when unsuccessful).
-Don't use double as Booleans.
-All of the above.
-© 2017 QuizBucket.org

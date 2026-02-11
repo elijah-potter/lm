@@ -1,4 +1,0 @@
-Unformatted text preview: %num_start: number of organisms in original population %num: current number of organisms %mu: specific growth rate % %Constants: none % %parameter values - to avoid any but the most obvious literal values in the code!! time_start = 12.0; % noon num_start = 2.5E4; % 25,000 in initial population time_end = 14.0; % 2 pm time_step = 5/60; % specify the time step for calculations, hrs double_time = 15/60; % specify population doubling time, hrs d %Calculations for unconstrained growth mu = log(2)/double_time; %calculate specific growth rate time = time_start:time_step:time_end; % step the simulation through time num = num_start*exp (mu*(time - time_start)); % population at each time step n %Graph Results for unconstrain...
-View Full Document
-This note was uploaded on 09/28/2009 for the course BEE 1510 taught by Professor Staff during the Fall '05 term at Cornell.
-- Fall '05

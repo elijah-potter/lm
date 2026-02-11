@@ -1,8 +1,0 @@
-The most important aspect of school and student performance data is the analysis. This step of the process answers the question: “What is the data telling you?” or “What decisions can be made or what actions should be taken” based on the information derived from analysis.
-In analytics, we are looking for differences, relationships, and trends, then interpreting the information to gain a better understanding of the student, school, or district performance.
-There are four recognized types of data analytics with their typical education data questions:
-What is the difference between the Algebra subscores for the district when disaggregated by performance levels?
-Based on a score from an Algebra 1 benchmark test, what profile of scores indicated that the student is in need of remediation in what areas?
-Can previous scores in math and the benchmark test score be used as a good predictor of the EOC Algebra 1 score?
-What changes in the pacing guide and instructional strategies can be made to improve the probability of achieving a passing score on the Algebra 1 EOC test?
-Descriptive analytics is accomplished primarily by data reporting and the ability to interact with the data by filtering and sorting. Deeper analytics sometimes requires creating predictive models by combining data from various tables and then writing statistical code to manupulate the data to answer various questions. Combining data and doing statistical analysis is extraordinarily easy when the data are in a historical database system, and staff at Data Smart are skilled in writng the required SQL code..

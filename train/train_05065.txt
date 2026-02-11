@@ -1,8 +1,0 @@
-Jackson is laying tile in a courtyard that measures 10 feet by 25 feet. He needs 4 tiles per square foot of space. 40% of the tiles are green marble that costs $3/tile, and the rest are red tile that costs $1.50/tile. How much does he pay total for tile?
-First find the area of the courtyard: 10 feet * 25 feet = <<10*25=250>>250 feet
-Then multiply the area by the number of tiles per square foot to find the total number of tiles needed: 250 feet * 4 tiles/square foot = <<250*4=1000>>1000 tiles
-Then multiply the number of tiles by the percentage that are green to find the total number of green tiles: 1000 tiles * 40% = <<1000*40*.01=400>>400 tiles
-Subtract that number from the total number of tiles to find the number of red tiles: 1000 tiles - 400 tiles = <<1000-400=600>>600 tiles
-Multiply the number of red tiles by the price per red tile to find the cost of the red tiles: 600 tiles * $1.50/tile = $<<600*1.5=900>>900
-Multiply the number of green tiles by the price per green tile to find the cost of the green tiles: 400 tiles * $3.00/tile = $<<400*3=1200>>1200
-Then add the cost of each type of tile to find the total cost: $900 + $1200 = $<<900+1200=2100>>2100

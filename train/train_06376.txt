@@ -1,4 +1,0 @@
-Pat’s computer password is made up of several kinds of alphanumeric and symbol characters for security. He uses a string of eight random lowercase letters, a string half that length of alternating upper case letters and numbers, and one symbol on each end of the password. How many characters in all is Pat‘s computer password?
-The second string of characters is half as long as the first string, so it is 8 / 2 = <<8/2=4>>4 characters long.
-The password has one symbol on each end, so it has 1 * 2 = <<1*2=2>>2 symbol characters.
-In all, Pat’s computer password is 8 + 4 + 2 = <<8+4+2=14>>14 characters long.

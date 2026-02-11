@@ -1,5 +1,0 @@
-A florist is making bouquets for the weekend. The florist uses red, yellow, orange, and purple flowers, and each bouquet contains 9 flowers of any color combinations. This week he planted 125 seeds for each color of flower. Unfortunately, a fungus killed 45 red flowers, 61 yellow, 30 orange, and 40 purple flowers. How many bouquets can the florist make this weekend?
-There were 125 seeds planted for each of the 4 colors of flower, so there were 125 * 4 = <<125*4=500>>500 flowers planted.
-The fungus killed 25 red, 31 yellow, 30 orange, and 40 purple flowers, 45 + 61 + 30 + 40 = 176 flowers dead.
-This leaves 500 - 176 = <<500-176=324>>324 flowers for the bouquets.
-If the florist puts 9 flowers in each bouquet, he can make 324 / 9 = <<324/9=36>>36 bouquets this weekend.

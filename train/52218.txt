@@ -1,7 +1,0 @@
-NPS Authentication Methods
-Applies To: Windows Server 2008
-When users attempt to connect to your network through network access servers (also called RADIUS clients), such as wireless access points, 802.1X authenticating switches, dial-up servers, and virtual private network (VPN) servers, Network Policy Server (NPS) authenticates and authorizes the connection request before allowing or denying access.
-Because authentication is the process of verifying the identity of the user or computer attempting to connect to the network, NPS must receive proof of identity from the user or computer in the form of credentials.
-Some authentication methods use password-based credentials. For example, Microsoft Challenge-Handshake Authentication Protocol (MS-CHAP) requires that users type in a user name and password. These credentials are then passed to the NPS server by the network access server, and NPS verifies the credentials against the user accounts database.
-Other authentication methods use certificate-based credentials for the user, the client computer, the NPS server, or some combination. Certificate-based authentication methods provide strong security and are recommended over password-based authentication methods.
-When you deploy NPS, you can specify the type of authentication method that is required for access to your network.

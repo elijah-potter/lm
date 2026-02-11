@@ -1,9 +1,0 @@
-How to Build Your Own Kinect-Like 3D Tracking Interface with Cardboard, Foil, and Arduino
-In this tutorial, MAKE teaches us how to build one at home using cardboard, aluminum foil, an Arduino, and some basic parts from RadioShack or any other electronics store.
-First, use spray glue to attach the aluminum foil to the cardboard, making sure to leave a gap around the edges. Assemble the cardboard pieces so that they form half of a cube.
-Cut three, two-foot-long pieces of shielded cable, stripping off the insulation. Connect an alligator clip to each inner signal wire.
-On the other end, twist and solder the three inner wires together and connect the resistors. You can find a schematic on the project site.
-Connect the resistors to pins 8, 9, and 10 on the Arduino, then connect the red wire to the +5V pin. Once the Arduino is connected, attach the alligator clips to the cardboard, making sure they have good contact with the foil.
-That's it for the build. Visit the project page for information on how to calibrate and run the software. Check out the video below for more details and to see it in action.
-If you have an Xbox with a Kinect, you can play around with this technology without actually doing all of the hard work. Try hacking your Kinect with Mac OS X or a USB analyzer. You can also make a cheap green screen or measure in 3D. The possibilities are endless!
-Have you ever experimented with 3D tracking interfaces?

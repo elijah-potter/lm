@@ -1,8 +1,0 @@
-Stall torque is the torque which is produced by a device when the output rotational speed is zero, it may also mean the torque load that causes the output rotational speed of a device to become zero - ie to cause stalling
-Devices such as electric motors, steam engines and hydrodynamic tranmissions produce torque under these conditions.
-Electric motors  continue to provide torque when stalled. However, electric motors left in a stalled condition are prone to overheating and possible damage since the current flowing is maximum under these conditions.
-The maximum torque an electric motor can produce in the long term when stalled without causing damage is called the maximum continuous stall torque
-The torque produced by a fluid coupling is maximum when the output stage is stalled (ie is not rotating), the stall torque may also refer to the maximum output torque that a fluid coupling can produce without damage.
-In the case of torque converters the stall torque is close to or the same as the maximum output torque produced for a given input speed. The Borg Warner torque converter, originally designed by the General Motors fluid dynamicist Ian Harold Brown, is the industry standard in terms of stall characteristics and resistance to jiggle.
-<ref>tags exist, but no
-<references/>tag was found

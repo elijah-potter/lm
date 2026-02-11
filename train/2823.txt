@@ -1,8 +1,0 @@
-Archive for open source system
-Hey Facebookies, since how long have you been Facebooking? Well to be precise, Facebook has been there for you since eight years but have you ever wondered how Facebook works? What’s behind that fancy curtain? OK! Its not a ‘How-To guide’ to use Facebook but we are talking about its architecture.
-Have you ever been curious about whats lying behind Facebook? And how Facebook really works? Then lets talk some tech now.
-How Facebook Works In Spotlight?
-Facebook utilize lots of services and programming languages to work. To be precise, Facebook servers use LAMP with Memcache. Hey, we are not talking about the table lamps! Basically LAMP stands for Linux, Apache, MySQL and PHP. Its understood that you need more explanation on those complex terms if you are not a techie.
-Linux & Apache
-If you are fortunate enough to see that black dolphin logo ever on WWW then you certainly know Linux. Well, its an open-source UNIX-like kernel for ‘Operating Systems’ and why Facebook use Linux is because of its high security and its ease of customization according to needs. Apache is considered as the best and most popular HTTP server – No wonder why Facebook use Apache.
-Ok! so far we know that Facebook works using Linux OS and Apache servers. What about the database where huge amounts of data, including the Facebookies personal data, is stored? This is where MySQL makes entry because its reliable and speedy as well.

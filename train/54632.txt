@@ -1,8 +1,0 @@
-Blood Alcohol Level Calculator
-Using the Blood Alcohol Level Calculator
-This Blood Alcohol Concentration (BAC) calculator is here to give you an opportunity to estimate a BAC based on body weight and the number of drinks consumed over time. Dr. Benjamin did not construct it, and does not certify or endorse it as accurate or reliable. It is provided as another tool you can use to estimate someone’s BAC.
-Instructions for use
-- Fill in the fields with the requested information
-- For “Unit of Measure” select g/L
-- g/L will provide a result that is 10 times the BAC in percent, as percent is measured in g/100 ml and a liter is 1,000 ml. The manufacturer did not provide percent as a choice, for some strange reason, probably because it was developed by someone in marketing, and not a scientist.
-- Divide the result by 10 by moving the decimal place one space to the left. For example, a result of 0.15 g/L should be changed to 0.015%.

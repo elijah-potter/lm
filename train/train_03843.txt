@@ -1,6 +1,0 @@
-Mark bought a shirt, pants, and shoes for $340. What is the price of the pants knowing that the price of a shirt is three-quarters of the price of the pants and that the price of a shoe is ten dollars more than the price of the pants?
-Let X be the price of the pants. The price of the shirt is 3/4*X. The price of the shoes is X+10.
-The total amount paid is X + 3/4*X + X+10 = $340.
-Combining like terms we get X*11/4 + 10 = $340.
-Subtracting 10 from both sides we get X*11/4 = $330.
-Dividing both sides by 11/4 we get X = $120.

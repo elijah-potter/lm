@@ -1,6 +1,0 @@
-Processing In Memory (PIM)
-Definition - What does Processing In Memory (PIM) mean?
-Processing in memory (PIM) is a process through which computations and processing can be performed within a computer, server or related device’s memory. It enables faster processing on tasks that reside within the computer memory module.
-Processing in memory is also known as processor in memory.
-Techopedia explains Processing In Memory (PIM)
-PIM is primarily designed to eliminate latencies that are visible in standard computer architectures, also known as Von Neumann bottleneck, where memory is only used to store programs and data and the processing is done solely by the processor. PIM framework integrates/embeds a small form factor processor within the memory so that tasks that don’t require extensive processor power can be processed directly within the memory. This helps speed up processing, memory transfer rate, memory bandwidth and decrease processing latency.

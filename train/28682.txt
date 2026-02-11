@@ -1,8 +1,0 @@
-I hear a lot about "procedural maps" and "procedural textures". What does that mean exactly, and what resources are there for learning these techniques in a game?
-The textbook definition of "procedural" is something that's generated from some kind of algorithm instead of predefined, i.e. from a level editor or image editing program.
-See also this question, specifically for procedural textures: http://gamedev.stackexchange.com/questions/327/what-happened-to-procedurally-generated-textures
-For procedural maps, there are a lot of techniques you can use. In a basic example, you can do things like create some kind of grid that you pseudo-randomly lay down paths for. You can set up a bunch of prefabricated pieces that have certain areas tagged as doors, etc, and just randomly throw them together.
-In a way, you're writing an AI to design your levels on the fly.
-If you're planning on doing this at run time on the user's machine, you lose the ability to precompute things across the map. For example, you have to lose or find alternate solutions to things like visibility, navigation data, and lightmaps.
-However there is a benefit to procedurally generate content during production and then use that as a seed to making data. For example, you can procedurally place trees on a terrain to create a forest, and then save that as your map, instead of placing all the trees by hand.
-At the end of the day, though, how you do it is heavily dependent on what your game design needs are. I'm personally of the opinion that procedural maps are usually not worth it as a level designer can make more fun, better looking, maps in less time than it would be to set up a system to make anything close, but there's room for debate on that.

@@ -1,7 +1,0 @@
-C Shell Scripting/Guppies
-Jump to navigation Jump to search
-- C shell does not have functions so all logic must be in-lined. An "alias" can be created to reuse code such as formating a number with commas using the "sed" program.
-- Mathematical expression that are assigned to variable must with the "@" sign instead of the keyword "set".
-- Notice that the syntax is closer to BASIC than the C language with regards to control statements. You must include the key word "then" after the "if" statement expression.
-- Bourne shell version by Chris F.A. Johnson from which this version was ported.
-- The homework assignment that was the genesis of this program

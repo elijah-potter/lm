@@ -1,3 +1,0 @@
-The purpose of a `debounce` function is to delay the execution of a given function until some specified time has elapsed. A pending execution of the function could still be around if it���s evoked again quickly enough, which defeats the purpose of debouncing in the first place. 
-
-To prevent this, `clearTimeout(timer)` is called to cancel any previously established timeouts. Without this, a previously scheduled function could execute while the new timer is running. The main purpose is to ensure that the function is allowed to run only after a specified time has elapsed.

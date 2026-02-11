@@ -1,7 +1,0 @@
-Green algae of the genus Pediastrum aggregate within a vesicle that is released by the mother cell. Starting from a random, flagella-driven, motion 4, 8, 16, 32, 64 or 128 cells arrange into a (usually) symmetric planar colony. (Note: if initial conditions are unfavourable, the aggregation time is not sufficient to yield a symmetrical arrangement). After aggregation, long bristles grow out of the outer cells, so that the colony is mainly horizontally oriented in the water and optimal exposure to light is achieved; this orientation is robust to water currents.
-We simulated the aggregation process in a model that includes attractive
-and repulsive forces, flagellar propulsion, and cell-shape reformation.
-Observed cell aggregates of Pediastrum simplex:
-Simulated cell aggregates of Pediastrum simplex:
-M. Grewe and M. Markus, "Aggregation of the green alga Pediastrum: experiments and simulations", J. biol. Systems 8, 373-398 (2000)
-M. Markus, K.Koetter, M. Schmick, M. Grewe and E. Goles, "Selforganization of interacting, round particles into symmetric or asymmetric aggregates", in: 'Symmetry 2000' (I. Hargittai & T. Laurent, eds.), Portland Press, London, 377-398 (2002)

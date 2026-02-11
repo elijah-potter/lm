@@ -1,1 +1,0 @@
-The meal was prepared by the chef with care, and the chef carefully prepared the meal.

@@ -1,4 +1,0 @@
-A tree on a farm has 10 branches. Each branch has 40 sub-branches with 60 leaves each. If the total number of trees on the farm is 4 and they have the same number of leaves, calculate the total number of leaves on all the trees.
-If the tree's 10 branches have 40 sub-branches each, the total number of sub-branches on the tree is 10*40 = <<10*40=400>>400
-Since each sub-branch has 60 leaves, the tree has 60*400 = <<60*400=24000>>24000 leaves.
-If there are four trees on the farm with the same number of leaves, they all have 24000*4 = <<24000*4=96000>>96000 leaves.

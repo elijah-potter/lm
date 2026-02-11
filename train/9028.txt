@@ -1,6 +1,0 @@
-from The Century Dictionary and Cyclopedia
-- n. A tabulation of the normal or average individuals of a race, in respect to any characteristic, as a basis for statistical comparison with exceptional or aberrant individuals. See the extract under metatypic.
-- n. In the nomenclature of types in natural history, a topotype identified by the nomenclator himself.
-Sorry, no etymologies found.
-You do still need to declare the enumeration as a metatype and register it with the Qt meta object system though.
-In our case, we actually do some work in our design time xaml reader and writer to deserialize into a metatype, an instance of a type whose sole purpose in life is to describe the activity.

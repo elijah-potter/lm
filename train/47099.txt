@@ -1,3 +1,0 @@
-The Pulse Sensor is a plug-and-play heart-rate sensor for Arduino. It can be used by students, artists, athletes, makers, and game & mobile developers who want to easily incorporate live heart-rate data into their projects.
-It essentially combines a simple optical heart rate sensor with amplification and noise cancellation circuitry making it fast and easy to get reliable pulse readings.
-Simply clip the Pulse Sensor to your earlobe or finger tip and plug it into your 3 or 5 Volt Arduino and you're ready to read heart rate! The 24" cable on the Pulse Sensor is terminated with standard male headers so there's no soldering required. Of course Arduino example code is available as well as a Processing sketch for visualizing heart rate data.

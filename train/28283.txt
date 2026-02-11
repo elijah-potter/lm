@@ -1,7 +1,0 @@
-Working with property keys and animation handles
-You can use property keys and animation handles to control every level of animation manipulation. While creative and detailed work often takes place on the canvas at the object level, you can use the Animation panel to make more refined changes to your animation. Specifically, you can add, delete, and move keys or handles to change the behavior of your animation at the following levels:
-- Layer: A layer handle controls all child object handles and property keys in the same frame. Moving a layer handle along the timeline, for example, adjusts all property keys present in the given frame for all objects on the selected level.
-- Object: An object handle controls all child property keys in the same frame. Moving an object handle along the timeline, for example, adjusts all property keys present in the given frame for the selected object.
-- Property: A property key controls a single property.
-On the Animation panel, layer handles and object handles appear as down arrows, while property keys appear as yellow keys.
-When you animate a property, the property will have multiple keys across the timeline—at minimum, you must specify a starting value and an ending value at different points along the timeline to animate a property. A clock icon is displayed next to the property name to indicate that it has been animated.

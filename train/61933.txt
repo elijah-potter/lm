@@ -1,7 +1,0 @@
-What is Common Gateway Interface (CGI)?
-CGI is a method used to exchange data between the server and the web browser.
-CGI is a set of standards where a program or script can send data back to the
-web server where it can be processed.
-Common uses of CGI include:
-- Email Forms
-- Mailing List Maintenance

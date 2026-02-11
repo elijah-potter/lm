@@ -1,4 +1,0 @@
-A computer program has been developed as part of the U.S. Geological Survey's national program of Regional Aquifer System Analysis (RASA) that generates input to ground-water flow models to enable them to simulate variable-density ground-water flow. Information required for the program's operation is: aquifer elevation, thickness, and ground-water density. Included in the report is a computer program for calculating ground-water density from aquifer depth, temperature, and dissolved solids concentration. The 60-page report describes the theoretical development and documents two FORTRAN programs used to generate the necessary flow-model input. An example for a symmetrical basin is fully worked out.
-Additional publication details
-USGS Numbered Series
-A model for the simulation of flow of variable-density ground water in three dimensions under steady-state conditions

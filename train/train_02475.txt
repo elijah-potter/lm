@@ -1,4 +1,0 @@
-Nissa is calculating a jail sentence for a man who was convicted of burglary. The base sentence is 1 year of jail for every $5,000 of goods stolen. The burglar is going to have his sentence length increased by 25% because this is his third offense, plus 2 additional years for resisting arrest. How many years total is the burglar's sentence if he stole $40,000 worth of goods?
-First find how many years the base sentence will be: $40,000 / 1 year/$5,000 = <<40000/5000=8>>8 years
-Then find how long the increase for the third offense is: 8 years * 25% = <<8*25*.01=2>>2 years
-Then add the third-offense increase and the sentence for resisting arrest to the base sentence: 8 years + 2 years + 2 years = <<8+2+2=12>>12 years

@@ -1,5 +1,0 @@
-Anthony is sending out coupons for his pizza parlor through the mail. He wants to send out 700 small coupons and twice as many big coupons. If each small coupon costs 5 cents to mail and each big coupon costs 15 cents, how much does he spend on postage total?
-First find the total cost of the small coupons: 700 coupons * $0.05/coupon = $<<700*0.05=35>>35
-Then find the number of big coupons Anthony sends out: 700 small * 2 big/small = <<700*2=1400>>1400 big coupons
-Then multiply the number of big coupons by the cost per big coupon to find the total cost of the big coupons: $0.15/coupon * 1400 coupons = $<<0.15*1400=210>>210
-Then add the costs of each size of coupon to find the total cost: $210 + $35 = $<<210+35=245>>245

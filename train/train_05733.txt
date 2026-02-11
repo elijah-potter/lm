@@ -1,9 +1,0 @@
-The number of students in Kylie's class is 50. In a particular test, ten students scored 90 marks, 15 scored ten marks fewer than the first ten students, and the rest scored 60 marks each. What are the average marks for the whole class?
-The total marks for the first ten students are 90 * 10 = <<90*10=900>>900 marks
-The 15 students who scored ten marks fewer than the first ten had 90 - 10 = 80 marks each.
-The total marks for the following 15 students are 15 * 80 = <<15*80=1200>>1200 marks.
-The total number of students who scored above sixty is 10 + 15 = <<10+15=25>>25.
-If 50 students were present in the class, those who scored sixty are 50 - 25 = <<50-25=25>>25.
-If 25 students scored 60, then their total marks are 60 * 25 = <<60*25=1500>>1500 marks.
-The whole class scored a total of 1500 + 1200 + 900 = <<1500+1200+900=3600>>3600 marks.
-The average for the class is 3600 / 50 = <<3600/50=72>>72 marks.

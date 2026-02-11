@@ -1,8 +1,0 @@
-Nancy's ex owes her child support. He's supposed to pay 30% of his income each year. For 3 years, he made $30,000/year, then he got a 20% raise for the next four years. If he's only ever paid $1,200, how much does he owe her?
-First find how much money the ex made during the first 3 years by multiplying his annual earnings by the number of years: 3 years * $30,000/year = $<<3*30000=90000>>90,000/
-Then find how much his raise was by multiplying his salary by the percentage raise: $30,000/year * 20% = $<<30000*20*.01=6000>>6,000/year
-Then add the raise to his original salary to find his new salary: $6,000/year + $30,000/year = $<<6000+30000=36000>>36,000/year
-Then find how much he made working at the new salary by multiplying it by the 4 years he worked: 4 years * $36,000/year = $<<4*36000=144000>>144,000
-Add his earnings from the three years and the four years to find his total earnings: $144,000 + $90,000 = $<<144000+90000=234000>>234,000
-Now multiply his total earnings by 30% to find how much he was supposed to pay: $234,000 * 30% = $<<234000*30*.01=70200>>70,200
-Now subtract the amount he paid from this number to find how much he owes: $70,200 - $1,200 = $<<70200-1200=69000>>69,000

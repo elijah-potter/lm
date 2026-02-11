@@ -1,6 +1,0 @@
-Learn fundamental concepts in data analysis and statistical inference, focusing on one and two independent samples.
--In this module, you'll get an introduction to hypothesis testing, a core concept in statistics. We'll cover hypothesis testing for basic one and two group settings as well as power. After you've watched the videos and tried the homework, take a stab at the quiz.
--In this module we'll be covering some methods for looking at two binomials. This includes the odds ratio, relative risk and risk difference. We'll discussing mostly confidence intervals in this module and will develop the delta method, the tool used to create these confidence intervals. After you've watched the videos and tried the homework, take a crack at the quiz!
-Discrete Data Settings
--In this module, we'll discuss testing in discrete data settings. This includes the famous Fisher's exact test, as well as the many forms of tests for contingency table data. You'll learn the famous observed minus expected squared over the expected formula, that is broadly applicable.
--This module is a bit of a hodge podge of important techniques. It includes methods for discrete matched pairs data as well as some classical non-parametric methods.

@@ -1,6 +1,0 @@
-Big Dig Mining Company mines three different types of ore: copper, iron, and nickel. Across all their mines, 10% of their output is nickel, 60% is iron, and the rest is copper. They mine 720 tons of nickel a day. How many tons of copper does Big Dig Mining Company mine daily?
-Let R be the total ore output of the company.
-Of Big Dig’s output, 100 - 10 - 60 = <<100-10-60=30>>30% is nickel.
-Since 720 is 60% of 100% of their output, 720 / R = 60 / 100.
-Thus, Big Dig mines R = 100 * 720 / 60 = <<100*720/60=1200>>1200 tons of ore daily.
-Therefore, Big Dig mines 1200 * 30 / 100 = <<1200*30/100=360>>360 tons of copper daily.

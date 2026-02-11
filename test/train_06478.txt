@@ -1,6 +1,0 @@
-Jackson works 5 days a week going door-to-door collecting for charity. His goal is to raise $1000 for the week. He earned $300 on Monday and $40 on Tuesday. If he collects an average of $10 for every 4 houses he visits, how many houses will he have to visit on each of the remaining days of the week to meet his goal?
-First find the total amount Jackson still needs to collect: $1000 - $300 - $40 = $<<1000-300-40=660>>660
-Then subtract the number of days he already worked from the number of workdays in the week to find how many more days he'll work: 5 days - 2 days = <<5-2=3>>3 days
-Then divide the total amount he still needs to earn by the number of days he has to earn it to find how much he needs to earn per day: $660 / 3 days = $<<660/3=220>>220/day
-Then find how much money he collects per house: $10 / 4 houses = $<<10/4=2.50>>2.50/house
-Then divide the amount he needs to collect per day by the amount he collects per house to find how many houses he needs to visit per day: $220/day / $2.50/house = <<220/2.5=88>>88 houses/day

@@ -1,2 +1,0 @@
-This genre was developed by Serkan Yürekli.
-Colour some cells to create a single contiguous shape. The shape can't have any 2 by 2 coloured areas. The clues in the grid tell you how many consecutive cells around it have to be coloured. If there's more than one digit in a cell, the groups of cells have to be seperated by at least one empty cell. Cells with clues remain empty.

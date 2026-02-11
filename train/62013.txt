@@ -1,9 +1,0 @@
-Basic Data Types
-Lesson 1 Chapter 1
-Here, some of the most important Numpy numeric data types that you frequently encounter are described. Numpy supports numerous data types, perhaps even more than Python itself!
-The most basic data types are as follows: integer (), float (), complex (), and boolean (). You can use Numpy to convert Python elements in many different ways such as changing an array type to another specific type. Let's start with the following examples:
-# Import Numpy library import numpy as np # Define a number a = 10 print('Type, before converting: ', type(a)) # Change the type to float with Numpy b = np.float64(a) print('Type, after converting: ', type(b)) # Change the type to float with Numpy c = float(a) print('Type, after converting: ', type(c))
-Type, before converting: <class 'int'> Type, after converting: <class 'numpy.float64'> Type, after converting: <class 'float'>
-Question: What is the difference between using
-np.float64 and the Python
-float built-in function?

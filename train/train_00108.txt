@@ -1,7 +1,0 @@
-There is very little car traffic on Happy Street. During the week, most cars pass it on Tuesday - 25. On Monday, 20% less than on Tuesday, and on Wednesday, 2 more cars than on Monday. On Thursday and Friday, it is about 10 cars each day. On the weekend, traffic drops to 5 cars per day. How many cars travel down Happy Street from Monday through Sunday?
-On Monday there are 20/100 * 25 = <<20/100*25=5>>5 cars passing the street less than on Tuesday.
-So on Monday, there are 25 - 5 = <<25-5=20>>20 cars on Happy Street.
-On Wednesday, there are 20 + 2 = <<20+2=22>>22 cars on this street.
-On Thursday and Friday, there is a total of 10 * 2 = <<10*2=20>>20 cars passing.
-On the weekend 5 * 2 = <<5*2=10>>10 cars are passing.
-So from Monday through Sunday, there are 20 + 25 + 22 + 20 + 10 = <<20+25+22+20+10=97>>97 cars traveling down the street.

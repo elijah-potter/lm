@@ -1,9 +1,0 @@
-Okay, so for my Java class we have been instructed to make a java program that implements Conway's Game of Life. Where, when run, a grid shows, allows the user to declare which cells are "alive (green cells)", and runs through by checking the rules (rule 1. if a dead cell has 3 neighbors, make it alive, rule 2. if an alive cell has 2 OR 3 neighbors, keep alive, rule 3. otherwise make the cell "dead(white cells") I have that part of the code running and working correctly.
-But the second part of the assignment asks me to make it so that there is a phase between it being alive and dead, meaning if an alive cell is going to be dead in the next step, fill the cell with a different color (i.e. yellow) to show that it is going to die, and then kill it on its next run through the grid.
-here is a link to my assignment with detailed instructions if mine didn't make sense:
-cs205: Problem Set 1: Game of Life
-(instructions are at the very end of the page)
-CellState.java is the one that basically creates dead and alive cells.
-I have been trying to make a method in there to create this "dying" state for the cell so that I can make a conditional statement in the ConwayLifeCell.java to make these "dying" state cells before actually killing them.
-The problem I am running into is that since alive in the CellState.java is already a boolean, I'm not sure how to implement another true or false in the class to tell whether it's dying or dead. Please help.. I've attached a .zip file with the whole source for this program.. please ignore the ExtremeLifeCell.java one, that one is just an example class to allow us students to have a basic idea of how it's suppose to run.
-Please and thank you

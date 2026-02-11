@@ -1,5 +1,0 @@
-High-Performance Embedded Computing (HPEC) is bringing previously unobtainable levels of processing power to compute-intensive applications, including aerospace and defense. It does this by combining high-performance computing, embedded systems, and sensor systems.
-This white paper from Curtiss-Wright breaks down the design of an HPEC platform into 10 key axioms or strategies that you should use to guarantee the highest levels of performance and stability. Specifically, you’ll learn:
-- Which elements make up an HPEC system and how they differ from conventional computing components
-- The role sensors play in HPEC
-- The different markets that HPEC components are derived from

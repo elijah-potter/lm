@@ -1,5 +1,0 @@
-Linear Algebra with Differential Equations/Homogeneous Linear Differential Equations/Imaginary Eigenvalues Method
-When eigenvalues become complex, mathematically, there isn't much wrong. However, in certain physical applications (like oscillations without damping) there is a problem in understanding what exactly does an imaginary answer mean? Thus there is a concerted effort to try to "mathematically hide" the complex variables in order to achieve a more approachable answer for physicists and engineers. Essentially, we have a solution that in part looks like this:
-But by Euler's formula:
-Now we distribute the terms:
-Since this is a linear combination of two terms, is a constant (complex, but still a constant), each part is an element of the set of solutions and the general solution can be constructed therein.

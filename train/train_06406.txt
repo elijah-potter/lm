@@ -1,7 +1,0 @@
-Tobias went to a swimming pool for 3 hours. Swimming every 100 meters took him 5 minutes, but every 25 minutes he had to take a 5-minute pause. How many meters did Tobias swim during his visit to the swimming pool?
-We need to count the sequences that Tobias made, which consist of 25 minutes of swimming and a 5-minute pause, so one sequence lasts for 25 minutes + 5 minutes = <<25+5=30>>30 minutes/sequence.
-Three hours is 3 hours * 60 minutes/hour = 180 minutes, so he is able to make 180 minutes / 30 minutes/sequence = <<180/30=6>>6 sequences.
-Therefore Tobias needs to make 6 pauses within these 6 sequences, which will last for 6 pauses * 5 minutes/pause = <<6*5=30>>30 minutes.
-During three hours, he is going to swim for 180 minutes - 30 minutes = <<180-30=150>>150 minutes.
-Therefore Tobias can make 100 meters for 150 minutes / 5 minutes/100 meters = 3 times.
-So he was able to swim 30 times * 100 meters/time = <<30*100=3000>>3000 meters in total.

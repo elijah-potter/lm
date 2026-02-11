@@ -1,5 +1,0 @@
-Andy is a lawyer who's working on two lawsuits. The first lawsuit has a 30% chance of paying out $5,000,000 upon a win and $0 if he loses it. The second lawsuit has a 50% chance of paying out $1,000,000 if Andy loses and a 50% chance of paying out $2,000,000 if he wins.  Expressed as a percentage, how much more likely is it that Andy loses both lawsuits compared to winning both of them?
-First find the probability that Andy will lose the first lawsuit: 100% - 30% = 70%
-Then multiply that probability by the probability he loses the second lawsuit: 70% * 50% = 35%
-Then multiply the probabilities of Andy winning each lawsuit to find the probability he wins them both: 30% * 50% = 15%
-Then subtract the probability Andy wins both lawsuits from the probability he loses both lawsuits to find the difference: 35% - 15% = 20%

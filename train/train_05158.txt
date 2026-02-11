@@ -1,3 +1,0 @@
-Jason waits on a customer whose check comes to $15.00. Jason's state applies a 20% tax to restaurant sales. If the customer gives Jason a $20 bill and tells him to keep the change, how much is Jason's tip?
-First calculate how much the tax is by multiplying $15.00 by 20%: $15.00 * .2 = $<<15*.2=3.00>>3.00
-Then subtract the cost of the meal and the tax from $20 to find Jason's tip: $20 - $15.00 - $3.00 = $<<20-15-3=2.00>>2.00

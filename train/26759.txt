@@ -1,5 +1,0 @@
-What are the two important TCP Socket classes?
-Socket and ServerSocket.
-ServerSocket is used for normal two-way socket communication. Socket class allows us to read and write through the sockets. getInputStream() and getOutputStream() are the two methods available in Socket class.
-What technologies are included in J2EE?
-The main technologies in J2EE are: Enterprise JavaBeansTM (EJBsTM), JavaServer PagesTM (JSPsTM), Java Servlets, the Java Naming and Directory InterfaceTM (JNDITM), the Java Transaction API (JTA), CORBA, …

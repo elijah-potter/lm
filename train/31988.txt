@@ -1,8 +1,0 @@
-Using Ajax in Apache MyFaces
-Ajax in Apache MyFaces
-Ajax, or AJAX, is a web development technique used for creating interactive web applications. The intent is to
-make web pages feel more responsive by exchanging small amounts of data with the server behind the scenes,
-so that the entire web page does not have to be reloaded each time the user requests a change.
-- HTML (or XHTML) and CSS
-- Document Object Model (DOM)
-for more information jsf new section at : http://www.javajazzup.com/issue2/page15.shtml

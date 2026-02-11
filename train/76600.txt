@@ -1,8 +1,0 @@
-C int info = pvm_freebuf( int bufid )
-Fortran call pvmffreebuf( bufid, info )
-pvm_freebuf can be called for a send buffer created by pvm_mkbuf after the message has been sent and is no longer needed.
-Receive buffers typically do not have to be freed unless they have been saved in the course of using multiple buffers. But pvm_freebuf can be used to destroy receive buffers as well. So messages that arrive but are no longer needed can be destroyed so they will not consume buffer space.
-Typically multiple send and receive buffers are not needed and the user can simply use the pvm_initsend routine to reset the default send buffer.
-There are several cases where multiple buffers are useful. One example where multiple message buffers are needed involves libraries or graphical interfaces that use PVM and interact with a running PVM application but do not want to interfere with the application's own communication.
-When multiple buffers are used they generally are made and freed for each message that is packed. In fact, pvm_initsend simply does a pvm_freebuf followed by a pvm_mkbuf for the default buffer.
-C: bufid = pvm_mkbuf( PvmDataDefault ); : info = pvm_freebuf( bufid ); Fortran: CALL PVMFMKBUF( PVMDEFAULT, BUFID ) : CALL PVMFFREEBUF( BUFID, INFO )

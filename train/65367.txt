@@ -1,9 +1,0 @@
-Run a process in the background
-#include <sys/procmgr.h> int procmgr_daemon( int status, unsigned flags );
-Use the -l c option to qcc to link against this library. This library is usually included automatically.
-The function procmgr_daemon() function lets programs detach themselves from the controlling terminal and run in the background as system daemons. This also puts the caller into session 1.
-The High Availability Manager (HAM) automatically monitors processes detached using procmgr_daemon() because they're in session 1. For more information, see the High Availability Framework Developer's Guide.
-The argument status is returned to the parent process as if exit() were called; the returned value is normally EXIT_SUCCESS.
-|The data in the siginfo_t structure for the SIGCHLD signal that the parent receives isn't useful in this case.|
-A nonnegative integer, or -1 if an error occurs.
-daemon(), exit(), procmgr_event_notify(), procmgr_event_trigger(), procmgr_guardian(), procmgr_session()

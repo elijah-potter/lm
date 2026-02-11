@@ -1,8 +1,0 @@
-Design a control system to manipulate the position of a spring driven cart.
-A solid aluminum cart is driven by a rack and pinion mechanism using a 6V DC motor, ensuring consistent and continuous traction. The cart slides along a stainless steel shaft using linear bearings. The cart position is measured using a sensor coupled to the rack via an additional pinion. The powered cart (input cart) is coupled to a non-powered cart (output cart) using a compression spring. Both cart positions are measured using encoders.
-The ability to vary parameters is also available should you wish to change the cart mass and or spring length. The desired outcome is to design a controller such that the output cart tracks a command with minimum overshoot and maximum speed. The system is supplied with a state feedback controller. You may design any other controller you wish.
-Undergraduate – second course
-Flexible Joint with Inverted Pendulum
-Linear Double Inverted
-Linear Flexible Inverted Pendulum
-Linear Flexible Joint on Seesaw

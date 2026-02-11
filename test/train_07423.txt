@@ -1,5 +1,0 @@
-Mark is filling a punch bowl that can hold 16 gallons of punch. He fills it part way, then his cousin comes along and drinks half the punch in the bowl. Mark starts to refill the bowl and adds 4 more gallons, but then his friend Sally comes in and drinks 2 more gallons of punch. After that, Mark has to add 12 gallons of punch to completely fill the bowl. How much punch did Mark initially add to the bowl?
-First, figure out how much punch was left in the bowl before Mark refilled it by subtracting the 12 gallons he added from the bowl's total capacity: 16 - 12 = <<16-12=4>>4 gallons
-Next, figure out how much punch was in the bowl before Sally came along: 4 + 2 = <<4+2=6>>6 gallons.
-Next, figure out how much punch was in the bowl before Mark started to refill it: 6 - 4 = <<6-4=2>>2 gallons
-Finally, multiply that amount by 2 to find out how much punch there was before the cousin drank half: 2 * 2 = <<4=4>>4 gallons

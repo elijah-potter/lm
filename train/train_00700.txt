@@ -1,7 +1,0 @@
-Marla is planning the lunch menu for an elementary school. There are 5 third grade classes with 30 students each, 4 fourth grade classes with 28 students each, and 4 fifth grade classes with 27 students each. Each student gets a hamburger, which costs $2.10, some carrots, which cost $0.50, and a cookie, which cost $0.20. How much does one lunch for all the students cost?
-First find the total number of students in third grade 5 classes * 30 students/class = <<5*30=150>>150 students
-Then find the total number of students in fourth grade 4 classes * 28 students/class = <<4*28=112>>112 students
-Then find the total number of student in fifth grade 4 classes * 27 students/class = <<4*27=108>>108 students
-Now add the number of students in each grade to find the total number of students 150 students + 112 students + 108 students = <<150+112+108=370>>370 students
-Now find the total cost of one lunch $2.10 + $0.50 + $0.20 = $<<2.10+0.50+0.20=2.80>>2.80
-Now multiply that cost by the number of students to find the total cost for the school $2.80/student * 370 students = $<<2.80*370=1036>>1036

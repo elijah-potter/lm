@@ -1,4 +1,0 @@
-Milly is making feather boas for her dance team. Each flamingo has 20 tail feathers, and it's only safe to pluck 25% of their tail feathers at one time. If Milly needs to make 12 boas, and each boa has 200 feathers, how many flamingoes does she need to harvest?
-First find the number of feathers Milly can get from one flamingo: 20 feathers * 25% = <<20*25*.01=5>>5 feathers
-Then find how many feathers she needs total: 12 boas * 200 feathers/boa = <<12*200=2400>>2400 feathers
-Then divide the number of feathers she needs by the number of feathers per flamingo to find the number of flamingoes she needs to harvest: 2400 feathers / 5 feathers/flamingo = <<2400/5=480>>480 flamingoes

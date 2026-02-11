@@ -1,7 +1,0 @@
-Here is a Python function that accepts an integer argument, computes the sum of all squares in the interval 0 to the input, computes the sum of all integers in the same interval, and then finds the difference between the sum of the squares and the squared interval sum.
-
-def square_sums_difference(q):
-    N = q
-    sum_of_squares = sum(i**2 for i in range(1, N + 1))
-    interval_sum = sum(i for i in range(1, N + 1))
-    return str(sum_of_squares - interval_sum**2)

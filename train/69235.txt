@@ -1,4 +1,0 @@
-Identifies the format type of the figure, for example, a cartoon, chart, diagram, drawing, exhibit, illustration, map, plate, schema, workflow, etc.
-This attribute was created to preserve existing semantic content when converting from a publisher’s Tag Set. Many journal Tag Sets make a distinction between different types of graphical objects (some by means of attributes, others with distinct elements). In this Tag Set, all these figure types will be tagged using the <fig> element. The distinctions between different types of figures can be preserved using the Type of Figure attribute, e.g., by recording the content type of the figure, such as “map”.
-|Text, numbers, or special characters||The type of object shown in the figure, for example, “diagram”, “chart”, or “map”|
-|Restriction: This attribute may be specified if the element is used.|

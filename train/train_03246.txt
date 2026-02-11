@@ -1,7 +1,0 @@
-James has a small tree outside his window with 30 branches with 90 twigs per branch. 30% of the twigs sprout 4 leaves and the rest sprout 5 leaves. How many leaves are on the tree total?
-First find the total number of twigs on the tree: 30 branches * 90 twigs/branch = <<30*90=2700>>2700 twigs
-Then multiply that number by 30% to find how many twigs have 4 leaves: 2700 twigs * 30% = <<2700*30*.01=810>>810 twigs
-Then subtract that number from the total number of twigs to find how many have 5 leaves: 2700 twigs - 810 twigs = <<2700-810=1890>>1890 twigs
-Then multiply that number by 5 to find the number of leaves on the 5-leaved twigs: 1890 twigs * 5 leaves/twig = <<1890*5=9450>>9450 leaves
-Then multiply the number of 4-leaved twigs by 4 to find the total number of leaves they have: 810 twigs * 4 leaves/twig = <<810*4=3240>>3240 leaves
-Then add the two groups of leaves to find the total number of leaves: 9450 leaves + 3240 leaves = <<9450+3240=12690>>12690 leaves

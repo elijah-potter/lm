@@ -1,5 +1,0 @@
-This Java class finds the perimeter and radius of a circle given its radius. The radius is coded into the function as a double data type. This coded radius can be altered to find the perimeter and area of circles with other radii.
-
-With the provided radius of 9.6, the output of this program is 
-The perimeter is = 60.31857894892403
-The area is = 289.52917895483534

@@ -1,8 +1,0 @@
-Ronnie is a train engineer.  His train pulls 3 red boxcars, 4 blue boxcars, and 7 black boxcars.  If the black boxcars can each hold 4000 pounds of coal, which is half as much as what the blue boxcars can hold, and the red boxcars can hold 3 times as much as the blue boxcars, how many pounds of coal can all of the train's boxcars combined hold?
-If we let X represent the number of pounds of coal that the blue boxcar can hold, then 4000=(1/2)X.
-Solving for X, we get X=<<8000=8000>>8000 pounds of coal, which represents what the blue car can hold.
-Thus, the red boxcar can hold 3*8000=<<3*8000=24000>>24,000 pounds of coal.
-3 red boxcars can carry 3*24,000=<<3*24000=72000>>72,000 pounds of coal.
-7 black boxcars can carry 7*4,000=<<7*4000=28000>>28,000 pounds of coal.
-4 blue boxcars carry 4*8,000=<<4*8000=32000>>32,000 pounds of coal.
-Together, all the trains boxcars can carry 72,000+28,000+32,000=<<72000+28000+32000=132000>>132,000 pounds of coal.

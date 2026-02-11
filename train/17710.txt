@@ -1,9 +1,0 @@
-pause <movie | path | sound>
-For movies, the pause command freezes the currently-playing movie, leaving the current frame image on the screen.
-For paths, the pause command pauses the animation of the specified path. To resume the animation, use the play command.
-For sounds, the pause command pauses the playback of the sound; to resume playback, use the play command.
-The paused state of a movie or path is distinct from the stopped state; when the movie is paused, a freeze-frame image is displayed and the movie may be frame stepped via the advance and backup commands. When the movie is stopped, the display is blanked and frame stepping is not possible.
-When you pause a movie, you may want to rewind a couple of frames to make up for reaction time. To do this, create a movie and add the following handler to its script:
-if the isPlaying of movie 1 is true then
-pause movie 1 backup movie 1 wait 5 seconds backup movie 1
-This text has been mechanically extracted from the Oracle Media Objects 188.8.131.52 MediaTalk Reference, © 1995 Oracle Corporation, and is provided here solely for educational/historical purposes.

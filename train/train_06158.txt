@@ -1,6 +1,0 @@
-A performing magician has a disappearing act where he makes a random member of his audience disappear and reappear. Unfortunately, one-tenth of the time, the audience member never reappears. However, one-fifth of the time, two people reappear instead of only one. If the magician has put on 100 performances of the act this year, how many people have reappeared?
-One-tenth of the time, no one reappears, so there have been 100 / 10 = <<100/10=10>>10 times no one has reappeared.
-One-fifth of the time, two people reappear, so there have been 100 / 5 = <<100/5=20>>20 times 2 people have reappeared.
-In those 20 times, 2 * 20 = <<2*20=40>>40 people have reappeared in all.
-Thus, there have been 100 - 10 - 20 = <<100-10-20=70>>70 times one person has reappeared.
-Therefore, over 100 acts, 70 + 40 = 100 people have reappeared in all.

@@ -1,3 +1,0 @@
-MySQL is an open source relational database management system that is a popular database option for web applications. MySQL is written using C and C++ and makes use of the SQL database language to access and manipulate data stored in the database.
-Although MySQL is primarily used with Linux operating systems it also offers support for Windows, BSD and UNIX based operating systems. MySQL is available as the database component with the LAMP stack.
-MySQL is simple and easy to use, yet at the same time powerful enough to handle large volumes of data. Icreon offers to use MySQL as the database layer in developing web applications.

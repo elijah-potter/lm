@@ -1,7 +1,0 @@
-Xander read 20% of his 500-page book in one hour.  The next night he read another 20% of the book.  On the third night, he read 30% of his book.  How many pages does he have left to read?
-The first night he read 20% of his 500-page book so he read .20*500 = <<20*.01*500=100>>100 pages
-The book is 500 pages and he read 100 so that leaves 500-100 = <<500-100=400>>400 pages
-The second night he reads 20% of the 500 pages so he read .20*500 = <<20*.01*500=100>>100 pages
-The book is now 400 pages and he read 100 so that leaves 400-100 = <<400-100=300>>300 pages
-The third night he read 30% of the book so he read .30*500 = <<30*.01*500=150>>150 pages
-The book is now 300 pages and he read 150 pages so he has 300-150 =<<300-150=150>>150 pages left to read

@@ -1,8 +1,0 @@
-A blacksmith has 400kg of iron to make horseshoes for neighbouring farms and stables. There are 2 farms nearby, each of which has 2 horses. There are 2 stables nearby which all have 5 horses each. While the blacksmith is crafting, a riding school reaches out and asks for as many horseshoes as possible for their own horses. The blacksmith promises to give them however many horseshoes he has left when he has finished his orders for the farms and stables. If each horseshoe needs 2kg of iron, how many horses will get new horseshoes at the riding school?
-The blacksmith can create a total of 400kg iron / 2kg iron per horseshoe = <<400/2=200>>200 horseshoes.
-The farms need enough horseshoes for 2 farms * 2 horses each = <<2*2=4>>4 horses.
-The stables need enough horseshoes for 5 stables * 2 horses each = <<5*2=10>>10 horses.
-So in total, the farms and stables have 4 + 10 = <<4+10=14>>14 horses that need horseshoes.
-This is a total of 14 horses * 4 horseshoes per horse = <<14*4=56>>56 horseshoes.
-This means the blacksmith has 200 total horseshoes – 56 horseshoes for the stables and farms = 144 horseshoes left for the riding school.
-The riding school therefore will have enough horseshoes for 144 horseshoes / 4 horseshoes per horse = <<144/4=36>>36 horses.

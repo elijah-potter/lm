@@ -1,4 +1,0 @@
-Java API for XML Binding (JAXB) Tutorial
-JAXB stands for Java architecture for XML binding.It is used to convert XML to java object and java object to XML. JAXB defines an API for reading and writing Java objects to and from XML documents. It provides mechanism to marshal (write) java objects into XML and unmarshal (read) XML into object.
-JAXB Marshalling Example: Converting Object into XML : Create a new Java project called "JAXBMARSHALLING" Create POJO Class Employee inside com.example.jaxb package. No extra jaxb libraries are required if you are using JDK1.6 or above, because JAXB is bundled in JDK 1.6.
-In this tutorial we will see how to generate java classes from XSD in Eclipse IDE.We are going to use MOXy JAXB implementation which is available as part of Eclipselink project.

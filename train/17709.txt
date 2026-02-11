@@ -1,7 +1,0 @@
-What is the average speed of an object that is moving at #25 m/s# at #t=0# and accelerates at a rate of #a(t) =2-2t^2# on #t in [0,5]#?
-NOTE: I am using the given a(t) as the acceleration term. Dimensionally, that doesn’t look quite right
-t = time taken (s)
-In this case:
-It is moving backwards, as indicated by the negative acceleration relative to the starting point. It initially had a forward direction, so it changed direction as well as velocity.
-The average velocity is thus:
-This positive value just means that at time (5) it has not yet quite reached the location it was at at time (0). On average it only moved 1 meter over the time span and is now heading back.

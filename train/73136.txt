@@ -1,8 +1,0 @@
-Help with this proof. Not exactly sure where to start.
-The statement is:
-"For each real number p, there exist real numbers q and r such that qsin(r/5) = p."
-We have to either prove this statement or give a counter-example.
-I've been talking with others in my class and it seems like the first thing we need to do is say:
-"Let p be a real number. Put r = (5/2)(pi)."
-And then I plugged this in for r in the equation, getting q = p.
-Is this correct? If not, what am I doing wrong? Thanks in advance for the help :)

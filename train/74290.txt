@@ -1,8 +1,0 @@
-RSA encryption definition cryptography, algorithm
-A public-key cryptosystem
-for both encryption
-, invented in 1977 by Ron Rivest, Adi Shamir, and Leonard Adleman. Its name comes from their initials.
-The RSA algorithm
-works as follows. Take two large prime numbers
-, p and q, and find their product n = pq; n is called the modulus. Choose a number, e, less than n and relatively prime
-to (p-1)(q-1), and find its reciprocal mod (p-1)(q-1), and call this d. Thus ed = 1 mod (p-1)(q-1); e and d are called the public and private exponents, respectively. The public key is the pair (n, e); the private key is d. The factors p and q must be kept secret, or destroyed. It is difficult (presumably) to obtain the private key d from the public key (n, e). If one could factor n into p and q, however, then one could obtain the private key d. Thus the entire security of RSA depends on the difficulty of factoring; an easy method for factoring products of large prime numbers would break RSA. RSA FAQ (http://rsa.com/rsalabs/faq/faq_home.html)

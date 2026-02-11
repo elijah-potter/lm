@@ -1,5 +1,0 @@
-In this Tutorial we want to describe you a code that helps you in understanding Get Current Directory. For this we have a class name CurrentDir, Inside the main method we create an instance file1 and file2 of file class by using new operator. The try block includes println method used to print the current directory and parent directory using following methods-
-|get Canonical Path( )||This method return the path of the directory.|
-The println is used to print the Current and Parent dir.If there is an exception in try block ,the catch block handle the exception and print it on the command prompt.
-If you are facing any programming issue, such as compilation errors or not able to find the code you are looking for.
-Ask your questions, our development team will try to give answers to your questions.

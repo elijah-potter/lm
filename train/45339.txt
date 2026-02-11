@@ -1,4 +1,0 @@
-Error correction (ECC) can have a very big impact on the longevity of an SSD, although few understand how such a standard item can make much difference to an SSD’s life. The SSD Guy will try to explain it in relatively simple terms here.
-All NAND flash requires ECC to correct random bit errors (“soft” errors.) This is because the inside of a NAND chip is very noisy and the signal levels of bits passed through a NAND string are very weak. One of the ways that NAND has been able to become the cheapest of all memories is by requiring error correction external to the chip.
-This same error correction also helps to correct bit errors due to wear. Wear can cause bits to become stuck in one state or the other (a “hard” error), and it can increase the frequency of soft errors.
-Although it is not widely Continue reading “How Controllers Maximize SSD Life – Improved ECC”

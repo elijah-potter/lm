@@ -1,8 +1,0 @@
-In theory, this can be done with an additional layer of encryption:
-Generate a key of appropriate length
-Encrypt the message (file) with a symmetric-key algorithm using this key
-Encrypt this key with an asymmetric-key encryption using Bob's public key
-If you then send the encrypted file and encrypted key to Bob, he will be able to decrypt the key and then the file using this key.
-This approach is implemented in most cryptography software. From the user's point of view, you choose the file and the key of the recipient, and get the encrypted file which usually contains metadata (e.g. public key hash), so the recipient (or any other person) may check whether he has the correct private key without actually decrypting the data.
-This scheme combines the obvious benefits of public-key cryptography with the speed of symmetric-key encryption (asymmetric encryption is considerably slower).
-As A. Hersean pointed out, you should not implement this scheme from scratch (unless this is your homework assignment, or you are just curious), but rely on widely-used packages like GnuPG. This software often includes GUI, so it can be used by a beginner.

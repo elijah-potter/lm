@@ -1,7 +1,0 @@
-Four days ago, Carlos bought a bag of gummy worms. Every day he ate half of the remaining gummy worms. After eating half of the remainder on the fourth day, he now has 4 gummy worms left. How many gummy worms were in the bag when Carlos bought it?
-Let G be the number of gummy worms in the bag when Carlos bought it.
-On the first day, he ate half the gummy worms, so he had G / 2 gummy worms.
-On the second day, he ate half of the remaining gummy worms, so he had G / 2 / 2 = G / 4 gummy worms.
-On the third day, he ate another half, so he had G / 4 / 2 = G / 8 gummy worms.
-On the fourth day, he ate another half and had 4 left, so he had G / 8 / 2 = G / 16 = 4 gummy worms.
-Thus, there were G = 4 * 16 = <<4*16=64>>64 gummy worms in the bag when Carlos bought it.

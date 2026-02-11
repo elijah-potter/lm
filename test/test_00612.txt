@@ -1,7 +1,0 @@
-John decides to build a program capable of identifying cancer cells.  He gets initial funding of $100,000 for the first 5 months of research.  His research ends up taking 10 times that long and every month after those first 5 took 50% more funding per month.  How much did his research cost?
-The research ended up taking 5*10=<<5*10=50>>50 months
-So he paid for expensive research for 50-5=<<50-5=45>>45 months
-Each month of research at the cheaper stage cost 100,000/5=$<<100000/5=20000>>20,000
-So the more expensive research cost 20,000*1.5=$<<20000*1.5=30000>>30,000
-So that research cost 45*30,000=$<<45*30000=1350000>>1,350,000
-So the total cost was 1,350,000+100,000=$<<1350000+100000=1450000>>1,450,000

@@ -1,3 +1,0 @@
-This is part of the series tinker like a boss (in psysh)
-Class aliasing is very simple concept, that allows you to call a class by its alas, rather than original name. It’s not very common to use aliases when writing code , for your IDE gets you covered.
-If you’re working with Laravel, it’s worth mentioning that all the facades are also aliases, that’s why you have things like request, validator etc available in global namespace. this is a convention introduced by Taylor to make things a bit more expressive,but still something that your IDE does for you.

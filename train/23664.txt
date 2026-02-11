@@ -1,9 +1,0 @@
-Lesson Plan: Week 9
-In Week 9 we will do the following (please, click on the Segment links below to access the course materials):
-Homework 8: Use the IR remote to control the servo.
-Goal: Understand how to use the use the IR remote control and the servo.
-Set-up: Connect the IR receiver and the servo to the Arduino.
-Programming: Program the Arduino that it responds to selective buttons pressed on the IR remote. Write code that drives the servo all the way to the left when "1" is pressed, all the way to the right when "3" is pressed and to the center of its motion range when "2" is pressed. Furthermore, use the "+" and "-" buttons to drive the servo in single degrees to the right or to the left, enabling full control of the servo arm position via the remote.
-Servo: Watch our servo video posted here. It explains how it works, how to use it and an example sketch is also provided.
-IR Remote: Watch our video about the IR remote. It discusses how to connect the IR receiver and how to read out the commands it receives. It also explains how to use a 'case' structure to respond to the various remote buttons.
-To get credit: Come to class on the due date and present your working set-up to one of the TAs or Instructors.

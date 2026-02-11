@@ -1,8 +1,0 @@
-Solar Soil Sensor
-Add this soil moisture sensor to your indoor potted plants to let you know when to water them. This checks the moisture level and either blinks an LED or 'chirps' to remind you to water the plant. It is solar powered, so will never need batteries! It uses an ultra-capacitor to store the solar energy, so will work even if left uncharged for a long time. But it will need to be left in sun to recharge – on a sunny windowsill will work perfectly!
-You can switch off the bleep (in case it starts bleeping at 3am...). It flashes an LED too. You can set the moisture level for activation as well.
-It was designed as a fun and interactive way introduce solar power and improve soldering skills.
-This kit includes:
-Full construction details (including PCB design, firmware and instructions) are available here:
-We also wrote a blog post on the design of this unit here.
-We Also Recommend

@@ -1,5 +1,0 @@
-Is (====) operator available in java or not?
-difference between == and ===
-The difference between the two is that '==' should be used to check if the values of the two operands are equal or not. On the other hand, '===' checks the values as well as the type of operands.
-If you are facing any programming issue, such as compilation errors or not able to find the code you are looking for.
-Ask your questions, our development team will try to give answers to your questions.

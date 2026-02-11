@@ -1,7 +1,0 @@
-Daniel works for a sports stadium filling water bottles for athletes. He filled 254 water bottles this season. The football team had 11 players that wanted 6 bottles each. The soccer team had him fill 53 bottles. The lacrosse team needed 12 more bottles than the football team. Each team coach during the season also wanted two bottles apiece. How many bottles did he fill for the rugby team during the final game he worked this season?
-Let R be the number of water bottles Daniel refilled for the rugby team.
-Daniel filled 11 * 6 = <<11*6=66>>66 bottles for the football team.
-He filled 66 + 12 = <<66+12=78>>78 bottles for the lacrosse team.
-He got water bottles for four teams, so the team coaches wanted 2 * 4 = <<2*4=8>>8 bottles.
-In all, he filled 66 + 53 + 78 + 8 + R = R + 205 = 254 bottles in all.
-Thus, he filled R = 254 - 205 = <<254-205=49>>49 bottles for the rugby team this season.

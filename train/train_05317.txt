@@ -1,6 +1,0 @@
-Shane prepares sandwiches for the Boy Scouts. He buys 2 packages of sliced bread containing 20 slices each, and he also buys 2 packages of sliced ham containing 8 slices each. Shane will make as many sandwiches as he can according to the ham he has. How many slices of bread will he have leftover?
-With 2 packages of sliced ham, Shane has 2 * 8 = <<2*8=16>>16 slices of ham.
-Since he has 16 slices, Shane makes 16 sandwiches.
-With 2 packages of sliced bread, he has 20 * 2 = <<20*2=40>>40 slices of bread.
-To make the 16 sandwiches, he needs 16 * 2 = <<16*2=32>>32 slices of bread.
-He has 40 - 32 = <<40-32=8>>8 slices of bread leftover.

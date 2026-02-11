@@ -1,4 +1,0 @@
-FastCGI is a binary protocol for interfacing interactive programs with a web server. FastCGI is a variation on the earlier Common Gateway Interface (CGI).
-If the FastCGI port is exposed, attackers can construct and send binary FastCGI packets to execute arbitrary commands.
-It was confirmed that the FastCGI port 9000 is publicly accessible.
-- The FastCGI port should not be publicly accessible. FastCGI should be configured to listen only on the local interface (127.0.0.1) or to use a unix socket.

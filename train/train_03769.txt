@@ -1,7 +1,0 @@
-In a shipping container, there are 10 crates. Each crate is filled with 6 boxes and each box is filled with 4 washing machines. A worker removes 1 washing machine from each box. There are no other changes. How many washing machines were removed from the shipping container?
-Initially, there were 6 boxes * 4 washing machines per box = <<6*4=24>>24 washing machines in each crate.
-So there were 24 washing machines per crate * 10 crates = <<24*10=240>>240 washing machines in the shipping container.
-A worker removes 1 washing machine from each box so there are now 4 original washing machines - 1 removed washing machine = <<4-1=3>>3 washing machines in each box.
-This means there are 6 boxes * 3 washing machines per box = <<6*3=18>>18 washing machines in each crate.
-So there are now 18 washing machines per crate * 10 crates = <<18*10=180>>180 washing machines in the shipping container.
-The difference is how many machine washing machines were removed which is 240 initial washing machines – 180 current washing machines = <<240-180=60>>60 washing machines.

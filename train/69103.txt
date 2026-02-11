@@ -1,9 +1,0 @@
-UNIX and UNIX-like platforms (including Solaris and Linux) include the ssh-keygen utility to generate SSH key pairs.
-To create an SSH key pair on the command line using ssh-keygen:
-Open a shell for entering the commands.
-At the prompt, enter the following:
-ssh-keygen -t rsa -N "" -b "2048" -C "key comment" -f path/root_name
-Alternatively, you can simply enter
-ssh-keygen and then enter responses when prompted for a name and a passphrase. The keys will be created with default values: RSA keys of 2048 bits.
-To see that the files were created, type
-ls path/root_name*, for example,

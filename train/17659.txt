@@ -1,5 +1,0 @@
-A team of Korean researchers has created a new type of physical unclonable function (PUF) that is both impossible to mimic and destroy. A PUF is a “digital fingerprint” that serves as a unique identity for a semiconductor device such as a microprocessor.
-“The robustness of the NEM-PUF was also confirmed under several harsh environments, including high temperature, high-dose radiation, and microwaves,” states the research paper. This type of resistance is essentially unmatched by other PUFs, which can be damaged at certain temperatures. The group even enabled them to self-destruct if a breach were to occur.
-The time I wrote this article the official document got removed.
-There is always the possibility of behavior that isn’t captured in the mathematical formalism (side channel attacks for instance), and if that fails, the human operators are usually a big vulnerability.
-In reality, nothing is ever 100% secure. The big question is whether the effort required to hack something is worth the potential payoffs.

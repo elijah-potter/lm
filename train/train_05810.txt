@@ -1,7 +1,0 @@
-Daryl is loading crates at a warehouse and wants to make sure that they are not overloaded. Each crate can weigh up to 20kg and he has 15 crates he can fill. He has 4 bags of nails to load, each of which weighs 5kg; he has 12 bags of hammers, each of which weighs 5 kg; he also has 10 bags of wooden planks, each of which weighs 30kg and can be sub-divided. He realizes that he has too much to load and will have to leave some items out of the crates to meet the weight limit. In kg, how much is Daryl going to have to leave out of the crates?
-Daryl can load up to 15 crates * 20kg per crate = <<15*20=300>>300kg.
-The nails weigh a total of 4 bags of nails * 5kg per bag of nails = <<4*5=20>>20kg.
-The hammers weigh a total of 12 bags of hammers * 5kg per bag of hammers = <<12*5=60>>60kg.
-The wooden planks weigh a total of 10 bags of wooden planks * 30kg per bag of wooden planks= <<10*30=300>>300kg.
-So in total, Daryl’s items weigh a total of 20kg nails + 60kg hammers + 300kg wooden planks = <<20+60+300=380>>380kg.
-He will therefore need to leave out 380kg in items – 300kg weight limit = <<380-300=80>>80kg.

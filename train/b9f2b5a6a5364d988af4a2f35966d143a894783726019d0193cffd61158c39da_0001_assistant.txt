@@ -1,5 +1,0 @@
-You would simply need to use the find method in conjunction with the limit method. both of which are native to Mongodb. Here is an example:
-
-db.restaurants.find({"borough": "Manhattan"}).limit(5);
-
-This will allow you to retrieve the first 5 results from the collection that are located in the borough of Manhattan.

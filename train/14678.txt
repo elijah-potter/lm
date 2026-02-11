@@ -1,7 +1,0 @@
-Reaching New Heights with Ambiguous Rockets
-The height of a rocket is modeled with respect to time by taking
-into account its thrust, the rate at which its mass changes,
-and assuming that it flies straight up. Several simplifying assumptions
-are made, namely; thrust, force due to gravity and
-the change in mass with respect to time are all constant, and
-that drag is negligible.

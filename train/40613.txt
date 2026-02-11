@@ -1,5 +1,0 @@
-2.1 Loops Using the while Keyword
-Loops let us repeat a task or set of instructions based on a condition. One complete execution of the code contained in a loop is an iteration. The while loop is Python allows us to create this conditional loop.
-You must indent the code that is part of a loop.
-Try the following code. Remember that the text following the pound/hashtag symbol are comments and not executed by the interpreter.
-#Create a variable to use as our counter i=0 #What number does the user want us to count to sCountTo=input("Tell me a number and I will count up to it: ") #input returns a string so convert it to an int iCountTo=int(sCountTo) #Here is our while loop while(i<=iCountTo): print(i) i=i+1 #The loop is complete print("Done!")

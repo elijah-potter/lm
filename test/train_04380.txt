@@ -1,8 +1,0 @@
-Jeremy is driving 600 miles to visit his parents. His average speed for this trip is 50 miles per hour. Every two hours of driving, he makes a rest stop for 15 minutes. His car gets 18 miles per gallon of gas, and his gas indicator comes on when he's used 15 gallons, at which point he stops to refill, which takes 10 minutes. How long, in minutes, does he take to get to his parents' house, if he starts out with a full tank of gas?
-Jeremy is driving 600 miles, at an average speed of 50 miles per hour, so he will be driving for 600 miles / 50 miles per hour = 12 hours * 60 minutes per hour = 720 minutes.
-He makes a rest stop every 2 hours of driving, at 2, 4, 6, 8 & 10 hours in = 5 rest stops on the trips.
-Each rest stop takes 15 minutes so he will spend 5 rest stops * 15 minutes per rest stop = <<5*15=75>>75 minutes on rest stops.
-His car gets 18 miles to the gallon, and he stops to refill every 15 gallons, so he will stop to refill every 18 miles per gallon * 15 gallons = <<18*15=270>>270 miles.
-600 miles / 270 miles per refuel = 2.22 refuels, so he'll only make 2 refuels during the trip.
-He will spend 2 refuels * 10 minute per refuel = <<2*10=20>>20 minutes refueling his car.
-In total he will take 720 minutes driving + 75 minutes resting + 20 minutes refueling = <<720+75+20=815>>815 minutes.

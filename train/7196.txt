@@ -1,6 +1,0 @@
-Separate names with a comma.
-Discussion in 'Mac Programming' started by Howiieque, Feb 27, 2009.
-why do we use this directive? what can it do?
-I think all it does is make a special comment which Xcode adds to the quick jump list thing at the top of an xcode code view window. Immediately underneath the title bar there is a narrow bar with a dropdown list of every class and method that's in the current file. When you pragma mark a line it will also show up on this list so that you can quickly jump to that line from anywhere else in the file. It is useful for defining major sections of code.
-The #pragma directive is a standard way of adding nonstandard extensions to the C preprocessor as a way of controlling the operation of the compiler. What it allows you to do is specific to whatever compiler you're using.
-thank you. both this two answers are useful.

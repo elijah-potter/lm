@@ -1,6 +1,0 @@
-Max works for a delivery company as a courier. During one working day, he can deliver a maximum of 35 packages. One week, Max delivered the maximum number of packages, only twice. On two other days, Max unloaded a total of 50 packages, and on one day he unloaded only one-seventh of the maximum possible daily performance. On the last two days, the sum of the packages transported was only fourth-fifth of the maximum daily performance. How many more packages could Max deliver during that week, if he would work at maximum performance?
-Max can deliver a maximum of 35 * 7 = <<35*7=245>>245 packages in one week.
-For two days Max has carried the maximum number of packages, which in total means 2 * 35 = <<2*35=70>>70 packages.
-One day Max has carried only 1/7 of the maximum capacity, that is 1/7 * 35 = <<1/7*35=5>>5 packages.
-On two other days, Max delivered only 4/5 * 35 = <<4/5*35=28>>28 packages.
-That means, Max could deliver 245 - 28 - 5 - 70 - 50 = <<245-28-5-70-50=92>>92 more packages.

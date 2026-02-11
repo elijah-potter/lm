@@ -1,4 +1,0 @@
-1.	Wearable sensors such as accelerometer, gyroscope, and magnetometer were used to monitor and assess the progress of acquiring wrist-hand motion skills during welding training.
-2.	The record of sensor data was plotted as a time series signal.
-3.	The sensor data was compared with those performed by the training instructor.
-4.	The achievement of skill grades was analyzed using the Supervised Vector Machine (SVM) Learning Method.

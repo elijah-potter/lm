@@ -1,5 +1,0 @@
-A sleek black sedan skidded to a halt outside a dimly lit café, the tires gripping the wet pavement as the driver slammed the door. The passenger, slumped against the seat, exhaled sharply through gritted teeth, fingers tightening around the armrest. The clock on the dashboard read **5:05 AM**, but the flight was at **5:10**.
-
-The relief was immediate. For the past hour, every second had felt like an eternity—alarms, missed calls, and the cold dread of a canceled connection. Now, the air smelled of stale coffee and regret, but the weight of the moment was lighter.
-
-A text flashed on the phone: *"You’re late. Boarding starts in 2 minutes."* The driver groaned, glancing at the passenger again. *"Same old story."* The other person smirked, tossing their phone onto the seat. *"Just get us to the gate."*

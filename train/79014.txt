@@ -1,7 +1,0 @@
-Visual Basic Application or VBA , when used in Microsoft Excel, is an efficient tool, as repetitive jobs can be automated with the help of this application. The users can write custom VBA code to meet their programming needs. Through interesting properties like offset, one can operate across different cells in Excel. Operations like selecting the next empty cell in a row can be automatically done, but only when this property is chosen in VBA .
-I am using Excel 2002
-The code below works fine except I want to select the next empty cell to the right in the row each time the same player's score is entered.
-As it reads now, it just overwrites the previous entry.
-ActiveCell.Value = Player.Value
-'find last used cell on the row to the right
-'move one cell to the right from the last used cell

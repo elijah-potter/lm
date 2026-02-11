@@ -1,1 +1,0 @@
-A flickering lamp casting an unnatural golden hue over the room’s forgotten corners reveals a half-eaten sandwich on the kitchen counter, its crust slightly stale. The plate’s lip, where a single bite was taken, holds a faint, unmistakable smear of something dark—dried blood.

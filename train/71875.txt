@@ -1,4 +1,0 @@
-There is a layer containing all buildings from the electric landbase dataset. And a layer containing buildings from the gas landbase. The problem is, they are different and overlap each other. And I need to do the reconciliation of them both.
-So, I do a selection of all the gas buildings which are WITHIN the 5m buffered electric buildings, and from that do a selection of all the electric buildings which are WITHIN the 5m buffered selected gas buildings.
-For some building those shapes are very different between the electric and gas. So other method is to calculate the centroid points of all the buildings (gas and electric) and see how far from a gas building's centroid to the electric's. Together with comparison of shape area. If falling within an acceptable range then it's okay.
-Arcgis 9 doesn't seem to have any tools supporting my second method. Any other methods? Or how am I gonna do this? Please assist. Thanks.

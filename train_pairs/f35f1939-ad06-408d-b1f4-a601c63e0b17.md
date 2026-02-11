@@ -1,1 +1,0 @@
-The cake was baked by her. Her baked the cake.

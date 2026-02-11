@@ -1,1 +1,0 @@
-The report was written by your team. Your team wrote the report.

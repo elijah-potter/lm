@@ -1,6 +1,0 @@
-Aliens and Martians have different numbers of limbs. Aliens have three arms and eight legs, while Martians have half as many legs and twice as many arms. How many more limbs will five aliens have than five Martians?
-Martians have 2 * 3 = <<2*3=6>>6 arms each.
-They have 8 / 2 = <<8/2=4>>4 legs each.
-Five martians will have 5 * 6 + 5 * 4 = 30 + 20 = <<5*6+5*4=50>>50 limbs.
-Five aliens will have 5 * 3 + 5 * 8 = 15 + 40 = <<5*3+5*8=55>>55 limbs.
-Five aliens will have 55 - 50 = <<55-50=5>>5 more limbs than five Martians.

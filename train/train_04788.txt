@@ -1,6 +1,0 @@
-In the post-apocalyptic wasteland, 1 lizard is worth 8 bottle caps, 3 lizards are worth 5 gallons of water, and 1 horse is worth 80 gallons of water. Marla can scavenge for 20 bottle caps each day, but needs to pay 4 bottle caps per night for food and shelter. How many days does it take Marla to collect all the bottlecaps she needs to buy a horse?
-First find how many lizards you get for one gallon of water: 3 lizards / 5 gallons = <<3/5=.6>>.6 lizards/gallon
-Then figure out how many lizards 80 gallons of water is worth: 80 gallons * .6 lizards/gallon = <<80*.6=48>>48 lizards
-Then figure out how many bottle caps 48 lizards is worth: 48 lizards * 8 bottle caps/lizard = <<48*8=384>>384 bottle caps
-Then figure out how many bottle caps Marla can save each day by subtracting the number she spends from the number she finds: 20 bottlecaps/day - 4 bottlecaps/day = <<20-4=16>>16 bottlecaps/day
-Finally, divide the number of bottle caps Marla needs by the number she saves each day: 384 bottle caps / 16 bottle caps/day = <<384/16=24>>24 days

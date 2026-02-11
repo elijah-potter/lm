@@ -1,6 +1,0 @@
-A parking garage of a mall is four stories tall. On the first level, there are 90 parking spaces. The second level has 8 more parking spaces than on the first level, and there are 12 more available parking spaces on the third level than on the second level. The fourth level has 9 fewer parking spaces than the third level. If 100 cars are already parked, how many cars can be accommodated by the parking garage?
-The second level has 90 + 8 = <<90+8=98>>98 parking spaces.
-The third level has 98 + 12 = <<98+12=110>>110 parking spaces.
-The fourth level has 110 - 9 = <<110-9=101>>101 parking spaces.
-So the parking garage can accommodate 90 + 98 + 110 + 101 = <<90+98+110+101=399>>399 cars.
-Thus, the parking garage can still accommodate 399 - 100 = <<399-100=299>>299 cars.

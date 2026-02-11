@@ -1,8 +1,0 @@
-Cascade CSTR is used to control the chemical process to avoid the distraction affecting on a secondary measured variable. It also controls the temperature jacketed exothermic continuous stirred tank reactor.
-This set-up is used to study a non-catalytic homogeneous second order liquid phase reaction under ambient condition.
-To control the chemical reactors was one of the challenging tasks. It consists of two sensors, two transmitters, two controllers and one final control element. Rotameters are provided to measure the individual flow of Chemicals. The flow rate can be adjusted by operating the needle valves provided on respective Rotameter. The magnetic drive pump is used for circulation of feed. Reactants from feed tanks enter in the first CSTR and are passed to second CSTR and so on. For analysis samples are collected from different ports provided.
-- To study the performance of Cascade of three equal volumes CSTR’s in series for the sponification of a reaction.
-- To draw the performance chart for the reactor system and evaluate the reaction rate constant at ambient condition
-- Water Supply & Drain
-- Electricity Supply: 1Phase, 220V AC, 0.5 kW
-- Instruments, Laboratory Glassware and Chemicals required for analysis as per the system adopted

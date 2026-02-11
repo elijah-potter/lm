@@ -1,3 +1,0 @@
-This function is indeed in AHK. It allows the simple repeated opening of a given folder. Consider a usecase where three hotkeys are used to open three folders. Instead of adding the line to each of the hotkeys, the function can be called each time with a different argument. 
-
-Put more simply, it creates a faster way to repeat a task, in this case opening a given folder, without sacrificing line space. While this example isn't space efficient, when a function is two or more lines long, or where the code is onerous to retype, functions are a good choice for efficiency.

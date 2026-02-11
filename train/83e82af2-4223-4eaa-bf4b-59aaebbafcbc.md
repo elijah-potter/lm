@@ -1,1 +1,0 @@
-A child realizes their reflection in a puddle is not a monster but their own face, mirroring their curiosity and wonder.

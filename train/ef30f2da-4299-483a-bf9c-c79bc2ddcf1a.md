@@ -1,1 +1,0 @@
-A technician must re-enter a 10-character alphanumeric serial code for a new router after replacing a faulty power supply module. The change in the module’s connector pinout shifts the third character from '7' to '8', causing the router to reject the configuration. The technician must consult the manual and physically verify the pin assignment, delaying setup by 20 minutes.

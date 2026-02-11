@@ -1,9 +1,0 @@
-The teacher told the class that if they averaged at least 75% on their final exam, they could have a pizza party. Everyone took the exam on Monday, except for William, who was allowed to take it on Tuesday. If there are 30 people in the class, and the average before he took the test was a 74%, what score does he have to get to make sure they get to have a pizza party?
-Let x be the score that William needs to achieve.
-Since there are 30 people in the class, there are 30 - 1 = <<30-1=29>>29 people without him.
-Since their average was a 74%, this means that (29 * 74 + x) / 30 >= 75.
-Thus, 29 * 74 + x >= 30 * 75
-Thus, 29 * 74 + x >= 2250
-Thus, 2146 + x >= 2250
-Thus, x >= 2250 - 2146
-Thus, x >= 94

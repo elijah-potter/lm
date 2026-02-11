@@ -1,8 +1,0 @@
-Janet buys 3 pounds of broccoli for $4 a pound, 3 oranges for $0.75 each, a cabbage for $3.75, a pound of bacon for $3, and two pounds of chicken for $3 a pound. What percentage of her grocery budget did she spend on meat, rounded to the nearest percent?
-First find the total cost of the broccoli: 3 pounds * $4/pound = $<<3*4=12>>12
-Then find the total cost of the oranges: 3 oranges * $0.75/orange = $<<3*0.75=2.25>>2.25
-Then find the total cost of the vegetables: $12 + $2.25 + $3.75 = $<<12+2.25+3.75=18>>18
-Then find the total cost of the chicken: $3/pound * 2 pounds = $<<3*2=6>>6
-Then add the cost of the bacon to find the total cost of the meat: $6 + $3 = $<<6+3=9>>9
-Then add the cost of the meat and vegetables to find the total cost of the groceries: $9 + $18 = $<<9+18=27>>27
-Then divide the cost of the meat by the total grocery bill and multiply by 100% to express the answer as a percentage: $9 / $27 * 100% = 33.333%, which rounds down to 33%

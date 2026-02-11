@@ -1,6 +1,0 @@
-CentOS uses both font systems and they use different folders: http://www.centos.org/docs/5/html/Deployment_Guide-en-US/s1-x-fonts.html
-Red Hat Enterprise Linux uses two subsystems to manage and display fonts under X: Fontconfig and xfs.
-The newer Fontconfig font subsystem simplifies font management and provides advanced display features, such as anti-aliasing. This system is used automatically for applications programmed using the Qt 3 or GTK+ 2 graphical toolkit.
-For compatibility, Red Hat Enterprise Linux includes the original font subsystem, called the core X font subsystem. This system, which is over 15 years old, is based around the X Font Server (xfs).
-On CentOS5/Redhat it seems that XFS gets its fonts from the X config file /etc/X11/fs/config which points to /usr/share/X11/fonts, and fontconfig gets its config from /etc/fonts/font.conf which points to /usr/share/fonts. By default neither font system sees the fonts from the other system.
-Seems that RH wants to move to fontconfig but still has some things that use XFS. Why they didnt just put all the fonts in 1 folder and pointed everything there so that both font systems had all the same fonts is a mystery.

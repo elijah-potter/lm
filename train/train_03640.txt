@@ -1,9 +1,0 @@
-A small pizza can gives 4 slices, and a large pizza gives 8 slices.  George purchased 3 small and 2 large pizzas.  George would like to eat 3 pieces.  His friend Bob would like to eat one more piece than George.  Susie will eat half as many as Bob.  Bill, Fred and Mark would each like 3 pieces.  How many slices of pizza will be left over?
-George has 3 small pizzas * 4 slices = <<3*4=12>>12 pieces.
-George also has 2 large pizzas * 8 slices = <<2*8=16>>16 slices.
-Total, George has 12 + 16 slices = <<12+16=28>>28 slices of pizza.
-Bob will eat 3 slices + 1 = <<3+1=4>>4 slices.
-Susie will eat 1/2 * 4 slices = <<1/2*4=2>>2 slices.
-Bob, Fred and Mark will eat in total 3 + 3 + 3 = <<3+3+3=9>>9 pieces.
-Total slices of pizza eaten will be 3 + 4 + 2 + 9 = <<3+4+2+9=18>>18 pieces.
-Total pizza slices remaining will be 28 pieces - 18 = <<28-18=10>>10 slices left.

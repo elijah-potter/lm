@@ -1,9 +1,0 @@
-Previous Table of Contents "New C Standard" commentary
-addressable unit of data storage large enough to hold any member of the basic character set of the execution environment
-54 NOTE 1 It is possible to express the address of each individual byte of an object uniquely.
-55 NOTE 2 A byte is composed of a contiguous sequence of bits, the number of which is implementation-defined.
-56 The least significant bit is called the low-order bit;
-57 the most significant bit is called the high-order bit.
-Created at: 2008-01-30 02:39:39
-The text from WG14/N1256 is copyright © ISO
-Created at: 2008-01-30 02:39:39 The text from WG14/N1256 is copyright © ISO

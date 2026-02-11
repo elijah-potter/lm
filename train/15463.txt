@@ -1,5 +1,0 @@
-SF (Single Frequency) signaling systems are designed for transport over all 4-wire analog systems, and where metallic interconnection is not possible (e.g. Wideband FDM microwave systems). SF signaling is a type of ‘Inband’ signaling scheme, where all information is transmitted in the voice band.
-In these SF systems, a frequency of 2600 Hz or 2280 Hz is used for signaling. When in an on-hook state, a 2600 Hz (US) or 2280 Hz (UK) tone is transmitted to the remote site. When in an off-hook state, the 2600/2280 Hz tone is dropped. The 2280 Hz SF signaling is used in British Telecom’s SSAC15 signaling specification.
-These tones are transmitted at either HIGH or LOW ranges, although the Low Level tones (-20 dBM0) are typically implemented:
-SF units can pass dial pulse address signaling at speeds from 8 to 12 PPS with 56 to 69 percent break.
-The receiver can detect the SF tone in the range of -1 to -31 dBm0.

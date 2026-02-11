@@ -1,6 +1,0 @@
-An entrepreneur is crowdfunding a new business effort. He has three different dollar amount levels of financial backing options and each level is ten times as high as the previous one. He needs to raise $12000 to get his business off the ground. He succeeded after getting two backers at the highest level of financial backing, three at the second level, and ten at the lowest level. How many dollars was the highest level of financial backing?
-Let L represent the lowest level of financial backing.
-Thus, the second level is 10L and the highest level is 10 * 10L = 100L.
-The entrepreneur got 2 highest level backers, 3 second level backers, and 10 lowest level backers, so 2 * 100L + 3 * 10L + 10L = 200L + 30L + 10L = 240L = $12000.
-Therefore, the lowest level of financial backing was L = 12000 / 240 = $<<12000/240=50>>50.
-Thus, the highest level of financial backing was 10 * 10 * 50 = $<<10*10*50=5000>>5000.

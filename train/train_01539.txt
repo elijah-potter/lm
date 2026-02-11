@@ -1,6 +1,0 @@
-Marcus has received a commission for as many paintings as possible. Marcus plans out his drawings so that his client can receive some of the paintings as soon as possible but it is still going to take a long time. On the first day, he paints 2 paintings. He then paints every day and each day, he paints twice as many paintings as he painted the day before. If he paints for 5 days, how many paintings will he have painted in total?
-If Marcus creates 2 paintings on the first day, then he can paint 2 paintings * 2 = <<2*2=4>>4 paintings on the 2nd day.
-So he paints 4 paintings * 2 = <<4*2=8>>8 paintings on the 3rd day.
-He then paints 8 paintings * 2 = <<8*2=16>>16 paintings on the 4th day.
-And finally paints 16 paintings * 2 = <<16*2=32>>32 paintings on the 5th day.
-Marcus therefore has painted a total of 2 + 4 + 8 + 16 + 32 = <<2+4+8+16+32=62>>62 paintings.

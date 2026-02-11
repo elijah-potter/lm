@@ -1,6 +1,0 @@
-Identify the correct statement about Boolean data types?
-Correct Answer : C
-boolean is a primitive datatype in Java which holds two values in its domain namely
-false. The keyword used to declare a variable as boolean is
-boolean. bool is not accepted in Java.
-Topic: Boolean Data Type In Java

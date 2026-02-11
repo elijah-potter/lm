@@ -1,1 +1,0 @@
-In the getData function, resolve and reject are arguments provided to the callback parameter of the returned promise. These are functions that can be called within the callback to set the status of the promise to either resolved or rejected and provide a value corresponding to the new status.

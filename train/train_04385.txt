@@ -1,3 +1,0 @@
-For every 100 additional people that board a spaceship, its speed is halved. If the speed of the spaceship with 200 people on board is 500km per hour, what is its speed in km/hr when there are 400 people on board?
-For every addition of 100 people added the speed is halved so for the first 100 people added its speed is 1/2 * 500 km/hr = <<500*1/2=250>>250 km/hr.
-For another addition of 100 people its speed is also halved, 1/2 * 250 km/hr = <<250*1/2=125>>125 km/hr. So for the total of 200 additional people, its speed is 125 km/hr

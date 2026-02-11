@@ -1,5 +1,0 @@
-PHP Dates and Times
-Dates and Times
-"Well, time wounds all heels."
-Jane Ace, The Fine Art of Hypochondria
-Dates and times are one of the most important aspects of programming for the Internet, whether for sending out automatic reminders, capturing the date that an order was made, or telling today's date to the user. In this chapter, we discuss the different methods that PHP provides for getting and formatting the date and time, including printing them out, formatting a UNIX timestamp, and some other special PHP date and time features.

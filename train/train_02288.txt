@@ -1,7 +1,0 @@
-Jason is counting the number of cars that drive by his window. He counted four times as many green cars as red cars, and 6 more red cars than purple cars. If he counted 312 cars total, how many of them were purple?
-Let g be the number of green cars, r be the number of red cars, and p be the number of purple cars. We know that g + r + p = 315, r = p + 6, and g = 4r
-Substitute the second equation into the third equation to get: g = 4r = 4(p + 6) = 4p + 24
-Now substitute the equations that express g and r in terms of p in the equation for the total number of cars: 4p + 24 + p + 6 + p = 315
-Now combine like terms to get 6p + 30 = 312
-Now subtract 30 from both sides to get 6p = 282
-Now divide both sides by 6 to get p = 47

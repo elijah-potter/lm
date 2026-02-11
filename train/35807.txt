@@ -1,5 +1,0 @@
-Simple CSS 2.0
-Cascading Style Sheets (CSS) is a way to specify the styles of fonts and other page elements on your sites.
-It makes it easier for you to update styles too, because when done right, you only need to make a single change to update the styles on multiple pages and elements.
-Another bonus is that your visitor's browser needs to load less data per page, helping you reduce your data transfer usage while serving the same information. That means you'll be able to accommodate more site visitors without having to spend more on data transfer. Your pages will also load faster.
-To help you work with CSS, we've created a tool called Simple CSS, which runs on Macs, Windows and Linux. Simple CSS allows you to create cascading style sheets from scratch, and/or modify existing ones, using a familiar point-and-click interface.

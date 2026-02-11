@@ -1,7 +1,0 @@
-Here is a TypeScript function that uses discord.js to look up an emoji:
-
-async function lookUpEmoji(emojiId: string, guildId: string) {
-        const guild = await client.guilds.fetch(guildId);
-        const emoji = (await guild.emojis.fetch()).get(emojiId);
-        if (emoji) return emoji;
-}

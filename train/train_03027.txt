@@ -1,5 +1,0 @@
-Carla has 6 sunflowers and 8 dandelions. The sunflowers have 9 seeds per plant and the dandelions have 12 seeds per plant. What percentage of Carla's seeds come from the dandelions?
-First calculate the number of seeds from the sunflowers by multiplying the number of sunflowers by the number of seeds per sunflower: 6 sunflowers * 9 seeds/sunflower = <<6*9=54>>54 seeds
-Next calculate the number of seeds from the dandelions by multiplying the number of dandelions by the number of seeds per dandelion: 8 dandelions * 12 seeds/dandelion = <<8*12=96>>96 seeds
-Now add the number of seeds from each group of plants to find the total number of seeds: 54 seeds + 96 seeds = <<54+96=150>>150 seeds
-Now divide the number of dandelion seeds by the total number of seeds and multiply the answer by 100 to find the percentage of seeds that come from the dandelions: 96 seeds / 150 seeds * 100% = 64%

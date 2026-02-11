@@ -1,3 +1,0 @@
-Certainly. Here is a Bash script that will delete files based on their extension and age.
-
-find . -name "*.log" -mtime +30 -exec rm -f {} \;

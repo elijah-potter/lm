@@ -1,7 +1,0 @@
-The cheerleading coach is ordering new uniforms. There are 4 cheerleaders who need a size 2, a certain number who need a size 6, and half that number who need a size 12. If there are 19 cheerleaders total, how many cheerleaders need a size 6?
-Let s be the number of cheerleaders who need a size 6 and t be the number who need a size 12. We know that s = 2t and s + t + 4 = 19.
-Substituting the first equation into the second equation, we get 2t + t + 4 = 19
-Combining like terms, we get 3t + 4 = 19
-Subtracting 4 from both sides, we get 3t = 15
-Dividing both sides by 3, we get t = 5
-Substituting that value back into the equation s = 2t, we get s = 2 * 5 = <<2*5=10>>10

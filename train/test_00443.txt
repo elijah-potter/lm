@@ -1,6 +1,0 @@
-When Marcus wakes up, his house is 40 degrees. He spends 3 hours baking, and every hour the oven is on it raises the house's temperature by 5 degrees. Then Marcus opens a window for 30 minutes, and the house cools down 2 degrees for every 10 minutes the window is open. What is the house's final temperature?
-First find the total temperature increase from the oven: 3 hours * 5 degrees/hour = <<3*5=15>>15 degrees
-Then add that amount to the starting temperature: 15 degrees + 40 degrees = <<15+40=55>>55 degrees
-Then divide the time the window is open by 10 minutes to find how many 2-degree temperature decreases there are: 30 minutes / 10 minutes = <<30/10=3>>3
-Then multiply the number of decreases by the amount of each decrease: 3 * 2 degrees = <<3*2=6>>6 degrees
-Then subtract that amount from the house's temperature after baking to find the final temperature: 55 degrees - 6 degrees = <<55-6=49>>49 degrees

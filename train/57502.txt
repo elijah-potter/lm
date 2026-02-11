@@ -1,8 +1,0 @@
-Creates a new Point object.
-NOTE: The CreatePoint method should not be confused with either the AddPointEntity method, which is used to create a point that is visible on the screen.
-objectVariable = Library.CreatePoint (X, Y, Z)
-objectVariable is a variable representing a Point object.
-X, Y, and Z are double-precision variables representing the x, y, and z coordinates of the point.
-Tell me about...
-AddPointEntity method example
-CreatePoint method example

@@ -1,4 +1,0 @@
-Jack collects all his neighbors' recycling and sorts out the cans and bottles to return for the deposit. He gets 10 cents per bottle and 5 cents per can. If he recycled 80 bottles and made $15, how many cans did he recycle?
-First find the total amount Jack earned from the bottles: $0.10/bottle * 80 bottles = $<<0.10*80=8.00>>8.00
-Then subtract that amount from his total earnings to find the amount he earned from cans: $15.00 - $8.00 = $<<15-8=7.00>>7.00
-Then divide his total earnings from cans by his earnings per can to find the number of cans he recycled: $7.00 / $0.05/can = <<7/0.05=140>>140 cans

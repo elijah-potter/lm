@@ -1,6 +1,0 @@
-John has to pay taxes.  He earned $100,000 for the year.  He has $30,000 in deductions.  The first $20,000 of taxable income is taxed at 10%.  The rest is taxed at 20%.  How much does he pay in taxes?
-His taxable income is 100,000-30,000=$<<100000-30000=70000>>70,000
-So he pays 20,000*.1=$<<20000*.1=2000>>2000 tax at the lower rate
-He has to pay 70,000-20,000=$<<70000-20000=50000>>50,000 at the higher rate
-The taxes for that is 50,000*.2=$<<50000*.2=10000>>10,000
-So his total tax bill is 10,000+2,000=$<<10000+2000=12000>>12,000

@@ -1,5 +1,0 @@
-A broken promise lingers like a ghost in the details—each half-remembered word, each unspoken condition. The words were simple: *"I’ll call you tomorrow."* But the world shifted while the phone rang silent. The time slipped past. The weight of the silence grew heavier than the unspoken excuses.
-
-Some promises are made for reasons that fade, or for reasons that never were. The one who keeps them remembers the hollow ache of failure—not the broken heart, but the empty space where trust used to live. The other person watches, waiting for the moment they’ll realize the truth: some promises are only kept when they’re no longer needed.
-
-The hardest promises are those that don’t need to be broken—just forgotten. The ones where the act of keeping them becomes its own kind of betrayal. The ink of the agreement dried before the ink of regret did. The silence between them was never a lie—it was the space where words couldn’t find each other again.

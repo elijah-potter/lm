@@ -1,6 +1,0 @@
-Q. Use the bisection method to find an approximation to "the cubed root of 25" correct to within 10^-4.
-Hey guys, so far i have been unable to find any info for finding an approximation to a value that is not the root of a function using the bisection method.
-Any help is most appreciated.
-Pretty sure i figured this one out, on p8 right now. If anyone wants to confirm with me i began by making f(x) = x^3 - 25 and then began solving for the root.
-You want a number that gives you 25 when cubed. You know 2 is too small and 3 is too big. So try (2+3)/2 = 2.5. , which is too small. So try (2.5 + 3)/2 = 2.75...
-Every iteration, you maintain a lower bound and an upper bound on the value of the cube root. Then simply cube the midpoint between those bounds to see if it's too small or too big, and update the bounds appropriately. Every iteration you cut the interval in which you know the cube root lies in half. Eventually the width of the interval will fall below 10^-4, and then you can stop.

@@ -1,4 +1,0 @@
-An auctioneer raises the price of an item he is auctioning by $5 every time someone new bids on it. Two people enter a bidding war on a desk and the price goes from $15 to $65 before the desk is sold. How many times did each person bid on the desk?
-The desk price was raised 65 - 15 = $<<65-15=50>>50.
-At $5 per bid, there were 50 / 5 = <<50/5=10>>10 bids on the desk.
-There were two bidders, so each bid 10 / 2 = <<10/2=5>>5 times on the desk.

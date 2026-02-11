@@ -1,3 +1,0 @@
-The train’s rattling wheels groaned as the passenger boarded, clutching a crumpled ticket and a half-eaten sandwich. His phone buzzed—another missed call from the office. His watch read 8:57 AM, but the last train had left five minutes ago. He exhaled sharply, rubbing his temples as he checked the platform’s sign: *"Next train to downtown at 9:03 AM."*
-
-A familiar voice cut through the hum of the station. *"Late, huh?"* His coworker grinned, tossing him a coffee from a nearby café. *"Took you long enough!"* The relief in his shoulders eased just enough to let the exhaustion settle in—just in time to miss the morning rush.

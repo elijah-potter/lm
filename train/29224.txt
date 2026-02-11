@@ -1,6 +1,0 @@
-Converting from nanometers to thousandths of a meter requires having a thorough grasp of the decimal system. It functions as a power of 10, in that .1 is 1/10 of 1, .01 is 1/100 of 1 and .001 is 1/1,000 of 1. A nanometer represents 1 billionth of a meter. This means that 1 nanometer is equal to 1/1,000,000,000 of a meter or, as is preferred, 1 * 10^-9 of a meter. So to convert from 1 billionth to thousandths, you need to simply determine the relationship between a nanometer and a thousandth of a meter.
-Establish the ratio between a thousandth of a meter and a nanometer by dividing 1/1,000 by 10^-9.
-Analyze the answer you obtained. 1/1,000 divided by 10^-9 is 1,000,000. It can therefore be construed that 1 nanometer is equal to 1,000,000 thousandths of a meter. For clarification, a thousandths of a meter is also known as a millimeter. So 1 nanometer (nm) is equal to 1,000,000 millimeters (mm). This can be expressed by the equation mm = nm / 1,000,000.
-Plug the number of nanometers into the equation to solve for the number of thousandths of a meter, or millimeters. Given 500 nanometers, the equation would read:
-500 / 1,000,000 = .0005 mm.
-So 500 nanometers is equal to .0005 thousandths of a meter, or .0005 millimeters.

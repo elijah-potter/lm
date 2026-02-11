@@ -1,4 +1,0 @@
-Mark buys a loaf of bread for $4.20 and some cheese for $2.05. He gives the cashier $7.00. If the cashier only has 1 quarter and 1 dime in his till, plus a bunch of nickels, how many nickels does Mark get in his change?
-First subtract the cost of Mark's groceries from the amount he gives the cashier to find how much he gets in change: $7.00 - $4.20 - $2.05 = $<<7-4.2-2.05=0.75>>0.75
-Then subtract the value of a quarter in cents (25) and the value of a dime in cents (10) from the change amount to find how much Mark gets paid in nickels: $0.75 - $0.25 - $0.10 = $<<0.75-0.25-0.10=0.40>>0.40
-Now divide the amount Mark gets in nickels by the value per nickel in cents (5) to find how many nickels Mark gets: $0.40 / $0.05/nickel = <<0.40/0.05=8>>8 nickels

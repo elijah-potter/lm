@@ -1,9 +1,0 @@
-A printing press is printing brochures. The press prints 20 single-page spreads, and twice as many double-page spreads. For each 4 pages printed for the spreads, the press prints a block of 4 ads, each of which take up a quarter of a page. The brochures can be arranged in any order as long as they are made up of 5 pages each. How many brochures is the printing press creating?
-There are a total of 20 single-page spreads * 2 = <<20*2=40>>40 double-page spreads.
-As these are made up of 2 pages each, there are 40 double-page spreads * 2 pages = <<40*2=80>>80 pages in the double-page spreads.
-In total, there are 20 single-pages + 80 double-pages = <<20+80=100>>100 pages in the spreads.
-A block of ads is printed every 4 pages, so there will be 100 pages / 4 pages/block = <<100/4=25>>25 blocks of ads.
-This is a total of 25 blocks * 4 ads = <<25*4=100>>100 ads.
-As each ad takes up a quarter of a page, this must create an additional 100 ads * 0.25 = <<100*0.25=25>>25 pages.
-Therefore, the press has printed 100 pages from the spreads + 25 pages of ads = <<100+25=125>>125 pages.
-Since brochures are made up of 5 pages each, this creates a total of 125 pages / 5 = <<125/5=25>>25 brochures.

@@ -1,6 +1,0 @@
-The Wolfram Language has a very general notion of functions, as rules for arbitrary transformations. Values for variables are also assigned in this manner. When you set a value for a variable, the variable becomes a symbol for that value.
-This happened because when a rule is defined using = (Set), the right-hand side is evaluated before the rule is defined.
-You can also define rules using := (SetDelayed), like this:
-When a rule is defined with := the right-hand side is not evaluated before the rule is defined. So even if y already has a value, this new rule says: whenever you see z, replace it with y^2. So in this case, z depends on y:
-f[x_] is a pattern in which x_ stands for any expression (which is represented on the right-hand side by the name x). The rule says: if you have f of any expression, replace it by that expression squared:
-Always use := to define functions, otherwise the variables on the right-hand side may not represent the associated expressions on the left-hand side, since they will be evaluated before the rule is defined:

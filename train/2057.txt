@@ -1,6 +1,0 @@
-Maybe he's expecting the result to a specific number of decimal places? In which case look at sprintf and the format options... But agreed would be handy to know what the expected output for a given input is.
-float si(int p,int r,int t)
-std::cout << "p = " << p << "\nr = " << r << "\nt = " << t << std::endl;
-If the valuesthere are incorrect, there may be a problem with how you write them in.
-You are not separating the p r and t with comma's when you input them into the program are you?
-It will only work using spaces, unless you do:

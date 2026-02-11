@@ -1,5 +1,0 @@
-A jar full of marbles is sitting on a table. Half of the marbles are blue, a quarter of them are red, 27 of them are green, and 14 of them are yellow. How many marbles are in the jar?
-Let x = the number of marbles in the jar.
-If 50% of the marbles are blue, and 25% of them are red, then the remaining 25% must be either green or yellow.
-So 0.25 * x = 27 green marbles + 14 yellow marbles = 41 marbles.
-So there are a total of 4 * 41 = <<4*41=164>>164 marbles in the jar.

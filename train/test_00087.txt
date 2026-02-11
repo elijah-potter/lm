@@ -1,4 +1,0 @@
-Greg has an alarm set to ring three times a day as a reminder. When the alarm goes off, it continues to ring until Greg turns it off. The first time it went off today, it rang four times. The second time it went off, it rang for three times as long as the first time. The third time, it rang for half as long as the second time. How many times did the alarm ring in all?
-The second time Greg’s alarm went off, it rang three times as long as the first, so it rang 3 * 4 = <<3*4=12>>12 times the second time.
-The third time it went off, it rang half as long as the second, so it rang 12 / 2 = <<12/2=6>>6 times the third time.
-In all, Greg’s alarm rang 4 + 12 + 6 = <<4+12+6=22>>22 times.

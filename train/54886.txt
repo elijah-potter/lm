@@ -1,9 +1,0 @@
-The incidence of cyber-attacks is on the rise and is witnessing seeing an upward trend. The latest instance of hacked IoT devices where botnets are used to direct traffic at specific target places to pull services offline is a proof of this.
-Multiple, ongoing initiatives over the past few months, reveal most of the IoT’s devices that are integrating with our physical world remain catastrophically insecure and lack the most basic “security hygiene.”
-IoT Hackers forces the Network to search for Seafood Restaurants
-Exposing the poor security of internet of things, cybercriminals successfully managed to hack the network of IoT devices and deploy a malware that instructed infected IoT devices to continually search for seafood restaurants.
-The flaws mainly include simple and default ‘user names’ and passwords and the inability to patch or update exploitable vulnerabilities.
-All of the DNS requests made from the server returned results with the seafood restaurants search. What was interesting to note – scores of students had no overwhelming urge to eat fish — but since the devices on the network were instructed by malware to do so, the systems repeatedly carried out the relevant searches and obliged to the malware’s request, reports ZDNet.
-Laurance Dine, the managing principal of investigative response at Verizon, said,
-“We identified that this was coming from their IoT network, their vending machines and their light sensors were actually looking for seafood domains; 5,000 discreet systems and they were nearly all in the IoT infrastructure”.
-There was no indication as to why hackers resorted to such an unusual method of choosing seafood restaurant searches as the tool of choice to jam the servers. This is a worrying trend since the attackers pitted the university’s own IoT network against the university.

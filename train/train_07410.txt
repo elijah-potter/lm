@@ -1,4 +1,0 @@
-Bill is hoarding toilet paper in fear of another pandemic. Bill goes to the bathroom three times a day and uses 5 squares of toilet paper each time. If Bill has 1000 rolls of toilet paper and each roll has 300 squares of toilet paper, how many days will his toilet paper supply last?
-First find the total number of squares Bill's hoard has: 1000 rolls * 300 squares/roll = <<1000*300=300000>>300000 squares
-Then find the number of squares Bill uses each day: 5 squares/time * 3 times/day = <<5*3=15>>15 squares/day
-Now divide the total number of squares by the number of squares Bill uses each day to find how many days his hoard will last: 300000 squares / 15 squares/day = <<300000/15=20000>>20000 days

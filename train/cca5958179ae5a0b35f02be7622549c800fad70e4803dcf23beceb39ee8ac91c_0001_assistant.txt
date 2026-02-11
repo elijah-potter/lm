@@ -1,5 +1,0 @@
-No, there is no exponent operator in C#. However, you can use the Pow function from the Math library. The first argument is the base number, and the second is the exponent. For example, to raise 2 to the power of 3, you can use the following code:
-
-Math.Pow(2,3);//returns 8
-
-Note that the Pow function takes and returns a double, so you may need to apply some type conversions for other numerical types.

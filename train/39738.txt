@@ -1,7 +1,0 @@
-One of the common queries that people need is to calculate the area of a polygon. This can be done in square meters, acers, square feet, et cetera...
-The query is relaitivly simple. It uses the ST_AREA function in PostGIS. More information on that function can be found here: http://postgis.net/docs/ST_Area.html
-Given that a table has a geometry field that is called 'wkb_geometry' and a field to place the area in named 'area' and it is in dataset_XXXXX, the query to calculate the area in Square Meters would simply be:
-UPDATE dataset_XXXXX SET area = ST_AREA( wkb_geometry::geography );
-Converting the square meters to acres is simply a matter of multiplication:
-UPDATE dataset_XXXXX SET area = ST_AREA( wkb_geometry::geography ) * 0.000247105;
-It is recommended that your area field be a decimal field, so you get better precision of your area.

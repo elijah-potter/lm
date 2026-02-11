@@ -1,9 +1,0 @@
-Creating the Perfect Linux Desktop
-Using Linux as your everyday desktop system is becoming easier to do all the time. As with everything in Linux, you have choices. There are full-featured GNOME or KDE desktop environments or lightweight desktops such as LXDE or Xfce. There are even simpler standalone window managers.
-Once you have chosen a desktop, you will find that almost every major type of desktop application you have on a Windows or Mac system will have equivalent applications in Linux. For applications that are not available in Linux, you can often run a Windows application in Linux using Windows compatibility software.
-The goal of this chapter is to familiarize you with the concepts related to Linux desktop systems, and then give you tips for working with a Linux desktop. You will:
-- Step through the desktop features and technologies that are available in Linux
-- Tour the major features of the GNOME desktop environment
-- Learn tips and tricks for getting the most out of your GNOME desktop experience
-To use the descriptions in this chapter, I recommend you have a Fedora system running in front of you. You can get Fedora in lots of ways, including:
-- Running Fedora from a live CD—Refer to Appendix A ...

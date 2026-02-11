@@ -1,2 +1,0 @@
-Here is a TypeScript type that will pick the optional and undefined properties from an object and make them required: 
-type MakeOptionalRequired<T> = Required<{ [K in keyof { [K in keyof T as undefined extends T[K] ? K : never]-?: K }]: Exclude<T[K], undefined> }>;

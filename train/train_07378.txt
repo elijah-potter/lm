@@ -1,8 +1,0 @@
-Darrel has 76 quarters, 85 dimes, 20 nickels and 150 pennies.  If he drops all of his money into a coin-counting machine, they will convert his change into dollars for a 10% fee.  How much will he receive after the 10% fee?
-He has 76 quarters so that’s 76*.25 = $<<76*.25=19.00>>19.00
-He has 85 dimes so that’s 85*.10 = $<<85*.10=8.50>>8.50
-He has 20 nickels so that’s 20*.05 = $<<20*.05=1.00>>1.00
-He has 150 pennies so that’s 150*.01 = $<<150*.01=1.50>>1.50
-All total he has 19+8.5+1+1.5 = $<<19+8.5+1+1.5=30.00>>30.00
-They charge a 10% fee to count and convert his change into dollars so they will charge him .10*30 = $3.00
-He had $30.00 and they charged him $3.00 in fees so he now has 30-3 = $<<30-3=27.00>>27.00

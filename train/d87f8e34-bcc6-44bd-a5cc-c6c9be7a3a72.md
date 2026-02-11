@@ -1,7 +1,0 @@
-The rain pattered against the cracked windshield of the abandoned van, reflecting the flickering headlights of a distant truck. The GPS screen glowed red, displaying **"Reached Destination"** with a single line: *"Turn left at the gas station."* The last signal had died outside of a tiny, neon-lit diner, its sign flickering *"CLOSED"* in peeling letters.
-
-The passenger door creaked open, and the person stepped out, boots sinking into the muddy gravel. The city sprawl dissolved behind them—skyscrapers now just a distant smear of lights, the road a ribbon of asphalt swallowed by overgrowth. A rusted sign, half-buried in weeds, read *"Exit 12: Rural Route."* No exit sign. No landmarks. Just the wind howling through the skeletal branches of a willow tree, its branches clawing at the sky.
-
-They turned back to the van, hands trembling. The dashboard clock read **3:47 AM**. The key was still in the ignition. The radio hummed, static hissing between stations. The person sat for a long time, staring at the empty seat across from them. Then, they pulled out their phone—no signal. No phone. No phone, no GPS, no memory of where they’d even *started* this journey.
-
-A crow cawed from the roof of the van. The passenger side window rolled down. A single, bloodshot eye stared out. The person exhaled sharply. They were lost. Not just in space, but in time. The road stretched ahead, a line of nothing. And somewhere, far away, a siren wailed.

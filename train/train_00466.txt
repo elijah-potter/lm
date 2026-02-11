@@ -1,3 +1,0 @@
-A man is returning home from work and trying to decide which route to take.  His first route option includes 3 stoplights.  This route will take him 10 minutes if all three lights are green, but each light that is red will add 3 minutes to the trip.  The second route does not include any stoplights and takes 14 minutes.  If the man chooses the first route, how much longer will his trip be if all 3 stoplights are red?
-If all 3 stoplights are red, the first route will take 10 + 3*3 = <<10+3*3=19>>19 minutes.
-Thus, the first route will take 19-14 = <<19-14=5>>5 minutes longer than the second route.

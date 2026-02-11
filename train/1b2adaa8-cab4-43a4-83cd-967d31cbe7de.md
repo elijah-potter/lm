@@ -1,1 +1,0 @@
-**Tidal inlet with shifting sandbars, where high tide floods the basin and low tide exposes the riverbed, forming a serpentine path between marsh flats and the ocean.**

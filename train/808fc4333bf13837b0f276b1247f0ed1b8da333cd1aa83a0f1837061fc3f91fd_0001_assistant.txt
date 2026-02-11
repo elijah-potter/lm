@@ -1,8 +1,0 @@
-Here is one method of creating a Javascript function that will check if a string is a palindrome. The function ignores spaces, punctuation, and capitalization of the input string.
-
-function palindrome(str) {
-  var regEx = /[\W]/g;
-  modStr = str.toLowerCase().replace(regEx,'');
-  reversedStr = modStr.split('').reverse().join('');
-  return modStr === reversedStr;
-}

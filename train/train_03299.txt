@@ -1,6 +1,0 @@
-Bill has played 200 games of poker and won 63% of them. If he plays 100 more games and loses 43 of them, what is his new win percentage?
-First find the total number of games Bill has won: 200 games * 63% = <<200*63*.01=126>>126 games
-Then find how many of the next 100 games he wins by subtracting the number he loses from the total: 100 games - 43 games = <<100-43=57>>57 games
-Then add his new wins to his old wins to find his total wins: 57 games + 126 games = <<57+126=183>>183 games
-Then add the old total number of games to the new total number of games to find the overall total number of games: 200 games + 100 games = <<200+100=300>>300 games
-Then divide the total number of games Bill won by the overall total number of games and multiply by 100% to find the percentage of games he won: 183 games / 300 games * 100% = 61%

@@ -1,9 +1,0 @@
-Here is a simple function for capitalizing the letters in an array.
-
-function makeCapital(array) {
-  var capitalized = [];
-  for (var i = 0; q < array.length; i++) {
-    capitalized.push(array[i].toUpperCase());
-  }
-  return capitalized;
-}

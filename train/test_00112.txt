@@ -1,5 +1,0 @@
-Julia’s boat sprang a leak while she was out on the lake. The boat was taking on two liters of water for every ten feet she rowed back towards shore. It took her sixteen seconds to row twenty feet. The shore was 64 seconds away. How much water had the boat taken on by the time Julia reached shore?
-It took Julia 64 seconds to reach shore, so it took 64 / 16 = <<64/16=4>>4 times rowing 20 feet to reach the shore.
-Thus, she had to row 20 * 4 = <<20*4=80>>80 feet back to shore.
-In those 80 feet, she took on 2 liters of water 80 / 10 = <<80/10=8>>8 times.
-Thus, the boat had taken on 8 * 2 = <<8*2=16>>16 liters of water by the time Julia reached the shore.

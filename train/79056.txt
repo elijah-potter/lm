@@ -1,4 +1,0 @@
-Most are a mix of the above.
-Wikis typically generate all pages dynamically from a PageDatabase (though some may GenerateStaticPages every time a page is edited, and serve that page until the next edit; see CacheHTML). While some dynamic websites put more effort into processing information than merely presenting it (e.g., http://www.weather.com), other sites are merely a front-end for a data store (e.g., [Merriam-Webster] or [Dictionary]).
-This back-end data store is the PageDatabase. Often it is a true database; sometimes it is nothing more than a set of well-organized formatted files. (The latter is the case for UseModWiki, which stores each Wiki page in a separate file.)
-Because of its structure, a PageDatabase is typically much easier to manage and manipulate than a set of static HTML files, or even a set of dynamic scripts. DataMining becomes a much simpler task.

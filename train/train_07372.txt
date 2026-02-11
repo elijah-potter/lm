@@ -1,8 +1,0 @@
-Karen's students are about to take a standardized test. Karen gets a $500 bonus if their average score is above 75, plus an extra $10 bonus for every additional point the average score increases above 75. So far, Karen has graded 8 tests, and the average is 70. Given that each student can have a maximum score of 150, what combined score do the last two tests need to have for Karen to earn a $600 bonus?
-First subtract $500 from Karen's goal bonus amount to find how much she makes from the extra $10/point bonus: $600 - $500 = $<<600-500=100>>100
-Then divide the extra bonus by the extra rate: $100 / $10/point = <<100/10=10>>10 points
-Then add the 10 extra points to the baseline 75 point goal to find the students' average test score: 10 points + 75 points = <<10+75=85>>85 points
-Then added the 8 graded tests to the 2 ungraded tests to find the total number of tests: 2 tests + 8 tests = <<2+8=10>>10 tests
-Then multiply the 85 point average by the number of tests to find the total number of points the students need to earn: 85 points/test * 10 tests = 850 points
-Then multiply the current average by the current number of graded tests to find how many points have been earned so far: 70 points/test * 8 tests = <<70*8=560>>560 points
-Then subtract the number of points earned from the number of points needed to find the combine score the last two tests need: 850 points - 560 points = <<850-560=290>>290 points

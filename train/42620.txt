@@ -1,8 +1,0 @@
-This is a confusing subject to a lot of people, and can be difficult to explain, but I will try my best.
-There are a few concept that must be made clear first. Digital images refer to anything on your computer: Photoshop files, jpegs, pngs, etc.; and physical images refer to photographs or prints that you can touch in the real world.
-The size of an image is usually indicated by Width x Height, for example 1920×1080 pixels or 11″x17″.
-DPI stands for Dots Per Inch. This is called the “resolution” of a photograph or print and reflects how good the print looks up close. (PPI stands for Pixels Per Inch and is used to describe the resolution of monitors. This has no effect on the size or resolution of a printed image.)
-The biggest and most important thing to note is that digital images do not have a resolution. When an application says “resolution” when referencing pixels, they really mean “size in pixels”. Digital images ONLY have width and height indicating how many pixels wide and tall it is.
-When a digital .png image is printed, the printer is given the width and height of the .png and the desired width and height of the print. The computer does math and adjusts the DPI to match the digital image to the physical image.
-When this size conversion occurs, the DPI will indicate how “clear” or “pixilated” the printed image will be. The higher the DPI, the clearer the image.
-For most hand-held prints, 300dpi is a common resolution and 600dpi is for fancy magazines. Increasing the DPI too much would be lost due to the resolution that our eyes can interpret. For prints that will be seen at a distance, the DPI can be lowered. Large billboard prints seen at a distance, for example, are commonly printed at 72dpi without loss of quality.

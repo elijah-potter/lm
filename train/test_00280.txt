@@ -1,8 +1,0 @@
-Ruby is 6 times older than Sam. In 9 years, Ruby will be 3 times as old as Sam. How old is Sam now?
-Let x be Sam's age and Y be Ruby's age. Ruby's age is currently 6 times Sam's age, so 6 * x = Y years.
-In 9 years Ruby's age will be 3 times Sam's age, so, 3 * (x + 9) = (Y + 9) years.
-To find out Sam's age, we substituted the first step in the second to get 3 * (x + 9) = (6 * x) + 9.
-We distribute on one side of the equation to get (3 * x) + 27 = (6 * x) + 9.
-We isolate Sam's age on one side of the equation to get 27 - 9 = (6 * x) - (3 * x).
-We simplify the equation to get 18 = 3 * x.
-Now we know that Sam's age is 18 / 3 = <<18/3=6>>6 years.

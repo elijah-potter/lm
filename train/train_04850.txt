@@ -1,5 +1,0 @@
-The pet shop grooms dogs.  It takes 30 minutes to groom a poodle.  It takes half as much time to groom a terrier as it takes to groom a poodle.  They do not groom cats.  If the pet shop grooms 3 poodles and 8 terriers, what is the total length of time it will take, in minutes?
-At a rate of 30 minutes per poodle, 3 poodles will take 3*30=<<3*30=90>>90 minutes.
-If it takes half as much time to groom a terrier as it takes to groom a poodle, it takes 30/2=<<30/2=15>>15 minutes per terrier.
-At a rate of 15 minutes per terrier, 8 terriers will take 120 minutes.
-Thus, in total, it will take the pet shop 90+120=<<90+120=210>>210 minutes to groom 3 poodles and 8 terriers.

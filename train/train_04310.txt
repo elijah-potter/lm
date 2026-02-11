@@ -1,6 +1,0 @@
-Mark is buying asphalt to pave a new section of road. The road will be 2000 feet long and 20 feet wide. Each truckload of asphalt will cover 800 square feet of road. If each truckload costs $75, and there's a 20% sales tax, how much will Mark need to pay for asphalt?
-First, calculate how many square feet of road Mark needs to cover by multiplying the length by the width: 2000 feet * 20 feet = <<2000*20=40000>>40,000 sq ft
-Then divide the square footage of road by the number of square feet each truckload will cover: 40,000 sq ft / 800 sq ft/truckload = <<40000/800=50>>50 truckloads
-Now multiply the number of truckloads by the cost per truckload: $75/truckload * 50 truckloads = $<<75*50=3750>>3750
-Now calculate the sales tax by multiplying $3750 by 20%: $3750 * .2 = $<<3750*.2=750>>750
-Now add the sales tax to the cost of the asphalt to find the total: $750 + $3750 = $<<750+3750=4500>>4500

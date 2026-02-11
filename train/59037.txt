@@ -1,7 +1,0 @@
-|Excel and Office
-Finding the n largest values in Excel
-Q: How can I evaluate grades and toss out the lowest 2? In this example, I only want 95 & 90 for mike and 85 & 80 for bill and 100 & 95 for jane.
-A: The LARGE formula will find the nth largest value in a range, and it's that function we can use here, thus:
-But, I notice that by wanting to keep 100 and 95 for Jane, you actually want to keep the highest 2 unique values, rather than just the 2 highest, which would have been 100 and 100.
-So in column G, you'll have to take into account the possibility of a joint largest value. Taking cell G1 as an example, you need to change it to:
-This function checks to see if the largest and second largest are the same. If so, it returns the third largest, if not the second. By extension, you could also cater for three equal highest values, but it starts getting silly beyond 4 or 5!

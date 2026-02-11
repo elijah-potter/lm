@@ -1,9 +1,0 @@
-The Circuit Editor has all the tools to create a Circuit Board from start to end. Get started by choosing a component on the right and click anywhere on the canvas to add it. Use the tools to modify the elements on the canvas.
-The editor has different context views, each one geared towards specific tasks.
-Tools allow you to modify any element on the canvas, undo and redo or start and stop a simulation.
-This is a list of the most common elements you can add to your project. These change according to the Context View you are in.
-You can add any component from the library. The menu will show you the last 8 components you’ve added to the project.
-Dialogs come up in certain situations to inform or warn you about a situation. You can easily hide them using the close button in the top right corner.
-Select any component on the canvas and the inspector will allow you to change anything.
-Arduino Code Editor
-In breadboard view you can edit the Arduino code that should run in a simulation in the Arduino Editor.

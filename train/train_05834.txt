@@ -1,5 +1,0 @@
-In a shop, there is a sale of clothes. Every shirt costs $5, every hat $4, and a pair of jeans $10. How much do you need to pay for three shirts, two pairs of jeans, and four hats?
-Three shirts cost 3 * 5 = $<<3*5=15>>15.
-Two pairs of jeans would cost 2 * 10 = $<<2*10=20>>20.
-Four hats would in total cost 4 * 4 = $<<4*4=16>>16.
-So for three shirts, two pairs of jeans, and four hats, you would need to pay 15 + 20 + 16 = $<<15+20+16=51>>51.

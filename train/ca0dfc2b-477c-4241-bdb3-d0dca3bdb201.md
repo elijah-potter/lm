@@ -1,2 +1,0 @@
-Heads: A trader took the risk of buying a rare artifact at a steep discount, hoping for exponential returns.
-Tails: A scholar chose to preserve the artifact’s research, ensuring its value for generations through study and preservation.

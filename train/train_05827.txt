@@ -1,4 +1,0 @@
-A dog runs through a field and is joined by a group of 4 cats. 2 rabbits join each cat and 3 hares join each rabbit. How many animals are running through the field?
-A pair of rabbits join each cat so there must be 4 cats * 2 rabbits/cat = <<4*2=8>>8 rabbits.
-As 3 hares join each rabbit, there must be 8 rabbits * 3 hares/rabbit = <<8*3=24>>24 hares.
-Counting all the animals shows there are 1 dog + 4 cats + 8 rabbits + 24 hares = <<1+4+8+24=37>>37 animals running through the field.

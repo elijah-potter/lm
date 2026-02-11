@@ -1,6 +1,0 @@
-I am three years younger than my brother, and I am 2 years older than my sister. My mom's age is one less than three times my brother's age. When you add all our ages, you get 87. How old am I?
-Let X be my age. My brother is X + 3 years old. My sister is X - 2 years old.
-My mom is (X + 3) * 3 - 1 years old.
-The sum of our ages is X + (X+3) + (X-2) + [(X+3)*3 - 1] = 87 years old.
-Multiplying through the parentheses and combining like terms, you get X*6 + 9 = 87 years old.
-Subtracting nine from both sides and dividing both sides by 6, you get X = 13 years old.

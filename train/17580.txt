@@ -1,3 +1,0 @@
-As part of my graduate level computer vision course, I developed a visual edge detector based on the theory by John F. Canny. After the image is imported, thresholding is automatically generated using the characteristic values of the entire image -- the range, mean, and standard deviation of the grayscale pixel values. A Gaussian blur is applied by convolution in X and Y.
-The image is then normalized, and the gradient angles are calculated in four bins between 0 and pi. A non-maximum suppression reduces the unlikely edge pixel candidates and edge linking connects the good pixels in a final binary image.
-Aspects: Computer Vision, Matlab

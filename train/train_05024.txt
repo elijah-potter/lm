@@ -1,3 +1,0 @@
-The Dark Lord needs to transport 1200 pounds of swords to the Enchanted Forest for a battle with the elves. He has 10 squads of 8 orcs each. How many pounds of swords does each orc have to carry?
-First find how many orcs there are total by multiplying the number of orcs per squad by the number of squads: 8 orcs/squad * 10 squads = <<8*10=80>>80 orcs
-Then divide the total amount of swords by the number of orcs to find the amount of swords per orc: 1200 pounds / 80 orcs = <<1200/80=15>>15 pounds/orc

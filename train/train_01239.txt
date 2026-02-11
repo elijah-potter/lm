@@ -1,6 +1,0 @@
-There are 3 boxes of cereal. One box holds 14 ounces of cereal. Another box holds half the amount of the first box and 5 ounces less than the third box. How much cereal is there in all 3 cereal boxes?
-First = <<14=14>>14 oz
-Second = (1/2) * 14 = <<(1/2)*14=7>>7 oz
-Third = 7 + 5 = <<7+5=12>>12 oz
-14 + 7 + 12 = <<14+7+12=33>>33 oz
-There are 33 ounces of cereal in those 3 boxes.

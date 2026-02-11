@@ -1,3 +1,0 @@
-A zoo has 16 pandas, paired into mates (in the same zoo). Only 25% of the panda couples get pregnant after mating. If they each have one baby, how many panda babies are born?
-First divide the number of pandas by 2 to find the number of couples: 16 pandas / 2 = <<16/2=8>>8 panda couples
-Then multiply that number by 25% to find the number of babies: 8 panda couples * 25% = <<8*25*.01=2>>2 panda babies

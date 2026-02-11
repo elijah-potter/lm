@@ -1,7 +1,0 @@
-Elsa's hockey team just made the playoffs along with two other teams. They make the playoffs by having the top three highest points for their records. Teams get 2 points for a win, 1 point for a tie, and zero points for a loss. The first-place team has 12 wins and 4 ties. The second-place team has 13 wins and 1 tie. Elsa's team has 8 wins and 10 ties. What is the average number of points for the playoff teams?
-The teams have 33 total wins because 12 + 13 + 8 = <<12+13+8=33>>33
-The teams have 66 points from wins because 33 x 2 = <<33*2=66>>66
-The teams have 15 total ties because 4 + 1 + 10 = <<4+1+10=15>>15
-The teams have 15 points from ties because 15 x 1 = <<15*1=15>>15
-The teams have 81 total points because 66 + 15 = <<66+15=81>>81
-The average number of points per team is 27 because 81 / 3 = <<81/3=27>>27

@@ -1,8 +1,0 @@
-Fuchsia Google’s New Open Source OS
-The number of operating system developed by Google to date is connected by one common thread – every particular OS is based on the Linux kernel. Till date Linux has powered Google’s hardware. Thats why Google instigates to build its own open Source operating system named Fuchsia.
-A few weeks ago some Google engineers started committing code to a new repository called Fuchsia. The most noticeable feature of Fuchsia is that it uses the (L)ittle (K)ernel and Magenta. LK is a small OS suited to small-embedded devices and bootloaders. Just like with Linux and Android, the Magenta kernel powers the superior Fuchsia operating system.
-It is Open Source software, provided under the MIT license, allowing outsiders to peek in and contribute as Google begins to shape Fuchsia. It is designed for systems which have more memory may be even Gigabytes of memory.
-The case of embedded devices like car dashboards or GPS units, full-blown desktop kernels like Linux influence performance and cause other issues.
-For creating graphical elements like the desktop and windows, has prompted discussion among developers. Fuchsia uses Flutter for its user interface, a framework that includes another project called Escher. Escher supports complex effects like soft shadows and light diffusion that appear out of place on the lightweight Fuchsia.
-The most exciting, is that Google hopes one day might replace Chrome OS and Android with Fuchsia. It could be designed to combine the two into a single merged OS.
-Google currently seems to continue using Android, Chrome OS, and their derivatives for their hardware offerings.

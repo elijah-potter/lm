@@ -1,5 +1,0 @@
-Sure, that can be achieved very simply by casting it to a string and returning the length.
-
-function numDigits(num) {
-     return num.toString().length;
-}

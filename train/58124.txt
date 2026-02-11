@@ -1,7 +1,0 @@
-I have two concentric cylinders. The external cylinder has wall thickness 0.5 mm and the internal cylinder has 6 mm of wall thickness. The gap between the walls is 0.05 mm. The intent is to deform the external cylinder until it touch the internal cylinder and then plot the contact pressure.
-The default thickness in the mesh collector seems to be always applied in the midsurface, changing the gap between the cylinders, but if I model the final surfaces of interest, the final diameter of the FEM model will change when applying the default thickness.
-There are any way to change the "direction" of the wall thickness of the 2d mesh?
-Solved! Go to Solution.
-Yes, the thickness is applied evenly on either side of the element by default.
-You can specify an offset value (ZOFFS) to shift the location of the element reference plane from the grid points.
-This is applied as Mesh Associated Data or Element Associated Data Simcenter:

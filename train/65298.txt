@@ -1,5 +1,0 @@
-Represents the type of a Map, a collection that contains keys as well as values and maintains an
-association between key-value pairs. The type of the keys is obtained from the getKeyType method,
-and the type of the values is obtained from the getElementType method.
-Nested Class Summary
-Nested classes/interfaces inherited from interface org.apache.geode.DataSerializable

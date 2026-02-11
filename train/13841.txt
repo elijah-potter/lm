@@ -1,4 +1,0 @@
-I have been investigating several interesting problems in 3D geometry. I wanted to share my research as I'm sure others may find it interesting too.
-- Biasing Tangent Vectors — spline interpolation often requires tangent vectors which can be biased to improve the quality of the interpolation.
-- Furry Ball Theory — the surface of a sphere must always have two points where no continuous surface normal can exist - for example, there must always be at least two tornadoes on the surface of the earth. I tried to use the 4D cross product to solve this problem, but wasn't successful.
-- Othello — A fun demo of some basic OpenGl programming techniques.

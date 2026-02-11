@@ -1,5 +1,0 @@
-After geometry class, Bill wants to count how many lines he drew. For each shape, he drew one line per side. If he drew 12 triangles, 8 squares, and 4 pentagons, how many lines did he draw?
-For the triangles, he drew 36 lines because 12 times 3 equals <<12*3=36>>36.
-For the squares, he drew 32 lines because 8 times 4 equals <<8*4=32>>32.
-For the pentagons, he drew 20 lines because 4 times 5 equals <<4*5=20>>20.
-He drew 88 lines in total because 36 plus 32 plus 20 equals <<36+32+20=88>>88.

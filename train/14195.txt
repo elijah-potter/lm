@@ -1,7 +1,0 @@
-About Masking and Cutting Parts of Elements in your Scenes
-An important part of staging and rigging is cutting. Cutting is the process of making parts of a drawing that intersect with another drawing invisible. It allows you, for example, to mask parts of a character that should appear behind a background element that is drawn on the same layer as other background elements, to mask two parts of a rig that should not overlap, or to confine an effect within the outlines of an element in your scene.
-There are two methods to cutting in Harmony:
-Using the matte port of a drawing layer. With this port, you can connect any drawing layer to another drawing layer or composite, and use the latter as the drawing layer's matte. Any part of the drawing that intersects with the artwork in its matte will be hidden.
-Using a Cutter effect. A cutter effect can be connected to a drawing, effect or composite, and then can use any other drawing layer or composite as its matte. Any part of what is connected to the Cutter effect which intersects with the artwork in its matte will be hidden.
-Hence, if you only want to hide parts of a single drawing layer, you can use the drawing's matte port. If you want to hide parts of the image output by a composite or an effect, you will have to use a cutter effect
-NOTEIn either case, the effects of cutting can be inverted. When inverted, only the parts of the artwork that intersect with the matte are visible, and everything else is hidden.

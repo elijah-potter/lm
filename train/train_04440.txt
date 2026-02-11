@@ -1,4 +1,0 @@
-Corna wants to buy a shirt. The store buys the shirt for $20, but charges 30% for profit. However, the shirt is on sale for 50% off the selling price. What is the price now?
-First find how much the store makes in profit: $20 * 0.30 = $<<20*0.30=6>>6 for profit
-Then find the regular selling price: $20 + $6 = $<<20+6=26>>26 total price
-Then multiply the regular price by the discount to get $26 * 0.50 = $<<26*0.50=13>>13 for the final price

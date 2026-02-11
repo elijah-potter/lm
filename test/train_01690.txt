@@ -1,8 +1,0 @@
-As a freelancer, Baylor is paid for every finished work of a client he does on a freelance marketplace. Currently, he has $4000 on his dashboard from previous work done. He is currently working for three clients, with the first client paying him half the amount of money he currently has on his dashboard once the job is done. The second client will pay him 2/5 times more money than the first client once Baylor finishes his work. The third client will pay him twice the amount of money the first and second clients pay him together once he finishes the job. How much money will Baylor have in his dashboard after all the clients pay him for his work?
-The first client will pay Baylor 1/2*$4000=$<<4000/2=2000>>2000.
-The second client will pay Baylor 2/5 times more money than the first client, a total of 2/5*$2000 = $<<2/5*2000=800>>800
-The total amount of money the second client will pay Baylor once the job is done is $2000+$800 = $<<2000+800=2800>>2800
-The total amount of money the first and the second client will pay Baylor after their work is finished is $2800+$2000 = $<<2800+2000=4800>>4800
-The third client will pay him twice the amount of money the first and second clients pay him together, a total of 2*$4800 = $9600
-Together, the three clients will pay Baylor $9600+$4800 = $14400 once he finishes their jobs.
-In his dashboard, Baylor will have $14400+$4000 = $<<14400+4000=18400>>18400

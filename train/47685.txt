@@ -1,6 +1,0 @@
-This section illustrates you how to capture the text in a group through the regular expression. Here, you can learn the procedure of capturing text made by the given alphabets (mentioned in the code of the program "a", "b" and "c") from the group of text.
-In this section, you will capture the text which is completely made by alphabet a, b and c. For example, if you input the text "sdabcdsjfs" then it display the "abc", "ab", "a" and "b" in the console output because the regular expression mentioned in the code detects the first occurrence of the matching word made by alphabet "a", "b" and "c". The mentioned regular expression matches the word in sequence like "(a(b*))+(c*)" then "(a(b*))+" then "a" and "b".
-Here is the code of the program:
-Recommend the tutorial
-Ask Questions? Discuss: Capturing Text in a Group in a Regular Expression
-Post your Comment

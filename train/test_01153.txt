@@ -1,3 +1,0 @@
-Mark buys one lottery ticket with a 20% chance of winning and a second lottery ticket that's three times more likely to win. What is the probability, expressed as a percentage, that both tickets are winners?
-First triple 20% to find the second ticket's chance of winning: .2 * 3 = <<.2*3=.6>>.6
-Then multiply both tickets' chances of winning to find the probability they both win, and multiply that by 100 to convert it to a percentage: .6 * .2 * 100% = 12%

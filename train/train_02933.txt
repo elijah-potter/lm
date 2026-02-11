@@ -1,5 +1,0 @@
-Walmart sells a multitool with a screwdriver, 3 knives, and two other tools. Target sells a multitool with a screwdriver, twice as many knives as Walmart, three files and a pair of scissors. How many more tools does the Target multitool have compared to Walmart?
-First find the total number of tools in the Walmart multitool: 1 tool + 3 tools + 2 tools = <<1+3+2=6>>6 tools
-Then find the total number of knives in the Target multitool: 3 knives * 2 = <<3*2=6>>6 knives
-Then find the total number of tools in the Target multitool: 1 tool + 6 tools + 3 tools + 1 tool = <<1+6+3+1=11>>11 tools
-Then subtract the number of tools in the Walmart multitool from the number in the Target multitool to find the difference: 11 tools - 6 tools = <<11-6=5>>5 tools

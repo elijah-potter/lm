@@ -1,6 +1,0 @@
-A papaya tree will grow 2 feet in the first year.  In the second year, it will grow 50% more than the first year.  In the third year, the tree will grow 50% more than in the second year.  In the fourth year, it will grow twice as much as the third year.  In the fifth year, it will grow half as much as the fourth year.  When the tree is 5 years old, how tall is the tree?
-In the second year, the tree will grow 2 x 1.5 = <<2*1.5=3>>3 feet.
-In the third year, it will grow 3 x 1.5 = <<3*1.5=4.5>>4.5 feet.
-In the fourth year, it will grow 4.5 x 2 = <<4.5*2=9>>9 feet.
-In the fifth year, it will grow 9 / 2 = <<9/2=4.5>>4.5 feet.
-When the tree is 5 years old, including the first year's growth, it will be this tall 2 + 3 + 4.5 + 9 + 4.5 = <<2+3+4.5+9+4.5=23>>23 feet.

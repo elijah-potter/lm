@@ -1,7 +1,0 @@
-Extension Activities using LEDs
-From ROBOTC API Guide
-Arduino → Arduino Tutorials and Guided Projects → Parallax BoeBot + Arduino Shield, Mobile Robotics Platform → Extension Activities using LEDs
-Flash Morse CodeOne possible task you can try on your own is to make the Arduino flash a message using Morse Code. You could have the robot flash something like "Hello World!" or “Danger, Will Robinson!”
-To help get you started, here are some links explaining how Morse Code Works.
-Make a program to decode a Morse code signal.
-Binary ClockYou can use LEDs to display the time using binary.

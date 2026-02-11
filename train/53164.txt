@@ -1,8 +1,0 @@
-Methods inherited from class java.lang.Object
-clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
-public FieldNode addLoggerFieldToClass(ClassNode classNode,
-In this method, you are given a ClassNode and a field name, and you must add a new Field
-onto the class. Return the result of the ClassNode.addField operations.
-classNode - the class that was originally annotated with the Log transformation.
-logFieldName - the name of the logger field
-- the FieldNode instance that was created and added to the class

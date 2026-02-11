@@ -1,4 +1,0 @@
-Mr. Maxim works at The Best Cookeries Around restaurant. On a particular day, 50 people entered the restaurant in the morning to eat. At around 10:00, 40 more people entered the restaurant and ordered the same amount of food as the first people. After a while, twice the number of people who entered the restaurant at 10:00 came in and ordered lunch. By evening, an additional 3 times as many people as the number that came in first had entered the restaurant. Calculate the total number of people that entered the restaurant on that day.
-The number of people who came in at lunch is twice the number that came in at 10:00: 2 * 40 people = <<2*40=80>>80 people.
-An additional 50 people * 3 = <<50*3=150>>150 people came into the restaurant by evening.
-The total number of people who entered the restaurant was 80 people + 150 people + 50 people + 40 people = <<80+150+50+40=320>>320 people.

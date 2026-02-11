@@ -1,6 +1,0 @@
-Phage K1E infects E. coli. The virus has a portal at one of the icosahedral 5-fold symmetry axes through which the virus injects the DNA into the host cell. The viral double-stranded DNA is wound inside the virus like a plumbing snake. The image shows an electron microscopy map of the virus and a copy where the density outside a sphere has been cut away removing the protein coat so that the DNA can be seen. The pink regions are where the sphere cut through density. The map had 5-fold symmetry imposed so the spiraling cords of density represent a smeared image of the DNA packaging.
-The following commands were used in Chimera 1.6 (September 19, 2011 build) to make the spherically cut map.
-open emdbID:1336 volume #0 level 3.2 step 1 sop clip #0 center 0,0,-3 radius 250 color pink
-and these steps are demonstrated in a video.
-The phage K1E density map shown is EMD-1336.
-© 2009 The Regents of the University of California; all rights reserved.

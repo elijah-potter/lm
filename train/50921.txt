@@ -1,3 +1,0 @@
-Complete Protocol dictionary, glossary and reference
-BGP: Border Gateway Protocol
-The Border Gateway Protocol (BGP) runs over TCP and is an inter-Autonomous System routing protocol. BGP is the only protocol that is designed to deal with a network of the Internet's size and the only protocol that can deal well with having multiple connections to unrelated routing domains. It is built on experience gained with EGP. The primary function of a BGP system is to exchange network reachability information with other BGP systems.

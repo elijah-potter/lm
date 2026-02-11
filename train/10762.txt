@@ -1,6 +1,0 @@
-ABEL: An interactive tool for probabilistic argumentative reasoning. Most formal approaches to argumentative reasoning under uncertainty focus on the analysis of qualitative aspects. An exception is the framework of probabilistic argumentation systems. Its philosophy is to include both qualitative and quantitative aspects through a simple way of combining logic and probability theory. Probabilities are used to weigh arguments for and against particular hypotheses. ABEL is a language that allows to describe probabilistic argumentation systems and corresponding queries about hypotheses. It then returns arguments and counter-arguments with corresponding numerical weights.
-Keywords for this software
-References in zbMATH (referenced in 2 articles , 1 standard article )
-Showing results 1 to 2 of 2.
-- Monney, Paul-André; Chan, Moses; Romberg, Paul: A belief function classifier based on information provided by noisy and dependent features (2011)
-- Haenni, Rolf; Lehmann, Norbert: ABEL: An interactive tool for probabilistic argumentative reasoning (2003) ioport

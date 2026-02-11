@@ -1,5 +1,0 @@
-As part of this course you will be given weekly challenges to help you get more familiar with D3. In this assignment you will take the data from Global Infectious Disease Ratings & Democratization Scores of Country to plot out a Scatterplot.
-The Dataset is called disease_democ.csv and can be found in this zip file.
-You will model your Scatterplot on this D3 example
-Don’t forget to run the python server to load the csv file into the html document:
-python -m SimpleHTTPServer 8888 &

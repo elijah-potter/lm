@@ -1,7 +1,0 @@
-Jackson is buying school supplies for his third grade class, which has 30 students. Each student needs 5 pens, 3 notebooks, 1 binder and 2 highlighters. Pens cost $0.50, notebooks cost $1.25, binders cost $4.25, and highlighters cost $0.75. If Jackson gets a $100 teacher discount, how much does he spend on school supplies?
-First calculate the cost of the pens for one student by multiplying the number of pens by the cost per pen: 5 pens * $0.50/pen = $<<5*0.5=2.50>>2.50
-Then calculate the cost of the notebooks for one student by multiplying the number of notebooks by the cost per notebook: 3 notebooks * $1.25/notebook = $<<3*1.25=3.75>>3.75
-Then calculate the cost of the highlighters for one student by multiplying the number of highlighters by the cost per highlighters: 2 highlighters * $0.75/highlighter = $<<2*0.75=1.50>>1.50
-Now add the cost of all the different supplies to find the total cost for one student: $2.50 + $3.75 + $1.50 + $4.25 = $<<2.5+3.75+1.5+4.25=12.00>>12.00
-Now multiply the cost per student by the number of students to find the total cost before the discount: 30 students * $12.00/student = $<<30*12=360.00>>360.00
-Now subtract the teacher discount to find the final cost: $360.00 - $100.00 = $<<360-100=260.00>>260.00

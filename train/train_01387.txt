@@ -1,7 +1,0 @@
-An auto shop buys tires to replace all the tires on every customer’s car. They buy the tires as soon as cars are brought into the shop. There are four cars in the shop already, and another six customers come into the shop throughout the week. Some of the customers decide they don't want any of the tires changing, and two customers decide they only want half the tires changing. They had no tires in stock at the start of the week. If the shop has 20 tires left at the end of the week, how many customers decided they did not want their tires changing?
-A total of 4 + 6 = <<4+6=10>>10 cars are in the shop throughout the week.
-This means the shop buys 10 cars * 4 tires = <<10*4=40>>40 tires.
-For each of the customers that only want half the tires changing, there are 4 tires * 0.5 = <<4*0.5=2>>2 tires left over.
-Two of the customers only want half the tires changing, so there are 2 tires * 2 cars = <<2*2=4>>4 tires left over from these customers.
-Out of the remaining tires, there are 20 – 4 = <<20-4=16>>16 tires left from customers who don't want their tires changing.
-So in total, there were 16 tires / 4 tires per customer = <<16/4=4>>4 customers who did not want their tires changing.

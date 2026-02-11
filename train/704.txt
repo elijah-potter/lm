@@ -1,9 +1,0 @@
-I am a newby taking my first Java class. I have to create an Applet of a working Calculator. So far, all I know how to do is create buttons and JTextArea. I don't know how to set up any functionality among the components. I don't even know which is better to use; JTextField or TextArea. If anyone out there can help, I will be happy to wash your car and maybe even do some free yard work if you could give me some pointers. Thanks.
-Joined: Jan 29, 2003
-Hi, welcome to the ranch!
-This is a big subject area, but fortunately Sun has pretty good tutorials on almost everything Java. See if the Swing Tutorial covers the right kinds of things.
-For adding functionality to the widgets, what you're looking for is probably in the EventListener and ActionListener family. You add these objects to your UI components and Swing calls them when interesting things like mouse clicks and keystrokes happen.
-If this seems like the right direction, you might wander over to the Swing forum with further questions. [ July 05, 2007: Message edited by: Stan James ]
-A good question is never answered. It is not a bolt to be tightened into place but a seed to be planted and to bear more seed toward the hope of greening the landscape of the idea. John Ciardi
-Joined: Jun 04, 2007
-Thanks for the help. I know how to set up the event handlers (sorry I didn't mention that). I guess I need to figure out which events to use. I have managed to get numbers to show up in the JTextArea, but I don't know how to get any results from the numbers.

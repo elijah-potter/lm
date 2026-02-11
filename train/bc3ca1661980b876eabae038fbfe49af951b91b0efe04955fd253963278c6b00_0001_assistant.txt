@@ -1,5 +1,0 @@
-Sure! Here is a TypeScript function that converts an iterable to a unique array: 
-
-function unique<T>(iterable: Iterable<T>): T[] {
-    return Array.from(new Set(iterable));
-}

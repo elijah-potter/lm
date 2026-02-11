@@ -1,3 +1,0 @@
-You would simply need to run the npm 'uninstall' command followed by the package name in your terminal. Here is how this would look:
-
-npm uninstall framer-motion

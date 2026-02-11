@@ -1,5 +1,0 @@
-Tech moves fast! Stay ahead of the curve with Techopedia!
-Join nearly 200,000 subscribers who receive actionable tech insights from Techopedia.
-The byte order mark (BOM) is a piece of information used to signify that a text file employs Unicode encoding, while also communicating the text stream’s endianness. The BOM is not interpreted as a logical part of the text stream itself, but is rather an invisible indicator at its head. The byte order mark’s Unicode character is U+FEFF.
-Unicode is a group of standards developed in the 1980s and '90s in order to integrate all of the major computer languages into one coding lexicon. Unicode comes in several iterations, including UTF-8, UTF-16 and UTF-32 (which use 8, 16 and 32 bits per character, respectively).
-Before UTF-8 was introduced in 1993, Unicode text was transferred using 16-bit code units. These units had a quality called endianness, which essentially identified the byte order either by least significant first or most significant first. The byte order mark is generally an optional feature in typical, closed-environment text-processing, however it is needed in situations involving text interchange.

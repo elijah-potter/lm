@@ -1,9 +1,0 @@
-A local college is offering German lessons and currently has 8 students enrolled. Through advertising, 8 more became interested but a fourth of these dropped out within a day. 2 more got frustrated and left. The class then rallied to show how simple the course actually is and increased enrollment by 5 times the amount of students already enrolled in the class, but 2 had to drop it because of scheduling conflicts. After one last rally, 6 more people enrolled. As the days passed, half of the class eventually dropped, and half of the remaining students graduated. How many are still enrolled?
-8+8=<<8+8=16>>16 students are enrolled in the German class.
-8*.25=<<8*.25=2>>2 dropped out from the new recruits.
-2 more left, so the class had 16-2-2=<<16-2-2=12>>12 students left.
-There were 12*5+12=<<12*5+12=72>>72 total students in the class after the rally.
-Two people had to drop the class, so there were 72-2=<<72-2=70>>70 left.
-70+6=<<70+6=76>>76 were enrolled after the final rally.
-76/2=<<76/2=38>>38 are left after half the class dropped.
-38/2=<<38/2=19>>19 are left after half the class graduated.

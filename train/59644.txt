@@ -1,8 +1,0 @@
-What is Server Virtualization?
-Server virtualization is the partitioning of a physical server into smaller virtual servers to help maximize your server resources. In server virtualization the resources of the server itself are hidden, or masked, from users, and software is used to divide the physical server into multiple virtual environments, called virtual or private servers. This is in contrast to dedicating one server to a single application or task.
-Common Uses of Server Virtualization
-One common usage of this technology is in Web servers. Using virtual Web servers is a popular way to provide low-cost Web hosting services. Instead of requiring a separate computer for each Web server, dozens of virtual servers can co-reside on the same computer.
-Benefits of Server Virtualization
-Server virtualization has many benefits. For example, it lets each virtual server run its own operating system and each virtual server can also be independently rebooted of one another. Server virtualization also reduces costs because less hardware is required so that alone saves a business money.
-Server virtualization also conserves space through consolidation as several machines can be consolidated into one server running multiple virtual environments. It also utilizes resources to the fullest so it can also save on operational costs (e.g. using a lower number of physical servers reduces hardware maintenance).
-There are several ways to create a virtual server, including virtual machine, operating system-level virtualization, and paravirtual machine.

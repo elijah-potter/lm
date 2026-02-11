@@ -1,6 +1,0 @@
-In the method signature 'public static double getGPA(int numberOfGrades)'the term double __________.
-1. requires that a double value must be returned to the method call
-2. requires that the int numberOfGrades be changed to a double
-3. means the getGPA method will repeat twice
-4. means there are two forms of the getGPA method
-5. requires the main method to substitute a value for numberOfGrades

@@ -1,3 +1,0 @@
-A Printed Circuit Board (PCB) is how virtually all electronics are constructed these days. PCBs are usually made from copper plated fiberglass where the desired circuit is etched into the copper and then the various components are soldered on.
-Another term is Printed Wire Board, which means the same thing. The term has fallen out of use today.
-PCB material is also used for ties in handlaid track. When used in such an application a cut must be made in the copper foil to break the circuit. If not, the layout will short when power is applied to the track. This will mean hours finding the culprit and correcting the issue. Turnouts laid using PCB ties can be particularly troublesome in this respect.

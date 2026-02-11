@@ -1,8 +1,0 @@
-I understand you're looking for a Javascript function that can keep a line of people organized.  The function below will take two inputs: the original line of people and who have since joined the line.  The function will then announce who's next and remove them from the front of the line, and add whoever joined to the end of the line without disrupting the order of the original line:
-
-function updateLine(existingLine, newPpl) {
-  existingLine.push(newPpl);
-  nextUp = existingLine[0];
-  existingLine.shift();
-  return 'Currently serving number ' + nextUp + ' at the counter.'
-}

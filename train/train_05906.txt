@@ -1,6 +1,0 @@
-A vegan restaurant serves three kinds of protein: seitan, beans, and lentils. There are ten dishes on their menu. Two have beans and lentils, and two have beans and seitan. The remaining dishes only have one kind of protein in them. Half of the remaining dishes have only beans, and there are three times as many dishes with only beans as with only seitan. How many dishes include lentils?
-The vegan restaurant serves 10 - 2 - 2 = <<10-2-2=6>>6 dishes with only one kind of protein.
-There are 6 / 2 = <<6/2=3>>3 dishes with only beans.
-There is 3 / 3 = <<3/3=1>>1 dish with only seitan.
-Thus, there are 6 - 3 - 1 = <<6-3-1=2>>2 dishes with only lentils.
-There are also 2 dishes with beans and lentils, so there are 2 + 2 = <<2+2=4>>4 dishes that include lentils.

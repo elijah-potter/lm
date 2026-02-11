@@ -1,1 +1,0 @@
-The data **was processed** by the system to generate results; it **processed** the data to generate results.

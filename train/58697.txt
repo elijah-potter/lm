@@ -1,5 +1,0 @@
-Users need to easily view and copy preformatted text.
-Create a box that has its own style in regards font color, font style, and background color that distinguishes itself from the rest of the page.
-To preserve indentation and general formatting of the text box so that it looks like a terminal window or text editor, use a mono-space font: a font that has a fixed width typeface (glyphs have the same width).
-As inserting text in raw HTML renders without line breaks and strips repeating spaces, you need to put special tags around the text you want to preserve the original formatting with. One solution is to use the <pre> around the text you want to preserve formatting with – another is to put the text inside a
-If you just paste ascii formatted text into a HTML file, the user’s browser will format the text and display it all in one line and regardless of how the code looks like in the HTML file as special tags are used in HTML to define line breaks (

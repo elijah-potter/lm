@@ -1,5 +1,0 @@
-Dakota gets hit by a bus and has to spend 3 days in the hospital. The hospital charges her $900/day for her bed, $250/hour for two specialists to look at her 15 minutes each, and $1800 for the ambulance ride. How much is Dakota's medical bill?
-First find the total cost of the hospital bed by multiplying the cost per day by the number of days: $900/day * 3 days = $<<900*3=2700>>2700
-Then figure out how many minutes total the two specialists looked at Dakota: 15 minutes/specialist * 2 specialists = 30 minutes
-Then divide the number of minutes by the number of minutes per hour and multiply it by the specialists' hourly rate to find their total charge: 30 minutes / 60 minutes/hour * $250/hour = $<<30/60*250=125>>125
-Finally, add up the cost of the specialists, ambulance and bed to find Dakota's total bill: $2700 + $1800 + $125 = $<<2700+1800+125=4625>>4625

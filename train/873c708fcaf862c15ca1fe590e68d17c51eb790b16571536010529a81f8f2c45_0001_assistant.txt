@@ -1,4 +1,0 @@
-Here is an example code that creates a map and stores it in a variable called funObj using AutoHotkey v2.0.2:
-    funObj := Map("a", "Don't", "b", "Call", "c", "Me")
-
-This code creates a map with three key-value pairs a, b, and c. The corresponding values are Don't, Call, and Me. The map is then stored in a variable called funObj.

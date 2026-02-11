@@ -1,1 +1,0 @@
-The report was written by the committee, its findings presented to the board. The committee wrote the report, presenting its findings to the board.

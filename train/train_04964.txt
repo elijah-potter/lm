@@ -1,8 +1,0 @@
-A TV show costs $100,000 per episode for the first season and twice that much for every other season.  The first season had 12 episodes, and every season after that had 50% more episodes except the last season, which had 24 episodes.  The show had 5 seasons.  How much did it cost to produce all the episodes?
-The first season cost 12*100,000=$<<12*100000=1200000>>1,200,000
-Season 2-4 had 12*.5=<<12*.5=6>>6 more episodes per season than the first
-So they each had 12+6=<<12+6=18>>18 episodes
-That means there were 18*3+24=<<18*3+24=78>>78 episodes in the last 4 seasons
-So those episodes cost 2*100,000=$<<2*100000=200000>>200,000
-For a total cost of 200,000*78=$<<200000*78=15600000>>15,600,000
-So the total cost was 15,600,000+1,200,000=$<<15600000+1200000=16800000>>16,800,000

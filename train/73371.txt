@@ -1,4 +1,0 @@
-Range.Delete Method (Excel)
-Deletes the object.
-expression A variable that represents a Range object.
-Used only with Range objects. Specifies how to shift cells to replace deleted cells. Can be one of the following XlDeleteShiftDirection constants: xlShiftToLeft or xlShiftUp. If this argument is omitted, Microsoft Excel decides based on the shape of the range.

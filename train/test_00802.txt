@@ -1,6 +1,0 @@
-At Ashley's school, they start a reforestation campaign where each child plants a tree and each teacher plants 2 trees. The school has 40 classes with an average of 25 students and 3 teachers per class. How many trees will they have planted at the end of the campaign?
-40 classes participate in the campaign, representing a total of 40 * 25 = <<40*25=1000>>1000 students.
-With 3 teachers per class, 40 * 3 = <<40*3=120>>120 teachers participate.
-With one tree planted per student, 1000 * 1 = <<1000*1=1000>>1000 trees are planted per student.
-With 2 trees planted per teacher, 120 * 2 = <<120*2=240>>240 trees are planted per teacher.
-Adding the trees planted by teachers and students, 1000 + 240 = <<1000+240=1240>>1240 trees will have been planted at the end of the campaign.

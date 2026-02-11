@@ -1,5 +1,0 @@
-A phone tree is used to contact families and relatives of Ali's deceased coworker. Ali decided to call 3 families. Then each family calls 3 other families, and so on. How many families will be notified during the fourth round of calls?
-In the first round, there are 3 families called.
-In the second round, there are 3 x 3 = <<3*3=9>>9 families called.
-In the third round, there are 9 x 3 = <<9*3=27>>27 families called.
-In the fourth round, there are 27 x 3 = <<27*3=81>>81 families called.

@@ -1,5 +1,0 @@
-Donna is trying to figure out if her truck is over a particular bridge's weight limit. The bridge can hold 20,000 pounds. Donna's empty truck weighs 12,000 pounds. She's carrying 20 crates of soda that each weigh 50 pounds, 3 dryers that each weigh 3000 pounds, and twice as much weight in fresh produce as in soda. How much does Donna's fully loaded truck weigh?
-First find the total weight of the soda by multiplying the number of crates by the weight per crate: 20 crates * 50 pounds/crate = <<20*50=1000>>1000 pounds
-Then find the weight of the fresh produce by doubling the weight of the soda: 1000 pounds * 2 = <<1000*2=2000>>2000 pounds
-Now find the weight of the dryers by multiplying the quantity by the weight per item: 3 dryers * 3000 pounds/dryer = <<3*3000=9000>>9000 pounds
-Now add the empty truck's weight to the weight of all three groups of products to find the fully loaded weight: 12000 pounds + 1000 pounds + 2000 pounds + 9000 pounds = <<12000+1000+2000+9000=24000>>24000 pounds

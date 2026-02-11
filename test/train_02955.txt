@@ -1,7 +1,0 @@
-A 1000 car parking lot is divided into 3 sections. There are 320 spaces in section 1, and 200 more in section 2 than in section 3. How many spaces are made available in section 2 of the parking lot?
-There are a total of 1000 spaces - 320 spaces = <<1000-320=680>>680 spaces in both sections 2 and 3.
-Let the number of spaces in section 3 be x. The number of spaces in section 2 = x + 200.
-We know that 320 + x + 200 + x = 1000.
-Combining like terms, we get 2x = 480
-Dividing both sides by 2 produces x = 240.
-The number of spaces in section 2 is 240 + 200 = <<240+200=440>>440.

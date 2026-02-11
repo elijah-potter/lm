@@ -1,6 +1,0 @@
-We’ve seen last time how Bayesian Updating with continuous priors works. As mentioned back then, it isn’t always easy to calculate the total probability of X (p(x)). Today I will introduce the Beta Distribution which makes these calculations easier.
-The beta(a,b) distribution is a two parameter distribution on range [0,1] and is therefore ideal to model unknown probabilities:
-where c is the normalising constant:
-Furthermore the beta distribution is the conjugate prior for Bernoulli, Binomial and Geometric distributions. Conjugate prior means that if our prior is beta our posterior will also be beta.
-Example: Suppose we have a coin with unknown probability p of heads. We toss the coin 20 times and get 15 heads and 5 tails. What is the posterior PDF?
-We can see that the posterior PDF is beta(16,6).

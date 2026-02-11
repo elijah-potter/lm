@@ -1,9 +1,0 @@
-Multitude of devices connect easily with each other in the managed cloud service. How does AWS IoT work? The devices interact with all other interconnected devices and with cloud applications. It has a application loaded core. It supports billions of devices with many more messages. They process and transport the AWS endpoints of communication to other devices. Through improved communication networks, the information flows with higher security and reliability.
-What are examples of AWS IoT?
-The managed cloud service can include various devices to improve businesses and daily life. For example, security devices to provide around the clock security are connected in IoT. They include detection systems, lights, cameras, alarm bells. Other systems part of IoT are activity trackers for instance for indoor pollution. They accurately measure air quality in an office, in a commercial building, home, or other confined building spaces.
-Is AWS IoT an IoT platform?
-All devices are connected and interact through AWS services based on secure connectivity. Users can manage, employ data storage and analyze IoT data to build complete solutions. Using AI (artificial intelligence) and ML (machine learning) users create models in the cloud with multifold performance.
-How do I create AWS IoT?
-Using an AWS IoT console you can build a thing – a physical – or a logical device. Further, you employ the Manage function to build Things. Create things selecting for a single thing. Then you can choose that in properties page you enter the Thing name, flexible naming according to your choice.
-For now, renaming an already created thing name is not a function. You can create a new Thing with the desired name and then delete the old Thing.
-With AWS IoT is more convenient, flexible and productive to manage interconnected objects all across environments.

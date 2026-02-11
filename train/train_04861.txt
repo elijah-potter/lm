@@ -1,6 +1,0 @@
-In a factory, there are 3 machines working 23 hours a day. The owner decided to buy a fourth machine, which works only 12 hours a day. One machine can produce 2 kg of material every hour. The factory sells the produced material for $50 per 1 kg. How much can this factory earn in one day?
-The total runtime for the first three machines is 3 machines * 23 hours/day/machine = <<3*23=69>>69 hours/day.
-So these machines could produce 69 hours/day * 2 kg/hour = <<69*2=138>>138 kg/day.
-The fourth machine could produce 12 hours/day * 2 kg/hour = <<12*2=24>>24 kg/day of material.
-In total all the machines would produce 138 kg/day + 24 kg/day = <<138+24=162>>162 kg/day of material.
-The factory would therefore earn 162 kg/day * $50/kg = $<<162*50=8100>>8100/day.

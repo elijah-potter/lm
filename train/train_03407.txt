@@ -1,4 +1,0 @@
-Isabelle works in a hotel and runs a bubble bath for each customer who enters the hotel. There are 13 rooms for couples and 14 single rooms. For each bath that is run, Isabelle needs 10ml of bubble bath. If every room is filled to maximum capacity, how much bubble bath, in millilitres, does Isabelle need?
-In the rooms for couples, there are 13 rooms * 2 people per room = <<13*2=26>>26 people.
-So in total, there are 26 people in couples' rooms + 14 people in single rooms = <<26+14=40>>40 people in the hotel.
-As each person gets a bubble bath, Isabelle will need a total of 40 baths * 10ml of bubble bath per bath = <<40*10=400>>400ml of bubble bath.

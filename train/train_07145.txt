@@ -1,5 +1,0 @@
-The price of an iPhone fell 10% in a particular month and another 20% in the second month.  If the initial price was $1000, calculate the price after the second month.
-In the first month, the price of the iPhone fell by 10/100*$1000=$<<10/100*1000=100>>100
-The new price after the first month is $1000-$100 = $<<1000-100=900>>900
-In the second month, the price fell 20% further by 20/100*$900 = $<<20/100*900=180>>180
-The new price after the second month is $900-$180 = $<<900-180=720>>720

@@ -1,4 +1,0 @@
-There were 180 apples in each crate. 12 such crates of apples were delivered to a factory. 160 apples were rotten and had to be thrown away. The remaining apples were packed into boxes of 20 apples each. How many boxes of apples were there?
-The total number of apples delivered was: 180 apples x 12 crates = <<180*12=2160>>2160 apples
-So, the number of remaining apples after throwing away the rotten ones was: 2160 apples – 160 apples = <<2160-160=2000>>2000 apples
-And now, we can find the total number of boxes of apples by dividing the remaining number of apples by the number of apples per box: 2000 apples / 20 apples/box = <<2000/20=100>>100 boxes of apples.

@@ -1,5 +1,0 @@
-A map marked "Unknown Territory" begins at the airport gate. The first flight is delayed by an hour, and the boarding pass is for **Seat 17B**, but the plane is a **Cessna 172** with no destination listed. The co-pilot whispers, *"We’re just testing the system."* The destination changes to **New Orleans** on the third hour of flight time, but the pilot nods and files the change. The first stop is an airport with no signage—just a tarmac and a terminal that shifts like a mirage.
-
-The next city is **Boulder, Colorado**, but the cityscape is a digital projection of **Kraków, Poland**, with neon signs of a local café. The guidebook in the seat pocket is a PDF titled *"Uncharted Horizons: A Dynamic Odyssey."* By the time we reach the next border, the passport stamp reads **"Visa Granted: Provisional"** with an expiration date of *"Unspecified."* The final destination is **a server farm in Zurich**, where the coordinates are stored in a binary file.
-
-At the end, the only stable thing is the phrase on the wall: **"You are here."** The exit sign reads **"Re-enter at your own risk."**

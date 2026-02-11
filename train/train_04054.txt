@@ -1,7 +1,0 @@
-Seymour runs a plant shop. He has 4 flats of petunias with 8 petunias per flat, 3 flats of roses with 6 roses per flat, and two Venus flytraps. Each petunia needs 8 ounces of fertilizer, each rose needs 3 ounces of fertilizer, and each Venus flytrap needs 2 ounces of fertilizer. How many ounces of fertilizer does Seymour need in total?
-First find the total number of petunias: 4 flats * 8 petunias/flat = <<4*8=32>>32 petunias.
-Then find the total number of roses: 3 flats * 6 roses/flat = <<3*6=18>>18 roses.
-Now find how much fertilizer Seymour needs for the petunias: 32 petunias * 8 oz/petunia = <<32*8=256>>256 oz.
-Now find how much fertilizer Seymour needs for the roses: 18 roses * 3 oz/rose = <<18*3=54>>54 oz
-Now find how much fertilizer Seymour needs for the Venus flytraps: 2 Venus flytraps * 2 oz/Venus flytrap = <<2*2=4>>4 oz.
-Now add up the fertilizer for all three plants: 256 oz + 54 oz + 4 oz = <<256+54+4=314>>314 oz.

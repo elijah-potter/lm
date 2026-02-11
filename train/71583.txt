@@ -1,9 +1,0 @@
-Mixing it up
-Mixing it up
-I start with two full mugs, one containing milk and the other containing tea, in exactly equal amounts. I transfer 3 spoonsful of milk from the first mug to the second, and stir thoroughly. Then I transfer 3 spoonsful from the now-milky tea in the second mug back into the first mug.
-Which is greater: the amount of tea now in the first mug or the amount of milk now in the second mug?
-The solutionThis has to have been the most popular Plus puzzle ever! Lots of readers sent in solutions, some using logic, some algebra, many right, some wrong.
-The right answer is perhaps a little unintuitive - the amount of tea now in the first mug is exactly equal to the amount of milk now in the second mug!.
-To see this, you could use a bit of algebra, expressing the amount of milk and tea in each cup in teaspoonsful and then adding and subtracting 3's. You'll get the right answer, but it's easier if you think about it this way:
-Write V for the initial total volume in each mug. At the end, each mug still has a total volume V. Write W for the volume of milk in the second mug at the end (this means there is V-W of tea). By conservation of milk, since there was V to start with, there must be V-W of milk in the first mug and hence W of tea. So there is exactly the same amount of tea in the first mug as milk in the second.
-Back to main puzzle page

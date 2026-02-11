@@ -1,1 +1,0 @@
-The switches used in this example are commonly referred to as 3-way switches. They are used in this example to control the state of the circuit from either switch's location. Depending on how they are wired, they form either a NAND or XOR gate, meaning that when either input is changed (one of the switches is flipped) the state of the circuit will be changed as well.

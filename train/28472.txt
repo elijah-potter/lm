@@ -1,9 +1,0 @@
-As is well known in archery, a quiver is a container where arrows are kept. An example is the diagram on the left. An immediate queston is how this concept is linked to mathematics.
-Just like oriental quivers, which have a source and a target, so does mathematical quivers. In mathematics, a quiver is an oriented graph. It consists of a sset of arrows, a set of points (vertices), and two maps assigning to each arrow the starting and terminating points. With this definition, multiple arrows are allowed between vertices. Examples of quivers are;
-Quiver diagrams can be simple with only a few arrows and points, it can also be very complicated when the sets of points and arrows get too large, or when arrows join the points in complicated patterns.
-The number in the arrows indicate the number of arrows while we have given the points names, for identification.
-It is an example of a quiver with multiple arrows between points.
-Mutation of quivers
-These are example of a del-Pezzo quivers. Losely speaking, the number in the point can be considered as the size of the point. Each point in a del-Pezzo quiver has a size.
-More examples of del-Pezzo quivers
-Quivers with r-charge

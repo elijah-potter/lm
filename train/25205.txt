@@ -1,6 +1,0 @@
-What is a Foreign Key?
-Two types of key are used to access tables: Primary Keys and Foreign Keys. A Primary Key uniquely identifies a record in a table, while a Foreign Key accesses data in some other related table via its Primary Key.
-Foreign keys are represented in Enterprise Architect using stereotyped operations. A Foreign Key is a collection of columns (attributes) that together have some operational meaning (they enforce a relationship to a Primary Key in another table). A Foreign Key is modeled as an operation stereotyped with the FK stereotype; the operation parameters become the columns involved in the key.
-It isn't necessary to define a Foreign Key in order to access another table through its Primary Key. Foreign Keys are a feature of some database management systems, providing 'extras' such as referential integrity checking that prevents the deletion of a record if its Primary Key value exists in some other table's Foreign Key. The same thing can be achieved programmatically.
-To create a Foreign Key, click on the link.
-You might also have to define a Name Template for Foreign Keys.

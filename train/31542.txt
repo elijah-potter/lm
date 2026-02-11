@@ -1,6 +1,0 @@
-Line representationWhat is the most sensible representation of a line? There are a few possibilities including:
-- Gradient and intercept: (y=mx+c)
-- Two distinct points: (x1,y1) & (x2, y2)
-- r = x cos(a) + y sin(a) : r = the perpendicular distance to the line. a = the angle r makes with the x-axis.
-I suppose the actual operations I need to perform on lines should dictate the best represention to ease calculations. Using gradients gets tricky when dealing with vertical lines. Angles are preferable since they range between -Pi/2 and Pi/2.
-The line following algorithm relies on calculating the intersection of lines. It produces start and end points of line segments. Therefore representing lines as two distinct points may be the best approach. Calculating the intersection of two lines represented this way is described here

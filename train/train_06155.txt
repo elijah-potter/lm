@@ -1,7 +1,0 @@
-Mary is writing a story, and wants her 60 characters to be split according to their initials. Half of her characters have the initial A, and half of this amount have the initial C. Mary wants the rest of her characters to have the initials D and E, but she wants there to be twice as many characters with the initial D as there are characters with the initial E. How many of Mary’s characters have the initial D?
-Half the characters have the initial A, which is a total of 60 / 2 = <<60/2=30>>30 characters.
-This means that 30 / 2 = <<30/2=15>>15 characters have the initial C.
-Mary wants the remaining 60 – 30 – 15 = <<60-30-15=15>>15 characters to have the initials D or E.
-For there to be twice as many characters with the initial D, the characters are divided into 2 + 1 = <<2+1=3>>3 parts.
-Dividing by this means there are 15 / 3 = <<15/3=5>>5 characters with the initial E.
-This leaves 15 – 5 = <<15-5=10>>10 characters with the initial D.

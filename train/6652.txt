@@ -1,8 +1,0 @@
-backpressure(bak´presh-&r) (n.) Also referred to as backpressure flow control, a condition wherein a switch causes a transmitting device to hold off on sending data packets until the switch��s bottleneck has been eliminated (i.e., when its buffers holding data have been emptied). In order to create backpressure, the switch either broadcasts false collision detection signals or sends packets back to the originating device if the buffer is full.
-Stay up to date on the latest developments in Internet terminology with a free weekly newsletter from Webopedia. Join to subscribe now.
-From keyword analysis to backlinks and Google search engine algorithm updates, our search engine optimization glossary lists 85 SEO terms you need... Read More »Slideshow: History of Microsoft Operating Systems
-Microsoft Windows is a family of operating systems for personal computers. In this article we look at the history of Microsoft operating... Read More »Slideshow: Interesting Facts About Google Search
-From Goats to Penguins, a server outage and trillions of searches, our slideshow presents interesting facts about Google and the Google.com... Read More »
-Java is a high-level programming language. This guide describes the basics of Java, providing an overview of syntax, variables, data types and... Read More »Java Basics, Part 2
-This second Study Guide describes the basics of Java, providing an overview of operators, modifiers and control Structures. Read More »The 7 Layers of the OSI Model
-The Open System Interconnection (OSI) model defines a networking framework to implement protocols in seven layers. Use this handy guide to compare... Read More »

@@ -1,7 +1,0 @@
-Electrochemical impedance spectroscopy (EIS) is a method for the non-destructive characterisiation of thin layers, membranes, surfaces and films. Typically a small amplitude AC voltage (or current) signal is applied to a sample while the amplitude and phase relationship of the corresponding current (or voltage) signal is monitored.
-For an impedance spectrum, measurements are made over several decades of AC frequency with up to about 10 measurements per decade.
-The results can be mathematically modelled, typically by treating the sample as a number of sublayers each with its own electrical resistance and capacitance. In particlular the capacitance and dielectric constant of each sublayer enables the thickness of that layer to be determined.
-In other experiments sample impedance can be used for quantitative readings from biosensors.
-eDAQ offers two EIS systems:
-- ERZ100. This impedance system offers versatile performance at economical pricing and is suitable for many biosensor applications.
-- INPHAZE HiRes EIS. This is a high resolution system where accuracy and precision are of paramount importance. It is capable of detectiing layer thicknesses down to atomic dimensions.

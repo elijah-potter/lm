@@ -1,9 +1,0 @@
-When a column has just been installed on a reversed phase HPLC system then it will typically require between 10 and 20 column volumes before it is fully equilibrated and ready to use. However, some applications are likely to require additional column volumes. Examples are methods which include ion-pairing reagents and chiral HPLC methods. In these cases suitable equilibration should be investigated and documented for future use. A starting point for investigation may be approximately 30 column volumes. When re-equilibrating after a gradient injection has been run (prior to the next injection) 10 column volumes is recommended.
-Although we refer to the column volume, the volume that we are interested in is more correctly called the void volume, Vm. This is the volume of the HPLC column that is not taken up by the stationary phase. This is typically approximately 70% of the total column volume. There are two methods that you can use to calculate the void volume:
-Use the dimensions of the column and the formula for the volume of a cylinder:
-The radius, r, is equal to the internal diameter divided by two:
-A HPLC column of internal diameter 4.6mm and length 10cm:Note: express both i.d. and length in cm.
-You can use the convenient MTS calculator for these calculations, click here. (Updated 12th November 2009)
-Inject an unretained solute to obtain t0, the column dead time (minutes). Then multiply this by the flow rate to obtain the void volume:
-ExampleThe flow rate for the method is 1.0 mL/min. The column dead time,t0, is obtained from the chromatogram in Figure 2 and is equal to 1.05 minutes.
-Therefore Vm = 1.0 x 1.05 = 1.05mL

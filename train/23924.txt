@@ -1,8 +1,0 @@
-The HMG IS5 data sanitization method is usually implemented in the following way:
-- Pass 1: Writes a zero
-- Pass 2: Writes a one
-- Pass 3: Writes a random character and verifies the write
-HMG IS5 is almost identical the popular DoD 5220.22-M data sanitization method.
-Erasing a hard drive using the HMG IS5 data sanitization method will prevent all software based file recovery methods from finding information on the drive and is also likely to prevent most hardware based recovery methods from extracting information.
-The HMG IS5 sanitization method was originally defined in the HMG IA/IS 5 Secure Sanitisation of Protectively Marked Information or Sensitive Information document, published by the Communications-Electronics Security Group (CESG), part of the UK Government Communications Headquarters (GCHQ).
-Most data destruction programs support multiple data sanitization methods in addition to HMG IS5.

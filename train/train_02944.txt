@@ -1,6 +1,0 @@
-Jerry wakes up one morning and finds the thermostat set to 40 degrees. He set it to double the initial temperature. His dad notices, yells at Jerry, and reducing the temperature by 30 degrees. Later, Jerry's mother reduces the temperature by 30%, before his sister increases it by 24 degrees. What's the final temperature?
-First double the initial temperature: 40 degrees * 2 = <<40*2=80>>80 degrees
-Then reduce that amount by 30 to reflect the dad's change: 80 degrees - 30 degrees = <<80-30=50>>50 degrees
-Then multiply that number by 30% to find how much Jerry's mother reduces the temperature: 50 degrees * .3 = <<50*.3=15>>15 degrees
-Now subtract 15 degrees from 50 degrees to find the temperature after the mother's change: 50 degrees - 15 degrees = <<50-15=35>>35 degrees
-Finally, add 24 degrees to find the final temperature: 35 degrees + 24 degrees = <<35+24=59>>59 degrees

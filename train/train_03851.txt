@@ -1,6 +1,0 @@
-Mark wants to build a pyramid of soda cases that's four levels tall. Each level of the pyramid has a square base where each side is one case longer than the level above it. The top level is just one case. How many cases of soda does Mark need?
-We know that the top level just has one case. Since each level has one more case per side than the level above it, the second level has sides that are 2 cases long.
-We can figure out how many cases we need for the second level by finding the area of a square with a side length of 2: 2 cases * 2 cases = <<2*2=4>>4 cases
-The third level has three cases per side, so we need to find the area of a square with side length 3: 3 cases * 3 cases = <<3*3=9>>9 cases
-The fourth level has a side length of 4, so we find its area with 4 cases * 4 cases = <<4*4=16>>16 cases
-Finally, we add up the number of cases we need on each level: 1 cases + 4 cases + 9 cases + 16 cases = <<1+4+9+16=30>>30 cases

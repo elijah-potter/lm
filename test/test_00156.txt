@@ -1,7 +1,0 @@
-Bill bakes 300 rolls, 120 chocolate croissants, and 60 baguettes every day. Each roll is 4 inches long, each croissant is 6 inches long, and each baguette is two feet long. If Bill puts all the baked goods end to end, how long will they be in feet?
-First find the total length of the rolls: 300 rolls * 4 inches/roll = <<300*4=1200>>1200 inches
-Then find the total length of the croissants: 120 rolls * 6 inches/roll = <<120*6=720>>720 inches
-Then add the length of the rolls and croissants to find the total length in inches: 1200 inches + 720 inches = <<1200+720=1920>>1920 inches
-Then divide the total length by 12 inches per foot to find the length in feet: 1920 inches / 12 inches/foot = <<1920/12=160>>160 feet
-Then find the total length of the baguettes: 60 baguettes * 2 feet/baguette = <<60*2=120>>120 feet
-Then add the length of the other baked goods in feet to find the total length: 120 feet + 160 feet = <<120+160=280>>280 feet

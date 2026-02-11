@@ -1,4 +1,0 @@
-At a certain latitude in the northern hemisphere, the number d of hours of daylight in each day of the year is taken to be d=A+Bsinkt°, where A, B, k are positive constants and t is the time in days after the spring equinox.
-Assuming that the number of hours of daylight follows an annual cycle of 365 days, find the value of k, giving your answer correct to 3 decimal places.
-Ok I'm not really sure where to start here, any hints would be appreciated.
-Am I supposed to use -1<sinkt°<1 ? how to i fit in the 365 day with t?

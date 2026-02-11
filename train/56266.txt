@@ -1,6 +1,0 @@
-hi everyone ,
-I am doing a project in c++.My sir give that routing algorithm to implement in c++. i am tired lot but some error is came so please do any one this program .It is a straight forward task that would include usage of stack and classes.
-0. Introduction. The City Airline Company (CAC) wants a simple program to
-process customer requests to fly from some origin city to some destination city:
-For each customer request, the program has to indicate whether a sequence of CAC flights exists from the origin city to the destination city, and, if such a sequence exists, the program prints it.
-The following figure represents the routs that CAC flies (for simplicity cities on the figure are denoted by C1, C2,

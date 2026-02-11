@@ -1,5 +1,0 @@
-Bob is tilling a plot of his garden. The plot is 110 feet wide by 120 feet long. His tiller digs a swath two feet wide, and he can till 1 foot of ground in about 2 seconds. How long will it take him to till this plot of land, in minutes?
-If Bob goes along the side that's 120 feet long, he will till 110 / 2 = 55 rows.
-Each of these rows are 120 feet long, so he will push the tiller a total of 120 * 55 = <<120*55=6600>>6,600 feet.
-He tills 1 linear foot of ground every 2 seconds, so it will take him 2 * 6,600 = 13,200 seconds to till this plot
-13,200 seconds is 13,2000 / 60 = <<13200/60=220>>220 minutes

@@ -1,8 +1,0 @@
-Jerry has two pools, both with leaks emptying them out at 4 gallons/minute. 4 minutes ago, the big pool had twice as much water as the small pool. Now the big pool has four times as much water as the small pool. How much water does the small pool have now?
-First find how many gallons of water flow out of the pools in 4 minutes: 4 gallons/minute * 4 minutes = <<4*4=16>>16 gallons
-Let b be the amount of water the big pool has now and s be the amount of water the small pool has. We know that b = 4s, and b + 16 = 2(s + 16)
-Substituting the first equation into the second equation, we get 4s + 16 = 2(s + 16)
-Multiplying through the parentheses, we get 4s + 16 = 2s + 32
-Subtracting 2s from both sides, we get 2s + 16 = 32
-Subtracting 16 from both sides, we get 2s = 16
-Dividing both sides by 2, we get s = <<8=8>>8

@@ -1,3 +1,0 @@
-At the height of cranberry season, there are 60000 cranberries in a bog. 40% are harvested by humans and another 20000 are eaten by elk. How many cranberries are left?
-First find the total number of cranberries harvested by humans: 60000 cranberries * 40% = <<60000*40*.01=24000>>24000
-Then subtract the number of cranberries taken by the humans and elk to find the number remaining: 60000 cranberries - 24000 cranberries - 20000 cranberries = <<60000-24000-20000=16000>>16000 cranberries

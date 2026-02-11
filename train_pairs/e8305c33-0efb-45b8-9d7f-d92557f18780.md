@@ -1,1 +1,0 @@
-The report was written by yours truly. I wrote the report.

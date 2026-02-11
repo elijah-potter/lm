@@ -1,5 +1,0 @@
-There are six unicorns in the Enchanted Forest. Everywhere a unicorn steps, four flowers spring into bloom. The six unicorns are going to walk all the way across the forest side-by-side, a journey of 9 kilometers. If each unicorn moves 3 meters forward with each step, how many flowers bloom because of this trip?
-First convert the total length of the journey from kilometers to meters: 9 kilometers * 1000 meters/kilometer = <<9*1000=9000>>9000 meters
-Then divide this by the length of one step to find the number of steps in the journey: 9000 meters / 3 meters/step = <<9000/3=3000>>3000 steps
-Then multiply the number of steps by the number of flowers per step to find how many flowers one unicorn creates on the journey: 3000 steps * 4 flowers/step = <<3000*4=12000>>12000 flowers
-Then multiply the number of flowers per unicorn by the number of unicorns to find the total number of flowers created: 12000 flowers/unicorn * 6 unicorns = 72,000 flowers

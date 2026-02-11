@@ -1,5 +1,0 @@
-Carson needs to mow the lawn and plant some flowers. Carson has to mow 40 lines to cover the whole yard, and it takes him 2 minutes to mow one line. He also needs to plant 8 rows of flowers, each with 7 flowers, and it takes him half a minute to plant each flower. How many minutes will Carson spend gardening?
-First find the total time Carson spends mowing: 40 lines * 2 minutes/line = <<40*2=80>>80 minutes
-Then find the total number of flowers Carson plants: 8 rows * 7 flowers/row = <<8*7=56>>56 flowers
-Then multiply that number by the time taken to plant each flower to find the total time spent planting flowers: .5 minutes/flower * 56 flowers = <<.5*56=28>>28 minutes
-Finally, add that time to the time spent mowing to find the total time spent gardening: 28 minutes + 80 minutes = <<28+80=108>>108 minutes

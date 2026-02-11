@@ -1,9 +1,0 @@
-Mrs. Snyder used to spend 40% of her monthly income on rent and utilities. Her salary was recently increased by $600 so now her rent and utilities only amount to 25% of her monthly income. How much was her previous monthly income?
-Let her previous monthly income be p
-The cost of her rent and utilities was 40% of p which is (40/100)*p = 2p/5
-Her income was increased by $600 so it is now p+$600
-The cost of her rent and utilities now amount to 25% of (p+$600) which is (25/100)*(p+$600) = (p+$600)/4
-Equating both expressions for cost of rent and utilities: 2p/5 = (p+$600)/4
-Multiplying both sides of the equation by 20 gives 8p = 5p+$3000
-Subtracting 5p from both sides gives: 3p = $3000
-Dividing both sides by 3 gives p = $1000

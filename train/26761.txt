@@ -1,6 +1,0 @@
-- nodes (computers)
-- a connecting medium (wired or wireless)
-- specialized network equipment like routers or hubs.
-In the case of the Internet, all of these pieces work together to allow your computer to send information to another computer that could be on the other side of the world!
-Switches are another fundamental part of many networks because they speed things up. Switches allow different nodes (a network connection point, typically a computer) of a network to communicate directly with one another in a smooth and efficient manner.
-There are many different types of switches and networks. Switches that provide a separate connection for each node in a company's internal network are called LAN switches. Essentially, a LAN switch creates a series of instant networks that contain only the two devices communicating with each other at that particular moment. In this article, we will focus on Ethernet networks that use LAN switches. You will learn what a LAN switch is and how transparent bridging works, as well as about VLANs, trunking and spanning trees.

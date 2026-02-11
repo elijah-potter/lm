@@ -1,2 +1,0 @@
-Network Topology Discovery Using SNMP
-In this paper, the authors discuss the method to find out topology of the network using SNMP protocol. They are trying to develop a client server Application where client sends a request for topology server to Discover the topology. Connection between nodes will be found out using SNMP MIBs stored in the nodes. Using Routing Table Address forwarding table and Spanning Tree and IP-NettoMediaNet Address tables the connectivity will be found out by tracing these tables.

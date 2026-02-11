@@ -1,9 +1,0 @@
-Image Processing from A to Z
-Independent academic research has resulted in the development and establishment of numerous methods and techniques in the area of image processing, including feature extraction, segmentation, optical flow, and classification of objects. Many of these methods already are used in different application areas.
-Complex applications such as person recognition/localization and the classification of unknown objects can only be achieved by combining several such methods. Novel recognition tasks typically represent major challenges and can only be solved by implementing a multi-layer vision system. The engineering challenge here goes well beyond the design of the system and the selection of an appropriate method to use. In most cases, the method must be adapted/extended. Often a new method development is required to meet system requirements such as the ability to recognize objects in real-time in order to best utilize the prescribed hardware.
-Our engineers and software developers have many years of experience in the field of image processing. The following topics are examples for which we develop reliable algorithms:
-- Feature extraction and classification
-- Optical flow and motion analysis
-- Segmentation and object detection
-- Stereo vision and structure from motion
-- Camera calibration and image optimization

@@ -1,4 +1,0 @@
-Categories: Hardware, Usage Tags: FileSystems/Data Storage
-Why the need for several file systems?
-Different file systems have different features; for example, a central NFS server has massive bytes for the buck but limited data bandwidth, while a parallel file system is much faster but smaller and usually available to one cluster only. A node-local SSD, one the other hand, has the advantage of very low latency but it cannot be accessed from outside a compute node.
-For further information, please consult our documentation on “File systems“.

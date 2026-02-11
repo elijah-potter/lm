@@ -1,7 +1,0 @@
-Ali, Nada, and John have a total of $67 in their wallets. Ali has $5 less than Nada and John has 4 times more than Nada. How much money does John have?
-Let's say that N is what Nada has, J is what John has, and A is what Ali has. We know that A = N - 5 and J = 4N.
-We also know that: N + A + J = $67
-We can substitute the equations from step 1 into the equations from step 2 to get: N + 4N + (N-5) = $67
-Combining like terms gets us 6N - 5 = $67
-So, N=($67+5)/6 = $12
-Substituting $12 back into the equation J = 4 N, we find John has 4 x 12 = $<<4*12=48>>48

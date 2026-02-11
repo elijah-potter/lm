@@ -1,8 +1,0 @@
-I've come up with an idea on how we could use a combination of Deep Learning and body sensors to create a walking talking living humanoid. Here goes:
-First, we will recruit 1 billion people and have them wear a special full face mask and suit. This suit will contain touch sensors along the skin, cameras, smell sensors, taste sensors on the mask, basically every data and information that a human receives will be collected electronically, whether it is what they see, what they smell what they feel and so on.
-These suits will also have potentiometers and other sensors to measure the movement made by the person. Every hand movement, leg movement, muscle movement will be recorded and saved in a database as well.
-After 50 years or so, all collected input and output data from every single person who participated in this experiment will be saved in a computer. We then create a neural network and then train it on the input and output data from the database.
-Next, we create a robot that has motorized muscles and hand/leg joints that are the same specs as to our previous suits and also the touch, smell, sight and other sensors integrated inside of this robot.
-Once everything is ready, we will load the trained neural network onto the robot and switch it on. During inference, the neural network will take data from sensors all over the robot's body and translate it into movement in legs, hands, and muscle.
-- Could these techniques in conjunction with the data collection I describe, produce and AGI android?
-Essentially, how feasible is current technology to produce a robot that will behave, speak, live, move like a normal human being?

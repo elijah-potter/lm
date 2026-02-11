@@ -1,3 +1,0 @@
-Chapter 13. Kerberos V4
-Kerberos is a secret key based service for providing authentication in a network. When a user Alice first logs into a workstation, she’ll type her account name and password. We’ll call the period from when she logs in to when she logs out her login session. During her login session Alice will probably need to access remote resources (such as hosts on which Alice has accounts, or file servers on which Alice has files). These remote resources will need to authenticate her, but Alice’s workstation performs the authentication protocol on Alice’s behalf, and Alice need not be aware that it is happening. The network itself is assumed to be insecure. Bad guys might eavesdrop or modify messages.
-Kerberos was originally ...

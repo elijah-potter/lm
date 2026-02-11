@@ -1,6 +1,0 @@
-It is raining outside and Bill puts his empty fish tank in his yard to let it fill with rainwater. It starts raining at 1 pm. 2 inches of rainfall in the first hour. For the next four hours, it rains at a rate of 1 inch per hour. It then rains at three inches per hour for the rest of the day. If the fish tank is 18 inches tall, at what time will it be filled with rainwater.
-At 2 pm there are 2 inches of rain in the tank.
-At 6pm, there are 2 + 4 * 1 = <<2+4*1=6>>6 inches of rain in the tank.
-That means that there are 18 - 6 = <<18-6=12>>12 inches of tank that still need to be filled as of 6 pm.
-It will take 12 / 3 = <<12/3=4>>4 hours to finish filling the tank.
-The tank will be filled at 6 + 4 = <<6+4=10>>10pm.

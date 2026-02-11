@@ -1,5 +1,0 @@
-10X pH 8.0 Recipe
-- 100mM Tris-Cl (pH 8.0)
-- 10mM EDTA (pH 8.0)
-- Use Tris base and adjust the pH to 8.0 using HCl.
-- TE buffer is often used to store DNA. The EDTA in TE chelates Mg2+ ions necessary for most processes causing DNA degradation, and thus any residual DNA degradation activity will be suppressed by the presence of EDTA. However, EDTA, for the same reason, also prevents restriction digests, PCR, and ligations. So when using DNA that was suspended in TE you should keep track of the amount of EDTA in the mix to make sure there is still enough Mg2+ for your reaction to proceed successfully.

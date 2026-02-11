@@ -1,6 +1,0 @@
-Occasionally you need to check whether a date matches a certain month and year. You don’t really care about the day but rather the month and year. There are a couple of ways to do this (if you want the computer to decide what the current month is, use the TODAY function in conjunction with one of the ones below).
-Our preferred way is to use the EOMONTH function. The EOMONTH functions takes any date and converts it to the end of that month (or any other month). You can see how to use it in the EOMONTH video clip.
-We would create a new column and use this tool to convert all dates into the end of that month (and by default the year is included). Now you can build an IF function and you know that this new column will also be only the last day of the month you are interested in.
-MONTH and YEAR functions
-You can also use the MONTH and YEAR functions to pull out the month and year of any date, irrelevant of the day of the month. Using the MONTH and YEAR functions is easy. You could then CONCATENATE the MONTH and YEAR to create a unique reference to do the IF function on.
-As dates are only numbers, you can use the AND function to search for dates between the start and the end of the month.

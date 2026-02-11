@@ -1,5 +1,0 @@
-You can conditionally remove keys from a mapped type in TypeScript by producing the type never as a key. Here is an example mapped type that removes all number keys from a type:
-
-type ConditionallyRemoveKeys<Type> = {
-    [Property in keyof Type as Exclude<Property, number>]: Type[Property]
-};

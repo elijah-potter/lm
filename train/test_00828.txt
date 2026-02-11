@@ -1,6 +1,0 @@
-Milly needs to return a book she decided was really boring. The book weighs 4 pounds, cost $32, and needs to be returned to a distribution center 20 miles away. If the shipping company charges $0.35 per pound plus $0.08 per mile, and Amazon will only refund 75% of the book's purchase price, how much money will Milly lose?
-Milly will get back from Amazon $32 * .75 = $<<32*.75=24>>24 once the book is returned.
-She will lose $32 - 24 = $<<32-24=8>>8 when the book is returned.
-The first part of the shipping cost is $0.35 per pound * 4 pounds = $<<0.35*4=1.40>>1.40
-The second part of the shipping cost is $0.08 per mile * 20 miles = $<<0.08*20=1.60>>1.60
-Milly loses $8 + $1.40 + $1.60 = $<<8+1.4+1.6=11>>11

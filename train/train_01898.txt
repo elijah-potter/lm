@@ -1,3 +1,0 @@
-Mason is trying to download a 880 MB game to his phone. After downloading 310 MB, his Internet connection slows to 3 MB/minute. How many more minutes will it take him to download the game?
-First find how many MB are left to download: 880 MB - 310 MB = <<880-310=570>>570 MB
-Then divide that number by the download speed to find the download time: 570 MB / 3 MB/minute = <<570/3=190>>190 minutes

@@ -1,9 +1,0 @@
-The Double Slit Wave-Particle Duality Model demonstrates how matter and light display both wave- and particle-like properties in single and double slit experiments. The simulation shows a detector screen placed behind an aperture with one or two open slits. Particles (electrons or photons) pass through the experiment one at a time and their impact is recorded on the screen. Although it is at first difficult to discern a pattern, a diffraction (interference) pattern eventually emerges suggesting that each particle is interfering with itself. The particle seems be going through both slits as if it were a wave but is detected (observed) at only one location as if were a particle. The particle is interfering with itself as if it were simultaneously passing through both slits.
-The Double Slit Wave-Particle Duality Model was created using the Easy Java Simulations (EJS) modeling tool. It is distributed as a ready-to-run (compiled) Java archive. Double click the ejs_qm_DoubleSlitWaveParticleDuality.jar file to run the program if Java is installed.
-Please note that this resource requires
-at least version 1.5 of
-Double Slit Wave-Particle Duality Source Code
-The source code zip archive contains an EJS-XML representation of the Double Slit Wave-Particle Duality Model. Unzip this archive in your EJS workspace to… more... download 13kb .zip
-Last Modified: December 22, 2011
-%0 Computer Program %A Christian, Wolfgang %D November 15, 2011 %T Double Slit Wave-Particle Duality Model %8 November 15, 2011 %U http://www.compadre.org/Repository/document/ServeFile.cfm?ID=11546&DocID=2469
-Disclaimer: ComPADRE offers citation styles as a guide only. We cannot offer interpretations about citations as this is an automated procedure. Please refer to the style manuals in the Citation Source Information area for clarifications.

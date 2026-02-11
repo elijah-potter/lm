@@ -1,4 +1,0 @@
-Brendan has entered a kickboxing competition and wins matches against multiple contestants. He wins all of the matches in the first 2 rounds, each of which had 6 matches, then wins half of the 4 matches in the last round. How many matches did Brendan win throughout the competition?
-In the first 2 rounds, Brendan wins a total of 2 rounds * 6 matches per round = <<2*6=12>>12 matches.
-In the last round, Brendan wins half of the matches which is 4 matches / 2 = <<4/2=2>>2 matches.
-Throughout the competition, Brendan has therefore won 12 + 2 = <<12+2=14>>14 matches.

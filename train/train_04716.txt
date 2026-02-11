@@ -1,6 +1,0 @@
-Mary is paying her monthly garbage bill for a month with exactly four weeks. The garbage company charges Mary $10 per trash bin and $5 per recycling bin every week, and Mary has 2 trash bins and 1 recycling bin. They're giving her an 18% discount on the whole bill before fines for being elderly, but also charging her a $20 fine for putting inappropriate items in a recycling bin. How much is Mary's garbage bill?
-First find how much Mary pays weekly for the trash bins: $10/trash bin * 2 trash bins = $<<10*2=20>>20
-Then add this to the cost of the recycling bin: $20 + $5 = $<<20+5=25>>25
-Then multiply the week cost by the number of weeks per month to find the monthly cost: $25/week * 4 weeks/month = $<<25*4=100>>100/month
-Now calculate Mary's senior discount: 18% * $100 = $<<18*.01*100=18>>18
-Now subtract the discount and add the fine to find the total monthly cost: $100 - $18 + $20 = $<<100-18+20=102>>102

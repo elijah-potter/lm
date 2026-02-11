@@ -1,5 +1,0 @@
-The core network connects the distribution network gateways and provides fault tolerant Internet connectivity to the gateways.
-Strategic points in the network is interconnected using a ring. This provides a redundant connection to the Internet from each point which improves the availability. Traffic will seek a different path If one path becomes unavailable. The ring have 10 Gbps fiber connections.
-- Rotary, uplink
-- Kaserntorget, uplink
-The core network routes traffic in Layer 3 of the OSI model (IP). The dynamic routing protocol OSPF is used to synchronize the routers and the distribution network gateways. OSPF is also used to synchronize the core network with GSIX which provides the uplinks used by SGS's network.

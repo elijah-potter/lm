@@ -1,8 +1,0 @@
-Relevant for: GUI actions, scripted GUI components, and function libraries
-A comment is a line or part of a line in a script that is preceded by an apostrophe ('). During a run session, UFT does not process the comments. You can use comments to explain sections of an action, a scripted component, or a function library, to improve readability, and to make your scripts easier to maintain and update.
-The following example shows how a comment describes the purpose of the statement below it:
-'Sets the word "mercury" into the "username" edit box.
-Browser("Mercury Tours").Page("Mercury Tours").WebEdit("username").Set "mercury"
-By default, comments are displayed in green inside your VBScript code. You can customize the appearance of comments in the Fonts and Colors pane of the Text Editor tab in the Options dialog box (Tools > Options > Text Editor tab > General node).
-You can comment or uncomment a block of text by selecting Edit > Format > Comment/Uncomment.
-You can also add a comment line using the VBScript Rem statement. For details, see the Microsoft VBScript Language Reference (select Help > HPE Unified Functional Testing Help > VBScript Reference > VBScript).

@@ -1,9 +1,0 @@
-Three planes are going to the same place but each has a different number of passengers. The first plane has 50, the second had 60, and the third has 40. An empty plane can go 600 MPH, but each passenger makes it go 2 MPH slower. What is their average speed?
-The first plane goes 100 MPH slower than empty because 50 x 2 = <<50*2=100>>100
-The first plane goes 500 MPH because 600 - 100 = <<600-100=500>>500
-The second plane goes 120 MPH slower because 60 x 2 = <<60*2=120>>120
-The second plane goes 480 because 600 - 120 = <<600-120=480>>480
-The third plane goes 80 MPH slower because 40 x 2 = <<40*2=80>>80
-The third plane goes 520 MPH because 600 - 80 = 520
-The total speed is 1500 because 500 + 480 + 520 = <<500+480+520=1500>>1500
-Their average speed is 500 because 1500 / 3 = <<1500/3=500>>500

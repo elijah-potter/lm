@@ -1,7 +1,0 @@
-If you have a JSON formatted file, and you want to put it in the form of a string, with double quotes and newlines escaped, it’s a pain to do this manually. Note: if all you want to do is read in or print out JSON formatted text, then you can simply use the json library.
-In my case I wanted to copy the JSON from an API guide, and automatically convert it to an escaped string.
-The key line to escape quotes and new lines is:
-outstr = jsonstr.replace('"', '\\"').replace('\n', '\\n')
-If you need convert more than 2 characters there’s an interesting discussion about which is the most efficient method on Stackoverflow: Multiple character replace with python.
-Here’s my Python script that takes a JSON file name as a command line argument and prints out the escaped string. It checks if the file exists, though doesn’t check that it is a valid JSON file..
-# json2string.py - Python script to convert a formatted JSON file into a # string with escaped quotes and linefeeds for use in a REST call # # Usage: python json2string filename import sys import os.path def usage(): sys.exit('Usage: python ' + sys.argv + ' filename') # check for single command argument if len(sys.argv) != 2: usage() jsonfile = sys.argv # check file exists if os.path.isfile(jsonfile) is False: print('File not found: ' + jsonfile) usage() # get a file object and read it in as a string fileobj = open(jsonfile) jsonstr = fileobj.read() fileobj.close() # do character conversion here outstr = jsonstr.replace('"', '\\"').replace('\n', '\\n') # print the converted string print(outstr)

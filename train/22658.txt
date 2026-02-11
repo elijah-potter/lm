@@ -1,8 +1,0 @@
-An Intrinsic Reaction Coordinate calculation is to be run. All kinetic energy is shed at every point in the calculation. See Dynamic and Intrinsic Reaction Coordinates for more details.
-By default, steps of 0.05 Ångstroms are used. This default can be changed using keywords:
-To print reaction coordinate, RC, steps that are separated by constant distance, use X-PRIORITY or X-PRIORITY=n.nn.
-This is the option normally chosen.
-Movement along a RC is defined as the addition of the distances each atom moves through, so a default step along a RC means that the sum of the motions of all the atoms amounts to 0.05 Ångstroms. With rare exceptions, RCs are not straight lines through coordinate space, so the distance the atoms move over several steps is less than the sum of the individual steps. A consequence of this is that the distance between the starting and ending points of a RC is smaller than the length of the RC.
-Use LARGE to control print of internal coordinates and Cartesian coordinates.
-For double-sided IRC's, use IRC=1* or IRC=-1*
-In a multi-step reaction, individual reactions can be generated using IRC, then these reactions can be joined together using the Windows MOPAC utility program "JOIN"

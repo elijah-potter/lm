@@ -1,5 +1,0 @@
-Carlos bought a box of 50 chocolates. 3 of them were caramels and twice as many were nougats. The number of truffles was equal to the number of caramels plus 6.  The rest of the chocolates were peanut clusters. If Carlos picks a chocolate at random, what is the percentage chance it will be a peanut cluster?
-First find the number of nougats by doubling the number of caramels: 3 caramels * 2 nougats/caramel = <<3*2=6>>6 nougats
-Then find the number of truffles by adding 7 to the number of caramels: 3 caramels + 6 = <<3+6=9>>9 truffles
-Then find the number of peanut clusters by subtracting the number of each other chocolate from the total number of chocolates: 50 chocolates - 3 caramels - 6 nougats - 9 truffles = <<50-3-6-9=32>>32 peanut clusters
-Finally, divide the number of peanut clusters by the total number of chocolates and multiply by 100% to find the percentage chance he gets a peanut cluster: 32 peanut clusters / 50 chocolates *100% = 64%

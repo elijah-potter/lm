@@ -1,6 +1,0 @@
-Here's a function to calculate the sample standard deviation, written from scratch:
-
-def stdev(nums):
-    mean = sum(nums) / len(nums)
-    diffs = [(num - mean)**2 for num in nums]
-    return math.sqrt(sum(diffs) / (len(nums) - 1))

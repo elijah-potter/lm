@@ -1,8 +1,0 @@
-Matt wants to repaint his house. He needs to paint three walls in his living room, which is a square 40 feet by 40 feet, and all four walls in his bedroom, which is a rectangle 10 feet by 12 feet. All the walls in Matt's house are 10 feet tall. How many total square feet of wall does Matt need to paint?
-First figure out how many square feet a wall in the living room is: 40 feet length * 10 feet height = <<40*10=400>>400 square feet
-Now multiply by 3 since Matt needs to paint three living room walls: 400 square feet/wall * 3 walls = <<400*3=1200>>1200 square feet
-Next figure out how many square feet the long walls in the bedroom are: 12 feet * 10 feet = <<12*10=120>>120 square feet
-There are two long walls, so multiply this figure by 2: 120 square feet/wall * 2 walls = <<120*2=240>>240 square feet
-Next figure out how many square feet the short walls in the bedroom are: 10 feet * 10 feet = <<10*10=100>>100 square feet
-Multiply this by 2, since there are two short walls: 100 square feet/wall * 2 walls = <<100*2=200>>200 square feet
-Finally, add up the square footage from the three living room walls, the two short bedroom walls, and the two long bedroom walls: 1200 square feet + 240 square feet + 200 square feet = <<1200+240+200=1640>>1640 square feet

@@ -1,4 +1,0 @@
-
-There are a couple of contexts of traditional learning that might help you understand how models learn. The first is a classroom, where there is a teacher that filters and provides information to students so they can glean understanding from it. They teach with a target like improving the average standardized test scores in the room, not unlike supervised machine learning models. In contrast, scientists observe the environment around them in order to learn new things. The goals of this type of learning are not clearly defined, though the methods might be, so we are not quite sure what the results will look like. This mirrors the setup and results from unsupervised learning. The two techniques can be blended in a classroom, where a teacher sets up an environment for students to observe but does not directly lead them to any answers, similar to hybrid machine learning models. 
-
-Hope this helps!

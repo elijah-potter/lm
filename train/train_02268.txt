@@ -1,6 +1,0 @@
-A row of houses all share a community space where they put up their clotheslines. There are 2 clotheslines for every house on the street. On the street, there are a total of 11 children and 20 adults. Each child currently has 4 items of clothing on the clotheslines and each adult currently has 3 items of clothing on the clotheslines. If each clothesline can hold 2 items of clothing and all of the clotheslines are full, how many houses are on the street?
-From the children, there are a total of 11 children * 4 items of clothing each = <<11*4=44>>44 items of clothing on the clotheslines.
-From the adults, there are a total of 20 adults * 3 items of clothing each = <<20*3=60>>60 items of clothing on the clotheslines.
-So there are a total of 44 + 60 = <<44+60=104>>104 items of clothing on the clotheslines.
-This means that there are 104 items of clothing / 2 items of clothing per clothesline = <<104/2=52>>52 clotheslines.
-There are 2 clotheslines per house so there must be 52 clotheslines / 2 = <<52/2=26>>26 houses on the street.

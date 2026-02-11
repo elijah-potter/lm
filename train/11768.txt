@@ -1,8 +1,0 @@
-Calculates the month from the given date argument passed to the function using the Gregorian Calendar.
-A string or expression that can represent a date value. This includes any combination of date literals, numbers that look like dates, strings that look like dates, and dates from functions.
-Returns an integer between 1 and 12 inclusive, that represents the month of the year.
-Date | Year | WeekDay | Day
-Dim varMyBDate, varMyMonth
-varMyBDate = "08 July 1958"
-varMyMonth = Month(varMyBDate)
-' returns 7 for July

@@ -1,5 +1,0 @@
-A pharmacy is buying enough tubs for them to make their prescriptions this week. They already have 20 tubs left in storage but they need a total of 100 tubs for the week. Of the tubs they still need to buy, they buy a quarter from a new vendor then decide to go to their usual vendor for the rest. How many tubs is the pharmacy going to buy from the usual vendor?
-They already have 20 tubs in storage, so they only need to buy 100 needed tubs - 20 tubs in storage = <<100-20=80>>80 tubs.
-From the new vendor, they buy 80 tubs / 4 = <<80/4=20>>20 tubs.
-They now have a total of 20 + 20 = <<20+20=40>>40 tubs.
-They are therefore going to buy 100 needed tubs - 40 owned tubs = <<100-40=60>>60 tubs from the usual vendor.

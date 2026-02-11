@@ -1,3 +1,0 @@
-Nowadays, it may be not very surprising that computers can talk ;) How to make our computer talk to us using C++? How to start without any deep knowledge about Text To Speech Synthesis (TTS), Hidden Markov Modelling (HMM) or even without any recording? This article is a short tutorial for you. You will get your first synthesized speech sooner than you think.
-- eSpeak TTS engine
-- C++ skills and gcc compiler

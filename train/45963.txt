@@ -1,9 +1,0 @@
-Forwarding Equivalent Class or FEC is a new term to me. It is a fancy term to describe the mapping between MPLS labels and IPv4 or IPv6 prefixes and is fundamental to understanding MPLS.
-I first learned MPLS some years ago and this is the first time that I have come across this vocabulary. I guess i’ll start using it to sound super smart in my next bar conversation on MPLS…right
-In any case, after enabling MPLS Label Distribution Protocol (LDP) and a LDP peer session is established to a neighbor, labels will begin to be associated to destination prefixes. Routers will use the MPLS LFIB instead of the IP routing table to “switch” traffic.
-Label Distribution can be done in three ways
-- Label Distribution Protocol (LDP) – advertises labels for IGP learned routes
-- MP-BGP – Advertises labels for BGP learned routes
-- RSVP – Used for MPLS Traffic Engineering (MPLS TE)
-It’s important to remember that LDP, MP-BGP, RSVP perform label distribution or in other words impose labels onto routes. They have advantages in their distribution of labels which is why there is more than one option but something to keep in mind when talking about Label Distribution.
-So the term itself isn’t actually all that necessary to remember, which is in difference with in my opening comments but thought it was interesting vocabulary.

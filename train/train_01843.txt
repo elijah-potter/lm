@@ -1,6 +1,0 @@
-Carmen is counting the cars that pass by her window. All the cars are either white, black, or red. She sees 50 trucks and 40 cars. Half the trucks are red, and another 20% are black. If she picks one car at random, what is the percentage chance it's a white truck, rounded to the nearest integer?
-First find the total number of vehicles Carmen counted: 50 trucks + 40 cars = <<50+40=90>>90 vehicles
-Then find the number of trucks that were red: 50 trucks / 2 = <<50/2=25>>25 trucks
-Then find the number of trucks that were black: 50 trucks * .2 = <<50*.2=10>>10 trucks
-Then subtract the red and black trucks from the total number of trucks to find the number of white trucks: 50 trucks - 25 trucks - 10 trucks = <<50-25-10=15>>15 trucks
-Then divide the number of white trucks by the number of vehicles and multiply by 100% to find the percentage of vehicles that are white trucks: 15 trucks / 90 vehicles * 100% = 16.66...%, which rounds up to 17%.

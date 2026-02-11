@@ -1,7 +1,0 @@
-To know the position of a motor shaft, consider the following 3D printer. When does it *know* the bed reached it’s end?
-If we want to know in more detail the position of a motor shaft, consider a spinning disc and an infrared sensor. How many pulses will we read for a 360 degrees turn?
-Quadrature position encoders
-By adding another sensor, we can also measure the direction of the motor. Clockwise or Counter- clockwise.
-Higher position can also be achieved when using quadrature encoders:
-Absolute position encoders
-A researcher invented a simple but useful solution to noise in encoders. Here you can find an extract from Gray’s Patent:

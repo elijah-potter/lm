@@ -1,5 +1,0 @@
-John builds a toy bridge to support various weights.  It needs to support 6 cans of soda that have 12 ounces of soda.  The cans weigh 2 ounces empty.  He then also adds 2 more empty cans.  How much weight must the bridge hold up?
-The weight of soda was 6*12=<<6*12=72>>72 ounces
-It had to support the weight of 6+2=<<6+2=8>>8 empty cans
-The weight of the empty cans is 8*2=<<8*2=16>>16 ounces
-So it must support 72+16=<<72+16=88>>88 ounces

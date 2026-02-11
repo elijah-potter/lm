@@ -1,1 +1,0 @@
-The report was written by the committee; The committee wrote the report.

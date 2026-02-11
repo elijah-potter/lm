@@ -1,3 +1,0 @@
-Simulink Support Package for Arduino Hardware enables you to use the I2C interface to communicate with I2C based devices.
-In this example, you will learn how to communicate to the Sparkfun digital temperature sensor TMP102. This sensor is interfaced with the Arduino board using the I2C bus. By default, it will send a 12-bit temperature value with a resolution of 0.0625 degree Celsius. You can configure this sensor to an Extended mode that provides 13-bit temperature measurements. For more details about the device, refer to the TMP102 datasheet.
-Fonte e mais detalhes aqui

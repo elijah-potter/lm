@@ -1,6 +1,0 @@
-There are 3 kids waiting for the swings and twice as many kids waiting for the slide. If each kid waits 2 minutes for the swings and 15 seconds for the slide, how many seconds shorter is the shorter wait?
-First find the total wait time for the swings in minutes: 3 kids * 2 minutes/kid = <<3*2=6>>6 minutes
-Then convert that number to seconds: 6 minutes * 60 seconds/minute = <<6*60=360>>360 seconds
-Then find the total number of kids waiting for the slide: 3 kids * 2 = <<3*2=6>>6 kids
-Then find the total wait time for the slide: 15 seconds/kid * 6 kids = 90 seconds
-Then subtract the total wait for the slide from the total wait for the swings to find the difference: 360 seconds - 90 seconds = <<360-90=270>>270 seconds

@@ -1,6 +1,0 @@
-Mark makes custom dog beds. A bed for a Rottweiler takes 8 pounds of stuffing, a bed for a chihuahua takes 2 pounds of stuffing, and a bed for a collie takes the average amount of stuffing between the first two kinds of beds. How many pounds of stuffing does Mark need to make 4 chihuahua beds and 3 collie beds?
-First, find the total amount of stuffing in one Rottweiler bed and one chihuahua bed: 2 pounds + 8 pounds = <<2+8=10>>10 pounds
-Then divide the total stuffing amount by 2 to find the average stuffing amount: 10 pounds / 2 = <<10/2=5>>5 pounds
-Then find the amount of stuffing in 4 chihuahua beds: 2 pounds/bed * 4 beds = <<2*4=8>>8 pounds
-Then find the amount of stuffing in 3 collie beds: 5 pounds/bed * 3 beds = <<5*3=15>>15 pounds
-Then add the two amounts of stuffing to find the total amount of stuffing needed: 8 pounds + 15 pounds = <<8+15=23>>23 pounds

@@ -1,7 +1,0 @@
-In the examples above, a relationship has always been between occurrences in two different entities. However, it is possible for the same entity to participate in the relationship. This is termed a recursive relationship.
-Let us take the example of an employee who is also a manager. But a manager is also an employee, whose details will be held in the employee entity. To implement this a foreign key of the employee's manager number would be held in each employee record.
-Employee NI number
-Manager no * (this is the employee no of the employee's manager)
-Graphically, this can be shown as:
-This is commonly know as a 'pig's ear'.
-Another, more complicated example (don't worry, you will not be assessed on this) is showing the relationship between a person and their parents. This can be represented graphically by:

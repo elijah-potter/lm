@@ -1,6 +1,0 @@
-Section: User Commands (1)
-Updated: 15 June 1993
-Reads a Zeiss confocal file as input. Produces a portable anymap as output. The type of the output file depends on the input file - if it's grayscale a pgm file, else a ppm file will be produced. The program tells you which type it is writing.
-- Force the output to be a pgm file.:
-- Force the output to be a ppm file.:
-Copyright (C) 1993 by Oliver Trepte

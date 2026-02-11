@@ -1,1 +1,0 @@
-The provided Bash script lists all files in the current directory and for each one, writes its file name, file size, and modification date in YYYY-MM-DD to the inventory.csv file.

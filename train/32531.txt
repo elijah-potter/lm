@@ -1,4 +1,0 @@
-All types in the lattice are either valid, or else the empty type None. Base types, the immediate parents of the empty type None, partition the type space. Derived types, all the valid non-base types, are type unions of other valid types.
-Conversion from a specific to more general type is allowed, so that the edges in the type lattice represent the allowed type conversions, of types to their ancestors.
-The stream lexical analyzer prefers most specific valid types, so that all well-formed data fields observed as input are given as type one of the base types. The required types used in record format specifications, on the other hand, may be named by more general derived types, in order to accomodate input variety.
-Since base types have type codes a unique power of two, and derived types are bitwise disjunctive sums of their children, it follows that observed types are consistent with required types if and only if their bitwise sums are non-null. */

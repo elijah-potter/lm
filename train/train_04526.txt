@@ -1,5 +1,0 @@
-Cassie is trimming her pet's nails. She has four dogs and eight parrots. Each dog has four nails on each foot, and each parrot has three claws on each leg, except for one parrot who has an extra toe. How many nails does Cassie need to cut?
-First, find the number of dog nails by multiplying the number of dogs by the number of nails on each leg and the number of legs on each dog: 4 dogs * 4 legs per dog * 4 nails per leg = <<4*4*4=64>>64 nails.
-Then do the same for parrots, ignoring the one parrot's extra toe for now: 8 parrots * 2 legs per parrot * 3 nails per leg = <<8*2*3=48>>48 nails
-Now add one to the previous number because one parrot has an extra toe: 48 + 1 = <<48+1=49>>49 nails.
-Now add the number of nails from the parrots and the dog: 49 nails + 64 nails = <<49+64=113>>113 nails.

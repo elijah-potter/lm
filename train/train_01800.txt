@@ -1,6 +1,0 @@
-Silvia wants to buy a new guitar online. The price of the guitar has a suggested retail price of $1000. Guitar Center has a special deal of 15% off but has a shipping fee of $100. Sweetwater has a 10% off deal with free shipping. How much will she save by buying from the cheaper store compared to the other store?
-The discount saved when buying from Guitar Center would be $1000 * 15% = $<<1000*15*.01=150>>150.
-The total cost when buying from Guitar Center would be $1000 - $150 discount + $100 shipping = $950.
-The discount when buying from Sweetwater would be $1000 * 10% = $<<1000*10*.01=100>>100.
-The total cost when buying from Sweetwater would be $1000 - $100 discount + $0 shipping = $<<1000-100-0=900>>900.
-Thus, Silvia would save $950 - $900 = $<<950-900=50>>50 when buying from Sweetwater.

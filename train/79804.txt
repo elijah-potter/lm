@@ -1,5 +1,0 @@
-DHCP - Dynamic Host Configuration Protocol
-Dynamic Host Configuration Protocol is a network based protocol that assigns dynamic IP addresses to a computer, each time it connects to an IP network. DHCP protocol allows a computer to connect to an IP enabled network without a need to pre-configure it with specified IP address and other configuration information.
-With dynamic IP address, it means, every time a system is connected to a network, a new IP address is assigned to it from the pool of available IP addresses.
-To accomplish this, a DHCP protocol needs a server, known as a DHCP server. A DHCP server stores all the relevant information like a pool of IP addresses, subnet mask, network gateway and other relevant information that the system needs while connecting to a network.
-Dynamic Host Configuration Protocol resides at the topmost layer ie. the application layer of the TCP/IP model. The protocol also reduces the work of the system administrator, by allowing him not to configure IP addressing on any system.

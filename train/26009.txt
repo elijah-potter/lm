@@ -1,7 +1,0 @@
-I used many compilers like turboc ,gcc ,borland c,microsoft c terminal,,to test this problem.
-In c programming, there are many syntaxes different from their c++ counterpart,and i have seen that the above PURE C COMPILERS are accepting c++ syntaxes in betwen c code in a .c file, without any warning.
-One example is commenting:
-in c, we useas the syntax.Code:/*comment*/
-but i see that the compilers accept c++ syntax within c code,as well:
-Another example is that some compilers acceptCode://commentwhich is used in c++, in c code whereas it should beCode:#include <iostream.h>similarly,i have seen in many places that many people use the c++command cout to print statements instead of printf and it works!Code:#include <stdio.h>
-Why is this so??Suppose that a compiler can also compile c++.Then also,the code is in a .c file.Then,why is the c++ code being accepted flawlessly?

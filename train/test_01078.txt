@@ -1,8 +1,0 @@
-Paul is at a train station and is waiting for his train. He isn't sure how long he needs to wait, but he knows that the fourth train scheduled to arrive at the station is the one he needs to get on. The first train is scheduled to arrive in 10 minutes, and this train will stay in the station for 20 minutes. The second train is to arrive half an hour after the first train leaves the station, and this second train will stay in the station for a quarter of the amount of time that the first train stayed in the station. The third train is to arrive an hour after the second train leaves the station, and this third train is to leave the station immediately after it arrives.  The fourth train will arrive 20 minutes after the third train leaves, and this is the train Paul will board.  In total, how long, in minutes, will Paul wait for his train?
-The first train stays in the station for 10 minutes * 2 = <<10*2=20>>20 minutes.
-So Paul waits for the first train for 20 + 10 = <<20+10=30>>30 minutes.
-The second train arrives after half an hour, which is the same as 60 minutes / 2 = <<60/2=30>>30 minutes.
-It then stays in the station for a quarter of the time the first train did which is 20 minutes / 4 = <<20/4=5>>5 minutes.
-So Paul waits for the second train for 30 + 5 = <<30+5=35>>35 minutes.
-The third train arrives an hour later, which is the same as 60 minutes * 1 hour = <<60*1=60>>60 minutes.
-After the final wait, Paul has waited a total of 30 minutes for the first train + 35 minutes for the second train + 60 minutes for the third train + 20 minutes final wait = <<30+35+60+20=145>>145 minutes.

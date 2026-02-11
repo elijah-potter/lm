@@ -1,6 +1,0 @@
-A little while ago The people at Disney research released a video showing a new capacitive sensing techneque. We were all amazed over the result and expected some real electronic wizardry to be behind. After reading their paper about the subject it turned out that they used an effect we Tesla coilers often experience.
-A tesla coil secondary is a big coil of wire with a doughnut shaped electrode connected to one and the ground to the other. This form what is called a LC resonator. The inductance of the wirer and the capacitance of the doughnut interact to give the whole assembly a specific resonance frequency. Changing either the capacitance or the inductance alters the frequency.
-Another property of the assembly is that the ground wire seem to suck in signal at the resonance frequency. If the ground wirer is connected to the output of a signal generator it will draw current from the generator only at the resonance frequency. Touching the top electrode or even approaching it alters the capacitance.
-Assuming the inductance is constant the resonance frequency gives a measure for the capacitance in the system and thus the interaction.
-Substituting the Tesla primary winding with a 10mH potted inductor and the top electrode with a roll of solder I replicated the sensing method used by Disney Recearch.
-Less crappy video)

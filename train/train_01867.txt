@@ -1,5 +1,0 @@
-Carolyn wants to embroider her new jeans. She can sew 4 stitches/minute. A flower takes 60 stitches to embroider, a unicorn takes 180 stitches, and Godzilla takes 800 stitches. If Carolyn wants to embroider Godzilla crushing 3 unicorns and 50 flowers, how many minutes does she need to spend embroidering?
-First find the total stitches in all the flowers by multiplying the number of stitches per flower by the number of flowers: 50 flowers * 60 stitches/flower = <<50*60=3000>>3000 stitches
-Then do the same for the total number of stitches in the unicorns: 3 unicorns * 180 stitches/unicorn = <<3*180=540>>540 stitches
-Then add the number of stitches for all the flowers, unicorns, and Godzilla to find the total number of stitches: 800 stitches + 540 stitches + 3000 stitches = <<800+540+3000=4340>>4340 stitches
-Finally, divide the total number of stitches by the number of stitches Carolyn can make per hour to find how many hours she spends embroidering: 4340 stitches / 4 stitches/minute = <<4340/4=1085>>1085 minutes

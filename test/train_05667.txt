@@ -1,9 +1,0 @@
-Steve is holding nickels and dimes in his hand. He has 4 more dimes than nickels. He has a total of 70 cents in his hand. How many nickels is he holding?
-Let x be the number of nickels he is holding.
-His nickels are worth 5 * x = 5x cents.
-He has x+4 dimes.
-The dimes are worth 10 * (x+4)
-The total worth of the nickels and dimes is 5x + 10*(x+4) = 70.
-5x + 10x + 40 = 70
-15x = 30
-x = <<2=2>>2, Steve has 2 nickels in his hand.

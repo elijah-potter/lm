@@ -1,5 +1,0 @@
-A local town is expanding and wants to build several new homes across the next three years. In the first year, they will build 12 homes. In the next year, they will build three times this many homes. In the third year, they will count how many homes they have built and double the amount. How many homes will the town have built over the next three years?
-In the second year, they build three times as many homes as the first year which is 12 * 3 = <<12*3=36>>36 homes.
-So far in the two years, they've built 36+12 = <<36+12=48>>48 homes
-In the third year, they double the number of homes built in the first two years, so 48*2 = <<48*2=96>>96 homes.
-Altogether, the local town has built 48+ 96 = <<48+96=144>>144 homes.

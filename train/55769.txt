@@ -1,9 +1,0 @@
-Welcome to the Virus Encyclopedia of Panda Security.
-It carries out damaging actions on the affected computer.
-It does not spread automatically using its own means.
-|First detected on:||Jan. 28, 2007|
-|Detection updated on:||Jan. 28, 2007|
-Vaccination.A is a virus that spreads to other computers by copying its code to other files or programs.
-Vaccination.A uses the following propagation or distribution methods:
-- Exploiting vulnerabilities with the intervention of the user: exploiting vulnerabilities in file formats or applications. To exploit them successfully it needs the intervention of the user: opening files, viewing malicious web pages, reading emails, etc.
-- File infection: it infects different types of files, which are then distributed through any of the usual means: floppy disks, email messages with attachments, Internet download, files transferred via FTP, IRC channels, P2P file sharing networks, etc.

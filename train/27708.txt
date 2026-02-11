@@ -1,7 +1,0 @@
-To get a feel for HTML, you can use any text editing software such as NotePad, TextPad or EditPlus. Do not use Word, because it adds special codes to your text that a web browser will not be able to correctly interpret.
-HTML pages are composed of tags. All HTML tags are enclosed in angle brackets. For example <html> is an HTML tag.
-Here is the HTML for a very simple html page:
-<title> my first web page </title>
-this is easier than I thought
-After you save this HTML. You can double click on the file created to view the web page in a browser.
-From this example, you will probably notice a few things:

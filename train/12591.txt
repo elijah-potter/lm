@@ -1,7 +1,0 @@
-How do I search and replace text in a file using Python 3?
-Here is my code:
-import os import sys import fileinput print ("Text to search for:") textToSearch = input( "> " ) print ("Text to replace it with:") textToReplace = input( "> " ) print ("File to perform Search-Replace on:") fileToSearch = input( "> " ) #fileToSearch = 'D:\dummy1.txt' tempFile = open( fileToSearch, 'r+' ) for line in fileinput.input( fileToSearch ): if textToSearch in line : print('Match Found') else: print('Match Not Found!!') tempFile.write( line.replace( textToSearch, textToReplace ) ) tempFile.close() input( '\n\n Press Enter to exit...' )
-hi this is abcd hi this is abcd This is dummy text file. This is how search and replace works abcd
-When I search and replace 'ram' by 'abcd' in above input file, it works as a charm. But when I do it vice-versa i.e. replacing 'abcd' by 'ram', some junk characters are left at the end.
-Replacing 'abcd' by 'ram'
-hi this is ram hi this is ram This is dummy text file. This is how search and replace works rambcd

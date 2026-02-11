@@ -1,4 +1,0 @@
-Jerry owes a loan shark $200. The loan shark charges Jerry 10% interest compounded monthly. (This means that every month the loan shark adds Jerry's interest amount to his loan, and the next month Jerry has to pay 10% on the new total). If Jerry doesn't make any payments, how much (in dollars) does the loan shark charge in interest the second month?
-First calculate how much the loan shark charges in interest the first month by multiplying the loan amount by the interest rate: $200 * 10% = $<<200*10*.01=20>>20
-Now add the interest amount to the original amount of the loan to find Jerry's new total: $200 + $20 = $<<200+20=220>>220
-Now multiply the new total by 10% to find out how much Jerry owes the loan shark in interest the second month: $220 * 10% = $<<220*10*.01=22>>22

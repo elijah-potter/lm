@@ -1,9 +1,0 @@
-Kelly is grocery shopping at a supermarket and is making sure she has enough in her budget for the items in her cart. Her 5 packs of bacon cost $10 in total and she has 6 packets of chicken which each cost twice as much as a pack of bacon. She also has 3 packs of strawberries, priced at $4 each, and 7 packs of apples, each priced at half the price of a pack of strawberries. If Kelly’s budget is $65 then how much money, in dollars, does she have left in her budget?
-Each pack of bacon costs Kelly $10 total / 5 packs of bacon = $<<10/5=2>>2.
-So each pack of chicken costs $2 per pack of bacon * 2 = $<<2*2=4>>4.
-All of the chicken will therefore cost 6 packets of chicken * $4 per pack of chicken = $<<6*4=24>>24.
-The strawberries will cost her 3 packs of strawberries * $4 per pack of strawberries = $<<3*4=12>>12.
-Each pack of apples costs Kelly $4 per pack of strawberries / 2 = $<<4/2=2>>2.
-So all of the apples will cost her a combined total of 7 packs of apples * $2 per pack of apples = $<<7*2=14>>14.
-In total, Kelly’s shopping so far costs $10 for bacon + $24 for chicken + $12 for strawberries + $14 for apples = $<<10+24+12+14=60>>60.
-She therefore has $65 budget - $60 for shopping = $<<65-60=5>>5 left in the budget.

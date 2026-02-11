@@ -1,9 +1,0 @@
-This function block is used to convert signals of one data type to signals of another data type.
-It can also be used to assign values of a single data type (if the input and the output have the same data type).
-The parameter dialog can be used to select the data type and the number of elements for the source and destination.
-|X||I||BIT, BYTE, WORD, FLOAT, LONG||Input signal|
-|Y||O||BIT, BYTE, WORD, FLOAT, LONG||Output signal|
-The color of the selected data types and the number of elements (if greater than one) will be depicted in the symbol.
-The data type of the input can be assigned by creating a new connection.
-If the data type is changed by the parameter dialog, all invalid connections will be deleted.
-The following example shows how to convert a BIT vector into a single WORD value and back into a BIT vector.

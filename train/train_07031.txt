@@ -1,5 +1,0 @@
-Sally was at a self-serve candy shop where you scoop candy from the bins and pay based on the weight. She scoops 32 cherry sours into a bag. Then she gets a scoop of lemon sours, and the ratio of cherry sours to lemon sours is 4:5. Then she gets a scoop of orange sours, and they make up 25% of the sours in the bag. How many sours does she have in total?
-She has 4 cherry sours for every 5 lemon sours, so the number of lemon sours = (5 lemon sours* 32 cherry sours) / 4 cherry sours = <<5*32/4=40>>40 lemon sours.
-This puts the total at 32 cherry sours + 40 lemon sours = <<32+40=72>>72 sours.
-After the orange sours are added, they make up 25% of the total sours. Let x = the total number of sours.
-x - 0.25*x = 72 sours => 0.75*x = 72 sours => x = 72 sours / 0.75 = <<72/0.75=96>>96 sours total.

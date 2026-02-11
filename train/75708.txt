@@ -1,9 +1,0 @@
-search across all the following databases:
-Data and documentation
-Common questions and answers.
-Entire collection of data resources.
-Everyone expected that the American Community Survey (ACS) would provide characteristics at the zip code level with the release of the first 5-year product (2005-2009). However, it took several years before this geographic level was available from the Census Bureau. Zip code data are available from the Census Bureau starting with the 2007-2011 release.
-For users who need the data for earlier years here is an example showing how to create zip code data when it doesn't exist. Another use would be to produce race-specific characteristics, which are often not available for zip codes. The example is based on data from 2006-2010 ACS:
-We are providing a national zip code file of two of the most commonly requested characteristics: median household income and mean household income:
-Note, that it is not really appropriate to weight medians to produce a new weighted median. However, many users prefer median household income to mean household income, so we have gone ahead and created this at the zip code level.
-How to Compute Characteristics at Zip Coded Level

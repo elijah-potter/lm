@@ -1,9 +1,0 @@
-|• Regexp Usage:||How to Use Regular Expressions.|
-|• Regexp Operators:||Regular Expression Operators.|
-This appendix is derived from the
-A regular expression, or regexp, is a way of describing a set of strings. The simplest regular expression is a sequence of letters, numbers, or both. Such a regexp matches any string that contains that sequence. Thus, the regexp ‘foo’ matches any string containing ‘foo’. Other kinds of regular expressions let you specify more complicated classes of strings.
-Gcal uses exactly one of the following regular expression programming libraries respectively methods, and that in the decreasing priority how it is chosen at configuration time, or better, compile time of the software:
-|4.||System V |
-|5.||Henry Spencer V8 |
-|6.||Pattern matching is supported, but without metacharacters|
-Try ‘gcal --version’ for detecting the kind of regular expression programming library respectively method that is burned in your Gcal program!

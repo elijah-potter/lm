@@ -1,8 +1,0 @@
-Your company has two main offices. The offices are located in London and Seattle. All servers run
-Windows Server 2016. In the Seattle office, you have a Distributed File System (DFS) server named FS1. FS1 has a folder named Folder1 that contains large Windows image files.
-In the London office, you deploy a DFS server named FS2, and you then replicate Folder1 to FS2. After several days, you discover that the replication of certain files failed to complete. You need to ensure that all of the files in Folder1 can replicate to FS2.
-What should you do?
-A . Modify the disk quota of the drive that contains Folder1.
-B . From a command prompt, run dfsutil /purgemupcache.
-C . Create a quota for Folder1 by using File Server Resource Manager (FSRM).
-D . Modify the size of staging area of Folder1.

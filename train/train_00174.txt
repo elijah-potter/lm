@@ -1,4 +1,0 @@
-Mark has two pets, a hare that runs 10 feet/second and a turtle that crawls 1 foot/second. If they're going to run a 20 foot-race, how much of a head start (in seconds) does the turtle need to finish in a tie?
-We can find how long the hare spends running by dividing the distance of the race by the hare's speed: 20 feet / 10 feet/second = <<20/10=2>>2 seconds
-We can do the same for the turtle: 20 feet / 1 foot/second = <<20/1=20>>20 seconds
-Finally, subtract the hare's run time from the turtle's run time to find the length of the head start the turtle needs: 20 seconds - 2 seconds = <<20-2=18>>18 seconds

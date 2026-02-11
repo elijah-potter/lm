@@ -1,4 +1,0 @@
-Marcy makes homemade candles that she markets as 99% guaranteed not to explode. 5% of the more dangerous candles also have a defect that makes them smell like wet dog. If she makes 50000 candles, how many of them will both smell like wet dog and explode?
-First find what percentage of the candles explode: 100% - 99% = 1%
-Then multiply the odds of the candles exploding by the odds of them smelling like wet dog to find the probability of both events happening: 1% * 5% = 0.05%
-Then multiply that percentage by the number of candles to find the number of them that have both defects: 0.05% * 50000 candles = <<0.05*.01*50000=25>>25 candles

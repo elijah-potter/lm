@@ -1,8 +1,0 @@
-new keyword: infixlr?
-S. Doaitse Swierstra
-doaitse at cs.uu.nl
-Fri Sep 10 13:51:10 EDT 2010
-Currently Haskell has infix, infixl and infixr operators. I see a use for infixlr as well. This indicates that the implemtation may assume the operator to be associative, and thus has the freedom to "balance" an expression containing several operator occurrences.
-The reason that I bring up this is that in a new combinator I have added to my parser library (the <||> in Text.ParserCombinators.UU.Derived) internally uses cartesian products, which are being constructed and updated. If the compiler had the right to interpret the expressions a <||> b <||>c <||> d as e.g. (a <||> b) <||> (c <||> d) then the updating time for would go down from O(n) to O(log n).
-I admit it is probably a minor point, but given the increased use of "type level" programming, and the use of cartesian products to keep "lists of values of a different type", I can also see many good uses for this.
-More information about the Haskell-prime

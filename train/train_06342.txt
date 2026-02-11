@@ -1,3 +1,0 @@
-A cargo ship moving from Shanghai to Vancouver navigates for 21 days before reaching port. Customs and regulatory processes in Vancouver last 4 days. Finally, moving the cargo from the port to your rural warehouse takes some time and it always arrives on the seventh day. How many days ago should the ship have departed if your warehouse is expecting the shipment 2 days from today?
-The total lead time for the cargo is 21 days on water + 4 in customs + 7 to the warehouse or 21+4+7 = <<21+4+7=32>>32 days
-If the warehouse is expecting the cargo in 2 days from today then the cargo should have already completed 32 - 2 = <<32-2=30>>30 days of lead time

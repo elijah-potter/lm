@@ -1,3 +1,0 @@
-This is a method that will calculate the rounded integer square root of an integer, x. Let's break down each part of the return statement.
-
-The bisect_right method will take an input list as a parameter, which in this case, the list is a list of integers from 0 to x inclusive - and insert a given element (x) in a sorted position into this list. The key function defined here is the function that will be used for sorting/comparison. The return value of the bisect_right method is the insertion point where the element x fits into this list. Therefore, when we use m*m (the squared function) as the key function, what it will end up doing is finding the rounded down integer value in the list that comes closest to the square root of x.

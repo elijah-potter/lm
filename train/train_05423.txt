@@ -1,9 +1,0 @@
-There are 3 numbers that are consecutive integers. Together they have a sum of 18. What is the largest of the 3 numbers?
-Let N = smallest number
-N + 1 = next number
-N + 2 = largest number
-N + (N + 1) + (N + 2) = 18
-3N + 3 = 18
-3N = <<3*5=15>>15
-N = <<5=5>>5
-The largest number is <<7=7>>7.

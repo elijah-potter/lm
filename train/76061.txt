@@ -1,5 +1,0 @@
-NamedTuple is a tuple subclass that allows its elements to be named. Elements can be accessed by index and by name.
-Python, 22 lines
-A common usage of tuples is to represent aggregations of heterogenous data, as a kind of anonymous data structure. The built-in tuple type only allows the elements to be accessed by their indices; this leads to a loss of clarity: seeing x in code is less clear than x.middlename, for example.
-The NamedTuple class allows construction of tuples with named elements. These elements can then be accessed by index or by name, as convenient. For example:
-Because NamedTuple is a subclass of tuple, all the standard tuple methods will work on it as usual. This provides the convenience of tuples with the clarity of named elements.

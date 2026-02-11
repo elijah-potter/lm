@@ -1,6 +1,0 @@
-Most modern laptops come installed with a wireless network adapter, which allows the computer to access wireless Internet signals. It can be useful to know what type of wireless card is installed on your laptop for situations such as troubleshooting your connection and updating the card with new drivers.
-Go to the Start menu and open the Control Panel.
-Video of the Day
-In the Control Panel, open the Device Manager.
-Locate Network Adapters in the Device Manager list. Click on the plus sign next to Network Adapters to expand a list of all networking devices on your computer. Your wireless card should be listed, and most likely a LAN adapter as well.
-Alternately, you can open the Network and Sharing Center in the Control Panel, and then click on "Manage Network Connections." Find your wireless connection in the list and right-click it, then select "Status." Under the Status menu, click "Details." This will produce a list of information about your Internet connection, including your wireless card.

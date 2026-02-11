@@ -1,5 +1,0 @@
-The vending machine fails to drop a snack when it’s purchased one in six times. One in ten times, it will accidentally drop two snacks. The rest of the time, it drops the purchased snack. If thirty people have used the vending machine once each to purchase a snack, how many snacks has the vending machine dropped?
-The vending machine has been used 30 times, so it has failed to drop a snack 30 / 6 = <<30/6=5>>5 times.
-The vending machine has dropped 2 snacks 30 / 10 = <<30/10=3>>3 times.
-It has operated normally and dropped 1 snack 30 - 5 - 3 = <<30-5-3=22>>22 times.
-Thus, the vending machine has dropped 22 + 3 * 2 = 22 + 6 = <<22+3*2=28>>28 snacks in thirty uses.

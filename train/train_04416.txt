@@ -1,8 +1,0 @@
-In a single day, it rained for many hours. From 2pm to 4pm, it rained at a rate of 4 inches per hour.  From 4pm to 7pm, it rained at a rate of 3 inches per hour.  And from 7pm to 9pm, it rained at a rate of 0.5 inches per hour.  If the rain gauge started out the day already containing 2 inches of rainwater, how many inches of water will the gauge contain at 9pm?
-From 2pm to 4pm is 4-2=2 hours.
-Thus, from 2-4pm, raining at 4 inches per hour, it added 8 inches to the rain gauge.
-From 4pm to 7pm is 7-4=<<7-4=3>>3 hours.
-Thus, from 4-7pm, raining at a rate of 3 inches per hour, it added 3*3=<<3*3=9>>9 inches to the rain gauge.
-From 7pm to 9pm is 9-7=<<9-7=2>>2 hours.
-Thus, from 7-9pm, raining at a rate of 0.5 inches per hour, it added 2*0.5=1 inch to the gauge.
-If the gauge originally contained 2 inches of water, by 9pm the gauge contained 2+8+9+1=<<2+8+9+1=20>>20 inches of water.

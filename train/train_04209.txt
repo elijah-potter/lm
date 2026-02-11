@@ -1,4 +1,0 @@
-A book is 98 pages long. Half of the pages are filled with images, and 11  with an introduction. Of the remaining pages, half are blank and the other half are filled with text. How many pages with text are there?
-Half of the pages are images, which means 98 * 0.5 = <<98*0.5=49>>49 pages.
-So there are 98 - 49 - 11 pages for the introduction = <<98-49-11=38>>38 remaining pages.
-Half of the remaining pages are filled with text, which means 38 * 0.5 = <<38*0.5=19>>19 pages.

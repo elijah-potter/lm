@@ -1,7 +1,0 @@
-is an option that can be given in certain algebraic functions to specify that integers should be treated modulo n.
-- Modulus appears as an option in Solve, Reduce, Factor, PolynomialGCD, and PolynomialLCM, as well as in linear algebra functions such as Inverse, LinearSolve, and Det.
-- Arithmetic is usually done over the full ring of integers; setting the option Modulus specifies that arithmetic should instead be done in the finite ring .
-- The setting Modulus->0 specifies the full ring of integers.
-- Some functions require that Modulus be set to a prime, or a power of a prime. is a finite field when is prime.
-- Equations for Modulus can be given in Eliminate and related functions.
-Introduced in 1988

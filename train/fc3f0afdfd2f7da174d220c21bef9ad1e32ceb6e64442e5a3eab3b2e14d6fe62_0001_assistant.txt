@@ -1,4 +1,0 @@
-Here is a JSDoc comment that uses only a single @type tag:
-/**
- * @type {<const T extends readonly string[]>(keys: T) => { readonly [K in T[number]]: string }}
- */

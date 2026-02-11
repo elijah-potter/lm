@@ -1,6 +1,0 @@
-Ariana is past due on three bills. The first bill for $200 charges 10% simple interest for each overdue month and it's 2 months overdue. The second bill for $130 charges a flat $50 late fee per month and is 6 months overdue. The last bill is two months late and charges a $40 fee the first month overdue and twice that fee the second month overdue and is for $444. How much does Ariana owe in total?
-First find the monthly late fee for the first bill: $200 * 10% = $<<200*10*.01=20>>20
-Then multiply that by the number of months the bill is overdue: $20/month * 2 months = $<<20*2=40>>40
-Then find the total late fee for the second bill the same way: $50/month * 6 months = $<<50*6=300>>300
-Then find the third bill's second late fee: 2 * $40 = $<<2*40=80>>80
-Then add all the bill amounts and late fees to find the total cost: $40 + $200 + $300 + $130 + $40 + $80 + $444 = $<<40+200+300+130+40+80+444=1234>>1234

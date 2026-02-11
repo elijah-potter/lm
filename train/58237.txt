@@ -1,6 +1,0 @@
-This tutorial contains description of isThreadSafe attribute of page Directive.
-isThreadSafe Attribute :
-isThreadSafe attribute is one of attribute of page directives. It is used at the beginning of the JSP page. This attribute defines the behavior of threads. It specifies that the thread is safe or not. It represents the way that a web server dispatches the multiple client request. It is of boolean type so returns true or false value. Default value of this attribute is true. That means that the web container can dispatch the multiple client request to the JSP page. the false value shows that the web container can dispatch only one request at a time.
-<%@ page isThreadSafe="true" %>
-<[email protected] isThreadSafe="true"%> <html> <head> <title>isThreadSafe attribute.</title> </head> <body> <font color="violet" size="5"> isThreadSafe attribute example of page directive.</font> </body> </html>
-Posted on: November 29, 2012 If you enjoyed this post then why not add us on Google+? Add us to your Circles

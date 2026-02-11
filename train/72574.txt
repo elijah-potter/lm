@@ -1,3 +1,0 @@
-Plain-text authentication assumes that the user name and password are submitted to the server in clear text. The server validates the password against its user database to determine whether the password is correct. Since the password is sent in clear text, any intermediate router on the Internet can potentially see it. Therefore, this authentication method is only considered secure when using an encrypted connection.
-To use the plain-text authentication with the Zenfolio API, invoke the AuthenticatePlain method and pass it the user name and password. If the provided password matches the user name, the return value is the authentication token.
-Note: this method only works over an HTTPS connection.

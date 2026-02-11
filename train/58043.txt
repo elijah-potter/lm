@@ -1,6 +1,0 @@
-As we talked about here, there was plans afoot to group-solve online an interesting and problem from the IMO. The online discussion going on right now (unless, of course, you’re reading this later). They decided to work on Question 3. Here it is:
-Problem 3. The liar’s guessing game is a game played between two players and . The rules of the game depend on two positive integers and which are known to both players.
-At the start of the game, chooses two integers and with . Player keeps secret, and truthfully tells to player . Player now tries to obtain information about by asking player A questions as follows. Each question consists of specifying an arbitrary set of positive integers (possibly one specified in a previous question), and asking whether belongs to . Player may ask as many such questions as he wishes. After each question, player must immediately answer it with yes or no, but is allowed to lie as many times as she wishes; the only restriction is that, among any consecutive answers, at least one answer must be truthful.
-After has asked as many questions as he wants, he must specify a set of at most positive integers. If belongs to , then wins; otherwise, he loses. Prove that:
-- If , then can guarantee a win.
-- For all sufficiently large , there exists an integer such that cannot guarantee a win.

@@ -1,4 +1,0 @@
-- Why does monomorphism restriction exist?
-plus = (+)
-- Related extensions
-When you don’t specify a type for an expression, Hindley-Milner infers the most general, maximally-polymorphic type that your expression could possibly have. The designers of Haskell deemed that in some circumstances this leads to particularly unintuitive results,A History of Haskell: being lazy with class by Paul Hudak, John Hughes, Simon Peyton Jones, and Philip Wadler; 2007. and so they invented monomorphism restriction to place some limitation on the situations in which the compiler is allowed to infer a polymorphic type.

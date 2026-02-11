@@ -1,9 +1,0 @@
-|Top Previous Next|
-The I/O object controls your device's individual I/O lines and ports. Each port groups eight I/O lines. You can control the state of each line or entire port.
-The list of available I/O lines and ports is platform-specific, i.e. it depends on your device. Two enum constant sets -- pl_io_num and pl_io_port_num -- define the set of available lines and ports. You can find the declaration of these enums in your platform documentation (for example, EM1000's is here).
-There are two different methods for controlling I/O lines (ports):
-•Method with pre-selection;
-•Method without pre-selection.
-I/O lines of your device can work as both inputs and outputs -- Controlling Output Buffers topic explains this.
-Some I/O lines can work as interrupts -- see Working With Interrupts for explanation. The list of available interrupt lines is platform-specific. The pl_int_num enum constant set defines the set of related variables. Again, please refer to your platform documentation.
-On many devices, a number of I/O lines may be shared with inputs/outputs of special function blocks (serial ports, etc.). When a special function block is enabled, I/O lines it uses cannot (should not) be manipulated though the io object.

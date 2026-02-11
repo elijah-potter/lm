@@ -1,5 +1,0 @@
-## Lost in the Bookstore (Seattle, WA)
-
-I was browsing the poetry section at Elliott Bay Book Company last Saturday afternoon, completely absorbed in a collection by Mary Oliver. You were across from me, examining a volume of essays, and the light from the large front windows caught the auburn highlights in your hair. I noticed the quiet, almost reverent way you handled the book, a gentleness that felt instantly familiar. There was a distinct aroma of old paper and leather, a comforting, nostalgic scent that seemed to deepen the moment. We didn't speak, of course; such encounters rarely involve words. But I felt a peculiar resonance, a fleeting sense of connection that lingered even after you moved on. I watched you head towards the checkout, and then you were gone. I know this is a long shot, but I’m hoping to see if you might remember.
-
-If you were the person with auburn-streaked hair browsing poetry last Saturday at Elliott Bay, please reply with the title of the Mary Oliver collection I was reading.

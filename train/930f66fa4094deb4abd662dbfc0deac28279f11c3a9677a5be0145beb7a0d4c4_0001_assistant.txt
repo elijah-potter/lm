@@ -1,5 +1,0 @@
-A UnicodeEncodeError indicates that your DataFrame includes a non-ascii character that is causing an error when trying to write it to a CSV file, which uses the default ASCII encoding. To resolve the error, you can use the `encoding` parameter with the `.to_csv()` method to specify the character encoding you would like to use. This is an example:
-
-df.to_csv('mydataframe.csv', encoding='utf-8', index=False)
-
-This will write the DataFrame to "mydataframe.csv" using UTF-8 encoding specified by `encoding=utf-8`. UTF-8 is a common encoding that covers a wide range of characters from all languages, but if your character is not in the UTF-8 character set, you may need to look up the specific encoding that your character is a part of. The U+6E2F character appears to be a traditional Chinese character, which is supported by UTF-8.

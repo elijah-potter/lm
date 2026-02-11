@@ -1,7 +1,0 @@
-Team Soccer Stars plays in a soccer league. They played a total of 20 games, and won 14 games, lost 2, and drew the rest of the matches. They earn 3 points for a win, 1 point for a draw, and nothing for a loss. How many points did they have at the end of the season?
-Soccer Stars won and lost a total of 14+2 = <<14+2=16>>16 games.
-This means they drew 20 - 16 = <<20-16=4>>4 games.
-The total points from the wins are 14*3 = <<14*3=42>>42 points.
-The total points from draws are 4*1 = <<4*1=4>>4 points.
-The total points from the losses are 2 * 0 = <<2*0=0>>0 points.
-They had 42+4+0 = <<42+4+0=46>>46 points when the season ended.

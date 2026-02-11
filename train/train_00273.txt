@@ -1,8 +1,0 @@
-Oliver has 10 $20 and 3 $5 bills. William has 15 $10 and 4 $5 bills. How much more money does Oliver have than William?
-Oliver's $20 bills amount to $20 x 10 = $<<20*10=200>>200.
-Oliver's $5 bills amount to $5 x 3 = $<<5*3=15>>15.
-So, Oliver has a total of $200 + $15 = $<<200+15=215>>215.
-William's $10 bills amount to $10 x 15 = $<<10*15=150>>150.
-William's $5 bills amount to $5 x 4 = $<<5*4=20>>20.
-So, William has a total of $150 + $20 = $<<150+20=170>>170.
-Therefore, Oliver has $215 - $170 = $<<215-170=45>>45 more than William.

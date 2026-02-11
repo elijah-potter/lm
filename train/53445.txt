@@ -1,7 +1,0 @@
-Hanging objects may be made to oscillate in a manner similar to a simple pendulum. The motion can be described by "Newton's 2nd law for rotation":
-where the torque is
-and the relevant moment of inertia is that about the point of suspension.
-The resulting equation of motion is:
-This is identical in form to the equation for the simple pendulum and yields a period:
-The period is not dependent upon the mass, since in standard geometries the moment of inertia is proportional to the mass.
-For small displacements, the period of the physical pendulum is given by

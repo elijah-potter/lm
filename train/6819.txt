@@ -1,7 +1,0 @@
-Image via Wikipedia
-I tweeted this over the weekend, but it deserves a bigger mention than that. Patrick Thomson has written a wonderful description of why jQuery is a monad including a discussion of cautious computation and state transformations. No need to know monads or jQuery (although an interest in one will help you appreciate the other).
-- Monads wrap themselves around other data types
-- Monads have an operator that performs this wrapping
-- Monads can feed the wrapped value to a function as long as that function also returns a monad
-Anyone familiar with jQuery will immediately recognize that this is a good, abstract description of jQuery's operation. The beauty of this, from jQuery's perspective is a nice programming style called "chaining" where wrapped chunks of the DOM are passed from operator to operator in pipeline fashion. Using this style effectively results in compact, yet readable code with little need for intermediate variables.
-You may find it ironic to think of DOM manipulation happening in a functional style, but that's just what jQuery allows. So, if you're a jQuery programmer you may be moving more and more toward a functional style of programming without even knowing it.

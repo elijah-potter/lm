@@ -1,2 +1,0 @@
-Here is a Bash script that replaces all single quotes in JavaScript source files:
-find . -name "*.js" | grep -v node_modules | grep -v .map | xargs sed -i "s/'/\"/g"

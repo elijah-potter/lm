@@ -1,6 +1,0 @@
-Simply speaking, OCamlSDL is an attempt to write a software interface between the ML programming language and the SDL C library. The ML inplementation we have choosen is OCaml.
-Objective Caml is a type-inferring functional programming language from the ML (Meta Language) family. OCaml is a french implementation developped at INRIA.
-SDL stands for Simple DirectMedia Layer. It is a generic API that provides low level access to audio, keyboard, mouse, and display framebuffer across multiple platforms. This library was written by Sam Lantinga and is used at Loki Entertainment to port Windows games to the Unix platform. This library is also considered as a standard for the development of multimedia applications on GNU/Linux platforms.
-For more informations, go to the SDL home page. There is also some usefull library which comes with SDL. OCamlSDL is interfacing with the following:
-The final goal is perhaps to write some games in ML? Why not? Or, in a more realistic way, to prototype games or multimedia applications before entering in the real production phase. ML is an excellent language for that kind of things.
-OCamlSDL is distributed under the terms of the LGPL (Library GNU Public Licence). Go to the GNU web page for more informations on this licence.

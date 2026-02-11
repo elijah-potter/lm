@@ -1,1 +1,0 @@
-The Javascript function you provided seems to take in parameters for a number and length and then create a list of multiples for the number parameter up until the list has reached the specified length. Then the function completes by returning the list.

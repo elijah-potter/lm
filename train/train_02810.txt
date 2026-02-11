@@ -1,5 +1,0 @@
-Jenny's property tax rate is 2%. Her house is currently worth $400,000. The city is about to build a new high-speed rail project nearby, which will increase her house's value by 25%. Jenny can only afford to spend $15,000/year on property tax. How many dollars worth of improvements can she make to her house before her property tax bill gets too high?
-First find how much the rail project will increase the house value by multiplying the initial value by 25%: $400,000 * .25 = $<<400000*.25=100000>>100,000
-Then add that amount to the initial value to find the new value: $100,000 + $400,000 = $<<100000+400000=500000>>500,000
-Then divide the maximum amount of property tax Jenny can afford to pay by the property tax rate to find the maximum value her house can have: $15,000 / .02 = $<<15000/.02=750000>>750,000
-Now subtract the house's value after the rail project from the maximum value to find how much value the improvements can have: $750,000 - $500,000 = $<<750000-500000=250000>>250,000

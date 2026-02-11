@@ -1,4 +1,0 @@
-A cookfire burns three logs every hour. It was built with six logs to start. If it gets two more logs added to it at the end of every hour, how many logs will be left after 3 hours?
-After 3 hours, it will have 3 * 2 = <<3*2=6>>6 logs added to it.
-After 3 hours, it will have burned 3 * 3 = <<3*3=9>>9 logs.
-After 3 hours, the cookfire will have 6 + 6 - 9 = <<6+6-9=3>>3 logs left.

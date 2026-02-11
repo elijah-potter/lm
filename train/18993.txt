@@ -1,9 +1,0 @@
-What is MySQL?
-MySQL is an open-source relational database management system (RDBMS) that uses Structured Query Language (SQL). Linux, UNIX, and Windows are just a few of the platforms on which MySQL runs. Although it can be applied to a variety of applications. Internet publishing and web applications are where MySQL is most frequently used.
-In addition, we also employ MySQL as the database engine for our Linux hosting accounts. It allows you to organizely store documents, files, and photographs so that they can be accessible from your website.
-What is SQL?
-Well, SQL is the most popular language for adding, managing, and accessing the content in a database. Its most noted features are quick processing, proven reliability, ease, and flexibility of use. Furthermore, MySQL is an essential part of almost every open source PHP application. Some good examples for PHP & MySQL-based scripts are WordPress, Drupal, and Joomla!.
-These are the main SQL installations people use that you may download:
-This library is small and gets embedded inside the application which you’re making. This saves you the time from having to communicate through ports, and it’s incredibly fast. Its feature set is limited (compared to other services).
-The biggest name around. It is a lot more feature-rich than SQLite. It’s very easy to install, and there are lots of tutorials and help out there.
-The advanced option. It is definitely not where you want to be as a beginner. The good side of it is that it is powerful and highly extensible (although it’s not as popular as MySQL).

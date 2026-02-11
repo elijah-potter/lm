@@ -1,9 +1,0 @@
-1. Required energy to cycle
-It is important to know the required power for different situations such as climbing hills. In the Excel sheet / tabsheet "Power required" the required power is calculated and plotted in a speed-power graph. We can experiment with the bicycle parameters. The solar bike parameters are not known well at the moment and are estimated. Te air drag is the most important factor. For the solar bike I assume that the reference area is in-between that of a racing bicycle and an upright bike, namely 0.5m2. The total weight of 90 kg is for a solar bike of 18 kg, a rider of 70 kg and some luggage of 2 kg.
-As we can see in the Excel sheet we require about 80 W for a speed of 20 km/h on a flat street, without wind. In the table below (source "The Velomobile as a Vehicle for more Sustainable Transportation"), we see that 100W power on a good regular bicycle gives a speed of 20.5 km/h.
-As we can see later, the solar panels can deliver between 120W and 150W at optimum circumstances. For climbing hills however, more power is required than the solar panels can deliver. Here we have to pedal and the motor gives assistance.
-2. Human power
-Here is a graph of the long term human power capability (Human Powered Vehicle Association IHPVA) :
-The steepness of the curve points to how sensitive human are to an increase in power demands. That is the reason that climbing hills is so exhausting. In this respect, an motor power of only 100W is already helpful.
-3. Energy costs of cycling
-Suppose, you charge your e-bike battery at a cafe. What are the costs for the cafe owner? You tend to say about 1 Euro. But amazingly, the costs are negligible. For a normal e-bike battery of 400Wh, the electricity costs are lower than 10 cent at a KWh price of 20 cents. The cyclist himself, who ride 100km, converts an energy of 500Wh to 750Wh. Also, the electric bike electricity costs per km are more than 50 times lower than the fuel cost of a car.

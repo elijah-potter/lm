@@ -1,6 +1,0 @@
-C - 64-bit real number: double64-bit real number and his value range: from - 1.7 × 10 on 308 to +1.7 × 10 on 308 and it has 15 digit precision. if it is used to store integers the biggest integer what can store without rounding is 2 on 53. 64-bit real number is stored the following way: 1bit sign, 8bit exponent a 23bit mantissa.
-DescriptionUsed keywords: double
-C64-bit real number the possible of use:
-double x = 3.14159265359; // x = 3.14159265359 double y = 123456789; // y = 123456789.0 y =(double)(x * y); // y = 387850941.35821074
-you can find it in the following collections: real numbers | numbers | data types
-64-bit real number in another programming language:

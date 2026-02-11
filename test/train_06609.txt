@@ -1,9 +1,0 @@
-A global gym decides to replace all of its cardio machines.  They have 20 gyms.  Each gym has 10 bikes, 5 treadmills, and 5 elliptical machines.  The bikes cost $700 each.  The treadmills cost 50% more than that.  The elliptical machines are twice as expensive as the treadmills.  How much does it cost to replace everything?
-The gym needs to buy 20*10=<<20*10=200>>200 bikes
-20*5=<<20*5=100>>100 each of treadmills and ellipticals
-So the bikes cost 200*700=$<<200*700=140000>>140,000
-The treadmills cost 700*1.5=$<<700*1.5=1050>>1,050 each
-So they cost a total of 1050*100=$<<1050*100=105000>>105,000
-The ellipticals each cost 1050*2=$<<1050*2=2100>>2100.
-So in total the ellipticals cost 2100*100=$<<2100*100=210000>>210,000
-So the total cost of everything is 140,000+105,000+210,000=$<<140000+105000+210000=455000>>455,000

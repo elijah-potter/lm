@@ -1,3 +1,0 @@
-A class of 200 students is split into 3 groups such that 2 of them are equal in number and the last one (which is the smallest) is 10 less than each of the other groups. How many students are in this (smallest) group?
-If 10 is added to the smallest group (hence to the total number of students), it would make all 3 groups equal to give (200+10)/3 = <<(200+10)/3=70>>70 in each group.
-Now taking the 10 away from one group gives the number of the smallest group as 70-10 = <<70-10=60>>60 students.

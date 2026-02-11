@@ -1,6 +1,0 @@
-The Fundamental Theorem is "fundamental" because it links the two distinct branches of calculus, derivatives and integrals. As you can see above, it is split into two parts.
-Here's what I mean by "take it-stick it-D it". Look at this example, first:
--- | f(t) dt
-Taking-sticking-D-ing is a phrase that was "patented" by my high school math teacher, Mr. Noeth. In this example, t is the variable of integration. To T-S-D, you take that end limit ("take it"), replace the variable of integration with it ("stick it"), and take the derivative WRT x of it ("D it"). So you have:
-f(u(x)) * --
-Note that you can use any variables, not just x and t.

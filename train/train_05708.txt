@@ -1,6 +1,0 @@
-Max has a collection of stamps in three colors: 20 red stamps, 80 blue stamps and 7 yellow ones. He is trying to sell the whole collection. He already sold 20 red stamps for the price of $1.1 for each stamp and 80 blue stamps for the price of $0.8 for each stamp. What price did he need to set for each yellow stamp to be able to earn the total of $100 from the whole sale?
-Max earned 20 * 1.1 = $<<20*1.1=22>>22 on red stamps.
-From the blue stamps Max got 80 * 0.8 = $<<80*0.8=64>>64.
-His earnings so far are 22 + 64 = $<<22+64=86>>86.
-To earn $100 he needs 100 – 86 = $<<100-86=14>>14 more.
-Max has 7 yellow stamps, so he needs to set the price at 14 / 7 = $<<14/7=2>>2.

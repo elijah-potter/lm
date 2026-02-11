@@ -1,7 +1,0 @@
-Janet is considering two options to retile her bathroom. The turquoise tiles cost $13/tile and the purple tiles cost $11/tile. If Janet needs to tile two walls that measure 5 feet by 8 feet and 7 feet by 8 feet, and each square foot of wall takes 4 tiles, how much will Janet save by buying the purple tiles instead of the turquoise ones?
-First find the area of the first wall: 5 feet * 8 feet = <<5*8=40>>40 square feet
-Then find the area of the second wall: 7 feet * 8 feet = <<7*8=56>>56 square feet
-Then add the areas of the two walls to find the total area: 40 square feet + 56 square feet = <<40+56=96>>96 square feet
-Then divide the number of square feet by the number of tiles per square foot to find the total number of tiles needed: 96 square feet * 4 tiles/square foot = <<96*4=384>>384 tiles
-Then find the difference in cost per tile: $13/tile - $11/tile = $<<13-11=2>>2/tile
-Then multiply the number of tiles by the cost difference per tile to find the total cost difference: $2/tile * 384 tiles = $<<2*384=768>>768

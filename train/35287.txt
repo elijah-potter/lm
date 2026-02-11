@@ -1,5 +1,0 @@
-This preview has intentionally blurred sections. Sign up to view the full version.View Full Document
-Unformatted text preview: on the second day, everyone sends his two pieces of information two islands further on; on the third day, four islands further on; and on the fourth day, eight islands further on. For example, the pirate on island 8 would send his various pieces of information to islands 9, then 10, then 1, and finally 5. Why does this work? Since the scheme is the same for all the participants, we only need to see that the first piece of information is universally distributed. Look at island i , and write i-1 as a sum of powers of 2. The powers appearing will tell you how the message got from island 1. For example, if i = 6, write 5 = 4 + 1; the message from 1 arrived at island 6 by going first to island 2 via a single island flight, followed by a four island flight. Exactly the same procedure solves the problem for 12 mutineeers. this page....
-View Full Document
-This note was uploaded on 03/01/2010 for the course MATH 301 taught by Professor Albertodelgado during the Spring '10 term at Bradley.
-- Spring '10

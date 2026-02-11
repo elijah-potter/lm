@@ -1,5 +1,0 @@
-At a roller derby, 4 teams are competing. Each team is made up of 10 members, and each member needs a pair of roller skates to compete in and another pair of skates as a backup. None of the skates have laces yet, so each member is offered 3 sets of laces per pair of skates. How many sets of laces have been handed out?
-There are a total of 4 teams * 10 members per team = <<4*10=40>>40 team members.
-Each person receives 1 pair of competing roller skates + 1 pair of backup roller skates = <<1+1=2>>2 pairs of roller skates.
-So there are a total of 40 team members * 2 pairs of roller skates per team member = <<40*2=80>>80 roller skates.
-There were therefore 80 roller skates * 3 sets of laces per pair of roller skates = <<80*3=240>>240 sets of laces handed out.

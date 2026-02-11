@@ -1,7 +1,0 @@
-Marla has a grid of squares that has 10 rows and 15 squares in each row. She colors 4 rows of 6 squares in the middle of the grid with red. She colors all squares on the first 2 and last 2 rows with blue. Then she colors the rest with green. How many squares does Marla color green?
-There are 10 x 15 = <<10*15=150>>150 squares in a grid.
-4 x 6 = <<4*6=24>>24 squares are colored red.
-There are 2 + 2 = <<2+2=4>>4 rows that are all blue.
-Thus, a total of 4 x 15 = <<4*15=60>>60 squares are colored blue.
-24 + 60 = <<24+60=84>>84 squares are color red or blue.
-Therefore, 150 - 84 = <<150-84=66>>66 square are green.

@@ -1,7 +1,0 @@
-To generate in increasing order the sequence 1, 2, 3, 4, 5, 6, 8, 9, 10, 12, … of all numbers divisible by no primes other than 2, 3, or 5.
-Here’s Dijkstra’s solution in Haskell:
-hamming = 1 : foldl1 merge [ map (n*) hamming | n <- [2,3,5] ] merge (x:xs) (y:ys) = case compare x y of LT -> x : merge xs (y:ys) GT -> y : merge (x:xs) ys EQ -> x : merge xs ys
-This problem was later used to illustrate “perpetual processes” (i.e., the lazy evaluation of infinite terms) in logic programming:
-Keith L. Clark and Steve Gregory. 1981. A relational language for parallel programming. In FPCA ‘81: Proceedings of the 1981 conference on functional programming languages and computer architecture, 171–178. ACM Press.
-Åke Hansson, Seif Haridi, and Sten-Åke Tärnlund. 1982. Properties of a logic programming language. In Logic programming, ed. Keith L. Clark and Sten-Åke Tärnlund, 267–280. Academic Press.
-John Wylie Lloyd. 1987. Foundations of logic programming. Second, extended edition. Springer. (page 189)

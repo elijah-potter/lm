@@ -1,6 +1,0 @@
-microSignet utilizes the internal physical characteristics of semiconductor memories, to establish a ‘fingerprint’ which uniquely identifies a given piece of hardware, such as a smartphone or desktop computer, that can be used for device authentication, or to bind valuable content to a particular device.
-microSignet addresses cumbersome online banking identity verification processes by being a non-reproducible hardware solution
-microSignet protects internet distributed multimedia content by using the unique identification of the hardware components that process and store high value content
-microSignet can bind applications or data to a physical hardware component
-The technology allows naturally occurring variances introduced in the semiconductor fabrication process to be used as a “fingerprint” unique to each integrated circuit. As some of these variances are transient, these “fingerprints” cannot be copied. So, every device in a system becomes part of rights management and data security.
-System and Method for Managing Information Stored in Semiconductors

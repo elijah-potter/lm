@@ -1,7 +1,0 @@
-Semiconductor nanocrystal visualization tool
-Semiconductor nanocrystals constitute a very hot fields of nanoscience, especially for their striking technological applications. Their properties can be quite different from the macroscopic crystals properties, and often they are "tunable" with the nanocrystal size. This gives the chance of building target-oriented devices, modeled on the actual needs of customers.
-Interesting applications as optoelectronic devices and biomedical applications come from semiconductor nanocrystals. The chemical structure is formed by
-i) an internal core, whose structure closely resembles the crystallographic lattice, and
-ii) a passivant layer, usually formed by hydrogen atoms.
-The following graphical tool allows to build up the chemical structure of semiconductor nanocrystals. The structure can have either spherical or rotation ellipsoidal shape. The ellipsoid equivalent radius is defined as the radius of an isovolumetric sphere and the aspect ratio as the ratio between the semiaxes. The spherical nanocrystal is obtained using an aspect ratio of 1. You can choose the nanocrystal material, that can be either Si or InAs.
-Insert the nanocrystal equivalent radius (in nanometers) and the aspect ratio

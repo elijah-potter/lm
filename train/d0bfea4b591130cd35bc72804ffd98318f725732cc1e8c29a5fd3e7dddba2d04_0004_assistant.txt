@@ -1,6 +1,0 @@
-C expects a semicolon before your return statement. Try fixing it with this:
-
-int main (void) {
-                            printf("Hello, World");
-                            return 0;
-                        }

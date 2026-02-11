@@ -1,6 +1,0 @@
-Tobias is a tractor salesman. His salary is based on the number of tractors he sells.  For every red tractor he sells, he gets paid 10% of the sales price for each tractor.  For every green tractor he sells, he gets paid 20% of the sales price for each tractor.  This week, he sold 2 red tractors and 3 green tractors.  The price of a single red tractor is $20,000.  This week, Tobias's salary was $7000.  What is the full price of a single green tractor, in dollars?
-For red tractors, 10% of the sales price is 10/100*$20,000 = $<<10/100*20000=2000>>2000.
-By selling two red tractors, he earned 2*$2000 = $<<2*2000=4000>>4000.
-Thus, of the $7000 salary he was paid this week, $7000-$4000 = $<<7000-4000=3000>>3000 is from sales of green tractors.
-And since he sold three green tractors, the commission for the sale of a single green tractor is $3000/3=$<<3000/3=1000>>1000,
-If $1000 is 20% of the full price, then the full price for a green tractor is (100/20)*$1000 = $5000.

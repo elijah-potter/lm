@@ -1,5 +1,0 @@
-James is trying to create a new breed of kittens with extra-long tails. Each generation of kittens he breeds has a tail 25% longer than the last generation. If the first generation has tails 16 cm long, how long are the third generation's tails?
-First find how much longer the second generation's tails are: 25% * 16 cm = <<25*.01*16=4>>4 cm
-Then add that length to the first generation's tail length to find the second generation's tail length: 4 cm + 16 cm = <<4+16=20>>20 cm
-Then find how much longer the third generation's tails are: 25% * 20 cm = <<25*.01*20=5>>5 cm
-Then add that length to the second generation's tail length to find the third generation's tail length: 5 cm + 20 cm = <<5+20=25>>25 cm

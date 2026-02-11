@@ -1,6 +1,0 @@
-BrainBall Task 2.10
-In this task you need to translate a number into a location within a grid of squares. You are given a target number and you have to determine where in the grid that numnber lies.
-The top-left square represents spot #1 and the spot numbers increases sequentially from left to right, wrapping from line to line – just as you read text. In a 10×10 grid, the top-right piece would be spot #10 and the bottom-right piece would be spot #100.
-Each games grid will be a different size, making it more difficult to memorize specific locations. It’s probably best to count the width of your grid at the start and work from there,
-Click on a piece when you think you have identified the correct spot. If you are correct you will get a new target.
-Score is based on number correct with penalty for mistakes.

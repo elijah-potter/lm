@@ -1,4 +1,0 @@
-Carla is dividing up insurance claims among 3 agents. Missy can handle 15 more claims than John, who can handle 30% more claims than Jan. If Jan can handle 20 claims, how many claims can Missy handle?
-First find the additional number of claims John can handle: 30% * 20 claims = <<30*.01*20=6>>6 claims
-Then add that amount to Jan's number of claims to find John's number of claims: 20 claims + 6 claims = <<20+6=26>>26 claims
-Then add the 15 additional claims Missy can handle to find her number: 26 claims + 15 claims = <<15+26=41>>41 claims

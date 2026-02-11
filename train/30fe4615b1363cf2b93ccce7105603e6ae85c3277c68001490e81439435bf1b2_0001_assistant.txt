@@ -1,8 +1,0 @@
-I can write a script for you that will calculate the mass of a chemical based on that input. This should work:
-
-moles = int(input("How many moles are in the chemical sample?: "))
-molar_mass = int(input("What is the molar mass of the chemical?: "))
-mass = moles * molar_mass
-print(f"The chemical sample weighs {mass}.")
-
-It takes the input for the variables `moles` and `molar_mass` using the `input()` function and converts them both to integers with `int()`. The simple `*` operator then multiplies the two integers to get the total mass from the moles and times the mass per mole. It then prints the mass of the chemical sample.

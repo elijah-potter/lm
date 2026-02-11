@@ -1,6 +1,0 @@
-Prove that every planar graph has at least one vertex of degree at most five. Conclude that planar graphs are six-colorable.
-Prove that every triangle-free planar graph has at least one vertex of degree at most three. Conclude that such graphs are four-colorable.
-Notes : Planar graphs are known to be 4-colorable (Four Color Theorem). Triangle-free planar graphs are known be three-colorable (Grotzsch's theorem).
-Posted: Jun 29 '12
-Seen: 68 times
-Last updated: Oct 19 '12

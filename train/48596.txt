@@ -1,7 +1,0 @@
-Basic Cellular Automaton, including randomness
-Click on setup single cell to begin with a single cell in the middle on; setup random picks a random set of cells to begin as on, the number of which is determined by the density slider.
-The rule slider selects one of the 256 possible rule sets (see Deterministic Emergence). A cell can be "on" (white) or "off" (black). Each rule sets specifies the resulting on or off state given the states of a cell and it's two neighbors. These switches are set automatically according to the rule slider, but can also be set individually.
-Running the model
-Click on step to run a single iteration or go to run the model continuously. The auto-continue? switch determines whether or not the cellular automata continues from the top once it reaches the bottom of the screen.
-Randomness can be introduced into the cellular automaton using the randomness? switch. When randomness is on, a number of cells (determined by the how-many slider) in each iteration will randomly set their state to on or off. The probability of the cell randomly setting it's state is set by the probability slider. Switches of states can be visualized by setting the color-code? switch to on, where green corresponds to the on state and yellow to the off state.
-Posted by Laura Cyckowski and Paul Grobstein on 9 Dec 2008. Applet created using NetLogo, the availability of which is gratefully acknowledged. Modified from the model created by Uri Wilensky (see http://ccl.northwestern.edu/netlogo/models/CA1DElementary ).

@@ -1,5 +1,0 @@
-Jerry is cutting up wood for his wood-burning stove. Each pine tree makes 80 logs, each maple tree makes 60 logs, and each walnut tree makes 100 logs. If Jerry cuts up 8 pine trees, 3 maple trees, and 4 walnut trees, how many logs does he get?
-First find the total number of pine logs by multiplying the number of trees by the number of logs per tree: 80 logs/pine * 8 pines = <<80*8=640>>640 logs
-Then do the same thing for the maple trees: 60 logs/maple * 3 maples = <<60*3=180>>180 logs
-And do the same thing for the walnut trees: 100 logs/walnut * 4 walnuts = <<100*4=400>>400 logs
-Finally, add up the number of logs from each type of tree to find the total number: 640 logs + 180 logs + 400 logs = <<640+180+400=1220>>1220 logs

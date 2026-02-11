@@ -1,8 +1,0 @@
-A group of people pays $720 for admission tickets to an amusement park. The price of an adult ticket is $15, and a child ticket is $8. There are 25 more adults than children. How many children are in the group?
-Let X be the number of children in the group.
-The number of adults in the group is X+<<+25=25>>25.
-The group pays 8*X + 15*(X+25) = $720.
-Multiplying through the parentheses, we get 8X + 15X + 375 = $720
-Combining like terms, we get 23X + 375 = 720
-Subtracting 375 from both sides, we get 23X = 720 - 375 = $345
-Dividing both sides by 23, we get X = $345 / 23 = <<345/23=15>>15 children.

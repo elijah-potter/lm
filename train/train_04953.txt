@@ -1,8 +1,0 @@
-Three times as many children as adults attend a concert on Saturday. An adult ticket costs $7 and a child's ticket costs $3. The theater collected a total of $6,000. How many people bought tickets?
-Let X be the number of adults attending the concert. The number of children attending the concert is 3*X.
-The theater collected a total of 7*X + 3*(3*X) = $6,000.
-Multiplying through the parentheses we get 7X + 9X = $6,000
-Adding like terms we get 16X = $6,000
-Dividing both sides by 16 we get X = 375, the number of adults attending the concert
-The number of children attending the concert is triple this number: 375 adults * 3 children/adult = <<375*3=1125>>1125 children.
-The number of people attending the concert is 375 + 1125 = <<375+1125=1500>>1500 people.

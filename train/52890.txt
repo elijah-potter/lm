@@ -1,5 +1,0 @@
-Originally Posted by major
-Typically it is a 5 or 10 kΩ pot.
-He already told you.
-If you're building this and are asking how many OHM's, I'm a bit worried. You can choose how many ohms you want to use. How the controller uses the signal into the microcontroller that is signalling the FET's is up to you and your design.
-Normally people have 5V attached to one end of the pot, signal ground to the other end, and the wiper goes to the A-D converter (with some filtering for noise). That way the A-D converter sees a voltage between 0 and 5V. How many ohms you use is completely up to you, but normally we see 5-10kohm potentiometers.

@@ -1,8 +1,0 @@
-In ten years, I'll be twice my brother's age. The sum of our ages will then be 45 years old. How old am I now?
-Let X be my age now.
-In ten years, I'll be X+<<+10=10>>10 years old.
-In ten years, my brother will be (X+10)*1/2 years old.
-In ten years, (X+10) + (X+10)*1/2 = 45.
-So (X+10)*3/2 = 45.
-X+10 = 45 * 2/3 = 30.
-X = 30 - 10 = <<30-10=20>>20 years old.

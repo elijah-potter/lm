@@ -1,6 +1,0 @@
-About the Base Platform Application Binary Interface (BPABI)
-The Base Platform Application Binary Interface (BPABI) is a meta-standard for third parties to generate their own platform-specific image formats.
-Many embedded systems use an operating system (OS) to manage the resources on a device. In many cases this is a large, single executable with a Real-Time Operating System (RTOS) that tightly integrates with the applications.
-To run an application or use a shared library on a platform OS, you must conform to the Application Binary Interface (ABI) for the platform and also the ABI for the ARM architecture. This can involve substantial changes to the linker output, for example, a custom file format. To support such a wide variety of platforms, the ABI for the ARM architecture provides the BPABI.
-The BPABI provides a base standard from which a platform ABI can be derived. The linker produces a BPABI conforming ELF image or shared library. A platform specific tool called a post-linker translates this ELF output file into a platform-specific file format. Post linker tools are provided by the platform OS vendor. The following figure shows the BPABI tool flow.
-Figure 9-1 BPABI tool flow

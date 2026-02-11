@@ -1,4 +1,0 @@
-For a 3D version by Sleeves, see: Celtic Knots, Truchet tiles, Combinatorial Patterns.
-It is called hyperbolic-paraboloid because the horizontal cross sections are hyperbolas and diagonal vertical cross-sections are parabolas. This structure is commonly used as roofs for modern pavillions.
-You can easily make a hyperbolic-paraboloid. Imagine a cube. Mark the top two opposite corners. These two corners will be the top two vertexes of the surface you see in the above image. Now, also mark the two opposite corners at the bottom of the cube. Draw diagonal lines from these corners. (look at the figure above. Your diagonal lines will be the edges of the surface) Mark regular intervals on these diagonal lines. Now, connect lines from one diagonal to the other side. You are all done!
-For a Java applet that does live rotation of hyperbolic-paraboloid, see hyperbolic-paraboloid.

@@ -1,9 +1,0 @@
-A nurses’ station orders bandages in bulk packs of 50. On the first day, the nurses used 38 bandages and ordered one bulk pack of bandages. On the second day, they used ten fewer bandages. On the third day, they ordered two bulk packs of bandages and only used half a pack. They had 78 bandages left at the end of the third day. How many bandages did they start with on the first day?
-Let B be the number of bandages the nurses’ station started with.
-On the first day, they used 38 bandages and ordered 50, so they had B - 38 + 50 = B + 12 bandages left.
-On the second day, they used 38 - 10 = <<38-10=28>>28 bandages.
-Thus, at the end of the second day, they had B + 12 - 28 = B - 16 bandages left.
-On the third day, they ordered 100 bandages and used half a pack, so they used 50 / 2 = 25.
-Thus, on the third day, they had B - 16 + 100 - 25 = B + 59 bandages left.
-At the end of the third day, they had 78 = B + 59 bandages left.
-Thus, on the first day, they started with B = 78 - 59 = <<19=19>>19 bandages.

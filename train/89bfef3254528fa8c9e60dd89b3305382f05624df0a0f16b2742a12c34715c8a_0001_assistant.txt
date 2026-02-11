@@ -1,6 +1,0 @@
-This recursive function is missing a base case. Because of this, it will call itself without ever stopping. To fix this, add a base case like in the code below:
-def factorial(x):
-  if x == 0:
-    return 1
-  else:
-    return factorial(x-1) * x

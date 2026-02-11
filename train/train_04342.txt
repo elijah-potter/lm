@@ -1,5 +1,0 @@
-It starts raining at 7:00 and pours heavily until its stops at 17:00  on a particular day. On the second day, the rain takes 2 more hours than it took on the first day to stop. On the third day, the rain pours for twice the amount of time it took on the second day. Calculate the total time it was raining in the three days.
-On the first day, it rained for 17:00 - 7:00 = 10 hours
-On the second day, it 10 hours + 2 hours = <<10+2=12>>12 hours for the rain to stop
-It rained for 2 * 12 hours = <<2*12=24>>24 hours on the third day.
-In the three days, it was raining for 24 hours + 12 hours + 10 hours = <<24+12+10=46>>46 hours.

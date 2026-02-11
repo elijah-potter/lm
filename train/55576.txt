@@ -1,3 +1,0 @@
-This article starts out with basic LED arrays and controlling them with an Arduino. Then it gets into the more complex stuff, like controlling the array with a computer. Finally, he explains how to use a web-cam and Processing to convert the video signal into an 8X8 LED matrix. All the source code and schematics are available to download on the site.
-The final one is a question from Ray. The Processing program takes input from a webcam through the use of JMyron. The camera image is down-sampled to 8Ã—8 with black and white information only. Each 8Ã—8 frame is sent to the Arduino board to display in the LED panel. The image hardly resembles the original but in itself looks quite nice.
-Read more about an Arduino with 8Ã—8 LED Matrix

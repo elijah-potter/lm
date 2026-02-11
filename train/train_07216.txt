@@ -1,8 +1,0 @@
-A baker is comparing the day’s sales to his daily average. He usually sells 20 pastries and 10 loaves of bread. Today, he sells 14 pastries and 25 loaves of bread. If pastries are sold for $2 and loaves of bread are sold for $4, what is the difference, in dollars, between the baker’s daily average and total for today?
-The daily average sales of pastries amounts to 20 pastries * $2/pastry = $<<20*2=40>>40.
-The daily average sales of bread amounts to 10 loaves of bread * $4/loaf = $<<10*4=40>>40.
-Therefore, the daily average is $40 + $40 = $<<40+40=80>>80.
-Today’s sales of pastries amounts to 14 pastries * $2/pastry = $<<14*2=28>>28.
-Today’s sales of loaves of bread amounts to 25 loaves of bread * $4/loaf = $<<25*4=100>>100.
-Therefore, today’s sales amount to $28 + $100 = $<<28+100=128>>128.
-This means the total difference between today’s sales and the daily average is $128 – $80 = $<<128-80=48>>48.

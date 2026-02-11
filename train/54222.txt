@@ -1,4 +1,0 @@
-Here and the associated links we explore Arduino controlling stepper motors.
-Step 1: About the Video
-The Arduino sketch below replaces the Stepper library which I found useless. It also includes I2C display as shown in the video. I consist of the command forward(int steps, int step_delay) and reverse(int steps, int step_delay). It also a motor off command.
-A potentiometer is connected to ADC0 can can be used to control the step delay. On my particular stepper motor a step delay less than 5 mSec. will stall the motor. The motor is 1.8 degrees per step or 200 steps for 360 degrees rotation. Each winding is 5.1 volts at 1 amp. The color code is based on a motor from an earlier program. Have fun.

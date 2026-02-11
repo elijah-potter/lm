@@ -1,8 +1,0 @@
-|(theory)||operational semantics - A set of rules specifying how the state of an actual
-or hypothetical computer changes while executing a program.
-The overall state is typically divided into a number of
-components, e.g. stack, heap, registers etc. Each rule
-specifies certain preconditions on the contents of some
-components and their new contents after the application of the
-It is similar in spirit to the notion of a Turing machine, in which actions are precisely described in a mathematical way.
-Compuare axiomatic semantics, denotational semantics.

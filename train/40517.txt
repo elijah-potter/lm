@@ -1,8 +1,0 @@
-I often work with data that contains some sort of uncertainty, usually a forecast for what we can expect over a certain period of time in the future. This forecast is often calculated based on previous period and also takes into consideration future digital marketing plans and how future projects can affect data.
-Any time we includes data predictions or forecast we are taking a risk. Our predictions may not be realized even when based on educated assumptions.
-That is why visualizing predictions is a challenge. It needs to be well communicated into the chart so that the audience understands how we have reached to these conclusions and forecast numbers.
-Why do we need to visualize predictions?
-Even if challenging data predictions are necessary. They help communicate future plans, goals and then measure against once we have access to the real numbers.
-How can we visualize uncertainty
-Most often data forecasts refer to values over a period of time in the future. In these cases line charts serve best to visualize predictions. Bar charts can also help with effective forecast visualization.
-In this video I go over a process of visualizing data forecasts in Excel using a line chart.

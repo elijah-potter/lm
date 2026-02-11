@@ -1,5 +1,0 @@
-Steven is preparing a shipment of boxes to deliver to a customer for his chemical supply business. The products are very delicate and must be carefully packed, so partially filled boxes can’t be shipped. Steven has three trucks that can be sent on each delivery. Each truck can carry a load of no more than 2,000 pounds of cargo. Some of the boxes weigh 10 pounds after being packed, and some of the boxes weigh 40 pounds when packed. Steven’s customer has ordered equal quantities of both the lighter and heavier products. How many boxes of products can Steven ship to his customer in each delivery?
-Each pair of boxes weighs 40 pounds + 10 pounds, or <<40+10=50>>50 pounds.
-Each pair weighs 50 pounds, so the delivery trucks can carry 2000 / 50 pairs of boxes or <<2000/50=40>>40 pairs.
-Steven has three trucks, so each trip can move 40 * 3 pairs of boxes = <<40*3=120>>120 pairs of boxes.
-Each pair is a set of two boxes, so each delivery contains 120 * 2 boxes = <<120*2=240>>240 boxes

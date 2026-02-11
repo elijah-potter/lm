@@ -1,5 +1,0 @@
-The number of students in a school hall was 1000. The hall had 3 entrances A, B, and C which also served as the exits. If after a meeting 30% of the students went out of the building through exit A, 3/5 of the remaining went out through exit B, and the rest went out through exit C, calculate the number of students who went out through exit C.
-The number of students who went out through exit A is 30/100%1000 = 300 students.
-The number of students who didn't use exit A is 1000-300 = <<1000-300=700>>700
-3/5 of the students used exit B, a total of 3/5*700 = <<3/5*700=420>>420 students.
-If 420 of the remaining students who didn't use exit A used exit B, the number who used exit C is 700-420 = 280 students.

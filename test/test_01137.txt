@@ -1,6 +1,0 @@
-Bob has a certain number of marbles. If he receives 2 dozen more marbles, he will have 60 marbles. If he loses 10 of the marbles he has, how many marbles will Bob have?
-Let B be the number of marbles Bob starts with.
-2 dozen marbles is 2 * 12 = <<2*12=24>>24 marbles.
-So after receiving 2 dozen more marbles, we know B + 24 = 60.
-This means B = 60 - 24 = <<60-24=36>>36.
-Bob ends with 36 - 10 = <<36-10=26>>26 marbles.

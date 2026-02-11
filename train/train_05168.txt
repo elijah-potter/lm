@@ -1,6 +1,0 @@
-Malcolm works in a company where they normally pack 40 apples in a box, producing 50 full boxes per day. Operations went as normal in one week. But in the next week, they packed 500 fewer apples per day. What's the total number of apples packed in the two weeks?
-In the first week, each day they pack 40*50 = <<40*50=2000>>2000 apples
-The total number of apples packed in the boxes is 2000*7 = <<2000*7=14000>>14000 apples in the first week.
-When 500 fewer apples were packed each day in the next week, the total became 2000-500 = <<2000-500=1500>>1500 apples per day.
-The total number of apples packed in the boxes that week is 1500*7 = <<1500*7=10500>>10500 apples.
-The total is 14000+10500 = <<14000+10500=24500>>24500 apples for the two weeks

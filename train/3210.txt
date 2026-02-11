@@ -1,6 +1,0 @@
-Theres this one question I was doing for practice that I just cannot do. Even though I know the answer is -0.94, I cant figure out how.
-The question goes as followed.
-In a computer game, the motion of a car is enhanced by showing headlights on a building, when the car approaches the building. The headlights form a parabola on the road. As the car approaches the building, the beam narrows. The equation of the parabola is y = x^2 - 4x +c, where c < 0 and dc/dt = 14. The x-axis represents the wall, let length be measured in meteres and time in seconds.
-Determine the rate at which the width of the beam is narrowing when c = -14.
-The answer at the back is -0.94. But I really cant figure out how to get this, and how to approach this question.
-help would be appreciated.

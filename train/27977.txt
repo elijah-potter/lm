@@ -1,9 +1,0 @@
-5. Once we have a numerical value for the proportion of the golden mean,
-from Project 4, we can construct a golden rectangle as follows. Start with a square which is one unit in length on a side.
-Draw a circle centered at the midpoint of the base going through the other two points on the top,
-We can use the Pythagorean Theorem to find c.
-which we know to be the proportion of the golden mean.
-So to construct a golden rectangle, all we need to do is to complete the rectangle to the left of the square.
-Of course the Greeks did not have these algebraic tools. They were able to verify that this was a golden rectangle by the use of similar triangles.
-The angle at C is an inscribed angle. Since AB is a diameter of the circle, the corresponding central angle is 180o, so the angle at C, being half of the central angle is 90o. Triangle ACD is thus similar to triangle CBD, and we get the ratio and proportion problem from the similar triangles
-and we see that x satisfies the proportion of the golden mean.

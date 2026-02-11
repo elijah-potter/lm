@@ -1,8 +1,0 @@
-An old car can drive 8 miles in one hour. After 5 hours of constant driving, the car needs to get cooled down which takes 1 hour. How many miles can this car drive in 13 hours?
-In 5 hours the car can drive 8 * 5 = <<8*5=40>>40 miles.
-One cycle of driving and pause takes 5 + 1 = <<5+1=6>>6 hours.
-In 13 hours this cycle can fit 13 / 6 = 2 full cycles with a remainder of 1 hour
-Two cycles will last for 2 * 6 = <<2*6=12>>12 hours.
-During two full cycles, the car will drive 40 * 2 = <<40*2=80>>80 miles.
-So there is 13 - 12 = <<13-12=1>>1 remaining hour when the car can drive.
-That means during 13 hours the car will be able to drive 80 + 8 = 88 miles.

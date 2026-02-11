@@ -1,6 +1,0 @@
-Tim enters a competition and has to try and guess the number of red jelly beans in a jar.  The jar has a square base and is 6 inches by 6 inches and 15 inches tall.  He knows that a jelly bean is .15 cubic inches.  He also knows that they get about 80% efficiency in packing.  He estimates 30% of the jelly beans are red.  The true number of red jelly beans in the container is 900.  How far off was his guess?
-The volume of the container is 6*6*15=<<6*6*15=540>>540 cubic inches
-That means it can fit 540/.15=<<540/.15=3600>>3600 jelly beans
-With 80% packing efficiency, you can fit 3600*.8=<<3600*.8=2880>>2880 jelly beans in there
-So that means he guesses 2880*.3=<<2880*.3=864>>864 are red
-So his guess is off by 900-864=<<900-864=36>>36

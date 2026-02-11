@@ -1,1 +1,0 @@
-Of course. It seems like these are a series of buttons numbered from 0 to 9. They all have the class 'number-button' in order to give them similar styles and logic. They also have an `onClick` event handler enabled to run a function called `typeNumber`. This function also seems to take as its parameter the number that corresponds with each individual button.

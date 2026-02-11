@@ -1,1 +1,0 @@
-The figure in the doorway flickered—part shadow, part mist—before vanishing. The camera’s lens glitched, capturing only the glint of a coin, half-buried in the dirt, then dissolving into static. A voice, static too, whispered: *"You saw nothing."* The screen flickered red.

@@ -1,6 +1,0 @@
-Five friends eat at Wendy's and ordered the following: a platter of Taco Salad that cost $10, 5 orders of Dave's Single hamburger that cost $5 each, 4 sets of french fries that cost $2.50, and 5 cups of peach lemonade that cost $2 each. How much will each of them pay if they will split the bill equally?
-The cost of 5 pieces of Dave's Single hamburger is $5 x 5 = $<<5*5=25>>25.
-The cost of 4 sets of french fries is $2.50 x 4 = $<<2.5*4=10>>10.
-The cost of 5 cups of peach lemonade is $2 x 5 = $<<2*5=10>>10.
-So, their total bill is $10 + $25 + $10 +$10 = $<<10+25+10+10=55>>55.
-Therefore, each of them will contribute $55/5 = $<<55/5=11>>11.

@@ -1,8 +1,0 @@
-Martha gets prize points every time she shops at her local grocery store. She gets 50 points per $10 spent, plus a 250 point bonus if she spends more than $100. Martha buys 3 pounds of beef for $11 each, 8 pounds of fruits and vegetables for $4/pound, 3 jars of spices for $6 each, and other groceries totaling $37. How many points does Martha get?
-First find the total cost of the beef: $11/pound * 3 pounds = $<<11*3=33>>33
-Then find the total cost of the fruits and vegetables: $4/pound * 8 pounds = $<<4*8=32>>32
-Then find the total cost of the spices: $6/jar * 3 jars = $<<6*3=18>>18
-Now add the cost of all the items to find Martha's total spending: $33 + $32 + $18 + $37 = $<<33+32+18+37=120>>120
-Now divide 50 points by $10 to find now many points Martha gets per dollar: 50 points / $10 = <<50/10=5>>5 points/dollar
-Now multiply this exchange rate by Martha's total spending to find how many points she gets before the bonus: $120 * 5 points/dollar = <<120*5=600>>600 points
-Finally, add the 250 point bonus Martha gets for spending more than $100: 600 points + 250 points = 850 points

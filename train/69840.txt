@@ -1,7 +1,0 @@
-Upload a File Using FileZilla
-The process of transferring a file from your computer to your website is commonly referred to as “uploading” or “publishing” that file. You need an “FTP client” program to transfer the file for web or web hosts that support FTP (File Transfer Protocol) or SFTP (a secure form of the File Transfer Protocol).
-This article will guide you on how to transfer a file to your web server using a free FTP client: FileZilla. The versions for Windows, Linux, and Mac OS X are available. I will describe the Windows version of this program, but if you are using another operating system, it would also work very similarly.
-Note: Before you start, please make sure that you are familiar with the file structure of your website.
-Firstly, use FileZilla to connect to your server.
-Secondly, you will see your server’s files listed in the top Remote site window. Then, locate the folder you want to upload your file to.
-Thirdly, drag and drop your specified file in the directory you are currently in. You will immediately upload the file, and then you will see it inside the folder.

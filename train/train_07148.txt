@@ -1,8 +1,0 @@
-Jed collects stamp cards. Every week, he gets 6 cards. But every two weeks, he gives 2 cards to his friends. If Jed started with 20 cards, after how many weeks will he have a total of 40 cards?
-In the first week, Jed has 20 + 6 = <<20+6=26>>26 cards.
-In the second week, he has 26 + 6 = <<26+6=32>>32 cards.
-But he is left with 32 - 2 = <<32-2=30>>30 cards on the 2nd week after giving 2 cards to his friend.
-Then Jed has 30 + 6 = <<30+6=36>>36 cards on the 3rd week.
-He has 36 + 6 = <<36+6=42>>42 cards on the 4th week.
-After giving his friend 2 cards, he is then left with 42 - 2 = <<42-2=40>>40 cards on the 4th week.
-Hence, Jed will have a total of 40 cards in 4 weeks.

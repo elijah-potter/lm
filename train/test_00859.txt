@@ -1,6 +1,0 @@
-A plague infects ten people. Every day, each infected person infects six others. How many people are infected after three days?
-On the first day, the original ten people infect six people each, so 10 * 6 = <<10*6=60>>60 more people are infected.
-There are 10 + 60 = <<10+60=70>>70 infected people after the first day.
-On the second day, 70 * 6 = <<70*6=420>>420 more people are infected.
-There are 70 + 420 = <<70+420=490>>490 infected people after the second day.
-On the third day, 490 * 6 = 2940 more people are infected. Therefore, there are 490 + 2940 = 3430 infected people after three days.

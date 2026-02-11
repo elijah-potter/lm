@@ -1,5 +1,0 @@
-What is sticky bit in Linux
-A directory whose sticky bit is set becomes an append-only directory, or, more accurately, a directory in which the deletion of files is restricted. A file in a sticky directory may only be removed or renamed by a user if the user has write permission for the directory and the user is the owner of the file, the owner of the directory, or the super-user. This feature is usefully applied to directories such as /tmp which must be publicly writable but should deny users the license to arbitrarily delete or rename each others files.
-Setting the sticky bit
-The sticky bit can be applied to directories. When the sticky bit is set, only the owner can delete files, even though others have write permission for the folder.The sticky bit is set with the +t option to chmod:
-$ chmod a+t directory_name

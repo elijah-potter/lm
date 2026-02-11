@@ -1,4 +1,0 @@
-It's fairly easy to show that in general the distribution for a function, f, of a normal variate, x, is not a normal distribution. We only get a normal distribution if the derivative of f is a constant.
-We can also find a function that has some of the characteristics of the distribution that we found for the global land anomaly.
-g(x) = f'(x)=df/dx
-Note that the chosen function changes the rate of change in x for a given change in y at the center of the plot. This results in a compression of the distribution near y=0.

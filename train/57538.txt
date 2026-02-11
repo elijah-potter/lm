@@ -1,9 +1,0 @@
-[volume of sphere=(4pir^3/3 ;volume of cone=pi^h]
-The volume of a cone with radius r (for the base) and height h is really (1/3)(pi)(r^2)(h), not (pi)^h.
-i've been confused by the formular for volume of a cone due to elimination of r
-Use the right formula. that'll work better.
-A solid consist of a hemisphere of radius r joined joined to a cone of constant height 60cm.The base of the cone is a plane face of a hemisphere.If r increases at a rate of 2cm/m.Calculate the rate of increase of the volume of the solid if r=60.leave answer in terms of pi.
-Do half of a sphere: (1/2)(4/3)(pi)(r^3) = (2/3)(pi)(r^3)
-plus a cone (so this is like a waffle cone w/ a scoop of ice cream on top): (1/3)(pi)(r^2)(h)
-They give you that dh/dt = 0 & h = 60 for the cone & dr/dt = 2. You have to find dV/dt when r = 60.
-So differentiate V, plug in 60 for h, 0 for dh/dt and 2 for dr/dt. Plug in 60 for r. Solve for dV/dt.

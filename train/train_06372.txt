@@ -1,6 +1,0 @@
-Marie is planning to buy a new cash register for her bakery that costs $1040. Every day Marie sells 40 loaves of bread for $2 each and 6 cakes for $12 each. She has to pay $20 each day for rent and $2 each day for electricity. How many days' worth of profits will it take for Marie to pay for the cash register?
-First figure out how much money Marie makes from selling bread each day by multiplying the number of loaves sold by the price per loaf: 40 loaves * $2/loaf = $<<40*2=80>>80
-Next figure out how much money Marie makes from selling cakes each day by multiplying the number of cakes sold by the price per cake: 6 cakes * $12/cake = $<<6*12=72>>72
-Now add the money from selling the bread to the money from selling the cakes to find Marie's total daily income: $80 + $72 = $<<80+72=152>>152
-Next subtract Marie's daily expenses from her daily income to find her daily profit: $152 - $20 - $2 = $<<152-20-2=130>>130
-Finally, divide the price of the cash register by Marie's daily profit to find how many days' profits she needs to pay for it: $1040 / $130 = <<1040/130=8>>8

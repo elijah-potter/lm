@@ -1,9 +1,0 @@
-Marcel runs a bicycle store. His main products are three types of bikes: MTB, BMX, and Trekking. The price of one MTB is $500, BMX is half the price of an MTB, and a Trekking bike is $450. In one month, Marcel sold a total of 300 bikes among the types listed. Half of them were Trekking bikes, and 15% were BMX bikes. The rest of the sold bikes were MTB type. How much did Marcel earn from selling bicycles during that month?
-First, let's calculate the price of the BMX bike which is half of the price of one MTB, so it's 500 * 0.5 = $<<500*0.5=250>>250.
-Half of the sold bikes were Trekking bikes, which means 300 * 0.5 = <<300*0.5=150>>150 bikes.
-15% of the sold bikes were BMX bikes, which means 300 * 15/100 = <<300*15/100=45>>45 bikes.
-The remaining bicycles sold were of the MTB type and there were 300 - 150 - 45 = <<300-150-45=105>>105 bikes of this type sold.
-That means Marcel earned 150 * 450 = $<<150*450=67500>>67500 from Trekking bikes.
-He also earned 45 * 250 = $<<45*250=11250>>11250 from BMX bikes.
-MTB bikes got him 105 * 500 = $<<105*500=52500>>52500
-In total Marcel earned 67500 + 11250 + 52500 = $<<67500+11250+52500=131250>>131250 during that month.

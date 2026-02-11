@@ -1,6 +1,0 @@
-Design, analysis and data management of open Drain/Sewer solid waste cleaning robot
-International Research Journal on Advanced Science Hub,
-2020, Volume 2, Issue Special Issue ICSTM 12S, Pages 88-92
-AbstractSewage Treatment Plants are designed to handle the volume of sewage produced by target areas, however we face issues in streamlining the city’s sewage lines to its destination on the grid. It is advisable to treat sewage at source and localize the STP plants. Indian city planning does not have the means and methods to complete elaborate systems at a stretch, this has caused disparity in development even within cities which has left it with numerous open drains and sewers. Though laid to serve as storm drains, open drains and sewers found across taluks are being used as sewage disposal lines. To overcome the difficulty of maintaining such structures, an automated open drain/sewer solid waste desilting machine is proposed. The machine removes all the solid waste that disrupts the steady flow of sewage. As a result, the natural flow velocity with which the pipelines are laid carries over such waste to the required STP. The machine is attached with ultrasonic sensors that detect the amount of waste present and its range. This data is transferred using an IoT software and the resulting data is a coherent graph.
-- Article View: 135
-- PDF Download: 236

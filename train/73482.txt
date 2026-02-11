@@ -1,9 +1,0 @@
-Tip: Using Excel's SUMPRODUCT Function
-Excel provides a useful function called SUMPRODUCT which can be used to find summation of multi dimension data series.
-- You have number of cartons in cells A1:A5
-- Number of units in each carton in cells B1:B5
-- Price of each unit in cells C1:C5
-You want to find the total cost of the stock. The answer is simple. You use the following formula:
-You don't need to multiply A1*B1*C1 and then copy it down.
-This function seems to be quite handy and can be used for many other calculations.
-This handy tip appeared recently on our sister site, AccountingWEB.co.uk.

@@ -1,6 +1,0 @@
-Pablo likes to put together jigsaw puzzles. He can put together an average of 100 pieces per hour. He has eight puzzles with 300 pieces each and five puzzles with 500 pieces each. If Pablo only works on puzzles for a maximum of 7 hours each day, how many days will it take him to complete all of his puzzles?
-First find how many pieces are total in each puzzle. 8 puzzles * 300 pieces each = <<8*300=2400>>2400 pieces.
-Next, 5 puzzles * 500 pieces each = <<5*500=2500>>2500 pieces.
-All of the puzzles have 2400 pieces + 2500 pieces = <<2400+2500=4900>>4900 pieces total.
-He will work a maximum of 7 hours each day * 100 pieces per hour = <<7*100=700>>700 pieces per day.
-So he will end up taking 4900 pieces total / 700 pieces per day = <<4900/700=7>>7 days total.

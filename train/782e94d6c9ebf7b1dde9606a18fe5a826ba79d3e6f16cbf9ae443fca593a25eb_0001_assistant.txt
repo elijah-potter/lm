@@ -1,8 +1,0 @@
-You can simply achieve this with one line of code when using dictionary comprehension along with the built-in zip() function. Here is the code below.
-
-`students = {key:value for key, value in zip(names, grades)}`
-
-The zip() function combines 2 lists into an iterator of tuples with the list items paired together. From there, the dictionary comprehension takes a pair from the tuples and names the items from the pair's key and value. Then it creates a key:value item in the students dictionary and repeats until the for loop is finished.
-
-Using `print(students)` will output:
-{'Tom': 61, 'Joy': 70, 'Lenny': 67, 'Hector': 64, 'Bob': 89}

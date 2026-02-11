@@ -1,8 +1,0 @@
-**BREAKING:** *Starlight Cove*—A City Awakens to Mysterious Light Surge
-The eerie glow of the **Aurora Nebula**, a phenomenon previously observed only in distant galaxies, has descended upon **Starlight Cove**, a coastal town nestled between the **Celestial Mountains** and the **Tidal Reefs**. Officials confirm that the phenomenon began last night at **02:47 AM**, radiating a faint, pulsating light across the sky. Residents describe the light as both mesmerizing and unsettling, with some reporting strange dreams of floating islands and whispers in a language no one recognizes.
-
-Mayor Elias Voss declared a **24-hour curfew** after reports of "unusual events" at the **Old Lighthouse**, where a local fisherman claimed to have seen "shadows moving in the mist." Authorities have dispatched drones to survey the area, though the light has begun diffusing into the town’s **hidden caves** beneath the cliffs. Schools have been closed, and the **Starlight Cove Cultural Museum** has temporarily suspended operations due to reports of "artifacts moving on their own."
-
-Eyewitnesses describe the sky as now **half-lit**, with the Aurora Nebula casting shifting patterns across windows. The town’s **clocks have stopped** at 3:17 AM, and some claim time has "warped" for them personally. The city’s **ancient chronicles** hint this may be a rare event—one that could signal a shift in Starlight Cove’s destiny.
-
-No official explanation has been given yet, but whispers in the taverns speak of the **"First Light"**—a prophecy that foretells a city "awakened by stars." The town is now a stage for whatever comes next.

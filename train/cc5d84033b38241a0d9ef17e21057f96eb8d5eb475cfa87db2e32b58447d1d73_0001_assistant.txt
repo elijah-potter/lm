@@ -1,5 +1,0 @@
-Quicksort is a way of organizing a list of numbers so that they are in order. It is one of the most efficient ways to sort a list of numbers, and it is often used in computer programs.
-
-Quicksort works by picking a number in the list, called the pivot. The other numbers in the list are then compared to the pivot, and they are put into two different groups: the numbers that are smaller than the pivot, and the numbers that are larger than the pivot. The numbers in each group are then sorted using the same method. This process continues until the entire list is sorted.
-
-Quicksort is a very efficient algorithm, and it is often used in practice. However, it can be slow for small lists.

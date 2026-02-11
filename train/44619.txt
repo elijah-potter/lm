@@ -1,8 +1,0 @@
-Surface Area of Frustums
-A frustum is the part of a pyramid or cone between two parallel planes cutting it. If one of the planes is the base and the other is horizontal then the result is the shape shown (for a cone).
-The smaller cone top right and the original left are similar, so(1)
-The curved surface area of the original cone isand the curved surface area of the smaller is
-The difference between these is the curved surface area of the frustum.
-(above bottom right), (2)
-Rearranging (1) to giveandsubstituting into (2) gives
-Add on the top and bottom to give

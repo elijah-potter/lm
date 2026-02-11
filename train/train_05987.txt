@@ -1,5 +1,0 @@
-Nancy wants to figure out if she can afford to apply to the University of Michigan. The tuition costs $22,000 per semester. Her parents can pay half the cost, and each semester Nancy can get a scholarship for $3,000 and a student loan for twice her scholarship amount. If Nancy can work a total of 200 hours during the semester, how many dollars does she have to make per hour to pay the rest of the tuition?
-First figure out how much Nancy has to pay after her parents pay their half by dividing the tuition by 2: $22,000 / 2 = $<<22000/2=11000>>11,000.
-Then figure out how much Nancy's student loan is by multiplying her scholarship amount by 2: $3,000 * 2 = $<<3000*2=6000>>6,000.
-Now subtract the amounts of Nancy's scholarship and loan to find out how much tuition she has to pay by working: $11,000 - $3,000 - $6,000 = $<<11000-3000-6000=2000>>2,000.
-Now divide the remaining unpaid tuition by the number of hours Nancy works to find out how much she needs to make per hour: $2,000 / 200 hours = $<<2000/200=10>>10/hour.

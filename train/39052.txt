@@ -1,9 +1,0 @@
-The File virtual table gives you an overview of the files in a directory on your disk. The File virtual table contains the following fields.
-The filter on the Path field determines which directory is shown.
-The value Yes indicates that the entry is a file; the value No indicates that the entry is a directory.
-The name of the file or directory.
-The size of the file in bytes.
-The date the file was last modified.
-The time the file was last modified.
-A BLOB field with the contents of the file.
-You must create a tabular-type page to access the File virtual table.

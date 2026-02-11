@@ -1,8 +1,0 @@
-John repairs 5 cars.  3 of the cars take 40 minutes each to repair.  The remaining ones take 50% longer each to repair.  He makes $20 per hour repairing cars.  How much money does he make?
-The 3 cars take 3*40=<<3*40=120>>120 minutes to make
-He repairs 5-3=<<5-3=2>>2 more cars
-They each take 40*.5=<<40*.5=20>>20 minutes longer per car
-So they each take 40+20=<<40+20=60>>60 minutes
-So he repaired cars for 120+2*60=<<120+2*60=240>>240 minutes
-That is 240/60=<<240/60=4>>4 hours
-So he made 4*20=$<<4*20=80>>80

@@ -1,4 +1,0 @@
-Sure. Here is a Python function that takes two functions as inputs and returns a function that returns the output of the first function when given the output of the second function:
-
-def combine_functions(func1, func2):
-  return lambda x: func1(func2(x))

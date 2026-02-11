@@ -1,5 +1,0 @@
-There are 480 zombies in the shopping mall. If the number of zombies doubled every day, how many days ago were there less than 50 zombies in the mall?
-First find how many zombies there were one day ago: 480 zombies / 2 = <<480/2=240>>240 zombies
-Then find how many zombies there were two days ago: 240 zombies / 2 = <<240/2=120>>120 zombies
-Then find the number of zombies there were three days ago: 120 zombies / 2 = <<120/2=60>>60 zombies
-Then find the number of zombies there were four days ago: 60 zombies / 2 = <<60/2=30>>30 zombies, which is less than 50, so there were less than 50 zombies 4 days ago.

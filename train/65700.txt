@@ -1,5 +1,0 @@
-Ping is a program used to detect a host's reacheability on a network. The ping command is available on many devices and platforms, including Windows, Linux (ping6 for IPv6), Routers, and Printers. It's popular due to its simplicity of operation, accuracy of its results, host discovery and for packet loss detection. Ping is generally executed from the command line followed by some parameters and the host name or the IP address to be probed.
-Utilizing the ICMP (or ICMPv6) protocol, the target host is sent an ECHO_REQUEST packet and responds with an ECHO_RESPONSE if available. While the usefulness of Ping is obvious, it is also used maliciously as a reconnaissance tool to detect live hosts on the Internet. For that reason some firewalls block ICMP echo packets, thereby blocking Ping's ability to detect reachable hosts.
-This online Web Ping utility, Pings a target host from this server (hashemian.com) and displays the results.
-Enter the Name or the IP address of the target server or host, then select the a count value for the number of ECHO_REQUEST packets to send the target host, and Ping away.
-Have a comment about the Ping test tool?

@@ -1,7 +1,0 @@
-Last year Jessica paid $1000 for rent, $200 for food, and $100 for car insurance each month. This year her rent goes up by 30%, food costs increase by 50%, and the cost of her car insurance triples because she was at fault in an accident. How much more does Jessica pay for her expenses over the whole year compared to last year?
-First find the increase in rent by multiplying last year's rent by 30%: $1000 * .3 = $<<1000*.3=300>>300
-Then find the food cost increase by multiplying last year's costs by 50%: $200 * .5 = $<<200*.5=100>>100
-Then find the new car insurance price by multiplying last year's price by 3: $100 * 3 = $<<100*3=300>>300
-Then subtract the cost of car insurance last year from this year's price to find the increase: $300 - $100 = $<<300-100=200>>200
-Now find how much Jessica's monthly expenses increased by adding the increases in each of the three costs: $300 + $100 + $200 = $<<300+100+200=600>>600
-Now multiply the increase per month by the number of months in a year to find the annual increase: $600/month * 12 months/year = $<<600*12=7200>>7200/year

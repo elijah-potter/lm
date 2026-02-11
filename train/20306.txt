@@ -1,6 +1,0 @@
-What is the maximum power output?
-I assume the question refers to the power output of an RFID reader antenna. Typically, the maximum power output is 1 watt of effective isotropic radiated power (EIRP). This is much lower than fixed interrogators, which have 4 watts of EIRP in the United States. The reason handhelds have lower power output is twofold: First, when someone uses a handheld reader, that person usually wants to read tags within a few feet.
-It is not helpful, in many cases, to read tags beyond that distance. For instance, if a worker is in a retail store, taking inventory in the women's department, he or she would not necessarily want to know what was in the nearby men's department.
-Another issue is that a reader antenna with higher output drains a battery more quickly.
-—Mark Roberti, Founder and Editor, RFID Journal
-Previous Post Are There RFID Chips for Car Keys? »

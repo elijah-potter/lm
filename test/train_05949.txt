@@ -1,5 +1,0 @@
-A quantity surveyor is figuring the construction costs for a couple that wishes to build a house. The costs are as follows: land costs $50 per square meter, bricks cost $100 per 1000 bricks and roof tiles cost $10 per roof tile. If the house they wish to build requires 2000 square meters, 10000 bricks, and 500 roof tiles, how much construction costs are required for this project?
-The cost required for buying land is $50/sq m * 2000 sq m = $<<50*2000=100000>>100000.
-The cost required for buying bricks is $100/1000 bricks * 10000 bricks = $<<100/1000*10000=1000>>1000.
-The cost required for buying roof tiles is $10/tile * 500 tiles = $<<10*500=5000>>5000.
-The total construction cost is $100000 + $1000 + $5000 = $<<100000+1000+5000=106000>>106000.

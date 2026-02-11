@@ -1,5 +1,0 @@
-By submitting your personal information, you agree that TechTarget and its partners may contact you regarding relevant content, products and special offers.
-The .net technology communicates over the Web using firewall Port 80, the port most frequently targeted by hackers looking for a way to break into a network. In the last three months of 2002, 57% of firewall attacks tracked by ISS targeted Port 80.
-ISS warned that many firewalls today do not process Web (HTTP) traffic at a sufficient level of detail to recognise malicious activity, adding that Port 80 could provide a gateway for attackers to communicate with .net application servers.
-Applications need to be engineered for security to avoid businesses opening their networks to unnecessary risks, according to Ovum analyst Gary Barnett. "It is essential to validate data being passed to a Web service before processing it, otherwise the application will crash or cause the server to lock up."
-If data is not checked, applications or Web service may experience a buffer overflow, which can cause systems to crash and compromise security, allowing a hacker to take control of an affected server.

@@ -1,8 +1,0 @@
-To make room for a new inventory of books, Gordon's local bookstore is offering 30% off any book that is over $22.00 and 20% off any book under $20.00.  He buys several books with the following prices; $25.00, $18.00, $21.00, $35.00, $12.00 and $10.00.  How much will he spend on books?
-He gets 30% off any book over $22 and he buys books that cost $25.00 and $35.00 so the total cost of these books is $25 + $35 = $<<25+35=60.00>>60.00
-At 30% off, the discount on these books is $60*.30 = $<<60*.30=18.00>>18.00
-That mean these 2 books will cost $60-$18 = $<<60-18=42.00>>42.00
-He gets 20% off any book under $20 and he buys books for $18.00, $12.00 and $10.00 so these books together cost $18 + $12 + $10 = $40.00
-at 20% off, the discount on these books is 40*.20 = $8.00
-So these 3 books will cost $40 - $8 = $<<40-8=32.00>>32.00
-He has spent $42.00 on the two most expensive books, $32.00 on the 3 cheapest books, and also bought a book for $21.00, so his total comes to $42 + $32 + $21 = $<<42+32+21=95.00>>95.00

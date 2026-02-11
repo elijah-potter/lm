@@ -1,6 +1,0 @@
-A 76-star flag has three rows of 8 stars, two rows of 6 stars and the rest are 5-star rows. How many rows of 5 stars are there altogether on the flag?
-The rows of 8 stars have a total of: 3 rows * 8 stars/row = <<3*8=24>>24 stars.
-The rows of 6 stars have a total of: 2 rows * 6 stars/row = <<2*6=12>>12 stars.
-Including the rows of 8 and 6 stars, we have 24 stars + 12 stars = <<24+12=36>>36 stars.
-Now we need to know how many stars are missing, 76 stars - 36 stars = <<76-36=40>>40 stars.
-Now we need to distribute the missing stars in rows of 5 stars, 40 stars/5 rows = <<40/5=8>>8 rows of 5 stars.

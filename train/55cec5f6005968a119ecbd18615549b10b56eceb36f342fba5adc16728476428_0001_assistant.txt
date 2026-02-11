@@ -1,6 +1,0 @@
-It looks like your syntax isn't correct for Python. In Python, you don't use parenthesis or curly braces when using a while loop. Try this instead:
-
-i = 4
-while i < 10:
-  print(i)
-  i += 1

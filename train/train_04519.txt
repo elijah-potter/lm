@@ -1,7 +1,0 @@
-Carl is figuring out how much he'll need to spend on gas for his upcoming road trip to the Grand Canyon. His car gets 30 miles per gallon in cities and 40 miles per gallon on the highway. The distance from his house to the Grand Canyon, one way, is 60 city miles and 200 highway miles.  If gas costs $3.00 per gallon, how much will Carl need to spend?
-First figure out how many city miles Carl will drive round trip by multiplying the one-way number of city miles by 2: 60 miles * 2 = <<60*2=120>>120 miles
-Then figure out how many highway miles Carl will drive round trip by multiplying the one-way number of highway miles by 2: 200 miles * 2 = <<200*2=400>>400 miles
-Now divide the round-trip number of city miles by the number of city miles per gallon Carl's car gets: 120 miles / 30 mpg = <<120/30=4>>4 gallons
-Now divide the round-trip number of highway miles by the number of highway miles per gallon Carl's car gets: 400 miles / 40 mpg = <<400/40=10>>10 gallons
-Now add the gallons for the highway miles and the city miles to find the total number of gallons Carl needs to buy: 10 gallons + 4 gallons = <<10+4=14>>14 gallons
-Finally, multiply the number of gallons Carl needs to buy by the cost per gallon to find out how much he spends: 14 gallons * $3.00 = $<<14*3=42.00>>42.00

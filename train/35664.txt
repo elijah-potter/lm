@@ -1,4 +1,0 @@
-The Sudoku application provides the possibility to generate "minimal" problems. These problems are created in way that all of the pre-allocated values are needed for an unambiguous solution. The example at the right show a not minimized Sudoku and its minimized version. The minimized version has only 22 pre-allocation whereas the not minimized version has two additional pre-allocations (the 2 in the cell in row 1, column 6 and the 9 in row 8, column 8).
-Minimization does not necessarily change the severity level of a problem, but in most cases minimal problems are harder than their "normal" origin.
-Both, newly generated problems and existing problems can be minimized. The former is controlled by the respective option, the later can be enforced either by selecting the menu entry "Problem|Find Minimal Allocation" or by pressing <F9>.
-Currently normal Sudokus with only 17 pre-allocations and X-Sudokus with only 12 pre-allocations are known.

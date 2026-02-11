@@ -1,9 +1,0 @@
-If you want a good definition of edge you can review books on "Graph
-Theory". In fact, the use of edge in networks comes from there. Hence, the
-definition of "edge" is not more than the connecting line between "nodes"
-(vertices of the graph). End-to-End connections can be hold
-nodes using multiple "edges".
-A graph edge and a network edge are two different things! But if you prefer
-"edges" to "links" than you should use "vertices" instead of "nodes" (see
-your last sentence). The term "network edge" comes from the dictionary and
-has nothing to do with graph theory.

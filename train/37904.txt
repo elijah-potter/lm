@@ -1,9 +1,0 @@
-Compare Color Sets and Color Spaces
-Colors can be grouped into sets based on their placement on on the chromaticity diagram and spectral wavelengths. This division of color can appear differently depending on the color space in which you are looking. Look at color sets based on the spectral colors and what fraction each occupies in several different color spaces.
-Obtain the percentage of each color space occupied by each set of colors.
-Visualize the percentages for each color set in each color space.
-In addition to classes of colors, the Wolfram Knowledgebase also knows thousands of named colors. These are some of the colors of the Benjamin Moore America's Colors collection.
-Define a function that takes an image and a list (class) of colors that replaces every pixel of the image with the nearest color from the given list.
-Import an image of Grant Wood's American Gothic painting from Wikipedia.
-Make "mosaics" of the painting with given colors only.
-Plot the distribution of colors used in the last mosaic.

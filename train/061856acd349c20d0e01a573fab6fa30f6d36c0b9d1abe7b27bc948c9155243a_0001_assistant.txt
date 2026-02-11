@@ -1,3 +1,0 @@
-The output of this program would be 0.
-
-In Java, variables are initialized to a default value if no constructor is invoked. In the example code above, int i; doesn't assign a value to the variable i, so the default constructor will initialize the value of i to be equal to 0.

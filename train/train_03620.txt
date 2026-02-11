@@ -1,4 +1,0 @@
-In a restaurant, one cup of coffee is $6 and a piece of cheesecake $10. When buying them together, the client gets a 25% discount. What is the final price of such a set?
-Both the cheesecake and coffee cost 10 + 6 = $<<10+6=16>>16.
-The discount for these items is 25/100 * 16 = $<<25/100*16=4>>4.
-So the final price for the cheesecake and coffee is 16 - 4 = $<<16-4=12>>12.

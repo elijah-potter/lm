@@ -1,8 +1,0 @@
-Splittable datatypes are datatypes that can be used as seeds for unfolds.
-split n s splits the seed
-choose fs s uses part of the seed
-s to choose a function from the list
-and passes the remainder to that function.
-Convert the seed value to an
-If a datatype is bounded and enumerable, we can use
-getInt to produce a value from a seed.

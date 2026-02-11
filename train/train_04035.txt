@@ -1,5 +1,0 @@
-Out of the 80 students who took the biology exam, only 2/5 of them managed to score 100%. If a score below 80% qualified as failing, and 50 percent of the remaining students who didn't score 100% managed to score over 80%, calculate the number of students who failed the exam.
-The number of students who scored 100% is 2/5*80 = <<2/5*80=32>>32
-Out of the 80 students, 80-32 = <<80-32=48>>48 did not score 100%.
-If 50% of the students who did not score 100% managed to score over 80%, then 50/100*48 =<<50/100*48=24>>24 students scored over 80%
-The number of students who failed is 48-24 = <<48-24=24>>24

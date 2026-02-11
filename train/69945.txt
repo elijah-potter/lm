@@ -1,9 +1,0 @@
-How to interpret the Graph Values in the LoadMaster Web User Interface (WUI)
-The graphs in the LoadMaster WUI are auto-scaling and are shown using SI magnitude units. The graph will show the prefix of the scaling factor used so the absolute value can be calculated if needed.
-The possible scaling factors and their prefixes are listed in the table below:
-To calculate the absolute or "real" value, take the value shown in the graph and multiply it by the scaling value.
-A value of 200 is shown in connections per second graph in the LoadMaster WUI Home screen with a scaling factor of "m".
-As listed in the table above, "m" stands for "milli". Therefore, to find the absolute value of connections per second for that time - the value of 200 needs to be multiplied by a factor of 10^(-3).
-10^(-3) = 0.001
-200 x 0.001 = 0.2 connection per second
-This calculation shows that there is less than 1 connection per second and, due to the fact that the connection rate is so low, if the graph shows the absolute number of connections it will be just a straight line at zero and offer no useful information.

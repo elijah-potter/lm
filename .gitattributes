@@ -1,0 +1,4 @@
+test.tar.gz filter=lfs diff=lfs merge=lfs -text
+test_pairs.tar.gz filter=lfs diff=lfs merge=lfs -text
+train.tar.gz filter=lfs diff=lfs merge=lfs -text
+train_pairs.tar.gz filter=lfs diff=lfs merge=lfs -text

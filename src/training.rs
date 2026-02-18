@@ -38,12 +38,12 @@ pub fn train<B: Backend>(
     let dataset_test = FileFolderDataset::load_from_folder(test_folder);
 
     let dataloader_train = DataLoaderBuilder::new(GenBatcher)
-        .batch_size(32)
+        .batch_size(8)
         .num_workers(4)
-        .build(SamplerDataset::new(dataset_train, 100_000));
+        .build(SamplerDataset::new(dataset_train, 100_00));
 
     let dataloader_test = DataLoaderBuilder::new(GenBatcher)
-        .batch_size(32)
+        .batch_size(8)
         .num_workers(4)
         .build(SamplerDataset::new(dataset_test, 10000));
 

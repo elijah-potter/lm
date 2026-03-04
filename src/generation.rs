@@ -6,7 +6,7 @@ use burn::prelude::Backend;
 use burn::tensor::{Distribution, Int};
 
 use crate::model::Model;
-use crate::tokenizer::{MAX_SEQ_LEN, indices_to_text, text_to_indices_unpadded};
+use crate::tokenizer::{indices_to_text, text_to_indices_unpadded};
 
 fn sample_next_char<B: Backend>(
     model: &Model<B>,

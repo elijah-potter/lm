@@ -5,7 +5,7 @@ use burn::data::dataloader::DataLoaderBuilder;
 use burn::data::dataset::transform::SamplerDataset;
 use burn::lr_scheduler::noam::NoamLrSchedulerConfig;
 use burn::module::Module;
-use burn::optim::AdamConfig;
+use burn::optim::{AdamConfig, Optimizer};
 use burn::optim::decay::WeightDecayConfig;
 use burn::prelude::Backend;
 use burn::record::{CompactRecorder, Recorder};
@@ -67,7 +67,7 @@ pub fn train<B: Backend>(
         .init()
         .unwrap();
 
-    let mut training = SupervisedTraining::new("./checkpoints", dataloader_train, dataloader_test)
+    let training = SupervisedTraining::new("./checkpoints", dataloader_train, dataloader_test)
         .metric_train(CudaMetric::new())
         .metric_valid(CudaMetric::new())
         .metric_train_numeric(AccuracyMetric::new().with_pad_token(0))

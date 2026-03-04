@@ -48,6 +48,8 @@ enum Command {
         epochs: usize,
         #[arg(short, long)]
         start_model: Option<PathBuf>,
+        #[arg(long)]
+        start_optimizer: Option<PathBuf>,
         save_to: PathBuf,
     },
 }
@@ -70,6 +72,7 @@ fn main() {
             percept_size,
             epochs,
             start_model,
+            start_optimizer,
             save_to,
         } => {
             let record = if let Some(path) = start_model {
@@ -89,6 +92,7 @@ fn main() {
                 epochs,
                 lr_factor,
                 record,
+                start_optimizer,
             );
 
             let recorder = CompactRecorder::new();

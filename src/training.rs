@@ -1,4 +1,4 @@
-use std::path::Path;
+use std::path::{Path, PathBuf};
 
 use burn::backend::Autodiff;
 use burn::data::dataloader::DataLoaderBuilder;
@@ -8,7 +8,7 @@ use burn::module::Module;
 use burn::optim::AdamConfig;
 use burn::optim::decay::WeightDecayConfig;
 use burn::prelude::Backend;
-use burn::record::CompactRecorder;
+use burn::record::{CompactRecorder, Recorder};
 use burn::train::metric::{
     AccuracyMetric, CudaMetric, LearningRateMetric, LossMetric, PerplexityMetric,
 };
@@ -26,6 +26,7 @@ pub fn train<B: Backend>(
     epochs: usize,
     lr_factor: f64,
     start_from_record: Option<ModelRecord<Autodiff<B>>>,
+    start_optimizer: Option<PathBuf>,
 ) -> Model<B> {
     let device = Default::default();
     let mut model = m.init::<Autodiff<B>>(&device);
@@ -47,9 +48,16 @@ pub fn train<B: Backend>(
         .num_workers(4)
         .build(SamplerDataset::new(dataset_test, 1000));
 
-    let optim = AdamConfig::new()
+    let mut optim = AdamConfig::new()
         .with_weight_decay(Some(WeightDecayConfig::new(1.0e-6)))
         .init();
+
+    if let Some(path) = start_optimizer {
+        let record = CompactRecorder::new()
+            .load(path.into(), &device)
+            .expect("Should be able to load the optimizer state from the provided file");
+        optim = optim.load_record(record);
+    }
 
     let accum = 6;
 
@@ -59,7 +67,7 @@ pub fn train<B: Backend>(
         .init()
         .unwrap();
 
-    let training = SupervisedTraining::new("./checkpoints", dataloader_train, dataloader_test)
+    let mut training = SupervisedTraining::new("./checkpoints", dataloader_train, dataloader_test)
         .metric_train(CudaMetric::new())
         .metric_valid(CudaMetric::new())
         .metric_train_numeric(AccuracyMetric::new().with_pad_token(0))

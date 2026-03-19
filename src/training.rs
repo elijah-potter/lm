@@ -2,11 +2,12 @@ use std::path::{Path, PathBuf};
 
 use burn::backend::Autodiff;
 use burn::data::dataloader::DataLoaderBuilder;
-use burn::data::dataset::transform::SamplerDataset;
+use burn::data::dataset::Dataset;
+use burn::data::dataset::transform::{SamplerDataset, SamplerDatasetOptions};
 use burn::lr_scheduler::noam::NoamLrSchedulerConfig;
 use burn::module::Module;
-use burn::optim::{AdamConfig, Optimizer};
 use burn::optim::decay::WeightDecayConfig;
+use burn::optim::{AdamConfig, Optimizer};
 use burn::prelude::Backend;
 use burn::record::{CompactRecorder, Recorder};
 use burn::train::metric::{
@@ -36,17 +37,25 @@ pub fn train<B: Backend>(
     }
 
     let dataset_train = FileFolderDataset::load_from_folder(train_folder);
+    println!("Loaded {} files for training.", dataset_train.len());
     let dataset_test = FileFolderDataset::load_from_folder(test_folder);
+    println!("Loaded {} files for testing.", dataset_test.len());
 
     let dataloader_train = DataLoaderBuilder::new(GenBatcher)
         .batch_size(8)
         .num_workers(4)
-        .build(SamplerDataset::new(dataset_train, 100_00));
+        .build(SamplerDataset::new(
+            dataset_train,
+            SamplerDatasetOptions::default(),
+        ));
 
     let dataloader_test = DataLoaderBuilder::new(GenBatcher)
         .batch_size(8)
         .num_workers(4)
-        .build(SamplerDataset::new(dataset_test, 1000));
+        .build(SamplerDataset::new(
+            dataset_test,
+            SamplerDatasetOptions::default(),
+        ));
 
     let mut optim = AdamConfig::new()
         .with_weight_decay(Some(WeightDecayConfig::new(1.0e-6)))

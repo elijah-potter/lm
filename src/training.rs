@@ -20,6 +20,20 @@ use crate::batcher::GenBatcher;
 use crate::dataset::FileFolderDataset;
 use crate::model::{Model, ModelConfig, ModelRecord};
 
+fn load_dataset(path: impl AsRef<Path>) -> FileFolderDataset {
+    let path = path.as_ref();
+
+    if path
+        .file_name()
+        .and_then(|name| name.to_str())
+        .is_some_and(|name| name.ends_with(".tar.gz"))
+    {
+        return FileFolderDataset::load_from_tar_gz(path);
+    }
+
+    FileFolderDataset::load_from_folder(path)
+}
+
 pub fn train<B: Backend>(
     m: ModelConfig,
     train_folder: impl AsRef<Path>,
@@ -36,9 +50,9 @@ pub fn train<B: Backend>(
         model = model.load_record(record);
     }
 
-    let dataset_train = FileFolderDataset::load_from_folder(train_folder);
+    let dataset_train = load_dataset(train_folder);
     println!("Loaded {} files for training.", dataset_train.len());
-    let dataset_test = FileFolderDataset::load_from_folder(test_folder);
+    let dataset_test = load_dataset(test_folder);
     println!("Loaded {} files for testing.", dataset_test.len());
 
     let dataloader_train = DataLoaderBuilder::new(GenBatcher)

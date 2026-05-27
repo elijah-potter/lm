@@ -38,10 +38,7 @@ impl<B: Backend> Model<B> {
         let tok_embedding: Tensor<B, 3> = self.char_embedding.forward(input);
 
         let pos_tensor_indices = Tensor::<B, 2, Int>::from_data(
-            TensorData::new(
-                (0i32..len as i32).collect::<Vec<_>>(),
-                Shape::new([1, len]),
-            ),
+            TensorData::new((0i32..len as i32).collect::<Vec<_>>(), Shape::new([1, len])),
             &self.device(),
         );
         let pos_embedding = self.pos_embedding.forward(pos_tensor_indices);

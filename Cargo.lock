@@ -2852,6 +2852,7 @@ dependencies = [
  "flate2",
  "log",
  "rand",
+ "serde_json",
  "tar",
 ]
 

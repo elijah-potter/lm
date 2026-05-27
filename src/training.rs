@@ -18,20 +18,47 @@ use log::info;
 
 use crate::batcher::GenBatcher;
 use crate::dataset::FileFolderDataset;
+use crate::dolma_dataset::DolmaDataset;
 use crate::model::{Model, ModelConfig, ModelRecord};
 
-fn load_dataset(path: impl AsRef<Path>) -> FileFolderDataset {
-    let path = path.as_ref();
+enum TrainingDataset {
+    Files(FileFolderDataset),
+    Dolma(DolmaDataset),
+}
 
-    if path
-        .file_name()
-        .and_then(|name| name.to_str())
-        .is_some_and(|name| name.ends_with(".tar.gz"))
-    {
-        return FileFolderDataset::load_from_tar_gz(path);
+impl Dataset<Vec<char>> for TrainingDataset {
+    fn get(&self, index: usize) -> Option<Vec<char>> {
+        match self {
+            Self::Files(dataset) => dataset.get(index),
+            Self::Dolma(dataset) => dataset.get(index),
+        }
     }
 
-    FileFolderDataset::load_from_folder(path)
+    fn len(&self) -> usize {
+        match self {
+            Self::Files(dataset) => dataset.len(),
+            Self::Dolma(dataset) => dataset.len(),
+        }
+    }
+}
+
+fn load_dataset(path: impl AsRef<Path>) -> TrainingDataset {
+    let path = path.as_ref();
+    let file_name = path.file_name().and_then(|name| name.to_str());
+
+    if file_name.is_some_and(|name| name.ends_with(".json.gz")) {
+        return TrainingDataset::Dolma(DolmaDataset::load_from_json_gz(path));
+    }
+
+    if path.is_dir() && DolmaDataset::folder_contains_shards(path) {
+        return TrainingDataset::Dolma(DolmaDataset::load_from_folder(path));
+    }
+
+    if file_name.is_some_and(|name| name.ends_with(".tar.gz")) {
+        return TrainingDataset::Files(FileFolderDataset::load_from_tar_gz(path));
+    }
+
+    TrainingDataset::Files(FileFolderDataset::load_from_folder(path))
 }
 
 pub fn train<B: Backend>(

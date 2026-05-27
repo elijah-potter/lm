@@ -1,6 +1,7 @@
 models=(
-"ministral-3:3b"
-"gemma3n:e4b"
+"qwen3.6:27b"
+"gemma4n:31b"
+"granite4.1:30b"
 )
 
 pronouns=(
@@ -34,7 +35,7 @@ do
   do
     for pronoun in "${pronouns[@]}";
     do
-      ofc -m "$model" -t 0.8 "Write a sentence in the passive voice, then follow it up with the same sentence, written in the active voice. Do not use any formatting. Do not say anything beside the requested sentence. Use the word $pronoun somewhere." | tee ./test_pairs/`uuidgen`.md
+      ofc -m "$model" -t 0.8 "Write a sentence in the passive voice, then follow it up with the same sentence, written in the active voice. Do not use any formatting. Do not say anything beside the requested sentence. Use the word '$pronoun' somewhere." --host $OLLAMA_HOST | tee ./test_pairs/`uuidgen`.md
   done
   done
 done

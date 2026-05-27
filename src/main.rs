@@ -1,16 +1,17 @@
 #![recursion_limit = "256"]
 mod batcher;
 mod dataset;
+mod dolma_dataset;
 mod generation;
 mod model;
 mod tokenizer;
 mod training;
 
-use std::path::PathBuf;
 use burn::backend::{NdArray, Wgpu};
 use burn::module::Module;
 use burn::record::{CompactRecorder, FullPrecisionSettings, NamedMpkFileRecorder, Recorder};
 use clap::Parser;
+use std::path::PathBuf;
 
 use self::generation::generate_tokens;
 use self::model::{ModelConfig, ModelRecord};

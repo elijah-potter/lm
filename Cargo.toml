@@ -4,8 +4,8 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-burn = { version = "~0.20", features = ["std", "autotune", "tui", "train", "ndarray", "wgpu", "fusion", "metrics", "cpu"], default-features = false }
-burn-wgpu = { version = "0.20.1", features = ["cubecl-spirv"] }
+burn = { version = "0.21.0", features = ["std", "autotune", "tui", "train", "ndarray", "wgpu", "fusion", "metrics", "cpu"], default-features = false }
+burn-wgpu = { version = "0.21.0", features = ["cubecl-spirv"] }
 clap = { version = "4.5.55", features = ["derive"] }
 flate2 = "1.1.9"
 log = "0.4.29"

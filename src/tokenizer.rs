@@ -14,8 +14,8 @@ pub const MAX_SEQ_LEN: usize = 256;
 pub fn text_to_indices<B: Backend>(text: &[char], device: &B::Device) -> Tensor<B, 2, Int> {
     let bpe = r50k_base_singleton();
 
-    // Limit to avoid wasting time in the tokenizer.
-    let string: String = text.into_iter().take(64 * MAX_SEQ_LEN).collect();
+    // Limit to avoid wasting time in the tokenizer while allowing one-token lookahead.
+    let string: String = text.into_iter().take(66 * (MAX_SEQ_LEN + 1)).collect();
 
     let idxs = bpe.encode_ordinary(string.as_str());
     let mut idxs = VecDeque::from(idxs);
@@ -49,8 +49,8 @@ pub fn text_to_indices_unpadded<B: Backend>(
 
     let bpe = r50k_base_singleton();
 
-    // Limit to avoid wasting time in the tokenizer.
-    let string: String = text.into_iter().take(64 * MAX_SEQ_LEN).collect();
+    // Limit to avoid wasting time in the tokenizer while allowing one-token lookahead.
+    let string: String = text.into_iter().take(66 * (MAX_SEQ_LEN + 1)).collect();
 
     let mut idxs = bpe.encode_ordinary(string.as_str());
     idxs.truncate(MAX_SEQ_LEN);

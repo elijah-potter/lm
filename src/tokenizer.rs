@@ -1,13 +1,14 @@
 use std::collections::VecDeque;
-use std::str;
 
 use burn::Tensor;
-use burn::module::Module;
 use burn::prelude::Backend;
 use burn::tensor::{Int, Shape, TensorData};
 use tiktoken_rs::r50k_base_singleton;
 
-pub const VOCAB_SIZE: usize = 50255;
+/// Number of entries required for the r50k vocabulary, including its end-of-text token.
+pub const VOCAB_SIZE: usize = 50257;
+/// Token ID reserved for sequence padding.
+pub const PAD_TOKEN: i32 = 50256;
 pub const MAX_SEQ_LEN: usize = 256;
 
 pub fn text_to_indices<B: Backend>(text: &[char], device: &B::Device) -> Tensor<B, 2, Int> {
@@ -20,7 +21,7 @@ pub fn text_to_indices<B: Backend>(text: &[char], device: &B::Device) -> Tensor<
     idxs.truncate(MAX_SEQ_LEN);
 
     while idxs.len() < MAX_SEQ_LEN {
-        idxs.push_front(0);
+        idxs.push_front(PAD_TOKEN as u32);
     }
 
     let tok_tensor_indices = Tensor::<B, 2, Int>::from_data(
@@ -40,7 +41,7 @@ pub fn text_to_indices_unpadded<B: Backend>(
 ) -> Tensor<B, 2, Int> {
     if text.is_empty() {
         return Tensor::<B, 2, Int>::from_data(
-            TensorData::new(vec![0i32], Shape::new([1, 1])),
+            TensorData::new(vec![PAD_TOKEN], Shape::new([1, 1])),
             device,
         );
     }
@@ -64,8 +65,13 @@ pub fn indices_to_text<B: Backend>(tensor: Tensor<B, 2, Int>) -> Vec<char> {
     let bpe = r50k_base_singleton();
 
     let data = tensor.into_data();
-    let idxs: Vec<i32> = data.to_vec().unwrap();
-    let idxs: Vec<u32> = idxs.into_iter().map(|i| i as u32).collect();
+    let idxs: Vec<u32> = data
+        .to_vec::<i32>()
+        .unwrap()
+        .into_iter()
+        .filter(|&i| i != PAD_TOKEN)
+        .map(|i| i as u32)
+        .collect();
 
     let str = bpe.decode(&idxs).unwrap();
     str.chars().collect()

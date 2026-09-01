@@ -20,6 +20,7 @@ use crate::batcher::GenBatcher;
 use crate::dataset::FileFolderDataset;
 use crate::dolma_dataset::DolmaDataset;
 use crate::model::{Model, ModelConfig, ModelRecord};
+use crate::tokenizer::PAD_TOKEN;
 
 enum TrainingDataset {
     Files(FileFolderDataset),
@@ -120,10 +121,10 @@ pub fn train<B: Backend>(
     let training = SupervisedTraining::new("./checkpoints", dataloader_train, dataloader_test)
         .metric_train(CudaMetric::new())
         .metric_valid(CudaMetric::new())
-        .metric_train_numeric(AccuracyMetric::new().with_pad_token(0))
-        .metric_valid_numeric(AccuracyMetric::new().with_pad_token(0))
-        .metric_train_numeric(PerplexityMetric::new().with_pad_token(0))
-        .metric_valid_numeric(PerplexityMetric::new().with_pad_token(0))
+        .metric_train_numeric(AccuracyMetric::new().with_pad_token(PAD_TOKEN as usize))
+        .metric_valid_numeric(AccuracyMetric::new().with_pad_token(PAD_TOKEN as usize))
+        .metric_train_numeric(PerplexityMetric::new().with_pad_token(PAD_TOKEN as usize))
+        .metric_valid_numeric(PerplexityMetric::new().with_pad_token(PAD_TOKEN as usize))
         .metric_train_numeric(LossMetric::new())
         .metric_valid_numeric(LossMetric::new())
         .metric_train_numeric(LearningRateMetric::new())

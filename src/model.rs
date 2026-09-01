@@ -1,6 +1,6 @@
 use crate::batcher::BatchItem;
 use crate::tokenizer::MAX_SEQ_LEN;
-use crate::tokenizer::VOCAB_SIZE;
+use crate::tokenizer::{PAD_TOKEN, VOCAB_SIZE};
 use burn::nn::LinearConfig;
 use burn::nn::attention::generate_autoregressive_mask;
 use burn::nn::transformer::TransformerEncoderAutoregressiveCache;
@@ -72,7 +72,7 @@ impl<B: Backend> Model<B> {
         let output = self.dropout.forward(output);
 
         let loss_fn = CrossEntropyLossConfig::new()
-            .with_pad_tokens(Some(vec![0]))
+            .with_pad_tokens(Some(vec![PAD_TOKEN as usize]))
             .init(&self.device());
 
         let output_flat = output
@@ -109,7 +109,7 @@ impl<B: Backend> Model<B> {
         let output = self.resizer.forward(trans_out);
 
         let loss_fn = CrossEntropyLossConfig::new()
-            .with_pad_tokens(Some(vec![0]))
+            .with_pad_tokens(Some(vec![PAD_TOKEN as usize]))
             .init(&self.device());
 
         let output_flat = output

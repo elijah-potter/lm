@@ -1,6 +1,7 @@
 #! /bin/bash
 
 apt update -y
-apt install curl build-essential vim htop tmux -y
+apt install curl build-essential vim htop tmux git-lfs -y
+git lfs install
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source "$HOME/.cargo/env"

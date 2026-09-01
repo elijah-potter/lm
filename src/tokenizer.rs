@@ -1,21 +1,23 @@
 use std::collections::VecDeque;
+use std::str;
 
 use burn::Tensor;
+use burn::module::Module;
 use burn::prelude::Backend;
 use burn::tensor::{Int, Shape, TensorData};
+use tiktoken_rs::r50k_base_singleton;
 
-pub const VOCAB_SIZE: usize = 64;
+pub const VOCAB_SIZE: usize = 50255;
 pub const MAX_SEQ_LEN: usize = 256;
 
 pub fn text_to_indices<B: Backend>(text: &[char], device: &B::Device) -> Tensor<B, 2, Int> {
-    let mut idxs: VecDeque<_> = text
-        .iter()
-        .copied()
-        .map(char_to_index)
-        .rev()
-        .take(MAX_SEQ_LEN)
-        .rev()
-        .collect();
+    let bpe = r50k_base_singleton();
+
+    let string: String = text.into_iter().collect();
+
+    let idxs = bpe.encode_ordinary(string.as_str());
+    let mut idxs = VecDeque::from(idxs);
+    idxs.truncate(MAX_SEQ_LEN);
 
     while idxs.len() < MAX_SEQ_LEN {
         idxs.push_front(0);
@@ -43,14 +45,12 @@ pub fn text_to_indices_unpadded<B: Backend>(
         );
     }
 
-    let idxs: Vec<i32> = text
-        .iter()
-        .copied()
-        .map(char_to_index)
-        .rev()
-        .take(MAX_SEQ_LEN)
-        .rev()
-        .collect();
+    let bpe = r50k_base_singleton();
+
+    let string: String = text.into_iter().collect();
+
+    let mut idxs = bpe.encode_ordinary(string.as_str());
+    idxs.truncate(MAX_SEQ_LEN);
 
     let len = idxs.len();
 
@@ -61,43 +61,14 @@ pub fn text_to_indices_unpadded<B: Backend>(
 }
 
 pub fn indices_to_text<B: Backend>(tensor: Tensor<B, 2, Int>) -> Vec<char> {
+    let bpe = r50k_base_singleton();
+
     let data = tensor.into_data();
     let idxs: Vec<i32> = data.to_vec().unwrap();
+    let idxs: Vec<u32> = idxs.into_iter().map(|i| i as u32).collect();
 
-    idxs.into_iter()
-        .take(MAX_SEQ_LEN)
-        .map(index_to_char)
-        .collect()
-}
-
-fn char_to_index(c: char) -> i32 {
-    match c {
-        'a'..='z' => (c as i32) - ('a' as i32) + 1,
-        'A'..='Z' => (c as i32) - ('A' as i32) + 27,
-        '!' => 53,
-        '.' => 54,
-        ',' => 55,
-        ':' => 56,
-        '?' => 57,
-        '\'' | 'ʼ' => 58,
-        ' ' => VOCAB_SIZE as i32 - 1,
-        _ => 0,
-    }
-}
-
-fn index_to_char(i: i32) -> char {
-    match i {
-        1..=26 => (('a' as i32) + i - 1) as u8 as char,
-        27..=52 => (('A' as i32) + i - 27) as u8 as char,
-        53 => '!',
-        54 => '.',
-        55 => ',',
-        56 => ':',
-        57 => '?',
-        58 => '\'',
-        val if val as usize == VOCAB_SIZE - 1 => ' ',
-        _ => '\0',
-    }
+    let str = bpe.decode(&idxs).unwrap();
+    str.chars().collect()
 }
 
 #[cfg(test)]

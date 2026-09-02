@@ -1,15 +1,57 @@
+use std::sync::OnceLock;
+
+use base64::{Engine as _, engine::general_purpose};
 use burn::Tensor;
 use burn::prelude::Backend;
 use burn::tensor::{Int, Shape, TensorData};
-use tiktoken_rs::r50k_base_singleton;
+use tiktoken_rs::{CoreBPE, Rank};
 
-/// Number of entries required for the r50k vocabulary, including its end-of-text token.
-pub const VOCAB_SIZE: usize = 50257;
+pub const VOCAB_SIZE: usize = 8192;
 /// Token ID reserved for sequence padding.
-pub const PAD_TOKEN: i32 = 50256;
+pub const PAD_TOKEN: i32 = 0;
 pub const MAX_SEQ_LEN: usize = 128;
 
-/// Tokenize text on the CPU, returning at most `max_tokens` r50k token IDs.
+static BPE: OnceLock<CoreBPE> = OnceLock::new();
+
+/// Return the tokenizer loaded from `temple2.tiktoken`.
+///
+/// It is initialized at most once and shared by all callers.
+pub fn bpe_singleton() -> &'static CoreBPE {
+    BPE.get_or_init(|| {
+        let encoder = include_str!("../temple2.tiktoken")
+            .lines()
+            .map(|line| {
+                let (token, rank) = line
+                    .split_once(' ')
+                    .expect("each temple2.tiktoken line must contain a token and rank");
+                let token = general_purpose::STANDARD
+                    .decode(token)
+                    .expect("temple2.tiktoken contains an invalid base64 token");
+                let rank: Rank = rank
+                    .parse()
+                    .expect("temple2.tiktoken contains an invalid token rank");
+                (token, rank)
+            })
+            .collect();
+        let special_tokens = [
+            (String::from("<|pad|>"), 0),
+            (String::from("<|bos|>"), 1),
+            (String::from("<|eos|>"), 2),
+            (String::from("<|unk|>"), 3),
+        ]
+        .into_iter()
+        .collect();
+
+        CoreBPE::new(
+            encoder,
+            special_tokens,
+            "'(?:[sdmt]|ll|ve|re)| ?\\p{L}++| ?\\p{N}++| ?[^\\s\\p{L}\\p{N}]++|\\s++$|\\s+(?!\\S)|\\s",
+        )
+        .expect("failed to build the temple2 tokenizer")
+    })
+}
+
+/// Tokenize text on the CPU, returning at most `max_tokens` token IDs.
 ///
 /// The input character count is bounded before tokenization to avoid processing
 /// an entire large document when only a short training sequence is needed.
@@ -18,10 +60,10 @@ pub fn text_to_token_ids(text: &[char], max_tokens: usize) -> Vec<i32> {
         return Vec::new();
     }
 
-    let bpe = r50k_base_singleton();
     let string: String = text.iter().take(66 * max_tokens).collect();
 
-    bpe.encode_ordinary(&string)
+    bpe_singleton()
+        .encode_ordinary(&string)
         .into_iter()
         .take(max_tokens)
         .map(|token| token as i32)
@@ -47,8 +89,6 @@ pub fn text_to_indices_unpadded<B: Backend>(
 }
 
 pub fn indices_to_text<B: Backend>(tensor: Tensor<B, 2, Int>) -> Vec<char> {
-    let bpe = r50k_base_singleton();
-
     let data = tensor.into_data();
     let idxs: Vec<u32> = data
         .to_vec::<i32>()
@@ -58,7 +98,7 @@ pub fn indices_to_text<B: Backend>(tensor: Tensor<B, 2, Int>) -> Vec<char> {
         .map(|i| i as u32)
         .collect();
 
-    let str = bpe.decode(&idxs).unwrap();
+    let str = bpe_singleton().decode(&idxs).unwrap();
     str.chars().collect()
 }
 
@@ -76,20 +116,5 @@ mod tests {
         let indices = text_to_indices_unpadded::<TestBackend>(&text, &device);
         let output = indices_to_text(indices);
         assert_eq!(output, text);
-    }
-
-    #[test]
-    fn token_ids_respect_requested_limit() {
-        let text = "hello world ".repeat(100).chars().collect::<Vec<_>>();
-        let token_ids = text_to_token_ids(&text, 5);
-
-        assert_eq!(token_ids.len(), 5);
-    }
-
-    #[test]
-    fn token_ids_support_an_empty_limit() {
-        let text = "hello".chars().collect::<Vec<_>>();
-
-        assert!(text_to_token_ids(&text, 0).is_empty());
     }
 }

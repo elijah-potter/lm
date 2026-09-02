@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+base64 = "0.22.1"
 burn = { version = "0.21.0", features = ["std", "autotune", "tui", "train", "ndarray", "wgpu", "fusion", "metrics", "cpu"], default-features = false }
 burn-wgpu = { version = "0.21.0", features = ["cubecl-spirv"] }
 clap = { version = "4.5.55", features = ["derive"] }

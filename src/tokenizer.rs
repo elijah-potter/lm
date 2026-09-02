@@ -9,7 +9,7 @@ use tiktoken_rs::r50k_base_singleton;
 pub const VOCAB_SIZE: usize = 50257;
 /// Token ID reserved for sequence padding.
 pub const PAD_TOKEN: i32 = 50256;
-pub const MAX_SEQ_LEN: usize = 256;
+pub const MAX_SEQ_LEN: usize = 128;
 
 pub fn text_to_indices<B: Backend>(text: &[char], device: &B::Device) -> Tensor<B, 2, Int> {
     let bpe = r50k_base_singleton();

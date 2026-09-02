@@ -24,8 +24,6 @@ impl<B: Backend> Batcher<B, Vec<char>, BatchItem<B>> for GenBatcher {
                 continue;
             }
 
-            // info!("{:?}", item.iter().collect::<String>());
-
             let input = text_to_indices(&item[..item.len() - 1], device);
             let target = text_to_indices(&item[1..], device);
 

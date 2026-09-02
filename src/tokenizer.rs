@@ -1,5 +1,3 @@
-use std::collections::VecDeque;
-
 use burn::Tensor;
 use burn::prelude::Backend;
 use burn::tensor::{Int, Shape, TensorData};
@@ -11,28 +9,23 @@ pub const VOCAB_SIZE: usize = 50257;
 pub const PAD_TOKEN: i32 = 50256;
 pub const MAX_SEQ_LEN: usize = 128;
 
-pub fn text_to_indices<B: Backend>(text: &[char], device: &B::Device) -> Tensor<B, 2, Int> {
-    let bpe = r50k_base_singleton();
-
-    // Limit to avoid wasting time in the tokenizer while allowing one-token lookahead.
-    let string: String = text.into_iter().take(66 * (MAX_SEQ_LEN + 1)).collect();
-
-    let idxs = bpe.encode_ordinary(string.as_str());
-    let mut idxs = VecDeque::from(idxs);
-    idxs.truncate(MAX_SEQ_LEN);
-
-    while idxs.len() < MAX_SEQ_LEN {
-        idxs.push_front(PAD_TOKEN as u32);
+/// Tokenize text on the CPU, returning at most `max_tokens` r50k token IDs.
+///
+/// The input character count is bounded before tokenization to avoid processing
+/// an entire large document when only a short training sequence is needed.
+pub fn text_to_token_ids(text: &[char], max_tokens: usize) -> Vec<i32> {
+    if max_tokens == 0 {
+        return Vec::new();
     }
 
-    let tok_tensor_indices = Tensor::<B, 2, Int>::from_data(
-        TensorData::new(idxs.into(), Shape::new([1, MAX_SEQ_LEN])),
-        device,
-    );
+    let bpe = r50k_base_singleton();
+    let string: String = text.iter().take(66 * max_tokens).collect();
 
-    assert_eq!(tok_tensor_indices.dims(), [1, MAX_SEQ_LEN]);
-
-    tok_tensor_indices
+    bpe.encode_ordinary(&string)
+        .into_iter()
+        .take(max_tokens)
+        .map(|token| token as i32)
+        .collect()
 }
 
 /// Use with autoregressive cache.
@@ -47,20 +40,10 @@ pub fn text_to_indices_unpadded<B: Backend>(
         );
     }
 
-    let bpe = r50k_base_singleton();
-
-    // Limit to avoid wasting time in the tokenizer while allowing one-token lookahead.
-    let string: String = text.into_iter().take(66 * (MAX_SEQ_LEN + 1)).collect();
-
-    let mut idxs = bpe.encode_ordinary(string.as_str());
-    idxs.truncate(MAX_SEQ_LEN);
-
+    let idxs = text_to_token_ids(text, MAX_SEQ_LEN);
     let len = idxs.len();
 
-    let tok_tensor_indices =
-        Tensor::<B, 2, Int>::from_data(TensorData::new(idxs, Shape::new([1, len])), device);
-
-    tok_tensor_indices
+    Tensor::<B, 2, Int>::from_data(TensorData::new(idxs, Shape::new([1, len])), device)
 }
 
 pub fn indices_to_text<B: Backend>(tensor: Tensor<B, 2, Int>) -> Vec<char> {
@@ -90,8 +73,23 @@ mod tests {
     fn roundtrip_text() {
         let device = Default::default();
         let text = "Hello World!?:,.".chars().collect::<Vec<_>>();
-        let indices = text_to_indices::<TestBackend>(&text, &device);
+        let indices = text_to_indices_unpadded::<TestBackend>(&text, &device);
         let output = indices_to_text(indices);
         assert_eq!(output, text);
+    }
+
+    #[test]
+    fn token_ids_respect_requested_limit() {
+        let text = "hello world ".repeat(100).chars().collect::<Vec<_>>();
+        let token_ids = text_to_token_ids(&text, 5);
+
+        assert_eq!(token_ids.len(), 5);
+    }
+
+    #[test]
+    fn token_ids_support_an_empty_limit() {
+        let text = "hello".chars().collect::<Vec<_>>();
+
+        assert!(text_to_token_ids(&text, 0).is_empty());
     }
 }

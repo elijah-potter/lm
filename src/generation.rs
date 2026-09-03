@@ -8,16 +8,17 @@ use burn::tensor::{Distribution, Int};
 use crate::model::Model;
 use crate::tokenizer::{indices_to_text, text_to_indices_unpadded};
 
-fn sample_next_char<B: Backend>(
+fn sample_next_tok<B: Backend>(
     model: &Model<B>,
     input: Tensor<B, 2, Int>,
     temperature: f64,
     cache: &mut TransformerEncoderAutoregressiveCache<B>,
-) -> char {
+) -> Vec<char> {
     let output = model.forward(input, cache);
-    let indices = weighted_argmax_logits(output, temperature);
-    let text = indices_to_text(indices);
-    *text.last().unwrap()
+    let [len, vocab_size] = output.dims();
+    let final_token = output.slice([len - 1..len, 0..vocab_size]);
+    let indices = weighted_argmax_logits(final_token, temperature);
+    indices_to_text(indices)
 }
 
 pub fn weighted_argmax_logits<B: Backend>(
@@ -42,11 +43,14 @@ pub fn generate_tokens<B: Backend>(model: &Model<B>, context: &[char], temperatu
     loop {
         let input = text_to_indices_unpadded(&context, &model.device());
 
-        let new_tok = sample_next_char(model, input, temperature, &mut cache);
+        let new_tok = sample_next_tok(model, input, temperature, &mut cache);
 
-        context.push(new_tok);
+        for c in &new_tok {
+            print!("{}", c);
+        }
 
-        print!("{}", new_tok);
+        context.extend(new_tok);
+
         io::stdout().flush().unwrap();
     }
 }

@@ -88,7 +88,7 @@ pub fn text_to_indices_unpadded<B: Backend>(
     Tensor::<B, 2, Int>::from_data(TensorData::new(idxs, Shape::new([1, len])), device)
 }
 
-pub fn indices_to_text<B: Backend>(tensor: Tensor<B, 2, Int>) -> Vec<char> {
+pub fn indices_to_bytes<B: Backend>(tensor: Tensor<B, 2, Int>) -> Vec<u8> {
     let data = tensor.into_data();
     let idxs: Vec<u32> = data
         .to_vec::<i32>()
@@ -98,8 +98,7 @@ pub fn indices_to_text<B: Backend>(tensor: Tensor<B, 2, Int>) -> Vec<char> {
         .map(|i| i as u32)
         .collect();
 
-    let str = bpe_singleton().decode(&idxs).unwrap();
-    str.chars().collect()
+    bpe_singleton().decode_bytes(&idxs).unwrap()
 }
 
 #[cfg(test)]
@@ -114,7 +113,7 @@ mod tests {
         let device = Default::default();
         let text = "Hello World!?:,.".chars().collect::<Vec<_>>();
         let indices = text_to_indices_unpadded::<TestBackend>(&text, &device);
-        let output = indices_to_text(indices);
+        let output = indices_to_bytes(indices);
         assert_eq!(output, text);
     }
 }

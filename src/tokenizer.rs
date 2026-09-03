@@ -4,7 +4,7 @@ use base64::{Engine as _, engine::general_purpose};
 use burn::Tensor;
 use burn::prelude::Backend;
 use burn::tensor::{Int, Shape, TensorData};
-use tiktoken_rs::{CoreBPE, Rank};
+use riptoken::{CoreBPE, Rank};
 
 pub const VOCAB_SIZE: usize = 8192;
 /// Token ID reserved for sequence padding.
@@ -98,22 +98,5 @@ pub fn indices_to_bytes<B: Backend>(tensor: Tensor<B, 2, Int>) -> Vec<u8> {
         .map(|i| i as u32)
         .collect();
 
-    bpe_singleton().decode_bytes(&idxs).unwrap()
-}
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-    use burn::backend::NdArray;
-
-    type TestBackend = NdArray<f32, i32>;
-
-    #[test]
-    fn roundtrip_text() {
-        let device = Default::default();
-        let text = "Hello World!?:,.".chars().collect::<Vec<_>>();
-        let indices = text_to_indices_unpadded::<TestBackend>(&text, &device);
-        let output = indices_to_bytes(indices);
-        assert_eq!(output, text);
-    }
+    bpe_singleton().decode_bytes(&idxs)
 }

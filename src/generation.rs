@@ -73,12 +73,15 @@ fn sample_top_p<B: Backend>(logits: Tensor<B, 2>, top_p: f64) -> Tensor<B, 2, In
 }
 
 /// Generates and streams tokens using the provided sampling parameters.
+///
+/// The optional byte limit applies only to generated output, not the initial context.
 pub fn generate_tokens<B: Backend>(
     model: &Model<B>,
     context: &[char],
     temperature: f64,
     repetition_penalty: f64,
     top_p_probability: f64,
+    max_generated_bytes: Option<usize>,
 ) {
     let mut context_bytes: Vec<u8> = context
         .into_iter()
@@ -96,8 +99,13 @@ pub fn generate_tokens<B: Backend>(
     }
 
     let mut cache = model.create_cache();
+    let mut generated_bytes = 0;
 
     loop {
+        if max_generated_bytes.is_some_and(|limit| generated_bytes >= limit) {
+            break;
+        }
+
         let (new_tok_bytes, new_tok_tens) = sample_next_tok(
             model,
             tokenized_context.clone(),
@@ -107,10 +115,20 @@ pub fn generate_tokens<B: Backend>(
             &mut cache,
         );
 
-        io::stdout().write_all(&new_tok_bytes).unwrap();
+        let bytes_to_write = max_generated_bytes
+            .map(|limit| new_tok_bytes.len().min(limit - generated_bytes))
+            .unwrap_or(new_tok_bytes.len());
+        let emitted_bytes = &new_tok_bytes[..bytes_to_write];
+
+        io::stdout().write_all(emitted_bytes).unwrap();
         io::stdout().flush().unwrap();
 
-        context_bytes.extend(new_tok_bytes);
+        generated_bytes += bytes_to_write;
+        context_bytes.extend_from_slice(emitted_bytes);
+
+        if max_generated_bytes.is_some_and(|limit| generated_bytes >= limit) {
+            break;
+        }
 
         let pre = if tokenized_context.dims()[1] >= MAX_SEQ_LEN {
             cache = model.create_cache();

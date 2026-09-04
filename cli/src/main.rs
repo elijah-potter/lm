@@ -1,23 +1,16 @@
-#![recursion_limit = "256"]
-mod batcher;
-mod dataset;
-mod dolma_dataset;
-mod generation;
-mod model;
-mod tokenizer;
-mod training;
+use std::path::PathBuf;
 
 use burn::backend::{NdArray, Wgpu};
 use burn::module::Module;
 use burn::record::{CompactRecorder, FullPrecisionSettings, NamedMpkFileRecorder, Recorder};
 use clap::Parser;
-use std::path::PathBuf;
+use lm_core::generation::generate_tokens;
+use lm_core::model::{ModelConfig, ModelRecord};
 
-use self::generation::generate_tokens;
-use self::model::{ModelConfig, ModelRecord};
-
+/// Train a language model or generate text from an existing model.
 #[derive(Parser, Debug)]
 enum Command {
+    /// Generate text using saved model weights.
     Generate {
         /// The total number of transformer blocks.
         transformer_blocks: usize,
@@ -41,12 +34,13 @@ enum Command {
         load_from: PathBuf,
         context: String,
     },
+    /// Train a language model from file-based or Dolma datasets.
     Train {
         train_data: PathBuf,
         test_data: PathBuf,
         dropout: f64,
         /// Base learning-rate factor for the Noam scheduler.
-        #[clap(default_value_t = 0.1)]
+        #[clap(default_value_t = 0.1, required = true)]
         lr_factor: f64,
         /// The total number of transformer blocks.
         transformer_blocks: usize,
@@ -94,7 +88,7 @@ fn main() {
                 None
             };
 
-            let model = training::train::<TrainingBackend>(
+            let model = lm_core::training::train::<TrainingBackend>(
                 ModelConfig::new(transformer_blocks, embed_dims, attn_heads, percept_size)
                     .with_dropout(dropout),
                 train_data,
@@ -128,7 +122,6 @@ fn main() {
                     .load(load_from.into(), &device)
                     .expect("Should be able to load the model weights from the provided file");
 
-            // Initialize a new model with the loaded record/weights
             let mut model =
                 ModelConfig::new(transformer_blocks, embed_dims, attn_heads, percept_size)
                     .init(&device);

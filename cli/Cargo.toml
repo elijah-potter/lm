@@ -1,0 +1,13 @@
+[package]
+name = "lm-cli"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "lm"
+path = "src/main.rs"
+
+[dependencies]
+burn = { version = "0.21.0", features = ["std", "ndarray", "wgpu"], default-features = false }
+clap = { version = "4.5.55", features = ["derive"] }
+lm-core = { path = "../core" }

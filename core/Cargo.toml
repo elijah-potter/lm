@@ -1,0 +1,15 @@
+[package]
+name = "lm-core"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+base64 = "0.22.1"
+burn = { version = "0.21.0", features = ["std", "autotune", "tui", "train", "ndarray", "wgpu", "fusion", "metrics", "cpu"], default-features = false }
+burn-wgpu = { version = "0.21.0", features = ["cubecl-spirv"] }
+flate2 = "1.1.9"
+log = "0.4.29"
+rand = "0.9.2"
+serde_json = "1"
+tar = "0.4.45"
+riptoken = "0.3.0"

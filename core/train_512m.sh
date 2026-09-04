@@ -1,4 +1,4 @@
-RUSTFLAGS="-C target-cpu=native" cargo run --release -- train \
+RUSTFLAGS="-C target-cpu=native" cargo run --release -p lm-cli -- train \
      ./dolma \
      test.tar.gz \
      0.1 \

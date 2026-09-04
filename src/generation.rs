@@ -3,9 +3,8 @@ use std::io::{self, Write};
 use burn::Tensor;
 use burn::nn::transformer::TransformerEncoderAutoregressiveCache;
 use burn::prelude::Backend;
+use burn::tensor::Int;
 use burn::tensor::activation::softmax;
-use burn::tensor::{Distribution, Int};
-use log::warn;
 
 use crate::model::Model;
 use crate::tokenizer::{
@@ -73,7 +72,14 @@ fn sample_top_p<B: Backend>(logits: Tensor<B, 2>, top_p: f64) -> Tensor<B, 2, In
     sorted_indices.gather(1, sampled_rank)
 }
 
-pub fn generate_tokens<B: Backend>(model: &Model<B>, context: &[char], temperature: f64) {
+/// Generates and streams tokens using the provided sampling parameters.
+pub fn generate_tokens<B: Backend>(
+    model: &Model<B>,
+    context: &[char],
+    temperature: f64,
+    repetition_penalty: f64,
+    top_p_probability: f64,
+) {
     let mut context_bytes: Vec<u8> = context
         .into_iter()
         .flat_map(|ch| {
@@ -96,8 +102,8 @@ pub fn generate_tokens<B: Backend>(model: &Model<B>, context: &[char], temperatu
             model,
             tokenized_context.clone(),
             temperature,
-            1.2,
-            0.9,
+            repetition_penalty,
+            top_p_probability,
             &mut cache,
         );
 

@@ -27,6 +27,12 @@ enum Command {
         /// The size of the perceptrons between the attention blocks.
         percept_size: usize,
         temperature: f64,
+        /// Cumulative probability threshold used for nucleus sampling.
+        #[arg(long, default_value_t = 0.9)]
+        top_p: f64,
+        /// Penalty applied to tokens that already appear in the context.
+        #[arg(long, default_value_t = 1.2)]
+        repetition_penalty: f64,
         load_from: PathBuf,
         context: String,
     },
@@ -105,6 +111,8 @@ fn main() {
             embed_dims,
             attn_heads,
             temperature,
+            top_p,
+            repetition_penalty,
             percept_size,
         } => {
             let device = Default::default();
@@ -122,7 +130,7 @@ fn main() {
 
             let ctx_chars: Vec<_> = context.chars().collect();
 
-            generate_tokens(&model, &ctx_chars, temperature);
+            generate_tokens(&model, &ctx_chars, temperature, repetition_penalty, top_p);
         }
     }
 }

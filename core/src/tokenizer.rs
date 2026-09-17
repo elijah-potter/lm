@@ -6,7 +6,7 @@ use burn::prelude::Backend;
 use burn::tensor::{Int, Shape, TensorData};
 use riptoken::{CoreBPE, Rank};
 
-pub const VOCAB_SIZE: usize = 8192;
+pub const VOCAB_SIZE: usize = 49152;
 /// Token ID reserved for sequence padding.
 pub const PAD_TOKEN: i32 = 0;
 pub const MAX_SEQ_LEN: usize = 128;

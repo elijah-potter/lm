@@ -13,23 +13,21 @@ pub const MAX_SEQ_LEN: usize = 128;
 
 static BPE: OnceLock<CoreBPE> = OnceLock::new();
 
-/// Return the tokenizer loaded from `temple2.tiktoken`.
-///
 /// It is initialized at most once and shared by all callers.
 pub fn bpe_singleton() -> &'static CoreBPE {
     BPE.get_or_init(|| {
-        let encoder = include_str!("../temple2.tiktoken")
+        let encoder = include_str!("../izer.tiktoken")
             .lines()
             .map(|line| {
                 let (token, rank) = line
                     .split_once(' ')
-                    .expect("each temple2.tiktoken line must contain a token and rank");
+                    .expect("each izer.tiktoken line must contain a token and rank");
                 let token = general_purpose::STANDARD
                     .decode(token)
-                    .expect("temple2.tiktoken contains an invalid base64 token");
+                    .expect("izer.tiktoken contains an invalid base64 token");
                 let rank: Rank = rank
                     .parse()
-                    .expect("temple2.tiktoken contains an invalid token rank");
+                    .expect("izer.tiktoken contains an invalid token rank");
                 (token, rank)
             })
             .collect();
@@ -47,7 +45,7 @@ pub fn bpe_singleton() -> &'static CoreBPE {
             special_tokens,
             "'(?:[sdmt]|ll|ve|re)| ?\\p{L}++| ?\\p{N}++| ?[^\\s\\p{L}\\p{N}]++|\\s++$|\\s+(?!\\S)|\\s",
         )
-        .expect("failed to build the temple2 tokenizer")
+        .expect("failed to build the tokenizer")
     })
 }
 

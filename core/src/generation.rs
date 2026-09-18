@@ -2,7 +2,6 @@ use std::io::{self, Write};
 
 use burn::Tensor;
 use burn::nn::transformer::TransformerEncoderAutoregressiveCache;
-use burn::prelude::Backend;
 use burn::tensor::Int;
 use burn::tensor::activation::softmax;
 
@@ -11,14 +10,14 @@ use crate::tokenizer::{
     MAX_SEQ_LEN, PAD_TOKEN, VOCAB_SIZE, indices_to_bytes, text_to_indices_unpadded,
 };
 
-fn sample_next_tok<B: Backend>(
-    model: &Model<B>,
-    input: Tensor<B, 2, Int>,
+fn sample_next_tok(
+    model: &Model,
+    input: Tensor<2, Int>,
     temperature: f64,
     repetition_penalty: f64,
     top_p_probability: f64,
-    cache: &mut TransformerEncoderAutoregressiveCache<B>,
-) -> (Vec<u8>, Tensor<B, 2, Int>) {
+    cache: &mut TransformerEncoderAutoregressiveCache,
+) -> (Vec<u8>, Tensor<2, Int>) {
     let output = model.forward(input.clone(), cache);
     let [len, vocab_size] = output.dims();
     let final_token = output.slice([len - 1..len, 0..vocab_size]);
@@ -54,7 +53,7 @@ fn sample_next_tok<B: Backend>(
 }
 
 /// Samples one token per batch row using nucleus (top-p) sampling.
-fn sample_top_p<B: Backend>(logits: Tensor<B, 2>, top_p: f64) -> Tensor<B, 2, Int> {
+fn sample_top_p(logits: Tensor<2>, top_p: f64) -> Tensor<2, Int> {
     // Sort probabilities from largest to smallest.
     let (sorted_probs, sorted_indices) = logits.sort_descending_with_indices(1);
 
@@ -75,8 +74,8 @@ fn sample_top_p<B: Backend>(logits: Tensor<B, 2>, top_p: f64) -> Tensor<B, 2, In
 /// Generates and streams tokens using the provided sampling parameters.
 ///
 /// The optional byte limit applies only to generated output, not the initial context.
-pub fn generate_tokens<B: Backend>(
-    model: &Model<B>,
+pub fn generate_tokens(
+    model: &Model,
     context: &[char],
     temperature: f64,
     repetition_penalty: f64,

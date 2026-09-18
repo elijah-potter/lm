@@ -1,6 +1,6 @@
 use burn::Tensor;
 use burn::data::dataloader::batcher::Batcher;
-use burn::prelude::Backend;
+use burn::prelude::Device;
 use burn::tensor::{Int, Shape, TensorData};
 use rand::Rng;
 
@@ -8,8 +8,8 @@ use crate::tokenizer::{MAX_SEQ_LEN, PAD_TOKEN, text_to_token_ids};
 
 pub struct GenBatcher;
 
-impl<B: Backend> Batcher<B, Vec<char>, BatchItem<B>> for GenBatcher {
-    fn batch(&self, items: Vec<Vec<char>>, device: &B::Device) -> BatchItem<B> {
+impl Batcher<Vec<char>, BatchItem> for GenBatcher {
+    fn batch(&self, items: Vec<Vec<char>>, device: &Device) -> BatchItem {
         let sequence_len = MAX_SEQ_LEN + 1;
         let mut sequences = Vec::with_capacity(items.len() * sequence_len);
         let mut batch_size = 0;
@@ -32,7 +32,7 @@ impl<B: Backend> Batcher<B, Vec<char>, BatchItem<B>> for GenBatcher {
 
         assert!(batch_size > 0, "cannot create a batch from empty inputs");
 
-        let sequences = Tensor::<B, 2, Int>::from_data(
+        let sequences = Tensor::<2, Int>::from_data(
             TensorData::new(sequences, Shape::new([batch_size, sequence_len])),
             device,
         );
@@ -44,9 +44,9 @@ impl<B: Backend> Batcher<B, Vec<char>, BatchItem<B>> for GenBatcher {
 }
 
 #[derive(Debug, Clone)]
-pub struct BatchItem<B: Backend> {
-    pub input: Tensor<B, 2, Int>,
-    pub target: Tensor<B, 2, Int>,
+pub struct BatchItem {
+    pub input: Tensor<2, Int>,
+    pub target: Tensor<2, Int>,
 }
 
 fn append_padded_sequence(destination: &mut Vec<i32>, tokens: &[i32]) {

@@ -12,32 +12,31 @@ use burn::{
         transformer::{TransformerEncoder, TransformerEncoderConfig, TransformerEncoderInput},
     },
     prelude::*,
-    tensor::backend::AutodiffBackend,
     train::{ClassificationOutput, TrainOutput, TrainStep},
 };
 
 #[derive(Module, Debug)]
-pub struct Model<B: Backend> {
+pub struct Model {
     dropout: Dropout,
     activation: Relu,
-    char_embedding: Embedding<B>,
-    pos_embedding: Embedding<B>,
-    transformer: TransformerEncoder<B>,
-    resizer: Linear<B>,
+    char_embedding: Embedding,
+    pos_embedding: Embedding,
+    transformer: TransformerEncoder,
+    resizer: Linear,
 }
 
-impl<B: Backend> Model<B> {
+impl Model {
     /// Embed a given string, simply skipping any incompatible tokens.
     /// Will panic if the provided string is too long.
     ///
     /// This is used to create the model's context.
-    fn embed(&self, input: Tensor<B, 2, Int>) -> Tensor<B, 3> {
+    fn embed(&self, input: Tensor<2, Int>) -> Tensor<3> {
         let [_batches, len] = input.dims();
         assert!(len <= MAX_SEQ_LEN);
 
-        let tok_embedding: Tensor<B, 3> = self.char_embedding.forward(input);
+        let tok_embedding: Tensor<3> = self.char_embedding.forward(input);
 
-        let pos_tensor_indices = Tensor::<B, 2, Int>::from_data(
+        let pos_tensor_indices = Tensor::<2, Int>::from_data(
             TensorData::new((0i32..len as i32).collect::<Vec<_>>(), Shape::new([1, len])),
             &self.device(),
         );
@@ -46,16 +45,16 @@ impl<B: Backend> Model<B> {
         (tok_embedding + pos_embedding) / 2
     }
 
-    pub fn device(&self) -> B::Device {
+    pub fn device(&self) -> Device {
         let devices = self.devices();
         devices[0].clone()
     }
 
     pub fn forward_train(
         &self,
-        input: Tensor<B, 2, Int>,
-        target: Tensor<B, 2, Int>,
-    ) -> ClassificationOutput<B> {
+        input: Tensor<2, Int>,
+        target: Tensor<2, Int>,
+    ) -> ClassificationOutput {
         let embedding = self.dropout.forward(self.embed(input));
 
         let [batch_size, seq_length, _embedding_dims] = embedding.dims();
@@ -85,16 +84,16 @@ impl<B: Backend> Model<B> {
         ClassificationOutput::new(loss, output_flat, target_flat)
     }
 
-    pub fn create_cache(&self) -> TransformerEncoderAutoregressiveCache<B> {
+    pub fn create_cache(&self) -> TransformerEncoderAutoregressiveCache {
         self.transformer.new_autoregressive_cache()
     }
 
     fn forward_infer(
         &self,
-        input: Tensor<B, 2, Int>,
-        target: Tensor<B, 2, Int>,
-        cache: &mut TransformerEncoderAutoregressiveCache<B>,
-    ) -> ClassificationOutput<B> {
+        input: Tensor<2, Int>,
+        target: Tensor<2, Int>,
+        cache: &mut TransformerEncoderAutoregressiveCache,
+    ) -> ClassificationOutput {
         let embedding = self.embed(input);
 
         let [batch_size, seq_length, _embedding_dims] = embedding.dims();
@@ -124,19 +123,19 @@ impl<B: Backend> Model<B> {
 
     pub fn forward(
         &self,
-        input: Tensor<B, 2, Int>,
-        cache: &mut TransformerEncoderAutoregressiveCache<B>,
-    ) -> Tensor<B, 2> {
+        input: Tensor<2, Int>,
+        cache: &mut TransformerEncoderAutoregressiveCache,
+    ) -> Tensor<2> {
         let class = self.forward_infer(input.clone(), input, cache);
         class.output
     }
 }
 
-impl<B: AutodiffBackend> TrainStep for Model<B> {
-    type Input = BatchItem<B>;
-    type Output = ClassificationOutput<B>;
+impl TrainStep for Model {
+    type Input = BatchItem;
+    type Output = ClassificationOutput;
 
-    fn step(&self, item: BatchItem<B>) -> TrainOutput<ClassificationOutput<B>> {
+    fn step(&self, item: BatchItem) -> TrainOutput<ClassificationOutput> {
         let item = self.forward_train(item.input, item.target);
         let grads = item.loss.backward();
 
@@ -144,11 +143,11 @@ impl<B: AutodiffBackend> TrainStep for Model<B> {
     }
 }
 
-impl<B: Backend> InferenceStep for Model<B> {
-    type Input = BatchItem<B>;
-    type Output = ClassificationOutput<B>;
+impl InferenceStep for Model {
+    type Input = BatchItem;
+    type Output = ClassificationOutput;
 
-    fn step(&self, item: BatchItem<B>) -> ClassificationOutput<B> {
+    fn step(&self, item: BatchItem) -> ClassificationOutput {
         self.forward_infer(item.input, item.target, &mut self.create_cache())
     }
 }
@@ -167,7 +166,7 @@ pub struct ModelConfig {
 }
 
 impl ModelConfig {
-    pub fn init<B: Backend>(&self, device: &B::Device) -> Model<B> {
+    pub fn init(&self, device: &Device) -> Model {
         Model {
             dropout: DropoutConfig::new(self.dropout).init(),
             activation: Relu::new(),

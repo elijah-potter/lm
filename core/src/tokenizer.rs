@@ -2,7 +2,7 @@ use std::sync::OnceLock;
 
 use base64::{Engine as _, engine::general_purpose};
 use burn::Tensor;
-use burn::prelude::Backend;
+use burn::prelude::Device;
 use burn::tensor::{Int, Shape, TensorData};
 use riptoken::{CoreBPE, Rank};
 
@@ -69,12 +69,9 @@ pub fn text_to_token_ids(text: &[char], max_tokens: usize) -> Vec<i32> {
 }
 
 /// Use with autoregressive cache.
-pub fn text_to_indices_unpadded<B: Backend>(
-    text: &[char],
-    device: &B::Device,
-) -> Tensor<B, 2, Int> {
+pub fn text_to_indices_unpadded(text: &[char], device: &Device) -> Tensor<2, Int> {
     if text.is_empty() {
-        return Tensor::<B, 2, Int>::from_data(
+        return Tensor::<2, Int>::from_data(
             TensorData::new(vec![PAD_TOKEN], Shape::new([1, 1])),
             device,
         );
@@ -83,13 +80,13 @@ pub fn text_to_indices_unpadded<B: Backend>(
     let idxs = text_to_token_ids(text, MAX_SEQ_LEN);
     let len = idxs.len();
 
-    Tensor::<B, 2, Int>::from_data(TensorData::new(idxs, Shape::new([1, len])), device)
+    Tensor::<2, Int>::from_data(TensorData::new(idxs, Shape::new([1, len])), device)
 }
 
-pub fn indices_to_bytes<B: Backend>(tensor: Tensor<B, 2, Int>) -> Vec<u8> {
+pub fn indices_to_bytes(tensor: Tensor<2, Int>) -> Vec<u8> {
     let data = tensor.into_data();
     let idxs: Vec<u32> = data
-        .to_vec::<i32>()
+        .try_to_vec_as::<i32>()
         .unwrap()
         .into_iter()
         .filter(|&i| i != PAD_TOKEN)

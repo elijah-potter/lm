@@ -1,11 +1,11 @@
 use std::path::PathBuf;
 
-use burn::backend::{NdArray, Wgpu};
 use burn::module::Module;
-use burn::record::{CompactRecorder, FullPrecisionSettings, NamedMpkFileRecorder, Recorder};
+use burn::prelude::Device;
+use burn::store::ModuleRecord;
 use clap::Parser;
 use lm_core::generation::generate_tokens;
-use lm_core::model::{ModelConfig, ModelRecord};
+use lm_core::model::ModelConfig;
 
 /// Train a language model or generate text from an existing model.
 #[derive(Parser, Debug)]
@@ -58,9 +58,6 @@ enum Command {
     },
 }
 
-type TrainingBackend = Wgpu<f32, i32>;
-type InferenceBackend = NdArray<f32, i32>;
-
 fn main() {
     let command = Command::parse();
 
@@ -79,16 +76,13 @@ fn main() {
             start_optimizer,
             save_to,
         } => {
-            let record = if let Some(path) = start_model {
-                let device = Default::default();
-                NamedMpkFileRecorder::<FullPrecisionSettings>::new()
-                    .load(path.into(), &device)
+            let record = start_model.map(|path| {
+                ModuleRecord::load(path)
                     .expect("Should be able to load the model weights from the provided file")
-            } else {
-                None
-            };
+            });
 
-            let model = lm_core::training::train::<TrainingBackend>(
+            let model = lm_core::training::train(
+                Device::wgpu(Default::default()),
                 ModelConfig::new(transformer_blocks, embed_dims, attn_heads, percept_size)
                     .with_dropout(dropout),
                 train_data,
@@ -99,8 +93,7 @@ fn main() {
                 start_optimizer,
             );
 
-            let recorder = CompactRecorder::new();
-            model.save_file(save_to, &recorder).unwrap();
+            model.save_file(save_to).unwrap();
         }
 
         Command::Generate {
@@ -115,12 +108,11 @@ fn main() {
             max_generated_bytes,
             percept_size,
         } => {
-            let device = Default::default();
+            #[allow(deprecated)]
+            let device = Device::ndarray();
 
-            let record: ModelRecord<InferenceBackend> =
-                NamedMpkFileRecorder::<FullPrecisionSettings>::new()
-                    .load(load_from.into(), &device)
-                    .expect("Should be able to load the model weights from the provided file");
+            let record = ModuleRecord::load(load_from)
+                .expect("Should be able to load the model weights from the provided file");
 
             let mut model =
                 ModelConfig::new(transformer_blocks, embed_dims, attn_heads, percept_size)

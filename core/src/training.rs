@@ -1,15 +1,14 @@
 use std::path::{Path, PathBuf};
 
-use burn::backend::Autodiff;
 use burn::data::dataloader::DataLoaderBuilder;
-use burn::data::dataset::Dataset;
 use burn::data::dataset::transform::{SamplerDataset, SamplerDatasetOptions};
+use burn::data::dataset::{Dataset, DatasetError};
 use burn::lr_scheduler::noam::NoamLrSchedulerConfig;
-use burn::module::Module;
+use burn::module::{AutodiffModule, Module};
+use burn::optim::AdamConfig;
 use burn::optim::decay::WeightDecayConfig;
-use burn::optim::{AdamConfig, Optimizer};
-use burn::prelude::Backend;
-use burn::record::{CompactRecorder, Recorder};
+use burn::prelude::Device;
+use burn::store::ModuleRecord;
 use burn::train::metric::{
     AccuracyMetric, CudaMetric, LearningRateMetric, LossMetric, PerplexityMetric,
 };
@@ -19,7 +18,7 @@ use log::info;
 use crate::batcher::GenBatcher;
 use crate::dataset::FileFolderDataset;
 use crate::dolma_dataset::DolmaDataset;
-use crate::model::{Model, ModelConfig, ModelRecord};
+use crate::model::{Model, ModelConfig};
 use crate::tokenizer::PAD_TOKEN;
 
 enum TrainingDataset {
@@ -28,7 +27,7 @@ enum TrainingDataset {
 }
 
 impl Dataset<Vec<char>> for TrainingDataset {
-    fn get(&self, index: usize) -> Option<Vec<char>> {
+    fn get(&self, index: usize) -> Result<Vec<char>, DatasetError> {
         match self {
             Self::Files(dataset) => dataset.get(index),
             Self::Dolma(dataset) => dataset.get(index),
@@ -62,17 +61,18 @@ fn load_dataset(path: impl AsRef<Path>) -> TrainingDataset {
     TrainingDataset::Files(FileFolderDataset::load_from_folder(path))
 }
 
-pub fn train<B: Backend>(
+pub fn train(
+    device: Device,
     m: ModelConfig,
     train_folder: impl AsRef<Path>,
     test_folder: impl AsRef<Path>,
     epochs: usize,
     lr_factor: f64,
-    start_from_record: Option<ModelRecord<Autodiff<B>>>,
+    start_from_record: Option<ModuleRecord>,
     start_optimizer: Option<PathBuf>,
-) -> Model<B> {
-    let device = Default::default();
-    let mut model = m.init::<Autodiff<B>>(&device);
+) -> Model {
+    let device = device.autodiff();
+    let mut model = m.init(&device);
 
     if let Some(record) = start_from_record {
         model = model.load_record(record);
@@ -84,6 +84,7 @@ pub fn train<B: Backend>(
     println!("Loaded {} files for testing.", dataset_test.len());
 
     let dataloader_train = DataLoaderBuilder::new(GenBatcher)
+        .set_device(device.clone())
         .batch_size(8)
         .num_workers(4)
         .build(SamplerDataset::new(
@@ -92,6 +93,7 @@ pub fn train<B: Backend>(
         ));
 
     let dataloader_test = DataLoaderBuilder::new(GenBatcher)
+        .set_device(device.clone().inner())
         .batch_size(8)
         .num_workers(4)
         .build(SamplerDataset::new(
@@ -104,10 +106,9 @@ pub fn train<B: Backend>(
         .init();
 
     if let Some(path) = start_optimizer {
-        let record = CompactRecorder::new()
-            .load(path.into(), &device)
+        optim = optim
+            .load(path)
             .expect("Should be able to load the optimizer state from the provided file");
-        optim = optim.load_record(record);
     }
 
     let accum = 6;
@@ -128,7 +129,7 @@ pub fn train<B: Backend>(
         .metric_train_numeric(LossMetric::new())
         .metric_valid_numeric(LossMetric::new())
         .metric_train_numeric(LearningRateMetric::new())
-        .with_file_checkpointer(CompactRecorder::new())
+        .with_default_checkpointers()
         .grads_accumulation(accum)
         .num_epochs(epochs)
         .summary();
@@ -136,5 +137,5 @@ pub fn train<B: Backend>(
     info!("Selected device: {:?}", device);
 
     let result = training.launch(Learner::new(model, optim, lr_scheduler));
-    result.model
+    result.model.valid()
 }

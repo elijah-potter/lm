@@ -8,6 +8,6 @@ name = "lm"
 path = "src/main.rs"
 
 [dependencies]
-burn = { version = "0.21.0", features = ["std", "ndarray", "wgpu"], default-features = false }
+burn = { version = "0.22.0-pre.3", features = ["std", "ndarray", "wgpu"], default-features = false }
 clap = { version = "4.5.55", features = ["derive"] }
 lm-core = { path = "../core" }

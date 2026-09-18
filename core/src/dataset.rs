@@ -2,7 +2,7 @@ use std::fs::{self, File};
 use std::io::Read;
 use std::path::Path;
 
-use burn::data::dataset::Dataset;
+use burn::data::dataset::{Dataset, DatasetError};
 use flate2::read::GzDecoder;
 use tar::Archive;
 
@@ -64,8 +64,8 @@ impl FileFolderDataset {
 }
 
 impl Dataset<Vec<char>> for FileFolderDataset {
-    fn get(&self, index: usize) -> Option<Vec<char>> {
-        self.contents.get(index).cloned()
+    fn get(&self, index: usize) -> Result<Vec<char>, DatasetError> {
+        Ok(self.contents[index].clone())
     }
 
     fn len(&self) -> usize {

@@ -2,7 +2,7 @@ use std::fs::{self, File};
 use std::io::{BufRead, BufReader};
 use std::path::{Path, PathBuf};
 
-use burn::data::dataset::Dataset;
+use burn::data::dataset::{Dataset, DatasetError};
 use flate2::read::GzDecoder;
 use serde_json::Value;
 
@@ -98,8 +98,8 @@ fn collect_json_gz_files_inner(path: &Path, files: &mut Vec<PathBuf>) {
 }
 
 impl Dataset<Vec<char>> for DolmaDataset {
-    fn get(&self, index: usize) -> Option<Vec<char>> {
-        self.contents.get(index).cloned()
+    fn get(&self, index: usize) -> Result<Vec<char>, DatasetError> {
+        Ok(self.contents[index].clone())
     }
 
     fn len(&self) -> usize {

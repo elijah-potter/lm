@@ -53,8 +53,8 @@ fn append_padded_sequence(destination: &mut Vec<i32>, tokens: &[i32]) {
     let sequence_len = MAX_SEQ_LEN + 1;
     assert!(tokens.len() <= sequence_len);
 
-    destination.extend(std::iter::repeat_n(PAD_TOKEN, sequence_len - tokens.len()));
     destination.extend_from_slice(tokens);
+    destination.extend(std::iter::repeat_n(PAD_TOKEN, sequence_len - tokens.len()));
 }
 
 fn random_subslice<T>(s: &[T]) -> &[T] {

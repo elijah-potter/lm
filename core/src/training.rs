@@ -114,7 +114,7 @@ pub fn train(
     let accum = 6;
 
     let lr_scheduler = LinearLrSchedulerConfig::new(
-        lr_factor / accum as f64 / 100,
+        lr_factor / accum as f64 / 100.0,
         lr_factor / accum as f64,
         6000,
     )

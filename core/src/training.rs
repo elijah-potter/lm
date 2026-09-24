@@ -113,9 +113,13 @@ pub fn train(
 
     let accum = 6;
 
-    let lr_scheduler = LinearLrSchedulerConfig::new(0.0, lr_factor / accum as f64, 6000)
-        .init()
-        .unwrap();
+    let lr_scheduler = LinearLrSchedulerConfig::new(
+        lr_factor / accum as f64 / 100,
+        lr_factor / accum as f64,
+        6000,
+    )
+    .init()
+    .unwrap();
 
     let training = SupervisedTraining::new("./checkpoints", dataloader_train, dataloader_test)
         .metric_train(CudaMetric::new())

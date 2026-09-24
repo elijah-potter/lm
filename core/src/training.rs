@@ -3,7 +3,7 @@ use std::path::{Path, PathBuf};
 use burn::data::dataloader::DataLoaderBuilder;
 use burn::data::dataset::transform::{SamplerDataset, SamplerDatasetOptions};
 use burn::data::dataset::{Dataset, DatasetError};
-use burn::lr_scheduler::noam::NoamLrSchedulerConfig;
+use burn::lr_scheduler::linear::LinearLrSchedulerConfig;
 use burn::module::{AutodiffModule, Module};
 use burn::optim::AdamConfig;
 use burn::optim::decay::WeightDecayConfig;
@@ -113,9 +113,7 @@ pub fn train(
 
     let accum = 6;
 
-    let lr_scheduler = NoamLrSchedulerConfig::new(lr_factor / accum as f64)
-        .with_warmup_steps(6000)
-        .with_model_size(m.embed_dims)
+    let lr_scheduler = LinearLrSchedulerConfig::new(0.0, lr_factor / accum as f64, 6000)
         .init()
         .unwrap();
 

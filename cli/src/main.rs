@@ -3,6 +3,7 @@ use std::path::PathBuf;
 use burn::module::Module;
 use burn::prelude::Device;
 use burn::store::ModuleRecord;
+use burn::tensor::{FloatDType, IntDType};
 use clap::Parser;
 use lm_core::generation::generate_tokens;
 use lm_core::model::ModelConfig;
@@ -81,8 +82,13 @@ fn main() {
                     .expect("Should be able to load the model weights from the provided file")
             });
 
+            let mut device = Device::cuda(Default::default());
+            device
+                .configure((FloatDType::BF16, IntDType::I32))
+                .expect("CUDA device must support BF16");
+
             let model = lm_core::training::train(
-                Device::wgpu(Default::default()),
+                device,
                 ModelConfig::new(transformer_blocks, embed_dims, attn_heads, percept_size)
                     .with_dropout(dropout),
                 train_data,
@@ -108,8 +114,10 @@ fn main() {
             max_generated_bytes,
             percept_size,
         } => {
-            #[allow(deprecated)]
-            let device = Device::ndarray();
+            let mut device = Device::flex();
+            device
+                .configure((FloatDType::BF16, IntDType::I32))
+                .expect("WGPU device must support F16");
 
             let record = ModuleRecord::load(load_from)
                 .expect("Should be able to load the model weights from the provided file");

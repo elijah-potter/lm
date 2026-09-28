@@ -85,7 +85,7 @@ pub fn train(
 
     let dataloader_train = DataLoaderBuilder::new(GenBatcher)
         .set_device(device.clone())
-        .batch_size(8)
+        .batch_size(200)
         .num_workers(4)
         .build(SamplerDataset::new(
             dataset_train,
@@ -94,7 +94,7 @@ pub fn train(
 
     let dataloader_test = DataLoaderBuilder::new(GenBatcher)
         .set_device(device.clone().inner())
-        .batch_size(8)
+        .batch_size(200)
         .num_workers(4)
         .build(SamplerDataset::new(
             dataset_test,

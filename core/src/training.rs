@@ -102,7 +102,10 @@ pub fn train(
         ));
 
     let mut optim = AdamConfig::new()
-        .with_weight_decay(Some(WeightDecayConfig::new(1.0e-6)))
+        .with_beta_1(0.9)
+        .with_beta_2(0.95)
+        .with_epsilon(1.0e-8)
+        .with_weight_decay(Some(WeightDecayConfig::new(0.1)))
         .init();
 
     if let Some(path) = start_optimizer {

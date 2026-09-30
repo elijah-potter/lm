@@ -3,7 +3,7 @@ use std::path::PathBuf;
 use burn::module::Module;
 use burn::prelude::Device;
 use burn::store::ModuleRecord;
-use burn::tensor::{FloatDType, IntDType};
+use burn::tensor::{DeviceIndex, FloatDType, IntDType};
 use clap::Parser;
 use lm_core::generation::generate_tokens;
 use lm_core::model::ModelConfig;
@@ -82,7 +82,7 @@ fn main() {
                     .expect("Should be able to load the model weights from the provided file")
             });
 
-            let mut device = Device::cuda(0);
+            let mut device = Device::cuda(DeviceIndex::Default);
             device
                 .configure((FloatDType::BF16, IntDType::I32))
                 .expect("CUDA device must support BF16");

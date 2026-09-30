@@ -1,19 +1,36 @@
 use crate::batcher::BatchItem;
-use crate::tokenizer::MAX_SEQ_LEN;
-use crate::tokenizer::{PAD_TOKEN, VOCAB_SIZE};
+use crate::tokenizer::{MAX_SEQ_LEN, PAD_TOKEN, VOCAB_SIZE};
 use burn::nn::LinearConfig;
 use burn::nn::attention::generate_autoregressive_mask;
+use burn::nn::loss::CrossEntropyLossConfig;
 use burn::nn::transformer::TransformerEncoderAutoregressiveCache;
 use burn::train::InferenceStep;
 use burn::{
     nn::{
         Dropout, DropoutConfig, Embedding, EmbeddingConfig, Linear, Relu,
-        loss::CrossEntropyLossConfig,
         transformer::{TransformerEncoder, TransformerEncoderConfig, TransformerEncoderInput},
     },
     prelude::*,
     train::{ClassificationOutput, TrainOutput, TrainStep},
 };
+
+/// Mean cross-entropy over non-padding targets, with a differentiable zero for
+/// batches without any supervised targets (Burn otherwise returns NaN).
+fn token_cross_entropy(logits: Tensor<2>, targets: Tensor<1, Int>) -> Tensor<1> {
+    if !targets
+        .clone()
+        .not_equal_elem(PAD_TOKEN)
+        .any()
+        .into_scalar::<bool>()
+    {
+        return logits.sum().mul_scalar(0.0);
+    }
+
+    CrossEntropyLossConfig::new()
+        .with_pad_tokens(Some(vec![PAD_TOKEN as usize]))
+        .init(&logits.device())
+        .forward(logits, targets)
+}
 
 #[derive(Module, Debug)]
 pub struct Model {
@@ -70,16 +87,12 @@ impl Model {
         let output = self.resizer.forward(trans_out);
         let output = self.dropout.forward(output);
 
-        let loss_fn = CrossEntropyLossConfig::new()
-            .with_pad_tokens(Some(vec![PAD_TOKEN as usize]))
-            .init(&self.device());
-
         let output_flat = output
             .clone()
             .reshape([batch_size * seq_length, VOCAB_SIZE]);
         let target_flat = target.reshape([batch_size * seq_length]);
 
-        let loss = loss_fn.forward(output_flat.clone(), target_flat.clone());
+        let loss = token_cross_entropy(output_flat.clone(), target_flat.clone());
 
         ClassificationOutput::new(loss, output_flat, target_flat)
     }
@@ -107,16 +120,12 @@ impl Model {
         );
         let output = self.resizer.forward(trans_out);
 
-        let loss_fn = CrossEntropyLossConfig::new()
-            .with_pad_tokens(Some(vec![PAD_TOKEN as usize]))
-            .init(&self.device());
-
         let output_flat = output
             .clone()
             .reshape([batch_size * seq_length, VOCAB_SIZE]);
         let target_flat = target.reshape([batch_size * seq_length]);
 
-        let loss = loss_fn.forward(output_flat.clone(), target_flat.clone());
+        let loss = token_cross_entropy(output_flat.clone(), target_flat.clone());
 
         ClassificationOutput::new(loss, output_flat, target_flat)
     }

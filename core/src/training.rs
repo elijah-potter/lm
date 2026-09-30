@@ -4,7 +4,7 @@ use burn::data::dataloader::DataLoaderBuilder;
 use burn::data::dataset::transform::{SamplerDataset, SamplerDatasetOptions};
 use burn::data::dataset::{Dataset, DatasetError};
 use burn::lr_scheduler::linear::LinearLrSchedulerConfig;
-use burn::module::{AutodiffModule, Module};
+use burn::module::Module;
 use burn::optim::AdamConfig;
 use burn::optim::decay::WeightDecayConfig;
 use burn::prelude::Device;

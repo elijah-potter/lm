@@ -82,7 +82,7 @@ fn main() {
                     .expect("Should be able to load the model weights from the provided file")
             });
 
-            let mut device = Device::cuda(Default::default());
+            let mut device = Device::cuda(0);
             device
                 .configure((FloatDType::BF16, IntDType::I32))
                 .expect("CUDA device must support BF16");

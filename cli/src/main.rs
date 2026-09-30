@@ -40,7 +40,7 @@ enum Command {
         train_data: PathBuf,
         test_data: PathBuf,
         dropout: f64,
-        /// Base learning-rate factor for the Noam scheduler.
+        /// Learning rate before accumulation scaling; warms up linearly, then decays with cosine.
         #[clap(default_value_t = 0.1, required = true)]
         lr_factor: f64,
         /// The total number of transformer blocks.

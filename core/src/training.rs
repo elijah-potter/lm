@@ -3,7 +3,10 @@ use std::path::{Path, PathBuf};
 use burn::data::dataloader::DataLoaderBuilder;
 use burn::data::dataset::transform::{SamplerDataset, SamplerDatasetOptions};
 use burn::data::dataset::{Dataset, DatasetError};
+use burn::lr_scheduler::LrSchedulerConfig;
+use burn::lr_scheduler::cosine::CosineAnnealingLrSchedulerConfig;
 use burn::lr_scheduler::linear::LinearLrSchedulerConfig;
+use burn::lr_scheduler::sequential::SequentialLrSchedulerConfig;
 use burn::module::Module;
 use burn::optim::AdamConfig;
 use burn::optim::decay::WeightDecayConfig;
@@ -112,15 +115,33 @@ pub fn train(
             .expect("Should be able to load the optimizer state from the provided file");
     }
 
-    let accum = 6;
+    let total_steps = dataset_train
+        .len()
+        .div_ceil(200)
+        .div_ceil(6)
+        .checked_mul(epochs)
+        .expect("The training step count overflowed");
 
-    let lr_scheduler = LinearLrSchedulerConfig::new(
-        lr_factor / accum as f64 / 100.0,
-        lr_factor / accum as f64,
-        6000,
-    )
-    .init()
-    .unwrap();
+    let peak_lr = lr_factor / 6.0;
+    let warmup = LinearLrSchedulerConfig::new(peak_lr / 100.0, peak_lr, 1000);
+    let lr_scheduler = if total_steps <= 1000 {
+        warmup.init().expect("Invalid warmup learning rate")
+    } else {
+        // Start cosine at the peak after warmup and reach zero on the final training call.
+        let decay_iters = (total_steps - 1000).saturating_sub(1).max(1);
+        let decay_end = 1000 + decay_iters + 1;
+        SequentialLrSchedulerConfig::new(
+            vec![
+                warmup.into(),
+                CosineAnnealingLrSchedulerConfig::new(peak_lr, decay_iters).into(),
+                // Clamp at zero so Burn's cosine cannot rebound past its minimum.
+                LrSchedulerConfig::Constant(0.0),
+            ],
+            vec![1000, decay_end],
+        )
+        .init()
+        .expect("Invalid warmup/cosine learning rate schedule")
+    };
 
     let training = SupervisedTraining::new("./checkpoints", dataloader_train, dataloader_test)
         //.metric_train_numeric(AccuracyMetric::new().with_pad_token(PAD_TOKEN as usize))
@@ -131,7 +152,7 @@ pub fn train(
         .metric_valid_numeric(LossMetric::new())
         .metric_train_numeric(LearningRateMetric::new())
         .with_default_checkpointers()
-        .grads_accumulation(accum)
+        .grads_accumulation(6)
         .num_epochs(epochs)
         .summary();
 

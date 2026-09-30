@@ -9,9 +9,7 @@ use burn::optim::AdamConfig;
 use burn::optim::decay::WeightDecayConfig;
 use burn::prelude::Device;
 use burn::store::ModuleRecord;
-use burn::train::metric::{
-    AccuracyMetric, CudaMetric, LearningRateMetric, LossMetric, PerplexityMetric,
-};
+use burn::train::metric::{AccuracyMetric, LearningRateMetric, LossMetric, PerplexityMetric};
 use burn::train::{Learner, SupervisedTraining};
 use log::info;
 
@@ -86,7 +84,7 @@ pub fn train(
     let dataloader_train = DataLoaderBuilder::new(GenBatcher)
         .set_device(device.clone())
         .batch_size(200)
-        .num_workers(4)
+        .num_workers(12)
         .build(SamplerDataset::new(
             dataset_train,
             SamplerDatasetOptions::default(),
@@ -95,7 +93,7 @@ pub fn train(
     let dataloader_test = DataLoaderBuilder::new(GenBatcher)
         .set_device(device.clone().inner())
         .batch_size(200)
-        .num_workers(4)
+        .num_workers(12)
         .build(SamplerDataset::new(
             dataset_test,
             SamplerDatasetOptions::default(),
@@ -125,8 +123,6 @@ pub fn train(
     .unwrap();
 
     let training = SupervisedTraining::new("./checkpoints", dataloader_train, dataloader_test)
-        .metric_train(CudaMetric::new())
-        .metric_valid(CudaMetric::new())
         //.metric_train_numeric(AccuracyMetric::new().with_pad_token(PAD_TOKEN as usize))
         .metric_valid_numeric(AccuracyMetric::new().with_pad_token(PAD_TOKEN as usize))
         //.metric_train_numeric(PerplexityMetric::new().with_pad_token(PAD_TOKEN as usize))

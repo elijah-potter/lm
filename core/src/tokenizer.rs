@@ -1,52 +1,16 @@
-use std::sync::OnceLock;
-
-use base64::{Engine as _, engine::general_purpose};
 use burn::Tensor;
 use burn::prelude::Device;
 use burn::tensor::{Int, Shape, TensorData};
-use riptoken::{CoreBPE, Rank};
+use tiktoken_rs::{CoreBPE, r50k_base_singleton};
 
-pub const VOCAB_SIZE: usize = 49160;
+pub const VOCAB_SIZE: usize = 50258;
 /// Token ID reserved for sequence padding.
 pub const PAD_TOKEN: i32 = 0;
 pub const MAX_SEQ_LEN: usize = 128;
 
-static BPE: OnceLock<CoreBPE> = OnceLock::new();
-
-/// It is initialized at most once and shared by all callers.
+/// Returns the built-in OpenAI r50k_base (GPT-2) tokenizer.
 pub fn bpe_singleton() -> &'static CoreBPE {
-    BPE.get_or_init(|| {
-        let encoder = include_str!("../izer.tiktoken")
-            .lines()
-            .map(|line| {
-                let (token, rank) = line
-                    .split_once(' ')
-                    .expect("each izer.tiktoken line must contain a token and rank");
-                let token = general_purpose::STANDARD
-                    .decode(token)
-                    .expect("izer.tiktoken contains an invalid base64 token");
-                let rank: Rank = rank
-                    .parse()
-                    .expect("izer.tiktoken contains an invalid token rank");
-                (token, rank)
-            })
-            .collect();
-        let special_tokens = [
-            (String::from("<|pad|>"), 0),
-            (String::from("<|bos|>"), 1),
-            (String::from("<|eos|>"), 2),
-            (String::from("<|unk|>"), 3),
-        ]
-        .into_iter()
-        .collect();
-
-        CoreBPE::new(
-            encoder,
-            special_tokens,
-            "'(?:[sdmt]|ll|ve|re)| ?\\p{L}++| ?\\p{N}++| ?[^\\s\\p{L}\\p{N}]++|\\s++$|\\s+(?!\\S)|\\s",
-        )
-        .expect("failed to build the tokenizer")
-    })
+    r50k_base_singleton()
 }
 
 /// Tokenize text on the CPU, returning at most `max_tokens` token IDs.
@@ -64,7 +28,7 @@ pub fn text_to_token_ids(text: &[char], max_tokens: usize) -> Vec<i32> {
         .encode_ordinary(&string)
         .into_iter()
         .take(max_tokens)
-        .map(|token| token as i32)
+        .map(|token| token as i32 + 1)
         .collect()
 }
 
@@ -90,8 +54,10 @@ pub fn indices_to_bytes(tensor: Tensor<2, Int>) -> Vec<u8> {
         .unwrap()
         .into_iter()
         .filter(|&i| i != PAD_TOKEN)
-        .map(|i| i as u32)
+        .map(|i| (i - 1) as u32)
         .collect();
 
-    bpe_singleton().decode_bytes(&idxs)
+    bpe_singleton()
+        .decode_bytes(&idxs)
+        .expect("token IDs must belong to the r50k_base vocabulary")
 }

@@ -3,10 +3,7 @@ use std::path::{Path, PathBuf};
 use burn::data::dataloader::DataLoaderBuilder;
 use burn::data::dataset::transform::{SamplerDataset, SamplerDatasetOptions};
 use burn::data::dataset::{Dataset, DatasetError};
-use burn::lr_scheduler::LrSchedulerConfig;
-use burn::lr_scheduler::cosine::CosineAnnealingLrSchedulerConfig;
 use burn::lr_scheduler::linear::LinearLrSchedulerConfig;
-use burn::lr_scheduler::sequential::SequentialLrSchedulerConfig;
 use burn::module::Module;
 use burn::optim::AdamConfig;
 use burn::optim::decay::WeightDecayConfig;
@@ -19,7 +16,7 @@ use log::info;
 use crate::batcher::GenBatcher;
 use crate::dataset::FileFolderDataset;
 use crate::dolma_dataset::DolmaDataset;
-use crate::model::{Model, ModelConfig};
+use crate::model::{BurnModelConfig, Model};
 use crate::tokenizer::PAD_TOKEN;
 
 enum TrainingDataset {
@@ -64,10 +61,11 @@ fn load_dataset(path: impl AsRef<Path>) -> TrainingDataset {
 
 pub fn train(
     device: Device,
-    m: ModelConfig,
+    m: BurnModelConfig,
     train_folder: impl AsRef<Path>,
     test_folder: impl AsRef<Path>,
     epochs: usize,
+    batch_size: usize,
     lr_factor: f64,
     start_from_record: Option<ModuleRecord>,
     start_optimizer: Option<PathBuf>,
@@ -86,7 +84,7 @@ pub fn train(
 
     let dataloader_train = DataLoaderBuilder::new(GenBatcher)
         .set_device(device.clone())
-        .batch_size(200)
+        .batch_size(batch_size)
         .num_workers(12)
         .build(SamplerDataset::new(
             dataset_train,
@@ -95,7 +93,7 @@ pub fn train(
 
     let dataloader_test = DataLoaderBuilder::new(GenBatcher)
         .set_device(device.clone().inner())
-        .batch_size(200)
+        .batch_size(batch_size)
         .num_workers(12)
         .build(SamplerDataset::new(
             dataset_test,
@@ -115,33 +113,15 @@ pub fn train(
             .expect("Should be able to load the optimizer state from the provided file");
     }
 
-    let total_steps = dataset_train
-        .len()
-        .div_ceil(200)
-        .div_ceil(6)
-        .checked_mul(epochs)
-        .expect("The training step count overflowed");
+    let accum = 6;
 
-    let peak_lr = lr_factor / 6.0;
-    let warmup = LinearLrSchedulerConfig::new(peak_lr / 100.0, peak_lr, 1000);
-    let lr_scheduler = if total_steps <= 1000 {
-        warmup.init().expect("Invalid warmup learning rate")
-    } else {
-        // Start cosine at the peak after warmup and reach zero on the final training call.
-        let decay_iters = (total_steps - 1000).saturating_sub(1).max(1);
-        let decay_end = 1000 + decay_iters + 1;
-        SequentialLrSchedulerConfig::new(
-            vec![
-                warmup.into(),
-                CosineAnnealingLrSchedulerConfig::new(peak_lr, decay_iters).into(),
-                // Clamp at zero so Burn's cosine cannot rebound past its minimum.
-                LrSchedulerConfig::Constant(0.0),
-            ],
-            vec![1000, decay_end],
-        )
-        .init()
-        .expect("Invalid warmup/cosine learning rate schedule")
-    };
+    let lr_scheduler = LinearLrSchedulerConfig::new(
+        lr_factor / accum as f64 / 1000.0,
+        lr_factor / accum as f64,
+        6000,
+    )
+    .init()
+    .unwrap();
 
     let training = SupervisedTraining::new("./checkpoints", dataloader_train, dataloader_test)
         //.metric_train_numeric(AccuracyMetric::new().with_pad_token(PAD_TOKEN as usize))
@@ -152,7 +132,7 @@ pub fn train(
         .metric_valid_numeric(LossMetric::new())
         .metric_train_numeric(LearningRateMetric::new())
         .with_default_checkpointers()
-        .grads_accumulation(6)
+        .grads_accumulation(accum)
         .num_epochs(epochs)
         .summary();
 

@@ -1,5 +1,4 @@
 use burn::Tensor;
-use burn::module::Module;
 use burn::nn::attention::generate_autoregressive_mask;
 use burn::nn::loss::{CrossEntropyLoss, MseLoss, Reduction};
 use burn::nn::transformer::{
@@ -10,8 +9,6 @@ use burn::tensor::{Float, Int};
 use burn::train::{ClassificationOutput, InferenceStep, RegressionOutput, TrainOutput, TrainStep};
 
 use burn::module::Module;
-use burn::nn::Embedding;
-use burn::nn::transformer::TransformerEncoder;
 
 use super::dataloader::BatchItem;
 use super::tensor_utils::int_seq_to_tensor;

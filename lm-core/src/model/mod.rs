@@ -9,10 +9,8 @@ use burn::train::metric::{LearningRateMetric, LossMetric};
 use burn::train::{Learner, SupervisedTraining};
 
 use self::dataloader::create_dataloader;
-use self::model_config::ModelConfig;
 use self::model_inner::ModelInner;
 use self::tokenizer::Tokenizer;
-use self::training_config::TrainingConfig;
 
 mod dataloader;
 mod model_config;
@@ -20,6 +18,9 @@ mod model_inner;
 mod tensor_utils;
 mod tokenizer;
 mod training_config;
+
+pub use model_config::ModelConfig;
+pub use training_config::TrainingConfig;
 
 pub struct Model {
     inner: ModelInner,

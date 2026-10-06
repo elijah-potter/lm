@@ -18,6 +18,7 @@ pub struct ModelInner {
     pub embedding: Embedding,
     pub pos_embedding: Embedding,
     pub transformer: TransformerEncoder,
+    pub resizer: Linear,
     #[module(skip)]
     pub max_seq_len: usize,
     #[module(skip)]
@@ -43,23 +44,26 @@ impl ModelInner {
 
         let device = self.devices().into_iter().next().unwrap();
 
-        let [batch_size, _, embedding_dims] = embedding.dims();
+        let [batch_size, _, _] = embedding.dims();
         let ag_mask = generate_autoregressive_mask(batch_size, self.max_seq_len, &device);
 
         let trans_out = self
             .transformer
             .forward(TransformerEncoderInput::new(embedding).mask_attn(ag_mask));
 
+        let logits = self.resizer.forward(trans_out);
+        let [_, _, vocab_size] = logits.dims();
+
         // Our cross entropy loss calculation assumes this specific shape, even if it's unintuitive.
         // In essence, we're taking each batch and placing them end to end as if they were one
         // really long sequence.
-        let trans_out_reshaped = trans_out.reshape([batch_size * self.max_seq_len, embedding_dims]);
+        let logits_reshaped = logits.reshape([batch_size * self.max_seq_len, vocab_size]);
         let targets_reshaped = item.targets.reshape([batch_size * self.max_seq_len]);
 
         let loss = CrossEntropyLoss::new(Some(self.pad_idx), &device)
-            .forward(trans_out_reshaped.clone(), targets_reshaped.clone());
+            .forward(logits_reshaped.clone(), targets_reshaped.clone());
 
-        ClassificationOutput::new(loss, trans_out_reshaped, targets_reshaped)
+        ClassificationOutput::new(loss, logits_reshaped, targets_reshaped)
     }
 }
 

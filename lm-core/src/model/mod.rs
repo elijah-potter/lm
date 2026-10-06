@@ -65,6 +65,8 @@ impl Model {
                     config.transformer_blocks,
                 )
                 .init(&device),
+                resizer: LinearConfig::new(config.embedding_dimensions, tokenizer.vocab_size())
+                    .init(&device),
                 max_seq_len: config.max_seq_len,
                 pad_idx: tokenizer.pad_id(),
             },
@@ -113,7 +115,7 @@ impl Model {
 
             let next_tok = Self::sample(output.output, cur_len);
 
-            let next_tok_tens = Tensor::<2, Int>::from_data([[42.0]], &self.device);
+            let next_tok_tens = Tensor::<2, Int>::from_data([[next_tok]], &self.device);
             idxs = Tensor::cat(vec![idxs, next_tok_tens], 1);
 
             std::io::stdout().write_all(&self.tokenizer.indices_to_bytes(&[next_tok]));
@@ -122,10 +124,12 @@ impl Model {
 
     /// Samples from the logits emitted by the model. Needs to know the previous len to know which
     /// sequence position to sample from.
-    fn sample(logits: Tensor<2, Float>, prev_len: usize) -> u32 {
+    fn sample(logits: Tensor<2, Float>, sample_nth_token: usize) -> u32 {
         let softmax = softmax(logits, 1);
 
-        let next_token_probs = softmax.slice_dim(0, prev_len..prev_len + 1).squeeze::<1>();
+        let next_token_probs = softmax
+            .slice_dim(0, sample_nth_token - 1..sample_nth_token)
+            .squeeze::<1>();
 
         // Do this greedily to start
         next_token_probs.argmax(0).into_scalar::<u32>() as u32
@@ -175,8 +179,6 @@ impl Model {
             .summary();
 
         let result = training.launch(Learner::new(self.inner.clone(), optim, lr_scheduler));
-        result.model.valid();
-
-        self.inner = result.model;
+        self.inner = result.model.valid();
     }
 }

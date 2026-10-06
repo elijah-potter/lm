@@ -12,11 +12,11 @@ enum Args {
         model_config: PathBuf,
         training_config: PathBuf,
     },
-    // Infer {
-    //     model_path: PathBuf,
-    //     model_config: PathBuf,
-    //     heading: String,
-    // },
+    Infer {
+        model_path: PathBuf,
+        model_config: PathBuf,
+        text: String,
+    },
 }
 
 fn main() {
@@ -35,18 +35,20 @@ fn main() {
             let train_config: TrainingConfig = serde_json::from_reader(train_config_file).unwrap();
             let mut model = Model::new(model_config, &device, true);
             model.train(train_config);
-        } // Args::Infer {
-          //     model_path,
-          //     model_config,
-          //     heading,
-          // } => {
-          //     let model_config_file = File::open(model_config).unwrap();
-          //     let model_config: ModelConfig = serde_json::from_reader(model_config_file).unwrap();
-          //
-          //     let mut model = Model::new(model_config, &device, false);
-          //     model.load_from_weights(model_path);
-          //
-          //     dbg!(model.estimate_score(&heading));
-          // }
+        }
+        Args::Infer {
+            model_path,
+            model_config,
+            text,
+        } => {
+            let model_config_file = File::open(model_config).unwrap();
+            let model_config: ModelConfig = serde_json::from_reader(model_config_file).unwrap();
+
+            let mut model = Model::new(model_config, &device, false);
+            let mut model_file = File::open(model_path).unwrap();
+            model.load_from_weights(&mut model_file);
+
+            model.completion(&text);
+        }
     }
 }

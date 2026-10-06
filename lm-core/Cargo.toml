@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-burn = { version = "0.22.0-pre.4", features = ["train"] }
+burn = { version = "0.22.0-pre.4", features = ["train", "store"] }
 parquet = "60.0.0"
 serde = { version = "1.0.229", features = ["derive"] }
 tiktoken-rs = "0.12.1"

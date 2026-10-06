@@ -31,6 +31,10 @@ impl Tokenizer {
         int_seq_to_tensor(indices, device)
     }
 
+    pub fn indices_to_bytes(&self, indices: &[u32]) -> Vec<u8> {
+        self.bpe.decode_bytes(indices).unwrap()
+    }
+
     pub fn pad_id(&self) -> usize {
         50_256
     }

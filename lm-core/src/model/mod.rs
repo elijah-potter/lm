@@ -1,3 +1,6 @@
+use std::io::{Read, Write};
+
+use burn::Tensor;
 use burn::lr_scheduler::linear::LinearLrSchedulerConfig;
 use burn::module::Module;
 use burn::nn::transformer::TransformerEncoderConfig;
@@ -5,10 +8,14 @@ use burn::nn::{EmbeddingConfig, LinearConfig};
 use burn::optim::AdamConfig;
 use burn::optim::decay::WeightDecayConfig;
 use burn::prelude::Device;
+use burn::store::{BurnpackStore, ModuleRecord, ModuleSnapshot};
+use burn::tensor::activation::softmax;
+use burn::tensor::ops::PadMode;
+use burn::tensor::{Bytes, Float, Int};
 use burn::train::metric::{LearningRateMetric, LossMetric};
 use burn::train::{Learner, SupervisedTraining};
 
-use self::dataloader::create_dataloader;
+use self::dataloader::{BatchItem, create_dataloader};
 use self::model_inner::ModelInner;
 use self::tokenizer::Tokenizer;
 
@@ -65,6 +72,63 @@ impl Model {
             device: device.clone(),
             tokenizer,
         }
+    }
+
+    pub fn load_from_weights(&mut self, weights: &mut impl Read) {
+        let mut data = Vec::new();
+        weights.read_to_end(&mut data).unwrap();
+
+        let bytes = Bytes::from_bytes_vec(data);
+        let mut store = BurnpackStore::from_bytes(Some(bytes));
+
+        self.inner.load_from(&mut store).unwrap();
+    }
+
+    pub fn completion(&mut self, text: &str) {
+        let mut idxs = self.tokenizer.text_to_tensor(text, self.device.clone());
+
+        loop {
+            let [batch_size, cur_len] = idxs.dims();
+            assert_eq!(batch_size, 1);
+
+            let padded_idxs = if cur_len >= self.config.max_seq_len {
+                let start = cur_len - self.config.max_seq_len;
+                idxs.clone().slice_dim(1, start..cur_len)
+            } else {
+                let pad_right = (self.config.max_seq_len).saturating_sub(cur_len);
+
+                idxs.clone().pad(
+                    [(0, pad_right)],
+                    PadMode::Constant(self.tokenizer.pad_id() as f32),
+                )
+            };
+
+            let item = BatchItem {
+                inputs: padded_idxs.clone(),
+                // It doesn't matter at inference time.
+                targets: padded_idxs,
+            };
+
+            let output = self.inner.forward(item);
+
+            let next_tok = Self::sample(output.output, cur_len);
+
+            let next_tok_tens = Tensor::<2, Int>::from_data([[42.0]], &self.device);
+            idxs = Tensor::cat(vec![idxs, next_tok_tens], 1);
+
+            std::io::stdout().write_all(&self.tokenizer.indices_to_bytes(&[next_tok]));
+        }
+    }
+
+    /// Samples from the logits emitted by the model. Needs to know the previous len to know which
+    /// sequence position to sample from.
+    fn sample(logits: Tensor<2, Float>, prev_len: usize) -> u32 {
+        let softmax = softmax(logits, 1);
+
+        let next_token_probs = softmax.slice_dim(0, prev_len..prev_len + 1).squeeze::<1>();
+
+        // Do this greedily to start
+        next_token_probs.argmax(0).into_scalar::<u32>() as u32
     }
 
     pub fn train(&mut self, config: TrainingConfig) {

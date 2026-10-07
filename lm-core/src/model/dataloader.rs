@@ -49,9 +49,15 @@ impl Batcher<UnbatchedItem, BatchItem> for TrainingBatcher {
         let items: Vec<(Tensor<2, Int>, Tensor<2, Int>)> = items
             .into_iter()
             // Sample the context randomly from the document.
-            .map(|mut i| {
-                let start_char = rand::random_range(0..i.input.len());
-                i.input.split_off(start_char)
+            .map(|i| {
+                if i.input.is_empty() {
+                    return i.input;
+                }
+
+                let mut chars: Vec<char> = i.input.chars().collect();
+
+                let start_char = rand::random_range(0..chars.len());
+                chars.split_off(start_char).into_iter().collect()
             })
             .map(|sample| self.tokenizer.text_to_tensor(&sample, device.clone()))
             // Resize the tensor to the exact length required by the model, then get the before and

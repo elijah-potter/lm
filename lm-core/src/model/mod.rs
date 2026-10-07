@@ -137,22 +137,16 @@ impl Model {
         // tokens first.
         let mut token_probability_pairs: Vec<(u32, f64)> = Vec::with_capacity(vocab_size);
 
-        while token_probability_pairs.len() < vocab_size {
-            let highest_prob_idx = next_token_probs.clone().argmax(0).into_scalar::<u32>() as u32;
-
+        for i in 0..vocab_size {
             token_probability_pairs.push((
                 // Index of the next highest probability token.
-                highest_prob_idx,
+                i as u32,
                 // The probability of that token.
-                next_token_probs
-                    .clone()
-                    .slice([highest_prob_idx..highest_prob_idx + 1])
-                    .into_scalar(),
+                next_token_probs.clone().slice([i..i + 1]).into_scalar(),
             ));
-
-            next_token_probs =
-                next_token_probs.slice_fill([highest_prob_idx..highest_prob_idx + 1], 0.0);
         }
+
+        token_probability_pairs.sort_by(|(_, a), (_, b)| b.total_cmp(a));
 
         // Actually sample
         let l = rand::random_range(0.0..=1.0);

@@ -4,7 +4,7 @@ use std::path::PathBuf;
 use burn::tensor::{Device, DeviceKind};
 use clap::Parser;
 
-use lm_core::{Model, ModelConfig, TrainingConfig};
+use lm_core::{Model, ModelConfig, SamplingConfig, TrainingConfig};
 
 #[derive(Debug, Parser)]
 enum Args {
@@ -15,13 +15,14 @@ enum Args {
     Infer {
         model_path: PathBuf,
         model_config: PathBuf,
+        sampling_config: PathBuf,
         text: String,
     },
 }
 
 fn main() {
     let args = Args::parse();
-    let device = Device::wgpu(DeviceKind::DiscreteGpu(0));
+    let device = Device::flex();
 
     match args {
         Args::Train {
@@ -39,6 +40,7 @@ fn main() {
         Args::Infer {
             model_path,
             model_config,
+            sampling_config,
             text,
         } => {
             let model_config_file = File::open(model_config).unwrap();
@@ -48,7 +50,11 @@ fn main() {
             let mut model_file = File::open(model_path).unwrap();
             model.load_from_weights(&mut model_file);
 
-            model.completion(&text);
+            let sampling_config_file = File::open(sampling_config).unwrap();
+            let sampling_config: SamplingConfig =
+                serde_json::from_reader(sampling_config_file).unwrap();
+
+            model.completion(&text, &sampling_config);
         }
     }
 }

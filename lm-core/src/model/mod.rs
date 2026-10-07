@@ -22,11 +22,13 @@ use self::tokenizer::Tokenizer;
 mod dataloader;
 mod model_config;
 mod model_inner;
+mod sampling_config;
 mod tensor_utils;
 mod tokenizer;
 mod training_config;
 
 pub use model_config::ModelConfig;
+pub use sampling_config::SamplingConfig;
 pub use training_config::TrainingConfig;
 
 pub struct Model {
@@ -86,7 +88,7 @@ impl Model {
         self.inner.load_from(&mut store).unwrap();
     }
 
-    pub fn completion(&mut self, text: &str) {
+    pub fn completion(&mut self, text: &str, sampling_config: &SamplingConfig) {
         let mut idxs = self.tokenizer.text_to_tensor(text, self.device.clone());
 
         loop {
@@ -113,7 +115,7 @@ impl Model {
 
             let output = self.inner.forward(item);
 
-            let next_tok = Self::sample(output.output, cur_len);
+            let next_tok = Self::sample(output.output, cur_len, sampling_config);
 
             let next_tok_tens = Tensor::<2, Int>::from_data([[next_tok]], &self.device);
             idxs = Tensor::cat(vec![idxs, next_tok_tens], 1);
@@ -125,7 +127,11 @@ impl Model {
 
     /// Samples from the logits emitted by the model. Needs to know the previous len to know which
     /// sequence position to sample from.
-    fn sample(logits: Tensor<2, Float>, sample_nth_token: usize) -> u32 {
+    fn sample(
+        logits: Tensor<2, Float>,
+        sample_nth_token: usize,
+        sampling_config: &SamplingConfig,
+    ) -> u32 {
         let softmax = softmax(logits, 1);
 
         let mut next_token_probs = softmax
@@ -148,6 +154,21 @@ impl Model {
 
         token_probability_pairs.sort_by(|(_, a), (_, b)| b.total_cmp(a));
 
+        // Apply top_p.
+        let mut cumulative = 0.0;
+        token_probability_pairs.retain(|(_, p)| {
+            let low_before = cumulative < sampling_config.top_p;
+            cumulative += *p;
+
+            low_before
+        });
+
+        // Keep them as probabilities
+        let sum: f64 = token_probability_pairs.iter().map(|(_, p)| p).sum();
+        for (_, p) in token_probability_pairs.iter_mut() {
+            *p = *p / sum;
+        }
+
         // Actually sample
         let l = rand::random_range(0.0..=1.0);
         let mut cumulative_prob = 0.0;
@@ -161,7 +182,7 @@ impl Model {
         }
 
         *token_probability_pairs
-            .last()
+            .first()
             .map(|(tok_id, _)| tok_id)
             .unwrap()
     }

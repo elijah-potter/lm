@@ -22,13 +22,14 @@ enum Args {
 
 fn main() {
     let args = Args::parse();
-    let device = Device::wgpu(DeviceKind::DiscreteGpu(0));
 
     match args {
         Args::Train {
             model_config,
             training_config,
         } => {
+            let device = Device::wgpu(DeviceKind::DiscreteGpu(0));
+
             let model_config_file = File::open(model_config).unwrap();
             let model_config: ModelConfig = serde_json::from_reader(model_config_file).unwrap();
 
@@ -43,6 +44,8 @@ fn main() {
             sampling_config,
             text,
         } => {
+            let device = Device::flex();
+
             let model_config_file = File::open(model_config).unwrap();
             let model_config: ModelConfig = serde_json::from_reader(model_config_file).unwrap();
 

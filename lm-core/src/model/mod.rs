@@ -119,6 +119,7 @@ impl Model {
             idxs = Tensor::cat(vec![idxs, next_tok_tens], 1);
 
             std::io::stdout().write_all(&self.tokenizer.indices_to_bytes(&[next_tok]));
+            std::io::stdout().flush();
         }
     }
 
@@ -127,12 +128,48 @@ impl Model {
     fn sample(logits: Tensor<2, Float>, sample_nth_token: usize) -> u32 {
         let softmax = softmax(logits, 1);
 
-        let next_token_probs = softmax
+        let mut next_token_probs = softmax
             .slice_dim(0, sample_nth_token - 1..sample_nth_token)
             .squeeze::<1>();
 
-        // Do this greedily to start
-        next_token_probs.argmax(0).into_scalar::<u32>() as u32
+        let vocab_size = next_token_probs.dims()[0];
+        // A sorted list of token IDs with their associated probabilities, with the most likely
+        // tokens first.
+        let mut token_probability_pairs: Vec<(u32, f64)> = Vec::with_capacity(vocab_size);
+
+        while token_probability_pairs.len() < vocab_size {
+            let highest_prob_idx = next_token_probs.clone().argmax(0).into_scalar::<u32>() as u32;
+
+            token_probability_pairs.push((
+                // Index of the next highest probability token.
+                highest_prob_idx,
+                // The probability of that token.
+                next_token_probs
+                    .clone()
+                    .slice([highest_prob_idx..highest_prob_idx + 1])
+                    .into_scalar(),
+            ));
+
+            next_token_probs =
+                next_token_probs.slice_fill([highest_prob_idx..highest_prob_idx + 1], 0.0);
+        }
+
+        // Actually sample
+        let l = rand::random_range(0.0..=1.0);
+        let mut cumulative_prob = 0.0;
+
+        for (tok_id, prob) in &token_probability_pairs {
+            cumulative_prob += prob;
+
+            if cumulative_prob >= l {
+                return *tok_id;
+            }
+        }
+
+        *token_probability_pairs
+            .last()
+            .map(|(tok_id, _)| tok_id)
+            .unwrap()
     }
 
     pub fn train(&mut self, config: TrainingConfig) {

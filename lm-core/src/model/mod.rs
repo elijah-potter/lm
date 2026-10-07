@@ -89,6 +89,7 @@ impl Model {
     }
 
     pub fn completion(&mut self, text: &str, sampling_config: &SamplingConfig) {
+        print!("{text}");
         let mut idxs = self.tokenizer.text_to_tensor(text, self.device.clone());
 
         loop {

@@ -13,5 +13,7 @@ pub struct TrainingConfig {
     pub optim_epsilon: f64,
     pub optim_weight_decay: f64,
     pub lr_warmup_duration: usize,
-    pub epochs: usize,
+    pub checkpoints: usize,
+    pub checkpoint_period: usize,
+    pub validation_duration: usize,
 }

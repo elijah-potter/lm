@@ -194,6 +194,7 @@ impl Model {
             config.batch_size,
             self.tokenizer.clone(),
             self.config.max_seq_len,
+            config.checkpoint_period,
             config.train_dataset,
         );
 
@@ -202,6 +203,7 @@ impl Model {
             config.batch_size,
             self.tokenizer.clone(),
             self.config.max_seq_len,
+            config.validation_duration,
             config.validate_dataset,
         );
 
@@ -228,7 +230,7 @@ impl Model {
             .metric_train_numeric(LearningRateMetric::new())
             .with_default_checkpointers()
             .grads_accumulation(6)
-            .num_epochs(config.epochs)
+            .num_epochs(config.checkpoints)
             .summary();
 
         let result = training.launch(Learner::new(self.inner.clone(), optim, lr_scheduler));

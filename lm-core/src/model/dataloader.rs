@@ -20,9 +20,14 @@ pub fn create_dataloader(
     batch_size: usize,
     tokenizer: Tokenizer,
     max_seq_len: usize,
+    epoch_size: usize,
     source: impl AsRef<Path>,
 ) -> Arc<dyn DataLoader<BatchItem>> {
     let dataset = ParquetDataset::load_from_file(source.as_ref());
+
+    let sampler_options = SamplerDatasetOptions::default()
+        .with_replacement()
+        .with_fixed_size(epoch_size);
 
     DataLoaderBuilder::new(TrainingBatcher {
         tokenizer,
@@ -31,10 +36,7 @@ pub fn create_dataloader(
     .set_device(device.clone())
     .batch_size(batch_size)
     .num_workers(8)
-    .build(SamplerDataset::new(
-        dataset,
-        SamplerDatasetOptions::default(),
-    ))
+    .build(SamplerDataset::new(dataset, sampler_options))
 }
 
 /// There's probably a better name for this.

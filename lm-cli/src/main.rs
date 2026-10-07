@@ -22,7 +22,7 @@ enum Args {
 
 fn main() {
     let args = Args::parse();
-    let device = Device::flex();
+    let device = Device::wgpu(DeviceKind::DiscreteGpu(0));
 
     match args {
         Args::Train {

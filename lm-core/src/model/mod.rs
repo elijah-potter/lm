@@ -88,13 +88,24 @@ impl Model {
         self.inner.load_from(&mut store).unwrap();
     }
 
-    pub fn completion(&mut self, text: &str, sampling_config: &SamplingConfig) {
+    /// Perform completion using the model and provided sampler settings.
+    /// The provided limit is the number of tokens to be generated.
+    /// The provided callback will be run after each token is generated and it will be provided the
+    /// bytes from that token.
+    pub fn completion(
+        &mut self,
+        text: &str,
+        sampling_config: &SamplingConfig,
+        mut on_tok_complete: impl FnMut(&[u8]),
+        tok_limit: usize,
+    ) -> Vec<u8> {
         print!("{text}");
         let mut idxs = self.tokenizer.text_to_tensor(text, self.device.clone());
-
         let mut ar_cache = self.inner.transformer.new_autoregressive_cache();
 
-        loop {
+        let mut output_bytes = Vec::new();
+
+        for _ in 0..tok_limit {
             let [batch_size, cur_len] = idxs.dims();
             assert_eq!(batch_size, 1);
 
@@ -111,9 +122,12 @@ impl Model {
             let next_tok_tens = Tensor::<2, Int>::from_data([[next_tok]], &self.device);
             idxs = Tensor::cat(vec![idxs, next_tok_tens], 1);
 
-            std::io::stdout().write_all(&self.tokenizer.indices_to_bytes(&[next_tok]));
-            std::io::stdout().flush();
+            let new_bytes = self.tokenizer.indices_to_bytes(&[next_tok]);
+            on_tok_complete(&new_bytes);
+            output_bytes.extend(new_bytes);
         }
+
+        output_bytes
     }
 
     /// Samples from the logits emitted by the model. Needs to know the previous len to know which

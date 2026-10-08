@@ -1,7 +1,8 @@
 use std::fs::File;
+use std::io::Write;
 use std::path::PathBuf;
 
-use burn::tensor::{Device, DeviceKind};
+use burn::tensor::{Device, DeviceKind, FloatDType};
 use clap::Parser;
 
 use lm_core::{Model, ModelConfig, SamplingConfig, TrainingConfig};
@@ -28,7 +29,8 @@ fn main() {
             model_config,
             training_config,
         } => {
-            let device = Device::wgpu(DeviceKind::DiscreteGpu(0));
+            let mut device = Device::cuda(0);
+            device.configure(FloatDType::BF16).unwrap();
 
             let model_config_file = File::open(model_config).unwrap();
             let model_config: ModelConfig = serde_json::from_reader(model_config_file).unwrap();
@@ -44,7 +46,8 @@ fn main() {
             sampling_config,
             text,
         } => {
-            let device = Device::flex();
+            let mut device = Device::flex();
+            device.configure(FloatDType::BF16).unwrap();
 
             let model_config_file = File::open(model_config).unwrap();
             let model_config: ModelConfig = serde_json::from_reader(model_config_file).unwrap();
@@ -57,7 +60,17 @@ fn main() {
             let sampling_config: SamplingConfig =
                 serde_json::from_reader(sampling_config_file).unwrap();
 
-            model.completion(&text, &sampling_config);
+            let mut stdout = std::io::stdout();
+
+            model.completion(
+                &text,
+                &sampling_config,
+                |bytes| {
+                    stdout.write_all(bytes).unwrap();
+                    stdout.flush();
+                },
+                128,
+            );
         }
     }
 }

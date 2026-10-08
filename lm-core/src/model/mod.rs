@@ -11,7 +11,7 @@ use burn::prelude::Device;
 use burn::store::{BurnpackStore, ModuleRecord, ModuleSnapshot};
 use burn::tensor::activation::softmax;
 use burn::tensor::ops::PadMode;
-use burn::tensor::{Bytes, Float, Int};
+use burn::tensor::{Bytes, Float, Int, TensorData};
 use burn::train::metric::{LearningRateMetric, LossMetric};
 use burn::train::{Learner, SupervisedTraining};
 
@@ -107,7 +107,7 @@ impl Model {
 
             let output = self.inner.forward_infer(truncated_idxs, &mut ar_cache);
 
-            let next_tok = Self::sample(output, cur_len, sampling_config);
+            let next_tok = self.sample(idxs.clone(), output, cur_len, sampling_config);
             let next_tok_tens = Tensor::<2, Int>::from_data([[next_tok]], &self.device);
             idxs = Tensor::cat(vec![idxs, next_tok_tens], 1);
 
@@ -119,11 +119,17 @@ impl Model {
     /// Samples from the logits emitted by the model. Needs to know the previous len to know which
     /// sequence position to sample from.
     fn sample(
+        &self,
+        inputs: Tensor<2, Int>,
         logits: Tensor<2, Float>,
         sample_nth_token: usize,
         sampling_config: &SamplingConfig,
     ) -> u32 {
-        let softmax = softmax(logits, 1);
+        // Perform DRY penalization
+        let penalties = self.compute_dry_penalties(inputs, sampling_config);
+        let penalized_logits = logits.sub(penalties);
+
+        let softmax = softmax(penalized_logits, 1);
 
         let mut next_token_probs = softmax
             .slice_dim(0, sample_nth_token - 1..sample_nth_token)
@@ -176,6 +182,87 @@ impl Model {
             .first()
             .map(|(tok_id, _)| tok_id)
             .unwrap()
+    }
+
+    fn compute_dry_penalties(
+        &self,
+        input: Tensor<2, Int>,
+        config: &SamplingConfig,
+    ) -> Tensor<2, Float> {
+        let input = input.into_data().try_into_vec::<i32>().unwrap();
+        let last_tok_id = input.last().unwrap();
+
+        let positions: Vec<usize> = input
+            .iter()
+            .enumerate()
+            .filter_map(|(index, &value)| {
+                if value == *last_tok_id && index != input.len() - 1 {
+                    Some(index)
+                } else {
+                    None
+                }
+            })
+            .collect();
+
+        // At each position
+        let mut depths = Vec::with_capacity(positions.len());
+
+        for pos in &positions {
+            let mut depth = 1;
+
+            loop {
+                let matched = if let Some(t) = input.get(pos - depth) {
+                    if let Some(t_e) = input.get(input.len() - 1 - depth) {
+                        t == t_e
+                    } else {
+                        false
+                    }
+                } else {
+                    false
+                };
+
+                if matched {
+                    depth += 1;
+                } else {
+                    depths.push(depth);
+                    break;
+                }
+            }
+        }
+
+        let token_ids_to_penalize: Vec<(usize, usize)> = positions
+            .iter()
+            .enumerate()
+            .map(|(index, i)| (input[i + 1] as usize, depths[index]))
+            .collect();
+
+        let mut penalties = Vec::with_capacity(self.tokenizer.vocab_size());
+
+        for i in 0..self.tokenizer.vocab_size() {
+            let penalty = if let Some((_, depth)) = token_ids_to_penalize
+                .iter()
+                .filter(|(f, _)| *f == i)
+                .max_by_key(|(_, depth)| depth)
+            {
+                if *depth >= config.dry_allowed_length {
+                    config.dry_multiplier
+                        * config
+                            .dry_base
+                            .powi(depth.saturating_sub(config.dry_allowed_length) as i32)
+                } else {
+                    0.0
+                }
+            } else {
+                0.0
+            };
+
+            penalties.push(penalty);
+        }
+
+        Tensor::<2, Float>::from_data(
+            TensorData::new(penalties, [1, self.tokenizer.vocab_size()]),
+            &self.device,
+        )
     }
 
     pub fn train(&mut self, config: TrainingConfig) {

@@ -3,7 +3,7 @@ use std::io::{Read, Write};
 use burn::Tensor;
 use burn::lr_scheduler::linear::LinearLrSchedulerConfig;
 use burn::module::Module;
-use burn::nn::transformer::TransformerEncoderConfig;
+use burn::nn::transformer::{TransformerEncoderAutoregressiveCache, TransformerEncoderConfig};
 use burn::nn::{EmbeddingConfig, LinearConfig};
 use burn::optim::AdamConfig;
 use burn::optim::decay::WeightDecayConfig;
@@ -92,32 +92,22 @@ impl Model {
         print!("{text}");
         let mut idxs = self.tokenizer.text_to_tensor(text, self.device.clone());
 
+        let mut ar_cache = self.inner.transformer.new_autoregressive_cache();
+
         loop {
             let [batch_size, cur_len] = idxs.dims();
             assert_eq!(batch_size, 1);
 
-            let padded_idxs = if cur_len >= self.config.max_seq_len {
+            let truncated_idxs = if cur_len >= self.config.max_seq_len {
                 let start = cur_len - self.config.max_seq_len;
                 idxs.clone().slice_dim(1, start..cur_len)
             } else {
-                let pad_right = (self.config.max_seq_len).saturating_sub(cur_len);
-
-                idxs.clone().pad(
-                    [(0, pad_right)],
-                    PadMode::Constant(self.tokenizer.pad_id() as f32),
-                )
+                idxs.clone()
             };
 
-            let item = BatchItem {
-                inputs: padded_idxs.clone(),
-                // It doesn't matter at inference time.
-                targets: padded_idxs,
-            };
+            let output = self.inner.forward_infer(truncated_idxs, &mut ar_cache);
 
-            let output = self.inner.forward(item);
-
-            let next_tok = Self::sample(output.output, cur_len, sampling_config);
-
+            let next_tok = Self::sample(output, cur_len, sampling_config);
             let next_tok_tens = Tensor::<2, Int>::from_data([[next_tok]], &self.device);
             idxs = Tensor::cat(vec![idxs, next_tok_tens], 1);
 

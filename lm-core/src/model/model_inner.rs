@@ -28,15 +28,40 @@ pub struct ModelInner {
 impl ModelInner {
     /// Embed a sequence of tokens.
     fn embed(&self, tens: Tensor<2, Int>) -> Tensor<3, Float> {
-        let norm_embed = self.embedding.forward(tens);
+        let norm_embed = self.embedding.forward(tens.clone());
+        let [_, seq_len] = tens.dims();
 
         let pos_embed_row = self.pos_embedding.forward(int_seq_to_tensor(
-            (0_u32..self.max_seq_len as u32).collect(),
+            (0_u32..seq_len as u32).collect(),
             self.devices().first().unwrap().clone(),
         ));
         let pos_embed = pos_embed_row.repeat_dim(0, norm_embed.dims()[0]);
 
         norm_embed.add(pos_embed)
+    }
+
+    pub fn forward_infer(
+        &self,
+        inputs: Tensor<2, Int>,
+        cache: &mut TransformerEncoderAutoregressiveCache,
+    ) -> Tensor<2, Float> {
+        let embedding = self.embed(inputs);
+
+        let device = self.devices().into_iter().next().unwrap();
+
+        let [batch_size, seq_len, _] = embedding.dims();
+        let ag_mask = generate_autoregressive_mask(batch_size, seq_len, &device);
+
+        let trans_out = self.transformer.forward_autoregressive_inference(
+            TransformerEncoderInput::new(embedding).mask_attn(ag_mask),
+            cache,
+        );
+
+        let logits = self.resizer.forward(trans_out);
+        let [_, _, vocab_size] = logits.dims();
+
+        let logits_reshaped = logits.reshape([batch_size * seq_len, vocab_size]);
+        logits_reshaped
     }
 
     pub fn forward(&self, item: BatchItem) -> ClassificationOutput {

@@ -12,6 +12,7 @@ enum Args {
     Train {
         model_config: PathBuf,
         training_config: PathBuf,
+        base_model: Option<PathBuf>,
     },
     Infer {
         model_path: PathBuf,
@@ -28,6 +29,7 @@ fn main() {
         Args::Train {
             model_config,
             training_config,
+            base_model,
         } => {
             let mut device = Device::cuda(0);
             device.configure(FloatDType::BF16).unwrap();
@@ -37,7 +39,14 @@ fn main() {
 
             let train_config_file = File::open(training_config).unwrap();
             let train_config: TrainingConfig = serde_json::from_reader(train_config_file).unwrap();
+
             let mut model = Model::new(model_config, &device, true);
+
+            if let Some(base_model) = base_model {
+                let mut model_file = File::open(base_model).unwrap();
+                model.load_from_weights(&mut model_file);
+            }
+
             model.train(train_config);
         }
         Args::Infer {

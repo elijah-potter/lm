@@ -66,6 +66,7 @@ impl Model {
                     config.attention_heads,
                     config.transformer_blocks,
                 )
+                .with_dropout(0.0)
                 .init(&device),
                 resizer: LinearConfig::new(config.embedding_dimensions, tokenizer.vocab_size())
                     .init(&device),

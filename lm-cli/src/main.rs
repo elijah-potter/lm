@@ -32,7 +32,6 @@ fn main() {
             base_model,
         } => {
             let mut device = Device::cuda(0);
-            device.configure(FloatDType::BF16).unwrap();
 
             let model_config_file = File::open(model_config).unwrap();
             let model_config: ModelConfig = serde_json::from_reader(model_config_file).unwrap();
@@ -56,7 +55,6 @@ fn main() {
             text,
         } => {
             let mut device = Device::flex();
-            device.configure(FloatDType::BF16).unwrap();
 
             let model_config_file = File::open(model_config).unwrap();
             let model_config: ModelConfig = serde_json::from_reader(model_config_file).unwrap();

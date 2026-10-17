@@ -3,9 +3,8 @@ use std::io::{Read, Write};
 use burn::Tensor;
 use burn::lr_scheduler::linear::LinearLrSchedulerConfig;
 use burn::module::Module;
-use burn::nn::activation::ActivationConfig;
 use burn::nn::transformer::{TransformerEncoderAutoregressiveCache, TransformerEncoderConfig};
-use burn::nn::{EmbeddingConfig, LinearConfig, SwiGluConfig};
+use burn::nn::{EmbeddingConfig, LinearConfig};
 use burn::optim::AdamConfig;
 use burn::optim::decay::WeightDecayConfig;
 use burn::prelude::Device;
@@ -67,9 +66,6 @@ impl Model {
                     config.attention_heads,
                     config.transformer_blocks,
                 )
-                .with_activation(ActivationConfig::SwiGlu(
-                    SwiGluConfig::new(config.hidden_size, config.hidden_size).with_bias(false),
-                ))
                 .with_dropout(0.0)
                 .with_norm_first(true)
                 .init(&device),

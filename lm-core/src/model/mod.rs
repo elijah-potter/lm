@@ -1,4 +1,5 @@
 use std::io::{Read, Write};
+use std::task::Wake;
 
 use burn::Tensor;
 use burn::lr_scheduler::linear::LinearLrSchedulerConfig;
@@ -11,7 +12,7 @@ use burn::prelude::Device;
 use burn::store::{BurnpackStore, ModuleRecord, ModuleSnapshot};
 use burn::tensor::activation::softmax;
 use burn::tensor::ops::PadMode;
-use burn::tensor::{Bytes, Float, Int, TensorData};
+use burn::tensor::{Bool, Bytes, Float, Int, TensorData};
 use burn::train::metric::{LearningRateMetric, LossMetric};
 use burn::train::{Learner, SupervisedTraining};
 
@@ -141,52 +142,43 @@ impl Model {
         sample_nth_token: usize,
         sampling_config: &SamplingConfig,
     ) -> u32 {
+        let logits = logits.slice_dim(0, sample_nth_token - 1..sample_nth_token);
+
         // Perform DRY penalization
         let penalties = self.compute_dry_penalties(inputs, sampling_config);
         let penalized_logits = logits.sub(penalties);
 
-        let softmax = softmax(penalized_logits, 1);
-
-        let mut next_token_probs = softmax
-            .slice_dim(0, sample_nth_token - 1..sample_nth_token)
-            .squeeze::<1>();
-
-        let vocab_size = next_token_probs.dims()[0];
-        // A sorted list of token IDs with their associated probabilities, with the most likely
-        // tokens first.
-        let mut token_probability_pairs: Vec<(u32, f64)> = Vec::with_capacity(vocab_size);
-
-        for i in 0..vocab_size {
-            token_probability_pairs.push((
-                // Index of the next highest probability token.
-                i as u32,
-                // The probability of that token.
-                next_token_probs.clone().slice([i..i + 1]).into_scalar(),
-            ));
-        }
-
-        token_probability_pairs.sort_by(|(_, a), (_, b)| b.total_cmp(a));
-
         // Apply top_p.
+        let softmaxed = softmax(penalized_logits.clone(), 1);
+        let next_token_probs = softmaxed.squeeze::<1>();
+        let token_probability_pairs = Self::compute_descending_probability_list(next_token_probs);
+
+        let vocab_size = penalized_logits.dims()[1];
+        let mut excluded = vec![false; vocab_size];
         let mut cumulative = 0.0;
-        token_probability_pairs.retain(|(_, p)| {
-            let low_before = cumulative < sampling_config.top_p;
-            cumulative += *p;
 
-            low_before
-        });
-
-        // Keep them as probabilities
-        let sum: f64 = token_probability_pairs.iter().map(|(_, p)| p).sum();
-        for (_, p) in token_probability_pairs.iter_mut() {
-            *p = *p / sum;
+        for &(tok_id, probability) in &token_probability_pairs {
+            excluded[tok_id as usize] = cumulative >= sampling_config.top_p;
+            cumulative += probability;
         }
+
+        let mask =
+            Tensor::<2, Bool>::from_data(TensorData::new(excluded, [1, vocab_size]), &self.device);
+
+        let top_p_filtered = penalized_logits.mask_fill(mask, f64::NEG_INFINITY);
+
+        // Apply temperature
+        let temperature_applied = top_p_filtered.div_scalar(sampling_config.temperature);
+
+        // Apply final softmax
+        let final_probs = softmax(temperature_applied, 1).squeeze::<1>();
+        let final_token_probability_pairs = Self::compute_descending_probability_list(final_probs);
 
         // Actually sample
         let l = rand::random_range(0.0..=1.0);
         let mut cumulative_prob = 0.0;
 
-        for (tok_id, prob) in &token_probability_pairs {
+        for (tok_id, prob) in &final_token_probability_pairs {
             cumulative_prob += prob;
 
             if cumulative_prob >= l {
@@ -194,7 +186,7 @@ impl Model {
             }
         }
 
-        *token_probability_pairs
+        *final_token_probability_pairs
             .first()
             .map(|(tok_id, _)| tok_id)
             .unwrap()
@@ -279,6 +271,25 @@ impl Model {
             TensorData::new(penalties, [1, self.tokenizer.vocab_size()]),
             &self.device,
         )
+    }
+
+    // From an already softmaxed logit tensor, produce a sorted list of token IDs with their associated probabilities, with the most likely
+    // tokens first.
+    fn compute_descending_probability_list(probs: Tensor<1>) -> Vec<(u32, f64)> {
+        let vocab_size = probs.dims()[0];
+        let mut token_probability_pairs: Vec<(u32, f64)> = Vec::with_capacity(vocab_size);
+
+        for i in 0..vocab_size {
+            token_probability_pairs.push((
+                // Index of the next highest probability token.
+                i as u32,
+                // The probability of that token.
+                probs.clone().slice([i..i + 1]).into_scalar(),
+            ));
+        }
+
+        token_probability_pairs.sort_by(|(_, a), (_, b)| b.total_cmp(a));
+        token_probability_pairs
     }
 
     pub fn train(&mut self, config: TrainingConfig) {

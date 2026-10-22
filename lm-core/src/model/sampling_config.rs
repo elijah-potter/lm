@@ -6,4 +6,5 @@ pub struct SamplingConfig {
     pub dry_allowed_length: usize,
     pub dry_multiplier: f64,
     pub dry_base: f64,
+    pub temperature: f64,
 }

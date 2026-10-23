@@ -276,17 +276,12 @@ impl Model {
     // From an already softmaxed logit tensor, produce a sorted list of token IDs with their associated probabilities, with the most likely
     // tokens first.
     fn compute_descending_probability_list(probs: Tensor<1>) -> Vec<(u32, f64)> {
-        let vocab_size = probs.dims()[0];
-        let mut token_probability_pairs: Vec<(u32, f64)> = Vec::with_capacity(vocab_size);
-
-        for i in 0..vocab_size {
-            token_probability_pairs.push((
-                // Index of the next highest probability token.
-                i as u32,
-                // The probability of that token.
-                probs.clone().slice([i..i + 1]).into_scalar(),
-            ));
-        }
+        let data: Vec<f32> = probs.to_data().try_to_vec().unwrap();
+        let mut token_probability_pairs: Vec<(u32, f64)> = data
+            .into_iter()
+            .enumerate()
+            .map(|(i, v)| (i as u32, v as f64))
+            .collect();
 
         token_probability_pairs.sort_by(|(_, a), (_, b)| b.total_cmp(a));
         token_probability_pairs

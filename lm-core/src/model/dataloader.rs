@@ -9,9 +9,10 @@ use burn::data::dataset::transform::{SamplerDataset, SamplerDatasetOptions};
 use burn::data::dataset::{Dataset, DatasetError};
 use burn::prelude::Device;
 use burn::tensor::ops::PadMode;
-use burn::tensor::{Float, Int, TensorCreationOptions, TensorData};
+use burn::tensor::Int;
 use parquet::file::reader::SerializedFileReader;
 use parquet::record::RowAccessor;
+use rand::RngExt;
 
 use super::tokenizer::Tokenizer;
 
@@ -46,21 +47,23 @@ struct TrainingBatcher {
     max_seq_len: usize,
 }
 
+const ESTIMATED_CHARACTERS_PER_TOKEN: f64 = 4.62;
+
+fn character_start(length: usize, token_window: usize, rng: &mut impl rand::Rng) -> usize {
+    let reserved = (token_window as f64 * ESTIMATED_CHARACTERS_PER_TOKEN).ceil() as usize;
+    rng.random_range(0..=length.saturating_sub(reserved))
+}
+
+fn sample_context(text: &str, token_window: usize, rng: &mut impl rand::Rng) -> String {
+    let start = character_start(text.chars().count(), token_window, rng);
+    text.chars().skip(start).collect()
+}
+
 impl Batcher<UnbatchedItem, BatchItem> for TrainingBatcher {
     fn batch(&self, items: Vec<UnbatchedItem>, device: &Device) -> BatchItem {
         let items: Vec<(Tensor<2, Int>, Tensor<2, Int>)> = items
             .into_iter()
-            // Sample the context randomly from the document.
-            .map(|i| {
-                if i.input.is_empty() {
-                    return i.input;
-                }
-
-                let mut chars: Vec<char> = i.input.chars().collect();
-
-                let start_char = rand::random_range(0..chars.len());
-                chars.split_off(start_char).into_iter().collect()
-            })
+            .map(|i| sample_context(&i.input, self.max_seq_len + 1, &mut rand::rng()))
             .map(|sample| self.tokenizer.text_to_tensor(&sample, device.clone()))
             // Resize the tensor to the exact length required by the model, then get the before and
             // after tensors.

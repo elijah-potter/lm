@@ -88,8 +88,21 @@ impl ModelInner {
         let logits_reshaped = logits.reshape([batch_size * self.max_seq_len, vocab_size]);
         let targets_reshaped = item.targets.reshape([batch_size * self.max_seq_len]);
 
-        let loss = CrossEntropyLoss::new(Some(self.pad_idx), &device)
-            .forward(logits_reshaped.clone(), targets_reshaped.clone());
+        let loss = if item.loss_indices.is_empty() {
+            // Keep a gradient path for batches with no valid targets.
+            logits_reshaped.clone().sum() * 0.0
+        } else {
+            let indices_to_include_in_loss =
+                Tensor::<1, Int>::from_data(item.loss_indices.as_slice(), &device);
+            CrossEntropyLoss::new(None, &device).forward(
+                logits_reshaped
+                    .clone()
+                    .select(0, indices_to_include_in_loss.clone()),
+                targets_reshaped
+                    .clone()
+                    .select(0, indices_to_include_in_loss),
+            )
+        };
 
         ClassificationOutput::new(loss, logits_reshaped, targets_reshaped)
     }

@@ -8,8 +8,8 @@ use burn::data::dataloader::{DataLoader, DataLoaderBuilder};
 use burn::data::dataset::transform::{SamplerDataset, SamplerDatasetOptions};
 use burn::data::dataset::{Dataset, DatasetError};
 use burn::prelude::Device;
-use burn::tensor::ops::PadMode;
 use burn::tensor::Int;
+use burn::tensor::ops::PadMode;
 use parquet::file::reader::SerializedFileReader;
 use parquet::record::RowAccessor;
 use rand::RngExt;
@@ -59,9 +59,23 @@ fn sample_context(text: &str, token_window: usize, rng: &mut impl rand::Rng) -> 
     text.chars().skip(start).collect()
 }
 
+/// Determine the indices to include in the loss calculation.
+/// Will include the first "pad" token, since "pad" tokens are the same as the end of text token.
+fn loss_indices(lengths: impl IntoIterator<Item = usize>, max_seq_len: usize) -> Vec<i64> {
+    lengths
+        .into_iter()
+        .enumerate()
+        .flat_map(|(row, length)| {
+            let start = row * max_seq_len;
+            start..start + length.min(max_seq_len)
+        })
+        .map(|index| index as i64)
+        .collect()
+}
+
 impl Batcher<UnbatchedItem, BatchItem> for TrainingBatcher {
     fn batch(&self, items: Vec<UnbatchedItem>, device: &Device) -> BatchItem {
-        let items: Vec<(Tensor<2, Int>, Tensor<2, Int>)> = items
+        let items: Vec<(Tensor<2, Int>, Tensor<2, Int>, usize)> = items
             .into_iter()
             .map(|i| sample_context(&i.input, self.max_seq_len + 1, &mut rand::rng()))
             .map(|sample| self.tokenizer.text_to_tensor(&sample, device.clone()))
@@ -82,20 +96,29 @@ impl Batcher<UnbatchedItem, BatchItem> for TrainingBatcher {
                 (
                     t.clone().slice_dim(1, 0..self.max_seq_len),
                     t.slice_dim(1, 1..self.max_seq_len + 1),
+                    cur_len,
                 )
             })
             .collect();
 
-        let inputs_catted =
-            Tensor::cat(items.iter().map(|(inputs, _)| inputs.clone()).collect(), 0);
+        let loss_indices =
+            loss_indices(items.iter().map(|(_, _, length)| *length), self.max_seq_len);
+        let inputs_catted = Tensor::cat(
+            items.iter().map(|(inputs, _, _)| inputs.clone()).collect(),
+            0,
+        );
         let outputs_catted = Tensor::cat(
-            items.iter().map(|(_, outputs)| outputs.clone()).collect(),
+            items
+                .iter()
+                .map(|(_, outputs, _)| outputs.clone())
+                .collect(),
             0,
         );
 
         BatchItem {
             inputs: inputs_catted,
             targets: outputs_catted,
+            loss_indices,
         }
     }
 }
@@ -109,6 +132,8 @@ struct UnbatchedItem {
 pub struct BatchItem {
     pub inputs: Tensor<2, Int>,
     pub targets: Tensor<2, Int>,
+    // The indices to include in the loss calculation for the whole batch.
+    pub loss_indices: Vec<i64>,
 }
 
 struct ParquetDataset {

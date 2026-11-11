@@ -131,7 +131,12 @@ impl Model {
     ) -> Vec<u8> {
         print!("{text}");
         let mut idxs = self.tokenizer.text_to_tensor(text, self.device.clone());
-        let mut ar_cache = self.inner.transformer.new_autoregressive_cache();
+        let inference = self
+            .inner
+            .lora_config
+            .map(|_| self.inner.clone().valid().materialize());
+        let inner = inference.as_ref().unwrap_or(&self.inner);
+        let mut ar_cache = inner.transformer.new_autoregressive_cache();
 
         let mut output_bytes = Vec::new();
 
@@ -146,9 +151,14 @@ impl Model {
                 idxs.clone()
             };
 
-            let output = self.inner.forward_infer(truncated_idxs, &mut ar_cache);
+            let output = inner.forward_infer(truncated_idxs, &mut ar_cache);
 
             let next_tok = self.sample(idxs.clone(), output, cur_len, sampling_config);
+
+            if next_tok as usize == self.tokenizer.pad_id() {
+                break;
+            }
+
             let next_tok_tens = Tensor::<2, Int>::from_data([[next_tok]], &self.device);
             idxs = Tensor::cat(vec![idxs, next_tok_tens], 1);
 
@@ -369,5 +379,137 @@ impl Model {
         };
         let result = training.launch(Learner::new(self.inner.clone(), optim, lr_scheduler));
         self.inner = result.model.valid();
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use burn::module::{ModuleMapper, Param, ParamId};
+    use burn::tensor::Tolerance;
+
+    fn small_model(device: &Device) -> ModelInner {
+        ModelInner {
+            embedding: EmbeddingConfig::new(8, 4).init(device),
+            pos_embedding: EmbeddingConfig::new(4, 4).init(device),
+            transformer: TransformerEncoderConfig::new(4, 8, 2, 1)
+                .with_dropout(0.0)
+                .with_norm_first(true)
+                .init(device),
+            resizer: LinearConfig::new(4, 8).init(device),
+            lora_config: None,
+            max_seq_len: 4,
+            pad_idx: 0,
+        }
+    }
+
+    fn projections(model: &ModelInner) -> Vec<&Param<Tensor<2>>> {
+        model
+            .transformer
+            .layers
+            .iter()
+            .flat_map(|layer| {
+                [
+                    &layer.mha.query.weight,
+                    &layer.mha.key.weight,
+                    &layer.mha.value.weight,
+                    &layer.mha.output.weight,
+                    &layer.pwff.linear_inner.weight,
+                    &layer.pwff.linear_outer.weight,
+                ]
+            })
+            .chain(std::iter::once(&model.resizer.weight))
+            .collect()
+    }
+
+    /// Set only LoRA up-projection factors to nonzero values for inference tests.
+    struct NonzeroFactors(Vec<ParamId>);
+
+    impl ModuleMapper for NonzeroFactors {
+        fn map_float<const D: usize>(&mut self, param: Param<Tensor<D>>) -> Param<Tensor<D>> {
+            if self.0.contains(&param.id) {
+                param.map(|tensor| tensor.ones_like() * 0.1)
+            } else {
+                param
+            }
+        }
+    }
+
+    fn with_nonzero_lora(base: ModelInner) -> ModelInner {
+        let model = lora::attach(
+            base,
+            LoraConfig {
+                rank: 2,
+                alpha: 2.0,
+            },
+        );
+        let factors = projections(&model)
+            .iter()
+            .map(|weight| weight.adapter().unwrap().b.id)
+            .collect();
+        model.map(&mut NonzeroFactors(factors))
+    }
+
+    #[test]
+    fn merged_lora_matches_inference_and_preserves_original_adapters() {
+        let device = Device::flex();
+        let model = with_nonzero_lora(small_model(&device));
+        let merged = model.clone().valid().materialize();
+        assert!(
+            projections(&merged)
+                .iter()
+                .all(|weight| weight.adapter().is_none())
+        );
+        assert!(
+            projections(&model)
+                .iter()
+                .all(|weight| weight.adapter().is_some())
+        );
+        for weight in projections(&model) {
+            assert!(
+                weight
+                    .adapter()
+                    .unwrap()
+                    .delta()
+                    .abs()
+                    .sum()
+                    .into_scalar::<f32>()
+                    > 0.0
+            );
+        }
+
+        let mut original_cache = model.transformer.new_autoregressive_cache();
+        let mut merged_cache = merged.transformer.new_autoregressive_cache();
+        for tokens in [vec![1, 2], vec![1, 2, 3]] {
+            let input = Tensor::<1, Int>::from_data(tokens.as_slice(), &device).unsqueeze::<2>();
+            let expected = model.forward_infer(input.clone(), &mut original_cache);
+            merged
+                .forward_infer(input, &mut merged_cache)
+                .into_data()
+                .assert_approx_eq::<f32>(&expected.into_data(), Tolerance::default());
+        }
+    }
+
+    #[test]
+    fn unloading_after_materialization_restores_base_output() {
+        let device = Device::flex();
+        let base = small_model(&device);
+        let model = with_nonzero_lora(base.clone());
+        let _merged = model.clone().valid().materialize();
+        let restored = lora::remove(model);
+        assert!(
+            projections(&restored)
+                .iter()
+                .all(|weight| weight.adapter().is_none())
+        );
+        let input = Tensor::<2, Int>::from_data([[1, 2]], &device);
+        let expected = base.forward_infer(
+            input.clone(),
+            &mut base.transformer.new_autoregressive_cache(),
+        );
+        restored
+            .forward_infer(input, &mut restored.transformer.new_autoregressive_cache())
+            .into_data()
+            .assert_approx_eq::<f32>(&expected.into_data(), Tolerance::default());
     }
 }

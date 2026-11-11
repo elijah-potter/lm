@@ -5,7 +5,7 @@ use std::path::PathBuf;
 use burn::tensor::{Device, DeviceKind, FloatDType};
 use clap::Parser;
 
-use lm_core::{Model, ModelConfig, SamplingConfig, TrainingConfig};
+use lm_core::{LoraConfig, Model, ModelConfig, SamplingConfig, TrainingConfig};
 
 #[derive(Debug, Parser)]
 enum Args {
@@ -13,12 +13,20 @@ enum Args {
         model_config: PathBuf,
         training_config: PathBuf,
         base_model: Option<PathBuf>,
+        #[arg(long)]
+        lora_config: Option<PathBuf>,
+        #[arg(long, requires = "lora_config")]
+        lora_weight: Option<PathBuf>,
     },
     Infer {
         model_path: PathBuf,
         model_config: PathBuf,
         sampling_config: PathBuf,
         text: String,
+        #[arg(long, requires = "lora_weight")]
+        lora_config: Option<PathBuf>,
+        #[arg(long, requires = "lora_config")]
+        lora_weight: Option<PathBuf>,
     },
 }
 
@@ -30,6 +38,8 @@ fn main() {
             model_config,
             training_config,
             base_model,
+            lora_config,
+            lora_weight,
         } => {
             let mut device = Device::cuda(0);
 
@@ -46,6 +56,16 @@ fn main() {
                 model.load_from_weights(&mut model_file);
             }
 
+            if let Some(config) = lora_config {
+                let config: LoraConfig =
+                    serde_json::from_reader(File::open(config).unwrap()).unwrap();
+                match lora_weight {
+                    Some(path) => {
+                        model.load_lora_from_weights(&mut File::open(path).unwrap(), config)
+                    }
+                    None => model.load_empty_lora_weights(config),
+                }
+            }
             model.train(train_config);
         }
         Args::Infer {
@@ -53,6 +73,8 @@ fn main() {
             model_config,
             sampling_config,
             text,
+            lora_config,
+            lora_weight,
         } => {
             let mut device = Device::flex();
 
@@ -62,6 +84,12 @@ fn main() {
             let mut model = Model::new(model_config, &device, false);
             let mut model_file = File::open(model_path).unwrap();
             model.load_from_weights(&mut model_file);
+
+            if let (Some(config), Some(weights)) = (lora_config, lora_weight) {
+                let config: LoraConfig =
+                    serde_json::from_reader(File::open(config).unwrap()).unwrap();
+                model.load_lora_from_weights(&mut File::open(weights).unwrap(), config);
+            }
 
             let sampling_config_file = File::open(sampling_config).unwrap();
             let sampling_config: SamplingConfig =

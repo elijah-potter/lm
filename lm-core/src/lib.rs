@@ -1,3 +1,3 @@
 mod model;
 
-pub use model::{Model, ModelConfig, SamplingConfig, TrainingConfig};
+pub use model::{LoraConfig, Model, ModelConfig, SamplingConfig, TrainingConfig};

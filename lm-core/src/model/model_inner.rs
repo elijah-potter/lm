@@ -10,6 +10,7 @@ use burn::train::{ClassificationOutput, InferenceStep, RegressionOutput, TrainOu
 
 use burn::module::Module;
 
+use super::LoraConfig;
 use super::dataloader::BatchItem;
 use super::tensor_utils::int_seq_to_tensor;
 
@@ -19,6 +20,8 @@ pub struct ModelInner {
     pub pos_embedding: Embedding,
     pub transformer: TransformerEncoder,
     pub resizer: Linear,
+    #[module(skip)]
+    pub lora_config: Option<LoraConfig>,
     #[module(skip)]
     pub max_seq_len: usize,
     #[module(skip)]

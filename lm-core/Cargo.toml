@@ -5,6 +5,7 @@ edition = "2024"
 
 [dependencies]
 burn = { version = "0.22.0", features = ["train", "store"] }
+burn-pack = "0.22.0"
 parquet = "60.0.0"
 rand = "0.10.3"
 serde = { version = "1.0.229", features = ["derive"] }

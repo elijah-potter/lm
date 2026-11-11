@@ -17,10 +17,15 @@ use burn::train::metric::{LearningRateMetric, LossMetric};
 use burn::train::{Learner, SupervisedTraining};
 
 use self::dataloader::{BatchItem, create_dataloader};
+use self::lora_weights::LoraCheckpointer;
 use self::model_inner::ModelInner;
 use self::tokenizer::Tokenizer;
+use burn::train::checkpoint::FileCheckpointer;
 
 mod dataloader;
+mod lora;
+mod lora_config;
+mod lora_weights;
 mod model_config;
 mod model_inner;
 mod sampling_config;
@@ -28,6 +33,7 @@ mod tensor_utils;
 mod tokenizer;
 mod training_config;
 
+pub use lora_config::LoraConfig;
 pub use model_config::ModelConfig;
 pub use sampling_config::SamplingConfig;
 pub use training_config::TrainingConfig;
@@ -72,6 +78,7 @@ impl Model {
                 .init(&device),
                 resizer: LinearConfig::new(config.embedding_dimensions, tokenizer.vocab_size())
                     .init(&device),
+                lora_config: None,
                 max_seq_len: config.max_seq_len,
                 pad_idx: tokenizer.pad_id(),
             },
@@ -88,13 +95,33 @@ impl Model {
         let bytes = Bytes::from_bytes_vec(data);
         let mut store = BurnpackStore::from_bytes(Some(bytes));
 
-        self.inner.load_from(&mut store).unwrap();
+        // Load only base parameters, even when LoRA is active.
+        let config = self.inner.lora_config;
+        let factors = config.map(|_| {
+            self.inner
+                .clone()
+                .into_record_group(lora::factor_group(self.inner.transformer.layers.len()))
+        });
+        let mut base = lora::remove(self.inner.clone());
+        base.load_from(&mut store).unwrap();
+        if let Some(config) = config {
+            base = lora::attach(base, config).load_record(factors.unwrap().allow_partial(true));
+        }
+        self.inner = base;
     }
 
-    /// Perform completion using the model and provided sampler settings.
-    /// The provided limit is the number of tokens to be generated.
-    /// The provided callback will be run after each token is generated and it will be provided the
-    /// bytes from that token.
+    pub fn load_empty_lora_weights(&mut self, config: LoraConfig) {
+        self.inner = lora::attach(self.inner.clone().fork(&self.device), config);
+    }
+
+    pub fn load_lora_from_weights(&mut self, weights: &mut impl Read, config: LoraConfig) {
+        self.inner = lora_weights::load(weights, config, &self.inner, &self.device);
+    }
+
+    pub fn unload_lora(&mut self) {
+        self.inner = lora::remove(self.inner.clone());
+    }
+
     pub fn completion(
         &mut self,
         text: &str,
@@ -133,8 +160,6 @@ impl Model {
         output_bytes
     }
 
-    /// Samples from the logits emitted by the model. Needs to know the previous len to know which
-    /// sequence position to sample from.
     fn sample(
         &self,
         inputs: Tensor<2, Int>,
@@ -288,6 +313,7 @@ impl Model {
     }
 
     pub fn train(&mut self, config: TrainingConfig) {
+        self.inner = self.inner.clone().fork(&self.device).train();
         let train_loader = create_dataloader(
             self.device.clone(),
             config.batch_size,
@@ -327,11 +353,20 @@ impl Model {
             .metric_train_numeric(LossMetric::new())
             .metric_valid_numeric(LossMetric::new())
             .metric_train_numeric(LearningRateMetric::new())
-            .with_default_checkpointers()
             .grads_accumulation(6)
             .num_epochs(config.checkpoints)
             .summary();
 
+        let training = if self.inner.lora_config.is_some() {
+            let directory = "./checkpoints/checkpoint";
+            training.with_custom_checkpointers(
+                LoraCheckpointer::new(directory, self.config.transformer_blocks),
+                FileCheckpointer::new(directory, "optim"),
+                FileCheckpointer::new(directory, "scheduler"),
+            )
+        } else {
+            training.with_default_checkpointers()
+        };
         let result = training.launch(Learner::new(self.inner.clone(), optim, lr_scheduler));
         self.inner = result.model.valid();
     }
